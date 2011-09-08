@@ -55,15 +55,14 @@ def main(argv):
     parser.add_option(
         "", "--home",
         action="store",
-        dest="directory",
-        metavar="DIR",
         type="string",
+        dest="home",
         help="Spesifies where the home-directories are located")
     parser.add_option(
         "-a", "--application",
         action="store",
-        dest="appname_to_scan",
         type="string",
+        dest="appname_to_scan",
         help="Spesifies application to scan")
     parser.add_option(
         "-d", "--debug",
@@ -89,6 +88,10 @@ def main(argv):
     if opts.directory:
         logging.debug('Scanning recursively from path: %s' % opts.directory)
         traverse_recursive(opts.directory, opts.appname_to_scan)
+    if opts.home:
+        _users = opts.home
+        logging.debug('Scanning predefined variables: %s' % _users)
+        scan_predefined_directories(_users, opts.appname_to_scan)
     else:
         _users = '/home'
         logging.debug('Scanning predefined variables: %s' % _users)
@@ -215,8 +218,11 @@ def traverse_dir(path, appname_to_scan, depth=3):
     depth = ammount of directories to traverse"""
     if not os.path.exists(path):
         return
+    if not os.path.isdir(path):
+        return
     try:
         detect_apps(path, appname_to_scan)
+
         entries = listdir(path)
         if depth == 0:
             return
@@ -260,7 +266,11 @@ def scan_predefined_directories(path, appname_to_scan):
     if not exists(path):
         print('Error. No such directory: %s' % (path))
         sys.exit(1)
-    _userdirs = listdir(path)
+    try:
+        _userdirs = listdir(path)
+    except OSError, errno:
+        print('Permission denied: %s' % (path))
+        return
     for directory in _userdirs:
         sites_dir = join(path, directory, 'sites')
         pub_html_dir = join(path, directory, 'public_html')
