@@ -298,13 +298,13 @@ if __name__ == "__main__":
     data = {
     'joomla': {
         'location': ['/libraries/joomla/version.php', '/includes/version.php'],
-        'secure': '1.5.22',
+        'secure': '1.5.23',
 #        'vulnerabilities':
 #        [{'CVE-2010-4166': '1.5.22'}],
 #    {'': ''},
 #    {'' }],
         'regexp': ['.*?RELEASE.*?(?P<version>[0-9.]{1,})', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})'],
-        'cve': 'CVE-2010-4166',
+        'cve': 'CVE-2011-2888, CVE-2011-2889, CVE-2011-2890',
         'fingerprint': detect_joomla}}
 
     main(sys.argv[1:])
