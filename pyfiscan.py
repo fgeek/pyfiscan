@@ -24,6 +24,7 @@ try:
     import logging
     import csv
     import re
+    import stat
     from collections import defaultdict
     from os import listdir
     from os.path import join
@@ -69,6 +70,11 @@ def main(argv):
         action="store_true",
         dest="verbose",
         help="Put debugging mode on.")
+    parser.add_option(
+        "", "--check-modes",
+        action="store_true",
+        dest="check_modes",
+        help="Check if we are allowed to traverse directories (execution bit)")
 
     (opts, args) = parser.parse_args()
 
@@ -96,7 +102,6 @@ def main(argv):
         _users = '/home'
         logging.debug('Scanning predefined variables: %s' % _users)
         scan_predefined_directories(_users, opts.appname_to_scan)
-
     """Let's count how many applications have vulnerabilities"""
     int_not_vuln = 0
     for (appname, application) in data.iteritems():
@@ -212,6 +217,22 @@ def detect_apps(curdir, appname_to_scan):
                                 csv_add(appname, version_file, file_version, application['secure'], application['cve'])
 
 
+def check_dir_execution_bit(path):
+    """Checks if path has execution bit. This is meant to use to check if site is public. Defaults to false."""
+    if check_modes == False:
+        return True
+    if not os.path.exists(path):
+        return
+    if not os.path.isdir(path):
+        return
+    if stat.S_IXUSR & os.stat(path)[stat.ST_MODE]:
+        logging.debug('Execution bit set for directory: %s' % path)
+        return True
+    else:
+        logging.debug('No execution bit set for directory: %s' % path)
+        return False
+
+
 def traverse_dir(path, appname_to_scan, depth=3):
     """Traverses directory spesified amount
     path = start path
@@ -222,7 +243,6 @@ def traverse_dir(path, appname_to_scan, depth=3):
         return
     try:
         detect_apps(path, appname_to_scan)
-
         entries = listdir(path)
         if depth == 0:
             return
@@ -242,11 +262,12 @@ def traverse_recursive(path, appname_to_scan):
         logging.debug('Path does not exist: %s' % path)
         sys.exit(1)
     try:
-        detect_apps(path, appname_to_scan)
-        entries = listdir(path)
-        for entry in entries:
-            if os.path.isdir(join(path, entry)) and os.path.islink(join(path, entry)) == False:
-                traverse_recursive(join(path, entry), appname_to_scan)
+        if check_dir_execution_bit(path):
+            detect_apps(path, appname_to_scan)
+            entries = listdir(path)
+            for entry in entries:
+                if os.path.isdir(join(path, entry)) and os.path.islink(join(path, entry)) == False:
+                    traverse_recursive(join(path, entry), appname_to_scan)
     except KeyboardInterrupt:
         print("Interrupting..")
         sys.exit(1)
@@ -275,11 +296,13 @@ def scan_predefined_directories(path, appname_to_scan):
         sites_dir = join(path, directory, 'sites')
         pub_html_dir = join(path, directory, 'public_html')
         if exists(sites_dir):
-            for site in listdir(sites_dir):
-                traverse_dir(join(sites_dir, site, 'www'), appname_to_scan)
-                traverse_dir(join(sites_dir, site, 'secure-www'), appname_to_scan)
+            if check_dir_execution_bit(sites_dir):
+                for site in listdir(sites_dir):
+                    traverse_dir(join(sites_dir, site, 'www'), appname_to_scan)
+                    traverse_dir(join(sites_dir, site, 'secure-www'), appname_to_scan)
         if exists(pub_html_dir):
-            traverse_dir(pub_html_dir, appname_to_scan)
+            if check_dir_execution_bit(sites_dir):
+                traverse_dir(pub_html_dir, appname_to_scan)
 
 
 if __name__ == "__main__":
