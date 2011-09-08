@@ -218,13 +218,14 @@ def detect_apps(curdir, appname_to_scan):
 
 
 def check_dir_execution_bit(path):
-    """Checks if path has execution bit. This is meant to use to check if site is public. Defaults to false."""
+    """Check if path has execution bit to check if site is public. Defaults to false."""
     if check_modes == False:
         return True
     if not os.path.exists(path):
         return
     if not os.path.isdir(path):
         return
+    """http://docs.python.org/library/stat.html#stat.S_IXUSR"""
     if stat.S_IXUSR & os.stat(path)[stat.ST_MODE]:
         logging.debug('Execution bit set for directory: %s' % path)
         return True
@@ -242,14 +243,15 @@ def traverse_dir(path, appname_to_scan, depth=3):
     if not os.path.isdir(path):
         return
     try:
-        detect_apps(path, appname_to_scan)
-        entries = listdir(path)
-        if depth == 0:
-            return
-        depth = depth - 1
-        for entry in entries:
-            if os.path.isdir(join(path, entry)) and os.path.islink(join(path, entry)) == False:
-                traverse_dir(join(path, entry), appname_to_scan, depth)
+        if check_dir_execution_bit(path):
+            detect_apps(path, appname_to_scan)
+            entries = listdir(path)
+            if depth == 0:
+                return
+            depth = depth - 1
+            for entry in entries:
+                if os.path.isdir(join(path, entry)) and os.path.islink(join(path, entry)) == False:
+                    traverse_dir(join(path, entry), appname_to_scan, depth)
     except KeyboardInterrupt:
         print("Interrupting..")
         sys.exit(1)
