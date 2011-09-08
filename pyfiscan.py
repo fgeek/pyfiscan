@@ -93,15 +93,15 @@ def main(argv):
 
     if opts.directory:
         logging.debug('Scanning recursively from path: %s' % opts.directory)
-        traverse_recursive(opts.directory, opts.appname_to_scan)
+        traverse_recursive(opts.directory, opts.appname_to_scan, opts.check_modes)
     if opts.home:
         _users = opts.home
         logging.debug('Scanning predefined variables: %s' % _users)
-        scan_predefined_directories(_users, opts.appname_to_scan)
+        scan_predefined_directories(_users, opts.appname_to_scan, opts.check_modes)
     else:
         _users = '/home'
         logging.debug('Scanning predefined variables: %s' % _users)
-        scan_predefined_directories(_users, opts.appname_to_scan)
+        scan_predefined_directories(_users, opts.appname_to_scan, opts.check_modes)
     """Let's count how many applications have vulnerabilities"""
     int_not_vuln = 0
     for (appname, application) in data.iteritems():
@@ -217,7 +217,7 @@ def detect_apps(curdir, appname_to_scan):
                                 csv_add(appname, version_file, file_version, application['secure'], application['cve'])
 
 
-def check_dir_execution_bit(path):
+def check_dir_execution_bit(path, check_modes):
     """Check if path has execution bit to check if site is public. Defaults to false."""
     if check_modes == False:
         return True
@@ -234,7 +234,7 @@ def check_dir_execution_bit(path):
         return False
 
 
-def traverse_dir(path, appname_to_scan, depth=3):
+def traverse_dir(path, appname_to_scan, check_modes, depth=3):
     """Traverses directory spesified amount
     path = start path
     depth = ammount of directories to traverse"""
@@ -243,7 +243,7 @@ def traverse_dir(path, appname_to_scan, depth=3):
     if not os.path.isdir(path):
         return
     try:
-        if check_dir_execution_bit(path):
+        if check_dir_execution_bit(path, check_modes):
             detect_apps(path, appname_to_scan)
             entries = listdir(path)
             if depth == 0:
@@ -251,25 +251,25 @@ def traverse_dir(path, appname_to_scan, depth=3):
             depth = depth - 1
             for entry in entries:
                 if os.path.isdir(join(path, entry)) and os.path.islink(join(path, entry)) == False:
-                    traverse_dir(join(path, entry), appname_to_scan, depth)
+                    traverse_dir(join(path, entry), appname_to_scan, check_modes, depth)
     except KeyboardInterrupt:
         print("Interrupting..")
         sys.exit(1)
 
 
-def traverse_recursive(path, appname_to_scan):
+def traverse_recursive(path, appname_to_scan, check_modes):
     """Traverses directory recursively"""
     if not os.path.exists(path):
         print('Path does not exist: %s' % (path))
         logging.debug('Path does not exist: %s' % path)
         sys.exit(1)
     try:
-        if check_dir_execution_bit(path):
+        if check_dir_execution_bit(path, check_modes):
             detect_apps(path, appname_to_scan)
             entries = listdir(path)
             for entry in entries:
                 if os.path.isdir(join(path, entry)) and os.path.islink(join(path, entry)) == False:
-                    traverse_recursive(join(path, entry), appname_to_scan)
+                    traverse_recursive(join(path, entry), appname_to_scan, check_modes)
     except KeyboardInterrupt:
         print("Interrupting..")
         sys.exit(1)
@@ -280,7 +280,7 @@ def traverse_recursive(path, appname_to_scan):
             pass
 
 
-def scan_predefined_directories(path, appname_to_scan):
+def scan_predefined_directories(path, appname_to_scan, check_modes):
     """Starts traversing in predefined directories
         sites/www/
         sites/secure-www/
@@ -298,13 +298,13 @@ def scan_predefined_directories(path, appname_to_scan):
         sites_dir = join(path, directory, 'sites')
         pub_html_dir = join(path, directory, 'public_html')
         if exists(sites_dir):
-            if check_dir_execution_bit(sites_dir):
+            if check_dir_execution_bit(sites_dir, check_modes):
                 for site in listdir(sites_dir):
-                    traverse_dir(join(sites_dir, site, 'www'), appname_to_scan)
-                    traverse_dir(join(sites_dir, site, 'secure-www'), appname_to_scan)
+                    traverse_dir(join(sites_dir, site, 'www'), check_modes, appname_to_scan)
+                    traverse_dir(join(sites_dir, site, 'secure-www'), check_modes, appname_to_scan)
         if exists(pub_html_dir):
-            if check_dir_execution_bit(sites_dir):
-                traverse_dir(pub_html_dir, appname_to_scan)
+            if check_dir_execution_bit(sites_dir, check_modes):
+                traverse_dir(pub_html_dir, check_modes, appname_to_scan)
 
 
 if __name__ == "__main__":
