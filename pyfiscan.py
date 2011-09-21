@@ -244,6 +244,7 @@ def traverse_dir(path, appname_to_scan, check_modes, depth=3):
         return
     try:
         if check_dir_execution_bit(path, check_modes):
+            logging.debug('traverse_dir: Detecting applications (%s) from %s' % (appname_to_scan, path))
             detect_apps(path, appname_to_scan)
             entries = listdir(path)
             if depth == 0:
@@ -265,6 +266,7 @@ def traverse_recursive(path, appname_to_scan, check_modes):
         sys.exit(1)
     try:
         if check_dir_execution_bit(path, check_modes):
+            logging.debug('traverse_recursive: Detecting applications (%s) from %s' % (appname_to_scan, path))
             detect_apps(path, appname_to_scan)
             entries = listdir(path)
             for entry in entries:
@@ -330,6 +332,93 @@ if __name__ == "__main__":
 #    {'' }],
         'regexp': ['.*?RELEASE.*?(?P<version>[0-9.]{1,})', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})'],
         'cve': 'CVE-2011-2888, CVE-2011-2889, CVE-2011-2890',
-        'fingerprint': detect_joomla}}
+        'fingerprint': detect_joomla},
+    # TODO: Does not work with ancient 2003 versions
+    # TODO: Without CVE
+        # http://osvdb.org/show/osvdb/72141 http://secunia.com/advisories/44038/
+        # http://secunia.com/advisories/8954/
+        # http://secunia.com/advisories/23621/
+        # http://secunia.com/advisories/23587/
+        # http://secunia.com/advisories/24316/
+        # http://secunia.com/advisories/24951/
+        # http://secunia.com/advisories/28130/
+        # OSBDB:72142 3.1.1
+        # http://osvdb.org/show/osvdb/72097
+        # http://osvdb.org/show/osvdb/72173
+        # http://osvdb.org/show/osvdb/73721
+    # CVE-2004-1559 1.2.1
+    # CVE-2004-1584 1.2.1
+    # CVE-2005-1687 1.5.1
+    # CVE-2005-1688 1.5.1
+    # CVE-2005-1810 1.5.1.2
+    # CVE-2005-2612 1.5.2
+    # CVE-2005-2107 1.5.1.3
+    # CVE-2005-2108 1.5.1.3
+    # CVE-2005-2109 1.5.1.3
+    # CVE-2005-2110 1.5.1.3
+    # CVE-2006-0985 2.0.2
+    # CVE-2006-0986 2.0.2
+    # CVE-2006-1012 2.0
+    # CVE-2006-1796 2.0.2
+    # CVE-2006-2667 2.0.3
+    # CVE-2006-2702 2.0.3
+    # CVE-2006-3389 2.1
+    # CVE-2006-3390 2.1
+    # CVE-2006-4028 2.0.4
+    # CVE-2006-5705 2.0.5
+    # CVE-2006-6016 2.0.5
+    # CVE-2006-6017 2.0.5
+    # CVE-2007-0106 2.0.6
+    # CVE-2007-0539 2.1
+    # CVE-2007-0540 2.1
+    # CVE-2007-0541 2.1
+    # CVE-2007-1049 2.1.1
+    # CVE-2007-1277 2.1.2
+    # CVE-2007-1622 2.0.10 / 2.1.3
+    # CVE-2007-1732 N/A
+    # CVE-2007-1893 2.1.3
+    # CVE-2007-1894 2.1.3
+    # CVE-2007-1897 2.1.3
+    # CVE-2007-2921 2.2
+    # CVE-2007-3140 2.2.1
+    # CVE-2007-3238 N/A
+    # CVE-2007-3543 2.2.1
+    # CVE-2007-3544 2.2.1
+    # CVE-2007-4139 2.2.2
+    # CVE-2007-4893 2.2.3
+    # CVE-2007-4894 2.2.3
+    # CVE-2007-5710 2.3.1
+    # CVE-2007-6013 2.3.2
+    # CVE-2007-6318 N/A
+    # CVE-2008-0664 2.3.3
+    # CVE-2008-1930 2.5.1
+    # CVE-2008-2068 2.5.1
+    # CVE-2008-2146 2.2.3
+    # CVE-2008-4106 2.6.2
+    # CVE-2008-4107 2.6.2
+    # CVE-2008-4769 2.5.1
+    # CVE-2008-5278 2.6.5
+    # CVE-2009-2762 2.8.4
+    # CVE-2009-2851 2.8.2
+    # CVE-2009-2853 2.8.3
+    # CVE-2009-2854 2.8.3
+    # CVE-2009-3622 2.8.5 
+    # CVE-2009-3890 2.8.6
+    # CVE-2009-3891 2.8.6
+    # CVE-2010-0682 2.9.2
+    # CVE-2011-3122 3.1.3
+    # CVE-2011-3126 3.1.3
+    # CVE-2011-3127 3.1.3
+    # CVE-2011-3128 3.1.3
+    # CVE-2011-3129 3.1.3
+    # CVE-2011-3130 3.1.3
+    'WordPress': {
+        'location': ['/wp-includes/version.php'],
+        'secure': '3.1.3',
+        'regexp': ['\$wp_version.*?(?P<version>[0-9.]+)'],
+        'cve': 'CVE-2011-3122, CVE-2011-3126, CVE-2011-3127, CVE-2011-3128, CVE-2011-3129, CVE-2011-3130',
+        'fingerprint': detect_general
+        }
+    }
 
     main(sys.argv[1:])
