@@ -226,7 +226,7 @@ def check_dir_execution_bit(path, check_modes):
     if not os.path.isdir(path):
         return
     """http://docs.python.org/library/stat.html#stat.S_IXUSR"""
-    if stat.S_IXUSR & os.stat(path)[stat.ST_MODE]:
+    if stat.S_IXOTH & os.stat(path)[stat.ST_MODE]:
         logging.debug('Execution bit set for directory: %s' % path)
         return True
     else:
