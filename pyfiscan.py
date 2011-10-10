@@ -87,7 +87,7 @@ def main(argv):
         try:
             logging.basicConfig(filename=logfile, level=level)
         except IOError:
-            print('Permission denied when writitin to file: %s' % logfile)
+            print('Permission denied when writing to file: %s' % logfile)
             sys.exit(2)
     logging.debug('Options are: %s' % opts)
 
@@ -449,6 +449,27 @@ if __name__ == "__main__":
         'secure': '1.9.3',
         'regexp': ['.*?release.*?(?P<version>[0-9.]{1,})'],
         'cve': 'CVE-2011-1058 SA43413',
+        'fingerprint': detect_general
+        },
+    #               1.0.3 (SA23582)
+    # CVE-2007-2473 1.0.6 (SA25082)
+    # CVE-2007-5056 1.1.4.1 (SA26928)
+    # CVE-2007-5441 1.1.4.1 (SA26928)
+    # CVE-2007-5442 1.1.4.1 (SA26928)
+    # CVE-2007-6656 1.2.3 (SA28285)
+    # CVE-2008-2267 1.2.5 (SA30208)
+    # CVE-2008-5642 1.5 (SA32924) Unpatched
+    #               1.6.3 (SA36255)
+    # CVE-2010-1482 1.7.1
+    # CVE-2010-2797 1.8.1 (SA40031)
+    # CVE-2010-3882 1.8.1 (SA40031)
+    # CVE-2010-3883 1.8.1 (SA40031)
+    # CVE-2010-3884 1.8.1 (SA40031)
+    'CMSMS' : {
+        'location': ['version.php'],
+        'secure': '1.8.1',
+        'regexp': ['\$CMS_VERSION.*?(?P<version>[.0-9]{2,})'],
+        'cve': 'CVE-2010-2797, CVE-2010-3882, CVE-2010-3883, CVE-2010-3884, SA40031',
         'fingerprint': detect_general
         }
     }
