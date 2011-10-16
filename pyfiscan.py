@@ -160,6 +160,7 @@ def detect_joomla(source_file, regexp):
 
 def compare_versions(secure_version, file_version, appname):
     """Comparison of found version numbers. Value current_version is predefined and file_version is found from file using grep. Value appname is used to separate different version numbering syntax"""
+    logging.debug('compare_versions: %s %s' % (secure_version, file_version))
     ver1 = secure_version.split('.')
     ver2 = file_version.split('.')
     ver1_bigger = 0
@@ -323,7 +324,7 @@ if __name__ == "__main__":
     """
 
     data = {
-    'joomla': {
+    'Joomla': {
         'location': ['/libraries/joomla/version.php', '/includes/version.php'],
         'secure': '1.5.23',
 #        'vulnerabilities':
@@ -470,6 +471,53 @@ if __name__ == "__main__":
         'secure': '1.8.1',
         'regexp': ['\$CMS_VERSION.*?(?P<version>[.0-9]{2,})'],
         'cve': 'CVE-2010-2797, CVE-2010-3882, CVE-2010-3883, CVE-2010-3884, SA40031',
+        'fingerprint': detect_general
+        },
+    # CVE-2004-2261 0.615   SA11567
+    #               0.615   SA9369
+    #               0.616   SA11740
+    #               0.616   SA11693
+    #               0.616   SA10115
+    # CVE-2004-2262 0.617   SA13657
+    #               0.6171  SA15282
+    # CVE-2005-2327 0.6172  SA16117
+    #               0.6174  SA17237
+    # CVE-2005-4052 0.6175  SA17890
+    #               0.6175  SA18023
+    #               0.6175  SA16357
+    #               0.6175  SA15733
+    #               0.6175  SA11696
+    # CVE-2006-0682 0.7.2   SA18816
+    # CVE-2006-2416 0.7.4   SA20089
+    # CVE-2006-2590 0.7.5   SA20262
+    # CVE-2006-2591 0.7.5   SA20262
+    #               0.7.17  SA38330
+    #               0.7.22  SA34169
+    #               0.7.23  SA41034
+    #               0.7.24  SA41494 HTB22603
+    #               0.7.24  SA31394
+    # CVE-2006-3259 0.7.24  SA20727
+    # CVE-2006-4757 0.7.24  SA20727
+    # CVE-2006-4794 0.7.24  SA20727
+    # CVE-2006-5786 0.7.24  SA20727
+    # CVE-2008-5320 0.7.24  SA32322
+    # CVE-2008-6208 0.7.24  SA34109
+    # CVE-2009-3444 0.7.24  SA36832
+    # CVE-2009-4083 0.7.24  SA36832
+    # CVE-2009-4084 0.7.24  SA36832
+    # CVE-2009-1409 0.7.24  SA34823
+    # CVE-2010-0996 0.7.20  SA39013
+    # CVE-2010-0997 0.7.20  SA39013
+    # CVE-2010-2098 0.7.22  SA39498
+    # CVE-2010-2099 0.7.22  SA39498
+    #               0.7.25  SA41597 HTB2260
+    #                       SA44061
+    #                       SA44968
+    'e107' : {
+        'location': ['/e107_admin/ver.php'],
+        'secure': ' 0.7.24',
+        'regexp': ['.*?e107_version.*?(?P<version>[.0-9]{2,})'],
+        'cve': 'N/A',
         'fingerprint': detect_general
         }
     }
