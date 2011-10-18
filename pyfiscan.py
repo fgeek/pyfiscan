@@ -311,7 +311,6 @@ def scan_predefined_directories(path, appname_to_scan, check_modes):
 
 
 if __name__ == "__main__":
-
     """Please note that nothing goes to terminal if cve-field is not defined
     Structure of data-dictionary:
 
@@ -322,7 +321,24 @@ if __name__ == "__main__":
         Regexp used in detection functions
         CVE-identifier and other security announcement ID's
     """
-
+    
+    # CVE-2005-3771 1.0.4   SA17675
+    # CVE-2005-3772 1.0.4   SA17675
+    # CVE-2005-3773 1.0.4   SA17675
+    # CVE-2005-4650 1.0.4   SA17675
+    #               1.0.7   SA18361
+    # CVE-2006-0303 1.0.7   SA18513
+    # CVE-2006-1047 1.0.8   SA19105
+    # CVE-2006-1048 1.0.8   SA19105
+    # CVE-2006-1049 1.0.8   SA19105
+    # CVE-2006-1028 1.0.8   SA19105
+    # CVE-2006-1030 1.0.8   SA19105
+    #               1.0.10  SA20746
+    # CVE-2010-1649 1.5.18  Bugtraq:40444 SA39964 OSVDB:65011 http://developer.joomla.org/security/news/314-20100501-core-xss-vulnerabilities-in-back-end.html
+    # CVE-2011-2708 1.7.0   TODO: duplicate with CVE-2011-2710 and requested by me: http://www.openwall.com/lists/oss-security/2011/10/16/1
+    # CVE-2011-2710 1.6.6   http://developer.joomla.org/security/news/357-20110701-xss-vulnerability.html
+    #               1.7.1   http://developer.joomla.org/security/news/367-20110901-core-xss-vulnerability.html
+    #               1.7.1   http://developer.joomla.org/security/news/369-20110903-core-information-disclosure.html
     data = {
     'Joomla': {
         'location': ['/libraries/joomla/version.php', '/includes/version.php'],
@@ -333,7 +349,8 @@ if __name__ == "__main__":
 #    {'' }],
         'regexp': ['.*?RELEASE.*?(?P<version>[0-9.]{1,})', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})'],
         'cve': 'CVE-2011-2888, CVE-2011-2889, CVE-2011-2890',
-        'fingerprint': detect_joomla},
+        'fingerprint': detect_joomla
+        },
     # TODO: Does not work with ancient 2003 versions
     # TODO: Without CVE
         # http://osvdb.org/show/osvdb/72141 http://secunia.com/advisories/44038/
@@ -518,6 +535,19 @@ if __name__ == "__main__":
         'secure': ' 0.7.24',
         'regexp': ['.*?e107_version.*?(?P<version>[.0-9]{2,})'],
         'cve': 'N/A',
+        'fingerprint': detect_general
+        },
+    # CVE-2008-1766 3.0.1       SA29801
+    # CVE-2008-6506 3.0.4       SA33166
+    # CVE-2008-6507 3.0.4       SA33166
+    # CVE-2010-1627 3.0.7PL1    SA38837
+    # CVE-2010-1630 3.0.5       SA38264
+    # CVE-2011-0544 3.0.8       SA42343
+    'phpBB3' : {
+        'location': ['/includes/constants.php'],
+        'secure': '3.0.8',
+        'regexp': ['.*?PHPBB_VERSION.*?(?P<version>3[0-9.]{1,})'],
+        'cve': 'CVE-2011-0544, SA42343',
         'fingerprint': detect_general
         }
     }
