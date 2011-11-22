@@ -318,14 +318,18 @@ if __name__ == "__main__":
     """Please note that nothing goes to terminal if cve-field is not defined
     Structure of data-dictionary:
 
-    Software/program
-        Look file from this directory hierarchy
-        Filename
-        Secure version
-        Regexp used in detection functions
-        CVE-identifier and other security announcement ID's
+    - Software/program
+        - Look file from this directory hierarchy
+        - Filename
+        - Secure version
+        - Regexp used in detection functions
+        - CVE-identifier and other security announcement ID's
+
+    To-be schema:
+    'vulnerabilities':
+        [{'CVE-2010-4166': '1.5.22'}], {'': ''}, {'' }],
     """
-    
+
     # CVE-2005-3771 1.0.4   SA17675
     # CVE-2005-3772 1.0.4   SA17675
     # CVE-2005-3773 1.0.4   SA17675
@@ -361,10 +365,6 @@ if __name__ == "__main__":
     'Joomla 1.7': {
         'location': ['/libraries/joomla/version.php', '/includes/version.php'],
         'secure': '1.7.2',
-#        'vulnerabilities':
-#        [{'CVE-2010-4166': '1.5.22'}],
-#    {'': ''},
-#    {'' }],
         'regexp': ['.*?RELEASE.*?(?P<version>1.[7,6])', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})'],
         'cve': 'CVE-2011-3629 http://developer.joomla.org/security/news/370-20111001-core-information-disclosure.html',
         'fingerprint': detect_joomla
@@ -555,7 +555,7 @@ if __name__ == "__main__":
     #               0.7.26  This is not fixed yet. SVN revision 12375 is fix
     'e107' : {
         'location': ['/e107_admin/ver.php'],
-        'secure': ' 0.7.25',
+        'secure': '0.7.25',
         'regexp': ['.*?e107_version.*?(?P<version>[.0-9]{2,})'],
         'cve': 'SA41597 HTB2260, SA44061, SA44968 HTB23004',
         'fingerprint': detect_general
