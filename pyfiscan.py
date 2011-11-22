@@ -17,6 +17,13 @@ rsion controlling programs, wikis, admin panels and bulletin boards.
 @licence BSD
 """
 
+"""
+Known issues and/or bugs:
+- In -r <some path> scanner will also scan predefined variables, which basicly means:
+sites/www/ sites/secure-www/ public_html/
+"""
+
+
 try:
     import sys
     import os
@@ -190,13 +197,11 @@ def csv_add(appname, version_file, file_version, secure_version, cve):
 
 def detect_apps(curdir, appname_to_scan):
     """Searches correct full path for vulnerable and out-dated applications. Launches the real detection."""
-    logging.debug('Detecting applications (%s) from %s' % (appname_to_scan, curdir))
     if not os.path.exists(curdir):
         return
     """Loop trough all applications in fingerprint database."""
     for (appname, application) in data.iteritems():
         for location in application['location']:
-            logging.debug('Location is: %s. Current directory: %s' % (location, curdir))
             directory = os.path.split(location)[0]
             if curdir.endswith(directory):
                 version_file = curdir + '/' + os.path.split(location)[1]
@@ -245,7 +250,7 @@ def traverse_dir(path, appname_to_scan, check_modes, depth=3):
         return
     try:
         if check_dir_execution_bit(path, check_modes):
-            logging.debug('traverse_dir: Detecting applications (%s) from %s' % (appname_to_scan, path))
+            # TODO: Should be debug level 2
             detect_apps(path, appname_to_scan)
             entries = listdir(path)
             if depth == 0:
@@ -267,7 +272,6 @@ def traverse_recursive(path, appname_to_scan, check_modes):
         sys.exit(1)
     try:
         if check_dir_execution_bit(path, check_modes):
-            logging.debug('traverse_recursive: Detecting applications (%s) from %s' % (appname_to_scan, path))
             detect_apps(path, appname_to_scan)
             entries = listdir(path)
             for entry in entries:
@@ -335,20 +339,34 @@ if __name__ == "__main__":
     # CVE-2006-1030 1.0.8   SA19105
     #               1.0.10  SA20746
     # CVE-2010-1649 1.5.18  Bugtraq:40444 SA39964 OSVDB:65011 http://developer.joomla.org/security/news/314-20100501-core-xss-vulnerabilities-in-back-end.html
-    # CVE-2011-2708 1.7.0   TODO: duplicate with CVE-2011-2710 and requested by me: http://www.openwall.com/lists/oss-security/2011/10/16/1
+    #               1.5.21 http://developer.joomla.org/security/news/322-20101001-core-xss-vulnerabilities.html
+    #               1.5.22 http://developer.joomla.org/security/news/323-20101101-core-sqli-info-disclosurevulnerabilities.html
+    # CVE-2011-1151 1.6.1 http://developer.joomla.org/security/news/328-20110201-core-sql-injection-path-disclosure.html
+    # CVE-2011-4332 1.6.4   http://developer.joomla.org/security/news/349-20110601-xss-vulnerabilities.html
     # CVE-2011-2710 1.6.6   http://developer.joomla.org/security/news/357-20110701-xss-vulnerability.html
     #               1.7.1   http://developer.joomla.org/security/news/367-20110901-core-xss-vulnerability.html
+    # CVE-2011-3595 1.7.1    http://developer.joomla.org/security/news/368-20110902-core-xss-vulnerability
     #               1.7.1   http://developer.joomla.org/security/news/369-20110903-core-information-disclosure.html
+    # CVE-2011-3629 1.7.2    http://developer.joomla.org/security/news/370-20111001-core-information-disclosure.html
+    # CVE-2011-4321 1.5.25
     data = {
-    'Joomla': {
+    'Joomla 1.5': {
         'location': ['/libraries/joomla/version.php', '/includes/version.php'],
-        'secure': '1.5.23',
+        'secure': '1.5.24',
+        'regexp': ['.*?\$RELEASE.*?(?P<version>1.[0,5])', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})'],
+    #    'cve': 'CVE-2011-2488, CVE-2011-2889, CVE-2011-2890',
+        'cve': 'CVE-2011-3629 http://developer.joomla.org/security/news/372-20111003-core-information-disclosure',
+        'fingerprint': detect_joomla
+        },
+    'Joomla 1.7': {
+        'location': ['/libraries/joomla/version.php', '/includes/version.php'],
+        'secure': '1.7.2',
 #        'vulnerabilities':
 #        [{'CVE-2010-4166': '1.5.22'}],
 #    {'': ''},
 #    {'' }],
-        'regexp': ['.*?RELEASE.*?(?P<version>[0-9.]{1,})', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})'],
-        'cve': 'CVE-2011-2888, CVE-2011-2889, CVE-2011-2890',
+        'regexp': ['.*?RELEASE.*?(?P<version>1.[7,6])', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})'],
+        'cve': 'CVE-2011-3629 http://developer.joomla.org/security/news/370-20111001-core-information-disclosure.html',
         'fingerprint': detect_joomla
         },
     # TODO: Does not work with ancient 2003 versions
@@ -483,11 +501,14 @@ if __name__ == "__main__":
     # CVE-2010-3882 1.8.1 (SA40031)
     # CVE-2010-3883 1.8.1 (SA40031)
     # CVE-2010-3884 1.8.1 (SA40031)
+    # CVE-2011-4310 1.9.4.3
+    # CVE-2010-4663 1.9.1 http://forum.cmsmadesimple.org/viewtopic.php?t=49245
+    # CVE-2011-3615 1.1.15/2.0.1 http://www.simplemachines.org/community/index.php?P=adfcf10856d3f74172b76dd384b6ade6&topic=452888.0
     'CMSMS' : {
         'location': ['version.php'],
-        'secure': '1.8.1',
+        'secure': '2.0.1',
         'regexp': ['\$CMS_VERSION.*?(?P<version>[.0-9]{2,})'],
-        'cve': 'CVE-2010-2797, CVE-2010-3882, CVE-2010-3883, CVE-2010-3884, SA40031',
+        'cve': 'CVE-2011-3615 http://www.simplemachines.org/community/index.php?P=adfcf10856d3f74172b76dd384b6ade6&topic=452888.0',
         'fingerprint': detect_general
         },
     # CVE-2004-2261 0.615   SA11567
@@ -527,14 +548,16 @@ if __name__ == "__main__":
     # CVE-2010-0997 0.7.20  SA39013
     # CVE-2010-2098 0.7.22  SA39498
     # CVE-2010-2099 0.7.22  SA39498
+    # CVE-2011-1513 0.7.24  BugtraqID:50339 OSVD:77042
     #               0.7.25  SA41597 HTB2260
-    #                       SA44061
-    #                       SA44968
+    #               0.7.25  SA44061
+    #               0.7.25  SA44968 HTB23004
+    #               0.7.26  This is not fixed yet. SVN revision 12375 is fix
     'e107' : {
         'location': ['/e107_admin/ver.php'],
-        'secure': ' 0.7.24',
+        'secure': ' 0.7.25',
         'regexp': ['.*?e107_version.*?(?P<version>[.0-9]{2,})'],
-        'cve': 'N/A',
+        'cve': 'SA41597 HTB2260, SA44061, SA44968 HTB23004',
         'fingerprint': detect_general
         },
     # CVE-2008-1766 3.0.1       SA29801
