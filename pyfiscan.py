@@ -501,14 +501,13 @@ if __name__ == "__main__":
     # CVE-2010-3882 1.8.1 (SA40031)
     # CVE-2010-3883 1.8.1 (SA40031)
     # CVE-2010-3884 1.8.1 (SA40031)
-    # CVE-2011-4310 1.9.4.3
     # CVE-2010-4663 1.9.1 http://forum.cmsmadesimple.org/viewtopic.php?t=49245
-    # CVE-2011-3615 1.1.15/2.0.1 http://www.simplemachines.org/community/index.php?P=adfcf10856d3f74172b76dd384b6ade6&topic=452888.0
-    'CMSMS' : {
+    # CVE-2011-4310 1.9.4.3
+    'CMSMS': {
         'location': ['version.php'],
-        'secure': '2.0.1',
+        'secure': '1.9.4.3',
         'regexp': ['\$CMS_VERSION.*?(?P<version>[.0-9]{2,})'],
-        'cve': 'CVE-2011-3615 http://www.simplemachines.org/community/index.php?P=adfcf10856d3f74172b76dd384b6ade6&topic=452888.0',
+        'cve': 'CVE-2011-4310 http://www.cmsmadesimple.org/2011/08/Announcing-CMSMS-1-9-4-3---Security-Release/',
         'fingerprint': detect_general
         },
     # CVE-2004-2261 0.615   SA11567
@@ -553,7 +552,7 @@ if __name__ == "__main__":
     #               0.7.25  SA44061
     #               0.7.25  SA44968 HTB23004
     #               0.7.26  This is not fixed yet. SVN revision 12375 is fix
-    'e107' : {
+    'e107': {
         'location': ['/e107_admin/ver.php'],
         'secure': '0.7.25',
         'regexp': ['.*?e107_version.*?(?P<version>[.0-9]{2,})'],
@@ -566,13 +565,20 @@ if __name__ == "__main__":
     # CVE-2010-1627 3.0.7PL1    SA38837
     # CVE-2010-1630 3.0.5       SA38264
     # CVE-2011-0544 3.0.8       SA42343
-    'phpBB3' : {
+    'phpBB3': {
         'location': ['/includes/constants.php'],
         'secure': '3.0.8',
         'regexp': ['.*?PHPBB_VERSION.*?(?P<version>3[0-9.]{1,})'],
         'cve': 'CVE-2011-0544, SA42343',
         'fingerprint': detect_general
         }
+#    'SMF': {
+#        'location': ['/index.php'],
+#        'secure': '1.1.11',
+#        'regexp': ['\$forum_version.*?(?P<version>[0-9.]{1,})'],
+#        'cve': 'SA37557',
+#        'fingerprint': detect_general
+#        }
     }
 
     main(sys.argv[1:])
