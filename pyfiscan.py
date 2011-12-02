@@ -19,8 +19,12 @@ rsion controlling programs, wikis, admin panels and bulletin boards.
 
 """
 Known issues and/or bugs:
-- In -r <some path> scanner will also scan predefined variables, which basicly means:
+
+In -r <some path> scanner will also scan predefined variables, which basicly means:
 sites/www/ sites/secure-www/ public_html/
+
+If one upgrades Joomla 1.6.1 to 1.7.x by unzipping there will be both version files:
+libraries/joomla/version.php includes/version.php where first is the old one.
 """
 
 
@@ -328,6 +332,15 @@ if __name__ == "__main__":
     To-be schema:
     'vulnerabilities':
         [{'CVE-2010-4166': '1.5.22'}], {'': ''}, {'' }],
+
+    TODO! Data should include at least following:
+    - CVSS2
+    - OSVDB
+    - Secunia
+    - Publication date
+    - Fixed date
+    - ISS X-Force ID
+    - SecurityTracker Alert ID:
     """
 
     # CVE-2005-3771 1.0.4   SA17675
@@ -571,14 +584,16 @@ if __name__ == "__main__":
         'regexp': ['.*?PHPBB_VERSION.*?(?P<version>3[0-9.]{1,})'],
         'cve': 'CVE-2011-0544, SA42343',
         'fingerprint': detect_general
+        },
+    # CVE-2011-4360 1.17.1      osvdb/77364     SA47029 http://lists.wikimedia.org/pipermail/mediawiki-announce/2011-November/000104.html
+    # CVE-2011-4361 1.17.1      osvdb/77365     SA47029 http://lists.wikimedia.org/pipermail/mediawiki-announce/2011-November/000104.html
+    'MediaWiki': { # CVE-2010-1189 CVE-2010-1190 CVE-2010-1150
+        'location': ['/includes/DefaultSettings.php'],
+        'secure': '1.17.1',
+        'regexp': ['\$wgVersion.*?(?P<version>[0-9.]{1,})'],
+        'cve': 'CVE-2011-4360 CVE-2011-4361',
+        'fingerprint': detect_general
         }
-#    'SMF': {
-#        'location': ['/index.php'],
-#        'secure': '1.1.11',
-#        'regexp': ['\$forum_version.*?(?P<version>[0-9.]{1,})'],
-#        'cve': 'SA37557',
-#        'fingerprint': detect_general
-#        }
     }
 
     main(sys.argv[1:])
