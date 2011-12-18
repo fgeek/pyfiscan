@@ -238,10 +238,8 @@ def check_dir_execution_bit(path, check_modes):
         return False
 
 
-def traverse_dir(path, check_modes, depth=3):
-    """Traverses directory spesified amount
-    path = start path
-    depth = ammount of directories to traverse"""
+def traverse_dir(path, check_modes):
+    """Traverses directory spesified amount where path is start path."""
     if not os.path.exists(path):
         return
     if not os.path.isdir(path):
@@ -250,12 +248,9 @@ def traverse_dir(path, check_modes, depth=3):
         if check_dir_execution_bit(path, check_modes):
             detect_apps(path)
             entries = listdir(path)
-            if depth == 0:
-                return
-            depth = depth - 1
             for entry in entries:
                 if os.path.isdir(join(path, entry)) and os.path.islink(join(path, entry)) == False:
-                    traverse_dir(join(path, entry), check_modes, depth)
+                    traverse_dir(join(path, entry), check_modes)
     except KeyboardInterrupt:
         print("Interrupting..")
         sys.exit(1)
