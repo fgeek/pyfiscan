@@ -328,13 +328,6 @@ if __name__ == "__main__":
     - SecurityTracker Alert ID:
     - Vendor URL
     """
-
-    data = {
-    # CVE-2005-3771 1.0.4   OSVDB:21039,21040 SA17675
-    # CVE-2005-3772 1.0.4   OSVDB:21042,21043 SA17675
-    # CVE-2005-3773 1.0.4   OSVDB:21044 SA17675
-    # CVE-2005-4650 1.0.4   OSBDB:21041 SA17675
-    # CVE-2006-0114 1.0.7   OSVDB:22286 SA18361
     # CVE-2006-0303 1.0.7   OSVDB:22531,22532,22533,2253422535 SA18513
     # CVE-2006-1047 1.0.8   OSBDB:31287 SA19105
     # CVE-2006-1048 1.0.8   OSVDB:23822 SA19105
@@ -344,7 +337,7 @@ if __name__ == "__main__":
     #               1.0.10  OSVDB:26626 SA20746 TODO: Doesn't have CVE
     # CVE-2006-3480 1.0.10  OSBDB:26913,26917,26918
     # CVE-2010-1649 1.5.18  OSVDB:65011 Bugtraq:40444 SA39964 http://developer.joomla.org/security/news/314-20100501-core-xss-vulnerabilities-in-back-end.html
-    #               1.5.21  http://developer.joomla.org/security/news/322-20101001-core-xss-vulnerabilities.html
+    # CVE-2010-3712 1.5.21  OSVDB:68625 SA41772 http://developer.joomla.org/security/news/322-20101001-core-xss-vulnerabilities.html
     # CVE-2010-4166 1.5.22  OSVDB:69026 SA42133 http://developer.joomla.org/security/news/323-20101101-core-sqli-info-disclosurevulnerabilities.html TODO: Very confusing case. There is lots of similar CVEs assigned. For more information please see OSVDB.
     # CVE-2011-2488 1.5.23
     # CVE-2011-2889 1.5.23
