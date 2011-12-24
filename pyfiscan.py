@@ -334,7 +334,7 @@ if __name__ == "__main__":
     # CVE-2006-1049 1.0.8   OSVDB:23819 SA19105
     # CVE-2006-1028 1.0.8   OSVDB:23817 SA19105
     # CVE-2006-1030 1.0.8   OSVDB:23818 SA19105
-    #               1.0.10  OSVDB:26626 SA20746 TODO: Doesn't have CVE
+    # CVE-2006-7247 1.0.10  OSVDB:26626 SA20746
     # CVE-2006-3480 1.0.10  OSBDB:26913,26917,26918
     # CVE-2010-1649 1.5.18  OSVDB:65011 Bugtraq:40444 SA39964 http://developer.joomla.org/security/news/314-20100501-core-xss-vulnerabilities-in-back-end.html
     # CVE-2010-3712 1.5.21  OSVDB:68625 SA41772 http://developer.joomla.org/security/news/322-20101001-core-xss-vulnerabilities.html
