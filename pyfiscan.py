@@ -15,9 +15,7 @@ rsion controlling programs, wikis, admin panels and bulletin boards.
 @author Henri 'fgeek' Salo <henri@nerv.fi>
 @copyright Copyright (c) 2009-2011 Henri Salo
 @licence BSD
-"""
 
-"""
 Known issues and/or bugs:
 
 In -r <some path> scanner will also scan predefined variables, which basicly means:
@@ -26,7 +24,6 @@ sites/www/ sites/secure-www/ public_html/
 If one upgrades Joomla 1.6.1 to 1.7.x by unzipping there will be both version files:
 libraries/joomla/version.php includes/version.php where first is the old one.
 """
-
 
 try:
     import sys
@@ -335,15 +332,16 @@ if __name__ == "__main__":
     # CVE-2005-3771 1.0.4   SA17675
     # CVE-2005-3772 1.0.4   SA17675
     # CVE-2005-3773 1.0.4   SA17675
-    # CVE-2005-4650 1.0.4   SA17675
+    # CVE-2005-4650 1.0.4   SA17675 OSBDB:21041
     #               1.0.7   SA18361
-    # CVE-2006-0303 1.0.7   SA18513
-    # CVE-2006-1047 1.0.8   SA19105
+    # CVE-2006-0303 1.0.7   SA18513 OSVDB:22531-22535
+    # CVE-2006-1047 1.0.8   SA19105 OSBDB:31287
     # CVE-2006-1048 1.0.8   SA19105
     # CVE-2006-1049 1.0.8   SA19105
-    # CVE-2006-1028 1.0.8   SA19105
-    # CVE-2006-1030 1.0.8   SA19105
+    # CVE-2006-1028 1.0.8   SA19105 OSVDB:23817
+    # CVE-2006-1030 1.0.8   SA19105 OSVDB:23818
     #               1.0.10  SA20746
+    # CVE-2006-3480 1.0.10  OSBDB:26913,26917,26918
     # CVE-2010-1649 1.5.18  Bugtraq:40444 SA39964 OSVDB:65011 http://developer.joomla.org/security/news/314-20100501-core-xss-vulnerabilities-in-back-end.html
     #               1.5.21 http://developer.joomla.org/security/news/322-20101001-core-xss-vulnerabilities.html
     #               1.5.22 http://developer.joomla.org/security/news/323-20101101-core-sqli-info-disclosurevulnerabilities.html
@@ -583,6 +581,14 @@ if __name__ == "__main__":
         'cve': 'CVE-2011-4360 CVE-2011-4361',
         'fingerprint': detect_general
         }
+    # CVE-2011-4448 1.3.2-p2    OSVDB:77390
+    # CVE-2011-4449 1.3.2-p2    OSVDB:77391
+    # CVE-2011-4450 1.3.2-p2    OSVDB:77392
+    # CVE-2011-4451 1.3.2-p2    OSVDB:77393
+    # CVE-2011-4452 1.3.2-p2    OSVDB:77394
+    # 'WikkaWiki'
+    # CVE-2011-4453 2.2.35      OSVDB:77261 http://www.pmwiki.org/wiki/PITS/01271
+    # 'PmWiki'
     }
 
     main(sys.argv[1:])
