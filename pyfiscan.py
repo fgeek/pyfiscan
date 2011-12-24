@@ -329,22 +329,34 @@ if __name__ == "__main__":
     - Vendor URL
     """
 
-    # CVE-2005-3771 1.0.4   SA17675
-    # CVE-2005-3772 1.0.4   SA17675
-    # CVE-2005-3773 1.0.4   SA17675
-    # CVE-2005-4650 1.0.4   SA17675 OSBDB:21041
-    #               1.0.7   SA18361
-    # CVE-2006-0303 1.0.7   SA18513 OSVDB:22531-22535
-    # CVE-2006-1047 1.0.8   SA19105 OSBDB:31287
-    # CVE-2006-1048 1.0.8   SA19105
-    # CVE-2006-1049 1.0.8   SA19105
-    # CVE-2006-1028 1.0.8   SA19105 OSVDB:23817
-    # CVE-2006-1030 1.0.8   SA19105 OSVDB:23818
-    #               1.0.10  SA20746
+    data = {
+    # CVE-2005-3771 1.0.4   OSVDB:21039,21040 SA17675
+    # CVE-2005-3772 1.0.4   OSVDB:21042,21043 SA17675
+    # CVE-2005-3773 1.0.4   OSVDB:21044 SA17675
+    # CVE-2005-4650 1.0.4   OSBDB:21041 SA17675
+    # CVE-2006-0114 1.0.7   OSVDB:22286 SA18361
+    # CVE-2006-0303 1.0.7   OSVDB:22531,22532,22533,2253422535 SA18513
+    # CVE-2006-1047 1.0.8   OSBDB:31287 SA19105
+    # CVE-2006-1048 1.0.8   OSVDB:23822 SA19105
+    # CVE-2006-1049 1.0.8   OSVDB:23819 SA19105
+    # CVE-2006-1028 1.0.8   OSVDB:23817 SA19105
+    # CVE-2006-1030 1.0.8   OSVDB:23818 SA19105
+    #               1.0.10  OSVDB:26626 SA20746 TODO: Doesn't have CVE
     # CVE-2006-3480 1.0.10  OSBDB:26913,26917,26918
-    # CVE-2010-1649 1.5.18  Bugtraq:40444 SA39964 OSVDB:65011 http://developer.joomla.org/security/news/314-20100501-core-xss-vulnerabilities-in-back-end.html
-    #               1.5.21 http://developer.joomla.org/security/news/322-20101001-core-xss-vulnerabilities.html
-    #               1.5.22 http://developer.joomla.org/security/news/323-20101101-core-sqli-info-disclosurevulnerabilities.html
+    # CVE-2010-1649 1.5.18  OSVDB:65011 Bugtraq:40444 SA39964 http://developer.joomla.org/security/news/314-20100501-core-xss-vulnerabilities-in-back-end.html
+    #               1.5.21  http://developer.joomla.org/security/news/322-20101001-core-xss-vulnerabilities.html
+    # CVE-2010-4166 1.5.22  OSVDB:69026 SA42133 http://developer.joomla.org/security/news/323-20101101-core-sqli-info-disclosurevulnerabilities.html TODO: Very confusing case. There is lots of similar CVEs assigned. For more information please see OSVDB.
+    # CVE-2011-2488 1.5.23
+    # CVE-2011-2889 1.5.23
+    # CVE-2011-2890 1.5.23
+    # CVE-2011-4321 1.5.25
+    'Joomla 1.5': {
+        'location': ['/libraries/joomla/version.php', '/includes/version.php'],
+        'secure': '1.5.24',
+        'regexp': ['.*?\$RELEASE.*?(?P<version>1.[0,5])', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})'],
+        'cve': 'CVE-2011-3629 http://developer.joomla.org/security/news/372-20111003-core-information-disclosure',
+        'fingerprint': detect_joomla
+        },
     # CVE-2011-1151 1.6.1 http://developer.joomla.org/security/news/328-20110201-core-sql-injection-path-disclosure.html
     # CVE-2011-4332 1.6.4   http://developer.joomla.org/security/news/349-20110601-xss-vulnerabilities.html
     # CVE-2011-2710 1.6.6   http://developer.joomla.org/security/news/357-20110701-xss-vulnerability.html
@@ -352,16 +364,6 @@ if __name__ == "__main__":
     # CVE-2011-3595 1.7.1    http://developer.joomla.org/security/news/368-20110902-core-xss-vulnerability
     #               1.7.1   http://developer.joomla.org/security/news/369-20110903-core-information-disclosure.html
     # CVE-2011-3629 1.7.2    http://developer.joomla.org/security/news/370-20111001-core-information-disclosure.html
-    # CVE-2011-4321 1.5.25
-    data = {
-    'Joomla 1.5': {
-        'location': ['/libraries/joomla/version.php', '/includes/version.php'],
-        'secure': '1.5.24',
-        'regexp': ['.*?\$RELEASE.*?(?P<version>1.[0,5])', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})'],
-    #    'cve': 'CVE-2011-2488, CVE-2011-2889, CVE-2011-2890',
-        'cve': 'CVE-2011-3629 http://developer.joomla.org/security/news/372-20111003-core-information-disclosure',
-        'fingerprint': detect_joomla
-        },
     'Joomla 1.7': {
         'location': ['/libraries/joomla/version.php', '/includes/version.php'],
         'secure': '1.7.2',
