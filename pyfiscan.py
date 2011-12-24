@@ -335,8 +335,16 @@ if __name__ == "__main__":
     # CVE-2006-1028 1.0.8   OSVDB:23817 SA19105
     # CVE-2006-1030 1.0.8   OSVDB:23818 SA19105
     # CVE-2006-7247 1.0.10  OSVDB:26626 SA20746
-    # CVE-2006-3480 1.0.10  OSBDB:26913,26917,26918
+    # CVE-2006-3480 1.0.10  OSVDB:26913,26917,26918
+    # CVE-2008-5671 1.0.15  OSVDB:42123 SA29106 http://www.joomla.org/announcements/release-news/4609-joomla-1015-released.html
+    # CVE-2009-3945 1.5.15  OSVDB:59801 SA37262 http://developer.joomla.org/security/news/305-20091103-core-front-end-editor-issue-.html
+    # CVE-2009-3946 1.5.15  OSVDB:59800 SA37262 http://developer.joomla.org/security/news/306-20091103-core-xml-file-read-issue.html
+    # CVE-2010-1432 1.5.16
+    # CVE-2010-1433 1.5.16
+    # CVE-2010-1434 1.5.16
+    # CVE-2010-1435 1.5.16
     # CVE-2010-1649 1.5.18  OSVDB:65011 Bugtraq:40444 SA39964 http://developer.joomla.org/security/news/314-20100501-core-xss-vulnerabilities-in-back-end.html
+    # CVE-2010-2535 1.5.20  OSVDB:66394 SA40644 http://developer.joomla.org/security/news/315-20100701-core-sql-injection-internal-path-exposure.html http://developer.joomla.org/security/news/316-20100702-core-xss-vulnerabillitis-in-back-end.html http://developer.joomla.org/security/news/317-20100703-core-xss-vulnerabillitis-in-back-end.html http://developer.joomla.org/security/news/318-20100704-core-xss-vulnerabillitis-in-back-end.html
     # CVE-2010-3712 1.5.21  OSVDB:68625 SA41772 http://developer.joomla.org/security/news/322-20101001-core-xss-vulnerabilities.html
     # CVE-2010-4166 1.5.22  OSVDB:69026 SA42133 http://developer.joomla.org/security/news/323-20101101-core-sqli-info-disclosurevulnerabilities.html TODO: Very confusing case. There is lots of similar CVEs assigned. For more information please see OSVDB.
     # CVE-2011-2488 1.5.23
