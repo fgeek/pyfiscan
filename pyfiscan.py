@@ -599,9 +599,18 @@ if __name__ == "__main__":
         'cve': 'CVE-2011-0544, SA42343',
         'fingerprint': detect_general
         },
-    # CVE-2011-4360 1.17.1      osvdb/77364     SA47029 http://lists.wikimedia.org/pipermail/mediawiki-announce/2011-November/000104.html
-    # CVE-2011-4361 1.17.1      osvdb/77365     SA47029 http://lists.wikimedia.org/pipermail/mediawiki-announce/2011-November/000104.html
-    'MediaWiki': { # CVE-2010-1189 CVE-2010-1190 CVE-2010-1150
+    # CVE-2010-1189 1.15.2      OSVDB:62798 SA38856
+    # CVE-2010-1190 1.15.2      OSVDB:62799 SA38856
+    # CVE-2010-1150 1.15.3      OSVDB:63570 SA39333
+    # CVE-2011-1578 1.16.5      OSVDB:74619 SA44142
+    # CVE-2011-1579 1.16.3      OSVDB:74620 SA44142
+    # CVE-2011-1580 1.16.3      OSVDB:74621 SA44142
+    # CVE-2011-1587 1.16.5      OSVDB:74619 SA44142
+    # CVE-2011-1765 1.16.5      OSVDB:74619 SA44142
+    # CVE-2011-1766 1.16.5      OSVDB:74613 SA44142
+    # CVE-2011-4360 1.17.1      OSVDB:77364 SA47029 http://lists.wikimedia.org/pipermail/mediawiki-announce/2011-November/000104.html
+    # CVE-2011-4361 1.17.1      OSVDB:77365 SA47029 http://lists.wikimedia.org/pipermail/mediawiki-announce/2011-November/000104.html
+    'MediaWiki': {
         'location': ['/includes/DefaultSettings.php'],
         'secure': '1.17.1',
         'regexp': ['\$wgVersion.*?(?P<version>[0-9.]{1,})'],
