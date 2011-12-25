@@ -339,6 +339,7 @@ if __name__ == "__main__":
     # CVE-2007-4188 1.0.13  OSVDB:38758 SA26239
     # CVE-2007-4189 1.0.13  OSVDB:38755,38756,38757 SA26239
     # CVE-2007-4190 1.0.13  OSVDB:38739 SA26239
+    # CVE-2007-5577 1.0.13  OSVDB:37173 SA25804
     # CVE-2007-5427 1.0.14  OSVDB:37709 SA27196
     # CVE-2008-5671 1.0.15  OSVDB:42123 SA29106 http://www.joomla.org/announcements/release-news/4609-joomla-1015-released.html
     #               1.5.13              SA35899
