@@ -346,6 +346,13 @@ if __name__ == "__main__":
     # CVE-2007-5577 1.0.13  OSVDB:37173 SA25804
     # CVE-2007-5427 1.0.14  OSVDB:37709 SA27196
     # CVE-2008-5671 1.0.15  OSVDB:42123 SA29106 http://www.joomla.org/announcements/release-news/4609-joomla-1015-released.html
+    # CVE-2007-6642 1.5 RC4 OSVDB:41263 SA28219
+    # CVE-2007-6643 1.5 RC4 OSVDB:39979 SA29257 
+    # CVE-2008-1533 1.5.1   OSVDB:42894 SA28861 http://www.joomla.org/announcements/release-news/4560-joomla-1-5-1-released.html
+    # CVE-2008-3225 1.5.4   OSVDB:46810 SA30974 http://www.joomla.org/announcements/release-news/5180-joomla-154-released.html
+    # CVE-2008-3226 1.5.4   OSVDB:46811 SA30974 http://www.joomla.org/announcements/release-news/5180-joomla-154-released.html
+    # CVE-2008-3227 1.5.4   OSVDB:46812 SA30974 http://www.joomla.org/announcements/release-news/5180-joomla-154-released.html
+    # CVE-2008-3681 1.5.6   OSVDB:47476 SA31457 http://developer.joomla.org/security/news/241-20080801-core-password-remind-functionality.html
     # CVE-2008-4102 1.5.7   OSVDB:48226 SA31789 http://developer.joomla.org/security/news/272-20080902-core-random-number-generation-flaw.html
     # CVE-2008-4103 1.5.7   OSVDB:48227 SA31789 http://developer.joomla.org/security/news/273-20080903-core-commailto-spam.html
     # CVE-2008-4104 1.5.7   OSVDB:48228 SA31789 http://developer.joomla.org/security/news/274-20080904-core-redirect-spam.html
