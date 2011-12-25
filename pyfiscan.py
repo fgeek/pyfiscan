@@ -346,6 +346,13 @@ if __name__ == "__main__":
     # CVE-2007-5577 1.0.13  OSVDB:37173 SA25804
     # CVE-2007-5427 1.0.14  OSVDB:37709 SA27196
     # CVE-2008-5671 1.0.15  OSVDB:42123 SA29106 http://www.joomla.org/announcements/release-news/4609-joomla-1015-released.html
+    # CVE-2008-4102 1.5.7   OSVDB:48226 SA31789 http://developer.joomla.org/security/news/272-20080902-core-random-number-generation-flaw.html
+    # CVE-2008-4103 1.5.7   OSVDB:48227 SA31789 http://developer.joomla.org/security/news/273-20080903-core-commailto-spam.html
+    # CVE-2008-4104 1.5.7   OSVDB:48228 SA31789 http://developer.joomla.org/security/news/274-20080904-core-redirect-spam.html
+    # CVE-2008-4105 1.5.7   OSVDB:48225 SA31789 http://developer.joomla.org/security/news/271-20080901-core-jrequest-variable-injection.html
+    # CVE-2008-6299 1.5.8   OSVDB:49801,49802 SA32622
+    # CVE-2009-0113 1.5.9   OSVDB:51172 SA33377
+    # CVE-2009-1279 1.5.10  OSVDB:53582,53583,53584 SA34551
     #               1.5.13              SA35899
     # CVE-2009-3945 1.5.15  OSVDB:59801 SA37262 http://developer.joomla.org/security/news/305-20091103-core-front-end-editor-issue-.html
     # CVE-2009-3946 1.5.15  OSVDB:59800 SA37262 http://developer.joomla.org/security/news/306-20091103-core-xml-file-read-issue.html
