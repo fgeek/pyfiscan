@@ -336,7 +336,12 @@ if __name__ == "__main__":
     # CVE-2006-1030 1.0.8   OSVDB:23818 SA19105
     # CVE-2006-7247 1.0.10  OSVDB:26626 SA20746
     # CVE-2006-3480 1.0.10  OSVDB:26913,26917,26918
+    # CVE-2007-4188 1.0.13  OSVDB:38758 SA26239
+    # CVE-2007-4189 1.0.13  OSVDB:38755,38756,38757 SA26239
+    # CVE-2007-4190 1.0.13  OSVDB:38739 SA26239
+    # CVE-2007-5427 1.0.14  OSVDB:37709 SA27196
     # CVE-2008-5671 1.0.15  OSVDB:42123 SA29106 http://www.joomla.org/announcements/release-news/4609-joomla-1015-released.html
+    #               1.5.13              SA35899
     # CVE-2009-3945 1.5.15  OSVDB:59801 SA37262 http://developer.joomla.org/security/news/305-20091103-core-front-end-editor-issue-.html
     # CVE-2009-3946 1.5.15  OSVDB:59800 SA37262 http://developer.joomla.org/security/news/306-20091103-core-xml-file-read-issue.html
     # CVE-2010-1432 1.5.16
