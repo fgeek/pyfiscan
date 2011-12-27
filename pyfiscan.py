@@ -363,10 +363,10 @@ if __name__ == "__main__":
     #               1.5.13              SA35899
     # CVE-2009-3945 1.5.15  OSVDB:59801 SA37262 http://developer.joomla.org/security/news/305-20091103-core-front-end-editor-issue-.html
     # CVE-2009-3946 1.5.15  OSVDB:59800 SA37262 http://developer.joomla.org/security/news/306-20091103-core-xml-file-read-issue.html
-    # CVE-2010-1432 1.5.16
-    # CVE-2010-1433 1.5.16
-    # CVE-2010-1434 1.5.16
-    # CVE-2010-1435 1.5.16
+    # CVE-2010-1432 1.5.16  OSVDB:78012 SA39616 http://developer.joomla.org/security/news/311-20100423-core-negative-values-for-limit-and-offset.html
+    # CVE-2010-1433 1.5.16  OSVDB:78011 SA39616 http://developer.joomla.org/security/news/310-20100423-core-installer-migration-script.html
+    # CVE-2010-1434 1.5.16  OSVDB:64168 SA39616 http://developer.joomla.org/security/news/309-20100423-core-sessation-fixation.html
+    # CVE-2010-1435 1.5.16  OSVDB:64167 SA39616 http://developer.joomla.org/security/news/308-20100423-core-password-reset-tokens.html
     # CVE-2010-1649 1.5.18  OSVDB:65011 Bugtraq:40444 SA39964 http://developer.joomla.org/security/news/314-20100501-core-xss-vulnerabilities-in-back-end.html
     # CVE-2010-2535 1.5.20  OSVDB:66394 SA40644 http://developer.joomla.org/security/news/315-20100701-core-sql-injection-internal-path-exposure.html http://developer.joomla.org/security/news/316-20100702-core-xss-vulnerabillitis-in-back-end.html http://developer.joomla.org/security/news/317-20100703-core-xss-vulnerabillitis-in-back-end.html http://developer.joomla.org/security/news/318-20100704-core-xss-vulnerabillitis-in-back-end.html
     # CVE-2010-3712 1.5.21  OSVDB:68625 SA41772 http://developer.joomla.org/security/news/322-20101001-core-xss-vulnerabilities.html
