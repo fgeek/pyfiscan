@@ -3,26 +3,14 @@
 
 """pyfiscan
 
-Free web-application vulnerability and version scanner
-
-This python program can be used to locate out-dated versions of common web-soft
-ware in Unix/Linux-servers. The best example is hosting-providers keeping eye o
-n their users installations to keep up with security-updates.
-
-It supports content management systems, blogging softwares, image-galleries, ve
-rsion controlling programs, wikis, admin panels and bulletin boards.
+Pyfiscan is free web-application vulnerability and version scanner, which is python program and can be used to locate out-dated versions of common web-software in Unix/Linux-servers. The best example is hosting-providers keeping eye on their users installations to keep up with security-updates. It supports content management systems, blogging softwares, image-galleries, version controlling programs, wikis, admin panels and bulletin boards.
 
 @author Henri 'fgeek' Salo <henri@nerv.fi>
 @copyright Copyright (c) 2009-2011 Henri Salo
 @licence BSD
 
 Known issues and/or bugs:
-
-In -r <some path> scanner will also scan predefined variables, which basicly means:
-sites/www/ sites/secure-www/ public_html/
-
-If one upgrades Joomla 1.6.1 to 1.7.x by unzipping there will be both version files:
-libraries/joomla/version.php includes/version.php where first is the old one.
+1) If instance is upgraded from Joomla 1.6.1 to 1.7.x by unzipping there will be both version files libraries/joomla/version.php and includes/version.php where first is the old one.
 """
 
 try:
@@ -96,7 +84,7 @@ def main(argv):
     if opts.directory:
         logging.debug('Scanning recursively from path: %s' % opts.directory)
         traverse_recursive(opts.directory, opts.check_modes)
-    if opts.home:
+    elif opts.home:
         _users = opts.home
         logging.debug('Scanning predefined variables: %s' % _users)
         scan_predefined_directories(_users, opts.check_modes)
@@ -328,6 +316,8 @@ if __name__ == "__main__":
     - SecurityTracker Alert ID:
     - Vendor URL
     """
+
+    data = {
     # CVE-2006-0303 1.0.7   OSVDB:22531,22532,22533,2253422535 SA18513
     # CVE-2006-1047 1.0.8   OSBDB:31287 SA19105
     # CVE-2006-1048 1.0.8   OSVDB:23822 SA19105
@@ -625,6 +615,14 @@ if __name__ == "__main__":
     # 'WikkaWiki'
     # CVE-2011-4453 2.2.35      OSVDB:77261 http://www.pmwiki.org/wiki/PITS/01271
     # 'PmWiki'
+    # CVE-2011-4558 8.2         OSVDB:78013 http://dev.tiki.org/item4059
+    #'TikiWiki': {
+    #    'location': ['/lib/setup/twversion.class.php'],
+    #    'secure': '8.3', # Not fixed yet
+    #    'regexp': ['.*?\$this->version.*?(?P<version>[0-9.]{1,})'],
+    #    'cve': 'CVE-2011-4558',
+    #    'fingerprint': detect_general
+    #    }
     }
 
     main(sys.argv[1:])
