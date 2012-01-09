@@ -20,7 +20,8 @@ try:
     import logging
     import csv
     import re
-    import stat
+    import stat # interpreting the results of os.[stat,fstat,lstat]
+    import time
     from collections import defaultdict
     from os import listdir
     from os.path import join
@@ -232,7 +233,12 @@ def traverse_dir(path, check_modes):
     try:
         if check_dir_execution_bit(path, check_modes):
             detect_apps(path)
-            entries = listdir(path)
+            try:
+                entries = listdir(path)
+            except OSError as (errno, strerror):
+                print "I/O error({0}): {1} {2}".format(errno, strerror, path)
+                print time.strftime("%Y-%b-%d %H:%M:%S", time.localtime())
+                return
             for entry in entries:
                 if os.path.isdir(join(path, entry)) and os.path.islink(join(path, entry)) == False:
                     traverse_dir(join(path, entry), check_modes)
@@ -306,7 +312,7 @@ if __name__ == "__main__":
     'vulnerabilities':
         [{'CVE-2010-4166': '1.5.22'}], {'': ''}, {'' }],
 
-    TODO! Data should include at least following:
+    Data should include at least following:
     - CVSS2
     - OSVDB
     - Secunia
@@ -351,6 +357,7 @@ if __name__ == "__main__":
     # CVE-2009-0113 1.5.9   OSVDB:51172 SA33377
     # CVE-2009-1279 1.5.10  OSVDB:53582,53583,53584 SA34551
     #               1.5.13              SA35899
+    # CVE-2011-4912 1.5.14  OSVDB:56714 SA36097 http://developer.joomla.org/security/news/303-20090723-core-com-mailto-timeout-issue.html
     # CVE-2009-3945 1.5.15  OSVDB:59801 SA37262 http://developer.joomla.org/security/news/305-20091103-core-front-end-editor-issue-.html
     # CVE-2009-3946 1.5.15  OSVDB:59800 SA37262 http://developer.joomla.org/security/news/306-20091103-core-xml-file-read-issue.html
     # CVE-2010-1432 1.5.16  OSVDB:78012 SA39616 http://developer.joomla.org/security/news/311-20100423-core-negative-values-for-limit-and-offset.html
@@ -360,10 +367,12 @@ if __name__ == "__main__":
     # CVE-2010-1649 1.5.18  OSVDB:65011 Bugtraq:40444 SA39964 http://developer.joomla.org/security/news/314-20100501-core-xss-vulnerabilities-in-back-end.html
     # CVE-2010-2535 1.5.20  OSVDB:66394 SA40644 http://developer.joomla.org/security/news/315-20100701-core-sql-injection-internal-path-exposure.html http://developer.joomla.org/security/news/316-20100702-core-xss-vulnerabillitis-in-back-end.html http://developer.joomla.org/security/news/317-20100703-core-xss-vulnerabillitis-in-back-end.html http://developer.joomla.org/security/news/318-20100704-core-xss-vulnerabillitis-in-back-end.html
     # CVE-2010-3712 1.5.21  OSVDB:68625 SA41772 http://developer.joomla.org/security/news/322-20101001-core-xss-vulnerabilities.html
-    # CVE-2010-4166 1.5.22  OSVDB:69026 SA42133 http://developer.joomla.org/security/news/323-20101101-core-sqli-info-disclosurevulnerabilities.html TODO: Very confusing case. There is lots of similar CVEs assigned. For more information please see OSVDB.
+    # CVE-2010-4166 1.5.22  OSVDB:69026 SA42133 http://developer.joomla.org/security/news/323-20101101-core-sqli-info-disclosurevulnerabilities.html
+    # CVE-2011-0005 1.5.22  OSVDB:70369
     # CVE-2011-2488 1.5.23
     # CVE-2011-2889 1.5.23
     # CVE-2011-2890 1.5.23
+    # CVE-2011-3629 1.5.24  http://developer.joomla.org/security/news/372-20111003-core-information-disclosure
     # CVE-2011-4321 1.5.25
     'Joomla 1.5': {
         'location': ['/libraries/joomla/version.php', '/includes/version.php'],
@@ -372,13 +381,15 @@ if __name__ == "__main__":
         'cve': 'CVE-2011-3629 http://developer.joomla.org/security/news/372-20111003-core-information-disclosure',
         'fingerprint': detect_joomla
         },
-    # CVE-2011-1151 1.6.1 http://developer.joomla.org/security/news/328-20110201-core-sql-injection-path-disclosure.html
+    # CVE-2011-1151 1.6.1   OSVDB:75355 http://developer.joomla.org/security/news/328-20110201-core-sql-injection-path-disclosure.html
+    # CVE-2010-4696 1.6.1   OSVDB:69026 SA42133 http://developer.joomla.org/security/news/328-20110201-core-sql-injection-path-disclosure.html http://yehg.net/lab/pr0js/advisories/joomla/core/[joomla_1.6.0]_sql_injection
     # CVE-2011-4332 1.6.4   http://developer.joomla.org/security/news/349-20110601-xss-vulnerabilities.html
     # CVE-2011-2710 1.6.6   http://developer.joomla.org/security/news/357-20110701-xss-vulnerability.html
     #               1.7.1   http://developer.joomla.org/security/news/367-20110901-core-xss-vulnerability.html
-    # CVE-2011-3595 1.7.1    http://developer.joomla.org/security/news/368-20110902-core-xss-vulnerability
+    # CVE-2011-3595 1.7.1   http://developer.joomla.org/security/news/368-20110902-core-xss-vulnerability
     #               1.7.1   http://developer.joomla.org/security/news/369-20110903-core-information-disclosure.html
-    # CVE-2011-3629 1.7.2    http://developer.joomla.org/security/news/370-20111001-core-information-disclosure.html
+    # CVE-2011-3629 1.7.2   http://developer.joomla.org/security/news/370-20111001-core-information-disclosure.html
+    #               1.7.2   http://developer.joomla.org/security/news/371-20111002-core-information-disclosure.html
     'Joomla 1.7': {
         'location': ['/libraries/joomla/version.php', '/includes/version.php'],
         'secure': '1.7.2',
@@ -387,9 +398,6 @@ if __name__ == "__main__":
         'fingerprint': detect_joomla
         },
     # TODO: Does not work with ancient 2003 versions
-    # TODO: Without CVE
-        # http://osvdb.org/show/osvdb/72141 http://secunia.com/advisories/44038/
-        # http://secunia.com/advisories/8954/
         # http://secunia.com/advisories/23621/
         # http://secunia.com/advisories/23587/
         # http://secunia.com/advisories/24316/
@@ -397,8 +405,10 @@ if __name__ == "__main__":
         # http://secunia.com/advisories/28130/
         # OSBDB:72142 3.1.1
         # http://osvdb.org/show/osvdb/72097
-        # http://osvdb.org/show/osvdb/72173
         # http://osvdb.org/show/osvdb/73721
+    # Not valid:
+    #   OSVDB:72173
+    #               0.71    SA8954
     # CVE-2004-1559 1.2.1
     # CVE-2004-1584 1.2.1
     # CVE-2005-1687 1.5.1
@@ -459,12 +469,14 @@ if __name__ == "__main__":
     # CVE-2009-3890 2.8.6
     # CVE-2009-3891 2.8.6
     # CVE-2010-0682 2.9.2
+    #               3.1.1   OSVDB:72141 SA44038 http://wordpress.org/news/2011/04/wordpress-3-1-1/ # TODO: No CVE
     # CVE-2011-3122 3.1.3
     # CVE-2011-3126 3.1.3
     # CVE-2011-3127 3.1.3
     # CVE-2011-3128 3.1.3
     # CVE-2011-3129 3.1.3
     # CVE-2011-3130 3.1.3
+    # CVE-2012-0287 3.3.1   OSVDB:78123 http://wordpress.org/news/2012/01/wordpress-3-3-1/ https://wordpress.org/news/2012/01/wordpress-3-3-1/ IE only
     'WordPress': {
         'location': ['/wp-includes/version.php'],
         'secure': '3.1.3',
@@ -547,7 +559,6 @@ if __name__ == "__main__":
     # CVE-2006-2591 0.7.5   SA20262
     #               0.7.17  SA38330
     #               0.7.22  SA34169
-    #               0.7.23  SA41034
     #               0.7.24  SA41494 HTB22603
     #               0.7.24  SA31394
     # CVE-2006-3259 0.7.24  SA20727
@@ -564,16 +575,20 @@ if __name__ == "__main__":
     # CVE-2010-0997 0.7.20  SA39013
     # CVE-2010-2098 0.7.22  SA39498
     # CVE-2010-2099 0.7.22  SA39498
+    # CVE-2010-4757 0.7.23  OSVDB:67367 SA41034
+    # CVE-2011-0457 0.7.23  OSVDB:67367 SA41034
     # CVE-2011-1513 0.7.24  BugtraqID:50339 OSVD:77042
     #               0.7.25  SA41597 HTB2260
     #               0.7.25  SA44061
     #               0.7.25  SA44968 HTB23004
     #               0.7.26  This is not fixed yet. SVN revision 12375 is fix
+    # CVE-2011-4920 1.0.0   OSVDB:78047-78049 SA46706
+    # CVE-2011-4921 1.0.0   OSVDB:78050
     'e107': {
         'location': ['/e107_admin/ver.php'],
-        'secure': '0.7.25',
+        'secure': '1.0.0',
         'regexp': ['.*?e107_version.*?(?P<version>[.0-9]{2,})'],
-        'cve': 'SA41597 HTB2260, SA44061, SA44968 HTB23004',
+        'cve': 'CVE-2011-4920 CVE-2011-4921 OSVDB:78047-78050 SA46706',
         'fingerprint': detect_general
         },
     # CVE-2008-1766 3.0.1       SA29801
@@ -623,6 +638,28 @@ if __name__ == "__main__":
     #    'cve': 'CVE-2011-4558',
     #    'fingerprint': detect_general
     #    }
+    # CVE-2005-2007 0.8.4 SA15752
+    # CVE-2005-2147 0.8.4 SA15752
+    # CVE-2005-3980 0.9.1 SA17836
+    # CVE-2005-4065 0.9.2 SA17894
+    # CVE-2005-4305 0.9.3 SA18048
+    # CVE-2005-4644 0.9.3 SA18465
+    # CVE-2006-2106 0.9.5 SA19870
+    # CVE-2006-3695 0.9.6 SA20958
+    # CVE-2006-5878 0.10.1 SA22789
+    # CVE-2006-5848 0.10.1 SA22789
+    # CVE-2007-1405 0.10.3.1 SA24470
+    # CVE-2008-3328 0.10.5 SA31231
+    # CVE-2008-5646 0.11.2 SA32652
+    # CVE-2008-5647 0.11.2 SA32652
+    # CVE-2009-4405 0.11.6 SA37807
+    #'trac': {
+        #'location': ['/Trac.egg-info/PKG-INFO'],
+        #'secure': '0.11.6',
+        #'regexp': ['Version.*?(?P<version>[.0-9]{2,})'],
+        #'cve': 'CVE-2009-4405',
+        #'fingerprint': detect_general
+        #}
     }
 
     main(sys.argv[1:])
