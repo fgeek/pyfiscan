@@ -21,7 +21,6 @@ try:
     import csv
     import re
     import stat # interpreting the results of os.[stat,fstat,lstat]
-    import time
     from collections import defaultdict
     from os import listdir
     from os.path import join
@@ -615,11 +614,12 @@ if __name__ == "__main__":
     # CVE-2011-1766 1.16.5      OSVDB:74613 SA44142
     # CVE-2011-4360 1.17.1      OSVDB:77364 SA47029 http://lists.wikimedia.org/pipermail/mediawiki-announce/2011-November/000104.html
     # CVE-2011-4361 1.17.1      OSVDB:77365 SA47029 http://lists.wikimedia.org/pipermail/mediawiki-announce/2011-November/000104.html
+    # CVE-2012-0046 1.17.2      http://svn.wikimedia.org/svnroot/mediawiki/tags/REL1_17_2/phase3/RELEASE-NOTES
     'MediaWiki': {
         'location': ['/includes/DefaultSettings.php'],
-        'secure': '1.17.1',
+        'secure': '1.17.2',
         'regexp': ['\$wgVersion.*?(?P<version>[0-9.]{1,})'],
-        'cve': 'CVE-2011-4360 CVE-2011-4361',
+        'cve': 'CVE-2012-0046 http://svn.wikimedia.org/svnroot/mediawiki/tags/REL1_17_2/phase3/RELEASE-NOTES',
         'fingerprint': detect_general
         }
     # CVE-2011-4448 1.3.2-p2    OSVDB:77390
