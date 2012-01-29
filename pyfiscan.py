@@ -468,7 +468,10 @@ if __name__ == "__main__":
     # CVE-2009-3890 2.8.6
     # CVE-2009-3891 2.8.6
     # CVE-2010-0682 2.9.2
+    # CVE-2011-0700 3.0.5   OSVDB:72763,72764 SA43238 http://wordpress.org/news/2011/02/wordpress-3-0-5/
+    # CVE-2011-0701 3.0.5   OSVDB:72765 SA43238 http://wordpress.org/news/2011/02/wordpress-3-0-5/
     #               3.1.1   OSVDB:72141 SA44038 http://wordpress.org/news/2011/04/wordpress-3-1-1/ # TODO: No CVE
+    # CVE-2011-1762 3.1.2   OSVDB:72097 SA44372 SA44542 http://wordpress.org/news/2011/04/wordpress-3-1-2/ http://core.trac.wordpress.org/changeset/17710 http://lists.fedoraproject.org/pipermail/package-announce/2011-May/059968.html http://lists.fedoraproject.org/pipermail/package-announce/2011-May/059986.html 
     # CVE-2011-3122 3.1.3
     # CVE-2011-3126 3.1.3
     # CVE-2011-3127 3.1.3
@@ -614,7 +617,7 @@ if __name__ == "__main__":
     # CVE-2011-1766 1.16.5      OSVDB:74613 SA44142
     # CVE-2011-4360 1.17.1      OSVDB:77364 SA47029 http://lists.wikimedia.org/pipermail/mediawiki-announce/2011-November/000104.html
     # CVE-2011-4361 1.17.1      OSVDB:77365 SA47029 http://lists.wikimedia.org/pipermail/mediawiki-announce/2011-November/000104.html
-    # CVE-2012-0046 1.17.2      http://svn.wikimedia.org/svnroot/mediawiki/tags/REL1_17_2/phase3/RELEASE-NOTES
+    # CVE-2012-0046 1.17.2      OSVDB:78260 SA47547 http://svn.wikimedia.org/svnroot/mediawiki/tags/REL1_17_2/phase3/RELEASE-NOTES http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-January/000106.html http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-January/000107.html
     'MediaWiki': {
         'location': ['/includes/DefaultSettings.php'],
         'secure': '1.17.2',
