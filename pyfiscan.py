@@ -331,6 +331,11 @@ if __name__ == "__main__":
     # CVE-2006-1030 1.0.8   OSVDB:23818 SA19105
     # CVE-2006-7247 1.0.10  OSVDB:26626 SA20746
     # CVE-2006-3480 1.0.10  OSVDB:26913,26917,26918
+    # CVE-2006-4468 1.0.11  OSVDB:28339,28343 http://www.joomla.org/content/view/1841/78/ http://www.joomla.org/content/view/1843/74/
+    # CVE-2006-4471 1.0.11  OSVDB:28353 SA21666 http://www.joomla.org/content/view/1841/78/ http://www.joomla.org/content/view/1843/74/
+    # CVE-2006-4472 1.0.11  OSVDB:28347 SA21666 http://www.joomla.org/content/view/1841/78/ http://www.joomla.org/content/view/1843/74/
+    # CVE-2006-4474 1.0.11  OSVDB:28348,28349,28350,28351 SA21666 http://www.joomla.org/content/view/1841/78/ http://www.joomla.org/content/view/1843/74/
+    # CVE-2006-4476 1.0.11  OSVDB:28352,28355,28354,28357,28358 SA21666 http://www.joomla.org/content/view/1841/78/ http://www.joomla.org/content/view/1843/74/
     # CVE-2006-6832 1.0.12  OSVDB:32519 SA23563
     # CVE-2006-6833 1.0.12  OSVDB:32521 SA23563
     # CVE-2006-6834 1.0.12  OSVDB:32536 SA23563
@@ -479,6 +484,9 @@ if __name__ == "__main__":
     # CVE-2011-3129 3.1.3
     # CVE-2011-3130 3.1.3
     # CVE-2012-0287 3.3.1   OSVDB:78123 http://wordpress.org/news/2012/01/wordpress-3-3-1/ https://wordpress.org/news/2012/01/wordpress-3-3-1/ IE only
+    # CVE-2011-4898 3.3.1   OSVDB:78707 https://www.trustwave.com/spiderlabs/advisories/TWSL2012-002.txt # Not fixed
+    # CVE-2011-4899 3.3.1   OSVDB:78708 https://www.trustwave.com/spiderlabs/advisories/TWSL2012-002.txt # Not fixed
+    # CVE-2012-0782 3.3.1   OSVDB:78709 https://www.trustwave.com/spiderlabs/advisories/TWSL2012-002.txt # Not fixed
     'WordPress': {
         'location': ['/wp-includes/version.php'],
         'secure': '3.1.3',
