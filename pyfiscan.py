@@ -376,7 +376,7 @@ if __name__ == "__main__":
     # CVE-2011-2488 1.5.23
     # CVE-2011-2889 1.5.23
     # CVE-2011-2890 1.5.23
-    # CVE-2011-3629 1.5.24  http://developer.joomla.org/security/news/372-20111003-core-information-disclosure
+    # CVE-2011-3629 1.5.24  OSVDB:76720,76721 SA46421 http://developer.joomla.org/security/news/372-20111003-core-information-disclosure
     # CVE-2011-4321 1.5.25
     'Joomla 1.5': {
         'location': ['/libraries/joomla/version.php', '/includes/version.php'],
@@ -392,8 +392,8 @@ if __name__ == "__main__":
     #               1.7.1   http://developer.joomla.org/security/news/367-20110901-core-xss-vulnerability.html
     # CVE-2011-3595 1.7.1   http://developer.joomla.org/security/news/368-20110902-core-xss-vulnerability
     #               1.7.1   http://developer.joomla.org/security/news/369-20110903-core-information-disclosure.html
-    # CVE-2011-3629 1.7.2   http://developer.joomla.org/security/news/370-20111001-core-information-disclosure.html
-    #               1.7.2   http://developer.joomla.org/security/news/371-20111002-core-information-disclosure.html
+    # CVE-2011-3629 1.7.2   OSVDB:76720,76721 SA46421 http://developer.joomla.org/security/news/370-20111001-core-information-disclosure.html
+    # CVE-2011-3629 1.7.2   OSVDB:76720,76721 SA46421 http://developer.joomla.org/security/news/371-20111002-core-information-disclosure.html
     'Joomla 1.7': {
         'location': ['/libraries/joomla/version.php', '/includes/version.php'],
         'secure': '1.7.2',
