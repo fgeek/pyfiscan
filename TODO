@@ -1,0 +1,588 @@
+#summary TODO-list
+#labels Phase-Design,Phase-Requirements,TODO
+
+  * Joomla: CVE-2011-2509
+  * WikyBlog: Haven't fixed security vulnerabilities in years
+    * CVE-2010-0754 OSVDB:62558 SA38699
+    * CVE-2010-0755 OSVDB:62647 
+    * CVE-2010-0756 OSVDB:62932
+    * CVE-2010-0757 OSVDB:62648
+  * Piwik
+    * OSVDV:73213 http://piwik.org/blog/2011/06/piwik-1-5-security-advisory/ CVE-identifier requested
+  * Drupal
+    * SA-CONTRIB-2012-017 OSVDB:79014,79015 (requested CVE-identifier in oss-security)
+  * Orbis CMS <http://www.novo-ws.com/orbis-cms/>
+    * CVE-2010-4313 in newest version and whole project is EOL
+  * Pandora FMS:
+    * CVE-2010-4278
+  * CubeCart:
+    * 2012-02-10: CubeCart 3.0.x in End-of-Support/Maintenance circle
+    * CVE-2012-0865
+  * WordPress disputed: CVE-2012-0937
+  * Add support for PHP- and Perl-shells / malware (Ilkka Mattila requested)
+  * Add support to continue interrupted session (Tuomo Komulainen requested). Could be implemented using [http://docs.python.org/library/atexit.htm atexit-module] with knowledge of current working directory. This needs change to logic of the program
+  * [http://en.wikipedia.org/wiki/List_of_web_application_frameworks List of web application frameworks (Wikipedia)]
+  * There should be argument for looking specific programs in for example: {{{./pyfiscan.py -s joomla,smf --home=/home/}}}
+  * Support to detect basic "require valid-user" from .htaccess-files, which should NOT be on by default
+  * Statistics should contain run-time. [http://docs.python.org/library/os.html#os.times os.times] could be used
+  * Wordpress plugin BackWPup
+    * http://seclists.org/fulldisclosure/2011/Mar/328 http://secunia.com/advisories/43565/
+    * http://osvdb.org/show/osvdb/71481 SOS-11-003 Fixed in: 1.7.2 CVE-2011-4342
+    * http://osvdb.org/show/osvdb/71242
+    * http://osvdb.org/show/osvdb/71243
+    * http://osvdb.org/show/osvdb/76794
+    * SOS-11-012 http://osvdb.org/show/osvdb/76794
+  * Redmine: CVE-2011-4927, CVE-2011-4928, CVE-2011-4929
+  * Joomla HM Community (com_hmcommunity) CVE-2011-4808
+  * Uploadify execute arbitrary PHP code http://osvdb.org/show/osvdb/62653
+  * http://docs.joomla.org/Vulnerable_Extensions_List 
+  * Plone: 
+    * http://secunia.com/advisories/product/9334/?task=advisories
+    * CVE-2010-2422
+    * CVE-2011-4462
+    * CVE-2011-3587 http://securityreason.com/securityalert/8546 (high prio)
+  * IP.Board (Invasion Power Board) http://secunia.com/advisories/product/3705/?task=advisories
+  * LotusCMS
+    * HTB22883
+    * HTB22884 (fixed in: 3.0.5)
+    * HTB22885
+    * HTB22886
+    * HTB22887
+    * HTB22888
+  * FluxBB
+    * CVE-2011-3621 http://fluxbb.org/forums/viewtopic.php?id=5751 fixed in 1.4.7
+  * CVE-2011-3615 1.1.15/2.0.1 http://www.simplemachines.org/community/index.php?P=adfcf10856d3f74172b76dd384b6ade6&topic=452888.0
+  * ClearSilver
+    * CVE-2011-4357
+  * Timthumb CVE-2011-4106 (prio) http://osvdb.org/show/osvdb/74325
+  * Serendipity CVE-2011-4365 CVE-2011-4366
+  * JAMWiki 2010-5054 0.8.4 osvdb/63564
+  * WikkaWiki: CVE-2011-4448 CVE-2011-4449 CVE-2011-4450 CVE-2011-4451 CVE-2011-4452
+  * Meditate: osvdb/77491 SSCHADV2011-039
+  * phpAlbum: CVE-2011-4806 CVE-2011-4807
+  * Dolibarr CVE-2011-4802, CVE-2011-4814
+  * OBM: HTB23060
+  * epesi BIM: HTB23061
+  * MyBB:
+    * OSVDB:69980,69979 (Path disclosure)
+    * HTB22654
+    * OSVDB:70013,70014 SQL-injection
+    * CVE-2009-4448 OSVDB:61419 http://blog.mybboard.net/2009/12/29/mybb-1-4-11-released-minor-patch-security-update/
+    * CVE-2009-4449 OSVDB:61359 http://blog.mybboard.net/2009/12/29/mybb-1-4-11-released-minor-patch-security-update/
+    * CVE-2010-4624 OSVDB:70278 http://blog.mybb.com/2010/04/13/mybb-1-4-12-released-security-maintenance-update/
+    * CVE-2010-4625 OSVDB:70277 http://blog.mybb.com/2010/04/13/mybb-1-4-12-released-security-maintenance-update/
+    * CVE-2010-4626 OSVDB:63839 http://blog.mybb.com/2010/04/13/mybb-1-4-12-released-security-maintenance-update/
+    * CVE-2010-4627 OSVDB:63840 http://blog.mybb.com/2010/04/13/mybb-1-4-12-released-security-maintenance-update/
+  * Frog CMS <http://www.madebyfrog.com/>: HTB22682, HTB22685, HTB22684, HTB22683
+  * KaiBB <http://code.google.com/p/kaibb/>: HTB22749, HTB22748, HTB22747, HTB22746, HTB22793
+  * WebJaxe <http://media4.obspm.fr/outils/webjaxe/en/>: HTB22927
+  * Winn Guestbook <http://code.google.com/p/winn-guestbook/>: CVE-2011-5026
+  * WebsiteBaker <http://www.websitebaker2.org/en/home.php>: HTB22928, HTB22929
+    * CVE-2011-2934 OSVDB:76618
+    * CVE-2011-2933 OSVDB:76619
+  * Tribiq CMS <http://tribiq.com/>: CVE-2011-2727/HTB22857
+  * WordPress
+    * Plugin Kish Guest Posting: CVE-2012-1125 priority
+    * Plugin Uploadify 1.0 remote file upload http://osvdb.org/show/osvdb/73444 priority
+    * Plugin Uploader execute arbitrary PHP code http://osvdb.org/show/osvdb/70648 priority
+    * Plugin User Photo: OSVDB:71071
+    * Plugin forum server: HTB22852, HTB22851, HTB22850
+    * Plugin forum: HTB22858, HTB22859, HTB22860
+    * Plugin Mingle Forum: HTB22848, HTB22849
+    * Plugin Question and Answer Forum: HTB22861
+    * Plugin Vote It Up: HTB22838
+    * Plugin Z-Vote: HTB22839
+    * Plugin Starbox Voting: HTB22840
+    * Plugin Comment Rating: HTB22842
+    * Plugin GD Star Rating: HTB22843, HTB22844
+    * Plugin Comment Rating: HTB22841
+    * Plugin cdnvote: HTB22845
+    * Plugin Universal Post Manager: HTB22939 (SQLi)
+    * Plugin WP-StarsRateBox: HTB22934 (SQLi), HTB22935
+    * Plugin WP Symposium: CVE-2011-3841, CVE-2011-5051
+    * Plugin Users: CVE-2011-4669
+    * Plugin GRAND Flash Album Gallery: HTB22870, HTB22871
+    * Plugin 1 Flash Gallery: 2011-4624, HTB22869, HTB22868
+    * Plugin Adminize: OSVDB:77472
+    * Plugin NextGEN Gallery: HTB22862
+    * Plugin SocialGrid: HTB22940
+    * Universal Post Manager: HTB22938
+    * WP Photo Album: HTB22961
+    * Daily Maui Photo Widget: HTB22960
+    * WP-Ajax-Recent-Posts: HTB22951
+    * Plugin bSuite OSVDB:74046 NO FIX!
+    * Plugin Lazyest Gallery: HTB22875
+    * Flexible Custom Post Type OSVDB:77487 (can't find the actual fix from SCM and no CVE)
+    * WPTouch: CVE-2011-4803
+    * Inline Gallery: HTB22873 (removed from WordPress plugins until the fix is done)
+    * PhotoSmash: HTB22867 (fixed in 1.0.5)
+    * Related Posts: CVE-2011-0760 fixxed in 1.1 http://wordpress.org/support/topic/plugin-wp-related-posts-wordpress-related-posts-plugin-multiple-cross-site-scripting-vulnerabilities
+      * Notified WordPress admins
+      * http://wordpress.org/support/topic/plugin-wp-related-posts-wordpress-related-posts-plugin-multiple-cross-site-scripting-vulnerabilities
+    * wp-e-commerce
+      * 3.8.4 SQL Injection. TODO needs CVE
+      * Security fixed in several versions
+      * HTB23031
+    * Fast Secure Contact Form: HTB23036 (fixed in 3.0.3.2)
+    * Plugin WP-Stats-Dashboard: HTB23035
+    * Plugin Pretty Link: HTB23049
+  * Coppermine: HTB22836
+  * RunCMS <http://www.runcms.org/>: HTB22820, HTB22821, HTB22822
+  * Podcast Generator <http://podcastgen.sourceforge.net/>: HTB22800, HTB22801, HTB22802
+  * Razor CMS: HTB22803
+  * Pluck CMS <http://www.pluck-cms.org>: HTB22798, HTB22799
+  * MemHT Portal <http://www.memht.com/>: HTB22663
+  * MiniBB <http://www.minibb.com/>: HTB22670, HTB22671
+  * Viscacha <http://www.viscacha.org>: HTB22919, HTB22920, HTB22921 (sqli)
+  * UseBB: CVE-2011-3611, CVE-2011-3612, HTB22913, HTB22914
+  * Elxis CMS:
+    * CVE-2011-4918 OSVDB:77563,77564
+  * TYPO3
+    * CVE-2009-4963
+    * CVE-2010-1218
+    * CVE-2010-1153
+    * CVE-2011-3583 TYPO3-CORE-SA-2011-002
+    * CVE-2011-3584 TYPO3-CORE-SA-2011-003
+    * CVE-2011-4614 TYPO3-CORE-SA-2011-004
+    * CVE-2011-4626 typo3-core-sa-2011-001 http://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2011-001/
+    * CVE-2011-4627
+    * CVE-2011-4628
+    * CVE-2011-4629
+    * CVE-2011-4630
+    * CVE-2011-4631
+    * CVE-2011-4632
+    * CVE-2011-4900
+    * CVE-2011-4901
+    * CVE-2011-4902
+    * CVE-2011-4903
+    * CVE-2011-4904
+    * typo3-sa-2010-022 # TODO Missing CVE
+  * Hastymail2
+    * CVE-2011-4541
+    * CVE-2011-4542
+  * PHP Booking Calendar <https://sourceforge.net/projects/bookingcalendar/>: CVE-2011-5045
+  * Geeklog:
+    * CVE-2011-4647
+    * CVE-2011-4942
+  * ImpressCMS:
+    * http://osvdb.org/show/osvdb/75783 remote code execution. asked CVE in oss-sec
+    * HTB23064
+    * HTB22766
+  * SweetRice CMS <http://www.basic-cms.org/>:
+    * CVE-2009-4224
+    * CVE-2011-3804
+    * HTB22668
+  * Habari: HTB22731, HTB22732, HTB22733
+  * phpCollab: HTB22916, HTB22917, HTB22918
+  * SyndeoCMS: HTB22900, HTB22901, HTB22902
+  * HTML-EDIT CMS: HTB22734, HTB22735
+  * SQLiteManager: INFOSERVE-ADV2011-12
+  * ImpressPages CMS: NGS00109
+  * Pragyan CMS: HTB22855, HTB22856, HTB22853
+  * phpMyAdmin: CVE-2008-7251, CVE-2008-7252, CVE-2010-2958, CVE-2010-3055, CVE-2010-3056, CVE-2010-3263, CVE-2011-0986, CVE-2011-0987, CVE-2011-2505, CVE-2011-2506, CVE-2011-2507, CVE-2011-2508, CVE-2011-2642, CVE-2011-2643, CVE-2011-2718, CVE-2011-2719, CVE-2011-3646, CVE-2011-4064, CVE-2011-4107, CVE-2011-4634, CVE-2011-4780, CVE-2011-4782, PMASA-2010-1, PMASA-2010-2, PMASA-2010-4, PMASA-2010-5, PMASA-2010-6, PMASA-2010-7, PMASA-2011-1, PMASA-2011-10, PMASA-2011-11, PMASA-2011-12, PMASA-2011-15, PMASA-2011-16, PMASA-2011-17, PMASA-2011-18, PMASA-2011-19, PMASA-2011-2, PMASA-2011-20, PMASA-2011-5, PMASA-2011-6, PMASA-2011-7, PMASA-2011-8, PMASA-2011-9, CVE-2011-1941
+  * Horde
+    * OSVDB:78474-78477
+  * PostfixAdmin:
+    * CVE-2012-0811 OSVDB:78566,78567 47670
+    * CVE-2012-0812 OSVDB:78559-78564 47670
+  * OpenEMR: HTB23069
+  * Drupal: CVE-2012-0914
+  * Foswiki: http://foswiki.org/Support/SecurityAlert-CVE-2012-1004
+  * BASE: http://www.securityfocus.com/bid/51874/info
+  * 11in1 <http://www.11in1.org/>: HTB23071
+  * OSClass:
+    * CSA-12003 http://osclass.org/2012/01/16/osclass-2-3-5/
+  * Mibew:
+    * CSA-12001 http://www.codseq.it/advisories/mibew_messenger_multiple_xss
+  * Simple Groupware:
+    * CVE-2012-1028 OSVDB:78918
+  * TestLink:
+    * CVE-2012-0938
+    * CVE-2012-0939
+  * XRay CMS
+    * CVE-2012-1026 OSVDB:79000
+  * Chyrp
+    * CVE-2012-1001 HTB23073
+  * Batavi
+    * CVE-2012-0069
+  * Wolf CMS:
+    * http://www.vulnerability-lab.com/get_content.php?id=452 NO CVE
+    * http://osvdb.org/show/osvdb/80537
+    * http://osvdb.org/show/osvdb/80298
+  * Movable Type:
+    * CVE-2012-1262 TWSL2012-003
+    * DSA-2423-1 http://www.movabletype.org/2011/05/movable_type_51_and_505_436_security_update.html
+    * CVE-2012-1497 http://www.movabletype.org/2012/02/movable_type_513_507_and_438_security_updates.html
+  * PBBoard:
+    * CVE-2012-1216
+  * Fork CMS
+    * CVE-2012-1207
+    * CVE-2012-1208
+  * Mambo CMS
+    * CVE-2011-2917
+  * Moodle
+    * CVE-2012-0792
+    * CVE-2012-0793
+    * CVE-2012-0794
+    * CVE-2012-0795
+    * CVE-2012-0796
+    * MSA-11-0042/CVE-2011-4581
+    * MSA-11-0043/CVE-2011-4582
+    * MSA-11-0044/CVE-2011-4583
+    * MSA-11-0045/CVE-2011-4584
+    * MSA-11-0046/CVE-2011-4585
+    * MSA-11-0047/CVE-2011-4586
+    * MSA-11-0048/CVE-2011-4587
+    * MSA-11-0049/CVE-2011-4588
+    * MSA-11-0050/CVE-2011-4589
+    * MSA-11-0051/CVE-2011-4590
+    * MSA-11-0052/CVE-2011-4591
+    * MSA-11-0053/CVE-2011-4592
+    * MSA-11-0054/CVE-2011-4593
+    * CVE-2011-4308
+  * PHP-Nuke
+    * CVE-2011-1480 OSVDB:73335 SQLi
+    * CVE-2011-1481 OSVDB:72121
+  * Elefant CMS
+    * HTB23076 OSVDB:79816
+  * IceBB
+    * HTB22686
+    * HTB22687
+    * HTB22688
+  * CompactCMS http://www.compactcms.nl/
+    * HTB22697
+    * HTB22695
+    * HTB22696
+  * WonderCMS
+    * HTB22759
+  * MicroCMS
+    * HTB22765
+  * Fork CMS
+    * CVE-2012-1188/HTB23075
+  * Ariadne
+    * SSCHADV2011-038 TODO NO CVE
+  * phpMyFAQ
+    * CVE-2010-4821 OSVDB:68268
+    * CVE-2011-3783
+    * CVE-2011-4825 OSVDB:76642 (high priority)
+  * appRain CMF <http://www.apprain.com/>
+    * CVE-2011-3704
+    * appRain CMF uploadify.php File Upload Remote PHP Code Execution http://osvdb.org/show/osvdb/78473 NOTE: CVE-requested in oss-security mailing list
+  * Zikula CMS
+    * CVE-2011-0535
+  * Elgg
+    * CVE-2011-2935 XSS
+    * CVE-2011-2936 SQLi
+  * Bugzilla
+    * CVE-2011-3657 XSS
+
+|| Software || CVE || Other Security Announcements || Fixed in ||
+|| SMF || || SA37557 || 1.1.11 ||
+|| SMF || || SA35267 || 1.1.9 ||
+|| SMF || || SA33670 || 1.1.9 ||
+|| SMF || || SA33790 || 1.1.8 ||
+|| SMF || CVE-2008-6659 || SA32516 || 1.0.15, 1.1.7 ||
+|| SMF || CVE-2008-6657 || SA32516 || 1.0.15, 1.1.7 ||
+|| SMF || CVE-2008-6971 || SA31750 || 1.1.6 ||
+|| SMF || CVE-2008-3072 || SA30955 || 1.0.13, 1.1.5 ||
+|| SMF || CVE-2008-3073 || SA30955 || 1.0.13, 1.1.5 ||
+|| SMF || CVE-2007-5646 || SA27346 || 1.0.12, 1.1.4 ||
+|| SMF || CVE-2007-2546 || SA25139 || 1.1.3 ||
+|| SMF || CVE-2006-6375 || SA23175 || 1.1.1 ||
+|| SMF || CVE-2006-4564 || SA21740 || 1.0.9 ||
+|| SMF || CVE-2006-0896 || SA19004 || 1.0.7 ||
+|| SMF || CVE-2005-2817 || SA16646 || Not supported ||
+|| SMF || || SA15784 || 1.0.5 ||
+|| SMF || CVE-2011-1127 || || 1.1.13 ||
+|| SMF || CVE-2011-1128 || || 1.1.13 ||
+|| SMF || CVE-2011-1129 || || 1.1.13 ||
+|| SMF || CVE-2011-1130 || || 1.1.13 ||
+|| SMF || CVE-2011-1131 || || 1.1.13 ||
+|| SMF || CVE-2011-3615 || || ||
+|| SMF || CVE-2011-4173 || || ||
+|| [http://wordpress.org/extend/plugins/eshop/changelog/ WordPress plugin eShop] || || || ||
+|| [http://wordpress.org/extend/plugins/redirection/changelog/ WordPress plugin Redirection] || || || ||
+|| eocms || CVE-2009-4319 || SA37749 || 0.9.03 ||
+|| eocms || || SA37272 || 0.9.02 ||
+|| Moodle || CVE-2010-1613 || || ||
+|| Moodle || CVE-2010-1614 || || ||
+|| Moodle || CVE-2010-1615 || || ||
+|| Moodle || CVE-2010-1616 || || ||
+|| Moodle || CVE-2010-1617 || || ||
+|| Moodle || CVE-2010-1618 || || ||
+|| Moodle || CVE-2010-1619 || || ||
+|| Moodle || CVE-2010-4207 || || ||
+|| Moodle || CVE-2010-4208 || || ||
+|| Moodle || CVE-2010-4209 || || ||
+|| Moodle || || MSA-11-0020, MSA-11-0024, MSA-11-0025, MSA-11-0026, MSA-11-0031, MSA-11-0032, MSA-11-0036, MSA-11-0037, MSA-11-0038 ||
+|| Roundcube || CVE-2009-4076 || || ||
+|| Roundcube || CVE-2009-4076 || || ||
+|| Roundcube || CVE-2009-4077 || || ||
+|| Roundcube || CVE-2011-2937 || http://sourceforge.net/news/?group_id=139281&id=302769 || ||
+|| PunBB || CVE-2010-0455 || || ||
+|| Redmine || CVE-2009-4078 || || ||
+|| Redmine || N/A || http://www.redmine.org/news/49 || 1.0.5 ||
+|| Redmine || CVE-2009-4079 || || 0.8.7 ||
+|| Redmine || CVE-2009-4459 || || 0.8.7 ||
+|| Redmine || CVE-2011-1723 || http://www.redmine.org/news/53 || 1.1.2 ||
+|| PhpShop <http://www.phpshop.org/> || CVE-2009-4570 || || ||
+|| PhpShop <http://www.phpshop.org/> || CVE-2009-4572 || || ||
+|| RoseOnlineCMS || CVE-2009-4581 || || ||
+|| Zenphoto || CVE-2009-4562 || || ||
+|| Zenphoto || CVE-2009-4563 || || ||
+|| Zenphoto || CVE-2009-4564 || || ||
+|| Zenphoto || CVE-2010-4907 || SA41342 Bugtraq 43021 || 1.3.1 ||
+|| Zenphoto || CVE-2010-4906 || SA41350 || N/A ||
+|| Zenphoto || CVE-2012-0993 - CVE-2012-0995 || HTB23070 || ||
+|| Docmint CMS || CVE-2010-0319 || || ||
+|| DeluxeBB || CVE-2009-4465 || || ||
+|| phpLDAPadmin || CVE-2009-4427 || || ||
+|| phpLDAPadmin || CVE-2011-4074 || || 1.2.2 ||
+|| phpLDAPadmin || CVE-2011-4075 || || 1.2.2 ||
+|| phpLDAPadmin || CVE-2011-4082 || || ||
+|| phpLDAPadmin || CVE-2012-0834 || || ||
+|| ZeusCMS || CVE-2010-0680 || || ||
+|| ZeusCMS || CVE-2010-0681 || || ||
+|| phpMyVisites || CVE-2007-0891 || || ||
+|| ONECMS || CVE-2010-0952 || || ||
+|| Acidcat CMS || CVE-2010-0976 || || ||
+|| Acidcat CMS || CVE-2010-0984 || || ||
+|| Netpet CMS || CVE-2009-4723 || || ||
+|| SphereCMS || CVE-2010-1078 || || ||
+|| Sniggabo CMS || CVE-2010-1072 || || ||
+|| Pulse CMS || CVE-2010-1080 || || ||
+|| Entry Level CMS (EL CMS) || CVE-2010-1076 || || ||
+|| Entry Level CMS (EL CMS) || CVE-2010-1075 || || ||
+|| 1024 CMS || CVE-2010-1093 || || ||
+|| LittleCMS / lcms / liblcms || CVE-2009-0793 || SA34634 || 1.19 ||
+|| LittleCMS / lcms / liblcms || CVE-2009-0581 || SA34367 || 1.18 ||
+|| LittleCMS / lcms / liblcms || CVE-2009-0723 || SA34367 || 1.18 ||
+|| LittleCMS / lcms / liblcms || CVE-2009-0733 || SA34367 || 1.18 ||
+|| LittleCMS / lcms / liblcms || CVE-2007-2741 || SA25294 || 1.17 ||
+|| LittleCMS / lcms / liblcms || CVE-2008-5316 || SA25294 || 1.17 ||
+|| LittleCMS / lcms / liblcms || CVE-2008-5317 || SA25294 || 1.17 ||
+|| Ciamos CMS <http://sourceforge.net/projects/ciamos/> || CVE-2009-4156 || || 0.9.6 ||
+|| AR Web Content Manager (AWCM) || CVE-2010-1066 || || ||
+|| ParsCMS || CVE-2010-1054 || || ||
+|| jaxCMS || CVE-2010-1043 || || ||
+|| klinza professional CMS || CVE-2009-4216 || || ||
+|| modxcms || CVE-2010-1426 || || ||
+|| Pligg CMS || CVE-2009-4786 || || ||
+|| Pligg CMS || CVE-2009-4787 || || ||
+|| Pligg CMS || CVE-2009-4788 || || ||
+|| Pligg CMS || CVE-2010-2577 || || ||
+|| Pligg CMS || CVE-2010-3013 || || ||
+|| Pligg CMS || CVE-2011-3986 || || ||
+|| Pligg CMS || CVE-2011-5022 || || ||
+|| Pligg CMS || CVE-2011-5023 || || ||
+|| PmWiki || CVE-2010-1481 || || ||
+|| PmWiki || CVE-2011-4453 || http://osvdb.org/show/osvdb/77261 || 2.2.35 ||
+|| Saurus CMS || CVE-2010-1997 || || ||
+|| Saurus CMS || CVE-2010-4943 || || ||
+|| TomatoCMS || CVE-2010-1995 || || ||
+|| TomatoCMS || CVE-2010-1996 || || ||
+|| TomatoCMS || CVE-2010-1514 || || ||
+|| TomatoCMS || CVE-2010-2281 || || ||
+|| TomatoCMS || CVE-2010-2282 || || ||
+|| TomatoCMS || CVE-2010-1515 || || ||
+|| Phorum || CVE-2010-1629 || || ||
+|| Phorum || CVE-2011-3622 || || 5.2.18 ||
+|| Phorum || CVE-2011-4561 || OSVDV:76026 || ||
+|| ikiwiki || CVE-2010-1195 || || ||
+|| SilverStripe || CVE-2010-1593 || || ||
+|| SilverStripe || || SSCHADV2011-024 || ||
+|| SilverStripe || CVE-2012-0976 || || ||
+|| cmslite || CVE-2010-2095 || || ||
+|| cmslite || CVE-2010-2096 || || ||
+|| snipegallery || CVE-2010-2126 || || ||
+|| Symphony CMS <http://symphony-cms.com/> || CVE-2010-2143 || || ||
+|| Symphony CMS <http://symphony-cms.com/> || CVE-2010-3458 || || ||
+|| Symphony CMS <http://symphony-cms.com/> || CVE-2011-4340 || http://osvdb.org/show/osvdb/76882 SA46663 http://osvdb.org/show/osvdb/76883 SA46663 || 2.2.4 ||
+|| Symphony CMS <http://symphony-cms.com/> || CVE-2011-4341 || http://osvdb.org/show/osvdb/76884 SA46663 || 2.2.4 ||
+|| PunBB || CVE-2009-4894 || || ||
+|| odCMS || CVE-2010-2344 || || ||
+|| odCMS || CVE-2010-2345 || || ||
+|| Nakid CMS || CVE-2010-2358 || || ||
+|| AneCMS Blog || CVE-2010-2437 || || ||
+|| Orbis CMS || CVE-2010-2669 || || ||
+|| Grafik CMS || CVE-2010-2615 || || ||
+|| twiki || CVE-2009-4898 || || ||
+|| RunCMS <http://www.runcms.org/> || CVE-2010-2852 || || ||
+|| phpMyAdmin <http://www.phpmyadmin.net/> || CVE-2010-3056 / PMASA-2010-5  || || ||
+|| phpMyAdmin <http://www.phpmyadmin.net/> || CVE-2010-3263 || || ||
+|| phpMyAdmin <http://www.phpmyadmin.net/> || CVE-2010-2958 || || ||
+|| phpMyAdmin <http://www.phpmyadmin.net/> || CVE-2011-2718 || || ||
+|| phpMyAdmin <http://www.phpmyadmin.net/> || CVE-2011-2719 || || ||
+|| phpMyAdmin <http://www.phpmyadmin.net/> || CVE-2011-3598 || || ||
+|| phpMyAdmin <http://www.phpmyadmin.net/> || CVE-2011-3646 || || ||
+|| phpMyAdmin <http://www.phpmyadmin.net/> || CVE-2011-4064 || || ||
+|| phpMyAdmin <http://www.phpmyadmin.net/> || CVE-2011-4107 || || ||
+|| phpMyAdmin <http://www.phpmyadmin.net/> || CVE-2011-4634 || || ||
+|| phpMyAdmin <http://www.phpmyadmin.net/> || CVE-2011-4780 || || ||
+|| phpMyAdmin <http://www.phpmyadmin.net/> || CVE-2011-4782 || || ||
+|| Invision Power Board (IPB) || CVE-2010-3424 || || ||
+|| TWiki || CVE-2009-4898 || || ||
+|| TWiki || CVE-2011-3010 || || ||
+|| TWiki || CVE-2012-0979 || || ||
+|| Pecio CMS <http://www.pecio-cms.com/> || CVE-2010-3204 || || ||
+|| DiY-CMS || CVE-2010-3206 || || ||
+|| PyForum || CVE-2009-4407 || SA37764 || Unpatched (Tue, 05 Oct 2010 23:17:13 +0300) ||
+|| PyForum || CVE-2009-4408 || SA37764 || Unpatched (Tue, 05 Oct 2010 23:17:13 +0300) ||
+|| LetoDMS (old: MyDMS) || CVE-2010-2006 || SA38237 || Unpatched (Tue, 05 Oct 2010 23:20:01 +0300) ||
+|| LetoDMS (old: MyDMS) || CVE-2010-2007 || SA38237 || Unpatched (Tue, 05 Oct 2010 23:20:01 +0300) ||
+|| LetoDMS (old: MyDMS) || CVE-2004-1732 || SA12340 || 1.4.3 ||
+|| LetoDMS (old: MyDMS) || CVE-2004-1733 || SA12340 || 1.4.3 ||
+|| fckeditor || CVE-2009-2265 || SA35712 || 2.6.4.1 ||
+|| fckeditor || CVE-2009-2324 || SA35712 || 2.6.4.1 ||
+|| fckeditor || CVE-2007-5156 || SA27123 || 2.5 Beta ||
+|| fckeditor || CVE-2007-3163 || SA25719 || 2.3 or 3.4.1 (which should be secure) ||
+|| fckeditor || CVE-2006-2529 || SA20122 || 2.3 Beta or 3.4.1 ||
+|| fckeditor || CVE-2006-0658 || SA18767 || 2.3 or 3.4.1 ||
+|| nanoblogger || CVE-2005-2039 || SA15754 || 3.2.3 ||
+|| request-tracker <bestpractical.com> || CVE-2009-3585 || SA37546 || 3.6.10 or apply security patches. ||
+|| request-tracker <bestpractical.com> || CVE-2009-4151 || SA37546 || 3.6.10 or apply security patches. ||
+|| request-tracker <bestpractical.com> || CVE-2009-3892 || SA36752 || 3.6.9 or 3.8.5 ||
+|| request-tracker <bestpractical.com> || || SA35451 || 3.6.8 or 3.8.4 ||
+|| request-tracker <bestpractical.com> || CVE-2008-3502 || SA30830 || 3.6.7 ||
+|| MemHt || [http://www.htbridge.ch/advisory/xss_vulnerability_in_memht_portal_1.html 1] [http://www.htbridge.ch/advisory/xss_vulnerability_in_memht_portal.html 2] || || ||
+|| tikiwiki || CVE-2010-4239 || || ||
+|| tikiwiki || CVE-2010-4240 || || ||
+|| tikiwiki || CVE-2010-4241 || || ||
+|| Advanced Electron Forums || CVE-2011-3582 || || ||
+|| Vanilla forums || CVE-2011-3613 || || ||
+|| Vanilla forums || CVE-2011-3614 || || ||
+|| OneCMS || CVE-2010-4877 || || ||
+|| chillyCMS || CVE-2010-4895 || || ||
+|| chillyCMS || CVE-2010-4894 || || ||
+|| BlueCMS || CVE-2010-4897 || || ||
+|| Allinta CMS || CVE-2010-4922 || || ||
+|| Plume || CVE-2011-3985 || || ||
+|| Exponent CMS || CVE-2009-4744 || || ||
+|| Exponent CMS || CVE-2010-5002 || || ||
+|| CuteSITE CMS || CVE-2010-5024 || || ||
+|| CuteSITE CMS || CVE-2010-5025 || || ||
+|| ReviewBoard || CVE-2011-4312 || || ||
+|| ResourceSpace || CVE-2011-4311 || || ||
+|| Dolibarr || CVE-2011-4329 || || 3.1 ||
+|| Dolibarr || CVE-2012-1225 || || ||
+|| Dolibarr || CVE-2012-1226 || || ||
+|| Jara || CVE-2011-4094 || || N/A ||
+|| Jara || CVE-2011-4095 || || N/A ||
+|| Support Incident Tracker http://sitracker.org/ || CVE-2011-4337 || http://www.exploit-db.com/exploits/18132 || 3.66, which is not yet released ||
+|| LabWiki || CVE-2011-4333 || || N/A ||
+|| LabWiki || CVE-2011-4334 || || N/A ||
+|| Mahara || CVE-2011-2771 || || ||
+|| Mahara || CVE-2011-2772 || || ||
+|| Mahara || CVE-2011-2773 || || ||
+|| Mahara || CVE-2011-2774 || || ||
+|| WebsiteBaker || CVE-2011-4322 || http://www.websitebaker2.org/posts/security-vulnerability-backup-module-in-wb-core-13.php || ||
+|| Tiki Wiki CMS || CVE-2011-4336 || HTB23027 https://www.htbridge.ch/advisory/xss_in_tiki_wiki_cms_groupware.html || ||
+|| Tiki Wiki CMS || CVE-2011-4454 || http://info.tiki.org/article182-Tiki-8-1-Now-Available-End-of-Life-for-Tiki-7-x || ||
+|| Tiki Wiki CMS || CVE-2011-4455 || http://info.tiki.org/article182-Tiki-8-1-Now-Available-End-of-Life-for-Tiki-7-x || ||
+|| Contao <http://www.contao.org/> || CVE-2011-0508 || OSVDB:70440 || 2.9.3 ||
+|| Contao || CVE-2011-4335 || osvdb/76293 || 2.10.2 ||
+|| Contao || CVE-2011-4329 || || || ||
+|| bbPress || CVE-2011-1150 || || 1.0.3 ||
+|| bbPress || || HTB22904 || ||
+|| Zen Cart || CVE-2011-4547 || || ||
+|| Zen Cart || CVE-2011-4567 || || ||
+|| Zen Cart || CVE-2011-4403 || || ||
+|| Cacti || CVE-2011-4824 || || 0.8.7h ||
+
+== Notes == 
+
+=== Coppermine === 
+
+* http://secunia.com/advisories/product/1427/?task=advisories
+
+{{{
+/docs/README.html
+Coppermine version.*?(?P<version>[0-9.]{1,})
+}}}
+
+=== zenphoto ===
+
+* http://secunia.com/advisories/product/13411/?task=advisories
+* CVE-2012-0995
+
+=== Drupal ===
+
+* CVE-2011-4113
+* CVE-2011-2726 http://drupal.org/node/1231510
+* DRUPAL-SA-CORE-2012-001 CVE-2012-0826 CVE-2012-0825 CVE-2012-0827
+
+{{{
+'drupal6' : {
+    'dir':          'modules/system',
+    'file':         'system.info',
+    'regexp':       'version.*?(?P<version>[0-9.]{1,})' },
+'drupal5' : {
+    'dir':          'modules/system',
+    'file':         'system.info',
+    'regexp':       'version.*?(?P<version>[0-9].[0-9.]{1,})' },
+}}}
+
+== No category ===
+
+{{{
+'dokuwiki' : { # CVE-2010-0287 CVE-2010-0288 CVE-2010-0289 
+    'dir':          '',
+    'file':         'VERSION',
+    'secure':       '2009-02-26',
+    'regexp':       '[.-]+.*?(?P<version>[.-]+)',
+    'cve':          'CVE-2009-1960' },
+
+    'regexp':        '(?P<version>[0-9]{4}-[0-9]{2}-[0-9]{2}*)',                
+    'regexp':       '[.-]+.*?(?P<version>[.-]+)',
+'gallery1' : {
+    'dir':          '',        
+    'file':         'Version.php',            
+    'regexp':       '\$gallery->version.*?(?P<version>[0-9.]{1,})', 
+    'cve':          '' },            
+'gallery2': {
+    'dir':          '/modules/core',                    
+    'file':         'module.inc', # missing secure !!
+    'regexp':       '\$this-setGalleryVersion.*?(?P<version>[0-9.]{1,})',                            
+    'cve':          '' },
+
+    'secure':       '1.5.16',
+    'regexp':       '\$RELEASE.*?(?P<version>[0-9.]{1,})',
+    'cve':          'CVE-2009-3946' },
+'mediawiki' : { # CVE-2010-1189 CVE-2010-1190 CVE-2010-1150
+    'dir':          '/includes',
+    'file':         'DefaultSettings.php',
+    'secure':       '1.15.1',
+    'regexp':       '\$wgVersion.*?(?P<version>[0-9.]{1,})',
+    'cve':          'CVE-2009-4570 CVE-2009-4589' },
+
+phpBB 2.0.x should be upgraded to phpBB3:
+
+http://www.phpbbsuomi.com/viewtopic.php?f=1&t=2189
+http://www.phpbb.com/community/viewtopic.php?f=14&t=900655&sid=62339c32383dfe171841c47d60a1c13a
+http://secunia.com/advisories/product/463/?task=advisories
+
+'phpbb2' : { # CVE-2010-1627 CVE-2010-1630
+    'dir':          '/includes',
+    'file':         'constants.php',
+    'secure':       '',
+    'regexp':       '.*?ATTACH_VERSION.*?(?P<version>[0-9.]{1,})',
+    'cve':          'CVE-2008-7143' },
+'phpbb3' : {
+    'dir':          '/includes',
+    'file':         'constants.php',
+    'secure':       '3.0.4',
+    'regexp':       '.*?PHPBB_VERSION.*?(?P<version>[0-9.]{1,})',
+    'cve':          'CVE-2008-6507 and CVE-2008-6506' },
+'textpattern': { # CVE-2011-5019, HTB22672
+    'dir':          '/testpattern',
+    'file':         'index.php',
+    'secure':       '4.0.6',
+    'regexp':       '\$thisversion.*?(?P<version>[0-9.]{2,})',
+    'cve':          'CVE-2008-5757' },
+'eoCMS': { # HTB22675 HTB22676 HTB22677 HTB22674 HTB22899 HTB22673
+    'dir':          '',
+    'file':         'dbinstall.php',
+    'secure':       'N/A',
+    'regexp':       '*INSERT.*?(?P<version>[0-9]{1}\.[0-9]{1}\.[0-9]{2})',
+    'cve':          'CVE-2009-4319' },
+}}}
