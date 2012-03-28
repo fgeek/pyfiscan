@@ -405,9 +405,11 @@ if __name__ == "__main__":
         'cve': 'CVE-2011-3629 http://developer.joomla.org/security/news/370-20111001-core-information-disclosure.html',
         'fingerprint': detect_joomla
         },
-    # CVE-2012-0835 2.5.1   http://developer.joomla.org/security/news/387-20120201-core-information-disclosure.html
-    # CVE-2012-0836 2.5.1   http://developer.joomla.org/security/news/388-20120202-core-information-disclosure.html
-    # CVE-2012-0837 2.5.1   http://developer.joomla.org/security/news/389-20120203-core-information-disclosure.html
+    # CVE-2012-0835 2.5.1   OSVDB:78824 http://developer.joomla.org/security/news/387-20120201-core-information-disclosure.html
+    # CVE-2012-0836 2.5.1   OSVDB:78825 http://developer.joomla.org/security/news/388-20120202-core-information-disclosure.html
+    # CVE-2012-0837 2.5.1   OSVDB:78826 http://developer.joomla.org/security/news/389-20120203-core-information-disclosure.html
+    # CVE-2012-1116 2.5.2   OSVDB:79837 http://developer.joomla.org/security/news/391-20120301-core-sql-injection.html
+    # CVE-2012-1117 2.5.2   OSVDB:79836 http://developer.joomla.org/security/news/392-20120302-core-xss-vulnerability.html
     # CVE-2012-1562 2.5.3   http://developer.joomla.org/security/news/394-20120304-core-password-change.html
     # CVE-2012-1563 2.5.3   http://developer.joomla.org/security/news/395-20120303-core-privilege-escalation.html
 #    'Joomla 2.5': {
