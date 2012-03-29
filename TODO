@@ -8,7 +8,7 @@
     * CVE-2010-0756 OSVDB:62932
     * CVE-2010-0757 OSVDB:62648
   * Piwik
-    * OSVDV:73213 http://piwik.org/blog/2011/06/piwik-1-5-security-advisory/ CVE-identifier requested
+    * CVE-2011-4941 OSVDV:73213 http://piwik.org/blog/2011/06/piwik-1-5-security-advisory/
   * Drupal
     * SA-CONTRIB-2012-017 OSVDB:79014,79015 (requested CVE-identifier in oss-security)
   * Orbis CMS <http://www.novo-ws.com/orbis-cms/>
@@ -73,6 +73,8 @@
     * CVE-2010-4625 OSVDB:70277 http://blog.mybb.com/2010/04/13/mybb-1-4-12-released-security-maintenance-update/
     * CVE-2010-4626 OSVDB:63839 http://blog.mybb.com/2010/04/13/mybb-1-4-12-released-security-maintenance-update/
     * CVE-2010-4627 OSVDB:63840 http://blog.mybb.com/2010/04/13/mybb-1-4-12-released-security-maintenance-update/
+    * OSVDB:80633 No CVE
+    * OSVDB:80634 No CVE
   * Frog CMS <http://www.madebyfrog.com/>: HTB22682, HTB22685, HTB22684, HTB22683
   * KaiBB <http://code.google.com/p/kaibb/>: HTB22749, HTB22748, HTB22747, HTB22746, HTB22793
   * WebJaxe <http://media4.obspm.fr/outils/webjaxe/en/>: HTB22927
@@ -126,6 +128,7 @@
     * Fast Secure Contact Form: HTB23036 (fixed in 3.0.3.2)
     * Plugin WP-Stats-Dashboard: HTB23035
     * Plugin Pretty Link: HTB23049
+    * Plugin Integrator: OSVDB:80628
   * Coppermine: HTB22836
   * RunCMS <http://www.runcms.org/>: HTB22820, HTB22821, HTB22822
   * Podcast Generator <http://podcastgen.sourceforge.net/>: HTB22800, HTB22801, HTB22802
@@ -275,6 +278,15 @@
     * CVE-2011-2936 SQLi
   * Bugzilla
     * CVE-2011-3657 XSS
+  * NextBBS
+    * OSVDB:80637 SQLi CVE requested
+    * OSVDB:80626 Authentication Bypass CVE requested
+    * OSVDB:80627 XSS CVE requested
+  * RazorCMS
+    * OSVDB:80618
+    * OSVDB:80619
+  * b2evolution
+    * http://vulnerability-lab.com/get_content.php?id=482
 
 || Software || CVE || Other Security Announcements || Fixed in ||
 || SMF || || SA37557 || 1.1.11 ||
