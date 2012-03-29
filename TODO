@@ -11,6 +11,19 @@
     * CVE-2011-4941 OSVDV:73213 http://piwik.org/blog/2011/06/piwik-1-5-security-advisory/
   * Drupal
     * SA-CONTRIB-2012-017 OSVDB:79014,79015 (requested CVE-identifier in oss-security)
+    * Contact Save Module http://osvdb.org/show/osvdb/80669
+    * ShareThis Module http://osvdb.org/show/osvdb/80670
+    * MultiBlock Module http://osvdb.org/show/osvdb/80673
+    * Contact Forms Module http://osvdb.org/show/osvdb/80674
+    * Share Buttons (AddToAny) http://osvdb.org/show/osvdb/80675
+    * Bundle Copy Module http://osvdb.org/show/osvdb/80676
+    * Ubercart Views Module http://osvdb.org/show/osvdb/80677
+    * Organic groups Module http://osvdb.org/show/osvdb/80678
+    * Chaos tool suite Module http://osvdb.org/show/osvdb/80679
+    * Fusion Theme for Drupal http://osvdb.org/show/osvdb/80680
+    * ShareThis Module http://osvdb.org/show/osvdb/80681
+    * Activity Module for Drupal http://osvdb.org/show/osvdb/80682
+    * Activity Module for Drupal http://osvdb.org/show/osvdb/80683
   * Orbis CMS <http://www.novo-ws.com/orbis-cms/>
     * CVE-2010-4313 in newest version and whole project is EOL
   * Pandora FMS:
@@ -84,6 +97,7 @@
     * CVE-2011-2933 OSVDB:76619
   * Tribiq CMS <http://tribiq.com/>: CVE-2011-2727/HTB22857
   * WordPress
+    * CVE-2012-0914
     * Plugin Kish Guest Posting: CVE-2012-1125 priority
     * Plugin Uploadify 1.0 remote file upload http://osvdb.org/show/osvdb/73444 priority
     * Plugin Uploader execute arbitrary PHP code http://osvdb.org/show/osvdb/70648 priority
@@ -189,7 +203,6 @@
     * CVE-2012-0811 OSVDB:78566,78567 47670
     * CVE-2012-0812 OSVDB:78559-78564 47670
   * OpenEMR: HTB23069
-  * Drupal: CVE-2012-0914
   * Foswiki: http://foswiki.org/Support/SecurityAlert-CVE-2012-1004
   * BASE: http://www.securityfocus.com/bid/51874/info
   * 11in1 <http://www.11in1.org/>: HTB23071
@@ -287,6 +300,10 @@
     * OSVDB:80619
   * b2evolution
     * http://vulnerability-lab.com/get_content.php?id=482
+
+2903 232226 <@ankkuri> Latest OSVDB Vulnerabilities: B2Evolution CMS blogs/htsrv/viewfile.php root Parameter SQL Injection – http://osvdb.org/show/osvdb/80671
+2903 232804 <@ankkuri> Latest OSVDB Vulnerabilities: B2Evolution CMS blogs/blog1.php Message Body XSS – http://osvdb.org/show/osvdb/80672
+
 
 || Software || CVE || Other Security Announcements || Fixed in ||
 || SMF || || SA37557 || 1.1.11 ||
