@@ -378,11 +378,13 @@ if __name__ == "__main__":
     # CVE-2011-2890 1.5.23
     #               1.5.24  http://developer.joomla.org/security/news/372-20111003-core-information-disclosure
     # CVE-2011-4321 1.5.25
+    # CVE-2012-1598 1.5.26  http://developer.joomla.org/security/news/396-20120305-core-password-change
+    # CVE-2012-1599 1.5.26  http://developer.joomla.org/security/news/397-20120306-core-information-disclosure
     'Joomla 1.5': {
         'location': ['/libraries/joomla/version.php', '/includes/version.php'],
-        'secure': '1.5.24',
+        'secure': '1.5.26',
         'regexp': ['.*?\$RELEASE.*?(?P<version>1.[0,5])', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})'],
-        'cve': 'CVE-2011-3629 http://developer.joomla.org/security/news/372-20111003-core-information-disclosure',
+        'cve': 'CVE-2012-1598 http://developer.joomla.org/security/news/396-20120305-core-password-change CVE-2012-1599 http://developer.joomla.org/security/news/397-20120306-core-information-disclosure',
         'fingerprint': detect_joomla
         },
     # CVE-2011-1151 1.6.1   OSVDB:75355 http://developer.joomla.org/security/news/328-20110201-core-sql-injection-path-disclosure.html
