@@ -56,6 +56,50 @@ eGroupware:
     Reflected XSS CVE-2011-4950
     Open redirect CVE-2011-4951
 
+WebCalendar:
+    XSS CVE-2012-0846
+
+Moodle:
+    User Name Disclosure CVE-2011-4308 OSVDB:76695
+    (http://seclists.org/oss-sec/2012/q1/239)
+    CVE-2012-0792 MSA-12-0002 Personal information leak
+    CVE-2012-0793 MSA-12-0004 Added profile image security
+    CVE-2012-0794 MSA-12-0005 Encryption enhancement
+    CVE-2012-0795 MSA-12-0006 Additional email address validation
+    CVE-2012-0796 MSA-12-0007 Email injection prevention
+    CVE-2012-0797 MSA-12-0008 Unsynchronised access via tokens
+    CVE-2012-0798 MSA-12-0009 Role access issue
+    CVE-2012-0799 MSA-12-0010 Unauthorised access to session key
+    CVE-2012-0800 MSA-12-0011 Browser autofill password issue
+    CVE-2012-0801 MSA-12-0012 Form validation issue
+    CVE-2012-0792
+    CVE-2012-0793
+    CVE-2012-0794
+    CVE-2012-0795
+    CVE-2012-0796
+    MSA-11-0042/CVE-2011-4581
+    MSA-11-0043/CVE-2011-4582
+    MSA-11-0044/CVE-2011-4583
+    MSA-11-0045/CVE-2011-4584
+    MSA-11-0046/CVE-2011-4585
+    MSA-11-0047/CVE-2011-4586
+    MSA-11-0048/CVE-2011-4587
+    MSA-11-0049/CVE-2011-4588
+    MSA-11-0050/CVE-2011-4589
+    MSA-11-0051/CVE-2011-4590
+    MSA-11-0052/CVE-2011-4591
+    MSA-11-0053/CVE-2011-4592
+    MSA-11-0054/CVE-2011-4593
+
+Tiki Wiki CMS:
+    Remote code execution CVE-2011-4558 OSVDB:78013 SA47320
+    XSS CVE-2011-4336 OSVDB:74039 SA45256 SA45283 HTB23027
+    XSS OSVDB:77965 SA47278
+    XSS CVE-2011-4551 OSVDB:77966 SA47278
+    (http://info.tiki.org/article182-Tiki-8-1-Now-Available-End-of-Life-for-Tiki-7-x)
+    XSS CVE-2011-4454 OSVDB:77155 SA46740
+    XSS CVE-2011-4455 OSVDB:77156 SA46740
+
   * WikyBlog: Haven't fixed security vulnerabilities in years
     * CVE-2010-0754 OSVDB:62558 SA38699
     * CVE-2010-0755 OSVDB:62647 
@@ -280,26 +324,6 @@ eGroupware:
     * CVE-2012-1208
   * Mambo CMS
     * CVE-2011-2917
-  * Moodle
-    * CVE-2012-0792
-    * CVE-2012-0793
-    * CVE-2012-0794
-    * CVE-2012-0795
-    * CVE-2012-0796
-    * MSA-11-0042/CVE-2011-4581
-    * MSA-11-0043/CVE-2011-4582
-    * MSA-11-0044/CVE-2011-4583
-    * MSA-11-0045/CVE-2011-4584
-    * MSA-11-0046/CVE-2011-4585
-    * MSA-11-0047/CVE-2011-4586
-    * MSA-11-0048/CVE-2011-4587
-    * MSA-11-0049/CVE-2011-4588
-    * MSA-11-0050/CVE-2011-4589
-    * MSA-11-0051/CVE-2011-4590
-    * MSA-11-0052/CVE-2011-4591
-    * MSA-11-0053/CVE-2011-4592
-    * MSA-11-0054/CVE-2011-4593
-    * CVE-2011-4308
   * PHP-Nuke
     * CVE-2011-1480 OSVDB:73335 SQLi
     * CVE-2011-1481 OSVDB:72121
@@ -552,9 +576,6 @@ eGroupware:
 || Mahara || CVE-2011-2773 || || ||
 || Mahara || CVE-2011-2774 || || ||
 || WebsiteBaker || CVE-2011-4322 || http://www.websitebaker2.org/posts/security-vulnerability-backup-module-in-wb-core-13.php || ||
-|| Tiki Wiki CMS || CVE-2011-4336 || HTB23027 https://www.htbridge.ch/advisory/xss_in_tiki_wiki_cms_groupware.html || ||
-|| Tiki Wiki CMS || CVE-2011-4454 || http://info.tiki.org/article182-Tiki-8-1-Now-Available-End-of-Life-for-Tiki-7-x || ||
-|| Tiki Wiki CMS || CVE-2011-4455 || http://info.tiki.org/article182-Tiki-8-1-Now-Available-End-of-Life-for-Tiki-7-x || ||
 || Contao <http://www.contao.org/> || CVE-2011-0508 || OSVDB:70440 || 2.9.3 ||
 || Contao || CVE-2011-4335 || osvdb/76293 || 2.10.2 ||
 || Contao || CVE-2011-4329 || || || ||
