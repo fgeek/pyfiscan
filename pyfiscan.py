@@ -612,7 +612,11 @@ if __name__ == "__main__":
     # CVE-2011-1513 0.7.24  BugtraqID:50339 OSVD:77042
     #               0.7.25  SA41597 HTB2260
     #               0.7.25  SA44061
-    # CVE-2011-4946 0.7.26  OSVDB:73120 SA44968 HTB23004 http://e107.svn.sourceforge.net/viewvc/e107/trunk/e107_0.7/e107_admin/users_extended.php?revision=12306&view=markup http://e107.org/news.php?extend.884.2 http://wiki.e107.org/index.php?title=Release_Notes_0.7.26
+    # CVE-2011-4946 0.7.26  OSVDB:73120 SA44968 HTB23004
+    #   http://e107.svn.sourceforge.net/viewvc/e107/trunk/e107_0.7/e107_admin/users_extended.php?revision=12306&view=markup
+    #   http://e107.svn.sourceforge.net/viewvc/e107/trunk/e107_0.7/e107_admin/users_extended.php?r1=12225&r2=12306
+    #   http://e107.org/news.php?extend.884.2
+    #   http://wiki.e107.org/index.php?title=Release_Notes_0.7.26
     # CVE-2011-4947 0.7.26  HTB23004
     #               0.7.26  This is not fixed yet. SVN revision 12376 is fix
     # CVE-2011-4920 1.0.0   OSVDB:78047-78049 SA46707
