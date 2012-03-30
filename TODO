@@ -34,8 +34,12 @@ Drupal:
     'regexp':       'version.*?(?P<version>[0-9].[0-9.]{1,})' },
 }}}
 
+eGroupware:
+    LFI CVE-2011-4948
+    SQLi CVE-2011-4949
+    Reflected XSS CVE-2011-4950
+    Open redirect CVE-2011-4951
 
-  * Joomla: CVE-2011-2509
   * WikyBlog: Haven't fixed security vulnerabilities in years
     * CVE-2010-0754 OSVDB:62558 SA38699
     * CVE-2010-0755 OSVDB:62647 
@@ -117,6 +121,7 @@ Drupal:
   * Tribiq CMS <http://tribiq.com/>: CVE-2011-2727/HTB22857
   * WordPress
     * CVE-2012-0914
+    * Dean's FCKEditor with Pwwang's Code Plugin http://osvdb.org/show/osvdb/80687
     * Plugin Kish Guest Posting: CVE-2012-1125 priority
     * Plugin Uploadify 1.0 remote file upload http://osvdb.org/show/osvdb/73444 priority
     * Plugin Uploader execute arbitrary PHP code http://osvdb.org/show/osvdb/70648 priority
