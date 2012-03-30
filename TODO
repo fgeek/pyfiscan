@@ -197,6 +197,10 @@ eGroupware:
     * CVE-2011-4902
     * CVE-2011-4903
     * CVE-2011-4904
+    * CVE-2012-1605
+    * CVE-2012-1606
+    * CVE-2012-1607
+    * CVE-2012-1608
     * typo3-sa-2010-022 # TODO Missing CVE
   * Hastymail2
     * CVE-2011-4541
@@ -316,9 +320,9 @@ eGroupware:
   * Bugzilla
     * CVE-2011-3657 XSS
   * NextBBS
-    * OSVDB:80637 SQLi CVE requested
-    * OSVDB:80626 Authentication Bypass CVE requested
-    * OSVDB:80627 XSS CVE requested
+    * CVE-2012-1603 OSVDB:80637 SQLi
+    * CVE-2012-1602 OSVDB:80626 Authentication Bypass
+    * CVE-2012-1604 OSVDB:80627 XSS
   * RazorCMS
     * OSVDB:80618
     * OSVDB:80619
