@@ -344,6 +344,8 @@ eGroupware:
     * OSVDB:80619
   * b2evolution
     * http://vulnerability-lab.com/get_content.php?id=482
+  * phpPgAdmin
+    * CVE-2012-1600
 
 2903 232226 <@ankkuri> Latest OSVDB Vulnerabilities: B2Evolution CMS blogs/htsrv/viewfile.php root Parameter SQL Injection – http://osvdb.org/show/osvdb/80671
 2903 232804 <@ankkuri> Latest OSVDB Vulnerabilities: B2Evolution CMS blogs/blog1.php Message Body XSS – http://osvdb.org/show/osvdb/80672
