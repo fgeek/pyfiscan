@@ -112,6 +112,11 @@ Tiki Wiki CMS:
     XSS CVE-2011-4454 OSVDB:77155 SA46740
     XSS CVE-2011-4455 OSVDB:77156 SA46740
 
+PmWiki:
+    CVE-2010-1481 XSS OSVDB:64456
+    CVE-2011-4453 Remote PHP Code Execution OSVDB: 77261
+    CVE-2010-4748 XSS OSVDB:69940
+
   * WikyBlog: Haven't fixed security vulnerabilities in years
     * CVE-2010-0754 OSVDB:62558 SA38699
     * CVE-2010-0755 OSVDB:62647 
@@ -308,6 +313,7 @@ Tiki Wiki CMS:
   * 11in1 <http://www.11in1.org/>: HTB23071
   * OSClass:
     * CSA-12003 http://osclass.org/2012/01/16/osclass-2-3-5/
+    * CSA-12004 http://www.codseq.it/advisories/osclass_directory_traversal_vulnerability No CVE. Contacted Filippo Cavallarin from codseq.it
   * Mibew:
     * CSA-12001 http://www.codseq.it/advisories/mibew_messenger_multiple_xss
   * Simple Groupware:
@@ -487,8 +493,6 @@ Tiki Wiki CMS:
 || Pligg CMS || CVE-2011-3986 || || ||
 || Pligg CMS || CVE-2011-5022 || || ||
 || Pligg CMS || CVE-2011-5023 || || ||
-|| PmWiki || CVE-2010-1481 || || ||
-|| PmWiki || CVE-2011-4453 || http://osvdb.org/show/osvdb/77261 || 2.2.35 ||
 || Saurus CMS || CVE-2010-1997 || || ||
 || Saurus CMS || CVE-2010-4943 || || ||
 || TomatoCMS || CVE-2010-1995 || || ||
