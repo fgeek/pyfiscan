@@ -1,3 +1,6 @@
+e107:
+    http://osvdb.org/show/osvdb/80767
+
 Drupal:
     CVE-2011-2726 http://drupal.org/node/1231510
     CVE-2011-4113
@@ -393,6 +396,15 @@ PmWiki:
   * B2Evolution CMS
     * http://osvdb.org/show/osvdb/80671
     * http://osvdb.org/show/osvdb/80672
+  * Havalite CMS
+    * SQL injection http://osvdb.org/show/osvdb/80768
+    * SQL injection http://osvdb.org/show/osvdb/80769
+    * Information Disclosure http://osvdb.org/show/osvdb/80770
+  * WebMatter CMS
+    * http://osvdb.org/show/osvdb/80791
+    * http://osvdb.org/show/osvdb/80792
+  * JAMWiki
+    * http://osvdb.org/show/osvdb/80795
 
 || Software || CVE || Other Security Announcements || Fixed in ||
 || SMF || || SA37557 || 1.1.11 ||
