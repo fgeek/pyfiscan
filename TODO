@@ -126,6 +126,10 @@ PmWiki:
     CVE-2011-4453 Remote PHP Code Execution OSVDB: 77261
     CVE-2010-4748 XSS OSVDB:69940
 
+Bugzilla:
+    CVE-2011-3657 XSS
+    CVE-2012-0453 XSS
+
   * WikyBlog: Haven't fixed security vulnerabilities in years
     * CVE-2010-0754 OSVDB:62558 SA38699
     * CVE-2010-0755 OSVDB:62647 
@@ -384,8 +388,6 @@ PmWiki:
   * Elgg
     * CVE-2011-2935 XSS
     * CVE-2011-2936 SQLi
-  * Bugzilla
-    * CVE-2011-3657 XSS
   * NextBBS
     * CVE-2012-1603 OSVDB:80637 SQLi
     * CVE-2012-1602 OSVDB:80626 Authentication Bypass
