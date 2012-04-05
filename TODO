@@ -46,6 +46,7 @@ Drupal:
     SA-CONTRIB-2012-039
     SA-CONTRIB-2012-040
     DRUPAL-PSA-2012-001
+    DRUPAL-SA-CONTRIB-2012-041
     SA-CONTRIB-2012-043
     SA-CONTRIB-2012-044
     SA-CONTRIB-2012-045
@@ -59,6 +60,8 @@ Drupal:
     SA-CONTRIB-2012-053
     SA-CONTRIB-2012-054
     SA-CONTRIB-2012-055
+    DRUPAL-SA-CONTRIB-2012-056
+    DRUPAL-SA-CONTRIB-2012-057
 
 {{{
 'drupal6' : {
@@ -129,6 +132,9 @@ PmWiki:
 Bugzilla:
     CVE-2011-3657 XSS
     CVE-2012-0453 XSS
+
+Hotel Booking Portal <http://sourceforge.net/projects/hbportal/>:
+    CVE-2012-1672 SQL Injection
 
   * WikyBlog: Haven't fixed security vulnerabilities in years
     * CVE-2010-0754 OSVDB:62558 SA38699
@@ -257,6 +263,7 @@ Bugzilla:
     * Plugin WP-Stats-Dashboard: HTB23035
     * Plugin Pretty Link: HTB23049
     * Plugin Integrator: OSVDB:80628
+    * Plugin Buddypress SQL injection OSVDB:80763
   * Coppermine: HTB22836
   * RunCMS <http://www.runcms.org/>: HTB22820, HTB22821, HTB22822
   * Podcast Generator <http://podcastgen.sourceforge.net/>: HTB22800, HTB22801, HTB22802
@@ -346,7 +353,7 @@ Bugzilla:
     * http://osvdb.org/show/osvdb/80298
   * Movable Type:
     * CVE-2012-1262 TWSL2012-003
-    * DSA-2423-1 http://www.movabletype.org/2011/05/movable_type_51_and_505_436_security_update.html
+    * DSA-2423-1 http://www.movabletype.org/2011/05/movable_type_51_and_505_436_security_update.html (CVE-identifier requested in oss-security and from Mitre later)
     * CVE-2012-1497 http://www.movabletype.org/2012/02/movable_type_513_507_and_438_security_updates.html
   * PBBoard:
     * CVE-2012-1216
