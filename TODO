@@ -353,7 +353,7 @@ Hotel Booking Portal <http://sourceforge.net/projects/hbportal/>:
     * http://osvdb.org/show/osvdb/80298
   * Movable Type:
     * CVE-2012-1262 TWSL2012-003
-    * DSA-2423-1 http://www.movabletype.org/2011/05/movable_type_51_and_505_436_security_update.html (CVE-identifier requested in oss-security and from Mitre later)
+    * CVE-2011-5084 DSA-2423-1 http://www.movabletype.org/2011/05/movable_type_51_and_505_436_security_update.html
     * CVE-2012-1497 http://www.movabletype.org/2012/02/movable_type_513_507_and_438_security_updates.html
   * PBBoard:
     * CVE-2012-1216
