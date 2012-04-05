@@ -136,6 +136,9 @@ Bugzilla:
 Hotel Booking Portal <http://sourceforge.net/projects/hbportal/>:
     CVE-2012-1672 SQL Injection
 
+e-ticketing <http://sourceforge.net/projects/e-ticketing/>:
+    CVE-2012-1673 SQL Injection
+
   * WikyBlog: Haven't fixed security vulnerabilities in years
     * CVE-2010-0754 OSVDB:62558 SA38699
     * CVE-2010-0755 OSVDB:62647 
