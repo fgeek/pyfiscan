@@ -139,6 +139,9 @@ Hotel Booking Portal <http://sourceforge.net/projects/hbportal/>:
 e-ticketing <http://sourceforge.net/projects/e-ticketing/>:
     CVE-2012-1673 SQL Injection
 
+phpPaleo <http://sourceforge.net/projects/phppaleo/>:
+    CVE-2012-1671 LFI
+
   * WikyBlog: Haven't fixed security vulnerabilities in years
     * CVE-2010-0754 OSVDB:62558 SA38699
     * CVE-2010-0755 OSVDB:62647 
