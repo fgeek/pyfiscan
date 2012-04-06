@@ -5,8 +5,8 @@
 
 Pyfiscan is free web-application vulnerability and version scanner, which is python program and can be used to locate out-dated versions of common web-software in Unix/Linux-servers. The best example is hosting-providers keeping eye on their users installations to keep up with security-updates. It supports content management systems, blogging softwares, image-galleries, version controlling programs, wikis, admin panels and bulletin boards.
 
-@author Henri 'fgeek' Salo <henri@nerv.fi>
-@copyright Copyright (c) 2009-2011 Henri Salo
+@author Henri Salo <henri@nerv.fi> (fgeek)
+@copyright Copyright (c) 2009-2012 Henri Salo
 @licence BSD
 
 Known issues and/or bugs:
