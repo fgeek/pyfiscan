@@ -2,6 +2,7 @@ e107:
     http://osvdb.org/show/osvdb/80767
 
 Drupal:
+    CVE-2007-6752
     CVE-2011-2726 http://drupal.org/node/1231510
     CVE-2011-4113
     CVE-2012-0825
@@ -150,6 +151,7 @@ Seditio <http://www.neocrome.net/>:
 PunBB:
     CVE-2009-4894
     CVE-2010-0455
+    OSVDB:80366 No CVE http://spotthevuln.com/2010/12/price-cross-site-scripting/
     OSVDB:80747 No CVE
 
 Dalbum:
