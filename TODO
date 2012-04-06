@@ -150,6 +150,10 @@ Seditio <http://www.neocrome.net/>:
 PunBB:
     CVE-2009-4894
     CVE-2010-0455
+    OSVDB:80747 No CVE
+
+Dalbum:
+    OSVDB:80745 No CVE
 
   * WikyBlog: Haven't fixed security vulnerabilities in years
     * CVE-2010-0754 OSVDB:62558 SA38699
