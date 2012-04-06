@@ -142,6 +142,15 @@ e-ticketing <http://sourceforge.net/projects/e-ticketing/>:
 phpPaleo <http://sourceforge.net/projects/phppaleo/>:
     CVE-2012-1671 LFI
 
+Seditio <http://www.neocrome.net/>:
+    OSVD:80688
+    http://www.cotonti.com/news/community/seditio-eol
+    http://www.neocrome.net/page.php?id=2470 "it is NOT recommended to upgrade past Seditio 150 for any live site."
+
+PunBB:
+    CVE-2009-4894
+    CVE-2010-0455
+
   * WikyBlog: Haven't fixed security vulnerabilities in years
     * CVE-2010-0754 OSVDB:62558 SA38699
     * CVE-2010-0755 OSVDB:62647 
@@ -470,7 +479,6 @@ phpPaleo <http://sourceforge.net/projects/phppaleo/>:
 || Roundcube || CVE-2009-4076 || || ||
 || Roundcube || CVE-2009-4077 || || ||
 || Roundcube || CVE-2011-2937 || http://sourceforge.net/news/?group_id=139281&id=302769 || ||
-|| PunBB || CVE-2010-0455 || || ||
 || Redmine || CVE-2009-4078 || || ||
 || Redmine || N/A || http://www.redmine.org/news/49 || 1.0.5 ||
 || Redmine || CVE-2009-4079 || || 0.8.7 ||
@@ -548,7 +556,6 @@ phpPaleo <http://sourceforge.net/projects/phppaleo/>:
 || Symphony CMS <http://symphony-cms.com/> || CVE-2010-3458 || || ||
 || Symphony CMS <http://symphony-cms.com/> || CVE-2011-4340 || http://osvdb.org/show/osvdb/76882 SA46663 http://osvdb.org/show/osvdb/76883 SA46663 || 2.2.4 ||
 || Symphony CMS <http://symphony-cms.com/> || CVE-2011-4341 || http://osvdb.org/show/osvdb/76884 SA46663 || 2.2.4 ||
-|| PunBB || CVE-2009-4894 || || ||
 || odCMS || CVE-2010-2344 || || ||
 || odCMS || CVE-2010-2345 || || ||
 || Nakid CMS || CVE-2010-2358 || || ||
