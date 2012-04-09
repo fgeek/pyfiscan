@@ -413,8 +413,8 @@ if __name__ == "__main__":
     # CVE-2012-0837 2.5.1   OSVDB:78826 http://developer.joomla.org/security/news/389-20120203-core-information-disclosure.html
     # CVE-2012-1116 2.5.2   OSVDB:79837 http://developer.joomla.org/security/news/391-20120301-core-sql-injection.html
     # CVE-2012-1117 2.5.2   OSVDB:79836 http://developer.joomla.org/security/news/392-20120302-core-xss-vulnerability.html
-    # CVE-2012-1562 2.5.3   http://developer.joomla.org/security/news/394-20120304-core-password-change.html
-    # CVE-2012-1563 2.5.3   http://developer.joomla.org/security/news/395-20120303-core-privilege-escalation.html
+    # CVE-2012-1562 2.5.3   OSVDB:80112 http://developer.joomla.org/security/news/394-20120304-core-password-change.html
+    # CVE-2012-1563 2.5.3   OSVDB:80111 http://developer.joomla.org/security/news/395-20120303-core-privilege-escalation.html
 #    'Joomla 2.5': {
 #        'location:': TODO
 #        'secure': '2.5.3',
