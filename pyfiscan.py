@@ -397,10 +397,10 @@ if __name__ == "__main__":
     #               1.7.1   http://developer.joomla.org/security/news/369-20110903-core-information-disclosure.html
     # CVE-2011-3629 1.7.2   OSVDB:76720,76721 SA46421 http://developer.joomla.org/security/news/370-20111001-core-information-disclosure.html
     #               1.7.2   http://developer.joomla.org/security/news/371-20111002-core-information-disclosure.html
-    # CVE-2012-0819 1.7.4   http://developer.joomla.org/security/news/382-20120101-core-information-disclosure.html # TODO
-    # CVE-2012-0820 1.7.4   http://developer.joomla.org/security/news/383-20120102-core-xss-vulnerability.html # TODO
-    # CVE-2012-0821 1.7.4   http://developer.joomla.org/security/news/384-20120103-core-information-disclosure.html # TODO
-    # CVE-2012-0822 1.7.4   http://developer.joomla.org/security/news/385-20120104-core-xss-vulnerability.html # TODO
+    # CVE-2012-0819 1.7.4   OSVDB:78517 http://developer.joomla.org/security/news/382-20120101-core-information-disclosure.html # TODO
+    # CVE-2012-0820 1.7.4   OSVDB:78515 http://developer.joomla.org/security/news/383-20120102-core-xss-vulnerability.html # TODO
+    # CVE-2012-0821 1.7.4   OSVDB:78518 http://developer.joomla.org/security/news/384-20120103-core-information-disclosure.html # TODO
+    # CVE-2012-0822 1.7.4   OSVDB:78516 http://developer.joomla.org/security/news/385-20120104-core-xss-vulnerability.html # TODO
     'Joomla 1.7': {
         'location': ['/libraries/joomla/version.php', '/includes/version.php'],
         'secure': '1.7.2',
