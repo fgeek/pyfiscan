@@ -10,7 +10,11 @@ Pyfiscan is free web-application vulnerability and version scanner, which is pyt
 @licence BSD
 
 Known issues and/or bugs:
-1) If instance is upgraded from Joomla 1.6.1 to 1.7.x by unzipping there will be both version files libraries/joomla/version.php and includes/version.php where first is the old one.
+1: If instance is upgraded from Joomla 1.6.1 to 1.7.x by unzipping there will be both version files libraries/joomla/version.php and includes/version.php where first is the old one.
+
+TODO:
+1: There should be argument for looking specific programs in for example: -s joomla,smf
+
 """
 
 try:
