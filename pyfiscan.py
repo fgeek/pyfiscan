@@ -216,10 +216,12 @@ def main(argv):
             http://docs.python.org/library/multiprocessing.html#multiprocessing.pool.multiprocessing.Pool.close
             """
             pool.close()
+            logging.debug('Scanning ended.')
     except KeyboardInterrupt:
         logging.debug('Received keyboard interrupt. Exiting..')
         pool.join()
         populator.join()
+        logging.debug('Scanning ended.')
     except Exception, e:
         logging.debug(traceback.format_exc())
 
