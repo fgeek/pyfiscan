@@ -36,7 +36,7 @@ except ImportError, error:
 queue = Queue()
 # Initializing stats-dictionary. Lambda defaults value to zero
 stats = defaultdict(lambda: 0)
-# Logging levels
+# Define logging. TODO: should have FORMAT
 LEVELS = {
     'debug': logging.DEBUG
     }
@@ -95,8 +95,7 @@ class PopulateScanQueue:
                 if os.path.islink(directory):
                     continue
                 if check_dir_execution_bit(directory, checkmodes):
-                    # TODO: Should be logging level INFO
-                    #print('Populating: %s' % directory)
+                    logging.info('Populating: %s' % directory)
                     for filename in self.filenames(directory):
                         for (appname, application) in data.iteritems():
                             loc = application['location']
@@ -180,6 +179,8 @@ def main(argv):
         help="Check if we are allowed to traverse directories (execution bit)")
 
     (opts, args) = parser.parse_args()
+    # Starttime is used to measure program runtime
+    starttime = time.time()
     try:
         """stderr to /dev/null"""
         devnull_fd = open(os.devnull, "w")
@@ -216,12 +217,14 @@ def main(argv):
             http://docs.python.org/library/multiprocessing.html#multiprocessing.pool.multiprocessing.Pool.close
             """
             pool.close()
-            logging.debug('Scanning ended.')
+            runtime = time.time() - starttime
+            logging.debug('Scanning ended, which took %s seconds' % runtime)
     except KeyboardInterrupt:
         logging.debug('Received keyboard interrupt. Exiting..')
         pool.join()
         populator.join()
-        logging.debug('Scanning ended.')
+        runtime = time.time() - starttime
+        logging.debug('Scanning ended, which took %s seconds' % runtime)
     except Exception, e:
         logging.debug(traceback.format_exc())
 
@@ -261,10 +264,15 @@ def compare_versions(secure_version, file_version):
             return ver1_bigger
 
 
+def get_timestamp():
+    """Returns string ISO 8601 with hours:minutes:seconds"""
+    timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
+    return timestamp
+
+
 def csv_add(appname, item, file_version, secure_version, cve):
     """Writes list of found vulnerabilities in CVS-format."""
-    # ISO 8601 with hours:minutes:seconds
-    timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
+    timestamp = get_timestamp()
     name_of_logfile = 'pyfiscan-vulnerabilities-' + time.strftime("%Y-%m-%d") + '.csv'
     try:
         writer = csv.writer(open(name_of_logfile, "a"), delimiter='|', quotechar='|')
@@ -279,8 +287,7 @@ def SpawnWorker():
         try:
             item = ''
             item = queue.get()
-            # TODO: Should be logging INFO level
-            #print('Processing: %s (%s)' % (item[0], item[1]))
+            logging.info('Processing: %s (%s)' % (item[0], item[1]))
             for (appname, application) in data.iteritems():
                 if not appname == item[1]:
                     continue
@@ -295,7 +302,7 @@ def SpawnWorker():
                         if not compare_versions(application['secure'], file_version):
                             continue
                         logging.debug('%s with version %s from %s with vulnerability %s. This installation should be updated to at least version %s.' % (appname, file_version, item_location, application['cve'], application['secure']))
-                        print('Found: %s %s -> %s (%s)' % (item_location, file_version, application['secure'], appname))
+                        print('[%s] Found: %s %s -> %s (%s)' % (get_timestamp(), item_location, file_version, application['secure'], appname))
                         csv_add(appname, item_location, file_version, application['secure'], application['cve'])
         except Exception, e:
             print(traceback.format_exc())
