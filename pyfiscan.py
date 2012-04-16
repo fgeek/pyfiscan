@@ -218,13 +218,13 @@ def main(argv):
             """
             pool.close()
             runtime = time.time() - starttime
-            logging.debug('Scanning ended, which took %s seconds' % runtime)
+            logging.info('Scanning ended, which took %s seconds' % runtime)
     except KeyboardInterrupt:
         logging.debug('Received keyboard interrupt. Exiting..')
         pool.join()
         populator.join()
         runtime = time.time() - starttime
-        logging.debug('Scanning ended, which took %s seconds' % runtime)
+        logging.info('Scanning ended, which took %s seconds' % runtime)
     except Exception, e:
         logging.debug(traceback.format_exc())
 
