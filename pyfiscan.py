@@ -5,7 +5,7 @@
 
 Pyfiscan is free web-application vulnerability and version scanner, which is python program and can be used to locate out-dated versions of common web-software in Unix/Linux-servers. The best example is hosting-providers keeping eye on their users installations to keep up with security-updates. It supports content management systems, blogging softwares, image-galleries, version controlling programs, wikis, admin panels and bulletin boards.
 
-@author Henri Salo <henri@nerv.fi> (fgeek)
+@author Henri 'fgeek' Salo <henri@nerv.fi>
 @copyright Copyright (c) 2009-2012 Henri Salo
 @licence BSD
 
@@ -14,30 +14,144 @@ Known issues and/or bugs:
 
 TODO:
 1: There should be argument for looking specific programs in for example: -s joomla,smf
-
 """
 
 try:
     import sys
-    import os
     import time
+    import re
     import logging
     import csv
-    import re
+    import traceback
+    import os
     import stat # interpreting the results of os.[stat,fstat,lstat]
     from collections import defaultdict
-    from os import listdir
-    from os.path import join
-    from os.path import exists
     from optparse import OptionParser
+    from multiprocessing import Process, Queue, Value, Pool
+    from multiprocessing.util import log_to_stderr
 except ImportError, error:
     print('Import error: %s' % error)
     sys.exit(1)
 
+queue = Queue()
 # Initializing stats-dictionary. Lambda defaults value to zero
 stats = defaultdict(lambda: 0)
 # Logging levels
-LEVELS = {'debug': logging.DEBUG}
+LEVELS = {
+    'debug': logging.DEBUG
+    }
+
+level_name = "debug"
+level = LEVELS.get(level_name, logging.NOTSET)
+logfile = "pyfiscan.log"
+# We do not want to continue in case logfile is a symlink
+if os.path.islink(logfile):
+    print('Logfile %s is a symlink file. Exiting..')
+    sys.exit(1)
+
+try:
+    logging.basicConfig(filename=logfile, level=level)
+except IOError as (errno, strerror):
+    if errno == int('13'):
+        print('Error while writing to logfile: %s' % strerror)
+        sys.exit(1)
+
+class PopulateScanQueue:
+    def __init__(self, status):
+        status.value = 1
+
+    def filenames(self, directory):
+        for root, dirs, files in os.walk(directory):
+            for basename in files:
+                yield os.path.join(root, basename)
+
+    def directories(self, directory_dict):
+        for directory in directory_dict:
+            for root, dirs, files in os.walk(directory):
+                for basename in files:
+                    yield os.path.join(root, basename)
+
+    def populate(self, startpath, checkmodes):
+        def put(filename, appname):
+            try:
+                to_queue = [filename, appname]
+                queue.put(to_queue)
+            except Exception, e:
+                print(traceback.format_exc())
+
+        try:
+            logging.debug('Type of startpath: %s' % type(startpath))
+            """Generate a list of directories from startpath."""
+            directories = []
+            if type(startpath) == list:
+                for dir in startpath:
+                    directories.append(dir)
+            if type(startpath) == str:
+                directories.append(startpath)
+            """Use list of directories in loop to check if locations in data dictionary exists."""
+            for directory in directories:
+                if not os.path.isdir(directory):
+                    continue
+                if os.path.islink(directory):
+                    continue
+                if check_dir_execution_bit(directory, checkmodes):
+                    # TODO: Should be logging level INFO
+                    #print('Populating: %s' % directory)
+                    for filename in self.filenames(directory):
+                        for (appname, application) in data.iteritems():
+                            loc = application['location']
+                            [put(filename, appname) for l in loc if filename.endswith(l)]
+            status.value = 0
+        except Exception, e:
+            logging.debug(traceback.format_exc())
+
+    def populate_predefined(self, startdir, checkmodes):
+        try:
+            logging.debug('Populating predefined directories: %s' % startdir)
+            predefined_locations = ['/www', '/secure_www']
+            locations = []
+            userdirs = []
+            for userdir in os.listdir(startdir):
+                userdir_location = startdir + '/' + userdir
+                if not os.path.isdir(userdir_location):
+                    continue
+                if os.path.islink(userdir_location):
+                    continue
+                if check_dir_execution_bit(userdir_location, checkmodes):
+                    userdirs.append(userdir_location)
+
+                public_html_location = startdir + '/' + userdir + '/public_html'
+                if not os.path.isdir(public_html_location):
+                    continue
+                if os.path.islink(public_html_location):
+                    continue
+                if check_dir_execution_bit(public_html_location, checkmodes):
+                    logging.debug('Appending to locations: %s' % os.path.abspath(public_html_location))
+                    locations.append(os.path.abspath(public_html_location))
+            
+            for directory in userdirs:
+                sites_location = directory + '/sites'
+                if not os.path.isdir(sites_location):
+                    continue
+                if os.path.islink(sites_location):
+                    continue
+                if check_dir_execution_bit(sites_location, checkmodes):
+                    for sitesdir in os.listdir(sites_location):
+                        for predefined_directory in predefined_locations:
+                            if not check_dir_execution_bit(sites_location + '/' + sitesdir, checkmodes):
+                                continue
+                            sites_location_last = sites_location + '/' + sitesdir + '/' + predefined_directory
+                            if not os.path.isdir(sites_location_last):
+                                continue
+                            if os.path.islink(sites_location_last):
+                                continue
+                            if check_dir_execution_bit(sites_location_last, checkmodes):
+                                logging.debug('Appending to locations: %s' % os.path.abspath(sites_location_last))
+                                locations.append(os.path.abspath(sites_location_last))
+            # print('Predefined locations populate: %s' % locations)
+            self.populate(locations, checkmodes)
+        except Exception, e:
+            logging.debug(traceback.format_exc())
 
 
 def main(argv):
@@ -60,61 +174,133 @@ def main(argv):
         dest="home",
         help="Spesifies where the home-directories are located")
     parser.add_option(
-        "-d", "--debug",
-        action="store_true",
-        dest="verbose",
-        help="Put debugging mode on.")
-    parser.add_option(
         "", "--check-modes",
         action="store_true",
-        dest="check_modes",
+        dest="checkmodes",
         help="Check if we are allowed to traverse directories (execution bit)")
 
     (opts, args) = parser.parse_args()
+    try:
+        """stderr to /dev/null"""
+        devnull_fd = open(os.devnull, "w")
+        sys.stderr = devnull_fd
+        log_to_stderr()
+        """Starts the asynchronous workers. Amount of workers is the same as cores in server.
+        http://docs.python.org/library/multiprocessing.html#multiprocessing.pool.multiprocessing.Pool
+        """
+        pool = Pool()
+        pool.apply_async(SpawnWorker)
+        """Starts the actual populator daemon to get possible locations, which will be verified by workers.
+        http://docs.python.org/library/multiprocessing.html#multiprocessing.Process
+        """
+        p = PopulateScanQueue(status)
+        p.daemon = True
+        if opts.directory:
+            logging.debug('Scanning recursively from path: %s' % opts.directory)
+            populator = Process(target=p.populate, args=(opts.directory,))
+            populator.start()
+        elif opts.home:
+            logging.debug('Scanning predefined variables: %s' % opts.home)
+            populator = Process(target=p.populate_predefined(opts.home, opts.checkmodes,))
+            populator.start()
+        else:
+            _users = '/home'
+            logging.debug('Scanning predefined variables: %s' % _users)
+            populator = Process(target=p.populate_predefined(_users, opts.checkmodes,))
+            populator.start()
+        """This will loop as long as populating possible locations is done and the queue is empty (workers have finished)"""
+        while not status.value == int('0') and queue.empty():
+            time.sleep(5)
+        else:
+            """Prevents any more tasks from being submitted to the pool. Once all the tasks have been completed the worker processes will exit.
+            http://docs.python.org/library/multiprocessing.html#multiprocessing.pool.multiprocessing.Pool.close
+            """
+            pool.close()
+    except KeyboardInterrupt:
+        logging.debug('Received keyboard interrupt. Exiting..')
+        pool.join()
+        populator.join()
+    except Exception, e:
+        logging.debug(traceback.format_exc())
 
-    """This writes log-file if debug-level is given. Logic is made to accept different levels."""
-    if opts.verbose == True:
-        """Hardcoded, because there is no other levels used at the moment"""
-        level_name = "debug"
-        level = LEVELS.get(level_name, logging.NOTSET)
-        logfile = level_name + ".log"
+
+def check_dir_execution_bit(path, checkmodes):
+    try:
+        """Check if path has execution bit to check if site is public. Defaults to false."""
+        if checkmodes == None:
+            return True
+        if not os.path.exists(path):
+            return
+        if not os.path.isdir(path):
+            return
+        """http://docs.python.org/library/stat.html#stat.S_IXOTH"""
+        if stat.S_IXOTH & os.stat(path)[stat.ST_MODE]:
+            logging.debug('Execution bit set for directory: %s' % path)
+            return True
+        else:
+            logging.debug('No execution bit set for directory: %s' % path)
+            return False
+    except Exception, e:
+        loggin.debug(traceback.format_exc())
+
+
+def compare_versions(secure_version, file_version):
+    """Comparison of found version numbers. Value current_version is predefined and file_version is found from file using grep. Value appname is used to separate different version numbering syntax"""
+    ver1 = secure_version.split('.')
+    ver2 = file_version.split('.')
+    ver1_bigger = 0
+    for i in range(len(min(ver1, ver2))):
+        if int(ver1[i]) == int(ver2[i]):
+            pass
+        elif int(ver1[i]) > int(ver2[i]):
+            ver1_bigger = 1
+            return ver1_bigger
+        else:
+            return ver1_bigger
+
+
+def csv_add(appname, item, file_version, secure_version, cve):
+    """Writes list of found vulnerabilities in CVS-format."""
+    # ISO 8601 with hours:minutes:seconds
+    timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
+    name_of_logfile = 'pyfiscan-vulnerabilities-' + time.strftime("%Y-%m-%d") + '.csv'
+    try:
+        writer = csv.writer(open(name_of_logfile, "a"), delimiter='|', quotechar='|')
+        logged_data = timestamp, appname, item, file_version, secure_version, cve
+        writer.writerow(logged_data)
+    except Exception, error:
+        logging.debug('Exception in csv_add: %s' % error)
+
+
+def SpawnWorker():
+    while 1:
         try:
-            logging.basicConfig(filename=logfile, level=level)
-        except IOError:
-            print('Permission denied when writing to file: %s' % logfile)
-            sys.exit(2)
-    logging.debug('Options are: %s' % opts)
-
-    if opts.directory:
-        logging.debug('Scanning recursively from path: %s' % opts.directory)
-        traverse_recursive(opts.directory, opts.check_modes)
-    elif opts.home:
-        _users = opts.home
-        logging.debug('Scanning predefined variables: %s' % _users)
-        scan_predefined_directories(_users, opts.check_modes)
-    else:
-        _users = '/home'
-        logging.debug('Scanning predefined variables: %s' % _users)
-        scan_predefined_directories(_users, opts.check_modes)
-    """Let's count how many applications have vulnerabilities"""
-    int_not_vuln = 0
-    for (appname, application) in data.iteritems():
-        if stats[appname] == 0:
-            int_not_vuln = int_not_vuln + 1
-    """If no vulnerabilities found print message and exit. Otherwise print statistics of how many vulnerabilities found from spesific application """
-    if len(stats) == int_not_vuln:
-        print('No vulnerabilities found.')
-        sys.exit(1)
-    else:
-        print('Statistics:\n')
-        for (appname, application) in data.iteritems():
-            if not stats[appname] == 0:
-                print("%s: %i" % (appname, stats[appname]))
+            item = ''
+            item = queue.get()
+            # TODO: Should be logging INFO level
+            #print('Processing: %s (%s)' % (item[0], item[1]))
+            for (appname, application) in data.iteritems():
+                if not appname == item[1]:
+                    continue
+                for location in application['location']:
+                    item_location = item[0]
+                    if item_location.endswith(location):
+                        logging.debug('Processing item %s with location %s with with appname %s application %s' % (item_location, location, appname, application))
+                        file_version = application["fingerprint"](item_location, application['regexp'])
+                        if file_version is None:
+                            continue
+                        """Tests that version from file is smaller than secure version."""
+                        if not compare_versions(application['secure'], file_version):
+                            continue
+                        logging.debug('%s with version %s from %s with vulnerability %s. This installation should be updated to at least version %s.' % (appname, file_version, item_location, application['cve'], application['secure']))
+                        print('Found: %s %s -> %s (%s)' % (item_location, file_version, application['secure'], appname))
+                        csv_add(appname, item_location, file_version, application['secure'], application['cve'])
+        except Exception, e:
+            print(traceback.format_exc())
 
 
 def grep_from_file(version_file, regexp):
     """Grepping file with predefined regexp to find a version. This returns m.group from regexp: (?P<version>foo)"""
-    logging.debug('Grepping version number from file: %s using regexp: %s' % (version_file, regexp))
     version_file = open(version_file, 'r')
     source = version_file.readlines()
     version_file.close()
@@ -124,10 +310,9 @@ def grep_from_file(version_file, regexp):
         match = prog.match(line)
         try:
             found_match = match.group('version')
-            logging.debug('Found match: %s' % found_match)
             return found_match
         except re.error:
-            logging.debug('Not a valid regular expression: %s' % regexp)
+            print('Not a valid regular expression: %s' % regexp)
         except AttributeError:
             pass
 
@@ -152,157 +337,8 @@ def detect_joomla(source_file, regexp):
         return file_version
 
 
-def compare_versions(secure_version, file_version, appname):
-    """Comparison of found version numbers. Value current_version is predefined and file_version is found from file using grep. Value appname is used to separate different version numbering syntax"""
-    logging.debug('compare_versions: %s %s' % (secure_version, file_version))
-    ver1 = secure_version.split('.')
-    ver2 = file_version.split('.')
-    ver1_bigger = 0
-
-    for i in range(len(min(ver1, ver2))):
-        if int(ver1[i]) == int(ver2[i]):
-            pass
-        elif int(ver1[i]) > int(ver2[i]):
-            ver1_bigger = 1
-            return ver1_bigger
-        else:
-            return ver1_bigger
-
-
-def csv_add(appname, version_file, file_version, secure_version, cve):
-    """Writes list of found vulnerabilities in CVS-format."""
-    # ISO 8601 with hours:minutes:seconds
-    timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
-    name_of_logfile = sys.argv[0] + '-vulnerabilities-' + time.strftime("%Y-%m-%d") + '.csv'
-    try:
-        writer = csv.writer(open(name_of_logfile, "a"), delimiter='|', quotechar='|')
-        logged_data = timestamp, appname, version_file, file_version, secure_version, cve
-        writer.writerow(logged_data)
-    except Exception, error:
-        logging.debug('Exception in csv_add: %s' % error)
-
-
-def detect_apps(curdir):
-    """Searches correct full path for vulnerable and out-dated applications. Launches the real detection."""
-    if not os.path.exists(curdir):
-        return
-    """Loop trough all applications in fingerprint database."""
-    for (appname, application) in data.iteritems():
-        for location in application['location']:
-            directory = os.path.split(location)[0]
-            if curdir.endswith(directory):
-                version_file = curdir + '/' + os.path.split(location)[1]
-                if os.path.exists(version_file):
-                    if not application['fingerprint']:
-                        """This verifies that data-dictionary has fingerprint for application in question."""
-                        print('Error. No fingerprint found for %s-application.' % appname)
-                        sys.exit(1)
-                    logging.debug('detect_apps: finding version number from file %s with regexp %s' % (version_file, application['regexp']))
-                    file_version = application["fingerprint"](version_file, application['regexp'])
-                    logging.debug('detect_apps: trying to go ahead with file_version %s and data[appname] %s' % (file_version, data[appname]))
-                    if file_version and data[appname]:
-                        if compare_versions(application['secure'], file_version, data[appname]):
-                            stats[appname] = stats[appname] + 1
-                            stats['total'] = stats['total'] + 1
-                            if application['secure']:
-                                stats['cve'] = stats['cve'] + 1
-                                print('%i: %s (#%i) with version %s from %s with vulnerability %s. This installation should be updated to at least version %s.' % (stats['total'], appname, stats[appname], file_version, version_file, application['cve'], application['secure']))
-                                csv_add(appname, version_file, file_version, application['secure'], application['cve'])
-
-
-def check_dir_execution_bit(path, check_modes):
-    """Check if path has execution bit to check if site is public. Defaults to false."""
-    if check_modes == None:
-        return True
-    if not os.path.exists(path):
-        return
-    if not os.path.isdir(path):
-        return
-    """http://docs.python.org/library/stat.html#stat.S_IXOTH"""
-    if stat.S_IXOTH & os.stat(path)[stat.ST_MODE]:
-        logging.debug('Execution bit set for directory: %s' % path)
-        return True
-    else:
-        logging.debug('No execution bit set for directory: %s' % path)
-        return False
-
-
-def traverse_dir(path, check_modes):
-    """Traverses directory spesified amount where path is start path."""
-    if not os.path.exists(path):
-        return
-    if not os.path.isdir(path):
-        return
-    try:
-        if check_dir_execution_bit(path, check_modes):
-            detect_apps(path)
-            try:
-                entries = listdir(path)
-            except OSError as (errno, strerror):
-                print "I/O error({0}): {1} {2}".format(errno, strerror, path)
-                print time.strftime("%Y-%b-%d %H:%M:%S", time.localtime())
-                return
-            for entry in entries:
-                if os.path.isdir(join(path, entry)) and os.path.islink(join(path, entry)) == False:
-                    traverse_dir(join(path, entry), check_modes)
-    except KeyboardInterrupt:
-        print("Interrupting..")
-        sys.exit(1)
-
-
-def traverse_recursive(path, check_modes):
-    """Traverses directory recursively"""
-    if not os.path.exists(path):
-        print('Path does not exist: %s' % (path))
-        logging.debug('Path does not exist: %s' % path)
-        sys.exit(1)
-    try:
-        if check_dir_execution_bit(path, check_modes):
-            detect_apps(path)
-            entries = listdir(path)
-            for entry in entries:
-                if os.path.isdir(join(path, entry)) and os.path.islink(join(path, entry)) == False:
-                    traverse_recursive(join(path, entry), check_modes)
-    except KeyboardInterrupt:
-        print("Interrupting..")
-        sys.exit(1)
-    except OSError, errno:
-        if errno == 13:
-            print('Permission denied: %s' % (path))
-        else:
-            pass
-
-
-def scan_predefined_directories(path, check_modes):
-    """Starts traversing in predefined directories
-        sites/www/
-        sites/secure-www/
-        public_html/
-    """
-    if not exists(path):
-        print('Error. No such directory: %s' % (path))
-        sys.exit(1)
-    try:
-        _userdirs = listdir(path)
-    except OSError, errno:
-        print('Permission denied: %s' % (path))
-        return
-    for directory in _userdirs:
-        sites_dir = join(path, directory, 'sites')
-        pub_html_dir = join(path, directory, 'public_html')
-        if exists(sites_dir):
-            if check_dir_execution_bit(sites_dir, check_modes):
-                for site in listdir(sites_dir):
-                    traverse_dir(join(sites_dir, site, 'www'), check_modes)
-                    traverse_dir(join(sites_dir, site, 'secure-www'), check_modes)
-        if exists(pub_html_dir):
-            if check_dir_execution_bit(sites_dir, check_modes):
-                traverse_dir(pub_html_dir, check_modes)
-
-
 if __name__ == "__main__":
-    """Please note that nothing goes to terminal if cve-field is not defined
-    Structure of data-dictionary:
+    """Structure of data-dictionary:
 
     - Software/program
         - Look file from this directory hierarchy
@@ -316,6 +352,7 @@ if __name__ == "__main__":
         [{'CVE-2010-4166': '1.5.22'}], {'': ''}, {'' }],
 
     Data should include at least following:
+    - CVE
     - CVSS2
     - OSVDB
     - Secunia
@@ -757,4 +794,5 @@ if __name__ == "__main__":
     #'SMF': {}
     }
 
+    status = Value('i', 1)
     main(sys.argv[1:])
