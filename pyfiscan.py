@@ -380,7 +380,7 @@ if __name__ == "__main__":
     # CVE-2011-2488 1.5.23
     # CVE-2011-2889 1.5.23
     # CVE-2011-2890 1.5.23
-    #               1.5.24  http://developer.joomla.org/security/news/372-20111003-core-information-disclosure
+    # CVE-2011-3629 1.5.24  OSVDB:76720 SA46421 http://developer.joomla.org/security/news/372-20111003-core-information-disclosure 
     # CVE-2011-4321 1.5.25
     # CVE-2012-1598 1.5.26  http://developer.joomla.org/security/news/396-20120305-core-password-change
     # CVE-2012-1599 1.5.26  OSVDB:80708 http://developer.joomla.org/security/news/397-20120306-core-information-disclosure
@@ -399,8 +399,7 @@ if __name__ == "__main__":
     #               1.7.1   http://developer.joomla.org/security/news/367-20110901-core-xss-vulnerability.html
     # CVE-2011-3595 1.7.1   http://developer.joomla.org/security/news/368-20110902-core-xss-vulnerability
     #               1.7.1   http://developer.joomla.org/security/news/369-20110903-core-information-disclosure.html
-    # CVE-2011-3629 1.7.2   OSVDB:76720,76721 SA46421 http://developer.joomla.org/security/news/370-20111001-core-information-disclosure.html
-    #               1.7.2   http://developer.joomla.org/security/news/371-20111002-core-information-disclosure.html
+    # CVE-2011-3629 1.7.2   OSVDB:76721 SA46421 http://developer.joomla.org/security/news/371-20111002-core-information-disclosure
     # CVE-2012-0819 1.7.4   OSVDB:78517 http://developer.joomla.org/security/news/382-20120101-core-information-disclosure.html # TODO
     # CVE-2012-0820 1.7.4   OSVDB:78515 http://developer.joomla.org/security/news/383-20120102-core-xss-vulnerability.html # TODO
     # CVE-2012-0821 1.7.4   OSVDB:78518 http://developer.joomla.org/security/news/384-20120103-core-information-disclosure.html # TODO
@@ -425,9 +424,10 @@ if __name__ == "__main__":
 #        'location:': TODO
 #        'secure': '2.5.3',
 #        'regexp': TODO
-#        'cve': 'CVE-2012-1562 http://developer.joomla.org/security/news/394-20120304-core-password-change.html CVE-2012-1563 http://developer.joomla.org/security/news/395-20120303-core-privilege-escalation.html',
+#        'cve': 'TODO'
 #        'fingerprint': TODO. Needs new
 #        },
+
     # TODO: Does not work with ancient 2003 versions
         # http://secunia.com/advisories/23621/
         # http://secunia.com/advisories/23587/
@@ -623,9 +623,9 @@ if __name__ == "__main__":
     #   http://e107.svn.sourceforge.net/viewvc/e107/trunk/e107_0.7/e107_admin/users_extended.php?r1=12225&r2=12306
     #   http://e107.org/news.php?extend.884.2
     #   http://wiki.e107.org/index.php?title=Release_Notes_0.7.26
-    # CVE-2011-4947 0.7.26  OSVDB:80992 HTB23004
-    #               0.7.26  This is not fixed yet. SVN revision 12376 is fix
-    # CVE-2011-4920 1.0.0   OSVDB:78047-78049 SA46707
+    # CVE-2011-4947 0.7.25  OSVDB:80992 SA44968 HTB23004
+    #               0.7.26  This is not fixed yet. SVN revision 12375 is fix
+    # CVE-2011-4920 1.0.0   OSVDB:78047-78049 SA46706
     # CVE-2011-4921 1.0.0   OSVDB:78050
     'e107': {
         'location': ['/e107_admin/ver.php'],
