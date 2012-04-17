@@ -71,7 +71,7 @@ class PopulateScanQueue:
                 for basename in files:
                     yield os.path.join(root, basename)
 
-    def populate(self, startpath, checkmodes):
+    def populate(self, startpath, checkmodes=False):
         def put(filename, appname):
             try:
                 to_queue = [filename, appname]
@@ -147,7 +147,7 @@ class PopulateScanQueue:
                             if check_dir_execution_bit(sites_location_last, checkmodes):
                                 logging.debug('Appending to locations: %s' % os.path.abspath(sites_location_last))
                                 locations.append(os.path.abspath(sites_location_last))
-            # print('Predefined locations populate: %s' % locations)
+            logging.info('Predefined locations populate: %s' % locations)
             self.populate(locations, checkmodes)
         except Exception, e:
             logging.debug(traceback.format_exc())
@@ -340,7 +340,9 @@ def detect_joomla(source_file, regexp):
         return
     logging.debug('Dectecting Joomla from: %s' % source_file)
     release_version = grep_from_file(source_file, regexp[0])
+    logging.debug('Release version: %s' % release_version)
     dev_level_version = grep_from_file(source_file, regexp[1])
+    logging.debug('Development level version: %s' % dev_level_version)
     if release_version and dev_level_version:
         file_version = release_version + "." + dev_level_version
         return file_version
@@ -486,6 +488,8 @@ if __name__ == "__main__":
     # Not valid:
     #   OSVDB:72173
     #               0.71    SA8954
+    # CVE-2003-1598 "0.72 RC1" OSVDB:4610 SA8954
+    # CVE-2003-1599 "0.72 RC1" OSVDB:4611 SA8954
     # CVE-2004-1559 1.2.1
     # CVE-2004-1584 1.2.1
     # CVE-2005-1687 1.5.1
