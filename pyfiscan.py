@@ -560,15 +560,13 @@ if __name__ == "__main__":
     # CVE-2011-3128 3.1.3
     # CVE-2011-3129 3.1.3
     # CVE-2011-3130 3.1.3
-    # CVE-2012-0287 3.3.1   OSVDB:78123 http://wordpress.org/news/2012/01/wordpress-3-3-1/ https://wordpress.org/news/2012/01/wordpress-3-3-1/ IE only
-    # CVE-2011-4898 3.3.1   OSVDB:78707 https://www.trustwave.com/spiderlabs/advisories/TWSL2012-002.txt # Not fixed
-    # CVE-2011-4899 3.3.1   OSVDB:78708 https://www.trustwave.com/spiderlabs/advisories/TWSL2012-002.txt # Not fixed
-    # CVE-2012-0782 3.3.1   OSVDB:78709 https://www.trustwave.com/spiderlabs/advisories/TWSL2012-002.txt # Not fixed
+    # CVE-2011-4898/CVE-2011-4899/CVE-2012-0782 3.3.1   OSVDB:7870778708,78709 https://www.trustwave.com/spiderlabs/advisories/TWSL2012-002.txt
+    # CVE-2012-0287 3.3.1   OSVDB:78123 SA47371 https://wordpress.org/news/2012/01/wordpress-3-3-1/
     'WordPress': {
         'location': ['/wp-includes/version.php'],
-        'secure': '3.1.3',
+        'secure': '3.3.1',
         'regexp': ['\$wp_version.*?(?P<version>[0-9.]+)'],
-        'cve': 'CVE-2011-3122, CVE-2011-3126, CVE-2011-3127, CVE-2011-3128, CVE-2011-3129, CVE-2011-3130',
+        'cve': 'CVE-2012-0287 OSVDB:78123 SA47371 https://wordpress.org/news/2012/01/wordpress-3-3-1/',
         'fingerprint': detect_general
         },
     # TODO: SA32686 SA14001 SA11832 SA11807 SA10318
