@@ -554,13 +554,13 @@ if __name__ == "__main__":
     # CVE-2011-0701 3.0.5   OSVDB:72765 SA43238 http://wordpress.org/news/2011/02/wordpress-3-0-5/
     #               3.1.1   OSVDB:72141 SA44038 http://wordpress.org/news/2011/04/wordpress-3-1-1/ # TODO: No CVE
     # CVE-2011-1762 3.1.2   OSVDB:72097 SA44372 SA44542 http://wordpress.org/news/2011/04/wordpress-3-1-2/ http://core.trac.wordpress.org/changeset/17710 http://lists.fedoraproject.org/pipermail/package-announce/2011-May/059968.html http://lists.fedoraproject.org/pipermail/package-announce/2011-May/059986.html 
-    # CVE-2011-3122 3.1.3   OSVDB:74485
-    # CVE-2011-3125 3.1.3   OSVDB:74486
-    # CVE-2011-3126 3.1.3   OSVDB:74487
-    # CVE-2011-3127 3.1.3   OSVDB:74488
-    # CVE-2011-3128 3.1.3   OSVDB:74489
-    # CVE-2011-3129 3.1.3   OSVDB:74490
-    # CVE-2011-3130 3.1.3   OSVDB:74491
+    # CVE-2011-3122 3.1.3   OSVDB:74485 http://wordpress.org/news/2011/05/wordpress-3-1-3/
+    # CVE-2011-3125 3.1.3   OSVDB:74486 http://wordpress.org/news/2011/05/wordpress-3-1-3/
+    # CVE-2011-3126 3.1.3   OSVDB:74487 http://wordpress.org/news/2011/05/wordpress-3-1-3/
+    # CVE-2011-3127 3.1.3   OSVDB:74488 http://wordpress.org/news/2011/05/wordpress-3-1-3/
+    # CVE-2011-3128 3.1.3   OSVDB:74489 http://wordpress.org/news/2011/05/wordpress-3-1-3/
+    # CVE-2011-3129 3.1.3   OSVDB:74490 http://wordpress.org/news/2011/05/wordpress-3-1-3/
+    # CVE-2011-3130 3.1.3   OSVDB:74491 http://wordpress.org/news/2011/05/wordpress-3-1-3/
     # CVE-2011-4898/CVE-2011-4899/CVE-2012-0782 3.3.1   OSVDB:7870778708,78709 https://www.trustwave.com/spiderlabs/advisories/TWSL2012-002.txt
     # CVE-2012-0287 3.3.1   OSVDB:78123 SA47371 https://wordpress.org/news/2012/01/wordpress-3-3-1/
     'WordPress': {
