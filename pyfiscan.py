@@ -736,7 +736,7 @@ if __name__ == "__main__":
         'location': ['/includes/DefaultSettings.php'],
         'secure': '1.17.3',
         'regexp': ['\$wgVersion.*?(?P<version>[0-9.]{1,})'],
-        'cve': 'CVE-2012-1578 CVE-2012-1579 CVE-2012-1580 CVE-2012-1581 CVE-2012-1582 OSVDB:80361,80362,80363,80364,80365 http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000109.html http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000110.html',
+        'cve': 'CVE-2012-1578 CVE-2012-1579 CVE-2012-1580 CVE-2012-1581 CVE-2012-1582 OSVDB:80361,80362,80363,80364,80365 http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000109.html',
         'fingerprint': detect_general
         }
     # CVE-2011-4448 1.3.2-p2    OSVDB:77390
