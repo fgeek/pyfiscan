@@ -636,7 +636,7 @@ if __name__ == "__main__":
     # CVE-2010-3883 1.8.1 (SA40031)
     # CVE-2010-3884 1.8.1 (SA40031)
     # CVE-2010-4663 1.9.1 http://forum.cmsmadesimple.org/viewtopic.php?t=49245
-    # CVE-2011-4310 1.9.4.3
+    # CVE-2011-4310 1.9.4.3 http://www.cmsmadesimple.org/2011/08/Announcing-CMSMS-1-9-4-3---Security-Release/
     'CMSMS': {
         'location': ['version.php'],
         'secure': '1.9.4.3',
@@ -738,7 +738,7 @@ if __name__ == "__main__":
         'regexp': ['\$wgVersion.*?(?P<version>[0-9.]{1,})'],
         'cve': 'CVE-2012-1578 CVE-2012-1579 CVE-2012-1580 CVE-2012-1581 CVE-2012-1582 OSVDB:80361,80362,80363,80364,80365 http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000109.html',
         'fingerprint': detect_general
-        }
+        },
     # CVE-2011-4448 1.3.2-p2    OSVDB:77390
     # CVE-2011-4449 1.3.2-p2    OSVDB:77391
     # CVE-2011-4450 1.3.2-p2    OSVDB:77392
@@ -813,16 +813,21 @@ if __name__ == "__main__":
     # CVE-2011-1129 1.1.13 OSVDB:74321
     # CVE-2011-1130 1.1.13 OSVDB:75233,75234
     # CVE-2011-1131 1.1.13 OSVDB:74121
-    # CVE-2011-3615 1.1.15/2.0.1 OSVDB:76822 SA46386
-    # CVE-2011-4173 2.0.1 OSVDB:76317 SA46386
-    # N/A           1.1.15/2.0.1 OSVDB:76318 SA46386
     # N/A           1.1.15 OSVDB:77727 http://www.simplemachines.org/community/index.php?topic=466218.0
-    # N/A           2.0.2
+    # CVE-2011-3615 2.0.1/1.1.15 OSVDB:76822 SA46386
+    # CVE-2011-4173 2.0.1 OSVDB:76317 SA46386
+    # N/A           2.0.1/1.1.15 OSVDB:76318 SA46386
     # Unknown:
     #   OSVDB:32605 too little information
     #   CVE-2007-5943 OSVDB:39961 myth/fake
     #   OSVDB:80766 Am!r XSS SMF 2.0.2 needs verification and vendor URL
-    #'SMF': {}
+    'SMF': {
+        'location': ['index.php'],
+        'secure': '2.0.1',
+        'regexp': ['\$forum_version.*?(?P<version>[0-9.]{1,})'],
+        'cve': 'CVE-2011-3615, CVE-2011-4173, OSVDB:76317,76318,76822 SA46386',
+        'fingerprint': detect_general
+        }
     }
 
     status = Value('i', 1)
