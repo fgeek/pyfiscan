@@ -582,8 +582,13 @@ if __name__ == "__main__":
         'regexp': ['\$wp_version.*?(?P<version>[0-9.]+)'],
         'cve': 'CVE-2012-0287 OSVDB:78123 SA47371 https://wordpress.org/news/2012/01/wordpress-3-3-1/',
         'fingerprint': detect_general
-        },
-    # TODO: SA14001 SA11832 SA11807 SA10318
+    },
+    # TODO: MoinMoin fingerprint list is not full. Please check out OSVDB lists.
+    # N/A           1.0     OSVDB:2878 SA10318 # TODO: No CVE
+    # N/A           1.1     OSVDB:2911 # TODO: No CVE
+    # N/A           1.2.2   OSVDB:6704 SA11807 # TODO: No CVE
+    # N/A           1.2.3   OSVDB:8194,8195 SA11832 # TODO: No CVE
+    # N/A           1.3.3   OSVDB:13184 SA14001 # TODO: No CVE
     # CVE-2007-0857 1.5.7 (SA24096)
     # CVE-2007-0901 1.5.8 (SA24138)
     # CVE-2007-2423 1.5.8 (SA24138)
@@ -595,7 +600,7 @@ if __name__ == "__main__":
     # CVE-2008-1099 1.6.1 (SA29010)
     # CVE-2008-1937 1.6.3 (SA29894)
     # CVE-2008-3381 1.7.1 (SA31135)
-    # N/A           N/A     OSVDB:49752 SA32686
+    # N/A           N/A     OSVDB:49752 SA32686 # TODO: No CVE
     # CVE-2009-0260 1.8.2 (SA33593)
     # CVE-2009-0312 1.8.2 (SA33593)
     # CVE-2009-1482 1.8.3 (SA34821)
