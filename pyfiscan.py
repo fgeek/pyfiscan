@@ -25,6 +25,7 @@ try:
     import traceback
     import os
     import stat # interpreting the results of os.[stat,fstat,lstat]
+    import inspect
     from collections import defaultdict
     from optparse import OptionParser
     from multiprocessing import Process, Queue, Value, Pool
@@ -36,7 +37,7 @@ except ImportError, error:
 queue = Queue()
 # Initializing stats-dictionary. Lambda defaults value to zero
 stats = defaultdict(lambda: 0)
-# Define logging. TODO: should have FORMAT
+# Define logging
 LEVELS = {
     'debug': logging.DEBUG
     }
@@ -50,7 +51,7 @@ if os.path.islink(logfile):
     sys.exit(1)
 
 try:
-    logging.basicConfig(filename=logfile, level=level, format='%(asctime)s %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
+    logging.basicConfig(filename=logfile, level=level, format='%(asctime)s %(levelname)s %(name)s %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
 except IOError as (errno, strerror):
     if errno == int('13'):
         print('Error while writing to logfile: %s' % strerror)
@@ -80,7 +81,8 @@ class PopulateScanQueue:
                 print(traceback.format_exc())
 
         try:
-            logging.debug('Type of startpath: %s' % type(startpath))
+            logger = logging.getLogger(return_func_name())
+            logger.debug('Type of startpath: %s' % type(startpath))
             """Generate a list of directories from startpath."""
             directories = []
             if type(startpath) == list:
@@ -95,7 +97,7 @@ class PopulateScanQueue:
                 if os.path.islink(directory):
                     continue
                 if check_dir_execution_bit(directory, checkmodes):
-                    logging.info('Populating: %s' % directory)
+                    logger.info('Populating: %s' % directory)
                     for filename in self.filenames(directory):
                         for (appname, application) in data.iteritems():
                             loc = application['location']
@@ -106,7 +108,8 @@ class PopulateScanQueue:
 
     def populate_predefined(self, startdir, checkmodes):
         try:
-            logging.debug('Populating predefined directories: %s' % startdir)
+            logger = logging.getLogger(return_func_name())
+            logger.debug('Populating predefined directories: %s' % startdir)
             predefined_locations = ['/www', '/secure_www']
             locations = []
             userdirs = []
@@ -125,7 +128,7 @@ class PopulateScanQueue:
                 if os.path.islink(public_html_location):
                     continue
                 if check_dir_execution_bit(public_html_location, checkmodes):
-                    logging.debug('Appending to locations: %s' % os.path.abspath(public_html_location))
+                    logger.debug('Appending to locations: %s' % os.path.abspath(public_html_location))
                     locations.append(os.path.abspath(public_html_location))
             
             for directory in userdirs:
@@ -145,12 +148,12 @@ class PopulateScanQueue:
                             if os.path.islink(sites_location_last):
                                 continue
                             if check_dir_execution_bit(sites_location_last, checkmodes):
-                                logging.debug('Appending to locations: %s' % os.path.abspath(sites_location_last))
+                                logger.debug('Appending to locations: %s' % os.path.abspath(sites_location_last))
                                 locations.append(os.path.abspath(sites_location_last))
-            logging.info('Predefined locations populate: %s' % locations)
+            logger.info('Predefined locations populate: %s' % locations)
             self.populate(locations, checkmodes)
         except Exception, e:
-            logging.debug(traceback.format_exc())
+            logger.debug(traceback.format_exc())
 
 
 def main(argv):
@@ -182,6 +185,7 @@ def main(argv):
     """Starttime is used to measure program runtime."""
     starttime = time.time()
     try:
+        logger = logging.getLogger(return_func_name())
         """stderr to /dev/null"""
         devnull_fd = open(os.devnull, "w")
         sys.stderr = devnull_fd
@@ -197,16 +201,16 @@ def main(argv):
         p = PopulateScanQueue(status)
         p.daemon = True
         if opts.directory:
-            logging.debug('Scanning recursively from path: %s' % opts.directory)
+            logger.debug('Scanning recursively from path: %s' % opts.directory)
             populator = Process(target=p.populate, args=(opts.directory,))
             populator.start()
         elif opts.home:
-            logging.debug('Scanning predefined variables: %s' % opts.home)
+            logger.debug('Scanning predefined variables: %s' % opts.home)
             populator = Process(target=p.populate_predefined(opts.home, opts.checkmodes,))
             populator.start()
         else:
             _users = '/home'
-            logging.debug('Scanning predefined variables: %s' % _users)
+            logger.debug('Scanning predefined variables: %s' % _users)
             populator = Process(target=p.populate_predefined(_users, opts.checkmodes,))
             populator.start()
         """This will loop as long as populating possible locations is done and the queue is empty (workers have finished)"""
@@ -218,19 +222,24 @@ def main(argv):
             """
             pool.close()
             runtime = time.time() - starttime
-            logging.info('Scanning ended, which took %s seconds' % runtime)
+            logger.info('Scanning ended, which took %s seconds' % runtime)
     except KeyboardInterrupt:
-        logging.debug('Received keyboard interrupt. Exiting..')
+        logger.debug('Received keyboard interrupt. Exiting..')
         pool.join()
         populator.join()
         runtime = time.time() - starttime
-        logging.info('Scanning ended, which took %s seconds' % runtime)
+        logger.info('Scanning ended, which took %s seconds' % runtime)
     except Exception, e:
-        logging.debug(traceback.format_exc())
+        logger.debug(traceback.format_exc())
+
+
+def return_func_name():
+    return inspect.stack()[1][3]
 
 
 def check_dir_execution_bit(path, checkmodes):
     try:
+        logger = logging.getLogger(return_func_name())
         """Check if path has execution bit to check if site is public. Defaults to false."""
         if checkmodes == None:
             return True
@@ -240,10 +249,10 @@ def check_dir_execution_bit(path, checkmodes):
             return
         """http://docs.python.org/library/stat.html#stat.S_IXOTH"""
         if stat.S_IXOTH & os.stat(path)[stat.ST_MODE]:
-            logging.debug('Execution bit set for directory: %s' % path)
+            logger.debug('Execution bit set for directory: %s' % path)
             return True
         else:
-            logging.debug('No execution bit set for directory: %s' % path)
+            logger.debug('No execution bit set for directory: %s' % path)
             return False
     except Exception, e:
         loggin.debug(traceback.format_exc())
@@ -272,6 +281,7 @@ def get_timestamp():
 
 def csv_add(appname, item, file_version, secure_version, cve):
     """Writes list of found vulnerabilities in CVS-format."""
+    logger = logging.getLogger(return_func_name())
     timestamp = get_timestamp()
     name_of_logfile = 'pyfiscan-vulnerabilities-' + time.strftime("%Y-%m-%d") + '.csv'
     try:
@@ -279,29 +289,30 @@ def csv_add(appname, item, file_version, secure_version, cve):
         logged_data = timestamp, appname, item, file_version, secure_version, cve
         writer.writerow(logged_data)
     except Exception, error:
-        logging.debug('Exception in csv_add: %s' % error)
+        logger.debug('Exception in csv_add: %s' % error)
 
 
 def SpawnWorker():
     while 1:
         try:
+            logger = logging.getLogger(return_func_name())
             item = ''
             item = queue.get()
-            logging.info('Processing: %s (%s)' % (item[0], item[1]))
+            logger.info('Processing: %s (%s)' % (item[0], item[1]))
             for (appname, application) in data.iteritems():
                 if not appname == item[1]:
                     continue
                 for location in application['location']:
                     item_location = item[0]
                     if item_location.endswith(location):
-                        logging.debug('Processing item %s with location %s with with appname %s application %s' % (item_location, location, appname, application))
+                        logger.debug('Processing item %s with location %s with with appname %s application %s' % (item_location, location, appname, application))
                         file_version = application["fingerprint"](item_location, application['regexp'])
                         if file_version is None:
                             continue
                         """Tests that version from file is smaller than secure version."""
                         if not compare_versions(application['secure'], file_version):
                             continue
-                        logging.debug('%s with version %s from %s with vulnerability %s. This installation should be updated to at least version %s.' % (appname, file_version, item_location, application['cve'], application['secure']))
+                        logger.debug('%s with version %s from %s with vulnerability %s. This installation should be updated to at least version %s.' % (appname, file_version, item_location, application['cve'], application['secure']))
                         print('%s Found: %s %s -> %s (%s)' % (get_timestamp(), item_location, file_version, application['secure'], appname))
                         csv_add(appname, item_location, file_version, application['secure'], application['cve'])
         except Exception, e:
@@ -335,14 +346,15 @@ def detect_general(source_file, regexp):
 
 
 def detect_joomla(source_file, regexp):
+    logger = logging.getLogger(return_func_name())
     """Detects from file if the file has version information of Joomla"""
     if not os.path.isfile(source_file) and not regexp:
         return
-    logging.debug('Dectecting Joomla from: %s' % source_file)
+    logger.debug('Dectecting Joomla from: %s' % source_file)
     release_version = grep_from_file(source_file, regexp[0])
-    logging.debug('Release version: %s' % release_version)
+    logger.debug('Release version: %s' % release_version)
     dev_level_version = grep_from_file(source_file, regexp[1])
-    logging.debug('Development level version: %s' % dev_level_version)
+    logger.debug('Development level version: %s' % dev_level_version)
     if release_version and dev_level_version:
         file_version = release_version + "." + dev_level_version
         return file_version
@@ -448,15 +460,15 @@ if __name__ == "__main__":
     # CVE-2011-3595 1.7.1   http://developer.joomla.org/security/news/368-20110902-core-xss-vulnerability
     #               1.7.1   http://developer.joomla.org/security/news/369-20110903-core-information-disclosure.html
     # CVE-2011-3629 1.7.2   OSVDB:76721 SA46421 http://developer.joomla.org/security/news/371-20111002-core-information-disclosure
-    # CVE-2012-0819 1.7.4   OSVDB:78517 http://developer.joomla.org/security/news/382-20120101-core-information-disclosure.html # TODO
-    # CVE-2012-0820 1.7.4   OSVDB:78515 http://developer.joomla.org/security/news/383-20120102-core-xss-vulnerability.html # TODO
-    # CVE-2012-0821 1.7.4   OSVDB:78518 http://developer.joomla.org/security/news/384-20120103-core-information-disclosure.html # TODO
-    # CVE-2012-0822 1.7.4   OSVDB:78516 http://developer.joomla.org/security/news/385-20120104-core-xss-vulnerability.html # TODO
+    # CVE-2012-0819 1.7.4   OSVDB:78517 http://developer.joomla.org/security/news/382-20120101-core-information-disclosure.html
+    # CVE-2012-0820 1.7.4   OSVDB:78515 http://developer.joomla.org/security/news/383-20120102-core-xss-vulnerability.html
+    # CVE-2012-0821 1.7.4   OSVDB:78518 http://developer.joomla.org/security/news/384-20120103-core-information-disclosure.html
+    # CVE-2012-0822 1.7.4   OSVDB:78516 http://developer.joomla.org/security/news/385-20120104-core-xss-vulnerability.html
     'Joomla 1.7': {
         'location': ['/libraries/joomla/version.php', '/includes/version.php'],
-        'secure': '1.7.2',
+        'secure': '1.7.4',
         'regexp': ['.*?RELEASE.*?(?P<version>1.[7,6])', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})'],
-        'cve': 'CVE-2011-3629 http://developer.joomla.org/security/news/370-20111001-core-information-disclosure.html',
+        'cve': 'CVE-2012-0819 OSVDB:78517 http://developer.joomla.org/security/news/382-20120101-core-information-disclosure.html CVE-2012-0820 OSVDB:78515 http://developer.joomla.org/security/news/383-20120102-core-xss-vulnerability.html CVE-2012-0821 OSVDB:78518 http://developer.joomla.org/security/news/384-20120103-core-information-disclosure.html CVE-2012-0822 OSVDB:78516 http://developer.joomla.org/security/news/385-20120104-core-xss-vulnerability.html',
         'fingerprint': detect_joomla
         },
     # CVE-2012-0835 2.5.1   OSVDB:78824 http://developer.joomla.org/security/news/387-20120201-core-information-disclosure.html
