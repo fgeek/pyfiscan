@@ -50,7 +50,7 @@ if os.path.islink(logfile):
     sys.exit(1)
 
 try:
-    logging.basicConfig(filename=logfile, level=level)
+    logging.basicConfig(filename=logfile, level=level, format='%(asctime)s %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
 except IOError as (errno, strerror):
     if errno == int('13'):
         print('Error while writing to logfile: %s' % strerror)
@@ -179,7 +179,7 @@ def main(argv):
         help="Check if we are allowed to traverse directories (execution bit)")
 
     (opts, args) = parser.parse_args()
-    # Starttime is used to measure program runtime
+    """Starttime is used to measure program runtime."""
     starttime = time.time()
     try:
         """stderr to /dev/null"""
@@ -302,7 +302,7 @@ def SpawnWorker():
                         if not compare_versions(application['secure'], file_version):
                             continue
                         logging.debug('%s with version %s from %s with vulnerability %s. This installation should be updated to at least version %s.' % (appname, file_version, item_location, application['cve'], application['secure']))
-                        print('[%s] Found: %s %s -> %s (%s)' % (get_timestamp(), item_location, file_version, application['secure'], appname))
+                        print('%s Found: %s %s -> %s (%s)' % (get_timestamp(), item_location, file_version, application['secure'], appname))
                         csv_add(appname, item_location, file_version, application['secure'], application['cve'])
         except Exception, e:
             print(traceback.format_exc())
@@ -428,8 +428,8 @@ if __name__ == "__main__":
     # CVE-2011-2488 1.5.23
     # CVE-2011-2889 1.5.23
     # CVE-2011-2890 1.5.23
-    # CVE-2011-3629 1.5.24  OSVDB:76720 SA46421 http://developer.joomla.org/security/news/372-20111003-core-information-disclosure 
-    # CVE-2011-4321 1.5.25
+    # Won't be assigned 1.5.24  OSVDB:76720 SA46421 http://developer.joomla.org/security/news/372-20111003-core-information-disclosure 
+    # CVE-2011-4321 1.5.25  OSVDB:77094 http://developer.joomla.org/security/news/374-20111102-core-password-change http://developer.joomla.org/security/news/375-20111103-core-password-change 
     # CVE-2012-1598 1.5.26  http://developer.joomla.org/security/news/396-20120305-core-password-change
     # CVE-2012-1599 1.5.26  OSVDB:80708 http://developer.joomla.org/security/news/397-20120306-core-information-disclosure
     'Joomla 1.5': {
