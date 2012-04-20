@@ -564,7 +564,8 @@ if __name__ == "__main__":
     # CVE-2010-0682 2.9.2
     # CVE-2011-0700 3.0.5   OSVDB:72763,72764 SA43238 http://wordpress.org/news/2011/02/wordpress-3-0-5/
     # CVE-2011-0701 3.0.5   OSVDB:72765 SA43238 http://wordpress.org/news/2011/02/wordpress-3-0-5/
-    #               3.1.1   OSVDB:72141 SA44038 http://wordpress.org/news/2011/04/wordpress-3-1-1/ # TODO: No CVE
+    # CVE-2011-4956 3.1.1   OSVDB:72141 SA44038 http://wordpress.org/news/2011/04/wordpress-3-1-1/
+    # CVE-2011-4957 3.1.1   OSVDB:72142 SA44038 http://wordpress.org/news/2011/04/wordpress-3-1-1/
     # CVE-2011-1762 3.1.2   OSVDB:72097 SA44372 SA44542 http://wordpress.org/news/2011/04/wordpress-3-1-2/ http://core.trac.wordpress.org/changeset/17710 http://lists.fedoraproject.org/pipermail/package-announce/2011-May/059968.html http://lists.fedoraproject.org/pipermail/package-announce/2011-May/059986.html 
     # CVE-2011-3122 3.1.3   OSVDB:74485 http://wordpress.org/news/2011/05/wordpress-3-1-3/
     # CVE-2011-3125 3.1.3   OSVDB:74486 http://wordpress.org/news/2011/05/wordpress-3-1-3/
