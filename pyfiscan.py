@@ -582,7 +582,7 @@ if __name__ == "__main__":
         'cve': 'CVE-2012-0287 OSVDB:78123 SA47371 https://wordpress.org/news/2012/01/wordpress-3-3-1/',
         'fingerprint': detect_general
         },
-    # TODO: SA32686 SA14001 SA11832 SA11807 SA10318
+    # TODO: SA14001 SA11832 SA11807 SA10318
     # CVE-2007-0857 1.5.7 (SA24096)
     # CVE-2007-0901 1.5.8 (SA24138)
     # CVE-2007-2423 1.5.8 (SA24138)
@@ -594,6 +594,7 @@ if __name__ == "__main__":
     # CVE-2008-1099 1.6.1 (SA29010)
     # CVE-2008-1937 1.6.3 (SA29894)
     # CVE-2008-3381 1.7.1 (SA31135)
+    # N/A           N/A     OSVDB:49752 SA32686
     # CVE-2009-0260 1.8.2 (SA33593)
     # CVE-2009-0312 1.8.2 (SA33593)
     # CVE-2009-1482 1.8.3 (SA34821)
