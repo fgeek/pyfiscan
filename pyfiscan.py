@@ -757,11 +757,11 @@ if __name__ == "__main__":
     # N/A           1.1.6.6     OSVDB:53706 SA34321
     # N/A           1.1.6.7     OSVDB:53705 SA34321
     # N/A           1.1.6.7     OSVDB:53707 SA34321
-    # CVE-2011-4448 1.3.2-p2    OSVDB:77390 http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/
-    # CVE-2011-4449 1.3.2-p2    OSVDB:77391 http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/
-    # CVE-2011-4450 1.3.2-p2    OSVDB:77392 http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/
-    # CVE-2011-4451 1.3.2-p2    OSVDB:77393 http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/
-    # CVE-2011-4452 1.3.2-p2    OSVDB:77394 http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/
+    # CVE-2011-4448 1.3.2-p7    OSVDB:77390 http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/
+    # CVE-2011-4449 1.3.2-p7    OSVDB:77391 http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/
+    # CVE-2011-4450 1.3.2-p7    OSVDB:77392 http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/
+    # CVE-2011-4451 1.3.2-p7    OSVDB:77393 http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/
+    # CVE-2011-4452 1.3.2-p7    OSVDB:77394 http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/
     # 'WikkaWiki'
     # CVE-2011-4453 2.2.35      OSVDB:77261 http://www.pmwiki.org/wiki/PITS/01271
     # 'PmWiki'
