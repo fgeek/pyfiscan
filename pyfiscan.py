@@ -738,11 +738,11 @@ if __name__ == "__main__":
         'cve': 'CVE-2012-1578 CVE-2012-1579 CVE-2012-1580 CVE-2012-1581 CVE-2012-1582 OSVDB:80361,80362,80363,80364,80365 http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000109.html',
         'fingerprint': detect_general
         },
-    # CVE-2011-4448 1.3.2-p2    OSVDB:77390
-    # CVE-2011-4449 1.3.2-p2    OSVDB:77391
-    # CVE-2011-4450 1.3.2-p2    OSVDB:77392
-    # CVE-2011-4451 1.3.2-p2    OSVDB:77393
-    # CVE-2011-4452 1.3.2-p2    OSVDB:77394
+    # CVE-2011-4448 1.3.2-p2    OSVDB:77390 http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/
+    # CVE-2011-4449 1.3.2-p2    OSVDB:77391 http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/
+    # CVE-2011-4450 1.3.2-p2    OSVDB:77392 http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/
+    # CVE-2011-4451 1.3.2-p2    OSVDB:77393 http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/
+    # CVE-2011-4452 1.3.2-p2    OSVDB:77394 http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/
     # 'WikkaWiki'
     # CVE-2011-4453 2.2.35      OSVDB:77261 http://www.pmwiki.org/wiki/PITS/01271
     # 'PmWiki'
