@@ -738,6 +738,25 @@ if __name__ == "__main__":
         'cve': 'CVE-2012-1578 CVE-2012-1579 CVE-2012-1580 CVE-2012-1581 CVE-2012-1582 OSVDB:80361,80362,80363,80364,80365 http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000109.html',
         'fingerprint': detect_general
         },
+    # N/A           1.1.3.5     OSVDB:26537
+    # N/A           1.1.3.8     OSVDB:26538
+    # N/A           1.1.5.0     OSVDB:26539
+    # N/A           1.1.6.0     OSVDB:26540
+    # CVE-2005-4255 1.1.6.1     OSVDB:21698 SA18015
+    # N/A           1.1.6.2     OSVDB:26545
+    # N/A           1.1.6.2     OSVDB:26541
+    # N/A           1.1.6.2     OSVDB:26542
+    # CVE-2006-7050 1.1.6.2     OSVDB:37339
+    # N/A           1.1.6.2     OSVDB:26544
+    # CVE-2006-7049 1.1.6.2     OSVDB:26543 SA20628
+    # CVE-2007-2551 1.1.6.3     OSVDB:35828 SA25181
+    # CVE-2007-2552 1.1.6.3     OSVDB:35827
+    # CVE-2007-2612 1.1.6.3     OSVDB:35826
+    # CVE-2007-2613 1.1.6.3     OSVDB:35825 SA25181
+    # N/A           1.1.6.6     OSVDB:51942 SA33956
+    # N/A           1.1.6.6     OSVDB:53706 SA34321
+    # N/A           1.1.6.7     OSVDB:53705 SA34321
+    # N/A           1.1.6.7     OSVDB:53707 SA34321
     # CVE-2011-4448 1.3.2-p2    OSVDB:77390 http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/
     # CVE-2011-4449 1.3.2-p2    OSVDB:77391 http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/
     # CVE-2011-4450 1.3.2-p2    OSVDB:77392 http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/
