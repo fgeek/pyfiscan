@@ -494,7 +494,6 @@ if __name__ == "__main__":
         # http://secunia.com/advisories/24316/
         # http://secunia.com/advisories/24951/
         # http://secunia.com/advisories/28130/
-        # OSBDB:72142 3.1.1
         # http://osvdb.org/show/osvdb/72097
         # http://osvdb.org/show/osvdb/73721
     # Not valid:
