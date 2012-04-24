@@ -16,6 +16,7 @@ TODO: There should be argument for looking specific programs in for example: -s 
 TODO: There should be --loglevel=<levelname>
 TODO: Add unittests
 TODO: Add support to continue interrupted session (Tuomo Komulainen requested). Could be implemented using [http://docs.python.org/library/atexit.htm atexit-module] with knowledge of current working directory and queues
+TODO: Creates empty logfiles if there is error. For example wrong arguments
 """
 
 try:
@@ -301,10 +302,13 @@ def csv_add(appname, item, file_version, secure_version, cve):
 
 
 def handle_results(appname, file_version, item_location, application_cve, application_secure):
-    logger = logging.getLogger(return_func_name())
-    logger.debug('%s with version %s from %s with vulnerability %s. This installation should be updated to at least version %s.' % (appname, file_version, item_location, application_cve, application_secure))
-    print('%s Found: %s %s -> %s (%s)' % (get_timestamp(), item_location, file_version, application_secure, appname))
-    csv_add(appname, item_location, file_version, application_secure, application_cve)
+    try:
+        logger = logging.getLogger(return_func_name())
+        logger.debug('%s with version %s from %s with vulnerability %s. This installation should be updated to at least version %s.' % (appname, file_version, item_location, application_cve, application_secure))
+        print('%s Found: %s %s -> %s (%s)' % (get_timestamp(), item_location, file_version, application_secure, appname))
+        csv_add(appname, item_location, file_version, application_secure, application_cve)
+    except Exception, e:
+        print(traceback.format_exc())
 
 
 def SpawnWorker():
@@ -858,16 +862,17 @@ if __name__ == "__main__":
     # CVE-2006-5848 0.10.1 SA22789
     # CVE-2007-1405 0.10.3.1 SA24470
     # CVE-2008-3328 0.10.5 SA31231
-    # CVE-2008-5646 0.11.2 SA32652
-    # CVE-2008-5647 0.11.2 SA32652
-    # CVE-2009-4405 0.11.6 SA37807
-    #'trac': {
-        #'location': ['/Trac.egg-info/PKG-INFO'],
-        #'secure': '0.11.6',
-        #'regexp': ['Version.*?(?P<version>[.0-9]{2,})'],
-        #'cve': 'CVE-2009-4405',
-        #'fingerprint': detect_general
-        #}
+    # CVE-2008-5646 0.11.2  OSVDB:49847 SA32652
+    # CVE-2008-5647 0.11.2  OSVDB:49846 SA32652
+    # CVE-2009-4405 0.11.6  OSVDB:61244 SA37807
+    # N/A           0.11.7  OSVDB:63317 SA39123
+    'Trac': {
+        'location': ['/Trac.egg-info/PKG-INFO'],
+        'secure': '0.11.7',
+        'regexp': ['Version.*?(?P<version>[.0-9]{2,})'],
+        'cve': 'OSVDB:63317',
+        'fingerprint': detect_general
+        },
     # CVE-2004-1996 "last vulnerable 1.0 Beta 5" OSVDB:16898
     # N/A           1.0.5 OSVDB:17458 SA15784 # TODO: No CVE
     # CVE-2005-2817 "last vulnerable 1.0.5" OSVDB:19120 SA16646
