@@ -12,8 +12,10 @@ Pyfiscan is free web-application vulnerability and version scanner, which is pyt
 Known issues and/or bugs:
 1: If instance is upgraded from Joomla 1.6.1 to 1.7.x by unzipping there will be both version files libraries/joomla/version.php and includes/version.php where first is the old one.
 
-TODO:
-1: There should be argument for looking specific programs in for example: -s joomla,smf
+TODO: There should be argument for looking specific programs in for example: -s joomla,smf
+TODO: There should be --loglevel=<levelname>
+TODO: Add unittests
+TODO: Add support to continue interrupted session (Tuomo Komulainen requested). Could be implemented using [http://docs.python.org/library/atexit.htm atexit-module] with knowledge of current working directory and queues
 """
 
 try:
@@ -238,9 +240,9 @@ def return_func_name():
 
 
 def check_dir_execution_bit(path, checkmodes):
+    """Check if path has execution bit to check if site is public. Defaults to false."""
     try:
         logger = logging.getLogger(return_func_name())
-        """Check if path has execution bit to check if site is public. Defaults to false."""
         if checkmodes == None:
             return True
         if not os.path.exists(path):
@@ -292,11 +294,18 @@ def csv_add(appname, item, file_version, secure_version, cve):
         logger.debug('Exception in csv_add: %s' % error)
 
 
+def handle_results(appname, file_version, item_location, application_cve, application_secure):
+    logger = logging.getLogger(return_func_name())
+    logger.debug('%s with version %s from %s with vulnerability %s. This installation should be updated to at least version %s.' % (appname, file_version, item_location, application_cve, application_secure))
+    print('%s Found: %s %s -> %s (%s)' % (get_timestamp(), item_location, file_version, application_secure, appname))
+    csv_add(appname, item_location, file_version, application_secure, application_cve)
+
+
 def SpawnWorker():
     while 1:
         try:
             logger = logging.getLogger(return_func_name())
-            item = ''
+            item = None
             item = queue.get()
             logger.info('Processing: %s (%s)' % (item[0], item[1]))
             for (appname, application) in data.iteritems():
@@ -310,11 +319,10 @@ def SpawnWorker():
                         if file_version is None:
                             continue
                         """Tests that version from file is smaller than secure version."""
-                        if not compare_versions(application['secure'], file_version):
+                        logger.debug('Comparing versions %s with type %s %s with type %s' % (application['secure'], type(application['secure']), file_version, type(file_version)))
+                        if not compare_versions(application['secure'], file_version, appname):
                             continue
-                        logger.debug('%s with version %s from %s with vulnerability %s. This installation should be updated to at least version %s.' % (appname, file_version, item_location, application['cve'], application['secure']))
-                        print('%s Found: %s %s -> %s (%s)' % (get_timestamp(), item_location, file_version, application['secure'], appname))
-                        csv_add(appname, item_location, file_version, application['secure'], application['cve'])
+                        handle_results(appname, file_version, item_location, application['cve'], application['secure'])
         except Exception, e:
             print(traceback.format_exc())
 
@@ -339,7 +347,9 @@ def grep_from_file(version_file, regexp):
 
 def detect_general(source_file, regexp):
     """Detects from file if the file has version information. Uses first regexp-match."""
-    if not os.path.isfile(source_file) and not regexp:
+    if not os.path.isfile(source_file):
+        return
+    if not regexp:
         return
     file_version = grep_from_file(source_file, regexp[0])
     return file_version
@@ -348,16 +358,26 @@ def detect_general(source_file, regexp):
 def detect_joomla(source_file, regexp):
     logger = logging.getLogger(return_func_name())
     """Detects from file if the file has version information of Joomla"""
-    if not os.path.isfile(source_file) and not regexp:
+    if not os.path.isfile(source_file):
+        return
+    if not regexp:
         return
     logger.debug('Dectecting Joomla from: %s' % source_file)
+
     release_version = grep_from_file(source_file, regexp[0])
+    if not release_version:
+        logger.debug('Could not find release version from: %s' % source_file)
+        return
     logger.debug('Release version: %s' % release_version)
+    
     dev_level_version = grep_from_file(source_file, regexp[1])
+    if not dev_level_version:
+        logger.debug('Could not find development version from: %s' % source_file)
+        return
     logger.debug('Development level version: %s' % dev_level_version)
-    if release_version and dev_level_version:
-        file_version = release_version + "." + dev_level_version
-        return file_version
+
+    file_version = release_version + "." + dev_level_version
+    return file_version
 
 
 if __name__ == "__main__":
@@ -497,8 +517,11 @@ if __name__ == "__main__":
         # http://osvdb.org/show/osvdb/72097
         # http://osvdb.org/show/osvdb/73721
     # Not valid:
-    #   OSVDB:72173
-    #               0.71    SA8954
+    # N/A                   OSVDB:72173
+    # N/A           0.71    SA8954
+    # Open installation:
+    # CVE-2012-0937         OSVDB:78710
+    # Generic:
     # CVE-2003-1598 "0.72 RC1" OSVDB:4610 SA8954
     # CVE-2003-1599 "0.72 RC1" OSVDB:4611 SA8954
     # CVE-2004-1559 1.2.1
@@ -575,11 +598,17 @@ if __name__ == "__main__":
     # CVE-2011-3130 3.1.3   OSVDB:74491 http://wordpress.org/news/2011/05/wordpress-3-1-3/
     # CVE-2011-4898/CVE-2011-4899/CVE-2012-0782 3.3.1   OSVDB:7870778708,78709 https://www.trustwave.com/spiderlabs/advisories/TWSL2012-002.txt
     # CVE-2012-0287 3.3.1   OSVDB:78123 SA47371 https://wordpress.org/news/2012/01/wordpress-3-3-1/
+    # CVE-2012-2399 3.3.2   http://codex.wordpress.org/Version_3.3.2
+    # CVE-2012-2400 3.3.2   http://codex.wordpress.org/Version_3.3.2
+    # CVE-2012-2401 3.3.2   http://codex.wordpress.org/Version_3.3.2
+    # CVE-2012-2402 3.3.2   http://codex.wordpress.org/Version_3.3.2
+    # CVE-2012-2403 3.3.2   http://codex.wordpress.org/Version_3.3.2
+    # CVE-2012-2404 3.3.2   http://codex.wordpress.org/Version_3.3.2
     'WordPress': {
         'location': ['/wp-includes/version.php'],
-        'secure': '3.3.1',
+        'secure': '3.3.2',
         'regexp': ['\$wp_version.*?(?P<version>[0-9.]+)'],
-        'cve': 'CVE-2012-0287 OSVDB:78123 SA47371 https://wordpress.org/news/2012/01/wordpress-3-3-1/',
+        'cve': 'CVE-2012-2399, CVE-2012-2400, CVE-2012-2401, CVE-2012-2402, CVE-2012-2403, CVE-2012-2404 http://codex.wordpress.org/Version_3.3.2',
         'fingerprint': detect_general
     },
     # TODO: MoinMoin fingerprint list is not full. Please check out OSVDB lists.
@@ -762,7 +791,13 @@ if __name__ == "__main__":
     # CVE-2011-4450 1.3.2-p7    OSVDB:77392 http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/
     # CVE-2011-4451 1.3.2-p7    OSVDB:77393 http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/
     # CVE-2011-4452 1.3.2-p7    OSVDB:77394 http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/
-    # 'WikkaWiki'
+#    'WikkaWiki': {
+#        'location': ['version.php'],
+#        'secure': '1.3.2-p7',
+#        'regexp': ['\$svn_version.*?(?P<version>[0-9.]{1,})', '.*?WIKKA_PATCH_LEVEL.*?(?P<version>[0-9.]{1,})'],
+#        'cve': 'CVE-2011-4448/CVE-2011-4449/CVE-2011-4450/CVE-2011-4451/CVE-2011-4452 OSVDB:77390,77391,77392,77393,7739477394 http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/',
+#        'fingerprint': detect_wikkawiki
+#        },
     # CVE-2011-4453 2.2.35      OSVDB:77261 http://www.pmwiki.org/wiki/PITS/01271
     # 'PmWiki'
     # CVE-2011-4558 8.2         OSVDB:78013 http://dev.tiki.org/item4059
