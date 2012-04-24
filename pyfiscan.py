@@ -262,6 +262,12 @@ def check_dir_execution_bit(path, checkmodes):
 
 def compare_versions(secure_version, file_version, appname=None):
     """Comparison of found version numbers. Value current_version is predefined and file_version is found from file using grep. Value appname is used to separate different version numbering syntax"""
+    if appname == 'WikkaWiki':
+        ver1 = secure_version.split('-')
+        ver2 = file_version.split('-')
+        """Replace -p → ."""
+        secure_version = ver1[0] + '.' + ver1[1].lstrip('p')
+        file_version = ver2[0] + '.' + ver2[1].lstrip('p')
     ver1 = secure_version.split('.')
     ver2 = file_version.split('.')
     ver1_bigger = 0
@@ -378,6 +384,38 @@ def detect_joomla(source_file, regexp):
 
     file_version = release_version + "." + dev_level_version
     return file_version
+
+
+def detect_wikkawiki(source_file, regexp):
+    """Detects from file if the file has version information of WikkaWiki.
+
+    Wikka-1.3.2-p7/version.php:
+    $svn_version = '1.3.2';
+    if (!defined('WAKKA_VERSION')) define('WAKKA_VERSION', $svn_version);
+    if(!defined('WIKKA_PATCH_LEVEL')) define('WIKKA_PATCH_LEVEL', '7');
+    """
+    logger = logging.getLogger(return_func_name())
+    if not os.path.isfile(source_file):
+        return
+    if not regexp:
+        return
+    logger.debug('Dectecting WikkaWiki from: %s' % source_file)
+
+    version = grep_from_file(source_file, regexp[0])
+    if not version:
+        logging.debug('Could not find version from: %s' % source_file)
+        return
+    logger.debug('Version: %s' % version)
+
+    patch_level = grep_from_file(source_file, regexp[1])
+    if not patch_level:
+       logging.debug('Could not find patch level from: %s' % patch_level)
+       return
+    logger.debug('Patch level: %s' % patch_level)
+
+    if version and patch_level:
+        file_version = version + "-p" + patch_level
+        return file_version
 
 
 if __name__ == "__main__":
@@ -791,13 +829,13 @@ if __name__ == "__main__":
     # CVE-2011-4450 1.3.2-p7    OSVDB:77392 http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/
     # CVE-2011-4451 1.3.2-p7    OSVDB:77393 http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/
     # CVE-2011-4452 1.3.2-p7    OSVDB:77394 http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/
-#    'WikkaWiki': {
-#        'location': ['version.php'],
-#        'secure': '1.3.2-p7',
-#        'regexp': ['\$svn_version.*?(?P<version>[0-9.]{1,})', '.*?WIKKA_PATCH_LEVEL.*?(?P<version>[0-9.]{1,})'],
-#        'cve': 'CVE-2011-4448/CVE-2011-4449/CVE-2011-4450/CVE-2011-4451/CVE-2011-4452 OSVDB:77390,77391,77392,77393,7739477394 http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/',
-#        'fingerprint': detect_wikkawiki
-#        },
+    'WikkaWiki': {
+        'location': ['version.php'],
+        'secure': '1.3.2-p7',
+        'regexp': ['\$svn_version.*?(?P<version>[0-9.]{1,})', '.*?WIKKA_PATCH_LEVEL.*?(?P<version>[0-9.]{1,})'],
+        'cve': 'CVE-2011-4448/CVE-2011-4449/CVE-2011-4450/CVE-2011-4451/CVE-2011-4452 OSVDB:77390,77391,77392,77393,7739477394 http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/',
+        'fingerprint': detect_wikkawiki
+        },
     # CVE-2011-4453 2.2.35      OSVDB:77261 http://www.pmwiki.org/wiki/PITS/01271
     # 'PmWiki'
     # CVE-2011-4558 8.2         OSVDB:78013 http://dev.tiki.org/item4059
