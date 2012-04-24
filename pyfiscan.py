@@ -260,7 +260,7 @@ def check_dir_execution_bit(path, checkmodes):
         loggin.debug(traceback.format_exc())
 
 
-def compare_versions(secure_version, file_version):
+def compare_versions(secure_version, file_version, appname=None):
     """Comparison of found version numbers. Value current_version is predefined and file_version is found from file using grep. Value appname is used to separate different version numbering syntax"""
     ver1 = secure_version.split('.')
     ver2 = file_version.split('.')
