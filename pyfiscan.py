@@ -847,8 +847,19 @@ if __name__ == "__main__":
         'fingerprint': detect_wikkawiki
         },
     # CVE-2011-4453 2.2.35      OSVDB:77261 http://www.pmwiki.org/wiki/PITS/01271
+    # TODO: CVE-2010-1481 XSS OSVDB:64456
+    # TODO: CVE-2011-4453 Remote PHP Code Execution OSVDB: 77261
+    # TODO: CVE-2010-4748 XSS OSVDB:69940
     # 'PmWiki'
     # CVE-2011-4558 8.2         OSVDB:78013 http://dev.tiki.org/item4059
+    # TODO: CVE-2010-4239, CVE-2010-4240, CVE-2010-4241
+    # TODO: Remote code execution CVE-2011-4558 OSVDB:78013 SA47320
+    # TODO: XSS CVE-2011-4336 OSVDB:74039 SA45256 SA45283 HTB23027
+    # TODO: XSS OSVDB:77965 SA47278
+    # TODO: XSS CVE-2011-4551 OSVDB:77966 SA47278
+    # TODO: (http://info.tiki.org/article182-Tiki-8-1-Now-Available-End-of-Life-for-Tiki-7-x)
+    # TODO: XSS CVE-2011-4454 OSVDB:77155 SA46740
+    # TODO: XSS CVE-2011-4455 OSVDB:77156 SA46740
     #'TikiWiki': {
     #    'location': ['/lib/setup/twversion.class.php'],
     #    'secure': '8.3', # Not fixed yet
