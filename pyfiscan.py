@@ -114,6 +114,7 @@ class PopulateScanQueue:
     def populate_predefined(self, startdir, checkmodes):
         try:
             logger = logging.getLogger(return_func_name())
+            logger.debug('Type of startdir: %s. Type of checkmodes: %s in populate_predefined' % (startdir, checkmodes))
             logger.debug('Populating predefined directories: %s' % startdir)
             predefined_locations = ['/www', '/secure_www']
             locations = []
@@ -920,13 +921,42 @@ if __name__ == "__main__":
     #   OSVDB:32605 too little information
     #   CVE-2007-5943 OSVDB:39961 myth/fake
     #   OSVDB:80766 Am!r XSS SMF 2.0.2 needs verification and vendor URL
-    'SMF': {
+    'SMF': { # TODO: 1.1.x is still supported. 1.0.x is not. Promised to fix before next commit
         'location': ['index.php'],
         'secure': '2.0.1',
         'regexp': ['\$forum_version.*?(?P<version>[0-9.]{1,})'],
         'cve': 'CVE-2011-3615, CVE-2011-4173, OSVDB:76317,76318,76822 SA46386',
         'fingerprint': detect_general
         }
+    # Unknown: OSVDB:57146,51178
+    # N/A           0.1-beta OSVDB:57138 "Attachment Upload Handling Unspecified Issue"
+    # N/A           0.1-beta OSBDB:57137 "Address Book / Identities Unspecified XSS
+    # N/A           0.1-rc1 OSBDB:57140
+    # N/A           0.1-rc1 OSBDB:57141
+    # N/A           0.1-rc1 OSBDB:57144
+    # N/A           0.1-rc1 OSVDB:57145 "Emoticon Path Attachment Unspecified Issue"
+    # N/A           0.1-rc1 OSVDB:57147 "Submitted Host Value Unspecified Issue"
+    # N/A           0.1-rc2 OSVDB:57148 "Unspecified Cross-site AJAX Request Disclosure"
+    # CVE-2007-6321 N/A     OSVDB:44117 SA30734,SA30735 http://trac.roundcube.net/ticket/1484701
+    # N/A           0.1-stable OSVDB:57149 http://freshmeat.net/projects/roundcubemail/?branch_id=59740&release_id=272982
+    # CVE-2008-5619 Affected 0.2-beta OSVDB:50694 SA33169
+    # CVE-2008-5620 Affected 0.2-beta OSVDB:50879 SA33169
+    # N/A           0.2.1 OSVDB:57150 "Vcard Export Unspecified Issue"
+    # CVE-2009-0413 0.2.1 OSVDB:51505
+    # CVE-2009-4076 0.3 OSVDB:59661 SA37235,SA37559
+    # CVE-2009-4077 0.3 OSVDB:60567 SA37235,SA37559
+    # CVE-2010-0464 0.4-beta OSVDB:62104
+    # CVE-2011-1491 0.5.1 OSVDB:73871 SA44050
+    # CVE-2011-1492 0.5.1 OSVDB:73870 SA44050
+    # CVE-2011-2937 0.5.4 OSVDB:74567
+    # CVE-2011-4078 0.5.4 OSVDB:77047 http://openwall.com/lists/oss-security/2011/10/26/6 http://trac.roundcube.net/ticket/1488086
+    #'Roundcube': {
+    #    'location': ['index.php'],
+    #    'secure': '0.5.4',
+    #    'regexp': ['', ''], # "Roundcube Webmail IMAP Client" "Version 0.7.2"
+    #    'cve': '',
+    #    'fingerprint': detect_roundcube # Needs new detection model. Must have one string before version is checked
+    #    }
     }
 
     status = Value('i', 1)
