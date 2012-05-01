@@ -1,9 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""pyfiscan
-
-Pyfiscan is free web-application vulnerability and version scanner, which is python program and can be used to locate out-dated versions of common web-software in Unix/Linux-servers. The best example is hosting-providers keeping eye on their users installations to keep up with security-updates. It supports content management systems, blogging softwares, image-galleries, version controlling programs, wikis, admin panels and bulletin boards.
+"""
+Pyfiscan is free web-application vulnerability and version scanner and can be used to locate out-dated versions of common web-applications in Unixi- and Linux-servers. Example usa case is hosting-providers keeping eye on their users installations to keep up with security-updates. Supports content management systems, blogging softwares, image-galleries, version controlling programs, wikis, admin panels and bulletin boards.
 
 @author Henri 'fgeek' Salo <henri@nerv.fi>
 @copyright Copyright (c) 2009-2012 Henri Salo
@@ -12,6 +11,7 @@ Pyfiscan is free web-application vulnerability and version scanner, which is pyt
 Known issues and/or bugs:
 1: If instance is upgraded from Joomla 1.6.1 to 1.7.x by unzipping there will be both version files libraries/joomla/version.php and includes/version.php where first is the old one.
 
+TODO: Test executing pyfiscan in Windows-environments
 TODO: Strip output --strip-output, which should remove homedir/startdir and location from output (stdin, csv and log)
 TODO: If one fingerprint finds a match the process should finish and not be scanned with other fingerprints
 TODO: There should be argument for looking specific programs in for example: -s joomla,smf
@@ -934,13 +934,14 @@ if __name__ == "__main__":
     #   OSVDB:32605 too little information
     #   CVE-2007-5943 OSVDB:39961 myth/fake
     #   OSVDB:80766 Am!r XSS SMF 2.0.2 needs verification and vendor URL
-    'SMF': { # TODO: 1.1.x is still supported. 1.0.x is not. Promised to fix before next commit
-        'location': ['index.php'],
-        'secure': '2.0.1',
-        'regexp': ['\$forum_version.*?(?P<version>[0-9.]{1,})'],
-        'cve': 'CVE-2011-3615, CVE-2011-4173, OSVDB:76317,76318,76822 SA46386',
-        'fingerprint': detect_general
-        }
+    # TODO: 1.1.x is still supported. 1.0.x is not. Promised to fix before next commit
+    #'SMF': {
+    #    'location': ['index.php'],
+    #    'secure': '2.0.1',
+    #    'regexp': ['\$forum_version.*?(?P<version>[0-9.]{1,})'],
+    #    'cve': 'CVE-2011-3615, CVE-2011-4173, OSVDB:76317,76318,76822 SA46386',
+    #    'fingerprint': detect_general
+    #    }
     # Unknown: OSVDB:57146,51178
     # N/A           0.1-beta OSVDB:57138 "Attachment Upload Handling Unspecified Issue"
     # N/A           0.1-beta OSBDB:57137 "Address Book / Identities Unspecified XSS
