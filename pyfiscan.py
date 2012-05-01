@@ -15,7 +15,6 @@ TODO: Test executing pyfiscan in Windows-environments
 TODO: Strip output --strip-output, which should remove homedir/startdir and location from output (stdin, csv and log)
 TODO: If one fingerprint finds a match the process should finish and not be scanned with other fingerprints
 TODO: There should be argument for looking specific programs in for example: -s joomla,smf
-TODO: There should be --loglevel=<levelname>
 TODO: Add unittests
 TODO: Add support to continue interrupted session (Tuomo Komulainen requested). Could be implemented using [http://docs.python.org/library/atexit.htm atexit-module] with knowledge of current working directory and queues
 TODO: Creates empty logfiles if there is error. For example wrong arguments
@@ -30,7 +29,7 @@ try:
     import traceback
     import os
     import stat # interpreting the results of os.[stat,fstat,lstat]
-    import inspect
+    import inspect # to get current function name for logging
     from collections import defaultdict
     from optparse import OptionParser
     from multiprocessing import Process, Queue, Value, Pool
@@ -44,23 +43,9 @@ queue = Queue()
 stats = defaultdict(lambda: 0)
 # Define logging
 LEVELS = {
+    'info': logging.INFO,
     'debug': logging.DEBUG
     }
-
-level_name = "debug"
-level = LEVELS.get(level_name, logging.NOTSET)
-logfile = "pyfiscan.log"
-# We do not want to continue in case logfile is a symlink
-if os.path.islink(logfile):
-    print('Logfile %s is a symlink file. Exiting..')
-    sys.exit(1)
-
-try:
-    logging.basicConfig(filename=logfile, level=level, format='%(asctime)s %(levelname)s %(name)s %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
-except IOError as (errno, strerror):
-    if errno == int('13'):
-        print('Error while writing to logfile: %s' % strerror)
-        sys.exit(1)
 
 class PopulateScanQueue:
     def __init__(self, status):
@@ -180,16 +165,42 @@ def main(argv):
         action="store",
         type="string",
         dest="home",
-        help="Spesifies where the home-directories are located")
+        help="Specifies where the home-directories are located")
     parser.add_option(
         "", "--check-modes",
         action="store_true",
         dest="checkmodes",
         help="Check if we are allowed to traverse directories (execution bit)")
+    parser.add_option(
+        "-l", "--loglevel",
+        action="store",
+        type="string",
+        dest="level_name",
+        help="Specifies logging level")
 
     (opts, args) = parser.parse_args()
     """Starttime is used to measure program runtime."""
     starttime = time.time()
+    if opts.level_name:
+        level_name = opts.level_name
+    else:
+        level_name = str('info')
+    if not LEVELS.has_key(level_name):
+        print('No such log level. Available levels are: %s' % LEVELS.keys())
+        sys.exit(1)
+    level = LEVELS.get(level_name, logging.NOTSET)
+    logfile = "pyfiscan.log"
+    # We do not want to continue in case logfile is a symlink
+    if os.path.islink(logfile):
+        print('Logfile %s is a symlink file. Exiting..')
+        sys.exit(1)
+    try:
+        logging.basicConfig(filename=logfile, level=level, format='%(asctime)s %(levelname)s %(name)s %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
+    except IOError as (errno, strerror):
+        if errno == int('13'):
+            print('Error while writing to logfile: %s' % strerror)
+            sys.exit(1)
+
     try:
         logger = logging.getLogger(return_func_name())
         """stderr to /dev/null"""
