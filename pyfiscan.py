@@ -191,15 +191,13 @@ def main(argv):
     logfile = "pyfiscan.log"
     # We do not want to continue in case logfile is a symlink
     if os.path.islink(logfile):
-        print('Logfile %s is a symlink file. Exiting..')
-        sys.exit(1)
+        print('Log-file is a symlink. Exiting..')
     try:
         logging.basicConfig(filename=logfile, level=level, format='%(asctime)s %(levelname)s %(name)s %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
     except IOError as (errno, strerror):
         if errno == int('13'):
             print('Error while writing to logfile: %s' % strerror)
             sys.exit(1)
-
     try:
         logger = logging.getLogger(return_func_name())
         """stderr to /dev/null"""
@@ -305,9 +303,13 @@ def csv_add(appname, item, file_version, secure_version, cve):
     """Writes list of found vulnerabilities in CVS-format."""
     logger = logging.getLogger(return_func_name())
     timestamp = get_timestamp()
-    name_of_logfile = 'pyfiscan-vulnerabilities-' + time.strftime("%Y-%m-%d") + '.csv'
+    csvfile = 'pyfiscan-vulnerabilities-' + time.strftime("%Y-%m-%d") + '.csv'
+    if os.path.islink(csvfile):
+        exit('CSV-file is a symlink. Exiting..')
+    if os.path.isdir(csvfile):
+        exit('CSV-file is a directory. Exiting..')
     try:
-        writer = csv.writer(open(name_of_logfile, "a"), delimiter='|', quotechar='|')
+        writer = csv.writer(open(csvfile, "a"), delimiter='|', quotechar='|')
         logged_data = timestamp, appname, item, file_version, secure_version, cve
         writer.writerow(logged_data)
     except Exception, e:
