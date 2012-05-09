@@ -11,12 +11,25 @@ Pyfiscan is free web-application vulnerability and version scanner and can be us
 Known issues and/or bugs:
 1: If instance is upgraded from Joomla 1.6.1 to 1.7.x by unzipping there will be both version files libraries/joomla/version.php and includes/version.php where first is the old one.
 
+TODO(!): SMF 1.1.x is still supported. 1.0.x is not. Promised to fix
 TODO: Test executing pyfiscan in Windows-environments
 TODO: Strip output --strip-output, which should remove homedir/startdir and location from output (stdin, csv and log)
 TODO: If one fingerprint finds a match the process should finish and not be scanned with other fingerprints
 TODO: There should be argument for looking specific programs in for example: -s joomla,smf
 TODO: Add unittests
 TODO: Add support to continue interrupted session (Tuomo Komulainen requested). Could be implemented using [http://docs.python.org/library/atexit.htm atexit-module] with knowledge of current working directory and queues
+TODO: WordPress have not been tested with 2003 versions
+TODO: MoinMoin fingerprint list is not full. Check OSVDB.
+TODO: MoinMoin 1.0 OSVDB:2878 SA10318 no CVE
+TODO: MoinMoin 1.1 OSVDB:2911 no CVE
+TODO: MoinMoin 1.2.2 OSVDB:6704 SA11807 no CVE
+TODO: MoinMoin 1.2.3 OSVDB:8194,8195 SA11832 no CVE
+TODO: MoinMoin 1.3.3 OSVDB:13184 SA14001 no CVE
+TODO: OSVDB:49752 SA32686 no CVE
+TODO: SMf 1.0.5 OSVDB:17458 SA15784 no CVE
+TODO: PmWiki CVE-2010-1481 XSS OSVDB:64456, CVE-2011-4453 Remote PHP Code Execution OSVDB: 77261, CVE-2010-4748 XSS OSVDB:69940
+TODO: TikiWiki CVE-2010-4239, CVE-2010-4240, CVE-2010-4241, Remote code execution CVE-2011-4558 OSVDB:78013 SA47320, XSS CVE-2011-4336 OSVDB:74039 SA45256 SA45283 HTB23027, XSS OSVDB:77965 SA47278, XSS CVE-2011-4551 OSVDB:77966 SA47278, http://info.tiki.org/article182-Tiki-8-1-Now-Available-End-of-Life-for-Tiki-7-x, XSS CVE-2011-4454 OSVDB:77155 SA46740, XSS CVE-2011-4455 OSVDB:77156 SA46740
+TODO: TikiWiki http://www.securityfocus.com/bid/12328 no CVE?
 """
 
 try:
@@ -557,14 +570,12 @@ if __name__ == "__main__":
     # CVE-2012-1611 2.5.4   http://developer.joomla.org/security/news/398-20120307-core-information-disclosure.html
     # CVE-2012-1612 2.5.4   OSVDB:80880 http://developer.joomla.org/security/news/399-20120308-core-xss-vulnerability.html
 #    'Joomla 2.5': {
-#        'location:': TODO
+#        'location:':
 #        'secure': '2.5.3',
-#        'regexp': TODO
-#        'cve': 'TODO'
-#        'fingerprint': TODO. Needs new
+#        'regexp': 
+#        'cve': ''
+#        'fingerprint':
 #        },
-
-    # TODO: Does not work with ancient 2003 versions
         # http://secunia.com/advisories/23621/
         # http://secunia.com/advisories/23587/
         # http://secunia.com/advisories/24316/
@@ -669,12 +680,6 @@ if __name__ == "__main__":
         'cve': 'CVE-2012-2399, CVE-2012-2400, CVE-2012-2401, CVE-2012-2402, CVE-2012-2403, CVE-2012-2404 http://codex.wordpress.org/Version_3.3.2',
         'fingerprint': detect_general
     },
-    # TODO: MoinMoin fingerprint list is not full. Please check out OSVDB lists.
-    # N/A           1.0     OSVDB:2878 SA10318 # TODO: No CVE
-    # N/A           1.1     OSVDB:2911 # TODO: No CVE
-    # N/A           1.2.2   OSVDB:6704 SA11807 # TODO: No CVE
-    # N/A           1.2.3   OSVDB:8194,8195 SA11832 # TODO: No CVE
-    # N/A           1.3.3   OSVDB:13184 SA14001 # TODO: No CVE
     # CVE-2007-0857 1.5.7 (SA24096)
     # CVE-2007-0901 1.5.8 (SA24138)
     # CVE-2007-2423 1.5.8 (SA24138)
@@ -686,7 +691,6 @@ if __name__ == "__main__":
     # CVE-2008-1099 1.6.1 (SA29010)
     # CVE-2008-1937 1.6.3 (SA29894)
     # CVE-2008-3381 1.7.1 (SA31135)
-    # N/A           N/A     OSVDB:49752 SA32686 # TODO: No CVE
     # CVE-2009-0260 1.8.2 (SA33593)
     # CVE-2009-0312 1.8.2 (SA33593)
     # CVE-2009-1482 1.8.3 (SA34821)
@@ -858,20 +862,7 @@ if __name__ == "__main__":
         'fingerprint': detect_wikkawiki
         },
     # CVE-2011-4453 2.2.35      OSVDB:77261 http://www.pmwiki.org/wiki/PITS/01271
-    # TODO: CVE-2010-1481 XSS OSVDB:64456
-    # TODO: CVE-2011-4453 Remote PHP Code Execution OSVDB: 77261
-    # TODO: CVE-2010-4748 XSS OSVDB:69940
-    # 'PmWiki'
     # CVE-2011-4558 8.2         OSVDB:78013 http://dev.tiki.org/item4059
-    # TODO: CVE-2010-4239, CVE-2010-4240, CVE-2010-4241
-    # TODO: Remote code execution CVE-2011-4558 OSVDB:78013 SA47320
-    # TODO: XSS CVE-2011-4336 OSVDB:74039 SA45256 SA45283 HTB23027
-    # TODO: XSS OSVDB:77965 SA47278
-    # TODO: XSS CVE-2011-4551 OSVDB:77966 SA47278
-    # TODO: (http://info.tiki.org/article182-Tiki-8-1-Now-Available-End-of-Life-for-Tiki-7-x)
-    # TODO: XSS CVE-2011-4454 OSVDB:77155 SA46740
-    # TODO: XSS CVE-2011-4455 OSVDB:77156 SA46740
-    # TODO: http://www.securityfocus.com/bid/12328 (does this have CVE?)
     #'TikiWiki': {
     #    'location': ['/lib/setup/twversion.class.php'],
     #    'secure': '8.3', # Not fixed yet
@@ -903,7 +894,6 @@ if __name__ == "__main__":
         'fingerprint': detect_general
         },
     # CVE-2004-1996 "last vulnerable 1.0 Beta 5" OSVDB:16898
-    # N/A           1.0.5 OSVDB:17458 SA15784 # TODO: No CVE
     # CVE-2005-2817 "last vulnerable 1.0.5" OSVDB:19120 SA16646
     # CVE-2005-4159 1.1 RC1 OSVDB:21722
     # CVE-2006-0896 1.0.7 OSVDB:23480 SA19004 EV0086
@@ -946,7 +936,6 @@ if __name__ == "__main__":
     #   OSVDB:32605 too little information
     #   CVE-2007-5943 OSVDB:39961 myth/fake
     #   OSVDB:80766 Am!r XSS SMF 2.0.2 needs verification and vendor URL
-    # TODO: 1.1.x is still supported. 1.0.x is not. Promised to fix before next commit
     #'SMF': {
     #    'location': ['index.php'],
     #    'secure': '2.0.1',
