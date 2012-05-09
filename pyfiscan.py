@@ -53,11 +53,8 @@ except ImportError, error:
 queue = Queue()
 # Initializing stats-dictionary. Lambda defaults value to zero
 stats = defaultdict(lambda: 0)
-# Define logging
-LEVELS = {
-    'info': logging.INFO,
-    'debug': logging.DEBUG
-    }
+# Available logging levels
+levels = { 'info': logging.INFO, 'debug': logging.DEBUG }
 
 class PopulateScanQueue:
     def __init__(self, status):
@@ -191,22 +188,23 @@ def main(argv):
         help="Specifies logging level")
 
     (opts, args) = parser.parse_args()
-    """Starttime is used to measure program runtime."""
+    # Starttime is used to measure program runtime
     starttime = time.time()
     if opts.level_name:
         level_name = opts.level_name
     else:
         level_name = str('info')
-    if not LEVELS.has_key(level_name):
-        print('No such log level. Available levels are: %s' % LEVELS.keys())
+    if not levels.has_key(level_name):
+        print('No such log level. Available levels are: %s' % levels.keys())
         sys.exit(1)
-    level = LEVELS.get(level_name, logging.NOTSET)
+    level = levels.get(level_name, logging.NOTSET)
     logfile = "pyfiscan.log"
     # We do not want to continue in case logfile is a symlink
     if os.path.islink(logfile):
         print('Log-file is a symlink. Exiting..')
     try:
         logging.basicConfig(filename=logfile, level=level, format='%(asctime)s %(levelname)s %(name)s %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
+        os.chmod(logfile, 0600)
     except IOError as (errno, strerror):
         if errno == int('13'):
             print('Error while writing to logfile: %s' % strerror)
@@ -325,6 +323,7 @@ def csv_add(appname, item, file_version, secure_version, cve):
         writer = csv.writer(open(csvfile, "a"), delimiter='|', quotechar='|')
         logged_data = timestamp, appname, item, file_version, secure_version, cve
         writer.writerow(logged_data)
+        os.chmod(csvfile, 0600)
     except Exception, e:
         logger.debug('Exception in csv_add: %s' % e)
 
@@ -432,19 +431,16 @@ def detect_wikkawiki(source_file, regexp):
     if not regexp:
         return
     logger.debug('Dectecting WikkaWiki from: %s' % source_file)
-
     version = grep_from_file(source_file, regexp[0])
     if not version:
-        logging.debug('Could not find version from: %s' % source_file)
+        logger.debug('Could not find version from: %s' % source_file)
         return
     logger.debug('Version: %s' % version)
-
     patch_level = grep_from_file(source_file, regexp[1])
     if not patch_level:
-        logging.debug('Could not find patch level from: %s' % patch_level)
+        logger.debug('Could not find patch level from: %s' % patch_level)
         return
     logger.debug('Patch level: %s' % patch_level)
-
     if version and patch_level:
         file_version = version + "-p" + patch_level
         return file_version
