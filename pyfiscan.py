@@ -250,6 +250,7 @@ def main(argv):
 
 
 def return_func_name():
+    """Returns name of calling function."""
     return inspect.stack()[1][3]
 
 
@@ -276,10 +277,9 @@ def check_dir_execution_bit(path, checkmodes):
 
 def compare_versions(secure_version, file_version, appname=None):
     """Comparison of found version numbers. Value current_version is predefined and file_version is found from file using grep. Value appname is used to separate different version numbering syntax"""
-    if appname == 'WikkaWiki':
+    if appname == 'WikkaWiki': # Replace -p → .
         ver1 = secure_version.split('-')
         ver2 = file_version.split('-')
-        """Replace -p → ."""
         secure_version = ver1[0] + '.' + ver1[1].lstrip('p')
         file_version = ver2[0] + '.' + ver2[1].lstrip('p')
     ver1 = secure_version.split('.')
@@ -310,8 +310,8 @@ def csv_add(appname, item, file_version, secure_version, cve):
         writer = csv.writer(open(name_of_logfile, "a"), delimiter='|', quotechar='|')
         logged_data = timestamp, appname, item, file_version, secure_version, cve
         writer.writerow(logged_data)
-    except Exception, error:
-        logger.debug('Exception in csv_add: %s' % error)
+    except Exception, e:
+        logger.debug('Exception in csv_add: %s' % e)
 
 
 def handle_results(appname, file_version, item_location, application_cve, application_secure):
@@ -369,7 +369,7 @@ def grep_from_file(version_file, regexp):
 
 
 def detect_general(source_file, regexp):
-    """Detects from file if the file has version information. Uses first regexp-match."""
+    """Detects from source file if it contains version information. Uses first regexp-match"""
     if not os.path.isfile(source_file):
         return
     if not regexp:
@@ -379,8 +379,8 @@ def detect_general(source_file, regexp):
 
 
 def detect_joomla(source_file, regexp):
+    """Detects from source file if it contains version information of Joomla"""
     logger = logging.getLogger(return_func_name())
-    """Detects from file if the file has version information of Joomla"""
     if not os.path.isfile(source_file):
         return
     if not regexp:
@@ -439,11 +439,10 @@ if __name__ == "__main__":
     """Structure of data-dictionary:
 
     - Software/program
-        - Look file from this directory hierarchy
-        - Filename
+        - Uses this directory hierarchy and filename to get current version of installation
         - Secure version
         - Regexp used in detection functions
-        - CVE-identifier and other security announcement ID's
+        - CVE-identifier and other references
 
     To-be schema:
     'vulnerabilities':
