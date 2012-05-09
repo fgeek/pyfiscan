@@ -5,6 +5,7 @@ try:
     import sys
     import smtplib
     import csv
+    import getpass
     from email.mime.text import MIMEText
 except ImportError, error:
     print('Import error: %s' % error)
@@ -66,4 +67,5 @@ def read_csv(csv_file, from_address):
     print('\n[*] Processed %i notifications. Happy customer is a happy customer!' % counter)
 
 
+print('Please note that it is required to add email| to start of each line in CSV.')
 read_csv(sys.argv[1], from_address, smtp_server, smtp_port)
