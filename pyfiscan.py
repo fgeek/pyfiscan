@@ -17,7 +17,6 @@ TODO: If one fingerprint finds a match the process should finish and not be scan
 TODO: There should be argument for looking specific programs in for example: -s joomla,smf
 TODO: Add unittests
 TODO: Add support to continue interrupted session (Tuomo Komulainen requested). Could be implemented using [http://docs.python.org/library/atexit.htm atexit-module] with knowledge of current working directory and queues
-TODO: Creates empty logfiles if there is error. For example wrong arguments
 """
 
 try:
@@ -427,8 +426,8 @@ def detect_wikkawiki(source_file, regexp):
 
     patch_level = grep_from_file(source_file, regexp[1])
     if not patch_level:
-       logging.debug('Could not find patch level from: %s' % patch_level)
-       return
+        logging.debug('Could not find patch level from: %s' % patch_level)
+        return
     logger.debug('Patch level: %s' % patch_level)
 
     if version and patch_level:
@@ -871,6 +870,7 @@ if __name__ == "__main__":
     # TODO: (http://info.tiki.org/article182-Tiki-8-1-Now-Available-End-of-Life-for-Tiki-7-x)
     # TODO: XSS CVE-2011-4454 OSVDB:77155 SA46740
     # TODO: XSS CVE-2011-4455 OSVDB:77156 SA46740
+    # TODO: http://www.securityfocus.com/bid/12328 (does this have CVE?)
     #'TikiWiki': {
     #    'location': ['/lib/setup/twversion.class.php'],
     #    'secure': '8.3', # Not fixed yet
