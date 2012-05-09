@@ -96,7 +96,7 @@ class PopulateScanQueue:
                 if os.path.islink(directory):
                     continue
                 if check_dir_execution_bit(directory, checkmodes):
-                    logger.info('Populating: %s' % directory)
+                    logger.debug('Populating: %s' % directory)
                     for filename in self.filenames(directory):
                         for (appname, application) in data.iteritems():
                             loc = application['location']
@@ -211,7 +211,7 @@ def main(argv):
             sys.exit(1)
     try:
         logger = logging.getLogger(return_func_name())
-        """stderr to /dev/null"""
+        # stderr to /dev/null
         devnull_fd = open(os.devnull, "w")
         sys.stderr = devnull_fd
         log_to_stderr()
@@ -363,12 +363,13 @@ def SpawnWorker():
                         file_version = application["fingerprint"](item_location, application['regexp'])
                         if file_version is None:
                             continue
-                        """Tests that version from file is smaller than secure version."""
+                        # Tests that version from file is smaller than secure version
                         logger.debug('Comparing versions %s with type %s %s with type %s' % (application['secure'], type(application['secure']), file_version, type(file_version)))
                         if not compare_versions(application['secure'], file_version, appname):
                             continue
+                        # Calls result handler (goes to CSV and log)
                         handle_results(appname, file_version, item_location, application['cve'], application['secure'])
-        except Exception, e:
+        except Exception:
             print(traceback.format_exc())
 
 
