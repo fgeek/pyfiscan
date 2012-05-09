@@ -13,7 +13,7 @@ Known issues and/or bugs:
 
 TODO(!): SMF 1.1.x is still supported. 1.0.x is not. Promised to fix
 TODO: Test executing pyfiscan in Windows-environments
-TODO: Strip output --strip-output, which should remove homedir/startdir and location from output (stdin, csv and log)
+TODO: Argument --strip-output, which should remove homedir/startdir and location from output (stdin, csv and log)
 TODO: If one fingerprint finds a match the process should finish and not be scanned with other fingerprints
 TODO: There should be argument for looking specific programs in for example: -s joomla,smf
 TODO: Add unittests
@@ -339,6 +339,14 @@ def handle_results(appname, file_version, item_location, application_cve, applic
 
 
 def SpawnWorker():
+    """This is working process function used in batches.
+
+    1. Takes and removes item from queue
+    2. Launches detection in case of correct directory/file match is found
+    3. Launches comparison of versions
+    4. Calls result handler 
+
+    """
     while 1:
         try:
             logger = logging.getLogger(return_func_name())
