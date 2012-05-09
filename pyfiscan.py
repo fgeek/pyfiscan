@@ -12,6 +12,7 @@ Known issues and/or bugs:
 1: If instance is upgraded from Joomla 1.6.1 to 1.7.x by unzipping there will be both version files libraries/joomla/version.php and includes/version.php where first is the old one.
 
 TODO(!): SMF 1.1.x is still supported. 1.0.x is not. Promised to fix
+TODO: Joomla 2.5 detection. Needs support for configuration specific parser and MySQL queries
 TODO: Test executing pyfiscan in Windows-environments
 TODO: Argument --strip-output, which should remove homedir/startdir and location from output (stdin, csv and log)
 TODO: If one fingerprint finds a match the process should finish and not be scanned with other fingerprints
