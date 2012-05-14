@@ -25,13 +25,14 @@ if version_major < int(1):
 if version_minor < int(6):
     sys.exit('Python minor version needs to be seven or higher.\nSMTP_SSL only works with Python 2.7')
 
+
 def send_email(user, timestamp, appname, version_file, file_version, secure_version, cve, from_address, smtp_server, smtp_port):
     """This will handle email sending to SMTP-server."""
-    msg = MIMEText('Hei, olemme huomanneet, että käytössäsi on ' + appname + '-sovellus, jonka versio on haavoittuvainen. Voit korjata tilanteen päivittämällä asennuksen vähintään versioon ' + secure_version +'. Apua sovelluksen päivittämiseen saat vastaamalla tähän sähköpostiin sekä tästä ohjeesta: http://www.kapsi.fi/ohjeet/www-paivitys.html\n\nHaavoittuva sovellus löytyy hakemistostasi: ' + version_file + '\n\nLisätietoja: ' + cve + '\n\nTähän sähköpostiin ei tarvitse vastata mikäli sinulla ei ole ongelmia päivityksessä.\n\nTerveisin,\n   Henri Salo\n   Kapsin ylläpito\n   yllapito@tuki.kapsi.fi\n\n   Kapsi Internet-käyttäjät ry\n   http://www.kapsi.fi/\n   http://tuki.kapsi.fi/', _charset='utf-8')
+    msg = MIMEText('Hei, olemme huomanneet, että käytössäsi on ' + appname + '-sovellus, jonka versio on haavoittuvainen. Voit korjata tilanteen päivittämällä asennuksen vähintään versioon ' + secure_version + '. Apua sovelluksen päivittämiseen saat vastaamalla tähän sähköpostiin sekä tästä ohjeesta: http://www.kapsi.fi/ohjeet/www-paivitys.html\n\nHaavoittuva sovellus löytyy hakemistostasi: ' + version_file + '\n\nLisätietoja: ' + cve + '\n\nTähän sähköpostiin ei tarvitse vastata mikäli sinulla ei ole ongelmia päivityksessä.\n\nTerveisin,\n   Henri Salo\n   Kapsin ylläpito\n   yllapito@tuki.kapsi.fi\n\n   Kapsi Internet-käyttäjät ry\n   http://www.kapsi.fi/\n   http://tuki.kapsi.fi/', _charset='utf-8')
 
     to_address = user
     try:
-        s = smtplib.SMTP_SSL(smtp_server, smtp_port) # SMTP_SSL only works with Python 2.7
+        s = smtplib.SMTP_SSL(smtp_server, smtp_port)  # SMTP_SSL only works with Python 2.7
         s.login(getpass.getuser(), getpass.getpass())
         s.ehlo_or_helo_if_needed()
         s.set_debuglevel(1)
