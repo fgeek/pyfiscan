@@ -41,8 +41,8 @@ try:
     import csv
     import traceback
     import os
-    import stat # interpreting the results of os.[stat,fstat,lstat]
-    import inspect # to get current function name for logging
+    import stat  # Interpreting the results of os.[stat,fstat,lstat]
+    import inspect  # To get current function name for logging
     from collections import defaultdict
     from optparse import OptionParser
     from multiprocessing import Process, Queue, Value, Pool
@@ -55,7 +55,8 @@ queue = Queue()
 # Initializing stats-dictionary. Lambda defaults value to zero
 stats = defaultdict(lambda: 0)
 # Available logging levels
-levels = { 'info': logging.INFO, 'debug': logging.DEBUG }
+levels = {'info': logging.INFO, 'debug': logging.DEBUG}
+
 
 class PopulateScanQueue:
     def __init__(self, status):
@@ -131,7 +132,7 @@ class PopulateScanQueue:
                 if check_dir_execution_bit(public_html_location, checkmodes):
                     logger.debug('Appending to locations: %s' % os.path.abspath(public_html_location))
                     locations.append(os.path.abspath(public_html_location))
-            
+
             for directory in userdirs:
                 sites_location = directory + '/sites'
                 if not os.path.isdir(sites_location):
@@ -195,7 +196,7 @@ def main(argv):
         level_name = opts.level_name
     else:
         level_name = str('info')
-    if not levels.has_key(level_name):
+    if not level_name in levels:
         print('No such log level. Available levels are: %s' % levels.keys())
         sys.exit(1)
     level = levels.get(level_name, logging.NOTSET)
@@ -287,7 +288,7 @@ def check_dir_execution_bit(path, checkmodes):
 
 def compare_versions(secure_version, file_version, appname=None):
     """Comparison of found version numbers. Value current_version is predefined and file_version is found from file using grep. Value appname is used to separate different version numbering syntax"""
-    if appname == 'WikkaWiki': # Replace -p → .
+    if appname == 'WikkaWiki':  # Replace -p → .
         ver1 = secure_version.split('-')
         ver2 = file_version.split('-')
         secure_version = ver1[0] + '.' + ver1[1].lstrip('p')
@@ -345,7 +346,7 @@ def SpawnWorker():
     1. Takes and removes item from queue
     2. Launches detection in case of correct directory/file match is found
     3. Launches comparison of versions
-    4. Calls result handler 
+    4. Calls result handler
 
     """
     while 1:
@@ -416,7 +417,6 @@ def detect_joomla(source_file, regexp):
         logger.debug('Could not find release version from: %s' % source_file)
         return
     logger.debug('Release version: %s' % release_version)
-    
     dev_level_version = grep_from_file(source_file, regexp[1])
     if not dev_level_version:
         logger.debug('Could not find development version from: %s' % source_file)
@@ -506,7 +506,7 @@ if __name__ == "__main__":
     # CVE-2007-5427 1.0.14  OSVDB:37709 SA27196
     # CVE-2008-5671 1.0.15  OSVDB:42123 SA29106 http://www.joomla.org/announcements/release-news/4609-joomla-1015-released.html
     # CVE-2007-6642 1.5 RC4 OSVDB:41263 SA28219
-    # CVE-2007-6643 1.5 RC4 OSVDB:39979 SA29257 
+    # CVE-2007-6643 1.5 RC4 OSVDB:39979 SA29257
     # CVE-2008-1533 1.5.1   OSVDB:42894 SA28861 http://www.joomla.org/announcements/release-news/4560-joomla-1-5-1-released.html
     # CVE-2008-3225 1.5.4   OSVDB:46810 SA30974 http://www.joomla.org/announcements/release-news/5180-joomla-154-released.html
     # CVE-2008-3226 1.5.4   OSVDB:46811 SA30974 http://www.joomla.org/announcements/release-news/5180-joomla-154-released.html
@@ -535,8 +535,8 @@ if __name__ == "__main__":
     # CVE-2011-2488 1.5.23
     # CVE-2011-2889 1.5.23
     # CVE-2011-2890 1.5.23
-    # Won't be assigned 1.5.24  OSVDB:76720 SA46421 http://developer.joomla.org/security/news/372-20111003-core-information-disclosure 
-    # CVE-2011-4321 1.5.25  OSVDB:77094 http://developer.joomla.org/security/news/374-20111102-core-password-change http://developer.joomla.org/security/news/375-20111103-core-password-change 
+    # Won't be assigned 1.5.24  OSVDB:76720 SA46421 http://developer.joomla.org/security/news/372-20111003-core-information-disclosure
+    # CVE-2011-4321 1.5.25  OSVDB:77094 http://developer.joomla.org/security/news/374-20111102-core-password-change http://developer.joomla.org/security/news/375-20111103-core-password-change
     # CVE-2012-1598 1.5.26  http://developer.joomla.org/security/news/396-20120305-core-password-change
     # CVE-2012-1599 1.5.26  OSVDB:80708 http://developer.joomla.org/security/news/397-20120306-core-information-disclosure
     'Joomla 1.5': {
@@ -544,8 +544,7 @@ if __name__ == "__main__":
         'secure': '1.5.26',
         'regexp': ['.*?\$RELEASE.*?(?P<version>1.[0,5])', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})'],
         'cve': 'CVE-2012-1598 http://developer.joomla.org/security/news/396-20120305-core-password-change CVE-2012-1599 OSVDB:80708 http://developer.joomla.org/security/news/397-20120306-core-information-disclosure',
-        'fingerprint': detect_joomla
-        },
+        'fingerprint': detect_joomla},
     # CVE-2011-1151 1.6.1   OSVDB:75355 http://developer.joomla.org/security/news/328-20110201-core-sql-injection-path-disclosure.html
     # CVE-2010-4696 1.6.1   OSVDB:69026 SA42133 http://developer.joomla.org/security/news/328-20110201-core-sql-injection-path-disclosure.html http://yehg.net/lab/pr0js/advisories/joomla/core/[joomla_1.6.0]_sql_injection
     # CVE-2011-2509 1.6.4   OSVDB:73491 http://developer.joomla.org/security/news/352-20110604-xss-vulnerability.html
@@ -564,8 +563,7 @@ if __name__ == "__main__":
         'secure': '1.7.4',
         'regexp': ['.*?RELEASE.*?(?P<version>1.[7,6])', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})'],
         'cve': 'CVE-2012-0819 OSVDB:78517 http://developer.joomla.org/security/news/382-20120101-core-information-disclosure.html CVE-2012-0820 OSVDB:78515 http://developer.joomla.org/security/news/383-20120102-core-xss-vulnerability.html CVE-2012-0821 OSVDB:78518 http://developer.joomla.org/security/news/384-20120103-core-information-disclosure.html CVE-2012-0822 OSVDB:78516 http://developer.joomla.org/security/news/385-20120104-core-xss-vulnerability.html',
-        'fingerprint': detect_joomla
-        },
+        'fingerprint': detect_joomla},
     # CVE-2012-0835 2.5.1   OSVDB:78824 http://developer.joomla.org/security/news/387-20120201-core-information-disclosure.html
     # CVE-2012-0836 2.5.1   OSVDB:78825 http://developer.joomla.org/security/news/388-20120202-core-information-disclosure.html
     # CVE-2012-0837 2.5.1   OSVDB:78826 http://developer.joomla.org/security/news/389-20120203-core-information-disclosure.html
@@ -578,7 +576,7 @@ if __name__ == "__main__":
 #    'Joomla 2.5': {
 #        'location:':
 #        'secure': '2.5.3',
-#        'regexp': 
+#        'regexp':
 #        'cve': ''
 #        'fingerprint':
 #        },
@@ -655,7 +653,7 @@ if __name__ == "__main__":
     # CVE-2009-2851 2.8.2
     # CVE-2009-2853 2.8.3
     # CVE-2009-2854 2.8.3
-    # CVE-2009-3622 2.8.5 
+    # CVE-2009-3622 2.8.5
     # CVE-2009-3890 2.8.6
     # CVE-2009-3891 2.8.6
     # CVE-2010-0682 2.9.2
@@ -663,7 +661,7 @@ if __name__ == "__main__":
     # CVE-2011-0701 3.0.5   OSVDB:72765 SA43238 http://wordpress.org/news/2011/02/wordpress-3-0-5/
     # CVE-2011-4956 3.1.1   OSVDB:72141 SA44038 http://wordpress.org/news/2011/04/wordpress-3-1-1/
     # CVE-2011-4957 3.1.1   OSVDB:72142 SA44038 http://wordpress.org/news/2011/04/wordpress-3-1-1/
-    # CVE-2011-1762 3.1.2   OSVDB:72097 SA44372 SA44542 http://wordpress.org/news/2011/04/wordpress-3-1-2/ http://core.trac.wordpress.org/changeset/17710 http://lists.fedoraproject.org/pipermail/package-announce/2011-May/059968.html http://lists.fedoraproject.org/pipermail/package-announce/2011-May/059986.html 
+    # CVE-2011-1762 3.1.2   OSVDB:72097 SA44372 SA44542 http://wordpress.org/news/2011/04/wordpress-3-1-2/ http://core.trac.wordpress.org/changeset/17710 http://lists.fedoraproject.org/pipermail/package-announce/2011-May/059968.html http://lists.fedoraproject.org/pipermail/package-announce/2011-May/059986.html
     # CVE-2011-3122 3.1.3   OSVDB:74485 http://wordpress.org/news/2011/05/wordpress-3-1-3/
     # CVE-2011-3125 3.1.3   OSVDB:74486 http://wordpress.org/news/2011/05/wordpress-3-1-3/
     # CVE-2011-3126 3.1.3   OSVDB:74487 http://wordpress.org/news/2011/05/wordpress-3-1-3/
@@ -684,8 +682,7 @@ if __name__ == "__main__":
         'secure': '3.3.2',
         'regexp': ['\$wp_version.*?(?P<version>[0-9.]+)'],
         'cve': 'CVE-2012-2399, CVE-2012-2400, CVE-2012-2401, CVE-2012-2402, CVE-2012-2403, CVE-2012-2404 http://codex.wordpress.org/Version_3.3.2',
-        'fingerprint': detect_general
-    },
+        'fingerprint': detect_general},
     # CVE-2007-0857 1.5.7 (SA24096)
     # CVE-2007-0901 1.5.8 (SA24138)
     # CVE-2007-2423 1.5.8 (SA24138)
@@ -715,8 +712,7 @@ if __name__ == "__main__":
         'secure': '1.9.3',
         'regexp': ['.*?release.*?(?P<version>[0-9.]{1,})'],
         'cve': 'CVE-2011-1058 SA43413',
-        'fingerprint': detect_general
-        },
+        'fingerprint': detect_general},
     #               1.0.3 (SA23582)
     # CVE-2007-2473 1.0.6 (SA25082)
     # CVE-2007-5056 1.1.4.1 (SA26928)
@@ -738,8 +734,7 @@ if __name__ == "__main__":
         'secure': '1.9.4.3',
         'regexp': ['\$CMS_VERSION.*?(?P<version>[.0-9]{2,})'],
         'cve': 'CVE-2011-4310 http://www.cmsmadesimple.org/2011/08/Announcing-CMSMS-1-9-4-3---Security-Release/',
-        'fingerprint': detect_general
-        },
+        'fingerprint': detect_general},
     # CVE-2004-2261 0.615   SA11567
     #               0.615   SA9369
     #               0.616   SA11740
@@ -796,8 +791,7 @@ if __name__ == "__main__":
         'secure': '1.0.0',
         'regexp': ['.*?e107_version.*?(?P<version>[.0-9]{2,})'],
         'cve': 'CVE-2011-4920 CVE-2011-4921 OSVDB:78047-78050 SA46706',
-        'fingerprint': detect_general
-        },
+        'fingerprint': detect_general},
     # CVE-2008-1766 3.0.1       SA29801
     # CVE-2008-6506 3.0.4       SA33166
     # CVE-2008-6507 3.0.4       SA33166
@@ -809,8 +803,7 @@ if __name__ == "__main__":
         'secure': '3.0.8',
         'regexp': ['.*?PHPBB_VERSION.*?(?P<version>3[0-9.]{1,})'],
         'cve': 'CVE-2011-0544, SA42343',
-        'fingerprint': detect_general
-        },
+        'fingerprint': detect_general},
     # CVE-2010-1189 1.15.2      OSVDB:62798 SA38856
     # CVE-2010-1190 1.15.2      OSVDB:62799 SA38856
     # CVE-2010-1150 1.15.3      OSVDB:63570 SA39333
@@ -834,8 +827,7 @@ if __name__ == "__main__":
         'secure': '1.17.3',
         'regexp': ['\$wgVersion.*?(?P<version>[0-9.]{1,})'],
         'cve': 'CVE-2012-1578 CVE-2012-1579 CVE-2012-1580 CVE-2012-1581 CVE-2012-1582 OSVDB:80361,80362,80363,80364,80365 http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000109.html',
-        'fingerprint': detect_general
-        },
+        'fingerprint': detect_general},
     # N/A           1.1.3.5     OSVDB:26537
     # N/A           1.1.3.8     OSVDB:26538
     # N/A           1.1.5.0     OSVDB:26539
@@ -865,8 +857,7 @@ if __name__ == "__main__":
         'secure': '1.3.2-p7',
         'regexp': ['\$svn_version.*?(?P<version>[0-9.]{1,})', '.*?WIKKA_PATCH_LEVEL.*?(?P<version>[0-9.]{1,})'],
         'cve': 'CVE-2011-4448/CVE-2011-4449/CVE-2011-4450/CVE-2011-4451/CVE-2011-4452 OSVDB:77390,77391,77392,77393,7739477394 http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/',
-        'fingerprint': detect_wikkawiki
-        },
+        'fingerprint': detect_wikkawiki},
     # CVE-2011-4453 2.2.35      OSVDB:77261 http://www.pmwiki.org/wiki/PITS/01271
     # CVE-2011-4558 8.2         OSVDB:78013 http://dev.tiki.org/item4059
     #'TikiWiki': {
@@ -897,8 +888,7 @@ if __name__ == "__main__":
         'secure': '0.11.7',
         'regexp': ['Version.*?(?P<version>[.0-9]{2,})'],
         'cve': 'OSVDB:63317',
-        'fingerprint': detect_general
-        },
+        'fingerprint': detect_general},
     # CVE-2004-1996 "last vulnerable 1.0 Beta 5" OSVDB:16898
     # CVE-2005-2817 "last vulnerable 1.0.5" OSVDB:19120 SA16646
     # CVE-2005-4159 1.1 RC1 OSVDB:21722
