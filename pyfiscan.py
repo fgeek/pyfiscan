@@ -11,7 +11,13 @@ Pyfiscan is free web-application vulnerability and version scanner and can be us
 Known issues and/or bugs:
 1: If instance is upgraded from Joomla 1.6.1 to 1.7.x by unzipping there will be both version files libraries/joomla/version.php and includes/version.php where first is the old one.
 
+TODO: Fingerprints to YAML and use decorators in functions
+http://www.artima.com/weblogs/viewpost.jsp?thread=240808
+http://www.python.org/dev/peps/pep-0318/
+http://wiki.python.org/moin/PythonDecorators
+http://wiki.python.org/moin/PythonDecoratorLibrary
 TODO(!): SMF 1.1.x is still supported. 1.0.x is not. Promised to fix
+TODO: https://github.com/halst/docopt/blob/master/docopt.py
 TODO: Joomla 2.5 detection. Needs support for configuration specific parser and MySQL queries
 TODO: Test executing pyfiscan in Windows-environments
 TODO: Argument --strip-output, which should remove homedir/startdir and location from output (stdin, csv and log)
@@ -20,6 +26,7 @@ TODO: There should be argument for looking specific programs in for example: -s 
 TODO: Add unittests
 TODO: Add support to continue interrupted session (Tuomo Komulainen requested). Could be implemented using [http://docs.python.org/library/atexit.htm atexit-module] with knowledge of current working directory and queues
 TODO: WordPress have not been tested with 2003 versions
+TODO: WordPress http://core.trac.wordpress.org/changeset/16803 this does not seem to have a CVE-identifier. Debian lists this as TEMP-0606657-A0D78A
 TODO: MoinMoin fingerprint list is not full. Check OSVDB.
 TODO: MoinMoin 1.0 OSVDB:2878 SA10318 no CVE
 TODO: MoinMoin 1.1 OSVDB:2911 no CVE
@@ -888,6 +895,14 @@ if __name__ == "__main__":
         'secure': '0.11.7',
         'regexp': ['Version.*?(?P<version>[.0-9]{2,})'],
         'cve': 'OSVDB:63317',
+        'fingerprint': detect_general},
+    # CVE-2011-4806
+    # CVE-2011-4807
+    'phpAlbum': {
+        'location': ['main.php'],
+        'secure': '0.4.1.16',
+        'regexp': ['\$phpalbum_version.*?(?P<version>[0-9.]{1,})'],
+        'cve': 'CVE-2011-4806 CVE-2011-4807 OSVDB:74980 OSVDB:21410',
         'fingerprint': detect_general},
     # CVE-2004-1996 "last vulnerable 1.0 Beta 5" OSVDB:16898
     # CVE-2005-2817 "last vulnerable 1.0.5" OSVDB:19120 SA16646
