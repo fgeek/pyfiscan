@@ -36,8 +36,6 @@ TODO: MoinMoin 1.3.3 OSVDB:13184 SA14001 no CVE
 TODO: OSVDB:49752 SA32686 no CVE
 TODO: SMf 1.0.5 OSVDB:17458 SA15784 no CVE
 TODO: PmWiki CVE-2010-1481 XSS OSVDB:64456, CVE-2011-4453 Remote PHP Code Execution OSVDB: 77261, CVE-2010-4748 XSS OSVDB:69940
-TODO: TikiWiki CVE-2010-4239, CVE-2010-4240, CVE-2010-4241, Remote code execution CVE-2011-4558 OSVDB:78013 SA47320, XSS CVE-2011-4336 OSVDB:74039 SA45256 SA45283 HTB23027, XSS OSVDB:77965 SA47278, XSS CVE-2011-4551 OSVDB:77966 SA47278, http://info.tiki.org/article182-Tiki-8-1-Now-Available-End-of-Life-for-Tiki-7-x, XSS CVE-2011-4454 OSVDB:77155 SA46740, XSS CVE-2011-4455 OSVDB:77156 SA46740
-TODO: TikiWiki http://www.securityfocus.com/bid/12328 no CVE?
 """
 
 try:
@@ -865,15 +863,23 @@ if __name__ == "__main__":
         'regexp': ['\$svn_version.*?(?P<version>[0-9.]{1,})', '.*?WIKKA_PATCH_LEVEL.*?(?P<version>[0-9.]{1,})'],
         'cve': 'CVE-2011-4448/CVE-2011-4449/CVE-2011-4450/CVE-2011-4451/CVE-2011-4452 OSVDB:77390,77391,77392,77393,7739477394 http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/',
         'fingerprint': detect_wikkawiki},
+    # CVE-2005-0200             OSVDB:13119 BugtraqID:12328
+    # CVE-2010-4239             http://www.openwall.com/lists/oss-security/2010/11/22/9
+    # CVE-2010-4240             http://www.openwall.com/lists/oss-security/2010/11/22/9
+    # CVE-2010-4241             http://www.openwall.com/lists/oss-security/2010/11/22/9
     # CVE-2011-4453 2.2.35      OSVDB:77261 http://www.pmwiki.org/wiki/PITS/01271
-    # CVE-2011-4558 8.2         OSVDB:78013 http://dev.tiki.org/item4059
-    #'TikiWiki': {
-    #    'location': ['/lib/setup/twversion.class.php'],
-    #    'secure': '8.3', # Not fixed yet
-    #    'regexp': ['.*?\$this->version.*?(?P<version>[0-9.]{1,})'],
-    #    'cve': 'CVE-2011-4558',
-    #    'fingerprint': detect_general
-    #    }
+    # CVE-2011-4336 7.1/6.4     OSVDB:74039 SA45256 SA45283 HTB23027
+    # CVE-2011-4454 8.1         OSVDB:77155 SA46740
+    # CVE-2011-4455 8.1         OSVDB:77156 SA46740
+    # N/A           8.2/6.5     OSVDB:77965 SA47278 # TODO: Missing CVE-identifier
+    # CVE-2011-4551 8.2/6.5     OSVDB:77966 SA47278 http://info.tiki.org/article183-Tiki-Wiki-CMS-Groupware-8-2-and-6-5LTS-Security-Patches-Available 
+    # CVE-2011-4558 8.3/6.6     OSVDB:78013 SA47320 http://dev.tiki.org/item4059 http://info.tiki.org/article185-Tiki-Security-Patches-Available-for-8-3-and-6-6-LTS
+    'TikiWiki': {
+        'location': ['/lib/setup/twversion.class.php'],
+        'secure': '8.3',
+        'regexp': ['.*?\$this->version.*?(?P<version>[0-9.]{1,})'],
+        'cve': 'CVE-2011-4558 http://osvdb.org/78013',
+        'fingerprint': detect_general},
     # CVE-2005-2007 0.8.4 SA15752
     # CVE-2005-2147 0.8.4 SA15752
     # CVE-2005-3980 0.9.1 SA17836
