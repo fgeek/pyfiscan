@@ -682,11 +682,14 @@ if __name__ == "__main__":
     # CVE-2012-2402 3.3.2   http://codex.wordpress.org/Version_3.3.2
     # CVE-2012-2403 3.3.2   http://codex.wordpress.org/Version_3.3.2
     # CVE-2012-2404 3.3.2   http://codex.wordpress.org/Version_3.3.2
+    # CVE-2012-3383 3.4.1   http://codex.wordpress.org/Version_3.4.1
+    # CVE-2012-3384 3.4.1   http://codex.wordpress.org/Version_3.4.1
+    # CVE-2012-3385 3.4.1   http://codex.wordpress.org/Version_3.4.1
     'WordPress': {
         'location': ['/wp-includes/version.php'],
-        'secure': '3.3.2',
+        'secure': '3.4.1',
         'regexp': ['\$wp_version.*?(?P<version>[0-9.]+)'],
-        'cve': 'CVE-2012-2399, CVE-2012-2400, CVE-2012-2401, CVE-2012-2402, CVE-2012-2403, CVE-2012-2404 http://codex.wordpress.org/Version_3.3.2',
+        'cve': 'http://codex.wordpress.org/Version_3.4.1 CVE-2012-3383, CVE-2012-3384, CVE-2012-3385',
         'fingerprint': detect_general},
     # CVE-2007-0857 1.5.7 (SA24096)
     # CVE-2007-0901 1.5.8 (SA24138)
@@ -915,7 +918,7 @@ if __name__ == "__main__":
     #    'location': ['/inc/class_core.php'],
     #    'secure': '1.6.1',
     #    'regexp': ['.*?public \$version.*?(?P<version>[0-9.]{1,})'],
-    #    'cve': 'TODO',
+    #    'cve': '',
     #    'fingerprint': detect_general},
     # CVE-2004-1996 "last vulnerable 1.0 Beta 5" OSVDB:16898
     # CVE-2005-2817 "last vulnerable 1.0.5" OSVDB:19120 SA16646
