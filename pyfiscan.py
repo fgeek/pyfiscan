@@ -157,7 +157,7 @@ class PopulateScanQueue:
                             if check_dir_execution_bit(sites_location_last, checkmodes):
                                 logger.debug('Appending to locations: %s' % os.path.abspath(sites_location_last))
                                 locations.append(os.path.abspath(sites_location_last))
-            logger.info('Predefined locations populate: %s' % locations)
+            logger.debug('Predefined locations populate: %s' % locations)
             self.populate(locations, checkmodes)
         except Exception, e:
             logger.debug(traceback.format_exc())
@@ -576,7 +576,7 @@ if __name__ == "__main__":
     # CVE-2012-1117 2.5.2   OSVDB:79836 http://developer.joomla.org/security/news/392-20120302-core-xss-vulnerability.html
     # CVE-2012-1562 2.5.3   OSVDB:80112 http://developer.joomla.org/security/news/394-20120304-core-password-change.html
     # CVE-2012-1563 2.5.3   OSVDB:80111 http://developer.joomla.org/security/news/395-20120303-core-privilege-escalation.html
-    # CVE-2012-1611 2.5.4   http://developer.joomla.org/security/news/398-20120307-core-information-disclosure.html
+    # CVE-2012-1611 2.5.4   OSVDB:80708 http://developer.joomla.org/security/news/398-20120307-core-information-disclosure.html
     # CVE-2012-1612 2.5.4   OSVDB:80880 http://developer.joomla.org/security/news/399-20120308-core-xss-vulnerability.html
 #    'Joomla 2.5': {
 #        'location:':
@@ -910,6 +910,13 @@ if __name__ == "__main__":
         'regexp': ['\$phpalbum_version.*?(?P<version>[0-9.]{1,})'],
         'cve': 'CVE-2011-4806 CVE-2011-4807 OSVDB:74980 OSVDB:21410',
         'fingerprint': detect_general},
+    # CVE-2010-5096 1.6.1 OSVDB:70013,70014
+    #'MyBB': {
+    #    'location': ['/inc/class_core.php'],
+    #    'secure': '1.6.1',
+    #    'regexp': ['.*?public \$version.*?(?P<version>[0-9.]{1,})'],
+    #    'cve': 'TODO',
+    #    'fingerprint': detect_general},
     # CVE-2004-1996 "last vulnerable 1.0 Beta 5" OSVDB:16898
     # CVE-2005-2817 "last vulnerable 1.0.5" OSVDB:19120 SA16646
     # CVE-2005-4159 1.1 RC1 OSVDB:21722
