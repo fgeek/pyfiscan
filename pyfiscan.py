@@ -57,6 +57,8 @@ try:
     from optparse import OptionParser
     from multiprocessing import Process, Queue, Value, Pool
     from multiprocessing.util import log_to_stderr
+
+    from database import Database
 except ImportError, error:
     print('Import error: %s' % error)
     sys.exit(1)
