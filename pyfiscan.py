@@ -19,7 +19,6 @@ http://wiki.python.org/moin/PythonDecoratorLibrary
 TODO(!): SMF 1.1.x is still supported. 1.0.x is not. Promised to fix
 TODO: https://github.com/halst/docopt/blob/master/docopt.py
 TODO: Joomla 2.5 detection. Needs support for configuration specific parser and MySQL queries
-TODO: Test executing pyfiscan in Windows-environments
 TODO: Argument --strip-output, which should remove homedir/startdir and location from output (stdin, csv and log)
 TODO: If one fingerprint finds a match the process should finish and not be scanned with other fingerprints
 TODO: There should be argument for looking specific programs in for example: -s joomla,smf
@@ -282,10 +281,10 @@ def check_dir_execution_bit(path, checkmodes):
             return
         """http://docs.python.org/library/stat.html#stat.S_IXOTH"""
         if stat.S_IXOTH & os.stat(path)[stat.ST_MODE]:
-            logger.debug('Execution bit set for directory: %s' % path)
+            #logger.debug('Execution bit set for directory: %s' % path)
             return True
         else:
-            logger.debug('No execution bit set for directory: %s' % path)
+            #logger.debug('No execution bit set for directory: %s' % path)
             return False
     except Exception, e:
         loggin.debug(traceback.format_exc())
@@ -318,7 +317,7 @@ def get_timestamp():
 
 
 def csv_add(appname, item, file_version, secure_version, cve):
-    """Writes list of found vulnerabilities in CVS-format."""
+    """Creates CVS-file and writes found vulnerabilities per line. CSV-file can't be symlink."""
     logger = logging.getLogger(return_func_name())
     timestamp = get_timestamp()
     csvfile = 'pyfiscan-vulnerabilities-' + time.strftime("%Y-%m-%d") + '.csv'
@@ -370,7 +369,7 @@ def SpawnWorker():
                         file_version = application["fingerprint"](item_location, application['regexp'])
                         if file_version is None:
                             continue
-                        # Tests that version from file is smaller than secure version
+                        # Tests that version from file is smaller than secure version with application fingerprint-function
                         logger.debug('Comparing versions %s with type %s %s with type %s' % (application['secure'], type(application['secure']), file_version, type(file_version)))
                         if not compare_versions(application['secure'], file_version, appname):
                             continue
