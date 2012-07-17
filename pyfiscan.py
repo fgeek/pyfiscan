@@ -498,6 +498,11 @@ if __name__ == "__main__":
     - Vendor URL
     """
 
+    yamldir = 'yamls/'
+    database = Database(yamldir)
+    data = database.generate(yamldir)
+ 
+    """
     data = {
     # CVE-2006-0303 1.0.7   OSVDB:22531,22532,22533,2253422535 SA18513
     # CVE-2006-1047 1.0.8   OSBDB:31287 SA19105
@@ -1012,6 +1017,7 @@ if __name__ == "__main__":
     #    'fingerprint': detect_roundcube # Needs new detection model. Must have one string before version is checked
     #    }
     }
+    """
 
     status = Value('i', 1)
     main(sys.argv[1:])
