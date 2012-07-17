@@ -121,9 +121,10 @@ class PopulateScanQueue:
             logging.debug(traceback.format_exc())
 
     def populate_predefined(self, startdir, checkmodes):
+        if not type(startdir) == str:
+            sys.exit('Error in populate_predefined value startdir not a string. Value is: "%s" with type %s.' % (startdir, type(startdir)[0]))
         try:
             logger = logging.getLogger(return_func_name())
-            logger.debug('Type of startdir: %s. Type of checkmodes: %s in populate_predefined' % (startdir, checkmodes))
             logger.debug('Populating predefined directories: %s' % startdir)
             predefined_locations = ['/www', '/secure_www']
             locations = []
@@ -165,7 +166,7 @@ class PopulateScanQueue:
                             if check_dir_execution_bit(sites_location_last, checkmodes):
                                 logger.debug('Appending to locations: %s' % os.path.abspath(sites_location_last))
                                 locations.append(os.path.abspath(sites_location_last))
-            logger.debug('Predefined locations populate: %s' % locations)
+            logging.debug('Total amount of locations: %s' % len(locations))
             self.populate(locations, checkmodes)
         except Exception, e:
             logger.debug(traceback.format_exc())
@@ -213,17 +214,17 @@ def main(argv):
         print('No such log level. Available levels are: %s' % levels.keys())
         sys.exit(1)
     level = levels.get(level_name, logging.NOTSET)
-    logfile = "pyfiscan.log"
-    # We do not want to continue in case logfile is a symlink
-    if os.path.islink(logfile):
-        print('Log-file is a symlink. Exiting..')
+    logfile = 'pyfiscan.log'
+
+    if os.path.islink(logfile):  # We do not want to continue in case logfile is a symlink
+        sys.exit('Logfile %s is a symlink. Exiting..' % logfile)
+
     try:
         logging.basicConfig(filename=logfile, level=level, format='%(asctime)s %(levelname)s %(name)s %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
         os.chmod(logfile, 0600)
     except IOError as (errno, strerror):
         if errno == int('13'):
-            print('Error while writing to logfile: %s' % strerror)
-            sys.exit(1)
+            sys.exit('Error while writing to logfile: %s' % strerror)
     try:
         logger = logging.getLogger(return_func_name())
         # stderr to /dev/null
@@ -326,14 +327,17 @@ def get_timestamp():
 
 
 def csv_add(appname, item, file_version, secure_version, cve):
-    """Creates CVS-file and writes found vulnerabilities per line. CSV-file can't be symlink."""
+    """Creates CVS-file and writes found vulnerabilities per line. CSV-file can't be symlink.
+    
+    TODO: Should check that all needed arguments are available.
+    """
     logger = logging.getLogger(return_func_name())
     timestamp = get_timestamp()
     csvfile = 'pyfiscan-vulnerabilities-' + time.strftime("%Y-%m-%d") + '.csv'
     if os.path.islink(csvfile):
-        exit('CSV-file is a symlink. Exiting..')
+        exit('CSV-file %s is a symlink. Exiting..' % csvfile)
     if os.path.isdir(csvfile):
-        exit('CSV-file is a directory. Exiting..')
+        exit('CSV-file %s is a not a file. Exiting..' % csvfile)
     try:
         writer = csv.writer(open(csvfile, "a"), delimiter='|', quotechar='|')
         logged_data = timestamp, appname, item, file_version, secure_version, cve
@@ -376,7 +380,7 @@ def SpawnWorker():
                     if item_location.endswith(location):
                         logger.debug('Processing item %s with location %s with with appname %s application %s' % (item_location, location, appname, application))
                         file_version = application["fingerprint"](item_location, application['regexp'])
-                        if file_version is None:
+                        if file_version is None:  # TODO: Is this really needed?
                             continue
                         # Tests that version from file is smaller than secure version with application fingerprint-function
                         logger.debug('Comparing versions %s with type %s %s with type %s' % (application['secure'], type(application['secure']), file_version, type(file_version)))
