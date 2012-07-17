@@ -11,30 +11,36 @@ Pyfiscan is free web-application vulnerability and version scanner and can be us
 Known issues and/or bugs:
 1: If instance is upgraded from Joomla 1.6.1 to 1.7.x by unzipping there will be both version files libraries/joomla/version.php and includes/version.php where first is the old one.
 
-TODO: Fingerprints to YAML and use decorators in functions
-http://www.artima.com/weblogs/viewpost.jsp?thread=240808
-http://www.python.org/dev/peps/pep-0318/
-http://wiki.python.org/moin/PythonDecorators
-http://wiki.python.org/moin/PythonDecoratorLibrary
-TODO(!): SMF 1.1.x is still supported. 1.0.x is not. Promised to fix
+TODO: Usage does not include available logging levels. Does list those in case user inputs invalid level
+TODO: Should be a feature to run commands in detected installation directory e.g. if /home/example/public_html/ directory contains file php5.fcgi
+TODO: Fingerprints to YAML and use decorators in functions. References: http://www.artima.com/weblogs/viewpost.jsp?thread=240808 http://www.python.org/dev/peps/pep-0318/ http://wiki.python.org/moin/PythonDecorators http://wiki.python.org/moin/PythonDecoratorLibrary
 TODO: https://github.com/halst/docopt/blob/master/docopt.py
-TODO: Joomla 2.5 detection. Needs support for configuration specific parser and MySQL queries
 TODO: Argument --strip-output, which should remove homedir/startdir and location from output (stdin, csv and log)
 TODO: If one fingerprint finds a match the process should finish and not be scanned with other fingerprints
 TODO: There should be argument for looking specific programs in for example: -s joomla,smf
 TODO: Add unittests
-TODO: Add support to continue interrupted session (Tuomo Komulainen requested). Could be implemented using [http://docs.python.org/library/atexit.htm atexit-module] with knowledge of current working directory and queues
-TODO: WordPress have not been tested with 2003 versions
-TODO: WordPress http://core.trac.wordpress.org/changeset/16803 this does not seem to have a CVE-identifier. Debian lists this as TEMP-0606657-A0D78A
-TODO: MoinMoin fingerprint list is not full. Check OSVDB.
-TODO: MoinMoin 1.0 OSVDB:2878 SA10318 no CVE
-TODO: MoinMoin 1.1 OSVDB:2911 no CVE
-TODO: MoinMoin 1.2.2 OSVDB:6704 SA11807 no CVE
-TODO: MoinMoin 1.2.3 OSVDB:8194,8195 SA11832 no CVE
-TODO: MoinMoin 1.3.3 OSVDB:13184 SA14001 no CVE
-TODO: OSVDB:49752 SA32686 no CVE
-TODO: SMf 1.0.5 OSVDB:17458 SA15784 no CVE
-TODO: PmWiki CVE-2010-1481 XSS OSVDB:64456, CVE-2011-4453 Remote PHP Code Execution OSVDB: 77261, CVE-2010-4748 XSS OSVDB:69940
+TODO: Add support to continue interrupted session (Tuomo Komulainen requested). Could be implemented using http://docs.python.org/library/atexit.html with knowledge of current working directory and queues
+
+Application specific TODO:
+    SMF:
+        - 1.1.x is still supported. 1.0.x is not. Promised to fix
+    Joomla 2.5:
+        - Needs support for configuration specific parser and MySQL queries
+    WordPress:
+        - Haven't been tested with 2003 versions
+        - http://core.trac.wordpress.org/changeset/16803 this does not seem to have a CVE-identifier. Debian lists this as TEMP-0606657-A0D78A
+    MoinMoin:
+        - Fingerprint list is not full. Check OSVDB.
+        - 1.0 OSVDB:2878 SA10318 no CVE
+        - 1.1 OSVDB:2911 no CVE
+        - 1.2.2 OSVDB:6704 SA11807 no CVE
+        - 1.2.3 OSVDB:8194,8195 SA11832 no CVE
+        - 1.3.3 OSVDB:13184 SA14001 no CVE
+        - OSVDB:49752 SA32686 no CVE
+    SMF:
+        - 1.0.5 OSVDB:17458 SA15784 no CVE
+    PmWiki:
+        - CVE-2010-1481 XSS OSVDB:64456, CVE-2011-4453 Remote PHP Code Execution OSVDB: 77261, CVE-2010-4748 XSS OSVDB:69940
 """
 
 try:
