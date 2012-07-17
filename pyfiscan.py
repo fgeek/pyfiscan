@@ -114,6 +114,9 @@ class PopulateScanQueue:
                             loc = application['location']
                             [put(filename, appname) for l in loc if filename.endswith(l)]
             status.value = 0
+        except OSError as (errno, strerror):  # Error number 116 is at least important to catch
+            logging.debug(traceback.format_exc())
+            sys.exit(traceback.format_exc())
         except Exception, e:
             logging.debug(traceback.format_exc())
 
