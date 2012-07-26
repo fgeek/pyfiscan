@@ -512,28 +512,6 @@ if __name__ == "__main__":
     data = database.generate(yamldir)
  
     """
-    #               1.0.3 (SA23582)
-    # CVE-2007-2473 1.0.6 (SA25082)
-    # CVE-2007-5056 1.1.4.1 (SA26928)
-    # CVE-2007-5441 1.1.4.1 (SA26928)
-    # CVE-2007-5442 1.1.4.1 (SA26928)
-    # CVE-2007-6656 1.2.3 (SA28285)
-    # CVE-2008-2267 1.2.5 (SA30208)
-    # CVE-2008-5642 1.5 (SA32924) Unpatched
-    #               1.6.3 (SA36255)
-    # CVE-2010-1482 1.7.1
-    # CVE-2010-2797 1.8.1 (SA40031)
-    # CVE-2010-3882 1.8.1 (SA40031)
-    # CVE-2010-3883 1.8.1 (SA40031)
-    # CVE-2010-3884 1.8.1 (SA40031)
-    # CVE-2010-4663 1.9.1 http://forum.cmsmadesimple.org/viewtopic.php?t=49245
-    # CVE-2011-4310 1.9.4.3 http://www.cmsmadesimple.org/2011/08/Announcing-CMSMS-1-9-4-3---Security-Release/
-    'CMSMS': {
-        'location': ['version.php'],
-        'secure': '1.9.4.3',
-        'regexp': ['\$CMS_VERSION.*?(?P<version>[.0-9]{2,})'],
-        'cve': 'CVE-2011-4310 http://www.cmsmadesimple.org/2011/08/Announcing-CMSMS-1-9-4-3---Security-Release/',
-        'fingerprint': detect_general},
     # CVE-2004-2261 0.615   SA11567
     #               0.615   SA9369
     #               0.616   SA11740
