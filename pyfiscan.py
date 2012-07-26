@@ -512,63 +512,6 @@ if __name__ == "__main__":
     data = database.generate(yamldir)
  
     """
-    # CVE-2004-2261 0.615   SA11567
-    #               0.615   SA9369
-    #               0.616   SA11740
-    #               0.616   SA11693
-    #               0.616   SA10115
-    # CVE-2004-2262 0.617   SA13657
-    #               0.6171  SA15282
-    # CVE-2005-2327 0.6172  SA16117
-    #               0.6174  SA17237
-    # CVE-2005-4052 0.6175  SA17890
-    #               0.6175  SA18023
-    #               0.6175  SA16357
-    #               0.6175  SA15733
-    #               0.6175  SA11696
-    # CVE-2006-0682 0.7.2   SA18816
-    # CVE-2006-2416 0.7.4   SA20089
-    # CVE-2006-2590 0.7.5   SA20262
-    # CVE-2006-2591 0.7.5   SA20262
-    #               0.7.17  SA38330
-    #               0.7.22  SA34169
-    #               0.7.24  SA41494 HTB22603
-    #               0.7.24  SA31394
-    # CVE-2006-3259 0.7.24  SA20727
-    # CVE-2006-4757 0.7.24  SA20727
-    # CVE-2006-4794 0.7.24  SA20727
-    # CVE-2006-5786 0.7.24  SA20727
-    # CVE-2008-5320 0.7.24  SA32322
-    # CVE-2008-6208 0.7.24  SA34109
-    # CVE-2009-3444 0.7.24  SA36832
-    # CVE-2009-4083 0.7.24  SA36832
-    # CVE-2009-4084 0.7.24  SA36832
-    # CVE-2009-1409 0.7.24  SA34823
-    # CVE-2010-0996 0.7.20  SA39013
-    # CVE-2010-0997 0.7.20  SA39013
-    # CVE-2010-2098 0.7.22  SA39498
-    # CVE-2010-2099 0.7.22  SA39498
-    # CVE-2010-4757 0.7.23  OSVDB:67367 SA41034
-    # CVE-2010-5084 0.7.23  OSVDB:67368 SA41034
-    # CVE-2011-0457 0.7.23  OSVDB:67367 SA41034
-    # CVE-2011-1513 0.7.24  BugtraqID:50339 OSVD:77042
-    #               0.7.25  SA41597 HTB2260
-    #               0.7.25  SA44061
-    # CVE-2011-4946 0.7.26  OSVDB:73120 SA44968 HTB23004
-    #   http://e107.svn.sourceforge.net/viewvc/e107/trunk/e107_0.7/e107_admin/users_extended.php?revision=12306&view=markup
-    #   http://e107.svn.sourceforge.net/viewvc/e107/trunk/e107_0.7/e107_admin/users_extended.php?r1=12225&r2=12306
-    #   http://e107.org/news.php?extend.884.2
-    #   http://wiki.e107.org/index.php?title=Release_Notes_0.7.26
-    # CVE-2011-4947 0.7.25  OSVDB:80992 SA44968 HTB23004
-    #               0.7.26  This is not fixed yet. SVN revision 12375 is fix
-    # CVE-2011-4920 1.0.0   OSVDB:78047-78049 SA46706
-    # CVE-2011-4921 1.0.0   OSVDB:78050
-    'e107': {
-        'location': ['/e107_admin/ver.php'],
-        'secure': '1.0.0',
-        'regexp': ['.*?e107_version.*?(?P<version>[.0-9]{2,})'],
-        'cve': 'CVE-2011-4920 CVE-2011-4921 OSVDB:78047-78050 SA46706',
-        'fingerprint': detect_general},
     # CVE-2008-1766 3.0.1       SA29801
     # CVE-2008-6506 3.0.4       SA33166
     # CVE-2008-6507 3.0.4       SA33166
