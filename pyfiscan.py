@@ -75,15 +75,7 @@ class PopulateScanQueue:
         status.value = 1
 
     def filenames(self, directory):
-        for root, dirs, files in os.walk(directory):
-            for basename in files:
-                yield os.path.join(root, basename)
-
-    def directories(self, directory_dict):
-        for directory in directory_dict:
-            for root, dirs, files in os.walk(directory):
-                for basename in files:
-                    yield os.path.join(root, basename)
+        return (os.path.join(root, basename) for root, dirs, files in os.walk(directory) for basename in files)
 
     def populate(self, startpath, checkmodes=False):
         def put(filename, appname):
@@ -111,10 +103,11 @@ class PopulateScanQueue:
                     continue
                 if check_dir_execution_bit(directory, checkmodes):
                     logger.debug('Populating: %s' % directory)
-                    for filename in self.filenames(directory):
-                        for (appname, application) in data.iteritems():
-                            loc = application['location']
-                            [put(filename, appname) for l in loc if filename.endswith(l)]
+                    for (appname, issue) in data.iteritems():
+                        for filename in self.filenames(directory):
+                            for loc in database.locations(appname, with_lists=False):
+                                if filename.endswith(loc):
+                                    put(filename, appname)
             status.value = 0
         except OSError as (errno, strerror):  # Error number 116 is at least important to catch
             logging.debug(traceback.format_exc())
@@ -280,6 +273,13 @@ def return_func_name():
     """Returns name of calling function."""
     return inspect.stack()[1][3]
 
+# TODO: Document kludge :)
+yaml_fn_dict = {}
+
+def yaml_visible(fn):
+    yaml_fn_dict[fn.func_name] = fn
+    return fn
+
 
 def check_dir_execution_bit(path, checkmodes):
     """Check if path has execution bit to check if site is public. Defaults to false."""
@@ -360,12 +360,15 @@ def handle_results(appname, file_version, item_location, application_cve, applic
 
 
 def SpawnWorker():
-    """This is working process function used in batches.
+    """This is the actual worker which calls smaller functions in case of
+    correct directory/file match is found.
+        
+        - Takes and removes item from queue
+        - Detection in case of correct directory/file match is found
+        - Compares found version against secure version in YAML
+        - Calls logger
 
-    1. Takes and removes item from queue
-    2. Launches detection in case of correct directory/file match is found
-    3. Launches comparison of versions
-    4. Calls result handler
+    Every worker runs in a loop.
 
     """
     while 1:
@@ -373,23 +376,26 @@ def SpawnWorker():
             logger = logging.getLogger(return_func_name())
             item = None
             item = queue.get()
-            logger.info('Processing: %s (%s)' % (item[0], item[1]))
-            for (appname, application) in data.iteritems():
+            logger.info('processing: %s (%s)' % (item[0], item[1]))
+            for (appname, issues) in data.iteritems():
                 if not appname == item[1]:
                     continue
-                for location in application['location']:
+                for location in database.locations(appname, with_lists=False):
                     item_location = item[0]
                     if item_location.endswith(location):
-                        logger.debug('Processing item %s with location %s with with appname %s application %s' % (item_location, location, appname, application))
-                        file_version = application["fingerprint"](item_location, application['regexp'])
-                        if file_version is None:  # TODO: Is this really needed?
-                            continue
-                        # Tests that version from file is smaller than secure version with application fingerprint-function
-                        logger.debug('Comparing versions %s with type %s %s with type %s' % (application['secure'], type(application['secure']), file_version, type(file_version)))
-                        if not compare_versions(application['secure'], file_version, appname):
-                            continue
-                        # Calls result handler (goes to CSV and log)
-                        handle_results(appname, file_version, item_location, application['cve'], application['secure'])
+                        for issue in issues:
+                            logger.debug('Processing item %s with location %s with with appname %s issue %s' % (item_location, location, appname, issue))
+                            fn = yaml_fn_dict[issues[issue]['fingerprint']]
+                            file_version = fn(item_location, issues[issue]['regexp'])
+                            # Makes sure we don't go forward without version number from the file
+                            if file_version is None:
+                                continue
+                            # Tests that version from file is smaller than secure version with application fingerprint-function
+                            logger.debug('Comparing versions %s with type %s %s with type %s' % (issues[issue]['secure_version'], type(issues[issue]['secure_version']), file_version, type(file_version)))
+                            if not compare_versions(issues[issue]['secure_version'], file_version, appname):
+                                continue
+                            # Calls result handler (goes to CSV and log)
+                            handle_results(appname, file_version, item_location, issues[issue]['cve'], issues[issue]['secure_version'])
         except Exception:
             print(traceback.format_exc())
 
@@ -422,6 +428,7 @@ def detect_general(source_file, regexp):
     return file_version
 
 
+@yaml_visible
 def detect_joomla(source_file, regexp):
     """Detects from source file if it contains version information of Joomla"""
     logger = logging.getLogger(return_func_name())
@@ -505,70 +512,6 @@ if __name__ == "__main__":
     data = database.generate(yamldir)
  
     """
-    data = {
-    # CVE-2006-0303 1.0.7   OSVDB:22531,22532,22533,2253422535 SA18513
-    # CVE-2006-1047 1.0.8   OSBDB:31287 SA19105
-    # CVE-2006-1048 1.0.8   OSVDB:23822 SA19105
-    # CVE-2006-1049 1.0.8   OSVDB:23819 SA19105
-    # CVE-2006-1028 1.0.8   OSVDB:23817 SA19105
-    # CVE-2006-1030 1.0.8   OSVDB:23818 SA19105
-    # CVE-2006-7247 1.0.10  OSVDB:26626 SA20746
-    # CVE-2006-3480 1.0.10  OSVDB:26913,26917,26918
-    # CVE-2006-4468 1.0.11  OSVDB:28339,28343 http://www.joomla.org/content/view/1841/78/ http://www.joomla.org/content/view/1843/74/
-    # CVE-2006-4471 1.0.11  OSVDB:28353 SA21666 http://www.joomla.org/content/view/1841/78/ http://www.joomla.org/content/view/1843/74/
-    # CVE-2006-4472 1.0.11  OSVDB:28347 SA21666 http://www.joomla.org/content/view/1841/78/ http://www.joomla.org/content/view/1843/74/
-    # CVE-2006-4474 1.0.11  OSVDB:28348,28349,28350,28351 SA21666 http://www.joomla.org/content/view/1841/78/ http://www.joomla.org/content/view/1843/74/
-    # CVE-2006-4476 1.0.11  OSVDB:28352,28355,28354,28357,28358 SA21666 http://www.joomla.org/content/view/1841/78/ http://www.joomla.org/content/view/1843/74/
-    # CVE-2006-6832 1.0.12  OSVDB:32519 SA23563
-    # CVE-2006-6833 1.0.12  OSVDB:32521 SA23563
-    # CVE-2006-6834 1.0.12  OSVDB:32536 SA23563
-    # CVE-2007-0374 1.0.12  OSVDB:32520 SA23563
-    # CVE-2007-4188 1.0.13  OSVDB:38758 SA26239
-    # CVE-2007-4189 1.0.13  OSVDB:38755,38756,38757 SA26239
-    # CVE-2007-4190 1.0.13  OSVDB:38739 SA26239
-    # CVE-2007-5577 1.0.13  OSVDB:37173 SA25804
-    # CVE-2007-5427 1.0.14  OSVDB:37709 SA27196
-    # CVE-2008-5671 1.0.15  OSVDB:42123 SA29106 http://www.joomla.org/announcements/release-news/4609-joomla-1015-released.html
-    # CVE-2007-6642 1.5 RC4 OSVDB:41263 SA28219
-    # CVE-2007-6643 1.5 RC4 OSVDB:39979 SA29257
-    # CVE-2008-1533 1.5.1   OSVDB:42894 SA28861 http://www.joomla.org/announcements/release-news/4560-joomla-1-5-1-released.html
-    # CVE-2008-3225 1.5.4   OSVDB:46810 SA30974 http://www.joomla.org/announcements/release-news/5180-joomla-154-released.html
-    # CVE-2008-3226 1.5.4   OSVDB:46811 SA30974 http://www.joomla.org/announcements/release-news/5180-joomla-154-released.html
-    # CVE-2008-3227 1.5.4   OSVDB:46812 SA30974 http://www.joomla.org/announcements/release-news/5180-joomla-154-released.html
-    # CVE-2008-3681 1.5.6   OSVDB:47476 SA31457 http://developer.joomla.org/security/news/241-20080801-core-password-remind-functionality.html
-    # CVE-2008-4102 1.5.7   OSVDB:48226 SA31789 http://developer.joomla.org/security/news/272-20080902-core-random-number-generation-flaw.html
-    # CVE-2008-4103 1.5.7   OSVDB:48227 SA31789 http://developer.joomla.org/security/news/273-20080903-core-commailto-spam.html
-    # CVE-2008-4104 1.5.7   OSVDB:48228 SA31789 http://developer.joomla.org/security/news/274-20080904-core-redirect-spam.html
-    # CVE-2008-4105 1.5.7   OSVDB:48225 SA31789 http://developer.joomla.org/security/news/271-20080901-core-jrequest-variable-injection.html
-    # CVE-2008-6299 1.5.8   OSVDB:49801,49802 SA32622
-    # CVE-2009-0113 1.5.9   OSVDB:51172 SA33377
-    # CVE-2009-1279 1.5.10  OSVDB:53582,53583,53584 SA34551
-    #               1.5.13              SA35899
-    # CVE-2011-4912 1.5.14  OSVDB:56714 SA36097 http://developer.joomla.org/security/news/303-20090723-core-com-mailto-timeout-issue.html
-    # CVE-2009-3945 1.5.15  OSVDB:59801 SA37262 http://developer.joomla.org/security/news/305-20091103-core-front-end-editor-issue-.html
-    # CVE-2009-3946 1.5.15  OSVDB:59800 SA37262 http://developer.joomla.org/security/news/306-20091103-core-xml-file-read-issue.html
-    # CVE-2010-1432 1.5.16  OSVDB:78012 SA39616 http://developer.joomla.org/security/news/311-20100423-core-negative-values-for-limit-and-offset.html
-    # CVE-2010-1433 1.5.16  OSVDB:78011 SA39616 http://developer.joomla.org/security/news/310-20100423-core-installer-migration-script.html
-    # CVE-2010-1434 1.5.16  OSVDB:64168 SA39616 http://developer.joomla.org/security/news/309-20100423-core-sessation-fixation.html
-    # CVE-2010-1435 1.5.16  OSVDB:64167 SA39616 http://developer.joomla.org/security/news/308-20100423-core-password-reset-tokens.html
-    # CVE-2010-1649 1.5.18  OSVDB:65011 Bugtraq:40444 SA39964 http://developer.joomla.org/security/news/314-20100501-core-xss-vulnerabilities-in-back-end.html
-    # CVE-2010-2535 1.5.20  OSVDB:66394 SA40644 http://developer.joomla.org/security/news/315-20100701-core-sql-injection-internal-path-exposure.html http://developer.joomla.org/security/news/316-20100702-core-xss-vulnerabillitis-in-back-end.html http://developer.joomla.org/security/news/317-20100703-core-xss-vulnerabillitis-in-back-end.html http://developer.joomla.org/security/news/318-20100704-core-xss-vulnerabillitis-in-back-end.html
-    # CVE-2010-3712 1.5.21  OSVDB:68625 SA41772 http://developer.joomla.org/security/news/322-20101001-core-xss-vulnerabilities.html
-    # CVE-2010-4166 1.5.22  OSVDB:69026 SA42133 http://developer.joomla.org/security/news/323-20101101-core-sqli-info-disclosurevulnerabilities.html
-    # CVE-2011-0005 1.5.22  OSVDB:70369
-    # CVE-2011-2488 1.5.23
-    # CVE-2011-2889 1.5.23
-    # CVE-2011-2890 1.5.23
-    # Won't be assigned 1.5.24  OSVDB:76720 SA46421 http://developer.joomla.org/security/news/372-20111003-core-information-disclosure
-    # CVE-2011-4321 1.5.25  OSVDB:77094 http://developer.joomla.org/security/news/374-20111102-core-password-change http://developer.joomla.org/security/news/375-20111103-core-password-change
-    # CVE-2012-1598 1.5.26  http://developer.joomla.org/security/news/396-20120305-core-password-change
-    # CVE-2012-1599 1.5.26  OSVDB:80708 http://developer.joomla.org/security/news/397-20120306-core-information-disclosure
-    'Joomla 1.5': {
-        'location': ['/libraries/joomla/version.php', '/includes/version.php'],
-        'secure': '1.5.26',
-        'regexp': ['.*?\$RELEASE.*?(?P<version>1.[0,5])', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})'],
-        'cve': 'CVE-2012-1598 http://developer.joomla.org/security/news/396-20120305-core-password-change CVE-2012-1599 OSVDB:80708 http://developer.joomla.org/security/news/397-20120306-core-information-disclosure',
-        'fingerprint': detect_joomla},
     # CVE-2011-1151 1.6.1   OSVDB:75355 http://developer.joomla.org/security/news/328-20110201-core-sql-injection-path-disclosure.html
     # CVE-2010-4696 1.6.1   OSVDB:69026 SA42133 http://developer.joomla.org/security/news/328-20110201-core-sql-injection-path-disclosure.html http://yehg.net/lab/pr0js/advisories/joomla/core/[joomla_1.6.0]_sql_injection
     # CVE-2011-2509 1.6.4   OSVDB:73491 http://developer.joomla.org/security/news/352-20110604-xss-vulnerability.html
@@ -604,112 +547,6 @@ if __name__ == "__main__":
 #        'cve': ''
 #        'fingerprint':
 #        },
-        # http://secunia.com/advisories/23621/
-        # http://secunia.com/advisories/23587/
-        # http://secunia.com/advisories/24316/
-        # http://secunia.com/advisories/24951/
-        # http://secunia.com/advisories/28130/
-        # http://osvdb.org/show/osvdb/72097
-        # http://osvdb.org/show/osvdb/73721
-    # Not valid:
-    # N/A                   OSVDB:72173
-    # N/A           0.71    SA8954
-    # Open installation:
-    # CVE-2012-0937         OSVDB:78710
-    # Generic:
-    # CVE-2003-1598 "0.72 RC1" OSVDB:4610 SA8954
-    # CVE-2003-1599 "0.72 RC1" OSVDB:4611 SA8954
-    # CVE-2004-1559 1.2.1
-    # CVE-2004-1584 1.2.1
-    # CVE-2005-1687 1.5.1
-    # CVE-2005-1688 1.5.1
-    # CVE-2005-1810 1.5.1.2
-    # CVE-2005-1921 1.5.1.3 http://www.securityfocus.com/bid/14088/info http://wordpress.org/news/2005/06/wordpress-1513/
-    # CVE-2005-2116 1.5.1.3 http://www.securityfocus.com/bid/14088/info http://wordpress.org/news/2005/06/wordpress-1513/
-    # CVE-2005-2612 1.5.2
-    # CVE-2005-2107 1.5.1.3
-    # CVE-2005-2108 1.5.1.3
-    # CVE-2005-2109 1.5.1.3
-    # CVE-2005-2110 1.5.1.3
-    # CVE-2006-0985 2.0.2
-    # CVE-2006-0986 2.0.2
-    # CVE-2006-1012 2.0
-    # CVE-2006-1796 2.0.2
-    # CVE-2006-2667 2.0.3
-    # CVE-2006-2702 2.0.3
-    # CVE-2006-3389 2.1
-    # CVE-2006-3390 2.1
-    # CVE-2006-4028 2.0.4
-    # CVE-2006-5705 2.0.5
-    # CVE-2006-6016 2.0.5
-    # CVE-2006-6017 2.0.5
-    # CVE-2007-0106 2.0.6
-    # CVE-2007-0539 2.1
-    # CVE-2007-0540 2.1
-    # CVE-2007-0541 2.1
-    # CVE-2007-1049 2.1.1
-    # CVE-2007-1277 2.1.2
-    # CVE-2007-1622 2.0.10 / 2.1.3
-    # CVE-2007-1732 N/A
-    # CVE-2007-1893 2.1.3
-    # CVE-2007-1894 2.1.3
-    # CVE-2007-1897 2.1.3
-    # CVE-2007-2921 2.2
-    # CVE-2007-3140 2.2.1
-    # CVE-2007-3238 N/A
-    # CVE-2007-3543 2.2.1
-    # CVE-2007-3544 2.2.1
-    # CVE-2007-4139 2.2.2
-    # CVE-2007-4893 2.2.3
-    # CVE-2007-4894 2.2.3
-    # CVE-2007-5710 2.3.1
-    # CVE-2007-6013 2.3.2
-    # CVE-2007-6318 N/A
-    # CVE-2008-0664 2.3.3
-    # CVE-2008-1930 2.5.1
-    # CVE-2008-2068 2.5.1
-    # CVE-2008-2146 2.2.3
-    # CVE-2008-4106 2.6.2
-    # CVE-2008-4107 2.6.2
-    # CVE-2008-4769 2.5.1
-    # CVE-2008-5278 2.6.5
-    # CVE-2009-2762 2.8.4
-    # CVE-2009-2851 2.8.2
-    # CVE-2009-2853 2.8.3
-    # CVE-2009-2854 2.8.3
-    # CVE-2009-3622 2.8.5
-    # CVE-2009-3890 2.8.6
-    # CVE-2009-3891 2.8.6
-    # CVE-2010-0682 2.9.2
-    # CVE-2011-0700 3.0.5   OSVDB:72763,72764 SA43238 http://wordpress.org/news/2011/02/wordpress-3-0-5/
-    # CVE-2011-0701 3.0.5   OSVDB:72765 SA43238 http://wordpress.org/news/2011/02/wordpress-3-0-5/
-    # CVE-2011-4956 3.1.1   OSVDB:72141 SA44038 http://wordpress.org/news/2011/04/wordpress-3-1-1/
-    # CVE-2011-4957 3.1.1   OSVDB:72142 SA44038 http://wordpress.org/news/2011/04/wordpress-3-1-1/
-    # CVE-2011-1762 3.1.2   OSVDB:72097 SA44372 SA44542 http://wordpress.org/news/2011/04/wordpress-3-1-2/ http://core.trac.wordpress.org/changeset/17710 http://lists.fedoraproject.org/pipermail/package-announce/2011-May/059968.html http://lists.fedoraproject.org/pipermail/package-announce/2011-May/059986.html
-    # CVE-2011-3122 3.1.3   OSVDB:74485 http://wordpress.org/news/2011/05/wordpress-3-1-3/
-    # CVE-2011-3125 3.1.3   OSVDB:74486 http://wordpress.org/news/2011/05/wordpress-3-1-3/
-    # CVE-2011-3126 3.1.3   OSVDB:74487 http://wordpress.org/news/2011/05/wordpress-3-1-3/
-    # CVE-2011-3127 3.1.3   OSVDB:74488 http://wordpress.org/news/2011/05/wordpress-3-1-3/
-    # CVE-2011-3128 3.1.3   OSVDB:74489 http://wordpress.org/news/2011/05/wordpress-3-1-3/
-    # CVE-2011-3129 3.1.3   OSVDB:74490 http://wordpress.org/news/2011/05/wordpress-3-1-3/
-    # CVE-2011-3130 3.1.3   OSVDB:74491 http://wordpress.org/news/2011/05/wordpress-3-1-3/
-    # CVE-2011-4898/CVE-2011-4899/CVE-2012-0782 3.3.1   OSVDB:7870778708,78709 https://www.trustwave.com/spiderlabs/advisories/TWSL2012-002.txt
-    # CVE-2012-0287 3.3.1   OSVDB:78123 SA47371 https://wordpress.org/news/2012/01/wordpress-3-3-1/
-    # CVE-2012-2399 3.3.2   http://codex.wordpress.org/Version_3.3.2
-    # CVE-2012-2400 3.3.2   http://codex.wordpress.org/Version_3.3.2
-    # CVE-2012-2401 3.3.2   http://codex.wordpress.org/Version_3.3.2
-    # CVE-2012-2402 3.3.2   http://codex.wordpress.org/Version_3.3.2
-    # CVE-2012-2403 3.3.2   http://codex.wordpress.org/Version_3.3.2
-    # CVE-2012-2404 3.3.2   http://codex.wordpress.org/Version_3.3.2
-    # CVE-2012-3383 3.4.1   http://codex.wordpress.org/Version_3.4.1
-    # CVE-2012-3384 3.4.1   http://codex.wordpress.org/Version_3.4.1
-    # CVE-2012-3385 3.4.1   http://codex.wordpress.org/Version_3.4.1
-    'WordPress': {
-        'location': ['/wp-includes/version.php'],
-        'secure': '3.4.1',
-        'regexp': ['\$wp_version.*?(?P<version>[0-9.]+)'],
-        'cve': 'http://codex.wordpress.org/Version_3.4.1 CVE-2012-3383, CVE-2012-3384, CVE-2012-3385',
-        'fingerprint': detect_general},
     # CVE-2007-0857 1.5.7 (SA24096)
     # CVE-2007-0901 1.5.8 (SA24138)
     # CVE-2007-2423 1.5.8 (SA24138)
