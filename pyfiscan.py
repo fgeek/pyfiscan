@@ -304,6 +304,11 @@ def check_dir_execution_bit(path, checkmodes):
 
 def compare_versions(secure_version, file_version, appname=None):
     """Comparison of found version numbers. Value current_version is predefined and file_version is found from file using grep. Value appname is used to separate different version numbering syntax"""
+    if not type(secure_version) == str:
+        sys.exit('Secure version must be a string when comparing')
+    if not type(file_version) == str:
+        sys.exit('Version from file must be a string when comparing')
+
     if appname == 'WikkaWiki':  # Replace -p → .
         ver1 = secure_version.split('-')
         ver2 = file_version.split('-')
@@ -376,7 +381,7 @@ def SpawnWorker():
             logger = logging.getLogger(return_func_name())
             item = None
             item = queue.get()
-            logger.info('processing: %s (%s)' % (item[0], item[1]))
+            logger.info('Processing: %s (%s)' % (item[0], item[1]))
             for (appname, issues) in data.iteritems():
                 if not appname == item[1]:
                     continue
@@ -391,7 +396,7 @@ def SpawnWorker():
                             if file_version is None:
                                 continue
                             # Tests that version from file is smaller than secure version with application fingerprint-function
-                            logger.debug('Comparing versions %s with type %s %s with type %s' % (issues[issue]['secure_version'], type(issues[issue]['secure_version']), file_version, type(file_version)))
+                            logger.debug('Comparing versions %s:%s' % (issues[issue]['secure_version'], file_version))
                             if not compare_versions(issues[issue]['secure_version'], file_version, appname):
                                 continue
                             # Calls result handler (goes to CSV and log)

@@ -24,7 +24,7 @@
 # CVE-2011-4452 1.3.2-p7    OSVDB:77394 http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/
 WikkaWiki:
   1:
-    location: ['version.php']
+    location: ['/version.php']
     secure_version: 1.3.2-p7
     regexp: ['\$svn_version.*?(?P<version>[0-9.]{1,})', '.*?WIKKA_PATCH_LEVEL.*?(?P<version>[0-9.]{1,})']
     cve: CVE-2011-4448/CVE-2011-4449/CVE-2011-4450/CVE-2011-4451/CVE-2011-4452 OSVDB:77390,77391,77392,77393,7739477394 http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/

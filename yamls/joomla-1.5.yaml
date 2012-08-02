@@ -54,7 +54,7 @@
 # CVE-2011-4321 1.5.25  OSVDB:77094 http://developer.joomla.org/security/news/374-20111102-core-password-change http://developer.joomla.org/security/news/375-20111103-core-password-change
 # CVE-2012-1598 1.5.26  http://developer.joomla.org/security/news/396-20120305-core-password-change
 # CVE-2012-1599 1.5.26  OSVDB:80708 http://developer.joomla.org/security/news/397-20120306-core-information-disclosure
-joomla 1.5:
+Joomla 1.5:
   1:
     location: ['/libraries/joomla/version.php', '/includes/version.php']
     secure_version: 1.5.26
