@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 try:
-    import yaml
-    import os
     import sys
+    import os
+    import yaml
 except ImportError, error:
     print('Import error: %s' % error)
     sys.exit(1)
