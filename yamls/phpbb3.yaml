@@ -1,0 +1,13 @@
+# CVE-2008-1766 3.0.1       SA29801
+# CVE-2008-6506 3.0.4       SA33166
+# CVE-2008-6507 3.0.4       SA33166
+# CVE-2010-1627 3.0.7PL1    SA38837
+# CVE-2010-1630 3.0.5       SA38264
+# CVE-2011-0544 3.0.8       SA42343
+phpBB3:
+  1:
+    location: ['/includes/constants.php']
+    secure_version: 3.0.8
+    regexp: ['.*?PHPBB_VERSION.*?(?P<version>3[0-9.]{1,})']
+    cve: CVE-2011-0544, SA42343
+    fingerprint: detect_general

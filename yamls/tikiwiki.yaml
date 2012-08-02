@@ -1,0 +1,18 @@
+# CVE-2005-0200             OSVDB:13119 BugtraqID:12328
+# CVE-2010-4239             http://www.openwall.com/lists/oss-security/2010/11/22/9
+# CVE-2010-4240             http://www.openwall.com/lists/oss-security/2010/11/22/9
+# CVE-2010-4241             http://www.openwall.com/lists/oss-security/2010/11/22/9
+# CVE-2011-4453 2.2.35      OSVDB:77261 http://www.pmwiki.org/wiki/PITS/01271
+# CVE-2011-4336 7.1/6.4     OSVDB:74039 SA45256 SA45283 HTB23027
+# CVE-2011-4454 8.1         OSVDB:77155 SA46740
+# CVE-2011-4455 8.1         OSVDB:77156 SA46740
+# N/A           8.2/6.5     OSVDB:77965 SA47278 # TODO: Missing CVE-identifier
+# CVE-2011-4551 8.2/6.5     OSVDB:77966 SA47278 http://info.tiki.org/article183-Tiki-Wiki-CMS-Groupware-8-2-and-6-5LTS-Security-Patches-Available 
+# CVE-2011-4558 8.3/6.6     OSVDB:78013 SA47320 http://dev.tiki.org/item4059 http://info.tiki.org/article185-Tiki-Security-Patches-Available-for-8-3-and-6-6-LTS
+TikiWiki:
+  1:
+    location: ['/lib/setup/twversion.class.php']
+    secure_version: 8.3
+    regexp: ['.*?\$this->version.*?(?P<version>[0-9.]{1,})']
+    cve: CVE-2011-4558 http://osvdb.org/78013
+    fingerprint: detect_general

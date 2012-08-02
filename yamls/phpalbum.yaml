@@ -1,0 +1,9 @@
+# CVE-2011-4806
+# CVE-2011-4807
+phpAlbum:
+  1:
+    location: ['main.php']
+    secure_version: 0.4.1.16
+    regexp: ['\$phpalbum_version.*?(?P<version>[0-9.]{1,})']
+    cve: CVE-2011-4806 CVE-2011-4807 OSVDB:74980 OSVDB:21410
+    fingerprint: detect_general
