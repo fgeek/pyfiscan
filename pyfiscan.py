@@ -104,8 +104,8 @@ class PopulateScanQueue:
                 if check_dir_execution_bit(directory, checkmodes):
                     logger.debug('Populating: %s' % directory)
                     for (appname, issue) in data.iteritems():
-                        for filename in self.filenames(directory):
-                            for loc in database.locations(data, appname, with_lists=False):
+                        for loc in database.locations(data, appname, with_lists=False):
+                            for filename in self.filenames(directory):
                                 if filename.endswith(loc):
                                     put(filename, appname)
             status.value = 0
