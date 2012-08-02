@@ -105,7 +105,7 @@ class PopulateScanQueue:
                     logger.debug('Populating: %s' % directory)
                     for (appname, issue) in data.iteritems():
                         for filename in self.filenames(directory):
-                            for loc in database.locations(appname, with_lists=False):
+                            for loc in database.locations(data, appname, with_lists=False):
                                 if filename.endswith(loc):
                                     put(filename, appname)
             status.value = 0
@@ -380,7 +380,7 @@ def SpawnWorker():
             for (appname, issues) in data.iteritems():
                 if not appname == item[1]:
                     continue
-                for location in database.locations(appname, with_lists=False):
+                for location in database.locations(data, appname, with_lists=False):
                     item_location = item[0]
                     if item_location.endswith(location):
                         for issue in issues:
@@ -418,6 +418,7 @@ def grep_from_file(version_file, regexp):
             pass
 
 
+@yaml_visible
 def detect_general(source_file, regexp):
     """Detects from source file if it contains version information. Uses first regexp-match"""
     if not os.path.isfile(source_file):
@@ -508,7 +509,7 @@ if __name__ == "__main__":
     """
 
     yamldir = 'yamls/'
-    database = Database(yamldir)
+    database = Database()
     data = database.generate(yamldir)
  
     """
