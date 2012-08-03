@@ -97,9 +97,7 @@ class PopulateScanQueue:
                 directories.append(startpath)
             """Use list of directories in loop to check if locations in data dictionary exists."""
             for directory in directories:
-                if not os.path.isdir(directory):
-                    continue
-                if os.path.islink(directory):
+                if not directory_check(directory):
                     continue
                 if check_dir_execution_bit(directory, checkmodes):
                     # TODO: This should be done by workers as pyfiscanner will use lots of time in big directory structures with lots of files
@@ -127,17 +125,13 @@ class PopulateScanQueue:
             userdirs = []
             for userdir in os.listdir(startdir):
                 userdir_location = startdir + '/' + userdir
-                if not os.path.isdir(userdir_location):
-                    continue
-                if os.path.islink(userdir_location):
+                if not directory_check(userdir_location):
                     continue
                 if check_dir_execution_bit(userdir_location, checkmodes):
                     userdirs.append(userdir_location)
 
                 public_html_location = startdir + '/' + userdir + '/public_html'
-                if not os.path.isdir(public_html_location):
-                    continue
-                if os.path.islink(public_html_location):
+                if not directory_check(public_html_location):
                     continue
                 if check_dir_execution_bit(public_html_location, checkmodes):
                     logger.debug('Appending to locations: %s' % os.path.abspath(public_html_location))
@@ -145,9 +139,7 @@ class PopulateScanQueue:
 
             for directory in userdirs:
                 sites_location = directory + '/sites'
-                if not os.path.isdir(sites_location):
-                    continue
-                if os.path.islink(sites_location):
+                if not directory_check(sites_location):
                     continue
                 if check_dir_execution_bit(sites_location, checkmodes):
                     for sitesdir in os.listdir(sites_location):
@@ -155,9 +147,7 @@ class PopulateScanQueue:
                             if not check_dir_execution_bit(sites_location + '/' + sitesdir, checkmodes):
                                 continue
                             sites_location_last = sites_location + '/' + sitesdir + '/' + predefined_directory
-                            if not os.path.isdir(sites_location_last):
-                                continue
-                            if os.path.islink(sites_location_last):
+                            if not directory_check(sites_location_last):
                                 continue
                             if check_dir_execution_bit(sites_location_last, checkmodes):
                                 logger.debug('Appending to locations: %s' % os.path.abspath(sites_location_last))
@@ -281,6 +271,17 @@ def yaml_visible(fn):
     """Decorator, which allows us to point to function names in YAML-files. Example: fingerprint: detect_general"""
     yaml_fn_dict[fn.func_name] = fn
     return fn
+
+
+def directory_check(path):
+    """Check if path is directory and it is not a symlink"""
+    if not type(path) == str:
+        sys.exit('directory_check got path which was not a string')
+    if not os.path.isdir(path):
+        return False
+    if os.path.islink(path):
+        return False
+    return True
 
 
 def check_dir_execution_bit(path, checkmodes):
