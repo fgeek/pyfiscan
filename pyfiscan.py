@@ -102,6 +102,7 @@ class PopulateScanQueue:
                 if os.path.islink(directory):
                     continue
                 if check_dir_execution_bit(directory, checkmodes):
+                    # TODO: This should be done by workers as pyfiscanner will use lots of time in big directory structures with lots of files
                     logger.debug('Populating: %s' % directory)
                     for (appname, issue) in data.iteritems():
                         for loc in database.locations(data, appname, with_lists=False):
@@ -273,10 +274,11 @@ def return_func_name():
     """Returns name of calling function."""
     return inspect.stack()[1][3]
 
-# TODO: Document kludge :)
+
 yaml_fn_dict = {}
 
 def yaml_visible(fn):
+    """Decorator, which allows us to point to function names in YAML-files. Example: fingerprint: detect_general"""
     yaml_fn_dict[fn.func_name] = fn
     return fn
 
