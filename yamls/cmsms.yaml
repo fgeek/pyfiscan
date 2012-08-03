@@ -16,7 +16,7 @@
 # CVE-2011-4310 1.9.4.3 http://www.cmsmadesimple.org/2011/08/Announcing-CMSMS-1-9-4-3---Security-Release/
 CMSMS:
   1:
-    location: ['version.php']
+    location: ['/version.php']
     secure_version: 1.9.4.3
     regexp: ['\$CMS_VERSION.*?(?P<version>[.0-9]{2,})']
     cve: CVE-2011-4310 http://www.cmsmadesimple.org/2011/08/Announcing-CMSMS-1-9-4-3---Security-Release/
