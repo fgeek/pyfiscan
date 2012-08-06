@@ -20,6 +20,7 @@ TODO: If one fingerprint finds a match the process should finish and not be scan
 TODO: There should be argument for looking specific programs in for example: -s joomla,smf
 TODO: Add unittests
 TODO: Add support to continue interrupted session (Tuomo Komulainen requested). Could be implemented using http://docs.python.org/library/atexit.html with knowledge of current working directory and queues
+TODO: http://docs.python.org/library/functions.html#isinstance
 
 Application specific TODO:
     SMF:

@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+# TODO: http://docs.python.org/library/glob.html
+
 try:
     import sys
     import os
