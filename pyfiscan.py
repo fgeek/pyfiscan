@@ -165,7 +165,7 @@ def main(argv):
     parser = OptionParser(
         usage=usage,
         version="%prog beta",
-        description="If you do not spesify recursive scanning predefined directories are scanned, which are: /home/user/sites/www /home/user/sites/secure-www /home/user/public_html/www /home/user/public_html/secure-www")
+        description="If you do not spesify recursive scanning predefined directories are scanned, which are: /home/user/sites/www /home/user/sites/secure-www /home/user/public_html /home/user/public_html")
     parser.add_option(
         "-r", "--recursive",
         action="store",
