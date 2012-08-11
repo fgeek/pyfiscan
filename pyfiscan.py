@@ -98,16 +98,15 @@ class PopulateScanQueue:
                 directories.append(startpath)
             """Use list of directories in loop to check if locations in data dictionary exists."""
             for directory in directories:
-                if not directory_check(directory):
+                if not directory_check(directory, checkmodes):
                     continue
-                if check_dir_execution_bit(directory, checkmodes):
-                    # TODO: This should be done by workers as pyfiscanner will use lots of time in big directory structures with lots of files
-                    logger.debug('Populating: %s' % directory)
-                    for (appname, issue) in data.iteritems():
-                        for loc in database.locations(data, appname, with_lists=False):
-                            for filename in self.filenames(directory):
-                                if filename.endswith(loc):
-                                    put(filename, appname)
+                # TODO: This should be done by workers as pyfiscanner will use lots of time in big directory structures with lots of files
+                logger.debug('Populating: %s' % directory)
+                for (appname, issue) in data.iteritems():
+                    for loc in database.locations(data, appname, with_lists=False):
+                        for filename in self.filenames(directory):
+                            if filename.endswith(loc):
+                                put(filename, appname)
             status.value = 0
         except OSError as (errno, strerror):  # Error number 116 is at least important to catch
             logging.debug(traceback.format_exc())
@@ -126,33 +125,30 @@ class PopulateScanQueue:
             userdirs = []
             for userdir in os.listdir(startdir):
                 userdir_location = startdir + '/' + userdir
-                if not directory_check(userdir_location):
+                if not directory_check(userdir_location, checkmodes):
                     continue
-                if check_dir_execution_bit(userdir_location, checkmodes):
-                    userdirs.append(userdir_location)
+                userdirs.append(userdir_location)
 
                 public_html_location = startdir + '/' + userdir + '/public_html'
-                if not directory_check(public_html_location):
+                if not directory_check(public_html_location, checkmodes):
                     continue
-                if check_dir_execution_bit(public_html_location, checkmodes):
-                    logger.debug('Appending to locations: %s' % os.path.abspath(public_html_location))
-                    locations.append(os.path.abspath(public_html_location))
+                logger.debug('Appending to locations: %s' % os.path.abspath(public_html_location))
+                locations.append(os.path.abspath(public_html_location))
 
             for directory in userdirs:
                 sites_location = directory + '/sites'
-                if not directory_check(sites_location):
+                if not directory_check(sites_location, checkmodes):
                     continue
-                if check_dir_execution_bit(sites_location, checkmodes):
-                    for sitesdir in os.listdir(sites_location):
-                        for predefined_directory in predefined_locations:
-                            if not check_dir_execution_bit(sites_location + '/' + sitesdir, checkmodes):
-                                continue
-                            sites_location_last = sites_location + '/' + sitesdir + '/' + predefined_directory
-                            if not directory_check(sites_location_last):
-                                continue
-                            if check_dir_execution_bit(sites_location_last, checkmodes):
-                                logger.debug('Appending to locations: %s' % os.path.abspath(sites_location_last))
-                                locations.append(os.path.abspath(sites_location_last))
+                for sitesdir in os.listdir(sites_location):
+                    for predefined_directory in predefined_locations:
+                        if not check_dir_execution_bit(sites_location + '/' + sitesdir, checkmodes):
+                            continue
+                        sites_location_last = sites_location + '/' + sitesdir + '/' + predefined_directory
+                        if not directory_check(sites_location_last, checkmodes):
+                            continue
+                        if check_dir_execution_bit(sites_location_last, checkmodes):
+                            logger.debug('Appending to locations: %s' % os.path.abspath(sites_location_last))
+                            locations.append(os.path.abspath(sites_location_last))
             logging.debug('Total amount of locations: %s' % len(locations))
             self.populate(locations, checkmodes)
         except Exception, e:
@@ -274,13 +270,15 @@ def yaml_visible(fn):
     return fn
 
 
-def directory_check(path):
+def directory_check(path, checkmodes):
     """Check if path is directory and it is not a symlink"""
     if not type(path) == str:
         sys.exit('directory_check got path which was not a string')
     if not os.path.isdir(path):
         return False
     if os.path.islink(path):
+        return False
+    if not check_dir_execution_bit(path, checkmodes):
         return False
     return True
 
@@ -341,6 +339,8 @@ def csv_add(appname, item, file_version, secure_version, cve):
     """Creates CVS-file and writes found vulnerabilities per line. CSV-file can't be symlink.
     
     TODO: Should check that all needed arguments are available.
+    TODO: We are doing open and chmod in every csv_add()
+    TODO: Should we have exception csv.Error
     """
     logger = logging.getLogger(return_func_name())
     timestamp = get_timestamp()
@@ -387,24 +387,27 @@ def SpawnWorker():
             item = queue.get()
             logger.info('Processing: %s (%s)' % (item[0], item[1]))
             for (appname, issues) in data.iteritems():
+                # We only continue to check versions with correct applications fingerprint
                 if not appname == item[1]:
                     continue
                 for location in database.locations(data, appname, with_lists=False):
                     item_location = item[0]
-                    if item_location.endswith(location):
-                        for issue in issues:
-                            logger.debug('Processing item %s with location %s with with appname %s issue %s' % (item_location, location, appname, issue))
-                            fn = yaml_fn_dict[issues[issue]['fingerprint']]
-                            file_version = fn(item_location, issues[issue]['regexp'])
-                            # Makes sure we don't go forward without version number from the file
-                            if file_version is None:
-                                continue
-                            # Tests that version from file is smaller than secure version with application fingerprint-function
-                            logger.debug('Comparing versions %s:%s' % (issues[issue]['secure_version'], file_version))
-                            if not compare_versions(issues[issue]['secure_version'], file_version, appname):
-                                continue
-                            # Calls result handler (goes to CSV and log)
-                            handle_results(appname, file_version, item_location, issues[issue]['cve'], issues[issue]['secure_version'])
+                    if not item_location.endswith(location):
+                        continue
+                    for issue in issues:
+                        logger.debug('Processing item %s with location %s with with appname %s issue %s' % (item_location, location, appname, issue))
+                        fn = yaml_fn_dict[issues[issue]['fingerprint']]
+                        file_version = fn(item_location, issues[issue]['regexp'])
+                        # Makes sure we don't go forward without version number from the file
+                        if file_version is None:
+                            logger.debug('No version found from: %s' % item_location)
+                            continue
+                        # Tests that version from file is smaller than secure version with application fingerprint-function
+                        logger.debug('Comparing versions %s:%s' % (issues[issue]['secure_version'], file_version))
+                        if not compare_versions(issues[issue]['secure_version'], file_version, appname):
+                            continue
+                        # Calls result handler (goes to CSV and log)
+                        handle_results(appname, file_version, item_location, issues[issue]['cve'], issues[issue]['secure_version'])
         except Exception:
             print(traceback.format_exc())
 
