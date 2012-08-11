@@ -155,108 +155,6 @@ class PopulateScanQueue:
             logger.debug(traceback.format_exc())
 
 
-def main(argv):
-    """Argument handling and printing of statistics"""
-    usage = "Usage: %prog [-r/--recursive <directory>] [--home <directory>] [-d/--debug]"
-    parser = OptionParser(
-        usage=usage,
-        version="%prog beta",
-        description="If you do not spesify recursive scanning predefined directories are scanned, which are: /home/user/sites/www /home/user/sites/secure-www /home/user/public_html /home/user/public_html")
-    parser.add_option(
-        "-r", "--recursive",
-        action="store",
-        type="string",
-        dest="directory",
-        help="Scans directories recurssively.")
-    parser.add_option(
-        "", "--home",
-        action="store",
-        type="string",
-        dest="home",
-        help="Specifies where the home-directories are located")
-    parser.add_option(
-        "", "--check-modes",
-        action="store_true",
-        dest="checkmodes",
-        help="Check if we are allowed to traverse directories (execution bit)")
-    parser.add_option(
-        "-l", "--loglevel",
-        action="store",
-        type="string",
-        dest="level_name",
-        help="Specifies logging level")
-
-    (opts, args) = parser.parse_args()
-    # Starttime is used to measure program runtime
-    starttime = time.time()
-    if opts.level_name:
-        level_name = opts.level_name
-    else:
-        level_name = str('info')
-    if not level_name in levels:
-        print('No such log level. Available levels are: %s' % levels.keys())
-        sys.exit(1)
-    level = levels.get(level_name, logging.NOTSET)
-    logfile = 'pyfiscan.log'
-
-    if os.path.islink(logfile):  # We do not want to continue in case logfile is a symlink
-        sys.exit('Logfile %s is a symlink. Exiting..' % logfile)
-
-    try:
-        logging.basicConfig(filename=logfile, level=level, format='%(asctime)s %(levelname)s %(name)s %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
-        os.chmod(logfile, 0600)
-    except IOError as (errno, strerror):
-        if errno == int('13'):
-            sys.exit('Error while writing to logfile: %s' % strerror)
-    try:
-        logger = logging.getLogger(return_func_name())
-        # stderr to /dev/null
-        devnull_fd = open(os.devnull, "w")
-        sys.stderr = devnull_fd
-        log_to_stderr()
-        """Starts the asynchronous workers. Amount of workers is the same as cores in server.
-        http://docs.python.org/library/multiprocessing.html#multiprocessing.pool.multiprocessing.Pool
-        """
-        pool = Pool()
-        pool.apply_async(SpawnWorker)
-        """Starts the actual populator daemon to get possible locations, which will be verified by workers.
-        http://docs.python.org/library/multiprocessing.html#multiprocessing.Process
-        """
-        p = PopulateScanQueue(status)
-        p.daemon = True
-        if opts.directory:
-            logger.debug('Scanning recursively from path: %s' % opts.directory)
-            populator = Process(target=p.populate, args=(opts.directory,))
-            populator.start()
-        elif opts.home:
-            logger.debug('Scanning predefined variables: %s' % opts.home)
-            populator = Process(target=p.populate_predefined(opts.home, opts.checkmodes,))
-            populator.start()
-        else:
-            _users = '/home'
-            logger.debug('Scanning predefined variables: %s' % _users)
-            populator = Process(target=p.populate_predefined(_users, opts.checkmodes,))
-            populator.start()
-        """This will loop as long as populating possible locations is done and the queue is empty (workers have finished)"""
-        while not status.value == int('0') and queue.empty():
-            time.sleep(5)
-        else:
-            """Prevents any more tasks from being submitted to the pool. Once all the tasks have been completed the worker processes will exit.
-            http://docs.python.org/library/multiprocessing.html#multiprocessing.pool.multiprocessing.Pool.close
-            """
-            pool.close()
-            runtime = time.time() - starttime
-            logger.info('Scanning ended, which took %s seconds' % runtime)
-    except KeyboardInterrupt:
-        logger.debug('Received keyboard interrupt. Exiting..')
-        pool.join()
-        populator.join()
-        runtime = time.time() - starttime
-        logger.info('Scanning ended, which took %s seconds' % runtime)
-    except Exception, e:
-        logger.debug(traceback.format_exc())
-
-
 def return_func_name():
     """Returns name of calling function."""
     return inspect.stack()[1][3]
@@ -508,4 +406,104 @@ if __name__ == "__main__":
     # Returns dictionary of all fingerprint data from YAML-files
     data = database.generate(yamldir)
     status = Value('i', 1)
-    main(sys.argv[1:])
+#    main(sys.argv[1::]
+    """Argument handling and printing of statistics"""
+    usage = "Usage: %prog [-r/--recursive <directory>] [--home <directory>] [-d/--debug]"
+    parser = OptionParser(
+        usage=usage,
+        version="%prog beta",
+        description="If you do not spesify recursive scanning predefined directories are scanned, which are: /home/user/sites/www /home/user/sites/secure-www /home/user/public_html /home/user/public_html")
+    parser.add_option(
+        "-r", "--recursive",
+        action="store",
+        type="string",
+        dest="directory",
+        help="Scans directories recurssively.")
+    parser.add_option(
+        "", "--home",
+        action="store",
+        type="string",
+        dest="home",
+        help="Specifies where the home-directories are located")
+    parser.add_option(
+        "", "--check-modes",
+        action="store_true",
+        dest="checkmodes",
+        help="Check if we are allowed to traverse directories (execution bit)")
+    parser.add_option(
+        "-l", "--loglevel",
+        action="store",
+        type="string",
+        dest="level_name",
+        help="Specifies logging level")
+
+    (opts, args) = parser.parse_args()
+    # Starttime is used to measure program runtime
+    starttime = time.time()
+    if opts.level_name:
+        level_name = opts.level_name
+    else:
+        level_name = str('info')
+    if not level_name in levels:
+        print('No such log level. Available levels are: %s' % levels.keys())
+        sys.exit(1)
+    level = levels.get(level_name, logging.NOTSET)
+    logfile = 'pyfiscan.log'
+
+    if os.path.islink(logfile):  # We do not want to continue in case logfile is a symlink
+        sys.exit('Logfile %s is a symlink. Exiting..' % logfile)
+
+    try:
+        logging.basicConfig(filename=logfile, level=level, format='%(asctime)s %(levelname)s %(name)s %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
+        os.chmod(logfile, 0600)
+    except IOError as (errno, strerror):
+        if errno == int('13'):
+            sys.exit('Error while writing to logfile: %s' % strerror)
+    try:
+        logger = logging.getLogger(return_func_name())
+        # stderr to /dev/null
+        devnull_fd = open(os.devnull, "w")
+        sys.stderr = devnull_fd
+        log_to_stderr()
+        """Starts the asynchronous workers. Amount of workers is the same as cores in server.
+        http://docs.python.org/library/multiprocessing.html#multiprocessing.pool.multiprocessing.Pool
+        """
+        pool = Pool()
+        pool.apply_async(SpawnWorker)
+        """Starts the actual populator daemon to get possible locations, which will be verified by workers.
+        http://docs.python.org/library/multiprocessing.html#multiprocessing.Process
+        """
+        p = PopulateScanQueue(status)
+        p.daemon = True
+        if opts.directory:
+            logger.debug('Scanning recursively from path: %s' % opts.directory)
+            populator = Process(target=p.populate, args=(opts.directory,))
+            populator.start()
+        elif opts.home:
+            logger.debug('Scanning predefined variables: %s' % opts.home)
+            populator = Process(target=p.populate_predefined(opts.home, opts.checkmodes,))
+            populator.start()
+        else:
+            _users = '/home'
+            logger.debug('Scanning predefined variables: %s' % _users)
+            populator = Process(target=p.populate_predefined(_users, opts.checkmodes,))
+            populator.start()
+        """This will loop as long as populating possible locations is done and the queue is empty (workers have finished)"""
+        while not status.value == int('0') and queue.empty():
+            time.sleep(5)
+        else:
+            """Prevents any more tasks from being submitted to the pool. Once all the tasks have been completed the worker processes will exit.
+            http://docs.python.org/library/multiprocessing.html#multiprocessing.pool.multiprocessing.Pool.close
+            """
+            pool.close()
+            runtime = time.time() - starttime
+            logger.info('Scanning ended, which took %s seconds' % runtime)
+    except KeyboardInterrupt:
+        logger.debug('Received keyboard interrupt. Exiting..')
+        pool.join()
+        populator.join()
+        runtime = time.time() - starttime
+        logger.info('Scanning ended, which took %s seconds' % runtime)
+    except Exception, e:
+        logger.debug(traceback.format_exc())
+
