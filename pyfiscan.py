@@ -217,8 +217,7 @@ def compare_versions(secure_version, file_version, appname=None):
 
 def get_timestamp():
     """Returns string ISO 8601 with hours:minutes:seconds"""
-    timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
-    return timestamp
+    return time.strftime("%Y-%m-%d %H:%M:%S")
 
 
 def csv_add(appname, item, file_version, secure_version, cve):
