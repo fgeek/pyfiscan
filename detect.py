@@ -14,6 +14,7 @@ def yaml_visible(fn):
 
 def grep_from_file(version_file, regexp):
     """Grepping file with predefined regexp to find a version. This returns m.group from regexp: (?P<version>foo)"""
+    logger = logging.getLogger(return_func_name())
     version_file = open(version_file, 'r')
     source = version_file.readlines()
     version_file.close()
@@ -25,7 +26,7 @@ def grep_from_file(version_file, regexp):
             found_match = match.group('version')
             return found_match
         except re.error:
-            print('Not a valid regular expression: %s' % regexp)
+            logger.debug('Not a valid regular expression: %s' % regexp)
         except AttributeError:
             pass
 
