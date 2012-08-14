@@ -65,6 +65,7 @@ except ImportError, error:
     print('Import error: %s' % error)
     sys.exit(1)
 
+logfile = 'pyfiscan.log'
 queue = Queue()
 # Initializing stats-dictionary. Lambda defaults value to zero
 stats = defaultdict(lambda: 0)
@@ -81,15 +82,15 @@ class PopulateScanQueue:
 
     def populate(self, startpath, checkmodes=False):
         def put(filename, appname):
+            logger = logging.getLogger(return_func_name())
             try:
                 to_queue = [filename, appname]
                 queue.put(to_queue)
             except Exception, e:
-                print(traceback.format_exc())
+                logger.debug(traceback.format_exc())
 
         try:
             logger = logging.getLogger(return_func_name())
-            logger.debug('Type of startpath: %s' % type(startpath))
             """Generate a list of directories from startpath."""
             directories = []
             if type(startpath) == list:
@@ -110,10 +111,10 @@ class PopulateScanQueue:
                                 put(filename, appname)
             status.value = 0
         except OSError as (errno, strerror):  # Error number 116 is at least important to catch
-            logging.debug(traceback.format_exc())
+            logger.debug(traceback.format_exc())
             sys.exit(traceback.format_exc())
         except Exception, e:
-            logging.debug(traceback.format_exc())
+            logger.debug(traceback.format_exc())
 
     def populate_predefined(self, startdir, checkmodes):
         if not type(startdir) == str:
@@ -150,7 +151,7 @@ class PopulateScanQueue:
                         if check_dir_execution_bit(sites_location_last, checkmodes):
                             logger.debug('Appending to locations: %s' % os.path.abspath(sites_location_last))
                             locations.append(os.path.abspath(sites_location_last))
-            logging.debug('Total amount of locations: %s' % len(locations))
+            logger.debug('Total amount of locations: %s' % len(locations))
             self.populate(locations, checkmodes)
         except Exception, e:
             logger.debug(traceback.format_exc())
@@ -158,7 +159,9 @@ class PopulateScanQueue:
 
 def directory_check(path, checkmodes):
     """Check if path is directory and it is not a symlink"""
+    logger = logging.getLogger(return_func_name())
     if not type(path) == str:
+        logger.debug('got path which was not a string. Exiting..')
         sys.exit('directory_check got path which was not a string')
     if not os.path.isdir(path):
         return False
@@ -187,32 +190,36 @@ def check_dir_execution_bit(path, checkmodes):
             #logger.debug('No execution bit set for directory: %s' % path)
             return False
     except Exception, e:
-        loggin.debug(traceback.format_exc())
+        logger.debug(traceback.format_exc())
 
 
 def compare_versions(secure_version, file_version, appname=None):
     """Comparison of found version numbers. Value current_version is predefined and file_version is found from file using grep. Value appname is used to separate different version numbering syntax"""
-    if not type(secure_version) == str:
-        sys.exit('Secure version must be a string when comparing')
-    if not type(file_version) == str:
-        sys.exit('Version from file must be a string when comparing')
+    logger = logging.getLogger(return_func_name())
+    try:
+        if not type(secure_version) == str:
+            logger.debug('Secure version must be a string when comparing: %s' % secure_version)
+        if not type(file_version) == str:
+            logger.debug('Version from file must be a string when comparing: %s' % file_version)
 
-    if appname == 'WikkaWiki':  # Replace -p → .
-        ver1 = secure_version.split('-')
-        ver2 = file_version.split('-')
-        secure_version = ver1[0] + '.' + ver1[1].lstrip('p')
-        file_version = ver2[0] + '.' + ver2[1].lstrip('p')
-    ver1 = secure_version.split('.')
-    ver2 = file_version.split('.')
-    ver1_bigger = 0
-    for i in range(len(min(ver1, ver2))):
-        if int(ver1[i]) == int(ver2[i]):
-            pass
-        elif int(ver1[i]) > int(ver2[i]):
-            ver1_bigger = 1
-            return ver1_bigger
-        else:
-            return ver1_bigger
+        if appname == 'WikkaWiki':  # Replace -p → .
+            ver1 = secure_version.split('-')
+            ver2 = file_version.split('-')
+            secure_version = ver1[0] + '.' + ver1[1].lstrip('p')
+            file_version = ver2[0] + '.' + ver2[1].lstrip('p')
+        ver1 = secure_version.split('.')
+        ver2 = file_version.split('.')
+        ver1_bigger = 0
+        for i in range(len(min(ver1, ver2))):
+            if int(ver1[i]) == int(ver2[i]):
+                pass
+            elif int(ver1[i]) > int(ver2[i]):
+                ver1_bigger = 1
+                return ver1_bigger
+            else:
+                return ver1_bigger
+    except Exception, e:
+        logger.debug(traceback.format_exc())
 
 
 def get_timestamp():
@@ -250,10 +257,10 @@ def handle_results(appname, file_version, item_location, application_cve, applic
         print('%s Found: %s %s -> %s (%s)' % (get_timestamp(), item_location, file_version, application_secure, appname))
         csv_add(appname, item_location, file_version, application_secure, application_cve)
     except Exception, e:
-        print(traceback.format_exc())
+        logger.debug(traceback.format_exc())
 
 
-def SpawnWorker():
+def Worker():
     """This is the actual worker which calls smaller functions in case of
     correct directory/file match is found.
         
@@ -285,16 +292,16 @@ def SpawnWorker():
                         file_version = fn(item_location, issues[issue]['regexp'])
                         # Makes sure we don't go forward without version number from the file
                         if file_version is None:
-                            logger.debug('No version found from: %s' % item_location)
+                            logger.debug('No version found from item: %s with regexp %s' % (item_location, issues[issue]['regexp']))
                             continue
                         # Tests that version from file is smaller than secure version with application fingerprint-function
-                        logger.debug('Comparing versions %s:%s' % (issues[issue]['secure_version'], file_version))
+                        logger.debug('Comparing versions %s:%s for item %s' % (issues[issue]['secure_version'], file_version, item_location))
                         if not compare_versions(issues[issue]['secure_version'], file_version, appname):
                             continue
                         # Calls result handler (goes to CSV and log)
                         handle_results(appname, file_version, item_location, issues[issue]['cve'], issues[issue]['secure_version'])
         except Exception:
-            print(traceback.format_exc())
+            logger.debug(traceback.format_exc())
 
 
 if __name__ == "__main__":
@@ -309,8 +316,7 @@ if __name__ == "__main__":
     # Returns dictionary of all fingerprint data from YAML-files
     data = database.generate(yamldir)
     status = Value('i', 1)
-#    main(sys.argv[1::]
-    """Argument handling and printing of statistics"""
+    # Argument handling
     usage = "Usage: %prog [-r/--recursive <directory>] [--home <directory>] [-d/--debug]"
     parser = OptionParser(
         usage=usage,
@@ -351,11 +357,9 @@ if __name__ == "__main__":
         print('No such log level. Available levels are: %s' % levels.keys())
         sys.exit(1)
     level = levels.get(level_name, logging.NOTSET)
-    logfile = 'pyfiscan.log'
-
-    if os.path.islink(logfile):  # We do not want to continue in case logfile is a symlink
+    # Exit in case logfile is symlink
+    if os.path.islink(logfile):
         sys.exit('Logfile %s is a symlink. Exiting..' % logfile)
-
     try:
         logging.basicConfig(filename=logfile, level=level, format='%(asctime)s %(levelname)s %(name)s %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
         os.chmod(logfile, 0600)
@@ -371,11 +375,13 @@ if __name__ == "__main__":
         """Starts the asynchronous workers. Amount of workers is the same as cores in server.
         http://docs.python.org/library/multiprocessing.html#multiprocessing.pool.multiprocessing.Pool
         """
+        logger.debug('Starting workers.')
         pool = Pool()
-        pool.apply_async(SpawnWorker)
+        pool.apply_async(Worker)
         """Starts the actual populator daemon to get possible locations, which will be verified by workers.
         http://docs.python.org/library/multiprocessing.html#multiprocessing.Process
         """
+        logger.debug('Starting scan queue populator.')
         p = PopulateScanQueue(status)
         p.daemon = True
         if opts.directory:
@@ -387,9 +393,8 @@ if __name__ == "__main__":
             populator = Process(target=p.populate_predefined(opts.home, opts.checkmodes,))
             populator.start()
         else:
-            _users = '/home'
-            logger.debug('Scanning predefined variables: %s' % _users)
-            populator = Process(target=p.populate_predefined(_users, opts.checkmodes,))
+            logger.debug('Scanning predefined variables: /home')
+            populator = Process(target=p.populate_predefined('/home', opts.checkmodes,))
             populator.start()
         """This will loop as long as populating possible locations is done and the queue is empty (workers have finished)"""
         while not status.value == int('0') and queue.empty():
@@ -407,6 +412,9 @@ if __name__ == "__main__":
         populator.join()
         runtime = time.time() - starttime
         logger.info('Scanning ended, which took %s seconds' % runtime)
+        # This will make sure all child processes are dead
+        #p = psutil.Process(os.getpid())
+        #for children in p.get_children():
+        #    os.kill(children.pid)
     except Exception, e:
         logger.debug(traceback.format_exc())
-
