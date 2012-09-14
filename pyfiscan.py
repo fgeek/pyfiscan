@@ -23,13 +23,9 @@ TODO: Add support to continue interrupted session (Tuomo Komulainen requested). 
 TODO: http://docs.python.org/library/functions.html#isinstance
 
 Application specific TODO:
-    SMF:
-        - 1.1.x is still supported. 1.0.x is not. Promised to fix
-    Joomla 2.5:
-        - Needs support for configuration specific parser and MySQL queries
-    WordPress:
-        - Haven't been tested with 2003 versions
-        - http://core.trac.wordpress.org/changeset/16803 this does not seem to have a CVE-identifier. Debian lists this as TEMP-0606657-A0D78A
+    SMF 1.1.x is still supported. 1.0.x is not. Promised to fix
+    Joomla 2.5 nNeeds support for configuration specific parser and MySQL queries
+    WordPress haven't been tested with 2003 versions
     MoinMoin:
         - Fingerprint list is not full. Check OSVDB.
         - 1.0 OSVDB:2878 SA10318 no CVE
@@ -38,8 +34,6 @@ Application specific TODO:
         - 1.2.3 OSVDB:8194,8195 SA11832 no CVE
         - 1.3.3 OSVDB:13184 SA14001 no CVE
         - OSVDB:49752 SA32686 no CVE
-    SMF:
-        - 1.0.5 OSVDB:17458 SA15784 no CVE
     PmWiki:
         - CVE-2010-1481 XSS OSVDB:64456, CVE-2011-4453 Remote PHP Code Execution OSVDB: 77261, CVE-2010-4748 XSS OSVDB:69940
 """

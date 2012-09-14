@@ -98,6 +98,7 @@
 # CVE-2012-3383 3.4.1   http://codex.wordpress.org/Version_3.4.1
 # CVE-2012-3384 3.4.1   http://codex.wordpress.org/Version_3.4.1
 # CVE-2012-3385 3.4.1   http://codex.wordpress.org/Version_3.4.1
+# CVE-requested for: http://core.trac.wordpress.org/changeset/16803 (Debian TEMP-0606657-A0D78A)
 WordPress:
   1:
     location: ['/wp-includes/version.php']
