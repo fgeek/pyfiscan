@@ -34,8 +34,6 @@ Application specific TODO:
         - 1.2.3 OSVDB:8194,8195 SA11832 no CVE
         - 1.3.3 OSVDB:13184 SA14001 no CVE
         - OSVDB:49752 SA32686 no CVE
-    PmWiki:
-        - CVE-2010-1481 XSS OSVDB:64456, CVE-2011-4453 Remote PHP Code Execution OSVDB: 77261, CVE-2010-4748 XSS OSVDB:69940
 
 Data in YAML-files could include following:
     CVE, CVSS2, OSVDB, Secunia
