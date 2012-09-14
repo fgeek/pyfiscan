@@ -26,14 +26,7 @@ Application specific TODO:
     SMF 1.1.x is still supported. 1.0.x is not. Promised to fix
     Joomla 2.5 nNeeds support for configuration specific parser and MySQL queries
     WordPress haven't been tested with 2003 versions
-    MoinMoin:
-        - Fingerprint list is not full. Check OSVDB.
-        - 1.0 OSVDB:2878 SA10318 no CVE
-        - 1.1 OSVDB:2911 no CVE
-        - 1.2.2 OSVDB:6704 SA11807 no CVE
-        - 1.2.3 OSVDB:8194,8195 SA11832 no CVE
-        - 1.3.3 OSVDB:13184 SA14001 no CVE
-        - OSVDB:49752 SA32686 no CVE
+    MoinMoin fingerprint list is not full. Check OSVDB.
 
 Data in YAML-files could include following:
     CVE, CVSS2, OSVDB, Secunia
