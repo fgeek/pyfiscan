@@ -405,9 +405,5 @@ if __name__ == "__main__":
         populator.join()
         runtime = time.time() - starttime
         logger.info('Scanning ended, which took %s seconds' % runtime)
-        # This will make sure all child processes are dead
-        #p = psutil.Process(os.getpid())
-        #for children in p.get_children():
-        #    os.kill(children.pid)
     except Exception:
         logger.debug(traceback.format_exc())
