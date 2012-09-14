@@ -36,6 +36,12 @@ Application specific TODO:
         - OSVDB:49752 SA32686 no CVE
     PmWiki:
         - CVE-2010-1481 XSS OSVDB:64456, CVE-2011-4453 Remote PHP Code Execution OSVDB: 77261, CVE-2010-4748 XSS OSVDB:69940
+
+Data in YAML-files could include following:
+    CVE, CVSS2, OSVDB, Secunia
+    Publication date, Fixed date
+    CPE, ISS X-Force ID
+    SecurityTracker Alert ID, Vendor URL
 """
 
 try:
@@ -46,7 +52,6 @@ try:
     import traceback
     import os
     import stat  # Interpreting the results of os.[stat,fstat,lstat]
-    import inspect  # To get current function name for logging
     from collections import defaultdict
     from optparse import OptionParser
     from multiprocessing import Process, Queue, Value, Pool
@@ -80,7 +85,7 @@ class PopulateScanQueue:
             try:
                 to_queue = [filename, appname]
                 queue.put(to_queue)
-            except Exception, e:
+            except Exception:
                 logger.debug(traceback.format_exc())
 
         try:
@@ -107,7 +112,7 @@ class PopulateScanQueue:
         except OSError as (errno, strerror):  # Error number 116 is at least important to catch
             logger.debug(traceback.format_exc())
             sys.exit(traceback.format_exc())
-        except Exception, e:
+        except Exception:
             logger.debug(traceback.format_exc())
 
     def populate_predefined(self, startdir, checkmodes):
@@ -147,7 +152,7 @@ class PopulateScanQueue:
                             locations.append(os.path.abspath(sites_location_last))
             logger.debug('Total amount of locations: %s' % len(locations))
             self.populate(locations, checkmodes)
-        except Exception, e:
+        except Exception:
             logger.debug(traceback.format_exc())
 
 
@@ -183,7 +188,7 @@ def check_dir_execution_bit(path, checkmodes):
         else:
             #logger.debug('No execution bit set for directory: %s' % path)
             return False
-    except Exception, e:
+    except Exception:
         logger.debug(traceback.format_exc())
 
 
@@ -212,7 +217,7 @@ def compare_versions(secure_version, file_version, appname=None):
                 return ver1_bigger
             else:
                 return ver1_bigger
-    except Exception, e:
+    except Exception:
         logger.debug(traceback.format_exc())
 
 
@@ -250,7 +255,7 @@ def handle_results(appname, file_version, item_location, application_cve, applic
         logger.debug('%s with version %s from %s with vulnerability %s. This installation should be updated to at least version %s.' % (appname, file_version, item_location, application_cve, application_secure))
         print('%s Found: %s %s -> %s (%s)' % (get_timestamp(), item_location, file_version, application_secure, appname))
         csv_add(appname, item_location, file_version, application_secure, application_cve)
-    except Exception, e:
+    except Exception:
         logger.debug(traceback.format_exc())
 
 
@@ -299,12 +304,6 @@ def Worker():
 
 
 if __name__ == "__main__":
-    """Data in YAML-files could include following:
-    CVE, CVSS2, OSVDB, Secunia
-    Publication date, Fixed date
-    CPE, ISS X-Force ID
-    SecurityTracker Alert ID, Vendor URL"""
-
     yamldir = 'yamls/'
     database = Database()
     # Returns dictionary of all fingerprint data from YAML-files
@@ -410,5 +409,5 @@ if __name__ == "__main__":
         #p = psutil.Process(os.getpid())
         #for children in p.get_children():
         #    os.kill(children.pid)
-    except Exception, e:
+    except Exception:
         logger.debug(traceback.format_exc())
