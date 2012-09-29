@@ -3,7 +3,6 @@
 # http://secunia.com/advisories/24316/
 # http://secunia.com/advisories/24951/
 # http://secunia.com/advisories/28130/
-# http://osvdb.org/show/osvdb/72097
 # http://osvdb.org/show/osvdb/73721
 # Not valid:
 # N/A                   OSVDB:72173
@@ -74,6 +73,7 @@
 # CVE-2009-3622 2.8.5
 # CVE-2009-3890 2.8.6
 # CVE-2009-3891 2.8.6
+# CVE-2010-5106 3.0.3 OSVDB:69761 SA42553
 # CVE-2010-0682 2.9.2
 # CVE-2011-0700 3.0.5   OSVDB:72763,72764 SA43238 http://wordpress.org/news/2011/02/wordpress-3-0-5/
 # CVE-2011-0701 3.0.5   OSVDB:72765 SA43238 http://wordpress.org/news/2011/02/wordpress-3-0-5/
