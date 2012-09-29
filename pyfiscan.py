@@ -24,8 +24,7 @@ TODO: http://docs.python.org/library/functions.html#isinstance
 
 Application specific TODO:
     SMF 1.1.x is still supported. 1.0.x is not. Promised to fix
-    Joomla 2.5 nNeeds support for configuration specific parser and MySQL queries
-    WordPress haven't been tested with 2003 versions
+    Joomla 2.5 needs support for configuration specific parser and MySQL queries
     MoinMoin fingerprint list is not full. Check OSVDB.
 
 Data in YAML-files could include following:
