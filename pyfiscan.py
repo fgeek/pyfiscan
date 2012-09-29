@@ -11,7 +11,6 @@ Pyfiscan is free web-application vulnerability and version scanner and can be us
 Known issues and/or bugs:
 1: If instance is upgraded from Joomla 1.6.1 to 1.7.x by unzipping there will be both version files libraries/joomla/version.php and includes/version.php where first is the old one.
 
-TODO: Usage does not include available logging levels. Does list those in case user inputs invalid level
 TODO: Should be a feature to run commands in detected installation directory e.g. if /home/example/public_html/ directory contains file php5.fcgi
 TODO: Fingerprints to YAML and use decorators in functions. References: http://www.artima.com/weblogs/viewpost.jsp?thread=240808 http://www.python.org/dev/peps/pep-0318/ http://wiki.python.org/moin/PythonDecorators http://wiki.python.org/moin/PythonDecoratorLibrary
 TODO: https://github.com/halst/docopt/blob/master/docopt.py
@@ -58,7 +57,7 @@ logfile = 'pyfiscan.log'
 queue = Queue()
 # Initializing stats-dictionary. Lambda defaults value to zero
 stats = defaultdict(lambda: 0)
-# Available logging levels
+# Available logging levels, which are also hardcoded to usage
 levels = {'info': logging.INFO, 'debug': logging.DEBUG}
 
 
@@ -327,7 +326,7 @@ if __name__ == "__main__":
         action="store",
         type="string",
         dest="level_name",
-        help="Specifies logging level")
+        help="Specifies logging level: info, debug")
 
     (opts, args) = parser.parse_args()
     # Starttime is used to measure program runtime
