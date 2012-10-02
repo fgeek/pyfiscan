@@ -88,7 +88,7 @@ class PopulateScanQueue:
                 directories.append(startpath)
             """Use list of directories in loop to check if locations in data dictionary exists."""
             for directory in directories:
-                if not directory_check(directory, checkmodes):
+                if not validate_directory(directory, checkmodes):
                     continue
                 # TODO: This should be done by workers as pyfiscanner will use lots of time in big directory structures with lots of files
                 logger.debug('Populating: %s' % directory)
@@ -115,26 +115,26 @@ class PopulateScanQueue:
             userdirs = []
             for userdir in os.listdir(startdir):
                 userdir_location = startdir + '/' + userdir
-                if not directory_check(userdir_location, checkmodes):
+                if not validate_directory(userdir_location, checkmodes):
                     continue
                 userdirs.append(userdir_location)
 
                 public_html_location = startdir + '/' + userdir + '/public_html'
-                if not directory_check(public_html_location, checkmodes):
+                if not validate_directory(public_html_location, checkmodes):
                     continue
                 logger.debug('Appending to locations: %s' % os.path.abspath(public_html_location))
                 locations.append(os.path.abspath(public_html_location))
 
             for directory in userdirs:
                 sites_location = directory + '/sites'
-                if not directory_check(sites_location, checkmodes):
+                if not validate_directory(sites_location, checkmodes):
                     continue
                 for sitesdir in os.listdir(sites_location):
                     if not check_dir_execution_bit(sites_location + '/' + sitesdir, checkmodes):
                         continue
                     for predefined_directory in predefined_locations:
                         sites_location_last = sites_location + '/' + sitesdir + '/' + predefined_directory
-                        if not directory_check(sites_location_last, checkmodes):
+                        if not validate_directory(sites_location_last, checkmodes):
                             continue
                         logger.debug('Appending to locations: %s' % os.path.abspath(sites_location_last))
                         locations.append(os.path.abspath(sites_location_last))
@@ -144,12 +144,12 @@ class PopulateScanQueue:
             logger.debug(traceback.format_exc())
 
 
-def directory_check(path, checkmodes):
+def validate_directory(path, checkmodes):
     """Check if path is directory and it is not a symlink"""
     logger = logging.getLogger(return_func_name())
     if not type(path) == str:
         logger.debug('got path which was not a string. Exiting..')
-        sys.exit('directory_check got path which was not a string')
+        sys.exit('validate_directory got path which was not a string')
     if not os.path.isdir(path):
         return False
     if os.path.islink(path):
