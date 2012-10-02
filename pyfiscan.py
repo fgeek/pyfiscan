@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Pyfiscan is free web-application vulnerability and version scanner and can be used to locate out-dated versions of common web-applications in Unixi- and Linux-servers. Example usa case is hosting-providers keeping eye on their users installations to keep up with security-updates. Supports content management systems, blogging softwares, image-galleries, version controlling programs, wikis, admin panels and bulletin boards.
+Pyfiscan is free web-application vulnerability and version scanner and can be used to locate out-dated versions of common web-applications in Linux-servers. Example usa case is hosting-providers keeping eye on their users installations to keep up with security-updates. Supports content management systems, blogging softwares, image-galleries, version controlling programs, wikis, admin panels and bulletin boards. Fingerprints are easy to create and modify as user can write those in YAML-syntax.
 
 @author Henri 'fgeek' Salo <henri@nerv.fi>
 @copyright Copyright (c) 2009-2012 Henri Salo
@@ -130,15 +130,14 @@ class PopulateScanQueue:
                 if not directory_check(sites_location, checkmodes):
                     continue
                 for sitesdir in os.listdir(sites_location):
+                    if not check_dir_execution_bit(sites_location + '/' + sitesdir, checkmodes):
+                        continue
                     for predefined_directory in predefined_locations:
-                        if not check_dir_execution_bit(sites_location + '/' + sitesdir, checkmodes):
-                            continue
                         sites_location_last = sites_location + '/' + sitesdir + '/' + predefined_directory
                         if not directory_check(sites_location_last, checkmodes):
                             continue
-                        if check_dir_execution_bit(sites_location_last, checkmodes):
-                            logger.debug('Appending to locations: %s' % os.path.abspath(sites_location_last))
-                            locations.append(os.path.abspath(sites_location_last))
+                        logger.debug('Appending to locations: %s' % os.path.abspath(sites_location_last))
+                        locations.append(os.path.abspath(sites_location_last))
             logger.debug('Total amount of locations: %s' % len(locations))
             self.populate(locations, checkmodes)
         except Exception:
