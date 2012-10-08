@@ -99,6 +99,7 @@
 # CVE-2012-3384 3.4.1   http://codex.wordpress.org/Version_3.4.1
 # CVE-2012-3385 3.4.1   http://codex.wordpress.org/Version_3.4.1
 # CVE-2012-4421 3.4.2   http://codex.wordpress.org/Version_3.4.2
+# CVE-2012-4448 N/A     OSVDB:85731 SA50715 http://packetstormsecurity.org/files/116785/WordPress-3.4.2-Cross-Site-Request-Forgery.html
 WordPress:
   1:
     location: ['/wp-includes/version.php']
