@@ -1,0 +1,2 @@
+# TODO piwigo/include/constants.php:define('PHPWG_VERSION', '2.3.2');
+# TODO: File local/config/database.inc.php missing if not installed

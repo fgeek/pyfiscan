@@ -29,6 +29,7 @@
 #   1.2.2 OSVDB:6704 SA11807 no CVE
 #   1.2.3 OSVDB:8194,8195 SA11832 no CVE
 #   1.3.3 OSVDB:13184 SA14001 no CVE
+# TODO: fingerprint list is not full. Check OSVDB.
 MoinMoin:
   1:
     location: ['/MoinMoin/version.py']

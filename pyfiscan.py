@@ -21,11 +21,6 @@ TODO: Add unittests
 TODO: Add support to continue interrupted session (Tuomo Komulainen requested). Could be implemented using http://docs.python.org/library/atexit.html with knowledge of current working directory and queues
 TODO: http://docs.python.org/library/functions.html#isinstance
 
-Application specific TODO:
-    SMF 1.1.x is still supported. 1.0.x is not. Promised to fix
-    Joomla 2.5 needs support for configuration specific parser and MySQL queries
-    MoinMoin fingerprint list is not full. Check OSVDB.
-
 Data in YAML-files could include following:
     CVE, CVSS2, OSVDB, Secunia
     Publication date, Fixed date
