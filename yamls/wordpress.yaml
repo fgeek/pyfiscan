@@ -1,9 +1,9 @@
-# TODO: http://secunia.com/advisories/23621/
-# TODO: http://secunia.com/advisories/23587/
 # TODO: http://secunia.com/advisories/24316/
 # TODO: http://secunia.com/advisories/24951/
 # TODO: http://secunia.com/advisories/28130/
 # Open installation: CVE-2012-0937 OSVDB:78710
+#
+# CVE-2007-0109 OSVDB:31577 SA23621 The weakness is confirmed in versions 2.0.5 and 3.1.1 and reported in version 1.5. Other versions may also be affected.
 #
 # CVE-2003-1598 "0.72 RC1" OSVDB:4610 SA8954
 # CVE-2003-1599 "0.72 RC1" OSVDB:4611 SA8954
@@ -31,6 +31,7 @@
 # CVE-2006-5705 2.0.5
 # CVE-2006-6016 2.0.5
 # CVE-2006-6017 2.0.5
+# CVE-2006-6808 2.0.6 SA23587
 # CVE-2007-0106 2.0.6
 # CVE-2007-0539 2.1
 # CVE-2007-0540 2.1
