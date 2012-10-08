@@ -1,9 +1,12 @@
+# CVE-2008-7143             OSVDB:51121
 # CVE-2008-1766 3.0.1       SA29801
 # CVE-2008-6506 3.0.4       SA33166
 # CVE-2008-6507 3.0.4       SA33166
 # CVE-2010-1627 3.0.7PL1    SA38837
 # CVE-2010-1630 3.0.5       SA38264
 # CVE-2011-0544 3.0.8       SA42343
+# TODO: phpBB 2.0.x should be upgraded to phpBB3 https://www.phpbb.com/community/viewtopic.php?f=14&t=900655
+# TODO: http://secunia.com/advisories/product/463/?task=advisories
 phpBB3:
   1:
     location: ['/includes/constants.php']
