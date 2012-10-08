@@ -12,8 +12,8 @@ except ImportError, error:
     sys.exit(1)
 
 
-from_address = 'yllapito@tuki.kapsi.fi'
-smtp_server = 'mail.kapsi.fi'
+from_address = 'example@example.org'
+smtp_server = 'example.org'
 smtp_port = 465
 
 # Let's check that we are using at least Python 2.7 or SMTP_SSL does not work
@@ -28,7 +28,7 @@ if version_minor < int(6):
 
 def send_email(user, timestamp, appname, version_file, file_version, secure_version, cve, from_address, smtp_server, smtp_port):
     """This will handle email sending to SMTP-server."""
-    msg = MIMEText('Hei, olemme huomanneet, että käytössäsi on ' + appname + '-sovellus, jonka versio on haavoittuvainen. Voit korjata tilanteen päivittämällä asennuksen vähintään versioon ' + secure_version + '. Apua sovelluksen päivittämiseen saat vastaamalla tähän sähköpostiin sekä tästä ohjeesta: http://www.kapsi.fi/ohjeet/www-paivitys.html\n\nHaavoittuva sovellus löytyy hakemistostasi: ' + version_file + '\n\nLisätietoja: ' + cve + '\n\nTähän sähköpostiin ei tarvitse vastata mikäli sinulla ei ole ongelmia päivityksessä.\n\nTerveisin,\n   Henri Salo\n   Kapsin ylläpito\n   yllapito@tuki.kapsi.fi\n\n   Kapsi Internet-käyttäjät ry\n   http://www.kapsi.fi/\n   http://tuki.kapsi.fi/', _charset='utf-8')
+    msg = MIMEText('Hei, olemme huomanneet, että käytössäsi on ' + appname + '-sovellus, jonka versio on haavoittuvainen. Voit korjata tilanteen päivittämällä asennuksen vähintään versioon ' + secure_version + '. Apua sovelluksen päivittämiseen saat vastaamalla tähän sähköpostiin.\n\nTietoturva-aukollinen sovellus löytyy hakemistostasi: ' + version_file + '\n\nLisätietoja: ' + cve + '\n\nTähän sähköpostiin ei tarvitse vastata mikäli sinulla ei ole ongelmia päivityksessä.\n\nTerveisin,\n   Henri Salo', _charset='utf-8')
 
     to_address = user
     try:
