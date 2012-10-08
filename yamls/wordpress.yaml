@@ -1,9 +1,11 @@
-# TODO: http://secunia.com/advisories/24316/
-# TODO: http://secunia.com/advisories/24951/
 # TODO: http://secunia.com/advisories/28130/
 # Open installation: CVE-2012-0937 OSVDB:78710
 #
 # CVE-2007-0109 OSVDB:31577 SA23621 The weakness is confirmed in versions 2.0.5 and 3.1.1 and reported in version 1.5. Other versions may also be affected.
+#
+# CVE-2007-1244 No official fix and this needs admin privileges
+#
+# CVE-????-???? OSVDB:34352 SA24951 DoS with pingbacks URLs. Ticket http://trac.wordpress.org/ticket/4137 has status wontfix
 #
 # CVE-2003-1598 "0.72 RC1" OSVDB:4610 SA8954
 # CVE-2003-1599 "0.72 RC1" OSVDB:4611 SA8954
