@@ -1,13 +1,10 @@
-# http://secunia.com/advisories/23621/
-# http://secunia.com/advisories/23587/
-# http://secunia.com/advisories/24316/
-# http://secunia.com/advisories/24951/
-# http://secunia.com/advisories/28130/
-# http://osvdb.org/show/osvdb/73721
-# N/A           0.71    SA8954
-# Open installation:
-# CVE-2012-0937         OSVDB:78710
-# Generic:
+# TODO: http://secunia.com/advisories/23621/
+# TODO: http://secunia.com/advisories/23587/
+# TODO: http://secunia.com/advisories/24316/
+# TODO: http://secunia.com/advisories/24951/
+# TODO: http://secunia.com/advisories/28130/
+# Open installation: CVE-2012-0937 OSVDB:78710
+#
 # CVE-2003-1598 "0.72 RC1" OSVDB:4610 SA8954
 # CVE-2003-1599 "0.72 RC1" OSVDB:4611 SA8954
 # CVE-2004-1559 1.2.1
@@ -85,6 +82,7 @@
 # CVE-2011-3128 3.1.3   OSVDB:74489 http://wordpress.org/news/2011/05/wordpress-3-1-3/
 # CVE-2011-3129 3.1.3   OSVDB:74490 http://wordpress.org/news/2011/05/wordpress-3-1-3/
 # CVE-2011-3130 3.1.3   OSVDB:74491 http://wordpress.org/news/2011/05/wordpress-3-1-3/
+# CVE-????-???? 3.1.4   OSVDB:73721 http://wordpress.org/news/2011/06/wordpress-3-1-4/ TODO: no CVE
 # CVE-2011-4898/CVE-2011-4899/CVE-2012-0782 3.3.1   OSVDB:7870778708,78709 https://www.trustwave.com/spiderlabs/advisories/TWSL2012-002.txt
 # CVE-2012-0287 3.3.1   OSVDB:78123 SA47371 https://wordpress.org/news/2012/01/wordpress-3-3-1/
 # CVE-2012-2399 3.3.2   http://codex.wordpress.org/Version_3.3.2
