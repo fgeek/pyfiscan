@@ -27,12 +27,12 @@
 # CVE-2010-2487 1.9.3 SA40043
 # CVE-2010-2969 1.9.3 SA40043
 # CVE-2010-2970 1.9.3 SA40043
-# CVE-2011-1058 1.9.3 SA43413
+# CVE-2011-1058 1.9.4 OSVDB:71025 SA43413
 # TODO: fingerprint list is not full. Check OSVDB.
 MoinMoin:
   1:
     location: ['/MoinMoin/version.py']
-    secure_version: 1.9.3
+    secure_version: 1.9.4
     regexp: ['.*?release.*?(?P<version>[0-9.]{1,})']
-    cve: CVE-2011-1058 SA43413
+    cve: CVE-2011-1058 OSVDB:71025 SA43413
     fingerprint: detect_general
