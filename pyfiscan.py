@@ -259,6 +259,8 @@ def Worker():
             logger = logging.getLogger(return_func_name())
             item = None
             item = queue.get()
+            if not item:
+                break
             logger.info('Processing: %s (%s)' % (item[0], item[1]))
             for (appname, issues) in data.iteritems():
                 # We only continue to check versions with correct applications fingerprint
@@ -280,8 +282,10 @@ def Worker():
                         logger.debug('Comparing versions %s:%s for item %s' % (issues[issue]['secure_version'], file_version, item_location))
                         if not compare_versions(issues[issue]['secure_version'], file_version, appname):
                             continue
+                        # item_location is stripped from application location so that we get cleaner output and actual installation directory
+                        install_dir = item_location[:item_location.find(location)]
                         # Calls result handler (goes to CSV and log)
-                        handle_results(appname, file_version, item_location, issues[issue]['cve'], issues[issue]['secure_version'])
+                        handle_results(appname, file_version, install_dir, issues[issue]['cve'], issues[issue]['secure_version'])
         except Exception:
             logger.debug(traceback.format_exc())
 
@@ -376,11 +380,11 @@ if __name__ == "__main__":
         while not status.value == int('0') and queue.empty():
             time.sleep(5)
         else:
-            """Prevents any more tasks from being submitted to the pool. Once all the tasks have been completed the worker processes will exit.
+            """Prevents any more tasks from being submitted to the pool. Once all the tasks have been completed the worker processes exit using kill-signal None
             http://docs.python.org/library/multiprocessing.html#multiprocessing.pool.multiprocessing.Pool.close
             """
+            queue.put(None)
             populator.join()
-            populator.close()
             pool.close()
             pool.join()
             runtime = time.time() - starttime
