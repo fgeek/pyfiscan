@@ -85,11 +85,11 @@ class PopulateScanQueue:
             for directory in directories:
                 if not validate_directory(directory, checkmodes):
                     continue
-                # TODO: This should be done by workers as pyfiscanner will use lots of time in big directory structures with lots of files
+                filenames = list(self.filenames(directory))
                 logger.debug('Populating: %s' % directory)
                 for (appname, issue) in data.iteritems():
                     for loc in database.locations(data, appname, with_lists=False):
-                        for filename in self.filenames(directory):
+                        for filename in filenames:
                             if filename.endswith(loc):
                                 put(filename, appname)
             status.value = 0
@@ -379,7 +379,10 @@ if __name__ == "__main__":
             """Prevents any more tasks from being submitted to the pool. Once all the tasks have been completed the worker processes will exit.
             http://docs.python.org/library/multiprocessing.html#multiprocessing.pool.multiprocessing.Pool.close
             """
+            populator.join()
+            populator.close()
             pool.close()
+            pool.join()
             runtime = time.time() - starttime
             logger.info('Scanning ended, which took %s seconds' % runtime)
     except KeyboardInterrupt:
