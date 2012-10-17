@@ -43,7 +43,6 @@ try:
 
     from database import Database
     from detect import *
-    from helpers import return_func_name
 except ImportError, error:
     print('Import error: %s' % error)
     sys.exit(1)
@@ -65,16 +64,13 @@ class PopulateScanQueue:
 
     def populate(self, startpath, checkmodes=False):
         def put(filename, appname):
-            logger = logging.getLogger(return_func_name())
             try:
                 to_queue = [filename, appname]
                 queue.put(to_queue)
             except Exception:
-                logger.error(traceback.format_exc())
+                logging.error(traceback.format_exc())
 
         try:
-            logger = logging.getLogger(return_func_name())
-
             """Generate a list of directories from startpath."""
             directories = []
             if type(startpath) == list:
@@ -87,7 +83,7 @@ class PopulateScanQueue:
                 if not validate_directory(directory, checkmodes):
                     continue
                 filenames = list(self.filenames(directory))
-                logger.debug('Populating: %s' % directory)
+                logging.debug('Populating: %s' % directory)
                 for (appname, issue) in data.iteritems():
                     for loc in database.locations(data, appname, with_lists=False):
                         for filename in filenames:
@@ -95,17 +91,16 @@ class PopulateScanQueue:
                                 put(filename, appname)
             status.value = 0
         except OSError:
-            logger.error(traceback.format_exc())
+            logging.error(traceback.format_exc())
             sys.exit(traceback.format_exc())
         except Exception:
-            logger.error(traceback.format_exc())
+            logging.error(traceback.format_exc())
 
     def populate_predefined(self, startdir, checkmodes):
         if not type(startdir) == str:
             sys.exit('Error in populate_predefined value startdir not a string. Value is: "%s" with type %s.' % (startdir, type(startdir)[0]))
         try:
-            logger = logging.getLogger(return_func_name())
-            logger.debug('Populating predefined directories: %s' % startdir)
+            logging.debug('Populating predefined directories: %s' % startdir)
             predefined_locations = ['/www', '/secure_www']
             locations = []
             userdirs = []
@@ -118,7 +113,7 @@ class PopulateScanQueue:
                 public_html_location = startdir + '/' + userdir + '/public_html'
                 if not validate_directory(public_html_location, checkmodes):
                     continue
-                logger.debug('Appending to locations: %s' % os.path.abspath(public_html_location))
+                logging.debug('Appending to locations: %s' % os.path.abspath(public_html_location))
                 locations.append(os.path.abspath(public_html_location))
 
             for directory in userdirs:
@@ -132,19 +127,18 @@ class PopulateScanQueue:
                         sites_location_last = sites_location + '/' + sitesdir + '/' + predefined_directory
                         if not validate_directory(sites_location_last, checkmodes):
                             continue
-                        logger.debug('Appending to locations: %s' % os.path.abspath(sites_location_last))
+                        logging.debug('Appending to locations: %s' % os.path.abspath(sites_location_last))
                         locations.append(os.path.abspath(sites_location_last))
-            logger.debug('Total amount of locations: %s' % len(locations))
+            logging.debug('Total amount of locations: %s' % len(locations))
             self.populate(locations, checkmodes)
         except Exception:
-            logger.error(traceback.format_exc())
+            logging.error(traceback.format_exc())
 
 
 def validate_directory(path, checkmodes):
     """Check if path is directory and it is not a symlink"""
-    logger = logging.getLogger(return_func_name())
     if not type(path) == str:
-        logger.debug('got path which was not a string. Exiting..')
+        logging.debug('got path which was not a string. Exiting..')
         sys.exit('validate_directory got path which was not a string')
     if not os.path.isdir(path):
         return False
@@ -158,7 +152,6 @@ def validate_directory(path, checkmodes):
 def check_dir_execution_bit(path, checkmodes):
     """Check if path has execution bit to check if site is public. Defaults to false."""
     try:
-        logger = logging.getLogger(return_func_name())
         if checkmodes == None:
             return True
         if not os.path.exists(path):
@@ -167,23 +160,22 @@ def check_dir_execution_bit(path, checkmodes):
             return
         """http://docs.python.org/library/stat.html#stat.S_IXOTH"""
         if stat.S_IXOTH & os.stat(path)[stat.ST_MODE]:
-            #logger.debug('Execution bit set for directory: %s' % path)
+            #logging.debug('Execution bit set for directory: %s' % path)
             return True
         else:
-            #logger.debug('No execution bit set for directory: %s' % path)
+            #logging.debug('No execution bit set for directory: %s' % path)
             return False
     except Exception:
-        logger.error(traceback.format_exc())
+        logging.error(traceback.format_exc())
 
 
 def compare_versions(secure_version, file_version, appname=None):
     """Comparison of found version numbers. Value current_version is predefined and file_version is found from file using grep. Value appname is used to separate different version numbering syntax"""
-    logger = logging.getLogger(return_func_name())
     try:
         if not type(secure_version) == str:
-            logger.debug('Secure version must be a string when comparing: %s' % secure_version)
+            logging.debug('Secure version must be a string when comparing: %s' % secure_version)
         if not type(file_version) == str:
-            logger.debug('Version from file must be a string when comparing: %s' % file_version)
+            logging.debug('Version from file must be a string when comparing: %s' % file_version)
 
         if appname == 'WikkaWiki':  # Replace -p → .
             ver1 = secure_version.split('-')
@@ -202,7 +194,7 @@ def compare_versions(secure_version, file_version, appname=None):
             else:
                 return ver1_bigger
     except Exception:
-        logger.error(traceback.format_exc())
+        logging.error(traceback.format_exc())
 
 
 def get_timestamp():
@@ -217,7 +209,6 @@ def csv_add(appname, item, file_version, secure_version, cve):
     TODO: We are doing open and chmod in every csv_add()
     TODO: Should we have exception csv.Error
     """
-    logger = logging.getLogger(return_func_name())
     timestamp = get_timestamp()
     csvfile = 'pyfiscan-vulnerabilities-' + time.strftime("%Y-%m-%d") + '.csv'
     if os.path.islink(csvfile):
@@ -230,17 +221,16 @@ def csv_add(appname, item, file_version, secure_version, cve):
         writer.writerow(logged_data)
         os.chmod(csvfile, 0600)
     except Exception, e:
-        logger.error('Exception in csv_add: %s' % e)
+        logging.error('Exception in csv_add: %s' % e)
 
 
 def handle_results(appname, file_version, item_location, application_cve, application_secure):
     try:
-        logger = logging.getLogger(return_func_name())
-        logger.debug('%s with version %s from %s with vulnerability %s. This installation should be updated to at least version %s.' % (appname, file_version, item_location, application_cve, application_secure))
+        logging.debug('%s with version %s from %s with vulnerability %s. This installation should be updated to at least version %s.' % (appname, file_version, item_location, application_cve, application_secure))
         print('%s Found: %s %s -> %s (%s)' % (get_timestamp(), item_location, file_version, application_secure, appname))
         csv_add(appname, item_location, file_version, application_secure, application_cve)
     except Exception:
-        logger.error(traceback.format_exc())
+        logging.error(traceback.format_exc())
 
 
 def Worker():
@@ -250,19 +240,18 @@ def Worker():
         - Takes and removes item from queue
         - Detection in case of correct directory/file match is found
         - Compares found version against secure version in YAML
-        - Calls logger
+        - Calls logging
 
     Every worker runs in a loop.
 
     """
     while 1:
         try:
-            logger = logging.getLogger(return_func_name())
             item = None
             item = queue.get()
             if not item:
                 break
-            logger.info('Processing: %s (%s)' % (item[0], item[1]))
+            logging.info('Processing: %s (%s)' % (item[0], item[1]))
             for (appname, issues) in data.iteritems():
                 # We only continue to check versions with correct applications fingerprint
                 if not appname == item[1]:
@@ -272,15 +261,15 @@ def Worker():
                     if not item_location.endswith(location):
                         continue
                     for issue in issues:
-                        logger.debug('Processing item %s with location %s with with appname %s issue %s' % (item_location, location, appname, issue))
+                        logging.debug('Processing item %s with location %s with with appname %s issue %s' % (item_location, location, appname, issue))
                         fn = yaml_fn_dict[issues[issue]['fingerprint']]
                         file_version = fn(item_location, issues[issue]['regexp'])
                         # Makes sure we don't go forward without version number from the file
                         if file_version is None:
-                            logger.debug('No version found from item: %s with regexp %s' % (item_location, issues[issue]['regexp']))
+                            logging.debug('No version found from item: %s with regexp %s' % (item_location, issues[issue]['regexp']))
                             continue
                         # Tests that version from file is smaller than secure version with application fingerprint-function
-                        logger.debug('Comparing versions %s:%s for item %s' % (issues[issue]['secure_version'], file_version, item_location))
+                        logging.debug('Comparing versions %s:%s for item %s' % (issues[issue]['secure_version'], file_version, item_location))
                         if not compare_versions(issues[issue]['secure_version'], file_version, appname):
                             continue
                         # item_location is stripped from application location so that we get cleaner output and actual installation directory
@@ -288,7 +277,7 @@ def Worker():
                         # Calls result handler (goes to CSV and log)
                         handle_results(appname, file_version, install_dir, issues[issue]['cve'], issues[issue]['secure_version'])
         except Exception:
-            logger.error(traceback.format_exc())
+            logging.error(traceback.format_exc())
 
 
 if __name__ == "__main__":
@@ -342,13 +331,12 @@ if __name__ == "__main__":
     if os.path.islink(logfile):
         sys.exit('Logfile %s is a symlink. Exiting..' % logfile)
     try:
-        logging.basicConfig(filename=logfile, level=level, format='%(asctime)s %(levelname)s %(name)s %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
+        logging.basicConfig(filename=logfile, level=level, format='%(asctime)s %(levelname)s %(funcName)s:%(lineno)d %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
         os.chmod(logfile, 0600)
     except IOError as (errno, strerror):
         if errno == int('13'):
             sys.exit('Error while writing to logfile: %s' % strerror)
     try:
-        logger = logging.getLogger(return_func_name())
         # stderr to /dev/null
         devnull_fd = open(os.devnull, "w")
         sys.stderr = devnull_fd
@@ -356,25 +344,25 @@ if __name__ == "__main__":
         """Starts the asynchronous workers. Amount of workers is the same as cores in server.
         http://docs.python.org/library/multiprocessing.html#multiprocessing.pool.multiprocessing.Pool
         """
-        logger.debug('Starting workers.')
+        logging.debug('Starting workers.')
         pool = Pool()
         pool.apply_async(Worker)
         """Starts the actual populator daemon to get possible locations, which will be verified by workers.
         http://docs.python.org/library/multiprocessing.html#multiprocessing.Process
         """
-        logger.debug('Starting scan queue populator.')
+        logging.debug('Starting scan queue populator.')
         p = PopulateScanQueue(status)
         p.daemon = True
         if opts.directory:
-            logger.debug('Scanning recursively from path: %s' % opts.directory)
+            logging.debug('Scanning recursively from path: %s' % opts.directory)
             populator = Process(target=p.populate, args=(opts.directory,))
             populator.start()
         elif opts.home:
-            logger.debug('Scanning predefined variables: %s' % opts.home)
+            logging.debug('Scanning predefined variables: %s' % opts.home)
             populator = Process(target=p.populate_predefined(opts.home, opts.checkmodes,))
             populator.start()
         else:
-            logger.debug('Scanning predefined variables: /home')
+            logging.debug('Scanning predefined variables: /home')
             populator = Process(target=p.populate_predefined('/home', opts.checkmodes,))
             populator.start()
         """This will loop as long as populating possible locations is done and the queue is empty (workers have finished)"""
@@ -389,12 +377,12 @@ if __name__ == "__main__":
             pool.close()
             pool.join()
             runtime = time.time() - starttime
-            logger.info('Scanning ended, which took %s seconds' % runtime)
+            logging.info('Scanning ended, which took %s seconds' % runtime)
     except KeyboardInterrupt:
-        logger.info('Received keyboard interrupt. Exiting..')
+        logging.info('Received keyboard interrupt. Exiting..')
         pool.join()
         populator.join()
         runtime = time.time() - starttime
-        logger.info('Scanning ended, which took %s seconds' % runtime)
+        logging.info('Scanning ended, which took %s seconds' % runtime)
     except Exception:
-        logger.error(traceback.format_exc())
+        logging.error(traceback.format_exc())
