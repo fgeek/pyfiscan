@@ -70,10 +70,11 @@ class PopulateScanQueue:
                 to_queue = [filename, appname]
                 queue.put(to_queue)
             except Exception:
-                logger.debug(traceback.format_exc())
+                logger.error(traceback.format_exc())
 
         try:
             logger = logging.getLogger(return_func_name())
+
             """Generate a list of directories from startpath."""
             directories = []
             if type(startpath) == list:
@@ -94,10 +95,10 @@ class PopulateScanQueue:
                                 put(filename, appname)
             status.value = 0
         except OSError:
-            logger.debug(traceback.format_exc())
+            logger.error(traceback.format_exc())
             sys.exit(traceback.format_exc())
         except Exception:
-            logger.debug(traceback.format_exc())
+            logger.error(traceback.format_exc())
 
     def populate_predefined(self, startdir, checkmodes):
         if not type(startdir) == str:
@@ -136,7 +137,7 @@ class PopulateScanQueue:
             logger.debug('Total amount of locations: %s' % len(locations))
             self.populate(locations, checkmodes)
         except Exception:
-            logger.debug(traceback.format_exc())
+            logger.error(traceback.format_exc())
 
 
 def validate_directory(path, checkmodes):
@@ -172,7 +173,7 @@ def check_dir_execution_bit(path, checkmodes):
             #logger.debug('No execution bit set for directory: %s' % path)
             return False
     except Exception:
-        logger.debug(traceback.format_exc())
+        logger.error(traceback.format_exc())
 
 
 def compare_versions(secure_version, file_version, appname=None):
@@ -201,7 +202,7 @@ def compare_versions(secure_version, file_version, appname=None):
             else:
                 return ver1_bigger
     except Exception:
-        logger.debug(traceback.format_exc())
+        logger.error(traceback.format_exc())
 
 
 def get_timestamp():
@@ -229,7 +230,7 @@ def csv_add(appname, item, file_version, secure_version, cve):
         writer.writerow(logged_data)
         os.chmod(csvfile, 0600)
     except Exception, e:
-        logger.debug('Exception in csv_add: %s' % e)
+        logger.error('Exception in csv_add: %s' % e)
 
 
 def handle_results(appname, file_version, item_location, application_cve, application_secure):
@@ -239,7 +240,7 @@ def handle_results(appname, file_version, item_location, application_cve, applic
         print('%s Found: %s %s -> %s (%s)' % (get_timestamp(), item_location, file_version, application_secure, appname))
         csv_add(appname, item_location, file_version, application_secure, application_cve)
     except Exception:
-        logger.debug(traceback.format_exc())
+        logger.error(traceback.format_exc())
 
 
 def Worker():
@@ -287,7 +288,7 @@ def Worker():
                         # Calls result handler (goes to CSV and log)
                         handle_results(appname, file_version, install_dir, issues[issue]['cve'], issues[issue]['secure_version'])
         except Exception:
-            logger.debug(traceback.format_exc())
+            logger.error(traceback.format_exc())
 
 
 if __name__ == "__main__":
@@ -390,10 +391,10 @@ if __name__ == "__main__":
             runtime = time.time() - starttime
             logger.info('Scanning ended, which took %s seconds' % runtime)
     except KeyboardInterrupt:
-        logger.debug('Received keyboard interrupt. Exiting..')
+        logger.info('Received keyboard interrupt. Exiting..')
         pool.join()
         populator.join()
         runtime = time.time() - starttime
         logger.info('Scanning ended, which took %s seconds' % runtime)
     except Exception:
-        logger.debug(traceback.format_exc())
+        logger.error(traceback.format_exc())

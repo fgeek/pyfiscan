@@ -26,7 +26,7 @@ def grep_from_file(version_file, regexp):
             found_match = match.group('version')
             return found_match
         except re.error:
-            logger.debug('Not a valid regular expression: %s' % regexp)
+            logger.error('Not a valid regular expression: %s' % regexp)
         except AttributeError:
             pass
 
