@@ -101,7 +101,7 @@ class PopulateScanQueue:
             sys.exit('Error in populate_predefined value startdir not a string. Value is: "%s" with type %s.' % (startdir, type(startdir)[0]))
         try:
             logging.debug('Populating predefined directories: %s' % startdir)
-            predefined_locations = ['/www', '/secure_www']
+            predefined_locations = ['www', 'secure_www']
             locations = []
             userdirs = []
             for userdir in os.listdir(startdir):
