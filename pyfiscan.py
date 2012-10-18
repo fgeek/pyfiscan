@@ -360,11 +360,11 @@ if __name__ == "__main__":
             populator.start()
         elif opts.home:
             logging.debug('Scanning predefined variables: %s' % opts.home)
-            populator = Process(target=p.populate_predefined(opts.home, opts.checkmodes,))
+            populator = Process(target=p.populate_predefined, args=(opts.home, opts.checkmodes,))
             populator.start()
         else:
             logging.debug('Scanning predefined variables: /home')
-            populator = Process(target=p.populate_predefined('/home', opts.checkmodes,))
+            populator = Process(target=p.populate_predefined, args=('/home', opts.checkmodes,))
             populator.start()
         """This will loop as long as populating possible locations is done and the queue is empty (workers have finished)"""
         while not status.value == int('0') and queue.empty():
