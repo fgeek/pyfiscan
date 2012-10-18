@@ -102,12 +102,12 @@ class PopulateScanQueue:
         try:
             logging.debug('Populating predefined directories: %s' % startdir)
             predefined_locations = ['www', 'secure_www']
-            locations = []
 
-            for userdir in os.listdir(startdir):
+            def populate_userdir(userdir):
+                locations = []
                 userdir_location = startdir + '/' + userdir
                 if not validate_directory(userdir_location, checkmodes):
-                    continue
+                    return locations
 
                 public_html_location = startdir + '/' + userdir + '/public_html'
                 if validate_directory(public_html_location, checkmodes):
@@ -115,17 +115,22 @@ class PopulateScanQueue:
                     locations.append(os.path.abspath(public_html_location))
 
                 sites_location = userdir_location + '/sites'
-                if not validate_directory(sites_location, checkmodes):
-                    continue
-                for sitesdir in os.listdir(sites_location):
-                    if not check_dir_execution_bit(sites_location + '/' + sitesdir, checkmodes):
-                        continue
-                    for predefined_directory in predefined_locations:
-                        sites_location_last = sites_location + '/' + sitesdir + '/' + predefined_directory
-                        if not validate_directory(sites_location_last, checkmodes):
+                if validate_directory(sites_location, checkmodes):
+                    for sitesdir in os.listdir(sites_location):
+                        if not check_dir_execution_bit(sites_location + '/' + sitesdir, checkmodes):
                             continue
-                        logging.debug('Appending to locations: %s' % os.path.abspath(sites_location_last))
-                        locations.append(os.path.abspath(sites_location_last))
+                        for predefined_directory in predefined_locations:
+                            sites_location_last = sites_location + '/' + sitesdir + '/' + predefined_directory
+                            if validate_directory(sites_location_last, checkmodes):
+                                logging.debug('Appending to locations: %s' % os.path.abspath(sites_location_last))
+                                locations.append(os.path.abspath(sites_location_last))
+                return locations
+
+            # TODO: udirs = pool.imap_unordered(populate_userdir, os.listdir(startdir))
+            #       for parallel execution
+            udirs = (populate_userdir(udir) for udir in os.listdir(startdir))
+            locations = [item for sublist in udirs for item in sublist]
+
             logging.debug('Total amount of locations: %s' % len(locations))
             self.populate(locations, checkmodes)
         except Exception:
