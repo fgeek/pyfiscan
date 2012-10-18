@@ -103,21 +103,18 @@ class PopulateScanQueue:
             logging.debug('Populating predefined directories: %s' % startdir)
             predefined_locations = ['www', 'secure_www']
             locations = []
-            userdirs = []
+
             for userdir in os.listdir(startdir):
                 userdir_location = startdir + '/' + userdir
                 if not validate_directory(userdir_location, checkmodes):
                     continue
-                userdirs.append(userdir_location)
 
                 public_html_location = startdir + '/' + userdir + '/public_html'
-                if not validate_directory(public_html_location, checkmodes):
-                    continue
-                logging.debug('Appending to locations: %s' % os.path.abspath(public_html_location))
-                locations.append(os.path.abspath(public_html_location))
+                if validate_directory(public_html_location, checkmodes):
+                    logging.debug('Appending to locations: %s' % os.path.abspath(public_html_location))
+                    locations.append(os.path.abspath(public_html_location))
 
-            for directory in userdirs:
-                sites_location = directory + '/sites'
+                sites_location = userdir_location + '/sites'
                 if not validate_directory(sites_location, checkmodes):
                     continue
                 for sitesdir in os.listdir(sites_location):
