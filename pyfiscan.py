@@ -36,6 +36,7 @@ try:
     import traceback
     import os
     import stat  # Interpreting the results of os.[stat,fstat,lstat]
+    from itertools import izip, repeat
     from collections import defaultdict
     from optparse import OptionParser
     from multiprocessing import Process, Queue, Value, Pool
@@ -54,6 +55,44 @@ stats = defaultdict(lambda: 0)
 # Available logging levels, which are also hardcoded to usage
 levels = {'info': logging.INFO, 'debug': logging.DEBUG}
 
+def populate_directory(args):
+    populator, directory, checkmodes = args
+
+    if not validate_directory(directory, checkmodes):
+        return
+    filenames = list(populator.filenames(directory))
+    logging.debug('Populating: %s' % directory)
+    for (appname, issue) in data.iteritems():
+        for loc in database.locations(data, appname, with_lists=False):
+            for filename in filenames:
+                if filename.endswith(loc):
+                    queue.put((filename, appname))
+
+def populate_userdir(args):
+    predefined_locations = ['www', 'secure_www']
+    userdir, checkmodes = args
+    locations = []
+    userdir = os.path.abspath(userdir)
+    if not validate_directory(userdir, checkmodes):
+        return locations
+
+    public_html_location = userdir + '/public_html'
+    if validate_directory(public_html_location, checkmodes):
+        logging.debug('Appending to locations: %s' % public_html_location)
+        locations.append(public_html_location)
+
+    sites_location = userdir + '/sites'
+    if validate_directory(sites_location, checkmodes):
+        for site in os.listdir(sites_location):
+            sitedir = sites_location + '/' + site
+            if not check_dir_execution_bit(sitedir, checkmodes):
+                continue
+            for predefined_directory in predefined_locations:
+                sites_location_last = sitedir + '/' + predefined_directory
+                if validate_directory(sites_location_last, checkmodes):
+                    logging.debug('Appending to locations: %s' % sites_location_last)
+                    locations.append(sites_location_last)
+    return locations
 
 class PopulateScanQueue:
     def __init__(self, status):
@@ -63,13 +102,6 @@ class PopulateScanQueue:
         return (os.path.join(root, basename) for root, dirs, files in os.walk(directory) for basename in files)
 
     def populate(self, startpath, checkmodes=False):
-        def put(filename, appname):
-            try:
-                to_queue = [filename, appname]
-                queue.put(to_queue)
-            except Exception:
-                logging.error(traceback.format_exc())
-
         try:
             """Generate a list of directories from startpath."""
             directories = []
@@ -79,17 +111,16 @@ class PopulateScanQueue:
             if type(startpath) == str:
                 directories.append(startpath)
             """Use list of directories in loop to check if locations in data dictionary exists."""
-            for directory in directories:
-                if not validate_directory(directory, checkmodes):
-                    continue
-                filenames = list(self.filenames(directory))
-                logging.debug('Populating: %s' % directory)
-                for (appname, issue) in data.iteritems():
-                    for loc in database.locations(data, appname, with_lists=False):
-                        for filename in filenames:
-                            if filename.endswith(loc):
-                                put(filename, appname)
+
+            starttime = time.time()
+
+            p = Pool()
+            dirs = izip(repeat(self), directories, repeat(checkmodes))
+            p.map(populate_directory, dirs, chunksize=3)
             status.value = 0
+
+            logging.info('Scanning for locations finished. Elapsed time: %.4f', time.time() - starttime)
+
         except OSError:
             logging.error(traceback.format_exc())
             sys.exit(traceback.format_exc())
@@ -101,42 +132,21 @@ class PopulateScanQueue:
             sys.exit('Error in populate_predefined value startdir not a string. Value is: "%s" with type %s.' % (startdir, type(startdir)[0]))
         try:
             logging.debug('Populating predefined directories: %s' % startdir)
-            predefined_locations = ['www', 'secure_www']
+            starttime = time.time()
 
-            def populate_userdir(user):
-                locations = []
-                userdir = os.path.abspath(startdir + '/' + user)
-                if not validate_directory(userdir, checkmodes):
-                    return locations
-
-                public_html_location = userdir + '/public_html'
-                if validate_directory(public_html_location, checkmodes):
-                    logging.debug('Appending to locations: %s' % public_html_location)
-                    locations.append(public_html_location)
-
-                sites_location = userdir + '/sites'
-                if validate_directory(sites_location, checkmodes):
-                    for site in os.listdir(sites_location):
-                        sitedir = sites_location + '/' + site
-                        if not check_dir_execution_bit(sitedir, checkmodes):
-                            continue
-                        for predefined_directory in predefined_locations:
-                            sites_location_last = sitedir + '/' + predefined_directory
-                            if validate_directory(sites_location_last, checkmodes):
-                                logging.debug('Appending to locations: %s' % sites_location_last)
-                                locations.append(sites_location_last)
-                return locations
-
-            # TODO: udirs = pool.imap_unordered(populate_userdir, os.listdir(startdir))
-            #       for parallel execution
-            udirs = (populate_userdir(udir) for udir in os.listdir(startdir))
+            p = Pool()
+            dirs = (startdir + '/' + d for d in os.listdir(startdir))
+            udirs = p.imap_unordered(populate_userdir, \
+                                     izip(dirs, repeat(checkmodes)), \
+                                     chunksize=20)
+            p.close()
             locations = [item for sublist in udirs for item in sublist]
 
-            logging.debug('Total amount of locations: %s' % len(locations))
+            logging.info('Total amount of locations: %s, time elapsed: %.4f' % (len(locations), time.time() - starttime))
+
             self.populate(locations, checkmodes)
         except Exception:
             logging.error(traceback.format_exc())
-
 
 def validate_directory(path, checkmodes):
     """Check if path is directory and it is not a symlink"""
