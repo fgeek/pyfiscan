@@ -36,7 +36,6 @@ try:
     import traceback
     import os
     import stat  # Interpreting the results of os.[stat,fstat,lstat]
-    from itertools import izip, repeat
     from collections import defaultdict
     from optparse import OptionParser
     from multiprocessing import Process, Queue, Value, Pool
@@ -115,7 +114,7 @@ class PopulateScanQueue:
             starttime = time.time()
 
             p = Pool()
-            dirs = izip(repeat(self), directories, repeat(checkmodes))
+            dirs = ((self, d, checkmodes) for d in directories)
             p.map(populate_directory, dirs, chunksize=3)
             status.value = 0
 
@@ -137,7 +136,7 @@ class PopulateScanQueue:
             p = Pool()
             dirs = (startdir + '/' + d for d in os.listdir(startdir))
             udirs = p.imap_unordered(populate_userdir, \
-                                     izip(dirs, repeat(checkmodes)), \
+                                     ((d, checkmodes) for d in dirs), \
                                      chunksize=20)
             p.close()
             locations = [item for sublist in udirs for item in sublist]
