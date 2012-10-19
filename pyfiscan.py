@@ -59,13 +59,14 @@ def populate_directory(args):
 
     if not validate_directory(directory, checkmodes):
         return
-    filenames = list(populator.filenames(directory))
+
     logging.debug('Populating: %s' % directory)
-    for (appname, issue) in data.iteritems():
-        for loc in database.locations(data, appname, with_lists=False):
-            for filename in filenames:
+    for filename in populator.filenames(directory):
+        for appname in data:
+            for loc in database.locations(data, appname, with_lists=False):
                 if filename.endswith(loc):
                     queue.put((filename, appname))
+                    break
 
 def populate_userdir(args):
     predefined_locations = ['www', 'secure_www']
