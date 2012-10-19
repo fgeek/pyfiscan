@@ -119,9 +119,11 @@ class PopulateScanQueue:
             p = Pool()
             dirs = ((self, d, checkmodes) for d in directories)
 
+            # timing log is dependant on chunksize.
+            # if len(directories) < chunksize: no intermediate logs are shown.
             chunksize = 200
             do_timing = True
-            if do_timing
+            if do_timing:
                 pop_times = p.imap_unordered(populate_directory, dirs, chunksize=chunksize)
 
                 total_pop_time = 0.
