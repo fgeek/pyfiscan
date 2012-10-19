@@ -136,7 +136,6 @@ class PopulateScanQueue:
                 pop_times = p.imap_unordered(populate_directory, dirs, chunksize=chunksize)
 
                 total_pop_time = 0.
-                last_shown_index = 0
                 for i, pop_time in enumerate(pop_times):
                     total_pop_time += pop_time
 
