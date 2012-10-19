@@ -116,7 +116,7 @@ class PopulateScanQueue:
 
             p = Pool()
             dirs = ((self, d, checkmodes) for d in directories)
-            p.map(populate_directory, dirs, chunksize=3)
+            p.map(populate_directory, dirs, chunksize=200)
             status.value = 0
 
             logging.info('Scanning for locations finished. Elapsed time: %.4f', time.time() - starttime)
@@ -138,7 +138,7 @@ class PopulateScanQueue:
             dirs = (startdir + '/' + d for d in os.listdir(startdir))
             udirs = p.imap_unordered(populate_userdir, \
                                      ((d, checkmodes) for d in dirs), \
-                                     chunksize=20)
+                                     chunksize=200)
             p.close()
             locations = [item for sublist in udirs for item in sublist]
 
