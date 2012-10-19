@@ -58,42 +58,51 @@ def populate_directory(args):
     populator, directory, checkmodes = args
 
     start_time = time.time()
-    if not validate_directory(directory, checkmodes):
-        return time.time() - start_time
+    try:
+        if not validate_directory(directory, checkmodes):
+            return time.time() - start_time
 
-    logging.debug('Populating: %s' % directory)
-    for filename in populator.filenames(directory):
-        for appname in data:
-            for loc in database.locations(data, appname, with_lists=False):
-                if filename.endswith(loc):
-                    queue.put((filename, appname))
-                    break
+        logging.debug('Populating: %s' % directory)
+        for filename in populator.filenames(directory):
+            for appname in data:
+                for loc in database.locations(data, appname, with_lists=False):
+                    if filename.endswith(loc):
+                        queue.put((filename, appname))
+                        break
+    except Exception:
+        logging.error(traceback.format_exc())
+
     return time.time() - start_time
 
 def populate_userdir(args):
     predefined_locations = ['www', 'secure_www']
     userdir, checkmodes = args
     locations = []
-    userdir = os.path.abspath(userdir)
-    if not validate_directory(userdir, checkmodes):
-        return locations
 
-    public_html_location = userdir + '/public_html'
-    if validate_directory(public_html_location, checkmodes):
-        logging.debug('Appending to locations: %s' % public_html_location)
-        locations.append(public_html_location)
+    try:
+        userdir = os.path.abspath(userdir)
+        if not validate_directory(userdir, checkmodes):
+            return locations
 
-    sites_location = userdir + '/sites'
-    if validate_directory(sites_location, checkmodes):
-        for site in os.listdir(sites_location):
-            sitedir = sites_location + '/' + site
-            if not check_dir_execution_bit(sitedir, checkmodes):
-                continue
-            for predefined_directory in predefined_locations:
-                sites_location_last = sitedir + '/' + predefined_directory
-                if validate_directory(sites_location_last, checkmodes):
-                    logging.debug('Appending to locations: %s' % sites_location_last)
-                    locations.append(sites_location_last)
+        public_html_location = userdir + '/public_html'
+        if validate_directory(public_html_location, checkmodes):
+            logging.debug('Appending to locations: %s' % public_html_location)
+            locations.append(public_html_location)
+
+        sites_location = userdir + '/sites'
+        if validate_directory(sites_location, checkmodes):
+            for site in os.listdir(sites_location):
+                sitedir = sites_location + '/' + site
+                if not check_dir_execution_bit(sitedir, checkmodes):
+                    continue
+                for predefined_directory in predefined_locations:
+                    sites_location_last = sitedir + '/' + predefined_directory
+                    if validate_directory(sites_location_last, checkmodes):
+                        logging.debug('Appending to locations: %s' % sites_location_last)
+                        locations.append(sites_location_last)
+    except Exception:
+        logging.error(traceback.format_exc())
+
     return locations
 
 class PopulateScanQueue:
