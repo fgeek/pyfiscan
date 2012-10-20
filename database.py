@@ -49,15 +49,13 @@ class Database:
     def locations(self, application, with_lists=True):
         """Returns list of locations by appname."""
         locations = []
-        for issue_id, issue in self.issues[application].iteritems():
+        for issue in self.issues[application].itervalues():
+            location = issue['location']
             if with_lists is True:
-                locations.append(issue['location'])
+                locations.append(location)
             else:
-                if type(issue['location']) == str:
-                    locations.append(issue['location'])
-                if type(issue['location']) == list:
-                    i = 0
-                    while i < len(issue['location']):
-                        locations.append(issue['location'][i])
-                        i += 1
+                if type(location) == str:
+                    locations.append(location)
+                elif type(location) == list:
+                    locations.extend(location)
         return locations
