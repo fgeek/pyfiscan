@@ -34,10 +34,9 @@ try:
     import logging
     import traceback
     import os
-    import stat  # Interpreting the results of os.[stat,fstat,lstat]
     from collections import defaultdict
     from optparse import OptionParser
-    from multiprocessing import Process, Queue, Value, Pool
+    from multiprocessing import Process, Queue, Pool
     from multiprocessing.util import log_to_stderr
 
     from database import Database
@@ -182,11 +181,11 @@ def compare_versions(secure_version, file_version, appname=None):
     except Exception:
         logging.error(traceback.format_exc())
 
-def handle_results(csv, appname, file_version, item_location, application_cve, application_secure):
+def handle_results(report, appname, file_version, item_location, application_cve, application_secure):
     try:
         logging.debug('%s with version %s from %s with vulnerability %s. This installation should be updated to at least version %s.' % (appname, file_version, item_location, application_cve, application_secure))
         print('%s Found: %s %s -> %s (%s)' % (get_timestamp(), item_location, file_version, application_secure, appname))
-        csv.add(appname, item_location, file_version, application_secure, application_cve)
+        report.add(appname, item_location, file_version, application_secure, application_cve)
     except Exception:
         logging.error(traceback.format_exc())
 

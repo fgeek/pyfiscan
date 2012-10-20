@@ -1,7 +1,6 @@
 import csv
 import time
 import os
-import logging
 import sys
 
 def get_timestamp():
@@ -12,9 +11,9 @@ class IssueReport(object):
     def __init__(self):
         filename = 'pyfiscan-vulnerabilities-' + time.strftime("%Y-%m-%d") + '.csv'
         if os.path.islink(filename):
-            sys.exit('CSV-file %s is a symlink. Exiting..' % csvfile)
+            sys.exit('CSV-file %s is a symlink. Exiting..' % filename)
         if os.path.isdir(filename):
-            sys.exit('CSV-file %s is a not a file. Exiting..' % csvfile)
+            sys.exit('CSV-file %s is a not a file. Exiting..' % filename)
         self.csvfile = open(filename, "a")
         os.chmod(filename, 0600)
         self.writer = csv.writer(self.csvfile, delimiter='|', quotechar='|')
