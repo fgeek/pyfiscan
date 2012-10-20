@@ -14,7 +14,7 @@
 Joomla 1.7:
   1:
     location: ['/libraries/joomla/version.php', '/includes/version.php']
-    secure_version: 1.7.4
+    secure_version: '1.7.4'
     regexp: ['.*?RELEASE.*?(?P<version>1.[7,6])', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
     cve: CVE-2012-0819 OSVDB:78517 http://developer.joomla.org/security/news/382-20120101-core-information-disclosure.html CVE-2012-0820 OSVDB:78515 http://developer.joomla.org/security/news/383-20120102-core-xss-vulnerability.html CVE-2012-0821 OSVDB:78518 http://developer.joomla.org/security/news/384-20120103-core-information-disclosure.html CVE-2012-0822 OSVDB:78516 http://developer.joomla.org/security/news/385-20120104-core-xss-vulnerability.html
     fingerprint: detect_joomla

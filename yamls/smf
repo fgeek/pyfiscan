@@ -47,7 +47,7 @@
 SMF:
   1:
     location: ['index.php']
-    secure_version: 2.0.1
+    secure_version: '2.0.1'
     regexp: ['\$forum_version.*?(?P<version>[0-9.]{1,})']
     cve: CVE-2011-3615, CVE-2011-4173, OSVDB:76317,76318,76822 SA46386
     fingerprint: detect_general

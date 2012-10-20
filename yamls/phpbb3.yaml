@@ -10,7 +10,7 @@
 phpBB3:
   1:
     location: ['/includes/constants.php']
-    secure_version: 3.0.8
+    secure_version: '3.0.8'
     regexp: ['.*?PHPBB_VERSION.*?(?P<version>3[0-9.]{1,})']
     cve: CVE-2011-0544, SA42343
     fingerprint: detect_general

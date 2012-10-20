@@ -101,7 +101,7 @@
 WordPress:
   1:
     location: ['/wp-includes/version.php']
-    secure_version: 3.4.2
+    secure_version: '3.4.2'
     regexp: ['\$wp_version.*?(?P<version>[0-9.]+)']
     cve: http://codex.wordpress.org/Version_3.4.2 CVE-2012-4421
     fingerprint: detect_general

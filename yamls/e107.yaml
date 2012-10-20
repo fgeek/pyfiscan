@@ -52,7 +52,7 @@
 e107:
   1:
     location: ['/e107_admin/ver.php']
-    secure_version: 1.0.0
+    secure_version: '1.0.0'
     regexp: ['.*?e107_version.*?(?P<version>[.0-9]{2,})']
     cve: CVE-2011-4920 CVE-2011-4921 OSVDB:78047-78050 SA46706
     fingerprint: detect_general

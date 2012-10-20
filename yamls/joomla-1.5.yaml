@@ -57,7 +57,7 @@
 Joomla 1.5:
   1:
     location: ['/libraries/joomla/version.php', '/includes/version.php']
-    secure_version: 1.5.26
+    secure_version: '1.5.26'
     regexp: ['.*?\$RELEASE.*?(?P<version>1.[0,5])', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
     cve: CVE-2012-1598 http://developer.joomla.org/security/news/396-20120305-core-password-change CVE-2012-1599 OSVDB:80708 http://developer.joomla.org/security/news/397-20120306-core-information-disclosure
     fingerprint: detect_joomla

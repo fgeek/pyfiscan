@@ -32,7 +32,7 @@
 MoinMoin:
   1:
     location: ['/MoinMoin/version.py']
-    secure_version: 1.9.4
+    secure_version: '1.9.4'
     regexp: ['.*?release.*?(?P<version>[0-9.]{1,})']
     cve: CVE-2011-1058 OSVDB:71025 SA43413
     fingerprint: detect_general
