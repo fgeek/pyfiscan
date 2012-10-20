@@ -112,15 +112,11 @@ class PopulateScanQueue:
     def filenames(self, directory):
         return (os.path.join(root, basename) for root, dirs, files in os.walk(directory) for basename in files)
 
-    def populate(self, startpath, checkmodes=False):
+    def populate(self, directories, checkmodes=False):
+        """ Populates worker queue for further scanning. Takes list of
+            directories to be scanned and checkmodes boolean if execution bit should be
+            taken into account. """
         try:
-            """Generate a list of directories from startpath."""
-            directories = []
-            if type(startpath) == list:
-                for dir in startpath:
-                    directories.append(dir)
-            if type(startpath) == str:
-                directories.append(startpath)
             """Use list of directories in loop to check if locations in data dictionary exists."""
 
             starttime = time.time()
@@ -396,7 +392,7 @@ if __name__ == "__main__":
         p.daemon = True
         if opts.directory:
             logging.debug('Scanning recursively from path: %s' % opts.directory)
-            populator = Process(target=p.populate, args=(opts.directory,))
+            populator = Process(target=p.populate, args=([opts.directory],))
             populator.start()
         elif opts.home:
             logging.debug('Scanning predefined variables: %s' % opts.home)
