@@ -107,7 +107,6 @@ def populate_userdir(args):
     return locations
 
 class PopulateScanQueue:
-
     def populate(self, directories, checkmodes=False):
         """ Populates worker queue for further scanning. Takes list of
             directories to be scanned and checkmodes boolean if execution bit should be
@@ -351,7 +350,6 @@ if __name__ == "__main__":
         """
         logging.debug('Starting scan queue populator.')
         p = PopulateScanQueue()
-        p.daemon = True
         if opts.directory:
             logging.debug('Scanning recursively from path: %s' % opts.directory)
             populator = Process(target=p.populate, args=([opts.directory],))
