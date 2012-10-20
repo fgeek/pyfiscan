@@ -120,27 +120,13 @@ class PopulateScanQueue:
 
             # timing log is dependant on chunksize.
             # if len(directories) < chunksize: no intermediate logs are shown.
-            chunksize = 200
-            do_timing = True
-            if do_timing:
-                pop_times = p.imap_unordered(populate_directory, dirs, chunksize=chunksize)
-
-                total_pop_time = 0.
-                for i, pop_time in enumerate(pop_times):
-                    total_pop_time += pop_time
-
-                    # log only when whole chunk is finished
-                    if (i + 1) % chunksize == 0:
-                        logging.info("running: %.4f total pop time: %.4f", \
-                                     time.time() - starttime, total_pop_time)
-            else:
-                p.map(populate_directory, dirs, chunksize=chunksize)
+            p.map(populate_directory, dirs, chunksize=200)
 
             # all done
             queue.put(None)
 
-            logging.info('Scanning for locations finished. Elapsed time: %.4f, time in threads: %.4f', \
-                         time.time() - starttime, total_pop_time)
+            logging.info('Scanning for locations finished. Elapsed time: %.4f', \
+                         time.time() - starttime)
 
         except OSError:
             logging.error(traceback.format_exc())
