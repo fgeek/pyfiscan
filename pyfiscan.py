@@ -255,7 +255,7 @@ def Worker():
             logging.info('Processing: %s (%s)' % (appname, item_location))
 
             issues = database.issues[appname]
-            for (issue_id, issue) in issues.iteritems():
+            for issue in issues.itervalues():
                 logging.debug('Processing item %s with location %s with with appname %s issue %s' % (item_location, location, appname, issue))
                 fn = yaml_fn_dict[issue['fingerprint']]
                 file_version = fn(item_location, issue['regexp'])
