@@ -182,11 +182,11 @@ def compare_versions(secure_version, file_version, appname=None):
     except Exception:
         logging.error(traceback.format_exc())
 
-def handle_results(appname, file_version, item_location, application_cve, application_secure):
+def handle_results(csv, appname, file_version, item_location, application_cve, application_secure):
     try:
         logging.debug('%s with version %s from %s with vulnerability %s. This installation should be updated to at least version %s.' % (appname, file_version, item_location, application_cve, application_secure))
         print('%s Found: %s %s -> %s (%s)' % (get_timestamp(), item_location, file_version, application_secure, appname))
-        csv_add(appname, item_location, file_version, application_secure, application_cve)
+        csv.add(appname, item_location, file_version, application_secure, application_cve)
     except Exception:
         logging.error(traceback.format_exc())
 
@@ -202,6 +202,12 @@ def Worker():
     Every worker runs in a loop.
 
     """
+    try:
+        report = IssueReport()
+    except Exception:
+        logging.error(traceback.format_exc())
+        return
+
     while 1:
         try:
             item = queue.get()
@@ -231,7 +237,7 @@ def Worker():
                         install_dir = item_location[:item_location.find(location)]
 
                         # Calls result handler (goes to CSV and log)
-                        handle_results(appname, file_version, install_dir, \
+                        handle_results(report, appname, file_version, install_dir, \
                                        issue['cve'], issue['secure_version'])
                 else:
                     logging.debug('No version found from item: %s with regexp %s', \
