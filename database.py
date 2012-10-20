@@ -12,6 +12,10 @@ except ImportError, error:
 
 
 class Database:
+
+    def __init__(self, yamldir):
+        self.issues = self.generate(yamldir)
+
     """Reads YAML files and generates a data dictionary of the contents"""
     def gen_yamlfile_locations(self, yamldir):
         """File handle generator for YAML-files"""

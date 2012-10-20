@@ -65,8 +65,8 @@ def populate_directory(args):
 
         logging.debug('Populating: %s' % directory)
         for filename in filepaths_in_dir(directory):
-            for appname in data:
-                for loc in database.locations(data, appname, with_lists=False):
+            for appname in database.issues:
+                for loc in database.locations(database.issues, appname, with_lists=False):
                     if filename.endswith(loc):
                         queue.put((filename, appname))
                         break
@@ -255,8 +255,8 @@ def Worker():
             item_location, appname = item
             logging.info('Processing: %s (%s)' % (appname, item_location))
 
-            issues = data[appname]
-            for location in database.locations(data, appname, with_lists=False):
+            issues = database.issues[appname]
+            for location in database.locations(database.issues, appname, with_lists=False):
                 if not item_location.endswith(location):
                     continue
                 for (issue_id, issue) in issues.iteritems():
@@ -280,10 +280,8 @@ def Worker():
 
 
 if __name__ == "__main__":
-    yamldir = 'yamls/'
-    database = Database()
-    # Returns dictionary of all fingerprint data from YAML-files
-    data = database.generate(yamldir)
+    database = Database('yamls/')
+
     # Argument handling
     usage = "Usage: %prog [-r/--recursive <directory>] [--home <directory>] [-d/--debug]"
     parser = OptionParser(
