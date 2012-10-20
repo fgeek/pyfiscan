@@ -62,7 +62,7 @@ def populate_directory(args):
         if not validate_directory(directory, checkmodes):
             return time.time() - start_time
 
-        logging.debug('Populating: %s' % directory)
+        logging.debug('Populating: %s', directory)
         for filename in filepaths_in_dir(directory):
             for appname in database.issues:
                 for loc in database.locations(appname, with_lists=False):
@@ -85,7 +85,7 @@ def populate_userdir(args):
 
         public_html_location = userdir + '/public_html'
         if validate_directory(public_html_location, checkmodes):
-            logging.debug('Appending to locations: %s' % public_html_location)
+            logging.debug('Appending to locations: %s', public_html_location)
             locations.append(public_html_location)
 
         sites_location = userdir + '/sites'
@@ -97,7 +97,7 @@ def populate_userdir(args):
                 for predefined_directory in predefined_locations:
                     sites_location_last = sitedir + '/' + predefined_directory
                     if validate_directory(sites_location_last, checkmodes):
-                        logging.debug('Appending to locations: %s' % sites_location_last)
+                        logging.debug('Appending to locations: %s', sites_location_last)
                         locations.append(sites_location_last)
     except Exception:
         logging.error(traceback.format_exc())
@@ -137,7 +137,7 @@ class PopulateScanQueue:
         if not type(startdir) == str:
             sys.exit('Error in populate_predefined value startdir not a string. Value is: "%s" with type %s.' % (startdir, type(startdir)[0]))
         try:
-            logging.debug('Populating predefined directories: %s' % startdir)
+            logging.debug('Populating predefined directories: %s', startdir)
             starttime = time.time()
 
             p = Pool()
@@ -148,7 +148,7 @@ class PopulateScanQueue:
             p.close()
             locations = [item for sublist in udirs for item in sublist]
 
-            logging.info('Total amount of locations: %s, time elapsed: %.4f' % (len(locations), time.time() - starttime))
+            logging.info('Total amount of locations: %s, time elapsed: %.4f', (len(locations), time.time() - starttime))
 
             self.populate(locations, checkmodes)
         except Exception:
@@ -158,9 +158,9 @@ def compare_versions(secure_version, file_version, appname=None):
     """Comparison of found version numbers. Value current_version is predefined and file_version is found from file using grep. Value appname is used to separate different version numbering syntax"""
     try:
         if not type(secure_version) == str:
-            logging.debug('Secure version must be a string when comparing: %s' % secure_version)
+            logging.debug('Secure version must be a string when comparing: %s', secure_version)
         if not type(file_version) == str:
-            logging.debug('Version from file must be a string when comparing: %s' % file_version)
+            logging.debug('Version from file must be a string when comparing: %s', file_version)
 
         if appname == 'WikkaWiki':  # Replace -p → .
             ver1 = secure_version.split('-')
@@ -183,7 +183,7 @@ def compare_versions(secure_version, file_version, appname=None):
 
 def handle_results(report, appname, file_version, item_location, application_cve, application_secure):
     try:
-        logging.debug('%s with version %s from %s with vulnerability %s. This installation should be updated to at least version %s.' % (appname, file_version, item_location, application_cve, application_secure))
+        logging.debug('%s with version %s from %s with vulnerability %s. This installation should be updated to at least version %s.', appname, file_version, item_location, application_cve, application_secure)
         print('%s Found: %s %s -> %s (%s)' % (get_timestamp(), item_location, file_version, application_secure, appname))
         report.add(appname, item_location, file_version, application_secure, application_cve)
     except Exception:
@@ -215,7 +215,7 @@ def Worker():
                 break
 
             item_location, location, appname = item
-            logging.info('Processing: %s (%s)' % (appname, item_location))
+            logging.info('Processing: %s (%s)', appname, item_location)
 
             for issue in database.issues[appname].itervalues():
                 logging.debug('Processing item %s with location %s with with appname %s issue %s', \
@@ -316,11 +316,11 @@ if __name__ == "__main__":
         logging.debug('Starting scan queue populator.')
         p = PopulateScanQueue()
         if opts.directory:
-            logging.debug('Scanning recursively from path: %s' % opts.directory)
+            logging.debug('Scanning recursively from path: %s', opts.directory)
             populator = Process(target=p.populate, args=([opts.directory],))
             populator.start()
         elif opts.home:
-            logging.debug('Scanning predefined variables: %s' % opts.home)
+            logging.debug('Scanning predefined variables: %s', opts.home)
             populator = Process(target=p.populate_predefined, args=(opts.home, opts.checkmodes,))
             populator.start()
         else:
@@ -335,12 +335,12 @@ if __name__ == "__main__":
         pool.close()
         pool.join()
         runtime = time.time() - starttime
-        logging.info('Scanning ended, which took %s seconds' % runtime)
+        logging.info('Scanning ended, which took %s seconds', runtime)
     except KeyboardInterrupt:
         logging.info('Received keyboard interrupt. Exiting..')
         pool.join()
         populator.join()
         runtime = time.time() - starttime
-        logging.info('Scanning ended, which took %s seconds' % runtime)
+        logging.info('Scanning ended, which took %s seconds', runtime)
     except Exception:
         logging.error(traceback.format_exc())

@@ -23,7 +23,7 @@ def grep_from_file(version_file, regexp):
             found_match = match.group('version')
             return found_match
         except re.error:
-            logging.error('Not a valid regular expression: %s' % regexp)
+            logging.error('Not a valid regular expression: %s', regexp)
         except AttributeError:
             pass
 
@@ -46,18 +46,18 @@ def detect_joomla(source_file, regexp):
         return
     if not regexp:
         return
-    logging.debug('Dectecting Joomla from: %s' % source_file)
+    logging.debug('Dectecting Joomla from: %s', source_file)
 
     release_version = grep_from_file(source_file, regexp[0])
     if not release_version:
-        logging.debug('Could not find release version from: %s' % source_file)
+        logging.debug('Could not find release version from: %s', source_file)
         return
-    logging.debug('Release version: %s' % release_version)
+    logging.debug('Release version: %s', release_version)
     dev_level_version = grep_from_file(source_file, regexp[1])
     if not dev_level_version:
-        logging.debug('Could not find development version from: %s' % source_file)
+        logging.debug('Could not find development version from: %s', source_file)
         return
-    logging.debug('Development level version: %s' % dev_level_version)
+    logging.debug('Development level version: %s', dev_level_version)
 
     file_version = release_version + "." + dev_level_version
     return file_version
@@ -76,17 +76,17 @@ def detect_wikkawiki(source_file, regexp):
         return
     if not regexp:
         return
-    logging.debug('Dectecting WikkaWiki from: %s' % source_file)
+    logging.debug('Dectecting WikkaWiki from: %s', source_file)
     version = grep_from_file(source_file, regexp[0])
     if not version:
-        logging.debug('Could not find version from: %s' % source_file)
+        logging.debug('Could not find version from: %s', source_file)
         return
     logging.debug('Version: %s' % version)
     patch_level = grep_from_file(source_file, regexp[1])
     if not patch_level:
-        logging.debug('Could not find patch level from: %s' % patch_level)
+        logging.debug('Could not find patch level from: %s', patch_level)
         return
-    logging.debug('Patch level: %s' % patch_level)
+    logging.debug('Patch level: %s', patch_level)
     if version and patch_level:
         file_version = version + "-p" + patch_level
         return file_version
