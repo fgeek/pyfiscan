@@ -12,6 +12,10 @@ except ImportError, error:
 
 
 class Database:
+
+    def __init__(self, yamldir):
+        self.issues = self.generate(yamldir)
+
     """Reads YAML files and generates a data dictionary of the contents"""
     def gen_yamlfile_locations(self, yamldir):
         """File handle generator for YAML-files"""
@@ -42,21 +46,16 @@ class Database:
                 print('Error while loading YAML-file: %s' % file)
         return data
 
-    def locations(self, data, application, with_lists=True):
+    def locations(self, application, with_lists=True):
         """Returns list of locations by appname."""
         locations = []
-        for (appname, issues) in data.iteritems():
-            if not appname == application:
-                continue
-            for issue in issues.iteritems():
-                if with_lists is True:
-                    locations.append(issue[1]['location'])
-                else:
-                    if type(issue[1]['location']) == str:
-                        locations.append(issue[1]['location'])
-                    if type(issue[1]['location']) == list:
-                        i = 0
-                        while i < len(issue[1]['location']):
-                            locations.append(issue[1]['location'][i])
-                            i += 1
+        for issue in self.issues[application].itervalues():
+            location = issue['location']
+            if with_lists is True:
+                locations.append(location)
+            else:
+                if type(location) == str:
+                    locations.append(location)
+                elif type(location) == list:
+                    locations.extend(location)
         return locations
