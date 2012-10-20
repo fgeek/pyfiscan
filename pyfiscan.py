@@ -106,9 +106,6 @@ def populate_userdir(args):
     return locations
 
 class PopulateScanQueue:
-    def __init__(self, status):
-        status.value = 1
-
     def filenames(self, directory):
         return (os.path.join(root, basename) for root, dirs, files in os.walk(directory) for basename in files)
 
@@ -142,7 +139,8 @@ class PopulateScanQueue:
             else:
                 p.map(populate_directory, dirs, chunksize=chunksize)
 
-            status.value = 0
+            # all done
+            queue.put(None)
 
             logging.info('Scanning for locations finished. Elapsed time: %.4f, time in threads: %.4f', \
                          time.time() - starttime, total_pop_time)
@@ -322,7 +320,6 @@ if __name__ == "__main__":
     database = Database()
     # Returns dictionary of all fingerprint data from YAML-files
     data = database.generate(yamldir)
-    status = Value('i', 1)
     # Argument handling
     usage = "Usage: %prog [-r/--recursive <directory>] [--home <directory>] [-d/--debug]"
     parser = OptionParser(
@@ -388,7 +385,7 @@ if __name__ == "__main__":
         http://docs.python.org/library/multiprocessing.html#multiprocessing.Process
         """
         logging.debug('Starting scan queue populator.')
-        p = PopulateScanQueue(status)
+        p = PopulateScanQueue()
         p.daemon = True
         if opts.directory:
             logging.debug('Scanning recursively from path: %s' % opts.directory)
@@ -403,18 +400,14 @@ if __name__ == "__main__":
             populator = Process(target=p.populate_predefined, args=('/home', opts.checkmodes,))
             populator.start()
         """This will loop as long as populating possible locations is done and the queue is empty (workers have finished)"""
-        while not status.value == int('0') and queue.empty():
-            time.sleep(5)
-        else:
-            """Prevents any more tasks from being submitted to the pool. Once all the tasks have been completed the worker processes exit using kill-signal None
-            http://docs.python.org/library/multiprocessing.html#multiprocessing.pool.multiprocessing.Pool.close
-            """
-            queue.put(None)
-            populator.join()
-            pool.close()
-            pool.join()
-            runtime = time.time() - starttime
-            logging.info('Scanning ended, which took %s seconds' % runtime)
+        """Prevents any more tasks from being submitted to the pool. Once all the tasks have been completed the worker processes exit using kill-signal None
+        http://docs.python.org/library/multiprocessing.html#multiprocessing.pool.multiprocessing.Pool.close
+        """
+        populator.join()
+        pool.close()
+        pool.join()
+        runtime = time.time() - starttime
+        logging.info('Scanning ended, which took %s seconds' % runtime)
     except KeyboardInterrupt:
         logging.info('Received keyboard interrupt. Exiting..')
         pool.join()
