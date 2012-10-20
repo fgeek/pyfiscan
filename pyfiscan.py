@@ -56,7 +56,7 @@ stats = defaultdict(lambda: 0)
 levels = {'info': logging.INFO, 'debug': logging.DEBUG}
 
 def populate_directory(args):
-    populator, directory, checkmodes = args
+    directory, checkmodes = args
 
     start_time = time.time()
     try:
@@ -118,7 +118,7 @@ class PopulateScanQueue:
             starttime = time.time()
 
             p = Pool()
-            dirs = ((self, d, checkmodes) for d in directories)
+            dirs = ((d, checkmodes) for d in directories)
 
             # timing log is dependant on chunksize.
             # if len(directories) < chunksize: no intermediate logs are shown.
