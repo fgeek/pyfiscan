@@ -66,7 +66,7 @@ def populate_directory(args):
         logging.debug('Populating: %s' % directory)
         for filename in filepaths_in_dir(directory):
             for appname in database.issues:
-                for loc in database.locations(database.issues, appname, with_lists=False):
+                for loc in database.locations(appname, with_lists=False):
                     if filename.endswith(loc):
                         queue.put((filename, appname))
                         break
@@ -256,7 +256,7 @@ def Worker():
             logging.info('Processing: %s (%s)' % (appname, item_location))
 
             issues = database.issues[appname]
-            for location in database.locations(database.issues, appname, with_lists=False):
+            for location in database.locations(appname, with_lists=False):
                 if not item_location.endswith(location):
                     continue
                 for (issue_id, issue) in issues.iteritems():

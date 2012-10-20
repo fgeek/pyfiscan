@@ -46,10 +46,10 @@ class Database:
                 print('Error while loading YAML-file: %s' % file)
         return data
 
-    def locations(self, data, application, with_lists=True):
+    def locations(self, application, with_lists=True):
         """Returns list of locations by appname."""
         locations = []
-        for (appname, issues) in data.iteritems():
+        for (appname, issues) in self.issues.iteritems():
             if not appname == application:
                 continue
             for issue in issues.iteritems():
