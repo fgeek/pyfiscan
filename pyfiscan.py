@@ -254,23 +254,31 @@ def Worker():
             item_location, location, appname = item
             logging.info('Processing: %s (%s)' % (appname, item_location))
 
-            issues = database.issues[appname]
-            for issue in issues.itervalues():
-                logging.debug('Processing item %s with location %s with with appname %s issue %s' % (item_location, location, appname, issue))
+            for issue in database.issues[appname].itervalues():
+                logging.debug('Processing item %s with location %s with with appname %s issue %s', \
+                              item_location, location, appname, issue)
+
                 fn = yaml_fn_dict[issue['fingerprint']]
                 file_version = fn(item_location, issue['regexp'])
+
                 # Makes sure we don't go forward without version number from the file
-                if file_version is None:
-                    logging.debug('No version found from item: %s with regexp %s' % (item_location, issue['regexp']))
-                    continue
-                # Tests that version from file is smaller than secure version with application fingerprint-function
-                logging.debug('Comparing versions %s:%s for item %s' % (issue['secure_version'], file_version, item_location))
-                if not compare_versions(issue['secure_version'], file_version, appname):
-                    continue
-                # item_location is stripped from application location so that we get cleaner output and actual installation directory
-                install_dir = item_location[:item_location.find(location)]
-                # Calls result handler (goes to CSV and log)
-                handle_results(appname, file_version, install_dir, issue['cve'], issue['secure_version'])
+                if file_version:
+                    # Tests that version from file is smaller than secure version
+                    # with application fingerprint-function
+                    logging.debug('Comparing versions %s:%s for item %s', \
+                                  issue['secure_version'], file_version, item_location)
+
+                    if compare_versions(issue['secure_version'], file_version, appname):
+                        # item_location is stripped from application location so that
+                        # we get cleaner output and actual installation directory
+                        install_dir = item_location[:item_location.find(location)]
+
+                        # Calls result handler (goes to CSV and log)
+                        handle_results(appname, file_version, install_dir, \
+                                       issue['cve'], issue['secure_version'])
+                else:
+                    logging.debug('No version found from item: %s with regexp %s', \
+                                  item_location, issue['regexp'])
         except Exception:
             logging.error(traceback.format_exc())
 
