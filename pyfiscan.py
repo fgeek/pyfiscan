@@ -32,7 +32,6 @@ try:
     import sys
     import time
     import logging
-    import csv
     import traceback
     import os
     import stat  # Interpreting the results of os.[stat,fstat,lstat]
@@ -44,6 +43,7 @@ try:
     from database import Database
     from detect import *
     from file_helpers import *
+    from issuereport import *
 except ImportError, error:
     print('Import error: %s' % error)
     sys.exit(1)
@@ -182,34 +182,6 @@ def compare_versions(secure_version, file_version, appname=None):
     except Exception:
         logging.error(traceback.format_exc())
 
-
-def get_timestamp():
-    """Returns string ISO 8601 with hours:minutes:seconds"""
-    return time.strftime("%Y-%m-%d %H:%M:%S")
-
-
-def csv_add(appname, item, file_version, secure_version, cve):
-    """Creates CVS-file and writes found vulnerabilities per line. CSV-file can't be symlink.
-    
-    TODO: Should check that all needed arguments are available.
-    TODO: We are doing open and chmod in every csv_add()
-    TODO: Should we have exception csv.Error
-    """
-    timestamp = get_timestamp()
-    csvfile = 'pyfiscan-vulnerabilities-' + time.strftime("%Y-%m-%d") + '.csv'
-    if os.path.islink(csvfile):
-        exit('CSV-file %s is a symlink. Exiting..' % csvfile)
-    if os.path.isdir(csvfile):
-        exit('CSV-file %s is a not a file. Exiting..' % csvfile)
-    try:
-        writer = csv.writer(open(csvfile, "a"), delimiter='|', quotechar='|')
-        logged_data = timestamp, appname, item, file_version, secure_version, cve
-        writer.writerow(logged_data)
-        os.chmod(csvfile, 0600)
-    except Exception, e:
-        logging.error('Exception in csv_add: %s' % e)
-
-
 def handle_results(appname, file_version, item_location, application_cve, application_secure):
     try:
         logging.debug('%s with version %s from %s with vulnerability %s. This installation should be updated to at least version %s.' % (appname, file_version, item_location, application_cve, application_secure))
@@ -217,7 +189,6 @@ def handle_results(appname, file_version, item_location, application_cve, applic
         csv_add(appname, item_location, file_version, application_secure, application_cve)
     except Exception:
         logging.error(traceback.format_exc())
-
 
 def Worker():
     """This is the actual worker which calls smaller functions in case of
