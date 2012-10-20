@@ -20,7 +20,8 @@ class IssueReport(object):
         self.writer = csv.writer(self.csvfile, delimiter='|', quotechar='|')
 
     def close(self):
-        self.csvfile.close()
+        if self.csvfile:
+            self.csvfile.close()
 
     def add(self, appname, item, file_version, secure_version, cve):
         self.writer.writerow((get_timestamp(), appname, item, file_version, secure_version, cve))

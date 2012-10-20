@@ -205,6 +205,7 @@ def Worker():
     try:
         report = IssueReport()
     except Exception:
+        report.close()
         logging.error(traceback.format_exc())
         return
 
@@ -244,7 +245,7 @@ def Worker():
                                   item_location, issue['regexp'])
         except Exception:
             logging.error(traceback.format_exc())
-
+    report.close()
 
 if __name__ == "__main__":
     database = Database('yamls/')
