@@ -1,6 +1,7 @@
 import csv
 import time
 import os
+import logging
 
 def get_timestamp():
     """Returns string ISO 8601 with hours:minutes:seconds"""
