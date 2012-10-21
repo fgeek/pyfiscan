@@ -24,8 +24,6 @@ def validate_directory(path, checkmodes):
 def check_dir_execution_bit(path):
     """Check if path has execution bit to check if site is public. Defaults to false."""
     try:
-        if not os.path.exists(path):
-            return False
         if not os.path.isdir(path):
             return False
         # http://docs.python.org/library/stat.html#stat.S_IXOTH
