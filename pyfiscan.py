@@ -89,8 +89,10 @@ def populate_userdir(fargs):
         if validate_directory(sites_location, checkmodes):
             for site in os.listdir(sites_location):
                 sitedir = sites_location + '/' + site
-                if not check_dir_execution_bit(sitedir, checkmodes):
-                    continue
+                if checkmodes:
+                    if not check_dir_execution_bit(sitedir):
+                        continue
+
                 for predefined_directory in predefined_locations:
                     sites_location_last = sitedir + '/' + predefined_directory
                     if validate_directory(sites_location_last, checkmodes):

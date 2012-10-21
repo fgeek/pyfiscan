@@ -16,20 +16,18 @@ def validate_directory(path, checkmodes):
         return False
     if os.path.islink(path):
         return False
-    if not check_dir_execution_bit(path, checkmodes):
-        return False
+    if checkmodes:
+        return check_dir_execution_bit(path)
     return True
 
 
-def check_dir_execution_bit(path, checkmodes):
+def check_dir_execution_bit(path):
     """Check if path has execution bit to check if site is public. Defaults to false."""
     try:
-        if checkmodes == None:
-            return True
         if not os.path.exists(path):
-            return
+            return False
         if not os.path.isdir(path):
-            return
+            return False
         # http://docs.python.org/library/stat.html#stat.S_IXOTH
         if stat.S_IXOTH & os.stat(path)[stat.ST_MODE]:
             #logging.debug('Execution bit set for directory: %s' % path)
