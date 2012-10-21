@@ -81,7 +81,7 @@ def detect_wikkawiki(source_file, regexp):
     if not version:
         logging.debug('Could not find version from: %s', source_file)
         return
-    logging.debug('Version: %s' % version)
+    logging.debug('Version: %s', version)
     patch_level = grep_from_file(source_file, regexp[1])
     if not patch_level:
         logging.debug('Could not find patch level from: %s', patch_level)

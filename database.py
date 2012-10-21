@@ -12,11 +12,11 @@ except ImportError, error:
 
 
 class Database:
+    """Reads YAML files and generates a data dictionary of the contents"""
 
     def __init__(self, yamldir):
         self.issues = self.generate(yamldir)
 
-    """Reads YAML files and generates a data dictionary of the contents"""
     def gen_yamlfile_locations(self, yamldir):
         """File handle generator for YAML-files"""
         if os.path.islink(yamldir):
@@ -29,21 +29,20 @@ class Database:
             if os.path.islink(yamldir + filename):
                 continue
             if not os.path.isfile(yamldir + filename):
-                continue 
-            file = open(yamldir + filename, 'r')
-            yield file
+                continue
+            yield open(yamldir + filename, 'r')
 
     def generate(self, yamldir):
         """Generates data dictionary of definitions from YAML files"""
         data = {}
-        for file in self.gen_yamlfile_locations(yamldir):
+        for yamlfile in self.gen_yamlfile_locations(yamldir):
             try:
-                result = yaml.safe_load(file.read())
+                result = yaml.safe_load(yamlfile.read())
                 data = dict(data.items() + result.items())
-            except AttributeError, e:  # empty file
-                print('No data found inside: %s' % file)
-            except yaml.scanner.ScannerError, e:  # syntax error
-                print('Error while loading YAML-file: %s' % file)
+            except AttributeError:  # empty file
+                print('No data found inside: %s' % yamlfile)
+            except yaml.scanner.ScannerError:  # syntax error
+                print('Error while loading YAML-file: %s' % yamlfile)
         return data
 
     def locations(self, application, with_lists=True):

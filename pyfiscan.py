@@ -40,9 +40,11 @@ try:
     from multiprocessing.util import log_to_stderr
 
     from database import Database
-    from detect import *
-    from file_helpers import *
-    from issuereport import *
+    from detect import yaml_fn_dict
+    from file_helpers import \
+        filepaths_in_dir, validate_directory, check_dir_execution_bit
+
+    from issuereport import IssueReport, get_timestamp
 except ImportError, error:
     print('Import error: %s' % error)
     sys.exit(1)
@@ -54,8 +56,8 @@ stats = defaultdict(lambda: 0)
 # Available logging levels, which are also hardcoded to usage
 levels = {'info': logging.INFO, 'debug': logging.DEBUG}
 
-def populate_directory(args):
-    directory, checkmodes = args
+def populate_directory(fargs):
+    directory, checkmodes = fargs
 
     start_time = time.time()
     try:
@@ -73,9 +75,9 @@ def populate_directory(args):
 
     return time.time() - start_time
 
-def populate_userdir(args):
+def populate_userdir(fargs):
     predefined_locations = ['www', 'secure_www']
-    userdir, checkmodes = args
+    userdir, checkmodes = fargs
     locations = []
 
     try:
@@ -116,9 +118,6 @@ class PopulateScanQueue:
 
             p = Pool()
             dirs = ((d, checkmodes) for d in directories)
-
-            # timing log is dependant on chunksize.
-            # if len(directories) < chunksize: no intermediate logs are shown.
             p.map(populate_directory, dirs, chunksize=200)
 
             # all done
@@ -148,19 +147,25 @@ class PopulateScanQueue:
             p.close()
             locations = [item for sublist in udirs for item in sublist]
 
-            logging.info('Total amount of locations: %s, time elapsed: %.4f', (len(locations), time.time() - starttime))
+            logging.info('Total amount of locations: %s, time elapsed: %.4f', \
+                         len(locations), time.time() - starttime)
 
             self.populate(locations, checkmodes)
         except Exception:
             logging.error(traceback.format_exc())
 
 def compare_versions(secure_version, file_version, appname=None):
-    """Comparison of found version numbers. Value current_version is predefined and file_version is found from file using grep. Value appname is used to separate different version numbering syntax"""
+    """Comparison of found version numbers. Value current_version is predefined
+       and file_version is found from file using grep. Value appname is used to
+       separate different version numbering syntax"""
     try:
         if not type(secure_version) == str:
-            logging.debug('Secure version must be a string when comparing: %s', secure_version)
+            logging.debug('Secure version must be a string when comparing: %s', \
+                          secure_version)
+
         if not type(file_version) == str:
-            logging.debug('Version from file must be a string when comparing: %s', file_version)
+            logging.debug('Version from file must be a string when comparing: %s', \
+                          file_version)
 
         if appname == 'WikkaWiki':  # Replace -p → .
             ver1 = secure_version.split('-')
@@ -181,7 +186,8 @@ def compare_versions(secure_version, file_version, appname=None):
     except Exception:
         logging.error(traceback.format_exc())
 
-def handle_results(report, appname, file_version, item_location, application_cve, application_secure):
+def handle_results(report, appname, file_version, item_location, application_cve, \
+                   application_secure):
     try:
         logging.debug('%s with version %s from %s with vulnerability %s. This installation should be updated to at least version %s.', appname, file_version, item_location, application_cve, application_secure)
         print('%s Found: %s %s -> %s (%s)' % (get_timestamp(), item_location, file_version, application_secure, appname))
@@ -192,7 +198,7 @@ def handle_results(report, appname, file_version, item_location, application_cve
 def Worker():
     """This is the actual worker which calls smaller functions in case of
     correct directory/file match is found.
-        
+
         - Takes and removes item from queue
         - Detection in case of correct directory/file match is found
         - Compares found version against secure version in YAML
@@ -280,6 +286,7 @@ if __name__ == "__main__":
         help="Specifies logging level: info, debug")
 
     (opts, args) = parser.parse_args()
+
     # Starttime is used to measure program runtime
     starttime = time.time()
     if opts.level_name:
@@ -290,6 +297,7 @@ if __name__ == "__main__":
         print('No such log level. Available levels are: %s' % levels.keys())
         sys.exit(1)
     level = levels.get(level_name, logging.NOTSET)
+
     # Exit in case logfile is symlink
     if os.path.islink(logfile):
         sys.exit('Logfile %s is a symlink. Exiting..' % logfile)
@@ -304,30 +312,28 @@ if __name__ == "__main__":
         devnull_fd = open(os.devnull, "w")
         sys.stderr = devnull_fd
         log_to_stderr()
-        """Starts the asynchronous workers. Amount of workers is the same as cores in server.
-        http://docs.python.org/library/multiprocessing.html#multiprocessing.pool.multiprocessing.Pool
-        """
+
+        # Starts the asynchronous workers. Amount of workers is the same as cores in server.
+        # http://docs.python.org/library/multiprocessing.html#multiprocessing.pool.multiprocessing.Pool
         logging.debug('Starting workers.')
         pool = Pool()
         pool.apply_async(Worker)
-        """Starts the actual populator daemon to get possible locations, which will be verified by workers.
-        http://docs.python.org/library/multiprocessing.html#multiprocessing.Process
-        """
+
+        # Starts the actual populator daemon to get possible locations, which will be verified by workers.
+        # http://docs.python.org/library/multiprocessing.html#multiprocessing.Process
         logging.debug('Starting scan queue populator.')
         p = PopulateScanQueue()
         if opts.directory:
             logging.debug('Scanning recursively from path: %s', opts.directory)
             populator = Process(target=p.populate, args=([opts.directory],))
-            populator.start()
         elif opts.home:
             logging.debug('Scanning predefined variables: %s', opts.home)
             populator = Process(target=p.populate_predefined, args=(opts.home, opts.checkmodes,))
-            populator.start()
         else:
             logging.debug('Scanning predefined variables: /home')
             populator = Process(target=p.populate_predefined, args=('/home', opts.checkmodes,))
-            populator.start()
-        """This will loop as long as populating possible locations is done and the queue is empty (workers have finished)"""
+
+        populator.start()
         """Prevents any more tasks from being submitted to the pool. Once all the tasks have been completed the worker processes exit using kill-signal None
         http://docs.python.org/library/multiprocessing.html#multiprocessing.pool.multiprocessing.Pool.close
         """
