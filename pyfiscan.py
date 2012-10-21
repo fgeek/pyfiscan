@@ -34,7 +34,6 @@ try:
     import logging
     import traceback
     import os
-    from collections import defaultdict
     from optparse import OptionParser
     from multiprocessing import Process, Queue, Pool
     from multiprocessing.util import log_to_stderr
@@ -51,8 +50,6 @@ except ImportError, error:
 
 logfile = 'pyfiscan.log'
 queue = Queue()
-# Initializing stats-dictionary. Lambda defaults value to zero
-stats = defaultdict(lambda: 0)
 # Available logging levels, which are also hardcoded to usage
 levels = {'info': logging.INFO, 'debug': logging.DEBUG}
 
