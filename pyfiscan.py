@@ -48,10 +48,8 @@ except ImportError, error:
     print('Import error: %s' % error)
     sys.exit(1)
 
-logfile = 'pyfiscan.log'
 queue = Queue()
-# Available logging levels, which are also hardcoded to usage
-levels = {'info': logging.INFO, 'debug': logging.DEBUG}
+database = Database('yamls/')
 
 def populate_directory(fargs):
     directory, checkmodes = fargs
@@ -249,8 +247,11 @@ def Worker():
             logging.error(traceback.format_exc())
     report.close()
 
-if __name__ == "__main__":
-    database = Database('yamls/')
+def main():
+    logfile = 'pyfiscan.log'
+
+    # Available logging levels, which are also hardcoded to usage
+    levels = {'info': logging.INFO, 'debug': logging.DEBUG}
 
     # Argument handling
     usage = "Usage: %prog [-r/--recursive <directory>] [--home <directory>] [-d/--debug]"
@@ -347,3 +348,6 @@ if __name__ == "__main__":
         logging.info('Scanning ended, which took %s seconds', runtime)
     except Exception:
         logging.error(traceback.format_exc())
+
+if __name__ == "__main__":
+    main()
