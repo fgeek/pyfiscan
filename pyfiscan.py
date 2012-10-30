@@ -274,7 +274,7 @@ def main():
         /home/user/public_html
 
     """
-    arguments = docopt(usage, version='pyfiscan 2.0')
+    arguments = docopt(usage, version='pyfiscan 0.9')
 
     # Starttime is used to measure program runtime
     starttime = time.time()
