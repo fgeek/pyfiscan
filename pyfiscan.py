@@ -13,7 +13,6 @@ Known issues and/or bugs:
 
 TODO: Should be a feature to run commands in detected installation directory e.g. if /home/example/public_html/ directory contains file php5.fcgi
 TODO: Fingerprints to YAML and use decorators in functions. References: http://www.artima.com/weblogs/viewpost.jsp?thread=240808 http://www.python.org/dev/peps/pep-0318/ http://wiki.python.org/moin/PythonDecorators http://wiki.python.org/moin/PythonDecoratorLibrary
-TODO: https://github.com/halst/docopt/blob/master/docopt.py
 TODO: Argument --strip-output, which should remove homedir/startdir and location from output (stdin, csv and log)
 TODO: If one fingerprint finds a match the process should finish and not be scanned with other fingerprints
 TODO: There should be argument for looking specific programs in for example: -s joomla,smf
@@ -34,7 +33,7 @@ try:
     import logging
     import traceback
     import os
-    from optparse import OptionParser
+    from docopt import docopt
     from multiprocessing import Process, Queue, Pool
     from multiprocessing.util import log_to_stderr
 
@@ -255,42 +254,32 @@ def main():
     # Available logging levels, which are also hardcoded to usage
     levels = {'info': logging.INFO, 'debug': logging.DEBUG}
 
-    # Argument handling
-    usage = "Usage: %prog [-r/--recursive <directory>] [--home <directory>] [-d/--debug]"
-    parser = OptionParser(
-        usage=usage,
-        version="%prog beta",
-        description="If you do not spesify recursive scanning predefined directories are scanned, which are: /home/user/sites/www /home/user/sites/secure-www /home/user/public_html")
-    parser.add_option(
-        "-r", "--recursive",
-        action="store",
-        type="string",
-        dest="directory",
-        help="Scans directories recurssively.")
-    parser.add_option(
-        "", "--home",
-        action="store",
-        type="string",
-        dest="home",
-        help="Specifies where the home-directories are located")
-    parser.add_option(
-        "", "--check-modes",
-        action="store_true",
-        dest="checkmodes",
-        help="Check if we are allowed to traverse directories (execution bit)")
-    parser.add_option(
-        "-l", "--loglevel",
-        action="store",
-        type="string",
-        dest="level_name",
-        help="Specifies logging level: info, debug")
+    usage = """
+    Usage:
+      pyfiscan.py
+      pyfiscan.py -r <directory>
+      pyfiscan.py --home <directory> [--check-modes]
+      pyfiscan.py [-h|--help]
+      pyfiscan.py --version
 
-    (opts, args) = parser.parse_args()
+    Options:
+      -r DIR            Scans directories recurssively.
+      --home DIR        Specifies where the home-directories are located.
+      --check-modes     Check using execution bit if we are allowed to traverse directories.
+      -l LEVEL          Specifies logging level: info, debug
+
+      If you do not spesify recursive-option predefined directories are scanned, which are:
+        /home/user/sites/www
+        /home/user/sites/secure-www
+        /home/user/public_html
+
+    """
+    arguments = docopt(usage, version='pyfiscan 2.0')
 
     # Starttime is used to measure program runtime
     starttime = time.time()
-    if opts.level_name:
-        level_name = opts.level_name
+    if arguments['-l']:
+        level_name = arguments['-l']
     else:
         level_name = str('info')
     if not level_name in levels:
@@ -323,15 +312,15 @@ def main():
         # http://docs.python.org/library/multiprocessing.html#multiprocessing.Process
         logging.debug('Starting scan queue populator.')
         p = PopulateScanQueue()
-        if opts.directory:
-            logging.debug('Scanning recursively from path: %s', opts.directory)
-            populator = Process(target=p.populate, args=([opts.directory],))
-        elif opts.home:
-            logging.debug('Scanning predefined variables: %s', opts.home)
-            populator = Process(target=p.populate_predefined, args=(opts.home, opts.checkmodes,))
+        if arguments['-r']:
+            logging.debug('Scanning recursively from path: %s', arguments['-r'])
+            populator = Process(target=p.populate, args=([arguments['-r']],))
+        elif arguments['-h']:
+            logging.debug('Scanning predefined variables: %s', arguments['-h'])
+            populator = Process(target=p.populate_predefined, args=(arguments['-h'], arguments['--check-modes'],))
         else:
             logging.debug('Scanning predefined variables: /home')
-            populator = Process(target=p.populate_predefined, args=('/home', opts.checkmodes,))
+            populator = Process(target=p.populate_predefined, args=('/home', arguments['--check-modes'],))
 
         populator.start()
         """Prevents any more tasks from being submitted to the pool. Once all the tasks have been completed the worker processes exit using kill-signal None
