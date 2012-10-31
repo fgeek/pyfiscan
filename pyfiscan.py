@@ -89,7 +89,7 @@ def populate_userdir(fargs):
             for site in os.listdir(sites_location):
                 sitedir = sites_location + '/' + site
                 if checkmodes:
-                    if not check_dir_execution_bit(sitedir):
+                    if not check_dir_execution_bit(sitedir, checkmodes):
                         continue
 
                 for predefined_directory in predefined_locations:
@@ -275,9 +275,7 @@ def main():
 
     """
     arguments = docopt(usage, version='pyfiscan 0.9')
-
-    # Starttime is used to measure program runtime
-    starttime = time.time()
+    starttime = time.time()  # used to measure program runtime
     if arguments['-l']:
         level_name = arguments['-l']
     else:
@@ -315,9 +313,9 @@ def main():
         if arguments['-r']:
             logging.debug('Scanning recursively from path: %s', arguments['-r'])
             populator = Process(target=p.populate, args=([arguments['-r']],))
-        elif arguments['-h']:
-            logging.debug('Scanning predefined variables: %s', arguments['-h'])
-            populator = Process(target=p.populate_predefined, args=(arguments['-h'], arguments['--check-modes'],))
+        elif arguments['--home']:
+            logging.debug('Scanning predefined variables: %s', arguments['--home'])
+            populator = Process(target=p.populate_predefined, args=(arguments['--home'], arguments['--check-modes'],))
         else:
             logging.debug('Scanning predefined variables: /home')
             populator = Process(target=p.populate_predefined, args=('/home', arguments['--check-modes'],))

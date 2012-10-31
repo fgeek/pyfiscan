@@ -17,7 +17,7 @@ def validate_directory(path, checkmodes):
     if os.path.islink(path):
         return False
     if checkmodes:
-        return check_dir_execution_bit(path)
+        return check_dir_execution_bit(path, checkmodes)
     return True
 
 
