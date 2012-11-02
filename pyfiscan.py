@@ -257,8 +257,8 @@ def main():
     usage = """
     Usage:
       pyfiscan.py
-      pyfiscan.py -r <directory>
-      pyfiscan.py --home <directory> [--check-modes]
+      pyfiscan.py -r <directory> [-l LEVEL]
+      pyfiscan.py --home <directory> [--check-modes] [-l LEVEL]
       pyfiscan.py [-h|--help]
       pyfiscan.py --version
 
