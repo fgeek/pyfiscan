@@ -1,3 +1,4 @@
+# http://www.mediawiki.org/wiki/Version_lifecycle
 # CVE-2009-4570
 # CVE-2009-4589
 # CVE-2010-1189 1.15.2      OSVDB:62798 SA38856
@@ -18,10 +19,26 @@
 # CVE-2012-1580 1.17.3 or 1.18.2 OSVDB:80364 http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000109.html http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000110.html
 # CVE-2012-1581 1.17.3 or 1.18.2 OSVDB:80365 http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000109.html http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000110.html
 # CVE-2012-1582 1.17.3 or 1.18.2 OSVDB:80363 http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000109.html http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000110.html
-MediaWiki:
+# CVE-2012-5391
+# CVE-2012-5395 1.20.1/1.19.3 OSVDB:87928 SA51424
+MediaWiki 1.20:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.17.3'
-    regexp: ['\$wgVersion.*?(?P<version>[0-9.]{1,})']
-    cve: CVE-2012-1578 CVE-2012-1579 CVE-2012-1580 CVE-2012-1581 CVE-2012-1582 OSVDB:80361,80362,80363,80364,80365 http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000109.html
+    secure_version: '1.20.1'
+    regexp: ['\$wgVersion.*?(?P<version>1\.20\.[0-9.]{1,})']
+    cve: CVE-2012-5395 OSVDB:87928 SA51424
+    fingerprint: detect_general
+MediaWiki 1.19:
+  1:
+    location: ['/includes/DefaultSettings.php']
+    secure_version: '1.19.3'
+    regexp: ['\$wgVersion.*?(?P<version>1\.19\.[0-9.]{1,})']
+    cve: CVE-2012-5395 OSVDB:87928 SA51424
+    fingerprint: detect_general
+MediaWiki 1.18:
+  1:
+    location: ['/includes/DefaultSettings.php']
+    secure_version: '1.20.1'
+    regexp: ['\$wgVersion.*?(?P<version>1\.18\.[0-9.]{1,})']
+    cve: 'MediaWiki 1.18.x is end of life.'
     fingerprint: detect_general
