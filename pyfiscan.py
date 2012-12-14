@@ -70,7 +70,7 @@ def populate_directory(fargs):
     return time.time() - start_time
 
 def populate_userdir(fargs):
-    predefined_locations = ['www', 'secure_www']
+    predefined_locations = ['www', 'secure-www']
     userdir, checkmodes = fargs
     locations = []
 
