@@ -19,7 +19,7 @@
 # CVE-2012-1580 1.17.3 or 1.18.2 OSVDB:80364 http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000109.html http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000110.html
 # CVE-2012-1581 1.17.3 or 1.18.2 OSVDB:80365 http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000109.html http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000110.html
 # CVE-2012-1582 1.17.3 or 1.18.2 OSVDB:80363 http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000109.html http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000110.html
-# CVE-2012-5391
+# CVE-2012-5391 1.20.1/1.19.3 OSVDB:87928 SA51424
 # CVE-2012-5395 1.20.1/1.19.3 OSVDB:87928 SA51424
 MediaWiki 1.20:
   1:
