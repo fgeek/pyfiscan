@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Pyfiscan is free web-application vulnerability and version scanner and can be used to locate out-dated versions of common web-applications in Linux-servers. Example usa case is hosting-providers keeping eye on their users installations to keep up with security-updates. Supports content management systems, blogging softwares, image-galleries, version controlling programs, wikis, admin panels and bulletin boards. Fingerprints are easy to create and modify as user can write those in YAML-syntax.
+Pyfiscan is free web-application vulnerability and version scanner and can be used to locate out-dated versions of common web-applications in Linux-servers. Example use case is hosting-providers keeping eye on their users installations to keep up with security-updates. Supports content management systems, blogging softwares, image-galleries, version controlling programs, wikis, admin panels and bulletin boards. Fingerprints are easy to create and modify as user can write those in YAML-syntax.
 
 @author Henri 'fgeek' Salo <henri@nerv.fi>
 @copyright Copyright (c) 2009-2012 Henri Salo
@@ -13,7 +13,7 @@ Known issues and/or bugs:
 
 TODO: Should be a feature to run commands in detected installation directory e.g. if /home/example/public_html/ directory contains file php5.fcgi
 TODO: Fingerprints to YAML and use decorators in functions. References: http://www.artima.com/weblogs/viewpost.jsp?thread=240808 http://www.python.org/dev/peps/pep-0318/ http://wiki.python.org/moin/PythonDecorators http://wiki.python.org/moin/PythonDecoratorLibrary
-TODO: Argument --strip-output, which should remove homedir/startdir and location from output (stdin, csv and log)
+TODO: Argument --strip-output, which should remove homedir/startdir from output (stdin, csv and log)
 TODO: If one fingerprint finds a match the process should finish and not be scanned with other fingerprints
 TODO: There should be argument for looking specific programs in for example: -s joomla,smf
 TODO: Add unittests
@@ -70,7 +70,7 @@ def populate_directory(fargs):
     return time.time() - start_time
 
 def populate_userdir(fargs):
-    predefined_locations = ['www', 'secure_www']
+    predefined_locations = ['www', 'secure-www']
     userdir, checkmodes = fargs
     locations = []
 
