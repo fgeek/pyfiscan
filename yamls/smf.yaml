@@ -42,15 +42,7 @@
 # Not going to add:
 #   OSVDB:32605 too little information
 #   CVE-2007-5943 OSVDB:39961 myth/fake
-#
-# These needs more information:
 #   CVE-2012-5903 OSVDB:80766 
-#       Affected version would be 2.0.2, which is the newest (2012-11-27)
-#       Am1r has lots of false positive reports
-#       I could not reproduce this
-#       Contacted vendor 2012-11-25
-#       http://www.securityfocus.com/bid/52822
-#       http://xforce.iss.net/xforce/xfdb/74521
 SMF 1:
   1:
     location: ['index.php']
