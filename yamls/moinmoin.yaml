@@ -29,14 +29,15 @@
 # CVE-2010-2970 1.9.3 SA40043
 # CVE-2011-1058 1.9.4 OSVDB:71025 SA43413
 # CVE-2012-4404 1.9.5 OSVDB:85172      
-# CVE-2012-6080 1.9.6 http://hg.moinmo.in/moin/1.9/rev/3c27131a3c52
-# CVE-2012-6081 1.9.6 http://hg.moinmo.in/moin/1.9/rev/7e7e1cbb9d3f
-# CVE-2012-6082 1.9.6 http://hg.moinmo.in/moin/1.9/rev/c98ec456e493
+# CVE-2012-6080 1.9.6 OSVDB:88828 http://hg.moinmo.in/moin/1.9/rev/3c27131a3c52
+# CVE-2012-6081 1.9.6 OSVDB:88825,88827 http://hg.moinmo.in/moin/1.9/rev/7e7e1cbb9d3f
+# CVE-2012-6082 1.9.6 OSVDB:88826 http://hg.moinmo.in/moin/1.9/rev/c98ec456e493
+# CVE-2012-6495 1.9.6 OSVDB:88825,88827 http://hg.moinmo.in/moin/1.9/rev/7e7e1cbb9d3f
 # TODO: fingerprint list is not full. Check OSVDB.
 MoinMoin:
   1:
     location: ['/MoinMoin/version.py']
     secure_version: '1.9.6'
     regexp: ['.*?release.*?(?P<version>[0-9.]{1,})']
-    cve: CVE-2012-6080, CVE-2012-6081, CVE-2012-6082 http://moinmo.in/SecurityFixes
+    cve: CVE-2012-6080, CVE-2012-6081, CVE-2012-6082 OSVDB:88825-88828 http://moinmo.in/SecurityFixes
     fingerprint: detect_general
