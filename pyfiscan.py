@@ -33,6 +33,7 @@ try:
     import logging
     import traceback
     import os
+    import itertools
     from docopt import docopt
     from multiprocessing import Process, Queue, Pool
     from multiprocessing.util import log_to_stderr
@@ -150,35 +151,26 @@ class PopulateScanQueue:
         except Exception:
             logging.error(traceback.format_exc())
 
-def compare_versions(secure_version, file_version, appname=None):
-    """Comparison of found version numbers. Value current_version is predefined
-       and file_version is found from file using grep. Value appname is used to
-       separate different version numbering syntax"""
+def is_not_secure(secure_version, file_version, appname=None):
+    """Comparison of version numbers.
+
+    secure_version: predefined value from YAML-files
+    file_version: found from file using grep
+    appname: used to separate different version numbering syntax
+
+    True when file_version      <   secure_version
+    False when file_version     >=  secure_version
+    """
     try:
-        if not type(secure_version) == str:
-            logging.debug('Secure version must be a string when comparing: %s', \
-                          secure_version)
-
-        if not type(file_version) == str:
-            logging.debug('Version from file must be a string when comparing: %s', \
-                          file_version)
-
-        if appname == 'WikkaWiki':  # Replace -p → .
-            ver1 = secure_version.split('-')
-            ver2 = file_version.split('-')
-            secure_version = ver1[0] + '.' + ver1[1].lstrip('p')
-            file_version = ver2[0] + '.' + ver2[1].lstrip('p')
-        ver1 = secure_version.split('.')
-        ver2 = file_version.split('.')
-        ver1_bigger = 0
-        for i in range(len(min(ver1, ver2))):
-            if int(ver1[i]) == int(ver2[i]):
-                pass
-            elif int(ver1[i]) > int(ver2[i]):
-                ver1_bigger = 1
-                return ver1_bigger
-            else:
-                return ver1_bigger
+        if not all(isinstance(x, str) for x in (secure_version, file_version)):
+            raise TypeError('is_not_secure: input must be str when comparing. secure_version %s, file_version %s', \
+                            type(secure_version), type(file_version))
+        if appname == 'WikkaWiki':
+            # Replace -p → .
+            # Example version number: 1.3.2-p7
+            secure_version = secure_version.replace('-p', '.')
+            file_version = file_version.replace('-p', '.')
+        return map(int, secure_version.split('.')) > map(int, file_version.split('.'))
     except Exception:
         logging.error(traceback.format_exc())
 
@@ -233,7 +225,7 @@ def Worker():
                     logging.debug('Comparing versions %s:%s for item %s', \
                                   issue['secure_version'], file_version, item_location)
 
-                    if compare_versions(issue['secure_version'], file_version, appname):
+                    if is_not_secure(issue['secure_version'], file_version, appname):
                         # item_location is stripped from application location so that
                         # we get cleaner output and actual installation directory
                         install_dir = item_location[:item_location.find(location)]
@@ -256,7 +248,7 @@ def main():
 
     usage = """
     Usage:
-      pyfiscan.py
+      pyfiscan.py [--check-modes] [-l LEVEL]
       pyfiscan.py -r <directory> [-l LEVEL]
       pyfiscan.py --home <directory> [--check-modes] [-l LEVEL]
       pyfiscan.py [-h|--help]
@@ -321,9 +313,8 @@ def main():
             populator = Process(target=p.populate_predefined, args=('/home', arguments['--check-modes'],))
 
         populator.start()
-        """Prevents any more tasks from being submitted to the pool. Once all the tasks have been completed the worker processes exit using kill-signal None
-        http://docs.python.org/library/multiprocessing.html#multiprocessing.pool.multiprocessing.Pool.close
-        """
+        # Prevents any more tasks from being submitted to the pool. Once all the tasks have been completed the worker processes exit using kill-signal None
+        # http://docs.python.org/library/multiprocessing.html#multiprocessing.pool.multiprocessing.Pool.close
         populator.join()
         pool.close()
         pool.join()
