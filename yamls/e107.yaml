@@ -49,6 +49,8 @@
 #               0.7.26  This is not fixed yet. SVN revision 12375 is fix
 # CVE-2011-4920 1.0.0   OSVDB:78047-78049 SA46706
 # CVE-2011-4921 1.0.0   OSVDB:78050
+# CVE-2012-6433 # TODO
+# CVE-2012-6434
 e107:
   1:
     location: ['/e107_admin/ver.php']
