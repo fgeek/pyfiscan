@@ -33,6 +33,11 @@
 # CVE-2012-6081 1.9.6 OSVDB:88825,88827 http://hg.moinmo.in/moin/1.9/rev/7e7e1cbb9d3f
 # CVE-2012-6082 1.9.6 OSVDB:88826 http://hg.moinmo.in/moin/1.9/rev/c98ec456e493
 # CVE-2012-6495 1.9.6 OSVDB:88825,88827 http://hg.moinmo.in/moin/1.9/rev/7e7e1cbb9d3f
+# CVE-2011-4448 # TODO
+# CVE-2011-4449 Apache configuration issue
+# CVE-2011-4450 # TODO
+# CVE-2011-4451 # TODO
+# CVE-2011-4452 # TODO
 # TODO: fingerprint list is not full. Check OSVDB.
 MoinMoin:
   1:
