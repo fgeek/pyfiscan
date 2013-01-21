@@ -2,21 +2,35 @@
 # -*- coding: utf-8 -*-
 
 """
-Pyfiscan is free web-application vulnerability and version scanner and can be used to locate out-dated versions of common web-applications in Linux-servers. Example use case is hosting-providers keeping eye on their users installations to keep up with security-updates. Supports content management systems, blogging softwares, image-galleries, version controlling programs, wikis, admin panels and bulletin boards. Fingerprints are easy to create and modify as user can write those in YAML-syntax.
+Pyfiscan is free web-application vulnerability and version scanner and can be
+used to locate out-dated versions of common web-applications in Linux-servers.
+Example use case is hosting-providers keeping eye on their users installations
+to keep up with security-updates. Supports content management systems, blogging
+softwares, image-galleries, version controlling programs, wikis, admin panels
+and bulletin boards. Fingerprints are easy to create and modify as user can
+write those in YAML-syntax.
 
 @author Henri 'fgeek' Salo <henri@nerv.fi>
-@copyright Copyright (c) 2009-2012 Henri Salo
+@copyright Copyright (c) 2009-2013 Henri Salo
 @licence BSD
 
 Known issues and/or bugs:
-1: If instance is upgraded from Joomla 1.6.1 to 1.7.x by unzipping there will be both version files libraries/joomla/version.php and includes/version.php where first is the old one.
+1: If instance is upgraded from Joomla 1.6.1 to 1.7.x by unzipping there will be
+both version files libraries/joomla/version.php and includes/version.php where
+first is the old one.
 
-TODO: Should be a feature to run commands in detected installation directory e.g. if /home/example/public_html/ directory contains file php5.fcgi
-TODO: Argument --strip-output, which should remove homedir/startdir from output (stdin, csv and log)
-TODO: If one fingerprint finds a match the process should finish and not be scanned with other fingerprints
-TODO: There should be argument for looking specific programs in for example: -s joomla,smf
+TODO: Should be a feature to run commands in detected installation directory
+e.g. if /home/example/public_html/ directory contains file php5.fcgi
+TODO: Argument --strip-output, which should remove homedir/startdir from output
+(stdin, csv and log)
+TODO: If one fingerprint finds a match the process should finish and not be
+scanned with other fingerprints
+TODO: There should be argument for looking specific programs in for example: -s
+joomla,smf
 TODO: Add unittests
-TODO: Add support to continue interrupted session (Tuomo Komulainen requested). Could be implemented using http://docs.python.org/library/atexit.html with knowledge of current working directory and queues
+TODO: Add support to continue interrupted session (Tuomo Komulainen requested).
+Could be implemented using http://docs.python.org/library/atexit.html with
+knowledge of current working directory and queues
 
 Data in YAML-files could include following:
     CVE, CVSS2, OSVDB, Secunia
