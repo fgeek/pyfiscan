@@ -17,7 +17,6 @@ TODO: If one fingerprint finds a match the process should finish and not be scan
 TODO: There should be argument for looking specific programs in for example: -s joomla,smf
 TODO: Add unittests
 TODO: Add support to continue interrupted session (Tuomo Komulainen requested). Could be implemented using http://docs.python.org/library/atexit.html with knowledge of current working directory and queues
-TODO: http://docs.python.org/library/functions.html#isinstance
 
 Data in YAML-files could include following:
     CVE, CVSS2, OSVDB, Secunia
@@ -129,8 +128,8 @@ class PopulateScanQueue:
             logging.error(traceback.format_exc())
 
     def populate_predefined(self, startdir, checkmodes):
-        if not type(startdir) == str:
-            sys.exit('Error in populate_predefined value startdir not a string. Value is: "%s" with type %s.' % (startdir, type(startdir)[0]))
+        if not isinstance(startdir, str):
+            sys.exit('populate_predefined: value startdir not a string. "%s" with type %s' % (startdir, type(startdir)))
         try:
             logging.debug('Populating predefined directories: %s', startdir)
             starttime = time.time()
