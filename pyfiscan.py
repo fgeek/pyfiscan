@@ -31,7 +31,6 @@ try:
     import logging
     import traceback
     import os
-    import itertools
     from docopt import docopt
     from multiprocessing import Process, Queue, Pool
     from multiprocessing.util import log_to_stderr
