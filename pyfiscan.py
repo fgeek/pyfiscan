@@ -173,6 +173,9 @@ def is_not_secure(secure_version, file_version, appname=None):
 
 def handle_results(report, appname, file_version, item_location, application_cve, \
                    application_secure):
+    """Main handler for all results found. Report is instance of IssueReport,
+    which handles .csv output.
+    """
     try:
         logging.debug('%s with version %s from %s with vulnerability %s. This installation should be updated to at least version %s.', appname, file_version, item_location, application_cve, application_secure)
         print('%s Found: %s %s -> %s (%s)' % (get_timestamp(), item_location, file_version, application_secure, appname))
