@@ -12,7 +12,6 @@ Known issues and/or bugs:
 1: If instance is upgraded from Joomla 1.6.1 to 1.7.x by unzipping there will be both version files libraries/joomla/version.php and includes/version.php where first is the old one.
 
 TODO: Should be a feature to run commands in detected installation directory e.g. if /home/example/public_html/ directory contains file php5.fcgi
-TODO: Fingerprints to YAML and use decorators in functions. References: http://www.artima.com/weblogs/viewpost.jsp?thread=240808 http://www.python.org/dev/peps/pep-0318/ http://wiki.python.org/moin/PythonDecorators http://wiki.python.org/moin/PythonDecoratorLibrary
 TODO: Argument --strip-output, which should remove homedir/startdir from output (stdin, csv and log)
 TODO: If one fingerprint finds a match the process should finish and not be scanned with other fingerprints
 TODO: There should be argument for looking specific programs in for example: -s joomla,smf
