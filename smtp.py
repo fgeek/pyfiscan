@@ -8,8 +8,7 @@ try:
     import getpass
     from email.mime.text import MIMEText
 except ImportError, error:
-    print('Import error: %s' % error)
-    sys.exit(1)
+    sys.exit('Import error: %s' % error)
 
 
 from_address = 'example@example.org'
