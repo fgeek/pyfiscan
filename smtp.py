@@ -42,9 +42,7 @@ def send_email(user, timestamp, appname, version_file, file_version, secure_vers
         s.sendmail(from_address, [to_address], msg.as_string())
         s.quit()
     except Exception, error:
-        print('Exception: %s' % error)
-        sys.exit(1)
-    return
+        sys.exit('Exception: %s' % error)
 
 
 def read_csv(csv_file, from_address):
