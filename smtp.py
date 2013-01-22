@@ -7,8 +7,8 @@ try:
     import csv
     import getpass
     from email.mime.text import MIMEText
-except ImportError, error:
-    sys.exit('Import error: %s' % error)
+except ImportError, e:
+    sys.exit('Import error: %s' % e)
 
 
 from_address = 'example@example.org'
@@ -25,10 +25,9 @@ if version_minor < int(6):
     sys.exit('Python minor version needs to be seven or higher.\nSMTP_SSL only works with Python 2.7')
 
 
-def send_email(user, timestamp, appname, version_file, file_version, secure_version, cve, from_address, smtp_server, smtp_port):
+def send_email(user, appname, version_file, secure_version, cve):
     """This will handle email sending to SMTP-server."""
     msg = MIMEText('Hei, olemme huomanneet, että käytössäsi on ' + appname + '-sovellus, jonka versio on haavoittuvainen. Voit korjata tilanteen päivittämällä asennuksen vähintään versioon ' + secure_version + '. Apua sovelluksen päivittämiseen saat vastaamalla tähän sähköpostiin.\n\nTietoturva-aukollinen sovellus löytyy hakemistostasi: ' + version_file + '\n\nLisätietoja: ' + cve + '\n\nTähän sähköpostiin ei tarvitse vastata mikäli sinulla ei ole ongelmia päivityksessä.\n\nTerveisin,\n   Henri Salo', _charset='utf-8')
-
     to_address = user
     try:
         s = smtplib.SMTP_SSL(smtp_server, smtp_port)  # SMTP_SSL only works with Python 2.7
@@ -41,11 +40,11 @@ def send_email(user, timestamp, appname, version_file, file_version, secure_vers
         print msg
         s.sendmail(from_address, [to_address], msg.as_string())
         s.quit()
-    except Exception, error:
-        sys.exit('Exception: %s' % error)
+    except Exception, e:
+        sys.exit('Exception: %s' % e)
 
 
-def read_csv(csv_file, from_address):
+def read_csv(csv_file):
     """Reads data in from CSV-file."""
     reader = csv.reader(open(csv_file, 'rb'), delimiter='|', quotechar='|')
     counter = 0
@@ -60,10 +59,10 @@ def read_csv(csv_file, from_address):
         counter = counter + 1
         if user and timestamp and appname and version_file and file_version and  secure_version and cve:
             print('[*] Processing %i line..' % counter)
-            send_email(user, timestamp, appname, version_file, file_version, secure_version, cve, from_address, smtp_server, smtp_port)
+            send_email(user, appname, version_file, secure_version, cve)
 
     print('\n[*] Processed %i notifications. Happy customer is a happy customer!' % counter)
 
 
 print('Please note that it is required to add email| to start of each line in CSV.')
-read_csv(sys.argv[1], from_address, smtp_server, smtp_port)
+read_csv(sys.argv[1])
