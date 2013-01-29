@@ -99,13 +99,13 @@
 # CVE-2012-5868 N/A     OSVDB:88744
 #   - Requested more details from security@wordpress.org 2012-12-29
 #   - No fixed version available 2013-01-17
-# CVE-XXXX-XXXX 3.5.1   "pingback port scanning issue" http://wordpress.org/news/2013/01/wordpress-3-5-1/ Debian:698916
-# CVE-XXXX-XXXX 3.5.1   "XSS via shortcodes and post content" http://wordpress.org/news/2013/01/wordpress-3-5-1/ Debian:698927
-# CVE-XXXX-XXXX 3.5.1   "XSS in the external library Plupload" http://wordpress.org/news/2013/01/wordpress-3-5-1/ Debian:698929
+# CVE-2013-0235 3.5.1   OSVDB:89138 http://wordpress.org/news/2013/01/wordpress-3-5-1/ Debian:698916
+# CVE-2013-0236 3.5.1   OSVDB:89576 http://wordpress.org/news/2013/01/wordpress-3-5-1/ Debian:698927
+# CVE-2013-0237 3.5.1   OSVDB:89577 http://wordpress.org/news/2013/01/wordpress-3-5-1/ Debian:698929
 WordPress:
   1:
     location: ['/wp-includes/version.php']
     secure_version: '3.5.1'
     regexp: ['\$wp_version.*?(?P<version>[0-9.]+)']
-    cve: http://wordpress.org/news/2013/01/wordpress-3-5-1/
+    cve: http://wordpress.org/news/2013/01/wordpress-3-5-1/ CVE-2013-0235, CVE-2013-0236, CVE-2013-0237
     fingerprint: detect_general
