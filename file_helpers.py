@@ -4,8 +4,10 @@ import sys
 import stat  # Interpreting the results of os.[stat,fstat,lstat]
 import traceback
 
+
 def filepaths_in_dir(directory):
     return (os.path.join(root, basename) for root, dirs, files in os.walk(directory) for basename in files)
+
 
 def validate_directory(path, checkmodes):
     """Check if path is directory and it is not a symlink"""
@@ -34,4 +36,3 @@ def check_dir_execution_bit(path, checkmodes):
             return False
     except Exception:
         logging.error(traceback.format_exc())
-

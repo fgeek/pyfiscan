@@ -3,9 +3,11 @@ import time
 import os
 import sys
 
+
 def get_timestamp():
     """Returns string ISO 8601 with hours:minutes:seconds"""
     return time.strftime("%Y-%m-%d %H:%M:%S")
+
 
 class IssueReport(object):
     def __init__(self):
@@ -24,4 +26,3 @@ class IssueReport(object):
 
     def add(self, appname, item, file_version, secure_version, cve):
         self.writer.writerow((get_timestamp(), appname, item, file_version, secure_version, cve))
-

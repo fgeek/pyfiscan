@@ -4,6 +4,7 @@ import re
 
 yaml_fn_dict = {}
 
+
 def yaml_visible(fn):
     """Decorator, which allows us to point to function names in YAML-files. Example: fingerprint: detect_general"""
     yaml_fn_dict[fn.func_name] = fn
