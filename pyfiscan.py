@@ -62,6 +62,7 @@ except ImportError, error:
 queue = Queue()
 database = Database('yamls/')
 
+
 def populate_directory(fargs):
     directory, checkmodes = fargs
 
@@ -80,6 +81,7 @@ def populate_directory(fargs):
         logging.error(traceback.format_exc())
 
     return time.time() - start_time
+
 
 def populate_userdir(fargs):
     predefined_locations = ['www', 'secure-www']
@@ -113,6 +115,7 @@ def populate_userdir(fargs):
         logging.error(traceback.format_exc())
 
     return locations
+
 
 class PopulateScanQueue:
     def populate(self, directories, checkmodes=False):
@@ -162,6 +165,7 @@ class PopulateScanQueue:
         except Exception:
             logging.error(traceback.format_exc())
 
+
 def is_not_secure(secure_version, file_version, appname=None):
     """Comparison of version numbers.
 
@@ -185,6 +189,7 @@ def is_not_secure(secure_version, file_version, appname=None):
     except Exception:
         logging.error(traceback.format_exc())
 
+
 def handle_results(report, appname, file_version, item_location, application_cve, \
                    application_secure):
     """Main handler for all results found. Report is instance of IssueReport,
@@ -196,6 +201,7 @@ def handle_results(report, appname, file_version, item_location, application_cve
         report.add(appname, item_location, file_version, application_secure, application_cve)
     except Exception:
         logging.error(traceback.format_exc())
+
 
 def Worker():
     """This is the actual worker which calls smaller functions in case of
@@ -253,6 +259,7 @@ def Worker():
         except Exception:
             logging.error(traceback.format_exc())
     report.close()
+
 
 def main():
     logfile = 'pyfiscan.log'
