@@ -1,0 +1,25 @@
+# CVE-2005-4368
+# CVE-2007-6321
+# CVE-2008-5619
+# CVE-2008-5620
+# CVE-2009-0413
+# CVE-2009-4076
+# CVE-2009-4077
+# CVE-2010-0464
+# CVE-2011-1491
+# CVE-2011-1492
+# CVE-2011-2937
+# CVE-2011-4078 0.5.4 OSVDB:77047
+# CVE-2012-1253
+# CVE-2012-3507
+# CVE-2012-3508 N/A   OSVDB:84741
+# CVE-2012-4668 0.8.1 OSVDB:85142
+# CVE-2012-6121 0.8.5 OSVDB:90175,90177
+# TODO: 0.8-beta not yet detected
+Roundcube:
+  1:
+    location: ['/program/include/iniset.php']
+    secure_version: '0.8.5'
+    regexp: ['define.*?RCMAIL_VERSION.*?(?P<version>[0-9.]+)']
+    cve: http://cve.mitre.org/cgi-bin/cvename.cgi?name=2012-3508 http://osvdb.org/90175 http://osvdb.org/90177
+    fingerprint: detect_general
