@@ -13,11 +13,11 @@
 # CVE-2008-5646 0.11.2  OSVDB:49847 SA32652
 # CVE-2008-5647 0.11.2  OSVDB:49846 SA32652
 # CVE-2009-4405 0.11.6  OSVDB:61244 SA37807
-# N/A           0.11.7  OSVDB:63317 SA39123
+# CVE-2010-5108 0.11.7  OSVDB:63317 SA39123
 Trac:
   1:
     location: ['/Trac.egg-info/PKG-INFO']
     secure_version: '0.11.7'
     regexp: ['Version.*?(?P<version>[.0-9]{2,})']
-    cve: http://osvdb.org/63317
+    cve: CVE-2010-5108 http://osvdb.org/63317
     fingerprint: detect_general
