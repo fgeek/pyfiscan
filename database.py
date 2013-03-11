@@ -24,7 +24,7 @@ class Database:
         if not os.path.isdir(yamldir):
             sys.exit('Location for YAML-files is not a directory: %s' % yamldir)
         for filename in os.listdir(yamldir):
-            if not filename.endswith('.yaml'):
+            if not filename.endswith('.yml'):
                 continue
             if os.path.islink(yamldir + filename):
                 continue
