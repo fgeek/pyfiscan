@@ -46,14 +46,14 @@
 #   CVE-2012-5903 OSVDB:80766 
 SMF 1:
   1:
-    location: ['index.php']
+    location: ['/index.php']
     secure_version: '1.1.15'
     regexp: ['\$forum_version.*?(?P<version>1[0-9.]{1,})']
     cve: CVE-2011-3615 OSVDB:76822, CVE-2011-4173 OSVB:76317, OSVDB:46386
     fingerprint: detect_general
 SMF 2:
   1:
-    location: ['index.php']
+    location: ['/index.php']
     secure_version: '2.0.1'
     regexp: ['\$forum_version.*?(?P<version>2[0-9.]{1,})']
     cve: CVE-2011-3615 OSVDB:76822, CVE-2011-4173 OSVB:76317, OSVDB:46386
