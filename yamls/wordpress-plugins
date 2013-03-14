@@ -1,4 +1,6 @@
 # TODO below:
+# CVE-2012-5387 white-label-cms
+# CVE-2013-0721 wp-php-widget
 # CVE-2013-1407 events-manager
 # CVE-2013-1463 wp-table-reloaded
 # CVE-2013-1464 audio-player
