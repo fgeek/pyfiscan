@@ -16,14 +16,7 @@ twiki: CVE-2013-1751
 FusionForge: CVE-2013-1423
 WordPress pretty-link CVE-2013-1636
 Foswiki CVE-2013-1666
-WordPress Pinboard theme CVE-2013-0286
-WordPress NextGEN Gallery CVE-2013-0291
 CubeCart CVE-2013-1465
-WordPress theme CVE-2011-5257
-WordPress My Calendar CVE-2012-6527
-WordPress Audio Player CVE-2013-1464
-WordPress Newsletters HTB23140
-WordPress CommentLuv HTB23138
 WordPress wp-forum http://cxsecurity.com/issue/WLB-2013020035
 WordPress SolveMedia http://www.exploit-db.com/exploits/24364/
 Wordpress dt-chocolate Theme http://cxsecurity.com/issue/WLB-2013020011
@@ -35,7 +28,6 @@ Mantis: http://www.mantisbt.org/bugs/view.php?id=15384 (CVE requested) http://ma
 Joomla com_picaweb SQL injection http://cxsecurity.com/issue/WLB-2013010155
 Joomla com_netinvoice CVE-2012-6514
 Joomla NinjaXplorer CVE-2012-6503
-WordPress Organizer CVE-2012-6512, CVE-2012-6511
 WordPress Zingiri Web Shop CVE-2012-6506
 Impress CMS SQL Injection http://cxsecurity.com/issue/WLB-2013010154
 Joomla: CVE-2012-1563, CVE-2012-1562, CVE-2012-1117, CVE-2012-1116, CVE-2012-0837, CVE-2012-0836, CVE-2012-0835, CVE-2012-0822, CVE-2012-0821, CVE-2012-0820, CVE-2012-0819, CVE-2011-4937

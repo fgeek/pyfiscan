@@ -1,9 +1,17 @@
 # TODO below:
-# CVE-2012-5387 white-label-cms
-# CVE-2013-0721 wp-php-widget
-# CVE-2013-1407 events-manager
-# CVE-2013-1463 wp-table-reloaded
-# CVE-2013-1464 audio-player
-# CVE-2013-1758 marekkis-watermark
-# CVE-2013-1759 responsive-logo-slideshow
-# CVE-2013-2501 terillion-reviews
+# CVE-2011-5257 theme classipress
+# CVE-2012-5387 plugin white-label-cms
+# CVE-2012-6511 plugin organizer
+# CVE-2012-6512 plugin organizer
+# CVE-2012-6527 plugin my-calendar
+# CVE-2013-0286 theme pinboard
+# CVE-2013-0721 plugin wp-php-widget
+# CVE-2013-1407 plugin events-manager
+# CVE-2013-1408 plugin wysija-newsletters HTB23140
+# CVE-2013-1409 plugin commentluv HTB23138
+# CVE-2013-1463 plugin wp-table-reloaded
+# CVE-2013-1464 plugin audio-player
+# CVE-2013-1758 plugin marekkis-watermark
+# CVE-2013-1759 plugin responsive-logo-slideshow
+# CVE-2013-0291 plugin nextgen-gallery
+# CVE-2013-2501 plugin terillion-reviews
