@@ -1,6 +1,17 @@
 # TODO below:
+# CVE-XXXX-XXXX plugin wp-forum http://cxsecurity.com/issue/WLB-2013020035
+# CVE-XXXX-XXXX plugin solvemedia OSVDB:89585
+# CVE-XXXX-XXXX theme dt-chocolate http://cxsecurity.com/issue/WLB-2013020011
+# CVE-2011-5254 plugin connections
 # CVE-2011-5257 theme classipress
+# CVE-2012-3588 plugin plugin-newsletter
 # CVE-2012-5387 plugin white-label-cms
+# CVE-2012-5469 plugin portable-phpmyadmin
+# CVE-2012-6077 plugin w3-total-cache
+# CVE-2012-6078 plugin w3-total-cache
+# CVE-2012-6079 plugin w3-total-cache
+# CVE-2012-6499 plugin age-verification
+# CVE-2012-6506 plugin zingiri-web-shop
 # CVE-2012-6511 plugin organizer
 # CVE-2012-6512 plugin organizer
 # CVE-2012-6527 plugin my-calendar
@@ -11,6 +22,7 @@
 # CVE-2013-1409 plugin commentluv HTB23138
 # CVE-2013-1463 plugin wp-table-reloaded
 # CVE-2013-1464 plugin audio-player
+# CVE-2013-1636 plugin pretty-link
 # CVE-2013-1758 plugin marekkis-watermark
 # CVE-2013-1759 plugin responsive-logo-slideshow
 # CVE-2013-0291 plugin nextgen-gallery

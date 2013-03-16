@@ -14,12 +14,8 @@ waraxe-2013-SA#097 PHP-Fusion
 CVE-2012-5337 jForum
 twiki: CVE-2013-1751
 FusionForge: CVE-2013-1423
-WordPress pretty-link CVE-2013-1636
 Foswiki CVE-2013-1666
 CubeCart CVE-2013-1465
-WordPress wp-forum http://cxsecurity.com/issue/WLB-2013020035
-WordPress SolveMedia http://www.exploit-db.com/exploits/24364/
-Wordpress dt-chocolate Theme http://cxsecurity.com/issue/WLB-2013020011
 Movable Type: CVE-2013-0209
 Mantis: CVE-2013-0197
 Mantis: CVE-2013-1811, CVE-2013-1810
@@ -28,13 +24,8 @@ Mantis: http://www.mantisbt.org/bugs/view.php?id=15384 (CVE requested) http://ma
 Joomla com_picaweb SQL injection http://cxsecurity.com/issue/WLB-2013010155
 Joomla com_netinvoice CVE-2012-6514
 Joomla NinjaXplorer CVE-2012-6503
-WordPress Zingiri Web Shop CVE-2012-6506
 Impress CMS SQL Injection http://cxsecurity.com/issue/WLB-2013010154
 Joomla: CVE-2012-1563, CVE-2012-1562, CVE-2012-1117, CVE-2012-1116, CVE-2012-0837, CVE-2012-0836, CVE-2012-0835, CVE-2012-0822, CVE-2012-0821, CVE-2012-0820, CVE-2012-0819, CVE-2011-4937
-WordPress Age Verification CVE-2012-6499
-WordPress Connections plugin CVE-2011-5254
-WordPress W3 Total Cache CVE-2012-6077, CVE-2012-6078, CVE-2012-6079
-WordPress portable-phpMyAdmin CVE-2012-5469
 WordPress simple-slider: http://seclists.org/bugtraq/2012/Nov/89
 Wordpress WP E-Commerce Plugin "DC-2012-11-001" No CVE
 Joomla com_quiz http://cxsecurity.com/issue/WLB-2012100259
@@ -87,10 +78,8 @@ tinyguestbook CVE-2011-5199
 tinyguestbook CVE-2011-5201
 Kajian Website CMS: CVE-2011-5111
 WordPress chenpress Plugin Arbitrary File Upload Vulnerability BugtraqID:54635
-WordPress Plugin "Simple Forum" File Upload Vulnerabilityhttp://cxsecurity.com/issue/WLB-2012080265
 WordPress http://cxsecurity.com/issue/WLB-2012090037
 Wordpress Download Monitor CVE-2012-4768
-WordPress CVE-2012-3588
 WordPress magazine-basic-plugin http://cxsecurity.com/issue/WLB-2012110163
 Wordpress plg_novana http://cxsecurity.com/issue/WLB-2012110162
 AdaptCMS CVE-2011-5108
