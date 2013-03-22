@@ -15,3 +15,10 @@
 # CVE-2013-1810
 # CVE-2013-1811
 # CVE-2013-1883 1.2.15
+MantisBT:
+  1:
+    location: ['/core/constant_inc.php']
+    secure_version: '1.2.15'
+    regexp: ['define.*?MANTIS_VERSION.*?(?P<version>[0-9.]+)']
+    cve: CVE-2013-1883
+    fingerprint: detect_general
