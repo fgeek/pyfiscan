@@ -17,10 +17,7 @@ FusionForge: CVE-2013-1423
 Foswiki CVE-2013-1666
 CubeCart CVE-2013-1465
 Movable Type: CVE-2013-0209
-Mantis: CVE-2013-0197
-Mantis: CVE-2013-1811, CVE-2013-1810
 http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=698481
-Mantis: http://www.mantisbt.org/bugs/view.php?id=15384 (CVE requested) http://marc.info/?l=oss-security&m=135855157632710&w=2 http://www.mantisbt.org/bugs/view.php?id=15258 (CVE requested) http://marc.info/?l=oss-security&m=135855599401856&w=2
 Joomla com_picaweb SQL injection http://cxsecurity.com/issue/WLB-2013010155
 Joomla com_netinvoice CVE-2012-6514
 Joomla NinjaXplorer CVE-2012-6503
@@ -337,19 +334,6 @@ TYPO3 extension: CVE-2012-5890, CVE-2012-5889, CVE-2012-5888
 TYPO3: TYPO3-CORE-SA-2012-005
 Coppermine: CVE-2012-1613 XSS OSVDB:80731 waraxe-2012-SA#081
 WordPress plugin CVE-2012-5856
-MantisBT: CVE-2011-2938 OSVDB:74566
-MantisBT: CVE-2011-3356
-MantisBT: CVE-2011-3357
-MantisBT: CVE-2011-3358
-MantisBT: CVE-2012-1118
-MantisBT: CVE-2012-1119
-MantisBT: CVE-2012-1120 OSVDB:79833
-MantisBT: CVE-2012-1121 OSVDB:79831
-MantisBT: CVE-2012-1122
-MantisBT: CVE-2012-1123 OSVDB:79832
-MantisBT: CVE-2011-3578
-MantisBT: CVE-2012-2691 OSVDB:82838
-MantisBT: CVE-2012-2692 OSVDB:83166
 Plume CMS <https://sourceforge.net/projects/pxsystem/>: CVE-2011-3985
 Plume CMS <https://sourceforge.net/projects/pxsystem/>: CVE-2012-2156 XSS OSVDB:80960,80961
 OpenCart: http://blog.visionsource.org/2010/01/28/opencart-csrf-vulnerability/
