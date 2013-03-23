@@ -2,6 +2,7 @@
 # CVE-XXXX-XXXX plugin wp-forum http://cxsecurity.com/issue/WLB-2013020035
 # CVE-XXXX-XXXX plugin solvemedia OSVDB:89585
 # CVE-XXXX-XXXX theme dt-chocolate http://cxsecurity.com/issue/WLB-2013020011
+# CVE-XXXX-XXXX plugin simple-forum http://cxsecurity.com/issue/WLB-2012080265
 # CVE-2011-5254 plugin connections
 # CVE-2011-5257 theme classipress
 # CVE-2012-3588 plugin plugin-newsletter
