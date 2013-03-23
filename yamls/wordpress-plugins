@@ -5,7 +5,10 @@
 # CVE-XXXX-XXXX plugin simple-forum http://cxsecurity.com/issue/WLB-2012080265
 # CVE-2011-5254 plugin connections
 # CVE-2011-5257 theme classipress
+# CVE-2012-1125 plugin kish-guest-posting (!)
 # CVE-2012-3588 plugin plugin-newsletter
+# CVE-2012-5318 plugin kish-guest-posting (incomplete fix for CVE-2012-1125) (!)
+# CVE-2012-5325 plugin shortcode-redirect
 # CVE-2012-5387 plugin white-label-cms
 # CVE-2012-5469 plugin portable-phpmyadmin
 # CVE-2012-6077 plugin w3-total-cache

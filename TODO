@@ -37,8 +37,6 @@ WordPress video-lead-form XSS CVE-2012-6312 OSVDB:88002
 Wordpress Simple Gmail Login: CVE-2012-6313
 Joomla component: CVE-2012-5455
 Zen Cart module: CVE-2012-5808, CVE-2012-5807, CVE-2012-5806, CVE-2012-5805
-WordPress Shortcode Redirect: CVE-2012-5325
-WordPress Kish Guest Posting: CVE-2012-5318 (incomplete fix for CVE-2012-1125)
 Wolf CMS: CVE-2012-1897
 Wolf CMS: CVE-2012-1898
 SocialCMS: CVE-2012-1416
@@ -500,7 +498,6 @@ WordPress plugin Thinkun Remind: http://cxsecurity.com/issue/WLB-2012060100
 WordPress plugin RBX Gallery: http://cxsecurity.com/issue/WLB-2012060101
 WordPress Plugin Zingiri Web Shop http://osvdb.org/show/osvdb/77091 http://osvdb.org/show/osvdb/75619 http://osvdb.org/show/osvdb/75620
 WordPress Dean's FCKEditor with Pwwang's Code Plugin http://osvdb.org/show/osvdb/80687
-WordPress CVE-2010-5106
 WordPress CVE-2011-5180
 WordPress CVE-2011-5181
 WordPress CVE-2011-5182
@@ -508,7 +505,6 @@ WordPress CVE-2011-5191
 WordPress CVE-2011-5192
 WordPress CVE-2011-5193
 WordPress CVE-2011-5194
-WordPress Plugin Kish Guest Posting: CVE-2012-1125 priority
 WordPress Plugin Uploadify 1.0 remote file upload http://osvdb.org/show/osvdb/73444 priority
 WordPress Plugin Uploader execute arbitrary PHP code http://osvdb.org/show/osvdb/70648 priority
 WordPress Plugin User Photo: OSVDB:71071
