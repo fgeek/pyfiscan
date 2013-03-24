@@ -65,7 +65,6 @@ database = Database('yamls/')
 
 def populate_directory(fargs):
     directory, checkmodes = fargs
-
     start_time = time.time()
     try:
         if not validate_directory(directory, checkmodes):
@@ -79,7 +78,6 @@ def populate_directory(fargs):
                         queue.put((filename, loc, appname))
     except Exception:
         logging.error(traceback.format_exc())
-
     return time.time() - start_time
 
 
