@@ -93,10 +93,6 @@ CVE-2012-4268: BulletProof Security plugin for WordPress
 CVE-2012-4264: Better WP Security plugin for WordPress
 CVE-2012-4256: jNews for Joomla!
 Squiz CMS: NGS00330
-Moodle: NGS00208
-Moodle: CVE-2012-5480, CVE-2012-5479, CVE-2012-5478, CVE-2012-5473, CVE-2012-5472, CVE-2012-5471
-Moodle: CVE-2012-5481
-Moodle: CVE-2012-6106, CVE-2012-6105, CVE-2012-6104, CVE-2012-6103, CVE-2012-6102, CVE-2012-6101, CVE-2012-6100, CVE-2012-6099, CVE-2012-6098, CVE-2012-6112
 phpMyAdmin CVE-2012-4219 PMASA-2012-3
 phpMyAdmin CVE-2012-4345 PMASA-2012-4
 phpMyAdmin PMASA-2012-6
@@ -215,104 +211,6 @@ eGroupware: Open redirect CVE-2011-4951
 WebCalendar: XSS CVE-2012-0846 OSVDB:79674
 WebCalendar: CVE-2012-1495 OSVDB:81329
 WebCalendar: CVE-2012-1496 OSVDB:81330
-Moodle: MSA-11-0001: ALREADY ASSIGNED CVE-2011-0987 Customised phpMyAdmin upgraded to 2.11.11.3 and 3.3.9.2
-Moodle: MSA-11-0002: CVE-2011-4133 Cross-site request forgery vulnerability in RSS block
-Moodle: MSA-11-0003: CVE-2011-4278 Cross-site scripting vulnerability in tag autocomplete
-Moodle: MSA-11-0004: CVE-2011-4279 $CFG->forceloginforprofiles setting ignored in course profiles
-Moodle: MSA-11-0005: CVE-2011-4280 Cross-site scripting vulnerability in spikephpcoverage
-Moodle: MSA-11-0006: CVE-2011-4281 Cross-site request forgery and missing access control in course completion
-Moodle: MSA-11-0007: CVE-2011-4282 Cross-site scripting vulnerability in course tags
-Moodle: MSA-11-0008: CVE-2011-4283 IMS enterprise enrolment file may disclose sensitive information
-Moodle: MSA-11-0009: CVE-2011-4284 My profile block may disclose private information if used in user context
-Moodle: MSA-11-0010: CVE-2011-4285 Incorrect default for mod:course/delete capability in teacher role
-Moodle: MSA-11-0011: CVE-2011-4286 Multiple cross-site scripting problems in media filter
-Moodle: MSA-11-0012: CVE-2011-4287 Authentication issue
-Moodle: MSA-11-0013: CVE-2011-4288 Group/Quiz permissions issue
-Moodle: MSA-11-0014: CVE-2011-4289 Personal details displayed without permission
-Moodle: MSA-11-0015: CVE-2011-4290 Cross Site Scripting through URL encoding
-Moodle: MSA-11-0016: CVE-2011-4291 Ability to fill a database with invalid records through ratings
-Moodle: MSA-11-0017: CVE-2011-4292 Ability to generate invalid records in the comments table in the database
-Moodle: MSA-11-0018: NO CVE Lacking capability controls over cohorts (hardening)
-Moodle: MSA-11-0019: CVE-2011-4293 Themes writing to files outside Moodle data directory
-Moodle: MSA-11-0020: CVE-2011-4294 Continue links in error messages can lead offsite
-Moodle: MSA-11-0021: CVE-2011-4295 Role assignment web service function not following restrictions
-Moodle: MSA-11-0022: CVE-2011-4296 Course creators could change filters at course level
-Moodle: MSA-11-0023: CVE-2011-4297 Guests can add comments to front page activities
-Moodle: MSA-11-0024: NO CVE Recaptcha images were being authenticated from an older server (hardening)
-Moodle: MSA-11-0025: NO CVE Group names in user upload CSV not being escaped (need to be admin)
-Moodle: MSA-11-0026: NO CVE Fields in user upload CSV not being escaped (need to be admin)
-Moodle: MSA-11-0027: CVE-2011-4298 Wiki pages reference forgery issue
-Moodle: MSA-11-0028: CVE-2011-4299 Wiki comments cross site scripting issue
-Moodle: MSA-11-0029: CVE-2011-4300 File visibility issue
-Moodle: MSA-11-0030: NO CVE Box.net repository integration authentication issue (hardening)
-Moodle: MSA-11-0031: CVE-2011-4301 Forms API constant issue
-Moodle: MSA-11-0032: CVE-2011-4302 MNET SSL validation issue
-Moodle: MSA-11-0033: CVE-2011-4303 Site-hub registration identity issue
-Moodle: MSA-11-0034: CVE-2011-4304 Chat module information leak
-Moodle: MSA-11-0035: NO CVE Cookie-less session vulnerability (hardening)
-Moodle: MSA-11-0036: CVE-2011-4305 Messaging refresh vulnerability
-Moodle: MSA-11-0037: CVE-2011-4306 Course section editing injection vulnerability
-Moodle: MSA-11-0038: NO CVE Database injection protection strengthened (hardening)
-Moodle: MSA-11-0039: CVE-2011-4307 Wiki section vulnerability
-Moodle: MSA-11-0040: CVE-2011-4308 Potential personal information leak
-Moodle: MSA-11-0041: CVE-2011-4309 Global search authentication issue
-Moodle: MSA-11-0041: Global search authentication issue Affects: 2.1.x 2.0.x Fix: http://git.moodle.org/gw?p=moodle.git;a=commit;h=5eb1cec34f013fdcb559b66bc401f2845ce0bbb7 Reference: http://moodle.org/mod/forum/discuss.php?d=188323
-Moodle: MSA-11-0040: Potential personal information leak Affects: 2.1.x, 2.0.x, 1.9.x Fix: http://git.moodle.org/gw?p=moodle.git&a=search&s=MDL-28615 Reference: http://moodle.org/mod/forum/discuss.php?d=188322
-Moodle: MSA-11-0039: Wiki section vulnerability Affects: 2.1.x, 2.0.x Fix: http://git.moodle.org/gw?p=moodle.git;a=commit;h=41017112cff7f5bd7969c72d321320f3090e7c68 Reference: http://moodle.org/mod/forum/discuss.php?d=188321
-Moodle: MSA-11-0038: Database injection protection strengthened Affects: 1.9.x Fix: http://git.moodle.org/gw?p=moodle.git;a=commit;h=4a2acd8c7e6c869d5fd5aa686e6e0a3f20c97f15 Reference: http://moodle.org/mod/forum/discuss.php?d=188320
-Moodle: MSA-11-0037: Course section editing injection vulnerability Affects: 1.9.x Fix: http://git.moodle.org/gw?p=moodle.git;a=commit;h=4a2acd8c7e6c869d5fd5aa686e6e0a3f20c97f15 Reference: http://moodle.org/mod/forum/discuss.php?d=188319
-Moodle: MSA-11-0036: Messaging refresh vulnerability Affects: 1.9.x Fix: http://git.moodle.org/gw?p=moodle.git;a=commit;h=97f258fabb3ebfa7acc7c02cb59de92b01710f99 Reference: http://moodle.org/mod/forum/discuss.php?d=188318 
-Moodle: MSA-11-0035: Cookie-less session vulnerability Affects: 2.1.x, 2.0.x, (1.9.x if misconfigured) Fix: http://git.moodle.org/gw?p=moodle.git;a=commit;h=e1e082a809b9a2d3a408cb4d6faa34fdfcf3165c Reference: http://moodle.org/mod/forum/discuss.php?d=188317
-Moodle: MSA-11-0034: Chat module information leak Affects: 2.1.x, 2.0.x Fix: http://git.moodle.org/gw?p=moodle.git;a=commit;h=d0157d827bc254ba386a5e5b41b13be2698ee76e Reference: http://moodle.org/mod/forum/discuss.php?d=188316
-Moodle: MSA-11-0033: Site-hub registration identity issue Affects: 2.1.x, 2.0.x Fix: http://git.moodle.org/gw?p=moodle.git;a=commit;h=ca896fdfcfcc87846fa91a297d0aa6999a68c48a Reference: http://moodle.org/mod/forum/discuss.php?d=188315
-Moodle: MSA-11-0032: MNET SSL validation issue  Affects: 2.1.x, 2.0.x, 1.9.x Fix: http://git.moodle.org/gw?p=moodle.git;a=commit;h=54941685e3e86ec085641dcb7ebb1f96f06735b2 Reference: http://moodle.org/mod/forum/discuss.php?d=188314
-Moodle: MSA-11-0031: Forms API constant issue Affects: 2.1.x, 2.0.x, 1.9.x Fix: http://git.moodle.org/gw?p=moodle.git;a=commit;h=f1f70bd4dde6cd1ea4bdb8ab28fa3d36a53b89d8 Reference: http://moodle.org/mod/forum/discuss.php?d=188313
-Moodle: MSA-11-0030: Box.net repository integration authentication issue Affects: 2.1.x, 2.0.x Fix: http://git.moodle.org/gw?p=moodle.git;a=commit;h=3deff6c9d2bb4ab3144b3ca7b93d6a2ef6a87af2 Reference: http://moodle.org/mod/forum/discuss.php?d=188312
-Moodle: MSA-11-0029: File visibility issue Affects: 2.1.x, 2.0.x Fix: http://git.moodle.org/gw?p=moodle.git;a=commit;h=f6b07c4da54a9db24723beb147e8a19a3d487e00 Reference: http://moodle.org/mod/forum/discuss.php?d=188311
-Moodle: MSA-11-0028: Wiki comments XSS issue Affects: 2.1.x, 2.0.x Fix: http://git.moodle.org/gw?p=moodle.git;a=commit;h=a459fd90625ae44d7b3ac10b65da2dc631a418e7 Reference: http://moodle.org/mod/forum/discuss.php?d=188310
-Moodle: MSA-11-0027: Wiki pages reference forgery issue Affects: 2.1.x, 2.0.x Fix: http://git.moodle.org/gw?p=moodle.git;a=commit;h=48346fb11f8ced06a05c0618b02a3a925b34ec59 Reference: http://moodle.org/mod/forum/discuss.php?d=188309
-Moodle: MSA-11-0026: Fields in user upload CSV not being escaped Affects: 1.9.x Reference: http://moodle.org/mod/forum/discuss.php?d=182743
-Moodle: User Name Disclosure CVE-2011-4308 OSVDB:76695
-Moodle: CVE-2012-0792 MSA-12-0002 Personal information leak
-Moodle: CVE-2012-0793 MSA-12-0004 Added profile image security
-Moodle: CVE-2012-0794 MSA-12-0005 Encryption enhancement
-Moodle: CVE-2012-0795 MSA-12-0006 Additional email address validation
-Moodle: CVE-2012-0796 MSA-12-0007 Email injection prevention
-Moodle: CVE-2012-0797 MSA-12-0008 Unsynchronised access via tokens
-Moodle: CVE-2012-0798 MSA-12-0009 Role access issue
-Moodle: CVE-2012-0799 MSA-12-0010 Unauthorised access to session key
-Moodle: CVE-2012-0800 MSA-12-0011 Browser autofill password issue
-Moodle: CVE-2012-0801 MSA-12-0012 Form validation issue
-Moodle: MSA-11-0042/CVE-2011-4581
-Moodle: MSA-11-0043/CVE-2011-4582
-Moodle: MSA-11-0044/CVE-2011-4583
-Moodle: MSA-11-0045/CVE-2011-4584
-Moodle: MSA-11-0046/CVE-2011-4585
-Moodle: MSA-11-0047/CVE-2011-4586
-Moodle: MSA-11-0048/CVE-2011-4587
-Moodle: MSA-11-0049/CVE-2011-4588
-Moodle: MSA-11-0050/CVE-2011-4589
-Moodle: MSA-11-0051/CVE-2011-4590
-Moodle: MSA-11-0052/CVE-2011-4591
-Moodle: MSA-11-0053/CVE-2011-4592
-Moodle: MSA-11-0054/CVE-2011-4593
-Moodle: CVE-2010-1613
-Moodle: CVE-2010-1614
-Moodle: CVE-2010-1615
-Moodle: CVE-2010-1616
-Moodle: CVE-2010-1617
-Moodle: CVE-2010-1618
-Moodle: CVE-2010-1619
-Moodle: CVE-2010-4207
-Moodle: CVE-2010-4208
-Moodle: CVE-2010-4209
-Moodle: MSA-11-0020, MSA-11-0024, MSA-11-0025, MSA-11-0026, MSA-11-0031, MSA-11-0032, MSA-11-0036, MSA-11-0037, MSA-11-0038
-Moodle: CVE-2012-2362
-Moodle: CVE-2012-2363
-Moodle: CVE-2012-2353, CVE-2012-2354, CVE-2012-2355, CVE-2012-2356, CVE-2012-2357, CVE-2012-2358, CVE-2012-2359, CVE-2012-2361, CVE-2012-2362, CVE-2012-2363, CVE-2012-2364, CVE-2012-2365, CVE-2012-2366, CVE-2012-2367
-Moodle: CVE-2011-4278 - CVE-2011-4309
-Moodle: CVE-2012-3387, CVE-2012-3388, CVE-2012-3389, CVE-2012-3390, CVE-2012-3391, CVE-2012-3392, CVE-2012-3393, CVE-2012-3394, CVE-2012-3395, CVE-2012-3396, CVE-2012-3397, CVE-2012-3398
-Moodle: CVE-2012-4400, CVE-2012-4401, CVE-2012-4402, CVE-2012-4403, CVE-2012-4407, CVE-2012-4408
 Hotel Booking Portal <http://sourceforge.net/projects/hbportal/>: CVE-2012-1672 SQL Injection
 e-ticketing <http://sourceforge.net/projects/e-ticketing/>: CVE-2012-1673 SQL Injection
 phpPaleo <http://sourceforge.net/projects/phppaleo/>: CVE-2012-1671 LFI
@@ -823,6 +721,7 @@ jCore: CVE-2012-4231, CVE-2012-4232
 TomatoCart: http://yehg.net/lab/pr0js/advisories/%5Btomatocart1.x%5D_arbitrary_file_creation
 Ariadne CMS CVE-2011-4938
 bloofoxCMS: NS-12-015
+Cunity http://cxsecurity.com/issue/WLB-2013030206
 
 {{{
 /docs/README.html
