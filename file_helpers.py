@@ -10,13 +10,15 @@ def filepaths_in_dir(directory):
 
 
 def validate_directory(path, checkmodes):
-    """Check if path is directory and it is not a symlink"""
+    """Checks that path is a directory, not a symlink and that directory has execution bit"""
     if not type(path) == str:
-        logging.debug('got path which was not a string. Exiting..')
-        sys.exit('validate_directory got path which was not a string')
+        logging.debug('got path which is not a string. Exiting..')
+        sys.exit('Function validate_directory got path which is not a string.')
     if not os.path.isdir(path):
+        logging.debug('Returning false in validate_directory/os.path.isdir for directory: %s' % path)
         return False
     if os.path.islink(path):
+        logging.debug('Returning false in validate_directory/os.path.islink for directory: %s' % path)
         return False
     if checkmodes:
         return check_dir_execution_bit(path, checkmodes)
@@ -28,11 +30,14 @@ def check_dir_execution_bit(path, checkmodes):
     Defaults to false. False means no execution bit is set."""
     try:
         if not os.path.isdir(path):
+            logging.debug('Returning false in check_dir_execution_bit/os.path.isdir for directory: %s' % path)
             return False
         # http://docs.python.org/library/stat.html#stat.S_IXOTH
         if stat.S_IXOTH & os.stat(path)[stat.ST_MODE]:
+            logging.debug('Returning true in check_dir_execution_bit/stat for directory: %s' % path)
             return True
         else:
+            logging.debug('Returning false in check_dir_execution_bit/stat for directory: %s' % path)
             return False
     except Exception:
         logging.error(traceback.format_exc())
