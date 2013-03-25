@@ -31,5 +31,6 @@
 # CVE-2013-1758 plugin marekkis-watermark
 # CVE-2013-1759 plugin responsive-logo-slideshow
 # CVE-2013-0291 plugin nextgen-gallery
-# CVE-2013-2501 plugin terillion-reviews
-# CVE-2013-2640 plugin wp-mailup
+# CVE-2013-0731 plugin wp-mailup
+# CVE-2013-2501 plugin terillion-reviews http://osvdb.org/91123
+# CVE-2013-2640 plugin wp-mailup http://osvdb.org/91274
