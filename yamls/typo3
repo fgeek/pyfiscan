@@ -1,6 +1,7 @@
 # TYPO3-EXT-SA-2013-002
-# TYPO3-EXT-SA-2013-003                                 http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2013-003/
-# TYPO3-EXT-SA-2013-004                                 http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2013-004/
-# TYPO3-EXT-SA-2013-005                                 http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2013-005/
-# TYPO3-CORE-SA-2013-001    CVE-2013-1842/CVE-2013-1843 http://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2013-001/
+# TYPO3-EXT-SA-2013-003                     http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2013-003/
+# TYPO3-EXT-SA-2013-004                     http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2013-004/
+# TYPO3-EXT-SA-2013-005                     http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2013-005/
+# TYPO3-CORE-SA-2013-001    CVE-2013-1842   http://osvdb.org/90925  http://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2013-001/
+# TYPO3-CORE-SA-2013-001    CVE-2013-1843   http://osvdb.org/90924  http://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2013-001/
 # http://typo3.org/news/article/typo3-cms-4525-4618-4710-and-604-released/
