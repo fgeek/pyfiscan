@@ -14,7 +14,6 @@ waraxe-2013-SA#097 PHP-Fusion
 CVE-2012-5337 jForum
 twiki: CVE-2013-1751
 FusionForge: CVE-2013-1423
-Foswiki CVE-2013-1666
 CubeCart CVE-2013-1465
 Movable Type: CVE-2013-0209
 http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=698481
@@ -536,7 +535,6 @@ phpMyAdmin: CVE-2008-7251, CVE-2008-7252, CVE-2010-2958, CVE-2010-3055, CVE-2010
 Horde: OSVDB:78474-78477
 PostfixAdmin: CVE-2012-0811 OSVDB:78566,78567 SA47670, CVE-2012-0812 OSVDB:78559-78564 SA47670
 OpenEMR: HTB23069
-Foswiki: http://foswiki.org/Support/SecurityAlert-CVE-2012-1004, CVE-2012-6329, CVE-2012-6330
 BASE: http://www.securityfocus.com/bid/51874/info
 11in1 <http://www.11in1.org/>: HTB23071
 Mibew: CSA-12001 http://www.codseq.it/advisories/mibew_messenger_multiple_xss
