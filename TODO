@@ -238,6 +238,7 @@ OpenCart: http://osvdb.org/show/osvdb/81240
 OpenCart: http://osvdb.org/show/osvdb/81241
 OpenCart: http://osvdb.org/show/osvdb/81242
 OpenCart: http://osvdb.org/show/osvdb/81243
+OpenCart: CVE-2013-1891
 Uploadify: waraxe-2012-SA#083 OSVDB:80969,80970
 w-CMS: Arbitrary File Access OSVDB:80974
 w-CMS: Arbitrary File Overwrite OSVDB:80975
@@ -402,7 +403,6 @@ WordPress CVE-2011-5193
 WordPress CVE-2011-5194
 WordPress Plugin Uploadify 1.0 remote file upload http://osvdb.org/show/osvdb/73444 priority
 WordPress Plugin Uploader execute arbitrary PHP code http://osvdb.org/show/osvdb/70648 priority
-WordPress Plugin User Photo: OSVDB:71071
 WordPress Plugin forum server: HTB22852, HTB22851, HTB22850
 WordPress Plugin forum: HTB22858, HTB22859, HTB22860
 WordPress Plugin Mingle Forum: HTB22848, HTB22849
