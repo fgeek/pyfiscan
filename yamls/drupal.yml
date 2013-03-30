@@ -3,10 +3,11 @@
 # DRUPAL-SA-CORE-2013-001   CVE-2013-0245 7.19/6.28 http://drupal.org/SA-CORE-2013-001
 # DRUPAL-SA-CORE-2013-001   CVE-2013-0246 7.19/6.28 http://drupal.org/SA-CORE-2013-001
 # DRUPAL-SA-CORE-2013-002   CVE-2013-0316 7.20      http://drupal.org/SA-CORE-2013-002
+# TODO: Check Drupal 6.22 for example. Seems like this does not catch those.
 Drupal:
   1:
     location: ['/includes/bootstrap.inc']
     secure_version: '7.20'
-    regexp: ['define.*?(?P<version>[0-9.]+)']
+    regexp: ['define.*?VERSION.*?(?P<version>[0-9.]+)']
     cve: CVE-2013-0316 http://drupal.org/SA-CORE-2013-002 http://osvdb.org/90517
     fingerprint: detect_general
