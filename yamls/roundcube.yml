@@ -15,11 +15,12 @@
 # CVE-2012-3508 N/A   OSVDB:84741
 # CVE-2012-4668 0.8.1 OSVDB:85142
 # CVE-2012-6121 0.8.5 OSVDB:90175,90177
+# CVE-2013-1904 0.8.6
 # TODO: 0.8-beta not yet detected
 Roundcube:
   1:
     location: ['/program/include/iniset.php']
-    secure_version: '0.8.5'
+    secure_version: '0.8.6'
     regexp: ['define.*?RCMAIL_VERSION.*?(?P<version>[0-9.]+)']
-    cve: http://cve.mitre.org/cgi-bin/cvename.cgi?name=2012-3508 http://osvdb.org/90175 http://osvdb.org/90177
+    cve: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1904
     fingerprint: detect_general
