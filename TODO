@@ -184,7 +184,6 @@ Dolibarr: CVE-2012-1226 OSVDB:79138,79139
 phpBB: http://www.securityfocus.com/bid/14086
 Joomla: http://osvdb.org/show/osvdb/80705
 Joomla: CVE-2010-4617
-e107: http://osvdb.org/show/osvdb/80767
 e107 Plugins - Filemanager Arbitrary File Upload Vulnerability http://cxsecurity.com/issue/WLB-2012060242
 http://cxsecurity.com/issue/WLB-2012060241 file upload
 http://cxsecurity.com/issue/WLB-2012060240
