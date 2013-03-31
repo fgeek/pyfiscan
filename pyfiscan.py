@@ -73,7 +73,7 @@ def populate_directory(fargs):
             return time.time() - start_time
 
         logging.debug('Populating: %s', directory)
-        for filename in filepaths_in_dir(directory):
+        for filename in filepaths_in_dir(directory, checkmodes):
             for appname in database.issues:
                 for loc in database.locations(appname, with_lists=False):
                     if filename.endswith(loc):
@@ -145,6 +145,7 @@ class PopulateScanQueue:
 
     def populate_predefined(self, startdir, checkmodes):
         if not isinstance(startdir, str):
+            logging.debug('populate_predefined: value startdir not a string. "%s" with type %s' % (startdir, type(startdir)))
             sys.exit('populate_predefined: value startdir not a string. "%s" with type %s' % (startdir, type(startdir)))
         try:
             logging.debug('Populating predefined directories: %s', startdir)

@@ -5,8 +5,13 @@ import stat  # Interpreting the results of os.[stat,fstat,lstat]
 import traceback
 
 
-def filepaths_in_dir(directory):
-    return (os.path.join(root, basename) for root, dirs, files in os.walk(directory) for basename in files)
+def filepaths_in_dir(directory, checkmodes):
+    """Yields full to path files with validate_directory"""
+    for root, dirs, files in os.walk(directory):
+        dirs[:] = [os.path.join(root, d) for d in dirs]
+        dirs[:] = [d for d in dirs if validate_directory(d, checkmodes)]
+        for basename in files:
+            yield os.path.join(root, basename)
 
 
 def validate_directory(path, checkmodes):
