@@ -19,9 +19,6 @@ Known issues and/or bugs:
 both version files libraries/joomla/version.php and includes/version.php where
 first is the old one.
 
-TODO: Bug in check-modes. Does not check modes correctly and continues to
-directories with e.g. 0200 modes. Example directory:
-    /home/user/sites/test.example.com/www/application
 TODO: Should be a feature to run commands in detected installation directory
 e.g. if /home/example/public_html/ directory contains file php5.fcgi
 TODO: Argument --strip-output, which should remove homedir/startdir from output
