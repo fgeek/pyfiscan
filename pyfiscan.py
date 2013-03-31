@@ -21,8 +21,6 @@ first is the old one.
 
 TODO: Should be a feature to run commands in detected installation directory
 e.g. if /home/example/public_html/ directory contains file php5.fcgi
-TODO: If one fingerprint finds a match the process should finish and not be
-scanned with other fingerprints
 TODO: There should be argument for looking specific programs in for example: -s
 joomla,smf
 TODO: Add support to continue interrupted session (Tuomo Komulainen requested).
