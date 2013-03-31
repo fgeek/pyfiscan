@@ -28,6 +28,8 @@ joomla,smf
 TODO: Add support to continue interrupted session (Tuomo Komulainen requested).
 Could be implemented using http://docs.python.org/library/atexit.html with
 knowledge of current working directory and queues
+TODO: phpBB3 makes backups(?) in update to location includes/install/update/old,
+which comes up as a result
 
 Data in YAML-files could include following:
     CVE, CVSS2, OSVDB, Secunia
