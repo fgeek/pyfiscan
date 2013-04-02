@@ -220,6 +220,7 @@ PunBB: CVE-2009-4894
 PunBB: CVE-2010-0455
 PunBB: OSVDB:80366 #TODO: No CVE http://spotthevuln.com/2010/12/price-cross-site-scripting/
 PunBB: OSVDB:80747 #TODO: No CVE
+PunBB: http://cxsecurity.com/issue/WLB-2013040005
 Dalbum: OSVDB:80745 #TODO: No CVE
 Dalbum: CVE-2012-5891
 TYPO3 extension: CVE-2012-5890, CVE-2012-5889, CVE-2012-5888
@@ -649,7 +650,6 @@ ReviewBoard: CVE-2011-4312
 ResourceSpace: CVE-2011-4311
 Jara: CVE-2011-4094, CVE-2011-4095
 Support Incident Tracker http://sitracker.org/: CVE-2011-4337
-Mahara: CVE-2011-2771, CVE-2011-2772, CVE-2011-2773, CVE-2011-2774
 WebsiteBaker: CVE-2011-4322 http://www.websitebaker2.org/posts/security-vulnerability-backup-module-in-wb-core-13.php
 Contao <http://www.contao.org/>: CVE-2011-0508, CVE-2011-4335, CVE-2011-4329
 Contao: CVE-2012-4383

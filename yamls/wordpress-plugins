@@ -7,6 +7,7 @@
 # CVE-XXXX-XXXX plugin mathjax-latex http://cxsecurity.com/issue/WLB-2013030208
 # CVE-XXXX-XXXX plugin devformatter http://osvdb.org/89474 http://osvdb.org/89475
 # CVE-2013-XXXX plugin wp-banners-lite http://osvdb.org/91634
+# CVE-XXXX-XXXX plugin foxypress http://www.waraxe.us/advisory-95.html
 # CVE-2011-5254 plugin connections
 #   Looks like a false-positive. No information received even I asked from Mitre
 #   and plugin developers. Don't add before there is a working PoC.
