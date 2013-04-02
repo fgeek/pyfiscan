@@ -216,11 +216,6 @@ Seditio <http://www.neocrome.net/>: SQLi OSVDB:81109
 Seditio <http://www.neocrome.net/>: CSRF OSVDB:81108
 Seditio <http://www.neocrome.net/>: http://www.cotonti.com/news/community/seditio-eol
 Seditio <http://www.neocrome.net/>: http://www.neocrome.net/page.php?id=2470 "it is NOT recommended to upgrade past Seditio 150 for any live site."
-PunBB: CVE-2009-4894
-PunBB: CVE-2010-0455
-PunBB: OSVDB:80366 #TODO: No CVE http://spotthevuln.com/2010/12/price-cross-site-scripting/
-PunBB: OSVDB:80747 #TODO: No CVE
-PunBB: http://cxsecurity.com/issue/WLB-2013040005
 Dalbum: OSVDB:80745 #TODO: No CVE
 Dalbum: CVE-2012-5891
 TYPO3 extension: CVE-2012-5890, CVE-2012-5889, CVE-2012-5888
