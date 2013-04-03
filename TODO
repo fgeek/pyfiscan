@@ -15,7 +15,7 @@ CVE-2012-5337 jForum
 twiki: CVE-2013-1751
 FusionForge: CVE-2013-1423
 CubeCart CVE-2013-1465
-Movable Type: CVE-2013-0209
+Movable Type: CVE-2013-0209, OSVDB:73214,  73215
 http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=698481
 Joomla com_picaweb SQL injection http://cxsecurity.com/issue/WLB-2013010155
 Joomla com_netinvoice CVE-2012-6514
@@ -28,7 +28,6 @@ Joomla com_quiz http://cxsecurity.com/issue/WLB-2012100259
 Joomla jstore CVE-2010-5286
 CBE for Joomla CVE-2010-5280
 Drupal Webmail CVE-2012-5569
-WordPress Welcart plugin CVE-2012-5177
 WordPress Sentinel CVE-2011-5226, CVE-2011-5225, CVE-2011-5224
 WordPress plugin SCORM Cloud: CVE-2011-5216
 WordPress Mingle Forum CVE-2012-5328, CVE-2012-5327
