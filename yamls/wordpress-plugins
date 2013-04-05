@@ -4,7 +4,6 @@
 # CVE-XXXX-XXXX theme dt-chocolate http://cxsecurity.com/issue/WLB-2013020011
 # CVE-XXXX-XXXX plugin simple-forum http://cxsecurity.com/issue/WLB-2012080265
 # CVE-XXXX-XXXX plugin wp-video-commando http://cxsecurity.com/issue/WLB-2013030207
-# CVE-XXXX-XXXX plugin user-photo http://osvdb.org/71071
 # CVE-XXXX-XXXX plugin mathjax-latex http://cxsecurity.com/issue/WLB-2013030208
 # CVE-XXXX-XXXX plugin devformatter http://osvdb.org/89474 http://osvdb.org/89475
 # CVE-2013-XXXX plugin wp-banners-lite http://osvdb.org/91634
@@ -42,6 +41,7 @@
 # CVE-2013-0731 plugin wp-mailup
 # CVE-2013-1400 plugin cardoza-wordpress-poll
 # CVE-2013-1401 plugin cardoza-wordpress-poll
+# CVE-2013-1916 plugin user-photo http://osvdb.org/71071
 # CVE-2013-2501 plugin terillion-reviews http://osvdb.org/91123
 # CVE-2013-2640 plugin wp-mailup http://osvdb.org/91274
 # CVE-2013-2714 plugin podpress http://osvdb.org/91129
