@@ -1,5 +1,6 @@
 # DRUPAL-SA-CONTRIB-2012-174                    http://drupal.org/node/1870550
 # DRUPAL-SA-CONTRIB-2013-001    CVE-2013-0181   http://drupal.org/node/1884332
+# DRUPAL-SA-CONTRIB-2013-001    CVE-2013-2715   http://www.openwall.com/lists/oss-security/2013/04/04/4
 # DRUPAL-SA-CONTRIB-2013-002    CVE-2013-0182   http://drupal.org/node/1884360
 # DRUPAL-SA-CONTRIB-2013-003    CVE-2013-0205   http://drupal.org/node/1890222
 # DRUPAL-SA-CONTRIB-2013-004    CVE-2013-0206   http://drupal.org/node/1890318
@@ -9,10 +10,10 @@
 # DRUPAL-SA-CONTRIB-2013-008    CVE-2013-1393   http://drupal.org/node/1896718
 # DRUPAL-SA-CONTRIB-2013-009    CVE-2013-0226   http://drupal.org/node/1896752
 # DRUPAL-SA-CONTRIB-2013-010    CVE-2013-0227   http://drupal.org/node/1896782
-# DRUPAL-SA-CONTRIB-2013-011                    http://drupal.org/node/1903264
-# DRUPAL-SA-CONTRIB-2013-012                    http://drupal.org/node/1903282
-# DRUPAL-SA-CONTRIB-2013-013                    http://drupal.org/node/1903300
-# DRUPAL-SA-CONTRIB-2013-014                    http://drupal.org/node/1903324
+# DRUPAL-SA-CONTRIB-2013-011    CVE-2013-0257   http://drupal.org/node/1903264
+# DRUPAL-SA-CONTRIB-2013-012    CVE-2013-0258   http://drupal.org/node/1903282
+# DRUPAL-SA-CONTRIB-2013-013    CVE-2013-0259   http://drupal.org/node/1903300
+# DRUPAL-SA-CONTRIB-2013-014    CVE-2013-0260   http://drupal.org/node/1903324
 # DRUPAL-SA-CONTRIB-2013-015    CVE-2013-0317   http://drupal.org/node/1916312
 # DRUPAL-SA-CONTRIB-2013-016    CVE-2013-0318   http://drupal.org/node/1916370
 # DRUPAL-SA-CONTRIB-2013-017    CVE-2013-0318
@@ -38,3 +39,5 @@
 # DRUPAL-SA-CONTRIB-2013-037    CVE-2013-1906   http://drupal.org/node/1954592
 # DRUPAL-SA-CONTRIB-2013-038    CVE-2013-1907   http://drupal.org/node/1954764
 # DRUPAL-SA-CONTRIB-2013-039    CVE-2013-1908   http://drupal.org/node/1954766
+# DRUPAL-SA-CONTRIB-2013-040    CVE-2013-1924   http://drupal.org/node/1960338
+# DRUPAL-SA-CONTRIB-2013-041    CVE-2013-1925   http://drupal.org/node/1960406
