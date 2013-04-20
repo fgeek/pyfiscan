@@ -11,9 +11,12 @@
 # CVE-2011-5254 plugin connections
 #   Looks like a false-positive. No information received even I asked from Mitre
 #   and plugin developers. Don't add before there is a working PoC.
+# CVE-2009-4168 plugin vkontakte-api
+# CVE-2009-4168 plugin snazzy-archives
+# CVE-2011-5106 plugin flexible-custom-post-type http://osvdb.org/77487
 # CVE-2011-5257 theme classipress
 # CVE-2012-1125 plugin kish-guest-posting (!)
-# CVE-2012-2920 plugin user-photo (fixed in 0.9.5.2)
+# CVE-2012-2920 plugin user-photo http://osvdb.org/81806
 # CVE-2012-3588 plugin plugin-newsletter
 # CVE-2012-5318 plugin kish-guest-posting (incomplete fix for CVE-2012-1125) (!)
 # CVE-2012-5325 plugin shortcode-redirect
@@ -42,6 +45,8 @@
 # CVE-2013-1400 plugin cardoza-wordpress-poll
 # CVE-2013-1401 plugin cardoza-wordpress-poll
 # CVE-2013-1916 plugin user-photo http://osvdb.org/71071
+# CVE-2013-1949 plugin social-media-widget (!)
 # CVE-2013-2501 plugin terillion-reviews http://osvdb.org/91123
 # CVE-2013-2640 plugin wp-mailup http://osvdb.org/91274
+# CVE-2013-2697 plugin wp-downloadmanager
 # CVE-2013-2714 plugin podpress http://osvdb.org/91129
