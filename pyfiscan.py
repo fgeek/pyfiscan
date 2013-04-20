@@ -27,11 +27,15 @@ TODO: Add support to continue interrupted session (Tuomo Komulainen requested).
 Could be implemented using http://docs.python.org/library/atexit.html with
 knowledge of current working directory and queues
 TODO: phpBB3 makes backups(?) in update to location includes/install/update/old,
-which comes up as a result
+which comes up as an result
+TODO: Joomla creates temporary files in update to location
+tmp/install_4ee88b2db4c46, which comes up as an result
 TODO: WordPress open installations CVE-2012-0937 http://osvdb.org/78710 which
 is very bad, because attacker can install the WordPress using remote database
 and after that execute any PHP he/she likes
 TODO: Fix 1.18 regexp in MediaWiki fingerprint to check older versions too
+TODO: Check if MantisBT fingerprint version number is correct. Is that release already out?
+TODO: Check e107 fingerprint. New issues
 
 Data in YAML-files could include following:
     CVE, CVSS2, OSVDB, Secunia
@@ -41,11 +45,11 @@ Data in YAML-files could include following:
 """
 
 try:
+    import logging
+    import os
     import sys
     import time
-    import logging
     import traceback
-    import os
     from docopt import docopt
     from multiprocessing import Process, Queue, Pool
     from multiprocessing.util import log_to_stderr
