@@ -623,6 +623,7 @@ Grafik CMS: CVE-2010-2615
 twiki: CVE-2009-4898
 RunCMS <http://www.runcms.org/>: CVE-2010-2852
 phpMyAdmin <http://www.phpmyadmin.net/>: CVE-2010-3056 / PMASA-2010-5, CVE-2010-3263, CVE-2010-2958, CVE-2011-2718, CVE-2011-2719, CVE-2011-3598, CVE-2011-3646, CVE-2011-4064, CVE-2011-4107, CVE-2011-4634, CVE-2011-4780, CVE-2011-4782
+phpMyAdmin CVE-2013-1937
 phpMyAdmin CVE-2012-5159 http://www.phpmyadmin.net/home_page/security/PMASA-2012-5.php
 Pecio CMS <http://www.pecio-cms.com/>: CVE-2010-3204
 DiY-CMS: CVE-2010-3206
