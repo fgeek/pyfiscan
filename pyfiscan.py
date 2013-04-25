@@ -34,7 +34,6 @@ TODO: WordPress open installations CVE-2012-0937 http://osvdb.org/78710 which
 is very bad, because attacker can install the WordPress using remote database
 and after that execute any PHP he/she likes
 TODO: Fix 1.18 regexp in MediaWiki fingerprint to check older versions too
-TODO: Check if MantisBT fingerprint version number is correct. Is that release already out?
 TODO: Check e107 fingerprint. New issues
 
 Data in YAML-files could include following:

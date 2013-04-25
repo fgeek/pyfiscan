@@ -14,11 +14,15 @@
 # CVE-2013-0197
 # CVE-2013-1810
 # CVE-2013-1811
-# CVE-2013-1883 1.2.15
+# CVE-2013-1883 1.2.15  http://osvdb.org/91618
+# CVE-2013-1930 1.2.15  http://osvdb.org/92024
+# CVE-2013-1931 1.2.15  http://osvdb.org/92025
+# CVE-2013-1932 1.2.14  http://osvdb.org/92023
+# CVE-2013-1934 1.2.14  http://osvdb.org/92023
 MantisBT:
   1:
     location: ['/core/constant_inc.php']
     secure_version: '1.2.15'
     regexp: ['define.*?MANTIS_VERSION.*?(?P<version>[0-9.]+)']
-    cve: CVE-2013-1883
+    cve: CVE-2013-1883 http://osvdb.org/91618, CVE-2013-1930 http://osvdb.org/92024, CVE-2013-1931 http://osvdb.org/92025
     fingerprint: detect_general
