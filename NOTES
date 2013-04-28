@@ -1,0 +1,29 @@
+Here is the fingerprint guidelines. Please note that some of these lines contain
+my personal opinion of the organization. If you don't share the opinion we can
+discuss about the subject, but I won't probably erase the line.
+
+1) Always check data before commiting to master. Please note that current
+TODO-list is pretty much made in hurry. It was originally made for private use.
+
+2) Don't link to securityfocus. They don't always include researchers name nor
+references in advisories they copied from others. It's pretty much "we found
+this issue", which in most cases is not true. They also probably make money out
+of this activity.
+
+3) Use full URL to OSVDB in format <http://osvdb.org/id>.
+
+4) HTBridge advisories MUST have CVE or OSVDB link. Please manually reproduce
+all of their advisories before implementing, because they have lots of
+false-positives in their archive. Please read
+<http://attrition.org/errata/past/htb/>, but my opinion is stil the same. Double
+checking does not hurt. Accurate information is key in here.
+
+5) You should not make fingerprints for commercial products in case the product
+is not well known and widely used.
+
+6) Don't link to cxsecurity.com even their advisories are usually good, but
+those are not verified information nor do they update the advisories even
+original resources are updated or even when they are contacted. These links are
+fine in the TODO items for fingerprints.
+
+Contact maintainer of the project in case of questions.
