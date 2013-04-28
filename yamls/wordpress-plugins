@@ -46,8 +46,10 @@
 # CVE-2013-1401 plugin cardoza-wordpress-poll
 # CVE-2013-1916 plugin user-photo http://osvdb.org/71071
 # CVE-2013-1949 plugin social-media-widget (!)
-# CVE-2013-2009 wp-super-cache (please see CVE-2013-2011)
-# CVE-2013-2011 wp-super-cache (incomplete fix for CVE-2013-2009)
+# CVE-2013-2008 wp-super-cache
+# CVE-2013-2009 wp-super-cache http://osvdb.org/92743 (please see CVE-2013-2011)
+# CVE-2013-2010 w3-total-cache http://osvdb.org/92652
+# CVE-2013-2011 wp-super-cache http://osvdb.org/92743 (incomplete fix for CVE-2013-2009)
 # CVE-2013-2501 plugin terillion-reviews http://osvdb.org/91123
 # CVE-2013-2640 plugin wp-mailup http://osvdb.org/91274
 # CVE-2013-2697 plugin wp-downloadmanager
