@@ -16,7 +16,6 @@ twiki: CVE-2013-1751
 FusionForge: CVE-2013-1423
 CubeCart CVE-2013-1465
 Movable Type: CVE-2013-0209, OSVDB:73214,  73215
-http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=698481
 Joomla com_picaweb SQL injection http://cxsecurity.com/issue/WLB-2013010155
 Joomla com_netinvoice CVE-2012-6514
 Joomla NinjaXplorer CVE-2012-6503
@@ -40,8 +39,6 @@ Wolf CMS: CVE-2012-1898
 SocialCMS: CVE-2012-1416
 Plume CMS: CVE-2012-1414
 ImpressCMS: CVE-2012-0987 OSVDB:78143 HTB23064
-CVE-2012-0986
-CVE-2012-5350
 CVE-2012-5349
 CVE-2012-5346
 CVE-2012-5310

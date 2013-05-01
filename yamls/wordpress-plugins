@@ -29,6 +29,7 @@
 # CVE-2012-3588 plugin plugin-newsletter
 # CVE-2012-5318 plugin kish-guest-posting (incomplete fix for CVE-2012-1125) (!)
 # CVE-2012-5325 plugin shortcode-redirect
+# CVE-2012-5350 plugin pay-with-tweet
 # CVE-2012-5387 plugin white-label-cms
 # CVE-2012-5469 plugin portable-phpmyadmin
 # CVE-2012-6077 plugin w3-total-cache
