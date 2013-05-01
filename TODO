@@ -388,66 +388,56 @@ WordPress plugin Thinkun Remind: http://cxsecurity.com/issue/WLB-2012060100
 WordPress plugin RBX Gallery: http://cxsecurity.com/issue/WLB-2012060101
 WordPress Plugin Zingiri Web Shop http://osvdb.org/show/osvdb/77091 http://osvdb.org/show/osvdb/75619 http://osvdb.org/show/osvdb/75620
 WordPress Dean's FCKEditor with Pwwang's Code Plugin http://osvdb.org/show/osvdb/80687
-WordPress CVE-2011-5180
 WordPress CVE-2011-5181
 WordPress CVE-2011-5182
 WordPress CVE-2011-5191
 WordPress CVE-2011-5192
 WordPress CVE-2011-5193
 WordPress CVE-2011-5194
-WordPress Plugin Uploadify 1.0 remote file upload http://osvdb.org/show/osvdb/73444 priority
-WordPress Plugin Uploader execute arbitrary PHP code http://osvdb.org/show/osvdb/70648 priority
-WordPress Plugin forum server: HTB22852, HTB22851, HTB22850
 WordPress Plugin forum: HTB22858, HTB22859, HTB22860
 WordPress Plugin Mingle Forum: HTB22848, HTB22849
 WordPress Plugin Question and Answer Forum: HTB22861
-    * Plugin Vote It Up: HTB22838
-    * Plugin Z-Vote: HTB22839
-    * Plugin Starbox Voting: HTB22840
-    * Plugin Comment Rating: HTB22842
-    * Plugin GD Star Rating: HTB22843, HTB22844
-    * Plugin Comment Rating: HTB22841
-    * Plugin cdnvote: HTB22845
-    * Plugin Universal Post Manager: HTB22939 (SQLi)
-    * Plugin WP-StarsRateBox: HTB22934 (SQLi), HTB22935
-    * Plugin WP Symposium: CVE-2011-3841, CVE-2011-5051
-    * Plugin Users: CVE-2011-4669
-    * Plugin GRAND Flash Album Gallery: HTB22870, HTB22871
-    * Plugin 1 Flash Gallery: 2011-4624, HTB22869, HTB22868
-    * Plugin Adminize: OSVDB:77472
-    * Plugin NextGEN Gallery: HTB22862
-    * Plugin SocialGrid: HTB22940
-    * Universal Post Manager: HTB22938
-    * WP Photo Album: HTB22961
-    * Daily Maui Photo Widget: HTB22960
-    * WP-Ajax-Recent-Posts: HTB22951
-    * Plugin bSuite OSVDB:74046 NO FIX!
-    * Plugin Lazyest Gallery: HTB22875
-    * Plugin Uploadify Integration XSS waraxe-2012-SA#085 OSVDB:81093,81094,81095
-    * Plugin Uploadify Integration XSS CVE-2012-1834 OSVDB:80573
-    * Flexible Custom Post Type OSVDB:77487 fixed in 0.1.7
-    * WPTouch: CVE-2011-4803
-    * Inline Gallery: HTB22873 (removed from WordPress plugins until the fix is done)
-    * PhotoSmash: HTB22867 (fixed in 1.0.5)
-    * Related Posts: CVE-2011-0760 fixed in 1.1 http://wordpress.org/support/topic/plugin-wp-related-posts-wordpress-related-posts-plugin-multiple-cross-site-scripting-vulnerabilities
-      * Notified WordPress admins
-      * http://wordpress.org/support/topic/plugin-wp-related-posts-wordpress-related-posts-plugin-multiple-cross-site-scripting-vulnerabilities
-    * wp-e-commerce
-      * 3.8.4 SQL Injection. TODO needs CVE
-      * Security fixed in several versions
-      * HTB23031
-    * Fast Secure Contact Form: HTB23036 (fixed in 3.0.3.2)
-    * Plugin WP-Stats-Dashboard: HTB23035
-    * Plugin Pretty Link: HTB23049
-    * Plugin Integrator: OSVDB:80628
-    * Plugin Buddypress SQL injection OSVDB:80763
-    * Plugin All-in-One Event Calendar CVE-2012-1835
-    * Plugin flexible-custom-post-type 0.1.11
-WordPress plugin: login-with-ajax CVE-2012-2759 (fixed in 3.0.4.1)
-WordPress plugin: User Photo CVE-2012-2920
-WordPress plugin: Share and Follow CVE-2012-2917
-WordPress plugin: Leaflet CVE-2012-2913
-WordPress plugin: LeagueManager CVE-2012-2912
+Plugin Vote It Up: HTB22838
+Plugin Z-Vote: HTB22839
+Plugin Starbox Voting: HTB22840
+Plugin Comment Rating: HTB22842
+Plugin GD Star Rating: HTB22843, HTB22844
+Plugin Comment Rating: HTB22841
+Plugin cdnvote: HTB22845
+Plugin Universal Post Manager: HTB22939 (SQLi)
+Plugin WP-StarsRateBox: HTB22934 (SQLi), HTB22935
+Plugin WP Symposium: CVE-2011-3841, CVE-2011-5051
+Plugin Users: CVE-2011-4669
+Plugin GRAND Flash Album Gallery: HTB22870, HTB22871
+Plugin 1 Flash Gallery: 2011-4624, HTB22869, HTB22868
+Plugin Adminize: OSVDB:77472
+Plugin NextGEN Gallery: HTB22862
+Plugin SocialGrid: HTB22940
+Universal Post Manager: HTB22938
+WP Photo Album: HTB22961
+Daily Maui Photo Widget: HTB22960
+WP-Ajax-Recent-Posts: HTB22951
+Plugin bSuite OSVDB:74046 NO FIX!
+Plugin Lazyest Gallery: HTB22875
+Plugin Uploadify Integration XSS waraxe-2012-SA#085 OSVDB:81093,81094,81095
+Flexible Custom Post Type OSVDB:77487 fixed in 0.1.7
+WPTouch: CVE-2011-4803
+Inline Gallery: HTB22873 (removed from WordPress plugins until the fix is done)
+PhotoSmash: HTB22867 (fixed in 1.0.5)
+Related Posts: CVE-2011-0760 fixed in 1.1 http://wordpress.org/support/topic/plugin-wp-related-posts-wordpress-related-posts-plugin-multiple-cross-site-scripting-vulnerabilities
+  Notified WordPress admins
+  http://wordpress.org/support/topic/plugin-wp-related-posts-wordpress-related-posts-plugin-multiple-cross-site-scripting-vulnerabilities
+wp-e-commerce
+  3.8.4 SQL Injection. TODO needs CVE
+  Security fixed in several versions
+  HTB23031
+Fast Secure Contact Form: HTB23036 (fixed in 3.0.3.2)
+Plugin WP-Stats-Dashboard: HTB23035
+Plugin Pretty Link: HTB23049
+Plugin Integrator: OSVDB:80628
+Plugin Buddypress SQL injection OSVDB:80763
+Plugin All-in-One Event Calendar CVE-2012-1835
+Plugin flexible-custom-post-type 0.1.11
 WordPress Schreikasten http://cxsecurity.com/issue/WLB-2012060267
 WordPress plugin Omni Secure Files OSVDB:82790 # No CVE
 WordPress plugin editormonkey http:// seclists.org/bugtraq/2012/Jul/27 # No CVE
@@ -559,10 +549,6 @@ WonderCMS: HTB22759
 MicroCMS: HTB22765
 Fork CMS: CVE-2012-1188/HTB23075
 Ariadne: SSCHADV2011-038 #TODO: No CVE
-phpMyFAQ: CVE-2010-4821 OSVDB:68268
-phpMyFAQ: CVE-2011-3783
-phpMyFAQ: CVE-2011-4825 OSVDB:76642 (high priority)
-phpMyFAQ: 81714 #TODO: No CVE?
 appRain CMF <http://www.apprain.com/>: CVE-2011-3704
 appRain CMF <http://www.apprain.com/>: CVE-2012-1153 RCE OSVDB:78473, CVE-2011-5229, CVE-2011-5228
 Zikula CMS: CVE-2011-0535
@@ -713,6 +699,7 @@ TomatoCart: http://yehg.net/lab/pr0js/advisories/%5Btomatocart1.x%5D_arbitrary_f
 Ariadne CMS CVE-2011-4938
 bloofoxCMS: NS-12-015
 Cunity http://cxsecurity.com/issue/WLB-2013030206
+eggBlog http://cxsecurity.com/issue/WLB-2013050005
 
 {{{
 /docs/README.html

@@ -8,14 +8,23 @@
 # CVE-XXXX-XXXX plugin devformatter http://osvdb.org/89474 http://osvdb.org/89475
 # CVE-2013-XXXX plugin wp-banners-lite http://osvdb.org/91634
 # CVE-XXXX-XXXX plugin foxypress http://www.waraxe.us/advisory-95.html
+# CVE-2011-XXXX plugin uploadify http://osvdb.org/73444 (!)
+# CVE-2011-XXXX plugin uploader http://osvdb.org/70648 http://osvdb.org/70649 (!)
 # CVE-2011-5254 plugin connections
 #   Looks like a false-positive. No information received even I asked from Mitre
 #   and plugin developers. Don't add before there is a working PoC.
 # CVE-2009-4168 plugin vkontakte-api
 # CVE-2009-4168 plugin snazzy-archives
+# CVE-2011-1047 plugin forum-server http://osvdb.org/70993 http://osvdb.org/70994
 # CVE-2011-5106 plugin flexible-custom-post-type http://osvdb.org/77487
+# CVE-2011-5180 plugin zooeffect
 # CVE-2011-5257 theme classipress
 # CVE-2012-1125 plugin kish-guest-posting (!)
+# CVE-2012-1834 plugin cms-tree-page-view http://osvdb.org/80573
+# CVE-2012-2759 plugin login-with-ajax (fixed in 3.0.4.1)
+# CVE-2012-2912 plugin leaguemanager
+# CVE-2012-2913 plugin leaflet
+# CVE-2012-2917 plugin share-and-follow
 # CVE-2012-2920 plugin user-photo http://osvdb.org/81806
 # CVE-2012-3588 plugin plugin-newsletter
 # CVE-2012-5318 plugin kish-guest-posting (incomplete fix for CVE-2012-1125) (!)
@@ -46,7 +55,7 @@
 # CVE-2013-1401 plugin cardoza-wordpress-poll
 # CVE-2013-1916 plugin user-photo http://osvdb.org/71071
 # CVE-2013-1949 plugin social-media-widget (!)
-# CVE-2013-2008 wp-super-cache
+# CVE-2013-2008 wp-super-cache http://osvdb.org/92827 - http://osvdb.org/92832
 # CVE-2013-2009 wp-super-cache http://osvdb.org/92743 (please see CVE-2013-2011)
 # CVE-2013-2010 w3-total-cache http://osvdb.org/92652
 # CVE-2013-2011 wp-super-cache http://osvdb.org/92743 (incomplete fix for CVE-2013-2009)
@@ -54,3 +63,5 @@
 # CVE-2013-2640 plugin wp-mailup http://osvdb.org/91274
 # CVE-2013-2697 plugin wp-downloadmanager
 # CVE-2013-2714 plugin podpress http://osvdb.org/91129
+# http://wpsecure.net/2013/05/open-flash-chart/
+# http://wpsecure.net/2013/05/a-list-of-recent-xss-plugin-exploits-from-april/
