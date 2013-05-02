@@ -24,21 +24,21 @@
 # CVE-2013-1816 1.20.3/1.19.4 http://www.mediawiki.org/wiki/Release_notes/1.20 http://www.mediawiki.org/wiki/Release_notes/1.19
 # CVE-2013-1817 1.20.3/1.19.4 http://www.mediawiki.org/wiki/Release_notes/1.20 http://www.mediawiki.org/wiki/Release_notes/1.19
 # CVE-2013-1818 1.20.3/1.19.4 http://www.mediawiki.org/wiki/Release_notes/1.20 http://www.mediawiki.org/wiki/Release_notes/1.19
-# CVE-2013-XXXX 1.20.5/1.19.6 http://lists.wikimedia.org/pipermail/mediawiki-announce/2013-April/000129.html
-# CVE-2013-XXXX 1.20.5/1.19.6 http://lists.wikimedia.org/pipermail/mediawiki-announce/2013-April/000129.html
+# CVE-2013-2031 1.20.5/1.19.6 http://lists.wikimedia.org/pipermail/mediawiki-announce/2013-April/000129.html
+# CVE-2013-2032 1.20.5/1.19.6 http://lists.wikimedia.org/pipermail/mediawiki-announce/2013-April/000129.html
 MediaWiki 1.20:
   1:
     location: ['/includes/DefaultSettings.php']
     secure_version: '1.20.5'
     regexp: ['\$wgVersion.*?(?P<version>1\.20\.[0-9.]{1,})']
-    cve: http://lists.wikimedia.org/pipermail/mediawiki-announce/2013-April/000129.html 
+    cve: CVE-2013-2031 CVE-2013-2032 http://lists.wikimedia.org/pipermail/mediawiki-announce/2013-April/000129.html 
     fingerprint: detect_general
 MediaWiki 1.19:
   1:
     location: ['/includes/DefaultSettings.php']
     secure_version: '1.19.6'
     regexp: ['\$wgVersion.*?(?P<version>1\.19\.[0-9.]{1,})']
-    cve: http://lists.wikimedia.org/pipermail/mediawiki-announce/2013-April/000129.html
+    cve: CVE-2013-2031 CVE-2013-2032 http://lists.wikimedia.org/pipermail/mediawiki-announce/2013-April/000129.html
     fingerprint: detect_general
 MediaWiki 1.18:
   1:
