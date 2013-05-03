@@ -19,7 +19,6 @@ Movable Type: CVE-2013-0209, OSVDB:73214,  73215
 Joomla com_picaweb SQL injection http://cxsecurity.com/issue/WLB-2013010155
 Joomla com_netinvoice CVE-2012-6514
 Joomla NinjaXplorer CVE-2012-6503
-Impress CMS SQL Injection http://cxsecurity.com/issue/WLB-2013010154
 Joomla: CVE-2012-1563, CVE-2012-1562, CVE-2012-1117, CVE-2012-1116, CVE-2012-0837, CVE-2012-0836, CVE-2012-0835, CVE-2012-0822, CVE-2012-0821, CVE-2012-0820, CVE-2012-0819, CVE-2011-4937
 WordPress simple-slider: http://seclists.org/bugtraq/2012/Nov/89
 Wordpress WP E-Commerce Plugin "DC-2012-11-001" No CVE
@@ -38,7 +37,6 @@ Wolf CMS: CVE-2012-1897
 Wolf CMS: CVE-2012-1898
 SocialCMS: CVE-2012-1416
 Plume CMS: CVE-2012-1414
-ImpressCMS: CVE-2012-0987 OSVDB:78143 HTB23064
 CVE-2012-5349
 CVE-2012-5346
 CVE-2012-5310
@@ -269,10 +267,6 @@ Elxis CMS: CVE-2011-4918 OSVDB:77563,77564
 Blogs manager <http://sourceforge.net/projects/blogsmanager/>: OSVDB:1167174,1167222,1167223,1167224,1167225,1167226,1167227,1167228,1167229,1167230,1167231 SA46918 http://seclists.org/fulldisclosure/2011/Nov/302 http://sourceforge.net/tracker/?func=detail&aid=3506818&group_id=219284&atid=1045881 TODO: No CVE
 Freelancer calendar <http://sourceforge.net/projects/freelancercal/>: OSVDB:77244,77245,77246,77247,77248 SA46970 TODO: No CVE
 Beehive Forum 101 <http://www.beehiveforum.co.uk/>: SSCHADV2011-042 #TODO: No CVE
-ImpressCMS: CVE-2010-4616
-ImpressCMS: CVE-2011-4943 OSVDB:75783
-ImpressCMS: HTB23064
-ImpressCMS: HTB22766
 x3cms <http://www.x3cms.net/> SA46748 INFOSERVE-ADV2011-04 #TODO: No CVE
 Phorum: CVE-2010-1629
 Phorum: CVE-2011-3622
@@ -441,7 +435,6 @@ WordPress plugin editormonkey http:// seclists.org/bugtraq/2012/Jul/27 # No CVE
 WordPress plugin Lim4wp http://cxsecurity.com/issue/WLB-2012060224
 WordPress plugin Wp-ImageZoom http://cxsecurity.com/issue/WLB-2012060223
 WordPress LB Mixed Slideshow http://cxsecurity.com/issue/WLB-2012060222
-WordPress Slideshow Gallery2 CVE-2012-5229
 WordPress http://cxsecurity.com/issue/WLB-2012060221
 WordPress http://cxsecurity.com/issue/WLB-2012060220
 Joomla JE Story Submit (com_jesubmit) CVE-2012-5230
@@ -697,6 +690,7 @@ Ariadne CMS CVE-2011-4938
 bloofoxCMS: NS-12-015
 Cunity http://cxsecurity.com/issue/WLB-2013030206
 eggBlog http://cxsecurity.com/issue/WLB-2013050005
+vBilling for FreeSWITCH http://seclists.org/bugtraq/2013/Apr/147
 
 {{{
 /docs/README.html
@@ -707,33 +701,6 @@ Banana Dance CMS <http://www.doyoubananadance.com>: NS-11-010
 miniCMS CVE-2012-5231
 Joomla Quickl Form CVE-2012-5232
 
-http://seclists.org/oss-sec/2012/q2/163 CVE-2012-2128 OSVDB:81358, CVE-2012-2129 OSVDB:81355 SA48848
-Gallery 2: CVE-2012-1113
-Gallery 3: CVE-2012-4342, CVE-2012-4343
-'gallery1' : {
-    'dir':          '',        
-    'file':         'Version.php',            
-    'regexp':       '\$gallery->version.*?(?P<version>[0-9.]{1,})', 
-    'cve':          '' },            
-'gallery2': {
-    'dir':          '/modules/core',                    
-    'file':         'module.inc', # missing secure !!
-    'regexp':       '\$this-setGalleryVersion.*?(?P<version>[0-9.]{1,})',                            
-    'cve':          '' },
-    'gallery2' : { # TODO
-        'location': ['/docs/CHANGELOG.html'],
-        'secure': '2.3.1',
-        'regexp': ['.*?title.*?(?P<version>2[.0-9]{1,})'],
-        'cve': 'N/A',
-        'fingerprint': detect_general
-        },
-    'gallery3' : { # TODO
-        'location': ['/modules/gallery/helpers/gallery.php'],
-        'secure': '3.0.2',
-        'regexp': ['.*?const VERSION.*?(?P<version>3[.0-9]{1,})'],
-        'cve': 'N/A',
-        'fingerprint': detect_general
-        }
 'textpattern': { # CVE-2011-5019, HTB22672
     'dir':          '/testpattern',
     'file':         'index.php',

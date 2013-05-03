@@ -27,6 +27,7 @@
 # CVE-2012-2917 plugin share-and-follow
 # CVE-2012-2920 plugin user-photo http://osvdb.org/81806
 # CVE-2012-3588 plugin plugin-newsletter
+# CVE-2012-5229 plugin slideshow-gallery-2
 # CVE-2012-5318 plugin kish-guest-posting (incomplete fix for CVE-2012-1125) (!)
 # CVE-2012-5325 plugin shortcode-redirect
 # CVE-2012-5350 plugin pay-with-tweet
@@ -62,7 +63,9 @@
 # CVE-2013-2011 wp-super-cache http://osvdb.org/92743 (incomplete fix for CVE-2013-2009)
 # CVE-2013-2501 plugin terillion-reviews http://osvdb.org/91123
 # CVE-2013-2640 plugin wp-mailup http://osvdb.org/91274
+# CVE-2013-2696 plugin
 # CVE-2013-2697 plugin wp-downloadmanager
+# CVE-2013-2709 plugin
 # CVE-2013-2714 plugin podpress http://osvdb.org/91129
 # http://wpsecure.net/2013/05/open-flash-chart/
 # http://wpsecure.net/2013/05/a-list-of-recent-xss-plugin-exploits-from-april/
