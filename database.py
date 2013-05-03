@@ -41,8 +41,8 @@ class Database:
                 data = dict(data.items() + result.items())
             except AttributeError:  # empty file
                 print('No data found inside: %s' % yamlfile)
-            except yaml.scanner.ScannerError:  # syntax error
-                print('Error while loading YAML-file: %s' % yamlfile)
+            except yaml.scanner.ScannerError, e:  # syntax error
+                print('Error while loading YAML-file: %s' % e)
         return data
 
     def locations(self, application, with_lists=True):
