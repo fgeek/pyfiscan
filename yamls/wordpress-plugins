@@ -23,8 +23,15 @@
 # CVE-2009-4168 vkontakte-api
 # CVE-2009-4168 snazzy-archives
 # CVE-2011-1047 forum-server http://osvdb.org/70993 http://osvdb.org/70994
+# CVE-2011-4803 wptouch http://osvdb.org/77752
 # CVE-2011-5106 flexible-custom-post-type http://osvdb.org/77487
 # CVE-2011-5180 zooeffect
+# CVE-2011-5216 scormcloud
+# CVE-2011-5224 wordpress-sentinel
+# CVE-2011-5225 wordpress-sentinel
+# CVE-2011-5226 wordpress-sentinel
+# CVE-2012-5327 mingle-forum
+# CVE-2012-5328 mingle-forum
 # CVE-2012-1125 kish-guest-posting (!)
 # CVE-2012-1834 cms-tree-page-view http://osvdb.org/80573
 # CVE-2012-2759 login-with-ajax (fixed in 3.0.4.1)
@@ -36,12 +43,15 @@
 # CVE-2012-5229 slideshow-gallery-2
 # CVE-2012-5318 kish-guest-posting (incomplete fix for CVE-2012-1125) (!)
 # CVE-2012-5325 shortcode-redirect
+# CVE-2012-5349 pay-with-tweet http://www.osvdb.org/78205
 # CVE-2012-5350 pay-with-tweet
 # CVE-2012-5387 white-label-cms
 # CVE-2012-5469 portable-phpmyadmin
 # CVE-2012-6077 w3-total-cache
 # CVE-2012-6078 w3-total-cache
 # CVE-2012-6079 w3-total-cache
+# CVE-2012-6312 video-lead-form
+# CVE-2012-6313 simple-gmail-login
 # CVE-2012-6499 age-verification
 # CVE-2012-6506 zingiri-web-shop
 # CVE-2012-6511 organizer

@@ -3,6 +3,11 @@ time per line. Verify every information and detail before creating fingerprints
 or asking CVEs. Contact project developers in case you need more information.
 This list should be empty so there is a LOT to do.
 
+Known issues and/or bugs:
+1: If instance is upgraded from Joomla 1.6.1 to 1.7.x by unzipping there will be
+both version files libraries/joomla/version.php and includes/version.php where
+first is the old one.
+
 TODO: Should be a feature to run commands in detected installation directory
 e.g. if /home/example/public_html/ directory contains file php5.fcgi
 TODO: There should be argument for looking specific programs in for example: -s
@@ -32,15 +37,12 @@ http://ceriksen.com/category/advisories/
 phpgroupware/chora/inc/version.php <?php define('CHORA_VERSION', '0.4.2-cvs') ?>
 CVE-2012-5181 concrete5 Unspecified XSS
 CosCms HTB23145
-CVE-2012-5395 Mediawiki extension CentralAuth
 waraxe-2013-SA#097 PHP-Fusion
 CVE-2012-5337 jForum
 twiki: CVE-2013-1751
 FusionForge: CVE-2013-1423
 CubeCart CVE-2013-1465
 Movable Type: CVE-2013-0209, OSVDB:73214,  73215
-Joomla com_picaweb SQL injection http://cxsecurity.com/issue/WLB-2013010155
-Joomla com_netinvoice CVE-2012-6514
 Joomla NinjaXplorer CVE-2012-6503
 Joomla: CVE-2012-1563, CVE-2012-1562, CVE-2012-1117, CVE-2012-1116, CVE-2012-0837, CVE-2012-0836, CVE-2012-0835, CVE-2012-0822, CVE-2012-0821, CVE-2012-0820, CVE-2012-0819, CVE-2011-4937
 WordPress simple-slider: http://seclists.org/bugtraq/2012/Nov/89
@@ -49,18 +51,11 @@ Joomla com_quiz http://cxsecurity.com/issue/WLB-2012100259
 Joomla jstore CVE-2010-5286
 CBE for Joomla CVE-2010-5280
 Drupal Webmail CVE-2012-5569
-WordPress Sentinel CVE-2011-5226, CVE-2011-5225, CVE-2011-5224
-WordPress plugin SCORM Cloud: CVE-2011-5216
-WordPress Mingle Forum CVE-2012-5328, CVE-2012-5327
-WordPress video-lead-form XSS CVE-2012-6312 OSVDB:88002
-Wordpress Simple Gmail Login: CVE-2012-6313
-Joomla component: CVE-2012-5455
 Zen Cart module: CVE-2012-5808, CVE-2012-5807, CVE-2012-5806, CVE-2012-5805
 Wolf CMS: CVE-2012-1897
 Wolf CMS: CVE-2012-1898
 SocialCMS: CVE-2012-1416
 Plume CMS: CVE-2012-1414
-CVE-2012-5349
 CVE-2012-5346
 CVE-2012-5310
 CVE-2011-5208
@@ -78,7 +73,6 @@ Achievo: CVE-2012-5865, CVE-2012-5866
 Achievo: NS-12-016
 phpMyAdmin CVE-2012-4219
 phpMyAdmin CVE-2012-4345
-Joomla CVE-2011-5113
 Joomla "Alameda" CVE-2011-5112 OSVDB:76736
 Joomla JExtensions CVE-2012-5101
 joomla FreiChat http://cxsecurity.com/issue/WLB-2012090252
@@ -433,7 +427,6 @@ Plugin bSuite OSVDB:74046 NO FIX!
 Plugin Lazyest Gallery: HTB22875
 Plugin Uploadify Integration XSS waraxe-2012-SA#085 OSVDB:81093,81094,81095
 Flexible Custom Post Type OSVDB:77487 fixed in 0.1.7
-WPTouch: CVE-2011-4803
 Inline Gallery: HTB22873 (removed from WordPress plugins until the fix is done)
 PhotoSmash: HTB22867 (fixed in 1.0.5)
 Related Posts: CVE-2011-0760 fixed in 1.1 http://wordpress.org/support/topic/plugin-wp-related-posts-wordpress-related-posts-plugin-multiple-cross-site-scripting-vulnerabilities
