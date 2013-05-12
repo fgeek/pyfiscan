@@ -1,6 +1,6 @@
 # Won't implement: CVE-2012-5177
 # CVE-XXXX-XXXX wp-forum http://cxsecurity.com/issue/WLB-2013020035
-# CVE-XXXX-XXXX solvemedia OSVDB:89585
+# CVE-XXXX-XXXX solvemedia http://osvdb.org/89585
 # CVE-XXXX-XXXX simple-forum http://cxsecurity.com/issue/WLB-2012080265
 # CVE-XXXX-XXXX wp-video-commando http://cxsecurity.com/issue/WLB-2013030207
 # CVE-XXXX-XXXX mathjax-latex http://cxsecurity.com/issue/WLB-2013030208
@@ -17,15 +17,16 @@
 # CVE-2013-XXXX wp-jplayer Jplayer.swf XSS
 # CVE-2013-XXXX securimage-wp http://cxsecurity.com/issue/WLB-2013050098
 # CVE-2013-XXXX search-and-share ZeroClipboard.swf # this has CVE 
-# CVE-2011-XXXX socialgrid http://www.osvdb.org/71966
+# CVE-2011-XXXX socialgrid                  http://osvdb.org/71966
+# CVE-2012-XXXX simple-slider               http://osvdb.org/87806
 # CVE-2011-5254 connections 
 #   Looks like a false-positive. No information received even I asked from Mitre
 #   and plugin developers. Don't add before there is a working PoC.
 # CVE-2009-4168 vkontakte-api
 # CVE-2009-4168 snazzy-archives
-# CVE-2011-1047 forum-server http://osvdb.org/70993 http://osvdb.org/70994
-# CVE-2011-4803 wptouch http://osvdb.org/77752
-# CVE-2011-5106 flexible-custom-post-type http://osvdb.org/77487
+# CVE-2011-1047 forum-server                http://osvdb.org/70993 http://osvdb.org/70994
+# CVE-2011-4803 wptouch                     http://osvdb.org/77752
+# CVE-2011-5106 flexible-custom-post-type   http://osvdb.org/77487
 # CVE-2011-5180 zooeffect
 # CVE-2011-5216 scormcloud
 # CVE-2011-5224 wordpress-sentinel
@@ -34,18 +35,19 @@
 # CVE-2012-5327 mingle-forum
 # CVE-2012-5328 mingle-forum
 # CVE-2012-1125 kish-guest-posting (!)
-# CVE-2012-1834 cms-tree-page-view http://osvdb.org/80573
-# CVE-2012-2759 login-with-ajax (fixed in 3.0.4.1)
+# CVE-2012-1834 cms-tree-page-view          http://osvdb.org/80573
+# CVE-2012-2759 login-with-ajax     3.0.4.1
 # CVE-2012-2912 leaguemanager
 # CVE-2012-2913 leaflet
 # CVE-2012-2917 share-and-follow
-# CVE-2012-2920 user-photo http://osvdb.org/81806
+# CVE-2012-2920 user-photo                  http://osvdb.org/81806
 # CVE-2012-3588 plugin-newsletter
+# CVE-2012-4768 download-monitor    3.3.5.9 http://osvdb.org/85319
 # CVE-2012-5229 slideshow-gallery-2
 # CVE-2012-5318 kish-guest-posting (incomplete fix for CVE-2012-1125) (!)
 # CVE-2012-5325 shortcode-redirect
-# CVE-2012-5346 wp-livephp http://osvdb.org/86240
-# CVE-2012-5349 pay-with-tweet http://www.osvdb.org/78205
+# CVE-2012-5346 wp-livephp                  http://osvdb.org/86240
+# CVE-2012-5349 pay-with-tweet              http://osvdb.org/78205
 # CVE-2012-5350 pay-with-tweet
 # CVE-2012-5387 white-label-cms
 # CVE-2012-5469 portable-phpmyadmin
@@ -72,19 +74,21 @@
 # CVE-2013-0731 wp-mailup
 # CVE-2013-1400 cardoza-wordpress-poll
 # CVE-2013-1401 cardoza-wordpress-poll
-# CVE-2013-1916 user-photo http://osvdb.org/71071
+# CVE-2013-1916 user-photo                  http://osvdb.org/71071
 # CVE-2013-1949 social-media-widget (!)
-# CVE-2013-2008 wp-super-cache http://osvdb.org/92827 - http://osvdb.org/92832
-# CVE-2013-2009 wp-super-cache http://osvdb.org/92743 (please see CVE-2013-2011)
-# CVE-2013-2010 w3-total-cache http://osvdb.org/92652
-# CVE-2013-2011 wp-super-cache http://osvdb.org/92743 (incomplete fix for CVE-2013-2009)
-# CVE-2013-2501 terillion-reviews http://osvdb.org/91123
-# CVE-2013-2640 wp-mailup http://osvdb.org/91274
-# CVE-2013-2696 plugin
+# CVE-2013-2008 wp-super-cache              http://osvdb.org/92827 - http://osvdb.org/92832
+# CVE-2013-2009 wp-super-cache              http://osvdb.org/92743 (please see CVE-2013-2011)
+# CVE-2013-2010 w3-total-cache              http://osvdb.org/92652
+# CVE-2013-2011 wp-super-cache              http://osvdb.org/92743 (incomplete fix for CVE-2013-2009)
+# CVE-2013-2501 terillion-reviews           http://osvdb.org/91123
+# CVE-2013-2640 wp-mailup                   http://osvdb.org/91274
+# CVE-2013-2696
 # CVE-2013-2697 wp-downloadmanager
+# CVE-2013-2702
+# CVE-2013-2703
 # CVE-2013-2707 login-with-ajax
 # CVE-2013-2709 foursquare-checkins
-# CVE-2013-2714 podpress http://osvdb.org/91129
+# CVE-2013-2714 podpress                    http://osvdb.org/91129
 # CVE-2013-3254 wp-photo-album-plus
 # http://wpsecure.net/2013/05/open-flash-chart/
 # http://wpsecure.net/2013/05/a-list-of-recent-xss-plugin-exploits-from-april/

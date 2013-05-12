@@ -14,12 +14,12 @@
 # CVE-2010-3884 1.8.1 (SA40031)
 # CVE-2010-4663 1.9.1 http://forum.cmsmadesimple.org/viewtopic.php?t=49245
 # CVE-2011-4310 1.9.4.3 http://www.cmsmadesimple.org/2011/08/Announcing-CMSMS-1-9-4-3---Security-Release/
-# CVE-2012-5450 1.11.2.1 OSVDB:87235 SA51185 HTB23121 http://forum.cmsmadesimple.org/viewtopic.php?f=1&t=63545
+# CVE-2012-5450 1.11.2.1 http://osvdb.org/87235 SA51185 HTB23121 http://forum.cmsmadesimple.org/viewtopic.php?f=1&t=63545
 # CVE-2012-6064 1.11.2.1 SA51185 HTB23121 xfdb/79881 http://forum.cmsmadesimple.org/viewtopic.php?f=1&t=63545
 CMSMS:
   1:
     location: ['/version.php']
     secure_version: '1.11.2.1'
     regexp: ['\$CMS_VERSION.*?(?P<version>[.0-9]{2,})']
-    cve: 'CVE-2012-5450 CVE-2012-6064 OSVDB:87235 SA51185 HTB23121 http://forum.cmsmadesimple.org/viewtopic.php?f=1&t=63545'
+    cve: 'CVE-2012-5450 CVE-2012-6064 http://osvdb.org/87235 SA51185 HTB23121 http://forum.cmsmadesimple.org/viewtopic.php?f=1&t=63545'
     fingerprint: detect_general

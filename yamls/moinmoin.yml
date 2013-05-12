@@ -1,8 +1,8 @@
-# TODO: 1.0 OSVDB:2878 SA10318 no CVE
-# TODO: 1.1 OSVDB:2911 no CVE
-# TODO: 1.2.2 OSVDB:6704 SA11807 no CVE
-# TODO: 1.2.3 OSVDB:8194,8195 SA11832 no CVE
-# TODO: 1.3.3 OSVDB:13184 SA14001 no CVE
+# TODO: 1.0 http://osvdb.org/2878 SA10318 no CVE
+# TODO: 1.1 http://osvdb.org/2911 no CVE
+# TODO: 1.2.2 http://osvdb.org/6704 SA11807 no CVE
+# TODO: 1.2.3 http://osvdb.org/8194,8195 SA11832 no CVE
+# TODO: 1.3.3 http://osvdb.org/13184 SA14001 no CVE
 # CVE-2007-0857 1.5.7 SA24096
 # CVE-2007-0901 1.5.8 SA24138
 # CVE-2007-2423 1.5.8 SA24138
@@ -14,7 +14,7 @@
 # CVE-2008-1099 1.6.1 SA29010
 # CVE-2008-1937 1.6.3 SA29894
 # CVE-2008-3381 1.7.1 SA31135
-# N/A           1.8.x OSVDB:49752 SA32686
+# N/A           1.8.x http://osvdb.org/49752 SA32686
 # CVE-2009-0260 1.8.2 SA33593
 # CVE-2009-0312 1.8.2 SA33593
 # CVE-2009-1482 1.8.3 SA34821
@@ -27,12 +27,12 @@
 # CVE-2010-2487 1.9.3 SA40043
 # CVE-2010-2969 1.9.3 SA40043
 # CVE-2010-2970 1.9.3 SA40043
-# CVE-2011-1058 1.9.4 OSVDB:71025 SA43413
-# CVE-2012-4404 1.9.5 OSVDB:85172      
-# CVE-2012-6080 1.9.6 OSVDB:88828 http://hg.moinmo.in/moin/1.9/rev/3c27131a3c52
-# CVE-2012-6081 1.9.6 OSVDB:88825,88827 http://hg.moinmo.in/moin/1.9/rev/7e7e1cbb9d3f
-# CVE-2012-6082 1.9.6 OSVDB:88826 http://hg.moinmo.in/moin/1.9/rev/c98ec456e493
-# CVE-2012-6495 1.9.6 OSVDB:88825,88827 http://hg.moinmo.in/moin/1.9/rev/7e7e1cbb9d3f
+# CVE-2011-1058 1.9.4 http://osvdb.org/71025 SA43413
+# CVE-2012-4404 1.9.5 http://osvdb.org/85172      
+# CVE-2012-6080 1.9.6 http://osvdb.org/88828 http://hg.moinmo.in/moin/1.9/rev/3c27131a3c52
+# CVE-2012-6081 1.9.6 http://osvdb.org/88825,88827 http://hg.moinmo.in/moin/1.9/rev/7e7e1cbb9d3f
+# CVE-2012-6082 1.9.6 http://osvdb.org/88826 http://hg.moinmo.in/moin/1.9/rev/c98ec456e493
+# CVE-2012-6495 1.9.6 http://osvdb.org/88825,88827 http://hg.moinmo.in/moin/1.9/rev/7e7e1cbb9d3f
 # CVE-2011-4448 # TODO
 # CVE-2011-4449 Apache configuration issue
 # CVE-2011-4450 # TODO
@@ -43,5 +43,5 @@ MoinMoin:
     location: ['/MoinMoin/version.py']
     secure_version: '1.9.6'
     regexp: ['.*?release.*?(?P<version>[0-9.]{1,})']
-    cve: CVE-2012-6080, CVE-2012-6081, CVE-2012-6082 OSVDB:88825-88828 http://moinmo.in/SecurityFixes
+    cve: CVE-2012-6080, CVE-2012-6081, CVE-2012-6082 http://osvdb.org/88825-88828 http://moinmo.in/SecurityFixes
     fingerprint: detect_general
