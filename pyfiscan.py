@@ -5,41 +5,12 @@
 Pyfiscan is free web-application vulnerability and version scanner and can be
 used to locate out-dated versions of common web-applications in Linux-servers.
 Example use case is hosting-providers keeping eye on their users installations
-to keep up with security-updates. Supports content management systems, blogging
-softwares, image-galleries, version controlling programs, wikis, admin panels
-and bulletin boards. Fingerprints are easy to create and modify as user can
-write those in YAML-syntax.
+to keep up with security-updates. Fingerprints are easy to create and modify as
+user can write those in YAML-syntax.
 
 @author Henri 'fgeek' Salo <henri@nerv.fi>
 @copyright Copyright (c) 2009-2013 Henri Salo
 @licence BSD
-
-Known issues and/or bugs:
-1: If instance is upgraded from Joomla 1.6.1 to 1.7.x by unzipping there will be
-both version files libraries/joomla/version.php and includes/version.php where
-first is the old one.
-
-TODO: Should be a feature to run commands in detected installation directory
-e.g. if /home/example/public_html/ directory contains file php5.fcgi
-TODO: There should be argument for looking specific programs in for example: -s
-joomla,smf
-TODO: Add support to continue interrupted session (Tuomo Komulainen requested).
-Could be implemented using http://docs.python.org/library/atexit.html with
-knowledge of current working directory and queues
-TODO: phpBB3 makes backups(?) in update to location includes/install/update/old,
-which comes up as an result
-TODO: Joomla creates temporary files in update to location
-tmp/install_4ee88b2db4c46, which comes up as an result
-TODO: WordPress open installations CVE-2012-0937 http://osvdb.org/78710 which
-is very bad, because attacker can install the WordPress using remote database
-and after that execute any PHP he/she likes
-TODO: Gallery version string not detected 1.5.10.dfsg-debian1
-
-Data in YAML-files could include following:
-    CVE, CVSS2, OSVDB, Secunia
-    Publication date, Fixed date
-    CPE, ISS X-Force ID
-    SecurityTracker Alert ID, Vendor URL
 """
 
 try:
