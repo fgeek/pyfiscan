@@ -38,12 +38,15 @@ database = Database('yamls/')
 
 
 def populate_directory(fargs):
+    """
+    Populates queue for workers. Consumes lots of disk I/O.
+
+    """
     directory, checkmodes = fargs
     start_time = time.time()
     try:
         if not validate_directory(directory, checkmodes):
             return time.time() - start_time
-
         logging.debug('Populating: %s', directory)
         for filename in filepaths_in_dir(directory, checkmodes):
             for appname in database.issues:
@@ -95,20 +98,15 @@ class PopulateScanQueue:
             directories to be scanned and checkmodes boolean if execution bit should be
             taken into account. """
         try:
-            """Use list of directories in loop to check if locations in data dictionary exists."""
-
+            # Use list of directories in loop to check if locations in data dictionary exists.
             starttime = time.time()
-
             p = Pool()
             dirs = ((d, checkmodes) for d in directories)
             p.map(populate_directory, dirs, chunksize=200)
-
-            # all done
+            # All done. Sending kill signal.
             queue.put(None)
-
             logging.info('Scanning for locations finished. Elapsed time: %.4f', \
                          time.time() - starttime)
-
         except OSError:
             logging.error(traceback.format_exc())
             sys.exit(traceback.format_exc())
