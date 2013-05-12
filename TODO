@@ -5,6 +5,7 @@ This list should be empty so there is a LOT to do.
 
 http://en.wikipedia.org/wiki/List_of_web_application_frameworks
 http://docs.joomla.org/Vulnerable_Extensions_List
+http://ceriksen.com/category/advisories/
 
 phpgroupware/chora/inc/version.php <?php define('CHORA_VERSION', '0.4.2-cvs') ?>
 CVE-2012-5181 concrete5 Unspecified XSS
@@ -210,8 +211,6 @@ Seditio <http://www.neocrome.net/>: SQLi OSVDB:81109
 Seditio <http://www.neocrome.net/>: CSRF OSVDB:81108
 Seditio <http://www.neocrome.net/>: http://www.cotonti.com/news/community/seditio-eol
 Seditio <http://www.neocrome.net/>: http://www.neocrome.net/page.php?id=2470 "it is NOT recommended to upgrade past Seditio 150 for any live site."
-Dalbum: OSVDB:80745 #TODO: No CVE
-Dalbum: CVE-2012-5891
 TYPO3 extension: CVE-2012-5890, CVE-2012-5889, CVE-2012-5888
 TYPO3: TYPO3-CORE-SA-2012-005
 Coppermine: CVE-2012-1613 XSS OSVDB:80731 waraxe-2012-SA#081
@@ -674,7 +673,6 @@ phpList CVE-2012-4247
 phpList CVE-2012-5228
 phptax http://seclists.org/bugtraq/2012/Oct/13
 phpMyDirectory CVE-2012-5288
-Yabb
 OpenX: CVE-2012-4989, CVE-2012-4990, CVE-2012-4990
 TaskFreak NS-12-011
 CMSMini NS-12-012
