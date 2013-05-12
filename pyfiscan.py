@@ -33,6 +33,7 @@ tmp/install_4ee88b2db4c46, which comes up as an result
 TODO: WordPress open installations CVE-2012-0937 http://osvdb.org/78710 which
 is very bad, because attacker can install the WordPress using remote database
 and after that execute any PHP he/she likes
+TODO: Gallery version string not detected 1.5.10.dfsg-debian1
 
 Data in YAML-files could include following:
     CVE, CVSS2, OSVDB, Secunia
