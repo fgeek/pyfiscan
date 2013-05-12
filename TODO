@@ -42,18 +42,12 @@ CVE-2012-5337 jForum
 twiki: CVE-2013-1751
 FusionForge: CVE-2013-1423
 CubeCart CVE-2013-1465
-Movable Type: CVE-2013-0209, OSVDB:73214,  73215
 Joomla NinjaXplorer CVE-2012-6503
 Joomla: CVE-2012-1563, CVE-2012-1562, CVE-2012-1117, CVE-2012-1116, CVE-2012-0837, CVE-2012-0836, CVE-2012-0835, CVE-2012-0822, CVE-2012-0821, CVE-2012-0820, CVE-2012-0819, CVE-2011-4937
 WordPress simple-slider: http://seclists.org/bugtraq/2012/Nov/89
 Wordpress WP E-Commerce Plugin "DC-2012-11-001" No CVE
-Joomla com_quiz http://cxsecurity.com/issue/WLB-2012100259
-Joomla jstore CVE-2010-5286
-CBE for Joomla CVE-2010-5280
 Drupal Webmail CVE-2012-5569
 Zen Cart module: CVE-2012-5808, CVE-2012-5807, CVE-2012-5806, CVE-2012-5805
-Wolf CMS: CVE-2012-1897
-Wolf CMS: CVE-2012-1898
 SocialCMS: CVE-2012-1416
 Plume CMS: CVE-2012-1414
 CVE-2012-5346
@@ -532,15 +526,6 @@ TestLink: HTB23088
 XRay CMS: CVE-2012-1026 OSVDB:79000
 Chyrp: CVE-2012-1001 HTB23073
 Batavi: CVE-2012-0069
-Wolf CMS: http://www.vulnerability-lab.com/get_content.php?id=452 OSVDB:79702,79703 NO CVE
-Wolf CMS: http://osvdb.org/show/osvdb/80537
-Wolf CMS: http://osvdb.org/show/osvdb/80298
-Wolf CMS CVE-2012-1897 SA48520
-Wolf CMS CVE-2012-1898
-Movable Type: CVE-2012-1262 TWSL2012-003
-Movable Type: CVE-2011-5084 DSA-2423-1 http://www.movabletype.org/2011/05/movable_type_51_and_505_436_security_update.html
-Movable Type: CVE-2012-1497 http://www.movabletype.org/2012/02/movable_type_513_507_and_438_security_updates.html
-Movable Type MT4i plugin: CVE-2012-2642, CVE-2012-2644
 PBBoard: CVE-2012-1216
 Fork CMS: CVE-2012-1207, CVE-2012-1208
 Fork CMS: CVE-2012-5164
