@@ -16,7 +16,6 @@
 # CVE-2012-4668 0.8.1 OSVDB:85142
 # CVE-2012-6121 0.8.5 OSVDB:90175,90177
 # CVE-2013-1904 0.8.6
-# TODO: 0.8-beta not yet detected
 Roundcube:
   1:
     location: ['/program/include/iniset.php']

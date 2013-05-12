@@ -38,7 +38,6 @@
 # CVE-2011-4450 # TODO
 # CVE-2011-4451 # TODO
 # CVE-2011-4452 # TODO
-# TODO: fingerprint list is not full. Check OSVDB.
 MoinMoin:
   1:
     location: ['/MoinMoin/version.py']

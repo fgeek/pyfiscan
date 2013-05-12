@@ -17,6 +17,7 @@
 # CVE-2013-XXXX wp-jplayer Jplayer.swf XSS
 # CVE-2013-XXXX securimage-wp http://cxsecurity.com/issue/WLB-2013050098
 # CVE-2013-XXXX search-and-share ZeroClipboard.swf # this has CVE 
+# CVE-2011-XXXX socialgrid http://www.osvdb.org/71966
 # CVE-2011-5254 connections 
 #   Looks like a false-positive. No information received even I asked from Mitre
 #   and plugin developers. Don't add before there is a working PoC.
@@ -43,6 +44,7 @@
 # CVE-2012-5229 slideshow-gallery-2
 # CVE-2012-5318 kish-guest-posting (incomplete fix for CVE-2012-1125) (!)
 # CVE-2012-5325 shortcode-redirect
+# CVE-2012-5346 wp-livephp http://osvdb.org/86240
 # CVE-2012-5349 pay-with-tweet http://www.osvdb.org/78205
 # CVE-2012-5350 pay-with-tweet
 # CVE-2012-5387 white-label-cms

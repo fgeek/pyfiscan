@@ -3,32 +3,32 @@ time per line. Verify every information and detail before creating fingerprints
 or asking CVEs. Contact project developers in case you need more information.
 This list should be empty so there is a LOT to do.
 
-Known issues and/or bugs:
-1: If instance is upgraded from Joomla 1.6.1 to 1.7.x by unzipping there will be
-both version files libraries/joomla/version.php and includes/version.php where
-first is the old one.
-
-TODO: Should be a feature to run commands in detected installation directory
-e.g. if /home/example/public_html/ directory contains file php5.fcgi
-TODO: There should be argument for looking specific programs in for example: -s
+- Finnish zenphoto fingerprint. zp-core/version.php:define('ZENPHOTO_VERSION', '1.4.3.3');
+- Roundcube: Version 0.8-beta not yet detected
+- Joomla: If instance is upgraded from Joomla 1.6.1 to 1.7.x by unzipping there
+  will be both version files libraries/joomla/version.php and
+  includes/version.php where first is the old one. How to solve?
+- MoinMoin: Fingerprint list is not full. Check OSVDB.
+- Joomla 2.5 needs support for configuration specific parser and MySQL queries
+- Should be a feature to run commands in detected installation directory e.g. if
+  /home/example/public_html/ directory contains file php5.fcgi
+- There should be argument for looking specific programs in for example: -s
 joomla,smf
-TODO: Add support to continue interrupted session (Tuomo Komulainen requested).
-Could be implemented using http://docs.python.org/library/atexit.html with
-knowledge of current working directory and queues
-TODO: phpBB3 makes backups(?) in update to location includes/install/update/old,
-which comes up as an result
-TODO: Joomla creates temporary files in update to location
-tmp/install_4ee88b2db4c46, which comes up as an result
-TODO: WordPress open installations CVE-2012-0937 http://osvdb.org/78710 which
-is very bad, because attacker can install the WordPress using remote database
-and after that execute any PHP he/she likes
-TODO: Gallery version string not detected 1.5.10.dfsg-debian1
+- Add support to continue interrupted session (Tuomo Komulainen requested).
+  Could be implemented using http://docs.python.org/library/atexit.html with
+  knowledge of current working directory and queues
+- phpBB3 makes backups(?) in update to location includes/install/update/old,
+  which comes up as an result
+- Joomla creates temporary files in update to location
+  tmp/install_4ee88b2db4c46, which comes up as an result
+- WordPress open installations CVE-2012-0937 http://osvdb.org/78710 which is
+  very bad, because attacker can install the WordPress using remote database and
+  after that execute any PHP he/she likes
+- Gallery version string not detected 1.5.10.dfsg-debian1
 
-Data in YAML-files could include following:
-    CVE, CVSS2, OSVDB, Secunia
-    Publication date, Fixed date
-    CPE, ISS X-Force ID
-    SecurityTracker Alert ID, Vendor URL
+Data in YAML-files could include following: CVE, CVSS2, OSVDB, Secunia,
+Publication date, Fixed date, CPE, ISS X-Force ID, SecurityTracker Alert ID,
+Vendor URL
 
 http://en.wikipedia.org/wiki/List_of_web_application_frameworks
 http://docs.joomla.org/Vulnerable_Extensions_List
@@ -48,9 +48,6 @@ WordPress simple-slider: http://seclists.org/bugtraq/2012/Nov/89
 Wordpress WP E-Commerce Plugin "DC-2012-11-001" No CVE
 Drupal Webmail CVE-2012-5569
 Zen Cart module: CVE-2012-5808, CVE-2012-5807, CVE-2012-5806, CVE-2012-5805
-SocialCMS: CVE-2012-1416
-Plume CMS: CVE-2012-1414
-CVE-2012-5346
 CVE-2012-5310
 CVE-2011-5208
 CVE-2010-5277
@@ -70,7 +67,6 @@ phpMyAdmin CVE-2012-4345
 Joomla "Alameda" CVE-2011-5112 OSVDB:76736
 Joomla JExtensions CVE-2012-5101
 joomla FreiChat http://cxsecurity.com/issue/WLB-2012090252
-Joomla addon CVE-2012-4532
 Joomla CVE-2012-4531
 tinyguestbook CVE-2011-5199
 tinyguestbook CVE-2011-5201
@@ -225,8 +221,6 @@ TYPO3 extension: CVE-2012-5890, CVE-2012-5889, CVE-2012-5888
 TYPO3: TYPO3-CORE-SA-2012-005
 Coppermine: CVE-2012-1613 XSS OSVDB:80731 waraxe-2012-SA#081
 WordPress plugin CVE-2012-5856
-Plume CMS <https://sourceforge.net/projects/pxsystem/>: CVE-2011-3985
-Plume CMS <https://sourceforge.net/projects/pxsystem/>: CVE-2012-2156 XSS OSVDB:80960,80961
 OpenCart: http://blog.visionsource.org/2010/01/28/opencart-csrf-vulnerability/
 OpenCart: http://forum.opencart.com/viewtopic.php?t=5792
 OpenCart: waraxe-2012-SA#084 1.5.2.1
@@ -359,8 +353,6 @@ Redmine: CVE-2011-1723 http://www.redmine.org/news/53
 Redmine: CVE-2011-4927 OSVDB:70092 http://www.redmine.org/news/49 SA42741
 Redmine: CVE-2011-4928 OSVDB:70091 http://www.redmine.org/news/49 SA42741
 Redmine: CVE-2011-4929 OSVDB:70090 http://www.redmine.org/news/49 SA42741
-Joomla HM Community (com_hmcommunity): CVE-2011-4808
-Joomla: http://www.securityfocus.com/bid/54259
 Uploadify: execute arbitrary PHP code http://osvdb.org/show/osvdb/62653
 Plone: http://secunia.com/advisories/product/9334/?task=advisories CVE-2010-2422, CVE-2011-4462, CVE-2011-3587 http://securityreason.com/securityalert/8546 (high prio), CVE-2011-0720
 LotusCMS: HTB22883, HTB22884 (fixed in: 3.0.5), HTB22885, HTB22886, HTB22887, HTB22888
@@ -412,7 +404,6 @@ Plugin GRAND Flash Album Gallery: HTB22870, HTB22871
 Plugin 1 Flash Gallery: 2011-4624, HTB22869, HTB22868
 Plugin Adminize: OSVDB:77472
 Plugin NextGEN Gallery: HTB22862
-Plugin SocialGrid: HTB22940
 Universal Post Manager: HTB22938
 WP Photo Album: HTB22961
 Daily Maui Photo Widget: HTB22960
