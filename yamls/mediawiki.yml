@@ -24,6 +24,7 @@
 # CVE-2013-1816 1.20.3/1.19.4 http://www.mediawiki.org/wiki/Release_notes/1.20 http://www.mediawiki.org/wiki/Release_notes/1.19
 # CVE-2013-1817 1.20.3/1.19.4 http://www.mediawiki.org/wiki/Release_notes/1.20 http://www.mediawiki.org/wiki/Release_notes/1.19
 # CVE-2013-1818 1.20.3/1.19.4 http://www.mediawiki.org/wiki/Release_notes/1.20 http://www.mediawiki.org/wiki/Release_notes/1.19
+# CVE-2013-1951 1.20.4/1.19.5
 # CVE-2013-2031 1.20.5/1.19.6 http://lists.wikimedia.org/pipermail/mediawiki-announce/2013-April/000129.html
 # CVE-2013-2032 1.20.5/1.19.6 http://lists.wikimedia.org/pipermail/mediawiki-announce/2013-April/000129.html
 MediaWiki 1.20:
