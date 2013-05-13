@@ -35,11 +35,11 @@
 # CVE-2011-1129 1.1.13 http://osvdb.org/74321
 # CVE-2011-1130 1.1.13 http://osvdb.org/75233,75234
 # CVE-2011-1131 1.1.13 http://osvdb.org/74121
-# N/A           1.1.15 http://osvdb.org/77727 http://www.simplemachines.org/community/index.php?topic=466218.0
-# CVE-2011-3615 2.0.1/1.1.15 http://osvdb.org/76822 SA46386
-# CVE-2011-4173 2.0.1 http://osvdb.org/76317 SA46386
-# N/A           2.0.1/1.1.15 http://osvdb.org/76318 SA46386
-#
+# N/A           1.1.15          http://osvdb.org/77727 http://www.simplemachines.org/community/index.php?topic=466218.0
+# CVE-2011-3615 2.0.1/1.1.15    http://osvdb.org/76822 SA46386
+# CVE-2011-4173 2.0.1           http://osvdb.org/76317 SA46386
+# N/A           2.0.1/1.1.15    http://osvdb.org/76318 SA46386
+# CVE-XXXX-XXXX ?               http://osvdb.org/92745
 # Not going to add:
 #   http://osvdb.org/32605 too little information
 #   CVE-2007-5943 http://osvdb.org/39961 myth/fake

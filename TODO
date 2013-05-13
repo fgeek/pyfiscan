@@ -44,16 +44,11 @@ FusionForge: CVE-2013-1423
 CubeCart CVE-2013-1465
 Joomla NinjaXplorer CVE-2012-6503
 Joomla: CVE-2012-1563, CVE-2012-1562, CVE-2012-1117, CVE-2012-1116, CVE-2012-0837, CVE-2012-0836, CVE-2012-0835, CVE-2012-0822, CVE-2012-0821, CVE-2012-0820, CVE-2012-0819, CVE-2011-4937
-WordPress simple-slider: http://seclists.org/bugtraq/2012/Nov/89
 Wordpress WP E-Commerce Plugin "DC-2012-11-001" No CVE
 Drupal Webmail CVE-2012-5569
 Zen Cart module: CVE-2012-5808, CVE-2012-5807, CVE-2012-5806, CVE-2012-5805
-CVE-2012-5310
-CVE-2011-5208
-CVE-2010-5277
 CVE-2010-5276
 CVE-2012-5289
-CVE-2011-5207
 CVE-2012-5233
 CVE-2012-5232
 CVE-2012-5231
@@ -88,7 +83,6 @@ CVE-2012-4268: BulletProof Security plugin for WordPress
 CVE-2012-4264: Better WP Security plugin for WordPress
 CVE-2012-4256: jNews for Joomla!
 Squiz CMS: NGS00330
-WordPress TheCartPress CVE-2011-5207
 WordPress Vitamin Plugin Bugtraq ID:     54856
 WordPress Artiss Code Embed Plugin Bugtraq ID:   54347
 WordPress PageflipBook Plugin Bugtraq ID:    54368
@@ -343,13 +337,6 @@ LotusCMS: HTB22883, HTB22884 (fixed in: 3.0.5), HTB22885, HTB22886, HTB22887, HT
 FluxBB: CVE-2011-3621 http://fluxbb.org/forums/viewtopic.php?id=5751 fixed in 1.4.7
 Pligg CMS: CVE-2009-4786, CVE-2009-4787, CVE-2009-4788, CVE-2010-2577, CVE-2010-3013, CVE-2011-3986, Pligg CMS: CVE-2011-5022, CVE-2011-5023, CVE-2012-2435, Pligg CMS: CVE-2012-2436, CVE-2012-2937, CVE-2012-2936, CVE-2012-2935, http://osvdb.org/82050
 ClearSilver: CVE-2011-4357
-Serendipity: CVE-2011-4365 
-Serendipity: CVE-2011-4366
-Serendipity: CVE-2011-4090
-Serendipity: http://bugs.debian.org/cgi-bin/pkgreport.cgi?archive=both;package=serendipity
-Serendipity: CVE-2012-2331 http://osvdb.org/81713 KORAMIS-ADV2012-001
-Serendipity: CVE-2012-2332 KORAMIS-ADV2012-001
-Serendipity: CVE-2012-2762 HTB23092 http://blog.s9y.org/archives/241-Serendipity-1.6.2-released.html https://github.com/s9y/Serendipity/commit/87153991d06bc18fe4af05f97810487c4a340a92
 Timthumb: CVE-2011-4106 (prio) http://osvdb.org/show/osvdb/74325 http://markmaunder.com/2011/08/01/zero-day-vulnerability-in-many-wordpress-themes/
 JAMWiki: 2010-5054 0.8.4 osvdb/63564
 Meditate: osvdb/77491 SSCHADV2011-039

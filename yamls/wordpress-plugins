@@ -16,7 +16,6 @@
 # CVE-2013-XXXX jammer Jplayer.swf XSS
 # CVE-2013-XXXX wp-jplayer Jplayer.swf XSS
 # CVE-2013-XXXX securimage-wp http://cxsecurity.com/issue/WLB-2013050098
-# CVE-2013-XXXX search-and-share ZeroClipboard.swf # this has CVE 
 # CVE-2011-XXXX socialgrid                  http://osvdb.org/71966
 # CVE-2012-XXXX simple-slider               http://osvdb.org/87806
 # CVE-2011-5254 connections 
@@ -28,6 +27,8 @@
 # CVE-2011-4803 wptouch                     http://osvdb.org/77752
 # CVE-2011-5106 flexible-custom-post-type   http://osvdb.org/77487
 # CVE-2011-5180 zooeffect
+# CVE-2011-5207 thecartpress                http://osvdb.org/78096
+# CVE-2011-5208 backwpup                    http://osvdb.org/71242 http://osvdb.org/71243
 # CVE-2011-5216 scormcloud
 # CVE-2011-5224 wordpress-sentinel
 # CVE-2011-5225 wordpress-sentinel
@@ -44,6 +45,7 @@
 # CVE-2012-3588 plugin-newsletter
 # CVE-2012-4768 download-monitor    3.3.5.9 http://osvdb.org/85319
 # CVE-2012-5229 slideshow-gallery-2
+# CVE-2012-5310 wp-e-commerce/      3.8.7.6 http://osvdb.org/78453
 # CVE-2012-5318 kish-guest-posting (incomplete fix for CVE-2012-1125) (!)
 # CVE-2012-5325 shortcode-redirect
 # CVE-2012-5346 wp-livephp                  http://osvdb.org/86240
