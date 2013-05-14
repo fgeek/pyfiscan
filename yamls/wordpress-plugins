@@ -18,6 +18,16 @@
 # CVE-2013-XXXX securimage-wp http://cxsecurity.com/issue/WLB-2013050098
 # CVE-2011-XXXX socialgrid                  http://osvdb.org/71966
 # CVE-2012-XXXX simple-slider               http://osvdb.org/87806
+# CVE-2012-XXXX tdo-mini-forms              http://cxsecurity.com/issue/WLB-2012090037
+# CVE-2012-XXXX plg_novana                  http://cxsecurity.com/issue/WLB-2012110162
+# CVE-2011-XXXX wp-e-commerce               http://osvdb.org/74295
+# CVE-2012-XXXX wp-e-commerce   3.8.9.1     http://osvdb.org/88231
+# CVE-2012-XXXX wp-e-commerce   3.8.9.1     http://osvdb.org/88232
+# CVE-2012-XXXX thinkun-remind              http://cxsecurity.com/issue/WLB-2012060100
+# CVE-2012-XXXX email-newsletter            http://osvdb.org/82812
+# CVE-2012-XXXX email-newsletter    9.0     http://osvdb.org/83541
+# CVE-2012-XXXX wp-symposium                http://osvdb.org/83696
+# CVE-2012-XXXX wppageflip                  http://osvdb.org/show/osvdb/83667
 # CVE-2011-5254 connections 
 #   Looks like a false-positive. No information received even I asked from Mitre
 #   and plugin developers. Don't add before there is a working PoC.
@@ -26,6 +36,7 @@
 # CVE-2011-1047 forum-server                http://osvdb.org/70993 http://osvdb.org/70994
 # CVE-2011-4803 wptouch                     http://osvdb.org/77752
 # CVE-2011-5106 flexible-custom-post-type   http://osvdb.org/77487
+# CVE-2011-5107 alert-before-your-post      http://osvdb.org/77475
 # CVE-2011-5180 zooeffect
 # CVE-2011-5207 thecartpress                http://osvdb.org/78096
 # CVE-2011-5208 backwpup                    http://osvdb.org/71242 http://osvdb.org/71243
@@ -43,6 +54,12 @@
 # CVE-2012-2917 share-and-follow
 # CVE-2012-2920 user-photo                  http://osvdb.org/81806
 # CVE-2012-3588 plugin-newsletter
+# CVE-2012-4226 quick-post-widget           http://osvdb.org/83641
+# CVE-2012-4264 better-wp-security  3.2.5   http://osvdb.org/84738 (!)
+# CVE-2012-4268 bulletproof-security    .47.1   http://osvdb.org/84736 (!)
+# CVE-2012-4272 2-click-socialmedia-buttons 0.35    http://osvdb.org/81906
+# CVE-2012-4273 2-click-socialmedia-buttons 0.35    http://osvdb.org/81907
+# CVE-2012-4283 login-with-ajax     3.0.4.1 http://osvdb.org/81712
 # CVE-2012-4768 download-monitor    3.3.5.9 http://osvdb.org/85319
 # CVE-2012-5229 slideshow-gallery-2
 # CVE-2012-5310 wp-e-commerce/      3.8.7.6 http://osvdb.org/78453
@@ -91,6 +108,10 @@
 # CVE-2013-2707 login-with-ajax
 # CVE-2013-2709 foursquare-checkins
 # CVE-2013-2714 podpress                    http://osvdb.org/91129
-# CVE-2013-3254 wp-photo-album-plus
+# CVE-2013-3526
+# CVE-2013-3529 wp-funeral-press
+# CVE-2013-3530
+# CVE-2013-3254 wp-photo-album-plus         http://osvdb.org/93033
+# CVE-2013-3532 player                      http://osvdb.org/92264
 # http://wpsecure.net/2013/05/open-flash-chart/
 # http://wpsecure.net/2013/05/a-list-of-recent-xss-plugin-exploits-from-april/

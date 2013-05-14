@@ -62,30 +62,18 @@ Joomla CVE-2012-4531
 tinyguestbook CVE-2011-5199
 tinyguestbook CVE-2011-5201
 Kajian Website CMS: CVE-2011-5111
-WordPress chenpress Plugin Arbitrary File Upload Vulnerability BugtraqID:54635
-WordPress http://cxsecurity.com/issue/WLB-2012090037
-WordPress magazine-basic-plugin http://cxsecurity.com/issue/WLB-2012110163
-Wordpress plg_novana http://cxsecurity.com/issue/WLB-2012110162
 AdaptCMS CVE-2011-5108
-WordPress flexible-custom-post-type: CVE-2011-5106 XSS
-WordPress Alert Before Your Post: CVE-2011-5107 XSS
 Joomla mod_ccnewsletter: CVE-2011-5099 SQL
-WordPress Login With Ajax: CVE-2012-4283 XSS
 CVE-2012-4256
 CVE-2012-4235
 CVE-2012-4036
 CVE-2012-4035
 CVE-2012-3953
 CVE-2012-2324
-CVE-2012-4272: 2 Click Social Media Buttons plugin for Wordpress
-CVE-2012-4273: 2 Click Social Media Buttons plugin for WordPress
-CVE-2012-4268: BulletProof Security plugin for WordPress
-CVE-2012-4264: Better WP Security plugin for WordPress
 CVE-2012-4256: jNews for Joomla!
 Squiz CMS: NGS00330
 WordPress Vitamin Plugin Bugtraq ID:     54856
 WordPress Artiss Code Embed Plugin Bugtraq ID:   54347
-WordPress PageflipBook Plugin Bugtraq ID:    54368
 WordPress Paid Memberships Pro Plugin Bugtraq ID:  54443
 WordPress PHPFreeChat Bugtraq ID: 54332
 WordPress WP Effective Lead Management Plugin Bugtraq ID:  54807
@@ -94,17 +82,6 @@ WordPress WP-Predict Plugin Bugtraq ID:  54370
 WordPress Sendit Newsletter Bugtraq ID:  54364
 WordPress Sendit Newsletter Bugtraq ID:  54364
 e107 jbShop: CVE-2011-5186
-CVE-2012-1625
-CVE-2012-1626
-CVE-2012-1627
-CVE-2012-1628
-CVE-2012-1629
-CVE-2012-1630
-CVE-2012-1631
-CVE-2012-1632
-CVE-2012-1633
-CVE-2012-1638
-CVE-2012-1640
 CVE-2012-1641
 CVE-2012-1650
 CVE-2012-1651
@@ -114,12 +91,9 @@ CVE-2011-5188
 CVE-2012-4271 WordPress Bad Behavior plugin
 CVE-2012-4327 WordPress plugin
 Wordpress Krea3AllMedias http://cxsecurity.com/ascii/WLB-2012090131
-http://www.securityfocus.com/bid/54284
-http://www.securityfocus.com/bid/54375
 http://www.securityfocus.com/bid/48348
 WordPress WP SimpleMail Plugin BugtraqID:54905
 Wordpress ThreeWP Email Reflector Plugin BugtraqID:54903
-CVE-2012-4226 WordPress Plugin 'Quick Post Widget' 1.9.1
 WrdPress WP-Predict Plugin BugtraqID:54370
 CVE-2012-3477 NeoInvoice Blind SQL
 http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2012-011/
@@ -316,11 +290,6 @@ ExponentCMS: CVE-2010-5002
 ExponentCMS: NS-12-006
 ExponentCMS: http://osvdb.org/81326 # TODO: No CVE
 ExponentCMS: http://osvdb.org/81327 # TODO: No CVE
-WikyBlog: CVE-2010-0754 http://osvdb.org/62558 SA38699 #NOTE: Haven't fixed security vulnerabilities in years
-WikyBlog: CVE-2010-0754 http://osvdb.org/62558 SA38699
-WikyBlog: CVE-2010-0755 http://osvdb.org/62647 
-WikyBlog: CVE-2010-0756 http://osvdb.org/62932
-WikyBlog: CVE-2010-0757 http://osvdb.org/62648
 Orbis CMS <http://www.novo-ws.com/orbis-cms/>: CVE-2010-4313 in newest version and whole project is EOL
 Pandora FMS: CVE-2010-4278
 CubeCart: 2012-02-10: CubeCart 3.0.x in End-of-Support/Maintenance circle
@@ -347,7 +316,6 @@ WebJaxe <http://media4.obspm.fr/outils/webjaxe/en/>: HTB22927
 Winn Guestbook <http://code.google.com/p/winn-guestbook/>: CVE-2011-5026
 WebsiteBaker <http://www.websitebaker2.org/en/home.php>: HTB22928, HTB22929, CVE-2011-2934 http://osvdb.org/76618, CVE-2011-2933 http://osvdb.org/76619
 ribiq CMS <http://tribiq.com/>: CVE-2011-2727/HTB22857
-WordPress plugin Thinkun Remind: http://cxsecurity.com/issue/WLB-2012060100
 WordPress plugin RBX Gallery: http://cxsecurity.com/issue/WLB-2012060101
 WordPress Plugin Zingiri Web Shop http://osvdb.org/show/osvdb/77091 http://osvdb.org/show/osvdb/75619 http://osvdb.org/show/osvdb/75620
 WordPress Dean's FCKEditor with Pwwang's Code Plugin http://osvdb.org/show/osvdb/80687
@@ -388,10 +356,6 @@ PhotoSmash: HTB22867 (fixed in 1.0.5)
 Related Posts: CVE-2011-0760 fixed in 1.1 http://wordpress.org/support/topic/plugin-wp-related-posts-wordpress-related-posts-plugin-multiple-cross-site-scripting-vulnerabilities
   Notified WordPress admins
   http://wordpress.org/support/topic/plugin-wp-related-posts-wordpress-related-posts-plugin-multiple-cross-site-scripting-vulnerabilities
-wp-e-commerce
-  3.8.4 SQL Injection. TODO needs CVE
-  Security fixed in several versions
-  HTB23031
 Fast Secure Contact Form: HTB23036 (fixed in 3.0.3.2)
 Plugin WP-Stats-Dashboard: HTB23035
 Plugin Pretty Link: HTB23049
