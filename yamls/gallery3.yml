@@ -6,12 +6,12 @@
 # CVE-2012-4342
 # CVE-2012-4343
 # CVE-2013-XXXX 3.0.5 http://osvdb.org/90599 http://osvdb.org/91412 http://osvdb.org/90590 http://osvdb.org/90599 http://osvdb.org/90600 http://osvdb.org/90601 http://osvdb.org/91410 http://osvdb.org/91411
-# CVE-2013—XXXX 3.0.7 http://osvdb.org/92690 http://osvdb.org/92691 http://osvdb.org/92740
-# CVE-2013-XXXX 3.0.7 http://osvdb.org/92789
+# CVE-2013-2087 3.0.7 http://osvdb.org/92691
+# CVE-2013-2087 3.0.7 http://osvdb.org/92740
 Gallery 3:
   1:
     location: ['/modules/gallery/helpers/gallery.php']
     secure_version: '3.0.7'
     regexp: ['.*?const.*?VERSION.*?(?P<version>[0-9.]{1,})']
-    cve: 'http://osvdb.org/92690 http://osvdb.org/92691 http://osvdb.org/92740 http://osvdb.org/92789'
+    cve: 'http://osvdb.org/92691 http://osvdb.org/92740'
     fingerprint: detect_general
