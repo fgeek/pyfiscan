@@ -3,7 +3,8 @@ time per line. Verify every information and detail before creating fingerprints
 or asking CVEs. Contact project developers in case you need more information.
 This list should be empty so there is a LOT to do.
 
-- Finnish zenphoto fingerprint. zp-core/version.php:define('ZENPHOTO_VERSION', '1.4.3.3');
+- Drupal: false-negative with 6.22
+- Finish zenphoto fingerprint. zp-core/version.php:define('ZENPHOTO_VERSION', '1.4.3.3');
 - Roundcube: Version 0.8-beta not yet detected
 - Joomla: If instance is upgraded from Joomla 1.6.1 to 1.7.x by unzipping there
   will be both version files libraries/joomla/version.php and
@@ -38,13 +39,9 @@ phpgroupware/chora/inc/version.php <?php define('CHORA_VERSION', '0.4.2-cvs') ?>
 CVE-2012-5181 concrete5 Unspecified XSS
 CosCms HTB23145
 waraxe-2013-SA#097 PHP-Fusion
-CVE-2012-5337 jForum
-twiki: CVE-2013-1751
 FusionForge: CVE-2013-1423
 CubeCart CVE-2013-1465
-Joomla NinjaXplorer CVE-2012-6503
-Joomla: CVE-2012-1563, CVE-2012-1562, CVE-2012-1117, CVE-2012-1116, CVE-2012-0837, CVE-2012-0836, CVE-2012-0835, CVE-2012-0822, CVE-2012-0821, CVE-2012-0820, CVE-2012-0819, CVE-2011-4937
-Wordpress WP E-Commerce Plugin "DC-2012-11-001" No CVE
+Joomla: CVE-2012-1116, CVE-2012-0837, CVE-2012-0836, CVE-2012-0835, CVE-2012-0822, CVE-2012-0821, CVE-2012-0820, CVE-2012-0819, CVE-2011-4937
 Drupal Webmail CVE-2012-5569
 Zen Cart module: CVE-2012-5808, CVE-2012-5807, CVE-2012-5806, CVE-2012-5805
 CVE-2010-5276
@@ -55,15 +52,11 @@ CVE-2012-5231
 CVE-2012-5230
 CVE-2012-5229
 CVE-2012-5228
-Joomla "Alameda" CVE-2011-5112 http://osvdb.org/76736chievo: NS-12-016
-Joomla JExtensions CVE-2012-5101
-joomla FreiChat http://cxsecurity.com/issue/WLB-2012090252
 Joomla CVE-2012-4531
 tinyguestbook CVE-2011-5199
 tinyguestbook CVE-2011-5201
 Kajian Website CMS: CVE-2011-5111
 AdaptCMS CVE-2011-5108
-Joomla mod_ccnewsletter: CVE-2011-5099 SQL
 CVE-2012-4256
 CVE-2012-4235
 CVE-2012-4036
@@ -96,7 +89,6 @@ WordPress WP SimpleMail Plugin BugtraqID:54905
 Wordpress ThreeWP Email Reflector Plugin BugtraqID:54903
 WrdPress WP-Predict Plugin BugtraqID:54370
 CVE-2012-3477 NeoInvoice Blind SQL
-http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2012-011/
 http://cxsecurity.com/issue/WLB-2012080016
 http://cxsecurity.com/issue/WLB-2012080017
 WordPress front-end-upload (affected 0.5.44. fixed in 0.5.4.6) http://cxsecurity.com/issue/WLB-2012070172
@@ -134,13 +126,6 @@ MyBB: CVE-2009-4449 http://osvdb.org/61359 http://blog.mybboard.net/2009/12/29/m
 MyBB: CVE-2010-5096 http://osvdb.org/70013 http://yehg.net/lab/pr0js/advisories/%5Bmybb1.6%5D_sql_injection
 MyBB: CVE-2012-5909
 MyBB: CVE-2012-5908
-Dolibarr: http://osvdb.org/show/osvdb/79139
-Dolibarr: CVE-2011-4329
-Dolibarr: CVE-2011-4802
-Dolibarr: CVE-2011-4814
-Dolibarr: Remote Command Execution http://osvdb.org/80980
-Dolibarr: CVE-2012-1225 http://osvdb.org/79011 SA47969
-Dolibarr: CVE-2012-1226 http://osvdb.org/79138,79139
 phpBB: http://www.securityfocus.com/bid/14086
 Joomla: http://osvdb.org/show/osvdb/80705
 Joomla: CVE-2010-4617
@@ -176,10 +161,7 @@ Seditio <http://www.neocrome.net/>: SQLi http://osvdb.org/81109
 Seditio <http://www.neocrome.net/>: CSRF http://osvdb.org/81108
 Seditio <http://www.neocrome.net/>: http://www.cotonti.com/news/community/seditio-eol
 Seditio <http://www.neocrome.net/>: http://www.neocrome.net/page.php?id=2470 "it is NOT recommended to upgrade past Seditio 150 for any live site."
-TYPO3 extension: CVE-2012-5890, CVE-2012-5889, CVE-2012-5888
-TYPO3: TYPO3-CORE-SA-2012-005
 Coppermine: CVE-2012-1613 XSS http://osvdb.org/80731 waraxe-2012-SA#081
-WordPress plugin CVE-2012-5856
 OpenCart: http://blog.visionsource.org/2010/01/28/opencart-csrf-vulnerability/
 OpenCart: http://forum.opencart.com/viewtopic.php?t=5792
 OpenCart: waraxe-2012-SA#084 1.5.2.1
@@ -235,10 +217,6 @@ Phorum: CVE-2011-3622
 Phorum: CVE-2011-4561 SSCHADV2011-023
 Phorum: HTB23109
 AdaptCMS <http://www.adaptcms.com/>: SSCHADV2011-018 CVE?
-TWiki: CVE-2009-4898
-TWiki: CVE-2011-3010
-TWiki: CVE-2012-0979
-TWiki: CVE-2012-6329 (!)
 Merethis Centreon <http://www.merethis.com and http://www.centreon.com>: TWSL2011-017 https://www.trustwave.com/spiderlabs/advisories/TWSL2011-017.txt
 PyForum: CVE-2009-4407 SA37764
 PyForum: CVE-2009-4408 SA37764
@@ -379,49 +357,11 @@ Podcast Generator <http://podcastgen.sourceforge.net/>: HTB22800, HTB22801, HTB2
 RazorCMS: HTB22803
 RazorCMS: CVE-2012-5918
 RazorCMS: CVE-2012-6038
-WordPress plugin: CVE-2012-5913
 Pluck CMS <http://www.pluck-cms.org>: HTB22798, HTB22799
 MemHT Portal <http://www.memht.com/>: HTB22663
 MiniBB <http://www.minibb.com/>: HTB22670, HTB22671
 Viscacha <http://www.viscacha.org>: HTB22919, HTB22920, HTB22921 (sqli)
 UseBB: CVE-2011-3611, CVE-2011-3612, HTB22913, HTB22914
-http://typo3.org/teams/security/security-bulletins/
-TYPO3: TYPO3-CORE-SA-2012-00
-TYPO3: TYPO3-CORE-SA-2012-002
-TYPO3: CVE-2009-4963
-TYPO3: CVE-2010-1218
-TYPO3: CVE-2010-1153
-TYPO3: CVE-2011-3583 TYPO3-CORE-SA-2011-002
-TYPO3: CVE-2011-3584 TYPO3-CORE-SA-2011-003
-TYPO3: CVE-2011-4614 TYPO3-CORE-SA-2011-004
-TYPO3: CVE-2011-4626 typo3-core-sa-2011-001 http://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2011-001/
-TYPO3: CVE-2011-4627
-TYPO3: CVE-2011-4628
-TYPO3: CVE-2011-4629
-TYPO3: CVE-2011-4630
-TYPO3: CVE-2011-4631
-TYPO3: CVE-2011-4632
-TYPO3: CVE-2011-4900
-TYPO3: CVE-2011-4901
-TYPO3: CVE-2011-4902
-TYPO3: CVE-2011-4903
-TYPO3: CVE-2011-4904
-TYPO3: CVE-2012-1605
-TYPO3: CVE-2012-1606
-TYPO3: CVE-2012-1607
-TYPO3: CVE-2012-1608
-TYPO3: typo3-sa-2010-022 #TODO: no CVE
-TYPO3: CVE-2012-2112 http://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2012-002/
-TYPO3-EXT-SA-2012-007
-TYPO3-EXT-SA-2012-008
-TYPO3-EXT-SA-2012-009
-TYPO3-EXT-SA-2012-010
-TYPO3-CORE-SA-2012-003
-CVE-2012-3527 TYPO3-CORE-SA-2012-004 TYPO3 Backend Help System Code Exec
-CVE-2012-3528 TYPO3-CORE-SA-2012-004 TYPO3 Backend XSS
-CVE-2012-3529 TYPO3-CORE-SA-2012-004 TYPO3 Backend Information Disclosure
-CVE-2012-3530 TYPO3-CORE-SA-2012-004 TYPO3 HTML Sanitizing API XSS
-CVE-2012-3531 TYPO3-CORE-SA-2012-004 TYPO3 Install Tool XSS
 Hastymail2: CVE-2011-4541
 Hastymail2: CVE-2011-4542
 PHP Booking Calendar <https://sourceforge.net/projects/bookingcalendar/>: CVE-2011-5045
@@ -520,7 +460,6 @@ Nakid CMS: CVE-2010-2358
 AneCMS Blog: CVE-2010-2437
 Orbis CMS: CVE-2010-2669
 Grafik CMS: CVE-2010-2615
-twiki: CVE-2009-4898
 RunCMS <http://www.runcms.org/>: CVE-2010-2852
 Pecio CMS <http://www.pecio-cms.com/>: CVE-2010-3204
 DiY-CMS: CVE-2010-3206

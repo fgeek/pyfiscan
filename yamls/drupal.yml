@@ -1,9 +1,9 @@
+#                           CVE-2012-2922
 # DRUPAL-SA-CORE-2012-004   CVE-2012-5651/CVE-2012-5652/CVE-2012-5653 7.18/6.27 http://drupal.org/SA-CORE-2012-004
 # DRUPAL-SA-CORE-2013-001   CVE-2013-0244 7.19/6.28 http://drupal.org/SA-CORE-2013-001
 # DRUPAL-SA-CORE-2013-001   CVE-2013-0245 7.19/6.28 http://drupal.org/SA-CORE-2013-001
 # DRUPAL-SA-CORE-2013-001   CVE-2013-0246 7.19/6.28 http://drupal.org/SA-CORE-2013-001
 # DRUPAL-SA-CORE-2013-002   CVE-2013-0316 7.20      http://drupal.org/SA-CORE-2013-002
-# TODO: Check Drupal 6.22 for example. Seems like this does not catch those.
 Drupal:
   1:
     location: ['/includes/bootstrap.inc']

@@ -27,7 +27,9 @@
 # CVE-2012-XXXX email-newsletter            http://osvdb.org/82812
 # CVE-2012-XXXX email-newsletter    9.0     http://osvdb.org/83541
 # CVE-2012-XXXX wp-symposium                http://osvdb.org/83696
-# CVE-2012-XXXX wppageflip                  http://osvdb.org/show/osvdb/83667
+# CVE-2012-XXXX wppageflip                  http://osvdb.org/83667
+# CVE-2012-XXXX wp-e-commerce       3.8.9.1 http://osvdb.org/88231
+# CVE-2012-XXXX wp-e-commerce       3.8.9.1 http://osvdb.org/88232
 # CVE-2011-5254 connections 
 #   Looks like a false-positive. No information received even I asked from Mitre
 #   and plugin developers. Don't add before there is a working PoC.
@@ -70,6 +72,8 @@
 # CVE-2012-5350 pay-with-tweet
 # CVE-2012-5387 white-label-cms
 # CVE-2012-5469 portable-phpmyadmin
+# CVE-2012-5856 uk-cookie                   http://osvdb.org/87561
+# CVE-2012-5913 wp-integrator               http://osvdb.org/80628
 # CVE-2012-6077 w3-total-cache
 # CVE-2012-6078 w3-total-cache
 # CVE-2012-6079 w3-total-cache
@@ -99,6 +103,8 @@
 # CVE-2013-2009 wp-super-cache              http://osvdb.org/92743 (please see CVE-2013-2011)
 # CVE-2013-2010 w3-total-cache              http://osvdb.org/92652
 # CVE-2013-2011 wp-super-cache              http://osvdb.org/92743 (incomplete fix for CVE-2013-2009)
+# CVE-2013-2108 wp-cleanfix
+# CVE-2013-2109 wp-cleanfix
 # CVE-2013-2501 terillion-reviews           http://osvdb.org/91123
 # CVE-2013-2640 wp-mailup                   http://osvdb.org/91274
 # CVE-2013-2696

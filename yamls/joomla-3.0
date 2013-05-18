@@ -1,5 +1,17 @@
-# CVE-2012-5455 3.0.1 http://osvdb.org/86134
+# CVE-2012-XXXX 3.1.0/2.5.10        http://osvdb.org/show/osvdb/92751 http://developer.joomla.org/security/83-20130404-core-xss-vulnerability.html
+# CVE-2012-5455 3.0.1/2.5.10        http://osvdb.org/86134 http://developer.joomla.org/security/81-20130403-core-xss-vulnerability.html
 # CVE-2013-1453
 # CVE-2013-1454
 # CVE-2013-1455
-# CVE-2013-3242 3.1.0/3.0.4/2.5.10
+# CVE-2013-3056 3.1.0/2.5.10        http://osvdb.org/show/osvdb/92752 http://developer.joomla.org/security/84-20130401-core-privilege-escalation.html
+# CVE-2013-3057 3.1.0/2.5.10        http://osvdb.org/show/osvdb/92753 http://developer.joomla.org/security/82-20130402-core-information-disclosure.html
+# CVE-2013-3058 3.1.0/2.5.10        http://osvdb.org/show/osvdb/92750 http://developer.joomla.org/security/81-20130403-core-xss-vulnerability.html
+# CVE-2013-3059 3.1.0/2.5.10        http://osvdb.org/show/osvdb/92754 http://developer.joomla.org/security/80-20130405-core-xss-vulnerability.html
+# CVE-2013-3242 3.1.0/3.0.4/2.5.10  http://osvdb.org/show/osvdb/92755 http://developer.joomla.org/security/85-20130406-core-dos-vulnerability.html
+# CVE-2013-3267 3.1.0/2.5.10        http://osvdb.org/show/osvdb/92756 http://developer.joomla.org/security/86-20130407-core-xss-vulnerability.html
+# administrator/manifests/files/joomla.xml: "       <version>3.1.1</version>"
+# NOTES:
+#   Tells and shows user a button to remove installation-directory
+#   Creates ./configuration.php in installation.
+#   Creates robots.txt, which contains word "Joomla"
+#   Admin URL: administrator
