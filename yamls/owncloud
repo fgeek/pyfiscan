@@ -4,6 +4,15 @@
 # oC-SA-2013-016    CVE-2013-1939   5.0.4           http://osvdb.org/92266
 # oC-SA-2013-017    CVE-2013-1967   5.0.5/4.5.10    http://osvdb.org/92525 
 # oC-SA-2013-018    CVE-2013-1963   5.0.5/4.5.10    http://osvdb.org/92645  https://owncloud.org/about/security/advisories/oC-SA-2013-018/
+# oC-SA-2013-019    CVE-2013-2045   5.0.6           http://osvdb.org/show/osvdb/93384 http://owncloud.org/about/security/advisories/oC-SA-2013-019/
+# oC-SA-2013-019    CVE-2013-2046   4.5.11          http://osvdb.org/show/osvdb/93383 http://owncloud.org/about/security/advisories/oC-SA-2013-019/
+# oC-SA-2013-020
+# oC-SA-2013-021
+# oC-SA-2013-022
+# oC-SA-2013-023
+# oC-SA-2013-024
+# oC-SA-2013-025
+# oC-SA-2013-026
 # NOTE: 4.5.x 4.0.x still supported for security updates
 # NOTE: status.php outputs by default: {"installed":"true","version":"5.0.6","versionstring":"5.0.5","edition":""}
 # NOTE: need to strip all line breaks before we can get version information

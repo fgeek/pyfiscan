@@ -118,3 +118,9 @@ CVE-2012-4400, CVE-2012-4401, CVE-2012-4402, CVE-2012-4403, CVE-2012-4407, CVE-2
 # CVE-2013-1834 http://www.openwall.com/lists/oss-security/2013/03/25/2
 # CVE-2013-1835 http://www.openwall.com/lists/oss-security/2013/03/25/2
 # CVE-2013-1836 http://www.openwall.com/lists/oss-security/2013/03/25/2
+-----
+# MSA-13-0020   CVE-2013-2079
+# MSA-13-0021   CVE-2013-2080
+# MSA-13-0022   CVE-2013-2081
+# MSA-13-0023   CVE-2013-2082
+# MSA-13-0024   CVE-2013-2083
