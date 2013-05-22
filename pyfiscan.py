@@ -105,6 +105,8 @@ class PopulateScanQueue:
             p.map(populate_directory, dirs, chunksize=200)
             # All done. Sending kill signal.
             queue.put(None)
+            p.close()
+            p.join()
             logging.info('Scanning for locations finished. Elapsed time: %.4f', \
                          time.time() - starttime)
         except OSError:
@@ -127,6 +129,7 @@ class PopulateScanQueue:
                                      ((d, checkmodes) for d in dirs), \
                                      chunksize=200)
             p.close()
+            p.join()
             locations = [item for sublist in udirs for item in sublist]
 
             logging.info('Total amount of locations: %s, time elapsed: %.4f', \
