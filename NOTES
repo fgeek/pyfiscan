@@ -7,8 +7,7 @@ TODO-list is pretty much made in hurry. It was originally made for private use.
 
 2) Don't link to securityfocus. They don't always include researchers name nor
 references in advisories they copied from others. It's pretty much "we found
-this issue", which in most cases is not true. They also probably make money out
-of this activity.
+this issue", which in most cases is not true.
 
 3) Use full URL to OSVDB in format <http://osvdb.org/id>.
 
