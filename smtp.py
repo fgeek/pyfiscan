@@ -1,11 +1,19 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+"""
+Mailer utility for pyfiscan tool result CSV-files.
+
+@author Henri 'fgeek' Salo <henri@nerv.fi>
+@copyright Copyright (c) 2009-2013 Henri Salo
+@licence BSD
+"""
+
 try:
-    import sys
-    import smtplib
     import csv
     import getpass
+    import smtplib
+    import sys
     from email.mime.text import MIMEText
 except ImportError, e:
     sys.exit('Import error: %s' % e)
