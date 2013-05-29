@@ -1,6 +1,6 @@
 import unittest
 from pyfiscan import is_not_secure
-
+from database import Database
 
 class CompareVersions(unittest.TestCase):
     """Testing that comparison of version numbers are correct. No setup needed for these."""
@@ -25,6 +25,15 @@ class CompareVersions(unittest.TestCase):
     def test_version_pairs_7(self):
         self.assertTrue(is_not_secure('2.0', '1.9.9'))
 
+
+class DatabaseHandlers(unittest.TestCase):
+    def test_can_load_issues_from_yaml(self):
+        """Can load fingerprint data from YAML files."""
+        database = Database('yamls/')
+        self.assertTrue(isinstance(database, Database))
+
 if __name__ == '__main__':
-    suite = unittest.TestLoader().loadTestsFromTestCase(CompareVersions)
-    unittest.TextTestRunner(verbosity=2).run(suite)
+    suite1 = unittest.TestLoader().loadTestsFromTestCase(CompareVersions)
+    suite2 = unittest.TestLoader().loadTestsFromTestCase(DatabaseHandlers)
+    alltests = unittest.TestSuite([suite1, suite2])
+    unittest.TextTestRunner(verbosity=2).run(alltests)
