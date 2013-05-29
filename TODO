@@ -3,6 +3,8 @@ time per line. Verify every information and detail before creating fingerprints
 or asking CVEs. Contact project developers in case you need more information.
 This list should be empty so there is a LOT to do.
 
+- Add CVE-2013-2114 to MediaWiki
+- File smtp.py should contain found version
 - Drupal: false-negative with 6.22
 - Finish zenphoto fingerprint. zp-core/version.php:define('ZENPHOTO_VERSION', '1.4.3.3');
 - Roundcube: Version 0.8-beta not yet detected
@@ -11,8 +13,6 @@ This list should be empty so there is a LOT to do.
   includes/version.php where first is the old one. How to solve?
 - MoinMoin: Fingerprint list is not full. Check OSVDB.
 - Joomla 2.5 needs support for configuration specific parser and MySQL queries
-- Should be a feature to run commands in detected installation directory e.g. if
-  /home/example/public_html/ directory contains file php5.fcgi
 - There should be argument for looking specific programs in for example: -s
 joomla,smf
 - Add support to continue interrupted session (Tuomo Komulainen requested).
@@ -52,7 +52,6 @@ CVE-2012-5231
 CVE-2012-5230
 CVE-2012-5229
 CVE-2012-5228
-Joomla CVE-2012-4531
 tinyguestbook CVE-2011-5199
 tinyguestbook CVE-2011-5201
 Kajian Website CMS: CVE-2011-5111
@@ -406,7 +405,7 @@ Ariadne: SSCHADV2011-038 #TODO: No CVE
 appRain CMF <http://www.apprain.com/>: CVE-2011-3704
 appRain CMF <http://www.apprain.com/>: CVE-2012-1153 RCE http://osvdb.org/78473, CVE-2011-5229, CVE-2011-5228
 Zikula CMS: CVE-2011-0535
-Elgg: CVE-2011-2935 XSS, CVE-2011-2936 SQLi, CVE-2013-0234
+Elgg: CVE-2011-2935 XSS, CVE-2011-2936 SQLi, CVE-2013-0234, CVE-2012-6563, CVE-2012-6562,CVE-2012-6561
 NextBBS: CVE-2012-1603 http://osvdb.org/80637 SQLi
 NextBBS: CVE-2012-1602 http://osvdb.org/80626 Authentication Bypass
 NextBBS: CVE-2012-1604 http://osvdb.org/80627 XSS
@@ -471,7 +470,6 @@ request-tracker: CVE-2012-4730 CVE-2012-4732 CVE-2012-4734 CVE-2012-4735 CVE-201
 request-tracker: CVE-2011-2082, CVE-2011-2083, CVE-2011-2084, CVE-2011-2085, CVE-2011-4458, CVE-2011-4459, CVE-2011-4460
 MemHt: HTB22664, HTB22662
 Advanced Electron Forums: CVE-2011-3582
-Vanilla forums: CVE-2011-3613, CVE-2011-3614 http://cxsecurity.com/issue/WLB-2012060019 http://cxsecurity.com/issue/WLB-2012060021
 OneCMS: CVE-2010-4877
 chillyCMS: CVE-2010-4894, CVE-2010-4895
 BlueCMS: CVE-2010-4897

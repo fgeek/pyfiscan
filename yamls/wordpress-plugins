@@ -32,6 +32,8 @@
 # CVE-2012-XXXX wp-e-commerce       3.8.9.1 http://osvdb.org/88232
 # CVE-2013-XXXX advanced-xml-reader         http://osvdb.org/92904
 # CVE-2013—XXXX proplayer                   http://cxsecurity.com/issue/WLB-2013050162
+# CVE-2012-XXXX schreikasten                http://osvdb.org/83152
+# CVE-2013-XXXX user-role-editor            http://www.henryhoggard.co.uk/security/wordpress-user-role-editor/
 # CVE-2011-5254 connections 
 #   Looks like a false-positive. No information received even I asked from Mitre
 #   and plugin developers. Don't add before there is a working PoC.
