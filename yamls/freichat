@@ -1,0 +1,6 @@
+# Plugin for many different CMS software.
+# CVE-2012-XXXX http://osvdb.org/85874
+#   - Needs working session in the backend (for example login to Joomla)
+#   - Uploaded file's extension is checked against list: jpeg,jpg,png,gif,zip
+#   - File's mimetype is not checked
+# CVE-2010-4949 http://osvdb.org/66628
