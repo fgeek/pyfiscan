@@ -18,3 +18,4 @@ TikiWiki:
     regexp: ['.*?\$this->version.*?(?P<version>[0-9.]{1,})']
     cve: CVE-2012-0911 http://osvdb.org/83534, CVE-2012-3996 http://osvdb.org/83533
     fingerprint: detect_general
+    post_processing: ['php5.fcgi']

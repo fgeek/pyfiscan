@@ -23,3 +23,4 @@ Roundcube:
     regexp: ['define.*?RCMAIL_VERSION.*?(?P<version>[0-9.]+)']
     cve: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1904
     fingerprint: detect_general
+    post_processing: ['php5.fcgi']

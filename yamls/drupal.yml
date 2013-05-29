@@ -11,3 +11,4 @@ Drupal:
     regexp: ['define.*?VERSION.*?(?P<version>[0-9.]+)']
     cve: CVE-2013-0316 http://drupal.org/SA-CORE-2013-002 http://osvdb.org/90517
     fingerprint: detect_general
+    post_processing: ['php5.fcgi']

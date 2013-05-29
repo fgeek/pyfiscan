@@ -26,7 +26,8 @@ try:
     from database import Database
     from detect import yaml_fn_dict
     from file_helpers import \
-        filepaths_in_dir, validate_directory, check_dir_execution_bit
+        filepaths_in_dir, validate_directory, check_dir_execution_bit, \
+        postprocess_php5fcgi
 
     from issuereport import IssueReport, get_timestamp
 except ImportError, error:
@@ -177,7 +178,7 @@ def handle_results(report, appname, file_version, item_location, application_cve
         logging.error(traceback.format_exc())
 
 
-def Worker():
+def Worker(home_location, post_process):
     """This is the actual worker which calls smaller functions in case of
     correct directory/file match is found.
 
@@ -201,10 +202,8 @@ def Worker():
             item = queue.get()
             if not item:
                 break
-
             item_location, location, appname = item
             logging.info('Processing: %s (%s)', appname, item_location)
-
             for issue in database.issues[appname].itervalues():
                 logging.debug('Processing item %s with location %s with with appname %s issue %s', \
                               item_location, location, appname, issue)
@@ -218,12 +217,19 @@ def Worker():
                     # with application fingerprint-function
                     logging.debug('Comparing versions %s:%s for item %s', \
                                   issue['secure_version'], file_version, item_location)
-
                     if is_not_secure(issue['secure_version'], file_version, appname):
+                        # Executes post processing. Does not do anything in case
+                        # post_processing is not defined in yaml fingerprint.
+                        if post_process:
+                            try:
+                                if issue['post_processing'][0] == 'php5.fcgi':
+                                    if not postprocess_php5fcgi(home_location, item_location):
+                                        break
+                            except KeyError:
+                                pass
                         # item_location is stripped from application location so that
                         # we get cleaner output and actual installation directory
                         install_dir = item_location[:item_location.find(location)]
-
                         # Calls result handler (goes to CSV and log)
                         handle_results(report, appname, file_version, install_dir, \
                                        issue['cve'], issue['secure_version'])
@@ -243,14 +249,15 @@ def main():
 
     usage = """
     Usage:
-      pyfiscan.py [--check-modes] [-l LEVEL]
+      pyfiscan.py [--check-modes] [-p] [-l LEVEL]
       pyfiscan.py -r <directory> [-l LEVEL]
-      pyfiscan.py --home <directory> [--check-modes] [-l LEVEL]
+      pyfiscan.py --home <directory> [--check-modes] [-p] [-l LEVEL]
       pyfiscan.py [-h|--help]
       pyfiscan.py --version
 
     Options:
       -r DIR            Scans directories recurssively.
+      -p                Enable post process for php5.fcgi file checks.
       --home DIR        Specifies where the home-directories are located.
       --check-modes     Check using execution bit if we are allowed to traverse directories.
       -l LEVEL          Specifies logging level: info, debug
@@ -271,7 +278,11 @@ def main():
         print('No such log level. Available levels are: %s' % levels.keys())
         sys.exit(1)
     level = levels.get(level_name, logging.NOTSET)
-
+    # Post process is used for checking if file exists in installation
+    # directory. For example config files and PHP fcgi-file.
+    post_process = None
+    if arguments['-p']:
+        post_process = True
     # Exit in case logfile is symlink
     if os.path.islink(logfile):
         sys.exit('Logfile %s is a symlink. Exiting..' % logfile)
@@ -286,16 +297,13 @@ def main():
         devnull_fd = open(os.devnull, "w")
         sys.stderr = devnull_fd
         log_to_stderr()
-
         # Starts the asynchronous workers. Amount of workers is the same as cores in server.
         # http://docs.python.org/library/multiprocessing.html#multiprocessing.pool.multiprocessing.Pool
         logging.debug('Starting workers.')
         pool = Pool()
-        pool.apply_async(Worker)
-
+        pool.apply_async(Worker, [arguments['--home'], post_process])
         # Starts the actual populator daemon to get possible locations, which will be verified by workers.
         # http://docs.python.org/library/multiprocessing.html#multiprocessing.Process
-        logging.debug('Starting scan queue populator.')
         p = PopulateScanQueue()
         if arguments['-r']:
             logging.debug('Scanning recursively from path: %s', arguments['-r'])
@@ -306,7 +314,6 @@ def main():
         else:
             logging.debug('Scanning predefined variables: /home')
             populator = Process(target=p.populate_predefined, args=('/home', arguments['--check-modes'],))
-
         populator.start()
         # Prevents any more tasks from being submitted to the pool. Once all the tasks have been completed the worker processes exit using kill-signal None
         # http://docs.python.org/library/multiprocessing.html#multiprocessing.pool.multiprocessing.Pool.close

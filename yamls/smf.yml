@@ -51,6 +51,7 @@ SMF 1:
     regexp: ['\$forum_version.*?(?P<version>1[0-9.]{1,})']
     cve: CVE-2011-3615 http://osvdb.org/76822, CVE-2011-4173 OSVB:76317, http://osvdb.org/46386
     fingerprint: detect_general
+    post_processing: ['php5.fcgi']
 SMF 2:
   1:
     location: ['/index.php']
@@ -58,3 +59,4 @@ SMF 2:
     regexp: ['\$forum_version.*?(?P<version>2[0-9.]{1,})']
     cve: CVE-2011-3615 http://osvdb.org/76822, CVE-2011-4173 OSVB:76317, http://osvdb.org/46386
     fingerprint: detect_general
+    post_processing: ['php5.fcgi']

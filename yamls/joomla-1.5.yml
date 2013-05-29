@@ -61,3 +61,4 @@ Joomla 1.5:
     regexp: ['.*?\$RELEASE.*?(?P<version>1.[0,5])', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
     cve: CVE-2012-1598 http://developer.joomla.org/security/news/396-20120305-core-password-change CVE-2012-1599 http://osvdb.org/80708 http://developer.joomla.org/security/news/397-20120306-core-information-disclosure
     fingerprint: detect_joomla
+    post_processing: ['php5.fcgi']

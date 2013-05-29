@@ -46,3 +46,24 @@ def check_dir_execution_bit(path, checkmodes):
             return False
     except Exception:
         logging.error(traceback.format_exc())
+
+
+def postprocess_php5fcgi(home_location, item_location):
+    """Checks if installation directory contains php5.fcgi-file. In some
+    environemnts this is used to tell web-server backends to execute PHP in the
+    directory. Otherwise the server responds with 500 code and would lead to
+    false positives."""
+    # So that we always have start path, which we will delete because we don't
+    # know if the hiararchy is bigger than x items in some environments
+    if not home_location:
+        home_location = '/home'
+    # Removing start path
+    public_dir = item_location[len(os.path.abspath(home_location)):].split('/')[:5]
+    # Joining items together to get real path
+    public_dir = '/'.join(str(elem) for elem in public_dir)
+    public_dir = os.path.abspath(home_location + public_dir)
+    fcgi_path = os.path.exists(os.path.abspath(public_dir + '/php5.fcgi'))
+    if fcgi_path:
+        return True
+    else:
+        return False

@@ -5,3 +5,4 @@ Gallery 1:
     regexp: ['\$gallery->version.*?(?P<version>[0-9.]{1,})']
     cve: http://osvdb.org/92690 http://osvdb.org/92691 http://osvdb.org/92740 http://osvdb.org/92789
     fingerprint: detect_general
+    post_processing: ['php5.fcgi']
