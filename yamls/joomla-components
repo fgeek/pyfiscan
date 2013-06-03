@@ -1,5 +1,6 @@
 # CVE-XXXX-XXXX com_team            http://osvdb.org/52139
 # CVE-XXXX-XXXX com_flexicontent    http://osvdb.org/80767
+# CVE-XXXX-XXXX com_jobprofile      http://osvdb.org/77652
 # CVE-2012-XXXX com_quiz            
 # CVE-2013-XXXX com_s5clanroster                            http://cxsecurity.com/issue/WLB-2013050101
 # CVE-2013-XXXX com_shohada                                 http://cxsecurity.com/issue/WLB-2013050100
@@ -15,3 +16,4 @@
 # CVE-2012-5101 com_jepoll          http://osvdb.org/78094
 # CVE-2012-6503 com_ninjaxplorer    http://osvdb.org/81630
 # CVE-2012-6514 com_netinvoice      http://osvdb.org/81573
+# CVE-2013-3719 com_aicontactsafe
