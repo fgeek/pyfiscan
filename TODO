@@ -25,6 +25,7 @@ joomla,smf
   very bad, because attacker can install the WordPress using remote database and
   after that execute any PHP he/she likes
 - Gallery version string not detected 1.5.10.dfsg-debian1
+- smtp.py should contain templates for different languages
 
 Data in YAML-files could include following: CVE, CVSS2, OSVDB, Secunia,
 Publication date, Fixed date, CPE, ISS X-Force ID, SecurityTracker Alert ID,
