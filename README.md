@@ -40,6 +40,7 @@ Detects following software
 * MantisBT: CVE-2013-1883
 * Foswiki: CVE-2013-1666 [OSVDB 90345](http://osvdb.org/90345) [Foswiki security advisory](http://foswiki.org/Support/SecurityAlert-CVE-2013-1666)
 * Trac: CVE-2010-5108 [OSVDB 63317](http://osvdb.org/63317)
+* Gallery: CVE-2013-XXXX [security advisory](http://galleryproject.org/gallery_3_0_8)
 
 Notes
 -----
