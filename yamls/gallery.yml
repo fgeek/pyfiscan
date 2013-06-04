@@ -10,12 +10,28 @@
 # CVE-2013-XXXX 3.0.5 http://osvdb.org/90599 http://osvdb.org/91412 http://osvdb.org/90590 http://osvdb.org/90599 http://osvdb.org/90600 http://osvdb.org/90601 http://osvdb.org/91410 http://osvdb.org/91411
 # CVE-2013-2087 3.0.7 http://osvdb.org/92691
 # CVE-2013-2087 3.0.7 http://osvdb.org/92740
-# CVE-2013-2087
+# CVE-2013-XXXX 3.0.8   http://galleryproject.org/gallery_3_0_8
 Gallery 3:
   1:
     location: ['/modules/gallery/helpers/gallery.php']
-    secure_version: '3.0.7'
+    secure_version: '3.0.8'
     regexp: ['.*?const.*?VERSION.*?(?P<version>[0-9.]{1,})']
-    cve: 'http://osvdb.org/92691 http://osvdb.org/92740'
+    cve: 'http://galleryproject.org/gallery_3_0_8'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+Gallery 2:
+  1:
+    location: ['/modules/core/module.inc']
+    secure_version: '3.0.8'
+    regexp: ['.*?setGalleryVersion.*?(?P<version>[0-9.]{1,})']
+    cve: 'http://galleryproject.org/gallery_3_0_8'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+Gallery 1:
+  1:
+    location: ['/Version.php']
+    secure_version: '3.0.8'
+    regexp: ['\$gallery->version.*?(?P<version>[0-9.]{1,})']
+    cve: 'http://galleryproject.org/gallery_3_0_8'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
