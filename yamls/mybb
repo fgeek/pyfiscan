@@ -1,0 +1,19 @@
+MyBB: CVE-2012-2325 http://blog.mybb.com/2012/04/01/mybb-1-6-7-update-1-8-development/
+MyBB: CVE-2012-2326 http://blog.mybb.com/2012/04/01/mybb-1-6-7-update-1-8-development/
+MyBB: CVE-2012-2327 http://blog.mybb.com/2012/04/01/mybb-1-6-7-update-1-8-development/
+MyBB: http://osvdb.org/80633 # TODO No CVE
+MyBB: http://osvdb.org/80634 # TODO No CVE
+MyBB: CVE-2010-4522 http://osvdb.org/69979,69980 SA42698
+MyBB: http://osvdb.org/71314 HTB22654 # TODO No CVE
+MyBB: http://osvdb.org/70013,70014 SQL-injection # TODO No CVE
+MyBB: CVE-2010-4624 http://osvdb.org/70278 http://blog.mybb.com/2010/04/13/mybb-1-4-12-released-security-maintenance-update/
+MyBB: CVE-2010-4625 http://osvdb.org/70277 http://blog.mybb.com/2010/04/13/mybb-1-4-12-released-security-maintenance-update/
+MyBB: CVE-2010-4626 http://osvdb.org/63839 http://blog.mybb.com/2010/04/13/mybb-1-4-12-released-security-maintenance-update/
+MyBB: CVE-2010-4627 http://osvdb.org/63840 http://blog.mybb.com/2010/04/13/mybb-1-4-12-released-security-maintenance-update/
+MyBB: CVE-2010-4628
+MyBB: CVE-2010-4629
+MyBB: CVE-2009-4448 http://osvdb.org/61419 http://blog.mybboard.net/2009/12/29/mybb-1-4-11-released-minor-patch-security-update/
+MyBB: CVE-2009-4449 http://osvdb.org/61359 http://blog.mybboard.net/2009/12/29/mybb-1-4-11-released-minor-patch-security-update/
+MyBB: CVE-2010-5096 http://osvdb.org/70013 http://yehg.net/lab/pr0js/advisories/%5Bmybb1.6%5D_sql_injection
+MyBB: CVE-2012-5909
+MyBB: CVE-2012-5908

@@ -48,7 +48,6 @@ tinyguestbook CVE-2011-5199
 tinyguestbook CVE-2011-5201
 Kajian Website CMS: CVE-2011-5111
 AdaptCMS CVE-2011-5108
-CVE-2012-4256
 CVE-2012-4235
 CVE-2012-4036
 CVE-2012-4035
@@ -98,25 +97,6 @@ Joomla CVE-2012-2747 http://osvdb.org/83070 SA49605
 Joomla CVE-2012-2748 http://osvdb.org/83069 SA49605
 CMSMS: CVE-2011-4310 http://osvdb.org/77106
 inc/class_core.php:     public $version = "1.6.7";
-MyBB: CVE-2012-2325 http://blog.mybb.com/2012/04/01/mybb-1-6-7-update-1-8-development/
-MyBB: CVE-2012-2326 http://blog.mybb.com/2012/04/01/mybb-1-6-7-update-1-8-development/
-MyBB: CVE-2012-2327 http://blog.mybb.com/2012/04/01/mybb-1-6-7-update-1-8-development/
-MyBB: http://osvdb.org/80633 # TODO No CVE
-MyBB: http://osvdb.org/80634 # TODO No CVE
-MyBB: CVE-2010-4522 http://osvdb.org/69979,69980 SA42698
-MyBB: http://osvdb.org/71314 HTB22654 # TODO No CVE
-MyBB: http://osvdb.org/70013,70014 SQL-injection # TODO No CVE
-MyBB: CVE-2010-4624 http://osvdb.org/70278 http://blog.mybb.com/2010/04/13/mybb-1-4-12-released-security-maintenance-update/
-MyBB: CVE-2010-4625 http://osvdb.org/70277 http://blog.mybb.com/2010/04/13/mybb-1-4-12-released-security-maintenance-update/
-MyBB: CVE-2010-4626 http://osvdb.org/63839 http://blog.mybb.com/2010/04/13/mybb-1-4-12-released-security-maintenance-update/
-MyBB: CVE-2010-4627 http://osvdb.org/63840 http://blog.mybb.com/2010/04/13/mybb-1-4-12-released-security-maintenance-update/
-MyBB: CVE-2010-4628
-MyBB: CVE-2010-4629
-MyBB: CVE-2009-4448 http://osvdb.org/61419 http://blog.mybboard.net/2009/12/29/mybb-1-4-11-released-minor-patch-security-update/
-MyBB: CVE-2009-4449 http://osvdb.org/61359 http://blog.mybboard.net/2009/12/29/mybb-1-4-11-released-minor-patch-security-update/
-MyBB: CVE-2010-5096 http://osvdb.org/70013 http://yehg.net/lab/pr0js/advisories/%5Bmybb1.6%5D_sql_injection
-MyBB: CVE-2012-5909
-MyBB: CVE-2012-5908
 phpBB: http://www.securityfocus.com/bid/14086
 Joomla: http://osvdb.org/show/osvdb/80705
 Joomla: CVE-2010-4617
@@ -211,24 +191,6 @@ AdaptCMS <http://www.adaptcms.com/>: SSCHADV2011-018 CVE?
 Merethis Centreon <http://www.merethis.com and http://www.centreon.com>: TWSL2011-017 https://www.trustwave.com/spiderlabs/advisories/TWSL2011-017.txt
 PyForum: CVE-2009-4407 SA37764
 PyForum: CVE-2009-4408 SA37764
-SilverStripe: CVE-2010-1593
-SilverStripe: CVE-2012-0976
-SilverStripe: SSCHADV2011-024 (works only with IE6/7 https://groups.google.com/forum/#!topic/silverstripe-announce/-KgbZOylQyM
-SilverStripe: http://osvdb.org/78677,76258,69885,69884,69887,69888,69886,69113,65265,62544,62541,62542,62543,61921,61923,53589,54341,54342,54182,35323
-SilverStripe CVE-2010-5188
-SilverStripe CVE-2010-5187
-SilverStripe: CVE-2010-4822
-SilverStripe: CVE-2010-4823
-SilverStripe: CVE-2010-4824
-SilverStripe: CVE-2011-4959
-SilverStripe: CVE-2011-4960
-SilverStripe: CVE-2011-4961
-SilverStripe: CVE-2010-5078
-SilverStripe: CVE-2010-5079
-SilverStripe: CVE-2010-5080
-SilverStripe: CVE-2011-4962
-SilverStripe: CVE-2012-4968
-SilverStripe: http://osvdb.org/87997-87998
 KaiBB <http://code.google.com/p/kaibb/>: HTB22749 / HTB22748 / HTB22747 / HTB22746 / HTB22793 / SSCHADV2011-027 #TODO: No CVE?, verify HTB announcements
 Dolphin <http://www.boonex.com/dolphin>: http://seclists.org/bugtraq/2011/Oct/113 http://www.boonex.com/n/dolphin-7-0-8-beta-1
 Yet Another CMS <http://yetanothercms.codeplex.com/>: SSCHADV2011-031
@@ -375,9 +337,6 @@ BASE: http://www.securityfocus.com/bid/51874/info
 11in1 <http://www.11in1.org/>: HTB23071
 Mibew: CSA-12001 http://www.codseq.it/advisories/mibew_messenger_multiple_xss
 Simple Groupware: CVE-2012-1028 http://osvdb.org/78918
-TestLink: CVE-2012-0938
-TestLink: CVE-2012-0939
-TestLink: HTB23088
 XRay CMS: CVE-2012-1026 http://osvdb.org/79000
 Chyrp: CVE-2012-1001 HTB23073
 Batavi: CVE-2012-0069
@@ -512,7 +471,6 @@ FlatNux: CVE-2012-4892
 FlexCMS: CVE-2012-1901
 starCMS CVE-2012-4998
 AneCMS CVE-2012-4997
-Testlink CVE-2012-2275
 Webfolio CMS CVE-2012-1899
 phptax http://seclists.org/bugtraq/2012/Oct/13
 phpMyDirectory CVE-2012-5288
