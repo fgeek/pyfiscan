@@ -3,7 +3,7 @@ time per line. Verify every information and detail before creating fingerprints
 or asking CVEs. Contact project developers in case you need more information.
 This list should be empty so there is a LOT to do.
 
-- File smtp.py should contain found version
+- File mailer.py should contain found version
 - Drupal: false-negative with 6.22
 - Finish zenphoto fingerprint. zp-core/version.php:define('ZENPHOTO_VERSION', '1.4.3.3');
 - Roundcube: Version 0.8-beta not yet detected
@@ -25,7 +25,7 @@ joomla,smf
   very bad, because attacker can install the WordPress using remote database and
   after that execute any PHP he/she likes
 - Gallery version string not detected 1.5.10.dfsg-debian1
-- smtp.py should contain templates for different languages
+- mailer.py should contain templates for different languages
 
 Data in YAML-files could include following: CVE, CVSS2, OSVDB, Secunia,
 Publication date, Fixed date, CPE, ISS X-Force ID, SecurityTracker Alert ID,
@@ -44,14 +44,6 @@ CubeCart CVE-2013-1465
 Joomla: CVE-2012-1116, CVE-2012-0837, CVE-2012-0836, CVE-2012-0835, CVE-2012-0822, CVE-2012-0821, CVE-2012-0820, CVE-2012-0819, CVE-2011-4937
 Drupal Webmail CVE-2012-5569
 Zen Cart module: CVE-2012-5808, CVE-2012-5807, CVE-2012-5806, CVE-2012-5805
-CVE-2010-5276
-CVE-2012-5289
-CVE-2012-5233
-CVE-2012-5232
-CVE-2012-5231
-CVE-2012-5230
-CVE-2012-5229
-CVE-2012-5228
 tinyguestbook CVE-2011-5199
 tinyguestbook CVE-2011-5201
 Kajian Website CMS: CVE-2011-5111
@@ -348,7 +340,6 @@ WordPress plugin Wp-ImageZoom http://cxsecurity.com/issue/WLB-2012060223
 WordPress LB Mixed Slideshow http://cxsecurity.com/issue/WLB-2012060222
 WordPress http://cxsecurity.com/issue/WLB-2012060221
 WordPress http://cxsecurity.com/issue/WLB-2012060220
-Joomla JE Story Submit (com_jesubmit) CVE-2012-5230
 CakePHP CVE-2012-4399 http://osvdb.org/84042
 Coppermine: HTB22836
 RunCMS <http://www.runcms.org/>: HTB22820, HTB22821, HTB22822
@@ -523,8 +514,6 @@ starCMS CVE-2012-4998
 AneCMS CVE-2012-4997
 Testlink CVE-2012-2275
 Webfolio CMS CVE-2012-1899
-phpList CVE-2012-4247
-phpList CVE-2012-5228
 phptax http://seclists.org/bugtraq/2012/Oct/13
 phpMyDirectory CVE-2012-5288
 OpenX: CVE-2012-4989, CVE-2012-4990, CVE-2012-4990
@@ -550,8 +539,6 @@ Coppermine version.*?(?P<version>[0-9.]{1,})
 }}}
 
 Banana Dance CMS <http://www.doyoubananadance.com>: NS-11-010
-miniCMS CVE-2012-5231
-Joomla Quickl Form CVE-2012-5232
 
 'textpattern': { # CVE-2011-5019, HTB22672
     'dir':          '/testpattern',

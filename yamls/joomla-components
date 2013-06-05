@@ -14,6 +14,8 @@
 # CVE-2011-5112 com_alameda         http://osvdb.org/76736
 # CVE-2011-5113 com_techfolio       http://osvdb.org/83417
 # CVE-2012-5101 com_jepoll          http://osvdb.org/78094
+# CVE-2012-5230 com_jesubmit
+# CVE-2012-5232
 # CVE-2012-6503 com_ninjaxplorer    http://osvdb.org/81630
 # CVE-2012-6514 com_netinvoice      http://osvdb.org/81573
 # CVE-2013-3719 com_aicontactsafe
