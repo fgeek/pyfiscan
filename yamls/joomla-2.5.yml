@@ -84,11 +84,27 @@
 #    cve: 'CVE-2012-2412 http://osvdb.org/87038, CVE-2012-4531 http://osvdb.org/87038, CVE-2012-4532 http://osvdb.org/83490'
 #    fingerprint:
 #    post_processing: ['php5.fcgi']
-Joomla 1.x:
+Joomla 1.7:
   1:
     location: ['/libraries/joomla/version.php', '/includes/version.php']
     secure_version: '2.5.7'
-    regexp: ['.*?RELEASE.*?(?P<version>1.[5,6,7])', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
+    regexp: ['.*?RELEASE.*?(?P<version>1.7)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
+    cve: 'CVE-2012-1598 http://developer.joomla.org/security/news/396-20120305-core-password-change CVE-2012-1599 http://osvdb.org/80708 http://developer.joomla.org/security/news/397-20120306-core-information-disclosure Please upgrade to Joomla 2.5.7 all 1.x versions are end of life.'
+    fingerprint: detect_joomla
+    post_processing: ['php5.fcgi']
+Joomla 1.6:
+  1:
+    location: ['/libraries/joomla/version.php', '/includes/version.php']
+    secure_version: '2.5.7'
+    regexp: ['.*?RELEASE.*?(?P<version>1.6)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
+    cve: 'CVE-2012-1598 http://developer.joomla.org/security/news/396-20120305-core-password-change CVE-2012-1599 http://osvdb.org/80708 http://developer.joomla.org/security/news/397-20120306-core-information-disclosure Please upgrade to Joomla 2.5.7 all 1.x versions are end of life.'
+    fingerprint: detect_joomla
+    post_processing: ['php5.fcgi']
+Joomla 1.5:
+  1:
+    location: ['/libraries/joomla/version.php', '/includes/version.php']
+    secure_version: '2.5.7'
+    regexp: ['.*?RELEASE.*?(?P<version>1.[0-5])', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
     cve: 'CVE-2012-1598 http://developer.joomla.org/security/news/396-20120305-core-password-change CVE-2012-1599 http://osvdb.org/80708 http://developer.joomla.org/security/news/397-20120306-core-information-disclosure Please upgrade to Joomla 2.5.7 all 1.x versions are end of life.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
