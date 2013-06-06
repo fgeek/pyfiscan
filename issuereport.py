@@ -1,3 +1,4 @@
+"""Handles listing issues to CSV result file."""
 import csv
 import time
 import os
@@ -10,7 +11,9 @@ def get_timestamp():
 
 
 class IssueReport(object):
+    """Handles file operations for CSV result file."""
     def __init__(self):
+        """Opens, chmods and creates CSV file handle."""
         filename = 'pyfiscan-vulnerabilities-' + time.strftime("%Y-%m-%d") + '.csv'
         if os.path.islink(filename):
             sys.exit('CSV-file %s is a symlink. Exiting..' % filename)
@@ -21,8 +24,10 @@ class IssueReport(object):
         self.writer = csv.writer(self.csvfile, delimiter='|', quotechar='|')
 
     def close(self):
+        """Closes CSV file handle."""
         if self.csvfile:
             self.csvfile.close()
 
     def add(self, appname, item, file_version, secure_version, cve):
+        """Writes data to CSV file handle."""
         self.writer.writerow((get_timestamp(), appname, item, file_version, secure_version, cve))
