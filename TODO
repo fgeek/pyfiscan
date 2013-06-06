@@ -11,7 +11,6 @@ This list should be empty so there is a LOT to do.
   will be both version files libraries/joomla/version.php and
   includes/version.php where first is the old one. How to solve?
 - MoinMoin: Fingerprint list is not full. Check OSVDB.
-- Joomla 2.5 needs support for configuration specific parser and MySQL queries
 - There should be argument for looking specific programs in for example: -s
 joomla,smf
 - Add support to continue interrupted session (Tuomo Komulainen requested).

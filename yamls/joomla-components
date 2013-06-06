@@ -1,11 +1,13 @@
 # CVE-XXXX-XXXX com_team            http://osvdb.org/52139
 # CVE-XXXX-XXXX com_flexicontent    http://osvdb.org/80767
 # CVE-XXXX-XXXX com_jobprofile      http://osvdb.org/77652
+# CVE-XXXX-XXXX com_jinc                                    http://lhacky.altervista.org/jextensions/index.php/component/content/article/21-news/jinc/100-security-issue-on-jinc-1-0-1
 # CVE-2012-XXXX com_quiz            
 # CVE-2013-XXXX com_s5clanroster                            http://cxsecurity.com/issue/WLB-2013050101
 # CVE-2013-XXXX com_shohada                                 http://cxsecurity.com/issue/WLB-2013050100
 # CVE-2013-XXXX com_myalbum                                 http://cxsecurity.com/issue/WLB-2013050099
 # CVE-2013-XXXX com_picaweb                                 http://cxsecurity.com/issue/WLB-2013010155
+# CVE-2013-XXXX com_advert                                  http://vel.joomla.org/vel-blog/51-com_advert.html
 # CVE-2010-0753 com_sqlreport       http://osvdb.org/62534
 # CVE-2010-5280 com_cbe             http://osvdb.org/68618
 # CVE-2010-5286 com_jstore          http://osvdb.org/87941
