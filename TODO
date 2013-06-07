@@ -40,7 +40,6 @@ CosCms HTB23145
 waraxe-2013-SA#097 PHP-Fusion
 FusionForge: CVE-2013-1423
 CubeCart CVE-2013-1465
-Joomla: CVE-2012-1116, CVE-2012-0837, CVE-2012-0836, CVE-2012-0835, CVE-2012-0822, CVE-2012-0821, CVE-2012-0820, CVE-2012-0819, CVE-2011-4937
 Drupal Webmail CVE-2012-5569
 Zen Cart module: CVE-2012-5808, CVE-2012-5807, CVE-2012-5806, CVE-2012-5805
 tinyguestbook CVE-2011-5199
@@ -249,12 +248,6 @@ ribiq CMS <http://tribiq.com/>: CVE-2011-2727/HTB22857
 WordPress plugin RBX Gallery: http://cxsecurity.com/issue/WLB-2012060101
 WordPress Plugin Zingiri Web Shop http://osvdb.org/show/osvdb/77091 http://osvdb.org/show/osvdb/75619 http://osvdb.org/show/osvdb/75620
 WordPress Dean's FCKEditor with Pwwang's Code Plugin http://osvdb.org/show/osvdb/80687
-WordPress CVE-2011-5181
-WordPress CVE-2011-5182
-WordPress CVE-2011-5191
-WordPress CVE-2011-5192
-WordPress CVE-2011-5193
-WordPress CVE-2011-5194
 WordPress Plugin forum: HTB22858, HTB22859, HTB22860
 WordPress Plugin Mingle Forum: HTB22848, HTB22849
 WordPress Plugin Question and Answer Forum: HTB22861

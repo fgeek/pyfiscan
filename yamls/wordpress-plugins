@@ -1,10 +1,11 @@
-# Won't implement: CVE-2012-5177
+# Won't implement: CVE-2012-5177, CVE-2011-5182
 # CVE-XXXX-XXXX wp-forum http://cxsecurity.com/issue/WLB-2013020035
 # CVE-XXXX-XXXX solvemedia http://osvdb.org/89585
 # CVE-XXXX-XXXX simple-forum http://cxsecurity.com/issue/WLB-2012080265
 # CVE-XXXX-XXXX wp-video-commando http://cxsecurity.com/issue/WLB-2013030207
 # CVE-XXXX-XXXX mathjax-latex http://cxsecurity.com/issue/WLB-2013030208
 # CVE-XXXX-XXXX devformatter http://osvdb.org/89474 http://osvdb.org/89475
+# CVE-XXXX-XXXX deans-fckeditor-with-pwwangs-code-plugin-for-wordpress  http://osvdb.org/80687 (!)
 # CVE-2013-XXXX wp-banners-lite http://osvdb.org/91634
 # CVE-XXXX-XXXX foxypress http://www.waraxe.us/advisory-95.html
 # CVE-2011-XXXX uploadify http://osvdb.org/73444 (!)
@@ -44,6 +45,10 @@
 # CVE-2011-5106 flexible-custom-post-type   http://osvdb.org/77487
 # CVE-2011-5107 alert-before-your-post      http://osvdb.org/77475
 # CVE-2011-5180 zooeffect
+# CVE-2011-5181 clickdesk-live-support-chat-plugin  http://osvdb.org/77338 (double check)
+# CVE-2011-5192 pretty-link                 http://osvdb.org/78147
+# CVE-2011-5193 wordpress-whois-search      http://osvdb.org/78104
+# CVE-2011-5194 wordpress-whois-search      http://osvdb.org/78104
 # CVE-2011-5207 thecartpress                http://osvdb.org/78096
 # CVE-2011-5208 backwpup                    http://osvdb.org/71242 http://osvdb.org/71243
 # CVE-2011-5216 scormcloud

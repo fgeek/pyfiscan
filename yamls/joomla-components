@@ -2,7 +2,11 @@
 # CVE-XXXX-XXXX com_flexicontent    http://osvdb.org/80767
 # CVE-XXXX-XXXX com_jobprofile      http://osvdb.org/77652
 # CVE-XXXX-XXXX com_jinc                                    http://lhacky.altervista.org/jextensions/index.php/component/content/article/21-news/jinc/100-security-issue-on-jinc-1-0-1
-# CVE-2012-XXXX com_quiz            
+# CVE-XXXX-XXXX flashchart                                  http://vel.joomla.org/resolved/403-flashchart-content-plugin-1-2-1.html
+# CVE-XXXX-XXXX com_jobprofile                              http://vel.joomla.org/vel-blog/58-jobprofile-1-0.html
+# CVE-XXXX-XXXX civicrm                                     http://vel.joomla.org/vel-blog/402-civicrm-4-3-3.html
+# CVE-XXXX-XXXX extplorer                                   http://vel.joomla.org/resolved/18-extplorer.html http://extplorer.net/news/12
+# CVE-2012-XXXX com_quiz
 # CVE-2013-XXXX com_s5clanroster                            http://cxsecurity.com/issue/WLB-2013050101
 # CVE-2013-XXXX com_shohada                                 http://cxsecurity.com/issue/WLB-2013050100
 # CVE-2013-XXXX com_myalbum                                 http://cxsecurity.com/issue/WLB-2013050099

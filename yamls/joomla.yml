@@ -63,18 +63,23 @@
 
 # CVE-2011-4321 1.5.25  http://osvdb.org/77094 http://developer.joomla.org/security/news/374-20111102-core-password-change http://developer.joomla.org/security/news/375-20111103-core-password-change
 # CVE-2011-4332 1.6.4   http://osvdb.org/73487 http://developer.joomla.org/security/news/349-20110601-xss-vulnerabilities.html
+# CVE-2011-4937
 # CVE-2012-0819 1.7.4   http://osvdb.org/78517 http://developer.joomla.org/security/news/382-20120101-core-information-disclosure.html
 # CVE-2012-0820 1.7.4   http://osvdb.org/78515 http://developer.joomla.org/security/news/383-20120102-core-xss-vulnerability.html
 # CVE-2012-0821 1.7.4   http://osvdb.org/78518 http://developer.joomla.org/security/news/384-20120103-core-information-disclosure.html
-# CVE-2012-0822 1.7.4   http://osvdb.org/78516 http://developer.joomla.org/security/news/385-20120104-core-xss-vulnerability.html
-# CVE-2012-1598 1.5.26  http://developer.joomla.org/security/news/396-20120305-core-password-change
-# CVE-2012-1599 1.5.26  http://osvdb.org/80708 http://developer.joomla.org/security/news/397-20120306-core-information-disclosure
-# CVE-2012-1117 2.5.2   http://osvdb.org/79836
-# CVE-2012-1562 2.5.3   http://osvdb.org/80112
-# CVE-2012-1563 2.5.3   http://osvdb.org/80111
-# CVE-2012-2412 2.5.7   http://osvdb.org/87038
-# CVE-2012-4531 2.5.7   http://osvdb.org/87038 SA49678 http://developer.joomla.org/security/news/539-20120901-core-xss-vulnerability http://www.joomla.org/announcements/release-news/5463-joomla-2-5-7-released.html
-# CVE-2012-4532 2.5.7   http://osvdb.org/83490 SA49678 http://developer.joomla.org/security/news/540-20120902-core-xss-vulnerability http://www.joomla.org/announcements/release-news/5463-joomla-2-5-7-released.html http://www.darksecurity.de/advisories/2012/SSCHADV2012-014.txt
+# CVE-2012-0822 1.7.4       http://osvdb.org/78516 http://developer.joomla.org/security/news/385-20120104-core-xss-vulnerability.html
+# CVE-2012-0835 2.5.1/1.7.5 http://osvdb.org/78824
+# CVE-2012-0836
+# CVE-2012-0837
+# CVE-2012-1598 1.5.26      http://developer.joomla.org/security/news/396-20120305-core-password-change
+# CVE-2012-1599 1.5.26      http://osvdb.org/80708 http://developer.joomla.org/security/news/397-20120306-core-information-disclosure
+# CVE-2012-1116
+# CVE-2012-1117 2.5.2       http://osvdb.org/79836
+# CVE-2012-1562 2.5.3       http://osvdb.org/80112
+# CVE-2012-1563 2.5.3       http://osvdb.org/80111
+# CVE-2012-2412 2.5.7       http://osvdb.org/87038
+# CVE-2012-4531 2.5.7       http://osvdb.org/87038 SA49678 http://developer.joomla.org/security/news/539-20120901-core-xss-vulnerability http://www.joomla.org/announcements/release-news/5463-joomla-2-5-7-released.html
+# CVE-2012-4532 2.5.7       http://osvdb.org/83490 SA49678 http://developer.joomla.org/security/news/540-20120902-core-xss-vulnerability http://www.joomla.org/announcements/release-news/5463-joomla-2-5-7-released.html http://www.darksecurity.de/advisories/2012/SSCHADV2012-014.txt
 #Joomla 2.5:
 #  1:
 #    # Can't use /installation/CHANGELOG in here as Joomla requests deletion of that directory.
