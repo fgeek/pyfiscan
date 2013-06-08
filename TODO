@@ -1,9 +1,4 @@
-Please note that this list has been generated manually and usually in very short
-time per line. Verify every information and detail before creating fingerprints
-or asking CVEs. Contact project developers in case you need more information.
-This list should be empty so there is a LOT to do.
-
-- File mailer.py should contain found version
+Tasks:
 - Drupal: false-negative with 6.22
 - Finish zenphoto fingerprint. zp-core/version.php:define('ZENPHOTO_VERSION', '1.4.3.3');
 - Roundcube: Version 0.8-beta not yet detected
@@ -26,13 +21,21 @@ joomla,smf
 - Gallery version string not detected 1.5.10.dfsg-debian1
 - mailer.py should contain templates for different languages
 
-Data in YAML-files could include following: CVE, CVSS2, OSVDB, Secunia,
+Data in YAML-files could include following: CVSS2, OSVDB, Secunia,
 Publication date, Fixed date, CPE, ISS X-Force ID, SecurityTracker Alert ID,
 Vendor URL
 
+Some useful links:
 http://en.wikipedia.org/wiki/List_of_web_application_frameworks
 http://docs.joomla.org/Vulnerable_Extensions_List
 http://ceriksen.com/category/advisories/
+
+---
+
+Please note that this list has been generated manually and usually in very short
+time per line. Verify every information and detail before creating fingerprints
+or asking CVEs. Contact project developers in case you need more information.
+This list should be empty so there is a LOT to do.
 
 phpgroupware/chora/inc/version.php <?php define('CHORA_VERSION', '0.4.2-cvs') ?>
 CVE-2012-5181 concrete5 Unspecified XSS
@@ -46,11 +49,6 @@ tinyguestbook CVE-2011-5199
 tinyguestbook CVE-2011-5201
 Kajian Website CMS: CVE-2011-5111
 AdaptCMS CVE-2011-5108
-CVE-2012-4235
-CVE-2012-4036
-CVE-2012-4035
-CVE-2012-3953
-CVE-2012-2324
 CVE-2012-4256: jNews for Joomla!
 Squiz CMS: NGS00330
 WordPress Vitamin Plugin Bugtraq ID:     54856
@@ -247,7 +245,6 @@ WebsiteBaker <http://www.websitebaker2.org/en/home.php>: HTB22928, HTB22929, CVE
 ribiq CMS <http://tribiq.com/>: CVE-2011-2727/HTB22857
 WordPress plugin RBX Gallery: http://cxsecurity.com/issue/WLB-2012060101
 WordPress Plugin Zingiri Web Shop http://osvdb.org/show/osvdb/77091 http://osvdb.org/show/osvdb/75619 http://osvdb.org/show/osvdb/75620
-WordPress Dean's FCKEditor with Pwwang's Code Plugin http://osvdb.org/show/osvdb/80687
 WordPress Plugin forum: HTB22858, HTB22859, HTB22860
 WordPress Plugin Mingle Forum: HTB22848, HTB22849
 WordPress Plugin Question and Answer Forum: HTB22861
