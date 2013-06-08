@@ -17,8 +17,6 @@ class IssueReport(object):
         filename = 'pyfiscan-vulnerabilities-' + time.strftime("%Y-%m-%d") + '.csv'
         if os.path.islink(filename):
             sys.exit('CSV-file %s is a symlink. Exiting..' % filename)
-        if not os.path.isfile(filename):
-            sys.exit('CSV-file %s is a not a file. Exiting..' % filename)
         self.csvfile = open(filename, "a")
         os.chmod(filename, 0600)
         self.writer = csv.writer(self.csvfile, delimiter='|', quotechar='|')
