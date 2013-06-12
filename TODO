@@ -1,4 +1,5 @@
 Tasks:
+- File mailer.py should contain found version
 - Drupal: false-negative with 6.22
 - Finish zenphoto fingerprint. zp-core/version.php:define('ZENPHOTO_VERSION', '1.4.3.3');
 - Roundcube: Version 0.8-beta not yet detected
@@ -21,7 +22,7 @@ joomla,smf
 - Gallery version string not detected 1.5.10.dfsg-debian1
 - mailer.py should contain templates for different languages
 
-Data in YAML-files could include following: CVSS2, OSVDB, Secunia,
+Data in YAML-files could include following: CWE, CVSS2, OSVDB, Secunia,
 Publication date, Fixed date, CPE, ISS X-Force ID, SecurityTracker Alert ID,
 Vendor URL
 
@@ -31,7 +32,6 @@ http://docs.joomla.org/Vulnerable_Extensions_List
 http://ceriksen.com/category/advisories/
 
 ---
-
 Please note that this list has been generated manually and usually in very short
 time per line. Verify every information and detail before creating fingerprints
 or asking CVEs. Contact project developers in case you need more information.
@@ -49,7 +49,6 @@ tinyguestbook CVE-2011-5199
 tinyguestbook CVE-2011-5201
 Kajian Website CMS: CVE-2011-5111
 AdaptCMS CVE-2011-5108
-CVE-2012-4256: jNews for Joomla!
 Squiz CMS: NGS00330
 WordPress Vitamin Plugin Bugtraq ID:     54856
 WordPress Artiss Code Embed Plugin Bugtraq ID:   54347
