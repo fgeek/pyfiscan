@@ -58,7 +58,6 @@ WordPress WP Effective Lead Management Plugin Bugtraq ID:  54807
 WordPress Featured Post with Thumbnail Bugtraq ID:   54808
 WordPress WP-Predict Plugin Bugtraq ID:  54370
 WordPress Sendit Newsletter Bugtraq ID:  54364
-WordPress Sendit Newsletter Bugtraq ID:  54364
 e107 jbShop: CVE-2011-5186
 CVE-2012-1641
 CVE-2012-1650
@@ -72,7 +71,6 @@ Wordpress Krea3AllMedias http://cxsecurity.com/ascii/WLB-2012090131
 http://www.securityfocus.com/bid/48348
 WordPress WP SimpleMail Plugin BugtraqID:54905
 Wordpress ThreeWP Email Reflector Plugin BugtraqID:54903
-WrdPress WP-Predict Plugin BugtraqID:54370
 CVE-2012-3477 NeoInvoice Blind SQL
 http://cxsecurity.com/issue/WLB-2012080016
 http://cxsecurity.com/issue/WLB-2012080017
@@ -92,7 +90,6 @@ Joomla CVE-2012-2747 http://osvdb.org/83070 SA49605
 Joomla CVE-2012-2748 http://osvdb.org/83069 SA49605
 CMSMS: CVE-2011-4310 http://osvdb.org/77106
 inc/class_core.php:     public $version = "1.6.7";
-phpBB: http://www.securityfocus.com/bid/14086
 Joomla: http://osvdb.org/show/osvdb/80705
 Joomla: CVE-2010-4617
 e107 Plugins - Filemanager Arbitrary File Upload Vulnerability http://cxsecurity.com/issue/WLB-2012060242
