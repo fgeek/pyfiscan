@@ -80,27 +80,17 @@ http://www.securityfocus.com/bid/53942
 http://www.securityfocus.com/bid/53909
 http://www.securityfocus.com/bid/53910
 http://www.securityfocus.com/bid/53945
-osDate: http://cxsecurity.com/issue/WLB-2012070134 remote file inclusion
 phpMyVisites http://cxsecurity.com/issue/WLB-2012070022
 eXtplorer: CVE-2012-3362
-Joomla: CVE-2012-2901
-Joomla: CVE-2012-2902
-Joomla JCE: CVE-2012-2901, CVE-2012-2902
-Joomla CVE-2012-2747 http://osvdb.org/83070 SA49605
-Joomla CVE-2012-2748 http://osvdb.org/83069 SA49605
 CMSMS: CVE-2011-4310 http://osvdb.org/77106
 inc/class_core.php:     public $version = "1.6.7";
-Joomla: http://osvdb.org/show/osvdb/80705
-Joomla: CVE-2010-4617
 e107 Plugins - Filemanager Arbitrary File Upload Vulnerability http://cxsecurity.com/issue/WLB-2012060242
-http://cxsecurity.com/issue/WLB-2012060241 file upload
 http://cxsecurity.com/issue/WLB-2012060240
 http://cxsecurity.com/issue/WLB-2012060239
 http://cxsecurity.com/issue/WLB-2012060238
 http://cxsecurity.com/issue/WLB-2012060237
 http://cxsecurity.com/issue/WLB-2012060236
 http://cxsecurity.com/issue/WLB-2012060235
-Joomla ALFContact: "FOREGROUND SECURITY 2011-003"
 Zen Cart: CVE-2011-4547
 Zen Cart: CVE-2011-4567
 Zen Cart: CVE-2011-4403
@@ -108,7 +98,6 @@ Zen Cart: CVE-2012-2433 TWSL2012-004
 EnanoCMS: NS-11-002
 Prado Portal: CVE-2010-4958
 Without CVE: "Schurtz, Stefan" <S.Schurtz@infoserve.de> INFOSERVE-ADV2011-04.txt INFOSERVE-ADV2011-11.txt INFOSERVE-ADV2011-12.txt INFOSERVE-ADV2011-02.txt
-JCE Joomla Extension: Shell upload
 eGroupware: LFI CVE-2011-4948
 eGroupware: SQLi CVE-2011-4949
 eGroupware: Reflected XSS CVE-2011-4950

@@ -6,6 +6,7 @@
 # CVE-XXXX-XXXX com_jobprofile                              http://vel.joomla.org/vel-blog/58-jobprofile-1-0.html
 # CVE-XXXX-XXXX civicrm                                     http://vel.joomla.org/vel-blog/402-civicrm-4-3-3.html
 # CVE-XXXX-XXXX extplorer                                   http://vel.joomla.org/resolved/18-extplorer.html http://extplorer.net/news/12
+# CVE-XXXX-XXXX com_alfcontact
 # CVE-2012-XXXX com_quiz
 # CVE-2013-XXXX com_s5clanroster                            http://cxsecurity.com/issue/WLB-2013050101
 # CVE-2013-XXXX com_shohada                                 http://cxsecurity.com/issue/WLB-2013050100
@@ -19,6 +20,8 @@
 # CVE-2011-5099 com_ccnewsletter    http://osvdb.org/81534
 # CVE-2011-5112 com_alameda         http://osvdb.org/76736
 # CVE-2011-5113 com_techfolio       http://osvdb.org/83417
+# CVE-2012-2901 com_jce             http://osvdb.org/81979
+# CVE-2012-2902 com_jce             http://osvdb.org/81980
 # CVE-2012-4235 com_rsgallery2      http://osvdb.org/84681
 # CVE-2012-4256 com_jnews           http://osvdb.org/81572
 # CVE-2012-5101 com_jepoll          http://osvdb.org/78094
