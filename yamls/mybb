@@ -1,3 +1,5 @@
+# URL: http://www.mybb.com/downloads
+# Version: Upload/inc/class_core.php:   public $version = "1.6.10";
 # CVE-2010-4522         http://osvdb.org/69979 http://osvdb.org/69980
 # CVE-2010-4624         http://osvdb.org/70278 http://blog.mybb.com/2010/04/13/mybb-1-4-12-released-security-maintenance-update/
 # CVE-2010-4625         http://osvdb.org/70277 http://blog.mybb.com/2010/04/13/mybb-1-4-12-released-security-maintenance-update/
@@ -15,3 +17,12 @@
 # CVE-2012-2327         http://blog.mybb.com/2012/04/01/mybb-1-6-7-update-1-8-development/
 # CVE-2012-5908 N/A     http://osvdb.org/80633
 # CVE-2012-5909 N/A     http://osvdb.org/80634
+# CVE-2013-XXXX N/A     http://osvdb.org/88911
+# CVE-2013-XXXX N/A     http://osvdb.org/88912
+# CVE-2013-XXXX 1.6.10  http://osvdb.org/92683
+# CVE-2013-XXXX 1.6.10  http://osvdb.org/92684
+# CVE-2013-XXXX N/A     http://osvdb.org/92685
+# CVE-2013-XXXX 1.6.10  http://osvdb.org/92686
+# CVE-2013-XXXX 1.6.10  http://osvdb.org/92687
+# CVE-2013-XXXX 1.6.10  http://osvdb.org/92688
+# CVE-2013-XXXX 1.6.10  http://osvdb.org/92689

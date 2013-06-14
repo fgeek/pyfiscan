@@ -58,22 +58,24 @@
 # CVE-2012-5327 mingle-forum
 # CVE-2012-5328 mingle-forum
 # CVE-2012-1125 kish-guest-posting (!)
-# CVE-2012-1834 cms-tree-page-view          http://osvdb.org/80573
-# CVE-2012-2759 login-with-ajax     3.0.4.1
+# CVE-2012-1834 cms-tree-page-view                  http://osvdb.org/80573
+# CVE-2012-2759 login-with-ajax             3.0.4.1
 # CVE-2012-2912 leaguemanager
 # CVE-2012-2913 leaflet
 # CVE-2012-2917 share-and-follow
-# CVE-2012-2920 user-photo                  http://osvdb.org/81806
+# CVE-2012-2920 user-photo                          http://osvdb.org/81806
 # CVE-2012-3588 plugin-newsletter
-# CVE-2012-4226 quick-post-widget           http://osvdb.org/83641
-# CVE-2012-4264 better-wp-security  3.2.5   http://osvdb.org/84738 (!)
-# CVE-2012-4268 bulletproof-security    .47.1   http://osvdb.org/84736 (!)
+# CVE-2012-4226 quick-post-widget                   http://osvdb.org/83641
+# CVE-2012-4264 better-wp-security          3.2.5   http://osvdb.org/84738 (!)
+# CVE-2012-4268 bulletproof-security        .47.1   http://osvdb.org/84736 (!)
+# CVE-2012-4271 bad-behavior
 # CVE-2012-4272 2-click-socialmedia-buttons 0.35    http://osvdb.org/81906
 # CVE-2012-4273 2-click-socialmedia-buttons 0.35    http://osvdb.org/81907
-# CVE-2012-4283 login-with-ajax     3.0.4.1 http://osvdb.org/81712
-# CVE-2012-4768 download-monitor    3.3.5.9 http://osvdb.org/85319
+# CVE-2012-4283 login-with-ajax             3.0.4.1 http://osvdb.org/81712
+# CVE-2012-4327 wp-image-news-slider        3.3     http://osvdb.org/81314
+# CVE-2012-4768 download-monitor            3.3.5.9 http://osvdb.org/85319
 # CVE-2012-5229 slideshow-gallery-2
-# CVE-2012-5310 wp-e-commerce/      3.8.7.6 http://osvdb.org/78453
+# CVE-2012-5310 wp-e-commerce/              3.8.7.6 http://osvdb.org/78453
 # CVE-2012-5318 kish-guest-posting (incomplete fix for CVE-2012-1125) (!)
 # CVE-2012-5325 shortcode-redirect
 # CVE-2012-5346 wp-livephp                  http://osvdb.org/86240

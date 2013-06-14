@@ -3,6 +3,7 @@
 # SA-CONTRIB-2010-098   CVE-2010-5276   https://drupal.org/node/927016
 # SA-CONTRIB-2010-099   CVE-2010-5277   http://drupal.org/node/933960
 # SA-CONTRIB-2011-054   CVE-2011-XXXX   http://drupal.org/node/1337006  http://osvdb.org/77005
+# SA-CONTRIB-2011-058   CVE-2012-1641   https://drupal.org/node/1357384
 # SA-CONTRIB-2012-001   CVE-2012-1623	https://drupal.org/node/1394172	
 # SA-CONTRIB-2012-002   CVE-2012-1624	https://drupal.org/node/1394220	
 # SA-CONTRIB-2012-003   CVE-2012-1625	https://drupal.org/node/1394428 http://osvdb.org/78182
@@ -132,4 +133,4 @@
 # SA-CONTRIB-2013-049	CVE-2013-2123   http://drupal.org/node/2007122
 # SA-CONTRIB-2013-050	CVE-2013-2129   https://drupal.org/node/2007460
 # SA-CONTRIB-2013-051   CVE-2013-2158   https://drupal.org/node/2012982
-# SA-CONTRIB-2013-052                   https://drupal.org/node/2017933 Display Suite
+# SA-CONTRIB-2013-052   CVE-2013-2177   https://drupal.org/node/2017933 Display Suite

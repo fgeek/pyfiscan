@@ -1,4 +1,3 @@
-Tasks:
 - File mailer.py should contain found version
 - Drupal: false-negative with 6.22
 - Finish zenphoto fingerprint. zp-core/version.php:define('ZENPHOTO_VERSION', '1.4.3.3');
@@ -9,6 +8,8 @@ Tasks:
 - MoinMoin: Fingerprint list is not full. Check OSVDB.
 - There should be argument for looking specific programs in for example: -s
 joomla,smf
+    - Patch fails with "-i Joomla"
+    - Don't do argument handling in database.py. Move to pyfiscan.py
 - Add support to continue interrupted session (Tuomo Komulainen requested).
   Could be implemented using http://docs.python.org/library/atexit.html with
   knowledge of current working directory and queues
@@ -59,14 +60,6 @@ WordPress Featured Post with Thumbnail Bugtraq ID:   54808
 WordPress WP-Predict Plugin Bugtraq ID:  54370
 WordPress Sendit Newsletter Bugtraq ID:  54364
 e107 jbShop: CVE-2011-5186
-CVE-2012-1641
-CVE-2012-1650
-CVE-2012-1651
-CVE-2012-1652
-CVE-2012-1653
-CVE-2011-5188
-CVE-2012-4271 WordPress Bad Behavior plugin
-CVE-2012-4327 WordPress plugin
 Wordpress Krea3AllMedias http://cxsecurity.com/ascii/WLB-2012090131
 http://www.securityfocus.com/bid/48348
 WordPress WP SimpleMail Plugin BugtraqID:54905
