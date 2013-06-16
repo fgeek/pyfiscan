@@ -1,7 +1,16 @@
 # URL: http://www.tufat.com/
 # public_html/osdate_init.php:define( 'VERSION', '2.5.4' );
+# Product is discontinued.
 #
 # CVE-2006-3766         http://osvdb.org/27382
 # CVE-2006-3767 1.1.8   http://osvdb.org/27381 http://secunia.com/advisories/21103/
 # CVE-2008-0230         http://osvdb.org/40129 http://secunia.com/advisories/28420/
 # CVE-2010-1055         http://osvdb.org/63005 http://osvdb.org/63006 http://secunia.com/advisories/38943/
+osDate:
+  1:
+      location: ['/osdate_init.php']
+      secure_version: '2.5.5'
+      regexp: ['define.*?VERSION.*?(?P<version>[0-9.]+)']
+      cve: 'Discontinued product. Please remove or find alternative sofware. http://osvdb.org/63005 http://osvdb.org/63006'
+      fingerprint: detect_general
+      post_processing: ['php5.fcgi']

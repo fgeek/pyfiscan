@@ -40,6 +40,7 @@ Detects following software
 * WikkaWiki: CVE-2011-4448, CVE-2011-4449, CVE-2011-4450, CVE-2011-4451, CVE-2011-4452 OSVDB 77390-77394 [WikkaWiki security advisory](http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/) 
 * WordPress: CVE-2013-0235, CVE-2013-0236, CVE-2013-0237 [WordPress News](https://wordpress.org/news/2013/01/wordpress-3-5-1/)
 * e107: CVE-2012-6434 [OSVDB 88908](http://osvdb.org/88908)
+* osDate: http://osvdb.org/63005 http://osvdb.org/63006
 * phpAlbum: CVE-2011-4806, CVE-2011-4807, OSVDB:74980, OSVDB 21410
 * phpBB3: CVE-2011-0544 SA42343
 
