@@ -31,6 +31,7 @@
 # CVE-2012-XXXX wppageflip                  http://osvdb.org/83667
 # CVE-2012-XXXX wp-e-commerce       3.8.9.1 http://osvdb.org/88231
 # CVE-2012-XXXX wp-e-commerce       3.8.9.1 http://osvdb.org/88232
+# CVE-2013-XXXX crayon-syntax-highlighter   1.13    http://osvdb.org/86256 (!)
 # CVE-2013-XXXX advanced-xml-reader         http://osvdb.org/92904
 # CVE-2013—XXXX proplayer                   http://cxsecurity.com/issue/WLB-2013050162
 # CVE-2012-XXXX schreikasten                http://osvdb.org/83152
@@ -115,7 +116,7 @@
 # CVE-2013-2010 w3-total-cache              http://osvdb.org/92652
 # CVE-2013-2011 wp-super-cache              http://osvdb.org/92743 (incomplete fix for CVE-2013-2009)
 # CVE-2013-2108 wp-cleanfix
-# CVE-2013-2109 wp-cleanfix
+# CVE-2013-2109 wp-cleanfix                 http://osvdb.org/93435
 # CVE-2013-2501 terillion-reviews           http://osvdb.org/91123
 # CVE-2013-2640 wp-mailup                   http://osvdb.org/91274
 # CVE-2013-2696

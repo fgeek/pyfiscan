@@ -9,7 +9,6 @@
 - There should be argument for looking specific programs in for example: -s
 joomla,smf
     - Patch fails with "-i Joomla"
-    - Don't do argument handling in database.py. Move to pyfiscan.py
 - Add support to continue interrupted session (Tuomo Komulainen requested).
   Could be implemented using http://docs.python.org/library/atexit.html with
   knowledge of current working directory and queues
