@@ -14,6 +14,7 @@ try:
     import getpass
     import smtplib
     import sys
+    import traceback
     from email.mime.text import MIMEText
 except ImportError, e:
     sys.exit('Import error: %s' % e)
@@ -33,13 +34,15 @@ if version_minor < int(6):
     sys.exit('Python minor version needs to be seven or higher.\nSMTP_SSL only works with Python 2.7')
 
 
-def send_email(user, appname, version_file, secure_version, cve):
+def send_email(user, appname, version_file, file_version, secure_version, cve):
     """This will handle email sending to SMTP-server."""
-    msg = MIMEText('Hei, olemme huomanneet, että käytössäsi on ' + appname + '-sovellus, jonka versio on haavoittuvainen. Voit korjata tilanteen päivittämällä asennuksen vähintään versioon ' + secure_version + '. Apua sovelluksen päivittämiseen saat vastaamalla tähän sähköpostiin.\n\nTietoturva-aukollinen sovellus löytyy hakemistostasi: ' + version_file + '\n\nLisätietoja: ' + cve + '\n\nTähän sähköpostiin ei tarvitse vastata mikäli sinulla ei ole ongelmia päivityksessä.\n\nTerveisin,\n   Henri Salo', _charset='utf-8')
+    msg = MIMEText('Hei, olemme huomanneet, että käytössäsi on ' + appname + '-sovellus, jonka versio ' + file_version + ' on haavoittuvainen. Voit korjata tilanteen päivittämällä asennuksen vähintään versioon ' + secure_version + '. Apua sovelluksen päivittämiseen saat vastaamalla tähän sähköpostiin.\n\nTietoturva-aukollinen sovellus löytyy hakemistostasi: ' + version_file + '\n\nLisätietoja: ' + cve + '\n\nTähän sähköpostiin ei tarvitse vastata mikäli sinulla ei ole ongelmia päivityksessä.\n\nTerveisin,\n   Henri Salo', _charset='utf-8')
     to_address = user
     try:
         s = smtplib.SMTP_SSL(smtp_server, smtp_port)  # SMTP_SSL only works with Python 2.7
-        s.login(getpass.getuser(), getpass.getpass())
+        username = getpass.getuser()
+        password = getpass.getpass()
+        s.login(username, password)
         s.ehlo_or_helo_if_needed()
         s.set_debuglevel(1)
         msg['Subject'] = 'Tietoturva-aukollinen sovellus löydetty sivuiltasi'
@@ -48,8 +51,8 @@ def send_email(user, appname, version_file, secure_version, cve):
         print msg
         s.sendmail(from_address, [to_address], msg.as_string())
         s.quit()
-    except Exception, e:
-        sys.exit('Exception: %s' % e)
+    except Exception:
+        sys.exit(traceback.format_exc())
 
 
 def read_csv(csv_file):
@@ -67,8 +70,7 @@ def read_csv(csv_file):
         counter = counter + 1
         if user and timestamp and appname and version_file and file_version and  secure_version and cve:
             print('[*] Processing %i line..' % counter)
-            send_email(user, appname, version_file, secure_version, cve)
-
+            send_email(user, appname, version_file, file_version, secure_version, cve)
     print('\n[*] Processed %i notifications. Happy customer is a happy customer!' % counter)
 
 

@@ -1,4 +1,3 @@
-- File mailer.py should contain found version
 - Drupal: false-negative with 6.22
 - Finish zenphoto fingerprint. zp-core/version.php:define('ZENPHOTO_VERSION', '1.4.3.3');
 - Roundcube: Version 0.8-beta not yet detected
