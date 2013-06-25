@@ -29,6 +29,7 @@ Detects following software
 * Gallery: CVE-2013-2138 [security advisory](http://galleryproject.org/gallery_3_0_8)
 * Joomla 1.5: [CVE-2012-1598](http://developer.joomla.org/security/news/396-20120305-core-password-change advisory), [CVE-2012-1599](ttp://developer.joomla.org/security/news/397-20120306-core-information-disclosure advisory)
 * Joomla 1.7: CVE-2012-0819, CVE-2012-0820, CVE-2012-0821, CVE-2012-0822
+* Magnolia: CVE-2013-4621
 * MantisBT: CVE-2013-1883
 * MediaWiki: CVE-2013-2114 [OSVDB 93629](http://osvdb.org/93629)
 * MoinMoin: CVE-2011-1058 [OSVDB 71025](http://osvdb.org/71025)
