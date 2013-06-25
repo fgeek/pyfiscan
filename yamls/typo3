@@ -13,7 +13,7 @@
 # CVE-2011-4629, CVE-2011-4630, CVE-2011-4631, CVE-2011-4632, CVE-2011-4900
 # CVE-2011-4901, CVE-2011-4902, CVE-2011-4903, CVE-2011-4904, CVE-2012-1605
 # CVE-2012-1606, CVE-2012-1607, CVE-2012-1608, CVE-2012-5890, CVE-2012-5889
-# CVE-2012-5888
+# CVE-2012-5888, CVE-2013-4634
 # TYPO3-CORE-SA-2010-022
 # TYPO3-CORE-SA-2011-001    CVE-2011-4626
 # TYPO3-CORE-SA-2011-002    CVE-2011-3583
@@ -31,3 +31,6 @@
 # TYPO3-CORE-SA-2013-001    CVE-2013-1842   http://osvdb.org/90925  http://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2013-001/
 # TYPO3-CORE-SA-2013-001    CVE-2013-1843   http://osvdb.org/90924  http://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2013-001/
 # http://typo3.org/news/article/typo3-cms-4525-4618-4710-and-604-released/
+# CVE-2013-4680 TYPO3-EXT-SA-2013-007 http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2013-007/
+# CVE-2013-4681 TYPO3-EXT-SA-2013-002 http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2013-002/
+# CVE-2013-4682 TYPO3-EXT-SA-2013-010 http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2013-009-1/ http://secunia.com/advisories/53441

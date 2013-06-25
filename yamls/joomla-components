@@ -32,3 +32,7 @@
 # CVE-XXXX-XXXX com_jobprofile      http://osvdb.org/77652
 # CVE-XXXX-XXXX com_team            http://osvdb.org/52139
 # CVE-XXXX-XXXX flashchart                                  http://vel.joomla.org/resolved/403-flashchart-content-plugin-1-2-1.html
+# CVE-XXXX-XXXX dshop                                       http://docs.joomla.org/Vulnerable_Extensions_List#Dshop
+# CVE-XXXX-XXXX civicrm                                     http://vel.joomla.org/resolved/402-civicrm-4-3-3.html http://civicrm.org/blogs/colemanw/security-release-civicrm-434
+# CVE-XXXX-XXXX com_advert                                  http://vel.joomla.org/vel-blog/51-com_advert.html http://docs.joomla.org/Vulnerable_Extensions_List#com_advert
+# CVE-XXXX-XXXX unite-horizontal-carousel                   http://vel.joomla.org/resolved/479-unite-horizontal-carousel.html

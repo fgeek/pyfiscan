@@ -17,6 +17,7 @@
   after that execute any PHP he/she likes
 - Gallery version string not detected 1.5.10.dfsg-debian1
 - mailer.py should contain templates for different languages
+- Check if there is places where we can use try: with file as foo
 
 Data in YAML-files could include following: CWE, CVSS2, OSVDB, Secunia,
 Publication date, Fixed date, CPE, ISS X-Force ID, SecurityTracker Alert ID,
@@ -46,24 +47,12 @@ tinyguestbook CVE-2011-5201
 Kajian Website CMS: CVE-2011-5111
 AdaptCMS CVE-2011-5108
 Squiz CMS: NGS00330
-WordPress Vitamin Plugin Bugtraq ID:     54856
-WordPress Artiss Code Embed Plugin Bugtraq ID:   54347
-WordPress Paid Memberships Pro Plugin Bugtraq ID:  54443
-WordPress PHPFreeChat Bugtraq ID: 54332
-WordPress WP Effective Lead Management Plugin Bugtraq ID:  54807
-WordPress Featured Post with Thumbnail Bugtraq ID:   54808
-WordPress WP-Predict Plugin Bugtraq ID:  54370
-WordPress Sendit Newsletter Bugtraq ID:  54364
 e107 jbShop: CVE-2011-5186
 Wordpress Krea3AllMedias http://cxsecurity.com/ascii/WLB-2012090131
 http://www.securityfocus.com/bid/48348
-WordPress WP SimpleMail Plugin BugtraqID:54905
-Wordpress ThreeWP Email Reflector Plugin BugtraqID:54903
 CVE-2012-3477 NeoInvoice Blind SQL
 http://cxsecurity.com/issue/WLB-2012080016
 http://cxsecurity.com/issue/WLB-2012080017
-WordPress front-end-upload (affected 0.5.44. fixed in 0.5.4.6) http://cxsecurity.com/issue/WLB-2012070172
-CVE-2012-3434 WordPress Count Per Day (affected 3.1.1. fixed in 3.2) SSCHADV2012-015 http://osvdb.org/83491
 http://www.securityfocus.com/bid/53942
 http://www.securityfocus.com/bid/53909
 http://www.securityfocus.com/bid/53910
@@ -206,7 +195,6 @@ LotusCMS: HTB22883, HTB22884 (fixed in: 3.0.5), HTB22885, HTB22886, HTB22887, HT
 FluxBB: CVE-2011-3621 http://fluxbb.org/forums/viewtopic.php?id=5751 fixed in 1.4.7
 Pligg CMS: CVE-2009-4786, CVE-2009-4787, CVE-2009-4788, CVE-2010-2577, CVE-2010-3013, CVE-2011-3986, Pligg CMS: CVE-2011-5022, CVE-2011-5023, CVE-2012-2435, Pligg CMS: CVE-2012-2436, CVE-2012-2937, CVE-2012-2936, CVE-2012-2935, http://osvdb.org/82050
 ClearSilver: CVE-2011-4357
-Timthumb: CVE-2011-4106 (prio) http://osvdb.org/show/osvdb/74325 http://markmaunder.com/2011/08/01/zero-day-vulnerability-in-many-wordpress-themes/
 JAMWiki: 2010-5054 0.8.4 osvdb/63564
 Meditate: osvdb/77491 SSCHADV2011-039
 OBM: HTB23060
@@ -216,54 +204,6 @@ WebJaxe <http://media4.obspm.fr/outils/webjaxe/en/>: HTB22927
 Winn Guestbook <http://code.google.com/p/winn-guestbook/>: CVE-2011-5026
 WebsiteBaker <http://www.websitebaker2.org/en/home.php>: HTB22928, HTB22929, CVE-2011-2934 http://osvdb.org/76618, CVE-2011-2933 http://osvdb.org/76619
 ribiq CMS <http://tribiq.com/>: CVE-2011-2727/HTB22857
-WordPress plugin RBX Gallery: http://cxsecurity.com/issue/WLB-2012060101
-WordPress Plugin Zingiri Web Shop http://osvdb.org/show/osvdb/77091 http://osvdb.org/show/osvdb/75619 http://osvdb.org/show/osvdb/75620
-WordPress Plugin forum: HTB22858, HTB22859, HTB22860
-WordPress Plugin Mingle Forum: HTB22848, HTB22849
-WordPress Plugin Question and Answer Forum: HTB22861
-Plugin Vote It Up: HTB22838
-Plugin Z-Vote: HTB22839
-Plugin Starbox Voting: HTB22840
-Plugin Comment Rating: HTB22842
-Plugin GD Star Rating: HTB22843, HTB22844
-Plugin Comment Rating: HTB22841
-Plugin cdnvote: HTB22845
-Plugin Universal Post Manager: HTB22939 (SQLi)
-Plugin WP-StarsRateBox: HTB22934 (SQLi), HTB22935
-Plugin WP Symposium: CVE-2011-3841, CVE-2011-5051
-Plugin Users: CVE-2011-4669
-Plugin GRAND Flash Album Gallery: HTB22870, HTB22871
-Plugin 1 Flash Gallery: 2011-4624, HTB22869, HTB22868
-Plugin Adminize: http://osvdb.org/77472
-Plugin NextGEN Gallery: HTB22862
-Universal Post Manager: HTB22938
-WP Photo Album: HTB22961
-Daily Maui Photo Widget: HTB22960
-WP-Ajax-Recent-Posts: HTB22951
-Plugin bSuite http://osvdb.org/74046 NO FIX!
-Plugin Lazyest Gallery: HTB22875
-Plugin Uploadify Integration XSS waraxe-2012-SA#085 http://osvdb.org/81093,81094,81095
-Flexible Custom Post Type http://osvdb.org/77487 fixed in 0.1.7
-Inline Gallery: HTB22873 (removed from WordPress plugins until the fix is done)
-PhotoSmash: HTB22867 (fixed in 1.0.5)
-Related Posts: CVE-2011-0760 fixed in 1.1 http://wordpress.org/support/topic/plugin-wp-related-posts-wordpress-related-posts-plugin-multiple-cross-site-scripting-vulnerabilities
-  Notified WordPress admins
-  http://wordpress.org/support/topic/plugin-wp-related-posts-wordpress-related-posts-plugin-multiple-cross-site-scripting-vulnerabilities
-Fast Secure Contact Form: HTB23036 (fixed in 3.0.3.2)
-Plugin WP-Stats-Dashboard: HTB23035
-Plugin Pretty Link: HTB23049
-Plugin Integrator: http://osvdb.org/80628
-Plugin Buddypress SQL injection http://osvdb.org/80763
-Plugin All-in-One Event Calendar CVE-2012-1835
-Plugin flexible-custom-post-type 0.1.11
-WordPress Schreikasten http://cxsecurity.com/issue/WLB-2012060267
-WordPress plugin Omni Secure Files http://osvdb.org/82790 # No CVE
-WordPress plugin editormonkey http:// seclists.org/bugtraq/2012/Jul/27 # No CVE
-WordPress plugin Lim4wp http://cxsecurity.com/issue/WLB-2012060224
-WordPress plugin Wp-ImageZoom http://cxsecurity.com/issue/WLB-2012060223
-WordPress LB Mixed Slideshow http://cxsecurity.com/issue/WLB-2012060222
-WordPress http://cxsecurity.com/issue/WLB-2012060221
-WordPress http://cxsecurity.com/issue/WLB-2012060220
 CakePHP CVE-2012-4399 http://osvdb.org/84042
 Coppermine: HTB22836
 RunCMS <http://www.runcms.org/>: HTB22820, HTB22821, HTB22822
@@ -345,12 +285,6 @@ LittleCMS / lcms / liblcms: CVE-2009-0793, CVE-2009-0581, CVE-2009-0723, CVE-200
 TomatoCMS: CVE-2010-1995, CVE-2010-1996, CVE-2010-1514, CVE-2010-2281, CVE-2010-2282, CVE-2010-1515
 ParsCMS: CVE-2010-1054
 jaxCMS: CVE-2010-1043
-WordPress plugin eShop: http://wordpress.org/extend/plugins/eshop/changelog/
-WordPress plugin Redirection: http://wordpress.org/extend/plugins/redirection/changelog/
-WordPress plugin Share and Follow: CVE-2012-2917
-WordPress plugin Sabre: CVE-2012-2916
-WordPress plugin Leaflet: CVE-2012-2913
-WordPress plugin LeagueManager: CVE-2012-2912
 Netpet CMS: CVE-2009-4723
 SphereCMS: CVE-2010-1078
 Sniggabo CMS: CVE-2010-1072

@@ -1,48 +1,21 @@
 # Won't implement: CVE-2012-5177, CVE-2011-5182
-# CVE-XXXX-XXXX wp-forum http://cxsecurity.com/issue/WLB-2013020035
-# CVE-XXXX-XXXX solvemedia http://osvdb.org/89585
-# CVE-XXXX-XXXX simple-forum http://cxsecurity.com/issue/WLB-2012080265
-# CVE-XXXX-XXXX wp-video-commando http://cxsecurity.com/issue/WLB-2013030207
-# CVE-XXXX-XXXX mathjax-latex http://cxsecurity.com/issue/WLB-2013030208
-# CVE-XXXX-XXXX devformatter http://osvdb.org/89474 http://osvdb.org/89475
-# CVE-XXXX-XXXX deans-fckeditor-with-pwwangs-code-plugin-for-wordpress  http://osvdb.org/80687 (!)
-# CVE-2013-XXXX wp-banners-lite http://osvdb.org/91634
-# CVE-XXXX-XXXX foxypress http://www.waraxe.us/advisory-95.html
-# CVE-2011-XXXX uploadify http://osvdb.org/73444 (!)
-# CVE-2011-XXXX uploader http://osvdb.org/70648 http://osvdb.org/70649 (!)
-# CVE-2012-XXXX crayon-syntax-highlighter http://ceriksen.com/2012/10/15/wordpress-crayon-syntax-highlighter-remote-file
-# CVE-2013-XXXX mp3-jplayer Jplayer.swf XSS
-# CVE-2013-XXXX haiku-minimalist-audio-player Jplayer.swf XSS
-# CVE-2013-XXXX background-music Jplayer.swf XSS
-# CVE-2013-XXXX jammer Jplayer.swf XSS
-# CVE-2013-XXXX wp-jplayer Jplayer.swf XSS
-# CVE-2013-XXXX securimage-wp http://cxsecurity.com/issue/WLB-2013050098
-# CVE-2011-XXXX socialgrid                  http://osvdb.org/71966
-# CVE-2012-XXXX simple-slider               http://osvdb.org/87806
-# CVE-2012-XXXX tdo-mini-forms              http://cxsecurity.com/issue/WLB-2012090037
-# CVE-2012-XXXX plg_novana                  http://cxsecurity.com/issue/WLB-2012110162
-# CVE-2011-XXXX wp-e-commerce               http://osvdb.org/74295
-# CVE-2012-XXXX wp-e-commerce   3.8.9.1     http://osvdb.org/88231
-# CVE-2012-XXXX wp-e-commerce   3.8.9.1     http://osvdb.org/88232
-# CVE-2012-XXXX thinkun-remind              http://cxsecurity.com/issue/WLB-2012060100
-# CVE-2012-XXXX email-newsletter            http://osvdb.org/82812
-# CVE-2012-XXXX email-newsletter    9.0     http://osvdb.org/83541
-# CVE-2012-XXXX wp-symposium                http://osvdb.org/83696
-# CVE-2012-XXXX wppageflip                  http://osvdb.org/83667
-# CVE-2012-XXXX wp-e-commerce       3.8.9.1 http://osvdb.org/88231
-# CVE-2012-XXXX wp-e-commerce       3.8.9.1 http://osvdb.org/88232
-# CVE-2013-XXXX crayon-syntax-highlighter   1.13    http://osvdb.org/86256 (!)
-# CVE-2013-XXXX advanced-xml-reader         http://osvdb.org/92904
-# CVE-2013—XXXX proplayer                   http://cxsecurity.com/issue/WLB-2013050162
-# CVE-2012-XXXX schreikasten                http://osvdb.org/83152
-# CVE-2013-XXXX user-role-editor            http://www.henryhoggard.co.uk/security/wordpress-user-role-editor/
 # CVE-2011-5254 connections 
 #   Looks like a false-positive. No information received even I asked from Mitre
 #   and plugin developers. Don't add before there is a working PoC.
-# CVE-2009-4168 vkontakte-api
 # CVE-2009-4168 snazzy-archives
+# CVE-2009-4168 vkontakte-api
+# CVE-2011-0760 wp-related-posts 1.1                http://osvdb.org/74892
 # CVE-2011-1047 forum-server                http://osvdb.org/70993 http://osvdb.org/70994
+# CVE-2011-3841 wp-symposium    11.12.08    http://osvdb.org/77634
+# CVE-2011-3981 allwebmenus-wordpress-menu-plugin   1.1.4   http://osvdb.org/75615 http://secunia.com/advisories/46068/ !
+# CVE-2011-4106                                     http://osvdb.org/74325 http://markmaunder.com/2011/08/01/zero-day-vulnerability-in-many-wordpress-themes/ !
+# CVE-2011-4562 redirection 2.2.10                  http://osvdb.org/76092 SA46310
+# CVE-2011-4669 wordpress-users 1.4         http://osvdb.org/76710 http://secunia.com/advisories/46442/
 # CVE-2011-4803 wptouch                     http://osvdb.org/77752
+# CVE-2011-4926 adminimize      1.7.22      http://osvdb.org/7742
+# CVE-2011-4955 bsuite                      http://osvdb.org/74046
+# CVE-2011-5051 wp-symposium    11.12.24    http://osvdb.org/78041 http://osvdb.org/78042 !
+# CVE-2011-5106 flexible-custom-post-type           http://osvdb.org/77487
 # CVE-2011-5106 flexible-custom-post-type   http://osvdb.org/77487
 # CVE-2011-5107 alert-before-your-post      http://osvdb.org/77475
 # CVE-2011-5180 zooeffect
@@ -56,19 +29,39 @@
 # CVE-2011-5224 wordpress-sentinel
 # CVE-2011-5225 wordpress-sentinel
 # CVE-2011-5226 wordpress-sentinel
-# CVE-2012-5327 mingle-forum
-# CVE-2012-5328 mingle-forum
+# CVE-2011-XXXX flexible-custom-post-type   0.1.7   http://osvdb.org/77487
+# CVE-2011-XXXX mailz   1.3.4   http://osvdb.org/75617 http://secunia.com/advisories/46040/ !
+# CVE-2011-XXXX redirection 2.2.10                  http://osvdb.org/77447 SA46310
+# CVE-2011-XXXX redirection 2.2.9                   http://osvdb.org/74783 SA45782
+# CVE-2011-XXXX socialgrid                  http://osvdb.org/71966
+# CVE-2011-XXXX thecartpress    1.1.2   http://osvdb.org/75616 http://secunia.com/advisories/46067/ !
+# CVE-2011-XXXX uploader http://osvdb.org/70648 http://osvdb.org/70649 !
+# CVE-2011-XXXX uploadify http://osvdb.org/73444 !
+# CVE-2011-XXXX wp-e-commerce               http://osvdb.org/74295
+# CVE-2011-XXXX zingiri-web-shop    2.2.1   http://osvdb.org/75619 !
+# CVE-2011-XXXX zingiri-web-shop    2.2.1   http://osvdb.org/75620 !
+# CVE-2011-XXXX zingiri-web-shop    2.2.4   http://osvdb.org/77091 http://secunia.com/advisories/46835/
 # CVE-2012-1125 kish-guest-posting (!)
 # CVE-2012-1834 cms-tree-page-view                  http://osvdb.org/80573
+# CVE-2012-1835 all-in-one-event-calendar   1.8.2   http://osvdb.org/81068 http://osvdb.org/81069 http://osvdb.org/81070 http://osvdb.org/81071
+# CVE-2012-2109 buddypress                  1.5.5   http://osvdb.org/80763
+# CVE-2012-2572 threewp-email-reflector 1.16        http://osvdb.org/85134
+# CVE-2012-2579 wp-simplemail                       http://osvdb.org/84534
 # CVE-2012-2759 login-with-ajax             3.0.4.1
+# CVE-2012-2912 leaflet-maps-marker                 http://osvdb.org/82266
 # CVE-2012-2912 leaguemanager
 # CVE-2012-2913 leaflet
+# CVE-2012-2913 leaflet-maps-marker                 http://osvdb.org/82265
+# CVE-2012-2913 leaflet-maps-marker                 http://osvdb.org/82301
+# CVE-2012-2916 sabre   1.2.2   http://osvdb.org/82269
 # CVE-2012-2917 share-and-follow
+# CVE-2012-2917 share-and-follow                    http://osvdb.org/82270
 # CVE-2012-2920 user-photo                          http://osvdb.org/81806
+# CVE-2012-3434 count-per-day               3.2     http://osvdb.org/83491
 # CVE-2012-3588 plugin-newsletter
 # CVE-2012-4226 quick-post-widget                   http://osvdb.org/83641
-# CVE-2012-4264 better-wp-security          3.2.5   http://osvdb.org/84738 (!)
-# CVE-2012-4268 bulletproof-security        .47.1   http://osvdb.org/84736 (!)
+# CVE-2012-4264 better-wp-security          3.2.5   http://osvdb.org/84738 !
+# CVE-2012-4268 bulletproof-security        .47.1   http://osvdb.org/84736 !
 # CVE-2012-4271 bad-behavior
 # CVE-2012-4272 2-click-socialmedia-buttons 0.35    http://osvdb.org/81906
 # CVE-2012-4273 2-click-socialmedia-buttons 0.35    http://osvdb.org/81907
@@ -77,8 +70,10 @@
 # CVE-2012-4768 download-monitor            3.3.5.9 http://osvdb.org/85319
 # CVE-2012-5229 slideshow-gallery-2
 # CVE-2012-5310 wp-e-commerce/              3.8.7.6 http://osvdb.org/78453
-# CVE-2012-5318 kish-guest-posting (incomplete fix for CVE-2012-1125) (!)
-# CVE-2012-5325 shortcode-redirect
+# CVE-2012-5318 kish-guest-posting (incomplete fix for CVE-2012-1125) !
+# CVE-2012-5325 shortcode-redirect                  http://osvdb.org/86230
+# CVE-2012-5327 mingle-forum
+# CVE-2012-5328 mingle-forum
 # CVE-2012-5346 wp-livephp                  http://osvdb.org/86240
 # CVE-2012-5349 pay-with-tweet              http://osvdb.org/78205
 # CVE-2012-5350 pay-with-tweet
@@ -96,7 +91,40 @@
 # CVE-2012-6511 organizer
 # CVE-2012-6512 organizer
 # CVE-2012-6527 my-calendar
+# CVE-2012-XXXX crayon-syntax-highlighter http://ceriksen.com/2012/10/15/wordpress-crayon-syntax-highlighter-remote-file
+# CVE-2012-XXXX deep-blue                           http://osvdb.org/83014 SA49611 !
+# CVE-2012-XXXX email-newsletter            http://osvdb.org/82812
+# CVE-2012-XXXX email-newsletter    9.0     http://osvdb.org/83541
+# CVE-2012-XXXX eshop   6.2.9                       http://osvdb.org/74464 SA45553 HTB23034
+# CVE-2012-XXXX lb-mixed-slideshow                  http://osvdb.org/83017 SA49610 !
+# CVE-2012-XXXX lim4wp                              http://osvdb.org/83016 SA49609 !
+# CVE-2012-XXXX omni-secure-files   N/A     http://osvdb.org/82790 possible fix in 0.1.14 !
+# CVE-2012-XXXX paid-memberships-pro    1.5 http://osvdb.org/83760
+# CVE-2012-XXXX plg_novana                  http://cxsecurity.com/issue/WLB-2012110162
+# CVE-2012-XXXX schreikasten                http://osvdb.org/83152
+# CVE-2012-XXXX sendit                              http://osvdb.org/83669
+# CVE-2012-XXXX simple-embed-code   2.0.2   http://osvdb.org/83686
+# CVE-2012-XXXX simple-slider               http://osvdb.org/87806
+# CVE-2012-XXXX tdo-mini-forms              http://cxsecurity.com/issue/WLB-2012090037
+# CVE-2012-XXXX thinkun-remind              http://cxsecurity.com/issue/WLB-2012060100
+# CVE-2012-XXXX uploadify-integration               http://osvdb.org/81093 http://www.waraxe.us/advisory-85.html
+# CVE-2012-XXXX uploadify-integration               http://osvdb.org/81094
+# CVE-2012-XXXX uploadify-integration               http://osvdb.org/81095
+# CVE-2012-XXXX vitamin 1.1 http://osvdb.org/84463 http://osvdb.org/84464
+# CVE-2012-XXXX wp-e-commerce       3.8.9.1 http://osvdb.org/88231
+# CVE-2012-XXXX wp-e-commerce       3.8.9.1 http://osvdb.org/88232
+# CVE-2012-XXXX wp-e-commerce   3.8.9.1     http://osvdb.org/88231
+# CVE-2012-XXXX wp-e-commerce   3.8.9.1     http://osvdb.org/88232
+# CVE-2012-XXXX wp-effective-lead-management    http://osvdb.org/84462
+# CVE-2012-XXXX wp-imagezoom                        http://osvdb.org/83015 SA49612 !
+# CVE-2012-XXXX wp-imagezoom                        http://osvdb.org/87870
+# CVE-2012-XXXX wp-symposium                http://osvdb.org/83696
+# CVE-2012-XXXX wppageflip                  http://osvdb.org/83667
+# CVE-2013-0291 nextgen-gallery
 # CVE-2013-0721 wp-php-widget
+# CVE-2013-0731 wp-mailup
+# CVE-2013-1400 cardoza-wordpress-poll
+# CVE-2013-1401 cardoza-wordpress-poll
 # CVE-2013-1407 events-manager
 # CVE-2013-1408 wysija-newsletters HTB23140
 # CVE-2013-1409 commentluv HTB23138
@@ -105,10 +133,6 @@
 # CVE-2013-1636 pretty-link
 # CVE-2013-1758 marekkis-watermark
 # CVE-2013-1759 responsive-logo-slideshow
-# CVE-2013-0291 nextgen-gallery
-# CVE-2013-0731 wp-mailup
-# CVE-2013-1400 cardoza-wordpress-poll
-# CVE-2013-1401 cardoza-wordpress-poll
 # CVE-2013-1916 user-photo                  http://osvdb.org/71071
 # CVE-2013-1949 social-media-widget (!)
 # CVE-2013-2008 wp-super-cache              http://osvdb.org/92827 - http://osvdb.org/92832
@@ -126,11 +150,45 @@
 # CVE-2013-2707 login-with-ajax
 # CVE-2013-2709 foursquare-checkins
 # CVE-2013-2714 podpress                    http://osvdb.org/91129
+# CVE-2013-3254 wp-photo-album-plus         http://osvdb.org/93033
 # CVE-2013-3526
 # CVE-2013-3529 wp-funeral-press
 # CVE-2013-3530
-# CVE-2013-3254 wp-photo-album-plus         http://osvdb.org/93033
 # CVE-2013-3532 player                      http://osvdb.org/92264
 # CVE-2013-3720 feedweb
-# http://wpsecure.net/2013/05/open-flash-chart/
+# CVE-2013-XXXX advanced-xml-reader         http://osvdb.org/92904
+# CVE-2013-XXXX background-music Jplayer.swf XSS
+# CVE-2013-XXXX crayon-syntax-highlighter   1.13    http://osvdb.org/86256 !
+# CVE-2013-XXXX haiku-minimalist-audio-player Jplayer.swf XSS
+# CVE-2013-XXXX jammer Jplayer.swf XSS
+# CVE-2013-XXXX mp3-jplayer Jplayer.swf XSS
+# CVE-2013-XXXX securimage-wp http://cxsecurity.com/issue/WLB-2013050098
+# CVE-2013-XXXX user-role-editor            http://www.henryhoggard.co.uk/security/wordpress-user-role-editor/
+# CVE-2013-XXXX wp-banners-lite http://osvdb.org/91634
+# CVE-2013-XXXX wp-jplayer Jplayer.swf XSS
+# CVE-2013—XXXX proplayer                   http://cxsecurity.com/issue/WLB-2013050162
+# CVE-XXXX-XXXX deans-fckeditor-with-pwwangs-code-plugin-for-wordpress  http://osvdb.org/80687 !
+# CVE-XXXX-XXXX devformatter http://osvdb.org/89474 http://osvdb.org/89475
+# CVE-XXXX-XXXX editormonkey                        http://seclists.org/bugtraq/2012/Jul/27 probably false-positive
+# CVE-XXXX-XXXX featured-post-with-thumbnail        http://osvdb.org/70679 !
+# CVE-XXXX-XXXX featured-post-with-thumbnail    1.5 http://osvdb.org/84460 !
+# CVE-XXXX-XXXX foxypress http://www.waraxe.us/advisory-95.html
+# CVE-XXXX-XXXX front-end-upload                    http://osvdb.org/82791 SA49434 !
+# CVE-XXXX-XXXX front-end-upload                    http://osvdb.org/83637 SA49822 !
+# CVE-XXXX-XXXX front-end-upload    0.5.4.6         http://cxsecurity.com/issue/WLB-2012070172 affected 0.5.44 !
+# CVE-XXXX-XXXX mathjax-latex http://cxsecurity.com/issue/WLB-2013030208
+# CVE-XXXX-XXXX schreikasten                        http://osvdb.org/83152 SA49600
+# CVE-XXXX-XXXX sendit                              http://osvdb.org/83669 http://secunia.com/advisories/49506/
+# CVE-XXXX-XXXX simple-forum http://cxsecurity.com/issue/WLB-2012080265
+# CVE-XXXX-XXXX solvemedia http://osvdb.org/89585
+# CVE-XXXX-XXXX wp-forum http://cxsecurity.com/issue/WLB-2013020035
+# CVE-XXXX-XXXX wp-predict                          http://osvdb.org/83697
+# CVE-XXXX-XXXX wp-video-commando                   http://cxsecurity.com/issue/WLB-2013030207
 # http://wpsecure.net/2013/05/a-list-of-recent-xss-plugin-exploits-from-april/
+# http://wpsecure.net/2013/05/open-flash-chart/
+# TODO:
+# HTB22858, HTB22859, HTB22860, HTB22848, HTB22849, HTB22861, HTB22838,
+# HTB22839, HTB22840, HTB22842, HTB22843, HTB22844, HTB22841, HTB22845,
+# HTB22939, HTB22935, HTB22870, HTB22871, HTB22869, HTB22868, HTB22862,
+# HTB22938, HTB22961, HTB22960, HTB22951, HTB22875, HTB22873, HTB22867,
+# HTB23035, HTB23049
