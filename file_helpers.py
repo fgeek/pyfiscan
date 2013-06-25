@@ -26,11 +26,11 @@ def validate_directory(path, checkmodes):
         logging.debug('Returning false in validate_directory/os.path.islink for directory: %s' % path)
         return False
     if checkmodes:
-        return check_dir_execution_bit(path, checkmodes)
+        return check_dir_execution_bit(path)
     return True
 
 
-def check_dir_execution_bit(path, checkmodes):
+def check_dir_execution_bit(path):
     """Check if path has execution bit to check if site is public.
     Defaults to false. False means no execution bit is set."""
     try:
@@ -62,8 +62,7 @@ def postprocess_php5fcgi(home_location, item_location):
     # Joining items together to get real path
     public_dir = '/'.join(str(elem) for elem in public_dir)
     public_dir = os.path.abspath(home_location + public_dir)
-    fcgi_path = os.path.exists(os.path.abspath(public_dir + '/php5.fcgi'))
-    if fcgi_path:
+    if os.path.exists(os.path.abspath(public_dir + '/php5.fcgi')):
         return True
     else:
         return False

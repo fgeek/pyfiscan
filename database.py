@@ -11,11 +11,17 @@ except ImportError, error:
 
 class Database:
     """Reads YAML files and generates a data dictionary of the contents"""
+    def __init__(self, yamldir, includes=None):
+        self.issues = self.generate(yamldir, includes)
 
-    def __init__(self, yamldir):
-        self.issues = self.generate(yamldir)
+    def is_included(self, filename, includes):
+        """Used to limit scanning only to specific fingerprints."""
+        for item in includes:
+            if filename.startswith(item.lower()):
+               return True
+            return False
 
-    def gen_yamlfile_locations(self, yamldir):
+    def gen_yamlfile_locations(self, yamldir, includes):
         """File handle generator for YAML-files"""
         if os.path.islink(yamldir):
             sys.exit('Location for YAML-files can not be a symlink: %s' % yamldir)
@@ -28,15 +34,21 @@ class Database:
                 continue
             if not os.path.isfile(yamldir + filename):
                 continue
-            yield open(yamldir + filename, 'r')
+            if not includes:
+                yield open(yamldir + filename, 'r')
+            else:
+                for item in includes:
+                    if self.is_included(filename, item):
+                        yield open(yamldir + filename, 'r')
 
-    def generate(self, yamldir):
+    def generate(self, yamldir, includes):
         """Generates data dictionary of definitions from YAML files"""
         data = {}
-        for yamlfile in self.gen_yamlfile_locations(yamldir):
+        for yamlfile in self.gen_yamlfile_locations(yamldir, includes):
             try:
                 result = yaml.safe_load(yamlfile.read())
                 data = dict(data.items() + result.items())
+                yamlfile.close()
             except AttributeError:  # empty file
                 print('No data found inside: %s' % yamlfile)
             except yaml.scanner.ScannerError, e:  # syntax error

@@ -22,7 +22,7 @@ try:
     from docopt import docopt
     from multiprocessing import Process, Queue, Pool
     from multiprocessing.util import log_to_stderr
-
+    # internal imports
     from database import Database
     from detect import yaml_fn_dict
     from file_helpers import \
@@ -35,7 +35,6 @@ except ImportError, error:
     sys.exit(1)
 
 queue = Queue()
-database = Database('yamls/')
 
 
 def populate_directory(fargs):
@@ -79,7 +78,7 @@ def populate_userdir(fargs):
             for site in os.listdir(sites_location):
                 sitedir = sites_location + '/' + site
                 if checkmodes:
-                    if not check_dir_execution_bit(sitedir, checkmodes):
+                    if not check_dir_execution_bit(sitedir):
                         continue
 
                 for predefined_directory in predefined_locations:
@@ -190,13 +189,13 @@ def Worker(home_location, post_process):
     Every worker runs in a loop.
 
     """
+    # Opens file handle to CSV
     try:
         report = IssueReport()
     except Exception:
         report.close()
         logging.error(traceback.format_exc())
         return
-
     while 1:
         try:
             item = queue.get()
@@ -207,14 +206,14 @@ def Worker(home_location, post_process):
             for issue in database.issues[appname].itervalues():
                 logging.debug('Processing item %s with location %s with with appname %s issue %s', \
                               item_location, location, appname, issue)
-
+                # Loads fingerprint function from YAML file and checks for
+                # version from detected location
                 fn = yaml_fn_dict[issue['fingerprint']]
                 file_version = fn(item_location, issue['regexp'])
-
                 # Makes sure we don't go forward without version number from the file
                 if file_version:
                     # Tests that version from file is smaller than secure version
-                    # with application fingerprint-function
+                    # with fingerprint function
                     logging.debug('Comparing versions %s:%s for item %s', \
                                   issue['secure_version'], file_version, item_location)
                     if is_not_secure(issue['secure_version'], file_version, appname):
@@ -241,7 +240,7 @@ def Worker(home_location, post_process):
     report.close()
 
 
-def main():
+if __name__ == "__main__":
     logfile = 'pyfiscan.log'
 
     # Available logging levels, which are also hardcoded to usage
@@ -249,9 +248,9 @@ def main():
 
     usage = """
     Usage:
-      pyfiscan.py [--check-modes] [-p] [-l LEVEL]
-      pyfiscan.py -r <directory> [-l LEVEL]
-      pyfiscan.py --home <directory> [--check-modes] [-p] [-l LEVEL]
+      pyfiscan.py [--check-modes] [-p] [-l LEVEL] [-a NAME]
+      pyfiscan.py -r <directory> [-l LEVEL] [-a NAME]
+      pyfiscan.py --home <directory> [--check-modes] [-p] [-l LEVEL] [-a NAME]
       pyfiscan.py [-h|--help]
       pyfiscan.py --version
 
@@ -260,7 +259,8 @@ def main():
       -p                Enable post process for php5.fcgi file checks.
       --home DIR        Specifies where the home-directories are located.
       --check-modes     Check using execution bit if we are allowed to traverse directories.
-      -l LEVEL          Specifies logging level: info, debug
+      -l LEVEL          Specifies logging level: info, debug.
+      -a NAME           Scans only specific applications. Delimiter: ,
 
       If you do not spesify recursive-option predefined directories are scanned, which are:
         /home/user/sites/www
@@ -283,6 +283,11 @@ def main():
     post_process = None
     if arguments['-p']:
         post_process = True
+    # Includes is used to scan only specific applications.
+    includes = None
+    if arguments['-a']:
+        includes = arguments['-a']
+        includes = includes.split(',')
     # Exit in case logfile is symlink
     if os.path.islink(logfile):
         sys.exit('Logfile %s is a symlink. Exiting..' % logfile)
@@ -293,6 +298,7 @@ def main():
         if errno == int('13'):
             sys.exit('Error while writing to logfile: %s' % strerror)
     try:
+        database = Database('yamls/', includes)
         # stderr to /dev/null
         devnull_fd = open(os.devnull, "w")
         sys.stderr = devnull_fd
@@ -326,10 +332,9 @@ def main():
         logging.info('Received keyboard interrupt. Exiting..')
         pool.join()
         populator.join()
+        print('Received keyboard interrupt. Exiting..')
         runtime = time.time() - starttime
         logging.info('Scanning ended, which took %s seconds', runtime)
+        print('Scanning ended, which took %s seconds', runtime)
     except Exception:
         logging.error(traceback.format_exc())
-
-if __name__ == "__main__":
-    main()
