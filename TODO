@@ -8,10 +8,6 @@
 - Add support to continue interrupted session (Tuomo Komulainen requested).
   Could be implemented using http://docs.python.org/library/atexit.html with
   knowledge of current working directory and queues
-- phpBB3 makes backups(?) in update to location includes/install/update/old,
-  which comes up as an result
-- Joomla creates temporary files in update to location
-  tmp/install_4ee88b2db4c46, which comes up as an result
 - WordPress open installations CVE-2012-0937 http://osvdb.org/78710 which is
   very bad, because attacker can install the WordPress using remote database and
   after that execute any PHP he/she likes
