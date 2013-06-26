@@ -94,15 +94,15 @@
 #    post_processing: ['php5.fcgi']
 Joomla 1.7:
   1:
-    location: ['/libraries/joomla/version.php', '/includes/version.php']
+    location: ['/includes/version.php']
     secure_version: '2.5.7'
-    regexp: ['.*?RELEASE.*?(?P<version>1.7)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
+    regexp: ['[\t]+public[\t]\$RELEASE.*?(?P<version>1.7)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
     cve: 'CVE-2012-1598 http://developer.joomla.org/security/news/396-20120305-core-password-change CVE-2012-1599 http://osvdb.org/80708 http://developer.joomla.org/security/news/397-20120306-core-information-disclosure Please upgrade to Joomla 2.5.7 all 1.x versions are end of life.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.6:
   1:
-    location: ['/libraries/joomla/version.php', '/includes/version.php']
+    location: ['/libraries/joomla/version.php']
     secure_version: '2.5.7'
     regexp: ['.*?RELEASE.*?(?P<version>1.6)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
     cve: 'CVE-2012-1598 http://developer.joomla.org/security/news/396-20120305-core-password-change CVE-2012-1599 http://osvdb.org/80708 http://developer.joomla.org/security/news/397-20120306-core-information-disclosure Please upgrade to Joomla 2.5.7 all 1.x versions are end of life.'
@@ -110,9 +110,17 @@ Joomla 1.6:
     post_processing: ['php5.fcgi']
 Joomla 1.5:
   1:
-    location: ['/libraries/joomla/version.php', '/includes/version.php']
+    location: ['/libraries/joomla/version.php']
     secure_version: '2.5.7'
-    regexp: ['.*?RELEASE.*?(?P<version>1.[0-5])', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
+    regexp: ['.*?RELEASE.*?(?P<version>1.5)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
+    cve: 'CVE-2012-1598 http://developer.joomla.org/security/news/396-20120305-core-password-change CVE-2012-1599 http://osvdb.org/80708 http://developer.joomla.org/security/news/397-20120306-core-information-disclosure Please upgrade to Joomla 2.5.7 all 1.x versions are end of life.'
+    fingerprint: detect_joomla
+    post_processing: ['php5.fcgi']
+Joomla 1.0:
+  1:
+    location: ['/includes/version.php']
+    secure_version: '2.5.7'
+    regexp: ['[\t]+var.*?RELEASE.*?(?P<version>1.0)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
     cve: 'CVE-2012-1598 http://developer.joomla.org/security/news/396-20120305-core-password-change CVE-2012-1599 http://osvdb.org/80708 http://developer.joomla.org/security/news/397-20120306-core-information-disclosure Please upgrade to Joomla 2.5.7 all 1.x versions are end of life.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
