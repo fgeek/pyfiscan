@@ -24,10 +24,10 @@ from_address = 'example@example.org'
 smtp_server = 'example.org'
 smtp_port = 465
 
-# Let's check that we are using at least Python 2.7 or SMTP_SSL does not work
+# Let's check that we are using at least Python 2.7 or SMTP_SSL does not work.
+# We don't need to take care the micro-version
 version_major = sys.version_info[0]
 version_minor = sys.version_info[1]
-# We don't need to take care the micro-version
 if version_major < int(1):
     sys.exit('Python major version needs to be two or higher.\nSMTP_SSL only works with Python 2.7')
 if version_minor < int(6):
