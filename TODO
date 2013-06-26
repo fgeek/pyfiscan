@@ -1,7 +1,6 @@
 - Drupal: false-negative with 6.22
 - Finish zenphoto fingerprint. zp-core/version.php:define('ZENPHOTO_VERSION', '1.4.3.3');
 - Roundcube: Version 0.8-beta not yet detected
-- MoinMoin: Fingerprint list is not full. Check OSVDB.
 - Add support to continue interrupted session (Tuomo Komulainen requested).
   Could be implemented using http://docs.python.org/library/atexit.html with
   knowledge of current working directory and queues

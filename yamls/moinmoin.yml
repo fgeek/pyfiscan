@@ -1,43 +1,59 @@
-# TODO: 1.0 http://osvdb.org/2878 SA10318 no CVE
-# TODO: 1.1 http://osvdb.org/2911 no CVE
-# TODO: 1.2.2 http://osvdb.org/6704 SA11807 no CVE
-# TODO: 1.2.3 http://osvdb.org/8194,8195 SA11832 no CVE
-# TODO: 1.3.3 http://osvdb.org/13184 SA14001 no CVE
-# CVE-2007-0857 1.5.7 SA24096
-# CVE-2007-0901 1.5.8 SA24138
-# CVE-2007-2423 1.5.8 SA24138
-# CVE-2007-2637 1.5.8 SA24138
-# CVE-2008-0780 1.6.1 SA29010
-# CVE-2008-0781 1.6.1 SA29010
-# CVE-2008-0782 1.6.1 SA29010
-# CVE-2008-1098 1.6.1 SA29010
-# CVE-2008-1099 1.6.1 SA29010
-# CVE-2008-1937 1.6.3 SA29894
-# CVE-2008-3381 1.7.1 SA31135
-# N/A           1.8.x http://osvdb.org/49752 SA32686
-# CVE-2009-0260 1.8.2 SA33593
+# NOT-FOR-US: CVE-2010-1238 http://osvdb.org/show/osvdb/63619
+# NOT-FOR-US: http://osvdb.org/show/osvdb/48874 1.7.0rc2 unspecified issue
+# NOT-FOR-US: http://osvdb.org/show/osvdb/57320 1.5.5rc1 unspecified issue
+# NOT-FOR-US: http://osvdb.org/show/osvdb/57319 1.5.3-rc2 unspecified issue
+# NOT-FOR-US: http://osvdb.org/show/osvdb/57318 1.3.5rc1
+# NOT-FOR-US: CVE-2011-4449 Apache configuration issue
+# CVE-2002-XXXX 0.7 http://osvdb.org/show/osvdb/57316 http://hg.moinmo.in/moin/1.8/file/tip/docs/CHANGES
+# CVE-2002-XXXX 1.0 http://osvdb.org/show/osvdb/2911 http://sourceforge.net/project/shownotes.php?release_id=200691
+# CVE-2003-XXXX 1.1 http://osvdb.org/2878 SA10318
+# CVE-2004-0708 1.2.2 http://osvdb.org/6704 SA11807
+# CVE-2004-1462 1.2.3 http://osvdb.org/show/osvdb/8194 http://osvdb.org/show/osvdb/8195 SA11832
+# CVE-2005-XXXX 1.3.3 http://osvdb.org/13184 SA14001
+# CVE-2005-XXXX 1.3.3 http://osvdb.org/show/osvdb/11072 http://osvdb.org/show/osvdb/11073 http://osvdb.org/show/osvdb/13184
+# CVE-2005-XXXX 1.3.4 http://osvdb.org/show/osvdb/57317
+# CVE-2007-0857 1.5.7 SA24096 http://osvdb.org/show/osvdb/31871 http://osvdb.org/show/osvdb/31872 http://osvdb.org/show/osvdb/31873 http://osvdb.org/show/osvdb/31874
+# CVE-2007-0901 1.5.8 SA24138 http://osvdb.org/show/osvdb/33172
+# CVE-2007-0902       http://osvdb.org/show/osvdb/33173 http://secunia.com/advisories/24138/
+# CVE-2007-2423 1.5.8 SA24138 http://osvdb.org/show/osvdb/36567
+# CVE-2007-2637 1.5.8 SA24138 http://osvdb.org/show/osvdb/36268 http://osvdb.org/show/osvdb/36269 http://osvdb.org/show/osvdb/57321
+# CVE-2008-0780 1.6.1 SA29010 http://osvdb.org/show/osvdb/41778
+# CVE-2008-0781 1.6.1 SA29010 http://osvdb.org/show/osvdb/41779
+# CVE-2008-0782 1.6.1 SA29010 http://osvdb.org/show/osvdb/41780
+# CVE-2008-1098 1.6.1 SA29010 http://osvdb.org/show/osvdb/43146 http://osvdb.org/show/osvdb/43147
+# CVE-2008-1099 1.6.1 SA29010 http://osvdb.org/show/osvdb/43145
+# CVE-2008-1937 1.6.3 SA29894 http://osvdb.org/show/osvdb/44613
+# CVE-2008-3381 1.7.1 SA31135 http://osvdb.org/show/osvdb/47094
+# CVE-2008-6548 1.6.2 http://osvdb.org/show/osvdb/48877 http://hg.moinmo.in/moin/1.6/rev/35ff7a9b1546
+# CVE-2008-6549 1.6.2 http://osvdb.org/show/osvdb/48876
+# CVE-2008-6603 1.6.3 http://osvdb.org/show/osvdb/48875
+# CVE-2008-XXXX 1.7.3 http://osvdb.org/show/osvdb/57322
+# CVE-2008-XXXX 1.8.0 http://osvdb.org/show/osvdb/57323
+# CVE-2008-XXXX 1.8.x http://osvdb.org/49752 SA32686
+# CVE-2009-0260 1.8.2 SA33593 http://osvdb.org/show/osvdb/51485
 # CVE-2009-0312 1.8.2 SA33593
 # CVE-2009-1482 1.8.3 SA34821
 # CVE-2009-4762 1.8.4 SA35407
+# CVE-2009-XXXX       http://osvdb.org/show/osvdb/52031
 # CVE-2010-0667 1.9.1 SA38242
 # CVE-2010-0668 1.9.2 SA38444
 # CVE-2010-0669 1.9.2 SA38444
-# CVE-2010-0717 1.9.2 SA38444
-# CVE-2010-0828 1.9.3 SA39188
+# CVE-2010-0717 1.8.7 SA38444
+# CVE-2010-0828 1.9.3 http://osvdb.org/show/osvdb/63362 SA39188
 # CVE-2010-2487 1.9.3 SA40043
 # CVE-2010-2969 1.9.3 SA40043
-# CVE-2010-2970 1.9.3 SA40043
+# CVE-2010-2970 1.9.3 http://osvdb.org/show/osvdb/66894 http://osvdb.org/show/osvdb/66895 http://osvdb.org/show/osvdb/66896 SA40043
 # CVE-2011-1058 1.9.4 http://osvdb.org/71025 SA43413
+# CVE-2011-4448 1.3.2-p7 http://osvdb.org/show/osvdb/77390 http://secunia.com/advisories/47034/
+# CVE-2011-4450 1.3.2-p7 http://osvdb.org/show/osvdb/77392 http://secunia.com/advisories/47034/
+# CVE-2011-4451 1.3.2-p7 http://osvdb.org/show/osvdb/77393 http://secunia.com/advisories/47034/
+# CVE-2011-4452 1.3.2-p7 http://osvdb.org/show/osvdb/77394 http://secunia.com/advisories/47034/
 # CVE-2012-4404 1.9.5 http://osvdb.org/85172      
 # CVE-2012-6080 1.9.6 http://osvdb.org/88828 http://hg.moinmo.in/moin/1.9/rev/3c27131a3c52
-# CVE-2012-6081 1.9.6 http://osvdb.org/88825,88827 http://hg.moinmo.in/moin/1.9/rev/7e7e1cbb9d3f
+# CVE-2012-6081 1.9.6 http://osvdb.org/88825 http://osvdb.org/88827 http://osvdb.org/show/osvdb/93234 http://hg.moinmo.in/moin/1.9/rev/7e7e1cbb9d3f
 # CVE-2012-6082 1.9.6 http://osvdb.org/88826 http://hg.moinmo.in/moin/1.9/rev/c98ec456e493
-# CVE-2012-6495 1.9.6 http://osvdb.org/88825,88827 http://hg.moinmo.in/moin/1.9/rev/7e7e1cbb9d3f
-# CVE-2011-4448 # TODO
-# CVE-2011-4449 Apache configuration issue
-# CVE-2011-4450 # TODO
-# CVE-2011-4451 # TODO
-# CVE-2011-4452 # TODO
+# CVE-2012-6495 1.9.6 http://osvdb.org/88825 http://osvdb.org/88827 http://hg.moinmo.in/moin/1.9/rev/7e7e1cbb9d3f
+# CVE-2012-XXXX 1.9.6 http://osvdb.org/show/osvdb/88855 http://freecode.com/projects/moin/releases/350967 http://hg.moinmo.in/moin/1.9/file/tip/docs/CHANGES http://moinmo.in/SecurityFixes
 MoinMoin:
   1:
     location: ['/MoinMoin/version.py']
