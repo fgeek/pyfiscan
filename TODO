@@ -1,9 +1,6 @@
 - Drupal: false-negative with 6.22
 - Finish zenphoto fingerprint. zp-core/version.php:define('ZENPHOTO_VERSION', '1.4.3.3');
 - Roundcube: Version 0.8-beta not yet detected
-- WordPress open installations CVE-2012-0937 http://osvdb.org/78710 which is
-  very bad, because attacker can install the WordPress using remote database and
-  after that execute any PHP he/she likes
 - Gallery version string not detected 1.5.10.dfsg-debian1
 - Check if there is places where we can use try: with file as foo
 
