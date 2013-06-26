@@ -23,8 +23,8 @@
 # SA-CONTRIB-2012-013	CVE-2012-1638	https://drupal.org/node/1416612	
 # SA-CONTRIB-2012-014	CVE-2012-1639	https://drupal.org/node/1416824	
 # SA-CONTRIB-2012-015	CVE-2012-1640	https://drupal.org/node/1417000	
-# SA-CONTRIB-2012-016   CVE-2012-1057   https://drupal.org/node/1425150   
 # SA-CONTRIB-2012-016   CVE-2012-1056   https://drupal.org/node/1425150   
+# SA-CONTRIB-2012-016   CVE-2012-1057   https://drupal.org/node/1425150   
 # SA-CONTRIB-2012-017	CVE-2012-1641	https://drupal.org/node/1432970	
 # SA-CONTRIB-2012-018   CVE-2012-1060   https://drupal.org/node/1433550   
 # SA-CONTRIB-2012-019	CVE-2012-1642	https://drupal.org/node/1441252	
@@ -50,10 +50,10 @@
 # SA-CONTRIB-2012-036	CVE-2012-2057	https://drupal.org/node/1482126	
 # SA-CONTRIB-2012-036	CVE-2012-2058	https://drupal.org/node/1482126	
 # SA-CONTRIB-2012-036	CVE-2012-2059	https://drupal.org/node/1482126	
-# SA-CONTRIB-2012-036   N/A             https://drupal.org/node/1482126   
 # SA-CONTRIB-2012-036	CVE-2012-2060	https://drupal.org/node/1482126	
 # SA-CONTRIB-2012-036	CVE-2012-2061	https://drupal.org/node/1482126	
 # SA-CONTRIB-2012-036	CVE-2012-2062	https://drupal.org/node/1482126	
+# SA-CONTRIB-2012-036   N/A             https://drupal.org/node/1482126   
 # SA-CONTRIB-2012-037	CVE-2012-2063	https://drupal.org/node/1482342	
 # SA-CONTRIB-2012-038	CVE-2012-2064	https://drupal.org/node/1482420	
 # SA-CONTRIB-2012-039	CVE-2012-2065	https://drupal.org/node/1482428	
@@ -78,6 +78,7 @@
 # SA-CONTRIB-2012-055	CVE-2012-2083	https://drupal.org/node/1507510	
 # SA-CONTRIB-2012-056   N/A             https://drupal.org/node/1515282   
 # SA-CONTRIB-2012-057	CVE-2012-2084   https://drupal.org/node/1515722
+# SA-CONTRIB-2012-136   CVE-2012-6573   https://drupal.org/node/1762734 Apache Solr Search Autocomplete
 # SA-CONTRIB-2012-154   CVE-2012-5569   https://drupal.org/node/1808852 http://osvdb.org/86162 http://osvdb.org/86164
 # SA-CONTRIB-2012-154   CVE-2012-5570   https://drupal.org/node/1808852
 # SA-CONTRIB-2012-174	CVE-2012-5655   http://drupal.org/node/1870550  http://osvdb.org/88526
@@ -136,4 +137,4 @@
 # SA-CONTRIB-2013-052   CVE-2013-2177   https://drupal.org/node/2017933 Display Suite
 # SA-CONTRIB-2013-053   CVE-2013-2197   https://drupal.org/node/2023585 Login Security
 # SA-CONTRIB-2013-053   CVE-2013-2198   https://drupal.org/node/2023585 Login Security
-# SA-CONTRIB-2012-136   CVE-2012-6573   https://drupal.org/node/1762734 Apache Solr Search Autocomplete
+# SA-CONTRIB-2013-054                   https://drupal.org/node/2028813 Fast Permissions
