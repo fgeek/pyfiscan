@@ -4,10 +4,6 @@
 - Gallery version string not detected 1.5.10.dfsg-debian1
 - Check if there is places where we can use try: with file as foo
 
-Data in YAML-files could include following: CWE, CVSS2, OSVDB, Secunia,
-Publication date, Fixed date, CPE, ISS X-Force ID, SecurityTracker Alert ID,
-Vendor URL
-
 Some useful links:
 http://en.wikipedia.org/wiki/List_of_web_application_frameworks
 http://docs.joomla.org/Vulnerable_Extensions_List
