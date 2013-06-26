@@ -40,12 +40,10 @@ CosCms HTB23145
 waraxe-2013-SA#097 PHP-Fusion
 FusionForge: CVE-2013-1423
 CubeCart CVE-2013-1465
-Drupal Webmail CVE-2012-5569
 Zen Cart module: CVE-2012-5808, CVE-2012-5807, CVE-2012-5806, CVE-2012-5805
 tinyguestbook CVE-2011-5199
 tinyguestbook CVE-2011-5201
 Kajian Website CMS: CVE-2011-5111
-AdaptCMS CVE-2011-5108
 Squiz CMS: NGS00330
 e107 jbShop: CVE-2011-5186
 Wordpress Krea3AllMedias http://cxsecurity.com/ascii/WLB-2012090131
@@ -145,7 +143,6 @@ Phorum: CVE-2010-1629
 Phorum: CVE-2011-3622
 Phorum: CVE-2011-4561 SSCHADV2011-023
 Phorum: HTB23109
-AdaptCMS <http://www.adaptcms.com/>: SSCHADV2011-018 CVE?
 Merethis Centreon <http://www.merethis.com and http://www.centreon.com>: TWSL2011-017 https://www.trustwave.com/spiderlabs/advisories/TWSL2011-017.txt
 PyForum: CVE-2009-4407 SA37764
 PyForum: CVE-2009-4408 SA37764
@@ -321,7 +318,6 @@ chillyCMS: CVE-2010-4894, CVE-2010-4895
 BlueCMS: CVE-2010-4897
 Allinta CMS: CVE-2010-4922
 CuteSITE CMS: CVE-2010-5024, CVE-2010-5025
-ReviewBoard: CVE-2011-4312
 ResourceSpace: CVE-2011-4311
 Jara: CVE-2011-4094, CVE-2011-4095
 Support Incident Tracker http://sitracker.org/: CVE-2011-4337
