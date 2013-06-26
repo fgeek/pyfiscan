@@ -46,6 +46,12 @@ Detects following software
 * phpAlbum: CVE-2011-4806, CVE-2011-4807, OSVDB:74980, OSVDB 21410
 * phpBB3: CVE-2011-0544 SA42343
 
+Installation
+------------
+
+    git clone https://github.com/fgeek/pyfiscan.git && cd pyfiscan
+    pip install -r requirements.lst
+
 Notes
 -----
 
