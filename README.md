@@ -71,6 +71,8 @@ Notes
   * Upgrade using:
       http://example.org/gallery3/index.php/upgrade
       php index.php upgrade
+* phpBB (version unknown)
+  * Open installation is not a vulnerability since web-interface requests user to authenticate by inserting random data to file.
 
 Thanks to
 ---------
