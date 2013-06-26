@@ -53,7 +53,6 @@ http://www.securityfocus.com/bid/53945
 phpMyVisites http://cxsecurity.com/issue/WLB-2012070022
 eXtplorer: CVE-2012-3362
 CMSMS: CVE-2011-4310 http://osvdb.org/77106
-inc/class_core.php:     public $version = "1.6.7";
 e107 Plugins - Filemanager Arbitrary File Upload Vulnerability http://cxsecurity.com/issue/WLB-2012060242
 http://cxsecurity.com/issue/WLB-2012060240
 http://cxsecurity.com/issue/WLB-2012060239
@@ -83,7 +82,6 @@ Seditio <http://www.neocrome.net/>: SQLi http://osvdb.org/81109
 Seditio <http://www.neocrome.net/>: CSRF http://osvdb.org/81108
 Seditio <http://www.neocrome.net/>: http://www.cotonti.com/news/community/seditio-eol
 Seditio <http://www.neocrome.net/>: http://www.neocrome.net/page.php?id=2470 "it is NOT recommended to upgrade past Seditio 150 for any live site."
-Coppermine: CVE-2012-1613 XSS http://osvdb.org/80731 waraxe-2012-SA#081
 OpenCart: http://blog.visionsource.org/2010/01/28/opencart-csrf-vulnerability/
 OpenCart: http://forum.opencart.com/viewtopic.php?t=5792
 OpenCart: waraxe-2012-SA#084 1.5.2.1
@@ -197,7 +195,6 @@ Winn Guestbook <http://code.google.com/p/winn-guestbook/>: CVE-2011-5026
 WebsiteBaker <http://www.websitebaker2.org/en/home.php>: HTB22928, HTB22929, CVE-2011-2934 http://osvdb.org/76618, CVE-2011-2933 http://osvdb.org/76619
 ribiq CMS <http://tribiq.com/>: CVE-2011-2727/HTB22857
 CakePHP CVE-2012-4399 http://osvdb.org/84042
-Coppermine: HTB22836
 RunCMS <http://www.runcms.org/>: HTB22820, HTB22821, HTB22822
 Podcast Generator <http://podcastgen.sourceforge.net/>: HTB22800, HTB22801, HTB22802
 RazorCMS: HTB22803
@@ -342,8 +339,6 @@ Total Shop UK eCommerce based on CodeIgniter: CVE-2012-4236
 PrestaShop: HTB23091, CVE-2012-5801, CVE-2012-5800, CVE-2012-5799
 Chamilo: CVE-2012-4029
 Chamilo: CVE-2012-4030
-Coppermine: http://secunia.com/advisories/product/1427/?task=advisories
-Coppermine: CVE-2011-2476
 Elefant CMS: CVE-2012-1296
 OTRS2: CVE-2012-2582
 OTRS2: CVE-2012-4600
@@ -377,12 +372,6 @@ bloofoxCMS: NS-12-015
 Cunity http://cxsecurity.com/issue/WLB-2013030206
 eggBlog http://cxsecurity.com/issue/WLB-2013050005
 vBilling for FreeSWITCH http://seclists.org/bugtraq/2013/Apr/147
-
-{{{
-/docs/README.html
-Coppermine version.*?(?P<version>[0-9.]{1,})
-}}}
-
 Banana Dance CMS <http://www.doyoubananadance.com>: NS-11-010
 
 'textpattern': { # CVE-2011-5019, HTB22672
