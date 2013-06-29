@@ -36,3 +36,4 @@
 # CVE-XXXX-XXXX civicrm                                     http://vel.joomla.org/resolved/402-civicrm-4-3-3.html http://civicrm.org/blogs/colemanw/security-release-civicrm-434
 # CVE-XXXX-XXXX com_advert                                  http://vel.joomla.org/vel-blog/51-com_advert.html http://docs.joomla.org/Vulnerable_Extensions_List#com_advert
 # CVE-XXXX-XXXX unite-horizontal-carousel                   http://vel.joomla.org/resolved/479-unite-horizontal-carousel.html
+# CVE-XXXX-XXXX com_g2bridge                                http://www.exploit-db.com/exploits/12814/ http://cxsecurity.com/issue/WLB-2013060227 http://www.securityfocus.com/bid/40440

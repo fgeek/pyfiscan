@@ -84,9 +84,6 @@ w-CMS: Arbitrary File Overwrite http://osvdb.org/80975
 w-CMS: XSS http://osvdb.org/80976,80977
 w-CMS: CSRF http://osvdb.org/80978
 w-CMS: Arbitrary File Upload http://osvdb.org/80979
-Wikidforum <http://www.wikidforum.com/>: XSS http://osvdb.org/80838,80839
-Wikidforum <http://www.wikidforum.com/>: SQLi http://osvdb.org/80840
-Wikidforum: CVE-2012-6520, CVE-2012-2099
 Tracks <http://getontracks.org/>: CVE-2011-1671 XSS http://osvdb.org/71352 SA43909
 OSClass: CSA-12003 http://osclass.org/2012/01/16/osclass-2-3-5/ http://www.codseq.it/advisories/multiple_vulnerabilities_in_osclass
 OSClass: CVE-2012-1617 CSA-12004 http://osvdb.org/79984 http://www.codseq.it/advisories/osclass_directory_traversal_vulnerability
@@ -128,12 +125,6 @@ PyForum: CVE-2009-4408 SA37764
 KaiBB <http://code.google.com/p/kaibb/>: HTB22749 / HTB22748 / HTB22747 / HTB22746 / HTB22793 / SSCHADV2011-027 #TODO: No CVE?, verify HTB announcements
 Dolphin <http://www.boonex.com/dolphin>: http://seclists.org/bugtraq/2011/Oct/113 http://www.boonex.com/n/dolphin-7-0-8-beta-1
 Yet Another CMS <http://yetanothercms.codeplex.com/>: SSCHADV2011-031
-Symphony CMS <http://symphony-cms.com/>: CVE-2010-2143
-Symphony CMS <http://symphony-cms.com/>: CVE-2010-3458
-Symphony CMS <http://symphony-cms.com/>: CVE-2011-4340
-Symphony CMS <http://symphony-cms.com/>: CVE-2011-4341
-Symphony CMS <http://symphony-cms.com/>: NS-11-008
-Symphony CMS: CVE-2012-2667
 Symfony2: http://www.senseofsecurity.com.au/advisories/SOS-12-002 # No CVE
 Symfony: CVE-2012-6431, CVE-2012-6432
 LightNEasy <http://www.lightneasy.org/>: SSCHADV2011-013
