@@ -1,0 +1,19 @@
+# URL: http://www.dolibarr.org/
+# Version: htdocs/filefunc.inc.php:if (! defined('DOL_VERSION')) define('DOL_VERSION','3.3.2');
+# CVE-2011-4329
+# CVE-2011-4802
+# CVE-2011-4814
+# CVE-2012-1225 http://osvdb.org/79011
+# CVE-2012-1226 http://osvdb.org/79138 http://osvdb.org/79139
+# CVE-2012-XXXX http://osvdb.org/80980
+# CVE-2013-2091 3.3.2 https://github.com/Dolibarr/dolibarr/commit/9427e32e2ed54c1a2bc519a88c057207836df489
+# CVE-2013-2092 3.3.2 https://github.com/Dolibarr/dolibarr/commit/8a90598b23e1b2689848187941f7a96b04907005
+# CVE-2013-2093 3.3.2 https://github.com/Dolibarr/dolibarr/commit/526a80dd202bbca396687a502d52c27e06e97fff !
+Dolibarr:
+  1:
+    location: ['/htdocs/filefunc.inc.php']
+    secure_version: '3.3.2'
+    regexp: ['.*?DOL_VERSION.*?(?P<version>[0-9.]+)']
+    cve: 'CVE-2013-2091 CVE-2013-2092 CVE-2013-2093'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
