@@ -137,4 +137,4 @@
 # SA-CONTRIB-2013-052   CVE-2013-2177   https://drupal.org/node/2017933 Display Suite
 # SA-CONTRIB-2013-053   CVE-2013-2197   https://drupal.org/node/2023585 Login Security
 # SA-CONTRIB-2013-053   CVE-2013-2198   https://drupal.org/node/2023585 Login Security
-# SA-CONTRIB-2013-054                   https://drupal.org/node/2028813 Fast Permissions
+# SA-CONTRIB-2013-054   CVE-2013-2247   https://drupal.org/node/2028813 Fast Permissions Administration
