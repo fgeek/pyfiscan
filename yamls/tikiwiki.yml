@@ -1,4 +1,4 @@
-# CVE-2005-0200             http://osvdb.org/13119 BugtraqID:12328
+# CVE-2005-0200             http://osvdb.org/13119 SA13948
 # CVE-2010-4239             http://www.openwall.com/lists/oss-security/2010/11/22/9
 # CVE-2010-4240             http://www.openwall.com/lists/oss-security/2010/11/22/9
 # CVE-2010-4241             http://www.openwall.com/lists/oss-security/2010/11/22/9
@@ -6,7 +6,7 @@
 # CVE-2011-4336 7.1/6.4     http://osvdb.org/74039 SA45256 SA45283 HTB23027
 # CVE-2011-4454 8.1         http://osvdb.org/77155 SA46740
 # CVE-2011-4455 8.1         http://osvdb.org/77156 SA46740
-# N/A           8.2/6.5     http://osvdb.org/77965 SA47278 # TODO: Missing CVE-identifier
+# CVE-2011-XXXX 8.2/6.5     http://osvdb.org/77965 SA47278
 # CVE-2011-4551 8.2/6.5     http://osvdb.org/77966 SA47278 http://info.tiki.org/article183-Tiki-Wiki-CMS-Groupware-8-2-and-6-5LTS-Security-Patches-Available 
 # CVE-2011-4558 8.3/6.6     http://osvdb.org/78013 SA47320 http://dev.tiki.org/item4059 http://info.tiki.org/article185-Tiki-Security-Patches-Available-for-8-3-and-6-6-LTS
 # CVE-2012-3996 8.4         http://osvdb.org/83533
