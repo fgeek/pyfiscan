@@ -43,6 +43,7 @@ Detects following software
 * Trac: CVE-2010-5108 [OSVDB 63317](http://osvdb.org/63317)
 * WikkaWiki: CVE-2011-4448, CVE-2011-4449, CVE-2011-4450, CVE-2011-4451, CVE-2011-4452 OSVDB 77390-77394 [WikkaWiki security advisory](http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/) 
 * WordPress: CVE-2013-2199, CVE-2013-2200, CVE-2013-2201, CVE-2013-2202, CVE-2013-2203, CVE-2013-2204, CVE-2013-2205, [WordPress News](http://wordpress.org/news/2013/06/wordpress-3-5-2/), [WordPress Codex](http://codex.wordpress.org/Version_3.5.2)
+* ZenPhoto: [CVE-2012-2641](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-2641) [OSVDB 83487](http://osvdb.org/show/osvdb/83487) [SA49787](http://secunia.com/advisories/49787/)
 * e107: CVE-2012-6434 [OSVDB 88908](http://osvdb.org/88908)
 * osDate: http://osvdb.org/63005 http://osvdb.org/63006
 * phpAlbum: CVE-2011-4806, CVE-2011-4807, OSVDB:74980, OSVDB 21410
