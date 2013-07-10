@@ -1,8 +1,8 @@
-#											   http://drupal.org/node/1332022  http://osvdb.org/82463
+#										https://drupal.org/node/1332022  http://osvdb.org/82463
 # SA-CONTRIB-2010-098   CVE-2010-5275   https://drupal.org/node/927016
 # SA-CONTRIB-2010-098   CVE-2010-5276   https://drupal.org/node/927016
-# SA-CONTRIB-2010-099   CVE-2010-5277   http://drupal.org/node/933960
-# SA-CONTRIB-2011-054   CVE-2011-XXXX   http://drupal.org/node/1337006  http://osvdb.org/77005
+# SA-CONTRIB-2010-099   CVE-2010-5277   https://drupal.org/node/933960
+# SA-CONTRIB-2011-054   CVE-2011-4972   https://drupal.org/node/1337006 http://osvdb.org/77005
 # SA-CONTRIB-2011-058   CVE-2012-1641   https://drupal.org/node/1357384
 # SA-CONTRIB-2012-001   CVE-2012-1623	https://drupal.org/node/1394172	
 # SA-CONTRIB-2012-002   CVE-2012-1624	https://drupal.org/node/1394220	
@@ -53,7 +53,6 @@
 # SA-CONTRIB-2012-036	CVE-2012-2060	https://drupal.org/node/1482126	
 # SA-CONTRIB-2012-036	CVE-2012-2061	https://drupal.org/node/1482126	
 # SA-CONTRIB-2012-036	CVE-2012-2062	https://drupal.org/node/1482126	
-# SA-CONTRIB-2012-036   N/A             https://drupal.org/node/1482126   
 # SA-CONTRIB-2012-037	CVE-2012-2063	https://drupal.org/node/1482342	
 # SA-CONTRIB-2012-038	CVE-2012-2064	https://drupal.org/node/1482420	
 # SA-CONTRIB-2012-039	CVE-2012-2065	https://drupal.org/node/1482428	
@@ -69,14 +68,15 @@
 # SA-CONTRIB-2012-048	CVE-2012-2075	https://drupal.org/node/1506438	
 # SA-CONTRIB-2012-049	CVE-2012-2076	https://drupal.org/node/1506448	
 # SA-CONTRIB-2012-049	CVE-2012-2077	https://drupal.org/node/1506448	
-# SA-CONTRIB-2012-050   N/A             https://drupal.org/node/1506542   
+# SA-CONTRIB-2012-050   CVE-2012-2154   https://drupal.org/node/1506542
+# SA-CONTRIB-2012-050   CVE-2012-2155   https://drupal.org/node/1506542
 # SA-CONTRIB-2012-051	CVE-2012-2078	https://drupal.org/node/1506562	
 # SA-CONTRIB-2012-051	CVE-2012-2079	https://drupal.org/node/1506562	
 # SA-CONTRIB-2012-052	CVE-2012-2080	https://drupal.org/node/1506728	
 # SA-CONTRIB-2012-053	CVE-2012-2081	https://drupal.org/node/1507446	
 # SA-CONTRIB-2012-054	CVE-2012-2082	https://drupal.org/node/1507466	
 # SA-CONTRIB-2012-055	CVE-2012-2083	https://drupal.org/node/1507510	
-# SA-CONTRIB-2012-056   N/A             https://drupal.org/node/1515282   
+# SA-CONTRIB-2012-056   CVE-2012-2296   https://drupal.org/node/1515282   
 # SA-CONTRIB-2012-057	CVE-2012-2084   https://drupal.org/node/1515722
 # SA-CONTRIB-2012-136   CVE-2012-6573   https://drupal.org/node/1762734 Apache Solr Search Autocomplete
 # SA-CONTRIB-2012-154   CVE-2012-5569   https://drupal.org/node/1808852 http://osvdb.org/86162 http://osvdb.org/86164
@@ -99,13 +99,13 @@
 # SA-CONTRIB-2013-014	CVE-2013-0260   http://drupal.org/node/1903324
 # SA-CONTRIB-2013-015	CVE-2013-0317   http://drupal.org/node/1916312
 # SA-CONTRIB-2013-016	CVE-2013-0318   http://drupal.org/node/1916370
-# SA-CONTRIB-2013-017	CVE-2013-0318
-# SA-CONTRIB-2013-018	CVE-2013-0320
-# SA-CONTRIB-2013-019	CVE-2013-0321
-# SA-CONTRIB-2013-020	CVE-2013-0322
-# SA-CONTRIB-2013-021	CVE-2013-0323
-# SA-CONTRIB-2013-022	CVE-2013-0324
-# SA-CONTRIB-2013-023	CVE-2013-0325
+# SA-CONTRIB-2013-017	CVE-2013-0318   https://drupal.org/node/1922400
+# SA-CONTRIB-2013-018	CVE-2013-0320   https://drupal.org/node/1922410
+# SA-CONTRIB-2013-019	CVE-2013-0321   https://drupal.org/node/1922416
+# SA-CONTRIB-2013-020	CVE-2013-0322   https://drupal.org/node/1922418
+# SA-CONTRIB-2013-021	CVE-2013-0323   https://drupal.org/node/1922438
+# SA-CONTRIB-2013-022	CVE-2013-0324   https://drupal.org/node/1922446
+# SA-CONTRIB-2013-023	CVE-2013-0325   https://drupal.org/node/1922756
 # SA-CONTRIB-2013-024	CVE-2013-1778   http://drupal.org/node/1929474
 # SA-CONTRIB-2013-025	CVE-2013-1779   http://drupal.org/node/1929482
 # SA-CONTRIB-2013-026	CVE-2013-1780   http://drupal.org/node/1929484
@@ -138,3 +138,6 @@
 # SA-CONTRIB-2013-053   CVE-2013-2197   https://drupal.org/node/2023585 Login Security
 # SA-CONTRIB-2013-053   CVE-2013-2198   https://drupal.org/node/2023585 Login Security
 # SA-CONTRIB-2013-054   CVE-2013-2247   https://drupal.org/node/2028813 Fast Permissions Administration
+# SA-CONTRIB-2013-055                   https://drupal.org/node/2038363 Hatch
+# SA-CONTRIB-2013-056                   https://drupal.org/node/2038801 Stage File Proxy
+# SA-CONTRIB-2013-057                   https://drupal.org/node/2038807 TinyBox
