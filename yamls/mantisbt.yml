@@ -1,19 +1,21 @@
-# CVE-2011-2938 http://osvdb.org/74566
+# CVE-2011-2938         http://osvdb.org/74566
 # CVE-2011-3356
 # CVE-2011-3357
 # CVE-2011-3358
 # CVE-2011-3578
-# CVE-2012-1118 http://osvdb.org/79834
+# CVE-2012-1118         http://osvdb.org/79834
 # CVE-2012-1119
-# CVE-2012-1120 http://osvdb.org/79833
-# CVE-2012-1121 http://osvdb.org/79831
+# CVE-2012-1120         http://osvdb.org/79833
+# CVE-2012-1121         http://osvdb.org/79831
 # CVE-2012-1122
-# CVE-2012-1123 http://osvdb.org/79832
-# CVE-2012-2691 http://osvdb.org/82838
-# CVE-2012-2692 http://osvdb.org/83166
-# CVE-2013-0197
-# CVE-2013-1810
-# CVE-2013-1811
+# CVE-2012-1123         http://osvdb.org/79832
+# CVE-2012-2691 1.2.11  http://osvdb.org/82838
+# CVE-2012-2692 1.2.11  http://osvdb.org/83166
+# CVE-2012-5522 1.2.12  http://osvdb.org/87529
+# CVE-2012-5523 1.2.12  http://osvdb.org/87402 http://secunia.com/advisories/51300/
+# CVE-2013-0197 1.2.13  http://osvdb.org/89345 http://secunia.com/advisories/51853/ http://www.mantisbt.org/bugs/view.php?id=15373
+# CVE-2013-1810 1.2.13  notified OSVDB
+# CVE-2013-1811 1.2.13  notified OSVDB
 # CVE-2013-1883 1.2.15  http://osvdb.org/91618
 # CVE-2013-1930 1.2.15  http://osvdb.org/92024
 # CVE-2013-1931 1.2.15  http://osvdb.org/92025
