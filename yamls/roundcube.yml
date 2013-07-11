@@ -14,7 +14,7 @@
 # CVE-2012-3507
 # CVE-2012-3508 N/A   http://osvdb.org/84741
 # CVE-2012-4668 0.8.1 http://osvdb.org/85142
-# CVE-2012-6121 0.8.5 http://osvdb.org/90175,90177
+# CVE-2012-6121 0.8.5 http://osvdb.org/90175 http://osvdb.org/90177
 # CVE-2013-1904 0.8.6
 Roundcube:
   1:
