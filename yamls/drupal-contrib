@@ -129,7 +129,7 @@
 # SA-CONTRIB-2013-044	CVE-2013-1972   http://drupal.org/node/1972942
 # SA-CONTRIB-2013-045	CVE-2013-1973   http://drupal.org/node/1972976
 # SA-CONTRIB-2013-046	CVE-2013-2036   http://drupal.org/node/1984212
-# SA-CONTRIB-2013-047	CVE-2013-XXXX   http://drupal.org/node/1995706
+# SA-CONTRIB-2013-047	CVE-2013-XXXX   http://drupal.org/node/1995706 http://openwall.com/lists/oss-security/2013/05/15/8
 # SA-CONTRIB-2013-048	CVE-2013-2122   http://drupal.org/node/2007048
 # SA-CONTRIB-2013-049	CVE-2013-2123   http://drupal.org/node/2007122
 # SA-CONTRIB-2013-050	CVE-2013-2129   https://drupal.org/node/2007460

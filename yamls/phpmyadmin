@@ -27,8 +27,8 @@
 # CVE-2012-4345                                 PMASA-2012-4
 # CVE-2012-5159         http://osvdb.org/85739 http://www.phpmyadmin.net/home_page/security/PMASA-2012-5.php
 # CVE-2013-1937 3.5.8   http://osvdb.org/92201 http://www.phpmyadmin.net/home_page/security/PMASA-2013-1.php
-# CVE-2013-3238 3.5.8.1 http://osvdb.org/show/osvdb/92793 http://www.phpmyadmin.net/home_page/security/PMASA-2013-2.php
-# CVE-2013-3239 3.5.8.1 http://osvdb.org/show/osvdb/92792 http://www.phpmyadmin.net/home_page/security/PMASA-2013-3.php
-# CVE-2013-3240 3.5.8.1 http://osvdb.org/show/osvdb/92794 http://www.phpmyadmin.net/home_page/security/PMASA-2013-4.php
-# CVE-2013-3241 3.5.8.1 http://osvdb.org/show/osvdb/92795 http://www.phpmyadmin.net/home_page/security/PMASA-2013-5.php
+# CVE-2013-3238 3.5.8.1 http://osvdb.org/92793 http://www.phpmyadmin.net/home_page/security/PMASA-2013-2.php
+# CVE-2013-3239 3.5.8.1 http://osvdb.org/92792 http://www.phpmyadmin.net/home_page/security/PMASA-2013-3.php
+# CVE-2013-3240 3.5.8.1 http://osvdb.org/92794 http://www.phpmyadmin.net/home_page/security/PMASA-2013-4.php
+# CVE-2013-3241 3.5.8.1 http://osvdb.org/92795 http://www.phpmyadmin.net/home_page/security/PMASA-2013-5.php
 # TODO: PMASA-2010-1 - PMASA-2010-7, PMASA-2011-1 - PMASA-2011-20  PMASA-2012-1 - PMASA-2012-7
