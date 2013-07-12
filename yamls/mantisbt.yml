@@ -14,8 +14,8 @@
 # CVE-2012-5522 1.2.12  http://osvdb.org/87529
 # CVE-2012-5523 1.2.12  http://osvdb.org/87402 http://secunia.com/advisories/51300/
 # CVE-2013-0197 1.2.13  http://osvdb.org/89345 http://secunia.com/advisories/51853/ http://www.mantisbt.org/bugs/view.php?id=15373
-# CVE-2013-1810 1.2.13  notified OSVDB
-# CVE-2013-1811 1.2.13  notified OSVDB
+# CVE-2013-1810 1.2.13  http://osvdb.org/95072
+# CVE-2013-1811 1.2.13  http://osvdb.org/89950
 # CVE-2013-1883 1.2.15  http://osvdb.org/91618
 # CVE-2013-1930 1.2.15  http://osvdb.org/92024
 # CVE-2013-1931 1.2.15  http://osvdb.org/92025
