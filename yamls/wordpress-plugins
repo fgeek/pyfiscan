@@ -141,6 +141,7 @@
 # CVE-2013-2011 wp-super-cache              http://osvdb.org/92743 (incomplete fix for CVE-2013-2009)
 # CVE-2013-2108 wp-cleanfix
 # CVE-2013-2109 wp-cleanfix                 http://osvdb.org/93435
+# CVE-2013-2180 uk-cookie   http://osvdb.org/87561
 # CVE-2013-2501 terillion-reviews           http://osvdb.org/91123
 # CVE-2013-2640 wp-mailup                   http://osvdb.org/91274
 # CVE-2013-2696
@@ -155,7 +156,9 @@
 # CVE-2013-3529 wp-funeral-press
 # CVE-2013-3530
 # CVE-2013-3532 player                      http://osvdb.org/92264
+# CVE-2013-3684 nextgen-gallery http://osvdb.org/94232 http://www.s21sec.com/images/labs/advisories/s21sec-046-en.txt
 # CVE-2013-3720 feedweb
+# CVE-2013-4117 category-grid-view-gallery http://osvdb.org/94805
 # CVE-2013-XXXX advanced-xml-reader         http://osvdb.org/92904
 # CVE-2013-XXXX background-music Jplayer.swf XSS
 # CVE-2013-XXXX crayon-syntax-highlighter   1.13    http://osvdb.org/86256 !
@@ -184,7 +187,6 @@
 # CVE-XXXX-XXXX wp-forum http://cxsecurity.com/issue/WLB-2013020035
 # CVE-XXXX-XXXX wp-predict                          http://osvdb.org/83697
 # CVE-XXXX-XXXX wp-video-commando                   http://cxsecurity.com/issue/WLB-2013030207
-# CVE-2013-2180 uk-cookie   http://osvdb.org/87561
 # http://wpsecure.net/2013/05/a-list-of-recent-xss-plugin-exploits-from-april/
 # http://wpsecure.net/2013/05/open-flash-chart/
 # HTB22858, HTB22859, HTB22860, HTB22848, HTB22849, HTB22861, HTB22838,

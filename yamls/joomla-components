@@ -39,3 +39,4 @@
 # CVE-XXXX-XXXX com_g2bridge        http://osvdb.org/94665 http://www.exploit-db.com/exploits/12814/ http://cxsecurity.com/issue/WLB-2013060227 http://www.securityfocus.com/bid/40440
 # CVE-XXXX-XXXX qcontacts                                   http://docs.joomla.org/Vulnerable_Extensions_List#QContacts_1.0.6
 # CVE-2008-XXXX com_football    http://osvdb.org/94703
+# CVE-XXXX-XXXX jmcameron       http://vel.joomla.org/resolved/624-attachments-jmcameron.html http://jmcameron.net/attachments/updates/3.1.1/
