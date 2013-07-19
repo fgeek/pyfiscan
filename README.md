@@ -38,6 +38,7 @@ Detects following software
 * MyBB: http://osvdb.org/92683 http://osvdb.org/92684 http://osvdb.org/92686 http://osvdb.org/92687 http://osvdb.org/92688 http://osvdb.org/92689
 * Roundcube: CVE-2012-3508, OSVDB:90175,90177
 * SMF: CVE-2011-3615, CVE-2011-4173, OSVDB:76317,76318,76822 SA46386
+* Serendipity: [Serendipity release advisory](http://blog.s9y.org/archives/247-Serendipity-1.7-released.html) [Security advisory](https://www.mavitunasecurity.com/xss-vulnerabilities-in-serendipity/)
 * TestLink: CVE-2012-2275 http://osvdb.org/84712 http://osvdb.org/84711 http://osvdb.org/84713
 * TikiWiki: CVE-2012-0911 OSVDB:83534, CVE-2012-3996 [OSVDB 83533](http://osvdb.org/83533)
 * Trac: CVE-2010-5108 [OSVDB 63317](http://osvdb.org/63317)

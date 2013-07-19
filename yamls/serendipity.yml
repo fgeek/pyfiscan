@@ -1,0 +1,21 @@
+# URL: http://www.s9y.org/
+# Version: serendipity_config.inc.php:$serendipity['version']         = '1.7';
+# NOTE: security email address working
+#
+# http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=611661
+# CVE-2009-4412 1.5     http://osvdb.org/61245
+# CVE-2011-4090         http://osvdb.org/75777 http://osvdb.org/76856
+# CVE-2011-4365         http://osvdb.org/76836
+# CVE-2012-2331         http://osvdb.org/81713
+# CVE-2012-2332 1.6.1   http://osvdb.org/81773
+# CVE-2012-2762 1.6.2   http://osvdb.org/82036
+# CVE-XXXX-XXXX         http://osvdb.org/87395
+# CVE-2013-XXXX 1.7     http://blog.s9y.org/archives/247-Serendipity-1.7-released.html https://www.mavitunasecurity.com/xss-vulnerabilities-in-serendipity/ NS-13-003
+Serendipity:
+  1:
+    location: ['/serendipity_config.inc.php']
+    secure_version: '1.7'
+    regexp: ['\$serendipity.*?version.*?(?P<version>[0-9.]+)']
+    cve: 'http://blog.s9y.org/archives/247-Serendipity-1.7-released.html https://www.mavitunasecurity.com/xss-vulnerabilities-in-serendipity/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
