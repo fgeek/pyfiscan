@@ -142,3 +142,6 @@
 # SA-CONTRIB-2013-056   CVE-2013-4139   https://drupal.org/node/2038801 Stage File Proxy
 # SA-CONTRIB-2013-057   CVE-2013-4140   https://drupal.org/node/2038807 TinyBox
 # SA-CONTRIB-2013-058                   https://drupal.org/node/2044173
+#                       CVE-2012-6576
+#                       CVE-2012-6575
+#                       CVE-2012-6574

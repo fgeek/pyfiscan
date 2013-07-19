@@ -178,7 +178,6 @@ RazorCMS: CVE-2012-5918
 RazorCMS: CVE-2012-6038
 Pluck CMS <http://www.pluck-cms.org>: HTB22798, HTB22799
 MemHT Portal <http://www.memht.com/>: HTB22663
-MiniBB <http://www.minibb.com/>: HTB22670, HTB22671
 Viscacha <http://www.viscacha.org>: HTB22919, HTB22920, HTB22921 (sqli)
 UseBB: CVE-2011-3611, CVE-2011-3612, HTB22913, HTB22914
 Hastymail2: CVE-2011-4541

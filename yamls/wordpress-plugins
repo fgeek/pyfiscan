@@ -187,6 +187,7 @@
 # CVE-XXXX-XXXX wp-forum http://cxsecurity.com/issue/WLB-2013020035
 # CVE-XXXX-XXXX wp-predict                          http://osvdb.org/83697
 # CVE-XXXX-XXXX wp-video-commando                   http://cxsecurity.com/issue/WLB-2013030207
+# CVE-2013-2704 dropdown-menu-widget    http://osvdb.org/94771
 # http://wpsecure.net/2013/05/a-list-of-recent-xss-plugin-exploits-from-april/
 # http://wpsecure.net/2013/05/open-flash-chart/
 # HTB22858, HTB22859, HTB22860, HTB22848, HTB22849, HTB22861, HTB22838,
