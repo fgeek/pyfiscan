@@ -43,6 +43,7 @@ Detects following software
 * TestLink: CVE-2012-2275 http://osvdb.org/84712 http://osvdb.org/84711 http://osvdb.org/84713
 * TikiWiki: CVE-2012-0911 OSVDB:83534, CVE-2012-3996 [OSVDB 83533](http://osvdb.org/83533)
 * Tiny Tiny RSS: SA43424 [OSVDB:70934](http://osvdb.org/70934)
+* TinyTinyRSS: http://osvdb.org/70934 http://secunia.com/advisories/43424/
 * Trac: CVE-2010-5108 [OSVDB 63317](http://osvdb.org/63317)
 * WikkaWiki: CVE-2011-4448, CVE-2011-4449, CVE-2011-4450, CVE-2011-4451, CVE-2011-4452 OSVDB 77390-77394 [WikkaWiki security advisory](http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/)
 * WordPress: CVE-2013-2199, CVE-2013-2200, CVE-2013-2201, CVE-2013-2202, CVE-2013-2203, CVE-2013-2204, CVE-2013-2205, [WordPress News](http://wordpress.org/news/2013/06/wordpress-3-5-2/), [WordPress Codex](http://codex.wordpress.org/Version_3.5.2)
@@ -93,3 +94,4 @@ Thanks to
 
 * Tuomo Komulainen for big patches and ideas
 * Partly the idea and first lines of (re-written) code came from Atte H. (guaqua)
+* Juhamatti Niemelä for database updates
