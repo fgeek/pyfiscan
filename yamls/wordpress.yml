@@ -107,11 +107,12 @@
 # CVE-2013-2203 3.5.2   http://wordpress.org/news/2013/06/wordpress-3-5-2/ http://bugs.debian.org/713947 http://codex.wordpress.org/Version_3.5.2
 # CVE-2013-2204 3.5.2   http://wordpress.org/news/2013/06/wordpress-3-5-2/ http://bugs.debian.org/713947 http://codex.wordpress.org/Version_3.5.2
 # CVE-2013-2205 3.5.2   http://wordpress.org/news/2013/06/wordpress-3-5-2/ http://bugs.debian.org/713947 http://codex.wordpress.org/Version_3.5.2
+# CVE-2013-4144 3.6     http://osvdb.org/92635 http://osvdb.org/83413
 WordPress:
   1:
     location: ['/wp-includes/version.php']
-    secure_version: '3.5.2'
+    secure_version: '3.6'
     regexp: ['\$wp_version.*?(?P<version>[0-9.]+)']
-    cve: 'CVE-2013-2199, CVE-2013-2200, CVE-2013-2201, CVE-2013-2202, CVE-2013-2203, CVE-2013-2204, CVE-2013-2205, http://wordpress.org/news/2013/06/wordpress-3-5-2/ http://codex.wordpress.org/Version_3.5.2'
+    cve: 'CVE-2013-4144 http://osvdb.org/92635 http://osvdb.org/83413 http://wordpress.org/news/2013/08/oscar/ http://codex.wordpress.org/Version_3.6'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
