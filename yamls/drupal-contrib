@@ -1,4 +1,7 @@
 #										https://drupal.org/node/1332022  http://osvdb.org/82463
+#                       CVE-2012-6574
+#                       CVE-2012-6575
+#                       CVE-2012-6576
 # SA-CONTRIB-2010-098   CVE-2010-5275   https://drupal.org/node/927016
 # SA-CONTRIB-2010-098   CVE-2010-5276   https://drupal.org/node/927016
 # SA-CONTRIB-2010-099   CVE-2010-5277   https://drupal.org/node/933960
@@ -129,7 +132,8 @@
 # SA-CONTRIB-2013-044	CVE-2013-1972   http://drupal.org/node/1972942
 # SA-CONTRIB-2013-045	CVE-2013-1973   http://drupal.org/node/1972976
 # SA-CONTRIB-2013-046	CVE-2013-2036   http://drupal.org/node/1984212
-# SA-CONTRIB-2013-047	CVE-2013-XXXX   http://drupal.org/node/1995706 http://openwall.com/lists/oss-security/2013/05/15/8
+# SA-CONTRIB-2013-047	CVE-2013-4177   http://drupal.org/node/1995706
+# SA-CONTRIB-2013-047   CVE-2013-4178   http://drupal.org/node/1995706
 # SA-CONTRIB-2013-048	CVE-2013-2122   http://drupal.org/node/2007048
 # SA-CONTRIB-2013-049	CVE-2013-2123   http://drupal.org/node/2007122
 # SA-CONTRIB-2013-050	CVE-2013-2129   https://drupal.org/node/2007460
@@ -141,7 +145,13 @@
 # SA-CONTRIB-2013-055   CVE-2013-4138   https://drupal.org/node/2038363 Hatch
 # SA-CONTRIB-2013-056   CVE-2013-4139   https://drupal.org/node/2038801 Stage File Proxy
 # SA-CONTRIB-2013-057   CVE-2013-4140   https://drupal.org/node/2038807 TinyBox
-# SA-CONTRIB-2013-058                   https://drupal.org/node/2044173
-#                       CVE-2012-6576
-#                       CVE-2012-6575
-#                       CVE-2012-6574
+# SA-CONTRIB-2013-058                   https://drupal.org/node/2044173 MRBS - Abandoned
+# SA-CONTRIB-2013-059                   https://drupal.org/node/2044299 Hostmaster (Aegir)
+# SA-CONTRIB-2013-060   CVE-2013-4174   https://drupal.org/node/2049415 Scald
+# SA-CONTRIB-2013-061   CVE-2013-4187   https://drupal.org/node/2054701 Flippy
+# SA-CONTRIB-2013-062   CVE-2013-4225   https://drupal.org/node/2059603 RESTful Web Services
+# SA-CONTRIB-2013-063   CVE-2013-4226   https://drupal.org/node/2059589 Authenticated User Page Caching
+# SA-CONTRIB-2013-064   CVE-2013-4227   https://drupal.org/node/2059599 Persona
+# SA-CONTRIB-2013-065   CVE-2013-4228   https://drupal.org/node/2059765 Organic Groups
+# SA-CONTRIB-2013-066   CVE-2013-4229   https://drupal.org/node/2059823 Monster Menus XSS
+# SA-CONTRIB-2013-066   CVE-2013-4230   https://drupal.org/node/2059823 Monster Menus Access bypass
