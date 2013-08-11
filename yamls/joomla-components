@@ -41,3 +41,10 @@
 # CVE-XXXX-XXXX qcontacts                                   http://docs.joomla.org/Vulnerable_Extensions_List#QContacts_1.0.6
 # CVE-2008-XXXX com_football    http://osvdb.org/94703
 # CVE-XXXX-XXXX jmcameron       http://vel.joomla.org/resolved/624-attachments-jmcameron.html http://jmcameron.net/attachments/updates/3.1.1/
+# CVE-XXXX-XXXX plugin_googlemap http://osvdb.org/95775
+# CVE-XXXX-XXXX plugin_googlemap http://osvdb.org/95776
+# CVE-XXXX-XXXX cobalt http://vel.joomla.org/vel-blog/716-cobalt-8-270.html
+# CVE-XXXX-XXXX com_sectionex   2.5.104 http://seclists.org/bugtraq/2013/Aug/30
+# CVE-XXXX-XXXX com_events_booking_v5
+# CVE-XXXX-XXXX com_jse_event   1.0.1   http://seclists.org/bugtraq/2013/Aug/31
+# CVE-XXXX-XXXX QContacts   1.0.6   http://vel.joomla.org/vel-blog/57-qcontacts-1-0-6.html http://docs.joomla.org/Vulnerable_Extensions_List#QContacts_1.0.6

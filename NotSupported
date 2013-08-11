@@ -1,19 +1,13 @@
-Sitecore CMS: not free
+AShop: e.g. free trial
 CourseForum ProjectForum: free trials and such. does not seem to be open-source
 Ecomat CMS: can't find even one page to download this
-AShop: e.g. free trial
-Valid tiny-erp: no real versioning and last update 2008. Didn't repond to email
-eFront, enterprise versions: I can handle this if someone requests it and provides information
-SugarCRM: not open-source
-CMS Ariadna: Pages not in english
-Almnzm: Pages not in english
-ecoCMS: Not open-source if I am correct
-Kayako Fusion: not open-source
-jakcms: not open-source and also selling products. extreamely bad software in security viewpoint
-Zeema CMS: "Ukrainian commercial CMS"
-Active CMS: pages not in english
 Pulse Pro CMS
-KnowledgeTree
+SaurusCMS http://www.saurus.info/ no version number in the deployment
+Symfony: http://www.concrete5.org/ no version number in the deployment
+Valid tiny-erp: no real versioning and last update 2008. Didn't repond to email
+Zeema CMS: "Ukrainian commercial CMS"
+eFront, enterprise versions: can be added if someone requests it and provides information
+KnowledgeTree:
     "KnowledgeTree Community Edition is unsupported, untested software and not
     designed for production use. KnowledgeTree Inc. does not warrant this
     software in any way."
@@ -21,8 +15,18 @@ KnowledgeTree
     subscribes users to spam email-list, which is advertizing cloud version,
     which is NOT free
 Invision Power Board (abbreviated IPB, IP.Board or IP Board)
-Marinet CMS: pages not in english
-JAOW: pages not in english
 Mutiny: not open-source. http://www.mutiny.com/images.php
-RadioCMS: pages not in english
-Kasseler CMS: pages not in english
+Pages not in english:
+    Active CMS
+    Almnzm
+    CMS Ariadna
+    JAOW
+    Kasseler CMS
+    Marinet CMS
+    RadioCMS
+Closed source/product not free:
+    Sitecore CMS
+    SugarCRM
+    ecoCMS(?)
+    Kayako Fusion
+    jakcms

@@ -62,6 +62,8 @@ Installation
 Notes
 -----
 
+* WordPress
+  * [Announcing a secure SWFUpload fork](http://make.wordpress.org/core/2013/06/21/secure-swfupload/)
 * Joomla
   * 1.5 is end-of-life since 2012-04-30
   * 1.6 is end-of-life since [2011-08-19](http://www.joomla.org/announcements/release-news/5380-joomla-170-released.html)

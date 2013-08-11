@@ -15,339 +15,333 @@ or asking CVEs. Contact project developers in case you need more information.
 This list should be empty so there is a LOT to do.
 
 phpgroupware/chora/inc/version.php <?php define('CHORA_VERSION', '0.4.2-cvs') ?>
-CVE-2012-5181 concrete5 Unspecified XSS
-CosCms HTB23145
-waraxe-2013-SA#097 PHP-Fusion
-FusionForge: CVE-2013-1423
-CubeCart CVE-2013-1465
-Zen Cart module: CVE-2012-5808, CVE-2012-5807, CVE-2012-5806, CVE-2012-5805
-tinyguestbook CVE-2011-5199
-tinyguestbook CVE-2011-5201
-Kajian Website CMS: CVE-2011-5111
-Squiz CMS: NGS00330
-e107 jbShop: CVE-2011-5186
-Wordpress Krea3AllMedias http://cxsecurity.com/ascii/WLB-2012090131
-http://www.securityfocus.com/bid/48348
-CVE-2012-3477 NeoInvoice Blind SQL
-http://cxsecurity.com/issue/WLB-2012080016
-http://cxsecurity.com/issue/WLB-2012080017
-http://www.securityfocus.com/bid/53942
-http://www.securityfocus.com/bid/53909
-http://www.securityfocus.com/bid/53910
-http://www.securityfocus.com/bid/53945
-phpMyVisites http://cxsecurity.com/issue/WLB-2012070022
-eXtplorer: CVE-2012-3362
+1024 CMS: CVE-2010-1093
+11in1 <http://www.11in1.org/>: HTB23071
+AR Web Content Manager (AWCM): CVE-2010-1066
+Acidcat CMS: CVE-2010-0976, CVE-2010-0984
+Acuity CMS: CVE-2012-4745
+Acuity CMS: http://yehg.net/lab/pr0js/advisories/%5Bacuity_cms2.6%20x_(asp)%5D_arbitrary_fileupload
+Acuity CMS: http://yehg.net/lab/pr0js/advisories/%5Bacuity_cms2.6%20x_(asp)%5D_path_traversal
+Advanced Electron Forums: CVE-2011-3582
+Allinta CMS: CVE-2010-4922
+Anchor CMS <http://www.anchorcms.com/>: http://osvdb.org/81293,81294,81295,81296,81297,81298
+AneCMS Blog: CVE-2010-2437
+AneCMS CVE-2012-4997
+Ariadne CMS CVE-2011-4938
+Ariadne: SSCHADV2011-038 #TODO: No CVE
+B2Evolution CMS: http://osvdb.org/show/osvdb/80671
+B2Evolution CMS: http://osvdb.org/show/osvdb/80672
+BASE: http://www.securityfocus.com/bid/51874/info
+Baby Gekko CMS: http://packetstormsecurity.org/files/113045/gekkocms-disclose.txt
+Banana Dance CMS <http://www.doyoubananadance.com>: NS-11-010
+Batavi: CVE-2012-0069
+Beehive Forum 101 <http://www.beehiveforum.co.uk/>: SSCHADV2011-042 #TODO: No CVE
+Bitweaver <http://www.bitweaver.org>: SSCHADV2011-021 CVE?
+Blogs manager <http://sourceforge.net/projects/blogsmanager/>: http://osvdb.org/1167174,1167222,1167223,1167224,1167225,1167226,1167227,1167228,1167229,1167230,1167231 SA46918 http://seclists.org/fulldisclosure/2011/Nov/302 http://sourceforge.net/tracker/?func=detail&aid=3506818&group_id=219284&atid=1045881 TODO: No CVE
+BlueCMS: CVE-2010-4897
+BoltWire <http://www.boltwire.com/>: SSCHADV2012-001 CVE?
 CMSMS: CVE-2011-4310 http://osvdb.org/77106
-e107 Plugins - Filemanager Arbitrary File Upload Vulnerability http://cxsecurity.com/issue/WLB-2012060242
-http://cxsecurity.com/issue/WLB-2012060240
-http://cxsecurity.com/issue/WLB-2012060239
-http://cxsecurity.com/issue/WLB-2012060238
-http://cxsecurity.com/issue/WLB-2012060237
-http://cxsecurity.com/issue/WLB-2012060236
-http://cxsecurity.com/issue/WLB-2012060235
-Zen Cart: CVE-2011-4547
-Zen Cart: CVE-2011-4567
-Zen Cart: CVE-2011-4403
-Zen Cart: CVE-2012-2433 TWSL2012-004
+CMSMini NS-12-012
+CMSimple_XH <http://www.cmsimple-xh.de>: CVE-2012-1914
+CVE-2012-3477 NeoInvoice Blind SQL
+Cacti: CVE-2011-4824
+CakePHP CVE-2012-4399 http://osvdb.org/84042
+Chamilo: CVE-2012-4029
+Chamilo: CVE-2012-4030
+Chyrp: CVE-2012-1001 HTB23073
+Ciamos CMS <http://sourceforge.net/projects/ciamos/>: CVE-2009-4156
+ClearSilver: CVE-2011-4357
+ClipBucket NS-12-013
+Collabtive: CVE-2012-2670
+CompactCMS http://www.compactcms.nl/: HTB22697, HTB22695, HTB22696
+Concrete CMS: 5.4.1.1 XSS CVE-2011-3182
+Contao <http://www.contao.org/>: CVE-2011-0508, CVE-2011-4335, CVE-2011-4329
+Contao: CVE-2012-4383
+CosCms HTB23145
+CubeCart CVE-2013-1465
+CubeCart: 2012-02-10: CubeCart 3.0.x in End-of-Support/Maintenance circle
+CubeCart: CVE-2012-0865, KIS-2013-02
+Cunity http://cxsecurity.com/issue/WLB-2013030206
+CuteSITE CMS: CVE-2010-5024, CVE-2010-5025
+DeluxeBB: CVE-2009-4465
+DiY-CMS: CVE-2010-3206
+Docmint CMS: CVE-2010-0319
+Dolphin <http://www.boonex.com/dolphin>: http://seclists.org/bugtraq/2011/Oct/113 http://www.boonex.com/n/dolphin-7-0-8-beta-1
+DotProject NS-12-014, HTB23124
+Elefant CMS: CVE-2012-1296
+Elefant CMS: HTB23076 http://osvdb.org/79816, CVE-2012-6521
+Elgg: CVE-2011-2935 XSS, CVE-2011-2936 SQLi, CVE-2013-0234, CVE-2012-6563, CVE-2012-6562,CVE-2012-6561
+Elxis CMS: CVE-2011-4918 http://osvdb.org/77563,77564
 EnanoCMS: NS-11-002
-Prado Portal: CVE-2010-4958
-Without CVE: "Schurtz, Stefan" <S.Schurtz@infoserve.de> INFOSERVE-ADV2011-04.txt INFOSERVE-ADV2011-11.txt INFOSERVE-ADV2011-12.txt INFOSERVE-ADV2011-02.txt
-eGroupware: LFI CVE-2011-4948
-eGroupware: SQLi CVE-2011-4949
-eGroupware: Reflected XSS CVE-2011-4950
-eGroupware: Open redirect CVE-2011-4951
-WebCalendar: XSS CVE-2012-0846 http://osvdb.org/79674
-WebCalendar: CVE-2012-1495 http://osvdb.org/81329
-WebCalendar: CVE-2012-1496 http://osvdb.org/81330
+Entry Level CMS (EL CMS): CVE-2010-1075, CVE-2010-1076
+ExponentCMS: CVE-2009-4744
+ExponentCMS: CVE-2010-5002
+ExponentCMS: NS-12-006
+ExponentCMS: http://osvdb.org/81326 # TODO: No CVE
+ExponentCMS: http://osvdb.org/81327 # TODO: No CVE
+FlatNux: CVE-2012-4877, CVE-2012-4878
+FlatNux: CVE-2012-4892
+FlexCMS: CVE-2012-1901
+FluxBB: CVE-2011-3621 http://fluxbb.org/forums/viewtopic.php?id=5751 fixed in 1.4.7
+Fork CMS: CVE-2012-1188/HTB23075
+Fork CMS: CVE-2012-1207, CVE-2012-1208
+Fork CMS: CVE-2012-5164
+Freelancer calendar <http://sourceforge.net/projects/freelancercal/>: http://osvdb.org/77244,77245,77246,77247,77248 SA46970 TODO: No CVE
+Frog CMS <http://www.madebyfrog.com/>: HTB22682, HTB22685, HTB22684, HTB22683
+FusionForge: CVE-2013-1423
+Geeklog: CVE-2011-4647
+Geeklog: CVE-2011-4942
+Geeklog: CVE-2013-1470
+Grafik CMS: CVE-2010-2615
+Group-Office: CVE-2012-4239
+HTML-EDIT CMS: CVE-2010-4609
+HTML-EDIT CMS: CVE-2010-4610
+HTML-EDIT CMS: HTB22734, HTB22735
+Habari: HTB22731, HTB22732, HTB22733
+Hastymail2: CVE-2011-4541
+Hastymail2: CVE-2011-4542
+Havalite CMS: http://osvdb.org/80768,80769,80770 http://osvdb.org/81323,81324,81355
+Horde: http://osvdb.org/78474-78477
 Hotel Booking Portal <http://sourceforge.net/projects/hbportal/>: CVE-2012-1672 SQL Injection
-e-ticketing <http://sourceforge.net/projects/e-ticketing/>: CVE-2012-1673 SQL Injection
-phpPaleo <http://sourceforge.net/projects/phppaleo/>: CVE-2012-1671 LFI
-Seditio <http://www.neocrome.net/>: http://osvdb.org/80688 XSS
-Seditio <http://www.neocrome.net/>: SQLi http://osvdb.org/81109
-Seditio <http://www.neocrome.net/>: CSRF http://osvdb.org/81108
-Seditio <http://www.neocrome.net/>: http://www.cotonti.com/news/community/seditio-eol
-Seditio <http://www.neocrome.net/>: http://www.neocrome.net/page.php?id=2470 "it is NOT recommended to upgrade past Seditio 150 for any live site."
+Hycus CMS: CVE-2010-4612
+Hycus CMS: CVE-2010-4613
+IceBB: HTB22686, HTB22687, HTB22688
+ImpressPages CMS: NGS00109
+JAMWiki: 2010-5054 0.8.4 osvdb/63564
+JAMWiki: http://osvdb.org/show/osvdb/80795
+Jara: CVE-2011-4094, CVE-2011-4095
+Jcow CMS: RCE CVE-2011-3203
+Jcow CMS: XSS CVE-2011-3202
+KaiBB <http://code.google.com/p/kaibb/>: HTB22749 / HTB22748 / HTB22747 / HTB22746 / HTB22793 / SSCHADV2011-027 #TODO: No CVE?, verify HTB announcements
+Kajian Website CMS: CVE-2011-5111
+LetoDMS (old: MyDMS): CVE-2010-2006, CVE-2010-2007, CVE-2004-1732, CVE-2004-1733, SA38237, SA12340
+LightNEasy <http://www.lightneasy.org/>: SSCHADV2011-013
+LittleCMS / lcms / liblcms: CVE-2009-0793, CVE-2009-0581, CVE-2009-0723, CVE-2009-0733, CVE-2007-2741, CVE-2008-5316, CVE-2008-5317, SA34634, SA34367, SA25294
+LotusCMS: HTB22883, HTB22884 (fixed in: 3.0.5), HTB22885, HTB22886, HTB22887, HTB22888
+Meditate: osvdb/77491 SSCHADV2011-039
+MemHT Portal <http://www.memht.com/>: HTB22663
+MemHt: HTB22664, HTB22662
+Merethis Centreon <http://www.merethis.com and http://www.centreon.com>: TWSL2011-017 https://www.trustwave.com/spiderlabs/advisories/TWSL2011-017.txt
+Mibew: CSA-12001 http://www.codseq.it/advisories/mibew_messenger_multiple_xss
+MicroCMS: HTB22765
+Mig: CVE-2005-2603 18741
+Mig: CVE-2005-2604 18742
+Mig: http://osvdb.org/22708
+Nakid CMS: CVE-2010-2358
+Netpet CMS: CVE-2009-4723
+NextBBS: CVE-2012-1602 http://osvdb.org/80626 Authentication Bypass
+NextBBS: CVE-2012-1602, CVE-2012-1603, CVE-2012-1604
+NextBBS: CVE-2012-1603 http://osvdb.org/80637 SQLi
+NextBBS: CVE-2012-1604 http://osvdb.org/80627 XSS
+OBM: HTB23060
+ONECMS: CVE-2010-0952
+OSClass: CSA-12003 http://osclass.org/2012/01/16/osclass-2-3-5/ http://www.codseq.it/advisories/multiple_vulnerabilities_in_osclass
+OSClass: CVE-2012-1617 CSA-12004 http://osvdb.org/79984 http://www.codseq.it/advisories/osclass_directory_traversal_vulnerability
+OSClass: HTB23068
+OSCommerce: CVE-2012-1792
+OTRS2: CVE-2012-2582
+OTRS2: CVE-2012-4600
+One Click Orgs: http://osvdb.org/77602, http://osvdb.org/77545, http://osvdb.org/77547, http://osvdb.org/77548, http://osvdb.org/77549, http://osvdb.org/77546, http://osvdb.org/77569
+OneCMS: CVE-2010-4877
+OpenCMS <http://www.opencms.org/>: XSS http://osvdb.org/show/osvdb/71284
+OpenCMS <http://www.opencms.org/>: XSS http://osvdb.org/show/osvdb/71285
+OpenCart: CVE-2013-1891
 OpenCart: http://blog.visionsource.org/2010/01/28/opencart-csrf-vulnerability/
 OpenCart: http://forum.opencart.com/viewtopic.php?t=5792
-OpenCart: waraxe-2012-SA#084 1.5.2.1
 OpenCart: http://osvdb.org/show/osvdb/81238
 OpenCart: http://osvdb.org/show/osvdb/81239
 OpenCart: http://osvdb.org/show/osvdb/81240
 OpenCart: http://osvdb.org/show/osvdb/81241
 OpenCart: http://osvdb.org/show/osvdb/81242
 OpenCart: http://osvdb.org/show/osvdb/81243
-OpenCart: CVE-2013-1891
-Uploadify: waraxe-2012-SA#083 http://osvdb.org/80969,80970
-w-CMS: Arbitrary File Access http://osvdb.org/80974
-w-CMS: Arbitrary File Overwrite http://osvdb.org/80975
-w-CMS: XSS http://osvdb.org/80976,80977
-w-CMS: CSRF http://osvdb.org/80978
-w-CMS: Arbitrary File Upload http://osvdb.org/80979
-Tracks <http://getontracks.org/>: CVE-2011-1671 XSS http://osvdb.org/71352 SA43909
-OSClass: CSA-12003 http://osclass.org/2012/01/16/osclass-2-3-5/ http://www.codseq.it/advisories/multiple_vulnerabilities_in_osclass
-OSClass: CVE-2012-1617 CSA-12004 http://osvdb.org/79984 http://www.codseq.it/advisories/osclass_directory_traversal_vulnerability
-OSClass: HTB23068
-OSCommerce: CVE-2012-1792
-Timesheet Next Gen <https://sourceforge.net/projects/tsheetx/>: http://seclists.org/bugtraq/2012/Mar/10 http://osvdb.org/79804 SA48239
-Symfony: http://osvdb.org/79819 SA48170 http://symfony.com/blog/security-release-symfony-2-0-11-released http://www.senseofsecurity.com.au/advisories/SOS-12-002
-Symfony: CVE-2012-5574
-SimpleGroupware: CVE-2012-1028 INFOSERVE-ADV2012-01 http://osvdb.org/78918
-WebsiteBaker: SSCHADV2012-003 SA48083 http://osvdb.org/78834,78835
-Zope 2 / Zope 3: CVE-2011-3587
-Zope 2 / Zope 3: CVE-2011-4924
-Zope 2: CVE-2012-5486, CVE-2012-5505, CVE-2012-5507, CVE-2012-5508
+OpenCart: waraxe-2012-SA#084 1.5.2.1
+OpenEMR: HTB23069
 OpenKM: COMPASS-2012-001 http://osvdb.org/78105
 OpenKM: COMPASS-2012-002 http://osvdb.org/78106
 OpenKM: CVE-2012-2316 COMPASS-2012-002 http://osvdb.org/78106 SA47420
-winn-guestbook: CVE-2011-5026 http://osvdb.org/78070 SA47391
-BigACE CMS <http://www.bigace.de/>: http://seclists.org/bugtraq/2012/Jan/5
-PHP-SCMS: http://osvdb.org/77692 SA46766 TODO: No CVE
-PHP-SCMS: CVE-2007-5565 http://osvdb.org/39399
-Seotoaster: INFOSERVE-ADV2011-06 TODO: NO CVE
-Seotoaster: CVE-2011-5230
-One Click Orgs: http://osvdb.org/77602, http://osvdb.org/77545, http://osvdb.org/77547, http://osvdb.org/77548, http://osvdb.org/77549, http://osvdb.org/77546, http://osvdb.org/77569
+OpenX: CVE-2012-4989, CVE-2012-4990, CVE-2012-4990
+Orbis CMS <http://www.novo-ws.com/orbis-cms/>: CVE-2010-4313 in newest version and whole project is EOL
+Orbis CMS: CVE-2010-2669
+PBBoard: CVE-2012-1216
+PHP Address Book <http://sourceforge.net/projects/php-addressbook/>: SSCHADV2012-013 CVE-2012-2903
+PHP Booking Calendar <https://sourceforge.net/projects/bookingcalendar/>: CVE-2011-5045
 PHP Inventory <http://www.phpwares.com/>: CVE-2009-4595
 PHP Inventory <http://www.phpwares.com/>: CVE-2009-4596
 PHP Inventory <http://www.phpwares.com/>: CVE-2009-4597
-Elxis CMS: CVE-2011-4918 http://osvdb.org/77563,77564
-Blogs manager <http://sourceforge.net/projects/blogsmanager/>: http://osvdb.org/1167174,1167222,1167223,1167224,1167225,1167226,1167227,1167228,1167229,1167230,1167231 SA46918 http://seclists.org/fulldisclosure/2011/Nov/302 http://sourceforge.net/tracker/?func=detail&aid=3506818&group_id=219284&atid=1045881 TODO: No CVE
-Freelancer calendar <http://sourceforge.net/projects/freelancercal/>: http://osvdb.org/77244,77245,77246,77247,77248 SA46970 TODO: No CVE
-Beehive Forum 101 <http://www.beehiveforum.co.uk/>: SSCHADV2011-042 #TODO: No CVE
-x3cms <http://www.x3cms.net/> SA46748 INFOSERVE-ADV2011-04 #TODO: No CVE
+PHP-Nuke: CVE-2011-1480 http://osvdb.org/73335 SQLi
+PHP-Nuke: CVE-2011-1481 http://osvdb.org/72121
+PHP-SCMS: CVE-2007-5565 http://osvdb.org/39399
+PHP-SCMS: http://osvdb.org/77692 SA46766 TODO: No CVE
+Pandora FMS: CVE-2010-4278
+ParsCMS: CVE-2010-1054
+Pecio CMS <http://www.pecio-cms.com/>: CVE-2010-3204
 Phorum: CVE-2010-1629
 Phorum: CVE-2011-3622
 Phorum: CVE-2011-4561 SSCHADV2011-023
 Phorum: HTB23109
-Merethis Centreon <http://www.merethis.com and http://www.centreon.com>: TWSL2011-017 https://www.trustwave.com/spiderlabs/advisories/TWSL2011-017.txt
+PhpShop <http://www.phpshop.org/>: CVE-2009-4570, CVE-2009-4572
+Pligg CMS: CVE-2009-4786, CVE-2009-4787, CVE-2009-4788, CVE-2010-2577, CVE-2010-3013, CVE-2011-3986, Pligg CMS: CVE-2011-5022, CVE-2011-5023, CVE-2012-2435, Pligg CMS: CVE-2012-2436, CVE-2012-2937, CVE-2012-2936, CVE-2012-2935, http://osvdb.org/82050
+Plone: http://secunia.com/advisories/product/9334/?task=advisories CVE-2010-2422, CVE-2011-4462, CVE-2011-3587 http://securityreason.com/securityalert/8546 (high prio), CVE-2011-0720
+Pluck CMS <http://www.pluck-cms.org>: HTB22798, HTB22799
+Podcast Generator <http://podcastgen.sourceforge.net/>: HTB22800, HTB22801, HTB22802
+PostfixAdmin: CVE-2012-0811 http://osvdb.org/78566,78567 SA47670, CVE-2012-0812 http://osvdb.org/78559-78564 SA47670
+Prado Portal: CVE-2010-4958
+Pragyan CMS: HTB22855, HTB22856, HTB22853
+PrestaShop: HTB23091, CVE-2012-5801, CVE-2012-5800, CVE-2012-5799
+Pulse CMS: CVE-2010-1080
 PyForum: CVE-2009-4407 SA37764
 PyForum: CVE-2009-4408 SA37764
-KaiBB <http://code.google.com/p/kaibb/>: HTB22749 / HTB22748 / HTB22747 / HTB22746 / HTB22793 / SSCHADV2011-027 #TODO: No CVE?, verify HTB announcements
-Dolphin <http://www.boonex.com/dolphin>: http://seclists.org/bugtraq/2011/Oct/113 http://www.boonex.com/n/dolphin-7-0-8-beta-1
-Yet Another CMS <http://yetanothercms.codeplex.com/>: SSCHADV2011-031
-Symfony2: http://www.senseofsecurity.com.au/advisories/SOS-12-002 # No CVE
-Symfony: CVE-2012-6431, CVE-2012-6432
-LightNEasy <http://www.lightneasy.org/>: SSCHADV2011-013
-Bitweaver <http://www.bitweaver.org>: SSCHADV2011-021 CVE?
-BoltWire <http://www.boltwire.com/>: SSCHADV2012-001 CVE?
-phpVideoPro <http://sourceforge.net/projects/phpvideopro/>: SSCHADV2011-041 XSS
-OpenCMS <http://www.opencms.org/>: XSS http://osvdb.org/show/osvdb/71284
-OpenCMS <http://www.opencms.org/>: XSS http://osvdb.org/show/osvdb/71285
-XOOPS: http://osvdb.org/show/osvdb/71228 SA43805 # No CVE. Request was done in here, but not answered: http://seclists.org/oss-sec/2011/q1/552
-phplist: CSRF CVE-2011-0748
-phplist: CVE-2012-2740 http://www.exploit-db.com/exploits/18639/
-phplist: http://www.phplist.com/?lid=567 XSS CVE-2012-2741
-Concrete CMS: 5.4.1.1 XSS CVE-2011-3182
-Jcow CMS: XSS CVE-2011-3202
-Jcow CMS: RCE CVE-2011-3203
-Anchor CMS <http://www.anchorcms.com/>: http://osvdb.org/81293,81294,81295,81296,81297,81298
-ExponentCMS: CVE-2009-4744
-ExponentCMS: CVE-2010-5002
-ExponentCMS: NS-12-006
-ExponentCMS: http://osvdb.org/81326 # TODO: No CVE
-ExponentCMS: http://osvdb.org/81327 # TODO: No CVE
-Orbis CMS <http://www.novo-ws.com/orbis-cms/>: CVE-2010-4313 in newest version and whole project is EOL
-Pandora FMS: CVE-2010-4278
-CubeCart: 2012-02-10: CubeCart 3.0.x in End-of-Support/Maintenance circle
-CubeCart: CVE-2012-0865, KIS-2013-02
-Wordpress plugin BackWPup: http://seclists.org/fulldisclosure/2011/Mar/328 http://secunia.com/advisories/43565/
-Wordpress plugin BackWPup: http://osvdb.org/show/osvdb/71481 SOS-11-003 Fixed in: 1.7.2 CVE-2011-4342
-Wordpress plugin BackWPup: http://osvdb.org/show/osvdb/71242
-Wordpress plugin BackWPup: http://osvdb.org/show/osvdb/71243
-Wordpress plugin BackWPup: http://osvdb.org/show/osvdb/76794
-Wordpress plugin BackWPup: SOS-11-012 http://osvdb.org/show/osvdb/76794
-Uploadify: execute arbitrary PHP code http://osvdb.org/show/osvdb/62653
-Plone: http://secunia.com/advisories/product/9334/?task=advisories CVE-2010-2422, CVE-2011-4462, CVE-2011-3587 http://securityreason.com/securityalert/8546 (high prio), CVE-2011-0720
-LotusCMS: HTB22883, HTB22884 (fixed in: 3.0.5), HTB22885, HTB22886, HTB22887, HTB22888
-FluxBB: CVE-2011-3621 http://fluxbb.org/forums/viewtopic.php?id=5751 fixed in 1.4.7
-Pligg CMS: CVE-2009-4786, CVE-2009-4787, CVE-2009-4788, CVE-2010-2577, CVE-2010-3013, CVE-2011-3986, Pligg CMS: CVE-2011-5022, CVE-2011-5023, CVE-2012-2435, Pligg CMS: CVE-2012-2436, CVE-2012-2937, CVE-2012-2936, CVE-2012-2935, http://osvdb.org/82050
-ClearSilver: CVE-2011-4357
-JAMWiki: 2010-5054 0.8.4 osvdb/63564
-Meditate: osvdb/77491 SSCHADV2011-039
-OBM: HTB23060
-epesi BIM: HTB23061
-Frog CMS <http://www.madebyfrog.com/>: HTB22682, HTB22685, HTB22684, HTB22683
-WebJaxe <http://media4.obspm.fr/outils/webjaxe/en/>: HTB22927
-Winn Guestbook <http://code.google.com/p/winn-guestbook/>: CVE-2011-5026
-WebsiteBaker <http://www.websitebaker2.org/en/home.php>: HTB22928, HTB22929, CVE-2011-2934 http://osvdb.org/76618, CVE-2011-2933 http://osvdb.org/76619
-ribiq CMS <http://tribiq.com/>: CVE-2011-2727/HTB22857
-CakePHP CVE-2012-4399 http://osvdb.org/84042
-RunCMS <http://www.runcms.org/>: HTB22820, HTB22821, HTB22822
-Podcast Generator <http://podcastgen.sourceforge.net/>: HTB22800, HTB22801, HTB22802
-RazorCMS: HTB22803
 RazorCMS: CVE-2012-5918
 RazorCMS: CVE-2012-6038
-Pluck CMS <http://www.pluck-cms.org>: HTB22798, HTB22799
-MemHT Portal <http://www.memht.com/>: HTB22663
-Viscacha <http://www.viscacha.org>: HTB22919, HTB22920, HTB22921 (sqli)
-UseBB: CVE-2011-3611, CVE-2011-3612, HTB22913, HTB22914
-Hastymail2: CVE-2011-4541
-Hastymail2: CVE-2011-4542
-PHP Booking Calendar <https://sourceforge.net/projects/bookingcalendar/>: CVE-2011-5045
-Geeklog: CVE-2011-4647
-Geeklog: CVE-2011-4942
-Geeklog: CVE-2013-1470
-SweetRice CMS <http://www.basic-cms.org/>: CVE-2009-4224, CVE-2011-3804, HTB22668
-Habari: HTB22731, HTB22732, HTB22733
-phpCollab: HTB22916, HTB22917, HTB22918
-SyndeoCMS: HTB22900, HTB22901, HTB22902
-HTML-EDIT CMS: HTB22734, HTB22735
-HTML-EDIT CMS: CVE-2010-4609
-HTML-EDIT CMS: CVE-2010-4610
-SQLiteManager: INFOSERVE-ADV2011-12
-ImpressPages CMS: NGS00109
-Pragyan CMS: HTB22855, HTB22856, HTB22853
-Horde: http://osvdb.org/78474-78477
-PostfixAdmin: CVE-2012-0811 http://osvdb.org/78566,78567 SA47670, CVE-2012-0812 http://osvdb.org/78559-78564 SA47670
-OpenEMR: HTB23069
-BASE: http://www.securityfocus.com/bid/51874/info
-11in1 <http://www.11in1.org/>: HTB23071
-Mibew: CSA-12001 http://www.codseq.it/advisories/mibew_messenger_multiple_xss
-Simple Groupware: CVE-2012-1028 http://osvdb.org/78918
-XRay CMS: CVE-2012-1026 http://osvdb.org/79000
-Chyrp: CVE-2012-1001 HTB23073
-Batavi: CVE-2012-0069
-PBBoard: CVE-2012-1216
-Fork CMS: CVE-2012-1207, CVE-2012-1208
-Fork CMS: CVE-2012-5164
-PHP-Nuke: CVE-2011-1480 http://osvdb.org/73335 SQLi
-PHP-Nuke: CVE-2011-1481 http://osvdb.org/72121
-Elefant CMS: HTB23076 http://osvdb.org/79816, CVE-2012-6521
-IceBB: HTB22686, HTB22687, HTB22688
-CompactCMS http://www.compactcms.nl/: HTB22697, HTB22695, HTB22696
-WonderCMS: HTB22759
-MicroCMS: HTB22765
-Fork CMS: CVE-2012-1188/HTB23075
-Ariadne: SSCHADV2011-038 #TODO: No CVE
-appRain CMF <http://www.apprain.com/>: CVE-2011-3704
-appRain CMF <http://www.apprain.com/>: CVE-2012-1153 RCE http://osvdb.org/78473, CVE-2011-5229, CVE-2011-5228
-Zikula CMS: CVE-2011-0535
-Elgg: CVE-2011-2935 XSS, CVE-2011-2936 SQLi, CVE-2013-0234, CVE-2012-6563, CVE-2012-6562,CVE-2012-6561
-NextBBS: CVE-2012-1603 http://osvdb.org/80637 SQLi
-NextBBS: CVE-2012-1602 http://osvdb.org/80626 Authentication Bypass
-NextBBS: CVE-2012-1604 http://osvdb.org/80627 XSS
-NextBBS: CVE-2012-1602, CVE-2012-1603, CVE-2012-1604
+RazorCMS: HTB22803
 RazorCMS: http://osvdb.org/80618, http://osvdb.org/80619, CVE-2012-1900
-phpPgAdmin: CVE-2012-1600 XSS http://osvdb.org/80870
-CMSimple_XH <http://www.cmsimple-xh.de>: CVE-2012-1914
-B2Evolution CMS: http://osvdb.org/show/osvdb/80671
-B2Evolution CMS: http://osvdb.org/show/osvdb/80672
-Havalite CMS: http://osvdb.org/80768,80769,80770 http://osvdb.org/81323,81324,81355
+ResourceSpace: CVE-2011-4311
+RoseOnlineCMS: CVE-2009-4581
+RunCMS <http://www.runcms.org/>: CVE-2010-2852
+RunCMS <http://www.runcms.org/>: HTB22820, HTB22821, HTB22822
+SQLiteManager: INFOSERVE-ADV2011-12
+Saurus CMS: CVE-2010-1997, CVE-2010-4943
+Seditio <http://www.neocrome.net/>: CSRF http://osvdb.org/81108
+Seditio <http://www.neocrome.net/>: SQLi http://osvdb.org/81109
+Seditio <http://www.neocrome.net/>: http://osvdb.org/80688 XSS
+Seditio <http://www.neocrome.net/>: http://www.cotonti.com/news/community/seditio-eol
+Seditio <http://www.neocrome.net/>: http://www.neocrome.net/page.php?id=2470 "it is NOT recommended to upgrade past Seditio 150 for any live site."
+Seotoaster: CVE-2011-5230
+Seotoaster: INFOSERVE-ADV2011-06 TODO: NO CVE
+Simple Groupware: CVE-2012-1028 http://osvdb.org/78918
+SimpleGroupware: CVE-2012-1028 INFOSERVE-ADV2012-01 http://osvdb.org/78918
+Smarty3: CVE-2012-4277, CVE-2011-1028
+Sniggabo CMS: CVE-2010-1072
+SphereCMS: CVE-2010-1078
+Squiz CMS: NGS00330
+Subrion CMS: CVE-2011-5211, CVE-2011-5212, CVE-2012-5452, CVE-2012-4771, CVE-2012-4772, CVE-2012-4773
+SugarCRM: CVE-2012-0694
+Support Incident Tracker http://sitracker.org/: CVE-2011-4337
+SweetRice CMS <http://www.basic-cms.org/>: CVE-2009-4224, CVE-2011-3804, HTB22668
+SyndeoCMS: HTB22900, HTB22901, HTB22902
+TCExam Edit: CVE-2012-4237, CVE-2012-4238
+TaskFreak NS-12-011
+Timesheet Next Gen <https://sourceforge.net/projects/tsheetx/>: http://seclists.org/bugtraq/2012/Mar/10 http://osvdb.org/79804 SA48239
+TomatoCMS: CVE-2010-1995, CVE-2010-1996, CVE-2010-1514, CVE-2010-2281, CVE-2010-2282, CVE-2010-1515
+TomatoCart: http://yehg.net/lab/pr0js/advisories/%5Btomatocart1.x%5D_arbitrary_file_creation
+Total Shop UK eCommerce based on CodeIgniter: CVE-2012-4236
+Total Shop UK: http://seclists.org/fulldisclosure/2012/Aug/157
+Tracks <http://getontracks.org/>: CVE-2011-1671 XSS http://osvdb.org/71352 SA43909
+Uploadify: execute arbitrary PHP code http://osvdb.org/show/osvdb/62653
+Uploadify: waraxe-2012-SA#083 http://osvdb.org/80969,80970
+UseBB: CVE-2011-3611, CVE-2011-3612, HTB22913, HTB22914
+Viscacha <http://www.viscacha.org>: HTB22919, HTB22920, HTB22921 (sqli)
+WebCalendar: CVE-2012-1495 http://osvdb.org/81329
+WebCalendar: CVE-2012-1496 http://osvdb.org/81330
+WebCalendar: XSS CVE-2012-0846 http://osvdb.org/79674
+WebJaxe <http://media4.obspm.fr/outils/webjaxe/en/>: HTB22927
 WebMatter CMS: http://osvdb.org/80791
 WebMatter CMS: http://osvdb.org/80792
-JAMWiki: http://osvdb.org/show/osvdb/80795
-eocms: CVE-2009-4319/SA37749,SA37272
-PhpShop <http://www.phpshop.org/>: CVE-2009-4570, CVE-2009-4572
-DeluxeBB: CVE-2009-4465
-phpLDAPadmin: CVE-2009-4427, CVE-2011-4074, CVE-2011-4075, CVE-2011-4082, CVE-2012-0834
-ZeusCMS: CVE-2010-0680, CVE-2010-0681
-ONECMS: CVE-2010-0952
-RoseOnlineCMS: CVE-2009-4581
-phpMyVisites: CVE-2007-0891
-Docmint CMS: CVE-2010-0319
-Acidcat CMS: CVE-2010-0976, CVE-2010-0984
-LittleCMS / lcms / liblcms: CVE-2009-0793, CVE-2009-0581, CVE-2009-0723, CVE-2009-0733, CVE-2007-2741, CVE-2008-5316, CVE-2008-5317, SA34634, SA34367, SA25294
-TomatoCMS: CVE-2010-1995, CVE-2010-1996, CVE-2010-1514, CVE-2010-2281, CVE-2010-2282, CVE-2010-1515
-ParsCMS: CVE-2010-1054
-jaxCMS: CVE-2010-1043
-Netpet CMS: CVE-2009-4723
-SphereCMS: CVE-2010-1078
-Sniggabo CMS: CVE-2010-1072
-Pulse CMS: CVE-2010-1080
-Entry Level CMS (EL CMS): CVE-2010-1075, CVE-2010-1076
-1024 CMS: CVE-2010-1093
-ikiwiki: CVE-2010-1195
-ikiwiki: CVE-2012-0220
-cmslite: CVE-2010-2095, CVE-2010-2096
-Ciamos CMS <http://sourceforge.net/projects/ciamos/>: CVE-2009-4156
-AR Web Content Manager (AWCM): CVE-2010-1066
-klinza professional CMS: CVE-2009-4216
-modxcms: CVE-2010-1426
-Saurus CMS: CVE-2010-1997, CVE-2010-4943
-snipegallery: CVE-2010-2126
-odCMS: CVE-2010-2344, CVE-2010-2345
-Nakid CMS: CVE-2010-2358
-AneCMS Blog: CVE-2010-2437
-Orbis CMS: CVE-2010-2669
-Grafik CMS: CVE-2010-2615
-RunCMS <http://www.runcms.org/>: CVE-2010-2852
-Pecio CMS <http://www.pecio-cms.com/>: CVE-2010-3204
-DiY-CMS: CVE-2010-3206
-LetoDMS (old: MyDMS): CVE-2010-2006, CVE-2010-2007, CVE-2004-1732, CVE-2004-1733, SA38237, SA12340
-fckeditor: CVE-2009-2265, CVE-2009-2324, CVE-2007-5156, CVE-2007-3163, CVE-2006-2529, CVE-2006-0658, SA35712, SA27123, SA25719, SA20122, SA18767
-nanoblogger: CVE-2005-2039/SA15754
-request-tracker <bestpractical.com>: CVE-2009-3585, CVE-2009-4151, CVE-2009-3892, SA35451, CVE-2008-3502, SA37546, SA36752, SA30830, CVE-2012-2768, CVE-2012-2769, CVE-2012-2770
-request-tracker: CVE-2012-4730 CVE-2012-4732 CVE-2012-4734 CVE-2012-4735 CVE-2012-4884
-request-tracker: CVE-2011-2082, CVE-2011-2083, CVE-2011-2084, CVE-2011-2085, CVE-2011-4458, CVE-2011-4459, CVE-2011-4460
-MemHt: HTB22664, HTB22662
-Advanced Electron Forums: CVE-2011-3582
-OneCMS: CVE-2010-4877
-chillyCMS: CVE-2010-4894, CVE-2010-4895
-BlueCMS: CVE-2010-4897
-Allinta CMS: CVE-2010-4922
-CuteSITE CMS: CVE-2010-5024, CVE-2010-5025
-ResourceSpace: CVE-2011-4311
-Jara: CVE-2011-4094, CVE-2011-4095
-Support Incident Tracker http://sitracker.org/: CVE-2011-4337
-WebsiteBaker: CVE-2011-4322 http://www.websitebaker2.org/posts/security-vulnerability-backup-module-in-wb-core-13.php
-Contao <http://www.contao.org/>: CVE-2011-0508, CVE-2011-4335, CVE-2011-4329
-Contao: CVE-2012-4383
-bbPress: CVE-2011-1150, HTB22904
-Cacti: CVE-2011-4824
-PHP Address Book <http://sourceforge.net/projects/php-addressbook/>: SSCHADV2012-013 CVE-2012-2903
-Acuity CMS: http://yehg.net/lab/pr0js/advisories/%5Bacuity_cms2.6%20x_(asp)%5D_path_traversal
-Acuity CMS: http://yehg.net/lab/pr0js/advisories/%5Bacuity_cms2.6%20x_(asp)%5D_arbitrary_fileupload
-Acuity CMS: CVE-2012-4745
-Hycus CMS: CVE-2010-4612
-Hycus CMS: CVE-2010-4613
-tinyBB: CVE-2011-0443
-Baby Gekko CMS: http://packetstormsecurity.org/files/113045/gekkocms-disclose.txt
-Collabtive: CVE-2012-2670
-phAlbum: http://cxsecurity.com/issue/WLB-2012050155
-SugarCRM: CVE-2012-0694
-Mig: CVE-2005-2604 18742
-Mig: CVE-2005-2603 18741
-Mig: http://osvdb.org/22708
-Total Shop UK: http://seclists.org/fulldisclosure/2012/Aug/157
-TCExam Edit: CVE-2012-4237, CVE-2012-4238
-Group-Office: CVE-2012-4239
-Total Shop UK eCommerce based on CodeIgniter: CVE-2012-4236
-PrestaShop: HTB23091, CVE-2012-5801, CVE-2012-5800, CVE-2012-5799
-Chamilo: CVE-2012-4029
-Chamilo: CVE-2012-4030
-Elefant CMS: CVE-2012-1296
-OTRS2: CVE-2012-2582
-OTRS2: CVE-2012-4600
-Smarty3: CVE-2012-4277, CVE-2011-1028
-flogr <http://code.google.com/p/flogr/>: HTB23110
+Webfolio CMS CVE-2012-1899
 Webmin: CVE-2012-2981 - Improper Input Validation
 Webmin: CVE-2012-2982 - Improper Neutralization of Special Elements used in a Command
 Webmin: CVE-2012-2983 - Improper Limitation of a Pathname to a Restricted Directory
 Webmin: CVE-2012-4893
-FlatNux: CVE-2012-4877, CVE-2012-4878
-FlatNux: CVE-2012-4892
-FlexCMS: CVE-2012-1901
-starCMS CVE-2012-4998
-AneCMS CVE-2012-4997
-Webfolio CMS CVE-2012-1899
-phptax http://seclists.org/bugtraq/2012/Oct/13
-phpMyDirectory CVE-2012-5288
-OpenX: CVE-2012-4989, CVE-2012-4990, CVE-2012-4990
-TaskFreak NS-12-011
-CMSMini NS-12-012
-ClipBucket NS-12-013
-DotProject NS-12-014, HTB23124
-awstats CVE-2012-4547
-Subrion CMS: CVE-2011-5211, CVE-2011-5212, CVE-2012-5452, CVE-2012-4771, CVE-2012-4772, CVE-2012-4773
+WebsiteBaker <http://www.websitebaker2.org/en/home.php>: HTB22928, HTB22929, CVE-2011-2934 http://osvdb.org/76618, CVE-2011-2933 http://osvdb.org/76619
+WebsiteBaker: CVE-2011-4322 http://www.websitebaker2.org/posts/security-vulnerability-backup-module-in-wb-core-13.php
+WebsiteBaker: SSCHADV2012-003 SA48083 http://osvdb.org/78834,78835
 White Label CMS: CVE-2012-5388
-havalite: CVE-2012-5919, CVE-2012-5894, CVE-2012-5893, CVE-2012-5892
-jCore: CVE-2012-4231, CVE-2012-4232
-TomatoCart: http://yehg.net/lab/pr0js/advisories/%5Btomatocart1.x%5D_arbitrary_file_creation
-Ariadne CMS CVE-2011-4938
+Winn Guestbook <http://code.google.com/p/winn-guestbook/>: CVE-2011-5026
+Without CVE: "Schurtz, Stefan" <S.Schurtz@infoserve.de> INFOSERVE-ADV2011-04.txt INFOSERVE-ADV2011-11.txt INFOSERVE-ADV2011-12.txt INFOSERVE-ADV2011-02.txt
+WonderCMS: HTB22759
+Wordpress Krea3AllMedias http://cxsecurity.com/ascii/WLB-2012090131
+Wordpress plugin BackWPup: SOS-11-012 http://osvdb.org/show/osvdb/76794
+Wordpress plugin BackWPup: http://osvdb.org/show/osvdb/71242
+Wordpress plugin BackWPup: http://osvdb.org/show/osvdb/71243
+Wordpress plugin BackWPup: http://osvdb.org/show/osvdb/71481 SOS-11-003 Fixed in: 1.7.2 CVE-2011-4342
+Wordpress plugin BackWPup: http://osvdb.org/show/osvdb/76794
+Wordpress plugin BackWPup: http://seclists.org/fulldisclosure/2011/Mar/328 http://secunia.com/advisories/43565/
+XOOPS: http://osvdb.org/show/osvdb/71228 SA43805 # No CVE. Request was done in here, but not answered: http://seclists.org/oss-sec/2011/q1/552
+XRay CMS: CVE-2012-1026 http://osvdb.org/79000
+Yet Another CMS <http://yetanothercms.codeplex.com/>: SSCHADV2011-031
+Zen Cart module: CVE-2012-5808, CVE-2012-5807, CVE-2012-5806, CVE-2012-5805
+Zen Cart: CVE-2012-2433 TWSL2012-004
+Zen Cart: CVE-2011-4403
+Zen Cart: CVE-2011-4547
+Zen Cart: CVE-2011-4567
+ZeusCMS: CVE-2010-0680, CVE-2010-0681
+Zikula CMS: CVE-2011-0535
+Zope 2 / Zope 3: CVE-2011-3587
+Zope 2 / Zope 3: CVE-2011-4924
+Zope 2: CVE-2012-5486, CVE-2012-5505, CVE-2012-5507, CVE-2012-5508
+appRain CMF <http://www.apprain.com/>: CVE-2011-3704
+appRain CMF <http://www.apprain.com/>: CVE-2012-1153 RCE http://osvdb.org/78473, CVE-2011-5229, CVE-2011-5228
+awstats CVE-2012-4547
+bbPress: CVE-2011-1150, HTB22904
 bloofoxCMS: NS-12-015
-Cunity http://cxsecurity.com/issue/WLB-2013030206
+chillyCMS: CVE-2010-4894, CVE-2010-4895
+cmslite: CVE-2010-2095, CVE-2010-2096
+e-ticketing <http://sourceforge.net/projects/e-ticketing/>: CVE-2012-1673 SQL Injection
+e107 Plugins - Filemanager Arbitrary File Upload Vulnerability http://cxsecurity.com/issue/WLB-2012060242
+e107 jbShop: CVE-2011-5186
+eGroupware: LFI CVE-2011-4948
+eGroupware: Open redirect CVE-2011-4951
+eGroupware: Reflected XSS CVE-2011-4950
+eGroupware: SQLi CVE-2011-4949
+eXtplorer: CVE-2012-3362
 eggBlog http://cxsecurity.com/issue/WLB-2013050005
+eocms: CVE-2009-4319/SA37749,SA37272
+epesi BIM: HTB23061
+fckeditor: CVE-2009-2265, CVE-2009-2324, CVE-2007-5156, CVE-2007-3163, CVE-2006-2529, CVE-2006-0658, SA35712, SA27123, SA25719, SA20122, SA18767
+flogr <http://code.google.com/p/flogr/>: HTB23110
+havalite: CVE-2012-5919, CVE-2012-5894, CVE-2012-5893, CVE-2012-5892
+http://cxsecurity.com/issue/WLB-2012060235
+http://cxsecurity.com/issue/WLB-2012060236
+http://cxsecurity.com/issue/WLB-2012060237
+http://cxsecurity.com/issue/WLB-2012060238
+http://cxsecurity.com/issue/WLB-2012060239
+http://cxsecurity.com/issue/WLB-2012060240
+http://cxsecurity.com/issue/WLB-2012080016
+http://cxsecurity.com/issue/WLB-2012080017
+http://www.securityfocus.com/bid/48348
+http://www.securityfocus.com/bid/53909
+http://www.securityfocus.com/bid/53910
+http://www.securityfocus.com/bid/53942
+http://www.securityfocus.com/bid/53945
+ikiwiki: CVE-2010-1195
+ikiwiki: CVE-2012-0220
+jCore: CVE-2012-4231, CVE-2012-4232
+jaxCMS: CVE-2010-1043
+klinza professional CMS: CVE-2009-4216
+modxcms: CVE-2010-1426
+nanoblogger: CVE-2005-2039/SA15754
+odCMS: CVE-2010-2344, CVE-2010-2345
+phAlbum: http://cxsecurity.com/issue/WLB-2012050155
+phpCollab: HTB22916, HTB22917, HTB22918
+phpLDAPadmin: CVE-2009-4427, CVE-2011-4074, CVE-2011-4075, CVE-2011-4082, CVE-2012-0834
+phpMyDirectory CVE-2012-5288
+phpMyVisites http://cxsecurity.com/issue/WLB-2012070022
+phpMyVisites: CVE-2007-0891
+phpPaleo <http://sourceforge.net/projects/phppaleo/>: CVE-2012-1671 LFI
+phpPgAdmin: CVE-2012-1600 XSS http://osvdb.org/80870
+phpVideoPro <http://sourceforge.net/projects/phpvideopro/>: SSCHADV2011-041 XSS
+phplist: CSRF CVE-2011-0748
+phplist: CVE-2012-2740 http://www.exploit-db.com/exploits/18639/
+phplist: http://www.phplist.com/?lid=567 XSS CVE-2012-2741
+phptax http://seclists.org/bugtraq/2012/Oct/13
+request-tracker <bestpractical.com>: CVE-2009-3585, CVE-2009-4151, CVE-2009-3892, SA35451, CVE-2008-3502, SA37546, SA36752, SA30830, CVE-2012-2768, CVE-2012-2769, CVE-2012-2770
+request-tracker: CVE-2011-2082, CVE-2011-2083, CVE-2011-2084, CVE-2011-2085, CVE-2011-4458, CVE-2011-4459, CVE-2011-4460
+request-tracker: CVE-2012-4730 CVE-2012-4732 CVE-2012-4734 CVE-2012-4735 CVE-2012-4884
+ribiq CMS <http://tribiq.com/>: CVE-2011-2727/HTB22857
+snipegallery: CVE-2010-2126
+starCMS CVE-2012-4998
+tinyBB: CVE-2011-0443
+tinyguestbook CVE-2011-5199
+tinyguestbook CVE-2011-5201
 vBilling for FreeSWITCH http://seclists.org/bugtraq/2013/Apr/147
-Banana Dance CMS <http://www.doyoubananadance.com>: NS-11-010
+w-CMS: Arbitrary File Access http://osvdb.org/80974
+w-CMS: Arbitrary File Overwrite http://osvdb.org/80975
+w-CMS: Arbitrary File Upload http://osvdb.org/80979
+w-CMS: CSRF http://osvdb.org/80978
+w-CMS: XSS http://osvdb.org/80976,80977
+waraxe-2013-SA#097 PHP-Fusion
+winn-guestbook: CVE-2011-5026 http://osvdb.org/78070 SA47391
+x3cms <http://www.x3cms.net/> SA46748 INFOSERVE-ADV2011-04 #TODO: No CVE
 
 'textpattern': { # CVE-2011-5019, HTB22672
     'dir':          '/testpattern',
