@@ -155,3 +155,6 @@
 # SA-CONTRIB-2013-065   CVE-2013-4228   https://drupal.org/node/2059765 Organic Groups
 # SA-CONTRIB-2013-066   CVE-2013-4229   https://drupal.org/node/2059823 Monster Menus XSS
 # SA-CONTRIB-2013-066   CVE-2013-4230   https://drupal.org/node/2059823 Monster Menus Access bypass
+# SA-CONTRIB-2013-067                   https://drupal.org/node/2065057 BOTCHA
+# SA-CONTRIB-2013-068                   https://drupal.org/node/2065207 Entity API
+# SA-CONTRIB-2013-069                   https://drupal.org/node/2065387 Password Policy
