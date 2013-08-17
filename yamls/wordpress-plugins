@@ -60,8 +60,9 @@
 # CVE-2012-3434 count-per-day               3.2     http://osvdb.org/83491
 # CVE-2012-3588 plugin-newsletter
 # CVE-2012-4226 quick-post-widget                   http://osvdb.org/83641
+# CVE-2012-4263 better-wp-security  3.2.5   http://osvdb.org/84737
 # CVE-2012-4264 better-wp-security          3.2.5   http://osvdb.org/84738 !
-# CVE-2013-XXXX better-wp-security          3.5.4   http://www.securityfocus.com/archive/1/527634/30/0/threaded
+# CVE-2012-4264 better-wp-security  3.2.5   http://osvdb.org/84738
 # CVE-2012-4268 bulletproof-security        .47.1   http://osvdb.org/84736 !
 # CVE-2012-4271 bad-behavior
 # CVE-2012-4272 2-click-socialmedia-buttons 0.35    http://osvdb.org/81906
@@ -97,6 +98,7 @@
 # CVE-2012-XXXX email-newsletter            http://osvdb.org/82812
 # CVE-2012-XXXX email-newsletter    9.0     http://osvdb.org/83541
 # CVE-2012-XXXX eshop   6.2.9                       http://osvdb.org/74464 SA45553 HTB23034
+# CVE-2012-XXXX http://osvdb.org/85773 abc-test not fixed in latest version    
 # CVE-2012-XXXX lb-mixed-slideshow                  http://osvdb.org/83017 SA49610 !
 # CVE-2012-XXXX lim4wp                              http://osvdb.org/83016 SA49609 !
 # CVE-2012-XXXX omni-secure-files   N/A     http://osvdb.org/82790 possible fix in 0.1.14 !
@@ -153,7 +155,10 @@
 # CVE-2013-2707 login-with-ajax
 # CVE-2013-2709 foursquare-checkins
 # CVE-2013-2714 podpress                    http://osvdb.org/91129
+# CVE-2013-3253 xhanch-my-twitter
 # CVE-2013-3254 wp-photo-album-plus         http://osvdb.org/93033
+# CVE-2013-3256 sexybookmarks
+# CVE-2013-3262 download-monitor
 # CVE-2013-3491 sharebar                    http://osvdb.org/94843
 # CVE-2013-3526
 # CVE-2013-3529 wp-funeral-press
@@ -162,11 +167,17 @@
 # CVE-2013-3684 nextgen-gallery http://osvdb.org/94232 http://www.s21sec.com/images/labs/advisories/s21sec-046-en.txt
 # CVE-2013-3720 feedweb
 # CVE-2013-4117 category-grid-view-gallery http://osvdb.org/94805
+# CVE-2013-4240 hms-testimonials    2.0.11  http://seclists.org/fulldisclosure/2013/Aug/96
+# CVE-2013-4241 hms-testimonials    2.0.11
+# CVE-2013-4625 duplicator
+# CVE-2013-5098 download-monitor
 # CVE-2013-XXXX advanced-xml-reader         http://osvdb.org/92904
 # CVE-2013-XXXX background-music Jplayer.swf XSS
+# CVE-2013-XXXX better-wp-security          3.5.4   http://www.securityfocus.com/archive/1/527634/30/0/threaded
+# CVE-2013-XXXX better-wp-security  3.5.4   http://osvdb.org/95884
+# CVE-2013-XXXX calendario  6.7.10   http://osvdb.org/95677
 # CVE-2013-XXXX crayon-syntax-highlighter   1.13    http://osvdb.org/86256 !
 # CVE-2013-XXXX events-calendar 6.7.12a http://osvdb.org/74705
-# CVE-2013-XXXX calendario  6.7.10   http://osvdb.org/95677
 # CVE-2013-XXXX haiku-minimalist-audio-player Jplayer.swf XSS
 # CVE-2013-XXXX jammer Jplayer.swf XSS
 # CVE-2013-XXXX mp3-jplayer Jplayer.swf XSS
@@ -189,19 +200,14 @@
 # CVE-XXXX-XXXX sendit                              http://osvdb.org/83669 http://secunia.com/advisories/49506/
 # CVE-XXXX-XXXX simple-forum http://cxsecurity.com/issue/WLB-2012080265
 # CVE-XXXX-XXXX solvemedia http://osvdb.org/89585
+# CVE-XXXX-XXXX usernoise   3.7.9   http://seclists.org/bugtraq/2013/Aug/35
 # CVE-XXXX-XXXX wp-forum http://cxsecurity.com/issue/WLB-2013020035
 # CVE-XXXX-XXXX wp-predict                          http://osvdb.org/83697
 # CVE-XXXX-XXXX wp-video-commando                   http://cxsecurity.com/issue/WLB-2013030207
+# HTB22839, HTB22840, HTB22842, HTB22843, HTB22844, HTB22841, HTB22845,
+# HTB22858, HTB22859, HTB22860, HTB22848, HTB22849, HTB22861, HTB22838,
+# HTB22938, HTB22961, HTB22960, HTB22951, HTB22875, HTB22873, HTB22867,
+# HTB22939, HTB22935, HTB22870, HTB22871, HTB22869, HTB22868, HTB22862,
+# HTB23035, HTB23049
 # http://wpsecure.net/2013/05/a-list-of-recent-xss-plugin-exploits-from-april/
 # http://wpsecure.net/2013/05/open-flash-chart/
-# HTB22858, HTB22859, HTB22860, HTB22848, HTB22849, HTB22861, HTB22838,
-# HTB22839, HTB22840, HTB22842, HTB22843, HTB22844, HTB22841, HTB22845,
-# HTB22939, HTB22935, HTB22870, HTB22871, HTB22869, HTB22868, HTB22862,
-# HTB22938, HTB22961, HTB22960, HTB22951, HTB22875, HTB22873, HTB22867,
-# HTB23035, HTB23049
-# CVE-2012-4263 better-wp-security  3.2.5   http://osvdb.org/84737
-# CVE-2012-4264 better-wp-security  3.2.5   http://osvdb.org/84738
-# CVE-2013-XXXX better-wp-security  3.5.4   http://osvdb.org/95884
-# CVE-XXXX-XXXX usernoise   3.7.9   http://seclists.org/bugtraq/2013/Aug/35
-# CVE-2013-XXXX hms-testimonials    2.0.11  http://seclists.org/fulldisclosure/2013/Aug/96 asked if this has CVEs assigned 2013-08-09 from emailer. Replied that he would like to do it.
-# CVE-2012-XXXX http://osvdb.org/85773 abc-test not fixed in latest version    
