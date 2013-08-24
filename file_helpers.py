@@ -15,7 +15,10 @@ def filepaths_in_dir(directory, checkmodes):
 
 
 def validate_directory(path, checkmodes):
-    """Checks that path is a directory, not a symlink and that directory has execution bit"""
+    """Checks that path is a directory, not a symlink and that directory has
+    execution bit
+    
+    """
     if not type(path) == str:
         logging.debug('got path which is not a string. Exiting..')
         sys.exit('Function validate_directory got path which is not a string.')
@@ -31,8 +34,10 @@ def validate_directory(path, checkmodes):
 
 
 def check_dir_execution_bit(path):
-    """Check if path has execution bit to check if site is public.
-    Defaults to false. False means no execution bit is set."""
+    """Check if path has execution bit to check if site is public. Defaults to
+    false. False means no execution bit is set.
+    
+    """
     try:
         if not os.path.isdir(path):
             logging.debug('Returning false in check_dir_execution_bit/os.path.isdir for directory: %s' % path)
@@ -52,7 +57,9 @@ def postprocess_php5fcgi(home_location, item_location):
     """Checks if installation directory contains php5.fcgi-file. In some
     environemnts this is used to tell web-server backends to execute PHP in the
     directory. Otherwise the server responds with 500 code and would lead to
-    false positives."""
+    false positives.
+    
+    """
     # So that we always have start path, which we will delete because we don't
     # know if the hiararchy is bigger than x items in some environments
     if not home_location:

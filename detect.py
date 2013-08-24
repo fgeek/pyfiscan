@@ -6,16 +6,21 @@ yaml_fn_dict = {}
 
 
 def yaml_visible(fn):
-    """Decorator, which allows us to point to function names in YAML-files. Example: fingerprint: detect_general"""
+    """Decorator, which allows us to point to function names in YAML-files.
+    Example: fingerprint: detect_general
+    
+    """
     yaml_fn_dict[fn.func_name] = fn
     return fn
 
 
 def grep_from_file(version_file, regexp):
-    """Grepping file with predefined regexp to find a version. This returns m.group from regexp: (?P<version>foo)"""
-    version_file = open(version_file, 'r')
-    source = version_file.readlines()
-    version_file.close()
+    """Grepping file with predefined regexp to find a version. This returns
+    m.group from regexp: (?P<version>foo)
+    
+    """
+    with open(version_file, 'r') as version_file:
+        source = version_file.readlines()
     prog = re.compile(regexp)
 
     for line in source:
@@ -31,7 +36,10 @@ def grep_from_file(version_file, regexp):
 
 @yaml_visible
 def detect_general(source_file, regexp):
-    """Detects from source file if it contains version information. Uses first regexp-match"""
+    """Detects from source file if it contains version information. Uses first
+    regexp-match.
+    
+    """
     if not os.path.isfile(source_file):
         return
     if not regexp:
@@ -72,6 +80,7 @@ def detect_wikkawiki(source_file, regexp):
     $svn_version = '1.3.2';
     if (!defined('WAKKA_VERSION')) define('WAKKA_VERSION', $svn_version);
     if(!defined('WIKKA_PATCH_LEVEL')) define('WIKKA_PATCH_LEVEL', '7');
+
     """
     if not os.path.isfile(source_file):
         return
@@ -96,7 +105,9 @@ def detect_wikkawiki(source_file, regexp):
 @yaml_visible
 def detect_gallery(source_file, regexp):
     """Detects from source file if it contains version information of Gallery.
-    Also ignores Git-versions."""
+    Also ignores Git-versions.
+    
+    """
     if not os.path.isfile(source_file):
         return
     if not regexp:

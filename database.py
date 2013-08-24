@@ -17,9 +17,7 @@ class Database:
     def is_included(self, filename, includes):
         """Used to limit scanning only to specific fingerprints."""
         for item in includes:
-            if filename.startswith(item.lower()):
-               return True
-            return False
+            return filename.startswith(item.lower())
 
     def gen_yamlfile_locations(self, yamldir, includes):
         """File handle generator for YAML-files"""

@@ -3,7 +3,7 @@ from pyfiscan import is_not_secure
 from database import Database
 
 class CompareVersions(unittest.TestCase):
-    """Testing that comparison of version numbers are correct. No setup needed for these."""
+    """Testing that comparison of version numbers are correct."""
     def test_version_pairs_1(self):
         self.assertTrue(is_not_secure('2.1', '2.0.2'))
 
