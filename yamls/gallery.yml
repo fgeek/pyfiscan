@@ -20,7 +20,7 @@ Gallery 3:
     secure_version: '3.0.9'
     regexp: ['.*?const.*?VERSION.*?(?P<version>[0-9.]{1,})']
     cve: 'CVE-2013-2240 http://osvdb.org/94663 CVE-2013-2241 http://osvdb.org/94664 http://galleryproject.org/gallery_3_0_9'
-    fingerprint: detect_general
+    fingerprint: detect_gallery
     post_processing: ['php5.fcgi']
 Gallery 2:
   1:
@@ -28,7 +28,7 @@ Gallery 2:
     secure_version: '3.0.9'
     regexp: ['.*?setGalleryVersion.*?(?P<version>[0-9.]{1,})']
     cve: 'CVE-2013-2240 http://osvdb.org/94663 CVE-2013-2241 http://osvdb.org/94664 http://galleryproject.org/gallery_3_0_9'
-    fingerprint: detect_general
+    fingerprint: detect_gallery
     post_processing: ['php5.fcgi']
 Gallery 1:
   1:
@@ -36,5 +36,5 @@ Gallery 1:
     secure_version: '3.0.9'
     regexp: ['\$gallery->version.*?(?P<version>[0-9.]{1,})']
     cve: 'CVE-2013-2240 http://osvdb.org/94663 CVE-2013-2241 http://osvdb.org/94664 http://galleryproject.org/gallery_3_0_9'
-    fingerprint: detect_general
+    fingerprint: detect_gallery
     post_processing: ['php5.fcgi']

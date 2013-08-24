@@ -91,3 +91,26 @@ def detect_wikkawiki(source_file, regexp):
     if version and patch_level:
         file_version = version + "-p" + patch_level
         return file_version
+
+
+@yaml_visible
+def detect_gallery(source_file, regexp):
+    """Detects from source file if it contains version information of Gallery.
+    Also ignores Git-versions."""
+    if not os.path.isfile(source_file):
+        return
+    if not regexp:
+        return
+    logging.debug('Dectecting Gallery from: %s', source_file)
+    version = grep_from_file(source_file, regexp[0])
+    if not version:
+        logging.debug('Could not find version from: %s', source_file)
+        return
+    logging.debug('Gallery version %s %s' % (version, source_file))
+    git_version = grep_from_file(source_file, 
+    '.*?const.*?RELEASE_CHANNEL.*?(?P<version>(git))')
+    if git_version:
+        logging.debug('Not reporting Gallery Git-version %s', source_file)
+        return
+    else:
+        return version
