@@ -39,11 +39,10 @@
 # CVE-2011-3615 2.0.1/1.1.15    http://osvdb.org/76822 SA46386
 # CVE-2011-4173 2.0.1           http://osvdb.org/76317 SA46386
 # N/A           2.0.1/1.1.15    http://osvdb.org/76318 SA46386
-# CVE-XXXX-XXXX ?               http://osvdb.org/92745
-# Not going to add:
-#   http://osvdb.org/32605 too little information
-#   CVE-2007-5943 http://osvdb.org/39961 myth/fake
-#   CVE-2012-5903 http://osvdb.org/80766 
+# NFU:  http://osvdb.org/32605 too little information
+#       CVE-2007-5943 http://osvdb.org/39961 myth/fake
+#       CVE-2012-5903 http://osvdb.org/80766
+#       http://osvdb.org/92745 http://www.openwall.com/lists/oss-security/2012/12/31/7
 SMF 1:
   1:
     location: ['/index.php']
