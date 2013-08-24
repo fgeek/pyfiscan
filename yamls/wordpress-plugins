@@ -170,6 +170,8 @@
 # CVE-2013-4240 hms-testimonials    2.0.11  http://seclists.org/fulldisclosure/2013/Aug/96
 # CVE-2013-4241 hms-testimonials    2.0.11
 # CVE-2013-4625 duplicator
+# CVE-2013-4626 backwpup    3.0.13  http://osvdb.org/96505 http://secunia.com/advisories/54515 https://www.htbridge.com/advisory/HTB23161
+# CVE-2013-4944 buddypress-extended-friendship-request
 # CVE-2013-5098 download-monitor
 # CVE-2013-XXXX advanced-xml-reader         http://osvdb.org/92904
 # CVE-2013-XXXX background-music Jplayer.swf XSS
