@@ -67,7 +67,7 @@ Notes
 
 * WordPress
   * [Announcing a secure SWFUpload fork](http://make.wordpress.org/core/2013/06/21/secure-swfupload/)
-*Joomla
+* Joomla
   * Upgrade should be done using "Extension manager -> Upgrade" in version 1.6.6 and later
   * [Release and support cycle](http://docs.joomla.org/Release_and_support_cycle)
   * [Setup Security checklist](http://docs.joomla.org/Security_Checklist_4_-_Joomla_Setup)
