@@ -60,7 +60,6 @@
 # CVE-2011-3595 1.7.1   http://developer.joomla.org/security/news/368-20110902-core-xss-vulnerability
 #               1.7.1   http://developer.joomla.org/security/news/369-20110903-core-information-disclosure.html
 # CVE-2011-3629 1.7.2   http://osvdb.org/76721 SA46421 http://developer.joomla.org/security/news/371-20111002-core-information-disclosure
-
 # CVE-2011-4321 1.5.25  http://osvdb.org/77094 http://developer.joomla.org/security/news/374-20111102-core-password-change http://developer.joomla.org/security/news/375-20111103-core-password-change
 # CVE-2011-4332 1.6.4   http://osvdb.org/73487 http://developer.joomla.org/security/news/349-20110601-xss-vulnerabilities.html
 # CVE-2011-4937
@@ -71,56 +70,75 @@
 # CVE-2012-0835 2.5.1/1.7.5 http://osvdb.org/78824
 # CVE-2012-0836
 # CVE-2012-0837
-# CVE-2012-1598 1.5.26      http://developer.joomla.org/security/news/396-20120305-core-password-change
-# CVE-2012-1599 1.5.26      http://osvdb.org/80708 http://developer.joomla.org/security/news/397-20120306-core-information-disclosure
-# CVE-XXXX-XXXX 2.5.2       http://osvdb.org/80705
 # CVE-2012-1116
 # CVE-2012-1117 2.5.2       http://osvdb.org/79836
 # CVE-2012-1562 2.5.3       http://osvdb.org/80112
 # CVE-2012-1563 2.5.3       http://osvdb.org/80111
+# CVE-2012-1598 1.5.26      http://developer.joomla.org/security/news/396-20120305-core-password-change
+# CVE-2012-1599 1.5.26      http://osvdb.org/80708 http://developer.joomla.org/security/news/397-20120306-core-information-disclosure
 # CVE-2012-2412 2.5.7       http://osvdb.org/87038
 # CVE-2012-2747 2.5.5       http://osvdb.org/83070 http://secunia.com/advisories/49605/
 # CVE-2012-2748 2.5.5       http://osvdb.org/83069 http://secunia.com/advisories/49605/
 # CVE-2012-4531 2.5.7       http://osvdb.org/87038 SA49678 http://developer.joomla.org/security/news/539-20120901-core-xss-vulnerability http://www.joomla.org/announcements/release-news/5463-joomla-2-5-7-released.html
 # CVE-2012-4532 2.5.7       http://osvdb.org/83490 SA49678 http://developer.joomla.org/security/news/540-20120902-core-xss-vulnerability http://www.joomla.org/announcements/release-news/5463-joomla-2-5-7-released.html http://www.darksecurity.de/advisories/2012/SSCHADV2012-014.txt
-#Joomla 2.5:
-#  1:
-#    # Can't use /installation/CHANGELOG in here as Joomla requests deletion of that directory.
-#    location: ['']
-#    secure_version: '2.5.7'
-#    regexp: ['']
-#    cve: 'CVE-2012-2412 http://osvdb.org/87038, CVE-2012-4531 http://osvdb.org/87038, CVE-2012-4532 http://osvdb.org/83490'
-#    fingerprint:
-#    post_processing: ['php5.fcgi']
+# CVE-2012-5455 3.0.1/2.5.10        http://osvdb.org/86134 http://developer.joomla.org/security/81-20130403-core-xss-vulnerability.html
+# CVE-2012-XXXX 2.5.2       http://osvdb.org/80705
+# CVE-2012-XXXX 3.1.0/2.5.10        http://osvdb.org/92751 http://developer.joomla.org/security/83-20130404-core-xss-vulnerability.html
+# CVE-2013-1453
+# CVE-2013-1454
+# CVE-2013-1455
+# CVE-2013-3056 3.1.0/2.5.10        http://osvdb.org/92752 http://developer.joomla.org/security/84-20130401-core-privilege-escalation.html
+# CVE-2013-3057 3.1.0/2.5.10        http://osvdb.org/92753 http://developer.joomla.org/security/82-20130402-core-information-disclosure.html
+# CVE-2013-3058 3.1.0/2.5.10        http://osvdb.org/92750 http://developer.joomla.org/security/81-20130403-core-xss-vulnerability.html
+# CVE-2013-3059 3.1.0/2.5.10        http://osvdb.org/92754 http://developer.joomla.org/security/80-20130405-core-xss-vulnerability.html
+# CVE-2013-3242 3.1.0/3.0.4/2.5.10  http://osvdb.org/92755 http://developer.joomla.org/security/85-20130406-core-dos-vulnerability.html
+# CVE-2013-3267 3.1.0/2.5.10        http://osvdb.org/92756 http://developer.joomla.org/security/86-20130407-core-xss-vulnerability.html
+# CVE-2013-5576 3.1.5/2.5.14    http://osvdb.org/95933 http://developer.joomla.org/security/563-20130801-core-unauthorised-uploads.html https://github.com/rapid7/metasploit-framework/pull/2219 http://www.cso.com.au/article/523528/joomla_patches_file_manager_vulnerability_responsible_hijacked_websites/
+Joomla 3:
+  1:
+    location: ['administrator/manifests/files/joomla.xml']
+    secure_version: '3.1.5'
+    regexp: ['[\t]<version>(?P<version>3\.[0-9.]{1,})']
+    cve: 'CVE-2013-5576 http://osvdb.org/95933 http://developer.joomla.org/security/563-20130801-core-unauthorised-uploads.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+Joomla 2.5:
+  1:
+    location: ['administrator/manifests/files/joomla.xml']
+    secure_version: '2.5.14'
+    regexp: ['[\t]<version>(?P<version>2\.5\.[0-9]{1,})']
+    cve: 'CVE-2013-5576 http://osvdb.org/95933 http://developer.joomla.org/security/563-20130801-core-unauthorised-uploads.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
 Joomla 1.7:
   1:
     location: ['/includes/version.php']
-    secure_version: '2.5.7'
+    secure_version: '2.5.14'
     regexp: ['[\t]+public[\t]\$RELEASE.*?(?P<version>1.7)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'CVE-2012-1598 http://developer.joomla.org/security/news/396-20120305-core-password-change CVE-2012-1599 http://osvdb.org/80708 http://developer.joomla.org/security/news/397-20120306-core-information-disclosure Please upgrade to Joomla 2.5.7 all 1.x versions are end of life.'
+    cve: 'Joomla versions 1.0.x to 1.7.x are end of life. Please upgrade to 2.5.14 or newer.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.6:
   1:
     location: ['/libraries/joomla/version.php']
-    secure_version: '2.5.7'
+    secure_version: '2.5.14'
     regexp: ['.*?RELEASE.*?(?P<version>1.6)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'CVE-2012-1598 http://developer.joomla.org/security/news/396-20120305-core-password-change CVE-2012-1599 http://osvdb.org/80708 http://developer.joomla.org/security/news/397-20120306-core-information-disclosure Please upgrade to Joomla 2.5.7 all 1.x versions are end of life.'
+    cve: 'Joomla versions 1.0.x to 1.7.x are end of life. Please upgrade to 2.5.14 or newer.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.5:
   1:
     location: ['/libraries/joomla/version.php']
-    secure_version: '2.5.7'
+    secure_version: '2.5.14'
     regexp: ['.*?RELEASE.*?(?P<version>1.5)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'CVE-2012-1598 http://developer.joomla.org/security/news/396-20120305-core-password-change CVE-2012-1599 http://osvdb.org/80708 http://developer.joomla.org/security/news/397-20120306-core-information-disclosure Please upgrade to Joomla 2.5.7 all 1.x versions are end of life.'
+    cve: 'Joomla versions 1.0.x to 1.7.x are end of life. Please upgrade to 2.5.14 or newer.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.0:
   1:
     location: ['/includes/version.php']
-    secure_version: '2.5.7'
+    secure_version: '2.5.14'
     regexp: ['[\t]+var.*?RELEASE.*?(?P<version>1.0)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'CVE-2012-1598 http://developer.joomla.org/security/news/396-20120305-core-password-change CVE-2012-1599 http://osvdb.org/80708 http://developer.joomla.org/security/news/397-20120306-core-information-disclosure Please upgrade to Joomla 2.5.7 all 1.x versions are end of life.'
+    cve: 'Joomla versions 1.0.x to 1.7.x are end of life. Please upgrade to 2.5.14 or newer.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']

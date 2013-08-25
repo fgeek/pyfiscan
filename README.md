@@ -30,8 +30,11 @@ Detects following software
 * Drupal: CVE-2013-0316 [OSVDB 90517](http://osvdb.org/90517) [Drupal security advisory SA-CORE-2013-002](http://drupal.org/SA-CORE-2013-002)
 * Foswiki: CVE-2013-1666 [OSVDB 90345](http://osvdb.org/90345) [Foswiki security advisory](http://foswiki.org/Support/SecurityAlert-CVE-2013-1666)
 * Gallery: CVE-2013-2138 [security advisory](http://galleryproject.org/gallery_3_0_8)
-* Joomla 1.5: [CVE-2012-1598](http://developer.joomla.org/security/news/396-20120305-core-password-change advisory), [CVE-2012-1599](ttp://developer.joomla.org/security/news/397-20120306-core-information-disclosure advisory)
-* Joomla 1.7: CVE-2012-0819, CVE-2012-0820, CVE-2012-0821, CVE-2012-0822
+* Joomla 1.5: 1.5 is end-of-life since 2012-04-30
+* Joomla 1.6: 1.6 is end-of-life since [2011-08-19](http://www.joomla.org/announcements/release-news/5380-joomla-170-released.html). 1.6.x should be upgraded to 1.6.6 before moving to 1.7.x
+* Joomla 1.7: 1.7 is end-of-life since [2012-02-24](http://www.joomla.org/announcements/release-news/5411-joomla-175-released.html)
+* Joomla 2.5: CVE-2013-5576 [OSVDB:95933](http://osvdb.org/95933) [Security advisory](http://developer.joomla.org/security/563-20130801-core-unauthorised-uploads.html)
+* Joomla 3: CVE-2013-5576 [OSVDB:95933](http://osvdb.org/95933) [Security advisory](http://developer.joomla.org/security/563-20130801-core-unauthorised-uploads.html)
 * Magnolia: CVE-2013-4621
 * MantisBT: CVE-2013-1883
 * MediaWiki: CVE-2013-2114 [OSVDB 93629](http://osvdb.org/93629)
@@ -64,15 +67,15 @@ Notes
 
 * WordPress
   * [Announcing a secure SWFUpload fork](http://make.wordpress.org/core/2013/06/21/secure-swfupload/)
-* Joomla
-  * 1.5 is end-of-life since 2012-04-30
-  * 1.6 is end-of-life since [2011-08-19](http://www.joomla.org/announcements/release-news/5380-joomla-170-released.html)
-  * 1.6.x should be upgraded to 1.6.6 before moving to 1.7.x
-  * 1.7 is end-of-life since [2012-02-24](http://www.joomla.org/announcements/release-news/5411-joomla-175-released.html)
+*Joomla
   * Upgrade should be done using "Extension manager -> Upgrade" in version 1.6.6 and later
   * [Release and support cycle](http://docs.joomla.org/Release_and_support_cycle)
   * [Setup Security checklist](http://docs.joomla.org/Security_Checklist_4_-_Joomla_Setup)
   * [Upgrading and migrating Joomla](http://docs.joomla.org/Upgrading_and_Migrating_Joomla)
+  * Joomla 2.x creates random SQL table prefix
+  * Joomla 3.x informs and shows user a button to remove installation-directory
+  * Creates ./configuration.php in installation
+  * Creates robots.txt, which contains word "Joomla"
 * SMF
   * [End of life of SMF 1.0](http://www.simplemachines.org/community/index.php?P=e9a84908ee7f5c03d14c5ece4b58406e&topic=472913.0)
 * TikiWiki
@@ -97,3 +100,4 @@ Thanks to
 * Tuomo Komulainen for big patches and ideas
 * Partly the idea and first lines of (re-written) code came from Atte H. (guaqua)
 * Juhamatti Niemelä for database updates
+* Ari-Martti Hopiavuori for database feedback
