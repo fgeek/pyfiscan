@@ -42,7 +42,7 @@ Detects following software
 * MyBB: http://osvdb.org/92683 http://osvdb.org/92684 http://osvdb.org/92686 http://osvdb.org/92687 http://osvdb.org/92688 http://osvdb.org/92689
 * Roundcube: CVE-2012-3508, OSVDB:90175,90177
 * SMF: CVE-2013-4167
-* Serendipity: [Serendipity release advisory](http://blog.s9y.org/archives/247-Serendipity-1.7-released.html) [Security advisory](https://www.mavitunasecurity.com/xss-vulnerabilities-in-serendipity/)
+* Serendipity: CVE-2013-5670 [Serendipity release advisory](http://blog.s9y.org/archives/250-Serendipity-1.7.3-released.html)
 * TestLink: CVE-2012-2275 http://osvdb.org/84712 http://osvdb.org/84711 http://osvdb.org/84713
 * TikiWiki: CVE-2012-0911 OSVDB:83534, CVE-2012-3996 [OSVDB 83533](http://osvdb.org/83533)
 * Tiny Tiny RSS: SA43424 [OSVDB:70934](http://osvdb.org/70934)
@@ -93,6 +93,9 @@ Notes
   * Open installation is not a vulnerability since web-interface requests user to authenticate by inserting random data to file.
 * Coppermine
   * Not installed when include/config.inc.php is missing.
+* Owncloud:
+  * status.php outputs: {"installed":"true","version":"5.0.6","versionstring":"5.0.5","edition":""}
+
 
 Thanks to
 ---------
