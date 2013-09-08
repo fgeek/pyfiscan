@@ -14,11 +14,6 @@ class Database:
     def __init__(self, yamldir, includes=None):
         self.issues = self.generate(yamldir, includes)
 
-    def is_included(self, filename, includes):
-        """Used to limit scanning only to specific fingerprints."""
-        for item in includes:
-            return filename.startswith(item.lower())
-
     def gen_yamlfile_locations(self, yamldir, includes):
         """File handle generator for YAML-files"""
         if os.path.islink(yamldir):
@@ -36,7 +31,7 @@ class Database:
                 yield open(yamldir + filename, 'r')
             else:
                 for item in includes:
-                    if self.is_included(filename, item):
+                    if filename.startswith(item.lower()):
                         yield open(yamldir + filename, 'r')
 
     def generate(self, yamldir, includes):
