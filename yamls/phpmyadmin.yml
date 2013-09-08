@@ -1,0 +1,81 @@
+# CVE-2008-7251
+# CVE-2008-7252
+# CVE-2010-2958
+# CVE-2010-3055
+# CVE-2010-3056                                 http://www.phpmyadmin.net/home_page/security/PMASA-2010-5.php
+# CVE-2010-3263
+# CVE-2011-0986
+# CVE-2011-0987
+# CVE-2011-1941
+# CVE-2011-2505
+# CVE-2011-2506
+# CVE-2011-2507
+# CVE-2011-2508
+# CVE-2011-2642
+# CVE-2011-2643
+# CVE-2011-2718
+# CVE-2011-2719
+# CVE-2011-3592
+# CVE-2011-3646
+# CVE-2011-4064
+# CVE-2011-4107         http://osvdb.org/76798
+# CVE-2011-4634
+# CVE-2011-4780
+# CVE-2011-4782
+# PMASA-2012-2  CVE-2012-1902   3.4.10.2    http://www.phpmyadmin.net/home_page/security/PMASA-2012-2.php
+# PMASA-2010-1
+# PMASA-2010-7
+# PMASA-2011-1
+# PMASA-2011-2
+# PMASA-2011-3
+# PMASA-2011-4
+# PMASA-2011-5
+# PMASA-2011-6
+# PMASA-2011-7
+# PMASA-2011-8
+# PMASA-2011-9
+# PMASA-2011-10
+# PMASA-2011-11
+# PMASA-2011-12
+# PMASA-2011-13
+# PMASA-2011-14
+# PMASA-2011-15
+# PMASA-2011-16
+# PMASA-2010-17
+# PMASA-2010-18
+# PMASA-2010-19
+# PMASA-2011-20
+# PMASA-2012-1  CVE-2012-1190   3.4.10.1    http://www.phpmyadmin.net/home_page/security/PMASA-2012-1.php
+# PMASA-2012-2  CVE-2012-1902   3.4.10.2    http://www.phpmyadmin.net/home_page/security/PMASA-2012-2.php
+# PMASA-2012-3  CVE-2012-4219
+# PMASA-2012-4  CVE-2012-4345
+# PMASA-2012-5  CVE-2012-5159           http://osvdb.org/85739 http://www.phpmyadmin.net/home_page/security/PMASA-2012-5.php
+# PMASA-2012-7
+# PMASA-2013-1  CVE-2013-1937   3.5.8   http://osvdb.org/92201 http://www.phpmyadmin.net/home_page/security/PMASA-2013-1.php
+# PMASA-2013-11 CVE-2013-4996 XSS issue
+# PMASA-2013-12 CVE-2013-4998/CVE-2013-4999/CVE-2013-5000
+# PMASA-2013-13 CVE-2013-5001
+# PMASA-2013-14 CVE-2013-5002
+# PMASA-2013-15 CVE-2013-5003
+# PMASA-2013-2  CVE-2013-3238   3.5.8.1 http://osvdb.org/92793 http://www.phpmyadmin.net/home_page/security/PMASA-2013-2.php
+# PMASA-2013-3  CVE-2013-3239   3.5.8.1 http://osvdb.org/92792 http://www.phpmyadmin.net/home_page/security/PMASA-2013-3.php
+# PMASA-2013-4  CVE-2013-3240   3.5.8.1 http://osvdb.org/92794 http://www.phpmyadmin.net/home_page/security/PMASA-2013-4.php
+# PMASA-2013-5  CVE-2013-3241   3.5.8.1 http://osvdb.org/92795 http://www.phpmyadmin.net/home_page/security/PMASA-2013-5.php
+# PMASA-2013-6  CVE-2013-3742   4.0.3   http://www.phpmyadmin.net/home_page/security/PMASA-2013-6.php
+# PMASA-2013-7  CVE-2013-4729   4.0.4.1 http://www.phpmyadmin.net/home_page/security/PMASA-2013-7.php
+# PMASA-2013-8  CVE-2013-4995   4.0.4.2/3.5.8.2 http://www.phpmyadmin.net/home_page/security/PMASA-2013-8.php
+# PMASA-2013-9  CVE-2013-4996/CVE-2013-4997 4.0.4.2/3.5.8.2 http://www.phpmyadmin.net/home_page/security/PMASA-2013-9.php 4496:XSS for 3.5.x and 4.0.x,4997:XSS for only 3.5.x
+# PMASA-2013-10 CVE-2013-5029   4.0.5   http://osvdb.org/95999 http://www.phpmyadmin.net/home_page/security/PMASA-2013-10.php
+# PMASA-2013-11 CVE-2013-4996   4.0.4.2/3.5.8.2
+# PMASA-2013-12 CVE-2013-4998/CVE-2013-4999/CVE-2013-5000   4.0.4.2/3.5.8.2 http://www.phpmyadmin.net/home_page/security/PMASA-2013-12.php
+# PMASA-2013-13 CVE-2013-5001   4.0.4.2 http://www.phpmyadmin.net/home_page/security/PMASA-2013-13.php
+# PMASA-2013-14 CVE-2013-5002   4.0.4.2/3.5.8.2 http://www.phpmyadmin.net/home_page/security/PMASA-2013-14.php
+# PMASA-2013-15 CVE-2013-5003   4.0.4.2/3.5.8.2 http://www.phpmyadmin.net/home_page/security/PMASA-2013-15.php
+phpMyAdmin:
+  1:
+    location: ['libraries/Config.class.php']
+    secure_version: '4.0.5'
+    regexp: ['.*?PMA_VERSION.*?(?P<version>[0-9.]+)']
+    cve: 'CVE-2013-5029 http://osvdb.org/95999'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']

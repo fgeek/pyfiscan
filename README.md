@@ -55,6 +55,7 @@ Detects following software
 * osDate: http://osvdb.org/63005 http://osvdb.org/63006
 * phpAlbum: CVE-2011-4806, CVE-2011-4807, OSVDB:74980, OSVDB 21410
 * phpBB3: CVE-2011-0544 SA42343
+* phpMyAdmin: CVE-2013-5029 http://osvdb.org/95999
 
 Installation
 ------------
