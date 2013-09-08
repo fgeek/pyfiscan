@@ -1,9 +1,9 @@
 # http://www.mediawiki.org/wiki/Version_lifecycle
 # CVE-2009-4570
 # CVE-2009-4589
+# CVE-2010-1150 1.15.3      http://osvdb.org/63570 SA39333
 # CVE-2010-1189 1.15.2      http://osvdb.org/62798 SA38856
 # CVE-2010-1190 1.15.2      http://osvdb.org/62799 SA38856
-# CVE-2010-1150 1.15.3      http://osvdb.org/63570 SA39333
 # CVE-2011-0537 1.16.2      http://osvdb.org/70798,70799
 # CVE-2011-1578 1.16.5      http://osvdb.org/74619 SA44142
 # CVE-2011-1579 1.16.3      http://osvdb.org/74620 SA44142
@@ -28,20 +28,36 @@
 # CVE-2013-2031 1.20.5/1.19.6 http://lists.wikimedia.org/pipermail/mediawiki-announce/2013-April/000129.html
 # CVE-2013-2032 1.20.5/1.19.6 http://lists.wikimedia.org/pipermail/mediawiki-announce/2013-April/000129.html
 # CVE-2013-2114 1.20.6/1.19.7 http://osvdb.org/93629
+# CVE-2013-4301 1.21.2/1.20.7/1.19.8    http://osvdb.org/96913 http://secunia.com/advisories/54715/
+# CVE-2013-4302 1.21.2/1.20.7/1.19.8    http://osvdb.org/96912 http://secunia.com/advisories/54715/
+# CVE-2013-4303 1.21.2/1.20.7/1.19.8    http://osvdb.org/96911 http://secunia.com/advisories/54715/
+# CVE-2013-4304 extension. not going to add yet. maybe in future
+# CVE-2013-4305 extension. not going to add yet. maybe in future
+# CVE-2013-4306 extension. not going to add yet. maybe in future
+# CVE-2013-4307 extension. not going to add yet. maybe in future
+# CVE-2013-4308 extension. not going to add yet. maybe in future
+MediaWiki 1.21:
+  1:
+    location: ['/includes/DefaultSettings.php']
+    secure_version: '1.21.2'
+    regexp: ['\$wgVersion.*?(?P<version>1\.20\.[0-9.]{1,})']
+    cve: 'CVE-2013-4301 http://osvdb.org/96913, CVE-2013-4302 http://osvdb.org/96912, CVE-2013-4303 http://osvdb.org/96911, http://secunia.com/advisories/54715/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
 MediaWiki 1.20:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.20.6'
+    secure_version: '1.20.7'
     regexp: ['\$wgVersion.*?(?P<version>1\.20\.[0-9.]{1,})']
-    cve: CVE-2013-2114 http://osvdb.org/93629 
+    cve: 'CVE-2013-4301 http://osvdb.org/96913, CVE-2013-4302 http://osvdb.org/96912, CVE-2013-4303 http://osvdb.org/96911, http://secunia.com/advisories/54715/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.19:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.19.7'
+    secure_version: '1.19.8'
     regexp: ['\$wgVersion.*?(?P<version>1\.19\.[0-9.]{1,})']
-    cve: CVE-2013-2114 http://osvdb.org/93629
+    cve: 'CVE-2013-4301 http://osvdb.org/96913, CVE-2013-4302 http://osvdb.org/96912, CVE-2013-4303 http://osvdb.org/96911, http://secunia.com/advisories/54715/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.18:

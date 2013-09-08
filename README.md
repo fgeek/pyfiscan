@@ -37,7 +37,7 @@ Detects following software
 * Joomla 3: CVE-2013-5576 [OSVDB:95933](http://osvdb.org/95933) [Security advisory](http://developer.joomla.org/security/563-20130801-core-unauthorised-uploads.html)
 * Magnolia: CVE-2013-4621
 * MantisBT: CVE-2013-1883
-* MediaWiki: CVE-2013-2114 [OSVDB 93629](http://osvdb.org/93629)
+* MediaWiki: CVE-2013-4301 http://osvdb.org/96913, CVE-2013-4302 http://osvdb.org/96912, CVE-2013-4303 http://osvdb.org/96911, http://secunia.com/advisories/54715/
 * MoinMoin: CVE-2011-1058 [OSVDB 71025](http://osvdb.org/71025)
 * MyBB: http://osvdb.org/92683 http://osvdb.org/92684 http://osvdb.org/92686 http://osvdb.org/92687 http://osvdb.org/92688 http://osvdb.org/92689
 * Roundcube: CVE-2012-3508, OSVDB:90175,90177
