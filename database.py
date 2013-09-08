@@ -21,7 +21,7 @@ class Database:
         if not os.path.isdir(yamldir):
             sys.exit('Location for YAML-files is not a directory: %s' % yamldir)
         for filename in os.listdir(yamldir):
-            if not filename.endswith('.yml'):
+            if not filename.endswith('.yml'):  # ignores upcoming fingerprints
                 continue
             if os.path.islink(yamldir + filename):
                 continue
@@ -31,7 +31,7 @@ class Database:
                 yield open(yamldir + filename, 'r')
             else:
                 for item in includes:
-                    if filename.startswith(item.lower()):
+                    if filename == item + '.yml':
                         yield open(yamldir + filename, 'r')
 
     def generate(self, yamldir, includes):
