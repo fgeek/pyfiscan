@@ -40,7 +40,7 @@ MediaWiki 1.21:
   1:
     location: ['/includes/DefaultSettings.php']
     secure_version: '1.21.2'
-    regexp: ['\$wgVersion.*?(?P<version>1\.20\.[0-9.]{1,})']
+    regexp: ['\$wgVersion.*?(?P<version>1\.21\.[0-9.]{1,})']
     cve: 'CVE-2013-4301 http://osvdb.org/96913, CVE-2013-4302 http://osvdb.org/96912, CVE-2013-4303 http://osvdb.org/96911, http://secunia.com/advisories/54715/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
