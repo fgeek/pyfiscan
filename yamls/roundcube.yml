@@ -16,11 +16,12 @@
 # CVE-2012-4668 0.8.1 http://osvdb.org/85142
 # CVE-2012-6121 0.8.5 http://osvdb.org/90175 http://osvdb.org/90177
 # CVE-2013-1904 0.8.6
+# CVE-2013-5646 0.9.3 http://osvdb.org/96722
 Roundcube:
   1:
     location: ['/program/include/iniset.php']
-    secure_version: '0.8.6'
+    secure_version: '0.9.3'
     regexp: ['define.*?RCMAIL_VERSION.*?(?P<version>[0-9.]+)']
-    cve: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1904
+    cve: 'http://cve.mitre.org/cgi-bin/cvename.cgi?name=2013-5646 http://osvdb.org/96722'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
