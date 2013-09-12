@@ -97,22 +97,26 @@
 # CVE-2012-5868 N/A     http://osvdb.org/88744
 #   - Requested more details from security@wordpress.org 2012-12-29
 #   - No fixed version available 2013-01-17
-# CVE-2013-0235 3.5.1   http://osvdb.org/89138 http://wordpress.org/news/2013/01/wordpress-3-5-1/ Debian:698916
-# CVE-2013-0236 3.5.1   http://osvdb.org/89576 http://wordpress.org/news/2013/01/wordpress-3-5-1/ Debian:698927
-# CVE-2013-0237 3.5.1   http://osvdb.org/89577 http://wordpress.org/news/2013/01/wordpress-3-5-1/ Debian:698929
-# CVE-2013-2199 3.5.2   http://wordpress.org/news/2013/06/wordpress-3-5-2/ http://bugs.debian.org/713947 http://codex.wordpress.org/Version_3.5.2
-# CVE-2013-2200 3.5.2   http://wordpress.org/news/2013/06/wordpress-3-5-2/ http://bugs.debian.org/713947 http://codex.wordpress.org/Version_3.5.2
-# CVE-2013-2201 3.5.2   http://wordpress.org/news/2013/06/wordpress-3-5-2/ http://bugs.debian.org/713947 http://codex.wordpress.org/Version_3.5.2
-# CVE-2013-2202 3.5.2   http://wordpress.org/news/2013/06/wordpress-3-5-2/ http://bugs.debian.org/713947 http://codex.wordpress.org/Version_3.5.2
-# CVE-2013-2203 3.5.2   http://wordpress.org/news/2013/06/wordpress-3-5-2/ http://bugs.debian.org/713947 http://codex.wordpress.org/Version_3.5.2
-# CVE-2013-2204 3.5.2   http://wordpress.org/news/2013/06/wordpress-3-5-2/ http://bugs.debian.org/713947 http://codex.wordpress.org/Version_3.5.2
-# CVE-2013-2205 3.5.2   http://wordpress.org/news/2013/06/wordpress-3-5-2/ http://bugs.debian.org/713947 http://codex.wordpress.org/Version_3.5.2
+# CVE-2013-0235 3.5.1   http://osvdb.org/89138 http://wordpress.org/news/2013/01/wordpress-3-5-1/
+# CVE-2013-0236 3.5.1   http://osvdb.org/89576 http://wordpress.org/news/2013/01/wordpress-3-5-1/
+# CVE-2013-0237 3.5.1   http://osvdb.org/89577 http://wordpress.org/news/2013/01/wordpress-3-5-1/
+# CVE-2013-2173 3.5.2   http://wordpress.org/news/2013/06/wordpress-3-5-2/ http://codex.wordpress.org/Version_3.5.2
+# CVE-2013-2199 3.5.2   http://wordpress.org/news/2013/06/wordpress-3-5-2/ http://codex.wordpress.org/Version_3.5.2
+# CVE-2013-2200 3.5.2   http://wordpress.org/news/2013/06/wordpress-3-5-2/ http://codex.wordpress.org/Version_3.5.2
+# CVE-2013-2201 3.5.2   http://wordpress.org/news/2013/06/wordpress-3-5-2/ http://codex.wordpress.org/Version_3.5.2
+# CVE-2013-2202 3.5.2   http://wordpress.org/news/2013/06/wordpress-3-5-2/ http://codex.wordpress.org/Version_3.5.2
+# CVE-2013-2203 3.5.2   http://wordpress.org/news/2013/06/wordpress-3-5-2/ http://codex.wordpress.org/Version_3.5.2
+# CVE-2013-2204 3.5.2   http://wordpress.org/news/2013/06/wordpress-3-5-2/ http://codex.wordpress.org/Version_3.5.2
+# CVE-2013-2205 3.5.2   http://wordpress.org/news/2013/06/wordpress-3-5-2/ http://codex.wordpress.org/Version_3.5.2
 # CVE-2013-4144 3.6     http://osvdb.org/92635 http://osvdb.org/83413
+# CVE-2013-4338 3.6.1   http://codex.wordpress.org/Version_3.6.1
+# CVE-2013-4339 3.6.1   http://codex.wordpress.org/Version_3.6.1
+# CVE-2013-4340 3.6.1   http://codex.wordpress.org/Version_3.6.1
 WordPress:
   1:
     location: ['/wp-includes/version.php']
-    secure_version: '3.6'
+    secure_version: '3.6.1'
     regexp: ['\$wp_version.*?(?P<version>[0-9.]+)']
-    cve: 'CVE-2013-4144 http://osvdb.org/92635 http://osvdb.org/83413 http://wordpress.org/news/2013/08/oscar/ http://codex.wordpress.org/Version_3.6'
+    cve: 'CVE-2013-4338, CVE-2013-4339, CVE-2013-4340 http://codex.wordpress.org/Version_3.6.1'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
