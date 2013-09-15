@@ -41,6 +41,7 @@
 # N/A           2.0.1/1.1.1     http://osvdb.org/76318 SA46386
 # CVE-2013-XXXX 2.0.4/1.1.18    http://www.simplemachines.org/community/index.php?topic=496403
 # CVE-2013-XXXX 2.0.5   http://osvdb.org/96323 SA54384 http://www.simplemachines.org/community/index.php?topic=509417 http://www.openwall.com/lists/oss-security/2013/09/15/2
+# CVE-2013-XXXX         http://osvdb.org/88909
 # NFU:  http://osvdb.org/32605 too little information
 #       CVE-2007-5943 http://osvdb.org/39961 myth/fake
 #       CVE-2012-5903 http://osvdb.org/80766
