@@ -1,6 +1,6 @@
 # CVE-2004-1996 "last vulnerable 1.0 Beta 5" http://osvdb.org/16898
 # CVE-2005-2817 "last vulnerable 1.0.5" http://osvdb.org/19120 SA16646
-#               1.0.5 http://osvdb.org/17458 SA15784 CVE requested
+# CVE-2005-4891 1.0.5 http://osvdb.org/17458 SA15784
 # CVE-2005-4159 1.1 RC1 http://osvdb.org/21722
 # CVE-2006-0896 1.0.7 http://osvdb.org/23480 SA19004 EV0086
 # CVE-2006-7013 "last vulnerable 1.0.7" http://osvdb.org/35706
@@ -43,19 +43,19 @@
 #       CVE-2007-5943 http://osvdb.org/39961 myth/fake
 #       CVE-2012-5903 http://osvdb.org/80766
 #       http://osvdb.org/92745 http://www.openwall.com/lists/oss-security/2012/12/31/7
-SMF 1:
-  1:
-    location: ['/index.php']
-    secure_version: '1.1.15'
-    regexp: ['\$forum_version.*?(?P<version>1[0-9.]{1,})']
-    cve: CVE-2011-3615 http://osvdb.org/76822, CVE-2011-4173 OSVB:76317, http://osvdb.org/46386
-    fingerprint: detect_general
-    post_processing: ['php5.fcgi']
 SMF 2:
   1:
     location: ['/index.php']
     secure_version: '2.0.1'
     regexp: ['\$forum_version.*?(?P<version>2[0-9.]{1,})']
+    cve: CVE-2011-3615 http://osvdb.org/76822, CVE-2011-4173 OSVB:76317, http://osvdb.org/46386
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+SMF 1:
+  1:
+    location: ['/index.php']
+    secure_version: '1.1.15'
+    regexp: ['\$forum_version.*?(?P<version>1[0-9.]{1,})']
     cve: CVE-2011-3615 http://osvdb.org/76822, CVE-2011-4173 OSVB:76317, http://osvdb.org/46386
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
