@@ -8,7 +8,28 @@ CVE-2010-1619
 CVE-2010-4207
 CVE-2010-4208
 CVE-2010-4209
-CVE-2011-4278-CVE-2011-4309
+CVE-2011-4278
+CVE-2011-4279
+CVE-2011-4280
+CVE-2011-4281
+CVE-2011-4282
+CVE-2011-4283
+CVE-2011-4284
+CVE-2011-4285
+CVE-2011-4286
+CVE-2011-4287
+CVE-2011-4288
+CVE-2011-4289
+CVE-2011-4290
+CVE-2011-4291
+CVE-2011-4292
+CVE-2011-4293
+CVE-2011-4294
+CVE-2011-4295
+CVE-2011-4296
+CVE-2011-4297
+CVE-2011-4298
+CVE-2011-4309
 CVE-2012-0792 MSA-12-0002 Personal information leak
 CVE-2012-0793 MSA-12-0004 Added profile image security
 CVE-2012-0794 MSA-12-0005 Encryption enhancement
@@ -82,81 +103,68 @@ CVE-2013-2243
 CVE-2013-2244
 CVE-2013-2245
 CVE-2013-2246
-MSA-11-0001: ALREADY ASSIGNED CVE-2011-0987 Customised phpMyAdmin upgraded to 2.11.11.3 and 3.3.9.2
-MSA-11-0002: CVE-2011-4133 Cross-site request forgery vulnerability in RSS block
-MSA-11-0003: CVE-2011-4278 Cross-site scripting vulnerability in tag autocomplete
-MSA-11-0004: CVE-2011-4279 $CFG->forceloginforprofiles setting ignored in course profiles
-MSA-11-0005: CVE-2011-4280 Cross-site scripting vulnerability in spikephpcoverage
-MSA-11-0006: CVE-2011-4281 Cross-site request forgery and missing access control in course completion
-MSA-11-0007: CVE-2011-4282 Cross-site scripting vulnerability in course tags
-MSA-11-0008: CVE-2011-4283 IMS enterprise enrolment file may disclose sensitive information
-MSA-11-0009: CVE-2011-4284 My profile block may disclose private information if used in user context
-MSA-11-0010: CVE-2011-4285 Incorrect default for mod:course/delete capability in teacher role
-MSA-11-0011: CVE-2011-4286 Multiple cross-site scripting problems in media filter
-MSA-11-0012: CVE-2011-4287 Authentication issue
-MSA-11-0013: CVE-2011-4288 Group/Quiz permissions issue
-MSA-11-0014: CVE-2011-4289 Personal details displayed without permission
-MSA-11-0015: CVE-2011-4290 Cross Site Scripting through URL encoding
-MSA-11-0016: CVE-2011-4291 Ability to fill a database with invalid records through ratings
-MSA-11-0017: CVE-2011-4292 Ability to generate invalid records in the comments table in the database
-MSA-11-0018: NO CVE Lacking capability controls over cohorts (hardening)
-MSA-11-0019: CVE-2011-4293 Themes writing to files outside Moodle data directory
-MSA-11-0020, MSA-11-0024, MSA-11-0025, MSA-11-0026, MSA-11-0031, MSA-11-0032, MSA-11-0036, MSA-11-0037, MSA-11-0038
-MSA-11-0020: CVE-2011-4294 Continue links in error messages can lead offsite
-MSA-11-0021: CVE-2011-4295 Role assignment web service function not following restrictions
-MSA-11-0022: CVE-2011-4296 Course creators could change filters at course level
-MSA-11-0023: CVE-2011-4297 Guests can add comments to front page activities
-MSA-11-0024: NO CVE Recaptcha images were being authenticated from an older server (hardening)
-MSA-11-0025: NO CVE Group names in user upload CSV not being escaped (need to be admin)
-MSA-11-0026: Fields in user upload CSV not being escaped Affects: 1.9.x Reference: http://moodle.org/mod/forum/discuss.php?d=182743
-MSA-11-0026: NO CVE Fields in user upload CSV not being escaped (need to be admin)
-MSA-11-0027: CVE-2011-4298 Wiki pages reference forgery issue
-MSA-11-0027: Wiki pages reference forgery issue Affects: 2.1.x, 2.0.x Fix: http://git.moodle.org/gw?p=moodle.git;a=commit;h=48346fb11f8ced06a05c0618b02a3a925b34ec59 Reference: http://moodle.org/mod/forum/discuss.php?d=188309
-MSA-11-0028: CVE-2011-4299 Wiki comments cross site scripting issue
-MSA-11-0028: Wiki comments XSS issue Affects: 2.1.x, 2.0.x Fix: http://git.moodle.org/gw?p=moodle.git;a=commit;h=a459fd90625ae44d7b3ac10b65da2dc631a418e7 Reference: http://moodle.org/mod/forum/discuss.php?d=188310
-MSA-11-0029: CVE-2011-4300 File visibility issue
-MSA-11-0029: File visibility issue Affects: 2.1.x, 2.0.x Fix: http://git.moodle.org/gw?p=moodle.git;a=commit;h=f6b07c4da54a9db24723beb147e8a19a3d487e00 Reference: http://moodle.org/mod/forum/discuss.php?d=188311
-MSA-11-0030: Box.net repository integration authentication issue Affects: 2.1.x, 2.0.x Fix: http://git.moodle.org/gw?p=moodle.git;a=commit;h=3deff6c9d2bb4ab3144b3ca7b93d6a2ef6a87af2 Reference: http://moodle.org/mod/forum/discuss.php?d=188312
-MSA-11-0030: NO CVE Box.net repository integration authentication issue (hardening)
-MSA-11-0031: CVE-2011-4301 Forms API constant issue
-MSA-11-0031: Forms API constant issue Affects: 2.1.x, 2.0.x, 1.9.x Fix: http://git.moodle.org/gw?p=moodle.git;a=commit;h=f1f70bd4dde6cd1ea4bdb8ab28fa3d36a53b89d8 Reference: http://moodle.org/mod/forum/discuss.php?d=188313
-MSA-11-0032: CVE-2011-4302 MNET SSL validation issue
-MSA-11-0032: MNET SSL validation issue  Affects: 2.1.x, 2.0.x, 1.9.x Fix: http://git.moodle.org/gw?p=moodle.git;a=commit;h=54941685e3e86ec085641dcb7ebb1f96f06735b2 Reference: http://moodle.org/mod/forum/discuss.php?d=188314
-MSA-11-0033: CVE-2011-4303 Site-hub registration identity issue
-MSA-11-0033: Site-hub registration identity issue Affects: 2.1.x, 2.0.x Fix: http://git.moodle.org/gw?p=moodle.git;a=commit;h=ca896fdfcfcc87846fa91a297d0aa6999a68c48a Reference: http://moodle.org/mod/forum/discuss.php?d=188315
-MSA-11-0034: CVE-2011-4304 Chat module information leak
-MSA-11-0034: Chat module information leak Affects: 2.1.x, 2.0.x Fix: http://git.moodle.org/gw?p=moodle.git;a=commit;h=d0157d827bc254ba386a5e5b41b13be2698ee76e Reference: http://moodle.org/mod/forum/discuss.php?d=188316
-MSA-11-0035: Cookie-less session vulnerability Affects: 2.1.x, 2.0.x, (1.9.x if misconfigured) Fix: http://git.moodle.org/gw?p=moodle.git;a=commit;h=e1e082a809b9a2d3a408cb4d6faa34fdfcf3165c Reference: http://moodle.org/mod/forum/discuss.php?d=188317
-MSA-11-0035: NO CVE Cookie-less session vulnerability (hardening)
-MSA-11-0036: CVE-2011-4305 Messaging refresh vulnerability
-MSA-11-0036: Messaging refresh vulnerability Affects: 1.9.x Fix: http://git.moodle.org/gw?p=moodle.git;a=commit;h=97f258fabb3ebfa7acc7c02cb59de92b01710f99 Reference: http://moodle.org/mod/forum/discuss.php?d=188318
-MSA-11-0037: CVE-2011-4306 Course section editing injection vulnerability
-MSA-11-0037: Course section editing injection vulnerability Affects: 1.9.x Fix: http://git.moodle.org/gw?p=moodle.git;a=commit;h=4a2acd8c7e6c869d5fd5aa686e6e0a3f20c97f15 Reference: http://moodle.org/mod/forum/discuss.php?d=188319
-MSA-11-0038: Database injection protection strengthened Affects: 1.9.x Fix: http://git.moodle.org/gw?p=moodle.git;a=commit;h=4a2acd8c7e6c869d5fd5aa686e6e0a3f20c97f15 Reference: http://moodle.org/mod/forum/discuss.php?d=188320
-MSA-11-0038: NO CVE Database injection protection strengthened (hardening)
-MSA-11-0039: CVE-2011-4307 Wiki section vulnerability
-MSA-11-0039: Wiki section vulnerability Affects: 2.1.x, 2.0.x Fix: http://git.moodle.org/gw?p=moodle.git;a=commit;h=41017112cff7f5bd7969c72d321320f3090e7c68 Reference: http://moodle.org/mod/forum/discuss.php?d=188321
-MSA-11-0040: CVE-2011-4308 Potential personal information leak
-MSA-11-0040: Potential personal information leak Affects: 2.1.x, 2.0.x, 1.9.x Fix: http://git.moodle.org/gw?p=moodle.git&a=search&s=MDL-28615 Reference: http://moodle.org/mod/forum/discuss.php?d=188322
-MSA-11-0041: CVE-2011-4309 Global search authentication issue
-MSA-11-0041: Global search authentication issue Affects: 2.1.x 2.0.x Fix: http://git.moodle.org/gw?p=moodle.git;a=commit;h=5eb1cec34f013fdcb559b66bc401f2845ce0bbb7 Reference: http://moodle.org/mod/forum/discuss.php?d=188323
-MSA-11-0042/CVE-2011-4581
-MSA-11-0043/CVE-2011-4582
-MSA-11-0044/CVE-2011-4583
-MSA-11-0045/CVE-2011-4584
-MSA-11-0046/CVE-2011-4585
-MSA-11-0047/CVE-2011-4586
-MSA-11-0048/CVE-2011-4587
-MSA-11-0049/CVE-2011-4588
-MSA-11-0050/CVE-2011-4589
-MSA-11-0051/CVE-2011-4590
-MSA-11-0052/CVE-2011-4591
-MSA-11-0053/CVE-2011-4592
-MSA-11-0054/CVE-2011-4593
+MSA-11-0001 CVE-2011-0987 Customised phpMyAdmin upgraded to 2.11.11.3 and 3.3.9.2
+MSA-11-0002 CVE-2011-4133 Cross-site request forgery vulnerability in RSS block
+MSA-11-0003 CVE-2011-4278 Cross-site scripting vulnerability in tag autocomplete
+MSA-11-0004 CVE-2011-4279 $CFG->forceloginforprofiles setting ignored in course profiles
+MSA-11-0005 CVE-2011-4280 Cross-site scripting vulnerability in spikephpcoverage
+MSA-11-0006 CVE-2011-4281 Cross-site request forgery and missing access control in course completion
+MSA-11-0007 CVE-2011-4282 Cross-site scripting vulnerability in course tags
+MSA-11-0008 CVE-2011-4283 IMS enterprise enrolment file may disclose sensitive information
+MSA-11-0009 CVE-2011-4284 My profile block may disclose private information if used in user context
+MSA-11-0010 CVE-2011-4285 Incorrect default for mod:course/delete capability in teacher role
+MSA-11-0011 CVE-2011-4286 Multiple cross-site scripting problems in media filter
+MSA-11-0012 CVE-2011-4287 Authentication issue
+MSA-11-0013 CVE-2011-4288 Group/Quiz permissions issue
+MSA-11-0014 CVE-2011-4289 Personal details displayed without permission
+MSA-11-0015 CVE-2011-4290 Cross Site Scripting through URL encoding
+MSA-11-0016 CVE-2011-4291 Ability to fill a database with invalid records through ratings
+MSA-11-0017 CVE-2011-4292 Ability to generate invalid records in the comments table in the database
+MSA-11-0018 NO CVE Lacking capability controls over cohorts (hardening)
+MSA-11-0019 CVE-2011-4293 Themes writing to files outside Moodle data directory
+MSA-11-0020 CVE-2011-4294 Continue links in error messages can lead offsite
+MSA-11-0021 CVE-2011-4295 Role assignment web service function not following restrictions
+MSA-11-0022 CVE-2011-4296 Course creators could change filters at course level
+MSA-11-0023 CVE-2011-4297 Guests can add comments to front page activities
+MSA-11-0024 NO CVE Recaptcha images were being authenticated from an older server (hardening)
+MSA-11-0025 NO CVE Group names in user upload CSV not being escaped (need to be admin)
+MSA-11-0026 NO CVE http://moodle.org/mod/forum/discuss.php?d=182743
+MSA-11-0027 CVE-2011-4298 http://git.moodle.org/gw?p=moodle.git;a=commit;h=48346fb11f8ced06a05c0618b02a3a925b34ec59 http://moodle.org/mod/forum/discuss.php?d=188309
+MSA-11-0028 CVE-2011-4299 http://git.moodle.org/gw?p=moodle.git;a=commit;h=a459fd90625ae44d7b3ac10b65da2dc631a418e7 http://moodle.org/mod/forum/discuss.php?d=188310
+MSA-11-0029 CVE-2011-4300 http://git.moodle.org/gw?p=moodle.git;a=commit;h=f6b07c4da54a9db24723beb147e8a19a3d487e00 http://moodle.org/mod/forum/discuss.php?d=188311
+MSA-11-0030 http://git.moodle.org/gw?p=moodle.git;a=commit;h=3deff6c9d2bb4ab3144b3ca7b93d6a2ef6a87af2 http://moodle.org/mod/forum/discuss.php?d=188312
+MSA-11-0031 CVE-2011-4301 http://git.moodle.org/gw?p=moodle.git;a=commit;h=f1f70bd4dde6cd1ea4bdb8ab28fa3d36a53b89d8 http://moodle.org/mod/forum/discuss.php?d=188313
+MSA-11-0032 CVE-2011-4302 http://git.moodle.org/gw?p=moodle.git;a=commit;h=54941685e3e86ec085641dcb7ebb1f96f06735b2 http://moodle.org/mod/forum/discuss.php?d=188314
+MSA-11-0033 CVE-2011-4303 http://git.moodle.org/gw?p=moodle.git;a=commit;h=ca896fdfcfcc87846fa91a297d0aa6999a68c48a http://moodle.org/mod/forum/discuss.php?d=188315
+MSA-11-0034 CVE-2011-4304 http://git.moodle.org/gw?p=moodle.git;a=commit;h=d0157d827bc254ba386a5e5b41b13be2698ee76e http://moodle.org/mod/forum/discuss.php?d=188316
+MSA-11-0035 http://git.moodle.org/gw?p=moodle.git;a=commit;h=e1e082a809b9a2d3a408cb4d6faa34fdfcf3165c http://moodle.org/mod/forum/discuss.php?d=188317
+MSA-11-0036 CVE-2011-4305 http://git.moodle.org/gw?p=moodle.git;a=commit;h=97f258fabb3ebfa7acc7c02cb59de92b01710f99 http://moodle.org/mod/forum/discuss.php?d=188318
+MSA-11-0037 CVE-2011-4306 http://git.moodle.org/gw?p=moodle.git;a=commit;h=4a2acd8c7e6c869d5fd5aa686e6e0a3f20c97f15 http://moodle.org/mod/forum/discuss.php?d=188319
+MSA-11-0038 http://git.moodle.org/gw?p=moodle.git;a=commit;h=4a2acd8c7e6c869d5fd5aa686e6e0a3f20c97f15 http://moodle.org/mod/forum/discuss.php?d=188320
+MSA-11-0039 CVE-2011-4307 http://git.moodle.org/gw?p=moodle.git;a=commit;h=41017112cff7f5bd7969c72d321320f3090e7c68 http://moodle.org/mod/forum/discuss.php?d=188321
+MSA-11-0040 CVE-2011-4308 http://git.moodle.org/gw?p=moodle.git&a=search&s=MDL-28615 http://moodle.org/mod/forum/discuss.php?d=188322
+MSA-11-0041 CVE-2011-4309 http://git.moodle.org/gw?p=moodle.git;a=commit;h=5eb1cec34f013fdcb559b66bc401f2845ce0bbb7 http://moodle.org/mod/forum/discuss.php?d=188323
+MSA-11-0042 CVE-2011-4581
+MSA-11-0043 CVE-2011-4582
+MSA-11-0044 CVE-2011-4583
+MSA-11-0045 CVE-2011-4584
+MSA-11-0046 CVE-2011-4585
+MSA-11-0047 CVE-2011-4586
+MSA-11-0048 CVE-2011-4587
+MSA-11-0049 CVE-2011-4588
+MSA-11-0050 CVE-2011-4589
+MSA-11-0051 CVE-2011-4590
+MSA-11-0052 CVE-2011-4591
+MSA-11-0053 CVE-2011-4592
+MSA-11-0054 CVE-2011-4593
 MSA-13-0020 CVE-2013-2079
 MSA-13-0021 CVE-2013-2080
 MSA-13-0022 CVE-2013-2081
 MSA-13-0023 CVE-2013-2082
 MSA-13-0024 CVE-2013-2083
+MSA-13-0032 CVE-2012-6087 http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-40615
+MSA-13-0033 CVE-2013-4313 http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-40676
+MSA-13-0034 CVE-2013-5674 http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-40924
+MSA-13-0035 CVE-2013-4341 http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-41623
 N/A         CVE-2011-4308 http://www.osvdb.org/76695
 NGS00208
