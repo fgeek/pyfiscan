@@ -49,7 +49,7 @@ Detects following software
 * Tiny Tiny RSS: SA43424 [OSVDB:70934](http://osvdb.org/70934)
 * TinyTinyRSS: http://osvdb.org/70934 http://secunia.com/advisories/43424/
 * Trac: CVE-2010-5108 [OSVDB 63317](http://osvdb.org/63317)
-* WikkaWiki: CVE-2011-4448, CVE-2011-4449, CVE-2011-4450, CVE-2011-4451, CVE-2011-4452 OSVDB 77390-77394 [WikkaWiki security advisory](http://blog.wikkawiki.org/2011/12/04/security-updates-for-1-3-11-3-2/)
+* WikkaWiki: CVE-2013-5586 [SA54790](http://secunia.com/advisories/54790/)
 * WordPress: CVE-2013-4338, CVE-2013-4339, CVE-2013-4340
 * Zenphoto: http://www.waraxe.us/content-96.html http://osvdb.org/87015
 * e107: CVE-2012-6434 [OSVDB 88908](http://osvdb.org/88908)
