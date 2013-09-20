@@ -10,13 +10,15 @@ Mailer utility for pyfiscan tool result CSV-files.
 """
 
 try:
+    import sys 
     import csv
     import getpass
+    import os.path
     import smtplib
-    import sys
+    import sqlite3
     import traceback
     from email.mime.text import MIMEText
-    from jinja2 import Template
+    from jinja2 import Environment, FileSystemLoader
 except ImportError, e:
     sys.exit('Import error: %s' % e)
 
@@ -35,11 +37,13 @@ if version_minor < int(6):
     sys.exit('Python minor version needs to be seven or higher.\nSMTP_SSL only works with Python 2.7')
 
 
-def send_email(user, timestamp, appname, version_file, file_version, secure_version, cve):
-    """This will handle email sending to SMTP-server."""
-    template = Template(u'Hei, olemme huomanneet, että käytössäsi on {{ appname }}-sovellus, jonka versio {{ file_version }} on haavoittuvainen. Voit korjata tilanteen päivittämällä asennuksen vähintään versioon {{ secure_version }}. Apua sovelluksen päivittämiseen saat vastaamalla tähän sähköpostiin sekä tästä ohjeesta: http://www.kapsi.fi/ohjeet/www-paivitys.html\n\nHaavoittuva sovellus löytyy hakemistostasi: {{ version_file }}\n\nSkannaus on suoritettu {{ timestamp }} varmuuskopioista. Lisätietoja: {{ cve }}\n\nTähän sähköpostiin ei tarvitse vastata mikäli sinulla ei ole ongelmia päivityksessä. Huomaathan, että myös htaccessin takana olevat sivut suositellaan päivittämään ja keskeneräiset asennukset on asennettava loppuun tai poistettava. Mikäli verkkotunnuksesi on siirretty voit ajaa komennon "chmod 0220 hakemisto", jolloin emme lähetä sinulle enää muistutuksia.\n\nTerveisin,\n   Henri Salo\n   Kapsin ylläpito\n   yllapito@tuki.kapsi.fi\n\n   Kapsi Internet-käyttäjät ry\n   http://www.kapsi.fi/\n   http://tuki.kapsi.fi/')
-    mail_content = template.render(user=user, timestamp=timestamp, appname=appname, version_file=version_file, file_version=file_version, secure_version=secure_version, cve=cve)
-    msg = MIMEText(mail_content, _charset='utf-8')
+def send_email(user, vulnerabilities):
+    """Calls template engine and sends email to SMTP server."""
+    template_file = os.path.abspath(sys.argv[2])
+    templateLoader = FileSystemLoader(searchpath='/')
+    templateEnv = Environment(loader=templateLoader)
+    template = templateEnv.get_template(template_file)
+    msg = MIMEText(template.render(vulnerabilities=vulnerabilities), _charset='utf-8')
     try:
         receivers = user.split(',')
         s = smtplib.SMTP_SSL(smtp_server, smtp_port)  # SMTP_SSL only works with Python 2.7
@@ -60,10 +64,16 @@ def send_email(user, timestamp, appname, version_file, file_version, secure_vers
         sys.exit(traceback.format_exc())
 
 
-def read_csv(csv_file):
-    """Reads data in from CSV-file."""
+def process_csv(csv_file):
+    """Imports data from CSV to sqlite3 database in memory. This will use
+    send_email so that user receives only one email.
+    
+    """
+    conn = sqlite3.connect(':memory:')
+    c = conn.cursor()
+    c.execute('''CREATE TABLE IF NOT EXISTS vulnerabilities (user TEXT, timestamp TEXT, appname TEXT, version_file TEXT, file_version TEXT, secure_version TEXT, cve TEXT)''')
+    conn.commit()
     reader = csv.reader(open(csv_file, 'rb'), delimiter='|', quotechar='|')
-    counter = 0
     for line in reader:
         user = line[0]
         timestamp = line[1]
@@ -72,12 +82,18 @@ def read_csv(csv_file):
         file_version = line[4]
         secure_version = line[5]
         cve = line[6]
-        counter = counter + 1
-        if user and timestamp and appname and version_file and file_version and  secure_version and cve:
-            print('[*] Processing %i line..' % counter)
-            send_email(user, timestamp, appname, version_file, file_version, secure_version, cve)
-    print('\n[*] Processed %i notifications. Happy customer is a happy customer!' % counter)
+        data = (user, timestamp, appname, version_file, file_version, secure_version, cve)
+        c.execute('INSERT INTO vulnerabilities VALUES (?,?,?,?,?,?,?)', data)
+        conn.commit()
+    c.execute('SELECT DISTINCT user FROM vulnerabilities')  # unique user
+    users = c.fetchall()
+    for user in users:
+        t = (user[0],)
+        vulnerabilities = []
+        for vulnerability in c.execute('SELECT timestamp, appname, version_file, file_version, secure_version, cve FROM vulnerabilities WHERE user=?', t):
+            vulnerabilities.append(vulnerability)
+        send_email(user[0], vulnerabilities)
 
 
 print('Please note that it is required to add email| to start of each line in CSV.')
-read_csv(sys.argv[1])
+process_csv(sys.argv[1])

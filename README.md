@@ -8,7 +8,8 @@ Pyfiscan is free web-application vulnerability and version scanner and can be
 used to locate out-dated versions of common web-applications in Linux-servers.
 Example use case is hosting-providers keeping eye on their users installations
 to keep up with security-updates. Fingerprints are easy to create and modify as
-user can write those in YAML-syntax.
+user can write those in YAML-syntax. Pyfiscan also contains tool to create
+email alerts using templates.
 
 Requirements
 ------------
