@@ -16,6 +16,7 @@ try:
     import sys
     import traceback
     from email.mime.text import MIMEText
+    from jinja2 import Template
 except ImportError, e:
     sys.exit('Import error: %s' % e)
 
@@ -36,7 +37,9 @@ if version_minor < int(6):
 
 def send_email(user, timestamp, appname, version_file, file_version, secure_version, cve):
     """This will handle email sending to SMTP-server."""
-    msg = MIMEText('Hei, olemme huomanneet, että käytössäsi on ' + appname + '-sovellus, jonka versio ' + file_version + ' on haavoittuvainen. Voit korjata tilanteen päivittämällä asennuksen vähintään versioon ' + secure_version +'. Apua sovelluksen päivittämiseen saat vastaamalla tähän sähköpostiin sekä tästä ohjeesta: http://www.kapsi.fi/ohjeet/www-paivitys.html\n\nHaavoittuva sovellus löytyy hakemistostasi: ' + version_file + '\n\nSkannaus on suoritettu ' + timestamp + ' varmuuskopioista. Lisätietoja: ' + cve + '\n\nTähän sähköpostiin ei tarvitse vastata mikäli sinulla ei ole ongelmia päivityksessä. Huomaathan, että myös htaccessin takana olevat sivut suositellaan päivittämään ja keskeneräiset asennukset on asennettava loppuun tai poistettava. Mikäli verkkotunnuksesi on siirretty voit ajaa komennon "chmod 0220 hakemisto", jolloin emme lähetä sinulle enää muistutuksia.\n\nTerveisin,\n   Henri Salo\n   Kapsin ylläpito\n   yllapito@tuki.kapsi.fi\n\n   Kapsi Internet-käyttäjät ry\n   http://www.kapsi.fi/\n   http://tuki.kapsi.fi/', _charset='utf-8')
+    template = Template(u'Hei, olemme huomanneet, että käytössäsi on {{ appname }}-sovellus, jonka versio {{ file_version }} on haavoittuvainen. Voit korjata tilanteen päivittämällä asennuksen vähintään versioon {{ secure_version }}. Apua sovelluksen päivittämiseen saat vastaamalla tähän sähköpostiin sekä tästä ohjeesta: http://www.kapsi.fi/ohjeet/www-paivitys.html\n\nHaavoittuva sovellus löytyy hakemistostasi: {{ version_file }}\n\nSkannaus on suoritettu {{ timestamp }} varmuuskopioista. Lisätietoja: {{ cve }}\n\nTähän sähköpostiin ei tarvitse vastata mikäli sinulla ei ole ongelmia päivityksessä. Huomaathan, että myös htaccessin takana olevat sivut suositellaan päivittämään ja keskeneräiset asennukset on asennettava loppuun tai poistettava. Mikäli verkkotunnuksesi on siirretty voit ajaa komennon "chmod 0220 hakemisto", jolloin emme lähetä sinulle enää muistutuksia.\n\nTerveisin,\n   Henri Salo\n   Kapsin ylläpito\n   yllapito@tuki.kapsi.fi\n\n   Kapsi Internet-käyttäjät ry\n   http://www.kapsi.fi/\n   http://tuki.kapsi.fi/')
+    mail_content = template.render(user=user, timestamp=timestamp, appname=appname, version_file=version_file, file_version=file_version, secure_version=secure_version, cve=cve)
+    msg = MIMEText(mail_content, _charset='utf-8')
     try:
         receivers = user.split(',')
         s = smtplib.SMTP_SSL(smtp_server, smtp_port)  # SMTP_SSL only works with Python 2.7
