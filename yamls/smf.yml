@@ -54,11 +54,19 @@ SMF 2:
     cve: 'http://osvdb.org/96323 http://secunia.com/advisories/54384/ http://www.simplemachines.org/community/index.php?topic=509417'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
-SMF 1:
+SMF 1.1:
   1:
     location: ['/index.php']
     secure_version: '1.1.18'
-    regexp: ['\$forum_version.*?(?P<version>1[0-9.]{1,})']
+    regexp: ['\$forum_version.*?(?P<version>1\.1[0-9.]{1,})']
     cve: 'http://www.simplemachines.org/community/index.php?topic=496403'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+SMF 1.0:
+  1:
+    location: ['/index.php']
+    secure_version: '1.1.18'
+    regexp: ['\$forum_version.*?(?P<version>1\.0[0-9.]{1,})']
+    cve: 'SMF 1.0.x versions are end of life. Please upgrade to 1.1.18 or newer.'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
