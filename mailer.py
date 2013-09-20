@@ -51,6 +51,8 @@ def send_email(user, timestamp, appname, version_file, file_version, secure_vers
         print msg
         s.sendmail(from_address, receivers, msg.as_string())
         s.quit()
+    except smtplib.SMTPAuthenticationError:
+        sys.exit('Authentication error when connecting to SMTP server.')
     except Exception:
         sys.exit(traceback.format_exc())
 
