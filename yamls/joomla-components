@@ -1,4 +1,5 @@
 # NFU: http://vel.joomla.org/vel-blog/623-k2-2-6-6.html
+# CVE-2008-XXXX com_football    http://osvdb.org/94703
 # CVE-2010-0753 com_sqlreport       http://osvdb.org/62534
 # CVE-2010-5280 com_cbe             http://osvdb.org/68618
 # CVE-2010-5286 com_jstore          http://osvdb.org/87941
@@ -18,33 +19,39 @@
 # CVE-2012-6514 com_netinvoice      http://osvdb.org/81573
 # CVE-2012-XXXX com_quiz
 # CVE-2013-3719 com_aicontactsafe
+# CVE-2013-XXXX Dshop   http://vel.joomla.org/vel-blog/56-dshop.html
+# CVE-2013-XXXX VirtueMart  2.0.22a http://vel.joomla.org/resolved/799-virtuemart-2-0-22a-sqli.html
+# CVE-2013-XXXX acesef  4.0.0 http://www.joomace.net/joomla-extensions/acesef-joomla-seo-sef-urls http://www.joomace.net/joomla-extensions/acesef/changelog http://vel.joomla.org/resolved/895-ace-sef4.html
 # CVE-2013-XXXX com_advert                                  http://vel.joomla.org/vel-blog/51-com_advert.html
 # CVE-2013-XXXX com_myalbum                                 http://cxsecurity.com/issue/WLB-2013050099
 # CVE-2013-XXXX com_picaweb                                 http://cxsecurity.com/issue/WLB-2013010155
 # CVE-2013-XXXX com_s5clanroster                            http://cxsecurity.com/issue/WLB-2013050101
 # CVE-2013-XXXX com_shohada                                 http://cxsecurity.com/issue/WLB-2013050100
+# CVE-2013-XXXX com_virtuemart  2.0.22a http://www.exploit-db.com/exploits/27879/ http://osvdb.org/show/osvdb/96586
+# CVE-2013-XXXX joomsport pro and std   http://vel.joomla.org/vel-blog/796-joomsport-pro-and-std.html
+# CVE-2013-XXXX sectionex   2.5.104 http://stackideas.com/blog/important-security-release-for-sectionex-2-5 http://vel.joomla.org/resolved/797-sectionex-2-5-96.html
+# CVE-2013-XXXX sectionex   http://vel.joomla.org/vel-blog/797-sectionex-2-5-96.html
+# CVE-XXXX-XXXX civicrm                                     http://vel.joomla.org/resolved/402-civicrm-4-3-3.html http://civicrm.org/blogs/colemanw/security-release-civicrm-434
 # CVE-XXXX-XXXX civicrm                                     http://vel.joomla.org/vel-blog/402-civicrm-4-3-3.html
+# CVE-XXXX-XXXX cobalt http://vel.joomla.org/vel-blog/716-cobalt-8-270.html
+# CVE-XXXX-XXXX com_advert                                  http://vel.joomla.org/vel-blog/51-com_advert.html http://docs.joomla.org/Vulnerable_Extensions_List#com_advert
 # CVE-XXXX-XXXX com_alfcontact
+# CVE-XXXX-XXXX com_events_booking_v5
 # CVE-XXXX-XXXX com_extplorer                               http://cxsecurity.com/issue/WLB-2013060127
 # CVE-XXXX-XXXX com_extplorer                               http://vel.joomla.org/resolved/18-extplorer.html http://extplorer.net/news/12
 # CVE-XXXX-XXXX com_flexicontent    http://osvdb.org/80767
+# CVE-XXXX-XXXX com_g2bridge        http://osvdb.org/94665 http://www.exploit-db.com/exploits/12814/ http://cxsecurity.com/issue/WLB-2013060227 http://www.securityfocus.com/bid/40440
 # CVE-XXXX-XXXX com_jinc                                    http://lhacky.altervista.org/jextensions/index.php/component/content/article/21-news/jinc/100-security-issue-on-jinc-1-0-1
 # CVE-XXXX-XXXX com_jobprofile                              http://vel.joomla.org/vel-blog/58-jobprofile-1-0.html
 # CVE-XXXX-XXXX com_jobprofile      http://osvdb.org/77652
+# CVE-XXXX-XXXX com_jse_event   1.0.1   http://seclists.org/bugtraq/2013/Aug/31
+# CVE-XXXX-XXXX com_sectionex   2.5.104 http://seclists.org/bugtraq/2013/Aug/30
 # CVE-XXXX-XXXX com_team            http://osvdb.org/52139
-# CVE-XXXX-XXXX flashchart                                  http://vel.joomla.org/resolved/403-flashchart-content-plugin-1-2-1.html
 # CVE-XXXX-XXXX dshop                                       http://docs.joomla.org/Vulnerable_Extensions_List#Dshop
-# CVE-XXXX-XXXX civicrm                                     http://vel.joomla.org/resolved/402-civicrm-4-3-3.html http://civicrm.org/blogs/colemanw/security-release-civicrm-434
-# CVE-XXXX-XXXX com_advert                                  http://vel.joomla.org/vel-blog/51-com_advert.html http://docs.joomla.org/Vulnerable_Extensions_List#com_advert
-# CVE-XXXX-XXXX unite-horizontal-carousel                   http://vel.joomla.org/resolved/479-unite-horizontal-carousel.html
-# CVE-XXXX-XXXX com_g2bridge        http://osvdb.org/94665 http://www.exploit-db.com/exploits/12814/ http://cxsecurity.com/issue/WLB-2013060227 http://www.securityfocus.com/bid/40440
-# CVE-XXXX-XXXX qcontacts                                   http://docs.joomla.org/Vulnerable_Extensions_List#QContacts_1.0.6
-# CVE-2008-XXXX com_football    http://osvdb.org/94703
+# CVE-XXXX-XXXX flashchart                                  http://vel.joomla.org/resolved/403-flashchart-content-plugin-1-2-1.html
 # CVE-XXXX-XXXX jmcameron       http://vel.joomla.org/resolved/624-attachments-jmcameron.html http://jmcameron.net/attachments/updates/3.1.1/
 # CVE-XXXX-XXXX plugin_googlemap http://osvdb.org/95775
 # CVE-XXXX-XXXX plugin_googlemap http://osvdb.org/95776
-# CVE-XXXX-XXXX cobalt http://vel.joomla.org/vel-blog/716-cobalt-8-270.html
-# CVE-XXXX-XXXX com_sectionex   2.5.104 http://seclists.org/bugtraq/2013/Aug/30
-# CVE-XXXX-XXXX com_events_booking_v5
-# CVE-XXXX-XXXX com_jse_event   1.0.1   http://seclists.org/bugtraq/2013/Aug/31
-# CVE-XXXX-XXXX QContacts   1.0.6   http://vel.joomla.org/vel-blog/57-qcontacts-1-0-6.html http://docs.joomla.org/Vulnerable_Extensions_List#QContacts_1.0.6
+# CVE-XXXX-XXXX qcontacts                                   http://docs.joomla.org/Vulnerable_Extensions_List#QContacts_1.0.6 http://vel.joomla.org/vel-blog/57-qcontacts-1-0-6.html
+# CVE-XXXX-XXXX unite-horizontal-carousel                   http://vel.joomla.org/resolved/479-unite-horizontal-carousel.html
+# CVE-2012-4071

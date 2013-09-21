@@ -1,9 +1,8 @@
 - Drupal: false-negative with 6.22
 - Roundcube: Version 0.8-beta not yet detected
-- Gallery version string not detected 1.5.10.dfsg-debian1
 
-Some useful links:
 http://en.wikipedia.org/wiki/List_of_web_application_frameworks
+http://en.wikipedia.org/wiki/List_of_content_management_systems
 http://docs.joomla.org/Vulnerable_Extensions_List
 http://ceriksen.com/category/advisories/
 
@@ -297,7 +296,6 @@ http://cxsecurity.com/issue/WLB-2012060239
 http://cxsecurity.com/issue/WLB-2012060240
 http://cxsecurity.com/issue/WLB-2012080016
 http://cxsecurity.com/issue/WLB-2012080017
-http://www.securityfocus.com/bid/48348
 http://www.securityfocus.com/bid/53909
 http://www.securityfocus.com/bid/53910
 http://www.securityfocus.com/bid/53942

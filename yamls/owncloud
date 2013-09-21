@@ -13,9 +13,7 @@
 # oC-SA-2013-024
 # oC-SA-2013-025
 # oC-SA-2013-026
-# NOTE: 4.5.x 4.0.x still supported for security updates
-# NOTE: status.php outputs by default: {"installed":"true","version":"5.0.6","versionstring":"5.0.5","edition":""}
-# NOTE: need to strip all line breaks before we can get version information
+# NOTE: 4.5.x 4.0.x still supported for security updates. Need to strip all line breaks before we can get version information
 ownCloud:
     1:
       location: ['TODO']

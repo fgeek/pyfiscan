@@ -159,6 +159,7 @@
 # CVE-2013-3254 wp-photo-album-plus         http://osvdb.org/93033
 # CVE-2013-3256 sexybookmarks
 # CVE-2013-3262 download-monitor
+# CVE-2013-3479 sharethis
 # CVE-2013-3491 sharebar                    http://osvdb.org/94843
 # CVE-2013-3526
 # CVE-2013-3529 wp-funeral-press
@@ -169,10 +170,12 @@
 # CVE-2013-4117 category-grid-view-gallery http://osvdb.org/94805
 # CVE-2013-4240 hms-testimonials    2.0.11  http://seclists.org/fulldisclosure/2013/Aug/96
 # CVE-2013-4241 hms-testimonials    2.0.11
-# CVE-2013-4625 duplicator
+# CVE-2013-4625 duplicator  0.4.5   HTB23162
 # CVE-2013-4626 backwpup    3.0.13  http://osvdb.org/96505 http://secunia.com/advisories/54515 https://www.htbridge.com/advisory/HTB23161
 # CVE-2013-4944 buddypress-extended-friendship-request
 # CVE-2013-5098 download-monitor
+# CVE-2013-5672 indianic-testimonial
+# CVE-2013-5673 indianic-testimonial
 # CVE-2013-XXXX advanced-xml-reader         http://osvdb.org/92904
 # CVE-2013-XXXX background-music Jplayer.swf XSS
 # CVE-2013-XXXX better-wp-security          3.5.4   http://www.securityfocus.com/archive/1/527634/30/0/threaded
@@ -191,6 +194,7 @@
 # CVE-XXXX-XXXX deans-fckeditor-with-pwwangs-code-plugin-for-wordpress  http://osvdb.org/80687 !
 # CVE-XXXX-XXXX devformatter http://osvdb.org/89474 http://osvdb.org/89475
 # CVE-XXXX-XXXX editormonkey                        http://seclists.org/bugtraq/2012/Jul/27 probably false-positive
+# CVE-XXXX-XXXX encrypted-blog  http://cxsecurity.com/issue/WLB-2013080220
 # CVE-XXXX-XXXX featured-post-with-thumbnail        http://osvdb.org/70679 !
 # CVE-XXXX-XXXX featured-post-with-thumbnail    1.5 http://osvdb.org/84460 !
 # CVE-XXXX-XXXX foxypress http://www.waraxe.us/advisory-95.html
@@ -203,9 +207,14 @@
 # CVE-XXXX-XXXX simple-forum http://cxsecurity.com/issue/WLB-2012080265
 # CVE-XXXX-XXXX solvemedia http://osvdb.org/89585
 # CVE-XXXX-XXXX usernoise   3.7.9   http://seclists.org/bugtraq/2013/Aug/35
+# CVE-XXXX-XXXX wordfence   http://cxsecurity.com/issue/WLB-2013080221 probably false positive
 # CVE-XXXX-XXXX wp-forum http://cxsecurity.com/issue/WLB-2013020035
 # CVE-XXXX-XXXX wp-predict                          http://osvdb.org/83697
 # CVE-XXXX-XXXX wp-video-commando                   http://cxsecurity.com/issue/WLB-2013030207
+# CVE-XXXX-XXXX wptouch http://www.securityfocus.com/bid/48348
+# CVE-2013-5711 design-approval-system 3.7
+# CVE-2013-5714 videowhisper-live-streaming-integration
+# CVE-2013-XXXX platinum-seo-pack 1.3.8 http://www.osvdb.org/97263
 # HTB22839, HTB22840, HTB22842, HTB22843, HTB22844, HTB22841, HTB22845,
 # HTB22858, HTB22859, HTB22860, HTB22848, HTB22849, HTB22861, HTB22838,
 # HTB22938, HTB22961, HTB22960, HTB22951, HTB22875, HTB22873, HTB22867,
@@ -213,3 +222,4 @@
 # HTB23035, HTB23049
 # http://wpsecure.net/2013/05/a-list-of-recent-xss-plugin-exploits-from-april/
 # http://wpsecure.net/2013/05/open-flash-chart/
+# http://wordpress.org/plugins/wptouch/changelog/ http://osvdb.org/92831 http://osvdb.org/77752 http://osvdb.org/78145 http://osvdb.org/78145 http://osvdb.org/69538
