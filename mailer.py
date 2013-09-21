@@ -67,6 +67,13 @@ def send_email(user, vulnerabilities):
 def process_csv(csv_file):
     """Imports data from CSV to sqlite3 database in memory. This will use
     send_email so that user receives only one email.
+
+    http://packages.debian.org/libsqlite3-mod-csvtable should be used in the
+    future in here.
+
+    conn.enable_load_extension(True)
+    conn.load_extension(library_location)
+    CREATE VIRTUAL TABLE example USING csvtable('vulnerabilities.csv');
     
     """
     conn = sqlite3.connect(':memory:')
