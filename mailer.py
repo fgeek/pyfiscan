@@ -95,5 +95,11 @@ def process_csv(csv_file):
         send_email(user[0], vulnerabilities)
 
 
-print('Please note that it is required to add email| to start of each line in CSV.')
-process_csv(sys.argv[1])
+if __name__ == "__main__":
+    print('Please note that it is required to add email| to start of each line in CSV.')
+    csv_file = sys.argv[1]
+    if os.path.islink(csv_file):
+        sys.exit('CSV file %s is a symlink. Exiting..' % csv_file)
+    if not os.path.isfile(csv_file):
+        sys.exit('Input %s is not a file. Exiting..' % csv_file)
+    process_csv(csv_file)
