@@ -172,8 +172,8 @@
 # SA-CONTRIB-2013-070   CVE-2013-4275   https://drupal.org/node/2071157 Zen
 # SA-CONTRIB-2013-071   CVE-2013-4336   https://drupal.org/node/2076221 Flag
 # SA-CONTRIB-2013-072   CVE-2013-4337   https://drupal.org/node/2076315 Node View Permissions
-# SA-CONTRIB-2013-073                   https://drupal.org/node/2081637 Make Meeting Scheduler
-# SA-CONTRIB-2013-074                   https://drupal.org/node/2087051
-# SA-CONTRIB-2013-075                   https://drupal.org/node/2087055 Click2Sell
-# SA-CONTRIB-2013-076                   https://drupal.org/node/2087095 jQuery Countdown
-# SA-CONTRIB-2013-077                   https://drupal.org/node/2092395 Google Site Search
+# SA-CONTRIB-2013-073   CVE-2013-4379   https://drupal.org/node/2081637 Make Meeting Scheduler
+# SA-CONTRIB-2013-074   CVE-2013-4380   https://drupal.org/node/2087051
+# SA-CONTRIB-2013-075   CVE-2013-4381   https://drupal.org/node/2087055 Click2Sell
+# SA-CONTRIB-2013-076   CVE-2013-4383   https://drupal.org/node/2087095 jQuery Countdown
+# SA-CONTRIB-2013-077   CVE-2013-4384   https://drupal.org/node/2092395 Google Site Search
