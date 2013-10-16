@@ -179,4 +179,5 @@
 # SA-CONTRIB-2013-076   CVE-2013-4383   https://drupal.org/node/2087095 jQuery Countdown
 # SA-CONTRIB-2013-077   CVE-2013-4384   https://drupal.org/node/2092395 Google Site Search
 # SA-CONTRIB-2013-078   CVE-2013-4406   https://drupal.org/node/2103187 Quick Tabs
+# SA-CONTRIB-2013-079                   https://drupal.org/node/2113317 Context
 # Duplicates? CVE-2013-5937, CVE-2013-5938
