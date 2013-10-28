@@ -37,6 +37,7 @@ Detects following software
 * Joomla 2.5: CVE-2013-5576 [OSVDB:95933](http://osvdb.org/95933) [Security advisory](http://developer.joomla.org/security/563-20130801-core-unauthorised-uploads.html)
 * Joomla 3: CVE-2013-5576 [OSVDB:95933](http://osvdb.org/95933) [Security advisory](http://developer.joomla.org/security/563-20130801-core-unauthorised-uploads.html)
 * Magnolia: CVE-2013-4621
+* Mahara: CVE-2013-4429 http://osvdb.org/98185, CVE-2013-4430 http://osvdb.org/98181, CVE-2013-4431 http://osvdb.org/98184, CVE-2013-4432 http://osvdb.org/98182
 * MantisBT: CVE-2013-4460
 * MediaWiki: CVE-2013-4301 http://osvdb.org/96913, CVE-2013-4302 http://osvdb.org/96912, CVE-2013-4303 http://osvdb.org/96911, http://secunia.com/advisories/54715/
 * Microweber: [CVE-2013-5984](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5984) [OSVDB:97809](http://osvdb.org/97809) [HTB23175](https://www.htbridge.com/advisory/HTB23175)
