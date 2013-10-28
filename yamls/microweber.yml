@@ -1,0 +1,10 @@
+# URL: http://microweber.com/
+# CVE-2013-5984 0.830 https://github.com/microweber/microweber/commit/9177d134960c24cb642d5cf3b42a1fba286219cc HTB23175
+Microweber:
+  1:
+    location: ['/src/Microweber/bootstrap.php']
+    secure_version: '0.830'
+    regexp: ['    define.*?MW_VERSION.*?(?P<version>[0-9.]+)']
+    cve: 'http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5984 https://www.htbridge.com/advisory/HTB23175'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
