@@ -182,4 +182,10 @@
 # SA-CONTRIB-2013-079   CVE-2013-4445   https://drupal.org/node/2113317 Context access bypass
 # SA-CONTRIB-2013-079   CVE-2013-4446   https://drupal.org/node/2113317 Context code exec
 # SA-CONTRIB-2013-080   CVE-2013-4447   https://drupal.org/node/2113515 Simplenews
-# Duplicates? CVE-2013-5937, CVE-2013-5938
+# SA-CONTRIB-2013-081                   https://drupal.org/node/2118717 Spaces
+# SA-CONTRIB-2013-082                   https://drupal.org/node/2118873 Bean
+# SA-CONTRIB-2013-084                   https://drupal.org/node/2124241 FileField Sources
+# SA-CONTRIB-2013-083                   https://drupal.org/node/2123995 Quiz
+# SA-CONTRIB-2013-085                   https://drupal.org/node/2124279 Feed Element Mapper
+# SA-CONTRIB-2013-086                   https://drupal.org/node/2124289 Monster Menus
+# Verified duplicates CVE-2013-5937, CVE-2013-5938 but not yet REJECTED
