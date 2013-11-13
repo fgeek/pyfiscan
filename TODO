@@ -266,8 +266,6 @@ Zikula CMS: CVE-2011-0535
 Zope 2 / Zope 3: CVE-2011-3587
 Zope 2 / Zope 3: CVE-2011-4924
 Zope 2: CVE-2012-5486, CVE-2012-5505, CVE-2012-5507, CVE-2012-5508
-appRain CMF <http://www.apprain.com/>: CVE-2011-3704
-appRain CMF <http://www.apprain.com/>: CVE-2012-1153 RCE http://osvdb.org/78473, CVE-2011-5229, CVE-2011-5228
 awstats CVE-2012-4547
 bbPress: CVE-2011-1150, HTB22904
 bloofoxCMS: NS-12-015
