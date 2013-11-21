@@ -189,12 +189,12 @@
 # SA-CONTRIB-2013-084   CVE-2013-4502   https://drupal.org/node/2124241 FileField Sources
 # SA-CONTRIB-2013-085   CVE-2013-4503   https://drupal.org/node/2124279 Feed Element Mapper
 # SA-CONTRIB-2013-086   CVE-2013-4504   https://drupal.org/node/2124289 Monster Menus
-# SA-CONTRIB-2013-087                   https://drupal.org/node/2129373 Payment for Webform
-# SA-CONTRIB-2013-088                   https://drupal.org/node/2129381 Secure Pages
-# SA-CONTRIB-2013-089                   https://drupal.org/node/2129379 Node Access Keys
-# SA-CONTRIB-2013-090                   https://drupal.org/node/2135257 Revisioning
-# SA-CONTRIB-2013-091                   https://drupal.org/node/2135267 Groups, Communities and Co (GCC)
-# SA-CONTRIB-2013-092                   https://drupal.org/node/2135273 Misery
+# SA-CONTRIB-2013-087   CVE-2013-4594   https://drupal.org/node/2129373 Payment for Webform
+# SA-CONTRIB-2013-088   CVE-2013-4595   https://drupal.org/node/2129381 Secure Pages
+# SA-CONTRIB-2013-089   CVE-2013-4596   https://drupal.org/node/2129379 Node Access Keys
+# SA-CONTRIB-2013-090   CVE-2013-4597   https://drupal.org/node/2135257 Revisioning
+# SA-CONTRIB-2013-091   CVE-2013-4598   https://drupal.org/node/2135267 Groups, Communities and Co (GCC)
+# SA-CONTRIB-2013-092   CVE-2013-4599   https://drupal.org/node/2135273 Misery
 # SA-CONTRIB-2013-093                   https://drupal.org/node/2140097 Invitation
 # SA-CONTRIB-2013-094                   https://drupal.org/node/2140123 EU Cookie Compliance
 # SA-CONTRIB-2013-095                   https://drupal.org/node/2140217 Organic Groups
