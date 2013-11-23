@@ -28,7 +28,7 @@ Detects following software
 * Coppermine: [Vendor security advisory](http://forum.coppermine-gallery.net/index.php/topic,74682.0.html) CVE-2012-1613, CVE-2012-1614, http://osvdb.org/80731 http://osvdb.org/80732 http://osvdb.org/80733 http://osvdb.org/80734 http://osvdb.org/80735
 * Cotonti: CVE-2013-4789 http://osvdb.org/95842 http://www.cotonti.com/news/announce/siena_0914_released
 * Dolibarr: CVE-2013-2091 CVE-2013-2092 CVE-2013-2093
-* Drupal: CVE-2013-0316 [OSVDB 90517](http://osvdb.org/90517) [Drupal security advisory SA-CORE-2013-002](http://drupal.org/SA-CORE-2013-002)
+* Drupal: [Drupal security advisory SA-CORE-2013-003](http://drupal.org/SA-CORE-2013-003)
 * Foswiki: CVE-2013-1666 [OSVDB 90345](http://osvdb.org/90345) [Foswiki security advisory](http://foswiki.org/Support/SecurityAlert-CVE-2013-1666)
 * Gallery: CVE-2013-2138 [security advisory](http://galleryproject.org/gallery_3_0_8)
 * Joomla 1.5: 1.5 is end-of-life since 2012-04-30

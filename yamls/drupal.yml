@@ -1,14 +1,24 @@
-#                           CVE-2012-2922
-# DRUPAL-SA-CORE-2012-004   CVE-2012-5651/CVE-2012-5652/CVE-2012-5653 7.18/6.27 http://drupal.org/SA-CORE-2012-004
-# DRUPAL-SA-CORE-2013-001   CVE-2013-0244 7.19/6.28 http://drupal.org/SA-CORE-2013-001
-# DRUPAL-SA-CORE-2013-001   CVE-2013-0245 7.19/6.28 http://drupal.org/SA-CORE-2013-001
-# DRUPAL-SA-CORE-2013-001   CVE-2013-0246 7.19/6.28 http://drupal.org/SA-CORE-2013-001
-# DRUPAL-SA-CORE-2013-002   CVE-2013-0316 7.20      http://drupal.org/SA-CORE-2013-002
+# N/A                                   CVE-2012-2922   7.15    http://osvdb.org/81817
+# https://drupal.org/SA-CORE-2012-001   CVE-2012-0825   7.11/6.23
+# https://drupal.org/SA-CORE-2012-001   CVE-2012-0826   7.11/6.23
+# https://drupal.org/SA-CORE-2012-001   CVE-2012-0827   7.11/6.23
+# https://drupal.org/SA-CORE-2012-004   CVE-2012-5651   7.18/6.27
+# https://drupal.org/SA-CORE-2012-004   CVE-2012-5652   7.18/6.27
+# https://drupal.org/SA-CORE-2012-004   CVE-2012-5653   7.18/6.27
+# https://drupal.org/SA-CORE-2013-001   CVE-2013-0244   7.19/6.28
+# https://drupal.org/SA-CORE-2013-001   CVE-2013-0245   7.19/6.28
+# https://drupal.org/SA-CORE-2013-001   CVE-2013-0246   7.19/6.28
+# https://drupal.org/SA-CORE-2013-002   CVE-2013-0316   7.20
+# https://drupal.org/SA-CORE-2013-003   CVE-2013-6385   7.24/6.29   http://osvdb.org/100036
+# https://drupal.org/SA-CORE-2013-003   CVE-2013-6386   7.24/6.29   http://osvdb.org/100037
+# https://drupal.org/SA-CORE-2013-003   CVE-2013-6387   7.24/6.29   http://osvdb.org/100033
+# https://drupal.org/SA-CORE-2013-003   CVE-2013-6388   7.24/6.29   http://osvdb.org/100034
+# https://drupal.org/SA-CORE-2013-003   CVE-2013-6389   7.24/6.29   http://osvdb.org/100035
 Drupal:
   1:
     location: ['/includes/bootstrap.inc']
-    secure_version: '7.20'
+    secure_version: '7.24'
     regexp: ['define.*?VERSION.*?(?P<version>[0-9.]+)']
-    cve: CVE-2013-0316 http://drupal.org/SA-CORE-2013-002 http://osvdb.org/90517
+    cve: 'CVE-2013-6385 http://osvdb.org/100036 CVE-2013-6386 http://osvdb.org/100037 CVE-2013-6387 http://osvdb.org/100033 CVE-2013-6388 http://osvdb.org/100034 CVE-2013-6389 http://osvdb.org/100035'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
