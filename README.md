@@ -39,7 +39,7 @@ Detects following software
 * Magnolia: CVE-2013-4621
 * Mahara: CVE-2013-4429 http://osvdb.org/98185, CVE-2013-4430 http://osvdb.org/98181, CVE-2013-4431 http://osvdb.org/98184, CVE-2013-4432 http://osvdb.org/98182
 * MantisBT: CVE-2013-4460
-* MediaWiki: CVE-2013-4301 http://osvdb.org/96913, CVE-2013-4302 http://osvdb.org/96912, CVE-2013-4303 http://osvdb.org/96911, http://secunia.com/advisories/54715/
+* MediaWiki: CVE-2013-4567 CVE-2013-4568 http://osvdb.org/99943 CVE-2013-4572 http://osvdb.org/99970 http://secunia.com/advisories/55743/ http://lists.wikimedia.org/pipermail/mediawiki-announce/2013-November/000135.html
 * Microweber: [CVE-2013-5984](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5984) [OSVDB:97809](http://osvdb.org/97809) [HTB23175](https://www.htbridge.com/advisory/HTB23175)
 * MoinMoin: CVE-2011-1058 [OSVDB 71025](http://osvdb.org/71025)
 * MyBB: http://osvdb.org/92683 http://osvdb.org/92684 http://osvdb.org/92686 http://osvdb.org/92687 http://osvdb.org/92688 http://osvdb.org/92689
