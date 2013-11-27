@@ -49,8 +49,7 @@ Detects following software
 * Serendipity: CVE-2013-5670 [Serendipity release advisory](http://blog.s9y.org/archives/250-Serendipity-1.7.3-released.html)
 * TestLink: CVE-2012-2275 http://osvdb.org/84712 http://osvdb.org/84711 http://osvdb.org/84713
 * TikiWiki: CVE-2012-0911 OSVDB:83534, CVE-2012-3996 [OSVDB 83533](http://osvdb.org/83533)
-* Tiny Tiny RSS: SA43424 [OSVDB:70934](http://osvdb.org/70934)
-* TinyTinyRSS: http://osvdb.org/70934 http://secunia.com/advisories/43424/
+* TinyTinyRSS: [OSVDB:70934](http://osvdb.org/70934) http://secunia.com/advisories/43424/
 * Trac: CVE-2010-5108 [OSVDB 63317](http://osvdb.org/63317)
 * WikkaWiki: CVE-2013-5586 [SA54790](http://secunia.com/advisories/54790/)
 * WordPress: CVE-2013-4338, CVE-2013-4339, CVE-2013-4340
