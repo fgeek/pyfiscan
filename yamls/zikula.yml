@@ -1,0 +1,11 @@
+# URL: http://zikula.org/
+# lib/Zikula/Core.php:    const VERSION_NUM = '1.3.6';
+# CVE-2013-6168 1.3.6 http://osvdb.org/98671 https://www.htbridge.com/advisory/HTB23178
+Zikula:
+  1:
+    location: ['/lib/Zikula/Core.php']
+    secure_version: '1.3.6'
+    regexp: ['.*?const.*?VERSION_NUM.*?(?P<version>[0-9.]+)']
+    cve: 'CVE-2013-6168 http://osvdb.org/98671 https://www.htbridge.com/advisory/HTB23178'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
