@@ -195,9 +195,10 @@
 # SA-CONTRIB-2013-090   CVE-2013-4597   https://drupal.org/node/2135257 Revisioning
 # SA-CONTRIB-2013-091   CVE-2013-4598   https://drupal.org/node/2135267 Groups, Communities and Co (GCC)
 # SA-CONTRIB-2013-092   CVE-2013-4599   https://drupal.org/node/2135273 Misery
-# SA-CONTRIB-2013-093                   https://drupal.org/node/2140097 Invitation
-# SA-CONTRIB-2013-094                   https://drupal.org/node/2140123 EU Cookie Compliance
-# SA-CONTRIB-2013-095                   https://drupal.org/node/2140217 Organic Groups
-# SA-CONTRIB-2013-096                   https://drupal.org/node/2140237 Entity reference
-# SA-CONTRIB-2013-097                   https://drupal.org/node/2149791 OG Features
+# SA-CONTRIB-2013-093   CVE-2013-7063   https://drupal.org/node/2140097 Invitation
+# SA-CONTRIB-2013-094   CVE-2013-7064   https://drupal.org/node/2140123 EU Cookie Compliance
+# SA-CONTRIB-2013-095   CVE-2013-7065   https://drupal.org/node/2140217 Organic Groups, Posting content into groups where a user is not a member
+# SA-CONTRIB-2013-095   CVE-2013-7068   https://drupal.org/node/2140217 Organic Groups, Inconsistent access checking in posting content
+# SA-CONTRIB-2013-096   CVE-2013-7066   https://drupal.org/node/2140237 Entity reference
+# SA-CONTRIB-2013-097   CVE-2013-7067   https://drupal.org/node/2149791 OG Features
 # Verified duplicates CVE-2013-5937, CVE-2013-5938 but not yet REJECTED
