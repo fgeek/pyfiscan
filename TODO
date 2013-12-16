@@ -110,7 +110,6 @@ JAMWiki: http://osvdb.org/show/osvdb/80795
 Jara: CVE-2011-4094, CVE-2011-4095
 Jcow CMS: RCE CVE-2011-3203
 Jcow CMS: XSS CVE-2011-3202
-KaiBB <http://code.google.com/p/kaibb/>: HTB22749 / HTB22748 / HTB22747 / HTB22746 / HTB22793 / SSCHADV2011-027 #TODO: No CVE?, verify HTB announcements
 Kajian Website CMS: CVE-2011-5111
 LetoDMS (old: MyDMS): CVE-2010-2006, CVE-2010-2007, CVE-2004-1732, CVE-2004-1733, SA38237, SA12340
 LightNEasy <http://www.lightneasy.org/>: SSCHADV2011-013
