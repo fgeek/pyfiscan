@@ -201,4 +201,5 @@
 # SA-CONTRIB-2013-095   CVE-2013-7068   https://drupal.org/node/2140217 Organic Groups, Inconsistent access checking in posting content
 # SA-CONTRIB-2013-096   CVE-2013-7066   https://drupal.org/node/2140237 Entity reference
 # SA-CONTRIB-2013-097   CVE-2013-7067   https://drupal.org/node/2149791 OG Features
+# SA-CONTRIB-2013-098                   https://drupal.org/node/2158651 Ubercart
 # Verified duplicates CVE-2013-5937, CVE-2013-5938 but not yet REJECTED
