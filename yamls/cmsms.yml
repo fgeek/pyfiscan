@@ -17,6 +17,7 @@
 # CVE-2012-5450 1.11.2.1 http://osvdb.org/87235 SA51185 HTB23121 http://forum.cmsmadesimple.org/viewtopic.php?f=1&t=63545
 # CVE-2012-6064 1.11.2.1 SA51185 HTB23121 xfdb/79881 http://forum.cmsmadesimple.org/viewtopic.php?f=1&t=63545
 # CVE-2013-4167 1.11.7
+# CVE-2013-3929 ?   http://secunia.com/advisories/53920
 CMSMS:
   1:
     location: ['/version.php']
