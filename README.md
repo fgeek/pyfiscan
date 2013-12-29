@@ -53,7 +53,7 @@ Detects following software
 * Trac: CVE-2010-5108 [OSVDB 63317](http://osvdb.org/63317)
 * WikkaWiki: CVE-2013-5586 [SA54790](http://secunia.com/advisories/54790/)
 * WordPress: CVE-2013-4338, CVE-2013-4339, CVE-2013-4340
-* Zenphoto: http://www.waraxe.us/content-96.html http://osvdb.org/87015
+* Zenphoto: http://www.zenphoto.org/news/zenphoto-1.4.5.4 http://osvdb.org/98091 http://osvdb.org/98092
 * Zikula: CVE-2013-6168 http://osvdb.org/98671 https://www.htbridge.com/advisory/HTB23178
 * e107: CVE-2012-6434 [OSVDB 88908](http://osvdb.org/88908)
 * osDate: http://osvdb.org/63005 http://osvdb.org/63006
