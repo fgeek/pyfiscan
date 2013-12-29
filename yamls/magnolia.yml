@@ -2,6 +2,7 @@
 # NOTE Works only with bundle versions. With .jar-files we need checksum
 # functionality.
 #
+# CVE-2013-4759 ?       https://www.htbridge.com/advisory/HTB23163
 # CVE-2013-4621 4.5.9   http://seclists.org/fulldisclosure/2013/Jun/202
 MagnoliaCMS:
   1:
