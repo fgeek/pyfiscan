@@ -17,12 +17,13 @@
 # CVE-2012-5450 1.11.2.1 http://osvdb.org/87235 SA51185 HTB23121 http://forum.cmsmadesimple.org/viewtopic.php?f=1&t=63545
 # CVE-2012-6064 1.11.2.1 SA51185 HTB23121 xfdb/79881 http://forum.cmsmadesimple.org/viewtopic.php?f=1&t=63545
 # CVE-2013-4167 1.11.7
-# CVE-2013-3929 ?   http://secunia.com/advisories/53920
+# CVE-2013-3929 ?   http://osvdb.org/100842 http://secunia.com/advisories/53920
+# CVE-2013-XXXX 1.11.8 http://osvdb.org/98876 http://www.cmsmadesimple.org/announcing-cmsms-1-11-8-fioreana/
 CMSMS:
   1:
     location: ['/version.php']
-    secure_version: '1.11.7'
+    secure_version: '1.11.8'
     regexp: ['\$CMS_VERSION.*?(?P<version>[.0-9]{2,})']
-    cve: 'CVE-2013-4167'
+    cve: 'http://www.cmsmadesimple.org/announcing-cmsms-1-11-8-fioreana/ http://osvdb.org/98876'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
