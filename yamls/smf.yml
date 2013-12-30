@@ -42,6 +42,9 @@
 # CVE-2013-XXXX 2.0.4/1.1.18    http://www.simplemachines.org/community/index.php?topic=496403
 # CVE-2013-XXXX 2.0.5   http://osvdb.org/96323 SA54384 http://www.simplemachines.org/community/index.php?topic=509417 http://www.openwall.com/lists/oss-security/2013/09/15/2
 # CVE-2013-XXXX         http://osvdb.org/88909
+# CVE-2013-7234 2.0.6/1.1.19 http://osvdb.org/101004 http://www.jakoblell.com/blog/2013/12/13/multiple-vulnerabilities-in-smf-forum-software/ http://www.simplemachines.org/community/index.php?topic=512964.0
+# CVE-2013-7235 2.0.6/1.1.19 http://osvdb.org/101005 http://www.jakoblell.com/blog/2013/12/13/multiple-vulnerabilities-in-smf-forum-software/ http://www.simplemachines.org/community/index.php?topic=512964.0
+# CVE-2013-7236 2.0.6/1.1.19 http://www.jakoblell.com/blog/2013/12/13/multiple-vulnerabilities-in-smf-forum-software/ http://www.simplemachines.org/community/index.php?topic=512964.0
 # NFU:  http://osvdb.org/32605 too little information
 #       CVE-2007-5943 http://osvdb.org/39961 myth/fake
 #       CVE-2012-5903 http://osvdb.org/80766
@@ -49,17 +52,17 @@
 SMF 2:
   1:
     location: ['/index.php']
-    secure_version: '2.0.5'
+    secure_version: '2.0.6'
     regexp: ['\$forum_version.*?(?P<version>2[0-9.]{1,})']
-    cve: 'http://osvdb.org/96323 http://secunia.com/advisories/54384/ http://www.simplemachines.org/community/index.php?topic=509417'
+    cve: 'CVE-2013-7234, CVE-2013-7235, CVE-2013-7236 http://www.simplemachines.org/community/index.php?topic=512964.0'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 SMF 1.1:
   1:
     location: ['/index.php']
-    secure_version: '1.1.18'
+    secure_version: '1.1.19'
     regexp: ['\$forum_version.*?(?P<version>1\.1[0-9.]{1,})']
-    cve: 'http://www.simplemachines.org/community/index.php?topic=496403'
+    cve: 'CVE-2013-7234, CVE-2013-7235, CVE-2013-7236 http://www.simplemachines.org/community/index.php?topic=512964.0'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 SMF 1.0:
@@ -67,6 +70,6 @@ SMF 1.0:
     location: ['/index.php']
     secure_version: '1.1.18'
     regexp: ['\$forum_version.*?(?P<version>1\.0[0-9.]{1,})']
-    cve: 'SMF 1.0.x versions are end of life. Please upgrade to 1.1.18 or newer.'
+    cve: 'SMF 1.0.x versions are end of life. Please upgrade to 1.1.x or newer.'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']

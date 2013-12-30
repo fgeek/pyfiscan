@@ -44,8 +44,7 @@ Detects following software
 * MoinMoin: CVE-2011-1058 [OSVDB 71025](http://osvdb.org/71025)
 * MyBB: http://osvdb.org/92683 http://osvdb.org/92684 http://osvdb.org/92686 http://osvdb.org/92687 http://osvdb.org/92688 http://osvdb.org/92689
 * Roundcube: CVE-2013-5646 [OSVDB 96722](http://osvdb.org/96722)
-* SMF 1: [SMF advisory](http://www.simplemachines.org/community/index.php?topic=496403)
-* SMF 2: [OSVDB 76822](http://osvdb.org/76822) [SMF advisory](http://www.simplemachines.org/community/index.php?topic=509417)
+* SMF 1 and 2: CVE-2013-7234, CVE-2013-7235, CVE-2013-7236 [SMF advisory](http://www.simplemachines.org/community/index.php?topic=512964.0)
 * Serendipity: CVE-2013-5670 [Serendipity release advisory](http://blog.s9y.org/archives/250-Serendipity-1.7.3-released.html)
 * TestLink: CVE-2012-2275 http://osvdb.org/84712 http://osvdb.org/84711 http://osvdb.org/84713
 * TikiWiki: CVE-2012-0911 OSVDB:83534, CVE-2012-3996 [OSVDB 83533](http://osvdb.org/83533)
