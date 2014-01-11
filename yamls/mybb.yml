@@ -26,6 +26,8 @@
 # CVE-2013-XXXX 1.6.10  http://osvdb.org/92687
 # CVE-2013-XXXX 1.6.10  http://osvdb.org/92688
 # CVE-2013-XXXX 1.6.10  http://osvdb.org/92689
+# TODO: CVE-2013-6936
+# TODO: CVE-2013-7288
 MyBB:
   1:
       location: ['/inc/class_core.php']
