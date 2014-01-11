@@ -6,4 +6,5 @@
 # CVE-2013-XXXX silverorchid        http://osvdb.org/96723 http://secunia.com/advisories/54662/
 # CVE-XXXX-XXXX MoneyTheme          http://osvdb.org/99187
 # CVE-2013-7129
-https://github.com/pvdl/wpscan/commit/0c406d72f6ec8d18c7df5620de2da1c9a33d361f
+# https://github.com/pvdl/wpscan/commit/0c406d72f6ec8d18c7df5620de2da1c9a33d361f
+# CVE-2013-7102
