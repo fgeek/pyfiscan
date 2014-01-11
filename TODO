@@ -1,17 +1,8 @@
-- Drupal: false-negative with 6.22
-- Roundcube: Version 0.8-beta not yet detected
+Temporary TODO-list. Please do not refer here.
 
-http://en.wikipedia.org/wiki/List_of_web_application_frameworks
-http://en.wikipedia.org/wiki/List_of_content_management_systems
-http://docs.joomla.org/Vulnerable_Extensions_List
+Drupal: false-negative with 6.22
+Roundcube: Version 0.8-beta not yet detected
 http://ceriksen.com/category/advisories/
-
----
-Please note that this list has been generated manually and usually in very short
-time per line. Verify every information and detail before creating fingerprints
-or asking CVEs. Contact project developers in case you need more information.
-This list should be empty so there is a LOT to do.
-
 phpgroupware/chora/inc/version.php <?php define('CHORA_VERSION', '0.4.2-cvs') ?>
 1024 CMS: CVE-2010-1093
 11in1 <http://www.11in1.org/>: HTB23071
@@ -35,7 +26,6 @@ Banana Dance CMS <http://www.doyoubananadance.com>: NS-11-010
 Batavi: CVE-2012-0069
 Beehive Forum 101 <http://www.beehiveforum.co.uk/>: SSCHADV2011-042 #TODO: No CVE
 Bitweaver <http://www.bitweaver.org>: SSCHADV2011-021 CVE?
-Blogs manager <http://sourceforge.net/projects/blogsmanager/>: http://osvdb.org/1167174,1167222,1167223,1167224,1167225,1167226,1167227,1167228,1167229,1167230,1167231 SA46918 http://seclists.org/fulldisclosure/2011/Nov/302 http://sourceforge.net/tracker/?func=detail&aid=3506818&group_id=219284&atid=1045881 TODO: No CVE
 BlueCMS: CVE-2010-4897
 CMSMS: CVE-2011-4310 http://osvdb.org/77106
 CMSMini NS-12-012
@@ -53,9 +43,6 @@ Concrete CMS: 5.4.1.1 XSS CVE-2011-3182
 Contao <http://www.contao.org/>: CVE-2011-0508, CVE-2011-4335, CVE-2011-4329
 Contao: CVE-2012-4383
 CosCms HTB23145
-CubeCart CVE-2013-1465
-CubeCart: 2012-02-10: CubeCart 3.0.x in End-of-Support/Maintenance circle
-CubeCart: CVE-2012-0865, KIS-2013-02
 Cunity http://cxsecurity.com/issue/WLB-2013030206
 CuteSITE CMS: CVE-2010-5024, CVE-2010-5025
 DeluxeBB: CVE-2009-4465
@@ -69,11 +56,6 @@ Elgg: CVE-2011-2935 XSS, CVE-2011-2936 SQLi, CVE-2013-0234, CVE-2012-6563, CVE-2
 Elxis CMS: CVE-2011-4918 http://osvdb.org/77563,77564
 EnanoCMS: NS-11-002
 Entry Level CMS (EL CMS): CVE-2010-1075, CVE-2010-1076
-ExponentCMS: CVE-2009-4744
-ExponentCMS: CVE-2010-5002
-ExponentCMS: NS-12-006
-ExponentCMS: http://osvdb.org/81326 # TODO: No CVE
-ExponentCMS: http://osvdb.org/81327 # TODO: No CVE
 FlatNux: CVE-2012-4877, CVE-2012-4878
 FlatNux: CVE-2012-4892
 FlexCMS: CVE-2012-1901
@@ -84,9 +66,6 @@ Fork CMS: CVE-2012-5164
 Freelancer calendar <http://sourceforge.net/projects/freelancercal/>: http://osvdb.org/77244,77245,77246,77247,77248 SA46970 TODO: No CVE
 Frog CMS <http://www.madebyfrog.com/>: HTB22682, HTB22685, HTB22684, HTB22683
 FusionForge: CVE-2013-1423
-Geeklog: CVE-2011-4647
-Geeklog: CVE-2011-4942
-Geeklog: CVE-2013-1470
 Grafik CMS: CVE-2010-2615
 Group-Office: CVE-2012-4239
 HTML-EDIT CMS: CVE-2010-4609
@@ -122,10 +101,6 @@ Mig: CVE-2005-2604 18742
 Mig: http://osvdb.org/22708
 Nakid CMS: CVE-2010-2358
 Netpet CMS: CVE-2009-4723
-NextBBS: CVE-2012-1602 http://osvdb.org/80626 Authentication Bypass
-NextBBS: CVE-2012-1602, CVE-2012-1603, CVE-2012-1604
-NextBBS: CVE-2012-1603 http://osvdb.org/80637 SQLi
-NextBBS: CVE-2012-1604 http://osvdb.org/80627 XSS
 OBM: HTB23060
 ONECMS: CVE-2010-0952
 OSClass: CSA-12003 http://osclass.org/2012/01/16/osclass-2-3-5/ http://www.codseq.it/advisories/multiple_vulnerabilities_in_osclass
@@ -135,19 +110,6 @@ OSCommerce: CVE-2012-1792
 OTRS2: CVE-2012-2582
 OTRS2: CVE-2012-4600
 One Click Orgs: http://osvdb.org/77602, http://osvdb.org/77545, http://osvdb.org/77547, http://osvdb.org/77548, http://osvdb.org/77549, http://osvdb.org/77546, http://osvdb.org/77569
-OneCMS: CVE-2010-4877
-OpenCMS <http://www.opencms.org/>: XSS http://osvdb.org/show/osvdb/71284
-OpenCMS <http://www.opencms.org/>: XSS http://osvdb.org/show/osvdb/71285
-OpenCart: CVE-2013-1891
-OpenCart: http://blog.visionsource.org/2010/01/28/opencart-csrf-vulnerability/
-OpenCart: http://forum.opencart.com/viewtopic.php?t=5792
-OpenCart: http://osvdb.org/show/osvdb/81238
-OpenCart: http://osvdb.org/show/osvdb/81239
-OpenCart: http://osvdb.org/show/osvdb/81240
-OpenCart: http://osvdb.org/show/osvdb/81241
-OpenCart: http://osvdb.org/show/osvdb/81242
-OpenCart: http://osvdb.org/show/osvdb/81243
-OpenCart: waraxe-2012-SA#084 1.5.2.1
 OpenEMR: HTB23069
 OpenKM: COMPASS-2012-001 http://osvdb.org/78105
 OpenKM: COMPASS-2012-002 http://osvdb.org/78106
@@ -168,10 +130,6 @@ PHP-SCMS: http://osvdb.org/77692 SA46766 TODO: No CVE
 Pandora FMS: CVE-2010-4278
 ParsCMS: CVE-2010-1054
 Pecio CMS <http://www.pecio-cms.com/>: CVE-2010-3204
-Phorum: CVE-2010-1629
-Phorum: CVE-2011-3622
-Phorum: CVE-2011-4561 SSCHADV2011-023
-Phorum: HTB23109
 PhpShop <http://www.phpshop.org/>: CVE-2009-4570, CVE-2009-4572
 Pligg CMS: CVE-2009-4786, CVE-2009-4787, CVE-2009-4788, CVE-2010-2577, CVE-2010-3013, CVE-2011-3986, Pligg CMS: CVE-2011-5022, CVE-2011-5023, CVE-2012-2435, Pligg CMS: CVE-2012-2436, CVE-2012-2937, CVE-2012-2936, CVE-2012-2935, http://osvdb.org/82050
 Plone: http://secunia.com/advisories/product/9334/?task=advisories CVE-2010-2422, CVE-2011-4462, CVE-2011-3587 http://securityreason.com/securityalert/8546 (high prio), CVE-2011-0720
@@ -231,10 +189,6 @@ WebJaxe <http://media4.obspm.fr/outils/webjaxe/en/>: HTB22927
 WebMatter CMS: http://osvdb.org/80791
 WebMatter CMS: http://osvdb.org/80792
 Webfolio CMS CVE-2012-1899
-Webmin: CVE-2012-2981 - Improper Input Validation
-Webmin: CVE-2012-2982 - Improper Neutralization of Special Elements used in a Command
-Webmin: CVE-2012-2983 - Improper Limitation of a Pathname to a Restricted Directory
-Webmin: CVE-2012-4893
 WebsiteBaker <http://www.websitebaker2.org/en/home.php>: HTB22928, HTB22929, CVE-2011-2934 http://osvdb.org/76618, CVE-2011-2933 http://osvdb.org/76619
 WebsiteBaker: CVE-2011-4322 http://www.websitebaker2.org/posts/security-vulnerability-backup-module-in-wb-core-13.php
 WebsiteBaker: SSCHADV2012-003 SA48083 http://osvdb.org/78834,78835
@@ -242,21 +196,9 @@ White Label CMS: CVE-2012-5388
 Winn Guestbook <http://code.google.com/p/winn-guestbook/>: CVE-2011-5026
 Without CVE: "Schurtz, Stefan" <S.Schurtz@infoserve.de> INFOSERVE-ADV2011-04.txt INFOSERVE-ADV2011-11.txt INFOSERVE-ADV2011-12.txt INFOSERVE-ADV2011-02.txt
 WonderCMS: HTB22759
-Wordpress Krea3AllMedias http://cxsecurity.com/ascii/WLB-2012090131
-Wordpress plugin BackWPup: SOS-11-012 http://osvdb.org/show/osvdb/76794
-Wordpress plugin BackWPup: http://osvdb.org/show/osvdb/71242
-Wordpress plugin BackWPup: http://osvdb.org/show/osvdb/71243
-Wordpress plugin BackWPup: http://osvdb.org/show/osvdb/71481 SOS-11-003 Fixed in: 1.7.2 CVE-2011-4342
-Wordpress plugin BackWPup: http://osvdb.org/show/osvdb/76794
-Wordpress plugin BackWPup: http://seclists.org/fulldisclosure/2011/Mar/328 http://secunia.com/advisories/43565/
 XOOPS: http://osvdb.org/show/osvdb/71228 SA43805 # No CVE. Request was done in here, but not answered: http://seclists.org/oss-sec/2011/q1/552
 XRay CMS: CVE-2012-1026 http://osvdb.org/79000
 Yet Another CMS <http://yetanothercms.codeplex.com/>: SSCHADV2011-031
-Zen Cart module: CVE-2012-5808, CVE-2012-5807, CVE-2012-5806, CVE-2012-5805
-Zen Cart: CVE-2012-2433 TWSL2012-004
-Zen Cart: CVE-2011-4403
-Zen Cart: CVE-2011-4547
-Zen Cart: CVE-2011-4567
 ZeusCMS: CVE-2010-0680, CVE-2010-0681
 Zikula CMS: CVE-2011-0535
 awstats CVE-2012-4547
@@ -267,17 +209,11 @@ cmslite: CVE-2010-2095, CVE-2010-2096
 e-ticketing <http://sourceforge.net/projects/e-ticketing/>: CVE-2012-1673 SQL Injection
 e107 Plugins - Filemanager Arbitrary File Upload Vulnerability http://cxsecurity.com/issue/WLB-2012060242
 e107 jbShop: CVE-2011-5186
-eGroupware: LFI CVE-2011-4948
-eGroupware: Open redirect CVE-2011-4951
-eGroupware: Reflected XSS CVE-2011-4950
-eGroupware: SQLi CVE-2011-4949
 eXtplorer: CVE-2012-3362
 eggBlog http://cxsecurity.com/issue/WLB-2013050005
-eocms: CVE-2009-4319/SA37749,SA37272
 epesi BIM: HTB23061
 fckeditor: CVE-2009-2265, CVE-2009-2324, CVE-2007-5156, CVE-2007-3163, CVE-2006-2529, CVE-2006-0658, SA35712, SA27123, SA25719, SA20122, SA18767
 flogr <http://code.google.com/p/flogr/>: HTB23110
-havalite: CVE-2012-5919, CVE-2012-5894, CVE-2012-5893, CVE-2012-5892
 http://cxsecurity.com/issue/WLB-2012060235
 http://cxsecurity.com/issue/WLB-2012060236
 http://cxsecurity.com/issue/WLB-2012060237
@@ -290,8 +226,6 @@ http://www.securityfocus.com/bid/53909
 http://www.securityfocus.com/bid/53910
 http://www.securityfocus.com/bid/53942
 http://www.securityfocus.com/bid/53945
-ikiwiki: CVE-2010-1195
-ikiwiki: CVE-2012-0220
 jCore: CVE-2012-4231, CVE-2012-4232
 jaxCMS: CVE-2010-1043
 klinza professional CMS: CVE-2009-4216
@@ -317,24 +251,9 @@ request-tracker: CVE-2012-4730 CVE-2012-4732 CVE-2012-4734 CVE-2012-4735 CVE-201
 ribiq CMS <http://tribiq.com/>: CVE-2011-2727/HTB22857
 snipegallery: CVE-2010-2126
 starCMS CVE-2012-4998
-tinyBB: CVE-2011-0443
 tinyguestbook CVE-2011-5199
 tinyguestbook CVE-2011-5201
 vBilling for FreeSWITCH http://seclists.org/bugtraq/2013/Apr/147
 waraxe-2013-SA#097 PHP-Fusion
 winn-guestbook: CVE-2011-5026 http://osvdb.org/78070 SA47391
 x3cms <http://www.x3cms.net/> SA46748 INFOSERVE-ADV2011-04 #TODO: No CVE
-
-'textpattern': { # CVE-2011-5019, HTB22672
-    'dir':          '/testpattern',
-    'file':         'index.php',
-    'secure':       '4.0.6',
-    'regexp':       '\$thisversion.*?(?P<version>[0-9.]{2,})',
-    'cve':          'CVE-2008-5757' },
-'eoCMS': { # HTB22675 HTB22676 HTB22677 HTB22674 HTB22899 HTB22673
-    'dir':          '',
-    'file':         'dbinstall.php',
-    'secure':       'N/A',
-    'regexp':       '*INSERT.*?(?P<version>[0-9]{1}\.[0-9]{1}\.[0-9]{2})',
-    'cve':          'CVE-2009-4319' },
-}}}
