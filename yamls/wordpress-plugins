@@ -47,6 +47,7 @@
 # CVE-2012-2109 buddypress                  1.5.5   http://osvdb.org/80763
 # CVE-2012-2572 threewp-email-reflector 1.16        http://osvdb.org/85134
 # CVE-2012-2579 wp-simplemail                       http://osvdb.org/84534
+# CVE-2012-2580 postie 1.5.15 http://osvdb.org/84532 http://secunia.com/advisories/50207/
 # CVE-2012-2759 login-with-ajax             3.0.4.1
 # CVE-2012-2912 leaflet-maps-marker                 http://osvdb.org/82266
 # CVE-2012-2912 leaguemanager
@@ -93,6 +94,10 @@
 # CVE-2012-6511 organizer
 # CVE-2012-6512 organizer
 # CVE-2012-6527 my-calendar
+# CVE-2012-6622
+# CVE-2012-6624
+# CVE-2012-6628
+# CVE-2012-6630
 # CVE-2012-XXXX crayon-syntax-highlighter http://ceriksen.com/2012/10/15/wordpress-crayon-syntax-highlighter-remote-file
 # CVE-2012-XXXX deep-blue                           http://osvdb.org/83014 SA49611 !
 # CVE-2012-XXXX email-newsletter            http://osvdb.org/82812
@@ -126,6 +131,7 @@
 # CVE-2013-0291 nextgen-gallery
 # CVE-2013-0721 wp-php-widget
 # CVE-2013-0731 wp-mailup
+# CVE-2013-0736
 # CVE-2013-1400 cardoza-wordpress-poll
 # CVE-2013-1401 cardoza-wordpress-poll
 # CVE-2013-1407 events-manager
@@ -149,6 +155,7 @@
 # CVE-2013-2640 wp-mailup                   http://osvdb.org/91274
 # CVE-2013-2696
 # CVE-2013-2697 wp-downloadmanager
+# CVE-2013-2701
 # CVE-2013-2702
 # CVE-2013-2703
 # CVE-2013-2704 dropdown-menu-widget    http://osvdb.org/94771
@@ -158,7 +165,11 @@
 # CVE-2013-3253 xhanch-my-twitter
 # CVE-2013-3254 wp-photo-album-plus         http://osvdb.org/93033
 # CVE-2013-3256 sexybookmarks
+# CVE-2013-3262
 # CVE-2013-3262 download-monitor
+# CVE-2013-3262 download-monitor 3.3.6.2 http://osvdb.org/95613 http://secunia.com/advisories/53116/
+# CVE-2013-3263
+# CVE-2013-3264
 # CVE-2013-3479 sharethis
 # CVE-2013-3491 sharebar                    http://osvdb.org/94843
 # CVE-2013-3526
@@ -170,26 +181,60 @@
 # CVE-2013-4117 category-grid-view-gallery http://osvdb.org/94805
 # CVE-2013-4240 hms-testimonials    2.0.11  http://seclists.org/fulldisclosure/2013/Aug/96
 # CVE-2013-4241 hms-testimonials    2.0.11
+# CVE-2013-4454 portable-phpmyadmin http://osvdb.org/98766
+# CVE-2013-4462 portable-phpmyadmin http://osvdb.org/98767
 # CVE-2013-4625 duplicator  0.4.5   HTB23162
 # CVE-2013-4626 backwpup    3.0.13  http://osvdb.org/96505 http://secunia.com/advisories/54515 https://www.htbridge.com/advisory/HTB23161
 # CVE-2013-4944 buddypress-extended-friendship-request
 # CVE-2013-5098 download-monitor
+# CVE-2013-5098 download-monitor 3.3.6.2 http://osvdb.org/95613 http://secunia.com/advisories/53116/
 # CVE-2013-5672 indianic-testimonial
 # CVE-2013-5673 indianic-testimonial
+# CVE-2013-5711 design-approval-system 3.7
+# CVE-2013-5714 videowhisper-live-streaming-integration
+# CVE-2013-5916 wp-e-commerce
+# CVE-2013-5917
+# CVE-2013-5918
+# CVE-2013-5961 lazy-seo http://osvdb.org/97662
+# CVE-2013-5962
+# CVE-2013-5963 simple-dropbox-upload-form  http://osvdb.org/97457 http://secunia.com/advisories/54856/
+# CVE-2013-5977 cart66-lite http://osvdb.org/98352
+# CVE-2013-5978 cart66-lite http://osvdb.org/98353
+# CVE-2013-6010
+# CVE-2013-6243
+# CVE-2013-6280
+# CVE-2013-6281
+# CVE-2013-6342 tweet-blender   4.0.2   https://www.htbridge.com/advisory/HTB23180
+# CVE-2013-6797
+# CVE-2013-6991
+# CVE-2013-6992
+# CVE-2013-6993
+# CVE-2013-7187
+# CVE-2013-XXXX GeoPlaces4beta http://osvdb.org/98975
 # CVE-2013-XXXX advanced-xml-reader         http://osvdb.org/92904
+# CVE-2013-XXXX antivirus http://osvdb.org/95134 http://osvdb.org/95135
 # CVE-2013-XXXX background-music Jplayer.swf XSS
-# CVE-2013-XXXX better-wp-security          3.5.4   http://www.securityfocus.com/archive/1/527634/30/0/threaded
-# CVE-2013-XXXX better-wp-security  3.5.4   http://osvdb.org/95884
+# CVE-2013-XXXX better-wp-security 3.5.4    http://osvdb.org/95884 http://secunia.com/advisories/54299/
+# CVE-2013-XXXX blue-wrench-videos-widget http://secunia.com/advisories/55456 http://osvdb.org/98922 http://osvdb.org/98923
 # CVE-2013-XXXX calendario  6.7.10   http://osvdb.org/95677
 # CVE-2013-XXXX crayon-syntax-highlighter   1.13    http://osvdb.org/86256 !
+# CVE-2013-XXXX dexs-pm-system http://osvdb.org/98668 http://secunia.com/advisories/55296/
+# CVE-2013-XXXX easy-photo-album 1.1.6 http://osvdb.org/98802
 # CVE-2013-XXXX events-calendar 6.7.12a http://osvdb.org/74705
 # CVE-2013-XXXX haiku-minimalist-audio-player Jplayer.swf XSS
+# CVE-2013-XXXX http://osvdb.org/82656 !
+# CVE-2013-XXXX http://www.osvdb.org/87353
 # CVE-2013-XXXX jammer Jplayer.swf XSS
 # CVE-2013-XXXX mp3-jplayer Jplayer.swf XSS
+# CVE-2013-XXXX payment-gateways-caller-for-wp-e-commerce 0.1.1 http://osvdb.org/98916
+# CVE-2013-XXXX platinum-seo-pack 1.3.8 http://www.osvdb.org/97263
 # CVE-2013-XXXX securimage-wp http://cxsecurity.com/issue/WLB-2013050098
 # CVE-2013-XXXX user-role-editor            http://www.henryhoggard.co.uk/security/wordpress-user-role-editor/
+# CVE-2013-XXXX video-metabox http://osvdb.org/98641
 # CVE-2013-XXXX wp-banners-lite http://osvdb.org/91634
 # CVE-2013-XXXX wp-jplayer Jplayer.swf XSS
+# CVE-2013-XXXX wp-miniaudioplayer http://osvdb.org/97768 http://secunia.com/advisories/54979
+# CVE-2013-XXXX wpreality http://osvdb.org/98748
 # CVE-2013—XXXX proplayer                   http://cxsecurity.com/issue/WLB-2013050162
 # CVE-XXXX-XXXX deans-fckeditor-with-pwwangs-code-plugin-for-wordpress  http://osvdb.org/80687 !
 # CVE-XXXX-XXXX devformatter http://osvdb.org/89474 http://osvdb.org/89475
@@ -212,9 +257,6 @@
 # CVE-XXXX-XXXX wp-predict                          http://osvdb.org/83697
 # CVE-XXXX-XXXX wp-video-commando                   http://cxsecurity.com/issue/WLB-2013030207
 # CVE-XXXX-XXXX wptouch http://www.securityfocus.com/bid/48348
-# CVE-2013-5711 design-approval-system 3.7
-# CVE-2013-5714 videowhisper-live-streaming-integration
-# CVE-2013-XXXX platinum-seo-pack 1.3.8 http://www.osvdb.org/97263
 # HTB22839, HTB22840, HTB22842, HTB22843, HTB22844, HTB22841, HTB22845,
 # HTB22858, HTB22859, HTB22860, HTB22848, HTB22849, HTB22861, HTB22838,
 # HTB22938, HTB22961, HTB22960, HTB22951, HTB22875, HTB22873, HTB22867,
@@ -223,3 +265,78 @@
 # http://wpsecure.net/2013/05/a-list-of-recent-xss-plugin-exploits-from-april/
 # http://wpsecure.net/2013/05/open-flash-chart/
 # http://wordpress.org/plugins/wptouch/changelog/ http://osvdb.org/92831 http://osvdb.org/77752 http://osvdb.org/78145 http://osvdb.org/78145 http://osvdb.org/69538
+# CVE-2013-XXXX http://osvdb.org/98078
+# CVE-2013-XXXX http://osvdb.org/98027
+# CVE-2013-XXXX http://osvdb.org/97991
+# CVE-2013-XXXX wp-realty http://www.exploit-db.com/exploits/29021/
+# http://packetstormsecurity.com/files/123597/
+# http://packetstormsecurity.com/files/123634/
+# http://securityundefined.com/wordpress-video-metabox-plugin-persistent-xss-vulnerability-disclosure/
+http://osvdb.org/88391
+http://osvdb.org/98766
+https://github.com/wpscanteam/wpscan/pull/334
+https://github.com/wpscanteam/wpscan/commit/62e84cc88c6370a11e6d5b7442c906e6ae5c6e39
+https://github.com/wpscanteam/wpscan/commit/93bd6baceb79be320f17e430808900898bda9261
+https://github.com/wpscanteam/wpscan/commit/42b94ab0c345a70da3193ae5f29a0d5c33724516
+http://cxsecurity.com/issue/WLB-2013100127
+https://github.com/wpscanteam/wpscan/pull/310
+http://osvdb.org/96000
+https://github.com/pvdl/wpscan/commit/eb2bc58a591a07f9b1ebc54b29ebd26e5b7df734
+https://github.com/pvdl/wpscan/commit/7726b3ae32262dca34c7d1d2d726f516f3c000c5
+https://github.com/pvdl/wpscan/commit/d0f357332a59b549c02253c8474a80ac5d8788b0
+https://github.com/pvdl/wpscan/commit/8ca50428f165a02531459948d5a26fd10dc6d6e6
+https://github.com/pvdl/wpscan/commit/db91d5041ca503c7d939d5d7a13be1ddf420a41a
+https://github.com/pvdl/wpscan/commit/828f8c48eb57edc97a8d26b5f09b8f10b9c5546e
+https://github.com/pvdl/wpscan/commit/d8c7d168793086e52e2056ba1c8bf221dcbdfd2b
+https://github.com/pvdl/wpscan/commit/b573b5559fcca4564de3b448920dd116d29a47f1
+https://github.com/pvdl/wpscan/commit/2a943dcce8f0f7dd64713fdf9b26bb3114027e0b
+https://github.com/pvdl/wpscan/commit/f2dd880fdb9d907caa074c5229ee858ccee3e865
+https://github.com/pvdl/wpscan/commit/dfd08e1e666d5ff08c3267b94af7d469c6954e61
+https://github.com/pvdl/wpscan/commit/a1a68dfd11ee9053e941ff3bf8ec56a66c17ea56
+https://github.com/pvdl/wpscan/commit/0ba35e41b54ad18bff6534b3b54db0e7ad5f7b1d
+https://github.com/pvdl/wpscan/commit/9c53273d1c9fc55e3e0b21de0166471bcdde5957
+https://github.com/pvdl/wpscan/commit/b16ea75dd601d224ebfb8ddffcd639966cb39b30
+https://github.com/pvdl/wpscan/commit/556b2f3d21e2f8abfdf40ff8fe4bee36793c341e
+https://github.com/pvdl/wpscan/commit/861841ef86c7f2e4d38b7f754183dadf6c66f6e6
+https://github.com/pvdl/wpscan/commit/3494bc47cf4e4a3499b2fa2b9cb21cc29e7d96f0
+https://github.com/pvdl/wpscan/commit/584c930858ee62dff107d8e35ca7684655c0810b
+https://github.com/pvdl/wpscan/commit/5112bea51149288581eb9af61941d904556b6d63
+https://github.com/pvdl/wpscan/commit/75b3ea0bc4c5ab4d5201ea3bd57872d0fb525b80
+https://github.com/pvdl/wpscan/commit/ab65571ee5586414402a1070e172e7fa63b4c232
+https://github.com/pvdl/wpscan/commit/971f7e21cc396f1a96cfd3cf206d42972367a1f6
+https://github.com/wpscanteam/wpscan/pull/337
+https://github.com/wpscanteam/wpscan/pull/334
+https://github.com/wpscanteam/wpscan/pull/335
+http://packetstormsecurity.com/files/123697
+https://github.com/wpscanteam/wpscan/pull/333
+https://github.com/wpscanteam/wpscan/issues/176#issuecomment-17710862
+https://github.com/wpscanteam/wpscan/issues/251
+https://github.com/wpscanteam/wpscan/pull/298
+https://github.com/wpscanteam/wpscan/pull/308
+https://github.com/wpscanteam/wpscan/issues/251
+https://github.com/wpscanteam/wpscan/pull/309
+https://github.com/wpscanteam/wpscan/pull/314
+https://github.com/wpscanteam/wpscan/pull/316
+https://github.com/wpscanteam/wpscan/pull/317
+https://github.com/wpscanteam/wpscan/pull/318
+https://github.com/wpscanteam/wpscan/pull/319
+https://github.com/wpscanteam/wpscan/pull/320
+https://github.com/wpscanteam/wpscan/pull/321
+https://github.com/wpscanteam/wpscan/pull/325
+https://github.com/wpscanteam/wpscan/pull/329
+https://github.com/wpscanteam/wpscan/pull/338
+https://github.com/pvdl/wpscan/commit/5bee1f1ffdc42719b6f5c2dde69670f179f840ac
+https://github.com/wpscanteam/wpscan/pull/340
+https://github.com/wpscanteam/wpscan/pull/352
+https://github.com/wpscanteam/wpscan/commit/0d80c1dc0632280939ff8bf589286341dac77537
+https://github.com/pvdl/wpscan/commit/8cc583406622452bbd66d8eb2ea9b2989a12ac6f
+CVE-2013-6991 HTB23189
+CVE-2013-6992 HTB23188
+CVE-2013-6993 HTB23187
+http://cxsecurity.com/issue/WLB-2013120195
+http://osvdb.org/71242
+http://osvdb.org/76794
+http://osvdb.org/71243
+http://osvdb.org/71481
+http://osvdb.org/76794
+http://secunia.com/advisories/43565/
