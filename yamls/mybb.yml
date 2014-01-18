@@ -26,13 +26,15 @@
 # CVE-2013-XXXX 1.6.10  http://osvdb.org/92687
 # CVE-2013-XXXX 1.6.10  http://osvdb.org/92688
 # CVE-2013-XXXX 1.6.10  http://osvdb.org/92689
-# TODO: CVE-2013-6936
-# TODO: CVE-2013-7288
+# CVE-2013-7288 1.6.12  http://osvdb.org/101544 http://blog.mybb.com/2013/12/16/mybb-1-6-12-released-security-maintenance-release/
+# CVE-2013-7275 1.6.12  http://osvdb.org/101545
+# N/A           1.6.12  http://osvdb.org/101542
+# N/A           1.6.12  http://osvdb.org/101543
 MyBB:
   1:
       location: ['/inc/class_core.php']
-      secure_version: '1.6.10'
+      secure_version: '1.6.12'
       regexp: ['.*?public.*?\$version.*?(?P<version>[0-9.]+)']
-      cve: 'http://osvdb.org/92683 http://osvdb.org/92684 http://osvdb.org/92686 http://osvdb.org/92687 http://osvdb.org/92688 http://osvdb.org/92689'
+      cve: 'http://blog.mybb.com/2013/12/16/mybb-1-6-12-released-security-maintenance-release/ CVE-2013-7288 http://osvdb.org/101544 CVE-2013-7275 http://osvdb.org/101545 http://osvdb.org/101542 http://osvdb.org/101543'
       fingerprint: detect_general
       post_processing: ['php5.fcgi']
