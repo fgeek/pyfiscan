@@ -206,3 +206,7 @@
 # SA-CONTRIB-2014-001   CVE-2014-1399   https://drupal.org/node/2169595 Entity API
 # SA-CONTRIB-2014-001   CVE-2014-1400   https://drupal.org/node/2169595 Entity API
 # SA-CONTRIB-2014-002   CVE-2014-1611   https://drupal.org/node/2173321 Anonymous Posting
+# SA-CONTRIB-2014-003                   https://drupal.org/node/2179085 Doubleclick for Publishers
+# SA-CONTRIB-2014-004                   https://drupal.org/node/2179099 Secure Cookie Data
+# SA-CONTRIB-2014-005                   https://drupal.org/node/2179103 Leaflet
+# SA-CONTRIB-2014-006                   https://drupal.org/node/2179123 Language Switcher Dropdown
