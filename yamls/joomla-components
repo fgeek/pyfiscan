@@ -1,3 +1,4 @@
+# http://docs.joomla.org/Vulnerable_Extensions_List
 # NFU: http://vel.joomla.org/vel-blog/623-k2-2-6-6.html
 # CVE-2008-XXXX com_football    http://osvdb.org/94703
 # CVE-2010-0753 com_sqlreport       http://osvdb.org/62534
@@ -33,6 +34,7 @@
 # CVE-2013-XXXX joomsport pro and std   http://vel.joomla.org/vel-blog/796-joomsport-pro-and-std.html
 # CVE-2013-XXXX sectionex   2.5.104 http://stackideas.com/blog/important-security-release-for-sectionex-2-5 http://vel.joomla.org/resolved/797-sectionex-2-5-96.html
 # CVE-2013-XXXX sectionex   http://vel.joomla.org/vel-blog/797-sectionex-2-5-96.html
+# CVE-2013-7219 com_sexypolling 1.0.9 https://www.htbridge.com/advisory/HTB23193
 # CVE-XXXX-XXXX civicrm                                     http://vel.joomla.org/resolved/402-civicrm-4-3-3.html http://civicrm.org/blogs/colemanw/security-release-civicrm-434
 # CVE-XXXX-XXXX civicrm                                     http://vel.joomla.org/vel-blog/402-civicrm-4-3-3.html
 # CVE-XXXX-XXXX cobalt http://vel.joomla.org/vel-blog/716-cobalt-8-270.html
@@ -40,7 +42,7 @@
 # CVE-XXXX-XXXX com_alfcontact
 # CVE-XXXX-XXXX com_events_booking_v5
 # CVE-XXXX-XXXX com_extplorer                               http://cxsecurity.com/issue/WLB-2013060127
-# CVE-XXXX-XXXX com_extplorer                               http://vel.joomla.org/resolved/18-extplorer.html http://extplorer.net/news/12
+# CVE-XXXX-XXXX com_extplorer                               http://vel.joomla.org/resolved/18-extplorer.html http://extplorer.net/news/12 2.1.2, 2.1.1, 2.1.0 and 2.1.0RC5 are vulnerable to an authentication bypass 251212 developer update to 2.1.3 statement
 # CVE-XXXX-XXXX com_flexicontent    http://osvdb.org/80767
 # CVE-XXXX-XXXX com_g2bridge        http://osvdb.org/94665 http://www.exploit-db.com/exploits/12814/ http://cxsecurity.com/issue/WLB-2013060227 http://www.securityfocus.com/bid/40440
 # CVE-XXXX-XXXX com_jinc                                    http://lhacky.altervista.org/jextensions/index.php/component/content/article/21-news/jinc/100-security-issue-on-jinc-1-0-1
@@ -64,3 +66,5 @@
 # http://vel.joomla.org/vel-blog/56-dshop.html
 # CVE-2013-6878 N/A https://www.htbridge.com/advisory/HTB23186 http://mijosoft.com/joomla-extensions/mijosearch-joomla-search-engine
 # CVE-2013-6879 N/A https://www.htbridge.com/advisory/HTB23186 http://mijosoft.com/joomla-extensions/mijosearch-joomla-search-engine
+# http://vel.joomla.org/vel-blog/1059-extplorer-all.html
+# CVE-2014-XXXX 1.8.4/1.7.5 http://vel.joomla.org/resolved/1103-breezing-forms-pre-1-7-5-or-1-8-4.html http://crosstec.de/en/blog/entry/15-breezingforms-security-update.html
