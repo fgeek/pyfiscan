@@ -38,7 +38,16 @@
 # CVE-2013-4303 1.21.2/1.20.7/1.19.8    http://osvdb.org/96911 http://secunia.com/advisories/54715/
 # CVE-2013-4567 1.21.3/1.20.8/1.19.9    http://osvdb.org/99943 http://secunia.com/advisories/55743/ http://lists.wikimedia.org/pipermail/mediawiki-announce/2013-November/000135.html
 # CVE-2013-4568 1.21.3/1.20.8/1.19.9    http://osvdb.org/99943 http://secunia.com/advisories/55743/ http://lists.wikimedia.org/pipermail/mediawiki-announce/2013-November/000135.html
+# CVE-2013-4570 1.22.1/1.21.4/1.19.10
+# CVE-2013-4571 1.22.1/1.21.4/1.19.10
 # CVE-2013-4572 1.21.3/1.20.8/1.19.9    http://osvdb.org/99970 http://secunia.com/advisories/55743/ http://lists.wikimedia.org/pipermail/mediawiki-announce/2013-November/000135.html
+# CVE-2013-4574 1.22.1/1.21.4/1.19.10
+# CVE-2013-6451 1.22.1/1.21.4/1.19.10
+# CVE-2013-6452 1.22.1/1.21.4/1.19.10
+# CVE-2013-6453 1.22.1/1.21.4/1.19.10
+# CVE-2013-6454 1.22.1/1.21.4/1.19.10
+# CVE-2013-6455 1.22.1/1.21.4/1.19.10
+# CVE-2013-6472 1.22.1/1.21.4/1.19.10
 MediaWiki 1.21:
   1:
     location: ['/includes/DefaultSettings.php']
