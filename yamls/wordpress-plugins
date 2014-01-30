@@ -258,6 +258,7 @@
 # CVE-XXXX-XXXX wp-video-commando                   http://cxsecurity.com/issue/WLB-2013030207
 # CVE-XXXX-XXXX wptouch http://www.securityfocus.com/bid/48348
 # CVE-XXXX-XXXX easy-media-gallery 1.2.27 http://osvdb.org/101941
+# CVE-2014-1750 nokia-mapsplaces
 # HTB22839, HTB22840, HTB22842, HTB22843, HTB22844, HTB22841, HTB22845,
 # HTB22858, HTB22859, HTB22860, HTB22848, HTB22849, HTB22861, HTB22838,
 # HTB22938, HTB22961, HTB22960, HTB22951, HTB22875, HTB22873, HTB22867,
