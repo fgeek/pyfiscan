@@ -22,6 +22,9 @@
 # CVE-2012-6514 com_netinvoice      http://osvdb.org/81573
 # CVE-2012-XXXX com_quiz
 # CVE-2013-3719 com_aicontactsafe
+# CVE-2013-6878 N/A https://www.htbridge.com/advisory/HTB23186 http://mijosoft.com/joomla-extensions/mijosearch-joomla-search-engine
+# CVE-2013-6879 N/A https://www.htbridge.com/advisory/HTB23186 http://mijosoft.com/joomla-extensions/mijosearch-joomla-search-engine
+# CVE-2013-7219 com_sexypolling 1.0.9 https://www.htbridge.com/advisory/HTB23193
 # CVE-2013-XXXX Dshop   http://vel.joomla.org/vel-blog/56-dshop.html
 # CVE-2013-XXXX VirtueMart  2.0.22a http://vel.joomla.org/resolved/799-virtuemart-2-0-22a-sqli.html
 # CVE-2013-XXXX acesef  4.0.0 http://www.joomace.net/joomla-extensions/acesef-joomla-seo-sef-urls http://www.joomace.net/joomla-extensions/acesef/changelog http://vel.joomla.org/resolved/895-ace-sef4.html
@@ -34,7 +37,11 @@
 # CVE-2013-XXXX joomsport pro and std   http://vel.joomla.org/vel-blog/796-joomsport-pro-and-std.html
 # CVE-2013-XXXX sectionex   2.5.104 http://stackideas.com/blog/important-security-release-for-sectionex-2-5 http://vel.joomla.org/resolved/797-sectionex-2-5-96.html
 # CVE-2013-XXXX sectionex   http://vel.joomla.org/vel-blog/797-sectionex-2-5-96.html
-# CVE-2013-7219 com_sexypolling 1.0.9 https://www.htbridge.com/advisory/HTB23193
+# CVE-2014-0793 1.7.3 https://www.htbridge.com/advisory/HTB23194
+# CVE-2014-0794 3.0.3 https://www.htbridge.com/advisory/HTB23195 http://extensions.joomla.org/extensions/contacts-and-feedback/articles-comments/23394
+# CVE-2014-1837 com_komento 1.7.4 http://osvdb.org/102563
+# CVE-2014-XXXX 1.8.4/1.7.5 http://vel.joomla.org/resolved/1103-breezing-forms-pre-1-7-5-or-1-8-4.html http://crosstec.de/en/blog/entry/15-breezingforms-security-update.html
+# CVE-XXXX-XXXX 2.3.4 http://vel.joomla.org/vel-blog/976-spider-contacts-1-3-3.html
 # CVE-XXXX-XXXX civicrm                                     http://vel.joomla.org/resolved/402-civicrm-4-3-3.html http://civicrm.org/blogs/colemanw/security-release-civicrm-434
 # CVE-XXXX-XXXX civicrm                                     http://vel.joomla.org/vel-blog/402-civicrm-4-3-3.html
 # CVE-XXXX-XXXX cobalt http://vel.joomla.org/vel-blog/716-cobalt-8-270.html
@@ -60,13 +67,7 @@
 # CVE-XXXX-XXXX plugin_googlemap http://osvdb.org/95776
 # CVE-XXXX-XXXX qcontacts                                   http://docs.joomla.org/Vulnerable_Extensions_List#QContacts_1.0.6 http://vel.joomla.org/vel-blog/57-qcontacts-1-0-6.html
 # CVE-XXXX-XXXX unite-horizontal-carousel                   http://vel.joomla.org/resolved/479-unite-horizontal-carousel.html
-# http://vel.joomla.org/vel-blog/975-spider-contact-lite-sqli.html
-# CVE-XXXX-XXXX 2.3.4 http://vel.joomla.org/vel-blog/976-spider-contacts-1-3-3.html
+# http://vel.joomla.org/vel-blog/1059-extplorer-all.html
 # http://vel.joomla.org/vel-blog/51-com_advert.html
 # http://vel.joomla.org/vel-blog/56-dshop.html
-# CVE-2013-6878 N/A https://www.htbridge.com/advisory/HTB23186 http://mijosoft.com/joomla-extensions/mijosearch-joomla-search-engine
-# CVE-2013-6879 N/A https://www.htbridge.com/advisory/HTB23186 http://mijosoft.com/joomla-extensions/mijosearch-joomla-search-engine
-# http://vel.joomla.org/vel-blog/1059-extplorer-all.html
-# CVE-2014-XXXX 1.8.4/1.7.5 http://vel.joomla.org/resolved/1103-breezing-forms-pre-1-7-5-or-1-8-4.html http://crosstec.de/en/blog/entry/15-breezingforms-security-update.html
-# CVE-2014-0793 1.7.3 https://www.htbridge.com/advisory/HTB23194
-# CVE-2014-0794 3.0.3 https://www.htbridge.com/advisory/HTB23195 http://extensions.joomla.org/extensions/contacts-and-feedback/articles-comments/23394
+# http://vel.joomla.org/vel-blog/975-spider-contact-lite-sqli.html
