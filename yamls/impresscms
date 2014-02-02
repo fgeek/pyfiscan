@@ -4,3 +4,4 @@
 # CVE-2012-0986     1.2.7   http://osvdb.org/78140 - http://osvdb.org/78142 HTB23064
 # CVE-2012-0987     1.2.7   http://osvdb.org/78143 HTB23064
 # CVE-XXXX-XXXX             http://cxsecurity.com/issue/WLB-2013010154
+# CVE-2014-1836             https://github.com/pedrib/PoC/blob/master/ImpressCMS/impresscms-1.3.5.txt
