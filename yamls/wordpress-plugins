@@ -96,7 +96,9 @@
 # CVE-2012-6527 my-calendar
 # CVE-2012-6622
 # CVE-2012-6624
+# CVE-2012-6625
 # CVE-2012-6628
+# CVE-2012-6629
 # CVE-2012-6630
 # CVE-2012-XXXX crayon-syntax-highlighter http://ceriksen.com/2012/10/15/wordpress-crayon-syntax-highlighter-remote-file
 # CVE-2012-XXXX deep-blue                           http://osvdb.org/83014 SA49611 !
@@ -210,6 +212,8 @@
 # CVE-2013-6992
 # CVE-2013-6993
 # CVE-2013-7187
+# CVE-2013-7276
+# CVE-2013-7279
 # CVE-2013-XXXX GeoPlaces4beta http://osvdb.org/98975
 # CVE-2013-XXXX advanced-xml-reader         http://osvdb.org/92904
 # CVE-2013-XXXX antivirus http://osvdb.org/95134 http://osvdb.org/95135
@@ -223,6 +227,9 @@
 # CVE-2013-XXXX events-calendar 6.7.12a http://osvdb.org/74705
 # CVE-2013-XXXX haiku-minimalist-audio-player Jplayer.swf XSS
 # CVE-2013-XXXX http://osvdb.org/82656 !
+# CVE-2013-XXXX http://osvdb.org/97991
+# CVE-2013-XXXX http://osvdb.org/98027
+# CVE-2013-XXXX http://osvdb.org/98078
 # CVE-2013-XXXX http://www.osvdb.org/87353
 # CVE-2013-XXXX jammer Jplayer.swf XSS
 # CVE-2013-XXXX mp3-jplayer Jplayer.swf XSS
@@ -234,10 +241,13 @@
 # CVE-2013-XXXX wp-banners-lite http://osvdb.org/91634
 # CVE-2013-XXXX wp-jplayer Jplayer.swf XSS
 # CVE-2013-XXXX wp-miniaudioplayer http://osvdb.org/97768 http://secunia.com/advisories/54979
+# CVE-2013-XXXX wp-realty http://www.exploit-db.com/exploits/29021/
 # CVE-2013-XXXX wpreality http://osvdb.org/98748
 # CVE-2013—XXXX proplayer                   http://cxsecurity.com/issue/WLB-2013050162
+# CVE-2014-1750 nokia-mapsplaces
 # CVE-XXXX-XXXX deans-fckeditor-with-pwwangs-code-plugin-for-wordpress  http://osvdb.org/80687 !
 # CVE-XXXX-XXXX devformatter http://osvdb.org/89474 http://osvdb.org/89475
+# CVE-XXXX-XXXX easy-media-gallery 1.2.27 http://osvdb.org/101941
 # CVE-XXXX-XXXX editormonkey                        http://seclists.org/bugtraq/2012/Jul/27 probably false-positive
 # CVE-XXXX-XXXX encrypted-blog  http://cxsecurity.com/issue/WLB-2013080220
 # CVE-XXXX-XXXX featured-post-with-thumbnail        http://osvdb.org/70679 !
@@ -257,8 +267,6 @@
 # CVE-XXXX-XXXX wp-predict                          http://osvdb.org/83697
 # CVE-XXXX-XXXX wp-video-commando                   http://cxsecurity.com/issue/WLB-2013030207
 # CVE-XXXX-XXXX wptouch http://www.securityfocus.com/bid/48348
-# CVE-XXXX-XXXX easy-media-gallery 1.2.27 http://osvdb.org/101941
-# CVE-2014-1750 nokia-mapsplaces
 # HTB22839, HTB22840, HTB22842, HTB22843, HTB22844, HTB22841, HTB22845,
 # HTB22858, HTB22859, HTB22860, HTB22848, HTB22849, HTB22861, HTB22838,
 # HTB22938, HTB22961, HTB22960, HTB22951, HTB22875, HTB22873, HTB22867,
@@ -267,10 +275,6 @@
 # http://wpsecure.net/2013/05/a-list-of-recent-xss-plugin-exploits-from-april/
 # http://wpsecure.net/2013/05/open-flash-chart/
 # http://wordpress.org/plugins/wptouch/changelog/ http://osvdb.org/92831 http://osvdb.org/77752 http://osvdb.org/78145 http://osvdb.org/78145 http://osvdb.org/69538
-# CVE-2013-XXXX http://osvdb.org/98078
-# CVE-2013-XXXX http://osvdb.org/98027
-# CVE-2013-XXXX http://osvdb.org/97991
-# CVE-2013-XXXX wp-realty http://www.exploit-db.com/exploits/29021/
 # http://packetstormsecurity.com/files/123597/
 # http://packetstormsecurity.com/files/123634/
 # http://securityundefined.com/wordpress-video-metabox-plugin-persistent-xss-vulnerability-disclosure/
