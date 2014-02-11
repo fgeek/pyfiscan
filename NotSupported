@@ -1,3 +1,6 @@
+AuraCMS: no versioning, no security advisories, no security related commit log
+    entries even when SQL-injection was fixed
+    https://github.com/auracms/AuraCMS/commit/4fe9d0d31a32df392f4d6ced8e5c25ed4af19ade
 n2: problems even in installation and couldn't install, asks for 0777 modes
     http://www.nextbbs.com/ https://github.com/Fusion/n2/
 AShop: e.g. free trial
