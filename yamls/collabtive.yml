@@ -1,0 +1,10 @@
+# URL: http://www.collabtive.com/
+# CVE-2013-6872 1.2 http://osvdb.org/102123 http://secunia.com/advisories/56329/
+Collabtive:
+  1:
+    location: ['/changelog.txt']
+    secure_version: '1.2'
+    regexp: '.*?Collabtive (?P<version>[0-9.]+)'
+    cve: 'CVE-2013-6872 http://osvdb.org/102123'
+    fingerprint: detect_collabtive
+    post_processing: ['php5.fcgi']

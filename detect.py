@@ -125,3 +125,25 @@ def detect_gallery(source_file, regexp):
         return
     else:
         return version
+
+
+@yaml_visible
+def detect_collabtive(source_file, regexp):
+    if not os.path.isfile(source_file):
+        return
+    if not regexp:
+        return
+    logging.debug('Dectecting Collabtive from: %s', source_file)
+    prog = re.compile(regexp)
+    f = open(source_file, 'r')
+    for line in f.read().split('\n'):
+        source = line
+        break
+    match = prog.match(source)
+    try:
+        found_match = match.group('version')
+        return found_match
+    except re.error:
+        logging.error('Not a valid regular expression: %s', regexp)
+    except AttributeError:
+        pass
