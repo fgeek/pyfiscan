@@ -96,9 +96,6 @@ MemHt: HTB22664, HTB22662
 Merethis Centreon <http://www.merethis.com and http://www.centreon.com>: TWSL2011-017 https://www.trustwave.com/spiderlabs/advisories/TWSL2011-017.txt
 Mibew: CSA-12001 http://www.codseq.it/advisories/mibew_messenger_multiple_xss
 MicroCMS: HTB22765
-Mig: CVE-2005-2603 18741
-Mig: CVE-2005-2604 18742
-Mig: http://osvdb.org/22708
 Nakid CMS: CVE-2010-2358
 Netpet CMS: CVE-2009-4723
 OBM: HTB23060
