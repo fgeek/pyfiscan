@@ -1,6 +1,3 @@
-# CVE-2007-0109 http://osvdb.org/31577 SA23621 The weakness is confirmed in versions 2.0.5 and 3.1.1 and reported in version 1.5. Other versions may also be affected.
-# CVE-2007-1244 No official fix and this needs admin privileges
-# CVE-2007-???? http://osvdb.org/34352 SA24951 DoS with pingbacks URLs. Ticket http://trac.wordpress.org/ticket/4137 has status wontfix
 # CVE-2003-1598 "0.72 RC1" http://osvdb.org/4610 SA8954
 # CVE-2003-1599 "0.72 RC1" http://osvdb.org/4611 SA8954
 # CVE-2004-1559 1.2.1
@@ -9,12 +6,12 @@
 # CVE-2005-1688 1.5.1
 # CVE-2005-1810 1.5.1.2
 # CVE-2005-1921 1.5.1.3 http://wordpress.org/news/2005/06/wordpress-1513/
-# CVE-2005-2116 1.5.1.3 http://wordpress.org/news/2005/06/wordpress-1513/
-# CVE-2005-2612 1.5.2
 # CVE-2005-2107 1.5.1.3
 # CVE-2005-2108 1.5.1.3
 # CVE-2005-2109 1.5.1.3
 # CVE-2005-2110 1.5.1.3
+# CVE-2005-2116 1.5.1.3 http://wordpress.org/news/2005/06/wordpress-1513/
+# CVE-2005-2612 1.5.2
 # CVE-2006-0985 2.0.2
 # CVE-2006-0986 2.0.2
 # CVE-2006-1012 2.0
@@ -29,10 +26,12 @@
 # CVE-2006-6017 2.0.5
 # CVE-2006-6808 2.0.6 SA23587
 # CVE-2007-0106 2.0.6
+# CVE-2007-0109 http://osvdb.org/31577 SA23621 The weakness is confirmed in versions 2.0.5 and 3.1.1 and reported in version 1.5. Other versions may also be affected.
 # CVE-2007-0539 2.1
 # CVE-2007-0540 2.1
 # CVE-2007-0541 2.1
 # CVE-2007-1049 2.1.1
+# CVE-2007-1244 No official fix and this needs admin privileges
 # CVE-2007-1277 2.1.2
 # CVE-2007-1622 2.0.10 / 2.1.3
 # CVE-2007-1732 N/A
@@ -49,8 +48,9 @@
 # CVE-2007-4894 2.2.3
 # CVE-2007-5710 2.3.1
 # CVE-2007-6013 2.3.2 http://osvdb.org/40801 SA27714
-# CVE-2007-???? 2.3.2 http://osvdb.org/39518 SA28130
 # CVE-2007-6318 N/A
+# CVE-2007-???? 2.3.2 http://osvdb.org/39518 SA28130
+# CVE-2007-???? http://osvdb.org/34352 SA24951 DoS with pingbacks URLs. Ticket http://trac.wordpress.org/ticket/4137 has status wontfix
 # CVE-2008-0664 2.3.3
 # CVE-2008-1930 2.5.1
 # CVE-2008-2068 2.5.1
@@ -66,12 +66,15 @@
 # CVE-2009-3622 2.8.5
 # CVE-2009-3890 2.8.6
 # CVE-2009-3891 2.8.6
-# CVE-2010-5106 3.0.3 http://osvdb.org/69761 SA42553
 # CVE-2010-0682 2.9.2
+# CVE-2010-5106 3.0.3 http://osvdb.org/69761 SA42553
+# CVE-2010-5293 3.0.2
+# CVE-2010-5294 3.0.2
+# CVE-2010-5295 3.0.2
+# CVE-2010-5296 3.0.2
+# CVE-2010-5297 3.0.1
 # CVE-2011-0700 3.0.5   http://osvdb.org/72763,72764 SA43238 http://wordpress.org/news/2011/02/wordpress-3-0-5/
 # CVE-2011-0701 3.0.5   http://osvdb.org/72765 SA43238 http://wordpress.org/news/2011/02/wordpress-3-0-5/
-# CVE-2011-4956 3.1.1   http://osvdb.org/72141 SA44038 http://wordpress.org/news/2011/04/wordpress-3-1-1/
-# CVE-2011-4957 3.1.1   http://osvdb.org/72142 SA44038 http://wordpress.org/news/2011/04/wordpress-3-1-1/
 # CVE-2011-1762 3.1.2   http://osvdb.org/72097 SA44372 SA44542 http://wordpress.org/news/2011/04/wordpress-3-1-2/ http://core.trac.wordpress.org/changeset/17710 http://lists.fedoraproject.org/pipermail/package-announce/2011-May/059968.html http://lists.fedoraproject.org/pipermail/package-announce/2011-May/059986.html
 # CVE-2011-3122 3.1.3   http://osvdb.org/74485 http://wordpress.org/news/2011/05/wordpress-3-1-3/
 # CVE-2011-3125 3.1.3   http://osvdb.org/74486 http://wordpress.org/news/2011/05/wordpress-3-1-3/
@@ -80,8 +83,10 @@
 # CVE-2011-3128 3.1.3   http://osvdb.org/74489 http://wordpress.org/news/2011/05/wordpress-3-1-3/
 # CVE-2011-3129 3.1.3   http://osvdb.org/74490 http://wordpress.org/news/2011/05/wordpress-3-1-3/
 # CVE-2011-3130 3.1.3   http://osvdb.org/74491 http://wordpress.org/news/2011/05/wordpress-3-1-3/
-# CVE-????-???? 3.1.4   http://osvdb.org/73721 http://wordpress.org/news/2011/06/wordpress-3-1-4/
 # CVE-2011-4898/CVE-2011-4899/CVE-2012-0782 3.3.1   http://osvdb.org/7870778708,78709 https://www.trustwave.com/spiderlabs/advisories/TWSL2012-002.txt
+# CVE-2011-4956 3.1.1   http://osvdb.org/72141 SA44038 http://wordpress.org/news/2011/04/wordpress-3-1-1/
+# CVE-2011-4957 3.1.1   http://osvdb.org/72142 SA44038 http://wordpress.org/news/2011/04/wordpress-3-1-1/
+# CVE-2011-5270 3.0.6
 # CVE-2012-0287 3.3.1   http://osvdb.org/78123 SA47371 https://wordpress.org/news/2012/01/wordpress-3-3-1/
 # CVE-2012-2399 3.3.2   http://codex.wordpress.org/Version_3.3.2
 # CVE-2012-2400 3.3.2   http://codex.wordpress.org/Version_3.3.2
@@ -94,10 +99,10 @@
 # CVE-2012-3385 3.4.1   http://codex.wordpress.org/Version_3.4.1
 # CVE-2012-4421 3.4.2   http://codex.wordpress.org/Version_3.4.2
 # CVE-2012-4448 3.5     http://osvdb.org/85731 SA50715 http://packetstormsecurity.org/files/116785/WordPress-3.4.2-Cross-Site-Request-Forgery.html
-# CVE-2012-5868 N/A     http://osvdb.org/88744
-#   - Requested more details from security@wordpress.org 2012-12-29
-#   - No fixed version available 2013-01-17
+# CVE-2012-5868 N/A     http://osvdb.org/88744 Requested more details from security@wordpress.org 2012-12-29, No fixed version available 2013-01-17
 # CVE-2012-6633 3.3.3   http://codex.wordpress.org/Version_3.3.3
+# CVE-2012-6634 3.3.3
+# CVE-2012-6635 3.3.3
 # CVE-2013-0235 3.5.1   http://osvdb.org/89138 http://wordpress.org/news/2013/01/wordpress-3-5-1/
 # CVE-2013-0236 3.5.1   http://osvdb.org/89576 http://wordpress.org/news/2013/01/wordpress-3-5-1/
 # CVE-2013-0237 3.5.1   http://osvdb.org/89577 http://wordpress.org/news/2013/01/wordpress-3-5-1/
@@ -113,6 +118,7 @@
 # CVE-2013-4338 3.6.1   http://codex.wordpress.org/Version_3.6.1
 # CVE-2013-4339 3.6.1   http://codex.wordpress.org/Version_3.6.1
 # CVE-2013-4340 3.6.1   http://codex.wordpress.org/Version_3.6.1
+# CVE-????-???? 3.1.4   http://osvdb.org/73721 http://wordpress.org/news/2011/06/wordpress-3-1-4/
 WordPress:
   1:
     location: ['/wp-includes/version.php']
