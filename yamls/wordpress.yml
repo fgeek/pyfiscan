@@ -97,6 +97,7 @@
 # CVE-2012-5868 N/A     http://osvdb.org/88744
 #   - Requested more details from security@wordpress.org 2012-12-29
 #   - No fixed version available 2013-01-17
+# CVE-2012-6633 3.3.3   http://codex.wordpress.org/Version_3.3.3
 # CVE-2013-0235 3.5.1   http://osvdb.org/89138 http://wordpress.org/news/2013/01/wordpress-3-5-1/
 # CVE-2013-0236 3.5.1   http://osvdb.org/89576 http://wordpress.org/news/2013/01/wordpress-3-5-1/
 # CVE-2013-0237 3.5.1   http://osvdb.org/89577 http://wordpress.org/news/2013/01/wordpress-3-5-1/
