@@ -68,6 +68,7 @@
 # CVE-XXXX-XXXX qcontacts                                   http://docs.joomla.org/Vulnerable_Extensions_List#QContacts_1.0.6 http://vel.joomla.org/vel-blog/57-qcontacts-1-0-6.html
 # CVE-XXXX-XXXX unite-horizontal-carousel                   http://vel.joomla.org/resolved/479-unite-horizontal-carousel.html
 # CVE-2014-1214 com_novasfh
+# CVE-2013-3933 com_joomshopping
 # http://vel.joomla.org/vel-blog/1059-extplorer-all.html
 # http://vel.joomla.org/vel-blog/51-com_advert.html
 # http://vel.joomla.org/vel-blog/56-dshop.html
