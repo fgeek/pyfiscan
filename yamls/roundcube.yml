@@ -17,11 +17,20 @@
 # CVE-2012-6121 0.8.5 http://osvdb.org/90175 http://osvdb.org/90177
 # CVE-2013-1904 0.8.6
 # CVE-2013-5646 0.9.3 http://osvdb.org/96722
-Roundcube:
+# CVE-2013-6172 0.9.5/0.8.7 http://roundcube.net/news/2013/10/21/security-updates-095-and-087/ http://trac.roundcube.net/ticket/1489382 http://osvdb.org/98895
+Roundcube 0.9:
   1:
     location: ['/program/include/iniset.php']
-    secure_version: '0.9.3'
-    regexp: ['define.*?RCMAIL_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'http://cve.mitre.org/cgi-bin/cvename.cgi?name=2013-5646 http://osvdb.org/96722'
+    secure_version: '0.9.5'
+    regexp: ['define.*?RCMAIL_VERSION.*?(?P<version>0\.9[0-9.]+)']
+    cve: 'http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6172 http://roundcube.net/news/2013/10/21/security-updates-095-and-087/ http://osvdb.org/98895'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+Roundcube 0.8:
+  1:
+    location: ['/program/include/iniset.php']
+    secure_version: '0.8.7'
+    regexp: ['define.*?RCMAIL_VERSION.*?(?P<version>0\.8[0-9.]+)']
+    cve: 'http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6172 http://roundcube.net/news/2013/10/21/security-updates-095-and-087/ http://osvdb.org/98895'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
