@@ -24,7 +24,7 @@ Windows is not currently supported.
 Detects following software
 --------------------------
 
-* CMSMS: http://www.cmsmadesimple.org/announcing-cmsms-1-11-8-fioreana/ http://osvdb.org/98876
+* CMSMS: http://osvdb.org/103854 http://www.cmsmadesimple.org/2014/02/Announcing-CMSMS-1-11-10-Pinzon/
 * Collabtive: CVE-2013-6872 http://osvdb.org/102123
 * Coppermine: [Vendor security advisory](http://forum.coppermine-gallery.net/index.php/topic,74682.0.html) CVE-2012-1613, CVE-2012-1614, http://osvdb.org/80731 http://osvdb.org/80732 http://osvdb.org/80733 http://osvdb.org/80734 http://osvdb.org/80735
 * Cotonti: CVE-2013-4789 http://osvdb.org/95842 http://www.cotonti.com/news/announce/siena_0914_released
