@@ -27,21 +27,16 @@ Batavi: CVE-2012-0069
 Beehive Forum 101 <http://www.beehiveforum.co.uk/>: SSCHADV2011-042 #TODO: No CVE
 Bitweaver <http://www.bitweaver.org>: SSCHADV2011-021 CVE?
 BlueCMS: CVE-2010-4897
-CMSMS: CVE-2011-4310 http://osvdb.org/77106
 CMSMini NS-12-012
 CMSimple_XH <http://www.cmsimple-xh.de>: CVE-2012-1914
 CVE-2012-3477 NeoInvoice Blind SQL
-Cacti: CVE-2011-4824
 CakePHP CVE-2012-4399 http://osvdb.org/84042
 Chyrp: CVE-2012-1001 HTB23073
 Ciamos CMS <http://sourceforge.net/projects/ciamos/>: CVE-2009-4156
 ClearSilver: CVE-2011-4357
 ClipBucket NS-12-013
-Collabtive: CVE-2012-2670
 CompactCMS http://www.compactcms.nl/: HTB22697, HTB22695, HTB22696
 Concrete CMS: 5.4.1.1 XSS CVE-2011-3182
-Contao <http://www.contao.org/>: CVE-2011-0508, CVE-2011-4335, CVE-2011-4329
-Contao: CVE-2012-4383
 CosCms HTB23145
 Cunity http://cxsecurity.com/issue/WLB-2013030206
 CuteSITE CMS: CVE-2010-5024, CVE-2010-5025
@@ -52,7 +47,6 @@ Dolphin <http://www.boonex.com/dolphin>: http://seclists.org/bugtraq/2011/Oct/11
 DotProject NS-12-014, HTB23124
 Elefant CMS: CVE-2012-1296
 Elefant CMS: HTB23076 http://osvdb.org/79816, CVE-2012-6521
-Elgg: CVE-2011-2935 XSS, CVE-2011-2936 SQLi, CVE-2013-0234, CVE-2012-6563, CVE-2012-6562,CVE-2012-6561
 Elxis CMS: CVE-2011-4918 http://osvdb.org/77563,77564
 EnanoCMS: NS-11-002
 Entry Level CMS (EL CMS): CVE-2010-1075, CVE-2010-1076
@@ -242,9 +236,6 @@ phplist: CSRF CVE-2011-0748
 phplist: CVE-2012-2740 http://www.exploit-db.com/exploits/18639/
 phplist: http://www.phplist.com/?lid=567 XSS CVE-2012-2741
 phptax http://seclists.org/bugtraq/2012/Oct/13
-request-tracker <bestpractical.com>: CVE-2009-3585, CVE-2009-4151, CVE-2009-3892, SA35451, CVE-2008-3502, SA37546, SA36752, SA30830, CVE-2012-2768, CVE-2012-2769, CVE-2012-2770
-request-tracker: CVE-2011-2082, CVE-2011-2083, CVE-2011-2084, CVE-2011-2085, CVE-2011-4458, CVE-2011-4459, CVE-2011-4460
-request-tracker: CVE-2012-4730 CVE-2012-4732 CVE-2012-4734 CVE-2012-4735 CVE-2012-4884
 ribiq CMS <http://tribiq.com/>: CVE-2011-2727/HTB22857
 snipegallery: CVE-2010-2126
 starCMS CVE-2012-4998
