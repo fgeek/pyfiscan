@@ -11,7 +11,7 @@
 # CVE-2012-1123         http://osvdb.org/79832
 # CVE-2012-2691 1.2.11  http://osvdb.org/82838
 # CVE-2012-2692 1.2.11  http://osvdb.org/83166
-# CVE-2012-5522 1.2.12  http://osvdb.org/87529
+# CVE-2012-5522 1.2.12  http://osvdb.org/87529 http://secunia.com/advisories/51300/
 # CVE-2012-5523 1.2.12  http://osvdb.org/87402 http://secunia.com/advisories/51300/
 # CVE-2013-0197 1.2.13  http://osvdb.org/89345 http://secunia.com/advisories/51853/ http://www.mantisbt.org/bugs/view.php?id=15373
 # CVE-2013-1810 1.2.13  http://osvdb.org/95072
@@ -22,11 +22,14 @@
 # CVE-2013-1932 1.2.14  http://osvdb.org/92023
 # CVE-2013-1934 1.2.14  http://osvdb.org/92023
 # CVE-2013-4460 1.2.16  http://osvdb.org/98823 http://www.mantisbt.org/bugs/view.php?id=16513
+# CVE-2014-1608 https://github.com/mantisbt/mantisbt/commit/00b4c17088fa56594d85fe46b6c6057bb3421102
+# CVE-2014-1609 https://github.com/mantisbt/mantisbt/commit/7efe0175f0853e18ebfacedfd2374c4179028b3f
+# CVE-2014-2238 1.2.17  http://osvdb.org/103842 
 MantisBT:
   1:
     location: ['/core/constant_inc.php']
-    secure_version: '1.2.16'
+    secure_version: '1.2.17'
     regexp: ['define.*?MANTIS_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'http://cve.mitre.org/cgi-bin/cvename.cgi?name=2013-4460 http://osvdb.org/98823'
+    cve: 'http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2238 http://osvdb.org/103842'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
