@@ -95,8 +95,10 @@
 # CVE-2012-6512 organizer
 # CVE-2012-6527 my-calendar
 # CVE-2012-6622
+# CVE-2012-6623 forum-server
 # CVE-2012-6624
 # CVE-2012-6625
+# CVE-2012-6627 Newsletter Manager
 # CVE-2012-6628
 # CVE-2012-6629
 # CVE-2012-6630
@@ -138,6 +140,7 @@
 # CVE-2013-1401 cardoza-wordpress-poll
 # CVE-2013-1407 events-manager
 # CVE-2013-1408 wysija-newsletters HTB23140
+# CVE-2013-1409
 # CVE-2013-1409 commentluv HTB23138
 # CVE-2013-1463 wp-table-reloaded
 # CVE-2013-1464 audio-player
@@ -172,7 +175,9 @@
 # CVE-2013-3262 download-monitor 3.3.6.2 http://osvdb.org/95613 http://secunia.com/advisories/53116/
 # CVE-2013-3263
 # CVE-2013-3264
+# CVE-2013-3478
 # CVE-2013-3479 sharethis
+# CVE-2013-3487
 # CVE-2013-3491 sharebar                    http://osvdb.org/94843
 # CVE-2013-3526
 # CVE-2013-3529 wp-funeral-press
@@ -214,6 +219,7 @@
 # CVE-2013-7187
 # CVE-2013-7276
 # CVE-2013-7279
+# CVE-2013-7319 download-manager
 # CVE-2013-XXXX GeoPlaces4beta http://osvdb.org/98975
 # CVE-2013-XXXX advanced-xml-reader         http://osvdb.org/92904
 # CVE-2013-XXXX antivirus http://osvdb.org/95134 http://osvdb.org/95135
@@ -245,6 +251,9 @@
 # CVE-2013-XXXX wpreality http://osvdb.org/98748
 # CVE-2013—XXXX proplayer                   http://cxsecurity.com/issue/WLB-2013050162
 # CVE-2014-1750 nokia-mapsplaces
+# CVE-2014-1854
+# CVE-2014-1888
+# CVE-2014-2040 media-file-renamer
 # CVE-XXXX-XXXX deans-fckeditor-with-pwwangs-code-plugin-for-wordpress  http://osvdb.org/80687 !
 # CVE-XXXX-XXXX devformatter http://osvdb.org/89474 http://osvdb.org/89475
 # CVE-XXXX-XXXX easy-media-gallery 1.2.27 http://osvdb.org/101941
