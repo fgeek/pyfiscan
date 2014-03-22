@@ -147,3 +147,28 @@ def detect_collabtive(source_file, regexp):
         logging.error('Not a valid regular expression: %s', regexp)
     except AttributeError:
         pass
+
+
+@yaml_visible
+def detect_owncloud(source_file, regexp):
+    """Detects from source file if it contains version information of ownCloud.
+
+    """
+    if not os.path.isfile(source_file):
+        return
+    if not regexp:
+        return
+    logging.debug('Dectecting ownCloud from: %s', source_file)
+    with open(source_file) as f:
+        data = f.read()
+        data = data.replace('\n', '')
+    f.close()
+    prog = re.compile(regexp[0])
+    match = prog.match(data)
+    try:
+        found_match = match.group('version')
+        return found_match
+    except re.error:
+        logging.error('Not a valid regular expression: %s', regexp)
+    except AttributeError:
+        pass

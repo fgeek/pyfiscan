@@ -57,6 +57,7 @@ Detects following software
 * Zikula: CVE-2013-6168 http://osvdb.org/98671 https://www.htbridge.com/advisory/HTB23178
 * e107: CVE-2012-6434 [OSVDB 88908](http://osvdb.org/88908)
 * osDate: http://osvdb.org/63005 http://osvdb.org/63006
+* ownCloud: CVE-2014-2057, CVE-2014-2052, CVE-2014-2053, CVE-2014-2054, CVE-2014-2055, CVE-2014-2056
 * phpAlbum: CVE-2011-4806, CVE-2011-4807, OSVDB:74980, OSVDB 21410
 * phpBB3: CVE-2011-0544 SA42343
 * phpMyAdmin: CVE-2013-5029 http://osvdb.org/95999

@@ -1,0 +1,38 @@
+# ownCloud ID       CVE             Fixed in        OSVDB                   ownCloud security advisory URL
+# oC-SA-2013-014    CVE-2013-1942   5.0.4           http://osvdb.org/92254
+# oC-SA-2013-015    CVE-2013-1941   5.0.4           http://osvdb.org/92289
+# oC-SA-2013-016    CVE-2013-1939   5.0.4           http://osvdb.org/92266
+# oC-SA-2013-017    CVE-2013-1967   5.0.5/4.5.10    http://osvdb.org/92525 
+# oC-SA-2013-018    CVE-2013-1963   5.0.5/4.5.10    http://osvdb.org/92645  https://owncloud.org/about/security/advisories/oC-SA-2013-018/
+# oC-SA-2013-019    CVE-2013-2045   5.0.6           http://osvdb.org/93384 http://owncloud.org/about/security/advisories/oC-SA-2013-019/
+# oC-SA-2013-019    CVE-2013-2046   4.5.11          http://osvdb.org/93383 http://owncloud.org/about/security/advisories/oC-SA-2013-019/
+# oC-SA-2013-020
+# oC-SA-2013-021
+# oC-SA-2013-022
+# oC-SA-2013-023
+# oC-SA-2013-024
+# oC-SA-2013-025
+# oC-SA-2013-026
+# oC-SA-2014-001
+# oC-SA-2014-002
+# oC-SA-2014-003
+# oC-SA-2014-004
+# oC-SA-2014-005
+# oC-SA-2014-005
+# oC-SA-2014-006    CVE-2014-2052/CVE-2014-2053/CVE-2014-2054/CVE-2014-2055/CVE-2014-2056   6.0.2/5.0.15    http://owncloud.org/about/security/advisories/oC-SA-2014-006/
+# oC-SA-2014-007    CVE-2014-2057  6.0.2    http://owncloud.org/about/security/advisories/oC-SA-2014-007/ 
+# NOTE: Check if 4.5.x 4.0.x still supported for security updates. Need to strip all line breaks before we can get version information
+ownCloud 6:
+    1:
+      location: ['/version.php']
+      secure_version: '6.0.2'
+      regexp: ['\$OC_VersionString.*?(?P<version>[0-9.]+)']
+      cve: 'http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2057 http://owncloud.org/about/security/advisories/oC-SA-2014-006/ http://owncloud.org/about/security/advisories/oC-SA-2014-007/'
+      fingerprint: detect_general
+ownCloud 5:
+    1:
+      location: ['/lib/util.php']
+      secure_version: '5.0.15'
+      regexp: ['.*?getVersionString.*?return.*?(?P<version>[0-9.]+)']
+      cve: 'http://owncloud.org/about/security/advisories/oC-SA-2014-006/'
+      fingerprint: detect_owncloud
