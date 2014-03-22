@@ -1,3 +1,4 @@
+# http://owncloud.org/about/security/policy/
 # ownCloud ID       CVE             Fixed in        OSVDB                   ownCloud security advisory URL
 # oC-SA-2013-014    CVE-2013-1942   5.0.4           http://osvdb.org/92254
 # oC-SA-2013-015    CVE-2013-1941   5.0.4           http://osvdb.org/92289
@@ -21,7 +22,6 @@
 # oC-SA-2014-005
 # oC-SA-2014-006    CVE-2014-2052/CVE-2014-2053/CVE-2014-2054/CVE-2014-2055/CVE-2014-2056   6.0.2/5.0.15    http://owncloud.org/about/security/advisories/oC-SA-2014-006/
 # oC-SA-2014-007    CVE-2014-2057  6.0.2    http://owncloud.org/about/security/advisories/oC-SA-2014-007/ 
-# NOTE: Check if 4.5.x 4.0.x still supported for security updates
 ownCloud 6:
     1:
       location: ['/version.php']
