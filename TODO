@@ -8,9 +8,6 @@ phpgroupware/chora/inc/version.php <?php define('CHORA_VERSION', '0.4.2-cvs') ?>
 11in1 <http://www.11in1.org/>: HTB23071
 AR Web Content Manager (AWCM): CVE-2010-1066
 Acidcat CMS: CVE-2010-0976, CVE-2010-0984
-Acuity CMS: CVE-2012-4745
-Acuity CMS: http://yehg.net/lab/pr0js/advisories/%5Bacuity_cms2.6%20x_(asp)%5D_arbitrary_fileupload
-Acuity CMS: http://yehg.net/lab/pr0js/advisories/%5Bacuity_cms2.6%20x_(asp)%5D_path_traversal
 Advanced Electron Forums: CVE-2011-3582
 Allinta CMS: CVE-2010-4922
 Anchor CMS <http://www.anchorcms.com/>: http://osvdb.org/81293,81294,81295,81296,81297,81298
