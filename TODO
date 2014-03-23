@@ -134,8 +134,6 @@ PyForum: CVE-2009-4407 SA37764
 PyForum: CVE-2009-4408 SA37764
 ResourceSpace: CVE-2011-4311
 RoseOnlineCMS: CVE-2009-4581
-RunCMS <http://www.runcms.org/>: CVE-2010-2852
-RunCMS <http://www.runcms.org/>: HTB22820, HTB22821, HTB22822
 SQLiteManager: INFOSERVE-ADV2011-12
 Saurus CMS: CVE-2010-1997, CVE-2010-4943
 Seditio <http://www.neocrome.net/>: CSRF http://osvdb.org/81108
