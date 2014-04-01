@@ -1,8 +1,8 @@
-# CVE-2011-4824
-# CVE-2013-1434
-# CVE-2013-1435
-# CVE-2013-5588
-# CVE-2013-5589
-# CVE-2014-2326
-# CVE-2014-2327
-# CVE-2014-2328
+# CVE-2011-4824 0.8.7h http://osvdb.org/77097
+# CVE-2013-1434 0.8.8b http://osvdb.org/96072 unspecified
+# CVE-2013-1435 0.8.8b http://osvdb.org/96071 unspecified
+# CVE-2013-5588 TODO http://osvdb.org/96600 http://osvdb.org/96601
+# CVE-2013-5589 TODO http://osvdb.org/96602
+# CVE-2014-2326 TODO http://osvdb.org/104921 unspecified
+# CVE-2014-2327 TODO http://osvdb.org/104922
+# CVE-2014-2328 TODO http://osvdb.org/104909 unspecified
