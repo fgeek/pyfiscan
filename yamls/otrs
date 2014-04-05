@@ -1,3 +1,5 @@
 # CVE-2014-1471 https://www.otrs.com/security-advisory-2014-02-sql-injection-issue/
 # CVE-2014-1694 https://www.otrs.com/security-advisory-2014-01-csrf-issue-customer-web-interface/
 # CVE-2014-1695
+# CVE-2014-2553
+# CVE-2014-2554 https://www.otrs.com/security-advisory-2014-05-clickjacking-issue/
