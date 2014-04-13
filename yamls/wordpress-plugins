@@ -1,3 +1,4 @@
+w
 # Won't implement: CVE-2012-5177, CVE-2011-5182
 # CVE-2011-5254 connections 
 #   Looks like a false-positive. No information received even I asked from Mitre
@@ -261,7 +262,9 @@
 # CVE-2014-2315
 # CVE-2014-2316
 # CVE-2014-2340 xcloner-backup-and-restore 3.1.1
+# CVE-2014-2559 twitget
 # CVE-2014-2579 xcloner-backup-and-restore
+# CVE-2014-2598 quick-pagepost-redirect-plugin
 # CVE-XXXX-XXXX deans-fckeditor-with-pwwangs-code-plugin-for-wordpress  http://osvdb.org/80687 !
 # CVE-XXXX-XXXX devformatter http://osvdb.org/89474 http://osvdb.org/89475
 # CVE-XXXX-XXXX easy-media-gallery 1.2.27 http://osvdb.org/101941
