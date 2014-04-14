@@ -171,7 +171,7 @@ def handle_results(report, appname, file_version, item_location, application_cve
     """
     try:
         logging.debug('%s with version %s from %s with vulnerability %s. This installation should be updated to at least version %s.', appname, file_version, item_location, application_cve, application_secure)
-        print('%s Found: %s %s -> %s (%s)' % (get_timestamp(), item_location, file_version, application_secure, appname))
+        print('%s Found: %s %s → %s (%s)' % (get_timestamp(), item_location, file_version, application_secure, appname))
         report.add(appname, item_location, file_version, application_secure, application_cve)
     except Exception:
         logging.error(traceback.format_exc())
