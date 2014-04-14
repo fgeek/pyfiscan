@@ -1,8 +1,0 @@
-# NOTE: Not installed if local/config/database.inc.php is missing.
-# CVE-2012-4525 2.4.4 http://piwigo.org/bugs/view.php?id=0002750 SA50510
-# CVE-2012-4526 2.4.5 (2012-4525 was failed fix)
-# CVE-2012-2208
-# CVE-2012-2209
-# CVE-2013-1468
-# CVE-2013-1469
-# TODO: piwigo/include/constants.php:define('PHPWG_VERSION', '2.3.2');
