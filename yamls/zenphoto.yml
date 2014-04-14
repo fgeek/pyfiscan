@@ -15,11 +15,12 @@
 # CVE-2013-7241 1.4.5.4 http://osvdb.org/98092 http://www.zenphoto.org/news/zenphoto-1.4.5.4
 # CVE-2013-7242 1.4.5.4 http://osvdb.org/98091 http://www.zenphoto.org/news/zenphoto-1.4.5.4
 # CVE-2013-XXXX ?       http://osvdb.org/90547 http://packetstormsecurity.com/files/120422/Zenphoto-1.4.4.1-Blind-SQL-Injection.html TODO
+# CVE-XXXX-XXXX 1.4.5.9 http://www.zenphoto.org/news/zenphoto-1.4.5.9
 Zenphoto:
   1:
     location: ['/zp-core/version.php']
-    secure_version: '1.4.5.4'
+    secure_version: '1.4.5.9'
     regexp: ["define.*?ZENPHOTO_VERSION.*?(?P<version>[0-9.]+)"]
-    cve: 'http://osvdb.org/98091 http://osvdb.org/98092 http://www.zenphoto.org/news/zenphoto-1.4.5.4'
+    cve: 'http://www.zenphoto.org/news/zenphoto-1.4.5.9'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
