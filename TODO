@@ -39,13 +39,9 @@ DiY-CMS: CVE-2010-3206
 Docmint CMS: CVE-2010-0319
 Dolphin <http://www.boonex.com/dolphin>: http://seclists.org/bugtraq/2011/Oct/113 http://www.boonex.com/n/dolphin-7-0-8-beta-1
 DotProject NS-12-014, HTB23124
-Elefant CMS: CVE-2012-1296
-Elefant CMS: HTB23076 http://osvdb.org/79816, CVE-2012-6521
 Elxis CMS: CVE-2011-4918 http://osvdb.org/77563,77564
 EnanoCMS: NS-11-002
 Entry Level CMS (EL CMS): CVE-2010-1075, CVE-2010-1076
-FlatNux: CVE-2012-4877, CVE-2012-4878
-FlatNux: CVE-2012-4892
 FlexCMS: CVE-2012-1901
 FluxBB: CVE-2011-3621 http://fluxbb.org/forums/viewtopic.php?id=5751 fixed in 1.4.7
 Fork CMS: CVE-2012-1188/HTB23075
