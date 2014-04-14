@@ -9,7 +9,6 @@
 # CVE-2013-XXXX ? http://osvdb.org/101408
 # CVE-2013-XXXX ? http://osvdb.org/101409
 # CVE-2014-XXXX 2.6.2 http://osvdb.org/103774 http://piwigo.org/releases/2.6.2
-# TODO: piwigo/include/constants.php:define('PHPWG_VERSION', '2.3.2');
 Piwigo:
   1:
     location: ['/include/constants.php']
