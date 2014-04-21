@@ -9,7 +9,7 @@ to keep up with security-updates. Fingerprints are easy to create and modify as
 user can write those in YAML-syntax.
 
 @author Henri 'fgeek' Salo <henri@nerv.fi>
-@copyright Copyright (c) 2009-2013 Henri Salo
+@copyright Copyright (c) 2009-2014 Henri Salo
 @licence BSD
 """
 
