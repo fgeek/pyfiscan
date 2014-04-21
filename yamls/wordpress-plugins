@@ -1,4 +1,3 @@
-w
 # Won't implement: CVE-2012-5177, CVE-2011-5182
 # CVE-2011-5254 connections 
 #   Looks like a false-positive. No information received even I asked from Mitre
@@ -72,6 +71,8 @@ w
 # CVE-2012-4283 login-with-ajax             3.0.4.1 http://osvdb.org/81712
 # CVE-2012-4327 wp-image-news-slider        3.3     http://osvdb.org/81314
 # CVE-2012-4768 download-monitor            3.3.5.9 http://osvdb.org/85319
+# CVE-2012-4920
+# CVE-2012-4921
 # CVE-2012-5229 slideshow-gallery-2
 # CVE-2012-5310 wp-e-commerce/              3.8.7.6 http://osvdb.org/78453
 # CVE-2012-5318 kish-guest-posting (incomplete fix for CVE-2012-1125) !
@@ -159,19 +160,26 @@ w
 # CVE-2013-2108 wp-cleanfix
 # CVE-2013-2109 wp-cleanfix                 http://osvdb.org/93435
 # CVE-2013-2180 uk-cookie   http://osvdb.org/87561
+# CVE-2013-2287
 # CVE-2013-2501 terillion-reviews           http://osvdb.org/91123
 # CVE-2013-2640 wp-mailup                   http://osvdb.org/91274
+# CVE-2013-2693
 # CVE-2013-2694 wp-symposium
 # CVE-2013-2695 wp-symposium
 # CVE-2013-2696
 # CVE-2013-2697 wp-downloadmanager
+# CVE-2013-2700
 # CVE-2013-2701
 # CVE-2013-2702
 # CVE-2013-2703
 # CVE-2013-2704 dropdown-menu-widget    http://osvdb.org/94771
+# CVE-2013-2706
 # CVE-2013-2707 login-with-ajax
+# CVE-2013-2708
 # CVE-2013-2709 foursquare-checkins
 # CVE-2013-2714 podpress                    http://osvdb.org/91129
+# CVE-2013-3251
+# CVE-2013-3252
 # CVE-2013-3253 xhanch-my-twitter
 # CVE-2013-3254 wp-photo-album-plus         http://osvdb.org/93033
 # CVE-2013-3256 sexybookmarks
@@ -261,6 +269,7 @@ w
 # CVE-2014-2040 media-file-renamer
 # CVE-2014-2315
 # CVE-2014-2316
+# CVE-2014-2333
 # CVE-2014-2340 xcloner-backup-and-restore 3.1.1
 # CVE-2014-2559 twitget
 # CVE-2014-2579 xcloner-backup-and-restore
