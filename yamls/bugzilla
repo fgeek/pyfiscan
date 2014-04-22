@@ -1,23 +1,23 @@
 # CVE-2011-3657
 # CVE-2012-0440
+# CVE-2012-0440
+# CVE-2012-0448
 # CVE-2012-0448
 # CVE-2012-0453
+# CVE-2012-0453
+# CVE-2012-0465
 # CVE-2012-0465 4.2.1   http://osvdb.org/81262
+# CVE-2012-0466
 # CVE-2012-0466 4.2.1   http://osvdb.org/81263
 # CVE-2012-1968
+# CVE-2012-1968
+# CVE-2012-1969
 # CVE-2012-1969
 # CVE-2012-3981
-# CVE-2012-1969
-# CVE-2012-1968
-# CVE-2012-0466
-# CVE-2012-0465
-# CVE-2012-0453
-# CVE-2012-0448
-# CVE-2012-0440
-# CVE-2012-4199
-# CVE-2012-4198
 # CVE-2012-4189
 # CVE-2012-4197
+# CVE-2012-4198
+# CVE-2012-4199
 # CVE-2012-5475
 # CVE-2013-0785
 # CVE-2013-0785 4.2.5/4.0.10/3.6.13 http://osvdb.org/90404
@@ -26,3 +26,13 @@
 # CVE-2013-1734
 # CVE-2013-1742
 # CVE-2013-1743
+# CVE-2014-1517 4.5.3/4.4.3
+# CVE-2014-XXXX 4.5.3/4.4.3/4.2.8/4.0.12
+Bugzilla:
+  1:
+    location: ['/docs/en/xml/bugzilla.ent', '/docs/en/xml/Bugzilla-Guide.xml']
+    secure_version: '4.4.3'
+    regexp: ['<!ENTITY bz-ver.*?(?P<version>[0-9.]+)']
+    cve: 'CVE-2014-1517 http://www.bugzilla.org/releases/4.4.4/release-notes.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
