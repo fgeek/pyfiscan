@@ -57,6 +57,7 @@ Detects following software
 * WordPress: CVE-2013-4338, CVE-2013-4339, CVE-2013-4340
 * Zenphoto: http://www.zenphoto.org/news/zenphoto-1.4.5.9
 * Zikula: CVE-2013-6168 http://osvdb.org/98671 https://www.htbridge.com/advisory/HTB23178
+* Zimbra: CVE-2013-7091 http://osvdb.org/100747
 * e107: CVE-2012-6434 [OSVDB 88908](http://osvdb.org/88908)
 * osDate: http://osvdb.org/63005 http://osvdb.org/63006
 * ownCloud: CVE-2014-2057, CVE-2014-2052, CVE-2014-2053, CVE-2014-2054, CVE-2014-2055, CVE-2014-2056
