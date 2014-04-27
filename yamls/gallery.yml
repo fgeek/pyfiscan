@@ -2,11 +2,11 @@
 #   http://osvdb.org/92789 should be removed as duplicate of http://osvdb.org/92691
 #   http://osvdb.org/92690 should be removed as duplicate of http://osvdb.org/92740
 # CVE-2006-XXXX 2.1.2 http://osvdb.org/27998
-# CVE-2008-5296 1.5.10 http://osvdb.org/show/osvdb/50089
-# CVE-2012-1113 3.0.3 http://osvdb.org/show/osvdb/81101 http://galleryproject.org/gallery_3_0_3_and_gallery_2_3_2
-# CVE-2012-2405 3.0.3/2.3.2 http://osvdb.org/show/osvdb/81512 http://osvdb.org/show/osvdb/81101 http://secunia.com/advisories/48767/
-# CVE-2012-4342 3.0.4 http://osvdb.org/show/osvdb/82964 http://galleryproject.org/gallery_3_0_4 http://secunia.com/advisories/49473/
-# CVE-2012-4343 3.0.4 http://osvdb.org/show/osvdb/82965 http://galleryproject.org/gallery_3_0_4 http://secunia.com/advisories/49473/
+# CVE-2008-5296 1.5.10 http://osvdb.org/50089
+# CVE-2012-1113 3.0.3 http://osvdb.org/81101 http://galleryproject.org/gallery_3_0_3_and_gallery_2_3_2
+# CVE-2012-2405 3.0.3/2.3.2 http://osvdb.org/81512 http://secunia.com/advisories/48767/
+# CVE-2012-4342 3.0.4 http://osvdb.org/82964 http://galleryproject.org/gallery_3_0_4 http://secunia.com/advisories/49473/
+# CVE-2012-4343 3.0.4 http://osvdb.org/82965 http://galleryproject.org/gallery_3_0_4 http://secunia.com/advisories/49473/
 # CVE-2013-XXXX 3.0.5 http://osvdb.org/90599 http://osvdb.org/91412 http://osvdb.org/90590 http://osvdb.org/90599 http://osvdb.org/90600 http://osvdb.org/90601 http://osvdb.org/91410 http://osvdb.org/91411
 # CVE-2013-2087 3.0.7 http://osvdb.org/92691
 # CVE-2013-2087 3.0.7 http://osvdb.org/92740
@@ -24,9 +24,9 @@ Gallery 3:
 Gallery 2:
   1:
     location: ['/modules/core/module.inc']
-    secure_version: '3.0.9'
+    secure_version: '2.3.2'
     regexp: ['.*?setGalleryVersion.*?(?P<version>[0-9.]{1,})']
-    cve: 'CVE-2013-2240 http://osvdb.org/94663 CVE-2013-2241 http://osvdb.org/94664 http://galleryproject.org/gallery_3_0_9'
+    cve: 'CVE-2012-2405 http://osvdb.org/81512'
     fingerprint: detect_gallery
     post_processing: ['php5.fcgi']
 Gallery 1:
@@ -34,6 +34,6 @@ Gallery 1:
     location: ['/Version.php']
     secure_version: '3.0.9'
     regexp: ['\$gallery->version.*?(?P<version>[0-9.]{1,})']
-    cve: 'CVE-2013-2240 http://osvdb.org/94663 CVE-2013-2241 http://osvdb.org/94664 http://galleryproject.org/gallery_3_0_9'
+    cve: 'Gallery 1 versions are end of life. Please upgrade to Gallery version 3.'
     fingerprint: detect_gallery
     post_processing: ['php5.fcgi']
