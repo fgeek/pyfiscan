@@ -27,14 +27,12 @@ CVE-2012-3477 NeoInvoice Blind SQL
 CakePHP CVE-2012-4399 http://osvdb.org/84042
 Chyrp: CVE-2012-1001 HTB23073
 Ciamos CMS <http://sourceforge.net/projects/ciamos/>: CVE-2009-4156
-ClearSilver: CVE-2011-4357
 ClipBucket NS-12-013
 CompactCMS http://www.compactcms.nl/: HTB22697, HTB22695, HTB22696
 Concrete CMS: 5.4.1.1 XSS CVE-2011-3182
 CosCms HTB23145
 Cunity http://cxsecurity.com/issue/WLB-2013030206
 CuteSITE CMS: CVE-2010-5024, CVE-2010-5025
-DeluxeBB: CVE-2009-4465
 DiY-CMS: CVE-2010-3206
 Docmint CMS: CVE-2010-0319
 Dolphin <http://www.boonex.com/dolphin>: http://seclists.org/bugtraq/2011/Oct/113 http://www.boonex.com/n/dolphin-7-0-8-beta-1
@@ -56,13 +54,9 @@ HTML-EDIT CMS: CVE-2010-4609
 HTML-EDIT CMS: CVE-2010-4610
 HTML-EDIT CMS: HTB22734, HTB22735
 Habari: HTB22731, HTB22732, HTB22733
-Hastymail2: CVE-2011-4541
-Hastymail2: CVE-2011-4542
 Havalite CMS: http://osvdb.org/80768,80769,80770 http://osvdb.org/81323,81324,81355
 Horde: http://osvdb.org/78474-78477
 Hotel Booking Portal <http://sourceforge.net/projects/hbportal/>: CVE-2012-1672 SQL Injection
-Hycus CMS: CVE-2010-4612
-Hycus CMS: CVE-2010-4613
 IceBB: HTB22686, HTB22687, HTB22688
 ImpressPages CMS: NGS00109
 JAMWiki: 2010-5054 0.8.4 osvdb/63564
@@ -84,20 +78,12 @@ Nakid CMS: CVE-2010-2358
 Netpet CMS: CVE-2009-4723
 OBM: HTB23060
 ONECMS: CVE-2010-0952
-OSClass: CSA-12003 http://osclass.org/2012/01/16/osclass-2-3-5/ http://www.codseq.it/advisories/multiple_vulnerabilities_in_osclass
-OSClass: CVE-2012-1617 CSA-12004 http://osvdb.org/79984 http://www.codseq.it/advisories/osclass_directory_traversal_vulnerability
-OSClass: HTB23068
 OSCommerce: CVE-2012-1792
-OTRS2: CVE-2012-2582
-OTRS2: CVE-2012-4600
 One Click Orgs: http://osvdb.org/77602, http://osvdb.org/77545, http://osvdb.org/77547, http://osvdb.org/77548, http://osvdb.org/77549, http://osvdb.org/77546, http://osvdb.org/77569
-OpenEMR: HTB23069
 OpenKM: COMPASS-2012-001 http://osvdb.org/78105
 OpenKM: COMPASS-2012-002 http://osvdb.org/78106
 OpenKM: CVE-2012-2316 COMPASS-2012-002 http://osvdb.org/78106 SA47420
 OpenX: CVE-2012-4989, CVE-2012-4990, CVE-2012-4990
-Orbis CMS <http://www.novo-ws.com/orbis-cms/>: CVE-2010-4313 in newest version and whole project is EOL
-Orbis CMS: CVE-2010-2669
 PBBoard: CVE-2012-1216
 PHP Address Book <http://sourceforge.net/projects/php-addressbook/>: SSCHADV2012-013 CVE-2012-2903
 PHP Booking Calendar <https://sourceforge.net/projects/bookingcalendar/>: CVE-2011-5045
@@ -121,17 +107,10 @@ Prado Portal: CVE-2010-4958
 Pragyan CMS: HTB22855, HTB22856, HTB22853
 PrestaShop: HTB23091, CVE-2012-5801, CVE-2012-5800, CVE-2012-5799
 Pulse CMS: CVE-2010-1080
-PyForum: CVE-2009-4407 SA37764
-PyForum: CVE-2009-4408 SA37764
 ResourceSpace: CVE-2011-4311
 RoseOnlineCMS: CVE-2009-4581
 SQLiteManager: INFOSERVE-ADV2011-12
 Saurus CMS: CVE-2010-1997, CVE-2010-4943
-Seditio <http://www.neocrome.net/>: CSRF http://osvdb.org/81108
-Seditio <http://www.neocrome.net/>: SQLi http://osvdb.org/81109
-Seditio <http://www.neocrome.net/>: http://osvdb.org/80688 XSS
-Seditio <http://www.neocrome.net/>: http://www.cotonti.com/news/community/seditio-eol
-Seditio <http://www.neocrome.net/>: http://www.neocrome.net/page.php?id=2470 "it is NOT recommended to upgrade past Seditio 150 for any live site."
 Seotoaster: CVE-2011-5230
 Seotoaster: INFOSERVE-ADV2011-06 TODO: NO CVE
 Simple Groupware: CVE-2012-1028 http://osvdb.org/78918
