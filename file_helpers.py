@@ -69,7 +69,4 @@ def postprocess_php5fcgi(home_location, item_location):
     # Joining items together to get real path
     public_dir = '/'.join(str(elem) for elem in public_dir)
     public_dir = os.path.abspath(home_location + public_dir)
-    if os.path.exists(os.path.abspath(public_dir + '/php5.fcgi')):
-        return True
-    else:
-        return False
+    return os.path.exists(os.path.abspath(public_dir + '/php5.fcgi'))
