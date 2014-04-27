@@ -40,20 +40,15 @@ def detect_general(source_file, regexp):
     regexp-match.
     
     """
-    if not os.path.isfile(source_file):
+    if not (os.path.isfile(source_file) and regexp):
         return
-    if not regexp:
-        return
-    file_version = grep_from_file(source_file, regexp[0])
-    return file_version
+    return grep_from_file(source_file, regexp[0])
 
 
 @yaml_visible
 def detect_joomla(source_file, regexp):
     """Detects from source file if it contains version information of Joomla"""
-    if not os.path.isfile(source_file):
-        return
-    if not regexp:
+    if not (os.path.isfile(source_file) and regexp):
         return
     logging.debug('Dectecting Joomla from: %s', source_file)
 
@@ -68,8 +63,7 @@ def detect_joomla(source_file, regexp):
         return
     logging.debug('Development level version: %s', dev_level_version)
 
-    file_version = release_version + "." + dev_level_version
-    return file_version
+    return release_version + "." + dev_level_version
 
 
 @yaml_visible
@@ -82,9 +76,7 @@ def detect_wikkawiki(source_file, regexp):
     if(!defined('WIKKA_PATCH_LEVEL')) define('WIKKA_PATCH_LEVEL', '7');
 
     """
-    if not os.path.isfile(source_file):
-        return
-    if not regexp:
+    if not (os.path.isfile(source_file) and regexp):
         return
     logging.debug('Dectecting WikkaWiki from: %s', source_file)
     version = grep_from_file(source_file, regexp[0])
@@ -98,8 +90,7 @@ def detect_wikkawiki(source_file, regexp):
         return
     logging.debug('Patch level: %s', patch_level)
     if version and patch_level:
-        file_version = version + "-p" + patch_level
-        return file_version
+        return version + "-p" + patch_level
 
 
 @yaml_visible
@@ -108,9 +99,7 @@ def detect_gallery(source_file, regexp):
     Also ignores Git-versions.
     
     """
-    if not os.path.isfile(source_file):
-        return
-    if not regexp:
+    if not (os.path.isfile(source_file) and regexp):
         return
     logging.debug('Dectecting Gallery from: %s', source_file)
     version = grep_from_file(source_file, regexp[0])
@@ -129,22 +118,17 @@ def detect_gallery(source_file, regexp):
 
 @yaml_visible
 def detect_collabtive(source_file, regexp):
-    if not os.path.isfile(source_file):
-        return
-    if not regexp:
+    if not (os.path.isfile(source_file) and regexp):
         return
     logging.debug('Dectecting Collabtive from: %s', source_file)
-    prog = re.compile(regexp)
     f = open(source_file, 'r')
     for line in f.read().split('\n'):
         source = line
         break
-    match = prog.match(source)
     try:
-        found_match = match.group('version')
-        return found_match
+        return re.compile(regexp).match(source).group('version')
     except re.error:
-        logging.error('Not a valid regular expression: %s', regexp)
+        logging.error('Invalid regular expression: %s', regexp)
     except AttributeError:
         pass
 
@@ -154,19 +138,14 @@ def detect_owncloud(source_file, regexp):
     """Detects from source file if it contains version information of ownCloud.
 
     """
-    if not os.path.isfile(source_file):
-        return
-    if not regexp:
+    if not (os.path.isfile(source_file) and regexp):
         return
     logging.debug('Dectecting ownCloud from: %s', source_file)
     with open(source_file) as f:
-        data = f.read()
-        data = data.replace('\n', '')
+        data = f.read().replace('\n', '')
     f.close()
-    prog = re.compile(regexp[0])
-    match = prog.match(data)
     try:
-        found_match = match.group('version')
+        found_match = re.compile(regexp[0]).match(data).group('version')
         return found_match
     except re.error:
         logging.error('Not a valid regular expression: %s', regexp)
