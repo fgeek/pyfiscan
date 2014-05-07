@@ -263,6 +263,7 @@
 # CVE-2013-XXXX wp-realty http://www.exploit-db.com/exploits/29021/
 # CVE-2013-XXXX wpreality http://osvdb.org/98748
 # CVE-2013—XXXX proplayer                   http://cxsecurity.com/issue/WLB-2013050162
+# CVE-2014-0173 jetpack
 # CVE-2014-1750 nokia-mapsplaces
 # CVE-2014-1854
 # CVE-2014-1888
@@ -271,6 +272,7 @@
 # CVE-2014-2316
 # CVE-2014-2333
 # CVE-2014-2340 xcloner-backup-and-restore 3.1.1
+# CVE-2014-2558 file-gallery
 # CVE-2014-2559 twitget
 # CVE-2014-2579 xcloner-backup-and-restore
 # CVE-2014-2598 quick-pagepost-redirect-plugin
