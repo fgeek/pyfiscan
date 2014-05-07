@@ -22,8 +22,15 @@
 # CVE-2012-6514 com_netinvoice      http://osvdb.org/81573
 # CVE-2012-XXXX com_quiz
 # CVE-2013-3719 com_aicontactsafe
+# CVE-2013-3933 com_joomshopping
+# CVE-2013-5951
+# CVE-2013-5952
+# CVE-2013-5953
+# CVE-2013-5955 com_pbbooking
+# CVE-2013-5956
 # CVE-2013-6878 N/A https://www.htbridge.com/advisory/HTB23186 http://mijosoft.com/joomla-extensions/mijosearch-joomla-search-engine
 # CVE-2013-6879 N/A https://www.htbridge.com/advisory/HTB23186 http://mijosoft.com/joomla-extensions/mijosearch-joomla-search-engine
+# CVE-2013-7219 com_sexypolling
 # CVE-2013-7219 com_sexypolling 1.0.9 https://www.htbridge.com/advisory/HTB23193
 # CVE-2013-XXXX Dshop   http://vel.joomla.org/vel-blog/56-dshop.html
 # CVE-2013-XXXX VirtueMart  2.0.22a http://vel.joomla.org/resolved/799-virtuemart-2-0-22a-sqli.html
@@ -39,6 +46,7 @@
 # CVE-2013-XXXX sectionex   http://vel.joomla.org/vel-blog/797-sectionex-2-5-96.html
 # CVE-2014-0793 1.7.3 https://www.htbridge.com/advisory/HTB23194
 # CVE-2014-0794 3.0.3 https://www.htbridge.com/advisory/HTB23195 http://extensions.joomla.org/extensions/contacts-and-feedback/articles-comments/23394
+# CVE-2014-1214 com_novasfh
 # CVE-2014-1837 com_komento 1.7.4 http://osvdb.org/102563
 # CVE-2014-XXXX 1.8.4/1.7.5 http://vel.joomla.org/resolved/1103-breezing-forms-pre-1-7-5-or-1-8-4.html http://crosstec.de/en/blog/entry/15-breezingforms-security-update.html
 # CVE-XXXX-XXXX 2.3.4 http://vel.joomla.org/vel-blog/976-spider-contacts-1-3-3.html
@@ -67,8 +75,6 @@
 # CVE-XXXX-XXXX plugin_googlemap http://osvdb.org/95776
 # CVE-XXXX-XXXX qcontacts                                   http://docs.joomla.org/Vulnerable_Extensions_List#QContacts_1.0.6 http://vel.joomla.org/vel-blog/57-qcontacts-1-0-6.html
 # CVE-XXXX-XXXX unite-horizontal-carousel                   http://vel.joomla.org/resolved/479-unite-horizontal-carousel.html
-# CVE-2014-1214 com_novasfh
-# CVE-2013-3933 com_joomshopping
 # http://vel.joomla.org/vel-blog/1059-extplorer-all.html
 # http://vel.joomla.org/vel-blog/51-com_advert.html
 # http://vel.joomla.org/vel-blog/56-dshop.html
@@ -78,3 +84,14 @@
 # http://vel.joomla.org/vel-blog/1110-odude-profile.html
 # JomSocial 3.1.0.1 http://vel.joomla.org/resolved/1107-jomsocial-pre-3-1-0-1.html
 # JomSocial 3.1.0.4 http://www.jomsocial.com/blog/hot-fix-3-1-0-4
+http://vel.joomla.org/vel-blog/1191-activehelper-livehelp-3-2-0-sqli.html
+http://vel.joomla.org/resolved/1148-jj-shoutbox-1-2-6.html
+http://vel.joomla.org/vel-blog/41-ownbiblio-1-5-3.html
+http://vel.joomla.org/resolved/1149-google-maps-plugin-for-joomla-3-1-and-2-20.html
+http://vel.joomla.org/vel-blog/45-bearleague.html
+http://vel.joomla.org/vel-blog/50-quickl-form.html
+http://vel.joomla.org/vel-blog/51-com_advert.html
+http://vel.joomla.org/vel-blog/1193-plg-codehighlight-1-0-1-xss.html
+http://vel.joomla.org/vel-blog/1195-codels-codehighlighter.html
+http://vel.joomla.org/resolved/1110-odude-profile.html
+http://www.odude.com/main/profile/profile-changelog.html
