@@ -4,6 +4,7 @@
 # CVE-2013-4306 extension. not going to add yet. maybe in future
 # CVE-2013-4307 extension. not going to add yet. maybe in future
 # CVE-2013-4308 extension. not going to add yet. maybe in future
+# CVE-2014-2854 extension. not going to add yet. maybe in future
 # CVE-2009-4570
 # CVE-2009-4589
 # CVE-2010-1150 1.15.3      http://osvdb.org/63570 SA39333
@@ -53,20 +54,21 @@
 # CVE-2014-2243 1.22.3/1.21.6/1.19.12 https://gerrit.wikimedia.org/r/#/q/I2a9e89120f7092015495e638c6fa9f67adc9b84f,n,z
 # CVE-2014-2244 1.22.3/1.21.6/1.19.12 https://gerrit.wikimedia.org/r/#/q/Idf985e4e69c2f11778a8a90503914678441cb3fb,n,z
 # CVE-2014-2665 1.22.5/1.21.8/1.19.14 http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-March/000145.html
+# CVE-2014-2853 1.22.6/1.21.9 http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-April/000149.html
 MediaWiki 1.22:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.22.5'
+    secure_version: '1.22.6'
     regexp: ['\$wgVersion.*?(?P<version>1\.22\.[0-9.]{1,})']
-    cve: 'CVE-2014-2665 http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-March/000145.html'
+    cve: 'CVE-2014-2853 http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-April/000149.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.21:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.21.8'
+    secure_version: '1.21.9'
     regexp: ['\$wgVersion.*?(?P<version>1\.21\.[0-9.]{1,})']
-    cve: 'CVE-2014-2665 http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-March/000145.html'
+    cve: 'CVE-2014-2853 http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-April/000149.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.20:
