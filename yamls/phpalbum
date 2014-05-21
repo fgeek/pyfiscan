@@ -1,0 +1,14 @@
+# NFU: CVE-2011-3770 path dislosure
+# CVE-2006-6613 ? http://osvdb.org/35931
+# CVE-2011-4806 ? http://osvdb.org/74980 http://secunia.com/advisories/44078/
+# CVE-2011-4807 ? http://osvdb.org/21410 http://secunia.com/advisories/44078/ how is this related to 2005-3948
+# CVE-2011-XXXX ? http://osvdb.org/74981 http://secunia.com/advisories/44078/
+# CVE-2011-XXXX ? http://osvdb.org/74979 http://secunia.com/advisories/44078/
+phpAlbum:
+  1:
+    location: ['/main.php']
+    secure_version: '0.4.1.16'
+    regexp: ['\$phpalbum_version.*?(?P<version>[0-9.]{1,})']
+    cve: 'http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4806 http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4807 http://osvdb.org/74980 http://osvdb.org/21410'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']

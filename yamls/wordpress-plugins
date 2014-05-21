@@ -266,7 +266,8 @@
 # CVE-2014-0173 jetpack
 # CVE-2014-1750 nokia-mapsplaces
 # CVE-2014-1854
-# CVE-2014-1888
+# CVE-2014-1888 buddypress TODO: is this fixed?
+# CVE-2014-1889 buddypress TODO: is this fixed?
 # CVE-2014-2040 media-file-renamer
 # CVE-2014-2315
 # CVE-2014-2316
@@ -276,6 +277,8 @@
 # CVE-2014-2559 twitget
 # CVE-2014-2579 xcloner-backup-and-restore
 # CVE-2014-2598 quick-pagepost-redirect-plugin
+# CVE-2014-3123
+# CVE-2014-3210 booking-system
 # CVE-XXXX-XXXX deans-fckeditor-with-pwwangs-code-plugin-for-wordpress  http://osvdb.org/80687 !
 # CVE-XXXX-XXXX devformatter http://osvdb.org/89474 http://osvdb.org/89475
 # CVE-XXXX-XXXX easy-media-gallery 1.2.27 http://osvdb.org/101941
