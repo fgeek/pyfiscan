@@ -151,6 +151,7 @@
 # CVE-2013-1636 pretty-link
 # CVE-2013-1758 marekkis-watermark
 # CVE-2013-1759 responsive-logo-slideshow
+# CVE-2013-1765
 # CVE-2013-1916 user-photo                  http://osvdb.org/71071
 # CVE-2013-1949 social-media-widget (!)
 # CVE-2013-2008 wp-super-cache              http://osvdb.org/92827 - http://osvdb.org/92832
@@ -173,6 +174,7 @@
 # CVE-2013-2702
 # CVE-2013-2703
 # CVE-2013-2704 dropdown-menu-widget    http://osvdb.org/94771
+# CVE-2013-2705 wordpress-simple-paypal-shopping-cart http://osvdb.org/93953
 # CVE-2013-2706
 # CVE-2013-2707 login-with-ajax
 # CVE-2013-2708
