@@ -10,6 +10,7 @@
 # CVE-2011-3981 allwebmenus-wordpress-menu-plugin   1.1.4   http://osvdb.org/75615 http://secunia.com/advisories/46068/ !
 # CVE-2011-4106                                     http://osvdb.org/74325 http://markmaunder.com/2011/08/01/zero-day-vulnerability-in-many-wordpress-themes/ !
 # CVE-2011-4562 redirection 2.2.10                  http://osvdb.org/76092 SA46310
+# CVE-2014-3870 bib2html
 # CVE-2011-4669 wordpress-users 1.4         http://osvdb.org/76710 http://secunia.com/advisories/46442/
 # CVE-2011-4803 wptouch                     http://osvdb.org/77752
 # CVE-2011-4926 adminimize      1.7.22      http://osvdb.org/7742
@@ -279,7 +280,7 @@
 # CVE-2014-2559 twitget
 # CVE-2014-2579 xcloner-backup-and-restore
 # CVE-2014-2598 quick-pagepost-redirect-plugin
-# CVE-2014-3123
+# CVE-2014-3123 nextcellent-gallery-nextgen-legacy
 # CVE-2014-3210 booking-system
 # CVE-2014-3842 imember360 http://osvdb.org/106299 http://osvdb.org/106301 http://osvdb.org/106987
 # CVE-2014-3848 imember360 http://osvdb.org/106298
