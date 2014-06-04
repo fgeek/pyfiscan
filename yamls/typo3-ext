@@ -19,8 +19,9 @@
 # TYPO3-EXT-SA-2014-004
 # TYPO3-EXT-SA-2014-005
 # TYPO3-EXT-SA-2014-006                 http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2014-006/
-# TYPO3-EXT-SA-2014-007 CVE-2014-XXXX   http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2014-007/
-# TYPO3-EXT-SA-2014-008 CVE-2014-XXXX   http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2014-008/
+# TYPO3-EXT-SA-2014-007 CVE-2014-3947   http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2014-007/
+# TYPO3-EXT-SA-2014-007 CVE-2014-3948
+# TYPO3-EXT-SA-2014-008 CVE-2014-3949   http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2014-008/
 # CVE-2013-5098
 # CVE-2013-5099
 # CVE-2013-5100

@@ -10,7 +10,6 @@
 # CVE-2011-3981 allwebmenus-wordpress-menu-plugin   1.1.4   http://osvdb.org/75615 http://secunia.com/advisories/46068/ !
 # CVE-2011-4106                                     http://osvdb.org/74325 http://markmaunder.com/2011/08/01/zero-day-vulnerability-in-many-wordpress-themes/ !
 # CVE-2011-4562 redirection 2.2.10                  http://osvdb.org/76092 SA46310
-# CVE-2014-3870 bib2html
 # CVE-2011-4669 wordpress-users 1.4         http://osvdb.org/76710 http://secunia.com/advisories/46442/
 # CVE-2011-4803 wptouch                     http://osvdb.org/77752
 # CVE-2011-4926 adminimize      1.7.22      http://osvdb.org/7742
@@ -170,6 +169,7 @@
 # CVE-2013-2695 wp-symposium
 # CVE-2013-2696
 # CVE-2013-2697 wp-downloadmanager
+# CVE-2013-2698 calendar
 # CVE-2013-2700
 # CVE-2013-2701
 # CVE-2013-2702
@@ -191,6 +191,7 @@
 # CVE-2013-3262 download-monitor 3.3.6.2 http://osvdb.org/95613 http://secunia.com/advisories/53116/
 # CVE-2013-3263
 # CVE-2013-3264
+# CVE-2013-3477 related-posts-by-zemanta
 # CVE-2013-3478
 # CVE-2013-3479 sharethis
 # CVE-2013-3487
@@ -281,10 +282,16 @@
 # CVE-2014-2579 xcloner-backup-and-restore
 # CVE-2014-2598 quick-pagepost-redirect-plugin
 # CVE-2014-3123 nextcellent-gallery-nextgen-legacy
+# CVE-2014-3210
 # CVE-2014-3210 booking-system
+# CVE-2014-3841
 # CVE-2014-3842 imember360 http://osvdb.org/106299 http://osvdb.org/106301 http://osvdb.org/106987
+# CVE-2014-3843
+# CVE-2014-3844
+# CVE-2014-3845
 # CVE-2014-3848 imember360 http://osvdb.org/106298
 # CVE-2014-3849 imember360 http://osvdb.org/106300
+# CVE-2014-3870 bib2html
 # CVE-XXXX-XXXX deans-fckeditor-with-pwwangs-code-plugin-for-wordpress  http://osvdb.org/80687 !
 # CVE-XXXX-XXXX devformatter http://osvdb.org/89474 http://osvdb.org/89475
 # CVE-XXXX-XXXX easy-media-gallery 1.2.27 http://osvdb.org/101941
