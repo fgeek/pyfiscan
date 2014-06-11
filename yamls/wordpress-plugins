@@ -293,7 +293,10 @@
 # CVE-2014-3845
 # CVE-2014-3848 imember360 http://osvdb.org/106298
 # CVE-2014-3849 imember360 http://osvdb.org/106300
+# CVE-2014-3850
 # CVE-2014-3870 bib2html
+# CVE-2014-3921
+# CVE-2014-3923
 # CVE-XXXX-XXXX deans-fckeditor-with-pwwangs-code-plugin-for-wordpress  http://osvdb.org/80687 !
 # CVE-XXXX-XXXX devformatter http://osvdb.org/89474 http://osvdb.org/89475
 # CVE-XXXX-XXXX easy-media-gallery 1.2.27 http://osvdb.org/101941
