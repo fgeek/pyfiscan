@@ -1,5 +1,12 @@
 # http://owncloud.org/about/security/policy/
+# Advisory URL: http://owncloud.org/about/security/advisories/oC-SA-XXXX-XXX/
 # ownCloud ID       CVE             Fixed in        OSVDB                   ownCloud security advisory URL
+# N/A               CVE-2012-5336   4.0.8
+# N/A               CVE-2012-5056   4.0.8
+# N/A               CVE-2012-5057   4.0.8
+# oC-SA-2013-005    CVE-2013-0302   4.0.12
+# oC-SA-2013-006    CVE-2013-0303 TODO Advisory talks about CVE-2013-0303
+# oC-SA-2013-007    CVE-2013-0304   4.5.7
 # oC-SA-2013-014    CVE-2013-1942   5.0.4           http://osvdb.org/92254
 # oC-SA-2013-015    CVE-2013-1941   5.0.4           http://osvdb.org/92289
 # oC-SA-2013-016    CVE-2013-1939   5.0.4           http://osvdb.org/92266
@@ -18,10 +25,23 @@
 # oC-SA-2014-002
 # oC-SA-2014-003
 # oC-SA-2014-004
-# oC-SA-2014-005
+# oC-SA-2014-005    CVE-2014-2051   6.0.2/5.0.15
 # oC-SA-2014-005
 # oC-SA-2014-006    CVE-2014-2052/CVE-2014-2053/CVE-2014-2054/CVE-2014-2055/CVE-2014-2056   6.0.2/5.0.15    http://owncloud.org/about/security/advisories/oC-SA-2014-006/
-# oC-SA-2014-007    CVE-2014-2057  6.0.2    http://owncloud.org/about/security/advisories/oC-SA-2014-007/ 
+# oC-SA-2014-007    CVE-2014-2057   6.0.2    http://owncloud.org/about/security/advisories/oC-SA-2014-007/
+# oC-SA-2014-008
+# oC-SA-2014-009    CVE-2014-3963   6.0.1
+# oC-SA-2014-010
+# oC-SA-2014-011    CVE-2014-3834   6.0.3
+# oC-SA-2014-012    CVE-2014-3835   6.0.3/5.0.16
+# oC-SA-2014-013    CVE-2014-3834   6.0.3
+# oC-SA-2014-014    CVE-2014-3836   6.0.3
+# oC-SA-2014-015    CVE-2014-3837   6.0.3
+# oC-SA-2014-016    CVE-2014-3838   6.0.3/5.0.16
+# CVE-2014-2585
+# CVE-2013-7344
+# CVE-2014-2049
+# CVE-2014-2047
 ownCloud 6:
     1:
       location: ['/version.php']
