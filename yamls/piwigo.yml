@@ -1,5 +1,4 @@
 # URL: http://piwigo.org/
-# NOTE: Not installed if local/config/database.inc.php is missing.
 # CVE-2012-2208
 # CVE-2012-2209
 # CVE-2012-4525 2.4.4 http://piwigo.org/bugs/view.php?id=0002750 SA50510
@@ -9,12 +8,12 @@
 # CVE-2013-XXXX ? http://osvdb.org/101408
 # CVE-2013-XXXX ? http://osvdb.org/101409
 # CVE-2014-XXXX 2.6.2 http://osvdb.org/103774 http://piwigo.org/releases/2.6.2
-# CVE-2014-XXXX 2.6.3 http://piwigo.org/releases/2.6.3
+# CVE-2014-XXXX 2.6.3 http://piwigo.org/releases/2.6.3 http://osvdb.org/108063
 Piwigo:
   1:
     location: ['/include/constants.php']
     secure_version: '2.6.3'
     regexp: ['define.*?PHPWG_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'http://piwigo.org/releases/2.6.3'
+    cve: 'http://piwigo.org/releases/2.6.3 http://osvdb.org/108063'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']

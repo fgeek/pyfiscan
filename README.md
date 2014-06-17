@@ -105,9 +105,10 @@ Notes
   * Open installation is not a vulnerability since web-interface requests user to authenticate by inserting random data to file.
 * Coppermine
   * Not installed when include/config.inc.php is missing.
-* Owncloud:
+* Owncloud
   * status.php outputs: {"installed":"true","version":"5.0.6","versionstring":"5.0.5","edition":""}
-
+* Piwigo
+  * Not installed if local/config/database.inc.php is missing.
 
 Thanks to
 ---------
