@@ -45,10 +45,8 @@ Group-Office: CVE-2012-4239
 Habari: HTB22731, HTB22732, HTB22733
 Hotel Booking Portal <http://sourceforge.net/projects/hbportal/>: CVE-2012-1672 SQL Injection
 IceBB: HTB22686, HTB22687, HTB22688
-ImpressPages CMS: NGS00109
 JAMWiki: 2010-5054 0.8.4 osvdb/63564
 JAMWiki: http://osvdb.org/show/osvdb/80795
-Jara: CVE-2011-4094, CVE-2011-4095
 Jcow CMS: RCE CVE-2011-3203
 Jcow CMS: XSS CVE-2011-3202
 Kajian Website CMS: CVE-2011-5111
