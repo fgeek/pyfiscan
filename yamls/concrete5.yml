@@ -1,0 +1,13 @@
+# URL: http://www.concrete5.org/developers/downloads/
+# CVE-2012-5181
+# CVE-2013-XXXX http://osvdb.org/94200 latest version affected
+# CVE-2013-XXXX http://osvdb.org/94199
+# CVE-2013-XXXX http://osvdb.org/94201
+concrete5:
+  1:
+    location: ['/concrete/config/version.php']
+    secure_version: '5.6.1.3'
+    regexp: ['\$APP_VERSION.*?(?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
