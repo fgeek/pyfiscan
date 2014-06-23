@@ -128,12 +128,10 @@ WonderCMS: HTB22759
 XOOPS: http://osvdb.org/show/osvdb/71228 SA43805 # No CVE. Request was done in here, but not answered: http://seclists.org/oss-sec/2011/q1/552
 XRay CMS: CVE-2012-1026 http://osvdb.org/79000
 Yet Another CMS <http://yetanothercms.codeplex.com/>: SSCHADV2011-031
-ZeusCMS: CVE-2010-0680, CVE-2010-0681
 Zikula CMS: CVE-2011-0535
 awstats CVE-2012-4547
 bbPress: CVE-2011-1150, HTB22904
 bloofoxCMS: NS-12-015
-chillyCMS: CVE-2010-4894, CVE-2010-4895
 cmslite: CVE-2010-2095, CVE-2010-2096
 e-ticketing <http://sourceforge.net/projects/e-ticketing/>: CVE-2012-1673 SQL Injection
 e107 Plugins - Filemanager Arbitrary File Upload Vulnerability http://cxsecurity.com/issue/WLB-2012060242
@@ -154,8 +152,6 @@ phpPaleo <http://sourceforge.net/projects/phppaleo/>: CVE-2012-1671 LFI
 phpVideoPro <http://sourceforge.net/projects/phpvideopro/>: SSCHADV2011-041 XSS
 phptax http://seclists.org/bugtraq/2012/Oct/13
 ribiq CMS <http://tribiq.com/>: CVE-2011-2727/HTB22857
-snipegallery: CVE-2010-2126
-starCMS CVE-2012-4998
 waraxe-2013-SA#097 PHP-Fusion
 winn-guestbook: CVE-2011-5026 http://osvdb.org/78070 SA47391
 x3cms <http://www.x3cms.net/> SA46748 INFOSERVE-ADV2011-04 #TODO: No CVE
