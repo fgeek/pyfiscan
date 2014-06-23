@@ -114,11 +114,7 @@ Smarty3: CVE-2012-4277, CVE-2011-1028
 Sniggabo CMS: CVE-2010-1072
 SphereCMS: CVE-2010-1078
 Squiz CMS: NGS00330
-Subrion CMS: CVE-2011-5211, CVE-2011-5212, CVE-2012-5452, CVE-2012-4771, CVE-2012-4772, CVE-2012-4773
-SugarCRM: CVE-2012-0694
 Support Incident Tracker http://sitracker.org/: CVE-2011-4337
-SweetRice CMS <http://www.basic-cms.org/>: CVE-2009-4224, CVE-2011-3804, HTB22668
-SyndeoCMS: HTB22900, HTB22901, HTB22902
 TCExam Edit: CVE-2012-4237, CVE-2012-4238
 TaskFreak NS-12-011
 Timesheet Next Gen <https://sourceforge.net/projects/tsheetx/>: http://seclists.org/bugtraq/2012/Mar/10 http://osvdb.org/79804 SA48239
@@ -131,12 +127,7 @@ Uploadify: execute arbitrary PHP code http://osvdb.org/show/osvdb/62653
 Uploadify: waraxe-2012-SA#083 http://osvdb.org/80969,80970
 UseBB: CVE-2011-3611, CVE-2011-3612, HTB22913, HTB22914
 Viscacha <http://www.viscacha.org>: HTB22919, HTB22920, HTB22921 (sqli)
-WebCalendar: CVE-2012-1495 http://osvdb.org/81329
-WebCalendar: CVE-2012-1496 http://osvdb.org/81330
-WebCalendar: XSS CVE-2012-0846 http://osvdb.org/79674
 WebJaxe <http://media4.obspm.fr/outils/webjaxe/en/>: HTB22927
-WebMatter CMS: http://osvdb.org/80791
-WebMatter CMS: http://osvdb.org/80792
 Webfolio CMS CVE-2012-1899
 WebsiteBaker <http://www.websitebaker2.org/en/home.php>: HTB22928, HTB22929, CVE-2011-2934 http://osvdb.org/76618, CVE-2011-2933 http://osvdb.org/76619
 WebsiteBaker: CVE-2011-4322 http://www.websitebaker2.org/posts/security-vulnerability-backup-module-in-wb-core-13.php
