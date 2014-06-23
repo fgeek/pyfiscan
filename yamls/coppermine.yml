@@ -1,6 +1,4 @@
 # URL: http://coppermine-gallery.net/
-# sql/basic.sql:##  Coppermine version: 1.5.22
-# Newest version: 1.5.24
 # NOT-FOR-US: HTB22836 path disclosure
 # CVE-2011-2476 1.5.12  http://osvdb.org/73129 http://www.openwall.com/lists/oss-security/2011/06/08/2
 # CVE-2012-1613 1.5.20  http://osvdb.org/80731 waraxe-2012-SA#i081
