@@ -24,47 +24,47 @@ Windows is not currently supported.
 Detects following software
 --------------------------
 
-* Bugzilla: CVE-2014-1517
-* CMSMS: CVE-2014-2245 http://osvdb.org/103854 http://www.cmsmadesimple.org/2014/02/Announcing-CMSMS-1-11-10-Pinzon/
-* Collabtive: CVE-2013-6872 http://osvdb.org/102123
-* Coppermine: [Vendor security advisory](http://forum.coppermine-gallery.net/index.php/topic,74682.0.html) CVE-2012-1613, CVE-2012-1614, http://osvdb.org/80731 http://osvdb.org/80732 http://osvdb.org/80733 http://osvdb.org/80734 http://osvdb.org/80735
-* Cotonti: CVE-2013-4789 http://osvdb.org/95842 http://www.cotonti.com/news/announce/siena_0914_released
-* Dolibarr: CVE-2013-2091 CVE-2013-2092 CVE-2013-2093
-* Dotclear: CVE-2014-3781, CVE-2014-3782, CVE-2014-3783
-* Drupal 6/7: [Drupal security advisory SA-CORE-2014-002](http://drupal.org/SA-CORE-2014-002)
-* Foswiki: CVE-2013-1666 [OSVDB 90345](http://osvdb.org/90345) [Foswiki security advisory](http://foswiki.org/Support/SecurityAlert-CVE-2013-1666)
-* Gallery: CVE-2013-2240, CVE-2013-2241, CVE-2012-2405
-* Jamroom: http://osvdb.org/79425
+* Bugzilla
+* CMSMS
+* Collabtive
+* Coppermine
+* Cotonti
+* Dolibarr
+* Dotclear
+* Drupal 6/7
+* Foswiki
+* Gallery
+* Jamroom
 * Joomla 1.5: 1.5 is end-of-life since 2012-04-30
 * Joomla 1.6: 1.6 is end-of-life since [2011-08-19](http://www.joomla.org/announcements/release-news/5380-joomla-170-released.html). 1.6.x should be upgraded to 1.6.6 before moving to 1.7.x
 * Joomla 1.7: 1.7 is end-of-life since [2012-02-24](http://www.joomla.org/announcements/release-news/5411-joomla-175-released.html)
-* Joomla 2.5: CVE-2013-5576 [OSVDB:95933](http://osvdb.org/95933) [Security advisory](http://developer.joomla.org/security/563-20130801-core-unauthorised-uploads.html)
-* Joomla 3: CVE-2013-5576 [OSVDB:95933](http://osvdb.org/95933) [Security advisory](http://developer.joomla.org/security/563-20130801-core-unauthorised-uploads.html)
-* Magnolia: CVE-2013-4621
-* Mahara: CVE-2013-4429 http://osvdb.org/98185, CVE-2013-4430 http://osvdb.org/98181, CVE-2013-4431 http://osvdb.org/98184, CVE-2013-4432 http://osvdb.org/98182
-* MantisBT: [CVE-2014-2238](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2238) http://osvdb.org/103842
+* Joomla 2.5
+* Joomla 3
+* Magnolia
+* Mahara
+* MantisBT
 * MediaWiki
-* Microweber: [CVE-2013-5984](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5984) [OSVDB:97809](http://osvdb.org/97809) [HTB23175](https://www.htbridge.com/advisory/HTB23175)
-* MoinMoin: CVE-2011-1058 [OSVDB 71025](http://osvdb.org/71025)
-* MyBB: http://osvdb.org/92683 http://osvdb.org/92684 http://osvdb.org/92686 http://osvdb.org/92687 http://osvdb.org/92688 http://osvdb.org/92689
+* Microweber
+* MoinMoin
+* MyBB
 * Piwigo
-* Roundcube: http://osvdb.org/105486
-* SMF 1 and 2: CVE-2013-7234, CVE-2013-7235, CVE-2013-7236 [SMF advisory](http://www.simplemachines.org/community/index.php?topic=512964.0)
-* Serendipity: CVE-2013-5670 [Serendipity release advisory](http://blog.s9y.org/archives/250-Serendipity-1.7.3-released.html)
-* TestLink: CVE-2012-2275 http://osvdb.org/84712 http://osvdb.org/84711 http://osvdb.org/84713
-* TikiWiki: CVE-2012-0911 OSVDB:83534, CVE-2012-3996 [OSVDB 83533](http://osvdb.org/83533)
-* TinyTinyRSS: [OSVDB:70934](http://osvdb.org/70934) http://secunia.com/advisories/43424/
-* Trac: CVE-2010-5108 [OSVDB 63317](http://osvdb.org/63317)
-* WikkaWiki: CVE-2013-5586 [SA54790](http://secunia.com/advisories/54790/)
-* WordPress: CVE-2013-4338, CVE-2013-4339, CVE-2013-4340
-* Zenphoto: http://www.zenphoto.org/news/zenphoto-1.4.5.9
-* Zikula: CVE-2013-6168 http://osvdb.org/98671 https://www.htbridge.com/advisory/HTB23178
-* Zimbra: CVE-2013-7091 http://osvdb.org/100747
-* e107: CVE-2012-6434 [OSVDB 88908](http://osvdb.org/88908)
-* osDate: http://osvdb.org/63005 http://osvdb.org/63006
+* Roundcube
+* SMF 1 and 2
+* Serendipity
+* TestLink
+* TikiWiki
+* TinyTinyRSS
+* Trac
+* WikkaWiki
+* WordPress
+* Zenphoto
+* Zikula
+* Zimbra
+* e107
+* osDate
 * ownCloud 5 and 6
-* phpBB3: CVE-2011-0544 SA42343
-* phpMyAdmin: CVE-2013-5029 http://osvdb.org/95999
+* phpBB3
+* phpMyAdmin
 
 Installation
 ------------
