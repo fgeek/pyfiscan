@@ -37,20 +37,12 @@ EnanoCMS: NS-11-002
 Entry Level CMS (EL CMS): CVE-2010-1075, CVE-2010-1076
 FlexCMS: CVE-2012-1901
 FluxBB: CVE-2011-3621 http://fluxbb.org/forums/viewtopic.php?id=5751 fixed in 1.4.7
-Fork CMS: CVE-2012-1188/HTB23075
-Fork CMS: CVE-2012-1207, CVE-2012-1208
-Fork CMS: CVE-2012-5164
 Freelancer calendar <http://sourceforge.net/projects/freelancercal/>: http://osvdb.org/77244,77245,77246,77247,77248 SA46970 TODO: No CVE
 Frog CMS <http://www.madebyfrog.com/>: HTB22682, HTB22685, HTB22684, HTB22683
 FusionForge: CVE-2013-1423
 Grafik CMS: CVE-2010-2615
 Group-Office: CVE-2012-4239
-HTML-EDIT CMS: CVE-2010-4609
-HTML-EDIT CMS: CVE-2010-4610
-HTML-EDIT CMS: HTB22734, HTB22735
 Habari: HTB22731, HTB22732, HTB22733
-Havalite CMS: http://osvdb.org/80768,80769,80770 http://osvdb.org/81323,81324,81355
-Horde: http://osvdb.org/78474-78477
 Hotel Booking Portal <http://sourceforge.net/projects/hbportal/>: CVE-2012-1672 SQL Injection
 IceBB: HTB22686, HTB22687, HTB22688
 ImpressPages CMS: NGS00109
