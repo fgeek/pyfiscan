@@ -3,7 +3,6 @@ Temporary TODO-list. Please do not refer here.
 Drupal: false-negative with 6.22
 Roundcube: Version 0.8-beta not yet detected
 http://ceriksen.com/category/advisories/
-phpgroupware/chora/inc/version.php <?php define('CHORA_VERSION', '0.4.2-cvs') ?>
 1024 CMS: CVE-2010-1093
 11in1 <http://www.11in1.org/>: HTB23071
 AR Web Content Manager (AWCM): CVE-2010-1066
@@ -163,24 +162,12 @@ modxcms: CVE-2010-1426
 nanoblogger: CVE-2005-2039/SA15754
 odCMS: CVE-2010-2344, CVE-2010-2345
 phAlbum: http://cxsecurity.com/issue/WLB-2012050155
-phpCollab: HTB22916, HTB22917, HTB22918
-phpLDAPadmin: CVE-2009-4427, CVE-2011-4074, CVE-2011-4075, CVE-2011-4082, CVE-2012-0834
-phpMyDirectory CVE-2012-5288
-phpMyVisites http://cxsecurity.com/issue/WLB-2012070022
-phpMyVisites: CVE-2007-0891
 phpPaleo <http://sourceforge.net/projects/phppaleo/>: CVE-2012-1671 LFI
-phpPgAdmin: CVE-2012-1600 XSS http://osvdb.org/80870
 phpVideoPro <http://sourceforge.net/projects/phpvideopro/>: SSCHADV2011-041 XSS
-phplist: CSRF CVE-2011-0748
-phplist: CVE-2012-2740 http://www.exploit-db.com/exploits/18639/
-phplist: http://www.phplist.com/?lid=567 XSS CVE-2012-2741
 phptax http://seclists.org/bugtraq/2012/Oct/13
 ribiq CMS <http://tribiq.com/>: CVE-2011-2727/HTB22857
 snipegallery: CVE-2010-2126
 starCMS CVE-2012-4998
-tinyguestbook CVE-2011-5199
-tinyguestbook CVE-2011-5201
-vBilling for FreeSWITCH http://seclists.org/bugtraq/2013/Apr/147
 waraxe-2013-SA#097 PHP-Fusion
 winn-guestbook: CVE-2011-5026 http://osvdb.org/78070 SA47391
 x3cms <http://www.x3cms.net/> SA46748 INFOSERVE-ADV2011-04 #TODO: No CVE
