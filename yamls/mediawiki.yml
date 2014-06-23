@@ -1,4 +1,8 @@
 # http://www.mediawiki.org/wiki/Version_lifecycle
+# 2017-05 end-of-life for 1.23.0 http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-June/000152.html
+# 2015-05 end-of-life for 1.19 http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-June/000153.html
+# 2014-06 end-of-life for 1.21 http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-June/000153.html TODO
+# 
 # CVE-2013-4304 extension. not going to add yet. maybe in future
 # CVE-2013-4305 extension. not going to add yet. maybe in future
 # CVE-2013-4306 extension. not going to add yet. maybe in future
@@ -57,26 +61,27 @@
 # CVE-2014-2244 1.22.3/1.21.6/1.19.12 https://gerrit.wikimedia.org/r/#/q/Idf985e4e69c2f11778a8a90503914678441cb3fb,n,z
 # CVE-2014-2665 1.22.5/1.21.8/1.19.14 http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-March/000145.html
 # CVE-2014-2853 1.22.6/1.21.9 http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-April/000149.html
+# CVE-2014-3966 1.22.7/1.21.10/1.19.16 http://osvdb.org/107528 http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-May/000151.html
 MediaWiki 1.22:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.22.6'
+    secure_version: '1.22.7'
     regexp: ['\$wgVersion.*?(?P<version>1\.22\.[0-9.]{1,})']
-    cve: 'CVE-2014-2853 http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-April/000149.html'
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3966 http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-May/000151.html http://osvdb.org/107528'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.21:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.21.9'
+    secure_version: '1.22.7'
     regexp: ['\$wgVersion.*?(?P<version>1\.21\.[0-9.]{1,})']
-    cve: 'CVE-2014-2853 http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-April/000149.html'
+    cve: 'MediaWiki 1.21 is end of life.'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.20:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.22.5'
+    secure_version: '1.22.7'
     regexp: ['\$wgVersion.*?(?P<version>1\.20\.[0-9.]{1,})']
     cve: 'MediaWiki 1.20.x is end of life.'
     fingerprint: detect_general
@@ -84,15 +89,15 @@ MediaWiki 1.20:
 MediaWiki 1.19:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.19.14'
+    secure_version: '1.19.16'
     regexp: ['\$wgVersion.*?(?P<version>1\.19\.[0-9.]{1,})']
-    cve: 'CVE-2014-2665 http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-March/000145.html'
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3966 http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-May/000151.html http://osvdb.org/107528'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.18:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.22.5'
+    secure_version: '1.22.7'
     regexp: ['\$wgVersion.*?(?P<version>1\.1[0-8]\.[0-9.]{1,})']
     cve: 'MediaWiki 1.18.x is end of life.'
     fingerprint: detect_general
