@@ -21,9 +21,7 @@ CVE-2012-3477 NeoInvoice Blind SQL
 CakePHP CVE-2012-4399 http://osvdb.org/84042
 Chyrp: CVE-2012-1001 HTB23073
 Ciamos CMS <http://sourceforge.net/projects/ciamos/>: CVE-2009-4156
-ClipBucket NS-12-013
 CompactCMS http://www.compactcms.nl/: HTB22697, HTB22695, HTB22696
-Concrete CMS: 5.4.1.1 XSS CVE-2011-3182
 CosCms HTB23145
 Cunity http://cxsecurity.com/issue/WLB-2013030206
 CuteSITE CMS: CVE-2010-5024, CVE-2010-5025
