@@ -1,15 +1,8 @@
 Temporary TODO-list. Please do not refer here.
-
-http://ceriksen.com/category/advisories/
-1024 CMS: CVE-2010-1093
 11in1 <http://www.11in1.org/>: HTB23071
 AR Web Content Manager (AWCM): CVE-2010-1066
-Acidcat CMS: CVE-2010-0976, CVE-2010-0984
-Advanced Electron Forums: CVE-2011-3582
-Allinta CMS: CVE-2010-4922
 Anchor CMS <http://www.anchorcms.com/>: http://osvdb.org/81293,81294,81295,81296,81297,81298
 Baby Gekko CMS: http://packetstormsecurity.org/files/113045/gekkocms-disclose.txt
-Banana Dance CMS <http://www.doyoubananadance.com>: NS-11-010
 Batavi: CVE-2012-0069
 Beehive Forum 101 <http://www.beehiveforum.co.uk/>: SSCHADV2011-042 #TODO: No CVE
 Bitweaver <http://www.bitweaver.org>: SSCHADV2011-021 CVE?
@@ -42,8 +35,6 @@ Hotel Booking Portal <http://sourceforge.net/projects/hbportal/>: CVE-2012-1672 
 IceBB: HTB22686, HTB22687, HTB22688
 JAMWiki: 2010-5054 0.8.4 osvdb/63564
 JAMWiki: http://osvdb.org/show/osvdb/80795
-Jcow CMS: RCE CVE-2011-3203
-Jcow CMS: XSS CVE-2011-3202
 Kajian Website CMS: CVE-2011-5111
 LetoDMS (old: MyDMS): CVE-2010-2006, CVE-2010-2007, CVE-2004-1732, CVE-2004-1733, SA38237, SA12340
 LightNEasy <http://www.lightneasy.org/>: SSCHADV2011-013
