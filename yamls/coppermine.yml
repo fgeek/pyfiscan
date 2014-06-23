@@ -3,11 +3,13 @@
 # CVE-2011-2476 1.5.12  http://osvdb.org/73129 http://www.openwall.com/lists/oss-security/2011/06/08/2
 # CVE-2012-1613 1.5.20  http://osvdb.org/80731 waraxe-2012-SA#i081
 # CVE-2012-1614 1.5.20  http://osvdb.org/80732 http://osvdb.org/80733 http://osvdb.org/80734 http://osvdb.org/80735 waraxe-2012-SA#081
+# CVE-2014-XXXX 1.5.26  http://osvdb.org/104357 http://osvdb.org/104358
+# CVE-2012-XXXX 1.5.28  http://forum.coppermine-gallery.net/index.php/topic,77376.0.html http://sourceforge.net/p/coppermine/code/8674/
 Coppermine:
   1:
     location: ['/sql/basic.sql']
-    secure_version: '1.5.20'
+    secure_version: '1.5.28'
     regexp: ['\#\#  Coppermine version.*?(?P<version>[0-9.]+)']
-    cve: 'CVE-2012-1613, CVE-2012-1614, http://osvdb.org/80731 http://osvdb.org/80732 http://osvdb.org/80733 http://osvdb.org/80734 http://osvdb.org/80735 http://forum.coppermine-gallery.net/index.php/topic,74682.0.html'
+    cve: 'http://forum.coppermine-gallery.net/index.php/topic,77376.0.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
