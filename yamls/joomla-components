@@ -1,5 +1,6 @@
 # http://docs.joomla.org/Vulnerable_Extensions_List
 # NFU: http://vel.joomla.org/vel-blog/623-k2-2-6-6.html
+# CVE-2008-1559 http://osvdb.org/43941
 # CVE-2008-XXXX com_football    http://osvdb.org/94703
 # CVE-2010-0753 com_sqlreport       http://osvdb.org/62534
 # CVE-2010-1602 http://osvdb.org/64247
@@ -75,6 +76,8 @@
 # CVE-XXXX-XXXX plugin_googlemap http://osvdb.org/95776
 # CVE-XXXX-XXXX qcontacts                                   http://docs.joomla.org/Vulnerable_Extensions_List#QContacts_1.0.6 http://vel.joomla.org/vel-blog/57-qcontacts-1-0-6.html
 # CVE-XXXX-XXXX unite-horizontal-carousel                   http://vel.joomla.org/resolved/479-unite-horizontal-carousel.html
+# CVE-2012-XXXX nice-ajax-poll http://osvdb.org/84683
+# CVE-2012-XXXX joomgalaxy http://osvdb.org/84446 http://osvdb.org/84445
 # http://vel.joomla.org/vel-blog/1059-extplorer-all.html
 # http://vel.joomla.org/vel-blog/51-com_advert.html
 # http://vel.joomla.org/vel-blog/56-dshop.html
@@ -107,3 +110,10 @@ http://vel.joomla.org/vel-blog/1148-jj-shoutbox-1-2-6.html
 http://vel.joomla.org/vel-blog/1149-google-maps-plugin-for-joomla-3-1-and-2-20.html
 http://vel.joomla.org/vel-blog/50-quickl-form.html
 http://vel.joomla.org/resolved/1332-k2-content-extension-2-6-8.html
+http://vel.joomla.org/vel-blog/1197-plg-highlight-button-1-5-and-previious-sqli.html
+http://vel.joomla.org/vel-blog/1196-plg-highlight-content-1-5-and-previous.html
+http://vel.joomla.org/vel-blog/41-ownbiblio-1-5-3.html
+http://vel.joomla.org/vel-blog/45-bearleague.html
+http://vel.joomla.org/vel-blog/50-quickl-form.html
+http://vel.joomla.org/resolved/1191-activehelper-livehelp-3-2-0-sqli.html http://www.activehelper.com/kunena/7-news-announcements-a-tutorials/11846-livehelp-server-ver-3-3-0-for-joomla-1-5-2-5-3
+http://vel.joomla.org/resolved/186-activehelper-livehelp.html http://www.activehelper.com/kunena/7-news-announcements-a-tutorials/11846-livehelp-server-ver-3-3-0-for-joomla-1-5-2-5-3
