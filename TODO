@@ -12,7 +12,6 @@ CVE-2012-3477 NeoInvoice Blind SQL
 CakePHP CVE-2012-4399 http://osvdb.org/84042
 Chyrp: CVE-2012-1001 HTB23073
 Ciamos CMS <http://sourceforge.net/projects/ciamos/>: CVE-2009-4156
-CompactCMS http://www.compactcms.nl/: HTB22697, HTB22695, HTB22696
 CosCms HTB23145
 Cunity http://cxsecurity.com/issue/WLB-2013030206
 CuteSITE CMS: CVE-2010-5024, CVE-2010-5025
@@ -50,10 +49,6 @@ Netpet CMS: CVE-2009-4723
 OBM: HTB23060
 ONECMS: CVE-2010-0952
 OSCommerce: CVE-2012-1792
-One Click Orgs: http://osvdb.org/77602, http://osvdb.org/77545, http://osvdb.org/77547, http://osvdb.org/77548, http://osvdb.org/77549, http://osvdb.org/77546, http://osvdb.org/77569
-OpenKM: COMPASS-2012-001 http://osvdb.org/78105
-OpenKM: COMPASS-2012-002 http://osvdb.org/78106
-OpenKM: CVE-2012-2316 COMPASS-2012-002 http://osvdb.org/78106 SA47420
 OpenX: CVE-2012-4989, CVE-2012-4990, CVE-2012-4990
 PBBoard: CVE-2012-1216
 PHP Address Book <http://sourceforge.net/projects/php-addressbook/>: SSCHADV2012-013 CVE-2012-2903
