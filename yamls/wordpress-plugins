@@ -125,12 +125,14 @@
 # CVE-2012-XXXX uploadify-integration               http://osvdb.org/81093 http://www.waraxe.us/advisory-85.html
 # CVE-2012-XXXX uploadify-integration               http://osvdb.org/81094
 # CVE-2012-XXXX uploadify-integration               http://osvdb.org/81095
+# CVE-2012-XXXX user-meta http://osvdb.org/82902
 # CVE-2012-XXXX vitamin 1.1 http://osvdb.org/84463 http://osvdb.org/84464
 # CVE-2012-XXXX wp-e-commerce       3.8.9.1 http://osvdb.org/88231
 # CVE-2012-XXXX wp-e-commerce       3.8.9.1 http://osvdb.org/88232
 # CVE-2012-XXXX wp-e-commerce   3.8.9.1     http://osvdb.org/88231
 # CVE-2012-XXXX wp-e-commerce   3.8.9.1     http://osvdb.org/88232
 # CVE-2012-XXXX wp-effective-lead-management    http://osvdb.org/84462
+# CVE-2012-XXXX wp-gpx-maps CVE requested http://osvdb.org/82900
 # CVE-2012-XXXX wp-imagezoom                        http://osvdb.org/83015 SA49612 !
 # CVE-2012-XXXX wp-imagezoom                        http://osvdb.org/87870
 # CVE-2012-XXXX wp-symposium                http://osvdb.org/83696
@@ -326,8 +328,6 @@
 # CVE-XXXX-XXXX wp-predict                          http://osvdb.org/83697
 # CVE-XXXX-XXXX wp-video-commando                   http://cxsecurity.com/issue/WLB-2013030207
 # CVE-XXXX-XXXX wptouch http://www.securityfocus.com/bid/48348
-# CVE-2012-XXXX wp-gpx-maps CVE requested http://osvdb.org/82900
-# CVE-2012-XXXX user-meta http://osvdb.org/82902
 # HTB22839, HTB22840, HTB22842, HTB22843, HTB22844, HTB22841, HTB22845,
 # HTB22858, HTB22859, HTB22860, HTB22848, HTB22849, HTB22861, HTB22838,
 # HTB22938, HTB22961, HTB22960, HTB22951, HTB22875, HTB22873, HTB22867,
