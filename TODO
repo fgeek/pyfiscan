@@ -2,15 +2,11 @@ Temporary TODO-list. Please do not refer here.
 CakePHP CVE-2012-4399 http://osvdb.org/84042
 CuteSITE CMS: CVE-2010-5024, CVE-2010-5025
 DotProject NS-12-014, HTB23124
-Freelancer calendar <http://sourceforge.net/projects/freelancercal/>: http://osvdb.org/77244,77245,77246,77247,77248 SA46970 TODO: No CVE
 Group-Office: CVE-2012-4239
-JAMWiki: 2010-5054 0.8.4 osvdb/63564
-JAMWiki: http://osvdb.org/show/osvdb/80795
 Kajian Website CMS: CVE-2011-5111
 LetoDMS (old: MyDMS): CVE-2010-2006, CVE-2010-2007, CVE-2004-1732, CVE-2004-1733, SA38237, SA12340
 LightNEasy <http://www.lightneasy.org/>: SSCHADV2011-013
 LotusCMS: HTB22883, HTB22884 (fixed in: 3.0.5), HTB22885, HTB22886, HTB22887, HTB22888
-Meditate: osvdb/77491 SSCHADV2011-039
 MemHT Portal <http://www.memht.com/>: HTB22663
 MemHt: HTB22664, HTB22662
 Merethis Centreon <http://www.merethis.com and http://www.centreon.com>: TWSL2011-017 https://www.trustwave.com/spiderlabs/advisories/TWSL2011-017.txt
@@ -21,15 +17,6 @@ Netpet CMS: CVE-2009-4723
 OBM: HTB23060
 ONECMS: CVE-2010-0952
 OpenX: CVE-2012-4989, CVE-2012-4990, CVE-2012-4990
-PHP Address Book <http://sourceforge.net/projects/php-addressbook/>: SSCHADV2012-013 CVE-2012-2903
-PHP Booking Calendar <https://sourceforge.net/projects/bookingcalendar/>: CVE-2011-5045
-PHP Inventory <http://www.phpwares.com/>: CVE-2009-4595
-PHP Inventory <http://www.phpwares.com/>: CVE-2009-4596
-PHP Inventory <http://www.phpwares.com/>: CVE-2009-4597
-PHP-Nuke: CVE-2011-1480 http://osvdb.org/73335 SQLi
-PHP-Nuke: CVE-2011-1481 http://osvdb.org/72121
-PHP-SCMS: CVE-2007-5565 http://osvdb.org/39399
-PHP-SCMS: http://osvdb.org/77692 SA46766 TODO: No CVE
 Pandora FMS: CVE-2010-4278
 ParsCMS: CVE-2010-1054
 Pecio CMS <http://www.pecio-cms.com/>: CVE-2010-3204
@@ -70,9 +57,6 @@ UseBB: CVE-2011-3611, CVE-2011-3612, HTB22913, HTB22914
 Viscacha <http://www.viscacha.org>: HTB22919, HTB22920, HTB22921 (sqli)
 WebJaxe <http://media4.obspm.fr/outils/webjaxe/en/>: HTB22927
 Webfolio CMS CVE-2012-1899
-WebsiteBaker <http://www.websitebaker2.org/en/home.php>: HTB22928, HTB22929, CVE-2011-2934 http://osvdb.org/76618, CVE-2011-2933 http://osvdb.org/76619
-WebsiteBaker: CVE-2011-4322 http://www.websitebaker2.org/posts/security-vulnerability-backup-module-in-wb-core-13.php
-WebsiteBaker: SSCHADV2012-003 SA48083 http://osvdb.org/78834,78835
 White Label CMS: CVE-2012-5388
 Winn Guestbook <http://code.google.com/p/winn-guestbook/>: CVE-2011-5026
 Without CVE: "Schurtz, Stefan" <S.Schurtz@infoserve.de> INFOSERVE-ADV2011-04.txt INFOSERVE-ADV2011-11.txt INFOSERVE-ADV2011-12.txt INFOSERVE-ADV2011-02.txt
@@ -82,7 +66,6 @@ XRay CMS: CVE-2012-1026 http://osvdb.org/79000
 Yet Another CMS <http://yetanothercms.codeplex.com/>: SSCHADV2011-031
 Zikula CMS: CVE-2011-0535
 awstats CVE-2012-4547
-bbPress: CVE-2011-1150, HTB22904
 bloofoxCMS: NS-12-015
 cmslite: CVE-2010-2095, CVE-2010-2096
 e-ticketing <http://sourceforge.net/projects/e-ticketing/>: CVE-2012-1673 SQL Injection
