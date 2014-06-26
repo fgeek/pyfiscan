@@ -1,4 +1,5 @@
 # URL: http://www.opencart.com/
+# Version: admin/index.php:define('VERSION', '1.5.6.4');
 # CVE-2013-1891
 # http://blog.visionsource.org/2010/01/28/opencart-csrf-vulnerability/
 # http://forum.opencart.com/viewtopic.php?t=5792

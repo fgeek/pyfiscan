@@ -1,37 +1,9 @@
 Temporary TODO-list. Please do not refer here.
-11in1 <http://www.11in1.org/>: HTB23071
-AR Web Content Manager (AWCM): CVE-2010-1066
-Anchor CMS <http://www.anchorcms.com/>: http://osvdb.org/81293,81294,81295,81296,81297,81298
-Baby Gekko CMS: http://packetstormsecurity.org/files/113045/gekkocms-disclose.txt
-Batavi: CVE-2012-0069
-Beehive Forum 101 <http://www.beehiveforum.co.uk/>: SSCHADV2011-042 #TODO: No CVE
-Bitweaver <http://www.bitweaver.org>: SSCHADV2011-021 CVE?
-BlueCMS: CVE-2010-4897
-CMSMini NS-12-012
-CVE-2012-3477 NeoInvoice Blind SQL
 CakePHP CVE-2012-4399 http://osvdb.org/84042
-Chyrp: CVE-2012-1001 HTB23073
-Ciamos CMS <http://sourceforge.net/projects/ciamos/>: CVE-2009-4156
-CosCms HTB23145
-Cunity http://cxsecurity.com/issue/WLB-2013030206
 CuteSITE CMS: CVE-2010-5024, CVE-2010-5025
-DiY-CMS: CVE-2010-3206
-Docmint CMS: CVE-2010-0319
-Dolphin <http://www.boonex.com/dolphin>: http://seclists.org/bugtraq/2011/Oct/113 http://www.boonex.com/n/dolphin-7-0-8-beta-1
 DotProject NS-12-014, HTB23124
-Elxis CMS: CVE-2011-4918 http://osvdb.org/77563,77564
-EnanoCMS: NS-11-002
-Entry Level CMS (EL CMS): CVE-2010-1075, CVE-2010-1076
-FlexCMS: CVE-2012-1901
-FluxBB: CVE-2011-3621 http://fluxbb.org/forums/viewtopic.php?id=5751 fixed in 1.4.7
 Freelancer calendar <http://sourceforge.net/projects/freelancercal/>: http://osvdb.org/77244,77245,77246,77247,77248 SA46970 TODO: No CVE
-Frog CMS <http://www.madebyfrog.com/>: HTB22682, HTB22685, HTB22684, HTB22683
-FusionForge: CVE-2013-1423
-Grafik CMS: CVE-2010-2615
 Group-Office: CVE-2012-4239
-Habari: HTB22731, HTB22732, HTB22733
-Hotel Booking Portal <http://sourceforge.net/projects/hbportal/>: CVE-2012-1672 SQL Injection
-IceBB: HTB22686, HTB22687, HTB22688
 JAMWiki: 2010-5054 0.8.4 osvdb/63564
 JAMWiki: http://osvdb.org/show/osvdb/80795
 Kajian Website CMS: CVE-2011-5111
@@ -48,9 +20,7 @@ Nakid CMS: CVE-2010-2358
 Netpet CMS: CVE-2009-4723
 OBM: HTB23060
 ONECMS: CVE-2010-0952
-OSCommerce: CVE-2012-1792
 OpenX: CVE-2012-4989, CVE-2012-4990, CVE-2012-4990
-PBBoard: CVE-2012-1216
 PHP Address Book <http://sourceforge.net/projects/php-addressbook/>: SSCHADV2012-013 CVE-2012-2903
 PHP Booking Calendar <https://sourceforge.net/projects/bookingcalendar/>: CVE-2011-5045
 PHP Inventory <http://www.phpwares.com/>: CVE-2009-4595
@@ -116,8 +86,6 @@ bbPress: CVE-2011-1150, HTB22904
 bloofoxCMS: NS-12-015
 cmslite: CVE-2010-2095, CVE-2010-2096
 e-ticketing <http://sourceforge.net/projects/e-ticketing/>: CVE-2012-1673 SQL Injection
-e107 Plugins - Filemanager Arbitrary File Upload Vulnerability http://cxsecurity.com/issue/WLB-2012060242
-e107 jbShop: CVE-2011-5186
 eXtplorer: CVE-2012-3362
 eggBlog http://cxsecurity.com/issue/WLB-2013050005
 epesi BIM: HTB23061
