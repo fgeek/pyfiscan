@@ -105,6 +105,7 @@
 # CVE-2012-6628
 # CVE-2012-6629
 # CVE-2012-6630
+# CVE-2012-6649 wp-gpx-maps http://osvdb.org/82900
 # CVE-2012-XXXX crayon-syntax-highlighter http://ceriksen.com/2012/10/15/wordpress-crayon-syntax-highlighter-remote-file
 # CVE-2012-XXXX deep-blue                           http://osvdb.org/83014 SA49611 !
 # CVE-2012-XXXX email-newsletter            http://osvdb.org/82812
