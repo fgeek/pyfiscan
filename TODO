@@ -63,14 +63,10 @@ Without CVE: "Schurtz, Stefan" <S.Schurtz@infoserve.de> INFOSERVE-ADV2011-04.txt
 WonderCMS: HTB22759
 XOOPS: http://osvdb.org/show/osvdb/71228 SA43805 # No CVE. Request was done in here, but not answered: http://seclists.org/oss-sec/2011/q1/552
 XRay CMS: CVE-2012-1026 http://osvdb.org/79000
-Yet Another CMS <http://yetanothercms.codeplex.com/>: SSCHADV2011-031
-Zikula CMS: CVE-2011-0535
 awstats CVE-2012-4547
 bloofoxCMS: NS-12-015
-cmslite: CVE-2010-2095, CVE-2010-2096
 e-ticketing <http://sourceforge.net/projects/e-ticketing/>: CVE-2012-1673 SQL Injection
 eXtplorer: CVE-2012-3362
-eggBlog http://cxsecurity.com/issue/WLB-2013050005
 epesi BIM: HTB23061
 fckeditor: CVE-2009-2265, CVE-2009-2324, CVE-2007-5156, CVE-2007-3163, CVE-2006-2529, CVE-2006-0658, SA35712, SA27123, SA25719, SA20122, SA18767
 flogr <http://code.google.com/p/flogr/>: HTB23110
@@ -78,13 +74,9 @@ jCore: CVE-2012-4231, CVE-2012-4232
 jaxCMS: CVE-2010-1043
 klinza professional CMS: CVE-2009-4216
 modxcms: CVE-2010-1426
-nanoblogger: CVE-2005-2039/SA15754
-odCMS: CVE-2010-2344, CVE-2010-2345
 phAlbum: http://cxsecurity.com/issue/WLB-2012050155
 phpPaleo <http://sourceforge.net/projects/phppaleo/>: CVE-2012-1671 LFI
 phpVideoPro <http://sourceforge.net/projects/phpvideopro/>: SSCHADV2011-041 XSS
-phptax http://seclists.org/bugtraq/2012/Oct/13
-ribiq CMS <http://tribiq.com/>: CVE-2011-2727/HTB22857
+A46748 INFOSERVE-ADV2011-04
 waraxe-2013-SA#097 PHP-Fusion
 winn-guestbook: CVE-2011-5026 http://osvdb.org/78070 SA47391
-x3cms <http://www.x3cms.net/> SA46748 INFOSERVE-ADV2011-04 #TODO: No CVE

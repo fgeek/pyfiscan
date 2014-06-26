@@ -1,5 +1,5 @@
 # URL: http://zikula.org/
-# lib/Zikula/Core.php:    const VERSION_NUM = '1.3.6';
+# CVE-2011-0535 1.2.5 http://osvdb.org/70751
 # CVE-2013-6168 1.3.6 http://osvdb.org/98671 https://www.htbridge.com/advisory/HTB23178
 Zikula:
   1:
