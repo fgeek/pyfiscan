@@ -72,13 +72,13 @@
 # PMASA-2013-14 CVE-2013-5002   4.0.4.2/3.5.8.2 http://www.phpmyadmin.net/home_page/security/PMASA-2013-14.php
 # PMASA-2013-15 CVE-2013-5003   4.0.4.2/3.5.8.2 http://www.phpmyadmin.net/home_page/security/PMASA-2013-15.php
 # PMASA-2014-1  CVE-2014-1879   4.1.7   http://www.phpmyadmin.net/home_page/security/PMASA-2014-1.php
-# PMASA-2014-2
+# PMASA-2014-2  CVE-2014-4348   4.2.4   http://phpmyadmin.net/home_page/security/PMASA-2014-2.php
 # PMASA-2014-3  CVE-2014-4349   4.2.4/4.1.14.1 http://www.phpmyadmin.net/home_page/security/PMASA-2014-3.php
 phpMyAdmin:
   1:
     location: ['/libraries/Config.class.php']
     secure_version: '4.2.4'
     regexp: ['.*?PMA_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'CVE-2014-4349 http://www.phpmyadmin.net/home_page/security/PMASA-2014-3.php'
+    cve: 'CVE-2014-4349 http://www.phpmyadmin.net/home_page/security/PMASA-2014-3.php CVE-2014-4348 http://phpmyadmin.net/home_page/security/PMASA-2014-2.php'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
