@@ -1,4 +1,8 @@
 # After build -> eggs/Products.CMFPlone-4.1.6-py2.7.egg
+# CVE-2010-2422
+# CVE-2011-0720
+# CVE-2011-3587
+# CVE-2011-4462
 # CVE-2013-4188
 # CVE-2013-4189
 # CVE-2013-4190
@@ -12,3 +16,5 @@
 # CVE-2013-4198
 # CVE-2013-4199
 # CVE-2013-4200
+# http://secunia.com/advisories/product/9334/?task=advisories
+# http://securityreason.com/securityalert/8546

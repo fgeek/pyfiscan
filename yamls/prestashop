@@ -1,2 +1,3 @@
 # URL: http://www.prestashop.com/
 # CVE-2012-XXXX 1.5.2.0 http://osvdb.org/87011 http://davidsopas.com/labs/prestashop_xss.txt http://www.exploit-db.com/exploits/22430/
+# HTB23091, CVE-2012-5801, CVE-2012-5800, CVE-2012-5799
