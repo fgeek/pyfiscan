@@ -306,7 +306,8 @@
 # CVE-2014-3923
 # CVE-2014-3937
 # CVE-2014-3961 participants-database
-# CVE-2014-4163 feature-comments
+# CVE-2014-4030 jw-player-plugin-for-wordpress  http://osvdb.org/107846
+# CVE-2014-4163 feature-comments http://osvdb.org/107844
 # CVE-2014-XXXX simple-share-buttons-adder http://seclists.org/fulldisclosure/2014/Jun/138
 # CVE-XXXX-XXXX deans-fckeditor-with-pwwangs-code-plugin-for-wordpress  http://osvdb.org/80687 !
 # CVE-XXXX-XXXX devformatter http://osvdb.org/89474 http://osvdb.org/89475
