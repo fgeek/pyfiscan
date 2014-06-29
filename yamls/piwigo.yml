@@ -7,13 +7,13 @@
 # CVE-2013-1469
 # CVE-2013-XXXX ? http://osvdb.org/101408
 # CVE-2013-XXXX ? http://osvdb.org/101409
-# CVE-2014-XXXX 2.6.2 http://osvdb.org/103774 http://piwigo.org/releases/2.6.2
-# CVE-2014-XXXX 2.6.3 http://piwigo.org/releases/2.6.3 http://osvdb.org/108063
+# CVE-2014-4613/CVE-2014-4614 2.6.2 http://osvdb.org/103774 http://piwigo.org/releases/2.6.2
+# CVE-2014-4648 2.6.3 http://piwigo.org/releases/2.6.3 http://osvdb.org/108063
 Piwigo:
   1:
     location: ['/include/constants.php']
     secure_version: '2.6.3'
     regexp: ['define.*?PHPWG_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'http://piwigo.org/releases/2.6.3 http://osvdb.org/108063'
+    cve: 'CVE-2014-4648 http://piwigo.org/releases/2.6.3 http://osvdb.org/108063'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
