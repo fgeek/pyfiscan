@@ -21,7 +21,10 @@
 # CVE-2012-5232
 # CVE-2012-6503 com_ninjaxplorer    http://osvdb.org/81630
 # CVE-2012-6514 com_netinvoice      http://osvdb.org/81573
+# CVE-2012-XXXX alphacontent http://osvdb.org/82907
 # CVE-2012-XXXX com_quiz
+# CVE-2012-XXXX joomgalaxy http://osvdb.org/84446 http://osvdb.org/84445
+# CVE-2012-XXXX nice-ajax-poll http://osvdb.org/84683
 # CVE-2013-3719 com_aicontactsafe
 # CVE-2013-3933 com_joomshopping
 # CVE-2013-5951
@@ -49,6 +52,7 @@
 # CVE-2014-0794 3.0.3 https://www.htbridge.com/advisory/HTB23195 http://extensions.joomla.org/extensions/contacts-and-feedback/articles-comments/23394
 # CVE-2014-1214 com_novasfh
 # CVE-2014-1837 com_komento 1.7.4 http://osvdb.org/102563
+# CVE-2014-3863 jchatsoscial
 # CVE-2014-XXXX 1.8.4/1.7.5 http://vel.joomla.org/resolved/1103-breezing-forms-pre-1-7-5-or-1-8-4.html http://crosstec.de/en/blog/entry/15-breezingforms-security-update.html
 # CVE-XXXX-XXXX 2.3.4 http://vel.joomla.org/vel-blog/976-spider-contacts-1-3-3.html
 # CVE-XXXX-XXXX civicrm                                     http://vel.joomla.org/resolved/402-civicrm-4-3-3.html http://civicrm.org/blogs/colemanw/security-release-civicrm-434
@@ -76,9 +80,6 @@
 # CVE-XXXX-XXXX plugin_googlemap http://osvdb.org/95776
 # CVE-XXXX-XXXX qcontacts                                   http://docs.joomla.org/Vulnerable_Extensions_List#QContacts_1.0.6 http://vel.joomla.org/vel-blog/57-qcontacts-1-0-6.html
 # CVE-XXXX-XXXX unite-horizontal-carousel                   http://vel.joomla.org/resolved/479-unite-horizontal-carousel.html
-# CVE-2012-XXXX nice-ajax-poll http://osvdb.org/84683
-# CVE-2012-XXXX joomgalaxy http://osvdb.org/84446 http://osvdb.org/84445
-# CVE-2012-XXXX alphacontent http://osvdb.org/82907
 # http://vel.joomla.org/vel-blog/1059-extplorer-all.html
 # http://vel.joomla.org/vel-blog/51-com_advert.html
 # http://vel.joomla.org/vel-blog/56-dshop.html
