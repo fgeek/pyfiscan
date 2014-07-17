@@ -17,6 +17,7 @@
 # https://drupal.org/SA-CORE-2014-001   CVE-2014-1475   7.26/6.30   http://osvdb.org/102124
 # https://drupal.org/SA-CORE-2014-001   CVE-2014-1476   7.26/6.30   http://osvdb.org/102125
 # https://drupal.org/SA-CORE-2014-002   CVE-2014-2983   7.27/6.31   http://osvdb.org/106004
+# https://drupal.org/SA-CORE-2014-003
 Drupal 7:
   1:
     location: ['/includes/bootstrap.inc']
