@@ -1,4 +1,5 @@
 # URL: http://www.dolibarr.org/
+# Contact: contact@dolibarr.org
 # Version: htdocs/filefunc.inc.php:if (! defined('DOL_VERSION')) define('DOL_VERSION','3.3.2');
 # CVE-2011-4329
 # CVE-2011-4802
@@ -13,7 +14,7 @@
 Dolibarr:
   1:
     location: ['/htdocs/filefunc.inc.php']
-    secure_version: '3.3.4'
+    secure_version: '3.5.4'
     regexp: ['.*?DOL_VERSION.*?(?P<version>[0-9.]+)']
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3992 http://osvdb.org/108860'
     fingerprint: detect_general
