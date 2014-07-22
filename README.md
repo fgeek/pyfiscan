@@ -26,6 +26,7 @@ Detects following software
 
 * Bugzilla
 * CMSMS
+* Claroline
 * Collabtive
 * Coppermine
 * Cotonti
