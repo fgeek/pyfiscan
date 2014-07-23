@@ -10,12 +10,13 @@
 # CVE-2013-2091 3.3.2 https://github.com/Dolibarr/dolibarr/commit/9427e32e2ed54c1a2bc519a88c057207836df489
 # CVE-2013-2092 3.3.2 https://github.com/Dolibarr/dolibarr/commit/8a90598b23e1b2689848187941f7a96b04907005
 # CVE-2013-2093 3.3.2 https://github.com/Dolibarr/dolibarr/commit/526a80dd202bbca396687a502d52c27e06e97fff
+# CVE-2014-3991 3.5.4
 # CVE-2014-3992 3.5.4 https://github.com/FHenry/dolibarr/commit/77a9d4eb71a7ede8e503e42104edb33035ad54ee merged into dolibarr/dolibarr
 Dolibarr:
   1:
     location: ['/htdocs/filefunc.inc.php']
     secure_version: '3.5.4'
     regexp: ['.*?DOL_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3992 http://osvdb.org/108860'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3991 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3992 http://osvdb.org/108860'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
