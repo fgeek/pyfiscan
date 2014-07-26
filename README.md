@@ -110,6 +110,9 @@ Notes
   * status.php outputs: {"installed":"true","version":"5.0.6","versionstring":"5.0.5","edition":""}
 * Piwigo
   * Not installed if local/config/database.inc.php is missing.
+* Claroline
+  * Not installed when platform/conf/claro_main.conf.php is missing.
+  * Installation pages request user to remove claroline/install/ directory.
 
 Thanks to
 ---------
