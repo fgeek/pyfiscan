@@ -30,6 +30,8 @@ class DatabaseHandlers(unittest.TestCase):
     def test_can_load_issues_from_yaml(self):
         """Can load fingerprint data from YAML files."""
         database = Database('yamls/')
+        if len(database.issues) == 0:
+            self.assertEqual(1, 0, 'Empty database.')
         self.assertTrue(isinstance(database, Database))
 
 if __name__ == '__main__':
