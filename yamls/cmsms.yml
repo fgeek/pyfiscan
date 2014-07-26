@@ -1,24 +1,26 @@
-#               1.0.3 (SA23582)
-# CVE-2007-2473 1.0.6 (SA25082)
-# CVE-2007-5056 1.1.4.1 (SA26928)
-# CVE-2007-5441 1.1.4.1 (SA26928)
-# CVE-2007-5442 1.1.4.1 (SA26928)
-# CVE-2007-6656 1.2.3 (SA28285)
-# CVE-2008-2267 1.2.5 (SA30208)
-# CVE-2008-5642 1.5 (SA32924) Unpatched
-#               1.6.3 (SA36255)
+#               1.0.3 SA23582
+#               1.6.3 SA36255
+# CVE-2007-2473 1.0.6 SA25082
+# CVE-2007-5056 1.1.4.1 SA26928
+# CVE-2007-5441 1.1.4.1 SA26928
+# CVE-2007-5442 1.1.4.1 SA26928
+# CVE-2007-6656 1.2.3 SA28285
+# CVE-2008-2267 1.2.5 SA30208
+# CVE-2008-5642 1.5 SA32924
 # CVE-2010-1482 1.7.1
-# CVE-2010-2797 1.8.1 (SA40031)
-# CVE-2010-3882 1.8.1 (SA40031)
-# CVE-2010-3883 1.8.1 (SA40031)
-# CVE-2010-3884 1.8.1 (SA40031)
+# CVE-2010-2797 1.8.1 SA40031
+# CVE-2010-3882 1.8.1 SA40031
+# CVE-2010-3883 1.8.1 SA40031
+# CVE-2010-3884 1.8.1 SA40031
 # CVE-2010-4663 1.9.1 http://forum.cmsmadesimple.org/viewtopic.php?t=49245
 # CVE-2011-4310 1.9.4.3 http://www.cmsmadesimple.org/2011/08/Announcing-CMSMS-1-9-4-3---Security-Release/
 # CVE-2012-5450 1.11.2.1 http://osvdb.org/87235 SA51185 HTB23121 http://forum.cmsmadesimple.org/viewtopic.php?f=1&t=63545
 # CVE-2012-6064 1.11.2.1 SA51185 HTB23121 xfdb/79881 http://forum.cmsmadesimple.org/viewtopic.php?f=1&t=63545
-# CVE-2013-4167 1.11.7
 # CVE-2013-3929 ?   http://osvdb.org/100842 http://secunia.com/advisories/53920 # TODO issue 18
+# CVE-2013-4167 1.11.7
 # CVE-2013-XXXX 1.11.8 http://osvdb.org/98876 http://www.cmsmadesimple.org/announcing-cmsms-1-11-8-fioreana/
+# CVE-2014-0334 TODO http://www.kb.cert.org/vuls/id/526062
+# CVE-2014-2092 TODO
 # CVE-2014-2245 1.11.10 http://osvdb.org/103854 http://dev.cmsmadesimple.org/project/changelog/4602 http://www.cmsmadesimple.org/2014/02/Announcing-CMSMS-1-11-10-Pinzon/
 CMSMS:
   1:
