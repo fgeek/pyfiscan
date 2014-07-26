@@ -206,7 +206,7 @@
 # SA-CONTRIB-2014-001   CVE-2014-1399   https://drupal.org/node/2169595 Entity API
 # SA-CONTRIB-2014-001   CVE-2014-1400   https://drupal.org/node/2169595 Entity API
 # SA-CONTRIB-2014-002   CVE-2014-1611   https://drupal.org/node/2173321 Anonymous Posting
-# SA-CONTRIB-2014-003                   https://drupal.org/node/2179085 Doubleclick for Publishers
+# SA-CONTRIB-2014-003   CVE-2014-5019/CVE-2014-5020/CVE-2014-5021/CVE-2014-5022                https://drupal.org/node/2179085 Doubleclick for Publishers
 # SA-CONTRIB-2014-004                   https://drupal.org/node/2179099 Secure Cookie Data
 # SA-CONTRIB-2014-005                   https://drupal.org/node/2179103 Leaflet
 # SA-CONTRIB-2014-006                   https://drupal.org/node/2179123 Language Switcher Dropdown
@@ -235,6 +235,10 @@
 # SA-CONTRIB-2014-029                   https://drupal.org/node/2211419 Mime Mail
 # SA-CONTRIB-2014-030                   https://drupal.org/node/2216269 SexyBookmarks
 # SA-CONTRIB-2014-031                   https://drupal.org/node/2216607 Webform Template
+# SA-CONTRIB-2014-032
+# SA-CONTRIB-2014-033
+# SA-CONTRIB-2014-034
+# SA-CONTRIB-2014-035
 # SA-CONTRIB-2014-059                   https://drupal.org/node/2284415 Touch Theme
 # CVE-2012-4468
 # CVE-2012-4469
@@ -273,6 +277,7 @@
 # CVE-2012-6645
 # CVE-2013-4598
 # CVE-2013-7068
+# CVE-2013-7391
 # CVE-2014-1607
 # CVE-2014-2715
 # CVE-2014-3453 not fixed? TODO http://osvdb.org/106844
