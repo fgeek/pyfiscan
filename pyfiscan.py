@@ -299,6 +299,8 @@ if __name__ == "__main__":
             sys.exit('Error while writing to logfile: %s' % strerror)
     try:
         database = Database('yamls/', includes)
+        if len(database.issues) == 0:
+            sys.exit('Empty database. Exiting..')
         # stderr to /dev/null
         devnull_fd = open(os.devnull, "w")
         sys.stderr = devnull_fd
