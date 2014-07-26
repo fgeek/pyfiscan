@@ -13,10 +13,10 @@ user can write those in YAML-syntax.
 @licence BSD
 """
 
+import sys
 try:
     import logging
     import os
-    import sys
     import time
     import traceback
     from docopt import docopt
