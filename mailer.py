@@ -3,10 +3,6 @@
 
 """
 Mailer utility for pyfiscan tool result CSV-files.
-
-@author Henri 'fgeek' Salo <henri@nerv.fi>
-@copyright Copyright (c) 2009-2014 Henri Salo
-@licence BSD
 """
 
 try:
