@@ -103,8 +103,7 @@ class PopulateScanQueue:
             p = Pool()
             dirs = ((d, checkmodes) for d in directories)
             p.map(populate_directory, dirs, chunksize=200)
-            # All done. Sending kill signal.
-            queue.put(None)
+            queue.put(None)  # All done. Sending kill signal.
             p.close()
             p.join()
             logging.info('Scanning for locations finished. Elapsed time: %.4f', \
