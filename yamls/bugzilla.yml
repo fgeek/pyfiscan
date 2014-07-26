@@ -28,6 +28,7 @@
 # CVE-2013-1743
 # CVE-2014-1517 4.5.3/4.4.3
 # CVE-2014-XXXX 4.5.3/4.4.3/4.2.8/4.0.12
+# CVE-2014-1546 4.5.5/4.4.5/4.2.10/4.0.14
 Bugzilla:
   1:
     location: ['/docs/en/xml/bugzilla.ent', '/docs/en/xml/Bugzilla-Guide.xml']
