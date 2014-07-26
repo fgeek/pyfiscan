@@ -93,6 +93,37 @@
 # CVE-2013-2244
 # CVE-2013-2245
 # CVE-2013-2246
+# CVE-2013-3630
+# CVE-2013-4522 http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-38743
+# CVE-2013-4523 http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-41941
+# CVE-2013-4524 http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-41807
+# CVE-2013-4525 http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-41820
+# CVE-2013-6780 http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-42780
+# CVE-2013-7341
+# CVE-2014-0008
+# CVE-2014-0009
+# CVE-2014-0010
+# CVE-2014-0213
+# CVE-2014-0214
+# CVE-2014-0215
+# CVE-2014-0216
+# CVE-2014-0217
+# CVE-2014-0218
+# CVE-2014-2571
+# CVE-2014-2572
+# CVE-2014-3541 http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-45616
+# CVE-2014-3542 http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-45463
+# CVE-2014-3543 http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-45417
+# CVE-2014-3544 http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-45683
+# CVE-2014-3545 http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-46148
+# CVE-2014-3546 http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-45760
+# CVE-2014-3547 http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-46042
+# CVE-2014-3548 http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-45471
+# CVE-2014-3549 http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-46201
+# CVE-2014-3550 http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-46227
+# CVE-2014-3551 http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-46223
+# CVE-2014-3552 http://git.moodle.org/gw?p=moodle.git&a=search&h=refs%2Fheads%2FMOODLE_25_STABLE&st=commit&s=MDL-45485
+# CVE-2014-3553 http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-38990
 # MSA-11-0001 CVE-2011-0987
 # MSA-11-0002 CVE-2011-4133
 # MSA-11-0003 CVE-2011-4278
@@ -166,24 +197,6 @@
 # MSA-13-0033 CVE-2013-4313 http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-40676
 # MSA-13-0034 CVE-2013-5674 http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-40924
 # MSA-13-0035 CVE-2013-4341 http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-41623
-# CVE-2013-3630
-# CVE-2013-4522
-# CVE-2013-4523
-# CVE-2013-4524
-# CVE-2013-4525
-# CVE-2013-6780
-# CVE-2013-7341
-# CVE-2014-0008
-# CVE-2014-0009
-# CVE-2014-0010
-# CVE-2014-0213
-# CVE-2014-0214
-# CVE-2014-0215
-# CVE-2014-0216
-# CVE-2014-0217
-# CVE-2014-0218
-# CVE-2014-2571
-# CVE-2014-2572
 # NGS00208
 Moodle 2.5:
   1:
@@ -217,4 +230,3 @@ Moodle 2.2:
     cve: '' 
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
-
