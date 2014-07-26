@@ -160,9 +160,6 @@
 # CVE-2013-1916 user-photo                  http://osvdb.org/71071
 # CVE-2013-1949 social-media-widget (!)
 # CVE-2013-2008 wp-super-cache              http://osvdb.org/92827 - http://osvdb.org/92832
-# CVE-2013-2009 wp-super-cache              http://osvdb.org/92743 (please see CVE-2013-2011)
-# CVE-2013-2010 w3-total-cache              http://osvdb.org/92652
-# CVE-2013-2011 wp-super-cache              http://osvdb.org/92743 (incomplete fix for CVE-2013-2009)
 # CVE-2013-2108 wp-cleanfix
 # CVE-2013-2109 wp-cleanfix                 http://osvdb.org/93435
 # CVE-2013-2180 uk-cookie   http://osvdb.org/87561
@@ -333,6 +330,7 @@
 # CVE-XXXX-XXXX wp-predict                          http://osvdb.org/83697
 # CVE-XXXX-XXXX wp-video-commando                   http://cxsecurity.com/issue/WLB-2013030207
 # CVE-XXXX-XXXX wptouch http://www.securityfocus.com/bid/48348
+# CVE-2012-4242 mf-gig-calendar http://osvdb.org/85682
 # HTB22839, HTB22840, HTB22842, HTB22843, HTB22844, HTB22841, HTB22845,
 # HTB22858, HTB22859, HTB22860, HTB22848, HTB22849, HTB22861, HTB22838,
 # HTB22938, HTB22961, HTB22960, HTB22951, HTB22875, HTB22873, HTB22867,
@@ -346,62 +344,9 @@
 # http://securityundefined.com/wordpress-video-metabox-plugin-persistent-xss-vulnerability-disclosure/
 http://osvdb.org/88391
 http://osvdb.org/98766
-https://github.com/wpscanteam/wpscan/pull/334
-https://github.com/wpscanteam/wpscan/commit/62e84cc88c6370a11e6d5b7442c906e6ae5c6e39
-https://github.com/wpscanteam/wpscan/commit/93bd6baceb79be320f17e430808900898bda9261
-https://github.com/wpscanteam/wpscan/commit/42b94ab0c345a70da3193ae5f29a0d5c33724516
 http://cxsecurity.com/issue/WLB-2013100127
-https://github.com/wpscanteam/wpscan/pull/310
 http://osvdb.org/96000
-https://github.com/pvdl/wpscan/commit/eb2bc58a591a07f9b1ebc54b29ebd26e5b7df734
-https://github.com/pvdl/wpscan/commit/7726b3ae32262dca34c7d1d2d726f516f3c000c5
-https://github.com/pvdl/wpscan/commit/d0f357332a59b549c02253c8474a80ac5d8788b0
-https://github.com/pvdl/wpscan/commit/8ca50428f165a02531459948d5a26fd10dc6d6e6
-https://github.com/pvdl/wpscan/commit/db91d5041ca503c7d939d5d7a13be1ddf420a41a
-https://github.com/pvdl/wpscan/commit/828f8c48eb57edc97a8d26b5f09b8f10b9c5546e
-https://github.com/pvdl/wpscan/commit/d8c7d168793086e52e2056ba1c8bf221dcbdfd2b
-https://github.com/pvdl/wpscan/commit/b573b5559fcca4564de3b448920dd116d29a47f1
-https://github.com/pvdl/wpscan/commit/2a943dcce8f0f7dd64713fdf9b26bb3114027e0b
-https://github.com/pvdl/wpscan/commit/f2dd880fdb9d907caa074c5229ee858ccee3e865
-https://github.com/pvdl/wpscan/commit/dfd08e1e666d5ff08c3267b94af7d469c6954e61
-https://github.com/pvdl/wpscan/commit/a1a68dfd11ee9053e941ff3bf8ec56a66c17ea56
-https://github.com/pvdl/wpscan/commit/0ba35e41b54ad18bff6534b3b54db0e7ad5f7b1d
-https://github.com/pvdl/wpscan/commit/9c53273d1c9fc55e3e0b21de0166471bcdde5957
-https://github.com/pvdl/wpscan/commit/b16ea75dd601d224ebfb8ddffcd639966cb39b30
-https://github.com/pvdl/wpscan/commit/556b2f3d21e2f8abfdf40ff8fe4bee36793c341e
-https://github.com/pvdl/wpscan/commit/861841ef86c7f2e4d38b7f754183dadf6c66f6e6
-https://github.com/pvdl/wpscan/commit/3494bc47cf4e4a3499b2fa2b9cb21cc29e7d96f0
-https://github.com/pvdl/wpscan/commit/584c930858ee62dff107d8e35ca7684655c0810b
-https://github.com/pvdl/wpscan/commit/5112bea51149288581eb9af61941d904556b6d63
-https://github.com/pvdl/wpscan/commit/75b3ea0bc4c5ab4d5201ea3bd57872d0fb525b80
-https://github.com/pvdl/wpscan/commit/ab65571ee5586414402a1070e172e7fa63b4c232
-https://github.com/pvdl/wpscan/commit/971f7e21cc396f1a96cfd3cf206d42972367a1f6
-https://github.com/wpscanteam/wpscan/pull/337
-https://github.com/wpscanteam/wpscan/pull/334
-https://github.com/wpscanteam/wpscan/pull/335
 http://packetstormsecurity.com/files/123697
-https://github.com/wpscanteam/wpscan/pull/333
-https://github.com/wpscanteam/wpscan/issues/176#issuecomment-17710862
-https://github.com/wpscanteam/wpscan/issues/251
-https://github.com/wpscanteam/wpscan/pull/298
-https://github.com/wpscanteam/wpscan/pull/308
-https://github.com/wpscanteam/wpscan/issues/251
-https://github.com/wpscanteam/wpscan/pull/309
-https://github.com/wpscanteam/wpscan/pull/314
-https://github.com/wpscanteam/wpscan/pull/316
-https://github.com/wpscanteam/wpscan/pull/317
-https://github.com/wpscanteam/wpscan/pull/318
-https://github.com/wpscanteam/wpscan/pull/319
-https://github.com/wpscanteam/wpscan/pull/320
-https://github.com/wpscanteam/wpscan/pull/321
-https://github.com/wpscanteam/wpscan/pull/325
-https://github.com/wpscanteam/wpscan/pull/329
-https://github.com/wpscanteam/wpscan/pull/338
-https://github.com/pvdl/wpscan/commit/5bee1f1ffdc42719b6f5c2dde69670f179f840ac
-https://github.com/wpscanteam/wpscan/pull/340
-https://github.com/wpscanteam/wpscan/pull/352
-https://github.com/wpscanteam/wpscan/commit/0d80c1dc0632280939ff8bf589286341dac77537
-https://github.com/pvdl/wpscan/commit/8cc583406622452bbd66d8eb2ea9b2989a12ac6f
 CVE-2013-6991 HTB23189
 CVE-2013-6992 HTB23188
 CVE-2013-6993 HTB23187
@@ -412,7 +357,6 @@ http://osvdb.org/71243
 http://osvdb.org/71481
 http://osvdb.org/76794
 http://secunia.com/advisories/43565/
-https://github.com/wpscanteam/wpscan/pull/365
 CVE-2014-4513
 CVE-2014-4515
 CVE-2014-4516
