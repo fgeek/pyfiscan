@@ -114,11 +114,8 @@ Notes
   * Not installed when platform/conf/claro_main.conf.php is missing.
   * Installation pages request user to remove claroline/install/ directory.
 
-Thanks to
----------
+Happy users
+-----------
 
-* Tuomo Komulainen for big patches and ideas
-* Olli Pekkola for code cleanups
-* Partly the idea and first lines of (re-written) code came from Atte H. (guaqua)
-* Juhamatti Niemelä for database updates
-* Ari-Martti Hopiavuori for database feedback
+* DevNet Oy
+* Kapsi Internet-käyttäjät ry
