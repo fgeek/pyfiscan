@@ -45,7 +45,7 @@
 # TYPO3-CORE-SA-2012-004    CVE-2012-3529
 # TYPO3-CORE-SA-2012-004    CVE-2012-3530
 # TYPO3-CORE-SA-2012-004    CVE-2012-3531
-# TYPO3-CORE-SA-2012-005
+# TYPO3-CORE-SA-2012-005    CVE-2012-6144/CVE-2012-6145/CVE-2012-6146/CVE-2012-6147/CVE-2012-6148
 # TYPO3-CORE-SA-2013-001    CVE-2013-1842   http://osvdb.org/90925  http://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2013-001/
 # TYPO3-CORE-SA-2013-001    CVE-2013-1843   http://osvdb.org/90924  http://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2013-001/
 # http://typo3.org/news/article/typo3-cms-4525-4618-4710-and-604-released/
