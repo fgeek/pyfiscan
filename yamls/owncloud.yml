@@ -39,17 +39,18 @@
 # oC-SA-2014-015    CVE-2014-3837   6.0.3
 # oC-SA-2014-016    CVE-2014-3838   6.0.3/5.0.16
 # oC-SA-2014-017    CVE-2014-3839   6.0.3
+# oC-SA-2014-018    CVE-2014-4929   6.0.4/5.0.17
 ownCloud 6:
     1:
       location: ['/version.php']
-      secure_version: '6.0.3'
+      secure_version: '6.0.4'
       regexp: ['\$OC_VersionString.*?(?P<version>[0-9.]+)']
-      cve: 'oC-SA-2014-011/CVE-2014-3834, oC-SA-2014-012/CVE-2014-3835, oC-SA-2014-013/CVE-2014-3834, oC-SA-2014-014/CVE-2014-3836, oC-SA-2014-015/CVE-2014-3837, oC-SA-2014-016/CVE-2014-3838, oC-SA-2014-017/CVE-2014-3839'
+      cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-4929'
       fingerprint: detect_general
 ownCloud 5:
     1:
       location: ['/lib/util.php']
-      secure_version: '5.0.16'
+      secure_version: '5.0.17'
       regexp: ['.*?getVersionString.*?return.*?(?P<version>[0-9.]+)']
-      cve: 'oC-SA-2014-012/CVE-2014-3835, oC-SA-2014-016/CVE-2014-3838'
+      cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-4929'
       fingerprint: detect_owncloud
