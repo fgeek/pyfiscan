@@ -1,3 +1,4 @@
+# NOT-FOR-US: CVE-2014-1607
 #										https://drupal.org/node/1332022  http://osvdb.org/82463
 #                       CVE-2012-6574
 #                       CVE-2012-6575
@@ -280,9 +281,8 @@
 # CVE-2013-4598
 # CVE-2013-7068
 # CVE-2013-7391
-# CVE-2014-1607
 # CVE-2014-2715 no SA-CONTRIB advisory?
-# CVE-2014-3453 not fixed? TODO http://osvdb.org/106844
+# CVE-2014-3453 not fixed? TODO http://osvdb.org/106844 no CONTRIB security advisory?
 # CVE-2014-3933
 # CVE-2014-4505
 # CVE-2014-4506
