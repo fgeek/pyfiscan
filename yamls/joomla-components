@@ -67,6 +67,7 @@
 # CVE-XXXX-XXXX com_g2bridge        http://osvdb.org/94665 http://www.exploit-db.com/exploits/12814/ http://cxsecurity.com/issue/WLB-2013060227 http://www.securityfocus.com/bid/40440
 # CVE-XXXX-XXXX com_jinc                                    http://lhacky.altervista.org/jextensions/index.php/component/content/article/21-news/jinc/100-security-issue-on-jinc-1-0-1
 # CVE-XXXX-XXXX com_jobprofile                              http://vel.joomla.org/vel-blog/58-jobprofile-1-0.html
+# CVE-2014-4960
 # CVE-XXXX-XXXX com_jobprofile      http://osvdb.org/77652
 # CVE-XXXX-XXXX com_jse_event   1.0.1   http://seclists.org/bugtraq/2013/Aug/31
 # CVE-XXXX-XXXX com_sectionex   2.5.104 http://seclists.org/bugtraq/2013/Aug/30
@@ -89,33 +90,46 @@
 # http://vel.joomla.org/vel-blog/1110-odude-profile.html
 # JomSocial 3.1.0.1 http://vel.joomla.org/resolved/1107-jomsocial-pre-3-1-0-1.html
 # JomSocial 3.1.0.4 http://www.jomsocial.com/blog/hot-fix-3-1-0-4
-http://vel.joomla.org/vel-blog/1191-activehelper-livehelp-3-2-0-sqli.html
-http://vel.joomla.org/resolved/1148-jj-shoutbox-1-2-6.html
-http://vel.joomla.org/vel-blog/41-ownbiblio-1-5-3.html
-http://vel.joomla.org/resolved/1149-google-maps-plugin-for-joomla-3-1-and-2-20.html
-http://vel.joomla.org/vel-blog/45-bearleague.html
-http://vel.joomla.org/vel-blog/50-quickl-form.html
-http://vel.joomla.org/vel-blog/51-com_advert.html
-http://vel.joomla.org/vel-blog/1193-plg-codehighlight-1-0-1-xss.html
-http://vel.joomla.org/vel-blog/1195-codels-codehighlighter.html
-http://vel.joomla.org/resolved/1110-odude-profile.html
-http://www.odude.com/main/profile/profile-changelog.html
-http://vel.joomla.org/vel-blog/1204-yeedeen-yeeditor.html
 # CVE-2014-XXXX http://vel.joomla.org/resolved/1204-yeedeen-yeeditor.html http://yeedeen.com/forums/yeeditor-1-07-security-patches
-http://vel.joomla.org/vel-blog/50-quickl-form.html
+http://seclists.org/bugtraq/2014/Jul/133
 http://stackideas.com/blog/easyblog-3-9-15770-released
-http://vel.joomla.org/vel-blog/50-quickl-form.html
-http://vel.joomla.org/resolved/1330-joomlaworks-allvideos.html http://www.joomlaworks.net/forum/extension-updates/14896-june-3rd,-2014-allvideos-v4-6-0
+http://vel.joomla.org/resolved/1104-irecommend-3-0.html
+http://vel.joomla.org/resolved/1105-easyblog-easydiscuss-easysocial-and-komento.html
+http://vel.joomla.org/resolved/1106-joomla-music-collection-2-4-0.html
+http://vel.joomla.org/resolved/1110-odude-profile.html
+http://vel.joomla.org/resolved/1111-odude-ecard-dt.html
+http://vel.joomla.org/resolved/1112-odude-dir-dt.html
+http://vel.joomla.org/resolved/1148-jj-shoutbox-1-2-6.html
+http://vel.joomla.org/resolved/1149-google-maps-plugin-for-joomla-3-1-and-2-20.html
+http://vel.joomla.org/resolved/1191-activehelper-livehelp-3-2-0-sqli.html http://www.activehelper.com/kunena/7-news-announcements-a-tutorials/11846-livehelp-server-ver-3-3-0-for-joomla-1-5-2-5-3
 http://vel.joomla.org/resolved/1329-jw-player-5-10-22-xss.html http://www.joomlaworks.net/forum/extension-updates/14896-june-3rd,-2014-allvideos-v4-6-0
+http://vel.joomla.org/resolved/1330-joomlaworks-allvideos.html http://www.joomlaworks.net/forum/extension-updates/14896-june-3rd,-2014-allvideos-v4-6-0
+http://vel.joomla.org/resolved/1332-k2-content-extension-2-6-8.html
+http://vel.joomla.org/resolved/1368-youtube-gallery-4-1-7.html http://www.joomlaboat.com/youtube-gallery
+http://vel.joomla.org/resolved/186-activehelper-livehelp.html http://www.activehelper.com/kunena/7-news-announcements-a-tutorials/11846-livehelp-server-ver-3-3-0-for-joomla-1-5-2-5-3
+http://vel.joomla.org/resolved/716-cobalt-8-270.html http://www.mintjoomla.com/blog/item/279-update-cobalt-v-8-279-stable.html
+http://vel.joomla.org/resolved/938-jomsocial.html
+http://vel.joomla.org/resolved/939-event-registration-pro.html
+http://vel.joomla.org/vel-blog/1106-joomla-music-collection-2-4-0.html
 http://vel.joomla.org/vel-blog/1107-jomsocial-component-pre-3-1-0-1.html
 http://vel.joomla.org/vel-blog/1148-jj-shoutbox-1-2-6.html
 http://vel.joomla.org/vel-blog/1149-google-maps-plugin-for-joomla-3-1-and-2-20.html
-http://vel.joomla.org/vel-blog/50-quickl-form.html
-http://vel.joomla.org/resolved/1332-k2-content-extension-2-6-8.html
-http://vel.joomla.org/vel-blog/1197-plg-highlight-button-1-5-and-previious-sqli.html
+http://vel.joomla.org/vel-blog/1191-activehelper-livehelp-3-2-0-sqli.html
+http://vel.joomla.org/vel-blog/1193-plg-codehighlight-1-0-1-xss.html
+http://vel.joomla.org/vel-blog/1195-codels-codehighlighter.html
 http://vel.joomla.org/vel-blog/1196-plg-highlight-content-1-5-and-previous.html
+http://vel.joomla.org/vel-blog/1197-plg-highlight-button-1-5-and-previious-sqli.html
+http://vel.joomla.org/vel-blog/1204-yeedeen-yeeditor.html
+http://vel.joomla.org/vel-blog/360-jinc-all.html
 http://vel.joomla.org/vel-blog/41-ownbiblio-1-5-3.html
 http://vel.joomla.org/vel-blog/45-bearleague.html
 http://vel.joomla.org/vel-blog/50-quickl-form.html
-http://vel.joomla.org/resolved/1191-activehelper-livehelp-3-2-0-sqli.html http://www.activehelper.com/kunena/7-news-announcements-a-tutorials/11846-livehelp-server-ver-3-3-0-for-joomla-1-5-2-5-3
-http://vel.joomla.org/resolved/186-activehelper-livehelp.html http://www.activehelper.com/kunena/7-news-announcements-a-tutorials/11846-livehelp-server-ver-3-3-0-for-joomla-1-5-2-5-3
+http://vel.joomla.org/vel-blog/51-com_advert.html
+http://vel.joomla.org/vel-blog/56-dshop.html
+http://vel.joomla.org/vel-blog/56-dshop.html
+http://vel.joomla.org/vel-blog/939-event-registration-pro.html
+http://www.joomlashowroom.com/blog/security-and-bug-release-for-all-versions-of-event-registration-pro
+http://www.joomlathat.com/news/music-collection/music-collection-2-4-1-released
+http://www.odude.com/main/dir/dir-log.html
+http://www.odude.com/main/odude-ecard/ecard-log.html
+http://www.odude.com/main/profile/profile-changelog.html
