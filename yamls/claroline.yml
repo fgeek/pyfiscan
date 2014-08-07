@@ -4,7 +4,7 @@ Claroline:
   1:
     location: ['/claroline/inc/installedVersion.inc.php']
     secure_version: '1.11.9'
-    regexp: ['\$new_version.*?(?P<version>[0-9]{1,})']
+    regexp: ['\$new_version.*?(?P<version>[0-9.]{1,})']
     cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-6267'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
