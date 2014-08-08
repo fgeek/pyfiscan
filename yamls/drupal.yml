@@ -20,19 +20,20 @@
 # https://drupal.org/SA-CORE-2014-001   CVE-2014-1476   7.26/6.30   http://osvdb.org/102125
 # https://drupal.org/SA-CORE-2014-002   CVE-2014-2983   7.27/6.31   http://osvdb.org/106004
 # https://drupal.org/SA-CORE-2014-003   CVE-2014-5019/CVE-2014-5020/CVE-2014-5021/CVE-2014-5022 7.29/6.32 http://osvdb.org/109237 http://osvdb.org/109236 http://osvdb.org/109238 http://osvdb.org/109284
+# https://drupal.org/SA-CORE-2014-004       7.30/6.32   http://osvdb.org/109871
 Drupal 7:
   1:
     location: ['/includes/bootstrap.inc']
-    secure_version: '7.29'
+    secure_version: '7.31'
     regexp: ['define.*?VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://drupal.org/SA-CORE-2014-003 CVE-2014-5019, CVE-2014-5020, CVE-2014-5021, CVE-2014-5022'
+    cve: 'https://drupal.org/SA-CORE-2014-004'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Drupal 6:
   1:
     location: ['/CHANGELOG.txt']
-    secure_version: '6.32'
+    secure_version: '6.33'
     regexp: ['^Drupal (?P<version>[0-9.]+)']
-    cve: 'https://drupal.org/SA-CORE-2014-003 CVE-2014-5019, CVE-2014-5020, CVE-2014-5021, CVE-2014-5022'
+    cve: 'https://drupal.org/SA-CORE-2014-004'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
