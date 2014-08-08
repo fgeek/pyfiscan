@@ -52,5 +52,5 @@ ownCloud 5:
       location: ['/lib/util.php']
       secure_version: '5.0.17'
       regexp: ['.*?getVersionString.*?return.*?(?P<version>[0-9.]+)']
-      cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-4929'
+      cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-4929 https://owncloud.org/security/advisory/?id=oc-sa-2014-018'
       fingerprint: detect_owncloud
