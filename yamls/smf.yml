@@ -42,6 +42,7 @@
 # CVE-2013-XXXX 2.0.4/1.1.18    http://www.simplemachines.org/community/index.php?topic=496403
 # CVE-2013-XXXX 2.0.5   http://osvdb.org/96323 SA54384 http://www.simplemachines.org/community/index.php?topic=509417 http://www.openwall.com/lists/oss-security/2013/09/15/2
 # CVE-2013-XXXX         http://osvdb.org/88909
+# CVE-2013-4395 2.0.5 http://osvdb.org/98061 http://osvdb.org/98100
 # CVE-2013-7234 2.0.6/1.1.19 http://osvdb.org/101004 http://www.jakoblell.com/blog/2013/12/13/multiple-vulnerabilities-in-smf-forum-software/ http://www.simplemachines.org/community/index.php?topic=512964.0
 # CVE-2013-7235 2.0.6/1.1.19 http://osvdb.org/101005 http://www.jakoblell.com/blog/2013/12/13/multiple-vulnerabilities-in-smf-forum-software/ http://www.simplemachines.org/community/index.php?topic=512964.0
 # CVE-2013-7236 2.0.6/1.1.19 http://www.jakoblell.com/blog/2013/12/13/multiple-vulnerabilities-in-smf-forum-software/ http://www.simplemachines.org/community/index.php?topic=512964.0
