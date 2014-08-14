@@ -126,6 +126,6 @@ WordPress:
     location: ['/wp-includes/version.php']
     secure_version: '3.9.2'
     regexp: ['\$wp_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-5203 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-5204 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-5205 http://wordpress.org/news/2014/08/wordpress-3-9-2/'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-5203 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-5204 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-5205 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-5240 http://wordpress.org/news/2014/08/wordpress-3-9-2/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
