@@ -63,13 +63,13 @@
 # CVE-2014-2853 1.22.6/1.21.9 http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-April/000149.html
 # CVE-2014-3966 1.22.7/1.21.10/1.19.16 http://osvdb.org/107528 http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-May/000151.html
 # N/A           1.23.1/1.22.8/1.21.11/1.19.17   http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-June/000154.html
-# CVE-2014-XXXX 1.23.2/1.22.9/1.19.18 http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-July/000157.html
+# CVE-2014-5241/CVE-2014-5242/CVE-2014-5243 1.23.2/1.22.9/1.19.18 http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-July/000157.html
 MediaWiki 1.23:
   1:
     location: ['/includes/DefaultSettings.php']
     secure_version: '1.23.2'
     regexp: ['\$wgVersion.*?(?P<version>1\.23\.[0-9.]{1,})']
-    cve: 'http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-July/000157.html'
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-5241 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-5242 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-5243 http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-July/000157.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.22:
@@ -77,7 +77,7 @@ MediaWiki 1.22:
     location: ['/includes/DefaultSettings.php']
     secure_version: '1.22.9'
     regexp: ['\$wgVersion.*?(?P<version>1\.22\.[0-9.]{1,})']
-    cve: 'http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-July/000157.html'
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-5241 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-5242 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-5243 http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-July/000157.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.21:
@@ -101,7 +101,7 @@ MediaWiki 1.19:
     location: ['/includes/DefaultSettings.php']
     secure_version: '1.19.18'
     regexp: ['\$wgVersion.*?(?P<version>1\.19\.[0-9.]{1,})']
-    cve: 'http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-July/000157.html'
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-5241 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-5242 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-5243 http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-July/000157.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.18:
