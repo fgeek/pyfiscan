@@ -1,3 +1,4 @@
+# Disputed: CVE-2014-5043
 # CVE-2011-4824 0.8.7h http://osvdb.org/77097
 # CVE-2013-1434 0.8.8b http://osvdb.org/96072 unspecified
 # CVE-2013-1435 0.8.8b http://osvdb.org/96071 unspecified
@@ -6,5 +7,9 @@
 # CVE-2014-2326 TODO http://osvdb.org/104921 unspecified
 # CVE-2014-2327 TODO http://osvdb.org/104922
 # CVE-2014-2328 TODO http://osvdb.org/104909 unspecified
+# CVE-2014-2708
+# CVE-2014-2709
 # CVE-2014-5025
 # CVE-2014-5026
+# CVE-2014-5261
+# CVE-2014-5262
