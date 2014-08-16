@@ -3,4 +3,6 @@
 # CVE-2013-4519
 # CVE-2013-4795 1.7.12/1.6.18   http://www.tripwire.com/state-of-security/vulnerability-management/vulnerabilities-its-time-to-review-your-reviewboard/
 # CVE-2013-4796 1.7.12/1.6.18
+# CVE-2014-5027
+# CVE-2014-5028
 # NOTE: might not be able to implement. python package
