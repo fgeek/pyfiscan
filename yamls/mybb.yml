@@ -29,9 +29,9 @@
 # CVE-2013-7275 1.6.12  http://osvdb.org/101545
 # N/A           1.6.12  http://osvdb.org/101542
 # N/A           1.6.12  http://osvdb.org/101543
-# CVE-2014-1840
-# CVE-2014-XXXX 1.6.14 http://blog.mybb.com/2014/06/30/mybb-1-6-14-released-security-maintenance-release/
-# CVE-2014-5248 1.6.15 http://osvdb.org/109811 http://blog.mybb.com/2014/08/04/mybb-1-6-15-released-security-maintenance-release/
+# CVE-2014-1840 1.6.13  http://osvdb.org/102937 http://blog.mybb.com/2014/04/25/mybb-1-6-13-released-security-maintenance-release/
+# CVE-2014-XXXX 1.6.14  http://blog.mybb.com/2014/06/30/mybb-1-6-14-released-security-maintenance-release/
+# CVE-2014-5248 1.6.15  http://osvdb.org/109811 http://blog.mybb.com/2014/08/04/mybb-1-6-15-released-security-maintenance-release/
 MyBB:
   1:
       location: ['/inc/class_core.php']
