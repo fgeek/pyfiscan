@@ -69,15 +69,17 @@
 # PMASA-2013-11 CVE-2013-4996   4.0.4.2/3.5.8.2
 # PMASA-2013-12 CVE-2013-4998/CVE-2013-4999/CVE-2013-5000   4.0.4.2/3.5.8.2 http://www.phpmyadmin.net/home_page/security/PMASA-2013-12.php
 # PMASA-2013-13 CVE-2013-5001   4.0.4.2 http://www.phpmyadmin.net/home_page/security/PMASA-2013-13.php
-# PMASA-2013-14 CVE-2013-5002   4.0.4.2/3.5.8.2 http://www.phpmyadmin.net/home_page/security/PMASA-2013-14.php
-# PMASA-2013-15 CVE-2013-5003   4.0.4.2/3.5.8.2 http://www.phpmyadmin.net/home_page/security/PMASA-2013-15.php
-# PMASA-2014-1  CVE-2014-1879   4.1.7   http://www.phpmyadmin.net/home_page/security/PMASA-2014-1.php
-# PMASA-2014-2  CVE-2014-4348   4.2.4   http://phpmyadmin.net/home_page/security/PMASA-2014-2.php
-# PMASA-2014-3  CVE-2014-4349   4.2.4/4.1.14.1 http://www.phpmyadmin.net/home_page/security/PMASA-2014-3.php
+# PMASA-2013-14 CVE-2013-5002   4.0.4.2/3.5.8.2
+# PMASA-2013-15 CVE-2013-5003   4.0.4.2/3.5.8.2
+# PMASA-2014-1  CVE-2014-1879   4.1.7
+# PMASA-2014-2  CVE-2014-4348   4.2.4
+# PMASA-2014-3  CVE-2014-4349   4.2.4/4.1.14.1
 # PMASA-2014-4
 # PMASA-2014-5  CVE-2014-4955
 # PMASA-2014-6  CVE-2014-4986
 # PMASA-2014-7  CVE-2014-4987
+# PMASA-2014-8  CVE-2014-5273
+# PMASA-2014-9  CVE-2014-5274
 phpMyAdmin:
   1:
     location: ['/libraries/Config.class.php']
