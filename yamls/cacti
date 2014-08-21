@@ -13,4 +13,5 @@
 # CVE-2014-5026
 # CVE-2014-5261
 # CVE-2014-5262
+# CVE-2014-5027
 # include/global.php:$config["cacti_version"] = "0.8.8b";
