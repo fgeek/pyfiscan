@@ -117,37 +117,19 @@ def detect_gallery(source_file, regexp):
 
 
 @yaml_visible
-def detect_collabtive(source_file, regexp):
+def detect_withoutnewlines(source_file, regexp):
+    """Stripts newlines from source file.
+    
+    """
     if not (os.path.isfile(source_file) and regexp):
         return
-    logging.debug('Dectecting Collabtive from: %s', source_file)
     f = open(source_file, 'r')
     for line in f.read().split('\n'):
         source = line
         break
     try:
-        return re.compile(regexp).match(source).group('version')
+        return re.compile(regexp[0]).match(source).group('version')
     except re.error:
         logging.error('Invalid regular expression: %s', regexp)
-    except AttributeError:
-        pass
-
-
-@yaml_visible
-def detect_owncloud(source_file, regexp):
-    """Detects from source file if it contains version information of ownCloud.
-
-    """
-    if not (os.path.isfile(source_file) and regexp):
-        return
-    logging.debug('Dectecting ownCloud from: %s', source_file)
-    with open(source_file) as f:
-        data = f.read().replace('\n', '')
-    f.close()
-    try:
-        found_match = re.compile(regexp[0]).match(data).group('version')
-        return found_match
-    except re.error:
-        logging.error('Not a valid regular expression: %s', regexp)
     except AttributeError:
         pass
