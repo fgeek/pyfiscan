@@ -3,8 +3,9 @@
 """Provides interface for pyfiscan to YAML-files."""
 
 try:
-    import sys
     import os
+    import scandir
+    import sys
     import yaml
 except ImportError, error:
     print('Import error: %s' % error)
@@ -17,7 +18,8 @@ def gen_yamlfile_locations(yamldir, includes):
         sys.exit('Location for YAML-files can not be a symlink: %s' % yamldir)
     if not os.path.isdir(yamldir):
         sys.exit('Location for YAML-files is not a directory: %s' % yamldir)
-    for filename in os.listdir(yamldir):
+    for filename in scandir.scandir(yamldir):
+        filename = filename.name
         if not filename.endswith('.yml'):  # ignores upcoming fingerprints
             continue
         if os.path.islink(yamldir + filename):

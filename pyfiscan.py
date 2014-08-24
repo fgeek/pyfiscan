@@ -17,6 +17,7 @@ import sys
 try:
     import logging
     import os
+    import scandir
     import time
     import traceback
     from docopt import docopt
@@ -75,7 +76,8 @@ def populate_userdir(fargs):
 
         sites_location = userdir + '/sites'
         if validate_directory(sites_location, checkmodes):
-            for site in os.listdir(sites_location):
+            for site in scandir.scandir(sites_location):
+                site = site.name
                 sitedir = sites_location + '/' + site
                 if checkmodes:
                     if not check_dir_execution_bit(sitedir):
@@ -123,7 +125,7 @@ class PopulateScanQueue:
             starttime = time.time()
 
             p = Pool()
-            dirs = (startdir + '/' + d for d in os.listdir(startdir))
+            dirs = (startdir + '/' + d.name for d in scandir.scandir(startdir))
             udirs = p.imap_unordered(populate_userdir, \
                                      ((d, checkmodes) for d in dirs), \
                                      chunksize=200)
