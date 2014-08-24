@@ -149,6 +149,8 @@ def is_not_secure(secure_version, file_version, appname=None):
     True when file_version      <   secure_version
     False when file_version     >=  secure_version
     """
+    if secure_version == 'N/A':
+        return True
     try:
         if not all(isinstance(x, str) for x in (secure_version, file_version)):
             raise TypeError('is_not_secure: input must be str when comparing. secure_version %s, file_version %s', \
