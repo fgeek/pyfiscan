@@ -1,0 +1,17 @@
+# CVE-2010-4616 1.2.4   http://osvdb.org/69989 HTB22766
+# CVE-2010-XXXX 1.2.4   http://osvdb.org/69990
+# CVE-2012-0986 1.3.1/1.2.7 http://osvdb.org/78140 http://osvdb.org/78141 http://osvdb.org/78142 http://osvdb.org/78143 HTB23064
+# CVE-2012-0987 1.2.7   http://osvdb.org/78143 HTB23064
+# CVE-2014-1836 1.3.6   http://osvdb.org/102770 https://github.com/pedrib/PoC/blob/master/impresscms-1.3.5.txt
+# CVE-2014-4036 1.3.7   http://osvdb.org/107672
+# CVE-2014-XXXX 1.3.6   http://osvdb.org/102771
+# CVE-2014-XXXX 1.3.6   http://osvdb.org/102772
+# TODO: Confusing http://osvdb.org/96245
+ImpressCMS:
+  1:
+    location: ['/htdocs/include/version.php']
+    secure_version: '1.3.7'
+    regexp: ["define.*?ICMS_VERSION_NAME.*?ImpressCMS.*?(?P<version>[0-9.]+)"]
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-4036 http://osvdb.org/107672'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
