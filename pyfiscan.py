@@ -241,10 +241,6 @@ def Worker(home_location, post_process):
 
 if __name__ == "__main__":
     logfile = 'pyfiscan.log'
-
-    # Available logging levels, which are also hardcoded to usage
-    levels = {'info': logging.INFO, 'debug': logging.DEBUG}
-
     usage = """
     Usage:
       pyfiscan.py [--check-modes] [-p] [-l LEVEL] [-a NAME]
@@ -269,6 +265,8 @@ if __name__ == "__main__":
     """
     arguments = docopt(usage, version='pyfiscan 0.9')
     starttime = time.time()  # used to measure program runtime
+    # Available logging levels, which are also hardcoded to usage
+    levels = {'info': logging.INFO, 'debug': logging.DEBUG}
     if arguments['-l']:
         level_name = arguments['-l']
     else:
