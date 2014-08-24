@@ -254,7 +254,7 @@ if __name__ == "__main__":
       pyfiscan.py --version
 
     Options:
-      -r DIR            Scans directories recurssively.
+      -r DIR            Scans directories recursively.
       -p                Enable post process for php5.fcgi file checks.
       --home DIR        Specifies where the home-directories are located.
       --check-modes     Check using execution bit if we are allowed to traverse directories.
