@@ -123,10 +123,8 @@ def detect_withoutnewlines(source_file, regexp):
     """
     if not (os.path.isfile(source_file) and regexp):
         return
-    f = open(source_file, 'r')
-    for line in f.read().split('\n'):
-        source = line
-        break
+    with open(source_file, 'r') as f:
+        source = f.read().replace('\n', '')
     try:
         return re.compile(regexp[0]).match(source).group('version')
     except re.error:

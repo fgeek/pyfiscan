@@ -37,6 +37,7 @@ Detects following software
 * Foswiki
 * Gallery
 * ImpressCMS
+* ImpressPages
 * Jamroom
 * Joomla 1.5: 1.5 is end-of-life since 2012-04-30
 * Joomla 1.6: 1.6 is end-of-life since [2011-08-19](http://www.joomla.org/announcements/release-news/5380-joomla-170-released.html). 1.6.x should be upgraded to 1.6.6 before moving to 1.7.x
