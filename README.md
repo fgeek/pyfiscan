@@ -28,6 +28,7 @@ Detects following software
 * CMSMS
 * Claroline
 * Collabtive
+* Concrete5
 * Coppermine
 * Cotonti
 * Dolibarr
