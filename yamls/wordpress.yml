@@ -99,7 +99,7 @@
 # CVE-2012-3385 3.4.1   http://codex.wordpress.org/Version_3.4.1
 # CVE-2012-4421 3.4.2   http://codex.wordpress.org/Version_3.4.2
 # CVE-2012-4448 3.5     http://osvdb.org/85731 SA50715 http://packetstormsecurity.org/files/116785/WordPress-3.4.2-Cross-Site-Request-Forgery.html
-# CVE-2012-5868 N/A     http://osvdb.org/88744 Requested more details from security@wordpress.org 2012-12-29, No fixed version available 2013-01-17
+# CVE-2012-5868 N/A     http://osvdb.org/88744 Requested more details from security@wordpress.org 2012-12-29, No fixed version available 2013-01-17. "WordPress does not have any session handling on the server side, so there is no session to invalidate. A cookie can be replayed until it expires. (Its expiration time is enforced in the hash.) We have considered some changes here, but have no immediate plans."
 # CVE-2012-6633 3.3.3   http://codex.wordpress.org/Version_3.3.3
 # CVE-2012-6634 3.3.3
 # CVE-2012-6635 3.3.3
@@ -118,7 +118,7 @@
 # CVE-2013-4338 3.6.1   http://codex.wordpress.org/Version_3.6.1
 # CVE-2013-4339 3.6.1   http://codex.wordpress.org/Version_3.6.1
 # CVE-2013-4340 3.6.1   http://codex.wordpress.org/Version_3.6.1
-# CVE-????-???? 3.1.4   http://osvdb.org/73721 http://wordpress.org/news/2011/06/wordpress-3-1-4/
+# CVE-????-???? 3.1.4   http://osvdb.org/73721 http://osvdb.org/73722 http://osvdb.org/73723 http://wordpress.org/news/2011/06/wordpress-3-1-4/
 # CVE-2014-0165 3.8.2/3.7.2 http://codex.wordpress.org/Version_3.8.2 http://codex.wordpress.org/Version_3.7.2 http://osvdb.org/show/osvdb/105630
 # CVE-2014-0166 3.8.2/3.7.2 http://codex.wordpress.org/Version_3.8.2 http://codex.wordpress.org/Version_3.7.2 http://osvdb.org/show/osvdb/105620
 WordPress:

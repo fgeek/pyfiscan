@@ -4,6 +4,9 @@
 # CVE-2013-1435 0.8.8b http://osvdb.org/96071 unspecified
 # CVE-2013-5588 TODO http://osvdb.org/96600 http://osvdb.org/96601
 # CVE-2013-5589 TODO http://osvdb.org/96602
+# CVE-2014-1608
+# CVE-2014-1609
+# CVE-2014-2238 1.2.17  http://osvdb.org/103842
 # CVE-2014-2326 TODO http://osvdb.org/104921 unspecified
 # CVE-2014-2327 TODO http://osvdb.org/104922
 # CVE-2014-2328 TODO http://osvdb.org/104909 unspecified
@@ -11,7 +14,7 @@
 # CVE-2014-2709
 # CVE-2014-5025
 # CVE-2014-5026
+# CVE-2014-5027
 # CVE-2014-5261
 # CVE-2014-5262
-# CVE-2014-5027
 # include/global.php:$config["cacti_version"] = "0.8.8b";
