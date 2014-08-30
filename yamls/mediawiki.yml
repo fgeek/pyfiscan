@@ -3,6 +3,7 @@
 # 2015-05 end-of-life for 1.19 http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-June/000153.html
 # 2014-06 end-of-life for 1.21 http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-June/000153.html
 # 
+# NFU: CVE-2014-1686 path disclosure
 # CVE-2013-4304 extension. not going to add yet. maybe in future
 # CVE-2013-4305 extension. not going to add yet. maybe in future
 # CVE-2013-4306 extension. not going to add yet. maybe in future
