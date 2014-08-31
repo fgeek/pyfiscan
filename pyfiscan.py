@@ -262,8 +262,8 @@ if __name__ == "__main__":
       -a NAME           Scans only specific applications. Delimiter: ,
 
       If you do not spesify recursive-option predefined directories are scanned, which are:
-        /home/user/sites/www
-        /home/user/sites/secure-www
+        /home/user/sites/vhost/www
+        /home/user/sites/vhost/secure-www
         /home/user/public_html
 
     """
