@@ -13,8 +13,10 @@ user can write those in YAML-syntax.
 @licence BSD
 """
 
+from __future__ import division
 import sys
 try:
+    import csv
     import logging
     import os
     import scandir
@@ -180,6 +182,65 @@ def handle_results(report, appname, file_version, item_location, application_cve
         logging.error(traceback.format_exc())
 
 
+def check_old_results(csv_file):
+    """Handles old CSV result files and detects if applications have been
+    updated or not.
+
+    """
+    report = IssueReport()
+    # Exit in case csv_file is symlink
+    if os.path.islink(csv_file):
+        sys.exit('CSV file %s is a symlink. Exiting..' % csv_file)
+    reader = csv.reader(open(csv_file, 'rb'), delimiter='|', quotechar='|')
+    # Opens database handle
+    database = Database('yamls/', includes=None)
+    total = 0
+    notfixed = 0
+    fixed = 0
+    for line in reader:
+        total += 1
+        appname = line[1]
+        file_location = line[2]
+        try:
+            for issue in database.issues[appname].itervalues():
+                for location in issue['location']:
+                    # Loads fingerprint function from YAML file and checks for
+                    # version from detected location
+                    fn = yaml_fn_dict[issue['fingerprint']]
+                    item_location = os.path.abspath(file_location + '/' + location)
+                    if not os.path.exists(item_location):
+                        fixed += 1
+                        break
+                    if not os.path.isfile(item_location):
+                        break
+                    print('Checking version from: %s' % (item_location))
+                    file_version = fn(item_location, issue['regexp'])
+                    if not file_version:
+                        break
+                    # item_location is stripped from application location so that
+                    # we get cleaner output and actual installation directory
+                    install_dir = item_location[:item_location.find(location)]
+                    if is_not_secure(issue['secure_version'], file_version, appname):
+                        # Calls result handler (goes to CSV and log)
+                        handle_results(report, appname, file_version, file_location, issue['cve'], issue['secure_version'])
+                        print('NOT FIXED: %s (%s)' % (install_dir, appname))
+                        notfixed += 1
+                    else:
+                        print('FIXED: %s (%s)' % (install_dir, appname))
+                        fixed += 1
+        except KeyError:
+            print traceback.format_exc()
+            pass
+        except TypeError:
+            print traceback.format_exc()
+            pass
+    if total == 0:
+        sys.exit('No lines in CSV file. Exiting..')
+    pers = fixed / total * 100
+    print '{0} of {1} have upgraded, which is {2:.2f}%.'.format(fixed, total, pers)
+    report.close()
+
+
 def Worker(home_location, post_process):
     """This is the actual worker which calls smaller functions in case of
     correct directory/file match is found.
@@ -250,6 +311,7 @@ if __name__ == "__main__":
       pyfiscan.py [--check-modes] [-p] [-l LEVEL] [-a NAME]
       pyfiscan.py -r <directory> [-l LEVEL] [-a NAME]
       pyfiscan.py --home <directory> [--check-modes] [-p] [-l LEVEL] [-a NAME]
+      pyfiscan.py --check <FILE>
       pyfiscan.py [-h|--help]
       pyfiscan.py --version
 
@@ -257,6 +319,7 @@ if __name__ == "__main__":
       -r DIR            Scans directories recursively.
       -p                Enable post process for php5.fcgi file checks.
       --home DIR        Specifies where the home-directories are located.
+      --check FILE      Rechecks entries in old CSV files.
       --check-modes     Check using execution bit if we are allowed to traverse directories.
       -l LEVEL          Specifies logging level: info, debug.
       -a NAME           Scans only specific applications. Delimiter: ,
@@ -269,6 +332,12 @@ if __name__ == "__main__":
     """
     arguments = docopt(usage, version='pyfiscan 0.9')
     starttime = time.time()  # used to measure program runtime
+    # If enabled only checks status using old result file
+    # Check argument must be handled first so that we don't open handle to
+    # logfile. Maybe we add some kind of logging to checker in the future
+    if arguments['--check']:
+        check_old_results(arguments['--check'])
+        sys.exit(1)
     # Available logging levels, which are also hardcoded to usage
     levels = {'info': logging.INFO, 'debug': logging.DEBUG}
     if arguments['-l']:
