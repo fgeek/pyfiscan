@@ -54,6 +54,7 @@ Detects following software
 * Piwigo
 * Roundcube
 * SMF 1 and 2
+* SPIP
 * Serendipity
 * TestLink
 * TikiWiki
