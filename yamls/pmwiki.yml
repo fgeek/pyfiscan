@@ -1,0 +1,12 @@
+# URL: http://www.pmwiki.org/
+# CVE-2010-1481 N/A http://osvdb.org/64456
+# CVE-2010-4748 2.2.21 http://osvdb.org/69940
+# CVE-2011-4453 2.2.35 http://osvdb.org/77261
+PmWiki:
+    1:
+      location: ['/scripts/version.php']
+      secure_version: '2.2.35'
+      regexp: ['.*?\$Version.*?pmwiki-(?P<version>[0-9.]+)']
+      cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-4453 http://osvdb.org/77261'
+      fingerprint: detect_general
+      post_processing: ['php5.fcgi']

@@ -52,6 +52,7 @@ Detects following software
 * MoinMoin
 * MyBB
 * Piwigo
+* PmWiki
 * Roundcube
 * SMF 1 and 2
 * SPIP
