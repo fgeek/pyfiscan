@@ -41,7 +41,7 @@
 # N/A           2.0.1/1.1.1     http://osvdb.org/76318 SA46386
 # CVE-2013-0192 1.1.11  http://osvdb.org/86444
 # CVE-2013-4395 2.0.5 http://osvdb.org/98061 http://osvdb.org/98100
-# CVE-2013-4465 2.0.6
+# CVE-2013-4465 2.0.6 http://osvdb.org/98830 https://github.com/SimpleMachines/SMF2.1/issues/701
 # CVE-2013-7234 2.0.6/1.1.19 http://osvdb.org/101004 http://www.jakoblell.com/blog/2013/12/13/multiple-vulnerabilities-in-smf-forum-software/ http://www.simplemachines.org/community/index.php?topic=512964.0
 # CVE-2013-7235 2.0.6/1.1.19 http://osvdb.org/101005 http://www.jakoblell.com/blog/2013/12/13/multiple-vulnerabilities-in-smf-forum-software/ http://www.simplemachines.org/community/index.php?topic=512964.0
 # CVE-2013-7236 2.0.6/1.1.19 http://www.jakoblell.com/blog/2013/12/13/multiple-vulnerabilities-in-smf-forum-software/ http://www.simplemachines.org/community/index.php?topic=512964.0
