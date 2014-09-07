@@ -1,49 +1,50 @@
+# Advisory URL: http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2014-010/
 # TYPO3-EXT-SA-2012-007
 # TYPO3-EXT-SA-2012-008
 # TYPO3-EXT-SA-2012-009
 # TYPO3-EXT-SA-2012-010
 # TYPO3-EXT-SA-2012-011
-# TYPO3-EXT-SA-2012-012 TODO request cves
+# TYPO3-EXT-SA-2012-012
 # TYPO3-EXT-SA-2013-001
-# TYPO3-EXT-SA-2013-002 CVE-2013-5100   http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2013-001/  http://osvdb.org/89131
+# TYPO3-EXT-SA-2013-002 CVE-2013-5100
 # TYPO3-EXT-SA-2013-002
-# TYPO3-EXT-SA-2013-002 CVE-2013-4681   http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2013-002/
-# TYPO3-EXT-SA-2013-003                 http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2013-003/
-# TYPO3-EXT-SA-2013-004                 http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2013-004/
-# TYPO3-EXT-SA-2013-005                 http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2013-005/
-# TYPO3-EXT-SA-2013-007 CVE-2013-4680   http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2013-007/
-# TYPO3-EXT-SA-2013-010 CVE-2013-4682   http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2013-009-1/ http://secunia.com/advisories/53441
-# TYPO3-EXT-SA-2013-011                 http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2013-011/
-# TYPO3-EXT-SA-2013-012                 http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2013-012/
-# TYPO3-EXT-SA-2013-013 CVE-2013-5302   http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2013-013/ http://osvdb.org/95959
-# TYPO3-EXT-SA-2013-013 CVE-2013-5303   http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2013-013/ http://osvdb.org/95967
-# TYPO3-EXT-SA-2013-013 CVE-2013-5304   http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2013-013/ http://osvdb.org/95962
-# TYPO3-EXT-SA-2013-013 CVE-2013-5305   http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2013-013/ http://osvdb.org/95961
-# TYPO3-EXT-SA-2013-013 CVE-2013-5306   http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2013-013/ http://osvdb.org/95963
-# TYPO3-EXT-SA-2013-013 CVE-2013-5307   http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2013-013/ http://osvdb.org/95960
-# TYPO3-EXT-SA-2013-013 CVE-2013-5308   http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2013-013/ http://osvdb.org/95958
-# TYPO3-EXT-SA-2013-013 CVE-2013-5310   http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2013-013/ http://osvdb.org/95957
-# TYPO3-EXT-SA-2013-014
-# TYPO3-EXT-SA-2014-001 requested       http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2014-001/
-# TYPO3-EXT-SA-2014-002 requested       http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2014-002/
-# TYPO3-EXT-SA-2014-003 requested       http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2014-003/
-# TYPO3-EXT-SA-2014-004 CVE-2013-7075   http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2014-004/
-# TYPO3-EXT-SA-2014-005 requested       http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2014-005/
-# TYPO3-EXT-SA-2014-006 requested       http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2014-006/
-# TYPO3-EXT-SA-2014-007 CVE-2014-3947   http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2014-007/
-# TYPO3-EXT-SA-2014-007 CVE-2014-3948   http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2014-007/
-# TYPO3-EXT-SA-2014-008 CVE-2014-3949   http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2014-008/
-# TYPO3-EXT-SA-2014-010 CVE-2014-6231   http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2014-010/
-# TYPO3-EXT-SA-2014-010 CVE-2014-6232   http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2014-010/
-# TYPO3-EXT-SA-2014-010 CVE-2014-6233   http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2014-010/
-# TYPO3-EXT-SA-2014-010 CVE-2014-6234   http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2014-010/
-# TYPO3-EXT-SA-2014-010 CVE-2014-6235   http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2014-010/
-# TYPO3-EXT-SA-2014-010 CVE-2014-6236   http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2014-010/
-# TYPO3-EXT-SA-2014-010 CVE-2014-6237   http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2014-010/
-# TYPO3-EXT-SA-2014-010 CVE-2014-6238   http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2014-010/
-# TYPO3-EXT-SA-2014-010 CVE-2014-6239   http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2014-010/
-# TYPO3-EXT-SA-2014-010 CVE-2014-6240   http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2014-010/
-# TYPO3-EXT-SA-2014-010 CVE-2014-6241   http://typo3.org/teams/security/security-bulletins/typo3-extensions/typo3-ext-sa-2014-010/
+# TYPO3-EXT-SA-2013-002 CVE-2013-4681
+# TYPO3-EXT-SA-2013-003
+# TYPO3-EXT-SA-2013-004
+# TYPO3-EXT-SA-2013-005
+# TYPO3-EXT-SA-2013-007 CVE-2013-4680
+# TYPO3-EXT-SA-2013-010 CVE-2013-4682   http://secunia.com/advisories/53441
+# TYPO3-EXT-SA-2013-011
+# TYPO3-EXT-SA-2013-012
+# TYPO3-EXT-SA-2013-013 CVE-2013-5302   http://osvdb.org/95959
+# TYPO3-EXT-SA-2013-013 CVE-2013-5303   http://osvdb.org/95967
+# TYPO3-EXT-SA-2013-013 CVE-2013-5304   http://osvdb.org/95962
+# TYPO3-EXT-SA-2013-013 CVE-2013-5305   http://osvdb.org/95961
+# TYPO3-EXT-SA-2013-013 CVE-2013-5306   http://osvdb.org/95963
+# TYPO3-EXT-SA-2013-013 CVE-2013-5307   http://osvdb.org/95960
+# TYPO3-EXT-SA-2013-013 CVE-2013-5308   http://osvdb.org/95958
+# TYPO3-EXT-SA-2013-013 CVE-2013-5310   http://osvdb.org/95957
+# TYPO3-EXT-SA-2013-014 requested
+# TYPO3-EXT-SA-2014-001 requested
+# TYPO3-EXT-SA-2014-002 requested
+# TYPO3-EXT-SA-2014-003 requested
+# TYPO3-EXT-SA-2014-004 CVE-2013-7075
+# TYPO3-EXT-SA-2014-005 requested
+# TYPO3-EXT-SA-2014-006 requested
+# TYPO3-EXT-SA-2014-007 CVE-2014-3947
+# TYPO3-EXT-SA-2014-007 CVE-2014-3948
+# TYPO3-EXT-SA-2014-008 CVE-2014-3949
+# TYPO3-EXT-SA-2014-010 CVE-2014-6231
+# TYPO3-EXT-SA-2014-010 CVE-2014-6232
+# TYPO3-EXT-SA-2014-010 CVE-2014-6233
+# TYPO3-EXT-SA-2014-010 CVE-2014-6234
+# TYPO3-EXT-SA-2014-010 CVE-2014-6235
+# TYPO3-EXT-SA-2014-010 CVE-2014-6236
+# TYPO3-EXT-SA-2014-010 CVE-2014-6237
+# TYPO3-EXT-SA-2014-010 CVE-2014-6238
+# TYPO3-EXT-SA-2014-010 CVE-2014-6239
+# TYPO3-EXT-SA-2014-010 CVE-2014-6240
+# TYPO3-EXT-SA-2014-010 CVE-2014-6241
 # CVE-2013-5322
 # CVE-2013-5323
 # CVE-2013-5570
