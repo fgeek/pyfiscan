@@ -14,11 +14,12 @@
 # CVE-2012-XXXX         http://osvdb.org/85446 !
 # CVE-2012-XXXX 1.9.4   http://osvdb.org/84711
 # CVE-2012-XXXX 1.9.4   http://osvdb.org/84713
+# CVE-2014-5308 1.9.12  http://seclists.org/fulldisclosure/2014/Oct/11
 TestLink:
   1:
     location: ['/cfg/const.inc.php']
-    secure_version: '1.9.4'
+    secure_version: '1.9.12'
     regexp: ['define.*?TL_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'CVE-2012-2275 http://osvdb.org/84712 http://osvdb.org/84711 http://osvdb.org/84713'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-5308 http://seclists.org/fulldisclosure/2014/Oct/11'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
