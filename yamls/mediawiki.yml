@@ -66,13 +66,13 @@
 # N/A           1.23.1/1.22.8/1.21.11/1.19.17   http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-June/000154.html
 # CVE-2014-5241/CVE-2014-5242/CVE-2014-5243 1.23.2/1.22.9/1.19.18 http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-July/000157.html
 # CVE-2014-7199 1.23.4/1.22.11/1.19.19  https://lists.wikimedia.org/pipermail/mediawiki-announce/2014-September/000161.html
-# requested     1.23.5/1.22.12/1.19.20  https://lists.wikimedia.org/pipermail/mediawiki-announce/2014-October/000163.html
+# CVE-2014-7295 1.23.5/1.22.12/1.19.20  https://lists.wikimedia.org/pipermail/mediawiki-announce/2014-October/000163.html
 MediaWiki 1.23:
   1:
     location: ['/includes/DefaultSettings.php']
     secure_version: '1.23.5'
     regexp: ['\$wgVersion.*?(?P<version>1\.23\.[0-9.]{1,})']
-    cve: 'https://lists.wikimedia.org/pipermail/mediawiki-announce/2014-October/000163.html'
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-7295 https://lists.wikimedia.org/pipermail/mediawiki-announce/2014-October/000163.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.22:
@@ -80,7 +80,7 @@ MediaWiki 1.22:
     location: ['/includes/DefaultSettings.php']
     secure_version: '1.22.12'
     regexp: ['\$wgVersion.*?(?P<version>1\.22\.[0-9.]{1,})']
-    cve: 'https://lists.wikimedia.org/pipermail/mediawiki-announce/2014-October/000163.html'
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-7295 https://lists.wikimedia.org/pipermail/mediawiki-announce/2014-October/000163.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.21:
@@ -104,7 +104,7 @@ MediaWiki 1.19:
     location: ['/includes/DefaultSettings.php']
     secure_version: '1.19.20'
     regexp: ['\$wgVersion.*?(?P<version>1\.19\.[0-9.]{1,})']
-    cve: 'https://lists.wikimedia.org/pipermail/mediawiki-announce/2014-October/000163.html'
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-7295 https://lists.wikimedia.org/pipermail/mediawiki-announce/2014-October/000163.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.18:
