@@ -81,11 +81,12 @@
 # PMASA-2014-8  CVE-2014-5273   4.2.7.1/4.1.14.3/4.0.10.2
 # PMASA-2014-9  CVE-2014-5274   4.2.7.1/4.1.14.3
 # PMASA-2014-10 CVE-2014-6300   4.2.8.1/4.1.14.4/4.0.10.3
+# PMASA-2014-11 CVE-2014-7217   4.2.9.1/4.1.14.5/4.0.10.4
 phpMyAdmin:
   1:
     location: ['/libraries/Config.class.php']
-    secure_version: '4.2.8.1'
+    secure_version: '4.2.9.1'
     regexp: ['.*?PMA_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-6300 http://www.phpmyadmin.net/home_page/security/PMASA-2014-10.php'
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-7217 http://www.phpmyadmin.net/home_page/security/PMASA-2014-11.php'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
