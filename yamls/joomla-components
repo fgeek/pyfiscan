@@ -55,6 +55,7 @@
 # CVE-2014-3863 jchatsoscial
 # CVE-2014-4960
 # CVE-2014-7983
+# CVE-2014-6631
 # CVE-2014-XXXX 1.8.4/1.7.5 http://vel.joomla.org/resolved/1103-breezing-forms-pre-1-7-5-or-1-8-4.html http://crosstec.de/en/blog/entry/15-breezingforms-security-update.html
 # CVE-XXXX-XXXX 2.3.4 http://vel.joomla.org/vel-blog/976-spider-contacts-1-3-3.html
 # CVE-XXXX-XXXX civicrm                                     http://vel.joomla.org/resolved/402-civicrm-4-3-3.html http://civicrm.org/blogs/colemanw/security-release-civicrm-434

@@ -94,6 +94,11 @@
 # CVE-2013-3242 3.1.0/3.0.4/2.5.10  http://osvdb.org/92755 http://developer.joomla.org/security/85-20130406-core-dos-vulnerability.html
 # CVE-2013-3267 3.1.0/2.5.10        http://osvdb.org/92756 http://developer.joomla.org/security/86-20130407-core-xss-vulnerability.html
 # CVE-2013-5576 3.1.5/2.5.14    http://osvdb.org/95933 http://developer.joomla.org/security/563-20130801-core-unauthorised-uploads.html https://github.com/rapid7/metasploit-framework/pull/2219 http://www.cso.com.au/article/523528/joomla_patches_file_manager_vulnerability_responsible_hijacked_websites/
+# CVE-2014-6632
+# CVE-2014-7229
+# CVE-2014-7981
+# CVE-2014-7982
+# CVE-2014-7984
 Joomla 3:
   1:
     location: ['administrator/manifests/files/joomla.xml']
