@@ -21,10 +21,11 @@
 # https://drupal.org/SA-CORE-2014-002   CVE-2014-2983   7.27/6.31   http://osvdb.org/106004
 # https://drupal.org/SA-CORE-2014-003   CVE-2014-5019/CVE-2014-5020/CVE-2014-5021/CVE-2014-5022 7.29/6.32 http://osvdb.org/109237 http://osvdb.org/109236 http://osvdb.org/109238 http://osvdb.org/109284
 # https://drupal.org/SA-CORE-2014-004   CVE-2014-5265/CVE-2014-5266/CVE-2014-5267
+# https://drupal.org/SA-CORE-2014-005   CVE-2014-3704   7.31
 Drupal 7:
   1:
     location: ['/includes/bootstrap.inc']
-    secure_version: '7.31'
+    secure_version: '7.32'
     regexp: ['define.*?VERSION.*?(?P<version>[0-9.]+)']
     cve: 'https://drupal.org/SA-CORE-2014-004'
     fingerprint: detect_general
