@@ -27,10 +27,8 @@ smtp_port = 465
 # We don't need to take care the micro-version
 version_major = sys.version_info[0]
 version_minor = sys.version_info[1]
-if version_major < int(1):
-    sys.exit('Python major version needs to be two or higher.\nSMTP_SSL only works with Python 2.7')
-if version_minor < int(6):
-    sys.exit('Python minor version needs to be seven or higher.\nSMTP_SSL only works with Python 2.7')
+if version_major < int(2) or (version_major == 2 and version_minor < int(7)):
+    raise SystemExit('Python major version needs to be two or higher.\nSMTP_SSL only works with Python 2.7')
 
 
 def send_email(user, vulnerabilities):
