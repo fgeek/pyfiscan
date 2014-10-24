@@ -15,11 +15,13 @@
 # CVE-2012-XXXX 1.9.4   http://osvdb.org/84711
 # CVE-2012-XXXX 1.9.4   http://osvdb.org/84713
 # CVE-2014-5308 1.9.12  http://seclists.org/fulldisclosure/2014/Oct/11
+# CVE-2014-8081 1.9.13  http://mantis.testlink.org/view.php?id=6651
+# CVE-2014-8082 1.9.13  http://mantis.testlink.org/view.php?id=6609
 TestLink:
   1:
     location: ['/cfg/const.inc.php']
-    secure_version: '1.9.12'
+    secure_version: '1.9.13'
     regexp: ['define.*?TL_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-5308 http://seclists.org/fulldisclosure/2014/Oct/11'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8081 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8082'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
