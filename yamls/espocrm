@@ -1,5 +1,5 @@
 # URL: http://www.espocrm.com/
-# CVE-2014-8330 N/A http://osvdb.org/109977
+# CVE-2014-8330 N/A http://osvdb.org/109977 https://www.htbridge.com/advisory/HTB23238
 EspoCRM:
   1:
     location: ['/application/Espo/Core/defaults/config.php']
