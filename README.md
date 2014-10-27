@@ -34,6 +34,7 @@ Detects following software
 * Dolibarr
 * Dotclear
 * Drupal 6/7
+* EspoCRM
 * Foswiki
 * Gallery
 * ImpressCMS
