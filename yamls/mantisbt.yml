@@ -25,11 +25,12 @@
 # CVE-2014-1608 https://github.com/mantisbt/mantisbt/commit/00b4c17088fa56594d85fe46b6c6057bb3421102
 # CVE-2014-1609 https://github.com/mantisbt/mantisbt/commit/7efe0175f0853e18ebfacedfd2374c4179028b3f
 # CVE-2014-2238 1.2.17  http://osvdb.org/103842 
+# CVE-2014-8554 1.2.18  http://www.mantisbt.org/bugs/view.php?id=17812
 MantisBT:
   1:
     location: ['/core/constant_inc.php']
-    secure_version: '1.2.17'
+    secure_version: '1.2.18'
     regexp: ['define.*?MANTIS_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2238 http://osvdb.org/103842'
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8554'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
