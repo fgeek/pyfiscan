@@ -45,6 +45,7 @@ Detects following software
 * Joomla 1.7: 1.7 is end-of-life since [2012-02-24](http://www.joomla.org/announcements/release-news/5411-joomla-175-released.html)
 * Joomla 2.5
 * Joomla 3
+* MODX Revolution
 * Magnolia
 * Mahara
 * MantisBT
