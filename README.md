@@ -53,6 +53,7 @@ Detects following software
 * Microweber
 * MoinMoin
 * MyBB
+* Nibbleblog
 * Piwigo
 * PmWiki
 * Roundcube

@@ -56,6 +56,7 @@
 # CVE-2014-3863 jchatsoscial
 # CVE-2014-4960
 # CVE-2014-6631
+# CVE-2014-7228
 # CVE-2014-7983
 # CVE-2014-XXXX 1.8.4/1.7.5 http://vel.joomla.org/resolved/1103-breezing-forms-pre-1-7-5-or-1-8-4.html http://crosstec.de/en/blog/entry/15-breezingforms-security-update.html
 # CVE-XXXX-XXXX 2.3.4 http://vel.joomla.org/vel-blog/976-spider-contacts-1-3-3.html
@@ -152,3 +153,5 @@ http://vel.joomla.org/resolved/1405-jchatsocial-2-2-and-lower.html
 http://vel.joomla.org/vel-blog/1404-watchful-client.html
 http://vel.joomla.org/resolved/1499-akeeba-cms-update.html
 http://vel.joomla.org/resolved/1498-akeeba-backup-4-0-4.html
+http://vel.joomla.org/resolved/1617-mijoshop-2-4-x-2-5-x.html
+http://miwisoft.com/blog/mijoshop-252-security-update-released
