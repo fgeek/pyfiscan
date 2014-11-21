@@ -122,11 +122,12 @@
 # CVE-2014-0165 3.8.2/3.7.2 http://codex.wordpress.org/Version_3.8.2 http://codex.wordpress.org/Version_3.7.2 http://osvdb.org/105630
 # CVE-2014-0166 3.8.2/3.7.2 http://codex.wordpress.org/Version_3.8.2 http://codex.wordpress.org/Version_3.7.2 http://osvdb.org/105620
 # CVE-2012-5868 4.0     http://whiteoaksecurity.com/blog/2012/12/17/cve-2012-5868-wordpress-342-sessions-not-terminated-upon-explicit-user-logout http://blog.spiderlabs.com/2014/09/leveraging-lfi-to-get-full-compromise-on-wordpress-sites.html
+# CVE-2014-XXXX 4.0.1   https://wordpress.org/news/2014/11/wordpress-4-0-1/
 WordPress:
   1:
     location: ['/wp-includes/version.php']
-    secure_version: '4.0'
+    secure_version: '4.0.1'
     regexp: ['\$wp_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-5868 http://whiteoaksecurity.com/blog/2012/12/17/cve-2012-5868-wordpress-342-sessions-not-terminated-upon-explicit-user-logout http://blog.spiderlabs.com/2014/09/leveraging-lfi-to-get-full-compromise-on-wordpress-sites.html'
+    cve: 'https://wordpress.org/news/2014/11/wordpress-4-0-1/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
