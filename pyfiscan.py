@@ -10,7 +10,7 @@ user can write those in YAML-syntax.
 
 @author Henri Salo <henri@nerv.fi>
 @copyright Copyright (c) 2009-2014 Henri Salo
-@licence BSD
+@license BSD
 """
 
 from __future__ import division
