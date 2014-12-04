@@ -28,6 +28,13 @@
 # CVE-2014-7146 TODO
 # CVE-2014-8554 1.2.18  http://www.mantisbt.org/bugs/view.php?id=17812
 # CVE-2014-8598 1.2.18
+# CVE-2014-8986 TODO    https://github.com/mantisbt/mantisbt/commit/cabacdc291c251bfde0dc2a2c945c02cef41bf40
+# CVE-2014-8987 TODO    http://www.mantisbt.org/bugs/view.php?id=17870 https://github.com/mantisbt/mantisbt/commit/49c3d0893091fb1bb6b92639e59a72203be0bc4a
+# CVE-2014-8988 1.2.18  http://www.mantisbt.org/bugs/view.php?id=17742
+# CVE-2014-9269 TODO    http://www.mantisbt.org/bugs/view.php?id=17890 http://github.com/mantisbt/mantisbt/commit/511564cc
+# CVE-2014-9270 TODO    http://www.mantisbt.org/bugs/view.php?id=17583 http://github.com/mantisbt/mantisbt/commit/0bff06ec
+# CVE-2014-9271 TODO    http://www.mantisbt.org/bugs/view.php?id=17876 http://github.com/mantisbt/mantisbt/commit/e5fc835a  http://www.mantisbt.org/bugs/view.php?id=17874 http://github.com/mantisbt/mantisbt/commit/9fb8cf36f
+# CVE-2014-9272 TODO    http://www.mantisbt.org/bugs/view.php?id=17297 http://github.com/mantisbt/mantisbt/commit/05378e00
 MantisBT:
   1:
     location: ['/core/constant_inc.php']
