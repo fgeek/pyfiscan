@@ -61,6 +61,7 @@ Detects following software
 * SMF 1 and 2
 * SPIP
 * Serendipity
+* SquirrelMail
 * TestLink
 * TikiWiki
 * TinyTinyRSS
