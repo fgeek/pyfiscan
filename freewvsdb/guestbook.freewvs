@@ -1,0 +1,17 @@
+[DRBGuestbook]
+url=http://www.dbscripts.net/guestbook/
+safe=1.1.14
+vuln=CVE-2007-5218
+file=README.txt
+variable=Version
+extra_match=DRBGuestbook
+subdir=0
+
+[SimpGB]
+url=http://www.boesch-it.de/
+safe=1.47.0
+vuln=CVE-2007-5127
+file=global.inc.php
+variable=$version
+subdir=1
+extra_match=$path_simpgb

@@ -1,0 +1,81 @@
+[Serendipity]
+url=http://www.s9y.org/
+safe=1.7.7
+vuln=http://blog.s9y.org/archives/253-Serendipity-1.7.7-released.html
+file=serendipity_config.inc.php
+variable=$serendipity['version']
+subdir=0
+
+[Wordpress]
+url=http://www.wordpress.org/
+safe=4.0.1
+old_safe=3.9.3,3.8.5,3.7.5
+vuln=https://wordpress.org/news/2014/11/wordpress-4-0-1/
+file=version.php
+variable=$wp_version
+subdir=1
+extra_match=The WordPress version string
+
+[SimplePHPBlog]
+url=http://www.simplephpblog.com/
+safe=0.5.1
+vuln=CVE-2007-5071
+file=sb_functions.php
+variable=$sb_info[ 'version' ]
+subdir=1
+
+[b2evolution]
+url=http://b2evolution.net/
+safe=1.9.2
+old_safe=1.8.7
+vuln=CVE-2007-0175
+file=_application.php
+variable=$app_version
+extra_match=This is b2evolution
+subdir=2
+
+[nucleuscms]
+url=http://www.nucleuscms.org/
+safe=3.40
+vuln=CVE-2009-0929
+file=globalfunctions.php
+variable=$nucleus['version']
+subdir=2
+
+[sBlog]
+url=http://sblog.se
+# Last release 0.7.3 since 2006-03-09
+safe=
+vuln=CVE-2007-1801
+file=version.ini
+variable=conf_current_version
+subdir=1
+extra_match=[sblog_version_info]
+
+[Movable_Type]
+url=http://www.movabletype.com/
+# movable type has a crazy versioning scheme, that makes it basically
+# impossible to really use freewvs properly, latest is 5.2.3
+safe=5.13
+old_safe=5.2.3,5.2.2,5.2.1
+vuln=CVE-2010-3921
+file=mt.php
+variable=VERSION_ID
+subdir=1
+
+[artmedic_weblog]
+url=http://www.artmedic-phpscripts.de/
+safe=
+# 1.0 as of 20080325
+vuln=CVE-2008-0798
+file=artmedic_index.php
+variable=# artmedic weblog
+subdir=0
+
+[DotClear]
+url=http://www.dotclear.net/
+safe=2.2.3
+vuln=CVE-2011-1584
+file=LISEZMOI.txt
+variable=DotClear
+subdir=0
