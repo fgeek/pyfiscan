@@ -55,7 +55,7 @@
 # CVE-2012-3394
 # CVE-2012-3395
 # CVE-2012-3396
-# CVE-2012-3397 
+# CVE-2012-3397
 # CVE-2012-3398
 # CVE-2012-4400
 # CVE-2012-4401
@@ -228,7 +228,7 @@ Moodle 2.4:
     location: ['']
     secure_version: ''
     regexp: ['']
-    cve: '' 
+    cve: ''
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Moodle 2.3:
@@ -236,7 +236,7 @@ Moodle 2.3:
     location: ['']
     secure_version: ''
     regexp: ['']
-    cve: '' 
+    cve: ''
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Moodle 2.2:
@@ -244,6 +244,6 @@ Moodle 2.2:
     location: ['']
     secure_version: ''
     regexp: ['']
-    cve: '' 
+    cve: ''
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
