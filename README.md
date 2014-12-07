@@ -37,6 +37,7 @@ Detects following software
 * EspoCRM
 * Foswiki
 * Gallery
+* Gollum
 * HelpDEZk
 * ImpressCMS
 * ImpressPages
