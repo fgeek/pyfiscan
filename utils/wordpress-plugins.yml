@@ -1,0 +1,4760 @@
+WordPress plugin theme-my-login:
+  1:
+    location: ['/wp-content/plugins/theme-my-login/readme.txt']
+    secure_version: '6.3.10'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin login-rebuilder:
+  1:
+    location: ['/wp-content/plugins/login-rebuilder/readme.txt']
+    secure_version: '1.2.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-3882'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin simple-share-buttons-adder:
+  1:
+    location: ['/wp-content/plugins/simple-share-buttons-adder/readme.txt']
+    secure_version: '4.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-4717'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin simple-share-buttons-adder:
+  2:
+    location: ['/wp-content/plugins/simple-share-buttons-adder/readme.txt']
+    secure_version: '4.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wordpress-simple-paypal-shopping-cart:
+  1:
+    location: ['/wp-content/plugins/wordpress-simple-paypal-shopping-cart/readme.txt']
+    secure_version: '3.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-2705'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin mail-subscribe-list:
+  1:
+    location: ['/wp-content/plugins/mail-subscribe-list/readme.txt']
+    secure_version: '2.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin s3-video:
+  1:
+    location: ['/wp-content/plugins/s3-video/readme.txt']
+    secure_version: '0.98'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin s3-video:
+  2:
+    location: ['/wp-content/plugins/s3-video/readme.txt']
+    secure_version: '0.983'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-7279'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin video-embed-thumbnail-generator:
+  1:
+    location: ['/wp-content/plugins/video-embed-thumbnail-generator/readme.txt']
+    secure_version: '4.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin 1player:
+  1:
+    location: ['/wp-content/plugins/1player/readme.txt']
+    secure_version: '4.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin external-video-for-everybody:
+  1:
+    location: ['/wp-content/plugins/external-video-for-everybody/readme.txt']
+    secure_version: '4.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin EasySqueezePage:
+  1:
+    location: ['/wp-content/plugins/EasySqueezePage/readme.txt']
+    secure_version: '4.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin crayon-syntax-highlighter:
+  1:
+    location: ['/wp-content/plugins/crayon-syntax-highlighter/readme.txt']
+    secure_version: '1.13'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin ungallery:
+  1:
+    location: ['/wp-content/plugins/ungallery/readme.txt']
+    secure_version: '2.1.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin thanks-you-counter-button:
+  1:
+    location: ['/wp-content/plugins/thanks-you-counter-button/readme.txt']
+    secure_version: '1.8.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin bookings:
+  1:
+    location: ['/wp-content/plugins/bookings/readme.txt']
+    secure_version: '1.8.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin cimy-user-manager:
+  1:
+    location: ['/wp-content/plugins/cimy-user-manager/readme.txt']
+    secure_version: '1.4.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin fs-real-estate-plugin:
+  1:
+    location: ['/wp-content/plugins/fs-real-estate-plugin/readme.txt']
+    secure_version: '2.06.04'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin fs-real-estate-plugin:
+  2:
+    location: ['/wp-content/plugins/fs-real-estate-plugin/readme.txt']
+    secure_version: '2.06.03'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp125:
+  1:
+    location: ['/wp-content/plugins/wp125/readme.txt']
+    secure_version: '1.4.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp125:
+  2:
+    location: ['/wp-content/plugins/wp125/readme.txt']
+    secure_version: '1.5.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-2700'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin all-video-gallery:
+  1:
+    location: ['/wp-content/plugins/all-video-gallery/readme.txt']
+    secure_version: '1.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2012-6653'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin floating-social-media-links:
+  1:
+    location: ['/wp-content/plugins/floating-social-media-links/readme.txt']
+    secure_version: '1.4.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin floating-social-media-links:
+  2:
+    location: ['/wp-content/plugins/floating-social-media-links/readme.txt']
+    secure_version: '1.4.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin zingiri-forum:
+  1:
+    location: ['/wp-content/plugins/zingiri-forum/readme.txt']
+    secure_version: '1.4.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2012-4920'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin google-document-embedder:
+  1:
+    location: ['/wp-content/plugins/google-document-embedder/readme.txt']
+    secure_version: '2.5.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2012-4915'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin google-document-embedder:
+  2:
+    location: ['/wp-content/plugins/google-document-embedder/readme.txt']
+    secure_version: '2.5.15'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin levelfourstorefront:
+  1:
+    location: ['/wp-content/plugins/levelfourstorefront/readme.txt']
+    secure_version: '8.1.15'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin reflex-gallery:
+  1:
+    location: ['/wp-content/plugins/reflex-gallery/readme.txt']
+    secure_version: '1.4.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin reflex-gallery:
+  2:
+    location: ['/wp-content/plugins/reflex-gallery/readme.txt']
+    secure_version: '3.0.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin advanced-custom-fields:
+  1:
+    location: ['/wp-content/plugins/advanced-custom-fields/readme.txt']
+    secure_version: '3.5.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin blaze-slide-show-for-wordpress:
+  1:
+    location: ['/wp-content/plugins/blaze-slide-show-for-wordpress/readme.txt']
+    secure_version: '2.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin ultimate-tinymce:
+  1:
+    location: ['/wp-content/plugins/ultimate-tinymce/readme.txt']
+    secure_version: '3.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-carouselslideshow:
+  1:
+    location: ['/wp-content/plugins/wp-carouselslideshow/readme.txt']
+    secure_version: '3.10'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-image-news-slider:
+  1:
+    location: ['/wp-content/plugins/wp-image-news-slider/readme.txt']
+    secure_version: '3.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-image-news-slider:
+  2:
+    location: ['/wp-content/plugins/wp-image-news-slider/readme.txt']
+    secure_version: '3.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2012-4327'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-image-news-slider:
+  3:
+    location: ['/wp-content/plugins/wp-image-news-slider/readme.txt']
+    secure_version: '3.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin cardoza-ajax-search:
+  1:
+    location: ['/wp-content/plugins/cardoza-ajax-search/readme.txt']
+    secure_version: '1.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin answer-my-question:
+  1:
+    location: ['/wp-content/plugins/answer-my-question/readme.txt']
+    secure_version: '1.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wordfence:
+  1:
+    location: ['/wp-content/plugins/wordfence/readme.txt']
+    secure_version: '3.8.7'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wordfence:
+  2:
+    location: ['/wp-content/plugins/wordfence/readme.txt']
+    secure_version: '3.8.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wordfence:
+  3:
+    location: ['/wp-content/plugins/wordfence/readme.txt']
+    secure_version: '3.8.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wordfence:
+  4:
+    location: ['/wp-content/plugins/wordfence/readme.txt']
+    secure_version: '3.3.7'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wordfence:
+  5:
+    location: ['/wp-content/plugins/wordfence/readme.txt']
+    secure_version: '5.2.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wordfence:
+  6:
+    location: ['/wp-content/plugins/wordfence/readme.txt']
+    secure_version: '5.2.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wordfence:
+  7:
+    location: ['/wp-content/plugins/wordfence/readme.txt']
+    secure_version: '5.2.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wordfence:
+  8:
+    location: ['/wp-content/plugins/wordfence/readme.txt']
+    secure_version: '5.2.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-4664'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wordfence:
+  9:
+    location: ['/wp-content/plugins/wordfence/readme.txt']
+    secure_version: '5.2.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin threewp-email-reflector:
+  1:
+    location: ['/wp-content/plugins/threewp-email-reflector/readme.txt']
+    secure_version: '1.16'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2012-2572'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin postie:
+  1:
+    location: ['/wp-content/plugins/postie/readme.txt']
+    secure_version: '1.5.15'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2012-2580'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin rsvpmaker:
+  1:
+    location: ['/wp-content/plugins/rsvpmaker/readme.txt']
+    secure_version: '2.5.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin backup:
+  1:
+    location: ['/wp-content/plugins/backup/readme.txt']
+    secure_version: '2.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-automatic:
+  1:
+    location: ['/wp-content/plugins/wp-automatic/readme.txt']
+    secure_version: '2.0.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin videowhisper-live-streaming-integration:
+  1:
+    location: ['/wp-content/plugins/videowhisper-live-streaming-integration/readme.txt']
+    secure_version: '4.29.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-1906'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin mac-dock-gallery:
+  1:
+    location: ['/wp-content/plugins/mac-dock-gallery/readme.txt']
+    secure_version: '3.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-gpx-map:
+  1:
+    location: ['/wp-content/plugins/wp-gpx-map/readme.txt']
+    secure_version: '1.1.23'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2012-6649'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-property:
+  1:
+    location: ['/wp-content/plugins/wp-property/readme.txt']
+    secure_version: '1.38.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wpmarketplace:
+  1:
+    location: ['/wp-content/plugins/wpmarketplace/readme.txt']
+    secure_version: '1.2.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin store-locator-le:
+  1:
+    location: ['/wp-content/plugins/store-locator-le/readme.txt']
+    secure_version: '3.8.7'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin foxypress:
+  1:
+    location: ['/wp-content/plugins/foxypress/readme.txt']
+    secure_version: '0.4.2.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-statistics:
+  1:
+    location: ['/wp-content/plugins/wp-statistics/readme.txt']
+    secure_version: '8.3.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-statistics:
+  2:
+    location: ['/wp-content/plugins/wp-statistics/readme.txt']
+    secure_version: '8.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-easy-gallery:
+  1:
+    location: ['/wp-content/plugins/wp-easy-gallery/readme.txt']
+    secure_version: '2.7.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-easy-gallery:
+  2:
+    location: ['/wp-content/plugins/wp-easy-gallery/readme.txt']
+    secure_version: '2.7.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-easy-gallery:
+  3:
+    location: ['/wp-content/plugins/wp-easy-gallery/readme.txt']
+    secure_version: '2.7.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-easy-gallery:
+  4:
+    location: ['/wp-content/plugins/wp-easy-gallery/readme.txt']
+    secure_version: '2.7.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-easy-gallery:
+  5:
+    location: ['/wp-content/plugins/wp-easy-gallery/readme.txt']
+    secure_version: '2.7.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin subscribe2:
+  1:
+    location: ['/wp-content/plugins/subscribe2/readme.txt']
+    secure_version: '8.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin sharebar:
+  1:
+    location: ['/wp-content/plugins/sharebar/readme.txt']
+    secure_version: '1.2.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin sabre:
+  1:
+    location: ['/wp-content/plugins/sabre/readme.txt']
+    secure_version: '1.2.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2012-2916'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin newsletter-manager:
+  1:
+    location: ['/wp-content/plugins/newsletter-manager/readme.txt']
+    secure_version: '1.0.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2012-6628'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin download-monitor:
+  1:
+    location: ['/wp-content/plugins/download-monitor/readme.txt']
+    secure_version: '3.3.6.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-5098'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin download-monitor:
+  2:
+    location: ['/wp-content/plugins/download-monitor/readme.txt']
+    secure_version: '3.3.5.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2012-4768'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin download-monitor:
+  3:
+    location: ['/wp-content/plugins/download-monitor/readme.txt']
+    secure_version: '2.0.8'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2008-2034'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin download-manager:
+  1:
+    location: ['/wp-content/plugins/download-manager/readme.txt']
+    secure_version: '2.5.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-7319'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin download-manager:
+  2:
+    location: ['/wp-content/plugins/download-manager/readme.txt']
+    secure_version: '2.2.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin download-manager:
+  3:
+    location: ['/wp-content/plugins/download-manager/readme.txt']
+    secure_version: '2.7.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin codestyling-localization:
+  1:
+    location: ['/wp-content/plugins/codestyling-localization/readme.txt']
+    secure_version: '1.99.20'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin bulletproof-security:
+  1:
+    location: ['/wp-content/plugins/bulletproof-security/readme.txt']
+    secure_version: '.47.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin bulletproof-security:
+  2:
+    location: ['/wp-content/plugins/bulletproof-security/readme.txt']
+    secure_version: '.49'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-3487'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin bulletproof-security:
+  3:
+    location: ['/wp-content/plugins/bulletproof-security/readme.txt']
+    secure_version: '.51.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-7958'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin better-wp-security:
+  1:
+    location: ['/wp-content/plugins/better-wp-security/readme.txt']
+    secure_version: '3.5.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin better-wp-security:
+  2:
+    location: ['/wp-content/plugins/better-wp-security/readme.txt']
+    secure_version: '3.5.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin better-wp-security:
+  3:
+    location: ['/wp-content/plugins/better-wp-security/readme.txt']
+    secure_version: '3.4.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin better-wp-security:
+  4:
+    location: ['/wp-content/plugins/better-wp-security/readme.txt']
+    secure_version: '3.2.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin custom-contact-forms:
+  1:
+    location: ['/wp-content/plugins/custom-contact-forms/readme.txt']
+    secure_version: '5.1.0.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin 2-click-socialmedia-button:
+  1:
+    location: ['/wp-content/plugins/2-click-socialmedia-button/readme.txt']
+    secure_version: '0.35'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin login-with-ajax:
+  1:
+    location: ['/wp-content/plugins/login-with-ajax/readme.txt']
+    secure_version: '3.0.4.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2012-2759'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin login-with-ajax:
+  2:
+    location: ['/wp-content/plugins/login-with-ajax/readme.txt']
+    secure_version: '3.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-2707'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin zingiri-web-shop:
+  1:
+    location: ['/wp-content/plugins/zingiri-web-shop/readme.txt']
+    secure_version: '2.6.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin zingiri-web-shop:
+  2:
+    location: ['/wp-content/plugins/zingiri-web-shop/readme.txt']
+    secure_version: '2.4.8'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin zingiri-web-shop:
+  3:
+    location: ['/wp-content/plugins/zingiri-web-shop/readme.txt']
+    secure_version: '2.4.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2012-6506'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin zingiri-web-shop:
+  4:
+    location: ['/wp-content/plugins/zingiri-web-shop/readme.txt']
+    secure_version: '2.4.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2012-6506'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin zingiri-web-shop:
+  5:
+    location: ['/wp-content/plugins/zingiri-web-shop/readme.txt']
+    secure_version: '2.2.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin cms-tree-page-view:
+  1:
+    location: ['/wp-content/plugins/cms-tree-page-view/readme.txt']
+    secure_version: '1.2.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin cms-tree-page-view:
+  2:
+    location: ['/wp-content/plugins/cms-tree-page-view/readme.txt']
+    secure_version: '0.8.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin all-in-one-event-calendar:
+  1:
+    location: ['/wp-content/plugins/all-in-one-event-calendar/readme.txt']
+    secure_version: '1.10'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin all-in-one-event-calendar:
+  2:
+    location: ['/wp-content/plugins/all-in-one-event-calendar/readme.txt']
+    secure_version: '1.10'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin all-in-one-event-calendar:
+  3:
+    location: ['/wp-content/plugins/all-in-one-event-calendar/readme.txt']
+    secure_version: '1.8.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2012-1835'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin buddypress:
+  1:
+    location: ['/wp-content/plugins/buddypress/readme.txt']
+    secure_version: '1.9.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-1889'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin buddypress:
+  2:
+    location: ['/wp-content/plugins/buddypress/readme.txt']
+    secure_version: '1.9.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-1888'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin buddypress:
+  3:
+    location: ['/wp-content/plugins/buddypress/readme.txt']
+    secure_version: '1.7.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin buddypress:
+  4:
+    location: ['/wp-content/plugins/buddypress/readme.txt']
+    secure_version: '1.5.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2012-2109'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin buddypress:
+  5:
+    location: ['/wp-content/plugins/buddypress/readme.txt']
+    secure_version: '1.2.10'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin allwebmenus-wordpress-menu-plugin:
+  1:
+    location: ['/wp-content/plugins/allwebmenus-wordpress-menu-plugin/readme.txt']
+    secure_version: '1.1.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2011-3981'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin count-per-day:
+  1:
+    location: ['/wp-content/plugins/count-per-day/readme.txt']
+    secure_version: '3.2.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin count-per-day:
+  2:
+    location: ['/wp-content/plugins/count-per-day/readme.txt']
+    secure_version: '3.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2012-3434'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin count-per-day:
+  3:
+    location: ['/wp-content/plugins/count-per-day/readme.txt']
+    secure_version: '3.1.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin count-per-day:
+  4:
+    location: ['/wp-content/plugins/count-per-day/readme.txt']
+    secure_version: '3.1.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin count-per-day:
+  5:
+    location: ['/wp-content/plugins/count-per-day/readme.txt']
+    secure_version: '3.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin disqus-comment-system:
+  1:
+    location: ['/wp-content/plugins/disqus-comment-system/readme.txt']
+    secure_version: '2.76'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin disqus-comment-system:
+  2:
+    location: ['/wp-content/plugins/disqus-comment-system/readme.txt']
+    secure_version: '2.69'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin disqus-comment-system:
+  3:
+    location: ['/wp-content/plugins/disqus-comment-system/readme.txt']
+    secure_version: '2.7.8'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin disqus-comment-system:
+  4:
+    location: ['/wp-content/plugins/disqus-comment-system/readme.txt']
+    secure_version: '2.76'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-5345'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-recaptcha:
+  1:
+    location: ['/wp-content/plugins/wp-recaptcha/readme.txt']
+    secure_version: '3.1.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin link-library:
+  1:
+    location: ['/wp-content/plugins/link-library/readme.txt']
+    secure_version: '5.1.7'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin link-library:
+  2:
+    location: ['/wp-content/plugins/link-library/readme.txt']
+    secure_version: '5.0.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin link-library:
+  3:
+    location: ['/wp-content/plugins/link-library/readme.txt']
+    secure_version: '5.0.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin link-library:
+  4:
+    location: ['/wp-content/plugins/link-library/readme.txt']
+    secure_version: '5.7.9.7'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin clickdesk-live-support-chat:
+  1:
+    location: ['/wp-content/plugins/clickdesk-live-support-chat/readme.txt']
+    secure_version: '2.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin adminimize:
+  1:
+    location: ['/wp-content/plugins/adminimize/readme.txt']
+    secure_version: '1.7.22'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2011-4926'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin allow-php-in-posts-and-pages:
+  1:
+    location: ['/wp-content/plugins/allow-php-in-posts-and-pages/readme.txt']
+    secure_version: '2.1.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-ds-faq-plus:
+  1:
+    location: ['/wp-content/plugins/wp-ds-faq-plus/readme.txt']
+    secure_version: '1.0.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-ds-faq-plus:
+  2:
+    location: ['/wp-content/plugins/wp-ds-faq-plus/readme.txt']
+    secure_version: '1.0.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-symposium:
+  1:
+    location: ['/wp-content/plugins/wp-symposium/readme.txt']
+    secure_version: '13.04'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-2695'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-symposium:
+  2:
+    location: ['/wp-content/plugins/wp-symposium/readme.txt']
+    secure_version: '12.12'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-symposium:
+  3:
+    location: ['/wp-content/plugins/wp-symposium/readme.txt']
+    secure_version: '12.07.01'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-symposium:
+  4:
+    location: ['/wp-content/plugins/wp-symposium/readme.txt']
+    secure_version: '11.12.24'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2011-5051'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-symposium:
+  5:
+    location: ['/wp-content/plugins/wp-symposium/readme.txt']
+    secure_version: '11.12.08'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2011-3841'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-symposium:
+  6:
+    location: ['/wp-content/plugins/wp-symposium/readme.txt']
+    secure_version: '11.08.18'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin flash-album-gallery:
+  1:
+    location: ['/wp-content/plugins/flash-album-gallery/readme.txt']
+    secure_version: '2.72'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-3261'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin flash-album-gallery:
+  2:
+    location: ['/wp-content/plugins/flash-album-gallery/readme.txt']
+    secure_version: '2.56'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin flash-album-gallery:
+  3:
+    location: ['/wp-content/plugins/flash-album-gallery/readme.txt']
+    secure_version: '2.17'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin flash-album-gallery:
+  4:
+    location: ['/wp-content/plugins/flash-album-gallery/readme.txt']
+    secure_version: '1.76'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin forum-server:
+  1:
+    location: ['/wp-content/plugins/forum-server/readme.txt']
+    secure_version: '1.7.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2012-6625'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin relevanssi:
+  1:
+    location: ['/wp-content/plugins/relevanssi/readme.txt']
+    secure_version: '3.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin relevanssi:
+  2:
+    location: ['/wp-content/plugins/relevanssi/readme.txt']
+    secure_version: '2.7.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin comment-rating:
+  1:
+    location: ['/wp-content/plugins/comment-rating/readme.txt']
+    secure_version: '2.9.24'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin user-photo:
+  1:
+    location: ['/wp-content/plugins/user-photo/readme.txt']
+    secure_version: '0.9.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-1916'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin mingle-forum:
+  1:
+    location: ['/wp-content/plugins/mingle-forum/readme.txt']
+    secure_version: '1.0.33.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin mingle-forum:
+  2:
+    location: ['/wp-content/plugins/mingle-forum/readme.txt']
+    secure_version: '1.0.34'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-0734'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin mingle-forum:
+  3:
+    location: ['/wp-content/plugins/mingle-forum/readme.txt']
+    secure_version: '1.0.34'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-0734'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin mingle-forum:
+  4:
+    location: ['/wp-content/plugins/mingle-forum/readme.txt']
+    secure_version: '1.0.34'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-0735'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin mingle-forum:
+  5:
+    location: ['/wp-content/plugins/mingle-forum/readme.txt']
+    secure_version: '1.0.31'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin nextgen-gallery:
+  1:
+    location: ['/wp-content/plugins/nextgen-gallery/readme.txt']
+    secure_version: '2.0.66'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin nextgen-gallery:
+  2:
+    location: ['/wp-content/plugins/nextgen-gallery/readme.txt']
+    secure_version: '2.0.7'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin nextgen-gallery:
+  3:
+    location: ['/wp-content/plugins/nextgen-gallery/readme.txt']
+    secure_version: '1.9.8'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin nextgen-gallery:
+  4:
+    location: ['/wp-content/plugins/nextgen-gallery/readme.txt']
+    secure_version: '1.9.13'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-3684'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin nextgen-gallery:
+  5:
+    location: ['/wp-content/plugins/nextgen-gallery/readme.txt']
+    secure_version: '1.9.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin nextgen-gallery:
+  6:
+    location: ['/wp-content/plugins/nextgen-gallery/readme.txt']
+    secure_version: '1.8.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin nextgen-gallery:
+  7:
+    location: ['/wp-content/plugins/nextgen-gallery/readme.txt']
+    secure_version: '1.7.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin nextgen-gallery:
+  8:
+    location: ['/wp-content/plugins/nextgen-gallery/readme.txt']
+    secure_version: '1.5.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin events-calendar:
+  1:
+    location: ['/wp-content/plugins/events-calendar/readme.txt']
+    secure_version: '6.7.10'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin events-calendar:
+  2:
+    location: ['/wp-content/plugins/events-calendar/readme.txt']
+    secure_version: '6.7.12a'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-cumulus:
+  1:
+    location: ['/wp-content/plugins/wp-cumulus/readme.txt']
+    secure_version: '1.23'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-syntax:
+  1:
+    location: ['/wp-content/plugins/wp-syntax/readme.txt']
+    secure_version: '0.9.10'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-filemanager:
+  1:
+    location: ['/wp-content/plugins/wp-filemanager/readme.txt']
+    secure_version: '1.4.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin backupwordpress:
+  1:
+    location: ['/wp-content/plugins/backupwordpress/readme.txt']
+    secure_version: '0.4.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin sendit:
+  1:
+    location: ['/wp-content/plugins/sendit/readme.txt']
+    secure_version: '2.1.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin yolink-search:
+  1:
+    location: ['/wp-content/plugins/yolink-search/readme.txt']
+    secure_version: '2.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-bannerize:
+  1:
+    location: ['/wp-content/plugins/wp-bannerize/readme.txt']
+    secure_version: '2.8.7'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-bannerize:
+  2:
+    location: ['/wp-content/plugins/wp-bannerize/readme.txt']
+    secure_version: '2.8.8'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin videowhisper-video-presentation:
+  1:
+    location: ['/wp-content/plugins/videowhisper-video-presentation/readme.txt']
+    secure_version: '3.31.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-4570'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin scormcloud:
+  1:
+    location: ['/wp-content/plugins/scormcloud/readme.txt']
+    secure_version: '1.0.7'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-filebase:
+  1:
+    location: ['/wp-content/plugins/wp-filebase/readme.txt']
+    secure_version: '0.3.0.03'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-filebase:
+  2:
+    location: ['/wp-content/plugins/wp-filebase/readme.txt']
+    secure_version: '0.2.9.25'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-e-commerce:
+  1:
+    location: ['/wp-content/plugins/wp-e-commerce/readme.txt']
+    secure_version: '3.8.9.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-e-commerce:
+  2:
+    location: ['/wp-content/plugins/wp-e-commerce/readme.txt']
+    secure_version: '3.8.9.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-e-commerce:
+  3:
+    location: ['/wp-content/plugins/wp-e-commerce/readme.txt']
+    secure_version: '3.8.8'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-e-commerce:
+  4:
+    location: ['/wp-content/plugins/wp-e-commerce/readme.txt']
+    secure_version: '3.8.7.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2012-5310'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-e-commerce:
+  5:
+    location: ['/wp-content/plugins/wp-e-commerce/readme.txt']
+    secure_version: '3.8.14.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin thecartpress:
+  1:
+    location: ['/wp-content/plugins/thecartpress/readme.txt']
+    secure_version: '1.1.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin mailz:
+  1:
+    location: ['/wp-content/plugins/mailz/readme.txt']
+    secure_version: '1.3.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin mailz:
+  2:
+    location: ['/wp-content/plugins/mailz/readme.txt']
+    secure_version: '1.4.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin g-web-shop:
+  1:
+    location: ['/wp-content/plugins/g-web-shop/readme.txt']
+    secure_version: '2.2.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin mini-mail-dashboard-widget:
+  1:
+    location: ['/wp-content/plugins/mini-mail-dashboard-widget/readme.txt']
+    secure_version: '1.37'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin mini-mail-dashboard-widget:
+  2:
+    location: ['/wp-content/plugins/mini-mail-dashboard-widget/readme.txt']
+    secure_version: '1.43'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin category-grid-view-gallery:
+  1:
+    location: ['/wp-content/plugins/category-grid-view-gallery/readme.txt']
+    secure_version: '2.3.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-4117'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin adrotate:
+  1:
+    location: ['/wp-content/plugins/adrotate/readme.txt']
+    secure_version: '3.9.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-1854'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin adrotate:
+  2:
+    location: ['/wp-content/plugins/adrotate/readme.txt']
+    secure_version: '3.6.8'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2011-4671'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin adrotate:
+  3:
+    location: ['/wp-content/plugins/adrotate/readme.txt']
+    secure_version: '3.6.8'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2011-4671'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin gd-star-rating:
+  1:
+    location: ['/wp-content/plugins/gd-star-rating/readme.txt']
+    secure_version: '1.9.19'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-photo-album-plus:
+  1:
+    location: ['/wp-content/plugins/wp-photo-album-plus/readme.txt']
+    secure_version: '4.2.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-photo-album-plus:
+  2:
+    location: ['/wp-content/plugins/wp-photo-album-plus/readme.txt']
+    secure_version: '4.8.12'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-photo-album-plus:
+  3:
+    location: ['/wp-content/plugins/wp-photo-album-plus/readme.txt']
+    secure_version: '4.9.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-photo-album-plus:
+  4:
+    location: ['/wp-content/plugins/wp-photo-album-plus/readme.txt']
+    secure_version: '4.9.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-photo-album-plus:
+  5:
+    location: ['/wp-content/plugins/wp-photo-album-plus/readme.txt']
+    secure_version: '5.0.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-3254'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-photo-album-plus:
+  6:
+    location: ['/wp-content/plugins/wp-photo-album-plus/readme.txt']
+    secure_version: '5.0.11'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-photo-album-plus:
+  7:
+    location: ['/wp-content/plugins/wp-photo-album-plus/readme.txt']
+    secure_version: '5.4.8'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-photo-album-plus:
+  8:
+    location: ['/wp-content/plugins/wp-photo-album-plus/readme.txt']
+    secure_version: '5.4.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-photo-album-plus:
+  9:
+    location: ['/wp-content/plugins/wp-photo-album-plus/readme.txt']
+    secure_version: '5.4.18'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-8814'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin backwpup:
+  1:
+    location: ['/wp-content/plugins/backwpup/readme.txt']
+    secure_version: '3.0.13'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-4626'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin portable-phpmyadmin:
+  1:
+    location: ['/wp-content/plugins/portable-phpmyadmin/readme.txt']
+    secure_version: '1.3.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2012-5469'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin super-refer-a-friend:
+  1:
+    location: ['/wp-content/plugins/super-refer-a-friend/readme.txt']
+    secure_version: '1.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin w3-total-cache:
+  1:
+    location: ['/wp-content/plugins/w3-total-cache/readme.txt']
+    secure_version: '0.9.2.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2012-6079'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin w3-total-cache:
+  2:
+    location: ['/wp-content/plugins/w3-total-cache/readme.txt']
+    secure_version: '0.9.2.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-2010'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-super-cache:
+  1:
+    location: ['/wp-content/plugins/wp-super-cache/readme.txt']
+    secure_version: '1.3.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-super-cache:
+  2:
+    location: ['/wp-content/plugins/wp-super-cache/readme.txt']
+    secure_version: '1.3.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-2008'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-super-cache:
+  3:
+    location: ['/wp-content/plugins/wp-super-cache/readme.txt']
+    secure_version: '1.3.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-2008'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-super-cache:
+  4:
+    location: ['/wp-content/plugins/wp-super-cache/readme.txt']
+    secure_version: '1.3.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-2008'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-super-cache:
+  5:
+    location: ['/wp-content/plugins/wp-super-cache/readme.txt']
+    secure_version: '1.3.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-2008'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-super-cache:
+  6:
+    location: ['/wp-content/plugins/wp-super-cache/readme.txt']
+    secure_version: '1.3.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-2008'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-super-cache:
+  7:
+    location: ['/wp-content/plugins/wp-super-cache/readme.txt']
+    secure_version: '1.3.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-2008'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin simple-login-log:
+  1:
+    location: ['/wp-content/plugins/simple-login-log/readme.txt']
+    secure_version: '0.9.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin simple-login-log:
+  2:
+    location: ['/wp-content/plugins/simple-login-log/readme.txt']
+    secure_version: '0.9.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-slimstat:
+  1:
+    location: ['/wp-content/plugins/wp-slimstat/readme.txt']
+    secure_version: '3.5.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-slimstat:
+  2:
+    location: ['/wp-content/plugins/wp-slimstat/readme.txt']
+    secure_version: '2.8.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin browser-rejector:
+  1:
+    location: ['/wp-content/plugins/browser-rejector/readme.txt']
+    secure_version: '2.11'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin cardoza-wordpress-poll:
+  1:
+    location: ['/wp-content/plugins/cardoza-wordpress-poll/readme.txt']
+    secure_version: '34.06'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-1401'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin cardoza-wordpress-poll:
+  2:
+    location: ['/wp-content/plugins/cardoza-wordpress-poll/readme.txt']
+    secure_version: '33.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin devformatter:
+  1:
+    location: ['/wp-content/plugins/devformatter/readme.txt']
+    secure_version: '2013.0.1.41'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin devformatter:
+  2:
+    location: ['/wp-content/plugins/devformatter/readme.txt']
+    secure_version: '2013.0.1.41'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin dvs-custom-notification:
+  1:
+    location: ['/wp-content/plugins/dvs-custom-notification/readme.txt']
+    secure_version: '1.0.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2012-4921'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin events-manager:
+  1:
+    location: ['/wp-content/plugins/events-manager/readme.txt']
+    secure_version: '5.5.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin events-manager:
+  2:
+    location: ['/wp-content/plugins/events-manager/readme.txt']
+    secure_version: '5.3.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin events-manager:
+  3:
+    location: ['/wp-content/plugins/events-manager/readme.txt']
+    secure_version: '5.3.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin events-manager:
+  4:
+    location: ['/wp-content/plugins/events-manager/readme.txt']
+    secure_version: '5.3.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-1407'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin solvemedia:
+  1:
+    location: ['/wp-content/plugins/solvemedia/readme.txt']
+    secure_version: '1.1.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin solvemedia:
+  2:
+    location: ['/wp-content/plugins/solvemedia/readme.txt']
+    secure_version: '1.1.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin knews:
+  1:
+    location: ['/wp-content/plugins/knews/readme.txt']
+    secure_version: '1.2.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin knews:
+  2:
+    location: ['/wp-content/plugins/knews/readme.txt']
+    secure_version: '1.2.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin knews:
+  3:
+    location: ['/wp-content/plugins/knews/readme.txt']
+    secure_version: '1.1.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin sagepay-direct-for-woocommerce-payment-gateway:
+  1:
+    location: ['/wp-content/plugins/sagepay-direct-for-woocommerce-payment-gateway/readme.txt']
+    secure_version: '0.1.6.7'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin sagepay-direct-for-woocommerce-payment-gateway:
+  2:
+    location: ['/wp-content/plugins/sagepay-direct-for-woocommerce-payment-gateway/readme.txt']
+    secure_version: '0.1.6.7'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin sagepay-direct-for-woocommerce-payment-gateway:
+  3:
+    location: ['/wp-content/plugins/sagepay-direct-for-woocommerce-payment-gateway/readme.txt']
+    secure_version: '0.1.6.7'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin woocommerce-predictive-search:
+  1:
+    location: ['/wp-content/plugins/woocommerce-predictive-search/readme.txt']
+    secure_version: '1.0.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin woocommerce:
+  1:
+    location: ['/wp-content/plugins/woocommerce/readme.txt']
+    secure_version: '2.0.17'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin woocommerce:
+  2:
+    location: ['/wp-content/plugins/woocommerce/readme.txt']
+    secure_version: '2.0.13'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin woocommerce:
+  3:
+    location: ['/wp-content/plugins/woocommerce/readme.txt']
+    secure_version: '2.2.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-tiger:
+  1:
+    location: ['/wp-content/plugins/wp-tiger/readme.txt']
+    secure_version: '1.1.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-postviews:
+  1:
+    location: ['/wp-content/plugins/wp-postviews/readme.txt']
+    secure_version: '1.63'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-3252'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wysija-newsletters:
+  1:
+    location: ['/wp-content/plugins/wysija-newsletters/readme.txt']
+    secure_version: '2.6.7'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-4725'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wysija-newsletters:
+  2:
+    location: ['/wp-content/plugins/wysija-newsletters/readme.txt']
+    secure_version: '2.2.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-1408'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wysija-newsletters:
+  3:
+    location: ['/wp-content/plugins/wysija-newsletters/readme.txt']
+    secure_version: '2.1.7'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wysija-newsletters:
+  4:
+    location: ['/wp-content/plugins/wysija-newsletters/readme.txt']
+    secure_version: '2.6.8'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-4726'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wysija-newsletters:
+  5:
+    location: ['/wp-content/plugins/wysija-newsletters/readme.txt']
+    secure_version: '2.6.11'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-3907'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin spider-calendar:
+  1:
+    location: ['/wp-content/plugins/spider-calendar/readme.txt']
+    secure_version: '1.1.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin spider-calendar:
+  2:
+    location: ['/wp-content/plugins/spider-calendar/readme.txt']
+    secure_version: '1.1.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin spider-calendar:
+  3:
+    location: ['/wp-content/plugins/spider-calendar/readme.txt']
+    secure_version: '1.1.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin form:
+  1:
+    location: ['/wp-content/plugins/form/readme.txt']
+    secure_version: '1.2.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin white-label-cms:
+  1:
+    location: ['/wp-content/plugins/white-label-cms/readme.txt']
+    secure_version: '1.5.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin download-shortcode:
+  1:
+    location: ['/wp-content/plugins/download-shortcode/readme.txt']
+    secure_version: '0.2.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin eshop-magic:
+  1:
+    location: ['/wp-content/plugins/eshop-magic/readme.txt']
+    secure_version: '0.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin pinterest-pin-it-button:
+  1:
+    location: ['/wp-content/plugins/pinterest-pin-it-button/readme.txt']
+    secure_version: '1.4.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin css-plus:
+  1:
+    location: ['/wp-content/plugins/css-plus/readme.txt']
+    secure_version: '1.3.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin multisite-plugin-manager:
+  1:
+    location: ['/wp-content/plugins/multisite-plugin-manager/readme.txt']
+    secure_version: '3.1.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-topbar:
+  1:
+    location: ['/wp-content/plugins/wp-topbar/readme.txt']
+    secure_version: '4.03'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-topbar:
+  2:
+    location: ['/wp-content/plugins/wp-topbar/readme.txt']
+    secure_version: '4.03'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin cloudsafe365-for-wp:
+  1:
+    location: ['/wp-content/plugins/cloudsafe365-for-wp/readme.txt']
+    secure_version: '1.47'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin vitamin:
+  1:
+    location: ['/wp-content/plugins/vitamin/readme.txt']
+    secure_version: '1.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2012-6651'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin vitamin:
+  2:
+    location: ['/wp-content/plugins/vitamin/readme.txt']
+    secure_version: '1.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2012-6651'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin featured-post-with-thumbnail:
+  1:
+    location: ['/wp-content/plugins/featured-post-with-thumbnail/readme.txt']
+    secure_version: '1.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin xve-various-embed:
+  1:
+    location: ['/wp-content/plugins/xve-various-embed/readme.txt']
+    secure_version: '1.0.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin kau-boys-backend-localization:
+  1:
+    location: ['/wp-content/plugins/kau-boys-backend-localization/readme.txt']
+    secure_version: '2.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin kau-boys-backend-localization:
+  2:
+    location: ['/wp-content/plugins/kau-boys-backend-localization/readme.txt']
+    secure_version: '2.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin flexi-quote-rotator:
+  1:
+    location: ['/wp-content/plugins/flexi-quote-rotator/readme.txt']
+    secure_version: '0.9.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin gotmls:
+  1:
+    location: ['/wp-content/plugins/gotmls/readme.txt']
+    secure_version: '1.2.07.20'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin cimy-user-extra-fields:
+  1:
+    location: ['/wp-content/plugins/cimy-user-extra-fields/readme.txt']
+    secure_version: '2.3.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin nmedia-user-file-uploader:
+  1:
+    location: ['/wp-content/plugins/nmedia-user-file-uploader/readme.txt']
+    secure_version: '2.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin nmedia-user-file-uploader:
+  2:
+    location: ['/wp-content/plugins/nmedia-user-file-uploader/readme.txt']
+    secure_version: '3.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-5324'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin simple-history:
+  1:
+    location: ['/wp-content/plugins/simple-history/readme.txt']
+    secure_version: '1.0.8'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-table-reloaded:
+  1:
+    location: ['/wp-content/plugins/wp-table-reloaded/readme.txt']
+    secure_version: '1.9.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-1463'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin newsletter:
+  1:
+    location: ['/wp-content/plugins/newsletter/readme.txt']
+    secure_version: '3.0.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin newsletter:
+  2:
+    location: ['/wp-content/plugins/newsletter/readme.txt']
+    secure_version: '3.2.7'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin commentluv:
+  1:
+    location: ['/wp-content/plugins/commentluv/readme.txt']
+    secure_version: '2.92.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-1409'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-ecommerce-shop-styling:
+  1:
+    location: ['/wp-content/plugins/wp-ecommerce-shop-styling/readme.txt']
+    secure_version: '1.8'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-0724'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin audio-player:
+  1:
+    location: ['/wp-content/plugins/audio-player/readme.txt']
+    secure_version: '2.0.4.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-1464'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin contact-form-plugin:
+  1:
+    location: ['/wp-content/plugins/contact-form-plugin/readme.txt']
+    secure_version: '3.35'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin slidedeck2:
+  1:
+    location: ['/wp-content/plugins/slidedeck2/readme.txt']
+    secure_version: '2.3.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin snazzy-archives:
+  1:
+    location: ['/wp-content/plugins/snazzy-archives/readme.txt']
+    secure_version: '1.7.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2009-4168'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin mathjax-latex:
+  1:
+    location: ['/wp-content/plugins/mathjax-latex/readme.txt']
+    secure_version: '1.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin open-flash-chart-core-wordpress-plugin:
+  1:
+    location: ['/wp-content/plugins/open-flash-chart-core-wordpress-plugin/readme.txt']
+    secure_version: '0.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2009-4140'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin podpress:
+  1:
+    location: ['/wp-content/plugins/podpress/readme.txt']
+    secure_version: '8.8.10.17'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-2714'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin bigcontact:
+  1:
+    location: ['/wp-content/plugins/bigcontact/readme.txt']
+    secure_version: '1.4.7'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin drawblog:
+  1:
+    location: ['/wp-content/plugins/drawblog/readme.txt']
+    secure_version: '0.81'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin social-media-widget:
+  1:
+    location: ['/wp-content/plugins/social-media-widget/readme.txt']
+    secure_version: '4.0.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin social-media-widget:
+  2:
+    location: ['/wp-content/plugins/social-media-widget/readme.txt']
+    secure_version: '4.0.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-1949'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin facebook-members:
+  1:
+    location: ['/wp-content/plugins/facebook-members/readme.txt']
+    secure_version: '5.0.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-2703'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin foursquare-checkins:
+  1:
+    location: ['/wp-content/plugins/foursquare-checkins/readme.txt']
+    secure_version: '1.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-2709'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin formidable:
+  1:
+    location: ['/wp-content/plugins/formidable/readme.txt']
+    secure_version: '1.06.09'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin all-in-one-webmaster:
+  1:
+    location: ['/wp-content/plugins/all-in-one-webmaster/readme.txt']
+    secure_version: '8.2.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-2696'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin haiku-minimalist-audio-player:
+  1:
+    location: ['/wp-content/plugins/haiku-minimalist-audio-player/readme.txt']
+    secure_version: '1.1.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin syntaxhighlighter:
+  1:
+    location: ['/wp-content/plugins/syntaxhighlighter/readme.txt']
+    secure_version: '3.1.10'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin syntaxhighlighter:
+  2:
+    location: ['/wp-content/plugins/syntaxhighlighter/readme.txt']
+    secure_version: '3.1.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin top-10:
+  1:
+    location: ['/wp-content/plugins/top-10/readme.txt']
+    secure_version: '1.9.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin easy-adsense-lite:
+  1:
+    location: ['/wp-content/plugins/easy-adsense-lite/readme.txt']
+    secure_version: '6.10'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-2702'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-cleanfix:
+  1:
+    location: ['/wp-content/plugins/wp-cleanfix/readme.txt']
+    secure_version: '3.0.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-2108'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin mail-on-update:
+  1:
+    location: ['/wp-content/plugins/mail-on-update/readme.txt']
+    secure_version: '5.2.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin related-posts-by-zemanta:
+  1:
+    location: ['/wp-content/plugins/related-posts-by-zemanta/readme.txt']
+    secure_version: '1.3.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-3477'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wordpress-23-related-posts-plugin:
+  1:
+    location: ['/wp-content/plugins/wordpress-23-related-posts-plugin/readme.txt']
+    secure_version: '2.7.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-3476'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin related-posts:
+  1:
+    location: ['/wp-content/plugins/related-posts/readme.txt']
+    secure_version: '2.7.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-3257'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-print-friendly:
+  1:
+    location: ['/wp-content/plugins/wp-print-friendly/readme.txt']
+    secure_version: '0.5.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-print-friendly:
+  2:
+    location: ['/wp-content/plugins/wp-print-friendly/readme.txt']
+    secure_version: '0.5.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin contextual-related-posts:
+  1:
+    location: ['/wp-content/plugins/contextual-related-posts/readme.txt']
+    secure_version: '1.8.10.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-3937'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin contextual-related-posts:
+  2:
+    location: ['/wp-content/plugins/contextual-related-posts/readme.txt']
+    secure_version: '1.8.7'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-2710'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin calendar:
+  1:
+    location: ['/wp-content/plugins/calendar/readme.txt']
+    secure_version: '1.3.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-2698'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin feedweb:
+  1:
+    location: ['/wp-content/plugins/feedweb/readme.txt']
+    secure_version: '1.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-3720'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-print:
+  1:
+    location: ['/wp-content/plugins/wp-print/readme.txt']
+    secure_version: '2.52'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-2693'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-download-manager:
+  1:
+    location: ['/wp-content/plugins/wp-download-manager/readme.txt']
+    secure_version: '1.61'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-2697'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin digg-digg:
+  1:
+    location: ['/wp-content/plugins/digg-digg/readme.txt']
+    secure_version: '5.3.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-3258'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin ssquiz:
+  1:
+    location: ['/wp-content/plugins/ssquiz/readme.txt']
+    secure_version: '2.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin funcaptcha:
+  1:
+    location: ['/wp-content/plugins/funcaptcha/readme.txt']
+    secure_version: '0.3.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin funcaptcha:
+  2:
+    location: ['/wp-content/plugins/funcaptcha/readme.txt']
+    secure_version: '0.4.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin xili-language:
+  1:
+    location: ['/wp-content/plugins/xili-language/readme.txt']
+    secure_version: '2.8.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wordpress-seo:
+  1:
+    location: ['/wp-content/plugins/wordpress-seo/readme.txt']
+    secure_version: '1.4.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wordpress-seo:
+  2:
+    location: ['/wp-content/plugins/wordpress-seo/readme.txt']
+    secure_version: '1.4.7'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin underconstruction:
+  1:
+    location: ['/wp-content/plugins/underconstruction/readme.txt']
+    secure_version: '1.09'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-2699'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin ga-universal:
+  1:
+    location: ['/wp-content/plugins/ga-universal/readme.txt']
+    secure_version: '1.0.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin export-to-text:
+  1:
+    location: ['/wp-content/plugins/export-to-text/readme.txt']
+    secure_version: '2.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin image-slider-with-description:
+  1:
+    location: ['/wp-content/plugins/image-slider-with-description/readme.txt']
+    secure_version: '7.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin user-role-editor:
+  1:
+    location: ['/wp-content/plugins/user-role-editor/readme.txt']
+    secure_version: '3.14'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin eelv-newsletter:
+  1:
+    location: ['/wp-content/plugins/eelv-newsletter/readme.txt']
+    secure_version: '3.5.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin eelv-newsletter:
+  2:
+    location: ['/wp-content/plugins/eelv-newsletter/readme.txt']
+    secure_version: '3.3.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin antivirus:
+  1:
+    location: ['/wp-content/plugins/antivirus/readme.txt']
+    secure_version: '1.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-maintenance-mode:
+  1:
+    location: ['/wp-content/plugins/wp-maintenance-mode/readme.txt']
+    secure_version: '1.8.8'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-3250'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin mapsmarker:
+  1:
+    location: ['/wp-content/plugins/mapsmarker/readme.txt']
+    secure_version: '2.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin mapsmarker:
+  2:
+    location: ['/wp-content/plugins/mapsmarker/readme.txt']
+    secure_version: '3.5.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin leaflet-maps-marker-pro:
+  1:
+    location: ['/wp-content/plugins/leaflet-maps-marker-pro/readme.txt']
+    secure_version: '1.5.8'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin buddypress-extended-friendship-request:
+  1:
+    location: ['/wp-content/plugins/buddypress-extended-friendship-request/readme.txt']
+    secure_version: '1.0.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-4944'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin duplicator:
+  1:
+    location: ['/wp-content/plugins/duplicator/readme.txt']
+    secure_version: '0.4.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-4625'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin citizen-space:
+  1:
+    location: ['/wp-content/plugins/citizen-space/readme.txt']
+    secure_version: '1.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin pie-register:
+  1:
+    location: ['/wp-content/plugins/pie-register/readme.txt']
+    secure_version: '1.31'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-4954'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin xhanch-my-twitter:
+  1:
+    location: ['/wp-content/plugins/xhanch-my-twitter/readme.txt']
+    secure_version: '2.7.7'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-3253'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin sexybookmarks:
+  1:
+    location: ['/wp-content/plugins/sexybookmarks/readme.txt']
+    secure_version: '6.1.5.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-3256'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin hms-testimonials:
+  1:
+    location: ['/wp-content/plugins/hms-testimonials/readme.txt']
+    secure_version: '2.0.11'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-4240'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin hms-testimonials:
+  2:
+    location: ['/wp-content/plugins/hms-testimonials/readme.txt']
+    secure_version: '2.0.11'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-4241'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin usernoise:
+  1:
+    location: ['/wp-content/plugins/usernoise/readme.txt']
+    secure_version: '3.7.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin platinum-seo-pack:
+  1:
+    location: ['/wp-content/plugins/platinum-seo-pack/readme.txt']
+    secure_version: '1.3.8'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-5918'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin design-approval-system:
+  1:
+    location: ['/wp-content/plugins/design-approval-system/readme.txt']
+    secure_version: '3.7'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-5711'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin all-in-one-seo-pack:
+  1:
+    location: ['/wp-content/plugins/all-in-one-seo-pack/readme.txt']
+    secure_version: '2.1.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin all-in-one-seo-pack:
+  2:
+    location: ['/wp-content/plugins/all-in-one-seo-pack/readme.txt']
+    secure_version: '2.1.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin all-in-one-seo-pack:
+  3:
+    location: ['/wp-content/plugins/all-in-one-seo-pack/readme.txt']
+    secure_version: '2.0.3.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-5988'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin simple-dropbox-upload-form:
+  1:
+    location: ['/wp-content/plugins/simple-dropbox-upload-form/readme.txt']
+    secure_version: '1.8.8.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-5963'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-miniaudioplayer:
+  1:
+    location: ['/wp-content/plugins/wp-miniaudioplayer/readme.txt']
+    secure_version: '1.4.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin simple-custom-website-data:
+  1:
+    location: ['/wp-content/plugins/simple-custom-website-data/readme.txt']
+    secure_version: '1.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin simple-custom-website-data:
+  2:
+    location: ['/wp-content/plugins/simple-custom-website-data/readme.txt']
+    secure_version: '1.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin complete-gallery-manager:
+  1:
+    location: ['/wp-content/plugins/complete-gallery-manager/readme.txt']
+    secure_version: '3.3.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-5962'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin booking:
+  1:
+    location: ['/wp-content/plugins/booking/readme.txt']
+    secure_version: '4.1.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin thinkit-wp-contact-form:
+  1:
+    location: ['/wp-content/plugins/thinkit-wp-contact-form/readme.txt']
+    secure_version: '0.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin quick-contact-form:
+  1:
+    location: ['/wp-content/plugins/quick-contact-form/readme.txt']
+    secure_version: '6.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin quick-contact-form:
+  2:
+    location: ['/wp-content/plugins/quick-contact-form/readme.txt']
+    secure_version: '6.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin booking-system:
+  1:
+    location: ['/wp-content/plugins/booking-system/readme.txt']
+    secure_version: '1.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-3210'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin shareaholic:
+  1:
+    location: ['/wp-content/plugins/shareaholic/readme.txt']
+    secure_version: '7.0.3.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin a-forms:
+  1:
+    location: ['/wp-content/plugins/a-forms/readme.txt']
+    secure_version: '1.4.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin a-forms:
+  2:
+    location: ['/wp-content/plugins/a-forms/readme.txt']
+    secure_version: '1.4.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin a-forms:
+  3:
+    location: ['/wp-content/plugins/a-forms/readme.txt']
+    secure_version: '1.4.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin a-forms:
+  4:
+    location: ['/wp-content/plugins/a-forms/readme.txt']
+    secure_version: '1.4.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin a-forms:
+  5:
+    location: ['/wp-content/plugins/a-forms/readme.txt']
+    secure_version: '1.4.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin a-forms:
+  6:
+    location: ['/wp-content/plugins/a-forms/readme.txt']
+    secure_version: '1.4.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin a-forms:
+  7:
+    location: ['/wp-content/plugins/a-forms/readme.txt']
+    secure_version: '1.4.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin a-forms:
+  8:
+    location: ['/wp-content/plugins/a-forms/readme.txt']
+    secure_version: '1.4.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin a-forms:
+  9:
+    location: ['/wp-content/plugins/a-forms/readme.txt']
+    secure_version: '1.4.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin share-this:
+  1:
+    location: ['/wp-content/plugins/share-this/readme.txt']
+    secure_version: '7.0.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-3479'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin landing-pages:
+  1:
+    location: ['/wp-content/plugins/landing-pages/readme.txt']
+    secure_version: '1.2.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-6243'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin landing-pages:
+  2:
+    location: ['/wp-content/plugins/landing-pages/readme.txt']
+    secure_version: '1.2.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin cart66-lite:
+  1:
+    location: ['/wp-content/plugins/cart66-lite/readme.txt']
+    secure_version: '1.5.1.15'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-5977'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin cart66-lite:
+  2:
+    location: ['/wp-content/plugins/cart66-lite/readme.txt']
+    secure_version: '1.5.1.15'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-5978'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin cart66-lite:
+  3:
+    location: ['/wp-content/plugins/cart66-lite/readme.txt']
+    secure_version: '1.5.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin catholic-liturgical-calendar:
+  1:
+    location: ['/wp-content/plugins/catholic-liturgical-calendar/readme.txt']
+    secure_version: '0.0.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin zenphoto:
+  1:
+    location: ['/wp-content/plugins/zenphoto/readme.txt']
+    secure_version: '1.4.5.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin bp-group-documents:
+  1:
+    location: ['/wp-content/plugins/bp-group-documents/readme.txt']
+    secure_version: '1.2.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin bp-group-documents:
+  2:
+    location: ['/wp-content/plugins/bp-group-documents/readme.txt']
+    secure_version: '1.2.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin bp-group-documents:
+  3:
+    location: ['/wp-content/plugins/bp-group-documents/readme.txt']
+    secure_version: '1.2.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin bp-group-documents:
+  4:
+    location: ['/wp-content/plugins/bp-group-documents/readme.txt']
+    secure_version: '1.2.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin sl-user-create:
+  1:
+    location: ['/wp-content/plugins/sl-user-create/readme.txt']
+    secure_version: '0.2.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin player:
+  1:
+    location: ['/wp-content/plugins/player/readme.txt']
+    secure_version: '1.5.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-8584'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin video-metabox:
+  1:
+    location: ['/wp-content/plugins/video-metabox/readme.txt']
+    secure_version: '1.1.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin social-sharing-toolkit:
+  1:
+    location: ['/wp-content/plugins/social-sharing-toolkit/readme.txt']
+    secure_version: '2.1.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-6280'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin really-simple-facebook-twitter-share-buttons:
+  1:
+    location: ['/wp-content/plugins/really-simple-facebook-twitter-share-buttons/readme.txt']
+    secure_version: '2.10.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin blue-wrench-videos-widget:
+  1:
+    location: ['/wp-content/plugins/blue-wrench-videos-widget/readme.txt']
+    secure_version: '2.0.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-6797'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-mailup:
+  1:
+    location: ['/wp-content/plugins/wp-mailup/readme.txt']
+    secure_version: '1.3.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-0731'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-online-store:
+  1:
+    location: ['/wp-content/plugins/wp-online-store/readme.txt']
+    secure_version: '1.3.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-online-store:
+  2:
+    location: ['/wp-content/plugins/wp-online-store/readme.txt']
+    secure_version: '1.3.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin payment-gateways-caller-for-wp-e-commerce:
+  1:
+    location: ['/wp-content/plugins/payment-gateways-caller-for-wp-e-commerce/readme.txt']
+    secure_version: '0.1.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin easy-photo-album:
+  1:
+    location: ['/wp-content/plugins/easy-photo-album/readme.txt']
+    secure_version: '1.1.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin tweet-blender:
+  1:
+    location: ['/wp-content/plugins/tweet-blender/readme.txt']
+    secure_version: '4.0.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-6342'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin connections:
+  1:
+    location: ['/wp-content/plugins/connections/readme.txt']
+    secure_version: '0.7.9.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin connections:
+  2:
+    location: ['/wp-content/plugins/connections/readme.txt']
+    secure_version: '0.7.1.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2011-5254'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin gallery-bank:
+  1:
+    location: ['/wp-content/plugins/gallery-bank/readme.txt']
+    secure_version: '2.0.20'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin gallery-bank:
+  2:
+    location: ['/wp-content/plugins/gallery-bank/readme.txt']
+    secure_version: '2.0.20'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin gallery-bank:
+  3:
+    location: ['/wp-content/plugins/gallery-bank/readme.txt']
+    secure_version: '2.0.20'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin gallery-bank:
+  4:
+    location: ['/wp-content/plugins/gallery-bank/readme.txt']
+    secure_version: '3.0.61'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin polldaddy:
+  1:
+    location: ['/wp-content/plugins/polldaddy/readme.txt']
+    secure_version: '2.0.25'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-4856'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin polldaddy:
+  2:
+    location: ['/wp-content/plugins/polldaddy/readme.txt']
+    secure_version: '2.0.24'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin polldaddy:
+  3:
+    location: ['/wp-content/plugins/polldaddy/readme.txt']
+    secure_version: '2.0.21'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin another-wordpress-classifieds-plugin:
+  1:
+    location: ['/wp-content/plugins/another-wordpress-classifieds-plugin/readme.txt']
+    secure_version: '2.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin another-wordpress-classifieds-plugin:
+  2:
+    location: ['/wp-content/plugins/another-wordpress-classifieds-plugin/readme.txt']
+    secure_version: '3.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin social-slider-2:
+  1:
+    location: ['/wp-content/plugins/social-slider-2/readme.txt']
+    secure_version: '6.0.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin redirection:
+  1:
+    location: ['/wp-content/plugins/redirection/readme.txt']
+    secure_version: '2.3.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin redirection:
+  2:
+    location: ['/wp-content/plugins/redirection/readme.txt']
+    secure_version: '2.2.10'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2011-4562'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin redirection:
+  3:
+    location: ['/wp-content/plugins/redirection/readme.txt']
+    secure_version: '2.2.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin eshop:
+  1:
+    location: ['/wp-content/plugins/eshop/readme.txt']
+    secure_version: '6.2.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin leaflet-maps-marker:
+  1:
+    location: ['/wp-content/plugins/leaflet-maps-marker/readme.txt']
+    secure_version: '3.5.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin editorial-calendar:
+  1:
+    location: ['/wp-content/plugins/editorial-calendar/readme.txt']
+    secure_version: '2.7'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin editorial-calendar:
+  2:
+    location: ['/wp-content/plugins/editorial-calendar/readme.txt']
+    secure_version: '2.7'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin shareyourcart:
+  1:
+    location: ['/wp-content/plugins/shareyourcart/readme.txt']
+    secure_version: '1.7.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2012-4332'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin alo-easymail:
+  1:
+    location: ['/wp-content/plugins/alo-easymail/readme.txt']
+    secure_version: '2.4.8'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin contact-form-7:
+  1:
+    location: ['/wp-content/plugins/contact-form-7/readme.txt']
+    secure_version: '3.7.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-2265'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin contact-form-7:
+  2:
+    location: ['/wp-content/plugins/contact-form-7/readme.txt']
+    secure_version: '3.5.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin store-locator:
+  1:
+    location: ['/wp-content/plugins/store-locator/readme.txt']
+    secure_version: '2.12'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin broken-link-checker:
+  1:
+    location: ['/wp-content/plugins/broken-link-checker/readme.txt']
+    secure_version: '1.9.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin broken-link-checker:
+  2:
+    location: ['/wp-content/plugins/broken-link-checker/readme.txt']
+    secure_version: '1.9.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin broken-link-checker:
+  3:
+    location: ['/wp-content/plugins/broken-link-checker/readme.txt']
+    secure_version: '1.10.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin simple-embed-code:
+  1:
+    location: ['/wp-content/plugins/simple-embed-code/readme.txt']
+    secure_version: '2.0.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin maxbuttons:
+  1:
+    location: ['/wp-content/plugins/maxbuttons/readme.txt']
+    secure_version: '1.20.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin maxbuttons:
+  2:
+    location: ['/wp-content/plugins/maxbuttons/readme.txt']
+    secure_version: '1.26.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-7181'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin aprils-super-functions-pack:
+  1:
+    location: ['/wp-content/plugins/aprils-super-functions-pack/readme.txt']
+    secure_version: '1.4.8'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin page-layout-builder:
+  1:
+    location: ['/wp-content/plugins/page-layout-builder/readme.txt']
+    secure_version: '1.3.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin page-layout-builder:
+  2:
+    location: ['/wp-content/plugins/page-layout-builder/readme.txt']
+    secure_version: '1.3.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin foliopress-wysiwyg:
+  1:
+    location: ['/wp-content/plugins/foliopress-wysiwyg/readme.txt']
+    secure_version: '2.6.8.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin nmedia-mailchimp-widget:
+  1:
+    location: ['/wp-content/plugins/nmedia-mailchimp-widget/readme.txt']
+    secure_version: '3.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin ns-utilities:
+  1:
+    location: ['/wp-content/plugins/ns-utilities/readme.txt']
+    secure_version: '1.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin easy-media-gallery:
+  1:
+    location: ['/wp-content/plugins/easy-media-gallery/readme.txt']
+    secure_version: '1.2.27'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-members:
+  1:
+    location: ['/wp-content/plugins/wp-members/readme.txt']
+    secure_version: '2.8.10'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-members:
+  2:
+    location: ['/wp-content/plugins/wp-members/readme.txt']
+    secure_version: '2.8.10'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wpmbytplayer:
+  1:
+    location: ['/wp-content/plugins/wpmbytplayer/readme.txt']
+    secure_version: '1.7.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin avchat-3:
+  1:
+    location: ['/wp-content/plugins/avchat-3/readme.txt']
+    secure_version: '1.4.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin groupdocs-comparison:
+  1:
+    location: ['/wp-content/plugins/groupdocs-comparison/readme.txt']
+    secure_version: '1.0.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin groupdocs-signature:
+  1:
+    location: ['/wp-content/plugins/groupdocs-signature/readme.txt']
+    secure_version: '1.2.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin groupdocs-signature:
+  2:
+    location: ['/wp-content/plugins/groupdocs-signature/readme.txt']
+    secure_version: '1.2.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin groupdocs-viewer:
+  1:
+    location: ['/wp-content/plugins/groupdocs-viewer/readme.txt']
+    secure_version: '1.4.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin groupdocs-viewer:
+  2:
+    location: ['/wp-content/plugins/groupdocs-viewer/readme.txt']
+    secure_version: '1.4.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin groupdocs-documents-annotation:
+  1:
+    location: ['/wp-content/plugins/groupdocs-documents-annotation/readme.txt']
+    secure_version: '1.3.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin groupdocs-documents-annotation:
+  2:
+    location: ['/wp-content/plugins/groupdocs-documents-annotation/readme.txt']
+    secure_version: '1.3.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin athlon-manage-calameo-publications:
+  1:
+    location: ['/wp-content/plugins/athlon-manage-calameo-publications/readme.txt']
+    secure_version: '1.1.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin ss-downloads:
+  1:
+    location: ['/wp-content/plugins/ss-downloads/readme.txt']
+    secure_version: '1.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin ss-downloads:
+  2:
+    location: ['/wp-content/plugins/ss-downloads/readme.txt']
+    secure_version: '1.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin ss-downloads:
+  3:
+    location: ['/wp-content/plugins/ss-downloads/readme.txt']
+    secure_version: '1.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin ss-downloads:
+  4:
+    location: ['/wp-content/plugins/ss-downloads/readme.txt']
+    secure_version: '1.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin ss-downloads:
+  5:
+    location: ['/wp-content/plugins/ss-downloads/readme.txt']
+    secure_version: '1.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin ss-downloads:
+  6:
+    location: ['/wp-content/plugins/ss-downloads/readme.txt']
+    secure_version: '1.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin ss-downloads:
+  7:
+    location: ['/wp-content/plugins/ss-downloads/readme.txt']
+    secure_version: '1.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin social-connect:
+  1:
+    location: ['/wp-content/plugins/social-connect/readme.txt']
+    secure_version: '0.10.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin let-them-unsubscribe:
+  1:
+    location: ['/wp-content/plugins/let-them-unsubscribe/readme.txt']
+    secure_version: '1.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin seo-image:
+  1:
+    location: ['/wp-content/plugins/seo-image/readme.txt']
+    secure_version: '2.7.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin seo-image:
+  2:
+    location: ['/wp-content/plugins/seo-image/readme.txt']
+    secure_version: '2.7.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wordpress-social-ring:
+  1:
+    location: ['/wp-content/plugins/wordpress-social-ring/readme.txt']
+    secure_version: '1.1.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin contus-video-gallery:
+  1:
+    location: ['/wp-content/plugins/contus-video-gallery/readme.txt']
+    secure_version: '2.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2013-3478'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin contus-video-gallery:
+  2:
+    location: ['/wp-content/plugins/contus-video-gallery/readme.txt']
+    secure_version: '2.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin webengage:
+  1:
+    location: ['/wp-content/plugins/webengage/readme.txt']
+    secure_version: '2.0.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin webengage:
+  2:
+    location: ['/wp-content/plugins/webengage/readme.txt']
+    secure_version: '2.0.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin webengage:
+  3:
+    location: ['/wp-content/plugins/webengage/readme.txt']
+    secure_version: '2.0.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin nokia-mapsplaces:
+  1:
+    location: ['/wp-content/plugins/nokia-mapsplaces/readme.txt']
+    secure_version: '1.6.7'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-1750'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin webinar_plugin:
+  1:
+    location: ['/wp-content/plugins/webinar_plugin/readme.txt']
+    secure_version: '1.6.7'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-social-invitations:
+  1:
+    location: ['/wp-content/plugins/wp-social-invitations/readme.txt']
+    secure_version: '1.4.4.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin infusionsoft:
+  1:
+    location: ['/wp-content/plugins/infusionsoft/readme.txt']
+    secure_version: '1.5.7'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin infusionsoft:
+  2:
+    location: ['/wp-content/plugins/infusionsoft/readme.txt']
+    secure_version: '1.5.10'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-6446'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin comment-control:
+  1:
+    location: ['/wp-content/plugins/comment-control/readme.txt']
+    secure_version: '0.3.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wptouch:
+  1:
+    location: ['/wp-content/plugins/wptouch/readme.txt']
+    secure_version: '3.4.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wptouch:
+  2:
+    location: ['/wp-content/plugins/wptouch/readme.txt']
+    secure_version: '1.9.30'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wptouch:
+  3:
+    location: ['/wp-content/plugins/wptouch/readme.txt']
+    secure_version: '1.9.20'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2010-4779'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wptouch:
+  4:
+    location: ['/wp-content/plugins/wptouch/readme.txt']
+    secure_version: '1.9.8.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wptouch:
+  5:
+    location: ['/wp-content/plugins/wptouch/readme.txt']
+    secure_version: '1.9.8.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin better-search:
+  1:
+    location: ['/wp-content/plugins/better-search/readme.txt']
+    secure_version: '1.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin delightful-downloads:
+  1:
+    location: ['/wp-content/plugins/delightful-downloads/readme.txt']
+    secure_version: '1.3.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin delightful-downloads:
+  2:
+    location: ['/wp-content/plugins/delightful-downloads/readme.txt']
+    secure_version: '1.3.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin mobiloud-mobile-app-plugin:
+  1:
+    location: ['/wp-content/plugins/mobiloud-mobile-app-plugin/readme.txt']
+    secure_version: '1.9.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin mobiloud-mobile-app-plugin:
+  2:
+    location: ['/wp-content/plugins/mobiloud-mobile-app-plugin/readme.txt']
+    secure_version: '1.9.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin mobiloud-mobile-app-plugin:
+  3:
+    location: ['/wp-content/plugins/mobiloud-mobile-app-plugin/readme.txt']
+    secure_version: '2.3.8'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-5344'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin aryo-activity-log:
+  1:
+    location: ['/wp-content/plugins/aryo-activity-log/readme.txt']
+    secure_version: '2.0.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-jquery-spam:
+  1:
+    location: ['/wp-content/plugins/wp-jquery-spam/readme.txt']
+    secure_version: '1.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin search-everything:
+  1:
+    location: ['/wp-content/plugins/search-everything/readme.txt']
+    secure_version: '8.1.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin search-everything:
+  2:
+    location: ['/wp-content/plugins/search-everything/readme.txt']
+    secure_version: '7.0.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-2316'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin zedity:
+  1:
+    location: ['/wp-content/plugins/zedity/readme.txt']
+    secure_version: '2.5.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin mp3-jplayer:
+  1:
+    location: ['/wp-content/plugins/mp3-jplayer/readme.txt']
+    secure_version: '1.8.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin google-analytics-mu:
+  1:
+    location: ['/wp-content/plugins/google-analytics-mu/readme.txt']
+    secure_version: '2.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin xcloner-backup-and-restore:
+  1:
+    location: ['/wp-content/plugins/xcloner-backup-and-restore/readme.txt']
+    secure_version: '3.1.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-2340'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin guiform:
+  1:
+    location: ['/wp-content/plugins/guiform/readme.txt']
+    secure_version: '1.5.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin duplicate-post:
+  1:
+    location: ['/wp-content/plugins/duplicate-post/readme.txt']
+    secure_version: '2.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin duplicate-post:
+  2:
+    location: ['/wp-content/plugins/duplicate-post/readme.txt']
+    secure_version: '2.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin mtouch-quiz:
+  1:
+    location: ['/wp-content/plugins/mtouch-quiz/readme.txt']
+    secure_version: '3.0.7'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin mtouch-quiz:
+  2:
+    location: ['/wp-content/plugins/mtouch-quiz/readme.txt']
+    secure_version: '3.0.7'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin simple-retail-menus:
+  1:
+    location: ['/wp-content/plugins/simple-retail-menus/readme.txt']
+    secure_version: '4.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin simple-retail-menus:
+  2:
+    location: ['/wp-content/plugins/simple-retail-menus/readme.txt']
+    secure_version: '4.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-5183'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin user-domain-whitelist:
+  1:
+    location: ['/wp-content/plugins/user-domain-whitelist/readme.txt']
+    secure_version: '1.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin subscribe-to-comments-reloaded:
+  1:
+    location: ['/wp-content/plugins/subscribe-to-comments-reloaded/readme.txt']
+    secure_version: '140219'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin subscribe-to-comments-reloaded:
+  2:
+    location: ['/wp-content/plugins/subscribe-to-comments-reloaded/readme.txt']
+    secure_version: '140219'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin analytics360:
+  1:
+    location: ['/wp-content/plugins/analytics360/readme.txt']
+    secure_version: '1.2.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin analytics360:
+  2:
+    location: ['/wp-content/plugins/analytics360/readme.txt']
+    secure_version: '1.2.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin the-events-calendar:
+  1:
+    location: ['/wp-content/plugins/the-events-calendar/readme.txt']
+    secure_version: '3.0.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin form-maker:
+  1:
+    location: ['/wp-content/plugins/form-maker/readme.txt']
+    secure_version: '1.6.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin 1-jquery-photo-gallery-slideshow-flash:
+  1:
+    location: ['/wp-content/plugins/1-jquery-photo-gallery-slideshow-flash/readme.txt']
+    secure_version: '1.09'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin google-analytics-dashboard:
+  1:
+    location: ['/wp-content/plugins/google-analytics-dashboard/readme.txt']
+    secure_version: '2.0.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin blogvault-real-time-backup:
+  1:
+    location: ['/wp-content/plugins/blogvault-real-time-backup/readme.txt']
+    secure_version: '1.09'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin blogvault-real-time-backup:
+  2:
+    location: ['/wp-content/plugins/blogvault-real-time-backup/readme.txt']
+    secure_version: '1.06'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin captcha:
+  1:
+    location: ['/wp-content/plugins/captcha/readme.txt']
+    secure_version: '3.8.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin groups:
+  1:
+    location: ['/wp-content/plugins/groups/readme.txt']
+    secure_version: '1.4.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin html5-jquery-audio-player:
+  1:
+    location: ['/wp-content/plugins/html5-jquery-audio-player/readme.txt']
+    secure_version: '2.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin html5-jquery-audio-player:
+  2:
+    location: ['/wp-content/plugins/html5-jquery-audio-player/readme.txt']
+    secure_version: '2.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin shrimptest:
+  1:
+    location: ['/wp-content/plugins/shrimptest/readme.txt']
+    secure_version: '1.0b3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin shrimptest:
+  2:
+    location: ['/wp-content/plugins/shrimptest/readme.txt']
+    secure_version: '1.0b3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin shrimptest:
+  3:
+    location: ['/wp-content/plugins/shrimptest/readme.txt']
+    secure_version: '1.0b3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin shrimptest:
+  4:
+    location: ['/wp-content/plugins/shrimptest/readme.txt']
+    secure_version: '1.0b3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin shrimptest:
+  5:
+    location: ['/wp-content/plugins/shrimptest/readme.txt']
+    secure_version: '1.0b3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin activehelper-livehelp:
+  1:
+    location: ['/wp-content/plugins/activehelper-livehelp/readme.txt']
+    secure_version: '3.4.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin activehelper-livehelp:
+  2:
+    location: ['/wp-content/plugins/activehelper-livehelp/readme.txt']
+    secure_version: '3.4.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin activehelper-livehelp:
+  3:
+    location: ['/wp-content/plugins/activehelper-livehelp/readme.txt']
+    secure_version: '3.4.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin activehelper-livehelp:
+  4:
+    location: ['/wp-content/plugins/activehelper-livehelp/readme.txt']
+    secure_version: '3.4.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin activehelper-livehelp:
+  5:
+    location: ['/wp-content/plugins/activehelper-livehelp/readme.txt']
+    secure_version: '3.1.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-4513'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin springboard-video-quick-publish:
+  1:
+    location: ['/wp-content/plugins/springboard-video-quick-publish/readme.txt']
+    secure_version: '0.2.7'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin springboard-video-quick-publish:
+  2:
+    location: ['/wp-content/plugins/springboard-video-quick-publish/readme.txt']
+    secure_version: '0.2.7'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin springboard-video-quick-publish:
+  3:
+    location: ['/wp-content/plugins/springboard-video-quick-publish/readme.txt']
+    secure_version: '0.2.7'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin ignitiondeck:
+  1:
+    location: ['/wp-content/plugins/ignitiondeck/readme.txt']
+    secure_version: '1.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin tt-guest-post-submit:
+  1:
+    location: ['/wp-content/plugins/tt-guest-post-submit/readme.txt']
+    secure_version: '1.0.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin salesforce-wordpress-to-lead:
+  1:
+    location: ['/wp-content/plugins/salesforce-wordpress-to-lead/readme.txt']
+    secure_version: '1.0.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin salesforce-wordpress-to-lead:
+  2:
+    location: ['/wp-content/plugins/salesforce-wordpress-to-lead/readme.txt']
+    secure_version: '1.0.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin salesforce-wordpress-to-lead:
+  3:
+    location: ['/wp-content/plugins/salesforce-wordpress-to-lead/readme.txt']
+    secure_version: '1.0.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin disable-comments:
+  1:
+    location: ['/wp-content/plugins/disable-comments/readme.txt']
+    secure_version: '1.0.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-2550'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-business-intelligence-lite:
+  1:
+    location: ['/wp-content/plugins/wp-business-intelligence-lite/readme.txt']
+    secure_version: '1.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin jetpack:
+  1:
+    location: ['/wp-content/plugins/jetpack/readme.txt']
+    secure_version: '2.9.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-0173'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin lazyest-gallery:
+  1:
+    location: ['/wp-content/plugins/lazyest-gallery/readme.txt']
+    secure_version: '1.1.21'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-2333'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin lazyest-gallery:
+  2:
+    location: ['/wp-content/plugins/lazyest-gallery/readme.txt']
+    secure_version: '0.10.4.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin post-expirator:
+  1:
+    location: ['/wp-content/plugins/post-expirator/readme.txt']
+    secure_version: '2.1.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin quick-pagepost-redirect-plugin:
+  1:
+    location: ['/wp-content/plugins/quick-pagepost-redirect-plugin/readme.txt']
+    secure_version: '5.0.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-2598'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin quick-pagepost-redirect-plugin:
+  2:
+    location: ['/wp-content/plugins/quick-pagepost-redirect-plugin/readme.txt']
+    secure_version: '5.0.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-2598'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin twitget:
+  1:
+    location: ['/wp-content/plugins/twitget/readme.txt']
+    secure_version: '3.3.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-2559'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin twitget:
+  2:
+    location: ['/wp-content/plugins/twitget/readme.txt']
+    secure_version: '3.3.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-2995'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin hk-exif-tags:
+  1:
+    location: ['/wp-content/plugins/hk-exif-tags/readme.txt']
+    secure_version: '1.12'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin unconfirmed:
+  1:
+    location: ['/wp-content/plugins/unconfirmed/readme.txt']
+    secure_version: '1.2.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin liveoptim:
+  1:
+    location: ['/wp-content/plugins/liveoptim/readme.txt']
+    secure_version: '1.4.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-conditional-captcha:
+  1:
+    location: ['/wp-content/plugins/wp-conditional-captcha/readme.txt']
+    secure_version: '3.6.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin simple-fields:
+  1:
+    location: ['/wp-content/plugins/simple-fields/readme.txt']
+    secure_version: '1.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin simple-fields:
+  2:
+    location: ['/wp-content/plugins/simple-fields/readme.txt']
+    secure_version: '0.3.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin work-the-flow-file-upload:
+  1:
+    location: ['/wp-content/plugins/work-the-flow-file-upload/readme.txt']
+    secure_version: '2.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin work-the-flow-file-upload:
+  2:
+    location: ['/wp-content/plugins/work-the-flow-file-upload/readme.txt']
+    secure_version: '2.3.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin file-gallery:
+  1:
+    location: ['/wp-content/plugins/file-gallery/readme.txt']
+    secure_version: '1.7.9.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-2558'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin nextcellent-gallery-nextgen-legacy:
+  1:
+    location: ['/wp-content/plugins/nextcellent-gallery-nextgen-legacy/readme.txt']
+    secure_version: '1.9.18'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin infusion4wp:
+  1:
+    location: ['/wp-content/plugins/infusion4wp/readme.txt']
+    secure_version: '3.9.002'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin acumbamail-signup-forms:
+  1:
+    location: ['/wp-content/plugins/acumbamail-signup-forms/readme.txt']
+    secure_version: '1.0.4.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin tinymce-colorpicker:
+  1:
+    location: ['/wp-content/plugins/tinymce-colorpicker/readme.txt']
+    secure_version: '1.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin tinymce-colorpicker:
+  2:
+    location: ['/wp-content/plugins/tinymce-colorpicker/readme.txt']
+    secure_version: '1.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin contact-bank:
+  1:
+    location: ['/wp-content/plugins/contact-bank/readme.txt']
+    secure_version: '2.0.20'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin contact-bank:
+  2:
+    location: ['/wp-content/plugins/contact-bank/readme.txt']
+    secure_version: '2.0.70'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-8807'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin profile-builder:
+  1:
+    location: ['/wp-content/plugins/profile-builder/readme.txt']
+    secure_version: '1.1.60'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin basic-google-maps-placemarks:
+  1:
+    location: ['/wp-content/plugins/basic-google-maps-placemarks/readme.txt']
+    secure_version: '1.10.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin cool-video-gallery:
+  1:
+    location: ['/wp-content/plugins/cool-video-gallery/readme.txt']
+    secure_version: '1.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin cool-video-gallery:
+  2:
+    location: ['/wp-content/plugins/cool-video-gallery/readme.txt']
+    secure_version: '1.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin cool-video-gallery:
+  3:
+    location: ['/wp-content/plugins/cool-video-gallery/readme.txt']
+    secure_version: '1.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin cool-video-gallery:
+  4:
+    location: ['/wp-content/plugins/cool-video-gallery/readme.txt']
+    secure_version: '1.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin cool-video-gallery:
+  5:
+    location: ['/wp-content/plugins/cool-video-gallery/readme.txt']
+    secure_version: '1.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin cool-video-gallery:
+  6:
+    location: ['/wp-content/plugins/cool-video-gallery/readme.txt']
+    secure_version: '1.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin cool-video-gallery:
+  7:
+    location: ['/wp-content/plugins/cool-video-gallery/readme.txt']
+    secure_version: '1.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin cool-video-gallery:
+  8:
+    location: ['/wp-content/plugins/cool-video-gallery/readme.txt']
+    secure_version: '1.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin gtranslate:
+  1:
+    location: ['/wp-content/plugins/gtranslate/readme.txt']
+    secure_version: '1.0.13'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin world-of-warcraft-armory-table:
+  1:
+    location: ['/wp-content/plugins/world-of-warcraft-armory-table/readme.txt']
+    secure_version: '0.2.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin participants-database:
+  1:
+    location: ['/wp-content/plugins/participants-database/readme.txt']
+    secure_version: '1.5.4.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-3961'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin ose-firewall:
+  1:
+    location: ['/wp-content/plugins/ose-firewall/readme.txt']
+    secure_version: '3.3.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-easycart:
+  1:
+    location: ['/wp-content/plugins/wp-easycart/readme.txt']
+    secure_version: '2.0.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-4942'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin simple-slider:
+  1:
+    location: ['/wp-content/plugins/simple-slider/readme.txt']
+    secure_version: '1.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin polylang:
+  1:
+    location: ['/wp-content/plugins/polylang/readme.txt']
+    secure_version: '1.5.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-4855'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin tera-charts:
+  1:
+    location: ['/wp-content/plugins/tera-charts/readme.txt']
+    secure_version: '1.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-4940'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin tera-charts:
+  2:
+    location: ['/wp-content/plugins/tera-charts/readme.txt']
+    secure_version: '1.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-4940'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin paid-memberships-pro:
+  1:
+    location: ['/wp-content/plugins/paid-memberships-pro/readme.txt']
+    secure_version: '1.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin paid-memberships-pro:
+  2:
+    location: ['/wp-content/plugins/paid-memberships-pro/readme.txt']
+    secure_version: '1.7.15'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-8801'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin slideshow-gallery:
+  1:
+    location: ['/wp-content/plugins/slideshow-gallery/readme.txt']
+    secure_version: '1.4.7'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-5460'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wordpress-mobile-pack:
+  1:
+    location: ['/wp-content/plugins/wordpress-mobile-pack/readme.txt']
+    secure_version: '2.0.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-5337'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin json-rest-api:
+  1:
+    location: ['/wp-content/plugins/json-rest-api/readme.txt']
+    secure_version: '1.1.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-source-control:
+  1:
+    location: ['/wp-content/plugins/wp-source-control/readme.txt']
+    secure_version: '3.1.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-5368'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wordpress-feed-statistics:
+  1:
+    location: ['/wp-content/plugins/wordpress-feed-statistics/readme.txt']
+    secure_version: '4.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin ready-ecommerce:
+  1:
+    location: ['/wp-content/plugins/ready-ecommerce/readme.txt']
+    secure_version: '0.5.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin google-maps-ready:
+  1:
+    location: ['/wp-content/plugins/google-maps-ready/readme.txt']
+    secure_version: '1.1.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin coming-soon-maintenance-mode-ready:
+  1:
+    location: ['/wp-content/plugins/coming-soon-maintenance-mode-ready/readme.txt']
+    secure_version: '0.5.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-ban:
+  1:
+    location: ['/wp-content/plugins/wp-ban/readme.txt']
+    secure_version: '1.64'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-6230'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin yikes-inc-easy-mailchimp-extender:
+  1:
+    location: ['/wp-content/plugins/yikes-inc-easy-mailchimp-extender/readme.txt']
+    secure_version: '5.0.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin yikes-inc-easy-mailchimp-extender:
+  2:
+    location: ['/wp-content/plugins/yikes-inc-easy-mailchimp-extender/readme.txt']
+    secure_version: '5.0.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-7152'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin hdw-player-video-player-video-gallery:
+  1:
+    location: ['/wp-content/plugins/hdw-player-video-player-video-gallery/readme.txt']
+    secure_version: '3.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-5180'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin yawpp:
+  1:
+    location: ['/wp-content/plugins/yawpp/readme.txt']
+    secure_version: '1.2.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-5182'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin yawpp:
+  2:
+    location: ['/wp-content/plugins/yawpp/readme.txt']
+    secure_version: '1.2.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-5182'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin improved-user-search-in-backend:
+  1:
+    location: ['/wp-content/plugins/improved-user-search-in-backend/readme.txt']
+    secure_version: '1.2.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-5196'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-file-upload:
+  1:
+    location: ['/wp-content/plugins/wp-file-upload/readme.txt']
+    secure_version: '2.4.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-5199'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin compfight:
+  1:
+    location: ['/wp-content/plugins/compfight/readme.txt']
+    secure_version: '1.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-5202'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin front-end-editor:
+  1:
+    location: ['/wp-content/plugins/front-end-editor/readme.txt']
+    secure_version: '2.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin login-sidebar-widget:
+  1:
+    location: ['/wp-content/plugins/login-sidebar-widget/readme.txt']
+    secure_version: '3.2.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin login-sidebar-widget:
+  2:
+    location: ['/wp-content/plugins/login-sidebar-widget/readme.txt']
+    secure_version: '3.2.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-6312'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wordpress-flash-uploader:
+  1:
+    location: ['/wp-content/plugins/wordpress-flash-uploader/readme.txt']
+    secure_version: '3.1.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-5014'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin all-in-one-wp-security-and-firewall:
+  1:
+    location: ['/wp-content/plugins/all-in-one-wp-security-and-firewall/readme.txt']
+    secure_version: '3.8.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-6242'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin advanced-access-manager:
+  1:
+    location: ['/wp-content/plugins/advanced-access-manager/readme.txt']
+    secure_version: '2.8.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-6059'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin my-calendar:
+  1:
+    location: ['/wp-content/plugins/my-calendar/readme.txt']
+    secure_version: '1.10.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2012-6527'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin content-audit:
+  1:
+    location: ['/wp-content/plugins/content-audit/readme.txt']
+    secure_version: '1.6.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-5389'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin contact-form-7-integrations:
+  1:
+    location: ['/wp-content/plugins/contact-form-7-integrations/readme.txt']
+    secure_version: '1.3.10'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-6445'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin ewww-image-optimizer:
+  1:
+    location: ['/wp-content/plugins/ewww-image-optimizer/readme.txt']
+    secure_version: '2.0.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-6243'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin contact-form-7-to-database-extension:
+  1:
+    location: ['/wp-content/plugins/contact-form-7-to-database-extension/readme.txt']
+    secure_version: '2.8.16'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-7139'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin contact-form-7-to-database-extension:
+  2:
+    location: ['/wp-content/plugins/contact-form-7-to-database-extension/readme.txt']
+    secure_version: '2.8.18'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin woocommerce-exporter:
+  1:
+    location: ['/wp-content/plugins/woocommerce-exporter/readme.txt']
+    secure_version: '1.7.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-google-maps:
+  1:
+    location: ['/wp-content/plugins/wp-google-maps/readme.txt']
+    secure_version: '6.0.27'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-7182'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-dbmanager:
+  1:
+    location: ['/wp-content/plugins/wp-dbmanager/readme.txt']
+    secure_version: '2.7.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-8334'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin sexy-contact-form:
+  1:
+    location: ['/wp-content/plugins/sexy-contact-form/readme.txt']
+    secure_version: '1.0.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-8739'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin cm-download-manager:
+  1:
+    location: ['/wp-content/plugins/cm-download-manager/readme.txt']
+    secure_version: '2.0.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-8877'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin ninja-forms:
+  1:
+    location: ['/wp-content/plugins/ninja-forms/readme.txt']
+    secure_version: '2.8.7'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-8815'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin smart-forms:
+  1:
+    location: ['/wp-content/plugins/smart-forms/readme.txt']
+    secure_version: '2.1.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'CVE-2014-8803'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wpdatatables:
+  1:
+    location: ['/wp-content/plugins/wpdatatables/readme.txt']
+    secure_version: '1.5.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wpdatatables:
+  2:
+    location: ['/wp-content/plugins/wpdatatables/readme.txt']
+    secure_version: '1.5.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin google-analytics-for-wordpress:
+  1:
+    location: ['/wp-content/plugins/google-analytics-for-wordpress/readme.txt']
+    secure_version: '5.1.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin iwp-client:
+  1:
+    location: ['/wp-content/plugins/iwp-client/readme.txt']
+    secure_version: '1.3.8'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin sp-client-document-manager:
+  1:
+    location: ['/wp-content/plugins/sp-client-document-manager/readme.txt']
+    secure_version: '2.4.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
