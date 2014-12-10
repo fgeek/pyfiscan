@@ -1,12 +1,14 @@
 # URL: https://github.com/modxcms/revolution
 # CVE-2014-5451 N/A     https://www.htbridge.com/advisory/HTB23229
 # CVE-2014-2736 2.2.14
-# CVE-2014-XXXX 2.2.15  http://hacktivity.websecgeeks.com/modx-csrf-and-xss/ http://forums.modx.com/thread/92152/critical-login-xss-csrf-revolution-2-2-1-4-and-prior
+# CVE-2014-8773 2.2.15
+# CVE-2014-8774 2.2.15
+# CVE-2014-8775 2.2.15
 MODX Revolution:
   1:
     location: ['/core/docs/changelog.txt']
     secure_version: '2.2.15'
     regexp: ['MODX Revolution.*?(?P<version>[0-9.]+)']
-    cve: 'http://hacktivity.websecgeeks.com/modx-csrf-and-xss/'
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8773 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8774 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8775'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
