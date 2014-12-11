@@ -290,7 +290,7 @@ def Worker(home_location, post_process):
                         if item_location[len(os.path.abspath(home_location)):].split('/')[:5][2] == 'public_html':
                             public_html_used = True
                         else:
-                            public_html_used False
+                            public_html_used = False
 
                         if post_process and not public_html_used:
                             try:
