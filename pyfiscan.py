@@ -283,7 +283,16 @@ def Worker(home_location, post_process):
                     if is_not_secure(issue['secure_version'], file_version, appname):
                         # Executes post processing. Does not do anything in case
                         # post_processing is not defined in yaml fingerprint.
-                        if post_process:
+
+                        # Do not do php5.fcgi check for public_html
+                        if not home_location:
+                            home_location = '/home'
+                        if item_location[len(os.path.abspath(home_location)):].split('/')[:5][2] == 'public_html':
+                            public_html_used = True
+                        else:
+                            public_html_used False
+
+                        if post_process and not public_html_used:
                             try:
                                 if issue['post_processing'][0] == 'php5.fcgi':
                                     if not postprocess_php5fcgi(home_location, item_location):
