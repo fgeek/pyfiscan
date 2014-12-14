@@ -56,6 +56,7 @@ Detects following software
 * MoinMoin
 * MyBB
 * Nibbleblog
+* OpenCart
 * PBBoard
 * Piwigo
 * PmWiki
