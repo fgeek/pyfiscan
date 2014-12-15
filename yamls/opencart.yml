@@ -8,7 +8,7 @@ OpenCart:
   1:
     location: ['/admin/index.php']
     secure_version: '2.0.0.0'
-    regexp: ['define.*?VERSION.*?(?P<version>[0-9.]+)']
+    regexp: ['define.*?VERSION.*?(?P<version>[0-9.]+)', '/admin/index.php']
     cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3990 http://karmainsecurity.com/KIS-2014-08'
-    fingerprint: detect_general
+    fingerprint: detect_opencart
     post_processing: ['php5.fcgi']

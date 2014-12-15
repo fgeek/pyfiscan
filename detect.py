@@ -14,6 +14,13 @@ def yaml_visible(fn):
     return fn
 
 
+def grep(file, pattern):
+    with open(file, 'r') as inputfile:
+        for line in inputfile:
+            if re.search(pattern, line):
+                return line
+
+
 def grep_from_file(version_file, regexp):
     """Grepping file with predefined regexp to find a version. This returns
     m.group from regexp: (?P<version>foo)
@@ -64,6 +71,25 @@ def detect_joomla(source_file, regexp):
     logging.debug('Development level version: %s', dev_level_version)
 
     return release_version + "." + dev_level_version
+
+
+@yaml_visible
+def detect_opencart(source_file, regexp):
+    """Detects from source file if it contains version information of OpenCart"""
+    if not (os.path.isfile(source_file) and regexp):
+        return
+    logging.debug('Dectecting OpenCart from: %s', source_file)
+    release_version = grep_from_file(source_file, regexp[0])
+    if not release_version:
+        logging.debug('Could not find release version from: %s', source_file)
+        return
+    logging.debug('OpenCart version: %s', release_version)
+    verification_file = source_file[:-len(regexp[1])]
+    verification_file = "".join((verification_file, '/system/modification.xml'))
+    verification_string = grep(verification_file, 'OpenCart Ltd')
+    if not verification_string:
+        return
+    return release_version
 
 
 @yaml_visible
@@ -118,9 +144,7 @@ def detect_gallery(source_file, regexp):
 
 @yaml_visible
 def detect_withoutnewlines(source_file, regexp):
-    """Stripts newlines from source file.
-    
-    """
+    """Stripts newlines from source file."""
     if not (os.path.isfile(source_file) and regexp):
         return
     with open(source_file, 'r') as f:
