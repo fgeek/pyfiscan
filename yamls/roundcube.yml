@@ -20,11 +20,12 @@
 # CVE-2013-6172 0.9.5/0.8.7 http://roundcube.net/news/2013/10/21/security-updates-095-and-087/ http://trac.roundcube.net/ticket/1489382 http://osvdb.org/98895
 # CVE-2014-N/A  N/A http://osvdb.org/105639 http://trac.roundcube.net/ticket/1489729 http://seclists.org/oss-sec/2014/q2/55
 # CVE-2014-N/A  1.0.0 http://osvdb.org/105486 http://roundcube.net/news/2014/04/07/roundcube-webmail-1.0.0-released/
+# CVE-2014-XXXX 1.0.4   http://lists.roundcube.net/pipermail/announce/2014-December/000127.html
 Roundcube 0.9:
   1:
     location: ['/program/include/iniset.php']
-    secure_version: '1.0.0'
+    secure_version: '1.0.4'
     regexp: ['define.*?RCMAIL_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'http://osvdb.org/105486 http://roundcube.net/news/2014/04/07/roundcube-webmail-1.0.0-released/'
+    cve: 'http://lists.roundcube.net/pipermail/announce/2014-December/000127.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
