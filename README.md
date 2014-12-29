@@ -133,3 +133,4 @@ Happy users
 
 * DevNet Oy
 * Kapsi Internet-käyttäjät ry
+* Shellit.org
