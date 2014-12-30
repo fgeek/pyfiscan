@@ -69,7 +69,7 @@
 # CVE-2014-7295 1.23.5/1.22.12/1.19.20  https://lists.wikimedia.org/pipermail/mediawiki-announce/2014-October/000163.html
 # CVE-2014-9276 1.23.7/1.22.14/1.19.22  https://lists.wikimedia.org/pipermail/mediawiki-announce/2014-November/000170.html
 # CVE-2014-9277 1.23.7/1.22.14/1.19.22  https://lists.wikimedia.org/pipermail/mediawiki-announce/2014-November/000170.html
-# CVE-2014-XXXX 1.24.1/1.23.8/1.22.15/1.19.23 https://lists.wikimedia.org/pipermail/mediawiki-announce/2014-December/000173.html
+# CVE-2014-XXXX 1.24.1/1.23.8/1.22.15/1.19.23 https://lists.wikimedia.org/pipermail/mediawiki-announce/2014-December/000173.html CVE requested in oss-security
 MediaWiki 1.24:
   1:
     location: ['/includes/DefaultSettings.php']
