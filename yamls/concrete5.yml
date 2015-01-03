@@ -8,6 +8,7 @@
 # CVE-2014-XXXX 5.6.3 http://osvdb.org/109270
 # CVE-2014-XXXX 5.6.3 http://osvdb.org/109271
 # CVE-2014-XXXX 5.6.3 http://osvdb.org/109272
+# CVE-2014-XXXX TODO http://seclists.org/fulldisclosure/2014/Dec/38 CVE requested in oss-security 2014-01-02. No fix available.
 concrete5:
   1:
     location: ['/concrete/config/version.php']

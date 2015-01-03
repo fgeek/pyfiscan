@@ -1,5 +1,6 @@
 # URL: http://www.claroline.net
 # CVE-2013-6267 1.11.9 https://www.htbridge.com/advisory/HTB23179
+# CVE-2013-4753 TODO http://www.xchg.info/?p=406
 Claroline:
   1:
     location: ['/claroline/inc/installedVersion.inc.php']
