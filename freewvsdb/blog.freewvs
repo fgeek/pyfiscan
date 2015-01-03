@@ -52,17 +52,6 @@ variable=conf_current_version
 subdir=1
 extra_match=[sblog_version_info]
 
-[Movable_Type]
-url=http://www.movabletype.com/
-# movable type has a crazy versioning scheme, that makes it basically
-# impossible to really use freewvs properly, latest is 5.2.3
-safe=5.13
-old_safe=5.2.3,5.2.2,5.2.1
-vuln=CVE-2010-3921
-file=mt.php
-variable=VERSION_ID
-subdir=1
-
 [artmedic_weblog]
 url=http://www.artmedic-phpscripts.de/
 safe=
