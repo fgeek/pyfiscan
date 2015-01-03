@@ -29,11 +29,15 @@
 # CVE-2014-1517 4.5.3/4.4.3
 # CVE-2014-XXXX 4.5.3/4.4.3/4.2.8/4.0.12
 # CVE-2014-1546 4.5.5/4.4.5/4.2.10/4.0.14
+# CVE-2014-1571 4.5.6/4.4.6/4.2.11/4.0.15
+# CVE-2014-1572 4.5.6/4.4.6/4.2.11/4.0.15
+# CVE-2014-1573 4.5.6/4.4.6/4.2.11/4.0.15
+# N/A           4.5.6/4.4.6/4.2.11/4.0.15   https://bugzilla.mozilla.org/show_bug.cgi?id=1054702
 Bugzilla:
   1:
     location: ['/docs/en/xml/bugzilla.ent', '/docs/en/xml/Bugzilla-Guide.xml']
-    secure_version: '4.4.3'
+    secure_version: '4.5.6'
     regexp: ['<!ENTITY bz-ver.*?(?P<version>[0-9.]+)']
-    cve: 'CVE-2014-1517 http://www.bugzilla.org/releases/4.4.4/release-notes.html'
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-1546 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-1571 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-1572 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-1573'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
