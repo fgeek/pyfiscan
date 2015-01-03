@@ -3,13 +3,13 @@
 # CVE-2010-1610 1.4.8 http://osvdb.org/62083 http://blog.visionsource.org/2010/01/28/opencart-csrf-vulnerability/
 # CVE-2013-1891 N/A http://osvdb.org/91500 http://www.waraxe.us/advisory-98.html
 # CVE-2012-XXXX N/A http://www.waraxe.us/advisory-84.html http://osvdb.org/81240 http://osvdb.org/81241 http://osvdb.org/81242 http://osvdb.org/81243 http://osvdb.org/81238 http://osvdb.org/81239
-# CVE-2014-XXXX TODO http://osvdb.org/100740
-# CVE-2014-3990 N/A http://karmainsecurity.com/KIS-2014-08 1.5.6.5 is not yet released yet
+# CVE-2014-XXXX N/A http://osvdb.org/100740
+# CVE-2014-3990 2.0.0.0 http://karmainsecurity.com/KIS-2014-08
 OpenCart:
   1:
     location: ['/admin/index.php']
     secure_version: '2.0.0.0'
-    regexp: ['define.*?VERSION.*?(?P<version>[0-9.]+)', '/admin/index.php']
+    regexp: ["define\\('VERSION',[ \t]'(?P<version>[0-9.]+)"]
     cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3990 http://karmainsecurity.com/KIS-2014-08'
-    fingerprint: detect_opencart
+    fingerprint: detect_general
     post_processing: ['php5.fcgi']
