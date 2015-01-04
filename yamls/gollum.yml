@@ -1,10 +1,9 @@
 # URL: https://github.com/gollum/gollum
-# CVE-2014-XXXX 3.1.1 https://github.com/gollum/gollum/issues/913
-# lib/gollum.rb:  VERSION = '3.1.1'
+# CVE-2014-9489 3.1.1 https://github.com/gollum/gollum/issues/913
 Gollum:
   1:
     location: ['/lib/gollum.rb']
     secure_version: '3.1.1'
     regexp: ["  VERSION = '(?P<version>[0-9.]+)"]
-    cve: 'http://www.openwall.com/lists/oss-security/2014/12/04/21'
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9489 http://www.openwall.com/lists/oss-security/2014/12/04/21'
     fingerprint: detect_general
