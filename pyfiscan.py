@@ -75,7 +75,6 @@ def populate_file(fargs):
         with open(filelist) as f:
             for file in f:
                 filename = file.strip()
-                logging.debug('Found file: $s', filename)
                 for appname in database.issues:
                     for loc in database.locations(appname, with_lists=False):
                         if filename.endswith(loc):
