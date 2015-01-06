@@ -244,12 +244,14 @@
 # SA-CONTRIB-2014-073   CVE-2014-5169   https://drupal.org/node/2312609 Date
 # SA-CONTRIB-2014-074   CVE-2014-5170
 # SA-CONTRIB-2014-113   CVE-2014-9016   https://drupal.org/node/2378367 Secure Password Hashes
-# SA-CONTRIB-2014-116
-# SA-CONTRIB-2014-121
-# SA-CONTRIB-2014-122
-# SA-CONTRIB-2014-124
-# SA-CONTRIB-2014-126
-# SA-CONTRIB-2014-127
+# SA-CONTRIB-2014-116   CVE-2014-9498   https://drupal.org/node/2386387
+# SA-CONTRIB-2014-121   CVE-2014-9499   https://www.drupal.org/node/2390839
+# SA-CONTRIB-2014-122   CVE-2014-9500   https://www.drupal.org/node/2390849
+# SA-CONTRIB-2014-124   CVE-2014-9501   https://www.drupal.org/node/2390897
+# SA-CONTRIB-2014-126   CVE-2014-9502   https://www.drupal.org/node/2394979 Open Atrium - CSRF
+# SA-CONTRIB-2014-126   CVE-2014-9503   Open Atrium - Access Bypass
+# SA-CONTRIB-2014-126   CVE-2014-9504   Open Atrium - OG Subgroups Access Bypass
+# SA-CONTRIB-2014-127   CVE-2014-9505   https://www.drupal.org/node/2395015
 # CVE-2012-4468
 # CVE-2012-4469
 # CVE-2012-4470
