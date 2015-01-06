@@ -69,13 +69,14 @@
 # CVE-2014-7295 1.23.5/1.22.12/1.19.20  https://lists.wikimedia.org/pipermail/mediawiki-announce/2014-October/000163.html
 # CVE-2014-9276 1.23.7/1.22.14/1.19.22  https://lists.wikimedia.org/pipermail/mediawiki-announce/2014-November/000170.html
 # CVE-2014-9277 1.23.7/1.22.14/1.19.22  https://lists.wikimedia.org/pipermail/mediawiki-announce/2014-November/000170.html
-# CVE-2014-XXXX 1.24.1/1.23.8/1.22.15/1.19.23 https://lists.wikimedia.org/pipermail/mediawiki-announce/2014-December/000173.html CVE requested in oss-security
+# CVE-2014-9475 1.24.1/1.23.8/1.22.15/1.19.23 https://lists.wikimedia.org/pipermail/mediawiki-announce/2014-December/000173.html
+# CVE-2014-9476 1.24.1/1.23.8/1.22.15/1.19.23 https://lists.wikimedia.org/pipermail/mediawiki-announce/2014-December/000173.html
 MediaWiki 1.24:
   1:
     location: ['/includes/DefaultSettings.php']
     secure_version: '1.24.1'
     regexp: ['\$wgVersion.*?(?P<version>1\.24\.[0-9.]{1,})']
-    cve: 'https://lists.wikimedia.org/pipermail/mediawiki-announce/2014-December/000173.html'
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9475 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9476 https://lists.wikimedia.org/pipermail/mediawiki-announce/2014-December/000173.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.23:
@@ -83,7 +84,7 @@ MediaWiki 1.23:
     location: ['/includes/DefaultSettings.php']
     secure_version: '1.23.8'
     regexp: ['\$wgVersion.*?(?P<version>1\.23\.[0-9.]{1,})']
-    cve: 'https://lists.wikimedia.org/pipermail/mediawiki-announce/2014-December/000173.html'
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9475 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9476 https://lists.wikimedia.org/pipermail/mediawiki-announce/2014-December/000173.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.22:
@@ -115,7 +116,7 @@ MediaWiki 1.19:  # Will be supported until 2015 May
     location: ['/includes/DefaultSettings.php']
     secure_version: '1.19.23'
     regexp: ['\$wgVersion.*?(?P<version>1\.19\.[0-9.]{1,})']
-    cve: 'https://lists.wikimedia.org/pipermail/mediawiki-announce/2014-December/000173.html'
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9475 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9476 https://lists.wikimedia.org/pipermail/mediawiki-announce/2014-December/000173.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.18:
