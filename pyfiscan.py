@@ -373,7 +373,7 @@ if __name__ == "__main__":
       -p                Enable post process for php5.fcgi file checks.
       --home DIR        Specifies where the home-directories are located.
       --check FILE      Rechecks entries in old CSV files.
-      --file            Scan using list of filename/paths in FILE (e.g. locate output)
+      --file FILE       Scan using list of filename/paths in FILE (e.g. locate output)
       --check-modes     Check using execution bit if we are allowed to traverse directories.
       -l LEVEL          Specifies logging level: info, debug.
       -a NAME           Scans only specific applications. Delimiter: ,
@@ -444,7 +444,7 @@ if __name__ == "__main__":
             logging.debug('Scanning predefined variables: %s', arguments['--home'])
             populator = Process(target=p.populate_predefined, args=(arguments['--home'], arguments['--check-modes'],))
         elif arguments['--file']:
-            logging.debug('Scanning using file : %s', arguments['--file'])
+            logging.debug('Scanning using file: %s', arguments['--file'])
             populator = Process(target=p.populate_filelist, args=([arguments['--file']],))
 	else:
             logging.debug('Scanning predefined variables: /home')
