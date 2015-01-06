@@ -12,3 +12,7 @@
 # CVE-2014-2067
 # CVE-2014-2068
 # CVE-2014-3665
+Detection needs to use libarchive to unpack war file on the fly.
+    https://code.google.com/p/python-libarchive/wiki/Examples
+Version can be found from:
+    META-INF/MANIFEST.MF:Jenkins-Version: 1.596
