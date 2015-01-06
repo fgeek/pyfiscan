@@ -69,7 +69,7 @@ def populate_file(fargs):
     start_time = time.time()
     try:
         if not os.path.isfile(filelist):
-            logging.debug('Empty file: %s', filelist)
+            logging.debug('Location %s is not a file.', filelist)
             return time.time() - start_time
         logging.debug('Parsing filelist inside populate_file: %s', filelist)
         with open(filelist) as f:
