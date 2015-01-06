@@ -9,7 +9,7 @@ to keep up with security-updates. Fingerprints are easy to create and modify as
 user can write those in YAML-syntax.
 
 @author Henri Salo <henri@nerv.fi>
-@copyright Copyright (c) 2009-2015 Henri Salo
+@copyright Copyright (c) 2009-2014 Henri Salo
 @license BSD
 """
 
@@ -60,6 +60,30 @@ def populate_directory(fargs):
         logging.error(traceback.format_exc())
     return time.time() - start_time
 
+def populate_file(fargs):
+    """
+    Populates queue for works based on list of filenames from file.
+    """
+    logging.debug('Entering populate_file')
+    filelist, checkmodes = fargs
+    start_time = time.time()
+    try:
+        if not os.path.isfile(filelist):
+            logging.debug('Empty file: %s', filelist)
+            return time.time() - start_time
+        logging.debug('Parsing filelist inside populate_file: %s', filelist)
+        with open(filelist) as f:
+            for file in f:
+                filename = file.strip()
+                logging.debug('Found file: $s', filename)
+                for appname in database.issues:
+                    for loc in database.locations(appname, with_lists=False):
+                        if filename.endswith(loc):
+                            logging.debug('Found: %s %s %s',filename,loc,appname)
+                            queue.put((filename, loc, appname))
+    except Exception:
+        logging.error(traceback.format_exc())
+    return time.time() - start_time
 
 def populate_userdir(fargs):
     predefined_locations = ['www', 'secure-www']
@@ -107,6 +131,25 @@ class PopulateScanQueue:
             p = Pool()
             dirs = ((d, checkmodes) for d in directories)
             p.map(populate_directory, dirs, chunksize=200)
+            queue.put(None)  # All done. Sending kill signal.
+            p.close()
+            p.join()
+            logging.info('Scanning for locations finished. Elapsed time: %.4f', \
+                         time.time() - starttime)
+        except OSError:
+            logging.error(traceback.format_exc())
+            sys.exit(traceback.format_exc())
+        except Exception:
+            logging.error(traceback.format_exc())
+
+    def populate_filelist(self, filelist, checkmodes=False):
+        try:
+            # Loop through and pass the files to the worker function
+            starttime = time.time()
+            logging.debug('Entered populate_filelist')
+            p = Pool()
+            files = ((f,checkmodes) for f in filelist)
+            p.map(populate_file, files, chunksize=200)
             queue.put(None)  # All done. Sending kill signal.
             p.close()
             p.join()
@@ -321,6 +364,7 @@ if __name__ == "__main__":
       pyfiscan.py -r <directory> [-l LEVEL] [-a NAME]
       pyfiscan.py --home <directory> [--check-modes] [-p] [-l LEVEL] [-a NAME]
       pyfiscan.py --check <FILE>
+      pyfiscan.py --file <FILE> [-l LEVEL] [-a NAME]
       pyfiscan.py [-h|--help]
       pyfiscan.py --version
 
@@ -329,6 +373,7 @@ if __name__ == "__main__":
       -p                Enable post process for php5.fcgi file checks.
       --home DIR        Specifies where the home-directories are located.
       --check FILE      Rechecks entries in old CSV files.
+      --file            Scan using list of filename/paths in FILE (e.g. locate output)
       --check-modes     Check using execution bit if we are allowed to traverse directories.
       -l LEVEL          Specifies logging level: info, debug.
       -a NAME           Scans only specific applications. Delimiter: ,
@@ -398,7 +443,10 @@ if __name__ == "__main__":
         elif arguments['--home']:
             logging.debug('Scanning predefined variables: %s', arguments['--home'])
             populator = Process(target=p.populate_predefined, args=(arguments['--home'], arguments['--check-modes'],))
-        else:
+        elif arguments['--file']:
+            logging.debug('Scanning using file : %s', arguments['--file'])
+            populator = Process(target=p.populate_filelist, args=([arguments['--file']],))
+	else:
             logging.debug('Scanning predefined variables: /home')
             populator = Process(target=p.populate_predefined, args=('/home', arguments['--check-modes'],))
         populator.start()
