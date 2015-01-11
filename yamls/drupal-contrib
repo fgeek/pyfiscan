@@ -120,6 +120,7 @@
 # SA-CONTRIB-2012-146
 # SA-CONTRIB-2012-154   CVE-2012-5569   https://drupal.org/node/1808852 http://osvdb.org/86162 http://osvdb.org/86164
 # SA-CONTRIB-2012-154   CVE-2012-5570   https://drupal.org/node/1808852
+# SA-CONTRIB-2012-173   CVE-2012-5654   http://drupal.org/node/1859282
 # SA-CONTRIB-2012-174	CVE-2012-5655   http://drupal.org/node/1870550  http://osvdb.org/88526
 # SA-CONTRIB-2013-001	CVE-2013-0181   http://drupal.org/node/1884332
 # SA-CONTRIB-2013-001	CVE-2013-2715   http://www.openwall.com/lists/oss-security/2013/04/04/4
