@@ -87,6 +87,7 @@
 # CVE-2011-4956 3.1.1   http://osvdb.org/72141 SA44038 http://wordpress.org/news/2011/04/wordpress-3-1-1/
 # CVE-2011-4957 3.1.1   http://osvdb.org/72142 SA44038 http://wordpress.org/news/2011/04/wordpress-3-1-1/
 # CVE-2011-5270 3.0.6
+# CVE-2011-XXXX 3.1.4   http://osvdb.org/73721 http://osvdb.org/73722 http://osvdb.org/73723 http://wordpress.org/news/2011/06/wordpress-3-1-4/
 # CVE-2012-0287 3.3.1   http://osvdb.org/78123 SA47371 https://wordpress.org/news/2012/01/wordpress-3-3-1/
 # CVE-2012-2399 3.3.2   http://codex.wordpress.org/Version_3.3.2
 # CVE-2012-2400 3.3.2   http://codex.wordpress.org/Version_3.3.2
@@ -118,7 +119,6 @@
 # CVE-2013-4338 3.6.1   http://codex.wordpress.org/Version_3.6.1
 # CVE-2013-4339 3.6.1   http://codex.wordpress.org/Version_3.6.1
 # CVE-2013-4340 3.6.1   http://codex.wordpress.org/Version_3.6.1
-# CVE-????-???? 3.1.4   http://osvdb.org/73721 http://osvdb.org/73722 http://osvdb.org/73723 http://wordpress.org/news/2011/06/wordpress-3-1-4/
 # CVE-2014-0165 3.8.2/3.7.2 http://codex.wordpress.org/Version_3.8.2 http://codex.wordpress.org/Version_3.7.2 http://osvdb.org/105630
 # CVE-2014-0166 3.8.2/3.7.2 http://codex.wordpress.org/Version_3.8.2 http://codex.wordpress.org/Version_3.7.2 http://osvdb.org/105620
 # CVE-2012-5868 4.0     http://whiteoaksecurity.com/blog/2012/12/17/cve-2012-5868-wordpress-342-sessions-not-terminated-upon-explicit-user-logout http://blog.spiderlabs.com/2014/09/leveraging-lfi-to-get-full-compromise-on-wordpress-sites.html
