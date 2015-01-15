@@ -1,9 +1,10 @@
 # URL: http://microweber.com/
-# CVE-2013-5984 0.830 http://osvdb.org/97809 https://github.com/microweber/microweber/commit/9177d134960c24cb642d5cf3b42a1fba286219cc HTB23175
+# CVE-2013-5984 0.830   http://osvdb.org/97809 https://github.com/microweber/microweber/commit/9177d134960c24cb642d5cf3b42a1fba286219cc HTB23175
+# CVE-2014-9464 0.95    http://osvdb.org/116689 https://github.com/microweber/microweber/commit/4ee09f9dda35cd1b15daa351f335c2a4a0538d29
 Microweber:
   1:
     location: ['/src/Microweber/bootstrap.php']
-    secure_version: '0.830'
+    secure_version: '0.95'
     regexp: ['    define.*?MW_VERSION.*?(?P<version>[0-9.]+)']
     cve: 'http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5984 http://osvdb.org/97809 https://www.htbridge.com/advisory/HTB23175'
     fingerprint: detect_general
