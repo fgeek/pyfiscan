@@ -3,6 +3,7 @@
 # https://vexatioustendencies.com/wordpress-plugin-vulnerability-dump-part-2/
 # CVE-2012-5853 cardoza-ajax-search http://seclists.org/bugtraq/2012/Nov/33 /wp-admin/admin-ajax.php/?srch_txt='or 1=1-- &action=the_search_text
 # CVE-2012-XXXX answer-my-question http://osvdb.org/85567 http://seclists.org/bugtraq/2012/Nov/24
+# CVE-2013-1808 WP-Table Reloaded and lots of others
 # CVE-2013-1808 bp-code-snippets wp-content/plugins/bp-code-snippets/js/ZeroClipboard.swf?id=\"))}catch(e){}if(!self.a)self.a=!alert(document.cookie)//&width&height http://www.openwall.com/lists/oss-security/2013/03/26/8
 # CVE-2013-1808 buckets wp-content/plugins/buckets/js/ZeroClipboard.swf?id=\"))}catch(e){}if(!self.a)self.a=!alert(document.cookie)//&width&height
 # CVE-2013-1808 cleeng wp-content/plugins/cleeng/js/ZeroClipboard.swf?id=\"))}catch(e){}if(!self.a)self.a=!alert(document.cookie)//&width&height http://www.openwall.com/lists/oss-security/2013/03/26/8
@@ -23,6 +24,17 @@
 # CVE-2013-XXXX dewplayer-flash-mp3-player http://seclists.org/fulldisclosure/2013/Dec/209
 # CVE-2013-XXXX gallery-bank http://seclists.org/bugtraq/2013/Nov/23
 # CVE-2013-XXXX nextgen-gallery 2.0.7 https://security.dxw.com/advisories/directory-traversal-in-nextgen-gallery-2-0-0/
+# CVE-2014-100007
+# CVE-2014-100018
+# CVE-2014-100026
+# CVE-2014-100027
+# CVE-2014-10012
+# CVE-2014-10013
+# CVE-2014-10016
+# CVE-2014-10017
+# CVE-2014-10021
+# CVE-2014-2838
+# CVE-2014-2839
 # CVE-2014-8724 w3-total-cache 0.9.4.1
 # CVE-2014-9335
 # CVE-2014-9336
@@ -32,9 +44,10 @@
 # CVE-2014-9340
 # CVE-2014-9341
 # CVE-2014-9368
+# CVE-2014-9473
+# CVE-2014-9570
 # CVE-2014-XXXX bp-group-documents 1.2.2 https://security.dxw.com/advisories/stored-xss-vulnerability-in-bp-group-documents-1-2-1/
 # CVE-2014-XXXX cforms2 14.8 http://seclists.org/bugtraq/2014/Dec/172
 # CVE-2014-XXXX frontend-uploader N/A (2014-12-29) http://seclists.org/fulldisclosure/2014/Dec/122 CVE requested by SECUPENT Research Center <research@secupent.com>
 # CVE-2014-XXXX wp-members http://seclists.org/fulldisclosure/2014/Jan/29
-# CVE-2013-1808 WP-Table Reloaded and lots of others
-# CVE-2014-9570
+# CVE-2015-XXXX TODO photo-gallery http://seclists.org/fulldisclosure/2015/Jan/36

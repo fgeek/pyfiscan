@@ -1,11 +1,12 @@
 # URL: http://fluxbb.org/
 # CVE-2011-3621
-# CVE-2014-XXXX 1.5.7 http://seclists.org/fulldisclosure/2014/Nov/73 sent cve inquiry email to author 2014-01-02
+# CVE-2014-10030 1.5.7
+# CVE-2014-10029 1.5.7
 FluxBB:
   1:
     location: ['/include/common.php']
     secure_version: '1.5.7'
     regexp: ['.*?FORUM_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'http://seclists.org/fulldisclosure/2014/Nov/73'
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-10029 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-10030'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
