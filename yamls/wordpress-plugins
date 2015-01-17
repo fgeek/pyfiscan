@@ -24,6 +24,7 @@
 # CVE-2013-XXXX dewplayer-flash-mp3-player http://seclists.org/fulldisclosure/2013/Dec/209
 # CVE-2013-XXXX gallery-bank http://seclists.org/bugtraq/2013/Nov/23
 # CVE-2013-XXXX nextgen-gallery 2.0.7 https://security.dxw.com/advisories/directory-traversal-in-nextgen-gallery-2-0-0/
+# CVE-2014-100001
 # CVE-2014-100007
 # CVE-2014-100018
 # CVE-2014-100026
@@ -44,10 +45,10 @@
 # CVE-2014-9340
 # CVE-2014-9341
 # CVE-2014-9368
-# CVE-2014-9473
+# CVE-2014-9473 cforms2
 # CVE-2014-9570
 # CVE-2014-XXXX bp-group-documents 1.2.2 https://security.dxw.com/advisories/stored-xss-vulnerability-in-bp-group-documents-1-2-1/
 # CVE-2014-XXXX cforms2 14.8 http://seclists.org/bugtraq/2014/Dec/172
 # CVE-2014-XXXX frontend-uploader N/A (2014-12-29) http://seclists.org/fulldisclosure/2014/Dec/122 CVE requested by SECUPENT Research Center <research@secupent.com>
 # CVE-2014-XXXX wp-members http://seclists.org/fulldisclosure/2014/Jan/29
-# CVE-2015-XXXX TODO photo-gallery http://seclists.org/fulldisclosure/2015/Jan/36
+# CVE-2015-XXXX photo-gallery http://seclists.org/fulldisclosure/2015/Jan/36
