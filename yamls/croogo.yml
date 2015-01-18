@@ -1,0 +1,10 @@
+# URL: https://croogo.org/
+# CVE-2015-XXXX 2.2.1 http://sroesemann.blogspot.de/2015/01/sroeadv-2015-02.html https://github.com/croogo/croogo/issues/599 CVE requested http://www.openwall.com/lists/oss-security/2015/01/12/2
+Croogo:
+  1:
+    location: ['/Vendor/croogo/croogo/VERSION.txt']
+    secure_version: '2.2.1'
+    regexp: ['(?P<version>[0-9.]+)']
+    cve: 'http://sroesemann.blogspot.de/2015/01/sroeadv-2015-02.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']

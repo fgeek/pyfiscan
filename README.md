@@ -32,6 +32,7 @@ Detects following software
 * Concrete5
 * Coppermine
 * Cotonti
+* Croogo
 * Dolibarr
 * Dotclear
 * Drupal
