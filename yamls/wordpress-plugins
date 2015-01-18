@@ -36,7 +36,10 @@
 # CVE-2014-10021
 # CVE-2014-2838
 # CVE-2014-2839
+# CVE-2014-7956 pods
+# CVE-2014-7957 pods
 # CVE-2014-8724 w3-total-cache 0.9.4.1
+# CVE-2014-9308
 # CVE-2014-9335
 # CVE-2014-9336
 # CVE-2014-9337
@@ -47,8 +50,10 @@
 # CVE-2014-9368
 # CVE-2014-9473 cforms2
 # CVE-2014-9570
+# CVE-2014-9570
 # CVE-2014-XXXX bp-group-documents 1.2.2 https://security.dxw.com/advisories/stored-xss-vulnerability-in-bp-group-documents-1-2-1/
 # CVE-2014-XXXX cforms2 14.8 http://seclists.org/bugtraq/2014/Dec/172
 # CVE-2014-XXXX frontend-uploader N/A (2014-12-29) http://seclists.org/fulldisclosure/2014/Dec/122 CVE requested by SECUPENT Research Center <research@secupent.com>
 # CVE-2014-XXXX wp-members http://seclists.org/fulldisclosure/2014/Jan/29
+# CVE-2015-1055
 # CVE-2015-XXXX photo-gallery http://seclists.org/fulldisclosure/2015/Jan/36
