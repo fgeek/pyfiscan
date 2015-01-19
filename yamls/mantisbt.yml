@@ -24,7 +24,8 @@
 # CVE-2013-4460 1.2.16  http://osvdb.org/98823 http://www.mantisbt.org/bugs/view.php?id=16513
 # CVE-2014-1608 https://github.com/mantisbt/mantisbt/commit/00b4c17088fa56594d85fe46b6c6057bb3421102
 # CVE-2014-1609 https://github.com/mantisbt/mantisbt/commit/7efe0175f0853e18ebfacedfd2374c4179028b3f
-# CVE-2014-2238 1.2.17  http://osvdb.org/103842 
+# CVE-2014-2238 1.2.17  http://osvdb.org/103842
+# CVE-2014-6316 1.2.18  https://github.com/mantisbt/mantisbt/commit/e66ecc9f
 # CVE-2014-7146 1.2.18  http://www.mantisbt.org/bugs/view.php?id=17725 http://www.mantisbt.org/bugs/view.php?id=17780
 # CVE-2014-8554 1.2.18  http://www.mantisbt.org/bugs/view.php?id=17812
 # CVE-2014-8598 1.2.18
@@ -35,6 +36,14 @@
 # CVE-2014-9270 1.2.18  http://www.mantisbt.org/bugs/view.php?id=17583 http://github.com/mantisbt/mantisbt/commit/0bff06ec
 # CVE-2014-9271 1.2.18  http://www.mantisbt.org/bugs/view.php?id=17876 http://github.com/mantisbt/mantisbt/commit/e5fc835a  http://www.mantisbt.org/bugs/view.php?id=17874 http://github.com/mantisbt/mantisbt/commit/9fb8cf36f
 # CVE-2014-9272 1.2.18  http://www.mantisbt.org/bugs/view.php?id=17297 http://github.com/mantisbt/mantisbt/commit/05378e00
+# CVE-2014-9279
+# CVE-2014-9280
+# CVE-2014-9281
+# CVE-2015-1042 1.2.19
+# CVE-2014-9571 1.2.19
+# CVE-2014-9572 1.2.19
+# CVE-2014-9573 1.2.19
+# CVE-2014-9624 1.2.19 https://www.mantisbt.org/bugs/view.php?id=17984
 MantisBT:
   1:
     location: ['/core/constant_inc.php']
