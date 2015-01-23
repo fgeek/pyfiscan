@@ -1,3 +1,4 @@
+# URL: http://developer.joomla.org/development-status.html https://docs.joomla.org/Joomla!_CMS_versions https://docs.joomla.org/What_version_of_Joomla!_should_you_use?
 # CVE-2006-0303 1.0.7   http://osvdb.org/22531,22532,22533,2253422535 SA18513
 # CVE-2006-1047 1.0.8   http://osvdb.org/31287 SA19105
 # CVE-2006-1048 1.0.8   http://osvdb.org/23822 SA19105
@@ -84,6 +85,7 @@
 # CVE-2012-5455 3.0.1/2.5.10        http://osvdb.org/86134 http://developer.joomla.org/security/81-20130403-core-xss-vulnerability.html
 # CVE-2012-XXXX 2.5.2       http://osvdb.org/80705
 # CVE-2012-XXXX 3.1.0/2.5.10        http://osvdb.org/92751 http://developer.joomla.org/security/83-20130404-core-xss-vulnerability.html
+# CVE-2013-XXXX N/A         http://osvdb.org/94420 http://seclists.org/fulldisclosure/2013/Jun/149
 # CVE-2013-1453
 # CVE-2013-1454
 # CVE-2013-1455
@@ -94,25 +96,27 @@
 # CVE-2013-3242 3.1.0/3.0.4/2.5.10  http://osvdb.org/92755 http://developer.joomla.org/security/85-20130406-core-dos-vulnerability.html
 # CVE-2013-3267 3.1.0/2.5.10        http://osvdb.org/92756 http://developer.joomla.org/security/86-20130407-core-xss-vulnerability.html
 # CVE-2013-5576 3.1.5/2.5.14    http://osvdb.org/95933 http://developer.joomla.org/security/563-20130801-core-unauthorised-uploads.html https://github.com/rapid7/metasploit-framework/pull/2219 http://www.cso.com.au/article/523528/joomla_patches_file_manager_vulnerability_responsible_hijacked_websites/
-# CVE-2014-6632
-# CVE-2014-7229
-# CVE-2014-7981
-# CVE-2014-7982
-# CVE-2014-7984
+# CVE-2014-6632 3.3.4               http://developer.joomla.org/security/594-20140902-core-unauthorised-logins.html
+# CVE-2014-7228 3.3.5               http://developer.joomla.org/security/595-20140903-core-remote-file-inclusion.html
+# CVE-2014-7229 3.3.5               http://developer.joomla.org/security/596-20140904-core-denial-of-service.html
+# CVE-2014-7981 3.2.3               http://developer.joomla.org/security/578-20140301-core-sql-injection.html
+# CVE-2014-7982 3.2.3               http://developer.joomla.org/security/580-20140303-core-xss-vulnerability.html
+# CVE-2014-7983 3.2.3               http://developer.joomla.org/security/579-20140302-core-xss-vulnerability.html
+# CVE-2014-7984 3.2.3               http://developer.joomla.org/security/581-20140304-core-unauthorised-logins.html
 Joomla 3:
   1:
-    location: ['administrator/manifests/files/joomla.xml']
-    secure_version: '3.1.5'
+    location: ['/administrator/manifests/files/joomla.xml']
+    secure_version: '3.3.5'
     regexp: ['[\t]<version>(?P<version>3\.[0-9.]{1,})']
-    cve: 'CVE-2013-5576 http://osvdb.org/95933 http://developer.joomla.org/security/563-20130801-core-unauthorised-uploads.html'
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-7228 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-7229'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Joomla 2.5:
   1:
-    location: ['administrator/manifests/files/joomla.xml']
+    location: ['/administrator/manifests/files/joomla.xml']
     secure_version: '2.5.14'
     regexp: ['[\t]<version>(?P<version>2\.5\.[0-9]{1,})']
-    cve: 'CVE-2013-5576 http://osvdb.org/95933 http://developer.joomla.org/security/563-20130801-core-unauthorised-uploads.html'
+    cve: 'Joomla 2.5 is end of life. Please upgrade to 3.3.5 version.'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Joomla 1.7:
@@ -120,7 +124,7 @@ Joomla 1.7:
     location: ['/includes/version.php']
     secure_version: '2.5.14'
     regexp: ['[\t]+public[\t]\$RELEASE.*?(?P<version>1.7)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla versions 1.0.x to 1.7.x are end of life. Please upgrade to 2.5.14 or newer.'
+    cve: 'Joomla 1.7 is end of life. Please upgrade to 3.3.5 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.6:
@@ -128,7 +132,7 @@ Joomla 1.6:
     location: ['/libraries/joomla/version.php']
     secure_version: '2.5.14'
     regexp: ['.*?RELEASE.*?(?P<version>1.6)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla versions 1.0.x to 1.7.x are end of life. Please upgrade to 2.5.14 or newer.'
+    cve: 'Joomla 1.6 is end of life. Please upgrade to 3.3.5 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.5:
@@ -136,7 +140,7 @@ Joomla 1.5:
     location: ['/libraries/joomla/version.php']
     secure_version: '2.5.14'
     regexp: ['.*?RELEASE.*?(?P<version>1.5)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla versions 1.0.x to 1.7.x are end of life. Please upgrade to 2.5.14 or newer.'
+    cve: 'Joomla 1.5 is end of life. Please upgrade to 3.3.5 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.0:
@@ -144,6 +148,6 @@ Joomla 1.0:
     location: ['/includes/version.php']
     secure_version: '2.5.14'
     regexp: ['[\t]+var.*?RELEASE.*?(?P<version>1.0)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla versions 1.0.x to 1.7.x are end of life. Please upgrade to 2.5.14 or newer.'
+    cve: 'Joomla 1.0 is end of life. Please upgrade to 3.3.5 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
