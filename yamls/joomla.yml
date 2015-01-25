@@ -114,40 +114,40 @@ Joomla 3:
 Joomla 2.5:
   1:
     location: ['/administrator/manifests/files/joomla.xml']
-    secure_version: '2.5.14'
+    secure_version: '3.3.6'
     regexp: ['[\t]<version>(?P<version>2\.5\.[0-9]{1,})']
-    cve: 'Joomla 2.5 is end of life. Please upgrade to 3.3.5 version.'
+    cve: 'Joomla 2.5 is end of life. Please upgrade to 3.3.6 version.'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Joomla 1.7:
   1:
     location: ['/includes/version.php']
-    secure_version: '2.5.14'
+    secure_version: '3.3.6'
     regexp: ['[\t]+public[\t]\$RELEASE.*?(?P<version>1.7)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.7 is end of life. Please upgrade to 3.3.5 version.'
+    cve: 'Joomla 1.7 is end of life. Please upgrade to 3.3.6 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.6:
   1:
     location: ['/libraries/joomla/version.php']
-    secure_version: '2.5.14'
+    secure_version: '3.3.6'
     regexp: ['.*?RELEASE.*?(?P<version>1.6)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.6 is end of life. Please upgrade to 3.3.5 version.'
+    cve: 'Joomla 1.6 is end of life. Please upgrade to 3.3.6 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.5:
   1:
     location: ['/libraries/joomla/version.php']
-    secure_version: '2.5.14'
+    secure_version: '3.3.6'
     regexp: ['.*?RELEASE.*?(?P<version>1.5)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.5 is end of life. Please upgrade to 3.3.5 version.'
+    cve: 'Joomla 1.5 is end of life. Please upgrade to 3.3.6 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.0:
   1:
     location: ['/includes/version.php']
-    secure_version: '2.5.14'
+    secure_version: '3.3.6'
     regexp: ['[\t]+var.*?RELEASE.*?(?P<version>1.0)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.0 is end of life. Please upgrade to 3.3.5 version.'
+    cve: 'Joomla 1.0 is end of life. Please upgrade to 3.3.6 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
