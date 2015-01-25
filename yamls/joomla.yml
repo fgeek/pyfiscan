@@ -106,9 +106,9 @@
 Joomla 3:
   1:
     location: ['/administrator/manifests/files/joomla.xml']
-    secure_version: '3.3.5'
+    secure_version: '3.3.6'
     regexp: ['[\t]<version>(?P<version>3\.[0-9.]{1,})']
-    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-7228 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-7229'
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-7228 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-7229 http://www.joomla.org/announcements/release-news/5569-joomla-3-3-6-released.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Joomla 2.5:
