@@ -352,8 +352,8 @@
 # CVE-2013-7391
 # CVE-2013-7406
 # CVE-2013-7407
-# SA-CONTRIB-2014-061 CVE-2014-2715 https://www.drupal.org/node/2288333
-# CVE-2014-3453 not fixed? TODO http://osvdb.org/106844 no CONTRIB security advisory?
+# CVE-2014-2715 no SA-CONTRIB advisory?
+# CVE-2014-3453 https://www.drupal.org/node/2263071 not fixed? TODO http://osvdb.org/106844 Requires admin permission
 # CVE-2014-3933
 # CVE-2014-4505
 # CVE-2014-4506
