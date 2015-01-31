@@ -15,24 +15,6 @@ file=config_defaults_inc.php
 variable=$g_mantis_version
 subdir=0
 
-[Bugzilla3]
-url=http://www.bugzilla.org/
-safe=4.1.3
-old_safe=4.0.2,3.6.6,3.4.12
-vuln=CVE-2011-2379
-file=Constants.pm
-variable=BUGZILLA_VERSION
-subdir=1
-
-[Bugzilla2]
-url=http://www.bugzilla.org/
-safe=4.1.3
-old_safe=4.0.2,3.6.6,3.4.12
-vuln=CVE-2011-2379
-file=Config.pm
-variable=$Bugzilla::Config::VERSION
-subdir=1
-
 [SimpNews]
 url=http://www.boesch-it.de
 safe=2.48
