@@ -1,6 +1,9 @@
 # REJECTED: CVE-2013-1463
+# http://seclists.org/fulldisclosure/2013/Dec/209 https://github.com/wpscanteam/wpscan/issues/388
 # https://vexatioustendencies.com/wordpress-plugin-vulnerability-dump-part-1/
 # https://vexatioustendencies.com/wordpress-plugin-vulnerability-dump-part-2/
+# CVE-2003-1599
+# CVE-2012-3351
 # CVE-2012-5853 cardoza-ajax-search http://seclists.org/bugtraq/2012/Nov/33 /wp-admin/admin-ajax.php/?srch_txt='or 1=1-- &action=the_search_text
 # CVE-2012-XXXX answer-my-question http://osvdb.org/85567 http://seclists.org/bugtraq/2012/Nov/24
 # CVE-2013-1808 WP-Table Reloaded and lots of others
@@ -19,6 +22,7 @@
 # CVE-2013-1808 wp-link-to-us wp-content/plugins/wp-link-to-us/js/ZeroClipboard.swf?id=\%22%29%29}catch%28e%29{}if%28!self.a%29self.a=!alert%28document.cookie%29//&width&height wp-content/plugins/wp-link-to-us/js/ZeroClipboard10.swf?id=\%22%29%29}catch%28e%29{}if%28!self.a%29self.a=!alert%28document.cookie%29//&width&height
 # CVE-2013-1808 wppygments wp-content/plugins/wppygments/js/ZeroClipboard.swf?id=\%22%29%29}catch%28e%29{}if%28!self.a%29self.a=!alert%28document.cookie%29//&width&height wp-content/plugins/wppygments/js/ZeroClipboard10.swf?id=\%22%29%29}catch%28e%29{}if%28!self.a%29self.a=!alert%28document.cookie%29//&width&height
 # CVE-2013-1808 zopim-live-chat wp-content/plugins/zopim-live-chat/ZeroClipboard.swf?id=\%22%29%29}catch%28e%29{}if%28!self.a%29self.a=!alert%28document.cookie%29//&width&height
+# CVE-2013-7129 Jplayer.swf ExternalInterface.call() method jQuery parameter XSS http://osvdb.org/92254
 # CVE-2013-7240 advanced-dewplayer N/A
 # CVE-2013-XXXX advanced-xml-reader http://www.openwall.com/lists/oss-security/2013/05/06/1
 # CVE-2013-XXXX dewplayer-flash-mp3-player http://seclists.org/fulldisclosure/2013/Dec/209
@@ -36,9 +40,92 @@
 # CVE-2014-10021
 # CVE-2014-2838
 # CVE-2014-2839
+# CVE-2014-3123
+# CVE-2014-3841
+# CVE-2014-3842
+# CVE-2014-3843
+# CVE-2014-3844
+# CVE-2014-3845
+# CVE-2014-4515
+# CVE-2014-4516
+# CVE-2014-4518
+# CVE-2014-4520
+# CVE-2014-4521
+# CVE-2014-4522
+# CVE-2014-4524
+# CVE-2014-4526
+# CVE-2014-4527
+# CVE-2014-4528
+# CVE-2014-4529
+# CVE-2014-4531
+# CVE-2014-4532
+# CVE-2014-4533
+# CVE-2014-4534
+# CVE-2014-4537
+# CVE-2014-4538
+# CVE-2014-4540
+# CVE-2014-4541
+# CVE-2014-4542
+# CVE-2014-4543
+# CVE-2014-4545
+# CVE-2014-4546
+# CVE-2014-4547
+# CVE-2014-4549
+# CVE-2014-4551
+# CVE-2014-4552
+# CVE-2014-4554
+# CVE-2014-4555
+# CVE-2014-4556
+# CVE-2014-4557
+# CVE-2014-4564
+# CVE-2014-4565
+# CVE-2014-4566
+# CVE-2014-4568
+# CVE-2014-4572
+# CVE-2014-4573
+# CVE-2014-4574
+# CVE-2014-4575
+# CVE-2014-4576
+# CVE-2014-4579
+# CVE-2014-4580
+# CVE-2014-4582
+# CVE-2014-4583
+# CVE-2014-4584
+# CVE-2014-4585
+# CVE-2014-4587
+# CVE-2014-4591
+# CVE-2014-4593
+# CVE-2014-4594
+# CVE-2014-4595
+# CVE-2014-4596
+# CVE-2014-4597
+# CVE-2014-4598
+# CVE-2014-4599
+# CVE-2014-4600
+# CVE-2014-6315
+# CVE-2014-7228
+# CVE-2014-7297
 # CVE-2014-7956 pods
 # CVE-2014-7957 pods
+# CVE-2014-8336 http://www.openwall.com/lists/oss-security/2014/10/21/3
 # CVE-2014-8724 w3-total-cache 0.9.4.1
+# CVE-2014-8754 ad-manager-for-wp CWE-601 Open Redirec
+# CVE-2014-8799
+# CVE-2014-8949
+# CVE-2014-9094
+# CVE-2014-9097
+# CVE-2014-9098
+# CVE-2014-9099
+# CVE-2014-9100
+# CVE-2014-9129
+# CVE-2014-9173
+# CVE-2014-9174
+# CVE-2014-9175
+# CVE-2014-9176
+# CVE-2014-9177
+# CVE-2014-9178
+# CVE-2014-9179
+# CVE-2014-9292
 # CVE-2014-9308
 # CVE-2014-9335
 # CVE-2014-9336
@@ -57,7 +144,11 @@
 # CVE-2014-XXXX wp-members http://seclists.org/fulldisclosure/2014/Jan/29
 # CVE-2015-1055
 # CVE-2015-1204
+# CVE-2015-1365 pixabay-images
+# CVE-2015-1366 pixabay-images
+# CVE-2015-1375 pixabay-images
+# CVE-2015-1376 pixabay-images
 # CVE-2015-1383 geo-mashup http://www.openwall.com/lists/oss-security/2015/01/27/7
+# CVE-2015-1385 powerpress 6.0.1 NS-15-001
 # CVE-2015-1393 photo-gallery 1.2.11
 # CVE-2015-1394 photo-gallery 1.2.11
-# CVE-2015-1385 powerpress 6.0.1 NS-15-001
