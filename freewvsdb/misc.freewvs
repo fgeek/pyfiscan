@@ -85,22 +85,6 @@ variable=VERSION
 subdir=0
 extra_match=define("TITLE", "FTP Admin");
 
-[RoundCube-deprecated]
-url=http://roundcube.net
-safe=0.9.5
-vuln=CVE-2013-6172
-file=index.php
-variable=RCMAIL_VERSION
-subdir=0
-
-[RoundCube]
-url=http://roundcube.net
-safe=0.9.5
-vuln=CVE-2013-6172
-file=iniset.php
-variable=RCMAIL_VERSION
-subdir=2
-
 [Moodle]
 url=http://www.moodle.org/
 safe=2.7.3
