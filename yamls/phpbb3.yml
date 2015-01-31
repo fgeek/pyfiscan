@@ -6,11 +6,13 @@
 # CVE-2010-1627 3.0.7PL1    SA38837
 # CVE-2010-1630 3.0.5       SA38264
 # CVE-2011-0544 3.0.8       SA42343
+# CVE-2015-1431 3.0.13      https://tracker.phpbb.com/browse/PHPBB3-13531 https://github.com/phpbb/phpbb/pull/3316
+# CVE-2015-1432 3.0.13      https://tracker.phpbb.com/browse/PHPBB3-13526 https://github.com/phpbb/phpbb/pull/3311
 phpBB3:
   1:
     location: ['/includes/constants.php']
-    secure_version: '3.0.8'
+    secure_version: '3.0.13'
     regexp: ['.*?PHPBB_VERSION.*?(?P<version>3[0-9.]{1,})']
-    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-0544'
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1431 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1432'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
