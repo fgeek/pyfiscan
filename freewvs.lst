@@ -171,24 +171,6 @@ file=tcms_version.xml
 variable=release
 subdir=2
 
-[Drupal6]
-url=http://www.drupal.org/
-safe=6.34
-latest=6.34
-vuln=https://www.drupal.org/SA-CORE-2014-006
-file=system.module
-variable=define('VERSION'
-subdir=2
-
-[Drupal7]
-url=http://www.drupal.org/
-safe=7.34
-latest=7.34
-vuln=https://www.drupal.org/SA-CORE-2014-006
-file=bootstrap.inc
-variable=define('VERSION'
-subdir=1
-
 [PHPNuke]
 url=http://phpnuke.org/
 # I'm not really sure about that, but 8.0 is at least vulnerable
@@ -218,38 +200,6 @@ file=SystemEnvironmentBuilder.php
 variable=define('TYPO3_version
 subdir=4
 
-[Joomla-1]
-url=http://www.joomla.org/
-safe=3.3.5
-old_safe=2.5.27,2.5.26
-vuln=CVE-2014-7228
-file=version.php
-variable=var $RELEASE,var $DEV_LEVEL
-extra_match=@package Joomla
-subdir=1
-
-# 1.5 has changed identification
-[Joomla-1_5]
-url=http://www.joomla.org/
-safe=3.3.5
-old_safe=2.5.27,2.5.26
-vuln=CVE-2014-7228
-file=version.php
-variable=var $RELEASE,var $DEV_LEVEL
-extra_match=@package	Joomla.Framework
-subdir=2
-
-[Joomla-2]
-url=http://www.joomla.org/
-safe=3.3.5
-old_safe=2.5.27,2.5.26
-vuln=CVE-2014-7228
-file=joomla.xml
-variable=<version>
-#extra_match=@package	Joomla.Framework
-extra_match=<name>files_joomla</name>
-subdir=0
-
 [Mambo]
 url=http://www.source.mambo-foundation.org/
 safe=4.6.5
@@ -268,32 +218,6 @@ file=misc_func.php
 variable=$v =
 subdir=1
 extra_match=w-agora version $v
-
-[MODx]
-url=http://www.modxcms.com/
-safe=1.0.15
-vuln=http://forums.modx.com/thread/94952/multiple-vulnerabilities-xss-remote-command-injection
-file=version.inc.php
-variable=$version
-subdir=2
-extra_match=$full_appname = 'MODx'
-
-[MODX-1.x]
-url=http://www.modxcms.com/
-safe=1.0.15
-vuln=http://forums.modx.com/thread/94952/multiple-vulnerabilities-xss-remote-command-injection
-file=version.inc.php
-variable=$modx_version
-subdir=2
-
-[MODX-2.x]
-url=http://www.modxcms.com/
-safe=2.2.11
-vuln=http://modx.com/blog/2014/07/15/revolution-2.2.15/
-file=changelog.txt
-variable=MODX Revolution
-subdir=2
-extra_match=MODX
 
 [PostNuke]
 # This one is a hell to detect, not sure for how many versions this works
@@ -316,23 +240,6 @@ variable=$cfg['version']
 subdir=1
 extra_match=Contenido Misc Configurations
 
-[SilverStripe]
-url=http://www.silverstripe.com
-safe=2.4.7
-vuln=CVE-2012-0976
-file=silverstripe_version
-variable=/open/modules/cms/
-subdir=1
-extra_match=/open/modules/cms/
-
-[CMSMadeSimple]
-url=http://www.cmsmadesimple.org/
-safe=1.11.10
-vuln=CVE-2014-2245
-file=version.php
-variable=$CMS_VERSION
-subdir=0
-
 [e107]
 url=http://e107.org/
 safe=1.0.0
@@ -349,28 +256,6 @@ vuln=http://archives.rezo.net/archives/spip-en.mbox/U5QUZ6WJRAJC7H5BR7W5SQG6WCD3
 file=inc_version.php
 variable=$spip_version_branche
 subdir=1
-
-[contao]
-url=http://contao.org/
-safe=3.2.5
-old_safe=2.11.14
-vuln=CVE-2014-1860
-latest=3.2.5
-file=CHANGELOG.md
-variable=Version
-extra_match=Contao Open Source CMS
-subdir=0
-
-[contao-old]
-url=http://contao.org/
-safe=3.2.5
-old_safe=2.11.14
-vuln=CVE-2014-1860
-latest=3.2.5
-file=CHANGELOG.txt
-variable=Version
-extra_match=Contao Open Source CMS Changelog
-subdir=0
 
 [redaxo]
 url=http://www.redaxo.org/
