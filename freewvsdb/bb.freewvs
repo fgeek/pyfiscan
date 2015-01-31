@@ -1,12 +1,3 @@
-[phpBB]
-url=http://www.phpbb.com
-safe=3.0.11
-vuln=http://packetstormsecurity.com/files/115089/phpBB3-SQL-Injection.html
-file=CHANGELOG.html
-variable=Changes since
-add_minor=1
-subdir=1
-
 [DeluxeBB]
 url=http://www.deluxebb.com/
 safe=
@@ -59,33 +50,6 @@ variable=APPLICATION_VERSION
 subdir=0
 extra_match=define('APPLICATION', 'Vanilla');
 
-[Simple_Machines_Forum]
-url=http://www.simplemachines.org/
-safe=2.0.5
-old_safe=1.1.16
-vuln=http://www.simplemachines.org/community/index.php?topic=509417.0
-file=index.php
-variable=$forum_version
-subdir=0
-extra_match=Simple Machines Forum
-
-[MyBB]
-url=http://www.mybboard.net/
-safe=1.6.10
-vuln=http://blog.mybb.com/2013/04/22/mybb-1-6-10-released-security-maintenance-release/
-file=class_core.php
-variable=$version
-subdir=1
-
-[Phorum]
-url=http://www.phorum.org/
-safe=5.2.19
-latest=5.2.19
-vuln=http://www.phorum.org/phorum5/read.php?64,151943
-file=common.php
-variable=define( "PHORUM"
-subdir=0
-
 [wBB]
 url=http://www.woltlab.com/
 safe=3.0.9
@@ -102,24 +66,6 @@ file=package.xml
 variable=<version>
 extra_match=<packagename>WoltLab Burning Board Lite</packagename>
 subdir=0
-
-[FluxBB12]
-url=http://fluxbb.org/
-safe=1.4.7
-vuln=CVE-2011-3621
-file=install.php
-variable=$fluxbb_version
-subdir=1
-
-[FluxBB]
-url=http://fluxbb.org/
-safe=1.5.4
-old_safe=1.4.11
-vuln=http://fluxbb.org/forums/viewtopic.php?id=7217
-file=common.php
-variable=FORUM_VERSION
-extra_match=FORUM_DB_REVISION
-subdir=1
 
 [vBulletin]
 url=https://www.vbulletin.com/
