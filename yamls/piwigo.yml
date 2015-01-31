@@ -13,7 +13,7 @@
 # CVE-2014-4648 2.6.3 http://piwigo.org/releases/2.6.3 http://osvdb.org/108063
 # CVE-2014-4649 2.7.0beta2 http://piwigo.org/bugs/view.php?id=3089 not yet released 2014-08-25
 # CVE-2014-9115 2.7.2/2.6.4/2.5.5 http://osvdb.org/114581 http://seclists.org/fulldisclosure/2014/Nov/23 http://piwigo.org/forum/viewtopic.php?id=24850
-# CVE-2015-XXXX 2.7.3/2.6.5/2.5.6 http://piwigo.org/forum/viewtopic.php?id=25016
+# CVE-2015-XXXX 2.7.3/2.6.5/2.5.6 http://piwigo.org/forum/viewtopic.php?id=25016 CVE request http://www.openwall.com/lists/oss-security/2015/01/31/7
 Piwigo:
   1:
     location: ['/include/constants.php']
