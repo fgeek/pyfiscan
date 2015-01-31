@@ -1,7 +1,0 @@
-[vtigerCRM]
-url=http://www.vtiger.de
-safe=5.3.0
-vuln=CVE-2011-4670
-file=vtigerversion.php
-variable=$vtiger_current_version
-subdir=0
