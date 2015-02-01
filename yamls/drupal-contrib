@@ -1,7 +1,6 @@
 # NOT-FOR-US: CVE-2014-1607
 #										https://drupal.org/node/1332022  http://osvdb.org/82463
 # SA-CONTRIB-XXXX-XXX   CVE-2014-3453   http://osvdb.org/106844 no fix available
-#                       CVE-2012-6574
 #                       CVE-2012-6575
 #                       CVE-2012-6576
 # SA-CONTRIB-2010-098   CVE-2010-5275   https://drupal.org/node/927016
@@ -116,7 +115,7 @@
 # SA-CONTRIB-2012-141
 # SA-CONTRIB-2012-142   CVE-2012-6582   https://drupal.org/node/1789242 Spambot http://osvdb.org/85680 http://secunia.com/advisories/50670/
 # SA-CONTRIB-2012-143
-# SA-CONTRIB-2012-144
+# SA-CONTRIB-2012-144   CVE-2012-6574   https://www.drupal.org/node/1789258
 # SA-CONTRIB-2012-145   CVE-2012-6583   https://drupal.org/node/1789260 Imagemenu http://osvdb.org/85679
 # SA-CONTRIB-2012-146
 # SA-CONTRIB-2012-154   CVE-2012-5569   https://drupal.org/node/1808852 http://osvdb.org/86162 http://osvdb.org/86164
