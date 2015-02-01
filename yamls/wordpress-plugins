@@ -28,7 +28,7 @@
 # CVE-2013-XXXX dewplayer-flash-mp3-player http://seclists.org/fulldisclosure/2013/Dec/209
 # CVE-2013-XXXX gallery-bank http://seclists.org/bugtraq/2013/Nov/23
 # CVE-2013-XXXX nextgen-gallery 2.0.7 https://security.dxw.com/advisories/directory-traversal-in-nextgen-gallery-2-0-0/
-# CVE-2014-100001
+# CVE-2014-100001 liveoptim
 # CVE-2014-100007
 # CVE-2014-100018
 # CVE-2014-100026
@@ -95,7 +95,7 @@
 # CVE-2014-4587
 # CVE-2014-4591
 # CVE-2014-4593
-# CVE-2014-4594
+# CVE-2014-4594 wp-responsive-preview 1.2
 # CVE-2014-4595
 # CVE-2014-4596
 # CVE-2014-4597
@@ -127,6 +127,7 @@
 # CVE-2014-9179
 # CVE-2014-9292
 # CVE-2014-9308
+# CVE-2014-9334
 # CVE-2014-9335
 # CVE-2014-9336
 # CVE-2014-9337
@@ -134,7 +135,10 @@
 # CVE-2014-9339
 # CVE-2014-9340
 # CVE-2014-9341
-# CVE-2014-9368
+# CVE-2014-9368 twitterdash
+# CVE-2014-9401 wp-limit-posts-automatically
+# CVE-2014-9442 cart66-lite 1.5.4
+# CVE-2014-9461 cart66 1.5.4
 # CVE-2014-9473 cforms2
 # CVE-2014-9570
 # CVE-2014-9570
@@ -152,3 +156,5 @@
 # CVE-2015-1385 powerpress 6.0.1 NS-15-001
 # CVE-2015-1393 photo-gallery 1.2.11
 # CVE-2015-1394 photo-gallery 1.2.11
+# http://seclists.org/fulldisclosure/2015/Jan/36
+# http://seclists.org/bugtraq/2011/Mar/12
