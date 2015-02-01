@@ -395,22 +395,6 @@ vuln=CVE-2007-5408
 file=version.php
 variable=$cplinks_version
 subdir=0
-[phpMyAdmin]
-url=http://www.phpmyadmin.net/
-safe=4.2.10.1
-vuln=CVE-2014-8326
-file=Config.class.php
-variable=PMA_VERSION
-subdir=1
-
-# old mantis versions behave different
-[Mantis-deprecated]
-url=http://www.mantisbt.org/
-safe=1.2.18
-vuln=CVE-2014-8554
-file=config_defaults_inc.php
-variable=$g_mantis_version
-subdir=0
 
 [SimpNews]
 url=http://www.boesch-it.de
