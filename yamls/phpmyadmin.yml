@@ -50,13 +50,9 @@
 # PMASA-2012-3  CVE-2012-4219
 # PMASA-2012-4  CVE-2012-4345
 # PMASA-2012-5  CVE-2012-5159           http://osvdb.org/85739 http://www.phpmyadmin.net/home_page/security/PMASA-2012-5.php
+# PMASA-2012-6
 # PMASA-2012-7
 # PMASA-2013-1  CVE-2013-1937   3.5.8   http://osvdb.org/92201 http://www.phpmyadmin.net/home_page/security/PMASA-2013-1.php
-# PMASA-2013-11 CVE-2013-4996 XSS issue
-# PMASA-2013-12 CVE-2013-4998/CVE-2013-4999/CVE-2013-5000
-# PMASA-2013-13 CVE-2013-5001
-# PMASA-2013-14 CVE-2013-5002
-# PMASA-2013-15 CVE-2013-5003
 # PMASA-2013-2  CVE-2013-3238   3.5.8.1 http://osvdb.org/92793 http://www.phpmyadmin.net/home_page/security/PMASA-2013-2.php
 # PMASA-2013-3  CVE-2013-3239   3.5.8.1 http://osvdb.org/92792 http://www.phpmyadmin.net/home_page/security/PMASA-2013-3.php
 # PMASA-2013-4  CVE-2013-3240   3.5.8.1 http://osvdb.org/92794 http://www.phpmyadmin.net/home_page/security/PMASA-2013-4.php
