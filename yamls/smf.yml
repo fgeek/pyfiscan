@@ -1,7 +1,7 @@
 # NFU:  http://osvdb.org/32605 too little information
 #       CVE-2007-5943 http://osvdb.org/39961 myth/fake
 #       CVE-2012-5903 http://osvdb.org/80766
-#       http://osvdb.org/92745 http://www.openwall.com/lists/oss-security/2012/12/31/7
+#       Could not reproduce/Disputed http://osvdb.org/92745 http://www.openwall.com/lists/oss-security/2012/12/31/7
 #
 # CVE-2004-1996 "last vulnerable 1.0 Beta 5" http://osvdb.org/16898
 # CVE-2005-2817 "last vulnerable 1.0.5" http://osvdb.org/19120 SA16646
@@ -52,7 +52,7 @@
 # CVE-2013-7236 2.0.6/1.1.19 http://www.jakoblell.com/blog/2013/12/13/multiple-vulnerabilities-in-smf-forum-software/ http://www.simplemachines.org/community/index.php?topic=512964.0
 # CVE-2013-XXXX         http://osvdb.org/88909 TODO
 # CVE-2013-XXXX 2.0.4/1.1.18    http://www.simplemachines.org/community/index.php?topic=496403
-# CVE-2013-XXXX 2.0.5   http://osvdb.org/96323 SA54384 http://www.simplemachines.org/community/index.php?topic=509417 http://www.openwall.com/lists/oss-security/2013/09/15/2
+# CVE-2013-XXXX 2.0.5   http://osvdb.org/96323 SA54384 http://www.simplemachines.org/community/index.php?topic=509417 CVE request http://www.openwall.com/lists/oss-security/2013/09/15/2 never got assigned. XSS vulnerability is still not fixed in 2.0.5
 # CVE-2014-XXXX 2.0.9   http://www.simplemachines.org/community/index.php?topic=528448.0 http://osvdb.org/113391 http://osvdb.org/113392 http://osvdb.org/113393 http://osvdb.org/116156
 SMF 2:
   1:
