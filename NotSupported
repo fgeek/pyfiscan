@@ -1,65 +1,55 @@
-AuraCMS: no versioning, no security advisories, no security related commit log
-    entries even when SQL-injection was fixed, low installation count
-    https://github.com/auracms/AuraCMS/commit/4fe9d0d31a32df392f4d6ced8e5c25ed4af19ade
-Shopizer <https://github.com/shopizer-ecommerce/shopizer>: Maven build fails. No good versioning.
-n2: problems even in installation and couldn't install, asks for 0777 modes
-    http://www.nextbbs.com/ https://github.com/Fusion/n2/
 AShop: e.g. free trial
+Acora CMS http://cm3cms.com/: closed source/product not free
+Active CMS: pages not in english
+Allinta CMS http://www.allinta.com/: closed source/product not free
+Almnzm: pages not in english
+Atmail http://www.atmail.com: closed source/product not free
+AuraCMS: no versioning, no security advisories, no security related commit log entries even when SQL-injection was fixed, low installation count https://github.com/auracms/AuraCMS/commit/4fe9d0d31a32df392f4d6ced8e5c25ed4af19ade
+CMS Ariadna: pages not in english
+CS-Cart https://www.cs-cart.com/ http://seclists.org/fulldisclosure/2014/Aug/31: closed source/product not free
+Contexis CMS: no download page available anymore
 CourseForum ProjectForum: free trials and such. does not seem to be open-source
+Cubic CMS http://www.cubicfactory.com/: closed source/product not free
 Ecomat CMS: can't find even one page to download this
+Ektron CMS http://www.ektron.com/: closed source/product not free
+Etiko CMS: pages not in english
+Fiyo CMS http://www.fiyo.org/: pages not in english
+Flying Cart http://flyingcart.com/: closed source/product not free
+Forum Oxalis: pages not in english
+Ginkgo CMS: pages not in english
+Ilch http://www.ilch.de/: pages not in english
+InstantCMS: pages not in english
+Invision Power Board (abbreviated IPB, IP.Board or IP Board)
+JAOW: pages not in english
+Kasseler CMS: pages not in english
+Kayako Fusion: closed source/product not free
+KnowledgeTree:  "KnowledgeTree Community Edition is unsupported, untested software and not designed for production use. KnowledgeTree Inc. does not warrant this software in any way." User needs to submit form to get Community Edition while they also subscribes users to spam email-list, which is advertizing cloud version,  which is NOT free Free version does not get patched for security vulnerabilities.
+Marinet CMS: pages not in english
+Movable Type: no versioning scheme
+Mutiny: not open-source. http://www.mutiny.com/images.php
+OptimalSite CMS: non-free
 Orbis CMS: Only few installations in public and project is end-of-life
+PHPFox: non-free
 Pulse Pro CMS
+RadioCMS: pages not in english
+Redaxo CMS, also no version number in the files: pages not in english
 SaurusCMS http://www.saurus.info/ no version number in the deployment
+Sefrengo CMS: pages not in english
+Shopizer <https://github.com/shopizer-ecommerce/shopizer>: Maven build fails. No good versioning.
+Simploo CMS Community Edition http://www.simploo.de/: pages not in english
+Sitecore CMS: closed source/product not free
+Storesprite http://www.storesprite.com/: closed source/product not free
+SugarCRM: closed source/product not free
 Symfony: http://www.concrete5.org/ no version number in the deployment
 Twilight CMS
-Contexis CMS: no download page available anymore
 Valid tiny-erp: no real versioning and last update 2008. Didn't repond to email
+WebMatter CMS http://www.web-matter.com.ar/: pages not in english
 Zeema CMS: "Ukrainian commercial CMS"
-eFront, enterprise versions: can be added if someone requests it and provides information
-KnowledgeTree:
-    "KnowledgeTree Community Edition is unsupported, untested software and not
-    designed for production use. KnowledgeTree Inc. does not warrant this
-    software in any way."
-    User needs to submit form to get Community Edition while they also
-    subscribes users to spam email-list, which is advertizing cloud version,
-    which is NOT free
-    Free version does not get patched for security vulnerabilities.
-Invision Power Board (abbreviated IPB, IP.Board or IP Board)
-Mutiny: not open-source. http://www.mutiny.com/images.php
 ZeroCMS: https://github.com/ukautz/zerocms project pages dead. Did not find pages using this product. Latest commit 2012.
-Pages not in english:
-    Active CMS
-    Almnzm
-    CMS Ariadna
-    Etiko CMS
-    Fiyo CMS http://www.fiyo.org/
-    Forum Oxalis
-    Ginkgo CMS
-    Ilch http://www.ilch.de/
-    InstantCMS
-    JAOW
-    Kasseler CMS
-    Marinet CMS
-    RadioCMS
-    Redaxo CMS, also no version number in the files
-    Simploo CMS Community Edition http://www.simploo.de/
-    WebMatter CMS http://www.web-matter.com.ar/
-Closed source/product not free:
-    Acora CMS http://cm3cms.com/
-    Allinta CMS http://www.allinta.com/
-    Atmail http://www.atmail.com
-    CS-Cart https://www.cs-cart.com/ http://seclists.org/fulldisclosure/2014/Aug/31
-    Cubic CMS http://www.cubicfactory.com/
-    Ektron CMS http://www.ektron.com/
-    Flying Cart http://flyingcart.com/
-    Kayako Fusion
-    Sitecore CMS
-    Storesprite http://www.storesprite.com/
-    SugarCRM
-    ecoCMS(?)
-    jakcms
-    phpMyDirectory http://www.phpmydirectory.com/
-    vBulletin http://www.vbulletin.com/
-    xenForo https://xenforo.com/
-Movable Type: no versioning scheme
-PHPFox: non-free
+eFront, enterprise versions: can be added if someone requests it and provides information
+ecoCMS(?): closed source/product not free
+jakcms: closed source/product not free
+n2: problems even in installation and couldn't install, asks for 0777 modes http://www.nextbbs.com/ https://github.com/Fusion/n2/
+phpMyDirectory http://www.phpmydirectory.com/: closed source/product not free
+vBulletin http://www.vbulletin.com/: closed source/product not free
+xenForo https://xenforo.com/: closed source/product not free

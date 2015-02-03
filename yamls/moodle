@@ -214,6 +214,14 @@
 # MSA-14-0047 CVE-2014-7837 http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-47949
 # MSA-14-0048 CVE-2014-7838 http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-48019
 # MSA-14-0049 N/A           http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-47927
+# MSA-15-0001 CVE-2015-0211
+# MSA-15-0002 CVE-2015-0212
+# MSA-15-0003 CVE-2015-0213
+# MSA-15-0004 CVE-2015-0214
+# MSA-15-0005 CVE-2015-0215
+# MSA-15-0006 CVE-2015-0216
+# MSA-15-0007 CVE-2015-0217
+# MSA-15-0008 CVE-2015-0218
 # NGS00208
 Moodle 2.5:
   1:
