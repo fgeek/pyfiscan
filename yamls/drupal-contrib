@@ -115,7 +115,7 @@
 # SA-CONTRIB-2012-141
 # SA-CONTRIB-2012-142   CVE-2012-6582   https://drupal.org/node/1789242 Spambot http://osvdb.org/85680 http://secunia.com/advisories/50670/
 # SA-CONTRIB-2012-143
-# SA-CONTRIB-2012-144   CVE-2012-6574   https://www.drupal.org/node/1789258
+# SA-CONTRIB-2012-144   CVE-2012-6574   https://drupal.org/node/1789258
 # SA-CONTRIB-2012-145   CVE-2012-6583   https://drupal.org/node/1789260 Imagemenu http://osvdb.org/85679
 # SA-CONTRIB-2012-146
 # SA-CONTRIB-2012-154   CVE-2012-5569   https://drupal.org/node/1808852 http://osvdb.org/86162 http://osvdb.org/86164
@@ -123,7 +123,7 @@
 # SA-CONTRIB-2012-173   CVE-2012-5654   http://drupal.org/node/1859282
 # SA-CONTRIB-2012-174	CVE-2012-5655   http://drupal.org/node/1870550  http://osvdb.org/88526
 # SA-CONTRIB-2013-001	CVE-2013-0181   http://drupal.org/node/1884332
-# SA-CONTRIB-2013-001	CVE-2013-2715   http://www.openwall.com/lists/oss-security/2013/04/04/4
+# SA-CONTRIB-2013-001	CVE-2013-2715   http://openwall.com/lists/oss-security/2013/04/04/4
 # SA-CONTRIB-2013-002	CVE-2013-0182   http://drupal.org/node/1884360
 # SA-CONTRIB-2013-003	CVE-2013-0205   http://drupal.org/node/1890222
 # SA-CONTRIB-2013-004	CVE-2013-0206   http://drupal.org/node/1890318
@@ -313,6 +313,11 @@
 # SA-CONTRIB-2015-031   Requested       https://drupal.org/node/2415885
 # SA-CONTRIB-2015-032   Requested       https://drupal.org/node/2415899 Node Invite
 # SA-CONTRIB-2015-033   Requested       https://drupal.org/node/2415947 Certify
+# SA-CONTRIB-2015-034   Requested       https://drupal.org/node/2420089 Commerce WeDeal
+# SA-CONTRIB-2015-035   Requested       https://drupal.org/node/2420099 Ajax Timeline
+# SA-CONTRIB-2015-036   Requested       https://drupal.org/node/2420119 Public Download Count
+# SA-CONTRIB-2015-037   Requested       https://drupal.org/node/2420139 Path Breadcrumbs
+# SA-CONTRIB-2015-038   Requested       https://drupal.org/node/2420161 Facebook Album Fetcher
 # CVE-2012-4468
 # CVE-2012-4469
 # CVE-2012-4470
