@@ -1,6 +1,9 @@
+# <drupal-install-dir>/modules/<module-name>/<module-name>.info:
+# version = x
+#
 # NOT-FOR-US: CVE-2014-1607
 #										https://drupal.org/node/1332022  http://osvdb.org/82463
-# SA-CONTRIB-XXXX-XXX   CVE-2014-3453   http://osvdb.org/106844 no fix available
+# SA-CONTRIB-XXXX-XXX   CVE-2014-3453   http://osvdb.org/106844 https://drupal.org/node/2263071 Requires admin permission. No fix available
 #                       CVE-2012-6575
 #                       CVE-2012-6576
 # SA-CONTRIB-2010-098   CVE-2010-5275   https://drupal.org/node/927016
