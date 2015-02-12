@@ -1,6 +1,6 @@
 # URL: https://croogo.org/
 # NOTE/TODO: Older versions does not have the same version file available.
-# CVE-2015-XXXX 2.2.1 http://sroesemann.blogspot.de/2015/01/sroeadv-2015-02.html https://github.com/croogo/croogo/issues/599 CVE requested http://www.openwall.com/lists/oss-security/2015/01/12/2
+# CVE-2015-1053 2.2.1 http://sroesemann.blogspot.de/2015/01/sroeadv-2015-02.html https://github.com/croogo/croogo/issues/599 CVE requested http://www.openwall.com/lists/oss-security/2015/01/12/2
 Croogo:
   1:
     location: ['/Vendor/croogo/croogo/VERSION.txt']
