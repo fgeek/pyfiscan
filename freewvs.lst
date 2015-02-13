@@ -67,14 +67,6 @@ variable=<version>
 extra_match=<packagename>WoltLab Burning Board Lite</packagename>
 subdir=0
 
-[vBulletin]
-url=https://www.vbulletin.com/
-safe=4.2.2
-vuln=CVE-2013-6129
-file=class_core.php
-variable=define('FILE_VERSION'
-subdir=1
-extra_match=vBulletin
 [Serendipity]
 url=http://www.s9y.org/
 safe=1.7.7
