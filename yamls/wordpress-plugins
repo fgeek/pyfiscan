@@ -159,6 +159,8 @@
 # CVE-2015-1394 photo-gallery 1.2.11
 # CVE-2015-1436 easing-slider 2.2.0.7 https://www.htbridge.com/advisory/HTB23249
 # CVE-2015-1494 fancybox-for-wordpress 3.0.3 http://blog.sucuri.net/2015/02/zero-day-in-the-fancybox-for-wordpress-plugin.html
+# CVE-2015-XXXX contus-video-gallery http://www.exploit-db.com/exploits/36058/
 # CVE-2015-XXXX ninja-forms 2.8.11 http://seclists.org/bugtraq/2015/Feb/94
+# CVE-2015-XXXX wp-survey-and-poll 1.1.91 http://packetstormsecurity.com/files/130381/wpsurveypoll-sql.txt
 # http://seclists.org/fulldisclosure/2015/Jan/36
 # http://seclists.org/bugtraq/2011/Mar/12

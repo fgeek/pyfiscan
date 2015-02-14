@@ -321,6 +321,18 @@
 # SA-CONTRIB-2015-036   Requested       https://drupal.org/node/2420119 Public Download Count
 # SA-CONTRIB-2015-037   Requested       https://drupal.org/node/2420139 Path Breadcrumbs
 # SA-CONTRIB-2015-038   Requested       https://drupal.org/node/2420161 Facebook Album Fetcher
+# SA-CONTRIB-2015-039   Requested       https://drupal.org/node/2424403 Views - Open redirect
+# SA-CONTRIB-2015-039   Requested       https://drupal.org/node/2424403 Views - Access bypass
+# SA-CONTRIB-2015-040   Requested       https://drupal.org/node/2424405 Webform prepopulate block - XSS
+# SA-CONTRIB-2015-041   Requested       https://drupal.org/node/2424409 Feature Set - CSRF
+# SA-CONTRIB-2015-042   Requested       https://drupal.org/node/2424419 Node basket - CSRF
+# SA-CONTRIB-2015-042   Requested       https://drupal.org/node/2424419 Node basket - XSS
+# SA-CONTRIB-2015-042   Requested       https://drupal.org/node/2424419 Node basket - Open redirect
+# SA-CONTRIB-2015-043   Requested       https://drupal.org/node/2424435 Commerce Balanced Payments - XSS
+# SA-CONTRIB-2015-043   Requested       https://drupal.org/node/2424439 Commerce Balanced Payments - CSRF
+# SA-CONTRIB-2015-044   Requested       https://drupal.org/node/2424439 Taxonomy Path - XSS
+# SA-CONTRIB-2015-045   Requested       https://drupal.org/node/2424349 Node Access Product - XSS
+# SA-CONTRIB-2015-046   Requested       https://drupal.org/node/2424355 Taxonomy Tools - XSS
 # CVE-2012-4468
 # CVE-2012-4469
 # CVE-2012-4470
