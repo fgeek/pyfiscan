@@ -131,6 +131,7 @@
 # CVE-2014-9037 4.0.1   https://wordpress.org/news/2014/11/wordpress-4-0-1/
 # CVE-2014-9038 4.0.1   https://wordpress.org/news/2014/11/wordpress-4-0-1/
 # CVE-2014-9039 4.0.1   https://wordpress.org/news/2014/11/wordpress-4-0-1/
+# CVE-2014-6412 TODO
 WordPress:
   1:
     location: ['/wp-includes/version.php', '/wp-includes/vars.php']

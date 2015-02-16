@@ -3,8 +3,9 @@
 # CVE-2012-6555
 # CVE-2012-6556
 # CVE-2012-6557
-# CVE-2013-2749 2.0.18.8 http://osvdb.org/93183
-# CVE-2013-3528 2.0.18.8 http://osvdb.org/93183
+# CVE-2013-2749 2.0.18.8    http://osvdb.org/93183
+# CVE-2013-3528 2.0.18.8    http://osvdb.org/93183
+# CVE-2015-XXXX 2.1.1       http://vanillaforums.org/discussion/27540/vanilla-2-1-1-important-security-bug-release
 # http://vanillaforums.org/discussion/23339/security-update-vanilla-2-0-18-7 http://mfs-enterprise.com/wordpress/2013/04/05/vanilla-forums-2-0-18-sql-injection-insert-arbitrary-user-dump-usertable/
 # http://www.henryhoggard.co.uk/security/vanilla-forums-2-0-18-8-2-1-xss/
 # http://www.henryhoggard.co.uk/security/vanilla-forums-insecure-permissions-vulnerability/
