@@ -14,11 +14,12 @@
 # CVE-2014-4649 2.7.0beta2 http://piwigo.org/bugs/view.php?id=3089 not yet released 2014-08-25
 # CVE-2014-9115 2.7.2/2.6.4/2.5.5 http://osvdb.org/114581 http://seclists.org/fulldisclosure/2014/Nov/23 http://piwigo.org/forum/viewtopic.php?id=24850
 # CVE-2015-1441 2.7.3/2.6.5/2.5.6 http://piwigo.org/forum/viewtopic.php?id=25016
+# CVE-2015-1517 2.7.4 http://piwigo.org/releases/2.7.4
 Piwigo:
   1:
     location: ['/include/constants.php']
-    secure_version: '2.7.3'
+    secure_version: '2.7.4'
     regexp: ['define.*?PHPWG_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1441'
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1517 http://piwigo.org/releases/2.7.4'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
