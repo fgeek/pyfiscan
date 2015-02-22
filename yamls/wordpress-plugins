@@ -165,7 +165,9 @@
 # CVE-2015-1582
 # CVE-2015-1614 image-metadata-cruncher
 # CVE-2015-XXXX contus-video-gallery http://www.exploit-db.com/exploits/36058/
+# CVE-2015-XXXX easy-social-icons 1.2.3 http://seclists.org/fulldisclosure/2015/Feb/76 asked if CVE has been requested
 # CVE-2015-XXXX ninja-forms 2.8.11 http://seclists.org/bugtraq/2015/Feb/94
+# CVE-2015-XXXX woocommerce 2.2.11 http://seclists.org/fulldisclosure/2015/Feb/75
 # CVE-2015-XXXX wp-survey-and-poll 1.1.91 http://packetstormsecurity.com/files/130381/wpsurveypoll-sql.txt
 # http://seclists.org/fulldisclosure/2015/Jan/36
 # http://seclists.org/bugtraq/2011/Mar/12

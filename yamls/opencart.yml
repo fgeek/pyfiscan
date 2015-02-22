@@ -5,6 +5,7 @@
 # CVE-2012-XXXX N/A http://www.waraxe.us/advisory-84.html http://osvdb.org/81240 http://osvdb.org/81241 http://osvdb.org/81242 http://osvdb.org/81243 http://osvdb.org/81238 http://osvdb.org/81239
 # CVE-2014-XXXX N/A http://osvdb.org/100740
 # CVE-2014-3990 2.0.0.0 http://karmainsecurity.com/KIS-2014-08
+# TODO: http://www.juniper.net/security/auto/vulnerabilities/vuln34724.html "OpenCart 'index.php' Local File Include Vulnerability"
 OpenCart:
   1:
     location: ['/admin/index.php']
