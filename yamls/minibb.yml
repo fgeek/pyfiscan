@@ -1,0 +1,13 @@
+# URL: http://www.minibb.com/
+# HTB22670, HTB22671
+# CVE-2008-2066
+# CVE-2013-XXXX 3.0.1 NS-13-002 https://www.mavitunasecurity.com/xss-and-sql-injection-vulnerabilities-in-minibb/
+# CVE-2013-5020 3.0.1 http://www.minibb.com/forums/news-9/minibb-3.0.1-released-stable-fixed-secured-dedicated-6059.html
+MiniBB:
+  1:
+    location: ['/bb_functions.php']
+    secure_version: '3.0.1'
+    regexp: ['\$version=.*?(?P<version>[0-9.]+)']
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-5020'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']

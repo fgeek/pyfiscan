@@ -52,6 +52,7 @@ Detects following software
 * MantisBT
 * MediaWiki
 * Microweber
+* MiniBB
 * MoinMoin
 * MyBB
 * Nibbleblog
