@@ -1,3 +1,4 @@
+# URL:  https://www.redmine.org/
 # CVE-2009-4078 http://osvdb.org/60312
 # CVE-2009-4079 http://osvdb.org/60313
 # CVE-2009-4412
@@ -9,3 +10,4 @@
 # CVE-2012-0327
 # CVE-2012-2054
 # CVE-2014-1985
+# CVE-2015-XXXX TODO https://www.redmine.org/issues/19117 https://www.redmine.org/projects/redmine/wiki/Changelog_2_6
