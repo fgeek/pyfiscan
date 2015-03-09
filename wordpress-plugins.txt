@@ -1,5 +1,6 @@
 # REJECTED: CVE-2013-1463
 # CVE-2003-1599
+# CVE-2011-XXXX question-and-answer-forum http://seclists.org/bugtraq/2011/Mar/12 https://www.htbridge.com/advisory/HTB22861
 # CVE-2012-3351
 # CVE-2012-4263 better-wp-security 3.2.5
 # CVE-2012-4264 better-wp-security 3.2.5
@@ -115,7 +116,7 @@
 # CVE-2014-8799
 # CVE-2014-8949
 # CVE-2014-9094
-# CVE-2014-9097
+# CVE-2014-9097 contus-video-gallery
 # CVE-2014-9098
 # CVE-2014-9099
 # CVE-2014-9100
@@ -178,13 +179,12 @@
 # CVE-2015-2090
 # CVE-2015-2194
 # CVE-2015-2195
+# CVE-2015-2196 spider-event-calendar http://www.exploit-db.com/exploits/36061/
 # CVE-2015-2199
 # CVE-2015-XXXX adplugg 1.1.34 http://seclists.org/bugtraq/2015/Feb/132 CVE has been requested by kasutubh padwad
-# CVE-2015-XXXX contus-video-gallery http://www.exploit-db.com/exploits/36058/
+# CVE-2015-XXXX google-analytics http://seclists.org/bugtraq/2015/Mar/17 asked if CVE has been requested
 # CVE-2015-XXXX ninja-forms 2.8.11 http://seclists.org/bugtraq/2015/Feb/94
-# CVE-2015-XXXX spider-event-calendar http://www.exploit-db.com/exploits/36061/
 # CVE-2015-XXXX wp-survey-and-poll 1.1.91 http://packetstormsecurity.com/files/130381/wpsurveypoll-sql.txt
-# http://seclists.org/bugtraq/2011/Mar/12
 # http://seclists.org/fulldisclosure/2013/Dec/209 https://github.com/wpscanteam/wpscan/issues/388
 # http://seclists.org/fulldisclosure/2015/Jan/36
 # http://seclists.org/fulldisclosure/2015/Mar/21
