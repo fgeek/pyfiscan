@@ -194,5 +194,5 @@
 # http://seclists.org/fulldisclosure/2015/Mar/24
 # https://vexatioustendencies.com/wordpress-plugin-vulnerability-dump-part-1/
 # https://vexatioustendencies.com/wordpress-plugin-vulnerability-dump-part-2/
-# http://seclists.org/fulldisclosure/2015/Mar/34 CVE requested
-# http://seclists.org/fulldisclosure/2015/Mar/35 Asked status of CVE
+# http://seclists.org/fulldisclosure/2015/Mar/34 CVE requested from MITRE 2015-03-09
+# http://seclists.org/fulldisclosure/2015/Mar/35 CVE requested from MITRE 2015-03-09
