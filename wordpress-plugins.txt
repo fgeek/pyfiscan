@@ -1,0 +1,198 @@
+# REJECTED: CVE-2013-1463
+# CVE-2003-1599
+# CVE-2012-3351
+# CVE-2012-4263 better-wp-security 3.2.5
+# CVE-2012-4264 better-wp-security 3.2.5
+# CVE-2012-5853 cardoza-ajax-search http://seclists.org/bugtraq/2012/Nov/33 /wp-admin/admin-ajax.php/?srch_txt='or 1=1-- &action=the_search_text
+# CVE-2012-XXXX answer-my-question http://osvdb.org/85567 http://seclists.org/bugtraq/2012/Nov/24
+# CVE-2012-XXXX better-wp-security 3.5.4
+# CVE-2013-1808 WP-Table Reloaded and lots of others
+# CVE-2013-1808 bp-code-snippets wp-content/plugins/bp-code-snippets/js/ZeroClipboard.swf?id=\"))}catch(e){}if(!self.a)self.a=!alert(document.cookie)//&width&height http://www.openwall.com/lists/oss-security/2013/03/26/8
+# CVE-2013-1808 buckets wp-content/plugins/buckets/js/ZeroClipboard.swf?id=\"))}catch(e){}if(!self.a)self.a=!alert(document.cookie)//&width&height
+# CVE-2013-1808 cleeng wp-content/plugins/cleeng/js/ZeroClipboard.swf?id=\"))}catch(e){}if(!self.a)self.a=!alert(document.cookie)//&width&height http://www.openwall.com/lists/oss-security/2013/03/26/8
+# CVE-2013-1808 click-to-copy-grab-box wp-content/plugins/click-to-copy-grab-box/lib/ZeroClipboard.swf?id=\"))}catch(e){}if(!self.a)self.a=!alert(document.cookie)//&width&height
+# CVE-2013-1808 geshi-source-colorer wp-content/plugins/geshi-source-colorer/external/zeroclipboard/ZeroClipboard.swf?id=\"))}catch(e){}if(!self.a)self.a=!alert(document.cookie)//&width&height
+# CVE-2013-1808 jaspreetchahals-coupons-lite wp-content/plugins/jaspreetchahals-coupons-lite/js/ZeroClipboard.swf?id=\"))}catch(e){}if(!self.a)self.a=!alert(document.cookie)//&width&height
+# CVE-2013-1808 mobileview wp-content/plugins/mobileview/admin/js/ZeroClipboard.swf?id=\"))}catch(e){}if(!self.a)self.a=!alert(document.cookie)//&width&height
+# CVE-2013-1808 paypal-digital-goods-monetization-powered-by-cleeng wp-content/plugins/paypal-digital-goods-monetization-powered-by-cleeng/js/ZeroClipboard.swf?id=\"))}catch(e){}if(!self.a)self.a=!alert(document.cookie)//&width&height http://www.openwall.com/lists/oss-security/2013/03/26/8
+# CVE-2013-1808 slidedeck2 wp-content/plugins/slidedeck2/js/zeroclipboard/ZeroClipboard.swf?id=\"))}catch(e){}if(!self.a)self.a=!alert(document.cookie)//&width&height wp-content/plugins/slidedeck2/js/zeroclipboard/ZeroClipboard10.swf?id=\"))}catch(e){}if(!self.a)self.a=!alert(document.cookie)//&width&height fixed http://www.openwall.com/lists/oss-security/2013/03/14/11
+# CVE-2013-1808 thethe-layout-grid wp-content/plugins/thethe-layout-grid/style/admin/js/ZeroClipboard.swf?id=\"))}catch(e){}if(!self.a)self.a=!alert(document.cookie)//&width&height
+# CVE-2013-1808 tiny-url wp-content/plugins/tiny-url/swf/ZeroClipboard10.swf?id=\"))}catch(e){}if(!self.a)self.a=!alert(document.cookie)//&width&height http://www.openwall.com/lists/oss-security/2013/03/26/8
+# CVE-2013-1808 wp-clone-by-wp-academy wp-content/plugins/wp-clone-by-wp-academy/lib/js/ZeroClipboard.swf?id=\%22%29%29}catch%28e%29{}if%28!self.a%29self.a=!alert%28document.cookie%29//&width&height http://www.openwall.com/lists/oss-security/2013/03/26/8
+# CVE-2013-1808 wp-link-to-us wp-content/plugins/wp-link-to-us/js/ZeroClipboard.swf?id=\%22%29%29}catch%28e%29{}if%28!self.a%29self.a=!alert%28document.cookie%29//&width&height wp-content/plugins/wp-link-to-us/js/ZeroClipboard10.swf?id=\%22%29%29}catch%28e%29{}if%28!self.a%29self.a=!alert%28document.cookie%29//&width&height
+# CVE-2013-1808 wppygments wp-content/plugins/wppygments/js/ZeroClipboard.swf?id=\%22%29%29}catch%28e%29{}if%28!self.a%29self.a=!alert%28document.cookie%29//&width&height wp-content/plugins/wppygments/js/ZeroClipboard10.swf?id=\%22%29%29}catch%28e%29{}if%28!self.a%29self.a=!alert%28document.cookie%29//&width&height
+# CVE-2013-1808 zopim-live-chat wp-content/plugins/zopim-live-chat/ZeroClipboard.swf?id=\%22%29%29}catch%28e%29{}if%28!self.a%29self.a=!alert%28document.cookie%29//&width&height
+# CVE-2013-5977 cart66-lite
+# CVE-2013-5978 cart66-lite
+# CVE-2013-7129 Jplayer.swf ExternalInterface.call() method jQuery parameter XSS http://osvdb.org/92254
+# CVE-2013-7240 advanced-dewplayer N/A
+# CVE-2013-XXXX advanced-xml-reader http://www.openwall.com/lists/oss-security/2013/05/06/1
+# CVE-2013-XXXX dewplayer-flash-mp3-player http://seclists.org/fulldisclosure/2013/Dec/209
+# CVE-2013-XXXX gallery-bank http://seclists.org/bugtraq/2013/Nov/23
+# CVE-2013-XXXX nextgen-gallery 2.0.7 https://security.dxw.com/advisories/directory-traversal-in-nextgen-gallery-2-0-0/
+# CVE-2014-100001 liveoptim
+# CVE-2014-100007
+# CVE-2014-100018
+# CVE-2014-100026
+# CVE-2014-100027
+# CVE-2014-10012
+# CVE-2014-10013
+# CVE-2014-10016
+# CVE-2014-10017
+# CVE-2014-10021
+# CVE-2014-2838
+# CVE-2014-2839
+# CVE-2014-3123
+# CVE-2014-3841
+# CVE-2014-3842
+# CVE-2014-3843
+# CVE-2014-3844
+# CVE-2014-3845
+# CVE-2014-4515
+# CVE-2014-4516
+# CVE-2014-4518
+# CVE-2014-4520
+# CVE-2014-4521
+# CVE-2014-4522
+# CVE-2014-4524
+# CVE-2014-4526
+# CVE-2014-4527
+# CVE-2014-4528
+# CVE-2014-4529
+# CVE-2014-4531
+# CVE-2014-4532
+# CVE-2014-4533
+# CVE-2014-4534
+# CVE-2014-4537
+# CVE-2014-4538
+# CVE-2014-4540
+# CVE-2014-4541
+# CVE-2014-4542
+# CVE-2014-4543
+# CVE-2014-4545
+# CVE-2014-4546
+# CVE-2014-4547
+# CVE-2014-4549
+# CVE-2014-4551
+# CVE-2014-4552
+# CVE-2014-4554
+# CVE-2014-4555
+# CVE-2014-4556
+# CVE-2014-4557
+# CVE-2014-4564
+# CVE-2014-4565
+# CVE-2014-4566
+# CVE-2014-4568
+# CVE-2014-4572
+# CVE-2014-4573
+# CVE-2014-4574
+# CVE-2014-4575
+# CVE-2014-4576
+# CVE-2014-4579
+# CVE-2014-4580
+# CVE-2014-4582
+# CVE-2014-4583
+# CVE-2014-4584
+# CVE-2014-4585
+# CVE-2014-4587
+# CVE-2014-4591
+# CVE-2014-4593
+# CVE-2014-4594 wp-responsive-preview 1.2
+# CVE-2014-4595
+# CVE-2014-4596
+# CVE-2014-4597
+# CVE-2014-4598
+# CVE-2014-4599
+# CVE-2014-4600
+# CVE-2014-6315 photo-gallery 1.1.31 https://www.htbridge.com/advisory/HTB23232
+# CVE-2014-7228
+# CVE-2014-7297
+# CVE-2014-7956 pods
+# CVE-2014-7957 pods
+# CVE-2014-8336 http://www.openwall.com/lists/oss-security/2014/10/21/3
+# CVE-2014-8724 w3-total-cache 0.9.4.1
+# CVE-2014-8754 ad-manager-for-wp CWE-601 Open Redirec
+# CVE-2014-8799
+# CVE-2014-8949
+# CVE-2014-9094
+# CVE-2014-9097
+# CVE-2014-9098
+# CVE-2014-9099
+# CVE-2014-9100
+# CVE-2014-9129
+# CVE-2014-9173
+# CVE-2014-9174
+# CVE-2014-9175
+# CVE-2014-9176
+# CVE-2014-9177
+# CVE-2014-9178
+# CVE-2014-9179
+# CVE-2014-9292
+# CVE-2014-9308
+# CVE-2014-9334
+# CVE-2014-9335
+# CVE-2014-9336
+# CVE-2014-9337
+# CVE-2014-9338
+# CVE-2014-9339
+# CVE-2014-9340
+# CVE-2014-9341
+# CVE-2014-9368 twitterdash
+# CVE-2014-9401 wp-limit-posts-automatically
+# CVE-2014-9442 cart66-lite 1.5.4
+# CVE-2014-9461 cart66 1.5.4
+# CVE-2014-9473 cforms2
+# CVE-2014-9570
+# CVE-2014-9570
+# CVE-2014-XXXX bp-group-documents 1.2.2 https://security.dxw.com/advisories/stored-xss-vulnerability-in-bp-group-documents-1-2-1/
+# CVE-2014-XXXX cforms2 14.8 http://seclists.org/bugtraq/2014/Dec/172
+# CVE-2014-XXXX frontend-uploader N/A (2014-12-29) http://seclists.org/fulldisclosure/2014/Dec/122 CVE requested by SECUPENT Research Center <research@secupent.com>
+# CVE-2014-XXXX wp-members http://seclists.org/fulldisclosure/2014/Jan/29
+# CVE-2015-0890
+# CVE-2015-1055
+# CVE-2015-1204
+# CVE-2015-1365 pixabay-images
+# CVE-2015-1366 pixabay-images
+# CVE-2015-1375 pixabay-images
+# CVE-2015-1376 pixabay-images
+# CVE-2015-1383 geo-mashup http://www.openwall.com/lists/oss-security/2015/01/27/7
+# CVE-2015-1384 banner-effect-header 1.2.8
+# CVE-2015-1385 powerpress 6.0.1 NS-15-001
+# CVE-2015-1393 photo-gallery 1.2.11
+# CVE-2015-1394 photo-gallery 1.2.11
+# CVE-2015-1436 easing-slider 2.2.0.7 https://www.htbridge.com/advisory/HTB23249
+# CVE-2015-1494
+# CVE-2015-1494 fancybox-for-wordpress 3.0.3 http://blog.sucuri.net/2015/02/zero-day-in-the-fancybox-for-wordpress-plugin.html
+# CVE-2015-1579
+# CVE-2015-1580
+# CVE-2015-1581
+# CVE-2015-1582
+# CVE-2015-1614 image-metadata-cruncher
+# CVE-2015-1879
+# CVE-2015-2039
+# CVE-2015-2040
+# CVE-2015-2065
+# CVE-2015-2069
+# CVE-2015-2084
+# CVE-2015-2089
+# CVE-2015-2090
+# CVE-2015-2194
+# CVE-2015-2195
+# CVE-2015-2199
+# CVE-2015-XXXX adplugg 1.1.34 http://seclists.org/bugtraq/2015/Feb/132 CVE has been requested by kasutubh padwad
+# CVE-2015-XXXX contus-video-gallery http://www.exploit-db.com/exploits/36058/
+# CVE-2015-XXXX easy-social-icons 1.2.3 http://seclists.org/fulldisclosure/2015/Feb/76 asked if CVE has been requested
+# CVE-2015-XXXX ninja-forms 2.8.11 http://seclists.org/bugtraq/2015/Feb/94
+# CVE-2015-XXXX spider-event-calendar http://www.exploit-db.com/exploits/36061/
+# CVE-2015-XXXX woocommerce 2.2.11 http://seclists.org/fulldisclosure/2015/Feb/75
+# CVE-2015-XXXX wp-survey-and-poll 1.1.91 http://packetstormsecurity.com/files/130381/wpsurveypoll-sql.txt
+# http://seclists.org/bugtraq/2011/Mar/12
+# http://seclists.org/fulldisclosure/2013/Dec/209 https://github.com/wpscanteam/wpscan/issues/388
+# http://seclists.org/fulldisclosure/2015/Jan/36
+# http://seclists.org/fulldisclosure/2015/Mar/21
+# http://seclists.org/fulldisclosure/2015/Mar/23
+# http://seclists.org/fulldisclosure/2015/Mar/24
+# https://vexatioustendencies.com/wordpress-plugin-vulnerability-dump-part-1/
+# https://vexatioustendencies.com/wordpress-plugin-vulnerability-dump-part-2/
+# http://seclists.org/fulldisclosure/2015/Mar/34 Asked status of CVE
+# http://seclists.org/fulldisclosure/2015/Mar/35 Asked status of CVE
