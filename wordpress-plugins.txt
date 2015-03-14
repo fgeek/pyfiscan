@@ -145,11 +145,14 @@
 # CVE-2014-9473 cforms2
 # CVE-2014-9570
 # CVE-2014-9570
+# CVE-2014-9688
 # CVE-2014-XXXX bp-group-documents 1.2.2 https://security.dxw.com/advisories/stored-xss-vulnerability-in-bp-group-documents-1-2-1/
 # CVE-2014-XXXX cforms2 14.8 http://seclists.org/bugtraq/2014/Dec/172
 # CVE-2014-XXXX frontend-uploader N/A (2014-12-29) http://seclists.org/fulldisclosure/2014/Dec/122 CVE requested by SECUPENT Research Center <research@secupent.com>
 # CVE-2014-XXXX wp-members http://seclists.org/fulldisclosure/2014/Jan/29
 # CVE-2015-0890
+# CVE-2015-0894
+# CVE-2015-0895
 # CVE-2015-1055
 # CVE-2015-1204
 # CVE-2015-1365 pixabay-images
@@ -169,6 +172,7 @@
 # CVE-2015-1581
 # CVE-2015-1582
 # CVE-2015-1614 image-metadata-cruncher
+# CVE-2015-1874
 # CVE-2015-1879
 # CVE-2015-2039
 # CVE-2015-2040
@@ -181,16 +185,25 @@
 # CVE-2015-2195
 # CVE-2015-2196 spider-event-calendar http://www.exploit-db.com/exploits/36061/
 # CVE-2015-2199
+# CVE-2015-2216
+# CVE-2015-2218
+# CVE-2015-2220
 # CVE-2015-XXXX adplugg 1.1.34 http://seclists.org/bugtraq/2015/Feb/132 CVE has been requested by kasutubh padwad
 # CVE-2015-XXXX google-analytics http://seclists.org/bugtraq/2015/Mar/17 asked if CVE has been requested
 # CVE-2015-XXXX ninja-forms 2.8.11 http://seclists.org/bugtraq/2015/Feb/94
 # CVE-2015-XXXX wp-survey-and-poll 1.1.91 http://packetstormsecurity.com/files/130381/wpsurveypoll-sql.txt
+# CVE-2015-XXXX mainwp-child 2.0.9.2 https://wordpress.org/plugins/mainwp-child/changelog/
+# CVE-2015-XXXX http://wpml.org/2015/03/wpml-security-update-bug-and-fix/
+# CVE-2015-XXXX daily-edition http://seclists.org/fulldisclosure/2015/Mar/57
+# CVE-2015-XXXX daily-edition http://seclists.org/fulldisclosure/2015/Mar/56
+# CVE-2015-2062
+# CVE-2015-XXXX wordpress-seo http://seclists.org/fulldisclosure/2015/Mar/73
 # http://seclists.org/fulldisclosure/2013/Dec/209 https://github.com/wpscanteam/wpscan/issues/388
 # http://seclists.org/fulldisclosure/2015/Jan/36
 # http://seclists.org/fulldisclosure/2015/Mar/21
 # http://seclists.org/fulldisclosure/2015/Mar/23
 # http://seclists.org/fulldisclosure/2015/Mar/24
-# https://vexatioustendencies.com/wordpress-plugin-vulnerability-dump-part-1/
-# https://vexatioustendencies.com/wordpress-plugin-vulnerability-dump-part-2/
 # http://seclists.org/fulldisclosure/2015/Mar/34 CVE requested from MITRE 2015-03-09
 # http://seclists.org/fulldisclosure/2015/Mar/35 CVE requested from MITRE 2015-03-09
+# https://vexatioustendencies.com/wordpress-plugin-vulnerability-dump-part-1/
+# https://vexatioustendencies.com/wordpress-plugin-vulnerability-dump-part-2/
