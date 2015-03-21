@@ -30,19 +30,20 @@
 # https://drupal.org/SA-CORE-2014-004   CVE-2014-5265/CVE-2014-5266/CVE-2014-5267
 # https://drupal.org/SA-CORE-2014-005   CVE-2014-3704   7.31
 # https://drupal.org/SA-CORE-2014-006   CVE-2014-9015/CVE-2014-9016 7.34/6.34
+# https://drupal.org/SA-CORE-2015-001   CVE-2015-2559   7.35/6.35
 Drupal 7:
   1:
     location: ['/includes/bootstrap.inc']
-    secure_version: '7.34'
+    secure_version: '7.35'
     regexp: ['define.*?VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9015 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9016 https://drupal.org/SA-CORE-2014-006'
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2559 https://drupal.org/SA-CORE-2015-001'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Drupal 6:
   1:
     location: ['/CHANGELOG.txt']
-    secure_version: '6.34'
+    secure_version: '6.35'
     regexp: ['^Drupal (?P<version>[0-9.]+)']
-    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9015 https://drupal.org/SA-CORE-2014-006'
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2559 https://drupal.org/SA-CORE-2015-001'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
