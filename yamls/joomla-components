@@ -71,6 +71,7 @@
 # CVE-2014-9103
 # CVE-2014-9686
 # CVE-2014-XXXX 1.8.4/1.7.5 http://vel.joomla.org/resolved/1103-breezing-forms-pre-1-7-5-or-1-8-4.html http://crosstec.de/en/blog/entry/15-breezingforms-security-update.html
+# CVE-2015-2562 1.2.7 http://extensions.joomla.org/extension/ecommerce-wd http://seclists.org/fulldisclosure/2015/Mar/123
 # CVE-XXXX-XXXX 2.3.4 http://vel.joomla.org/vel-blog/976-spider-contacts-1-3-3.html
 # CVE-XXXX-XXXX civicrm                                     http://vel.joomla.org/resolved/402-civicrm-4-3-3.html http://civicrm.org/blogs/colemanw/security-release-civicrm-434
 # CVE-XXXX-XXXX civicrm                                     http://vel.joomla.org/vel-blog/402-civicrm-4-3-3.html
@@ -97,7 +98,6 @@
 # CVE-XXXX-XXXX plugin_googlemap http://osvdb.org/95776
 # CVE-XXXX-XXXX qcontacts                                   http://docs.joomla.org/Vulnerable_Extensions_List#QContacts_1.0.6 http://vel.joomla.org/vel-blog/57-qcontacts-1-0-6.html
 # CVE-XXXX-XXXX unite-horizontal-carousel                   http://vel.joomla.org/resolved/479-unite-horizontal-carousel.html
-# CVE-2015-XXXX http://extensions.joomla.org/extension/ecommerce-wd http://seclists.org/fulldisclosure/2015/Mar/123
 # http://vel.joomla.org/vel-blog/1059-extplorer-all.html
 # http://vel.joomla.org/vel-blog/51-com_advert.html
 # http://vel.joomla.org/vel-blog/56-dshop.html
