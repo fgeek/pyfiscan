@@ -198,6 +198,7 @@
 # CVE-2015-XXXX daily-edition http://seclists.org/fulldisclosure/2015/Mar/56
 # CVE-2015-2062
 # CVE-2015-XXXX wordpress-seo http://seclists.org/fulldisclosure/2015/Mar/73
+# CVE-2015-XXXX ab-google-map-travel http://seclists.org/bugtraq/2015/Mar/125 CVE requested by advisory author
 # http://seclists.org/fulldisclosure/2013/Dec/209 https://github.com/wpscanteam/wpscan/issues/388
 # http://seclists.org/fulldisclosure/2015/Jan/36
 # http://seclists.org/fulldisclosure/2015/Mar/21
