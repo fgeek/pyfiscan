@@ -1,4 +1,5 @@
 # REJECTED: CVE-2013-1463
+# NOT-FOR-US: Site specific issue http://seclists.org/fulldisclosure/2015/Mar/34 http://seclists.org/fulldisclosure/2015/Mar/35
 # CVE-2003-1599
 # CVE-2011-XXXX question-and-answer-forum http://seclists.org/bugtraq/2011/Mar/12 https://www.htbridge.com/advisory/HTB22861
 # CVE-2012-3351
@@ -204,7 +205,5 @@
 # http://seclists.org/fulldisclosure/2015/Mar/21
 # http://seclists.org/fulldisclosure/2015/Mar/23
 # http://seclists.org/fulldisclosure/2015/Mar/24
-# http://seclists.org/fulldisclosure/2015/Mar/34 CVE requested from MITRE 2015-03-09
-# http://seclists.org/fulldisclosure/2015/Mar/35 CVE requested from MITRE 2015-03-09
 # https://vexatioustendencies.com/wordpress-plugin-vulnerability-dump-part-1/
 # https://vexatioustendencies.com/wordpress-plugin-vulnerability-dump-part-2/
