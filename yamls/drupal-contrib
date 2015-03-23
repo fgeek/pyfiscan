@@ -333,6 +333,10 @@
 # SA-CONTRIB-2015-044   Requested       https://drupal.org/node/2424439 Taxonomy Path - XSS
 # SA-CONTRIB-2015-045   Requested       https://drupal.org/node/2424349 Node Access Product - XSS
 # SA-CONTRIB-2015-046   Requested       https://drupal.org/node/2424355 Taxonomy Tools - XSS
+# SA-CONTRIB-2015-063   Requested       https://drupal.org/node/2445935
+# SA-CONTRIB-2015-078   Requested       https://drupal.org/node/2454903
+# SA-CONTRIB-2015-079   Requested       https://drupal.org/node/2454909
+# SA-CONTRIB-2015-080   Requested       https://drupal.org/node/2455011
 # CVE-2012-4468
 # CVE-2012-4469
 # CVE-2012-4470
