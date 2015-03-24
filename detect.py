@@ -51,7 +51,6 @@ def detect_joomla(source_file, regexp):
     if not (os.path.isfile(source_file) and regexp):
         return
     logging.debug('Dectecting Joomla from: %s', source_file)
-
     release_version = grep_from_file(source_file, regexp[0])
     if not release_version:
         logging.debug('Could not find release version from: %s', source_file)
@@ -62,7 +61,6 @@ def detect_joomla(source_file, regexp):
         logging.debug('Could not find development version from: %s', source_file)
         return
     logging.debug('Development level version: %s', dev_level_version)
-
     return release_version + "." + dev_level_version
 
 
