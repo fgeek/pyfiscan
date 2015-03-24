@@ -6,7 +6,7 @@
 # CVE-2012-XXXX 4.2.7 http://osvdb.org/79425 http://st2tea.blogspot.fi/2012/02/jamroom-cross-site-scripting.html http://secunia.com/advisories/48077/
 Jamroom:
   1:
-    location: ['modules/jrCore/include.php']
+    location: ['/modules/jrCore/include.php']
     secure_version: '4.2.7'
     regexp: ['.*?version.*?(?P<version>[0-9.]+)']
     cve: 'http://osvdb.org/79425 http://st2tea.blogspot.fi/2012/02/jamroom-cross-site-scripting.html http://secunia.com/advisories/48077/'
