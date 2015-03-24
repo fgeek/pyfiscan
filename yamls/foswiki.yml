@@ -2,9 +2,9 @@
 # CVE-2012-6330 1.1.7   http://osvdb.org/88410 http://foswiki.org/Support/SecurityAlert-CVE-2012-1004
 # CVE-2013-1666 1.1.8   http://osvdb.org/90345 http://foswiki.org/Support/SecurityAlert-CVE-2013-1666
 Foswiki:
-    1:
-      location: ['/lib/Foswiki.pm']
-      secure_version: '1.1.8'
-      regexp: ['.*?\$RELEASE.*?Foswiki-(?P<version>[0-9.]+)']
-      cve: CVE-2013-1666 http://osvdb.org/90345 http://foswiki.org/Support/SecurityAlert-CVE-2013-1666
-      fingerprint: detect_general
+  1:
+    location: ['/lib/Foswiki.pm']
+    secure_version: '1.1.8'
+    regexp: ['.*?\$RELEASE.*?Foswiki-(?P<version>[0-9.]+)']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-1666 http://osvdb.org/90345 http://foswiki.org/Support/SecurityAlert-CVE-2013-1666'
+    fingerprint: detect_general

@@ -38,9 +38,9 @@
 # CVE-2015-2149 1.8.4   http://blog.mybb.com/2015/02/15/mybb-1-8-4-released-feature-update-security-maintenance-release/ http://www.openwall.com/lists/oss-security/2015/02/21/4
 MyBB:
   1:
-      location: ['/inc/class_core.php']
-      secure_version: '1.8.4'
-      regexp: ['.*?public.*?\$version.*?(?P<version>[0-9.]+)']
-      cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2149 http://blog.mybb.com/2015/02/15/mybb-1-8-4-released-feature-update-security-maintenance-release/'
-      fingerprint: detect_general
-      post_processing: ['php5.fcgi']
+    location: ['/inc/class_core.php']
+    secure_version: '1.8.4'
+    regexp: ['.*?public.*?\$version.*?(?P<version>[0-9.]+)']
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2149 http://blog.mybb.com/2015/02/15/mybb-1-8-4-released-feature-update-security-maintenance-release/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']

@@ -8,9 +8,9 @@
 # CVE-2010-1055         http://osvdb.org/63005 http://osvdb.org/63006 http://secunia.com/advisories/38943/
 osDate:
   1:
-      location: ['/osdate_init.php']
-      secure_version: '2.5.5'
-      regexp: ['define.*?VERSION.*?(?P<version>[0-9.]+)']
-      cve: 'Discontinued product. Please remove or find alternative sofware. http://osvdb.org/63005 http://osvdb.org/63006'
-      fingerprint: detect_general
-      post_processing: ['php5.fcgi']
+    location: ['/osdate_init.php']
+    secure_version: '2.5.5'
+    regexp: ['define.*?VERSION.*?(?P<version>[0-9.]+)']
+    cve: 'Discontinued product. Please remove or find alternative sofware. http://osvdb.org/63005 http://osvdb.org/63006'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']

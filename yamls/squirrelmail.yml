@@ -4,10 +4,10 @@
 # CVE-2011-2752 1.4.22  http://www.squirrelmail.org/security/issue/2011-07-11
 # CVE-2011-2753 1.4.22  http://www.squirrelmail.org/security/issue/2011-07-11
 SquirrelMail:
-    1:
-      location: ['/functions/strings.php']
-      secure_version: '1.4.22'
-      regexp: ['\$version.*?(?P<version>[0-9.]+)']
-      cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-4554 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-4555 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-2752 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-2753'
-      fingerprint: detect_general
-      post_processing: ['php5.fcgi']
+  1:
+    location: ['/functions/strings.php']
+    secure_version: '1.4.22'
+    regexp: ['\$version.*?(?P<version>[0-9.]+)']
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-4554 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-4555 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-2752 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-2753'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
