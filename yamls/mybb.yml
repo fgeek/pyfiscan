@@ -36,11 +36,16 @@
 # CVE-2014-9241 1.8.2
 # CVE-2014-XXXX 1.8.3   http://blog.mybb.com/2014/11/20/mybb-1-8-3-1-6-16-released-security-releases/ CVE requested http://www.openwall.com/lists/oss-security/2014/12/10/14
 # CVE-2015-2149 1.8.4   http://blog.mybb.com/2015/02/15/mybb-1-8-4-released-feature-update-security-maintenance-release/ http://www.openwall.com/lists/oss-security/2015/02/21/4
+# CVE-2015-2332 1.8.4
+# CVE-2015-2333 1.8.4
+# CVE-2015-2334 1.8.4
+# CVE-2015-2335 1.8.4
+# CVE-2015-2352 1.8.4
 MyBB:
   1:
     location: ['/inc/class_core.php']
     secure_version: '1.8.4'
     regexp: ['.*?public.*?\$version.*?(?P<version>[0-9.]+)']
-    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2149 http://blog.mybb.com/2015/02/15/mybb-1-8-4-released-feature-update-security-maintenance-release/'
+    cve: 'http://blog.mybb.com/2015/02/15/mybb-1-8-4-released-feature-update-security-maintenance-release/ http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2149 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2332 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2333 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2334 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2335 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2352'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
