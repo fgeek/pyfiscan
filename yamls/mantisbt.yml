@@ -39,16 +39,17 @@
 # CVE-2014-9279
 # CVE-2014-9280
 # CVE-2014-9281
-# CVE-2015-1042 1.2.19
 # CVE-2014-9571 1.2.19
 # CVE-2014-9572 1.2.19
 # CVE-2014-9573 1.2.19
 # CVE-2014-9624 1.2.19 https://www.mantisbt.org/bugs/view.php?id=17984
+# CVE-2014-9701 1.2.19 https://www.mantisbt.org/bugs/view.php?id=17362#c40613
+# CVE-2015-1042 1.2.19
 MantisBT:
   1:
     location: ['/core/constant_inc.php']
     secure_version: '1.2.19'
     regexp: ['define.*?MANTIS_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9571 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9572 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9573 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9624 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1042'
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9571 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9572 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9573 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9624 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9701 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1042'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
