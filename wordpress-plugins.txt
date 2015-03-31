@@ -194,7 +194,7 @@
 # CVE-2015-2293 wordpress-seo
 # CVE-2015-2314 wpml
 # CVE-2015-2315 wpml
-# CVE-2015-XXXX ab-google-map-travel http://seclists.org/bugtraq/2015/Mar/125 CVE requested by advisory author
+# CVE-2015-2755 ab-google-map-travel http://seclists.org/bugtraq/2015/Mar/125
 # CVE-2015-XXXX adplugg 1.1.34 http://seclists.org/bugtraq/2015/Feb/132 CVE has been requested by kasutubh padwad
 # CVE-2015-XXXX daily-edition http://seclists.org/fulldisclosure/2015/Mar/56
 # CVE-2015-XXXX daily-edition http://seclists.org/fulldisclosure/2015/Mar/57
