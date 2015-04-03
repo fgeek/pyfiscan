@@ -83,9 +83,15 @@ Detects following software
 Detects following end-of-life software:
 ---------------------------------------
 
-* Joomla 1.5: 1.5 is end-of-life since 2012-04-30
-* Joomla 1.6: 1.6 is end-of-life since [2011-08-19](http://www.joomla.org/announcements/release-news/5380-joomla-170-released.html). 1.6.x should be upgraded to 1.6.6 before moving to 1.7.x
-* Joomla 1.7: 1.7 is end-of-life since [2012-02-24](http://www.joomla.org/announcements/release-news/5411-joomla-175-released.html)
+* Gallery 1
+* Joomla 1.5 is end-of-life since 2012-04-30
+* Joomla 1.6 is end-of-life since [2011-08-19](http://www.joomla.org/announcements/release-news/5380-joomla-170-released.html). 1.6.x should be upgraded to 1.6.6 before moving to 1.7.x
+* Joomla 1.7 is end-of-life since [2012-02-24](http://www.joomla.org/announcements/release-news/5411-joomla-175-released.html)
+* Joomla 2.5
+* MediaWiki 1.18
+* MediaWiki 1.20
+* MediaWiki 1.21 [2014-06-25](http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-June/000153.html)
+* MediaWiki 1.22
 
 Installation
 ------------
