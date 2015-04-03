@@ -195,6 +195,7 @@
 # CVE-2015-2314 wpml
 # CVE-2015-2315 wpml
 # CVE-2015-2755 ab-google-map-travel http://seclists.org/bugtraq/2015/Mar/125
+# CVE-2015-2791
 # CVE-2015-2824 simple-ads-manager
 # CVE-2015-2825 simple-ads-manager
 # CVE-2015-2826 simple-ads-manager
