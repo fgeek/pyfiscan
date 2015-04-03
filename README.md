@@ -90,7 +90,7 @@ Detects following end-of-life software:
 * Joomla 2.5
 * MediaWiki 1.18
 * MediaWiki 1.20
-* MediaWiki 1.21 [2014-06-25](http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-June/000153.html)
+* MediaWiki 1.21 is end-of-life since [2014-06-25](http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-June/000153.html)
 * MediaWiki 1.22
 
 Installation
