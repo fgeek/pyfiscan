@@ -41,17 +41,23 @@
 # oC-SA-2014-016    CVE-2014-3838   6.0.3/5.0.16
 # oC-SA-2014-017    CVE-2014-3839   6.0.3
 # oC-SA-2014-018    CVE-2014-4929   6.0.4/5.0.17
+# OC-SA-2015-001    TODO            7.0.5/6.0.7/5.0.19
+# OC-SA-2015-002    TODO            7.0.5/6.0.7/5.0.19
+# OC-SA-2015-003    TODO            7.0.5/6.0.7/5.0.19 Windows only
+# OC-SA-2015-004    TODO            7.0.5/6.0.7/5.0.19
 ownCloud 6:
   1:
     location: ['/version.php']
-    secure_version: '6.0.4'
+    secure_version: '6.0.7'
     regexp: ['\$OC_VersionString.*?(?P<version>[0-9.]+)']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-4929'
+    cve: 'https://owncloud.org/security/advisory/?id=oc-sa-2015-001 https://owncloud.org/security/advisory/?id=oc-sa-2015-002 https://owncloud.org/security/advisory/?id=oc-sa-2015-004'
     fingerprint: detect_general
+    post_processing: ['php5.fcgi']
 ownCloud 5:
   1:
     location: ['/lib/util.php']
-    secure_version: '5.0.17'
+    secure_version: '5.0.19'
     regexp: ['.*?getVersionString.*?return.*?(?P<version>[0-9.]+)']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-4929 https://owncloud.org/security/advisory/?id=oc-sa-2014-018'
+    cve: 'https://owncloud.org/security/advisory/?id=oc-sa-2015-001 https://owncloud.org/security/advisory/?id=oc-sa-2015-002 https://owncloud.org/security/advisory/?id=oc-sa-2015-004'
     fingerprint: detect_withoutnewlines
+    post_processing: ['php5.fcgi']
