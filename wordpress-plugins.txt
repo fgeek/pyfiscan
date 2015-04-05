@@ -188,14 +188,14 @@
 # CVE-2015-2196 spider-event-calendar http://www.exploit-db.com/exploits/36061/
 # CVE-2015-2199
 # CVE-2015-2216
-# CVE-2015-2218
-# CVE-2015-2220
+# CVE-2015-2218 wordpress-audio-player
+# CVE-2015-2220 ninja-forms
 # CVE-2015-2292 wordpress-seo
 # CVE-2015-2293 wordpress-seo
 # CVE-2015-2314 wpml
 # CVE-2015-2315 wpml
 # CVE-2015-2755 ab-google-map-travel http://seclists.org/bugtraq/2015/Mar/125
-# CVE-2015-2791
+# CVE-2015-2791 wpml
 # CVE-2015-2824 simple-ads-manager
 # CVE-2015-2825 simple-ads-manager
 # CVE-2015-2826 simple-ads-manager
