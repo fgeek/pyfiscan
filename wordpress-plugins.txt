@@ -186,8 +186,7 @@
 # CVE-2015-2194
 # CVE-2015-2195
 # CVE-2015-2196 spider-event-calendar http://www.exploit-db.com/exploits/36061/
-# CVE-2015-2199
-# CVE-2015-2216
+# CVE-2015-2199 wordpress-audio-player
 # CVE-2015-2218 wordpress-audio-player
 # CVE-2015-2220 ninja-forms
 # CVE-2015-2292 wordpress-seo
@@ -206,6 +205,7 @@
 # CVE-2015-XXXX http://wpml.org/2015/03/wpml-security-update-bug-and-fix/
 # CVE-2015-XXXX mainwp-child 2.0.9.2 https://wordpress.org/plugins/mainwp-child/changelog/
 # CVE-2015-XXXX ninja-forms 2.8.11 http://seclists.org/bugtraq/2015/Feb/94
+# CVE-2015-XXXX php-event-calendar http://packetstormsecurity.com/files/131277/
 # CVE-2015-XXXX wordpress-seo http://seclists.org/fulldisclosure/2015/Mar/73
 # CVE-2015-XXXX wp-survey-and-poll 1.1.91 http://packetstormsecurity.com/files/130381/wpsurveypoll-sql.txt
 # http://seclists.org/fulldisclosure/2013/Dec/209 https://github.com/wpscanteam/wpscan/issues/388
