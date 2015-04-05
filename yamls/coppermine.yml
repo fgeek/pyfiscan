@@ -10,6 +10,6 @@ Coppermine:
     location: ['/sql/basic.sql']
     secure_version: '1.5.28'
     regexp: ['\#\#  Coppermine version.*?(?P<version>[0-9.]+)']
-    cve: 'CVE-2014-4612 http://forum.coppermine-gallery.net/index.php/topic,77376.0.html'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-4612 http://forum.coppermine-gallery.net/index.php/topic,77376.0.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']

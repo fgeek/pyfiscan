@@ -33,6 +33,6 @@ Mahara:
     location: ['/htdocs/lib/version.php']
     secure_version: '1.7.3'
     regexp: ['\$config->release.*?(?P<version>[0-9.]+)']
-    cve: 'CVE-2013-4429 http://osvdb.org/98185, CVE-2013-4430 http://osvdb.org/98181, CVE-2013-4431 http://osvdb.org/98184, CVE-2013-4432 http://osvdb.org/98182'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4429 http://osvdb.org/98185 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4430 http://osvdb.org/98181 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4431 http://osvdb.org/98184 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4432 http://osvdb.org/98182'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']

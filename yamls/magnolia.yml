@@ -9,5 +9,5 @@ MagnoliaCMS:
     location: ['/magnoliaPublic/README.txt']
     secure_version: '4.5.9'
     regexp: ['.*?magnolia-core.*?(?P<version>[0-9.]+)']
-    cve: 'CVE-2013-4621 http://seclists.org/fulldisclosure/2013/Jun/202'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4621 http://seclists.org/fulldisclosure/2013/Jun/202'
     fingerprint: detect_general

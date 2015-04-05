@@ -18,7 +18,7 @@ Gallery 3:
     location: ['/modules/gallery/helpers/gallery.php']
     secure_version: '3.0.9'
     regexp: ['.*?const.*?VERSION.*?(?P<version>[0-9.]{1,})']
-    cve: 'CVE-2013-2240 http://osvdb.org/94663 CVE-2013-2241 http://osvdb.org/94664 http://galleryproject.org/gallery_3_0_9'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2240 http://osvdb.org/94663 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2241 http://osvdb.org/94664 http://galleryproject.org/gallery_3_0_9'
     fingerprint: detect_gallery
     post_processing: ['php5.fcgi']
 Gallery 2:
@@ -26,7 +26,7 @@ Gallery 2:
     location: ['/modules/core/module.inc']
     secure_version: '2.3.2'
     regexp: ['.*?setGalleryVersion.*?(?P<version>[0-9.]{1,})']
-    cve: 'CVE-2012-2405 http://osvdb.org/81512'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-2405 http://osvdb.org/81512'
     fingerprint: detect_gallery
     post_processing: ['php5.fcgi']
 Gallery 1:

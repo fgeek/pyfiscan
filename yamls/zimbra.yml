@@ -8,6 +8,6 @@ Zimbra:
     location: ['/docs/open_source_licenses.txt']
     secure_version: '8.0.3'
     regexp: ['Zimbra Collaboration Suite.*?(?P<version>[0-9.]+)']
-    cve: 'CVE-2013-7091 http://osvdb.org/100747'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-7091'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']

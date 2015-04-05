@@ -28,6 +28,6 @@ WikkaWiki:
     location: ['/version.php']
     secure_version: '1.3.4-p1'
     regexp: ['\$svn_version.*?(?P<version>[0-9.]{1,})', '.*?WIKKA_PATCH_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'CVE-2013-5586 http://secunia.com/advisories/54790/'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-5586 http://secunia.com/advisories/54790/'
     fingerprint: detect_wikkawiki
     post_processing: ['php5.fcgi']

@@ -6,6 +6,6 @@ Zikula:
     location: ['/lib/Zikula/Core.php']
     secure_version: '1.3.6'
     regexp: ['.*?const.*?VERSION_NUM.*?(?P<version>[0-9.]+)']
-    cve: 'CVE-2013-6168 http://osvdb.org/98671 https://www.htbridge.com/advisory/HTB23178'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-6168 http://osvdb.org/98671 https://www.htbridge.com/advisory/HTB23178'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']

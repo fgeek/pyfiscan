@@ -19,5 +19,5 @@ Trac:
     location: ['/Trac.egg-info/PKG-INFO']
     secure_version: '0.11.7'
     regexp: ['Version.*?(?P<version>[.0-9]{2,})']
-    cve: CVE-2010-5108 http://osvdb.org/63317
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-5108 http://osvdb.org/63317'
     fingerprint: detect_general
