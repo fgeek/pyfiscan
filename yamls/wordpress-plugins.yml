@@ -28,6 +28,7 @@ WordPress plugin wassup:
     post_processing: ['php5.fcgi']
 # CVE-2012-4263 better-wp-security 3.2.5
 # CVE-2012-4264 better-wp-security 3.2.5
+# N/A           better-wp-security N/A      http://packetstormsecurity.com/files/125219/
 WordPress plugin better-wp-security:
   1:
     location: ['/wp-content/plugins/better-wp-security/readme.txt']
