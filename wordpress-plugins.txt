@@ -1,9 +1,6 @@
 # REJECTED: CVE-2013-1463
 # NOT-FOR-US: Site specific issue http://seclists.org/fulldisclosure/2015/Mar/34 http://seclists.org/fulldisclosure/2015/Mar/35
 # CVE-2011-XXXX question-and-answer-forum http://seclists.org/bugtraq/2011/Mar/12 https://www.htbridge.com/advisory/HTB22861
-# CVE-2012-3351
-# CVE-2012-4263 better-wp-security 3.2.5
-# CVE-2012-4264 better-wp-security 3.2.5
 # CVE-2012-5853 cardoza-ajax-search http://seclists.org/bugtraq/2012/Nov/33 /wp-admin/admin-ajax.php/?srch_txt='or 1=1-- &action=the_search_text
 # CVE-2012-XXXX answer-my-question http://osvdb.org/85567 http://seclists.org/bugtraq/2012/Nov/24
 # CVE-2012-XXXX better-wp-security 3.5.4
