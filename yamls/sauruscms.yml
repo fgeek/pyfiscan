@@ -1,0 +1,13 @@
+# URL: http://www.saurus.info/
+# CVE-2010-1997
+# CVE-2010-4943
+# CVE-2015-0876 4.7 https://github.com/sauruscms/Saurus-CMS-Community-Edition/commit/1bc272874a86eaab99dccd00b29177423fd83877
+# CVE-2015-1562 4.7 https://github.com/sauruscms/Saurus-CMS-Community-Edition/commit/8dec044d0fdabcb9b04e58037623385a97b0d288
+SaurusCMS:
+  1:
+    location: ['/classes/site.class.php']
+    secure_version: '4.8'
+    regexp: ['.*?\$this->script_version.*?(?P<version>[0-9]\.[0-9])']
+    cve: 'http://www.saurus.info/development-of-saurus-cms-officially-discontinued/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']

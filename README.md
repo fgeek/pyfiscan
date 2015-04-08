@@ -63,6 +63,7 @@ Detects following software
 * Roundcube
 * SMF
 * SPIP
+* SaurusCMS
 * Serendipity
 * SquirrelMail
 * TestLink
@@ -92,6 +93,7 @@ Detects following end-of-life software:
 * MediaWiki 1.20
 * MediaWiki 1.21 is end-of-life since [2014-06-25](http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-June/000153.html)
 * MediaWiki 1.22
+* SaurusCMS
 
 Installation
 ------------
