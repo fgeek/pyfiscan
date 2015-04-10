@@ -145,6 +145,7 @@
 # CVE-2015-0890
 # CVE-2015-0894
 # CVE-2015-0895
+# CVE-2015-0902 all-in-one-seo-pack
 # CVE-2015-1055
 # CVE-2015-1204
 # CVE-2015-1365 pixabay-images
@@ -186,6 +187,7 @@
 # CVE-2015-2315 wpml
 # CVE-2015-2755 ab-google-map-travel http://seclists.org/bugtraq/2015/Mar/125
 # CVE-2015-2791 wpml
+# CVE-2015-2792 wpml
 # CVE-2015-2824 simple-ads-manager
 # CVE-2015-2825 simple-ads-manager
 # CVE-2015-2826 simple-ads-manager
