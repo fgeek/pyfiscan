@@ -37,6 +37,7 @@ Detects following software
 * Dotclear
 * Drupal
 * EspoCRM
+* Etherpad
 * FluxBB
 * Foswiki
 * Gallery

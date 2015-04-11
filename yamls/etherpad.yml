@@ -1,0 +1,10 @@
+# URL: http://etherpad.org/
+# CVE-2015-2298
+# CVE-2015-3297
+Etherpad:
+  1:
+    location: ['/src/package.json']
+    secure_version: '1.5.3'
+    regexp: ['.*?version.*?(?P<version>[0-9.]+)']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3297'
+    fingerprint: detect_general
