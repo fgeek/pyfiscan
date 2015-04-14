@@ -1,5 +1,4 @@
-# REJECTED: CVE-2013-1463
-# NOT-FOR-US: Site specific issue http://seclists.org/fulldisclosure/2015/Mar/34 http://seclists.org/fulldisclosure/2015/Mar/35
+https://make.wordpress.org/core/2015/04/09/wp-rest-api-critical-security-release/
 # CVE-2011-XXXX question-and-answer-forum http://seclists.org/bugtraq/2011/Mar/12 https://www.htbridge.com/advisory/HTB22861
 # CVE-2012-5853 cardoza-ajax-search http://seclists.org/bugtraq/2012/Nov/33 /wp-admin/admin-ajax.php/?srch_txt='or 1=1-- &action=the_search_text
 # CVE-2012-XXXX answer-my-question http://osvdb.org/85567 http://seclists.org/bugtraq/2012/Nov/24
@@ -191,6 +190,7 @@
 # CVE-2015-2824 simple-ads-manager
 # CVE-2015-2825 simple-ads-manager
 # CVE-2015-2826 simple-ads-manager
+# CVE-2015-3299 floating-social-bar
 # CVE-2015-XXXX adplugg 1.1.34 http://seclists.org/bugtraq/2015/Feb/132 CVE has been requested by kasutubh padwad
 # CVE-2015-XXXX daily-edition http://seclists.org/fulldisclosure/2015/Mar/56
 # CVE-2015-XXXX daily-edition http://seclists.org/fulldisclosure/2015/Mar/57
