@@ -1,3 +1,4 @@
+# NOT-FOR-US: CVE-2014-6412 only affects Windows platform
 # CVE-2003-1598 "0.72 RC1" http://osvdb.org/4610 SA8954
 # CVE-2003-1599 "0.72 RC1" http://osvdb.org/4611 SA8954 0.70 affected
 # CVE-2004-1559 1.2.1
@@ -131,21 +132,23 @@
 # CVE-2014-9037 4.0.1   https://wordpress.org/news/2014/11/wordpress-4-0-1/
 # CVE-2014-9038 4.0.1   https://wordpress.org/news/2014/11/wordpress-4-0-1/
 # CVE-2014-9039 4.0.1   https://wordpress.org/news/2014/11/wordpress-4-0-1/
-# CVE-2014-6412 TODO
-# CVE-2015-XXXX 4.1.2   https://wordpress.org/news/2015/04/wordpress-4-1-2/
+# CVE-2015-3438 4.1.2   https://wordpress.org/news/2015/04/wordpress-4-1-2/
+# CVE-2015-3439 4.1.2   https://wordpress.org/news/2015/04/wordpress-4-1-2/
+# CVE-2015-3440 4.1.2   https://wordpress.org/news/2015/04/wordpress-4-1-2/
 # CVE-2015-XXXX 4.2.1   https://wordpress.org/news/2015/04/wordpress-4-2-1/ https://wpvulndb.com/vulnerabilities/7945
+# CVE-2015-3429 4.2.2   https://wordpress.org/news/2015/05/wordpress-4-2-2/ https://www.netsparker.com/cve-2015-3429-dom-xss-vulnerability-in-twenty-fifteen-wordpress-theme/
 WordPress:
   1:
     location: ['/wp-includes/version.php', '/wp-includes/vars.php']
-    secure_version: '4.2.1'
+    secure_version: '4.2.2'
     regexp: ['\$wp_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://wordpress.org/news/2015/04/wordpress-4-2-1/'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3429 https://wordpress.org/news/2015/05/wordpress-4-2-2/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
   2:
     location: ['/b2-include/b2vars.php']
-    secure_version: '4.2.1'
+    secure_version: '4.2.2'
     regexp: ['\$b2_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://wordpress.org/news/2015/04/wordpress-4-2-1/'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3429 https://wordpress.org/news/2015/05/wordpress-4-2-2/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
