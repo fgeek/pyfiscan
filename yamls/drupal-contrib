@@ -283,56 +283,62 @@
 # SA-CONTRIB-2014-126   CVE-2014-9503   Open Atrium - Access Bypass
 # SA-CONTRIB-2014-126   CVE-2014-9504   Open Atrium - OG Subgroups Access Bypass
 # SA-CONTRIB-2014-127   CVE-2014-9505   https://drupal.org/node/2395015
-# SA-CONTRIB-2015-001   Requested       https://drupal.org/node/2403313
-# SA-CONTRIB-2015-002   Requested       https://drupal.org/node/2403333
-# SA-CONTRIB-2015-003   Requested       https://drupal.org/node/2403343
-# SA-CONTRIB-2015-004   Requested       https://drupal.org/node/2403351
-# SA-CONTRIB-2015-005   Requested       https://drupal.org/node/2403375
-# SA-CONTRIB-2015-006   Requested       https://drupal.org/node/2403447
-# SA-CONTRIB-2015-007   Requested       https://drupal.org/node/2403445
-# SA-CONTRIB-2015-008   Requested       https://drupal.org/node/2403451
-# SA-CONTRIB-2015-009   Requested       https://drupal.org/node/2403459
-# SA-CONTRIB-2015-010   Requested       https://drupal.org/node/2403463
-# SA-CONTRIB-2015-011   Requested       https://drupal.org/node/2403465
-# SA-CONTRIB-2015-012   Requested       https://drupal.org/node/2403487
-# SA-CONTRIB-2015-013   Requested       https://drupal.org/node/2403489
-# SA-CONTRIB-2015-014   Requested       https://drupal.org/node/2407313
-# SA-CONTRIB-2015-015   Requested       https://drupal.org/node/2407315
-# SA-CONTRIB-2015-016   Requested       https://drupal.org/node/2407321
-# SA-CONTRIB-2015-017   Requested       https://drupal.org/node/2407329
-# SA-CONTRIB-2015-018   Requested       https://drupal.org/node/2407341
-# SA-CONTRIB-2015-019   Requested       https://drupal.org/node/2407347
-# SA-CONTRIB-2015-020   Requested       https://drupal.org/node/2407357
-# SA-CONTRIB-2015-021   Requested       https://drupal.org/node/2407395
-# SA-CONTRIB-2015-022   Requested       https://drupal.org/node/2407401
-# SA-CONTRIB-2015-023   Requested       https://drupal.org/node/2411527
-# SA-CONTRIB-2015-024   Requested       https://drupal.org/node/2411523
-# SA-CONTRIB-2015-025   Requested       https://drupal.org/node/2411539
-# SA-CONTRIB-2015-026   Requested       https://drupal.org/node/2411573
-# SA-CONTRIB-2015-027   Requested       https://drupal.org/node/2411579
-# SA-CONTRIB-2015-028   Requested       https://drupal.org/node/2411737
-# SA-CONTRIB-2015-029   Requested       https://drupal.org/node/2411741
-# SA-CONTRIB-2015-030   Requested       https://drupal.org/node/2415873
-# SA-CONTRIB-2015-031   Requested       https://drupal.org/node/2415885
-# SA-CONTRIB-2015-032   Requested       https://drupal.org/node/2415899 Node Invite
-# SA-CONTRIB-2015-033   Requested       https://drupal.org/node/2415947 Certify
-# SA-CONTRIB-2015-034   Requested       https://drupal.org/node/2420089 Commerce WeDeal
-# SA-CONTRIB-2015-035   Requested       https://drupal.org/node/2420099 Ajax Timeline
-# SA-CONTRIB-2015-036   Requested       https://drupal.org/node/2420119 Public Download Count
-# SA-CONTRIB-2015-037   Requested       https://drupal.org/node/2420139 Path Breadcrumbs
-# SA-CONTRIB-2015-038   Requested       https://drupal.org/node/2420161 Facebook Album Fetcher
-# SA-CONTRIB-2015-039   Requested       https://drupal.org/node/2424403 Views - Open redirect
-# SA-CONTRIB-2015-039   Requested       https://drupal.org/node/2424403 Views - Access bypass
-# SA-CONTRIB-2015-040   Requested       https://drupal.org/node/2424405 Webform prepopulate block - XSS
-# SA-CONTRIB-2015-041   Requested       https://drupal.org/node/2424409 Feature Set - CSRF
-# SA-CONTRIB-2015-042   Requested       https://drupal.org/node/2424419 Node basket - CSRF
-# SA-CONTRIB-2015-042   Requested       https://drupal.org/node/2424419 Node basket - XSS
-# SA-CONTRIB-2015-042   Requested       https://drupal.org/node/2424419 Node basket - Open redirect
-# SA-CONTRIB-2015-043   Requested       https://drupal.org/node/2424435 Commerce Balanced Payments - XSS
-# SA-CONTRIB-2015-043   Requested       https://drupal.org/node/2424439 Commerce Balanced Payments - CSRF
-# SA-CONTRIB-2015-044   Requested       https://drupal.org/node/2424439 Taxonomy Path - XSS
-# SA-CONTRIB-2015-045   Requested       https://drupal.org/node/2424349 Node Access Product - XSS
-# SA-CONTRIB-2015-046   Requested       https://drupal.org/node/2424355 Taxonomy Tools - XSS
+# SA-CONTRIB-2015-001   CVE-2015-3343   https://drupal.org/node/2403313
+# SA-CONTRIB-2015-002   CVE-2015-3344   https://drupal.org/node/2403333
+# SA-CONTRIB-2015-003   CVE-2015-3345   https://drupal.org/node/2403343
+# SA-CONTRIB-2015-004   CVE-2015-1051   https://drupal.org/node/2403351
+# SA-CONTRIB-2015-005   CVE-2015-3346   https://drupal.org/node/2403375
+# SA-CONTRIB-2015-006   CVE-2015-3348   https://drupal.org/node/2403447 XSS
+# SA-CONTRIB-2015-006   CVE-2015-3347   https://drupal.org/node/2403447 CSRF
+# SA-CONTRIB-2015-007   CVE-2015-3349   https://drupal.org/node/2403445
+# SA-CONTRIB-2015-008   CVE-2015-3355   https://drupal.org/node/2403451
+# SA-CONTRIB-2015-009   CVE-2015-3361   https://drupal.org/node/2403459
+# SA-CONTRIB-2015-010   CVE-2015-3351   https://drupal.org/node/2403463
+# SA-CONTRIB-2015-011   CVE-2015-3350   https://drupal.org/node/2403465
+# SA-CONTRIB-2015-012   CVE-2015-3352   https://drupal.org/node/2403487
+# SA-CONTRIB-2015-013   CVE-2015-3353   https://drupal.org/node/2403489
+# SA-CONTRIB-2015-014   CVE-2015-3355   https://drupal.org/node/2407313 XSS
+# SA-CONTRIB-2015-014   CVE-2015-3354   https://drupal.org/node/2407313 CSRF
+# SA-CONTRIB-2015-015   CVE-2015-3360   https://drupal.org/node/2407315 XSS
+# SA-CONTRIB-2015-016   CVE-2015-3356   https://drupal.org/node/2407321 CSRF
+# SA-CONTRIB-2015-016   CVE-2015-3358   https://drupal.org/node/2407321 Open Redirect
+# SA-CONTRIB-2015-017   CVE-2015-3359   https://drupal.org/node/2407329
+# SA-CONTRIB-2015-018   CVE-2015-3362   https://drupal.org/node/2407341
+# SA-CONTRIB-2015-019   CVE-2015-3342   https://drupal.org/node/2407347
+# SA-CONTRIB-2015-020   CVE-2015-3363   https://drupal.org/node/2407357
+# SA-CONTRIB-2015-021   CVE-2015-3364   https://drupal.org/node/2407395
+# SA-CONTRIB-2015-022   CVE-2015-3365   https://drupal.org/node/2407401
+# SA-CONTRIB-2015-023   CVE-2015-3368   https://drupal.org/node/2411527
+# SA-CONTRIB-2015-024   CVE-2015-3366   https://drupal.org/node/2411523
+# SA-CONTRIB-2015-025   CVE-2015-3367   https://drupal.org/node/2411539
+# SA-CONTRIB-2015-026   CVE-2015-3369   https://drupal.org/node/2411573
+# SA-CONTRIB-2015-027   CVE-2015-3376   https://drupal.org/node/2411579
+# SA-CONTRIB-2015-028   CVE-2015-3375   https://drupal.org/node/2411737
+# SA-CONTRIB-2015-029   CVE-2015-3374   https://drupal.org/node/2411741
+# SA-CONTRIB-2015-030   CVE-2015-3373   https://drupal.org/node/2415873
+# SA-CONTRIB-2015-031   CVE-2015-1567   https://drupal.org/node/2415885 XSS
+# SA-CONTRIB-2015-031   CVE-2015-1568   https://drupal.org/node/2415885 CSRF
+# SA-CONTRIB-2015-032   CVE-2015-3370   https://drupal.org/node/2415899 Node Invite: XSS
+# SA-CONTRIB-2015-032   CVE-2015-3372   https://drupal.org/node/2415899 Node Invite: CSRF
+# SA-CONTRIB-2015-032   CVE-2015-3371   https://drupal.org/node/2415899 Node Invite: Open Redirect
+# SA-CONTRIB-2015-033   CVE-2015-3404   https://drupal.org/node/2415947 Certify
+# SA-CONTRIB-2015-034   CVE-2015-3393   https://drupal.org/node/2420089 Commerce WeDeal
+# SA-CONTRIB-2015-035   CVE-2015-3392   https://drupal.org/node/2420099 Ajax Timeline
+# SA-CONTRIB-2015-036   CVE-2015-3389   https://drupal.org/node/2420119 Public Download Count
+# SA-CONTRIB-2015-037   CVE-2015-3391   https://drupal.org/node/2420139 Path Breadcrumbs
+# SA-CONTRIB-2015-038   CVE-2015-3390   https://drupal.org/node/2420161 Facebook Album Fetcher
+# SA-CONTRIB-2015-039   CVE-2015-3378   https://drupal.org/node/2424403 Views - Open redirect
+# SA-CONTRIB-2015-039   CVE-2015-3379   https://drupal.org/node/2424403 Views - Access bypass
+# SA-CONTRIB-2015-040   CVE-2015-1621   https://drupal.org/node/2424405 Webform prepopulate block - XSS
+# SA-CONTRIB-2015-041   CVE-2015-3380   https://drupal.org/node/2424409 Feature Set - CSRF
+# SA-CONTRIB-2015-042   CVE-2015-3382   https://drupal.org/node/2424419 Node basket - CSRF
+# SA-CONTRIB-2015-042   CVE-2015-3381   https://drupal.org/node/2424419 Node basket - XSS
+# SA-CONTRIB-2015-042   CVE-2015-3383   https://drupal.org/node/2424419 Node basket - Open redirect
+# SA-CONTRIB-2015-043   CVE-2015-3384   https://drupal.org/node/2424435 Commerce Balanced Payments - XSS
+# SA-CONTRIB-2015-043   CVE-2015-3388   https://drupal.org/node/2424439 Commerce Balanced Payments - CSRF
+# SA-CONTRIB-2015-044   CVE-2015-3385   https://drupal.org/node/2424439 Taxonomy Path - XSS
+# SA-CONTRIB-2015-045   CVE-2015-3386   https://drupal.org/node/2424349 Node Access Product - XSS
+# SA-CONTRIB-2015-046   CVE-2015-3387   https://drupal.org/node/2424355 Taxonomy Tools - XSS
 # SA-CONTRIB-2015-063   Requested       https://drupal.org/node/2445935
 # SA-CONTRIB-2015-078   Requested       https://drupal.org/node/2454903
 # SA-CONTRIB-2015-079   Requested       https://drupal.org/node/2454909
