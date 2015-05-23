@@ -25,6 +25,9 @@ class CompareVersions(unittest.TestCase):
     def test_version_pairs_7(self):
         self.assertTrue(is_not_secure('2.0', '1.9.9'))
 
+    def test_version_pairs_wordpress_feedwordpress(self):
+        self.assertTrue(is_not_secure('2015.0514', '2015.0426'))
+
 
 class DatabaseHandlers(unittest.TestCase):
     def test_can_load_issues_from_yaml(self):
