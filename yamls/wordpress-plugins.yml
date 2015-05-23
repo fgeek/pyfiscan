@@ -115,3 +115,11 @@ WordPress plugin landing-pages:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-4064 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-4065'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin feedwordpress:
+  1:
+    location: ['/wp-content/plugins/feedwordpress/readme.txt']
+    secure_version: '2015.0514'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-4018'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
