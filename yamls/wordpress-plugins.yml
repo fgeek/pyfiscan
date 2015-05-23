@@ -75,3 +75,43 @@ WordPress plugin citizen-space:
     cve: 'End-of-life http://seclists.org/fulldisclosure/2015/Apr/45'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin community-events:
+  1:
+    location: ['/wp-content/plugins/community-events/readme.txt']
+    secure_version: '1.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3313'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin tune-library:
+  1:
+    location: ['/wp-content/plugins/tune-library/readme.txt']
+    secure_version: '1.5.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3314'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin encrypted-contact-form:
+  1:
+    location: ['/wp-content/plugins/encrypted-contact-form/readme.txt']
+    secure_version: '1.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-4010 http://seclists.org/fulldisclosure/2015/May/63'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin newstatpress:
+  1:
+    location: ['/wp-content/plugins/newstatpress/readme.txt']
+    secure_version: '0.9.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-4062 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-4063'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin landing-pages:
+  1:
+    location: ['/wp-content/plugins/landing-pages/readme.txt']
+    secure_version: '1.8.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-4064 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-4065'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
