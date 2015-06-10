@@ -71,7 +71,17 @@
 # CVE-2014-9277 1.23.7/1.22.14/1.19.22  https://lists.wikimedia.org/pipermail/mediawiki-announce/2014-November/000170.html
 # CVE-2014-9475 1.24.1/1.23.8/1.22.15/1.19.23 https://lists.wikimedia.org/pipermail/mediawiki-announce/2014-December/000173.html
 # CVE-2014-9476 1.24.1/1.23.8/1.22.15/1.19.23 https://lists.wikimedia.org/pipermail/mediawiki-announce/2014-December/000173.html
-# CVE-2015-XXXX 1.24.2/1.23.9/1.19.24 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-March/000175.html
+# CVE-2015-2931
+# CVE-2015-2932
+# CVE-2015-2933
+# CVE-2015-2934
+# CVE-2015-2935
+# CVE-2015-2936
+# CVE-2015-2937
+# CVE-2015-2938
+# CVE-2015-2939
+# CVE-2015-2941
+# CVE-2015-2942 1.24.2/1.23.9/1.19.24 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-March/000175.html
 MediaWiki 1.24:
   1:
     location: ['/includes/DefaultSettings.php']
