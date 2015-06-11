@@ -1,8 +1,0 @@
-# URL: http://www.bigace.de/
-# Version: system/libs/constants.inc.php:define ('_BIGACE_ID' , '2.7.8');
-# CVE-2011-3711 ?       http://osvdb.org/show/osvdb/75748
-# CVE-2011-XXXX 2.7.7   http://osvdb.org/show/osvdb/78126 http://www.bigace.de/news/bigace-2.7.7.html http://secunia.com/advisories/47421/
-# CVE-2011-XXXX 2.7.7   http://osvdb.org/show/osvdb/78125 http://www.bigace.de/news/bigace-2.7.7.html http://secunia.com/advisories/47421/
-# CVE-2011-XXXX 2.7.7   http://osvdb.org/show/osvdb/78124 http://www.bigace.de/news/bigace-2.7.7.html http://secunia.com/advisories/47421/
-# CVE-2011-XXXX ?       http://osvdb.org/show/osvdb/81771 http://seclists.org/bugtraq/2012/Jan/5
-# CVE-2012-5173 2.7.8   http://osvdb.org/show/osvdb/87624 http://secunia.com/advisories/51355/ http://www.bigace.de/news/bigace-2.7.8.html
