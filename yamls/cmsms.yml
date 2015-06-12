@@ -16,13 +16,13 @@
 # CVE-2011-4310 1.9.4.3 http://www.cmsmadesimple.org/2011/08/Announcing-CMSMS-1-9-4-3---Security-Release/
 # CVE-2012-5450 1.11.2.1 http://osvdb.org/87235 SA51185 HTB23121 http://forum.cmsmadesimple.org/viewtopic.php?f=1&t=63545
 # CVE-2012-6064 1.11.2.1 SA51185 HTB23121 xfdb/79881 http://forum.cmsmadesimple.org/viewtopic.php?f=1&t=63545
-# CVE-2013-3929 ?   http://osvdb.org/100842 http://secunia.com/advisories/53920 # TODO issue 18
+# CVE-2013-3929 TODO http://osvdb.org/100842 http://secunia.com/advisories/53920
 # CVE-2013-4167 1.11.7
 # CVE-2013-XXXX 1.11.8 http://osvdb.org/98876 http://www.cmsmadesimple.org/announcing-cmsms-1-11-8-fioreana/
 # CVE-2014-0334 TODO http://www.kb.cert.org/vuls/id/526062
 # CVE-2014-2092 TODO
 # CVE-2014-2245 1.11.10 http://osvdb.org/103854 http://dev.cmsmadesimple.org/project/changelog/4602 http://www.cmsmadesimple.org/2014/02/Announcing-CMSMS-1-11-10-Pinzon/
-# ?             1.11.11 http://www.cmsmadesimple.org/2014/08/Announcing-CMSMS-1-11-11-San-Cristobal/
+# CVE-2014-XXXX 1.11.11 http://www.cmsmadesimple.org/2014/08/Announcing-CMSMS-1-11-11-San-Cristobal/
 CMSMS:
   1:
     location: ['/version.php']
