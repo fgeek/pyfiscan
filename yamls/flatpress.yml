@@ -1,0 +1,14 @@
+# URL: http://flatpress.org/home/
+# CVE-2009-XXXX 0.812.2 http://osvdb.org/58414
+# CVE-2013-XXXX N/A http://osvdb.org/98025
+# CVE-2013-XXXX N/A http://osvdb.org/99544
+# CVE-2014-XXXX N/A http://osvdb.org/105713
+# CVE-2014-100036 1.0.3 https://www.netsparker.com/critical-xss-vulnerabilities-in-flatpress/ https://github.com/evacchi/flatpress/issues/14
+Flatpress:
+  1:
+    location: ['/fp-includes/core/core.system.php']
+    secure_version: '1.0.3'
+    regexp: ['.*?SYSTEM_VER.*?(?P<version>[0-9.]+)']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-100036 https://www.netsparker.com/critical-xss-vulnerabilities-in-flatpress/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
