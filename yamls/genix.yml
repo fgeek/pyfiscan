@@ -1,0 +1,11 @@
+# URL: http://genixcms.org/ https://github.com/semplon/GeniXCMS/
+# CVE-2015-XXXX TODO persistent & reflected cross-site scripting http://hyp3rlinx.altervista.org/advisories/AS-GENIXCMS0621.txt
+# CVE-2015-XXXX 0.0.4 cross-site scripting https://github.com/semplon/GeniXCMS/commit/1f48742c2725b3f44c501b7d4a2ddffcb139c924
+GeniXCMS:
+  1:
+    location: ['/inc/lib/System.class.php']
+    secure_version: '0.0.4'
+    regexp: ['    static \$version          = "(?P<version>[0-9.]+)']
+    cve: 'https://github.com/semplon/GeniXCMS/commit/1f48742c2725b3f44c501b7d4a2ddffcb139c924'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']

@@ -42,6 +42,7 @@ Detects following software
 * FluxBB
 * Foswiki
 * Gallery
+* GeniXCMS
 * Gollum
 * HelpDEZk
 * ImpressCMS
