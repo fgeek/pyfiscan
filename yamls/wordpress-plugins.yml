@@ -155,3 +155,11 @@ WordPress plugin nextend-twitter-connect:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-4557'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin broken-link-checker:
+  1:
+    location: ['/wp-content/plugins/broken-link-checker/readme.txt']
+    secure_version: '1.10.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5057'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
