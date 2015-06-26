@@ -45,6 +45,7 @@
 # CVE-2014-9624 1.2.19 https://www.mantisbt.org/bugs/view.php?id=17984
 # CVE-2014-9701 1.2.19 https://www.mantisbt.org/bugs/view.php?id=17362#c40613
 # CVE-2015-1042 1.2.19
+# CVE-2015-5059 TODO no release yet?
 MantisBT:
   1:
     location: ['/core/constant_inc.php']
