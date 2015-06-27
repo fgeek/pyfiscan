@@ -203,3 +203,11 @@ WordPress plugin w3-total-cache:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8724'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin json-rest-api:
+  1:
+    location: ['/wp-content/plugins/json-rest-api/readme.txt']
+    secure_version: '1.2.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://make.wordpress.org/core/2015/04/09/wp-rest-api-critical-security-release/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
