@@ -195,3 +195,11 @@ WordPress plugin photo-gallery:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-6315'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin w3-total-cache:
+  1:
+    location: ['/wp-content/plugins/w3-total-cache/readme.txt']
+    secure_version: '0.9.4.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8724'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
