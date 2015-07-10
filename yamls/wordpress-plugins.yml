@@ -212,3 +212,11 @@ WordPress plugin json-rest-api:
     cve: 'https://make.wordpress.org/core/2015/04/09/wp-rest-api-critical-security-release/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin easy2map-photos:
+  1:
+    location: ['/wp-content/plugins/easy2map-photos/readme.txt']
+    secure_version: '1.1.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=2015-4615 https://web.nvd.nist.gov/view/vuln/detail?vulnId=2015-4617'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
