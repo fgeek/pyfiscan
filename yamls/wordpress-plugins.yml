@@ -228,3 +228,11 @@ WordPress plugin ibs-mappro:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5472'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wp-ecommerce-shop-styling:
+  1:
+    location: ['/wp-content/plugins/wp-ecommerce-shop-styling/readme.txt']
+    secure_version: '2.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5468'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
