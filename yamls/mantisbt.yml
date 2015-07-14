@@ -29,7 +29,7 @@
 # CVE-2014-7146 1.2.18  http://www.mantisbt.org/bugs/view.php?id=17725 http://www.mantisbt.org/bugs/view.php?id=17780
 # CVE-2014-8554 1.2.18  http://www.mantisbt.org/bugs/view.php?id=17812
 # CVE-2014-8598 1.2.18
-# CVE-2014-8986 TODO Needs investigation
+# CVE-2014-8986 TODO unable to find patch from 1.2.18 and 1.2.19, but CVE description does not say that these versions are affected, contacted dregad 2015-07-14
 # CVE-2014-8987 1.2.18  http://www.mantisbt.org/bugs/view.php?id=17870 https://github.com/mantisbt/mantisbt/commit/49c3d0893091fb1bb6b92639e59a72203be0bc4a
 # CVE-2014-8988 1.2.18  http://www.mantisbt.org/bugs/view.php?id=17742
 # CVE-2014-9269 1.2.18  http://www.mantisbt.org/bugs/view.php?id=17890 http://github.com/mantisbt/mantisbt/commit/511564cc
@@ -45,7 +45,7 @@
 # CVE-2014-9624 1.2.19 https://www.mantisbt.org/bugs/view.php?id=17984
 # CVE-2014-9701 1.2.19 https://www.mantisbt.org/bugs/view.php?id=17362#c40613
 # CVE-2015-1042 1.2.19
-# CVE-2015-5059 TODO no release yet?
+# CVE-2015-5059 TODO no release yet, contacted dregad 2015-07-14 https://mantisbt.org/bugs/view.php?id=19873
 MantisBT:
   1:
     location: ['/core/constant_inc.php']
