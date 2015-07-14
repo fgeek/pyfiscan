@@ -50,7 +50,7 @@
 # CVE-2013-7234 2.0.6/1.1.19 http://osvdb.org/101004 http://www.jakoblell.com/blog/2013/12/13/multiple-vulnerabilities-in-smf-forum-software/ http://www.simplemachines.org/community/index.php?topic=512964.0
 # CVE-2013-7235 2.0.6/1.1.19 http://osvdb.org/101005 http://www.jakoblell.com/blog/2013/12/13/multiple-vulnerabilities-in-smf-forum-software/ http://www.simplemachines.org/community/index.php?topic=512964.0
 # CVE-2013-7236 2.0.6/1.1.19 http://www.jakoblell.com/blog/2013/12/13/multiple-vulnerabilities-in-smf-forum-software/ http://www.simplemachines.org/community/index.php?topic=512964.0
-# CVE-2013-XXXX         http://osvdb.org/88909 TODO
+# CVE-2013-XXXX N/A http://osvdb.org/88909
 # CVE-2013-XXXX 2.0.4/1.1.18    http://www.simplemachines.org/community/index.php?topic=496403
 # CVE-2013-XXXX 2.0.5   http://osvdb.org/96323 SA54384 http://www.simplemachines.org/community/index.php?topic=509417 CVE request http://www.openwall.com/lists/oss-security/2013/09/15/2 never got assigned. XSS vulnerability is still not fixed in 2.0.5
 # CVE-2014-XXXX 2.0.9   http://www.simplemachines.org/community/index.php?topic=528448.0 http://osvdb.org/113391 http://osvdb.org/113392 http://osvdb.org/113393 http://osvdb.org/116156
