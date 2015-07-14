@@ -14,12 +14,14 @@
 # CVE-2012-XXXX 1.4.3.4 87015 87016 87017 87018 87019 87020 87021 87022 87023 87024 87025 87026 87027 87028 87029 87030 87031 87032 87033 http://www.waraxe.us/content-96.html http://openwall.com/lists/oss-security/2013/07/10/19
 # CVE-2013-7241 1.4.5.4 http://osvdb.org/98092 http://www.zenphoto.org/news/zenphoto-1.4.5.4
 # CVE-2013-7242 1.4.5.4 http://osvdb.org/98091 http://www.zenphoto.org/news/zenphoto-1.4.5.4
-# CVE-XXXX-XXXX 1.4.5.9 http://www.zenphoto.org/news/zenphoto-1.4.5.9
+# CVE-2014-XXXX 1.4.5.9 http://www.zenphoto.org/news/zenphoto-1.4.5.9
+# CVE-2015-2948 1.4.8   http://www.zenphoto.org/news/zenphoto-1.4.8
+# CVE-2015-XXXX 1.4.9   http://www.zenphoto.org/news/zenphoto-1.4.9
 Zenphoto:
   1:
     location: ['/zp-core/version.php']
-    secure_version: '1.4.5.9'
+    secure_version: '1.4.9'
     regexp: ["define.*?ZENPHOTO_VERSION.*?(?P<version>[0-9.]+)"]
-    cve: 'http://www.zenphoto.org/news/zenphoto-1.4.5.9'
+    cve: 'http://www.zenphoto.org/news/zenphoto-1.4.9'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
