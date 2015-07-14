@@ -1,7 +1,5 @@
 # NOT-FOR-US: Site specific issue http://seclists.org/fulldisclosure/2015/Mar/34 http://seclists.org/fulldisclosure/2015/Mar/35
 # REJECTED: CVE-2013-1463
-# CVE-2012-3351 jw-player-plugin-for-wordpress TODO
-#
 WordPress plugin videowhisper-video-conference-integration:
   1:
     location: ['/wp-content/plugins/videowhisper-video-conference-integration/readme.txt']
