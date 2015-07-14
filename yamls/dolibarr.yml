@@ -13,12 +13,12 @@
 # CVE-2014-3991 3.5.4
 # CVE-2014-3992 3.5.4 https://github.com/FHenry/dolibarr/commit/77a9d4eb71a7ede8e503e42104edb33035ad54ee merged into dolibarr/dolibarr
 # CVE-2014-7137 3.6.1 https://www.portcullis-security.com/security-research-and-downloads/security-advisories/cve-2014-7137/
-# CVE-2015-3935 TODO fixes pending https://github.com/Dolibarr/dolibarr/issues/2857
+# CVE-2015-3935 3.7.1 https://github.com/GPCsolutions/dolibarr/commit/a7f6bbd316e9b96216e9b2c7a065c9251c9a8907
 Dolibarr:
   1:
     location: ['/htdocs/filefunc.inc.php']
-    secure_version: '3.6.1'
+    secure_version: '3.7.1'
     regexp: ['.*?DOL_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-7137 https://www.portcullis-security.com/security-research-and-downloads/security-advisories/cve-2014-7137/'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3935'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
