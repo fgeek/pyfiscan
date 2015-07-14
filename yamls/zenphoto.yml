@@ -1,5 +1,5 @@
 # URL: http://www.zenphoto.org/
-# Version: zp-core/version.php:define('ZENPHOTO_VERSION', '1.4.3.3');
+# DISPUTED: http://osvdb.org/90547 http://packetstormsecurity.com/files/120422/Zenphoto-1.4.4.1-Blind-SQL-Injection.html
 # CVE-2009-4562
 # CVE-2009-4563
 # CVE-2009-4564
@@ -14,7 +14,6 @@
 # CVE-2012-XXXX 1.4.3.4 87015 87016 87017 87018 87019 87020 87021 87022 87023 87024 87025 87026 87027 87028 87029 87030 87031 87032 87033 http://www.waraxe.us/content-96.html http://openwall.com/lists/oss-security/2013/07/10/19
 # CVE-2013-7241 1.4.5.4 http://osvdb.org/98092 http://www.zenphoto.org/news/zenphoto-1.4.5.4
 # CVE-2013-7242 1.4.5.4 http://osvdb.org/98091 http://www.zenphoto.org/news/zenphoto-1.4.5.4
-# CVE-2013-XXXX ?       http://osvdb.org/90547 http://packetstormsecurity.com/files/120422/Zenphoto-1.4.4.1-Blind-SQL-Injection.html TODO
 # CVE-XXXX-XXXX 1.4.5.9 http://www.zenphoto.org/news/zenphoto-1.4.5.9
 Zenphoto:
   1:
