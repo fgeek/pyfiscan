@@ -1,0 +1,13 @@
+# URL: http://sourceforge.net/projects/jara/
+# CVE-2011-4094 http://osvdb.org/76484
+# CVE-2011-4095 http://osvdb.org/83330
+# CVE-2011-XXXX http://osvdb.org/83345
+# CVE-2011-XXXX http://osvdb.org/83346
+Jara:
+  1:
+    location: ['/_README.txt']
+    secure_version: '1.7'
+    regexp: ['Jara v(?P<version>1\.[.0-9]{1,})']
+    cve: 'Jara does not fix security vulnerabilities. Please remove this installation or find alternative sofware.'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']

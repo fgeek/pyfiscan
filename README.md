@@ -48,6 +48,7 @@ Detects following software
 * ImpressCMS
 * ImpressPages
 * Jamroom
+* Jara
 * Joomla
 * MODX Revolution
 * Magnolia
