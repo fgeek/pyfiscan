@@ -52,7 +52,8 @@
 # CVE-2012-6433 1.0.2   http://osvdb.org/88862
 # CVE-2012-6434 1.0.3   http://osvdb.org/88908
 # CVE-2013-2750 1.0.3
-# CVE-2013-7305 fixed in http://sourceforge.net/p/e107/svn/13114 but there is no release fixing, which includes this patch
+# CVE-2013-7305 TODO fixed in http://sourceforge.net/p/e107/svn/13114 but there is no release fixing, which includes this patch
+# CVE-2014-1846 TODO
 # CVE-2014-4734 2.0 beta1
 # CVE-2015-1041 N/A v.1.0.4 affected
 e107:
