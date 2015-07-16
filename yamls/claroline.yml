@@ -1,11 +1,11 @@
 # URL: http://www.claroline.net
 # CVE-2013-6267 1.11.9 https://www.htbridge.com/advisory/HTB23179
-# CVE-2013-4753 TODO http://www.xchg.info/?p=406
+# CVE-2013-4753 1.11.10 http://www.xchg.info/?p=406
 Claroline:
   1:
     location: ['/claroline/inc/installedVersion.inc.php']
-    secure_version: '1.11.9'
+    secure_version: '1.11.10'
     regexp: ['\$new_version.*?(?P<version>[0-9.]{1,})']
-    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-6267'
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4753'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
