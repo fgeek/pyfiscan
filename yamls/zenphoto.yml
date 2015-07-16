@@ -16,7 +16,7 @@
 # CVE-2013-7242 1.4.5.4 http://osvdb.org/98091 http://www.zenphoto.org/news/zenphoto-1.4.5.4
 # CVE-2014-XXXX 1.4.5.9 http://www.zenphoto.org/news/zenphoto-1.4.5.9
 # CVE-2015-2948 1.4.8   http://www.zenphoto.org/news/zenphoto-1.4.8
-# CVE-2015-XXXX 1.4.9   http://www.zenphoto.org/news/zenphoto-1.4.9 CVE requested 2015-07-14
+# CVE-2015-XXXX 1.4.9   http://www.zenphoto.org/news/zenphoto-1.4.9 CVE requested 2015-07-16 http://www.openwall.com/lists/oss-security/2015/07/16/5
 Zenphoto:
   1:
     location: ['/zp-core/version.php']

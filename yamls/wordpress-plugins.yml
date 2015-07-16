@@ -250,3 +250,11 @@ WordPress plugin subscribe-to-comments:
     cve: 'http://seclists.org/fulldisclosure/2015/Jul/71'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin cp-contact-form-with-paypal:
+  1:
+    location: ['/wp-content/plugins/cp-contact-form-with-paypal/readme.txt']
+    secure_version: '1.1.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'http://seclists.org/fulldisclosure/2015/Jul/49'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
