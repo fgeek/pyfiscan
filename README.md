@@ -36,6 +36,7 @@ Detects following software
 * Dolibarr
 * Dotclear
 * Drupal
+* e107
 * EspoCRM
 * Etherpad
 * FlatPress
@@ -61,7 +62,12 @@ Detects following software
 * MyBB
 * Nibbleblog
 * OpenCart
+* osCommerce
+* osDate
+* ownCloud
 * PBBoard
+* phpBB3
+* phpMyAdmin
 * Piwigo
 * PmWiki
 * Roundcube
@@ -79,11 +85,6 @@ Detects following software
 * Zenphoto
 * Zikula
 * Zimbra
-* e107
-* osDate
-* ownCloud
-* phpBB3
-* phpMyAdmin
 
 Detects following end-of-life software:
 ---------------------------------------
@@ -151,5 +152,5 @@ Happy users
 
 * DevNet Oy
 * Kapsi Internet-käyttäjät ry
-* Shellit.org
 * Loopia.se
+* Shellit.org

@@ -1,0 +1,22 @@
+# osCommerce http://www.oscommerce.com/
+# CVE-2014-XXXX 2.3.4   https://www.exploit-db.com/exploits/34582/
+# OSVDB 112348 2.3.4    http://osvdb.org/show/osvdb/112348
+# OSVDB 112349 2.3.4    http://osvdb.org/show/osvdb/112349
+# OSVDB 112353 2.3.4    http://osvdb.org/show/osvdb/112353
+# OSVDB 112360 2.3.4    http://osvdb.org/show/osvdb/112360
+osCommerce 2.3:
+  1:
+    location: ['/includes/version.php']
+    secure_version: '2.3.5'
+    regexp: ['(?P<version>2\.3(\.[0-9.]+)?)']
+    cve: 'https://www.exploit-db.com/exploits/34582/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+osCommerce 2.2:
+  1:
+    location: ['/admin/includes/application_top.php']
+    secure_version: '2.3.5'
+    regexp: ['\s+define.*?PROJECT_VERSION.*?(?P<version>2(\.[0-2.]+))']
+    cve: 'https://www.exploit-db.com/exploits/34582/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
