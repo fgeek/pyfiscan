@@ -54,7 +54,7 @@
 # CVE-2013-2750 1.0.3
 # CVE-2013-7305 TODO fixed in http://sourceforge.net/p/e107/svn/13114 but there is no release fixing, which includes this patch
 # CVE-2014-1846 TODO
-# CVE-2014-4734 2.0 beta1
+# CVE-2014-4734 2.0 beta1, not fixed in 1.x.x
 # CVE-2015-1041 N/A v.1.0.4 affected
 e107:
   1:
