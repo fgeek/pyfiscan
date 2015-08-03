@@ -123,7 +123,7 @@ Joomla 1.7:
   1:
     location: ['/includes/version.php']
     secure_version: '3.3.6'
-    regexp: ['[\t]+public[\t]\$RELEASE.*?(?P<version>1.7)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
+    regexp: ['[\t]+public[\t|\s]\$RELEASE.*?(?P<version>1.7)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
     cve: 'Joomla 1.7 is end of life. Please upgrade to 3.3.6 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
