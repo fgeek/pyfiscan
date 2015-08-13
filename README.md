@@ -36,20 +36,16 @@ Detects following software
 * Dolibarr
 * Dotclear
 * Drupal
-* e107
 * EspoCRM
 * Etherpad
-* FlatPress
 * FluxBB
 * Foswiki
 * Gallery
-* GeniXCMS
 * Gollum
 * HelpDEZk
 * ImpressCMS
 * ImpressPages
 * Jamroom
-* Jara
 * Joomla
 * MODX Revolution
 * Magnolia
@@ -62,12 +58,7 @@ Detects following software
 * MyBB
 * Nibbleblog
 * OpenCart
-* osCommerce
-* osDate
-* ownCloud
 * PBBoard
-* phpBB3
-* phpMyAdmin
 * Piwigo
 * PmWiki
 * Roundcube
@@ -85,6 +76,11 @@ Detects following software
 * Zenphoto
 * Zikula
 * Zimbra
+* e107
+* osDate
+* ownCloud
+* phpBB3
+* phpMyAdmin
 
 Detects following end-of-life software:
 ---------------------------------------
@@ -95,6 +91,7 @@ Detects following end-of-life software:
 * Joomla 1.7 is end-of-life since [2012-02-24](http://www.joomla.org/announcements/release-news/5411-joomla-175-released.html)
 * Joomla 2.5
 * MediaWiki 1.18
+* MediaWiki 1.19 is end-of-life since [2015-04-25](https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-May/000177.html)
 * MediaWiki 1.20
 * MediaWiki 1.21 is end-of-life since [2014-06-25](http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-June/000153.html)
 * MediaWiki 1.22
@@ -152,5 +149,5 @@ Happy users
 
 * DevNet Oy
 * Kapsi Internet-käyttäjät ry
-* Loopia.se
 * Shellit.org
+* Loopia.se
