@@ -25,9 +25,9 @@ Detects following software
 --------------------------
 
 * Bugzilla
-* CMSMS
 * Centreon
 * Claroline
+* CMSMS
 * Collabtive
 * Concrete5
 * Coppermine
@@ -36,6 +36,7 @@ Detects following software
 * Dolibarr
 * Dotclear
 * Drupal
+* e107
 * EspoCRM
 * Etherpad
 * FluxBB
@@ -47,25 +48,29 @@ Detects following software
 * ImpressPages
 * Jamroom
 * Joomla
-* MODX Revolution
 * Magnolia
 * Mahara
 * MantisBT
 * MediaWiki
 * Microweber
 * MiniBB
+* MODX Revolution
 * MoinMoin
 * MyBB
 * Nibbleblog
 * OpenCart
+* osDate
+* ownCloud
 * PBBoard
+* phpBB3
+* phpMyAdmin
 * Piwigo
 * PmWiki
 * Roundcube
-* SMF
-* SPIP
 * SaurusCMS
 * Serendipity
+* SMF
+* SPIP
 * SquirrelMail
 * TestLink
 * TikiWiki
@@ -76,11 +81,6 @@ Detects following software
 * Zenphoto
 * Zikula
 * Zimbra
-* e107
-* osDate
-* ownCloud
-* phpBB3
-* phpMyAdmin
 
 Detects following end-of-life software:
 ---------------------------------------
