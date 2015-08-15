@@ -103,18 +103,19 @@
 # CVE-2014-7982 3.2.3               http://developer.joomla.org/security/580-20140303-core-xss-vulnerability.html
 # CVE-2014-7983 3.2.3               http://developer.joomla.org/security/579-20140302-core-xss-vulnerability.html
 # CVE-2014-7984 3.2.3               http://developer.joomla.org/security/581-20140304-core-unauthorised-logins.html
+# CVE-2015-5397 3.4.2               http://developer.joomla.org/security-centre/618-20150602-core-remote-code-execution.html
 Joomla 3:
   1:
     location: ['/administrator/manifests/files/joomla.xml']
-    secure_version: '3.3.6'
+    secure_version: '3.4.2'
     regexp: ['[\t]<version>(?P<version>3\.[0-9.]{1,})']
-    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-7228 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-7229 http://www.joomla.org/announcements/release-news/5569-joomla-3-3-6-released.html'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5397 http://developer.joomla.org/security-centre/618-20150602-core-remote-code-execution.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Joomla 2.5:
   1:
     location: ['/administrator/manifests/files/joomla.xml']
-    secure_version: '3.3.6'
+    secure_version: '3.4.2'
     regexp: ['[\t]<version>(?P<version>2\.5\.[0-9]{1,})']
     cve: 'Joomla 2.5 is end of life. Please upgrade to 3.3.6 version.'
     fingerprint: detect_general
@@ -122,7 +123,7 @@ Joomla 2.5:
 Joomla 1.7:
   1:
     location: ['/includes/version.php']
-    secure_version: '3.3.6'
+    secure_version: '3.4.2'
     regexp: ['[\t]+public[\t|\s]\$RELEASE.*?(?P<version>1.7)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
     cve: 'Joomla 1.7 is end of life. Please upgrade to 3.3.6 version.'
     fingerprint: detect_joomla
@@ -130,7 +131,7 @@ Joomla 1.7:
 Joomla 1.6:
   1:
     location: ['/libraries/joomla/version.php']
-    secure_version: '3.3.6'
+    secure_version: '3.4.2'
     regexp: ['.*?RELEASE.*?(?P<version>1.6)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
     cve: 'Joomla 1.6 is end of life. Please upgrade to 3.3.6 version.'
     fingerprint: detect_joomla
@@ -138,7 +139,7 @@ Joomla 1.6:
 Joomla 1.5:
   1:
     location: ['/libraries/joomla/version.php']
-    secure_version: '3.3.6'
+    secure_version: '3.4.2'
     regexp: ['.*?RELEASE.*?(?P<version>1.5)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
     cve: 'Joomla 1.5 is end of life. Please upgrade to 3.3.6 version.'
     fingerprint: detect_joomla
@@ -146,7 +147,7 @@ Joomla 1.5:
 Joomla 1.0:
   1:
     location: ['/includes/version.php']
-    secure_version: '3.3.6'
+    secure_version: '3.4.2'
     regexp: ['[\t]+var.*?RELEASE.*?(?P<version>1.0)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
     cve: 'Joomla 1.0 is end of life. Please upgrade to 3.3.6 version.'
     fingerprint: detect_joomla
