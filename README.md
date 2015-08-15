@@ -155,13 +155,13 @@ Happy users
 Contributors
 ------------
 
-aapa
-Ari-Martti Hopiavuori
-Atte H. "guaqua"
-Janne Cederberg
-Joonas Kuorilehto
-Juhamatti Niemelä
-Linus Fogelholk
-Olli Pekkola
-Paul Grant
-Tuomo Komulainen
+* aapa
+* Ari-Martti Hopiavuori
+* Atte H. "guaqua"
+* Janne Cederberg
+* Joonas Kuorilehto
+* Juhamatti Niemelä
+* Linus Fogelholk
+* Olli Pekkola
+* Paul Grant
+* Tuomo Komulainen
