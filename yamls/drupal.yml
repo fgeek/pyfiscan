@@ -37,19 +37,20 @@
 # https://drupal.org/SA-CORE-2015-002   CVE-2015-3232   7.38/6.36   http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3232
 # https://drupal.org/SA-CORE-2015-002   CVE-2015-3233   7.38/6.36   http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3233
 # https://drupal.org/SA-CORE-2015-002   CVE-2015-3231   7.38/6.36   http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3231
+# https://drupal.org/SA-CORE-2015-003   Requested       7.39/6.37
 Drupal 7:
   1:
     location: ['/includes/bootstrap.inc']
-    secure_version: '7.38'
+    secure_version: '7.39'
     regexp: ['define.*?VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3234 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3232 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3233 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3231 https://drupal.org/SA-CORE-2015-002'
+    cve: 'https://drupal.org/SA-CORE-2015-003'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Drupal 6:
   1:
     location: ['/CHANGELOG.txt']
-    secure_version: '6.36'
+    secure_version: '6.37'
     regexp: ['^Drupal (?P<version>[0-9.]+)']
-    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3234 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3232 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3233 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3231 https://drupal.org/SA-CORE-2015-002'
+    cve: 'https://drupal.org/SA-CORE-2015-003'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
