@@ -1,4 +1,5 @@
 # http://owncloud.org/about/security/policy/
+# https://github.com/owncloud/core/wiki/Maintenance-and-Release-Schedule
 # Advisory URL: http://owncloud.org/about/security/advisories/oC-SA-XXXX-XXX/
 # ownCloud ID       CVE             Fixed in        OSVDB                   ownCloud security advisory URL
 # N/A               CVE-2012-5336   4.0.8
@@ -85,8 +86,16 @@ ownCloud 6:
 ownCloud 5:
   1:
     location: ['/lib/util.php']
-    secure_version: '5.0.19'
-    regexp: ['.*?getVersionString.*?return.*?(?P<version>[0-9.]+)']
-    cve: 'https://owncloud.org/security/advisory/?id=oc-sa-2015-001 https://owncloud.org/security/advisory/?id=oc-sa-2015-002 https://owncloud.org/security/advisory/?id=oc-sa-2015-004'
+    secure_version: '5.0.20'
+    regexp: ['.*?getVersionString.*?return.*?(?P<version>5\.[0-9.]+)']
+    cve: 'ownCloud 5 is end of life.'
+    fingerprint: detect_withoutnewlines
+    post_processing: ['php5.fcgi']
+ownCloud 4:
+  1:
+    location: ['/lib/util.php']
+    secure_version: '4.5.14'
+    regexp: ['.*?getVersionString.*?return.*?(?P<version>4\.[0-9.]+)']
+    cve: 'ownCloud 4 is end of life'
     fingerprint: detect_withoutnewlines
     post_processing: ['php5.fcgi']
