@@ -353,3 +353,12 @@ WordPress plugin watupro:
     cve: 'http://seclists.org/fulldisclosure/2015/Sep/8 http://seclists.org/fulldisclosure/2015/Sep/11'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# CVE-2015-2807 0.7.23
+WordPress plugin job-manager:
+  1:
+    location: ['/wp-content/plugins/job-manager/readme.txt']
+    secure_version: '0.7.25'
+    regexp: ['^Version.*?(?P<version>[0-9.]+)']
+    cve: 'https://wordpress.org/plugins/job-manager/changelog/'  # No CVE available
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
