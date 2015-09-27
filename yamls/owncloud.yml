@@ -57,6 +57,7 @@
 # OC-SA-2015-013    CVE-2015-5955   Only affects ownCloud Mobile
 # OC-SA-2015-014    CVE-2015-6500   8.1.1/8.0.6
 # OC-SA-2015-015    CVE-2015-6670   8.1.1/8.0.6/7.0.8
+# OC-SA-2015-016    CVE-2015-7298   Only affects ownCloud Desktop
 ownCloud 8.1:
   1:
     location: ['/version.php']
