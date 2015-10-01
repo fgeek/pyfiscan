@@ -58,28 +58,30 @@
 # OC-SA-2015-014    CVE-2015-6500   8.1.1/8.0.6
 # OC-SA-2015-015    CVE-2015-6670   8.1.1/8.0.6/7.0.8
 # OC-SA-2015-016    CVE-2015-7298   Only affects ownCloud Desktop
+# OC-SA-2015-017                    8.1.2
+# OC-SA-2015-018                    8.1.2/8.0.7/7.0.9
 ownCloud 8.1:
   1:
     location: ['/version.php']
-    secure_version: '8.1.1'
+    secure_version: '8.1.2'
     regexp: ['\$OC_VersionString.*?(?P<version>8\.1\.[0-9.]+)']
-    cve: 'https://owncloud.org/security/advisory/?id=oc-sa-2015-014 https://owncloud.org/security/advisory/?id=oc-sa-2015-015 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-6670 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-6500'
+    cve: 'https://owncloud.org/security/advisory/?id=oc-sa-2015-017 https://owncloud.org/security/advisory/?id=oc-sa-2015-018'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 ownCloud 8.0:
   1:
     location: ['/version.php']
-    secure_version: '8.0.6'
+    secure_version: '8.0.7'
     regexp: ['\$OC_VersionString.*?(?P<version>8\.0\.[0-9.]+)']
-    cve: 'https://owncloud.org/security/advisory/?id=oc-sa-2015-014 https://owncloud.org/security/advisory/?id=oc-sa-2015-015 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-6670 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-6500'
+    cve: 'https://owncloud.org/security/advisory/?id=oc-sa-2015-018'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 ownCloud 7:
   1:
     location: ['/version.php']
-    secure_version: '7.0.8'
+    secure_version: '7.0.9'
     regexp: ['\$OC_VersionString.*?(?P<version>7\.[0-9.]+)']
-    cve: 'https://owncloud.org/security/advisory/?id=oc-sa-2015-015 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-6670'
+    cve: 'https://owncloud.org/security/advisory/?id=oc-sa-2015-018'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 ownCloud 6:
