@@ -383,6 +383,6 @@ WordPress plugin easy2map:
     location: ['/wp-content/plugins/easy2map/readme.txt']
     secure_version: '1.3.0'
     regexp: ['^Version.*?(?P<version>[0-9.]+)']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7668'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7668 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7669'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
