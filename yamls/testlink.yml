@@ -17,11 +17,13 @@
 # CVE-2014-5308 1.9.12  http://seclists.org/fulldisclosure/2014/Oct/11
 # CVE-2014-8081 1.9.13  http://mantis.testlink.org/view.php?id=6651
 # CVE-2014-8082 1.9.13  http://mantis.testlink.org/view.php?id=6609
+# CVE-2015-7390 1.9.14  https://packetstormsecurity.com/files/133890/NS-15-015.txt
+# CVE-2015-7391 1.9.14  https://packetstormsecurity.com/files/133891/NS-15-016.txt
 TestLink:
   1:
     location: ['/cfg/const.inc.php']
-    secure_version: '1.9.13'
+    secure_version: '1.9.14'
     regexp: ['define.*?TL_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8081 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8082'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7390 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7391'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
