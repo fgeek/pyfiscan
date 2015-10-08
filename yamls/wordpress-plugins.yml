@@ -386,3 +386,11 @@ WordPress plugin easy2map:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7668 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7669'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin payment-form-for-paypal-pro:
+  1:
+    location: ['/wp-content/plugins/payment-form-for-paypal-pro/readme.txt']
+    secure_version: '1.0.2'
+    regexp: ['^Version.*?(?P<version>[0-9.]+)']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7666'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
