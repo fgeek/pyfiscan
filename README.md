@@ -103,7 +103,7 @@ Installation
 ------------
 
     git clone https://github.com/fgeek/pyfiscan.git && cd pyfiscan
-    pip install -r requirements.lst
+    pip2 install -r requirements.lst
 
 Notes
 -----
