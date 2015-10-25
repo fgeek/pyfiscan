@@ -72,35 +72,44 @@
 # CVE-2014-9475 1.24.1/1.23.8/1.22.15/1.19.23 https://lists.wikimedia.org/pipermail/mediawiki-announce/2014-December/000173.html
 # CVE-2014-9476 1.24.1/1.23.8/1.22.15/1.19.23 https://lists.wikimedia.org/pipermail/mediawiki-announce/2014-December/000173.html
 # CVE-2015-2931/CVE-2015-2932/CVE-2015-2933/CVE-2015-2934/CVE-2015-2935/CVE-2015-2936/CVE-2015-2937/CVE-2015-2938/CVE-2015-2939/CVE-2015-2941/CVE-2015-2942 1.24.2/1.23.9/1.19.24 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-March/000175.html
-# CVE-2015-XXXX 1.25.2/1.24.3/1.23.10 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-August/000179.html
+# CVE-2015-6727 1.25.2/1.24.3/1.23.10 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-August/000179.html
+# CVE-2015-6728 1.25.2/1.24.3/1.23.10 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-August/000179.html
+# CVE-2015-6729 1.25.2/1.24.3/1.23.10 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-August/000179.html
+# CVE-2015-6729 1.25.2/1.24.3/1.23.10 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-August/000179.html
+# CVE-2015-6731 1.25.2/1.24.3/1.23.10 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-August/000179.html
+# CVE-2015-6734 1.25.2/1.24.3/1.23.10 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-August/000179.html
+# CVE-2015-6735 1.25.2/1.24.3/1.23.10 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-August/000179.html
+# CVE-2015-6736 1.25.2/1.24.3/1.23.10 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-August/000179.html
+# CVE-2015-6737 1.25.2/1.24.3/1.23.10 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-August/000179.html
+# CVE-2015-XXXX 1.25.3/1.24.4/1.23.11 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-October/000181.html CVE request http://www.openwall.com/lists/oss-security/2015/10/19/8
 MediaWiki 1.25:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.25.2'
+    secure_version: '1.25.3'
     regexp: ['\$wgVersion.*?(?P<version>1\.25\.[0-9.]{1,})']
-    cve: 'https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-August/000179.html'  # CVE request http://www.openwall.com/lists/oss-security/2015/08/12/6
+    cve: 'https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-October/000181.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.24:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.24.3'
+    secure_version: '1.24.4'
     regexp: ['\$wgVersion.*?(?P<version>1\.24\.[0-9.]{1,})']
-    cve: 'https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-August/000179.html'
+    cve: 'https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-October/000181.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.23:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.23.10'
+    secure_version: '1.23.11'
     regexp: ['\$wgVersion.*?(?P<version>1\.23\.[0-9.]{1,})']
-    cve: 'https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-August/000179.html'
+    cve: 'https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-October/000181.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.22:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.25.2'
+    secure_version: '1.25.3'
     regexp: ['\$wgVersion.*?(?P<version>1\.22\.[0-9.]{1,})']
     cve: 'MediaWiki 1.22 is end of life.'
     fingerprint: detect_general
@@ -108,7 +117,7 @@ MediaWiki 1.22:
 MediaWiki 1.21:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.25.2'
+    secure_version: '1.25.3'
     regexp: ['\$wgVersion.*?(?P<version>1\.21\.[0-9.]{1,})']
     cve: 'MediaWiki 1.21 is end of life.'
     fingerprint: detect_general
@@ -116,7 +125,7 @@ MediaWiki 1.21:
 MediaWiki 1.20:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.25.2'
+    secure_version: '1.25.3'
     regexp: ['\$wgVersion.*?(?P<version>1\.20\.[0-9.]{1,})']
     cve: 'MediaWiki 1.20.x is end of life.'
     fingerprint: detect_general
@@ -124,7 +133,7 @@ MediaWiki 1.20:
 MediaWiki 1.19:  # Will be supported until 2015 May
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.25.2'
+    secure_version: '1.25.3'
     regexp: ['\$wgVersion.*?(?P<version>1\.19\.[0-9.]{1,})']
     cve: 'MediaWiki 1.19.x is end of life.'
     fingerprint: detect_general
@@ -132,7 +141,7 @@ MediaWiki 1.19:  # Will be supported until 2015 May
 MediaWiki 1.18:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.25.2'
+    secure_version: '1.25.3'
     regexp: ['\$wgVersion.*?(?P<version>1\.1[0-8]\.[0-9.]{1,})']
     cve: 'MediaWiki 1.18.x is end of life.'
     fingerprint: detect_general
