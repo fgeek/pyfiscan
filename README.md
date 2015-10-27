@@ -63,6 +63,7 @@ Detects following software
 * ownCloud
 * PBBoard
 * phpBB3
+* PhpGedView
 * phpMyAdmin
 * Piwigo
 * PmWiki
