@@ -293,7 +293,7 @@ WordPress plugin usc-e-shop:
   1:
     location: ['/wp-content/plugins/usc-e-shop/readme.txt']
     secure_version: '1.4.18'
-    regexp: ['^Version.*?(?P<version>[0-9.]+)']
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2973'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
@@ -301,7 +301,7 @@ WordPress plugin mdc-private-message:
   1:
     location: ['/wp-content/plugins/mdc-private-message/readme.txt']
     secure_version: '1.0.1'
-    regexp: ['^Version.*?(?P<version>[0-9.]+)']
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://www.exploit-db.com/exploits/37907/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
@@ -309,7 +309,7 @@ WordPress plugin google-analyticator:
   1:
     location: ['/wp-content/plugins/google-analyticator/readme.txt']
     secure_version: '6.4.9.6'
-    regexp: ['^Version.*?(?P<version>[0-9.]+)']
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-6238'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
@@ -317,7 +317,7 @@ WordPress plugin dukapress:
   1:
     location: ['/wp-content/plugins/dukapress/readme.txt']
     secure_version: '2.5.9.1'
-    regexp: ['^Version.*?(?P<version>[0-9.]+)']
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'http://www.openwall.com/lists/oss-security/2015/08/22/2'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
@@ -325,7 +325,7 @@ WordPress plugin youtube-embed:
   1:
     location: ['/wp-content/plugins/youtube-embed/readme.txt']
     secure_version: '3.3.3'
-    regexp: ['^Version.*?(?P<version>[0-9.]+)']
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-6535'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
@@ -333,7 +333,7 @@ WordPress plugin navis-documentcloud:
   1:
     location: ['/wp-content/plugins/navis-documentcloud/readme.txt']
     secure_version: '0.1.1'
-    regexp: ['^Version.*?(?P<version>[0-9.]+)']
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2807'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
@@ -341,7 +341,7 @@ WordPress plugin private-only:
   1:
     location: ['/wp-content/plugins/private-only/readme.txt']
     secure_version: 'N/A'
-    regexp: ['^Version.*?(?P<version>[0-9.]+)']
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5483 https://security.dxw.com/advisories/csrfxss-vulnerability-in-private-only-could-allow-an-attacker-to-do-almost-anything-an-admin-user-can/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
@@ -349,7 +349,7 @@ WordPress plugin watupro:
   1:
     location: ['/wp-content/plugins/watupro/readme.txt']
     secure_version: '4.9.0.8'
-    regexp: ['^Version.*?(?P<version>[0-9.]+)']
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'http://seclists.org/fulldisclosure/2015/Sep/8 http://seclists.org/fulldisclosure/2015/Sep/11'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
@@ -358,7 +358,7 @@ WordPress plugin job-manager:
   1:
     location: ['/wp-content/plugins/job-manager/readme.txt']
     secure_version: '0.7.25'
-    regexp: ['^Version.*?(?P<version>[0-9.]+)']
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://wordpress.org/plugins/job-manager/changelog/'  # No CVE available
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
@@ -366,7 +366,7 @@ WordPress plugin securemoz-security-audit:
   1:
     location: ['/wp-content/plugins/securemoz-security-audit/readme.txt']
     secure_version: 'N/A'
-    regexp: ['^Version.*?(?P<version>[0-9.]+)']
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-6828'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
@@ -374,7 +374,7 @@ WordPress plugin wp-limit-login-attempts:
   1:
     location: ['/wp-content/plugins/wp-limit-login-attempts/readme.txt']
     secure_version: 'N/A'
-    regexp: ['^Version.*?(?P<version>[0-9.]+)']
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-6829'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
@@ -382,7 +382,7 @@ WordPress plugin easy2map:
   1:
     location: ['/wp-content/plugins/easy2map/readme.txt']
     secure_version: '1.3.0'
-    regexp: ['^Version.*?(?P<version>[0-9.]+)']
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7668 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7669'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
@@ -390,7 +390,7 @@ WordPress plugin payment-form-for-paypal-pro:
   1:
     location: ['/wp-content/plugins/payment-form-for-paypal-pro/readme.txt']
     secure_version: '1.0.2'
-    regexp: ['^Version.*?(?P<version>[0-9.]+)']
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7666'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
@@ -398,7 +398,7 @@ WordPress plugin resads:
   1:
     location: ['/wp-content/plugins/resads/readme.txt']
     secure_version: '1.0.2'
-    regexp: ['^Version.*?(?P<version>[0-9.]+)']
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7667'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
@@ -406,7 +406,7 @@ WordPress plugin simple-support-ticket-system:
   1:
     location: ['/wp-content/plugins/simple-support-ticket-system/readme.txt']
     secure_version: '1.2.1'
-    regexp: ['^Version.*?(?P<version>[0-9.]+)']
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7670'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
@@ -414,7 +414,7 @@ WordPress plugin font:
   1:
     location: ['/wp-content/plugins/font/readme.txt']
     secure_version: '7.5.1'
-    regexp: ['^Version.*?(?P<version>[0-9.]+)']
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7683'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
@@ -422,7 +422,7 @@ WordPress plugin pie-register:
   1:
     location: ['/wp-content/plugins/pie-register/readme.txt']
     secure_version: '2.0.19'
-    regexp: ['^Version.*?(?P<version>[0-9.]+)']
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7377 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7682'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
@@ -430,7 +430,7 @@ WordPress plugin events-made-easy:
   1:
     location: ['/wp-content/plugins/events-made-easy/readme.txt']
     secure_version: '1.5.50'
-    regexp: ['^Version.*?(?P<version>[0-9.]+)']
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://www.davidsopas.com/events-made-easy-wordpress-plugin-csrf-persistent-xss/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
@@ -438,7 +438,7 @@ WordPress plugin powerpress:
   1:
     location: ['/wp-content/plugins/powerpress/readme.txt']
     secure_version: '6.0.5'
-    regexp: ['^Version.*?(?P<version>[0-9.]+)']
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'http://www.openwall.com/lists/oss-security/2015/10/27/1'  # CVE request 2015-10-27
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
@@ -446,7 +446,7 @@ WordPress plugin si-contact-form:
   1:
     location: ['/wp-content/plugins/si-contact-form/readme.txt']
     secure_version: '4.0.38'
-    regexp: ['^Version.*?(?P<version>[0-9.]+)']
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'http://www.openwall.com/lists/oss-security/2015/10/27/2'  # CVE request 2015-10-27
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
