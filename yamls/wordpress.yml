@@ -143,6 +143,7 @@
 # TODO: CVE-2014-XXXX N/A     https://security.dxw.com/advisories/comment-form-csrf-allows-admin-impersonation-via-comments-in-wordpress-4-2-2/
 # CVE-2015-5714 4.3.1   https://wordpress.org/news/2015/09/wordpress-4-3-1/
 # CVE-2015-5715 4.3.1   https://wordpress.org/news/2015/09/wordpress-4-3-1/
+# CVE-2015-7989 4.3.1   https://wordpress.org/news/2015/09/wordpress-4-3-1/ https://github.com/WordPress/WordPress/commit/f91a5fd10ea7245e5b41e288624819a37adf290a
 WordPress:
   1:
     location: ['/wp-includes/version.php', '/wp-includes/vars.php']
