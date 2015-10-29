@@ -461,3 +461,11 @@ WordPress plugin gd-bbpress-attachments:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5481 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5482'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin codestyling-localization:
+  1:
+    location: ['/wp-content/plugins/codestyling-localization/readme.txt']
+    secure_version: 'N/A'  # No fix available 2015-10-29
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-4179'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
