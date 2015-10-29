@@ -61,6 +61,7 @@ Detects following software
 * OpenCart
 * osDate
 * ownCloud
+* Oxwall
 * PBBoard
 * phpBB3
 * PhpGedView
