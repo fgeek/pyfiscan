@@ -1,3 +1,4 @@
+# URL: http://www.oxwall.org
 Oxwall:
   1:
     location: ['/ow_version.xml']
@@ -6,4 +7,3 @@ Oxwall:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5534 https://www.htbridge.com/advisory/HTB23266'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
-
