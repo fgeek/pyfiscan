@@ -469,3 +469,11 @@ WordPress plugin codestyling-localization:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-4179'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wppageflip:
+  1:
+    location: ['/wp-content/plugins/wppageflip/readme.txt']
+    secure_version: '3.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-6652'
+    fingerprint: detect_general
+    post_processing: ['php6.fcgi']
