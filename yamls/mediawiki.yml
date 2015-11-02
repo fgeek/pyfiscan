@@ -81,13 +81,21 @@
 # CVE-2015-6735 1.25.2/1.24.3/1.23.10 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-August/000179.html
 # CVE-2015-6736 1.25.2/1.24.3/1.23.10 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-August/000179.html
 # CVE-2015-6737 1.25.2/1.24.3/1.23.10 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-August/000179.html
-# CVE-2015-XXXX 1.25.3/1.24.4/1.23.11 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-October/000181.html CVE request http://www.openwall.com/lists/oss-security/2015/10/19/8
+# CVE-2015-8001 1.25.3/1.24.4/1.23.11 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-October/000181.html
+# CVE-2015-8002 1.25.3/1.24.4/1.23.11 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-October/000181.html
+# CVE-2015-8003 1.25.3/1.24.4/1.23.11 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-October/000181.html
+# CVE-2015-8004 1.25.3/1.24.4/1.23.11 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-October/000181.html
+# CVE-2015-8005 1.25.3/1.24.4/1.23.11 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-October/000181.html
+# CVE-2015-8006 1.25.3/1.24.4/1.23.11 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-October/000181.html
+# CVE-2015-8007 1.25.3/1.24.4/1.23.11 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-October/000181.html
+# CVE-2015-8008 1.25.3/1.24.4/1.23.11 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-October/000181.html
+# CVE-2015-8009 1.25.3/1.24.4/1.23.11 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-October/000181.html
 MediaWiki 1.25:
   1:
     location: ['/includes/DefaultSettings.php']
     secure_version: '1.25.3'
     regexp: ['\$wgVersion.*?(?P<version>1\.25\.[0-9.]{1,})']
-    cve: 'https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-October/000181.html'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8001 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8002 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8003 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8004 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8005 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8006 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8007 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8008 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8009 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-October/000181.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.24:
@@ -95,7 +103,7 @@ MediaWiki 1.24:
     location: ['/includes/DefaultSettings.php']
     secure_version: '1.24.4'
     regexp: ['\$wgVersion.*?(?P<version>1\.24\.[0-9.]{1,})']
-    cve: 'https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-October/000181.html'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8001 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8002 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8003 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8004 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8005 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8006 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8007 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8008 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8009 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-October/000181.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.23:
@@ -103,7 +111,7 @@ MediaWiki 1.23:
     location: ['/includes/DefaultSettings.php']
     secure_version: '1.23.11'
     regexp: ['\$wgVersion.*?(?P<version>1\.23\.[0-9.]{1,})']
-    cve: 'https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-October/000181.html'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8001 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8002 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8003 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8004 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8005 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8006 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8007 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8008 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8009 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-October/000181.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.22:
