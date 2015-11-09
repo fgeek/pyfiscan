@@ -33,6 +33,7 @@ Detects following software
 * Coppermine
 * Cotonti
 * Croogo
+* CubeCart
 * Dolibarr
 * Dotclear
 * Drupal
