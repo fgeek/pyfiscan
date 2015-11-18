@@ -1,0 +1,11 @@
+# URL: https://www.litecart.net/
+# CVE-2014-7183 1.2 http://seclists.org/bugtraq/2014/Oct/124 https://www.netsparker.com/xss-vulnerabilities-in-litecart/
+# CVE-2015-XXXX 1.3.3 http://blog.curesec.com/article/blog/LiteCart-132-Multiple-XSS-72.html
+LiteCart:
+  1:
+    location: ['/includes/app_header.inc.php']
+    secure_version: '1.3.3'
+    regexp: ['.*?define.*?PLATFORM_VERSION.*?(?P<version>[0-9.]+)']
+    cve: 'http://blog.curesec.com/article/blog/LiteCart-132-Multiple-XSS-72.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']

@@ -49,6 +49,7 @@ Detects following software
 * ImpressPages
 * Jamroom
 * Joomla
+* LiteCart
 * Magnolia
 * Mahara
 * MantisBT
