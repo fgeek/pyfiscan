@@ -477,3 +477,11 @@ WordPress plugin wppageflip:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-6652'
     fingerprint: detect_general
     post_processing: ['php6.fcgi']
+WordPress plugin users-ultra:
+  1:
+    location: ['/wp-content/plugins/users-ultra/readme.txt']
+    secure_version: '1.5.59'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'http://seclists.org/bugtraq/2015/Nov/93'
+    fingerprint: detect_general
+    post_processing: ['php6.fcgi']
