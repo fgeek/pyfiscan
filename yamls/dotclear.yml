@@ -2,11 +2,13 @@
 # CVE-2014-3781 2.6.3 http://karmainsecurity.com/KIS-2014-05 http://dotclear.org/blog/post/2014/05/16/Dotclear-2.6.3
 # CVE-2014-3782 2.6.3 http://karmainsecurity.com/KIS-2014-06 http://dotclear.org/blog/post/2014/05/16/Dotclear-2.6.3
 # CVE-2014-3783 2.6.3 http://karmainsecurity.com/KIS-2014-07 http://dotclear.org/blog/post/2014/05/16/Dotclear-2.6.3
+# CVE-2015-XXXX 2.8.2 http://blog.curesec.com/article/blog/dotclear-281-Code-Execution-93.html
+# CVE-2015-XXXX 2.8.2 http://blog.curesec.com/article/blog/dotclear-281-XSS-94.html
 Dotclear:
   1:
     location: ['/inc/prepend.php']
-    secure_version: '2.6.3'
+    secure_version: '2.8.2'
     regexp: ['define.*?DC_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3781 http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3782 http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3783 http://dotclear.org/blog/post/2014/05/16/Dotclear-2.6.3'
+    cve: 'http://dotclear.org/blog/post/2015/10/25/Dotclear-2.8.2 http://blog.curesec.com/article/blog/dotclear-281-Code-Execution-93.html http://blog.curesec.com/article/blog/dotclear-281-XSS-94.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
