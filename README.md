@@ -83,6 +83,7 @@ Detects following software
 * Trac
 * WikkaWiki
 * WordPress
+* X-Cart
 * Zenphoto
 * Zikula
 * Zimbra
