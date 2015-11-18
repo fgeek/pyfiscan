@@ -27,6 +27,7 @@ Detects following software
 * Bugzilla
 * Centreon
 * Claroline
+* ClipperCMS
 * CMSMS
 * Collabtive
 * Concrete5

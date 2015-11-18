@@ -1,0 +1,15 @@
+# URL: http://www.clippercms.com/ https://github.com/ClipperCMS/ClipperCMS fork of https://github.com/modxcms/evolution
+# CVE-2015-XXXX TODO http://seclists.org/fulldisclosure/2015/Nov/60
+# CVE-2015-XXXX TODO http://seclists.org/fulldisclosure/2015/Nov/61
+# CVE-2015-XXXX TODO http://seclists.org/fulldisclosure/2015/Nov/62
+# CVE-2015-XXXX TODO http://seclists.org/fulldisclosure/2015/Nov/63
+# CVE-2015-XXXX TODO http://seclists.org/fulldisclosure/2015/Nov/64
+# CVE-2015-XXXX TODO http://seclists.org/fulldisclosure/2015/Nov/65
+ClipperCMS:
+  1:
+    location: ['/manager/includes/version.inc.php']
+    secure_version: '1.3.1'
+    regexp: ['define.*?CMS_RELEASE_VERSION.*?(?P<version>[0-9.]+)']
+    cve: 'No release available yet http://seclists.org/fulldisclosure/2015/Nov/60 http://seclists.org/fulldisclosure/2015/Nov/61 http://seclists.org/fulldisclosure/2015/Nov/62 http://seclists.org/fulldisclosure/2015/Nov/63 http://seclists.org/fulldisclosure/2015/Nov/64 http://seclists.org/fulldisclosure/2015/Nov/65'  # 1.3.0 is the latest release
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
