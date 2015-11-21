@@ -111,6 +111,8 @@ Installation
     git clone https://github.com/fgeek/pyfiscan.git && cd pyfiscan
     pip2 install -r requirements.lst
 
+or you can use [BlackArch Linux](http://www.blackarch.org/).
+
 Notes
 -----
 
