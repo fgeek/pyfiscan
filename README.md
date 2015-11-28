@@ -61,6 +61,7 @@ Detects following software
 * MoinMoin
 * MyBB
 * Nibbleblog
+* Open Source Social Network
 * OpenCart
 * osDate
 * ownCloud
