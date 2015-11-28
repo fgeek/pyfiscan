@@ -24,6 +24,7 @@ Windows is not currently supported.
 Detects following software
 --------------------------
 
+* BigTree CMS
 * Bugzilla
 * Centreon
 * Claroline

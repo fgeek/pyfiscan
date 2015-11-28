@@ -1,0 +1,15 @@
+# URL: https://www.bigtreecms.org/ https://github.com/bigtreecms/BigTree-CMS/
+# CVE-2013-4879 ? http://osvdb.org/96007 HTB23165
+# CVE-2013-4880 ? http://osvdb.org/96008 HTB23165
+# CVE-2013-4881 ? http://osvdb.org/96009 HTB23165
+# CVE-2013-5313 ? http://osvdb.org/96446 https://github.com/bigtreecms/BigTree-CMS/commit/4b0faa90fa8b9e1776c86db716894dcd7e6b4834
+# CVE-2015-XXXX 4.2.4 http://blog.curesec.com/article/blog/BigTree-CMS-423-Multiple-Cross-Site-Scripting-Vulnerabilities-38.html
+# CVE-2015-XXXX 4.2.4 http://blog.curesec.com/article/blog/BigTree-CMS-423-Multiple-SQL-Injection-Vulnerabilities-39.html
+BigTree CMS:
+  1:
+    location: ['/core/version.php']
+    secure_version: '4.2.4'
+    regexp: ['.*?define.*?BIGTREE_VERSION.*?(?P<version>[0-9.]+)']
+    cve: 'http://blog.curesec.com/article/blog/BigTree-CMS-423-Multiple-Cross-Site-Scripting-Vulnerabilities-38.html http://blog.curesec.com/article/blog/BigTree-CMS-423-Multiple-SQL-Injection-Vulnerabilities-39.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
