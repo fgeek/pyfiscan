@@ -1,6 +1,6 @@
 # URL: https://www.litecart.net/
 # CVE-2014-7183 1.2 http://seclists.org/bugtraq/2014/Oct/124 https://www.netsparker.com/xss-vulnerabilities-in-litecart/
-# CVE-2015-XXXX 1.3.3 http://blog.curesec.com/article/blog/LiteCart-132-Multiple-XSS-72.html
+# CVE-2015-XXXX 1.3.3 http://blog.curesec.com/article/blog/LiteCart-132-Multiple-XSS-72.html http://lists.openwall.net/full-disclosure/2015/11/14/22
 LiteCart:
   1:
     location: ['/includes/app_header.inc.php']
