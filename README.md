@@ -71,6 +71,7 @@ Detects following software
 * PhpGedView
 * phpMyAdmin
 * Piwigo
+* Piwik
 * PmWiki
 * Roundcube
 * SaurusCMS
