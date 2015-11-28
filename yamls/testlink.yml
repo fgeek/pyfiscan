@@ -19,11 +19,13 @@
 # CVE-2014-8082 1.9.13  http://mantis.testlink.org/view.php?id=6609
 # CVE-2015-7390 1.9.14  https://packetstormsecurity.com/files/133890/NS-15-015.txt
 # CVE-2015-7391 1.9.14  https://packetstormsecurity.com/files/133891/NS-15-016.txt
+# CVE-2015-XXXX 1.9.15  http://www.openwall.com/lists/oss-security/2015/11/08/2
+# CVE-2015-XXXX 1.9.15  http://www.openwall.com/lists/oss-security/2015/11/08/3
 TestLink:
   1:
     location: ['/cfg/const.inc.php']
-    secure_version: '1.9.14'
+    secure_version: '1.9.15'
     regexp: ['define.*?TL_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7390 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7391'
+    cve: 'http://www.openwall.com/lists/oss-security/2015/11/08/2 http://www.openwall.com/lists/oss-security/2015/11/08/3'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
