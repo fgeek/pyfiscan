@@ -48,7 +48,7 @@ def generate(yamldir, includes):
         except AttributeError:  # empty file
             print('No data found inside: %s' % yamlfile)
         except yaml.scanner.ScannerError, e:  # syntax error
-            print('Error while loading YAML-file: %s' % e)
+            sys.exit('Error while loading YAML-file: %s' % e)
     return data
 
 
