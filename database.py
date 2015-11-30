@@ -20,8 +20,6 @@ def gen_yamlfile_locations(yamldir, includes):
         sys.exit('Location for YAML-files is not a directory: %s' % yamldir)
     for filename in scandir.scandir(yamldir):
         filename = filename.name
-        if not filename.endswith('.yml'):  # ignores upcoming fingerprints
-            continue
         if os.path.islink(yamldir + filename):
             continue
         if not os.path.isfile(yamldir + filename):
