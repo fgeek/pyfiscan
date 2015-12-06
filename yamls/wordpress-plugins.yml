@@ -525,3 +525,11 @@ WordPress plugin cta:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8350 https://www.htbridge.com/advisory/HTB23274'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin ultimate-member:
+  1:
+    location: ['/wp-content/plugins/ultimate-member/readme.txt']
+    secure_version: '1.3.29'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://web.nvd.nist.govview/vuln/detail?vulnId=CVE-2015-8354 https://www.htbridge.com/advisory/HTB23277'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
