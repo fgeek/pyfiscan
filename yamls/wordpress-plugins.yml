@@ -509,3 +509,11 @@ WordPress plugin gwolle-gb:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8351 https://www.htbridge.com/advisory/HTB23275'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin role-scoper:
+  1:
+    location: ['/wp-content/plugins/role-scoper/readme.txt']
+    secure_version: '1.3.67'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8353 https://www.htbridge.com/advisory/HTB23276'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
