@@ -476,7 +476,7 @@ WordPress plugin wppageflip:
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-6652'
     fingerprint: detect_general
-    post_processing: ['php6.fcgi']
+    post_processing: ['php5.fcgi']
 WordPress plugin users-ultra:
   1:
     location: ['/wp-content/plugins/users-ultra/readme.txt']
@@ -484,7 +484,7 @@ WordPress plugin users-ultra:
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'http://seclists.org/bugtraq/2015/Nov/93'
     fingerprint: detect_general
-    post_processing: ['php6.fcgi']
+    post_processing: ['php5.fcgi']
 WordPress plugin cm-download-manager:
   1:
     location: ['/wp-content/plugins/cm-download-manager/readme.txt']
@@ -492,7 +492,7 @@ WordPress plugin cm-download-manager:
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8877 https://github.com/nmap/nmap/pull/38'
     fingerprint: detect_general
-    post_processing: ['php6.fcgi']
+    post_processing: ['php5.fcgi']
 WordPress plugin cool-video-gallery:
   1:
     location: ['/wp-content/plugins/cool-video-gallery/readme.txt']
@@ -500,7 +500,7 @@ WordPress plugin cool-video-gallery:
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7527 http://www.vapidlabs.com/advisory.php?v=158'
     fingerprint: detect_general
-    post_processing: ['php6.fcgi']
+    post_processing: ['php5.fcgi']
 WordPress plugin gwolle-gb:
   1:
     location: ['/wp-content/plugins/gwolle-gb/readme.txt']
@@ -508,4 +508,4 @@ WordPress plugin gwolle-gb:
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8351 https://www.htbridge.com/advisory/HTB23275'
     fingerprint: detect_general
-    post_processing: ['php6.fcgi']
+    post_processing: ['php5.fcgi']
