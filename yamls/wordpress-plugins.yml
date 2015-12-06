@@ -498,6 +498,6 @@ WordPress plugin cool-video-gallery:
     location: ['/wp-content/plugins/cool-video-gallery/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7527'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7527 http://www.vapidlabs.com/advisory.php?v=158'
     fingerprint: detect_general
     post_processing: ['php6.fcgi']
