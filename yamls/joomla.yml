@@ -110,18 +110,19 @@
 # CVE-2015-7858 3.4.5   http://developer.joomla.org/security-centre/628-20151001-core-sql-injection.html
 # CVE-2015-7859 3.4.5   http://developer.joomla.org/security-centre/629-20151002-core-acl-violations.html
 # CVE-2015-7899 3.4.5   http://developer.joomla.org/security-centre/630-20151003-core-acl-violations.html
+# CVE-2015-8562 3.4.6   https://developer.joomla.org/security-centre/630-20151214-core-remote-code-execution-vulnerability.html https://www.joomla.org/announcements/release-news/5641-joomla-3-4-6-released.html https://blog.sucuri.net/2015/12/remote-command-execution-vulnerability-in-joomla.html https://www.viestintavirasto.fi/kyberturvallisuus/haavoittuvuudet/2015/haavoittuvuus-2015-120.html
 Joomla 3:
   1:
     location: ['/administrator/manifests/files/joomla.xml']
-    secure_version: '3.4.5'
+    secure_version: '3.4.6'
     regexp: ['[\t]<version>(?P<version>3\.[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7297 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7857 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7858 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7859 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7899 http://developer.joomla.org/security-centre/628-20151001-core-sql-injection.html http://developer.joomla.org/security-centre/629-20151002-core-acl-violations.html http://developer.joomla.org/security-centre/630-20151003-core-acl-violations.html'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8562 https://developer.joomla.org/security-centre/630-20151214-core-remote-code-execution-vulnerability.html https://www.joomla.org/announcements/release-news/5641-joomla-3-4-6-released.html https://blog.sucuri.net/2015/12/remote-command-execution-vulnerability-in-joomla.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Joomla 2.5:
   1:
     location: ['/administrator/manifests/files/joomla.xml']
-    secure_version: '3.4.5'
+    secure_version: '3.4.6'
     regexp: ['[\t]<version>(?P<version>2\.5\.[0-9]{1,})']
     cve: 'Joomla 2.5 is end of life. Please upgrade to 3.4.5 version.'
     fingerprint: detect_general
@@ -129,7 +130,7 @@ Joomla 2.5:
 Joomla 1.7:
   1:
     location: ['/includes/version.php']
-    secure_version: '3.4.5'
+    secure_version: '3.4.6'
     regexp: ['[\t]+public[\t|\s]\$RELEASE.*?(?P<version>1.7)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
     cve: 'Joomla 1.7 is end of life. Please upgrade to 3.4.5 version.'
     fingerprint: detect_joomla
@@ -137,7 +138,7 @@ Joomla 1.7:
 Joomla 1.6:
   1:
     location: ['/libraries/joomla/version.php']
-    secure_version: '3.4.5'
+    secure_version: '3.4.6'
     regexp: ['.*?RELEASE.*?(?P<version>1.6)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
     cve: 'Joomla 1.6 is end of life. Please upgrade to 3.4.5 version.'
     fingerprint: detect_joomla
@@ -145,7 +146,7 @@ Joomla 1.6:
 Joomla 1.5:
   1:
     location: ['/libraries/joomla/version.php']
-    secure_version: '3.4.5'
+    secure_version: '3.4.6'
     regexp: ['.*?RELEASE.*?(?P<version>1.5)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
     cve: 'Joomla 1.5 is end of life. Please upgrade to 3.4.5 version.'
     fingerprint: detect_joomla
@@ -153,7 +154,7 @@ Joomla 1.5:
 Joomla 1.0:
   1:
     location: ['/includes/version.php']
-    secure_version: '3.4.5'
+    secure_version: '3.4.6'
     regexp: ['[\t]+var.*?RELEASE.*?(?P<version>1.0)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
     cve: 'Joomla 1.0 is end of life. Please upgrade to 3.4.5 version.'
     fingerprint: detect_joomla
