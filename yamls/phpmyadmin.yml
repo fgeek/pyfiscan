@@ -89,7 +89,7 @@
 # PMASA-2015-2  CVE-2015-3902   4.4.6.1/4.3.13.1/4.2.13.3/4.0.10.10
 # PMASA-2015-3  CVE-2015-3903   4.4.6.1/4.3.13.1/4.2.13.3/4.0.10.10
 # PMASA-2015-4  CVE-2015-6830   4.4.14.1/4.3.13.2
-# PMASA-2015-5  CVE-2015-7873   4.5.1/4.4.15.1 CWE-20 not in pyfiscan scope
+# PMASA-2015-5  CVE-2015-7873   4.5.1/4.4.15.1
 phpMyAdmin:
   1:
     location: ['/libraries/Config.class.php']
