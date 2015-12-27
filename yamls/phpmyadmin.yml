@@ -90,11 +90,12 @@
 # PMASA-2015-3  CVE-2015-3903   4.4.6.1/4.3.13.1/4.2.13.3/4.0.10.10
 # PMASA-2015-4  CVE-2015-6830   4.4.14.1/4.3.13.2
 # PMASA-2015-5  CVE-2015-7873   4.5.1/4.4.15.1
+# PMASA-2015-6  CVE-2015-8669   4.5.3.1/4.4.15.2/4.0.10.12
 phpMyAdmin:
   1:
     location: ['/libraries/Config.class.php']
-    secure_version: '4.4.14.1'
+    secure_version: '4.5.3.1'
     regexp: ['.*?PMA_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-6830'
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8669'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
