@@ -34,6 +34,8 @@
 # CVE-2014-1572 4.5.6/4.4.6/4.2.11/4.0.15
 # CVE-2014-1573 4.5.6/4.4.6/4.2.11/4.0.15
 # N/A           4.5.6/4.4.6/4.2.11/4.0.15   https://bugzilla.mozilla.org/show_bug.cgi?id=1054702
+# CVE-2015-8508 TODO no fix yet
+# CVE-2015-8509 TODO no fix yet
 Bugzilla 4.4:
   1:
     location: ['/docs/en/xml/bugzilla.ent']
