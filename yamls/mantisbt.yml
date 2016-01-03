@@ -46,6 +46,7 @@
 # CVE-2014-9701 1.2.19 https://www.mantisbt.org/bugs/view.php?id=17362#c40613
 # CVE-2015-1042 1.2.19
 # CVE-2015-5059 TODO no release yet, contacted dregad 2015-07-14 https://mantisbt.org/bugs/view.php?id=19873
+# CVE-2016-XXXX TODO no release yet https://mantisbt.org/bugs/view.php?id=20277 http://www.openwall.com/lists/oss-security/2016/01/02/1
 MantisBT:
   1:
     location: ['/core/constant_inc.php']
