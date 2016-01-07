@@ -16,11 +16,12 @@
 # CVE-2015-6968 2.0.2   http://seclists.org/fulldisclosure/2015/Sep/6 https://blog.curesec.com/article/blog/Serendipity-201-Code-Execution-48.html http://blog.s9y.org/archives/265-Serendipity-2.0.2-Security-Fix-Release.html
 # CVE-2015-6969 2.0.2   http://seclists.org/fulldisclosure/2015/Sep/9 https://blog.curesec.com/article/blog/Serendipity-201-Persistent-XSS-51.html http://blog.s9y.org/archives/265-Serendipity-2.0.2-Security-Fix-Release.html
 # CVE-2015-6943 2.0.2   http://seclists.org/fulldisclosure/2015/Sep/10 https://blog.curesec.com/article/blog/Serendipity-201-Blind-SQL-Injection-52.html http://blog.s9y.org/archives/265-Serendipity-2.0.2-Security-Fix-Release.html
+# CVE-2015-8603 2.0.3   http://blog.s9y.org/archives/266-Serendipity-2.0.3-released.html https://www.netsparker.com/web-vulnerability-scanner/vulnerability-security-checks-index/crosssite-scripting-xss/
 Serendipity:
   1:
     location: ['/serendipity_config.inc.php']
-    secure_version: '2.0.2'
+    secure_version: '2.0.3'
     regexp: ['\$serendipity.*?version.*?(?P<version>[0-9.]+)']
-    cve: 'http://blog.s9y.org/archives/265-Serendipity-2.0.2-Security-Fix-Release.html https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-6943 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-6968 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-6969'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8603 http://blog.s9y.org/archives/266-Serendipity-2.0.3-released.html https://www.netsparker.com/web-vulnerability-scanner/vulnerability-security-checks-index/crosssite-scripting-xss/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
