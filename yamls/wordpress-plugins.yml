@@ -538,6 +538,6 @@ WordPress plugin wp-symposium-pro:
     location: ['/wp-content/plugins/wp-symposium-pro/readme.txt']
     secure_version: '16.1'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'http://seclists.org/bugtraq/2016/Jan/26'
+    cve: 'http://seclists.org/bugtraq/2016/Jan/26'  # CVE request http://www.openwall.com/lists/oss-security/2016/01/07/5
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
