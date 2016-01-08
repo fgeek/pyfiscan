@@ -144,7 +144,7 @@
 # CVE-2015-5714 4.3.1   https://wordpress.org/news/2015/09/wordpress-4-3-1/
 # CVE-2015-5715 4.3.1   https://wordpress.org/news/2015/09/wordpress-4-3-1/
 # CVE-2015-7989 4.3.1   https://wordpress.org/news/2015/09/wordpress-4-3-1/ https://github.com/WordPress/WordPress/commit/f91a5fd10ea7245e5b41e288624819a37adf290a
-# CVE-2016-XXXX 4.4.1   https://wordpress.org/news/2016/01/wordpress-4-4-1-security-and-maintenance-release/
+# CVE-2016-1564 4.4.1   https://wordpress.org/news/2016/01/wordpress-4-4-1-security-and-maintenance-release/
 WordPress:
   1:
     location: ['/wp-includes/version.php', '/wp-includes/vars.php']
