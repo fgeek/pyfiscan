@@ -546,6 +546,14 @@ WordPress plugin crony:
     location: ['/wp-content/plugins/crony/readme.txt']
     secure_version: '0.4.6'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://github.com/cybersecurityworks/Disclosed/issues/9'
+    cve: 'https://github.com/cybersecurityworks/Disclosed/issues/9'  # Asked status of CVE via email 2016-01-08
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-easy-gallery:
+  1:
+    location: ['/wp-content/plugins/wp-easy-gallery/readme.txt']
+    secure_version: '4.1.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'http://www.openwall.com/lists/oss-security/2016/01/26/4'  # CVE request
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
