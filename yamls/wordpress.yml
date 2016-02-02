@@ -145,18 +145,19 @@
 # CVE-2015-5715 4.3.1   https://wordpress.org/news/2015/09/wordpress-4-3-1/
 # CVE-2015-7989 4.3.1   https://wordpress.org/news/2015/09/wordpress-4-3-1/ https://github.com/WordPress/WordPress/commit/f91a5fd10ea7245e5b41e288624819a37adf290a
 # CVE-2016-1564 4.4.1   https://wordpress.org/news/2016/01/wordpress-4-4-1-security-and-maintenance-release/
+# CVE-2016-XXXX 4.4.2   https://wordpress.org/news/2016/02/wordpress-4-4-2-security-and-maintenance-release/ https://codex.wordpress.org/Version_4.4.2
 WordPress:
   1:
     location: ['/wp-includes/version.php', '/wp-includes/vars.php']
-    secure_version: '4.4.1'
+    secure_version: '4.4.2'
     regexp: ['\$wp_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1564 https://wordpress.org/news/2016/01/wordpress-4-4-1-security-and-maintenance-release/'
+    cve: 'https://wordpress.org/news/2016/02/wordpress-4-4-2-security-and-maintenance-release/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
   2:
     location: ['/b2-include/b2vars.php']
-    secure_version: '4.4.1'
+    secure_version: '4.4.2'
     regexp: ['\$b2_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1564 https://wordpress.org/news/2016/01/wordpress-4-4-1-security-and-maintenance-release/'
+    cve: 'https://wordpress.org/news/2016/02/wordpress-4-4-2-security-and-maintenance-release/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
