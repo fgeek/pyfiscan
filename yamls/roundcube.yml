@@ -25,6 +25,8 @@
 # CVE-2015-5381 1.1.2/1.0.6 https://roundcube.net/news/2015/06/05/updates-1.1.2-and-1.0.6-released/
 # CVE-2015-5382 1.1.2/1.0.6 https://roundcube.net/news/2015/06/05/updates-1.1.2-and-1.0.6-released/
 # CVE-2015-5383 1.1.2/1.0.6 https://roundcube.net/news/2015/06/05/updates-1.1.2-and-1.0.6-released/
+# CVE-2015-8793 1.1.2/1.0.6
+# CVE-2015-8794 1.1.2/1.0.6
 # CVE-2015-8105 1.1.3/1.0.7
 # CVE-2015-8770 1.1.4/1.0.8 https://roundcube.net/news/2015/12/26/updates-1.1.4-and-1.0.8-released/ https://www.htbridge.com/advisory/HTB23283
 Roundcube:
