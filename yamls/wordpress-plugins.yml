@@ -589,3 +589,11 @@ WordPress plugin wp-user-frontend:
     cve: 'http://seclists.org/bugtraq/2016/Feb/58'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin woocommerce-store-toolkit:
+  1:
+    location: ['/wp-content/plugins/woocommerce-store-toolkit/readme.txt']
+    secure_version: '1.5.7'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'http://seclists.org/bugtraq/2016/Feb/57'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
