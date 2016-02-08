@@ -581,3 +581,11 @@ WordPress plugin user-meta-manager:
     cve: 'http://seclists.org/bugtraq/2016/Feb/34 http://seclists.org/bugtraq/2016/Feb/35'  # CVE requested by Panagiotis Vagenas from MITRE
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wp-user-frontend:
+  1:
+    location: ['/wp-content/plugins/wp-user-frontend/readme.txt']
+    secure_version: '2.3.11'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'http://seclists.org/bugtraq/2016/Feb/58'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
