@@ -597,3 +597,11 @@ WordPress plugin woocommerce-store-toolkit:
     cve: 'http://seclists.org/bugtraq/2016/Feb/57'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin duplicator:
+  1:
+    location: ['/wp-content/plugins/duplicator/readme.txt']
+    secure_version: '1.1.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'http://www.ratiosec.com/2016/duplicator-wordpress-plugin-source-database-disclosure-via-csrf/'  # CVE requested by advisory creator
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
