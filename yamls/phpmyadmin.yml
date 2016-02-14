@@ -91,11 +91,20 @@
 # PMASA-2015-4  CVE-2015-6830   4.4.14.1/4.3.13.2
 # PMASA-2015-5  CVE-2015-7873   4.5.1/4.4.15.1
 # PMASA-2015-6  CVE-2015-8669   4.5.3.1/4.4.15.2/4.0.10.12
+# PMASA-2016-1  CVE-2016-2038   NFU
+# PMASA-2016-2  CVE-2016-2039   4.5.4/4.4.15.3/4.0.10.13
+# PMASA-2016-3  CVE-2016-2040   4.5.4/4.4.15.3/4.0.10.13
+# PMASA-2016-4  CVE-2016-1927   4.5.4/4.4.15.3/4.0.10.13
+# PMASA-2016-5  CVE-2016-2041   4.5.4/4.4.15.3/4.0.10.13
+# PMASA-2016-6  CVE-2016-2042   NFU full path disclosure
+# PMASA-2016-7  CVE-2016-2043   4.5.4/4.4.15.3
+# PMASA-2016-8  CVE-2016-2044   NFU full path disclosure
+# PMASA-2016-9  CVE-2016-2045   4.5.4
 phpMyAdmin:
   1:
     location: ['/libraries/Config.class.php']
-    secure_version: '4.5.3.1'
+    secure_version: '4.5.4'
     regexp: ['.*?PMA_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8669'
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1927 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2039 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2040 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2041 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2043 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2045'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
