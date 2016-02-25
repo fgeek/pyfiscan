@@ -629,3 +629,11 @@ WordPress plugin wp-ultimate-exporter:
     cve: 'http://seclists.org/bugtraq/2016/Feb/172'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin import-woocommerce:
+  1:
+    location: ['/wp-content/plugins/import-woocommerce/readme.txt']
+    secure_version: '1.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'http://seclists.org/bugtraq/2016/Feb/173'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
