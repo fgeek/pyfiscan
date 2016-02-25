@@ -613,3 +613,11 @@ WordPress plugin csv-import:
     cve: 'http://seclists.org/bugtraq/2016/Feb/170'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wp-advanced-importer:
+  1:
+    location: ['/wp-content/plugins/wp-advanced-importer/readme.txt']
+    secure_version: '2.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'http://seclists.org/bugtraq/2016/Feb/171'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
