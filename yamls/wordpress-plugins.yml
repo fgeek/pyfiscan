@@ -637,3 +637,11 @@ WordPress plugin import-woocommerce:
     cve: 'http://seclists.org/bugtraq/2016/Feb/173'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin extra-user-details:
+  1:
+    location: ['/wp-content/plugins/extra-user-details/readme.txt']
+    secure_version: '0.4.2.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'http://seclists.org/bugtraq/2016/Feb/166'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
