@@ -626,7 +626,7 @@ WordPress plugin wp-ultimate-exporter:
     location: ['/wp-content/plugins/wp-ultimate-exporter/Readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'http://seclists.org/bugtraq/2016/Feb/172'
+    cve: 'http://seclists.org/bugtraq/2016/Feb/172 http://seclists.org/bugtraq/2016/Feb/183'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin import-woocommerce:
