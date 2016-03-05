@@ -1,14 +1,14 @@
 # URL: http://www.jamroom.net/
 # CVE-2013-6804 Update Jamroom Search module to version 1.1.1 HTB23184
 # CVE-2014-5098 Update Jamroom Search module to version 1.2.2 HTB23224
-# CVE-2009-1318 N/A http://osvdb.org/53784
-# CVE-2010-2463 4.1.9 http://osvdb.org/65684
-# CVE-2012-XXXX 4.2.7 http://osvdb.org/79425 http://st2tea.blogspot.fi/2012/02/jamroom-cross-site-scripting.html http://secunia.com/advisories/48077/
+# CVE-2009-1318 N/A
+# CVE-2010-2463 4.1.9
+# CVE-2012-XXXX 4.2.7 http://st2tea.blogspot.fi/2012/02/jamroom-cross-site-scripting.html http://secunia.com/advisories/48077/
 Jamroom:
   1:
     location: ['/modules/jrCore/include.php']
     secure_version: '4.2.7'
     regexp: ['.*?version.*?(?P<version>[0-9.]+)']
-    cve: 'http://osvdb.org/79425 http://st2tea.blogspot.fi/2012/02/jamroom-cross-site-scripting.html http://secunia.com/advisories/48077/'
+    cve: 'http://st2tea.blogspot.fi/2012/02/jamroom-cross-site-scripting.html http://secunia.com/advisories/48077/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']

@@ -24,15 +24,15 @@
 # CVE-2012-2253
 # CVE-2012-2351
 # CVE-2012-6037
-# CVE-2013-4429 1.7.3 http://osvdb.org/98185 https://launchpad.net/mahara/1.7/1.7.3#release-notes
-# CVE-2013-4430 1.7.3 http://osvdb.org/98181
-# CVE-2013-4431 1.7.3 http://osvdb.org/98184
-# CVE-2013-4432 1.7.3 http://osvdb.org/98182
+# CVE-2013-4429 1.7.3 https://launchpad.net/mahara/1.7/1.7.3#release-notes
+# CVE-2013-4430 1.7.3
+# CVE-2013-4431 1.7.3
+# CVE-2013-4432 1.7.3
 Mahara:
   1:
     location: ['/htdocs/lib/version.php']
     secure_version: '1.7.3'
     regexp: ['\$config->release.*?(?P<version>[0-9.]+)']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4429 http://osvdb.org/98185 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4430 http://osvdb.org/98181 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4431 http://osvdb.org/98184 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4432 http://osvdb.org/98182'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4429 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4430 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4431 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4432'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']

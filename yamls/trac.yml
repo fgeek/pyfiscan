@@ -10,14 +10,14 @@
 # CVE-2006-5848 0.10.1 SA22789
 # CVE-2007-1405 0.10.3.1 SA24470
 # CVE-2008-3328 0.10.5 SA31231
-# CVE-2008-5646 0.11.2  http://osvdb.org/49847 SA32652
-# CVE-2008-5647 0.11.2  http://osvdb.org/49846 SA32652
-# CVE-2009-4405 0.11.6  http://osvdb.org/61244 SA37807
-# CVE-2010-5108 0.11.7  http://osvdb.org/63317 SA39123
+# CVE-2008-5646 0.11.2 SA32652
+# CVE-2008-5647 0.11.2 SA32652
+# CVE-2009-4405 0.11.6 SA37807
+# CVE-2010-5108 0.11.7 SA39123
 Trac:
   1:
     location: ['/Trac.egg-info/PKG-INFO']
     secure_version: '0.11.7'
     regexp: ['Version.*?(?P<version>[.0-9]{2,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-5108 http://osvdb.org/63317'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-5108'
     fingerprint: detect_general

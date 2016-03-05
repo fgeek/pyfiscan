@@ -1,24 +1,21 @@
 # NOTES:
-#   http://osvdb.org/92789 should be removed as duplicate of http://osvdb.org/92691
-#   http://osvdb.org/92690 should be removed as duplicate of http://osvdb.org/92740
-# CVE-2006-XXXX 2.1.2 http://osvdb.org/27998
-# CVE-2008-5296 1.5.10 http://osvdb.org/50089
-# CVE-2012-1113 3.0.3 http://osvdb.org/81101 http://galleryproject.org/gallery_3_0_3_and_gallery_2_3_2
-# CVE-2012-2405 3.0.3/2.3.2 http://osvdb.org/81512 http://secunia.com/advisories/48767/
-# CVE-2012-4342 3.0.4 http://osvdb.org/82964 http://galleryproject.org/gallery_3_0_4 http://secunia.com/advisories/49473/
-# CVE-2012-4343 3.0.4 http://osvdb.org/82965 http://galleryproject.org/gallery_3_0_4 http://secunia.com/advisories/49473/
-# CVE-2013-XXXX 3.0.5 http://osvdb.org/90599 http://osvdb.org/91412 http://osvdb.org/90590 http://osvdb.org/90599 http://osvdb.org/90600 http://osvdb.org/90601 http://osvdb.org/91410 http://osvdb.org/91411
-# CVE-2013-2087 3.0.7 http://osvdb.org/92691
-# CVE-2013-2087 3.0.7 http://osvdb.org/92740
-# CVE-2013-2138 3.0.8 http://osvdb.org/93911 http://osvdb.org/93912 http://galleryproject.org/gallery_3_0_8
-# CVE-2013-2240 3.0.9 http://osvdb.org/94663 SA53964 http://galleryproject.org/gallery_3_0_9
-# CVE-2013-2241 3.0.9 http://osvdb.org/94664 http://galleryproject.org/gallery_3_0_9
+# CVE-2006-XXXX 2.1.2
+# CVE-2008-5296 1.5.10
+# CVE-2012-1113 3.0.3 http://galleryproject.org/gallery_3_0_3_and_gallery_2_3_2
+# CVE-2012-2405 3.0.3/2.3.2 http://secunia.com/advisories/48767/
+# CVE-2012-4342 3.0.4 http://galleryproject.org/gallery_3_0_4 http://secunia.com/advisories/49473/
+# CVE-2012-4343 3.0.4 http://galleryproject.org/gallery_3_0_4 http://secunia.com/advisories/49473/
+# CVE-2013-2087 3.0.7
+# CVE-2013-2087 3.0.7
+# CVE-2013-2138 3.0.8 http://galleryproject.org/gallery_3_0_8
+# CVE-2013-2240 3.0.9 SA53964 http://galleryproject.org/gallery_3_0_9
+# CVE-2013-2241 3.0.9 http://galleryproject.org/gallery_3_0_9
 Gallery 3:
   1:
     location: ['/modules/gallery/helpers/gallery.php']
     secure_version: '3.0.9'
     regexp: ['.*?const.*?VERSION.*?(?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2240 http://osvdb.org/94663 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2241 http://osvdb.org/94664 http://galleryproject.org/gallery_3_0_9'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2240 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2241 http://galleryproject.org/gallery_3_0_9'
     fingerprint: detect_gallery
     post_processing: ['php5.fcgi']
 Gallery 2:
@@ -26,7 +23,7 @@ Gallery 2:
     location: ['/modules/core/module.inc']
     secure_version: '2.3.2'
     regexp: ['.*?setGalleryVersion.*?(?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-2405 http://osvdb.org/81512'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-2405'
     fingerprint: detect_gallery
     post_processing: ['php5.fcgi']
 Gallery 1:

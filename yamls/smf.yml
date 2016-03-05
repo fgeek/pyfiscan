@@ -59,6 +59,6 @@ SMF 2:
     location: ['/index.php']
     secure_version: '2.0.9'
     regexp: ['\$forum_version.*?(?P<version>[0-9.]{1,})']
-    cve: 'http://www.simplemachines.org/community/index.php?topic=528448.0 http://osvdb.org/113391 http://osvdb.org/113392 http://osvdb.org/113393 http://osvdb.org/116156'
+    cve: 'http://www.simplemachines.org/community/index.php?topic=528448.0'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
