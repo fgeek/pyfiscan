@@ -1,9 +1,12 @@
 # URL: http://dotclear.org/
+# CVE-2014-1613 2.6.2
 # CVE-2014-3781 2.6.3 http://karmainsecurity.com/KIS-2014-05 http://dotclear.org/blog/post/2014/05/16/Dotclear-2.6.3
 # CVE-2014-3782 2.6.3 http://karmainsecurity.com/KIS-2014-06 http://dotclear.org/blog/post/2014/05/16/Dotclear-2.6.3
 # CVE-2014-3783 2.6.3 http://karmainsecurity.com/KIS-2014-07 http://dotclear.org/blog/post/2014/05/16/Dotclear-2.6.3
-# CVE-2015-XXXX 2.8.2 http://blog.curesec.com/article/blog/dotclear-281-Code-Execution-93.html
-# CVE-2015-XXXX 2.8.2 http://blog.curesec.com/article/blog/dotclear-281-XSS-94.html
+# CVE-2014-5316 2.6.4
+# CVE-2015-5651 2.8.1
+# CVE-2015-XXXX 2.8.2 https://dotclear.org/blog/post/2015/10/25/Dotclear-2.8.2 http://blog.curesec.com/article/blog/dotclear-281-Code-Execution-93.html
+# CVE-2015-XXXX 2.8.2 https://dotclear.org/blog/post/2015/10/25/Dotclear-2.8.2 http://blog.curesec.com/article/blog/dotclear-281-XSS-94.html
 Dotclear:
   1:
     location: ['/inc/prepend.php']
