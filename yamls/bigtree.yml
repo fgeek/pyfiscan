@@ -3,6 +3,7 @@
 # CVE-2013-4880 ? http://osvdb.org/96008 HTB23165
 # CVE-2013-4881 ? http://osvdb.org/96009 HTB23165
 # CVE-2013-5313 ? http://osvdb.org/96446 https://github.com/bigtreecms/BigTree-CMS/commit/4b0faa90fa8b9e1776c86db716894dcd7e6b4834
+# CVE-2015-XXXX 4.2.3 https://github.com/bigtreecms/BigTree-CMS/commit/e13aa4795cdeb1ab1dc0f5fd0b66df2d1296591d https://github.com/bigtreecms/BigTree-CMS/issues/205 CVE request http://www.openwall.com/lists/oss-security/2015/06/26/5
 # CVE-2015-XXXX 4.2.4 http://blog.curesec.com/article/blog/BigTree-CMS-423-Multiple-Cross-Site-Scripting-Vulnerabilities-38.html
 # CVE-2015-XXXX 4.2.4 http://blog.curesec.com/article/blog/BigTree-CMS-423-Multiple-SQL-Injection-Vulnerabilities-39.html
 BigTree CMS:
