@@ -48,12 +48,13 @@ WordPress plugin cart66-lite:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9442 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9461'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# http://www.exploit-db.com/exploits/36576/ 2.5.4 CVE request http://www.openwall.com/lists/oss-security/2015/07/16/6
 WordPress plugin sp-client-document-manager:
   1:
     location: ['/wp-content/plugins/sp-client-document-manager/readme.txt']
-    secure_version: '2.5.4'
+    secure_version: '2.6.0.0'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'http://www.exploit-db.com/exploits/36576/'  # CVE request http://www.openwall.com/lists/oss-security/2015/07/16/6
+    cve: 'http://seclists.org/bugtraq/2016/Mar/39'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin floating-social-bar:
