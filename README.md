@@ -82,7 +82,6 @@ Detects following software
 * SquirrelMail
 * TestLink
 * TikiWiki
-* TinyTinyRSS
 * Trac
 * WikkaWiki
 * WordPress
