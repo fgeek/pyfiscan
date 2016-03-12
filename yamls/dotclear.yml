@@ -5,13 +5,13 @@
 # CVE-2014-3783 2.6.3 http://karmainsecurity.com/KIS-2014-07 http://dotclear.org/blog/post/2014/05/16/Dotclear-2.6.3
 # CVE-2014-5316 2.6.4
 # CVE-2015-5651 2.8.1
-# CVE-2015-XXXX 2.8.2 https://dotclear.org/blog/post/2015/10/25/Dotclear-2.8.2 http://blog.curesec.com/article/blog/dotclear-281-Code-Execution-93.html http://www.openwall.com/lists/oss-security/2016/03/05/4
-# CVE-2015-XXXX 2.8.2 https://dotclear.org/blog/post/2015/10/25/Dotclear-2.8.2 http://blog.curesec.com/article/blog/dotclear-281-XSS-94.html http://www.openwall.com/lists/oss-security/2016/03/05/4
+# CVE-2015-8831 2.8.2 https://hg.dotclear.org/dotclear/rev/65e65154dadf http://blog.curesec.com/article/blog/dotclear-281-XSS-94.html http://www.openwall.com/lists/oss-security/2016/03/05/4
+# CVE-2015-8832 2.8.2 https://hg.dotclear.org/dotclear/rev/198580bc3d80 http://blog.curesec.com/article/blog/dotclear-281-Code-Execution-93.html http://www.openwall.com/lists/oss-security/2016/03/05/4
 Dotclear:
   1:
     location: ['/inc/prepend.php']
     secure_version: '2.8.2'
     regexp: ['define.*?DC_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'http://dotclear.org/blog/post/2015/10/25/Dotclear-2.8.2 http://blog.curesec.com/article/blog/dotclear-281-Code-Execution-93.html http://blog.curesec.com/article/blog/dotclear-281-XSS-94.html'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8831 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8832 http://dotclear.org/blog/post/2015/10/25/Dotclear-2.8.2 http://blog.curesec.com/article/blog/dotclear-281-Code-Execution-93.html http://blog.curesec.com/article/blog/dotclear-281-XSS-94.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
