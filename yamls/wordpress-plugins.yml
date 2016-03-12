@@ -670,3 +670,11 @@ WordPress plugin custom-content-type-manager:
     cve: 'https://blog.sucuri.net/2016/03/when-wordpress-plugin-goes-bad.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wp-super-cache:
+  1:
+    location: ['/wp-content/plugins/wp-super-cache/readme.txt']
+    secure_version: '1.4.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'http://www.openwall.com/lists/oss-security/2015/04/05/1'  # CVE request
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
