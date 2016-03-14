@@ -710,3 +710,11 @@ WordPress plugin wp-comment-rating:
     cve: 'http://seclists.org/bugtraq/2016/Jan/175'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin ad-inserter:
+  1:
+    location: ['/wp-content/plugins/ad-inserter/readme.txt']
+    secure_version: '1.5.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'http://seclists.org/bugtraq/2015/May/43'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
