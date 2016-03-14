@@ -702,3 +702,11 @@ WordPress plugin wp-ultimate-csv-importer:
     cve: 'http://seclists.org/bugtraq/2016/Jan/129'  # Out scope for CVE
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wp-comment-rating:
+  1:
+    location: ['/wp-content/plugins/wp-comment-rating/readme.txt']
+    secure_version: '1.5.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'http://seclists.org/bugtraq/2016/Jan/175'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
