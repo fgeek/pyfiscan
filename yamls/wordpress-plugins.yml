@@ -686,3 +686,11 @@ WordPress plugin soundy-background-music:
     cve: 'http://seclists.org/bugtraq/2016/Mar/96'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin dw-question-answer:
+  1:
+    location: ['/wp-content/plugins/dw-question-answer/readme.txt']
+    secure_version: '1.4.2.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'http://seclists.org/bugtraq/2016/Mar/92'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
