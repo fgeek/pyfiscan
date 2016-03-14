@@ -694,3 +694,11 @@ WordPress plugin dw-question-answer:
     cve: 'http://seclists.org/bugtraq/2016/Mar/92'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wp-ultimate-csv-importer:
+  1:
+    location: ['/wp-content/plugins/wp-ultimate-csv-importer/readme.txt']
+    secure_version: '3.8.8'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'http://seclists.org/bugtraq/2016/Jan/129'  # Out scope for CVE
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
