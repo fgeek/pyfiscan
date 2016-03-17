@@ -39,7 +39,16 @@
 # https://drupal.org/SA-CORE-2015-002   CVE-2015-3231   7.38/6.36   http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3231
 # https://drupal.org/SA-CORE-2015-003   Requested       7.39/6.37
 # https://drupal.org/SA-CORE-2015-004   CVE-2015-7943   7.41 CWE-20 not in pyfiscan scope
-# https://drupal.org/SA-CORE-2016-001   Requested       8.0.4/7.43/6.38
+# https://drupal.org/SA-CORE-2016-001   CVE-2016-3162   8.0.4/7.43/6.38
+# https://drupal.org/SA-CORE-2016-001   CVE-2016-3163   8.0.4/7.43/6.38
+# https://drupal.org/SA-CORE-2016-001   CVE-2016-3164   8.0.4/7.43/6.38
+# https://drupal.org/SA-CORE-2016-001   CVE-2016-3165   8.0.4/7.43/6.38
+# https://drupal.org/SA-CORE-2016-001   CVE-2016-3166   8.0.4/7.43/6.38
+# https://drupal.org/SA-CORE-2016-001   CVE-2016-3167   8.0.4/7.43/6.38
+# https://drupal.org/SA-CORE-2016-001   CVE-2016-3168   8.0.4/7.43/6.38
+# https://drupal.org/SA-CORE-2016-001   CVE-2016-3169   8.0.4/7.43/6.38
+# https://drupal.org/SA-CORE-2016-001   CVE-2016-3170   8.0.4/7.43/6.38
+# https://drupal.org/SA-CORE-2016-001   CVE-2016-3171   8.0.4/7.43/6.38
 Drupal 8:
   1:
     location: ['/core/lib/Drupal.php']
