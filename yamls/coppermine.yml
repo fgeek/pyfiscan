@@ -1,5 +1,6 @@
 # URL: http://coppermine-gallery.net/
 # NOT-FOR-US: HTB22836 path disclosure
+# NOT-FOR-US: CVE-2015-6528 https://packetstormsecurity.com/files/133059/Coppermine-Photo-Gallery-1.5.36-Cross-Site-Scripting.html only affects instances where installation has not been completed.
 # CVE-2011-2476 1.5.12  http://osvdb.org/73129 http://www.openwall.com/lists/oss-security/2011/06/08/2
 # CVE-2012-1613 1.5.20  http://osvdb.org/80731 waraxe-2012-SA#i081
 # CVE-2012-1614 1.5.20  http://osvdb.org/80732 http://osvdb.org/80733 http://osvdb.org/80734 http://osvdb.org/80735 waraxe-2012-SA#081
