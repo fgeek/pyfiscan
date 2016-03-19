@@ -21,11 +21,12 @@
 # CVE-2015-5593 1.4.9   http://www.zenphoto.org/news/zenphoto-1.4.9
 # CVE-2015-5594 1.4.9   http://www.zenphoto.org/news/zenphoto-1.4.9
 # CVE-2015-5595 1.4.9   http://www.zenphoto.org/news/zenphoto-1.4.9
+# CVE-2016-XXXX 1.4.12  http://www.zenphoto.org/news/zenphoto-1.4.12 https://blog.curesec.com/article/blog/Zenphoto-1411-RFI-156.html
 Zenphoto:
   1:
     location: ['/zp-core/version.php']
-    secure_version: '1.4.9'
+    secure_version: '1.4.12'
     regexp: ["define.*?ZENPHOTO_VERSION.*?(?P<version>[0-9.]+)"]
-    cve: 'http://www.zenphoto.org/news/zenphoto-1.4.9 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5591 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5592 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5593 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5594 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5595'
+    cve: 'http://www.zenphoto.org/news/zenphoto-1.4.12 https://blog.curesec.com/article/blog/Zenphoto-1411-RFI-156.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
