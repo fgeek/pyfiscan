@@ -6,11 +6,12 @@
 # CVE-2014-2341 5.2.9
 # CVE-2015-XXXX 6.0.8 http://seclists.org/fulldisclosure/2015/Nov/24
 # CVE-2015-XXXX 6.0.8 http://seclists.org/fulldisclosure/2015/Nov/25
+# CVE-2016-XXXX 6.0.11 https://www.htbridge.com/advisory/HTB23298 https://forums.cubecart.com/topic/51079-cubecart-6011-released/
 CubeCart:
   1:
     location: ['/ini.inc.php']
-    secure_version: '6.0.8'
+    secure_version: '6.0.11'
     regexp: ['define.*?CC_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'http://seclists.org/fulldisclosure/2015/Nov/24 http://seclists.org/fulldisclosure/2015/Nov/25'
+    cve: 'https://www.htbridge.com/advisory/HTB23298 https://forums.cubecart.com/topic/51079-cubecart-6011-released/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
