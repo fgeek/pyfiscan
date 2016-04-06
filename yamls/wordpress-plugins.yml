@@ -726,3 +726,11 @@ WordPress plugin appointment-booking-calendar:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7319 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7320'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin user-role-editor:
+  1:
+    location: ['/wp-content/plugins/user-role-editor/readme.txt']
+    secure_version: '4.25'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://www.wordfence.com/blog/2016/04/user-role-editor-vulnerability/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
