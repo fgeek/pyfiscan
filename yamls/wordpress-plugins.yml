@@ -734,3 +734,12 @@ WordPress plugin user-role-editor:
     cve: 'https://www.wordfence.com/blog/2016/04/user-role-editor-vulnerability/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# CVE-2015-XXXX 1.216 http://seclists.org/bugtraq/2015/Apr/137
+WordPress plugin add-link-to-facebook:
+  1:
+    location: ['/wp-content/plugins/add-link-to-facebook/readme.txt']
+    secure_version: '2.2.8'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://wordpress.org/plugins/add-link-to-facebook/changelog/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
