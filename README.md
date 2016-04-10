@@ -1,4 +1,4 @@
-pyfiscan [![Build Status](https://travis-ci.org/fgeek/pyfiscan.svg?branch=master)]
+# pyfiscan [Build Status](https://travis-ci.org/fgeek/pyfiscan.svg?branch=master)
 
 ========
 
