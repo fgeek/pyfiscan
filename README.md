@@ -1,4 +1,5 @@
-pyfiscan
+pyfiscan [![Build Status](https://travis-ci.org/fgeek/pyfiscan.svg?branch=master)]
+
 ========
 
 About
