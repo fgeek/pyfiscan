@@ -1,0 +1,13 @@
+# URL: http://www.redaxo.org/
+# CVE-2006-2843
+# CVE-2006-2844
+# CVE-2006-2845
+# CVE-2012-3869 4.4.1 http://www.redaxo.org/de/download/changelog/redaxo-441/
+Redaxo:
+  1:
+    location: ['/redaxo/src/core/boot.php']
+    secure_version: '4.4.1'
+    regexp: ['rex::setProperty.*?(?P<version>[0-9.]+)']
+    cve: 'TODO'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']

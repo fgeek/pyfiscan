@@ -75,6 +75,7 @@ Detects following software
 * Piwigo
 * Piwik
 * PmWiki
+* Redaxo
 * Roundcube
 * SaurusCMS
 * Serendipity
