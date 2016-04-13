@@ -744,3 +744,11 @@ WordPress plugin add-link-to-facebook:
     cve: 'https://wordpress.org/plugins/add-link-to-facebook/changelog/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin robo-gallery:
+  1:
+    location: ['/wp-content/plugins/robo-gallery/readme.txt']
+    secure_version: '2.0.15'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'http://seclists.org/fulldisclosure/2016/Apr/41'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
