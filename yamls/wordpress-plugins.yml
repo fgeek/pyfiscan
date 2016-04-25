@@ -754,3 +754,11 @@ WordPress plugin robo-gallery:
     cve: 'http://seclists.org/fulldisclosure/2016/Apr/41'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin tweet-wheel:
+  1:
+    location: ['/wp-content/plugins/tweet-wheel/readme.txt']
+    secure_version: '1.0.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'http://seclists.org/bugtraq/2016/Apr/129'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
