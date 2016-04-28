@@ -150,15 +150,15 @@
 WordPress:
   1:
     location: ['/wp-includes/version.php', '/wp-includes/vars.php']
-    secure_version: '4.4.2'
+    secure_version: '4.5'
     regexp: ['\$wp_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2221 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2222 https://wordpress.org/news/2016/02/wordpress-4-4-2-security-and-maintenance-release/'
+    cve: 'https://codex.wordpress.org/Version_4.5'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
   2:
     location: ['/b2-include/b2vars.php']
-    secure_version: '4.4.2'
+    secure_version: '4.5'
     regexp: ['\$b2_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2221 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2222 https://wordpress.org/news/2016/02/wordpress-4-4-2-security-and-maintenance-release/'
+    cve: 'https://codex.wordpress.org/Version_4.5'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
