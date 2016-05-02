@@ -778,3 +778,11 @@ WordPress plugin cm-ad-changer:
     cve: 'https://0x62626262.wordpress.com/2016/04/21/cm-ad-changer-xss-vulnerability/ https://ad-changer.cminds.com/cm-ad-changer-plugin-free-edition-release-notes/ http://seclists.org/bugtraq/2016/Apr/133'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin echosign:
+  1:
+    location: ['/wp-content/plugins/echosign/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://0x62626262.wordpress.com/2016/04/21/echosign-plugin-for-wordpress-xss-vulnerability/ http://seclists.org/bugtraq/2016/Apr/130'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
