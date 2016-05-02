@@ -786,3 +786,11 @@ WordPress plugin echosign:
     cve: 'https://0x62626262.wordpress.com/2016/04/21/echosign-plugin-for-wordpress-xss-vulnerability/ http://seclists.org/bugtraq/2016/Apr/130'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin persian-woocommerce-sms:
+  1:
+    location: ['/wp-content/plugins/persian-woocommerce-sms/readme.txt']
+    secure_version: '3.3.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://0x62626262.wordpress.com/2016/04/21/persian-woocommerce-sms-xss-vulnerability/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
