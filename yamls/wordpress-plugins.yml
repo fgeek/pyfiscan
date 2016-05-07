@@ -802,3 +802,11 @@ WordPress plugin wordpress-seo:
     cve: 'https://www.wordfence.com/blog/2016/05/yoast-seo-vulnerability/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin ninja-forms:
+  1:
+    location: ['/wp-content/plugins/ninja-forms/readme.txt']
+    secure_version: '2.9.45'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://www.wordfence.com/blog/2016/05/ninja-forms-shell-upload-vulnerability-high-risk/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
