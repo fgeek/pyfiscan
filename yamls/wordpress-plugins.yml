@@ -805,7 +805,7 @@ WordPress plugin wordpress-seo:
 WordPress plugin ninja-forms:
   1:
     location: ['/wp-content/plugins/ninja-forms/readme.txt']
-    secure_version: '2.9.45'
+    secure_version: '2.9.44'  # 2.9.45 in advisory, but it was error
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://www.wordfence.com/blog/2016/05/ninja-forms-shell-upload-vulnerability-high-risk/'
     fingerprint: detect_general
