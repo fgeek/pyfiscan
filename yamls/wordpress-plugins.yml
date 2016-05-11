@@ -818,3 +818,11 @@ WordPress plugin wordfence:
     cve: 'https://www.wordfence.com/blog/2016/05/xss-vulnerability-wordfence-6-1-1-6-1-6-severity-6-1medium/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin event-registration:
+  1:
+    location: ['/wp-content/plugins/event-registration/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'http://seclists.org/bugtraq/2016/May/34'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
