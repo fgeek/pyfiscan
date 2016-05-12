@@ -826,3 +826,11 @@ WordPress plugin event-registration:
     cve: 'http://seclists.org/bugtraq/2016/May/34'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wp-favorite-posts:
+  1:
+    location: ['/wp-content/plugins/wp-favorite-posts/readme.txt']
+    secure_version: '1.6.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1160'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
