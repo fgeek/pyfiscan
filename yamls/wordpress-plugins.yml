@@ -834,3 +834,11 @@ WordPress plugin wp-favorite-posts:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1160'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin simple-photo-gallery:
+  1:
+    location: ['/wp-content/plugins/simple-photo-gallery/readme.txt']
+    secure_version: '1.8.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'http://www.rootlabs.com.br/xss-simple-photo-gallery/ https://wpvulndb.com/vulnerabilities/8476'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
