@@ -91,7 +91,13 @@
 # CVE-2015-8007 1.25.3/1.24.4/1.23.11 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-October/000181.html
 # CVE-2015-8008 1.25.3/1.24.4/1.23.11 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-October/000181.html
 # CVE-2015-8009 1.25.3/1.24.4/1.23.11 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-October/000181.html
-# CVE-2015-XXXX 1.26.1/1.25.4/1.24.5/1.23.12 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-December/000186.html
+# CVE-2015-8622 1.26.1/1.25.4/1.24.5/1.23.12 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-December/000186.html
+# CVE-2015-8623 1.26.1/1.25.4/1.24.5/1.23.12 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-December/000186.html
+# CVE-2015-8624 1.26.1/1.25.4/1.24.5/1.23.12 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-December/000186.html
+# CVE-2015-8625 1.26.1/1.25.4/1.24.5/1.23.12 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-December/000186.html
+# CVE-2015-8626 1.26.1/1.25.4/1.24.5/1.23.12 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-December/000186.html
+# CVE-2015-8627 1.26.1/1.25.4/1.24.5/1.23.12 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-December/000186.html
+# CVE-2015-8628 1.26.1/1.25.4/1.24.5/1.23.12 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-December/000186.html
 # CVE-2016-XXXX 1.26.3/1.25.6/1.23.14 https://lists.wikimedia.org/pipermail/mediawiki-announce/2016-May/000188.html
 MediaWiki 1.26:
   1:
