@@ -1,0 +1,12 @@
+# URL: http://kcfinder.sunhater.com/ https://github.com/sunhater/kcfinder
+# CVE-2014-XXXX https://github.com/sunhater/kcfinder/releases/tag/3.10
+# CVE-2014-3988 3.12 https://github.com/sunhater/kcfinder/releases/tag/3.12 https://github.com/sunhater/kcfinder/issues/40
+# CVE-XXXX-XXXX 3.20 https://github.com/sunhater/kcfinder/commit/628f05c4fda12e7a2c1496e94c8ea0c6afe87e14 https://github.com/sunhater/kcfinder/commit/be5968482633c4a4e6a3cd936e3036e8f4778ca9
+KCFinder:
+  1:
+    location: ['/core/class/uploader.php']
+    secure_version: '3.15'
+    regexp: ['    const VERSION.*?(?P<version>[0-9.]+)']
+    cve: 'https://github.com/sunhater/kcfinder/releases/tag/3.12'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']

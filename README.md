@@ -52,6 +52,7 @@ Detects following software
 * ImpressPages
 * Jamroom
 * Joomla
+* KCFinder
 * LiteCart
 * Magnolia
 * Mahara
