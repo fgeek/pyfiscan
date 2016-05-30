@@ -104,11 +104,14 @@
 # PMASA-2016-11 CVE-2016-2560   4.5.5.1/4.4.15.4/4.0.10.15
 # PMASA-2016-12 CVE-2016-2561   4.5.5.1/4.4.15.5
 # PMASA-2016-13 CVE-2016-2562   4.5.5.1
+# PMASA-2016-14 CVE-2016-5097   4.6.2
+# PMASA-2016-15 CVE-2016-5098   https://github.com/phpmyadmin/phpmyadmin/commit/d2dc9481d2af25b035778c67eaf0bfd2d2c59dd8
+# PMASA-2016-16 CVE-2016-5099   4.6.2/4.4.15.6
 phpMyAdmin:
   1:
     location: ['/libraries/Config.class.php']
-    secure_version: '4.5.5.1'
+    secure_version: '4.6.2'
     regexp: ['.*?PMA_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2559 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2560 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2561 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2562'
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-5097 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-5098 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-5099 https://www.phpmyadmin.net/security/PMASA-2016-14/ https://www.phpmyadmin.net/security/PMASA-2016-15/ https://www.phpmyadmin.net/security/PMASA-2016-16/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
