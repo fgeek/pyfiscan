@@ -34,29 +34,22 @@
 # CVE-2014-1572 4.5.6/4.4.6/4.2.11/4.0.15
 # CVE-2014-1573 4.5.6/4.4.6/4.2.11/4.0.15
 # N/A           4.5.6/4.4.6/4.2.11/4.0.15   https://bugzilla.mozilla.org/show_bug.cgi?id=1054702
-# CVE-2015-8508 TODO no fix yet
-# CVE-2015-8509 TODO no fix yet
-Bugzilla 4.4:
+# CVE-2015-8508 5.0.2/4.4.11/4.2.16 https://bugzilla.mozilla.org/show_bug.cgi?id=1221518 https://www.bugzilla.org/security/4.2.15/
+# CVE-2015-8509 5.0.2/4.4.11/4.2.16 https://bugzilla.mozilla.org/show_bug.cgi?id=1232785 https://www.bugzilla.org/security/4.2.15/
+# CVE-2016-2803 5.0.3/4.4.12 https://bugzilla.mozilla.org/show_bug.cgi?id=1253263 https://www.bugzilla.org/security/4.4.11/
+Bugzilla 5:
   1:
     location: ['/docs/en/xml/bugzilla.ent']
-    secure_version: '4.4.6'
-    regexp: ['<!ENTITY bz-ver.*?(?P<version>4\.[3-4]\.[0-9]+)']
-    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-1571 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-1572 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-1573'
+    secure_version: '5.0.3'
+    regexp: ['<!ENTITY bz-ver.*?(?P<version>5\.[0-9]+)']
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2803'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
-Bugzilla 4.2:
+Bugzilla 4:
   1:
-    location: ['/docs/en/xml/Bugzilla-Guide.xml']
-    secure_version: '4.2.11'
-    regexp: ['<!ENTITY bz-ver.*?(?P<version>4\.[1-2]\.[0-9]+)']
-    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-1571 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-1572 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-1573'
-    fingerprint: detect_general
-    post_processing: ['php5.fcgi']
-Bugzilla 4.0:
-  1:
-    location: ['/docs/en/xml/Bugzilla-Guide.xml']
-    secure_version: '4.0.15'
-    regexp: ['<!ENTITY bz-ver.*?(?P<version>4\.0\.[0-9]+)']
-    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-1571 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-1572 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-1573'
+    location: ['/docs/en/xml/bugzilla.ent']
+    secure_version: '4.4.12'
+    regexp: ['<!ENTITY bz-ver.*?(?P<version>4\.[0-9]+)']
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2803'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
