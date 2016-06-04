@@ -874,3 +874,11 @@ WordPress plugin jetpack:
     cve: 'https://www.wordfence.com/blog/2016/05/jetpack-vulnerability/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wp-mobile-detector:
+  1:
+    location: ['/wp-content/plugins/wp-mobile-detector/readme.txt']
+    secure_version: '3.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://blog.sucuri.net/2016/06/wp-mobile-detector-vulnerability-being-exploited-in-the-wild.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
