@@ -49,20 +49,21 @@
 # https://drupal.org/SA-CORE-2016-001   CVE-2016-3169   8.0.4/7.43/6.38
 # https://drupal.org/SA-CORE-2016-001   CVE-2016-3170   8.0.4/7.43/6.38
 # https://drupal.org/SA-CORE-2016-001   CVE-2016-3171   8.0.4/7.43/6.38
+# https://drupal.org/SA-CORE-2016-002   TODO            8.1.3/7.44
 Drupal 8:
   1:
     location: ['/core/lib/Drupal.php']
-    secure_version: '8.0.4'
+    secure_version: '8.1.3'
     regexp: ["  const VERSION = '(?P<version>[0-9.]+)"]
-    cve: 'https://drupal.org/SA-CORE-2016-001'
+    cve: 'https://drupal.org/SA-CORE-2016-002'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Drupal 7:
   1:
     location: ['/includes/bootstrap.inc']
-    secure_version: '7.43'
+    secure_version: '7.44'
     regexp: ['define.*?VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://drupal.org/SA-CORE-2016-001'
+    cve: 'https://drupal.org/SA-CORE-2016-002'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Drupal 6:
