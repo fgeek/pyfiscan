@@ -25,6 +25,7 @@ Windows is not currently supported.
 Detects following software
 --------------------------
 
+* ATutor
 * BigTree CMS
 * Bugzilla
 * Centreon
