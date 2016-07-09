@@ -899,3 +899,11 @@ WordPress plugin remote-upload:
     cve: 'http://bini.tech/wordpress-remote-upload-unrestricted-file-upload/ https://plugins.trac.wordpress.org/changeset/1435503/remote-upload'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin profile-builder:
+  1:
+    location: ['/wp-content/plugings/profile-builder/readme.txt']
+    secure_version: '2.4.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://www.wordfence.com/blog/2016/07/vulnerability-profile-builder/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
