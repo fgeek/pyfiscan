@@ -915,3 +915,11 @@ WordPress plugin all-in-one-seo-pack:
     cve: 'https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_in_all_in_one_seo_pack_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin squirrly-seo:
+  1:
+    location: ['/wp-content/plugings/squirrly-seo/readme.txt']
+    secure_version: '6.1.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://www.wordfence.com/blog/2016/07/2-vulnerabilities-squirrly-seo/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
