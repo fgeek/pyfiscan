@@ -931,3 +931,11 @@ WordPress plugin aryo-activity-log:
     cve: 'http://seclists.org/fulldisclosure/2016/Jul/25'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin yikes-inc-easy-mailchimp-extender:
+  1:
+    location: ['/wp-content/plugings/yikes-inc-easy-mailchimp-extender/readme.txt']
+    secure_version: '6.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://sumofpwn.nl/advisory/2016/easy_forms_for_mailchimp_local_file_inclusion_vulnerability.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
