@@ -948,3 +948,11 @@ WordPress plugin wp-fastest-cache:
     cve: 'https://sumofpwn.nl/advisory/2016/wp_fastest_cache_member_local_file_inclusion_vulnerability.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin master-slider:
+  1:
+    location: ['/wp-content/plugings/master-slider/readme.txt']
+    secure_version: '2.8.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_master_slider_wordpress_plugin.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
