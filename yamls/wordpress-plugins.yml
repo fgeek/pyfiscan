@@ -890,7 +890,7 @@ WordPress plugin wp-mobile-detector:
     post_processing: ['php5.fcgi']
 WordPress plugin ewww-image-optimizer:
   1:
-    location: ['/wp-content/plugings/ewww-image-optimizer/readme.txt']
+    location: ['/wp-content/plugins/ewww-image-optimizer/readme.txt']
     secure_version: '2.8.4'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://www.wordfence.com/blog/2016/06/vulnerability-ewww-image-optimizer/'
@@ -898,7 +898,7 @@ WordPress plugin ewww-image-optimizer:
     post_processing: ['php5.fcgi']
 WordPress plugin remote-upload:
   1:
-    location: ['/wp-content/plugings/remote-upload/readme.txt']
+    location: ['/wp-content/plugins/remote-upload/readme.txt']
     secure_version: '1.2.2'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'http://bini.tech/wordpress-remote-upload-unrestricted-file-upload/ https://plugins.trac.wordpress.org/changeset/1435503/remote-upload'
@@ -907,7 +907,7 @@ WordPress plugin remote-upload:
 # 2.4.1 https://www.wordfence.com/blog/2016/07/vulnerability-profile-builder/
 WordPress plugin profile-builder:
   1:
-    location: ['/wp-content/plugings/profile-builder/readme.txt']
+    location: ['/wp-content/plugins/profile-builder/readme.txt']
     secure_version: '2.4.2'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_profile_builder_wordpress_plugin.html'
@@ -916,7 +916,7 @@ WordPress plugin profile-builder:
 # 2.3.7 https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_in_all_in_one_seo_pack_wordpress_plugin.html
 WordPress plugin all-in-one-seo-pack:
   1:
-    location: ['/wp-content/plugings/all-in-one-seo-pack/readme.txt']
+    location: ['/wp-content/plugins/all-in-one-seo-pack/readme.txt']
     secure_version: '2.3.8'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://www.wordfence.com/blog/2016/07/new-xss-vulnerability-all-in-one-seo-pack/'
@@ -924,7 +924,7 @@ WordPress plugin all-in-one-seo-pack:
     post_processing: ['php5.fcgi']
 WordPress plugin squirrly-seo:
   1:
-    location: ['/wp-content/plugings/squirrly-seo/readme.txt']
+    location: ['/wp-content/plugins/squirrly-seo/readme.txt']
     secure_version: '6.1.5'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://www.wordfence.com/blog/2016/07/2-vulnerabilities-squirrly-seo/'
@@ -932,7 +932,7 @@ WordPress plugin squirrly-seo:
     post_processing: ['php5.fcgi']
 WordPress plugin aryo-activity-log:
   1:
-    location: ['/wp-content/plugings/aryo-activity-log/readme.txt']
+    location: ['/wp-content/plugins/aryo-activity-log/readme.txt']
     secure_version: '2.3.2'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'http://seclists.org/fulldisclosure/2016/Jul/25'
@@ -940,7 +940,7 @@ WordPress plugin aryo-activity-log:
     post_processing: ['php5.fcgi']
 WordPress plugin yikes-inc-easy-mailchimp-extender:
   1:
-    location: ['/wp-content/plugings/yikes-inc-easy-mailchimp-extender/readme.txt']
+    location: ['/wp-content/plugins/yikes-inc-easy-mailchimp-extender/readme.txt']
     secure_version: '6.1'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://sumofpwn.nl/advisory/2016/easy_forms_for_mailchimp_local_file_inclusion_vulnerability.html'
@@ -948,7 +948,7 @@ WordPress plugin yikes-inc-easy-mailchimp-extender:
     post_processing: ['php5.fcgi']
 WordPress plugin wp-fastest-cache:
   1:
-    location: ['/wp-content/plugings/wp-fastest-cache/readme.txt']
+    location: ['/wp-content/plugins/wp-fastest-cache/readme.txt']
     secure_version: '0.8.6.0'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://sumofpwn.nl/advisory/2016/wp_fastest_cache_member_local_file_inclusion_vulnerability.html'
@@ -956,7 +956,7 @@ WordPress plugin wp-fastest-cache:
     post_processing: ['php5.fcgi']
 WordPress plugin master-slider:
   1:
-    location: ['/wp-content/plugings/master-slider/readme.txt']
+    location: ['/wp-content/plugins/master-slider/readme.txt']
     secure_version: '2.8.0'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_master_slider_wordpress_plugin.html'
@@ -964,7 +964,7 @@ WordPress plugin master-slider:
     post_processing: ['php5.fcgi']
 WordPress plugin email-users:
   1:
-    location: ['/wp-content/plugings/email-users/readme.txt']
+    location: ['/wp-content/plugins/email-users/readme.txt']
     secure_version: '4.8.3'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_email_users_wordpress_plugin.html'
@@ -972,7 +972,7 @@ WordPress plugin email-users:
     post_processing: ['php5.fcgi']
 WordPress plugin markdown-on-save-improved:
   1:
-    location: ['/wp-content/plugings/markdown-on-save-improved/readme.txt']
+    location: ['/wp-content/plugins/markdown-on-save-improved/readme.txt']
     secure_version: '2.5.1'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-4812'
