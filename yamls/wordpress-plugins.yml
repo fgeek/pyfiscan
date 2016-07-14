@@ -994,3 +994,11 @@ WordPress plugin wordpress-popular-posts:
     cve: 'OVE-20160712-0017 https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_top_10___popular_posts_plugin_for_wordpress.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wp-noexternallinks:
+  1:
+    location: ['/wp-content/plugins/wp-noexternallinks/readme.txt']
+    secure_version: '3.5.16'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160712-0020 https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_wp_no_external_links_wordpress_plugin.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
