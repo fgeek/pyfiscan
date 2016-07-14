@@ -986,3 +986,11 @@ WordPress plugin simple-membership:
     cve: 'OVE-20160712-0016 https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_simple_membership_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wordpress-popular-posts:
+  1:
+    location: ['/wp-content/plugins/wordpress-popular-posts/readme.txt']
+    secure_version: '2.3.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160712-0017 https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_top_10___popular_posts_plugin_for_wordpress.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
