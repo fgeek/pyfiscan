@@ -292,12 +292,15 @@ WordPress plugin gravity-forms:
     cve: 'https://blog.sucuri.net/2015/04/security-advisory-xss-vulnerability-affecting-multiple-wordpress-plugins.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# CVE-2015-2973 1.4.18
+# CVE-2016-4826 1.8.3
+# CVE-2016-4827 1.8.3
 WordPress plugin usc-e-shop:
   1:
     location: ['/wp-content/plugins/usc-e-shop/readme.txt']
-    secure_version: '1.4.18'
+    secure_version: '1.8.3'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2973'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-4826 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-4827'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin mdc-private-message:
