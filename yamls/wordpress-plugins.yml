@@ -978,3 +978,11 @@ WordPress plugin markdown-on-save-improved:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-4812'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin simple-membership:
+  1:
+    location: ['/wp-content/plugins/simple-membership/readme.txt']
+    secure_version: '3.2.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160712-0016 https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_simple_membership_wordpress_plugin.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
