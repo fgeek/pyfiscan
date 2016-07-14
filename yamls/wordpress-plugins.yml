@@ -911,7 +911,7 @@ WordPress plugin profile-builder:
     location: ['/wp-content/plugins/profile-builder/readme.txt']
     secure_version: '2.4.2'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_profile_builder_wordpress_plugin.html'
+    cve: 'OVE-20160712-0014 https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_profile_builder_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 # 2.3.7 https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_in_all_in_one_seo_pack_wordpress_plugin.html
@@ -944,7 +944,7 @@ WordPress plugin yikes-inc-easy-mailchimp-extender:
     location: ['/wp-content/plugins/yikes-inc-easy-mailchimp-extender/readme.txt']
     secure_version: '6.1'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://sumofpwn.nl/advisory/2016/easy_forms_for_mailchimp_local_file_inclusion_vulnerability.html'
+    cve: 'OVE-20160712-0023 https://sumofpwn.nl/advisory/2016/easy_forms_for_mailchimp_local_file_inclusion_vulnerability.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin wp-fastest-cache:
@@ -952,7 +952,7 @@ WordPress plugin wp-fastest-cache:
     location: ['/wp-content/plugins/wp-fastest-cache/readme.txt']
     secure_version: '0.8.6.0'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://sumofpwn.nl/advisory/2016/wp_fastest_cache_member_local_file_inclusion_vulnerability.html'
+    cve: 'OVE-20160712-0022 https://sumofpwn.nl/advisory/2016/wp_fastest_cache_member_local_file_inclusion_vulnerability.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin master-slider:
@@ -960,7 +960,7 @@ WordPress plugin master-slider:
     location: ['/wp-content/plugins/master-slider/readme.txt']
     secure_version: '2.8.0'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_master_slider_wordpress_plugin.html'
+    cve: 'OVE-20160712-0013 https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_master_slider_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin email-users:
@@ -968,7 +968,7 @@ WordPress plugin email-users:
     location: ['/wp-content/plugins/email-users/readme.txt']
     secure_version: '4.8.3'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_email_users_wordpress_plugin.html'
+    cve: 'OVE-20160712-0012 https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_email_users_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin markdown-on-save-improved:
