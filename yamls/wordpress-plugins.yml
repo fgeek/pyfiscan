@@ -1011,3 +1011,11 @@ WordPress plugin wpgform:
     cve: 'OVE-20160712-0021 https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_google_forms_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wp-live-chat-support:
+  1:
+    location: ['/wp-content/plugins/wp-live-chat-support/readme.txt']
+    secure_version: '6.2.02'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160712-0008 https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_in_wp_live_chat_support_plugin.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
