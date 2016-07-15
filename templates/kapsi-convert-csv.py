@@ -10,12 +10,11 @@ try:
     import sys
     import csv
     import time
+    import re
     from admsikteeri import *
 except ImportError, e:
     sys.exit(e)
 
-
-home_location = '/mnt/users2/'
 
 def lookup_member_email(alias):
     """Fetches member email using member Unix-account ID. Return email."""
@@ -47,9 +46,9 @@ def read_csv(csv_file):
         reader = csv.reader(f, delimiter='|', quotechar='|')
         for row in reader:
             # row two is version file location
-            version_file_stripped = removePrefix(str(row[2]), str(home_location))
-            version_file_realpath = "~" + version_file_stripped
-            alias = version_file_stripped.split('/')[0]
+            version_file_stripped = re.sub(r'\/mnt\/webroots\/[0-9]', '', row[2])
+            version_file_realpath = re.sub(r'\/mnt\/webroots\/[0-9]', '/var/www/userhome', row[2])
+            alias = version_file_stripped.split('/')[1]
             """Data to new CSV"""
             member_email = lookup_member_email(alias)
             print('Returned: %s' % member_email)
