@@ -1,0 +1,8 @@
+WordPress theme colorway:
+  1:
+    location: ['/wp-content/themes/colorway/readme.txt']
+    secure_version: '3.4.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160712-0024 https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_colorway_wordpress_theme.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
