@@ -1032,7 +1032,7 @@ WordPress plugin code-snippets:
     location: ['/wp-content/plugins/code-snippets/readme.txt']
     secure_version: '2.7.0'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://sumofpwn.nl/advisory/2016/cross_site_scripting_in_code_snippets_wordpress_plugin.html'
+    cve: 'OVE-20160722-0006 https://sumofpwn.nl/advisory/2016/cross_site_scripting_in_code_snippets_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin woocommerce:
