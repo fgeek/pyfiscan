@@ -3,8 +3,8 @@ from pyfiscan import is_not_secure
 from database import Database
 
 class CompareVersions(unittest.TestCase):
-    def test_version_pairs(self):
-        """Testing that comparison of version numbers are correct."""
+    def test_version_comparison(self):
+        """Version comparison."""
         self.assertTrue(is_not_secure('2.1', '2.0.2'))
         self.assertTrue(is_not_secure('2.0.1', '2.0'))
         self.assertTrue(is_not_secure('2.0.1', '2.0.0'))
@@ -16,8 +16,8 @@ class CompareVersions(unittest.TestCase):
 
 
 class DatabaseHandlers(unittest.TestCase):
-    def test_can_load_issues_from_yaml(self):
-        """Can load fingerprint data from YAML files."""
+    def test_load_database(self):
+        """Loads fingerprint data from YAML files."""
         database = Database('yamls/')
         if len(database.issues) == 0:
             self.assertEqual(1, 0, 'Empty database.')
