@@ -1052,3 +1052,11 @@ WordPress plugin icegram:
     cve: 'OVE-20160712-0032 https://sumofpwn.nl/advisory/2016/cross_site_request_forgery_in_icegram_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin player:
+  1:
+    location: ['/wp-content/plugins/player/readme.txt']
+    secure_version: '1.5.18'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160712-0004 https://sumofpwn.nl/advisory/2016/multiple_sql_injection_vulnerabilities_in_wordpress_video_player.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
