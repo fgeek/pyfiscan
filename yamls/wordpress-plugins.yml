@@ -809,12 +809,13 @@ WordPress plugin wordpress-seo:
     cve: 'https://www.wordfence.com/blog/2016/05/yoast-seo-vulnerability/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# 2.9.44 https://www.wordfence.com/blog/2016/05/ninja-forms-shell-upload-vulnerability-high-risk/ 2.9.45 in advisory, but it was error
 WordPress plugin ninja-forms:
   1:
     location: ['/wp-content/plugins/ninja-forms/readme.txt']
-    secure_version: '2.9.44'  # 2.9.45 in advisory, but it was error
+    secure_version: '2.9.52'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://www.wordfence.com/blog/2016/05/ninja-forms-shell-upload-vulnerability-high-risk/'
+    cve: 'OVE-20160714-0017 https://sumofpwn.nl/advisory/2016/multiple_cross_site_scripting_vulnerabilities_in_ninja_forms_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin wordfence:
