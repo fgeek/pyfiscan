@@ -1060,3 +1060,11 @@ WordPress plugin player:
     cve: 'OVE-20160712-0004 https://sumofpwn.nl/advisory/2016/multiple_sql_injection_vulnerabilities_in_wordpress_video_player.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin paid-memberships-pro:
+  1:
+    location: ['/wp-content/plugins/paid-memberships-pro/readme.txt']
+    secure_version: '1.8.10'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160714-0015 https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_paid_memberships_pro_wordpress_plugin.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
