@@ -1104,3 +1104,11 @@ WordPress plugin wordpress-form-manager:
     cve: 'http://appcheck-ng.com/remote-command-execution-in-wordpress-form-manager-plugin-cve-2015-7806/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wp-file-upload:
+  1:
+    location: ['/wp-content/plugins/wp-file-upload/readme.txt']
+    secure_version: '3.9.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://wordpress.org/plugins/wp-file-upload/changelog/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
