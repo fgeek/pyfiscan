@@ -1128,3 +1128,11 @@ WordPress plugin all-in-one-wp-security-and-firewall:
     cve: 'OVE-20160719-0001 https://sumofpwn.nl/advisory/2016/multiple_vulnerabilities_in_all_in_one_wp_security___firewall_plugin_login_captcha.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin easy-testimonials:
+  1:
+    location: ['/wp-content/plugins/easy-testimonials/readme.txt']
+    secure_version: '1.37'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160712-0010 https://sumofpwn.nl/advisory/2016/stored_cross_site_scripting_vulnerability_in_easy_testimonials_wordpress_plugin.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
