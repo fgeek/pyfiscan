@@ -1120,3 +1120,11 @@ WordPress plugin aryo-activity-log:
     cve: 'OVE-20160712-0037 https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_in_wordpress_activity_log_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin all-in-one-wp-security-and-firewall:
+  1:
+    location: ['/wp-content/plugins/all-in-one-wp-security-and-firewall/readme.txt']
+    secure_version: '4.1.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160719-0001 https://sumofpwn.nl/advisory/2016/multiple_vulnerabilities_in_all_in_one_wp_security___firewall_plugin_login_captcha.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
