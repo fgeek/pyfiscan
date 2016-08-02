@@ -1160,12 +1160,13 @@ WordPress plugin booking:
     cve: 'OVE-20160714-0002 https://sumofpwn.nl/advisory/2016/sql_injection_vulnerability_in_booking_calendar_wordpress_plugin.html OVE-20160714-0003 https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_booking_calendar_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# 2.1.23 OVE-20160724-0023 https://sumofpwn.nl/advisory/2016/cross_site_scripting_in_contact_bank_wordpress_plugin.html
 WordPress plugin contact-bank:
   1:
     location: ['/wp-content/plugins/contact-bank/readme.txt']
-    secure_version: '2.1.23'
+    secure_version: '2.1.24'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'OVE-20160724-0023 https://sumofpwn.nl/advisory/2016/cross_site_scripting_in_contact_bank_wordpress_plugin.html'
+    cve: 'https://wordpress.org/plugins/contact-bank/changelog/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin wp-live-chat-support:
