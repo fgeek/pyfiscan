@@ -1157,7 +1157,7 @@ WordPress plugin booking:
     location: ['/wp-content/plugins/booking/readme.txt']
     secure_version: '6.2.1'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'OVE-20160714-0002 https://sumofpwn.nl/advisory/2016/sql_injection_vulnerability_in_booking_calendar_wordpress_plugin.html'
+    cve: 'OVE-20160714-0002 https://sumofpwn.nl/advisory/2016/sql_injection_vulnerability_in_booking_calendar_wordpress_plugin.html OVE-20160714-0003 https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_booking_calendar_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin contact-bank:
