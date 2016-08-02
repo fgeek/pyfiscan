@@ -1168,3 +1168,11 @@ WordPress plugin contact-bank:
     cve: 'OVE-20160724-0023 https://sumofpwn.nl/advisory/2016/cross_site_scripting_in_contact_bank_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wp-live-chat-support:
+  1:
+    location: ['/wp-content/plugins/wp-live-chat-support/readme.txt']
+    secure_version: '6.2.04'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160724-0010 https://sumofpwn.nl/advisory/2016/stored_cross_site_scripting_vulnerability_in_wp_live_chat_support_wordpress_plugin.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
