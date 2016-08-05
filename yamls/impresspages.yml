@@ -1,12 +1,13 @@
 # URL: http://www.impresspages.org/
-# CVE-2010-XXXX N/A     http://osvdb.org/64994
-# CVE-2011-4932 1.0.13  http://osvdb.org/75783 NGS00109 Unspecified RCE
-# CVE-2013-XXXX 3.7     http://osvdb.org/99220 http://osvdb.org/99221 http://osvdb.org/99222 http://osvdb.org/99223 http://osvdb.org/99274
+# CVE-2011-4932 1.0.13  NGS00109 Unspecified RCE
+# CVE-2013-XXXX 3.7 http://www.zeroscience.mk/en/vulnerabilities/ZSL-2013-5157.php
+# CVE-2013-XXXX 3.7 http://www.zeroscience.mk/en/vulnerabilities/ZSL-2013-5158.php
+# CVE-2013-XXXX 3.7 http://www.zeroscience.mk/en/vulnerabilities/ZSL-2013-5159.php
 ImpressPages:
   1:
     location: ['/Ip/Application.php']
     secure_version: '3.7'
     regexp: ['.*?(?P<version>[0-9.]+).*?']
-    cve: 'http://osvdb.org/99220 http://osvdb.org/99221 http://osvdb.org/99222 http://osvdb.org/99223 http://osvdb.org/99274'
+    cve: 'http://www.zeroscience.mk/en/vulnerabilities/ZSL-2013-5157.php http://www.zeroscience.mk/en/vulnerabilities/ZSL-2013-5158.php http://www.zeroscience.mk/en/vulnerabilities/ZSL-2013-5159.php'
     fingerprint: detect_withoutnewlines
     post_processing: ['php5.fcgi']

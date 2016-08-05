@@ -5,14 +5,13 @@
 # CVE-2012-4526 2.4.5 (2012-4525 was failed fix)
 # CVE-2013-1468
 # CVE-2013-1469
-# CVE-2013-XXXX ? http://osvdb.org/101408
-# CVE-2013-XXXX ? http://osvdb.org/101409
 # CVE-2014-1980 2.4.6
 # CVE-2014-3900 2.6.3
-# CVE-2014-4613/CVE-2014-4614 2.6.2 http://osvdb.org/103774 http://piwigo.org/releases/2.6.2
-# CVE-2014-4648 2.6.3 http://piwigo.org/releases/2.6.3 http://osvdb.org/108063
+# CVE-2014-4613 2.6.2 http://piwigo.org/releases/2.6.2
+# CVE-2014-4614 2.6.2 http://piwigo.org/releases/2.6.2
+# CVE-2014-4648 2.6.3 http://piwigo.org/releases/2.6.3
 # CVE-2014-4649 2.7.0beta2 http://piwigo.org/bugs/view.php?id=3089 not yet released 2014-08-25
-# CVE-2014-9115 2.7.2/2.6.4/2.5.5 http://osvdb.org/114581 http://seclists.org/fulldisclosure/2014/Nov/23 http://piwigo.org/forum/viewtopic.php?id=24850
+# CVE-2014-9115 2.7.2/2.6.4/2.5.5 http://seclists.org/fulldisclosure/2014/Nov/23 http://piwigo.org/forum/viewtopic.php?id=24850
 # CVE-2015-1441 2.7.3/2.6.5/2.5.6 http://piwigo.org/forum/viewtopic.php?id=25016
 # CVE-2015-1517 2.7.4 http://piwigo.org/releases/2.7.4
 # CVE-2015-2034 2.7.4

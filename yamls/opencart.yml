@@ -1,13 +1,13 @@
 # URL: http://www.opencart.com/
 # http://forum.opencart.com/viewtopic.php?t=5792
-# CVE-2010-1610 1.4.8 http://osvdb.org/62083 http://blog.visionsource.org/2010/01/28/opencart-csrf-vulnerability/
-# CVE-2013-1891 N/A http://osvdb.org/91500 http://www.waraxe.us/advisory-98.html
-# CVE-2012-XXXX N/A http://www.waraxe.us/advisory-84.html http://osvdb.org/81240 http://osvdb.org/81241 http://osvdb.org/81242 http://osvdb.org/81243 http://osvdb.org/81238 http://osvdb.org/81239
-# CVE-2014-XXXX N/A http://osvdb.org/100740
+# CVE-2010-1610 1.4.8 http://blog.visionsource.org/2010/01/28/opencart-csrf-vulnerability/
+# CVE-2013-1891 N/A http://www.waraxe.us/advisory-98.html
+# CVE-2012-XXXX N/A http://www.waraxe.us/advisory-84.html
 # CVE-2014-3990 2.0.0.0 http://karmainsecurity.com/KIS-2014-08
 # CVE-2015-4671 2.1.0.2 https://github.com/opencart/opencart/commit/303fa88fe664ded4bf8753b997abd916f0a3c03f
 # TODO: http://www.juniper.net/security/auto/vulnerabilities/vuln34724.html "OpenCart 'index.php' Local File Include Vulnerability"
 # TODO: http://seclists.org/fulldisclosure/2015/Nov/21 http://blog.curesec.com/article/blog/OpenCart-2031-CSRF-66.html no cve, "This issue was already discovered in 2013 by Saadat Ullah, but new versions of OpenCart are still vulnerable as no fix has been released."
+# http://seclists.org/bugtraq/2016/Apr/61
 OpenCart:
   1:
     location: ['/admin/index.php']

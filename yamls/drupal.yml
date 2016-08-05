@@ -1,6 +1,6 @@
 # URL: https://www.drupal.org/
 # NOTE: http://openconcept.ca/drupal-security-guide
-# N/A                                   CVE-2012-2922   7.15    http://osvdb.org/81817
+# N/A                                   CVE-2012-2922   7.15
 # https://drupal.org/SA-CORE-2012-001   CVE-2012-0825   7.11/6.23
 # https://drupal.org/SA-CORE-2012-001   CVE-2012-0826   7.11/6.23
 # https://drupal.org/SA-CORE-2012-001   CVE-2012-0827   7.11/6.23
@@ -18,25 +18,25 @@
 # https://drupal.org/SA-CORE-2013-001   CVE-2013-0245   7.19/6.28
 # https://drupal.org/SA-CORE-2013-001   CVE-2013-0246   7.19/6.28
 # https://drupal.org/SA-CORE-2013-002   CVE-2013-0316   7.20
-# https://drupal.org/SA-CORE-2013-003   CVE-2013-6385   7.24/6.29   http://osvdb.org/100036
-# https://drupal.org/SA-CORE-2013-003   CVE-2013-6386   7.24/6.29   http://osvdb.org/100037
-# https://drupal.org/SA-CORE-2013-003   CVE-2013-6387   7.24/6.29   http://osvdb.org/100033
-# https://drupal.org/SA-CORE-2013-003   CVE-2013-6388   7.24/6.29   http://osvdb.org/100034
-# https://drupal.org/SA-CORE-2013-003   CVE-2013-6389   7.24/6.29   http://osvdb.org/100035
-# https://drupal.org/SA-CORE-2014-001   CVE-2014-1475   7.26/6.30   http://osvdb.org/102124
-# https://drupal.org/SA-CORE-2014-001   CVE-2014-1476   7.26/6.30   http://osvdb.org/102125
-# https://drupal.org/SA-CORE-2014-002   CVE-2014-2983   7.27/6.31   http://osvdb.org/106004
-# https://drupal.org/SA-CORE-2014-003   CVE-2014-5019/CVE-2014-5020/CVE-2014-5021/CVE-2014-5022 7.29/6.32 http://osvdb.org/109237 http://osvdb.org/109236 http://osvdb.org/109238 http://osvdb.org/109284
+# https://drupal.org/SA-CORE-2013-003   CVE-2013-6385   7.24/6.29
+# https://drupal.org/SA-CORE-2013-003   CVE-2013-6386   7.24/6.29
+# https://drupal.org/SA-CORE-2013-003   CVE-2013-6387   7.24/6.29
+# https://drupal.org/SA-CORE-2013-003   CVE-2013-6388   7.24/6.29
+# https://drupal.org/SA-CORE-2013-003   CVE-2013-6389   7.24/6.29
+# https://drupal.org/SA-CORE-2014-001   CVE-2014-1475   7.26/6.30
+# https://drupal.org/SA-CORE-2014-001   CVE-2014-1476   7.26/6.30
+# https://drupal.org/SA-CORE-2014-002   CVE-2014-2983   7.27/6.31
+# https://drupal.org/SA-CORE-2014-003   CVE-2014-5019/CVE-2014-5020/CVE-2014-5021/CVE-2014-5022 7.29/6.32
 # https://drupal.org/SA-CORE-2014-004   CVE-2014-5265/CVE-2014-5266/CVE-2014-5267
 # https://drupal.org/SA-CORE-2014-005   CVE-2014-3704   7.31
 # https://drupal.org/SA-CORE-2014-006   CVE-2014-9015/CVE-2014-9016 7.34/6.34
-# https://drupal.org/SA-CORE-2015-001   CVE-2015-2559   7.35/6.35   http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2559
-# https://drupal.org/SA-CORE-2015-001   CVE-2015-2749   7.35/6.35   http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2749
-# https://drupal.org/SA-CORE-2015-001   CVE-2015-2750   7.35/6.35   http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2750
-# https://drupal.org/SA-CORE-2015-002   CVE-2015-3234   7.38/6.36   http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3234
-# https://drupal.org/SA-CORE-2015-002   CVE-2015-3232   7.38/6.36   http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3232
-# https://drupal.org/SA-CORE-2015-002   CVE-2015-3233   7.38/6.36   http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3233
-# https://drupal.org/SA-CORE-2015-002   CVE-2015-3231   7.38/6.36   http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3231
+# https://drupal.org/SA-CORE-2015-001   CVE-2015-2559   7.35/6.35
+# https://drupal.org/SA-CORE-2015-001   CVE-2015-2749   7.35/6.35
+# https://drupal.org/SA-CORE-2015-001   CVE-2015-2750   7.35/6.35
+# https://drupal.org/SA-CORE-2015-002   CVE-2015-3234   7.38/6.36
+# https://drupal.org/SA-CORE-2015-002   CVE-2015-3232   7.38/6.36
+# https://drupal.org/SA-CORE-2015-002   CVE-2015-3233   7.38/6.36
+# https://drupal.org/SA-CORE-2015-002   CVE-2015-3231   7.38/6.36
 # https://drupal.org/SA-CORE-2015-003   Requested       7.39/6.37
 # https://drupal.org/SA-CORE-2015-004   CVE-2015-7943   7.41 CWE-20 not in pyfiscan scope
 # https://drupal.org/SA-CORE-2016-001   CVE-2016-3162   8.0.4/7.43/6.38

@@ -1,9 +1,5 @@
 # osCommerce http://www.oscommerce.com/
 # CVE-2014-XXXX 2.3.4   https://www.exploit-db.com/exploits/34582/
-# OSVDB 112348 2.3.4    http://osvdb.org/show/osvdb/112348
-# OSVDB 112349 2.3.4    http://osvdb.org/show/osvdb/112349
-# OSVDB 112353 2.3.4    http://osvdb.org/show/osvdb/112353
-# OSVDB 112360 2.3.4    http://osvdb.org/show/osvdb/112360
 osCommerce 2.3:
   1:
     location: ['/includes/version.php']

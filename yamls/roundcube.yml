@@ -9,17 +9,18 @@
 # CVE-2011-1491
 # CVE-2011-1492
 # CVE-2011-2937
-# CVE-2011-4078 0.5.4 http://osvdb.org/77047
+# CVE-2011-4078 0.5.4
 # CVE-2012-1253
 # CVE-2012-3507
-# CVE-2012-3508 N/A   http://osvdb.org/84741
-# CVE-2012-4668 0.8.1 http://osvdb.org/85142
-# CVE-2012-6121 0.8.5 http://osvdb.org/90175 http://osvdb.org/90177
+# CVE-2012-3508 N/A
+# CVE-2012-4668 0.8.1
+# CVE-2012-6121 0.8.5
+# CVE-2012-6121 0.8.5
 # CVE-2013-1904 0.8.6
-# CVE-2013-5646 0.9.3 http://osvdb.org/96722 http://roundcube.net/news/2013/08/21/update-0.9.3-released/
-# CVE-2013-6172 0.9.5/0.8.7 http://roundcube.net/news/2013/10/21/security-updates-095-and-087/ http://trac.roundcube.net/ticket/1489382 http://osvdb.org/98895
-# CVE-2014-N/A  N/A http://osvdb.org/105639 http://trac.roundcube.net/ticket/1489729 http://seclists.org/oss-sec/2014/q2/55
-# CVE-2014-N/A  1.0.0 http://osvdb.org/105486 http://roundcube.net/news/2014/04/07/roundcube-webmail-1.0.0-released/
+# CVE-2013-5646 0.9.3 http://roundcube.net/news/2013/08/21/update-0.9.3-released/
+# CVE-2013-6172 0.9.5/0.8.7 http://roundcube.net/news/2013/10/21/security-updates-095-and-087/ http://trac.roundcube.net/ticket/1489382
+# CVE-2014-XXXX N/A http://trac.roundcube.net/ticket/1489729 http://seclists.org/oss-sec/2014/q2/55
+# CVE-2014-XXXX 1.0.0 http://roundcube.net/news/2014/04/07/roundcube-webmail-1.0.0-released/
 # CVE-2014-9587 1.0.4   http://roundcube.net/news/2014/12/18/update-1.0.4-released/ http://lists.roundcube.net/pipermail/announce/2014-December/000127.html
 # CVE-2015-1433 1.0.5   http://roundcube.net/news/2015/01/24/security-update-1.0.5/ http://trac.roundcube.net/ticket/1490227
 # CVE-2015-2180 1.1.0 https://github.com/roundcube/roundcubemail/issues/4757
@@ -33,6 +34,8 @@
 # CVE-2015-8794 1.1.2/1.0.6
 # CVE-2015-8864 1.1.5/1.0.9 https://roundcube.net/news/2016/04/20/updates-1.1.5-and-1.0.9-published https://github.com/roundcube/roundcubemail/issues/4949 https://github.com/roundcube/roundcubemail/commit/40d7342dd9c9bd2a1d613edc848ed95a4d71aa18 https://github.com/roundcube/roundcubemail/commit/7bbefdb63b12e2344cf1cb87aeb6e3933b4063e0
 # CVE-2016-4069 1.1.5/1.0.9 https://roundcube.net/news/2016/04/20/updates-1.1.5-and-1.0.9-published https://github.com/roundcube/roundcubemail/issues/4957 https://github.com/roundcube/roundcubemail/commit/4a408843b0ef816daf70a472a02b78cd6073a4d5 https://github.com/roundcube/roundcubemail/commit/699af1e5206ed9114322adaa3c25c1c969640a53
+# CVE-2016-4068 TODO
+# CVE-2016-5103 TODO http://www.openwall.com/lists/oss-security/2016/05/25/8 https://github.com/roundcube/roundcubemail/pull/5241 https://github.com/roundcube/roundcubemail/issues/5240
 Roundcube:
   1:
     location: ['/program/include/iniset.php']

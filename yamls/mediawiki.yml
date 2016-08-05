@@ -14,41 +14,41 @@
 # CVE-2014-3455 extension. not going to add yet. maybe in future
 # CVE-2009-4570
 # CVE-2009-4589
-# CVE-2010-1150 1.15.3      http://osvdb.org/63570 SA39333
-# CVE-2010-1189 1.15.2      http://osvdb.org/62798 SA38856
-# CVE-2010-1190 1.15.2      http://osvdb.org/62799 SA38856
-# CVE-2011-0537 1.16.2      http://osvdb.org/70798,70799
-# CVE-2011-1578 1.16.5      http://osvdb.org/74619 SA44142
-# CVE-2011-1579 1.16.3      http://osvdb.org/74620 SA44142
-# CVE-2011-1580 1.16.3      http://osvdb.org/74621 SA44142
-# CVE-2011-1587 1.16.5      http://osvdb.org/74619 SA44142
-# CVE-2011-1765 1.16.5      http://osvdb.org/74619 SA44142
-# CVE-2011-1766 1.16.5      http://osvdb.org/74613 SA44142
-# CVE-2011-4360 1.17.1      http://osvdb.org/77364 SA47029 http://lists.wikimedia.org/pipermail/mediawiki-announce/2011-November/000104.html
-# CVE-2011-4361 1.17.1      http://osvdb.org/77365 SA47029 http://lists.wikimedia.org/pipermail/mediawiki-announce/2011-November/000104.html
-# CVE-2012-0046 1.17.2      http://osvdb.org/78260 SA47547 http://svn.wikimedia.org/svnroot/mediawiki/tags/REL1_17_2/phase3/RELEASE-NOTES http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-January/000106.html http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-January/000107.html
-# CVE-2012-1578 1.17.3 or 1.18.2 http://osvdb.org/80361 http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000109.html http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000110.html
-# CVE-2012-1579 1.17.3 or 1.18.2 http://osvdb.org/80362 http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000109.html http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000110.html
-# CVE-2012-1580 1.17.3 or 1.18.2 http://osvdb.org/80364 http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000109.html http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000110.html
-# CVE-2012-1581 1.17.3 or 1.18.2 http://osvdb.org/80365 http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000109.html http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000110.html
-# CVE-2012-1582 1.17.3 or 1.18.2 http://osvdb.org/80363 http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000109.html http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000110.html
-# CVE-2012-5391 1.20.1/1.19.3 http://osvdb.org/87928 SA51424
-# CVE-2012-5395 1.20.1/1.19.3 http://osvdb.org/87928 SA51424
+# CVE-2010-1150 1.15.3      SA39333
+# CVE-2010-1189 1.15.2      SA38856
+# CVE-2010-1190 1.15.2      SA38856
+# CVE-2011-0537 1.16.2
+# CVE-2011-1578 1.16.5      SA44142
+# CVE-2011-1579 1.16.3      SA44142
+# CVE-2011-1580 1.16.3      SA44142
+# CVE-2011-1587 1.16.5      SA44142
+# CVE-2011-1765 1.16.5      SA44142
+# CVE-2011-1766 1.16.5      SA44142
+# CVE-2011-4360 1.17.1      SA47029 http://lists.wikimedia.org/pipermail/mediawiki-announce/2011-November/000104.html
+# CVE-2011-4361 1.17.1      SA47029 http://lists.wikimedia.org/pipermail/mediawiki-announce/2011-November/000104.html
+# CVE-2012-0046 1.17.2      SA47547 http://svn.wikimedia.org/svnroot/mediawiki/tags/REL1_17_2/phase3/RELEASE-NOTES http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-January/000106.html http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-January/000107.html
+# CVE-2012-1578 1.17.3 or 1.18.2 http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000109.html http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000110.html
+# CVE-2012-1579 1.17.3 or 1.18.2 http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000109.html http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000110.html
+# CVE-2012-1580 1.17.3 or 1.18.2 http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000109.html http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000110.html
+# CVE-2012-1581 1.17.3 or 1.18.2 http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000109.html http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000110.html
+# CVE-2012-1582 1.17.3 or 1.18.2 http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000109.html http://lists.wikimedia.org/pipermail/mediawiki-announce/2012-March/000110.html
+# CVE-2012-5391 1.20.1/1.19.3 SA51424
+# CVE-2012-5395 1.20.1/1.19.3 SA51424
 # CVE-2013-1816 1.20.3/1.19.4 http://www.mediawiki.org/wiki/Release_notes/1.20 http://www.mediawiki.org/wiki/Release_notes/1.19
 # CVE-2013-1817 1.20.3/1.19.4 http://www.mediawiki.org/wiki/Release_notes/1.20 http://www.mediawiki.org/wiki/Release_notes/1.19
 # CVE-2013-1818 1.20.3/1.19.4 http://www.mediawiki.org/wiki/Release_notes/1.20 http://www.mediawiki.org/wiki/Release_notes/1.19
 # CVE-2013-1951 1.20.4/1.19.5
 # CVE-2013-2031 1.20.5/1.19.6 http://lists.wikimedia.org/pipermail/mediawiki-announce/2013-April/000129.html
 # CVE-2013-2032 1.20.5/1.19.6 http://lists.wikimedia.org/pipermail/mediawiki-announce/2013-April/000129.html
-# CVE-2013-2114 1.20.6/1.19.7 http://osvdb.org/93629
-# CVE-2013-4301 1.21.2/1.20.7/1.19.8    http://osvdb.org/96913 http://secunia.com/advisories/54715/
-# CVE-2013-4302 1.21.2/1.20.7/1.19.8    http://osvdb.org/96912 http://secunia.com/advisories/54715/
-# CVE-2013-4303 1.21.2/1.20.7/1.19.8    http://osvdb.org/96911 http://secunia.com/advisories/54715/
-# CVE-2013-4567 1.21.3/1.20.8/1.19.9    http://osvdb.org/99943 http://secunia.com/advisories/55743/ http://lists.wikimedia.org/pipermail/mediawiki-announce/2013-November/000135.html
-# CVE-2013-4568 1.21.3/1.20.8/1.19.9    http://osvdb.org/99943 http://secunia.com/advisories/55743/ http://lists.wikimedia.org/pipermail/mediawiki-announce/2013-November/000135.html
+# CVE-2013-2114 1.20.6/1.19.7
+# CVE-2013-4301 1.21.2/1.20.7/1.19.8    http://secunia.com/advisories/54715/
+# CVE-2013-4302 1.21.2/1.20.7/1.19.8    http://secunia.com/advisories/54715/
+# CVE-2013-4303 1.21.2/1.20.7/1.19.8    http://secunia.com/advisories/54715/
+# CVE-2013-4567 1.21.3/1.20.8/1.19.9    http://secunia.com/advisories/55743/ http://lists.wikimedia.org/pipermail/mediawiki-announce/2013-November/000135.html
+# CVE-2013-4568 1.21.3/1.20.8/1.19.9    http://secunia.com/advisories/55743/ http://lists.wikimedia.org/pipermail/mediawiki-announce/2013-November/000135.html
 # CVE-2013-4570 1.22.1/1.21.4/1.19.10
 # CVE-2013-4571 1.22.1/1.21.4/1.19.10
-# CVE-2013-4572 1.21.3/1.20.8/1.19.9    http://osvdb.org/99970 http://secunia.com/advisories/55743/ http://lists.wikimedia.org/pipermail/mediawiki-announce/2013-November/000135.html
+# CVE-2013-4572 1.21.3/1.20.8/1.19.9    http://secunia.com/advisories/55743/ http://lists.wikimedia.org/pipermail/mediawiki-announce/2013-November/000135.html
 # CVE-2013-4574 1.22.1/1.21.4/1.19.10
 # CVE-2013-6451 1.22.1/1.21.4/1.19.10
 # CVE-2013-6452 1.22.1/1.21.4/1.19.10
@@ -62,7 +62,7 @@
 # CVE-2014-2244 1.22.3/1.21.6/1.19.12 https://gerrit.wikimedia.org/r/#/q/Idf985e4e69c2f11778a8a90503914678441cb3fb,n,z
 # CVE-2014-2665 1.22.5/1.21.8/1.19.14 http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-March/000145.html
 # CVE-2014-2853 1.22.6/1.21.9 http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-April/000149.html
-# CVE-2014-3966 1.22.7/1.21.10/1.19.16 http://osvdb.org/107528 http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-May/000151.html
+# CVE-2014-3966 1.22.7/1.21.10/1.19.16 http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-May/000151.html
 # N/A           1.23.1/1.22.8/1.21.11/1.19.17   http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-June/000154.html
 # CVE-2014-5241/CVE-2014-5242/CVE-2014-5243 1.23.2/1.22.9/1.19.18 http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-July/000157.html
 # CVE-2014-7199 1.23.4/1.22.11/1.19.19  https://lists.wikimedia.org/pipermail/mediawiki-announce/2014-September/000161.html

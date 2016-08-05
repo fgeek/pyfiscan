@@ -1,19 +1,12 @@
 # URL: http://www.teamst.org/ http://sourceforge.net/projects/testlink/
 # Version: testlink-1.9.7/cfg/const.inc.php:define('TL_VERSION', '1.9.7 (Ghost)');
-# CVE-2005-XXXX 1.5.Beta1   http://osvdb.org/66079
-# CVE-2007-6006 1.7.1   http://osvdb.org/42211 http://secunia.com/advisories/27600/
-# CVE-2007-XXXX 1.7.1   http://osvdb.org/42212
-# CVE-2008-5807 1.8 RC1 http://osvdb.org/50306 http://osvdb.org/50307
-# CVE-2009-4237 1.8.5   http://osvdb.org/60914 http://osvdb.org/60915 http://osvdb.org/60916 http://osvdb.org/60917 http://osvdb.org/60918 http://osvdb.org/60921 http://osvdb.org/60981
-# CVE-2009-4238 1.8.5   http://osvdb.org/60919 http://osvdb.org/60920
-# CVE-2010-XXXX 1.9.3   http://osvdb.org/61700
-# CVE-2010-XXXX 1.9.3   http://osvdb.org/61701
-# CVE-2012-0938 1.9.3   http://osvdb.org/79450 http://osvdb.org/79451 http://osvdb.org/79452 http://osvdb.org/79453 http://osvdb.org/79454
-# CVE-2012-0939 1.9.3   http://osvdb.org/79448 http://osvdb.org/79447 http://osvdb.org/79449
-# CVE-2012-2275 1.9.4   http://osvdb.org/84712 https://www.htbridge.com/advisory/HTB23088
-# CVE-2012-XXXX         http://osvdb.org/85446 !
-# CVE-2012-XXXX 1.9.4   http://osvdb.org/84711
-# CVE-2012-XXXX 1.9.4   http://osvdb.org/84713
+# CVE-2007-6006 1.7.1   http://secunia.com/advisories/27600/
+# CVE-2008-5807 1.8 RC1
+# CVE-2009-4237 1.8.5
+# CVE-2009-4238 1.8.5
+# CVE-2012-0938 1.9.3
+# CVE-2012-0939 1.9.3
+# CVE-2012-2275 1.9.4   https://www.htbridge.com/advisory/HTB23088
 # CVE-2014-5308 1.9.12  http://seclists.org/fulldisclosure/2014/Oct/11
 # CVE-2014-8081 1.9.13  http://mantis.testlink.org/view.php?id=6651
 # CVE-2014-8082 1.9.13  http://mantis.testlink.org/view.php?id=6609

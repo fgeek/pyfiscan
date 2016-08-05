@@ -1,7 +1,7 @@
 # http://owncloud.org/about/security/policy/
 # https://github.com/owncloud/core/wiki/Maintenance-and-Release-Schedule
 # Advisory URL: http://owncloud.org/about/security/advisories/oC-SA-XXXX-XXX/
-# ownCloud ID       CVE             Fixed in        OSVDB                   ownCloud security advisory URL
+# ownCloud ID       CVE             Fixed in        ownCloud security advisory URL
 # N/A               CVE-2012-5336   4.0.8
 # N/A               CVE-2012-5056   4.0.8
 # N/A               CVE-2012-5057   4.0.8
@@ -9,13 +9,13 @@
 # oC-SA-2013-005    CVE-2013-0302   4.0.12
 # oC-SA-2013-006    CVE-2013-0303/CVE-2013-7344 4.5.7
 # oC-SA-2013-007    CVE-2013-0304   4.5.7
-# oC-SA-2013-014    CVE-2013-1942   5.0.4           http://osvdb.org/92254
-# oC-SA-2013-015    CVE-2013-1941   5.0.4           http://osvdb.org/92289
-# oC-SA-2013-016    CVE-2013-1939   5.0.4           http://osvdb.org/92266
-# oC-SA-2013-017    CVE-2013-1967   5.0.5/4.5.10    http://osvdb.org/92525
-# oC-SA-2013-018    CVE-2013-1963   5.0.5/4.5.10    http://osvdb.org/92645  https://owncloud.org/about/security/advisories/oC-SA-2013-018/
-# oC-SA-2013-019    CVE-2013-2045   5.0.6           http://osvdb.org/93384 http://owncloud.org/about/security/advisories/oC-SA-2013-019/
-# oC-SA-2013-019    CVE-2013-2046   4.5.11          http://osvdb.org/93383 http://owncloud.org/about/security/advisories/oC-SA-2013-019/
+# oC-SA-2013-014    CVE-2013-1942   5.0.4
+# oC-SA-2013-015    CVE-2013-1941   5.0.4
+# oC-SA-2013-016    CVE-2013-1939   5.0.4
+# oC-SA-2013-017    CVE-2013-1967   5.0.5/4.5.10
+# oC-SA-2013-018    CVE-2013-1963   5.0.5/4.5.10    https://owncloud.org/about/security/advisories/oC-SA-2013-018/
+# oC-SA-2013-019    CVE-2013-2045   5.0.6           http://owncloud.org/about/security/advisories/oC-SA-2013-019/
+# oC-SA-2013-019    CVE-2013-2046   4.5.11          http://owncloud.org/about/security/advisories/oC-SA-2013-019/
 # oC-SA-2013-020
 # oC-SA-2013-021
 # oC-SA-2013-022

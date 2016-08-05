@@ -34,23 +34,23 @@
 # CVE-2010-0997 0.7.20  SA39013
 # CVE-2010-2098 0.7.22  SA39498
 # CVE-2010-2099 0.7.22  SA39498
-# CVE-2010-4757 0.7.23  http://osvdb.org/67367 SA41034
-# CVE-2010-5084 0.7.23  http://osvdb.org/67368 SA41034
-# CVE-2011-0457 0.7.23  http://osvdb.org/67367 SA41034
+# CVE-2010-4757 0.7.23  SA41034
+# CVE-2010-5084 0.7.23  SA41034
+# CVE-2011-0457 0.7.23  SA41034
 # CVE-2011-1513 0.7.24  BugtraqID:50339 OSVD:77042
 #               0.7.25  SA41597 HTB2260
 #               0.7.25  SA44061
-# CVE-2011-4946 0.7.26  http://osvdb.org/73120 SA44968 HTB23004
+# CVE-2011-4946 0.7.26  SA44968 HTB23004
 #   http://e107.svn.sourceforge.net/viewvc/e107/trunk/e107_0.7/e107_admin/users_extended.php?revision=12306&view=markup
 #   http://e107.svn.sourceforge.net/viewvc/e107/trunk/e107_0.7/e107_admin/users_extended.php?r1=12225&r2=12306
 #   http://e107.org/news.php?extend.884.2
 #   http://wiki.e107.org/index.php?title=Release_Notes_0.7.26
-# CVE-2011-4947 0.7.25  http://osvdb.org/80992 SA44968 HTB23004
+# CVE-2011-4947 0.7.25  SA44968 HTB23004
 #               0.7.26  This is not fixed yet. SVN revision 12375 is fix
-# CVE-2011-4920 1.0.0   http://osvdb.org/78047-78049 SA46706
-# CVE-2011-4921 1.0.0   http://osvdb.org/78050
-# CVE-2012-6433 1.0.2   http://osvdb.org/88862
-# CVE-2012-6434 1.0.3   http://osvdb.org/88908
+# CVE-2011-4920 1.0.0   SA46706
+# CVE-2011-4921 1.0.0
+# CVE-2012-6433 1.0.2
+# CVE-2012-6434 1.0.3
 # CVE-2013-2750 1.0.3
 # CVE-2013-7305 TODO fixed in http://sourceforge.net/p/e107/svn/13114 but there is no release fixing, which includes this patch
 # CVE-2014-1846 TODO

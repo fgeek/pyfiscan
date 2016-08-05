@@ -1,8 +1,6 @@
 # URL: http://sourceforge.net/projects/jara/
-# CVE-2011-4094 http://osvdb.org/76484
-# CVE-2011-4095 http://osvdb.org/83330
-# CVE-2011-XXXX http://osvdb.org/83345
-# CVE-2011-XXXX http://osvdb.org/83346
+# CVE-2011-4094
+# CVE-2011-4095
 Jara:
   1:
     location: ['/_README.txt']
