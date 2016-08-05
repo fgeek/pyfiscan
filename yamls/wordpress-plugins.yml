@@ -934,12 +934,13 @@ WordPress plugin squirrly-seo:
     cve: 'https://www.wordfence.com/blog/2016/07/2-vulnerabilities-squirrly-seo/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# 2.3.2 http://seclists.org/fulldisclosure/2016/Jul/25
 WordPress plugin aryo-activity-log:
   1:
     location: ['/wp-content/plugins/aryo-activity-log/readme.txt']
-    secure_version: '2.3.2'
+    secure_version: '2.3.3'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'http://seclists.org/fulldisclosure/2016/Jul/25'
+    cve: 'OVE-20160724-0022 https://sumofpwn.nl/advisory/2016/cross_site_scripting_in_activity_log_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 # OVE-20160712-0023 6.1 https://sumofpwn.nl/advisory/2016/easy_forms_for_mailchimp_local_file_inclusion_vulnerability.html
