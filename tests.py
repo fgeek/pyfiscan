@@ -13,6 +13,8 @@ class CompareVersions(unittest.TestCase):
         self.assertFalse(is_not_secure('2.0', '2.0.2'))
         self.assertTrue(is_not_secure('2.0', '1.9.9'))
         self.assertTrue(is_not_secure('2015.0514', '2015.0426'))
+        self.assertTrue(is_not_secure('1.06', '1.05'))
+        self.assertTrue(is_not_secure('1.10', '1.06'))
 
 
 class DatabaseHandlers(unittest.TestCase):
