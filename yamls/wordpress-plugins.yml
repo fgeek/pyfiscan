@@ -1193,3 +1193,11 @@ WordPress plugin uji-countdown:
     cve: 'OVE-20160724-0029 https://sumofpwn.nl/advisory/2016/cross_site_scripting_in_uji_countdown_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin formbuilder:
+  1:
+    location: ['/wp-content/plugins/formbuilder/readme.txt']
+    secure_version: '1.06'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160722-0007 https://sumofpwn.nl/advisory/2016/cross_site_scripting_in_formbuilder_wordpress_plugin.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
