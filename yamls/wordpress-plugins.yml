@@ -1204,3 +1204,11 @@ WordPress plugin formbuilder:
     cve: 'OVE-20160722-0007 https://sumofpwn.nl/advisory/2016/cross_site_scripting_in_formbuilder_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin count-per-day:
+  1:
+    location: ['/wp-content/plugins/count-per-day/readme.txt']
+    secure_version: '3.5.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160724-0024 https://sumofpwn.nl/advisory/2016/cross_site_scripting_in_count_per_day_wordpress_plugin.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
