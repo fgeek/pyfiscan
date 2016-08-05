@@ -1,20 +1,20 @@
 # URL: http://www.spip.net/
 # CVE-2013-7303
-# CVE-2014-XXXX 3.0.16/2.1.26/2.0.25 http://osvdb.org/105371 http://osvdb.org/105374
-# CVE-2014-XXXX 3.0.16 http://osvdb.org/105370
+# CVE-2016-3153 3.1.1/3.0.22/2.1.19 possible typo in CVE details for 2.1.19
+# CVE-2016-3154 3.1.1/3.0.22/2.1.19
 SPIP 3:
   1:
     location: ['/ecrire/inc_version.php']
-    secure_version: '3.0.16'
+    secure_version: '3.1.1'
     regexp: ['\$spip_version_branche.*?(?P<version>3\.[0-9.]+)']
-    cve: 'http://osvdb.org/105370 http://osvdb.org/105371 http://osvdb.org/105374'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-3153 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-3154'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 SPIP 2:
   1:
     location: ['/ecrire/inc_version.php']
-    secure_version: '2.1.26'
+    secure_version: '2.1.29'
     regexp: ['\$spip_version_branche.*?(?P<version>2\.[0-9.]+)']
-    cve: 'http://osvdb.org/105371 http://osvdb.org/105374'
+    cve: 'https://blog.spip.net/Mise-a-jour-CRITIQUE-de-securite-Sortie-de-SPIP-3-1-1-SPIP-3-0-22-et-SPIP-2-1.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
