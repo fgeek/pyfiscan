@@ -1,3 +1,6 @@
+import sys
+import os
+import re
 import unittest
 from pyfiscan import is_not_secure
 from database import Database
@@ -25,8 +28,24 @@ class DatabaseHandlers(unittest.TestCase):
             self.assertEqual(1, 0, 'Empty database.')
         self.assertTrue(isinstance(database, Database))
 
+
+class UnwantedStrings(unittest.TestCase):
+    def test_search_unwanted_strings(self):
+        """No unwanted strings in files"""
+        for root, dirs, filenames in os.walk('.'):
+            for f in filenames:
+                    filepath = os.path.join(root, f)
+                    if filepath.endswith('.pyc'):
+                        continue
+                    file = open(filepath, 'r')
+                    for line in file:
+                        if re.match('osvdb', line):
+                            self.fail('OSVDB string found from: %s' % filepath)
+
+
 if __name__ == '__main__':
     suite1 = unittest.TestLoader().loadTestsFromTestCase(CompareVersions)
     suite2 = unittest.TestLoader().loadTestsFromTestCase(DatabaseHandlers)
-    alltests = unittest.TestSuite([suite1, suite2])
+    suite3 = unittest.TestLoader().loadTestsFromTestCase(UnwantedStrings)
+    alltests = unittest.TestSuite([suite1, suite2, suite3])
     unittest.TextTestRunner(verbosity=2).run(alltests)
