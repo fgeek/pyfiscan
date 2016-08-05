@@ -20,6 +20,8 @@ def gen_yamlfile_locations(yamldir, includes):
         sys.exit('Location for YAML-files is not a directory: %s' % yamldir)
     for filename in scandir.scandir(yamldir):
         filename = filename.name
+        if filename.startswith('.'):  # skip Vim swap files
+            continue
         if os.path.islink(yamldir + filename):
             continue
         if not os.path.isfile(yamldir + filename):
