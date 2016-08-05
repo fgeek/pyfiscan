@@ -107,12 +107,14 @@ WordPress plugin newstatpress:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-4062 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-4063'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# CVE-2015-4064 1.8.5
+# CVE-2015-4065 1.8.5
 WordPress plugin landing-pages:
   1:
     location: ['/wp-content/plugins/landing-pages/readme.txt']
-    secure_version: '1.8.5'
+    secure_version: '2.2.5'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-4064 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-4065'
+    cve: 'OVE-20160721-0001 https://sumofpwn.nl/advisory/2016/cross_site_scripting_in_wordpress_landing_pages_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin feedwordpress:
