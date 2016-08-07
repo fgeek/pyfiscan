@@ -1213,3 +1213,11 @@ WordPress plugin count-per-day:
     cve: 'OVE-20160724-0024 https://sumofpwn.nl/advisory/2016/cross_site_scripting_in_count_per_day_wordpress_plugin.html OVE-20160717-0001 https://sumofpwn.nl/advisory/2016/stored_cross_site_scripting_vulnerability_in_count_per_day_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin ecwid-shopping-cart:
+  1:
+    location: ['/wp-content/plugins/ecwid-shopping-cart/readme.txt']
+    secure_version: '4.4.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160803-0002 https://sumofpwn.nl/advisory/2016/ecwid_ecommerce_shopping_cart_wordpress_plugin_unauthenticated_php_object_injection_vulnerability.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
