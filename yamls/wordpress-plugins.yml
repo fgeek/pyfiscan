@@ -1229,3 +1229,11 @@ WordPress plugin store-locator-le:
     cve: 'OVE-20160724-0025 https://sumofpwn.nl/advisory/2016/cross_site_scripting_in_store_locator_plus_for_wordpress.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin add-from-server:
+  1:
+    location: ['/wp-content/plugins/add-from-server/readme.txt']
+    secure_version: '3.3.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160718-0004 https://sumofpwn.nl/advisory/2016/cross_site_request_forgery_vulnerability_in_add_from_server_wordpress_plugin.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
