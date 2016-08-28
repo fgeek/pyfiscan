@@ -119,11 +119,39 @@
 # PMASA-2016-26 CVE-2016-5733   4.6.3/4.4.15.7/4.0.10.16
 # PMASA-2016-27 CVE-2016-5734   4.6.3/4.4.15.7/4.0.10.16
 # PMASA-2016-28 CVE-2016-5739   4.6.3/4.4.15.7/4.0.10.16
+# PMASA-2016-29 CVE-2016-6606   4.6.4/4.4.15.8/4.0.10.17
+# PMASA-2016-30 CVE-2016-6607   4.6.4/4.4.15.8/4.0.10.17
+# PMASA-2016-31 CVE-2016-6608   4.6.4
+# PMASA-2016-32 CVE-2016-6609   4.6.4/4.4.15.8/4.0.10.17
+# PMASA-2016-33 CVE-2016-6610   4.6.4/4.4.15.8/4.0.10.17
+# PMASA-2016-34 CVE-2016-6611   4.6.4/4.4.15.8/4.0.10.17
+# PMASA-2016-35 CVE-2016-6612   4.6.4/4.4.15.8/4.0.10.17
+# PMASA-2016-36 CVE-2016-6613   4.6.4/4.4.15.8/4.0.10.17
+# PMASA-2016-37 CVE-2016-6614   4.6.4/4.4.15.8/4.0.10.17
+# PMASA-2016-38 CVE-2016-6615   4.6.4/4.4.15.8
+# PMASA-2016-39 CVE-2016-6616   4.6.4/4.4.15.8
+# PMASA-2016-40 CVE-2016-6617   4.6.4
+# PMASA-2016-41 CVE-2016-6618   4.6.4/4.4.15.8/4.0.10.17
+# PMASA-2016-42 CVE-2016-6619   4.6.4/4.4.15.8/4.0.10.17
+# PMASA-2016-43 CVE-2016-6620   4.6.4/4.4.15.8/4.0.10.17
+# PMASA-2016-44 CVE-2016-6621   Page missing 2016-08-28 TODO
+# PMASA-2016-45 CVE-2016-6622   4.6.4/4.4.15.8/4.0.10.17
+# PMASA-2016-46 CVE-2016-6623   4.6.4/4.4.15.8/4.0.10.17
+# PMASA-2016-47 CVE-2016-6624   4.6.4/4.4.15.8/4.0.10.17
+# PMASA-2016-48 CVE-2016-6625   4.6.4/4.4.15.8/4.0.10.17
+# PMASA-2016-49 CVE-2016-6626   4.6.4/4.4.15.8/4.0.10.17
+# PMASA-2016-50 CVE-2016-6627   4.6.4/4.4.15.8/4.0.10.17
+# PMASA-2016-51 CVE-2016-6628   4.6.4/4.4.15.8/4.0.10.17
+# PMASA-2016-52 CVE-2016-6629   4.6.4/4.4.15.8/4.0.10.17
+# PMASA-2016-53 CVE-2016-6630   4.6.4/4.4.15.8/4.0.10.17
+# PMASA-2016-54 CVE-2016-6631   4.6.4/4.4.15.8/4.0.10.17
+# PMASA-2016-55 CVE-2016-6632   4.6.4/4.4.15.8/4.0.10.17
+# PMASA-2016-56 CVE-2016-6633   4.6.4/4.4.15.8/4.0.10.17
 phpMyAdmin:
   1:
     location: ['/libraries/Config.class.php']
-    secure_version: '4.6.3'
+    secure_version: '4.6.4'
     regexp: ['.*?PMA_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://www.phpmyadmin.net/security/PMASA-2016-17/ https://www.phpmyadmin.net/security/PMASA-2016-18/ https://www.phpmyadmin.net/security/PMASA-2016-19/ https://www.phpmyadmin.net/security/PMASA-2016-20/ https://www.phpmyadmin.net/security/PMASA-2016-22/ https://www.phpmyadmin.net/security/PMASA-2016-24/ https://www.phpmyadmin.net/security/PMASA-2016-25/ https://www.phpmyadmin.net/security/PMASA-2016-26/ https://www.phpmyadmin.net/security/PMASA-2016-27/ https://www.phpmyadmin.net/security/PMASA-2016-28/'
+    cve: 'https://www.phpmyadmin.net/security/PMASA-2016-29/ → https://www.phpmyadmin.net/security/PMASA-2016-56/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
