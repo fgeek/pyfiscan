@@ -8,6 +8,7 @@
 # CVE-2015-8831 2.8.2 https://hg.dotclear.org/dotclear/rev/65e65154dadf http://blog.curesec.com/article/blog/dotclear-281-XSS-94.html http://www.openwall.com/lists/oss-security/2016/03/05/4
 # CVE-2015-8832 2.8.2 https://hg.dotclear.org/dotclear/rev/198580bc3d80 http://blog.curesec.com/article/blog/dotclear-281-Code-Execution-93.html http://www.openwall.com/lists/oss-security/2016/03/05/4
 # CVE-2016-6523 2.8.2 https://hg.dotclear.org/dotclear/rev/40d0207e520d
+# N/A           N/A     http://www.openwall.com/lists/oss-security/2016/05/04/9 Vendor does not plan to fix this vulnerability
 # TODO          2.10    http://seclists.org/fulldisclosure/2016/Aug/118 https://dotclear.org/blog/post/2016/08/13/Dotclear-2.10
 # TODO          2.10    http://seclists.org/fulldisclosure/2016/Aug/119 https://dotclear.org/blog/post/2016/08/13/Dotclear-2.10
 # TODO          2.10    http://seclists.org/fulldisclosure/2016/Aug/120 https://dotclear.org/blog/post/2016/08/13/Dotclear-2.10

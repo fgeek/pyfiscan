@@ -48,11 +48,12 @@
 # CVE-2015-5059 1.3.0 https://mantisbt.org/bugs/view.php?id=19873
 # CVE-2014-9759 1.3.0 https://mantisbt.org/bugs/view.php?id=20277 http://www.openwall.com/lists/oss-security/2016/01/02/1
 # CVE-2016-5364 TODO https://mantisbt.org/bugs/view.php?id=20956 http://www.openwall.com/lists/oss-security/2016/06/11/5
+# CVE-2016-7111 1.3.1 https://mantisbt.org/bugs/view.php?id=21263 http://www.openwall.com/lists/oss-security/2016/08/28/1
 MantisBT:
   1:
     location: ['/core/constant_inc.php']
-    secure_version: '1.2.19'
+    secure_version: '1.3.1'
     regexp: ['define.*?MANTIS_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9571 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9572 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9573 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9624 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9701 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1042'
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-7111 http://www.openwall.com/lists/oss-security/2016/08/28/1'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
