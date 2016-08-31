@@ -283,7 +283,7 @@ def check_old_results(csv_file):
     report.close()
 
 
-def Worker(home_location, post_process):
+def Worker(home_location, post_process, csv_file=None):
     """This is the actual worker which calls smaller functions in case of
     correct directory/file match is found.
 
@@ -297,7 +297,7 @@ def Worker(home_location, post_process):
     """
     # Opens file handle to CSV
     try:
-        report = IssueReport()
+        report = IssueReport(csv_file)
     except Exception:
         report.close()
         logging.error(traceback.format_exc())
@@ -364,6 +364,7 @@ if __name__ == "__main__":
       pyfiscan.py --home <directory> [--check-modes] [-p] [-l LEVEL] [-a NAME]
       pyfiscan.py --check <FILE>
       pyfiscan.py --file <FILE> [-l LEVEL] [-a NAME]
+      pyfiscan.py -r <directory> --yaml <directory> --log <FILE> --csv <FILE>
       pyfiscan.py [-h|--help]
       pyfiscan.py --version
 
@@ -376,6 +377,9 @@ if __name__ == "__main__":
       --check-modes     Check using execution bit if we are allowed to traverse directories.
       -l LEVEL          Specifies logging level: info, debug.
       -a NAME           Scans only specific applications. Delimiter: ,
+      --csv FILE        Specifies the filename to use for the CSV report
+      --yaml DIR        Specifies the path to the YAML files 
+      --log FILE        Specifies the logfile to use
 
       If you do not spesify recursive-option predefined directories are scanned, which are:
         /home/user/sites/vhost/www
@@ -411,6 +415,8 @@ if __name__ == "__main__":
     if arguments['-a']:
         includes = arguments['-a']
         includes = includes.split(',')
+    if '--log' in arguments:
+        logfile = arguments['--log']
     # Exit in case logfile is symlink
     if os.path.islink(logfile):
         sys.exit('Logfile %s is a symlink. Exiting..' % logfile)
@@ -421,7 +427,14 @@ if __name__ == "__main__":
         if errno == int('13'):
             sys.exit('Error while writing to logfile: %s' % strerror)
     try:
-        database = Database('yamls/', includes)
+        if '--yaml' in arguments:
+            database = Database(arguments['--yaml'], includes)
+        else:
+            database = Database('yamls/', includes)
+        if '--csv' in arguments:
+            csv_file = arguments['--csv']
+        else:
+            csv_file = None
         if len(database.issues) == 0:
             sys.exit('Empty database. Exiting..')
         # stderr to /dev/null
@@ -432,7 +445,7 @@ if __name__ == "__main__":
         # http://docs.python.org/library/multiprocessing.html#multiprocessing.pool.multiprocessing.Pool
         logging.debug('Starting workers.')
         pool = Pool()
-        pool.apply_async(Worker, [arguments['--home'], post_process])
+        pool.apply_async(Worker, [arguments['--home'], post_process, csv_file])
         # Starts the actual populator daemon to get possible locations, which will be verified by workers.
         # http://docs.python.org/library/multiprocessing.html#multiprocessing.Process
         p = PopulateScanQueue()
