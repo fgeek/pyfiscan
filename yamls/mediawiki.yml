@@ -99,12 +99,21 @@
 # CVE-2015-8627 1.26.1/1.25.4/1.24.5/1.23.12 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-December/000186.html
 # CVE-2015-8628 1.26.1/1.25.4/1.24.5/1.23.12 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-December/000186.html
 # CVE-2016-XXXX 1.26.3/1.25.6/1.23.14 https://lists.wikimedia.org/pipermail/mediawiki-announce/2016-May/000188.html
+# CVE-2016-XXXX 1.27.1/1.26.4/1.23.15 https://lists.wikimedia.org/pipermail/mediawiki-announce/2016-August/000195.html
+MediaWiki 1.27:
+  1:
+    location: ['/includes/DefaultSettings.php']
+    secure_version: '1.27.1'
+    regexp: ['\$wgVersion.*?(?P<version>1\.27\.[0-9.]{1,})']
+    cve: 'https://lists.wikimedia.org/pipermail/mediawiki-announce/2016-August/000195.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
 MediaWiki 1.26:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.26.3'
+    secure_version: '1.26.4'
     regexp: ['\$wgVersion.*?(?P<version>1\.26\.[0-9.]{1,})']
-    cve: 'https://lists.wikimedia.org/pipermail/mediawiki-announce/2016-May/000188.html'
+    cve: 'https://lists.wikimedia.org/pipermail/mediawiki-announce/2016-August/000195.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.25:
@@ -112,7 +121,7 @@ MediaWiki 1.25:
     location: ['/includes/DefaultSettings.php']
     secure_version: '1.25.6'
     regexp: ['\$wgVersion.*?(?P<version>1\.25\.[0-9.]{1,})']
-    cve: 'https://lists.wikimedia.org/pipermail/mediawiki-announce/2016-May/000188.html'
+    cve: 'MediaWiki 1.25 is end of life.'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.24:
@@ -120,15 +129,15 @@ MediaWiki 1.24:
     location: ['/includes/DefaultSettings.php']
     secure_version: '1.24.5'
     regexp: ['\$wgVersion.*?(?P<version>1\.24\.[0-9.]{1,})']
-    cve: 'https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-December/000186.html'
+    cve: 'MediaWiki 1.24 is end of life.'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.23:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.23.14'
+    secure_version: '1.23.15'
     regexp: ['\$wgVersion.*?(?P<version>1\.23\.[0-9.]{1,})']
-    cve: 'https://lists.wikimedia.org/pipermail/mediawiki-announce/2016-May/000188.html'
+    cve: 'https://lists.wikimedia.org/pipermail/mediawiki-announce/2016-August/000195.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.22:
