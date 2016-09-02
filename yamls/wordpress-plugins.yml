@@ -1273,3 +1273,11 @@ WordPress plugin ajax-load-more:
     cve: 'OVE-20160712-0034 https://sumofpwn.nl/advisory/2016/ajax_load_more_local_file_inclusion_vulnerability.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin link-library:
+  1:
+    location: ['/wp-content/plugins/link-library/readme.txt']
+    secure_version: '5.9.12.30'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160724-0016 https://sumofpwn.nl/advisory/2016/cross_site_scripting_in_link_library_wordpress_plugin.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
