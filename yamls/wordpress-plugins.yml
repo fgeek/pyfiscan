@@ -1237,3 +1237,11 @@ WordPress plugin add-from-server:
     cve: 'OVE-20160718-0004 https://sumofpwn.nl/advisory/2016/cross_site_request_forgery_vulnerability_in_add_from_server_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin gallery-by-supsystic:
+  1:
+    location: ['/wp-content/plugins/gallery-by-supsystic/readme.txt']
+    secure_version: '1.8.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160722-0001 https://sumofpwn.nl/advisory/2016/cross_site_request_forgery_in_photo_gallery_wordpress_plugin_allows_adding_of_images.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
