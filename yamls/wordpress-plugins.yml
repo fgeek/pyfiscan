@@ -1257,3 +1257,11 @@ WordPress plugin google-maps:
     cve: 'OVE-20160712-0038 https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_google_maps_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin peters-login-redirect:
+  1:
+    location: ['/wp-content/plugins/peters-login-redirect/readme.txt']
+    secure_version: '2.9.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160724-0028 https://sumofpwn.nl/advisory/2016/cross_site_scripting_cross_site_request_forgery_in_peter_s_login_redirect_wordpress_plugin.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
