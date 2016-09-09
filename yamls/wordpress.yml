@@ -165,18 +165,20 @@
 # CVE-2016-5839 4.5.3   https://wordpress.org/news/2016/06/wordpress-4-5-3/
 # CVE-2016-6896 4.6     https://wordpress.org/news/2016/08/pepper/ https://sumofpwn.nl/advisory/2016/path_traversal_vulnerability_in_wordpress_core_ajax_handlers.html
 # CVE-2016-6897 4.6     https://wordpress.org/news/2016/08/pepper/ https://sumofpwn.nl/advisory/2016/path_traversal_vulnerability_in_wordpress_core_ajax_handlers.html
+# CVE-2016-7168 4.6.1   https://wordpress.org/news/2016/09/wordpress-4-6-1-security-and-maintenance-release/
+# CVE-2016-7169 4.6.1   https://wordpress.org/news/2016/09/wordpress-4-6-1-security-and-maintenance-release/
 WordPress:
   1:
     location: ['/wp-includes/version.php', '/wp-includes/vars.php']
-    secure_version: '4.6'
+    secure_version: '4.6.1'
     regexp: ['\$wp_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://wordpress.org/news/2016/08/pepper/ https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-6896 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-6897 https://sumofpwn.nl/advisory/2016/path_traversal_vulnerability_in_wordpress_core_ajax_handlers.html'
+    cve: 'https://wordpress.org/news/2016/09/wordpress-4-6-1-security-and-maintenance-release/ https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-7168 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-7169'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
   2:
     location: ['/b2-include/b2vars.php']
-    secure_version: '4.6'
+    secure_version: '4.6.1'
     regexp: ['\$b2_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://wordpress.org/news/2016/08/pepper/ https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-6896 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-6897 https://sumofpwn.nl/advisory/2016/path_traversal_vulnerability_in_wordpress_core_ajax_handlers.html'
+    cve: 'https://wordpress.org/news/2016/09/wordpress-4-6-1-security-and-maintenance-release/ https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-7168 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-7169'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
