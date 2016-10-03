@@ -1,0 +1,32 @@
+First:
+ 1:
+  location: ['/location/to/data']
+  secure_version: '2.0.0.0.0.4.5.7.2.4'
+  regexp: ['.*?ABC (?P<version>[0-9.]+)']
+  cve: 'url'
+  fingerprint: detect_withoutnewlines
+  post_processing: ['php5.fcgi']
+Second:
+ 2:
+  location: ['/location/to/data']
+  secure_version: '2.0.0.0.0.4.5.7.2.4'
+  regexp: ['.*?ABC (?P<version>[0-9.]+)']
+  cve: 'url'
+  fingerprint: detect_withoutnewlines
+  post_processing: ['php5.fcgi']
+Third:
+ 3:
+  location: ['/location/to/data']
+  secure_version: '2.0.0.0.0.4.5.7.2.4'
+  regexp: ['.*?ABC (?P<version>[0-9.]+)']
+  cve: 'url'
+  fingerprint: detect_withoutnewlines
+  post_processing: ['php5.fcgi']
+Fourth:
+ 4:
+  location: ['/location/to/data']
+  secure_version: '2.0.0.0.0.4.5.7.2.4'
+  regexp: ['.*?ABC (?P<version>[0-9.]+)']
+  cve: 'url'
+  fingerprint: detect_withoutnewlines
+  post_processing: ['php5.fcgi']
