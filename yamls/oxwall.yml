@@ -1,9 +1,12 @@
 # URL: http://www.oxwall.org
+# TODO http://www.vulnerability-lab.com/get_content.php?id=1740
+# CVE-2015-5534 1.8     https://www.htbridge.com/advisory/HTB23266
+# CVE-2015-XXXX 1.8.2   https://www.curesec.com/blog/article/blog/Oxwall-180-XSS-amp-Open-Redirect-148.html
 Oxwall:
   1:
     location: ['/ow_version.xml']
-    secure_version: '1.8'
+    secure_version: '1.8.2'
     regexp: ['    <version>(?P<version>[0-9.]+)</version>']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5534 https://www.htbridge.com/advisory/HTB23266'
+    cve: 'https://www.curesec.com/blog/article/blog/Oxwall-180-XSS-amp-Open-Redirect-148.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
