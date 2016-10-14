@@ -1290,3 +1290,11 @@ WordPress plugin wp-maintenance-mode:
     cve: 'https://www.wordfence.com/blog/2016/07/3-vulnerabilities-wp-maintenance-mode/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin zotpress:
+  1:
+    location: ['/wp-content/plugins/zotpress/readme.txt']
+    secure_version: '6.1.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000217'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
