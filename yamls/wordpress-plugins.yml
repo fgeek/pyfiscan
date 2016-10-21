@@ -1306,3 +1306,11 @@ WordPress plugin xdata-toolkit:
     cve: 'https://www.pluginvulnerabilities.com/2016/06/15/arbitrary-file-upload-vulnerability-in-xdata-toolkit/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wpmarketplace:
+  1:
+    location: ['/wp-content/plugins/wpmarketplace/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'http://labs.sucuri.net/?note=2016-10-17'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
