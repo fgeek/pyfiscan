@@ -1314,3 +1314,11 @@ WordPress plugin wpmarketplace:
     cve: 'http://labs.sucuri.net/?note=2016-10-17'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin download-manager:
+  1:
+    location: ['/wp-content/plugins/download-manager/readme.txt']
+    secure_version: '2.8.98'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://www.pluginvulnerabilities.com/2016/06/27/authenticated-arbitrary-file-upload-vulnerability-in-wordpress-download-manager/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
