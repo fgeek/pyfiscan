@@ -1298,3 +1298,11 @@ WordPress plugin zotpress:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000217'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin xdata-toolkit:
+  1:
+    location: ['/wp-content/plugins/xdata-toolkit/readme.txt']
+    secure_version: 'N/A'  # latest version is 1.9
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://www.pluginvulnerabilities.com/2016/06/15/arbitrary-file-upload-vulnerability-in-xdata-toolkit/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
