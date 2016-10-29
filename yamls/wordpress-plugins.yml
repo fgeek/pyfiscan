@@ -329,7 +329,7 @@ WordPress plugin dukapress:
     location: ['/wp-content/plugins/dukapress/readme.txt']
     secure_version: '2.5.9.1'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1000011 http://www.openwall.com/lists/oss-security/2015/08/22/2'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1000011 http://www.vapidlabs.com/advisory.php?v=152 http://www.openwall.com/lists/oss-security/2015/08/22/2'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin youtube-embed:
