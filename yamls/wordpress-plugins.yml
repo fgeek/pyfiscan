@@ -1371,3 +1371,11 @@ WordPress plugin recent-backups:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1000006 http://www.vapidlabs.com/advisory.php?v=144'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wptf-image-gallery:
+  1:
+    location: ['/wp-content/plugins/wptf-image-gallery/readme.txt']
+    secure_version: 'N/A'  # v1.03 is vulnerable
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1000007 http://www.vapidlabs.com/advisory.php?v=148'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
