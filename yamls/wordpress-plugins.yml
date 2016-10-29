@@ -1355,3 +1355,11 @@ WordPress plugin fast-image-adder:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1000001 http://www.vapidlabs.com/advisory.php?v=139'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin filedownload:
+  1:
+    location: ['/wp-content/plugins/filedownload/readme.txt']
+    secure_version: 'N/A'  # v1.4 is vulnerable
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1000002 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1000003 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1000004 http://www.vapidlabs.com/advisory.php?v=140'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
