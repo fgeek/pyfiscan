@@ -1382,8 +1382,16 @@ WordPress plugin wptf-image-gallery:
 WordPress plugin mp3-jplayer:
   1:
     location: ['/wp-content/plugins/mp3-jplayer/readme.txt']
-    secure_version: 'N/A'  # v2.3.2 us vulnerable. new versions published after that
+    secure_version: 'N/A'  # v2.3.2 is vulnerable. new versions published after that
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1000008 http://www.vapidlabs.com/advisory.php?v=149'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin google-adsense-and-hotel-booking:
+  1:
+    location: ['/wp-content/plugins/google-adsense-and-hotel-booking/readme.txt']
+    secure_version: 'N/A'  # v1.05 s vulnerable
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1000009 http://www.vapidlabs.com/advisory.php?v=151'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
