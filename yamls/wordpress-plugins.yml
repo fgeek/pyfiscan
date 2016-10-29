@@ -1339,3 +1339,11 @@ WordPress plugin candidate-application-form:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1000005 http://www.vapidlabs.com/advisory.php?v=142'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin mailcwp:
+  1:
+    location: ['/wp-content/plugins/mailcwp/readme.txt']
+    secure_version: '1.100'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1000000 http://www.vapidlabs.com/advisory.php?v=138'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
