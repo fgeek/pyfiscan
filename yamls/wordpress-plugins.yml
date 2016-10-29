@@ -1403,3 +1403,11 @@ WordPress plugin simple-image-manipulator:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1000010 http://www.vapidlabs.com/advisory.php?v=147'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin mypixs:
+  1:
+    location: ['/wp-content/plugins/mypixs/readme.txt']
+    secure_version: 'N/A'  # v0.3 is vulnerable
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1000012 http://www.vapidlabs.com/advisory.php?v=154'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
