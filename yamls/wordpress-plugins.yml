@@ -1379,3 +1379,11 @@ WordPress plugin wptf-image-gallery:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1000007 http://www.vapidlabs.com/advisory.php?v=148'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin mp3-jplayer:
+  1:
+    location: ['/wp-content/plugins/mp3-jplayer/readme.txt']
+    secure_version: 'N/A'  # v2.3.2 us vulnerable. new versions published after that
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1000008 http://www.vapidlabs.com/advisory.php?v=149'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
