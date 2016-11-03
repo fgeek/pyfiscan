@@ -1345,7 +1345,7 @@ WordPress plugin mailcwp:
     location: ['/wp-content/plugins/mailcwp/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'http://www.vapidlabs.com/advisory.php?v=175'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000156 http://www.vapidlabs.com/advisory.php?v=175'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin fast-image-adder:
