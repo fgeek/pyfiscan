@@ -1420,3 +1420,11 @@ WordPress plugin csv2wpec-coupon:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1000013 http://www.vapidlabs.com/advisory.php?v=153'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin 404-to-301:
+  1:
+    location: ['/wp-content/plugins/404-to-301/readme.txt']
+    secure_version: '2.3.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160719-0003 https://sumofpwn.nl/advisory/2016/stored_cross_site_scripting_vulnerability_in_404_to_301_wordpress_plugin.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
