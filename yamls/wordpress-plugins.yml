@@ -1340,6 +1340,7 @@ WordPress plugin candidate-application-form:
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 # CVE-2015-1000000 1.100 http://www.vapidlabs.com/advisory.php?v=138
+# CVE-2016-1000156 N/A http://www.vapidlabs.com/advisory.php?v=175 http://www.openwall.com/lists/oss-security/2016/11/08/4
 WordPress plugin mailcwp:
   1:
     location: ['/wp-content/plugins/mailcwp/readme.txt']
