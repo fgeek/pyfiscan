@@ -1428,3 +1428,11 @@ WordPress plugin 404-to-301:
     cve: 'OVE-20160719-0003 https://sumofpwn.nl/advisory/2016/stored_cross_site_scripting_vulnerability_in_404_to_301_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin yith-woocommerce-compare:
+  1:
+    location: ['/wp-content/plugins/yith-woocommerce-compare/readme.txt']
+    secure_version: '2.1.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160803-0006 https://sumofpwn.nl/advisory/2016/yith_woocommerce_compare_wordpress_plugin_unauthenticated_php_object_injection_vulnerability.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
