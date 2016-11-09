@@ -1445,3 +1445,11 @@ WordPress plugin quotes-collection:
     cve: 'OVE-20160712-0015 https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_quotes_collection_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin caldera-forms:
+  1:
+    location: ['/wp-content/plugins/caldera-forms/readme.txt']
+    secure_version: '1.4.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160720-0007 https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_caldera_forms_wordpress_plugin.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
