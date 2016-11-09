@@ -15,14 +15,15 @@ WordPress plugin videowhisper-video-presentation:
     cve: 'http://www.openwall.com/lists/oss-security/2015/04/01/2'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
-# CVE-2008-0520 wassup 1.4.4 http://www.exploit-db.com/exploits/5017/
-# CVE-2009-XXXX wassup 1.7.2.1 http://www.openwall.com/lists/oss-security/2015/04/06/1
+# CVE-2008-0520 1.4.4 http://www.exploit-db.com/exploits/5017/
+# CVE-2009-XXXX 1.7.2.1 http://www.openwall.com/lists/oss-security/2015/04/06/1
+# CVE-2012-263 1.8.3.1
 WordPress plugin wassup:
   1:
     location: ['/wp-content/plugins/wassup/readme.txt']
-    secure_version: '1.8.3.1'
+    secure_version: '1.9.1'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-2633'
+    cve: 'OVE-20160717-0002 https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_in_wassup_real_time_analytics_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 # CVE-2012-4263 better-wp-security 3.2.5
