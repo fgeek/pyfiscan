@@ -1436,3 +1436,11 @@ WordPress plugin yith-woocommerce-compare:
     cve: 'OVE-20160803-0006 https://sumofpwn.nl/advisory/2016/yith_woocommerce_compare_wordpress_plugin_unauthenticated_php_object_injection_vulnerability.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin quotes-collection:
+  1:
+    location: ['/wp-content/plugins/quotes-collection/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160712-0015 https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_quotes_collection_wordpress_plugin.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
