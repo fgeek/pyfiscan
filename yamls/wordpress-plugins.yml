@@ -1454,3 +1454,11 @@ WordPress plugin caldera-forms:
     cve: 'OVE-20160720-0007 https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_caldera_forms_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin calendar:
+  1:
+    location: ['/wp-content/plugins/calendar/readme.txt']
+    secure_version: '1.3.8'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160725-0008 https://sumofpwn.nl/advisory/2016/cross_site_scripting_in_calendar_wordpress_plugin.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
