@@ -1,0 +1,4 @@
+- Implement configuration file to include. Ideas from ryanph
+    - Logging file name
+    - CSV file name
+    - Database location
