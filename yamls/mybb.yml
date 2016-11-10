@@ -30,9 +30,9 @@
 # CVE-2015-2335 1.8.4
 # CVE-2015-2352 1.8.4
 # CVE-2015-4552 1.8.5   https://blog.mybb.com/2015/05/27/mybb-1-8-5-1-6-17-merge-system-1-8-5-release/
-# TODO          1.8.6   https://blog.mybb.com/2015/09/07/mybb-1-8-6-1-6-18-merge-system-1-8-6-release/
-# TODO          1.8.7   https://blog.mybb.com/2016/03/11/mybb-1-8-7-merge-system-1-8-7-release/ https://www.curesec.com/blog/article/blog/MyBB-186-XSS-160.html
-# TODO          1.8.8   https://blog.mybb.com/2016/10/17/mybb-1-8-8-merge-system-1-8-8-release/
+# Pending       1.8.6   https://blog.mybb.com/2015/09/07/mybb-1-8-6-1-6-18-merge-system-1-8-6-release/ CVE request http://www.openwall.com/lists/oss-security/2016/11/10/8
+# Pending       1.8.7   https://blog.mybb.com/2016/03/11/mybb-1-8-7-merge-system-1-8-7-release/ https://www.curesec.com/blog/article/blog/MyBB-186-XSS-160.html CVE request http://www.openwall.com/lists/oss-security/2016/11/10/8
+# Pending       1.8.8   https://blog.mybb.com/2016/10/17/mybb-1-8-8-merge-system-1-8-8-release/ CVE request http://www.openwall.com/lists/oss-security/2016/11/10/8
 MyBB:
   1:
     location: ['/inc/class_core.php']
