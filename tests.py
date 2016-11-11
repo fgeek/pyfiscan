@@ -31,7 +31,7 @@ class DatabaseHandlers(unittest.TestCase):
 
 class UnwantedStrings(unittest.TestCase):
     def test_search_unwanted_strings(self):
-        """No unwanted strings in files"""
+        """No unwanted strings in files."""
         for root, dirs, filenames in os.walk('.'):
             for f in filenames:
                     filepath = os.path.join(root, f)
