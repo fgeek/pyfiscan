@@ -205,7 +205,7 @@ WordPress plugin w3-total-cache:
     location: ['/wp-content/plugins/w3-total-cache/readme.txt']
     secure_version: '0.9.5'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'OVE-20160719-0004 https://sumofpwn.nl/advisory/2016/reflected_cross_site_scripting_vulnerability_in_w3_total_cache_plugin.html'
+    cve: 'OVE-20160719-0004 https://sumofpwn.nl/advisory/2016/reflected_cross_site_scripting_vulnerability_in_w3_total_cache_plugin.html OVE-20160724-0002 https://sumofpwn.nl/advisory/2016/information_disclosure_race_condition_in_w3_total_cache_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin json-rest-api:
