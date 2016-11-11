@@ -1463,3 +1463,11 @@ WordPress plugin calendar:
     cve: 'OVE-20160725-0008 https://sumofpwn.nl/advisory/2016/cross_site_scripting_in_calendar_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wp-google-maps:
+  1:
+    location: ['/wp-content/plugins/wp-google-maps/readme.txt']
+    secure_version: '6.3.15'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160724-0007 https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_in_wp_google_maps_plugin_via_csrf.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
