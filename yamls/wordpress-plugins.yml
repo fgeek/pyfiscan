@@ -199,12 +199,13 @@ WordPress plugin photo-gallery:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-6315'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# CVE-2014-8724 0.9.4.1
 WordPress plugin w3-total-cache:
   1:
     location: ['/wp-content/plugins/w3-total-cache/readme.txt']
-    secure_version: '0.9.4.1'
+    secure_version: '0.9.5'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8724'
+    cve: 'OVE-20160719-0004 https://sumofpwn.nl/advisory/2016/reflected_cross_site_scripting_vulnerability_in_w3_total_cache_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin json-rest-api:
