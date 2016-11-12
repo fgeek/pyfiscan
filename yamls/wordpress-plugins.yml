@@ -1044,6 +1044,7 @@ WordPress plugin code-snippets:
     cve: 'OVE-20160722-0006 https://sumofpwn.nl/advisory/2016/cross_site_scripting_in_code_snippets_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# CVE-2015-2069 2.2.11 http://seclists.org/fulldisclosure/2015/Feb/75
 # OVE-20160720-0006 2.6.3 https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_in_woocommerce_using_image_metadata__exif_.html
 WordPress plugin woocommerce:
   1:
