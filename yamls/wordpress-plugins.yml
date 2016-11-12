@@ -1487,3 +1487,11 @@ WordPress plugin qtranslate:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5535'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin jw-player-plugin-for-wordpress:
+  1:
+    location: ['/wp-content/plugins/jw-player-plugin-for-wordpress/readme.txt']
+    secure_version: 'N/A' # 2.1.15 is the latest and vulnerable release
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-3351'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
