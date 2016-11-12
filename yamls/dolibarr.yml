@@ -4,9 +4,8 @@
 # CVE-2011-4329
 # CVE-2011-4802
 # CVE-2011-4814
-# CVE-2012-1225 http://osvdb.org/79011
-# CVE-2012-1226 http://osvdb.org/79138 http://osvdb.org/79139
-# CVE-2012-XXXX http://osvdb.org/80980
+# CVE-2012-1225
+# CVE-2012-1226
 # CVE-2013-2091 3.3.2 https://github.com/Dolibarr/dolibarr/commit/9427e32e2ed54c1a2bc519a88c057207836df489
 # CVE-2013-2092 3.3.2 https://github.com/Dolibarr/dolibarr/commit/8a90598b23e1b2689848187941f7a96b04907005
 # CVE-2013-2093 3.3.2 https://github.com/Dolibarr/dolibarr/commit/526a80dd202bbca396687a502d52c27e06e97fff
@@ -15,11 +14,13 @@
 # CVE-2014-7137 3.6.1 https://www.portcullis-security.com/security-research-and-downloads/security-advisories/cve-2014-7137/
 # CVE-2015-3935 3.7.1 https://github.com/GPCsolutions/dolibarr/commit/a7f6bbd316e9b96216e9b2c7a065c9251c9a8907
 # CVE-2015-8685 3.8.3 https://github.com/Dolibarr/dolibarr/issues/4291 https://github.com/GPCsolutions/dolibarr/commit/0d3181324c816bdf664ca5e1548dfe8eb05c54f8
+# CVE-2016-1912 3.8.4 https://github.com/Dolibarr/dolibarr/issues/4341
+# CVE-2016-XXXX TODO https://github.com/Dolibarr/dolibarr/issues/5239 no release fixing this issue 2016-11-12
 Dolibarr:
   1:
     location: ['/htdocs/filefunc.inc.php']
-    secure_version: '3.8.3'
+    secure_version: '3.8.4'
     regexp: ['.*?DOL_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8685'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1912'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
