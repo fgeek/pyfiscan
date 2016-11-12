@@ -1479,3 +1479,11 @@ WordPress plugin content-slide:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2708 https://security.dxw.com/advisories/csrf-and-stored-xss-in-wordpress-content-slide-allow-an-attacker-to-have-full-admin-privileges/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin qtranslate:
+  1:
+    location: ['/wp-content/plugins/qtranslate/readme.txt']
+    secure_version: 'N/A' # 2.5.39 is the latest and vulnerable release
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5535'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
