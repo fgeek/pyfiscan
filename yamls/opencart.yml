@@ -8,6 +8,7 @@
 # TODO: http://www.juniper.net/security/auto/vulnerabilities/vuln34724.html "OpenCart 'index.php' Local File Include Vulnerability"
 # TODO: http://seclists.org/fulldisclosure/2015/Nov/21 http://blog.curesec.com/article/blog/OpenCart-2031-CSRF-66.html no cve, "This issue was already discovered in 2013 by Saadat Ullah, but new versions of OpenCart are still vulnerable as no fix has been released."
 # http://seclists.org/bugtraq/2016/Apr/61
+# http://seclists.org/bugtraq/2016/Aug/102
 OpenCart:
   1:
     location: ['/admin/index.php']
