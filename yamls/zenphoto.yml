@@ -1,19 +1,19 @@
 # URL: http://www.zenphoto.org/
-# DISPUTED: http://osvdb.org/90547 http://packetstormsecurity.com/files/120422/Zenphoto-1.4.4.1-Blind-SQL-Injection.html
+# DISPUTED: http://packetstormsecurity.com/files/120422/Zenphoto-1.4.4.1-Blind-SQL-Injection.html
 # CVE-2009-4562
 # CVE-2009-4563
 # CVE-2009-4564
-# CVE-2010-4906 1.4.2.1 http://osvdb.org/67847 SA41350
-# CVE-2010-4907 1.3.1   http://osvdb.org/67848 SA41342
-# CVE-2011-XXXX 1.4.2.1 http://osvdb.org/71989 SA44323
-# CVE-2012-0993 1.4.2.1 http://osvdb.org/78979 SA47875
-# CVE-2012-0994 1.4.2.1 http://osvdb.org/78980 SA47875
-# CVE-2012-0995 1.4.2.1 http://osvdb.org/78981 http://osvdb.org/78982 SA47875
-# CVE-2012-2641 1.4.3   http://osvdb.org/83487 SA49787
-# CVE-2012-4519 1.4.3.3 http://osvdb.org/85899 SA50799
+# CVE-2010-4906 1.4.2.1 SA41350
+# CVE-2010-4907 1.3.1   SA41342
+# CVE-2011-XXXX 1.4.2.1 SA44323
+# CVE-2012-0993 1.4.2.1 SA47875
+# CVE-2012-0994 1.4.2.1 SA47875
+# CVE-2012-0995 1.4.2.1 SA47875
+# CVE-2012-2641 1.4.3   SA49787
+# CVE-2012-4519 1.4.3.3 SA50799
 # CVE-2012-XXXX 1.4.3.4 http://www.waraxe.us/content-96.html http://openwall.com/lists/oss-security/2013/07/10/19 2015-07-14 sent new email to get CVE assigned
-# CVE-2013-7241 1.4.5.4 http://osvdb.org/98092 http://www.zenphoto.org/news/zenphoto-1.4.5.4
-# CVE-2013-7242 1.4.5.4 http://osvdb.org/98091 http://www.zenphoto.org/news/zenphoto-1.4.5.4
+# CVE-2013-7241 1.4.5.4 http://www.zenphoto.org/news/zenphoto-1.4.5.4
+# CVE-2013-7242 1.4.5.4 http://www.zenphoto.org/news/zenphoto-1.4.5.4
 # CVE-2014-XXXX 1.4.5.9 http://www.zenphoto.org/news/zenphoto-1.4.5.9
 # CVE-2015-2948 1.4.8   http://www.zenphoto.org/news/zenphoto-1.4.8
 # CVE-2015-5591 1.4.9   http://www.zenphoto.org/news/zenphoto-1.4.9
