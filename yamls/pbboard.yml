@@ -1,6 +1,6 @@
 # CVE-2012-1216
-# CVE-2012-4035 N/A http://osvdb.org/84481
-# CVE-2012-4036 N/A http://osvdb.org/84479
+# CVE-2012-4035
+# CVE-2012-4036
 # CVE-2014-9215 3.0.1 http://www.itas.vn/news/ITAS-Team-discovered-SQL-Injection-in-PBBoard-CMS-68.html
 PBBoard:
   1:
