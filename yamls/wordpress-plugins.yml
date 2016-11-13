@@ -1530,3 +1530,11 @@ WordPress plugin cleeng:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-1808 http://www.openwall.com/lists/oss-security/2013/03/26/8'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin paypal-digital-goods-monetization-powered-by-cleeng:
+  1:
+    location: ['/wp-content/plugins/paypal-digital-goods-monetization-powered-by-cleeng/readme.txt']
+    secure_version: '2.2.14'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-1808 http://www.openwall.com/lists/oss-security/2013/03/26/8'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
