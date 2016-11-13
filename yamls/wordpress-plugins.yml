@@ -1522,3 +1522,11 @@ WordPress plugin bp-code-snippets:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-1808 http://www.openwall.com/lists/oss-security/2013/03/26/8'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin cleeng:
+  1:
+    location: ['/wp-content/plugins/cleeng/readme.txt']
+    secure_version: '2.3.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-1808 http://www.openwall.com/lists/oss-security/2013/03/26/8'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
