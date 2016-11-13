@@ -1505,3 +1505,11 @@ WordPress plugin cardoza-ajax-search:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-5853 http://seclists.org/bugtraq/2012/Nov/33'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin answer-my-question:
+  1:
+    location: ['/wp-content/plugins/answer-my-question/readme.txt']
+    secure_version: '1.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'http://seclists.org/bugtraq/2011/Mar/12'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
