@@ -1496,3 +1496,12 @@ WordPress plugin jw-player-plugin-for-wordpress:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-3351'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# 2016-11-08: maintainer has removed all data from svn repository
+WordPress plugin cardoza-ajax-search:
+  1:
+    location: ['/wp-content/plugins/cardoza-ajax-search/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-5853 http://seclists.org/bugtraq/2012/Nov/33'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
