@@ -1,13 +1,7 @@
 # URL: http://www.concrete5.org/ http://www.concrete5.org/developers/security/
 # NFU: CVE-2012-5181 (japanese version)
-# CVE-2013-XXXX http://osvdb.org/94199
-# CVE-2013-XXXX http://osvdb.org/94200 latest version affected
-# CVE-2013-XXXX http://osvdb.org/94201
-# CVE-2014-5107 5.6.3 http://osvdb.org/109269
-# CVE-2014-5108 5.6.3 http://osvdb.org/109273
-# CVE-2014-XXXX 5.6.3 http://osvdb.org/109270
-# CVE-2014-XXXX 5.6.3 http://osvdb.org/109271
-# CVE-2014-XXXX 5.6.3 http://osvdb.org/109272
+# CVE-2014-5107 5.6.3
+# CVE-2014-5108 5.6.3
 # CVE-2014-XXXX 5.7.3 http://seclists.org/fulldisclosure/2014/Dec/38 http://www.openwall.com/lists/oss-security/2015/01/02/1 https://github.com/concrete5/concrete5-5.7.0/commit/e3d47d2af88ddef36deaf754ef22f1f39b9b623b
 # CVE-2015-2250 5.7.4
 concrete5:
