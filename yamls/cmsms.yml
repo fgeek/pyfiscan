@@ -24,7 +24,9 @@
 # CVE-2014-2092 TODO
 # CVE-2014-2245 1.11.10 http://dev.cmsmadesimple.org/project/changelog/4602 http://www.cmsmadesimple.org/2014/02/Announcing-CMSMS-1-11-10-Pinzon/
 # CVE-2014-XXXX 1.11.11 http://www.cmsmadesimple.org/2014/08/Announcing-CMSMS-1-11-11-San-Cristobal/
-# CVE-2016-2784 2.1.3/1.12.2 http://www.cmsmadesimple.org/2016/04/Announcing-CMSMS-2-1-3-Black-Point http://www.cmsmadesimple.org/2016/03/Announcing-CMSMS-1-12-2-kolonia
+# TODO          1.12.2  http://www.cmsmadesimple.org/2016/03/Announcing-CMSMS-1-12-2-kolonia/
+# TODO          2.1.2   http://www.cmsmadesimple.org/2016/02/Announcing-CMSMS-2-1-2/
+# CVE-2016-2784 2.1.3   http://www.cmsmadesimple.org/2016/04/Announcing-CMSMS-2-1-3-Black-Point
 CMSMS:
   1:
     location: ['/version.php']
