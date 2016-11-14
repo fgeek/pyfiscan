@@ -47,10 +47,13 @@
 # CVE-2012-6082 1.9.6 http://hg.moinmo.in/moin/1.9/rev/c98ec456e493
 # CVE-2012-6495 1.9.6 http://hg.moinmo.in/moin/1.9/rev/7e7e1cbb9d3f
 # CVE-2012-XXXX 1.9.6 http://freecode.com/projects/moin/releases/350967 http://hg.moinmo.in/moin/1.9/file/tip/docs/CHANGES http://moinmo.in/SecurityFixes
+# CVE-2016-7146 1.9.9 https://www.curesec.com/blog/article/blog/MoinMoin-198-XSS-175.html
+# CVE-2016-7148 1.9.9 https://www.curesec.com/blog/article/blog/MoinMoin-198-XSS-175.html
+# CVE-2016-9119 1.9.9
 MoinMoin:
   1:
     location: ['/MoinMoin/version.py']
-    secure_version: '1.9.6'
+    secure_version: '1.9.9'
     regexp: ['.*?release.*?(?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-6080 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-6081 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-6082 http://moinmo.in/SecurityFixes'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-7146 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-7148 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9119 http://moinmo.in/SecurityFixes'
     fingerprint: detect_general
