@@ -1,4 +1,4 @@
-# NOTE: Security support of 1.2 series dropped September 2016 http://www.cmsmadesimple.org/2015/12/Announcing-CMSMS-2-1-Bahamas/
+# NOTE: Security support of 1.2 series dropped September 2016 http://www.cmsmadesimple.org/2015/12/Announcing-CMSMS-2-1-Bahamas/ http://www.cmsmadesimple.org/2016/06/CMSMS-1-x-Nears-End-of-Life/
 #               1.0.3 SA23582
 #               1.6.3 SA36255
 # CVE-2007-2473 1.0.6 SA25082
@@ -29,7 +29,7 @@ CMSMS:
   1:
     location: ['/version.php']
     secure_version: '2.1.3'
-    regexp: ['\$CMS_VERSION.*?(?P<version>2\.[.0-9]{1,})']
+    regexp: ['\$CMS_VERSION.*?(?P<version>[.0-9]{1,})']
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2784 http://www.cmsmadesimple.org/2016/04/Announcing-CMSMS-2-1-3-Black-Point'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
