@@ -1,13 +1,18 @@
 # NOTE: Security support of 1.2 series dropped September 2016 http://www.cmsmadesimple.org/2015/12/Announcing-CMSMS-2-1-Bahamas/ http://www.cmsmadesimple.org/2016/06/CMSMS-1-x-Nears-End-of-Life/
 # CVE-2005-2846 0.10.1 http://www.securityfocus.com/bid/14709 SA16654
+# CVE-2005-3083 N/A http://www.securityfocus.com/bid/14937
+# CVE-2006-6844 N/A http://www.securityfocus.com/bid/21756
+# CVE-2006-6845 N/A
 #               1.0.3 SA23582
 #               1.6.3 SA36255
 # CVE-2007-2473 1.0.6 SA25082
 # CVE-2007-5056 1.1.4.1 SA26928
 # CVE-2007-5441 1.1.4.1 SA26928
 # CVE-2007-5442 1.1.4.1 SA26928
+# CVE-2007-5443
+# CVE-2007-5444
 # CVE-2007-6656 1.2.3 SA28285
-# CVE-2008-2267 1.2.5 SA30208
+# CVE-2008-2267 1.2.5 SA30208 http://blog.cmsmadesimple.org/2008/05/12/announcing-cms-made-simple-125
 # CVE-2008-5642 1.5 SA32924
 # CVE-2010-1482 1.7.1
 # CVE-2010-2797 1.8.1 SA40031
