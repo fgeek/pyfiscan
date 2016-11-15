@@ -1554,3 +1554,11 @@ WordPress plugin wp-clone-by-wp-academy:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-1808 http://www.openwall.com/lists/oss-security/2013/03/26/8'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin question-and-answer-forum:
+  1:
+    location: ['/wp-content/plugins/question-and-answer-forum/readme.txt']
+    secure_version: '1.2.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://www.htbridge.com/advisory/HTB22861'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
