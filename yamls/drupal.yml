@@ -59,20 +59,21 @@
 # https://drupal.org/SA-CORE-2016-004   CVE-2016-7570   8.1.10
 # https://drupal.org/SA-CORE-2016-004   CVE-2016-7571   8.1.10
 # https://drupal.org/SA-CORE-2016-004   CVE-2016-7572   8.1.10
+# https://drupal.org/SA-CORE-2016-005   TODO            8.2.3/7.52
 Drupal 8:
   1:
     location: ['/core/lib/Drupal.php']
-    secure_version: '8.1.10'
+    secure_version: '8.2.3'
     regexp: ["  const VERSION = '(?P<version>[0-9.]+)"]
-    cve: 'https://drupal.org/SA-CORE-2016-004 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-7570 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-7571 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-7572'
+    cve: 'https://drupal.org/SA-CORE-2016-005'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Drupal 7:
   1:
     location: ['/includes/bootstrap.inc']
-    secure_version: '7.44'
+    secure_version: '7.52'
     regexp: ['define.*?VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://drupal.org/SA-CORE-2016-002 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-6211 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-6212'
+    cve: 'https://drupal.org/SA-CORE-2016-005'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Drupal 6:
