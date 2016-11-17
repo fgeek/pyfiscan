@@ -1739,3 +1739,11 @@ WordPress plugin tidio-gallery:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000153 http://www.vapidlabs.com/wp/wp_advisory.php?v=427'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin whizz:
+  1:
+    location: ['/wp-content/plugins/whizz/readme.txt']
+    secure_version: '1.0.8'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000154 http://www.vapidlabs.com/wp/wp_advisory.php?v=112'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
