@@ -59,7 +59,7 @@
 # https://drupal.org/SA-CORE-2016-004   CVE-2016-7570   8.1.10
 # https://drupal.org/SA-CORE-2016-004   CVE-2016-7571   8.1.10
 # https://drupal.org/SA-CORE-2016-004   CVE-2016-7572   8.1.10
-# https://drupal.org/SA-CORE-2016-005   TODO            8.2.3/7.52
+# https://drupal.org/SA-CORE-2016-005   TODO            8.2.3/7.52 CVE request http://www.openwall.com/lists/oss-security/2016/11/18/8
 Drupal 8:
   1:
     location: ['/core/lib/Drupal.php']
