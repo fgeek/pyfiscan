@@ -1,5 +1,0 @@
-- Implement configuration file to include (ryanph)
-    - Logging file name
-    - CSV file name
-    - Database location
-- Test cases for yaml structure using real files from major projects like WordPress and Drupal (NFM-8)
