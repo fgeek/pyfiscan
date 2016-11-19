@@ -1795,3 +1795,11 @@ WordPress plugin instagram-feed:
     cve: 'OVE-20160724-0014 https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_in_instagram_feed_plugin_via_csrf.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin post-indexer:
+  1:
+    location: ['/wp-content/plugins/post-indexer/readme.txt']
+    secure_version: '3.0.6.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://security.dxw.com/advisories/sql-injection-in-post-indexer-allows-super-admins-to-read-the-contents-of-the-database/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
