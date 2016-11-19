@@ -1779,3 +1779,11 @@ WordPress plugin check-email:
     cve: 'OVE-20160725-0009 https://sumofpwn.nl/advisory/2016/cross_site_scripting_in_check_email_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin portfolio-gallery:
+  1:
+    location: ['/wp-content/plugins/portfolio-gallery/readme.txt']
+    secure_version: '2.1.11'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160724-0009 https://sumofpwn.nl/advisory/2016/cross_site_scripting_in_huge_it_portfolio_gallery_wordpress_plugin.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
