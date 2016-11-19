@@ -2,6 +2,7 @@
 # CVE-2013-7303
 # CVE-2016-3153 3.1.1/3.0.22/2.1.19 possible typo in CVE details for 2.1.19
 # CVE-2016-3154 3.1.1/3.0.22/2.1.19
+#               3.1.2   https://www.curesec.com/blog/article/blog/SPIP-31-XSS-amp-Host-Header-Injection-178.html
 # CVE-2016-7980 3.1.3   http://www.openwall.com/lists/oss-security/2016/10/12/6
 # CVE-2016-7981 3.1.3   http://www.openwall.com/lists/oss-security/2016/10/12/7
 # CVE-2016-7982 3.1.3   http://www.openwall.com/lists/oss-security/2016/10/12/8
