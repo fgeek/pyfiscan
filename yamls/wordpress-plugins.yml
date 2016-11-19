@@ -1771,3 +1771,11 @@ WordPress plugin wc-shortcodes:
     cve: 'OVE-20160724-0031 https://sumofpwn.nl/advisory/2016/stored_cross_site_scripting_in_wp_canvas___shortcodes_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin check-email:
+  1:
+    location: ['/wp-content/plugins/check-email/readme.txt']
+    secure_version: '0.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160725-0009 https://sumofpwn.nl/advisory/2016/cross_site_scripting_in_check_email_wordpress_plugin.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
