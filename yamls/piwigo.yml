@@ -16,11 +16,12 @@
 # CVE-2015-1517 2.7.4 http://piwigo.org/releases/2.7.4
 # CVE-2015-2034 2.7.4
 # CVE-2015-2035 2.7.4
+# TODO          2.8.3 http://piwigo.org/releases/2.8.3
 Piwigo:
   1:
     location: ['/include/constants.php']
-    secure_version: '2.7.4'
+    secure_version: '2.8.3'
     regexp: ['define.*?PHPWG_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1517 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2034 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2035 http://piwigo.org/releases/2.7.4'
+    cve: 'http://piwigo.org/releases/2.8.3'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
