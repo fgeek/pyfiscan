@@ -30,14 +30,36 @@
 # CVE-2015-2335 1.8.4
 # CVE-2015-2352 1.8.4
 # CVE-2015-4552 1.8.5   https://blog.mybb.com/2015/05/27/mybb-1-8-5-1-6-17-merge-system-1-8-5-release/
-# Pending       1.8.6   https://blog.mybb.com/2015/09/07/mybb-1-8-6-1-6-18-merge-system-1-8-6-release/ CVE request http://www.openwall.com/lists/oss-security/2016/11/10/8
-# Pending       1.8.7   https://blog.mybb.com/2016/03/11/mybb-1-8-7-merge-system-1-8-7-release/ https://www.curesec.com/blog/article/blog/MyBB-186-XSS-160.html CVE request http://www.openwall.com/lists/oss-security/2016/11/10/8
-# Pending       1.8.8   https://blog.mybb.com/2016/10/17/mybb-1-8-8-merge-system-1-8-8-release/ CVE request http://www.openwall.com/lists/oss-security/2016/11/10/8
+# CVE-2015-8973 1.8.6   https://blog.mybb.com/2015/09/07/mybb-1-8-6-1-6-18-merge-system-1-8-6-release/ http://www.openwall.com/lists/oss-security/2016/11/10/8
+# CVE-2015-8974 1.8.6
+# CVE-2015-8975 1.8.6
+# CVE-2015-8976 1.8.6
+# CVE-2015-8977 1.8.6
+# CVE-2016-9402 1.8.7   https://blog.mybb.com/2016/03/11/mybb-1-8-7-merge-system-1-8-7-release/ http://www.openwall.com/lists/oss-security/2016/11/10/8 https://www.curesec.com/blog/article/blog/MyBB-186-XSS-160.html
+# CVE-2016-9403 1.8.7
+# CVE-2016-9404 1.8.7
+# CVE-2016-9405 1.8.7
+# CVE-2016-9406 1.8.7
+# CVE-2016-9407 1.8.7
+# CVE-2016-9408 1.8.7
+# CVE-2016-9409 1.8.7
+# CVE-2016-9410 1.8.7
+# CVE-2016-9411 1.8.7
+# CVE-2016-9412 1.8.7
+# CVE-2016-9413 1.8.7
+# CVE-2016-9414 1.8.7
+# CVE-2016-9415 1.8.8   https://blog.mybb.com/2016/10/17/mybb-1-8-8-merge-system-1-8-8-release/ http://www.openwall.com/lists/oss-security/2016/11/10/8
+# CVE-2016-9416 1.8.8
+# CVE-2016-9417 1.8.8
+# CVE-2016-9418 1.8.8
+# CVE-2016-9419 1.8.8
+# CVE-2016-9420 1.8.8
+# CVE-2016-9421 1.8.8
 MyBB:
   1:
     location: ['/inc/class_core.php']
     secure_version: '1.8.8'
     regexp: ['.*?public.*?\$version.*?(?P<version>[0-9.]+)']
-    cve: 'https://blog.mybb.com/2016/10/17/mybb-1-8-8-merge-system-1-8-8-release/'
+    cve: 'https://blog.mybb.com/2016/10/17/mybb-1-8-8-merge-system-1-8-8-release/ https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9415 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9416 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9417 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9418 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9419 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9420 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9421'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
