@@ -1811,3 +1811,11 @@ WordPress plugin gallery-images:
     cve: 'OVE-20160724-0015 https://sumofpwn.nl/advisory/2016/stored_cross_site_scripting_in_gallery___image_gallery_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin insert-html-snippet:
+  1:
+    location: ['/wp-content/plugins/insert-html-snippet/readme.txt']
+    secure_version: '1.2.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160724-0027 https://sumofpwn.nl/advisory/2016/cross_site_request_forgery_in_insert_html_snippet_wordpress_plugin.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
