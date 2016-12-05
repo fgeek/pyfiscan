@@ -110,6 +110,7 @@ Detects following end-of-life software:
 * MediaWiki 1.23
 * MediaWiki 1.24
 * MediaWiki 1.25
+* MediaWiki 1.26 is end-of-life since [2016-11-20](https://lists.wikimedia.org/pipermail/mediawiki-announce/2016-November/000204.html)
 * SaurusCMS
 * ownCloud 4
 * ownCloud 5
