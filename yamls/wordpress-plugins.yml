@@ -1819,3 +1819,11 @@ WordPress plugin insert-html-snippet:
     cve: 'OVE-20160724-0027 https://sumofpwn.nl/advisory/2016/cross_site_request_forgery_in_insert_html_snippet_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin multisite-post-duplicator:
+  1:
+    location: ['/wp-content/plugins/multisite-post-duplicator/readme.txt']
+    secure_version: '1.1.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://security.dxw.com/advisories/csrf-vulnerability-in-multisite-post-duplicator-could-allow-an-attacker-to-do-almost-anything-an-admin-user-can-do/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
