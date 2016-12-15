@@ -112,12 +112,14 @@
 # CVE-2015-8769 3.4.7   https://www.joomla.org/announcements/release-news/5643-joomla-3-4-7.html https://developer.joomla.org/security-centre/639-20151206-core-session-hardening.html https://developer.joomla.org/security-centre/640-20151207-core-sql-injection.html
 # CVE-2016-8869 3.6.4   https://www.joomla.org/announcements/release-news/5678-joomla-3-6-4-released.html
 # CVE-2016-8870 3.6.4   https://www.joomla.org/announcements/release-news/5678-joomla-3-6-4-released.html
+# CVE-2016-9836 3.6.5   https://developer.joomla.org/security-centre/665-20161202-core-shell-upload.html
+# CVE-2016-9838 3.6.5   https://developer.joomla.org/security-centre/664-20161201-core-elevated-privileges.html
 Joomla 3:
   1:
     location: ['/administrator/manifests/files/joomla.xml']
-    secure_version: '3.6.4'
+    secure_version: '3.6.5'
     regexp: ['[\t]<version>(?P<version>3\.[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-8869 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-8870 https://www.joomla.org/announcements/release-news/5678-joomla-3-6-4-released.html https://blog.sucuri.net/2016/10/details-on-the-privilege-escalation-vulnerability-in-joomla.html'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9836 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9838 https://developer.joomla.org/security-centre/665-20161202-core-shell-upload.html https://developer.joomla.org/security-centre/664-20161201-core-elevated-privileges.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Joomla 2.5:
@@ -125,7 +127,7 @@ Joomla 2.5:
     location: ['/administrator/manifests/files/joomla.xml']
     secure_version: '3.6.4'
     regexp: ['[\t]<version>(?P<version>2\.5\.[0-9]{1,})']
-    cve: 'Joomla 2.5 is end of life. Please upgrade to 3.6.4 version.'
+    cve: 'Joomla 2.5 is end of life. Please upgrade to 3.6.5 version.'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Joomla 1.7:
@@ -133,7 +135,7 @@ Joomla 1.7:
     location: ['/includes/version.php']
     secure_version: '3.6.4'
     regexp: ['[\t]+public[\t|\s]\$RELEASE.*?(?P<version>1.7)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.7 is end of life. Please upgrade to 3.6.4 version.'
+    cve: 'Joomla 1.7 is end of life. Please upgrade to 3.6.5 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.6:
@@ -141,7 +143,7 @@ Joomla 1.6:
     location: ['/libraries/joomla/version.php']
     secure_version: '3.6.4'
     regexp: ['.*?RELEASE.*?(?P<version>1.6)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.6 is end of life. Please upgrade to 3.6.4 version.'
+    cve: 'Joomla 1.6 is end of life. Please upgrade to 3.6.5 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.5:
@@ -149,7 +151,7 @@ Joomla 1.5:
     location: ['/libraries/joomla/version.php']
     secure_version: '3.6.4'
     regexp: ['.*?RELEASE.*?(?P<version>1.5)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.5 is end of life. Please upgrade to 3.6.4 version.'
+    cve: 'Joomla 1.5 is end of life. Please upgrade to 3.6.5 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.0:
@@ -157,6 +159,6 @@ Joomla 1.0:
     location: ['/includes/version.php']
     secure_version: '3.6.4'
     regexp: ['[\t]+var.*?RELEASE.*?(?P<version>1.0)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.0 is end of life. Please upgrade to 3.6.4 version.'
+    cve: 'Joomla 1.0 is end of life. Please upgrade to 3.6.5 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
