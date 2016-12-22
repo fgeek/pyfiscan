@@ -18,11 +18,12 @@
 # CVE-2015-6943 2.0.2   http://seclists.org/fulldisclosure/2015/Sep/10 https://blog.curesec.com/article/blog/Serendipity-201-Blind-SQL-Injection-52.html http://blog.s9y.org/archives/265-Serendipity-2.0.2-Security-Fix-Release.html
 # CVE-2015-8603 2.0.3   http://blog.s9y.org/archives/266-Serendipity-2.0.3-released.html https://www.netsparker.com/web-vulnerability-scanner/vulnerability-security-checks-index/crosssite-scripting-xss/
 # CVE-2016-XXXX 2.0.4   https://github.com/s9y/Serendipity/releases/tag/2.0.4 https://blog.ripstech.com/2016/serendipity-from-file-upload-to-code-execution/
+# CVE-2016-9752 2.0.5
 Serendipity:
   1:
     location: ['/serendipity_config.inc.php']
-    secure_version: '2.0.4'
+    secure_version: '2.0.5'
     regexp: ['\$serendipity.*?version.*?(?P<version>[0-9.]+)']
-    cve: 'https://github.com/s9y/Serendipity/releases/tag/2.0.4 https://blog.ripstech.com/2016/serendipity-from-file-upload-to-code-execution/'
+    cve: 'https://github.com/s9y/Serendipity/releases/tag/2.0.5 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9752'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
