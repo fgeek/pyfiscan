@@ -143,7 +143,7 @@
 # CVE-2015-5622 4.2.3   https://wordpress.org/news/2015/07/wordpress-4-2-3/
 # CVE-2015-5623 4.2.3   https://wordpress.org/news/2015/07/wordpress-4-2-3/
 # CVE-2015-2213 4.2.4   https://wordpress.org/news/2015/08/wordpress-4-2-4/ https://wpvulndb.com/vulnerabilities/8126
-# TODO: CVE-2014-XXXX N/A     https://security.dxw.com/advisories/comment-form-csrf-allows-admin-impersonation-via-comments-in-wordpress-4-2-2/
+# dxw-1970-1086 N/A     https://security.dxw.com/advisories/comment-form-csrf-allows-admin-impersonation-via-comments-in-wordpress-4-2-2/
 # CVE-2015-5714 4.3.1   https://wordpress.org/news/2015/09/wordpress-4-3-1/
 # CVE-2015-5715 4.3.1   https://wordpress.org/news/2015/09/wordpress-4-3-1/
 # CVE-2015-7989 4.3.1   https://wordpress.org/news/2015/09/wordpress-4-3-1/ https://github.com/WordPress/WordPress/commit/f91a5fd10ea7245e5b41e288624819a37adf290a
