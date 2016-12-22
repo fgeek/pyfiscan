@@ -1835,3 +1835,11 @@ WordPress plugin quiz-master-next:
     cve: 'https://security.dxw.com/advisories/csrfstored-xss-in-quiz-and-survey-master-formerly-quiz-master-next-allows-unauthenticated-attackers-to-do-almost-anything-an-admin-can/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin mailchimp-for-wp:
+  1:
+    location: ['/wp-content/plugins/mailchimp-for-wp/readme.txt']
+    secure_version: '4.0.11'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://security.dxw.com/advisories/reflected-xss-in-mailchimp-for-wordpress-could-allow-an-attacker-to-do-almost-anything-an-admin-user-can/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
