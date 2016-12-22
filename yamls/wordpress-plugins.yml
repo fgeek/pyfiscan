@@ -1843,3 +1843,11 @@ WordPress plugin mailchimp-for-wp:
     cve: 'https://security.dxw.com/advisories/reflected-xss-in-mailchimp-for-wordpress-could-allow-an-attacker-to-do-almost-anything-an-admin-user-can/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin copy-me:
+  1:
+    location: ['/wp-content/plugins/copy-me/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://security.dxw.com/advisories/copy-me-vulnerable-to-csrf-allowing-unauthenticated-attacker-to-copy-posts/ http://lists.openwall.net/full-disclosure/2016/12/22/3'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
