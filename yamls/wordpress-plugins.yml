@@ -1750,7 +1750,7 @@ WordPress plugin whizz:
 WordPress plugin wpsolr-search-engine:
   1:
     location: ['/wp-content/plugins/wpsolr-search-engine/readme.txt']
-    secure_version: 'N/A'
+    secure_version: '8.7'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000155 http://www.vapidlabs.com/wp/wp_advisory.php?v=303'
     fingerprint: detect_general
