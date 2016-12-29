@@ -12,18 +12,20 @@
 # CVE-2013-5314 1.6.2   https://www.mavitunasecurity.com/xss-vulnerabilities-in-serendipity/ NS-13-003
 # CVE-2013-XXXX 1.7     http://blog.s9y.org/archives/247-Serendipity-1.7-released.html https://www.mavitunasecurity.com/xss-vulnerabilities-in-serendipity/ NS-13-003
 # CVE-2013-5670 1.7.3   http://blog.s9y.org/archives/250-Serendipity-1.7.3-released.html http://www.opensyscom.fr/Actualites/serendipity-xss-vulnerability.html
+# CVE-2014-9432
 # CVE-2015-2289 2.0.1   http://blog.s9y.org/archives/263-Serendipity-2.0.1-released.html
 # CVE-2015-6968 2.0.2   http://seclists.org/fulldisclosure/2015/Sep/6 https://blog.curesec.com/article/blog/Serendipity-201-Code-Execution-48.html http://blog.s9y.org/archives/265-Serendipity-2.0.2-Security-Fix-Release.html
 # CVE-2015-6969 2.0.2   http://seclists.org/fulldisclosure/2015/Sep/9 https://blog.curesec.com/article/blog/Serendipity-201-Persistent-XSS-51.html http://blog.s9y.org/archives/265-Serendipity-2.0.2-Security-Fix-Release.html
 # CVE-2015-6943 2.0.2   http://seclists.org/fulldisclosure/2015/Sep/10 https://blog.curesec.com/article/blog/Serendipity-201-Blind-SQL-Injection-52.html http://blog.s9y.org/archives/265-Serendipity-2.0.2-Security-Fix-Release.html
 # CVE-2015-8603 2.0.3   http://blog.s9y.org/archives/266-Serendipity-2.0.3-released.html https://www.netsparker.com/web-vulnerability-scanner/vulnerability-security-checks-index/crosssite-scripting-xss/
 # CVE-2016-XXXX 2.0.4   https://github.com/s9y/Serendipity/releases/tag/2.0.4 https://blog.ripstech.com/2016/serendipity-from-file-upload-to-code-execution/
+# CVE-2016-9681 2.0.5   https://github.com/s9y/Serendipity/commit/e2a665e13b7de82a71c9bbb77575d15131b722be https://smarterbitbybit.com/cve-2016-9681-serendipity-cms-xss-vulnerability-in-version-2-0-4/
 # CVE-2016-9752 2.0.5
 Serendipity:
   1:
     location: ['/serendipity_config.inc.php']
     secure_version: '2.0.5'
     regexp: ['\$serendipity.*?version.*?(?P<version>[0-9.]+)']
-    cve: 'https://github.com/s9y/Serendipity/releases/tag/2.0.5 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9752'
+    cve: 'https://github.com/s9y/Serendipity/releases/tag/2.0.5 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9681 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9752'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
