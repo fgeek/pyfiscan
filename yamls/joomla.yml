@@ -48,6 +48,8 @@
 # CVE-2010-3712 1.5.21  SA41772 http://developer.joomla.org/security/news/322-20101001-core-xss-vulnerabilities.html
 # CVE-2010-4166 1.5.22  SA42133 http://developer.joomla.org/security/news/323-20101101-core-sqli-info-disclosurevulnerabilities.html
 # CVE-2010-4696 1.6.1   SA42133 http://developer.joomla.org/security/news/328-20110201-core-sql-injection-path-disclosure.html http://yehg.net/lab/pr0js/advisories/joomla/core/[joomla_1.6.0]_sql_injection
+# CVE-2010-4837
+# CVE-2010-4838
 # CVE-2011-0005 1.5.22  
 # CVE-2011-1151 1.6.1   http://developer.joomla.org/security/news/328-20110201-core-sql-injection-path-disclosure.html
 # CVE-2011-2488 1.5.23
@@ -56,12 +58,18 @@
 #               1.7.1   http://developer.joomla.org/security/news/367-20110901-core-xss-vulnerability.html
 # CVE-2011-2889 1.5.23
 # CVE-2011-2890 1.5.23
+# CVE-2011-2891
+# CVE-2011-2892
 # N/A           1.5.24  SA46421 http://developer.joomla.org/security/news/372-20111003-core-information-disclosure
 # CVE-2011-3595 1.7.1   http://developer.joomla.org/security/news/368-20110902-core-xss-vulnerability
 #               1.7.1   http://developer.joomla.org/security/news/369-20110903-core-information-disclosure.html
 # CVE-2011-3629 1.7.2   SA46421 http://developer.joomla.org/security/news/371-20111002-core-information-disclosure
 # CVE-2011-4321 1.5.25  http://developer.joomla.org/security/news/374-20111102-core-password-change http://developer.joomla.org/security/news/375-20111103-core-password-change
 # CVE-2011-4332 1.6.4   http://developer.joomla.org/security/news/349-20110601-xss-vulnerabilities.html
+# CVE-2011-4933
+# CVE-2011-4934
+# CVE-2011-4935
+# CVE-2011-4936
 # CVE-2011-4937
 # CVE-2012-0819 1.7.4   http://developer.joomla.org/security/news/382-20120101-core-information-disclosure.html
 # CVE-2012-0820 1.7.4   http://developer.joomla.org/security/news/383-20120102-core-xss-vulnerability.html
@@ -76,12 +84,17 @@
 # CVE-2012-1563 2.5.3
 # CVE-2012-1598 1.5.26      http://developer.joomla.org/security/news/396-20120305-core-password-change
 # CVE-2012-1599 1.5.26      http://developer.joomla.org/security/news/397-20120306-core-information-disclosure
+# CVE-2012-1611
+# CVE-2012-1612
 # CVE-2012-2412 2.5.7
 # CVE-2012-2747 2.5.5       http://secunia.com/advisories/49605/
 # CVE-2012-2748 2.5.5       http://secunia.com/advisories/49605/
+# CVE-2012-3828
+# CVE-2012-3829
 # CVE-2012-4531 2.5.7       SA49678 http://developer.joomla.org/security/news/539-20120901-core-xss-vulnerability http://www.joomla.org/announcements/release-news/5463-joomla-2-5-7-released.html
 # CVE-2012-4532 2.5.7       SA49678 http://developer.joomla.org/security/news/540-20120902-core-xss-vulnerability http://www.joomla.org/announcements/release-news/5463-joomla-2-5-7-released.html http://www.darksecurity.de/advisories/2012/SSCHADV2012-014.txt
 # CVE-2012-5455 3.0.1/2.5.10    http://developer.joomla.org/security/81-20130403-core-xss-vulnerability.html
+# CVE-2012-5827
 # CVE-2012-XXXX 3.1.0/2.5.10    http://developer.joomla.org/security/83-20130404-core-xss-vulnerability.html
 # CVE-2013-XXXX N/A http://seclists.org/fulldisclosure/2013/Jun/149
 # CVE-2013-1453
@@ -93,6 +106,7 @@
 # CVE-2013-3059 3.1.0/2.5.10    http://developer.joomla.org/security/80-20130405-core-xss-vulnerability.html
 # CVE-2013-3242 3.1.0/3.0.4/2.5.10  http://developer.joomla.org/security/85-20130406-core-dos-vulnerability.html
 # CVE-2013-3267 3.1.0/2.5.10        http://developer.joomla.org/security/86-20130407-core-xss-vulnerability.html
+# CVE-2013-3719
 # CVE-2013-5576 3.1.5/2.5.14    http://developer.joomla.org/security/563-20130801-core-unauthorised-uploads.html https://github.com/rapid7/metasploit-framework/pull/2219 http://www.cso.com.au/article/523528/joomla_patches_file_manager_vulnerability_responsible_hijacked_websites/
 # CVE-2014-6632 3.3.4               http://developer.joomla.org/security/594-20140902-core-unauthorised-logins.html
 # CVE-2014-7228 3.3.5               http://developer.joomla.org/security/595-20140903-core-remote-file-inclusion.html
