@@ -7,9 +7,9 @@
 # CVE-2011-4941         http://piwik.org/blog/2011/06/piwik-1-5-security-advisory/
 # CVE-2012-4541
 # CVE-2012-XXXX 1.7     http://piwik.org/blog/2012/02/7775/
-# CVE-2013-0193
-# CVE-2013-0194
-# CVE-2013-0195
+# CVE-2013-0193 1.10    https://piwik.org/changelog/piwik-1-10/
+# CVE-2013-0194 1.10    https://piwik.org/changelog/piwik-1-10/
+# CVE-2013-0195 1.10    https://piwik.org/changelog/piwik-1-10/
 # CVE-2013-1844 1.11    http://piwik.org/blog/2013/03/piwik-1-11/
 # CVE-2013-2633 1.11    http://piwik.org/blog/2013/03/piwik-1-11/
 # CVE-2015-7815 2.15.0  https://piwik.org/changelog/piwik-2-15-0 http://karmainsecurity.com/KIS-2015-09
