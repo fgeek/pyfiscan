@@ -1859,3 +1859,11 @@ WordPress plugin image-slider-widget:
     cve: 'https://security.dxw.com/advisories/arbitrary-file-deletion-vulnerability-in-image-slider-allows-authenticated-users-to-delete-files/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin cloudsafe365-for-wp:
+  1:
+    location: ['/wp-content/plugins/cloudsafe365-for-wp/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'http://www.securityfocus.com/bid/55241/info'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
