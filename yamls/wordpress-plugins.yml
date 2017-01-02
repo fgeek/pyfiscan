@@ -1867,3 +1867,11 @@ WordPress plugin cloudsafe365-for-wp:
     cve: 'http://www.securityfocus.com/bid/55241/info'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin simply-poll:
+  1:
+    location: ['/wp-content/plugins/simply-poll/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://www.exploit-db.com/exploits/40971/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
