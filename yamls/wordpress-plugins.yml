@@ -1883,3 +1883,11 @@ WordPress plugin wysija-newsletters:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-4725'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin simple-personal-message:
+  1:
+    location: ['/wp-content/plugins/simple-personal-message/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://www.exploit-db.com/exploits/40870/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
