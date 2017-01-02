@@ -11,11 +11,12 @@
 # CVE-2011-4558 8.3/6.6     SA47320 http://dev.tiki.org/item4059 http://info.tiki.org/article185-Tiki-Security-Patches-Available-for-8-3-and-6-6-LTS
 # CVE-2012-3996 8.4
 # CVE-2012-0911 8.4
+# CVE-2016-9889 16.1/15.3/12.10 https://tiki.org/article443-Security-update-Tiki-16-1-Tiki-15-3-and-Tiki-12-10-released
 TikiWiki:
   1:
     location: ['/lib/setup/twversion.class.php']
-    secure_version: '8.4'
+    secure_version: '16.1'
     regexp: ['.*?\$this->version.*?(?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-0911 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-3996'
+    cve: 'https://tiki.org/article443-Security-update-Tiki-16-1-Tiki-15-3-and-Tiki-12-10-released https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9889'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
