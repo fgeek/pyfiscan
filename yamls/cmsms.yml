@@ -33,11 +33,12 @@
 # TODO          1.12.2  http://www.cmsmadesimple.org/2016/03/Announcing-CMSMS-1-12-2-kolonia/
 # TODO          2.1.2   http://www.cmsmadesimple.org/2016/02/Announcing-CMSMS-2-1-2/
 # CVE-2016-2784 2.1.3   http://www.cmsmadesimple.org/2016/04/Announcing-CMSMS-2-1-3-Black-Point
+# TODO          2.1.6   http://www.cmsmadesimple.org/2016/12/Announcing-CMSMS-v2-1-6-Spanish-Wells/
 CMSMS:
   1:
     location: ['/version.php']
-    secure_version: '2.1.3'
+    secure_version: '2.1.6'
     regexp: ['\$CMS_VERSION.*?(?P<version>[.0-9]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2784 http://www.cmsmadesimple.org/2016/04/Announcing-CMSMS-2-1-3-Black-Point'
+    cve: 'http://www.cmsmadesimple.org/2016/12/Announcing-CMSMS-v2-1-6-Spanish-Wells/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
