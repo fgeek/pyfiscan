@@ -1,10 +1,11 @@
 # URL: http://zikula.org/
 # CVE-2011-0535 1.2.5
 # CVE-2013-6168 1.3.6 https://www.htbridge.com/advisory/HTB23178
+# CVE-2016-9835 1.4.4/1.3.11 https://github.com/zikula/core/issues/3237 http://www.securityfocus.com/bid/95005
 Zikula:
   1:
     location: ['/lib/Zikula/Core.php']
-    secure_version: '1.3.6'
+    secure_version: '1.4.4'
     regexp: ['.*?const.*?VERSION_NUM.*?(?P<version>[0-9.]+)']
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-6168 https://www.htbridge.com/advisory/HTB23178'
     fingerprint: detect_general
