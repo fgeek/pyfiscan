@@ -1875,3 +1875,11 @@ WordPress plugin simply-poll:
     cve: 'https://www.exploit-db.com/exploits/40971/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wysija-newsletters:
+  1:
+    location: ['/wp-content/plugins/wysija-newsletters/readme.txt']
+    secure_version: '2.6.8'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-4725'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
