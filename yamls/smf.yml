@@ -1,3 +1,4 @@
+# NOTE: Security reporting http://www.simplemachines.org/about/smf/security.php
 # NFU:  CVE-2007-5943 myth/fake
 #       CVE-2012-5903
 #       Could not reproduce/Disputed http://www.openwall.com/lists/oss-security/2012/12/31/7
@@ -53,11 +54,12 @@
 # CVE-2014-XXXX 2.0.9   http://www.simplemachines.org/community/index.php?topic=528448.0
 # CVE-2016-5726 TODO    https://github.com/SimpleMachines/SMF2.1/blob/404fd5347951652624dfb72304ee38fcab98378f/Sources/Packages.php#L863-L873
 # CVE-2016-5727 TODO    https://github.com/SimpleMachines/SMF2.1/blob/19ee85ff8761b792ea3e9ed630a947f45f93ee68/Sources/LogInOut.php#L125-L129
+# TODO          2.0.12  http://www.simplemachines.org/community/index.php?topic=548871.0 asked status of CVE 2017-01-02
 SMF 2:
   1:
     location: ['/index.php']
-    secure_version: '2.0.9'
+    secure_version: '2.0.12'
     regexp: ['\$forum_version.*?(?P<version>[0-9.]{1,})']
-    cve: 'http://www.simplemachines.org/community/index.php?topic=528448.0'
+    cve: 'http://www.simplemachines.org/community/index.php?topic=548871.0'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
