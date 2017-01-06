@@ -1892,3 +1892,11 @@ WordPress plugin simple-personal-message:
     cve: 'https://www.exploit-db.com/exploits/40870/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin tevolution:
+  1:
+    location: ['/wp-content/plugins/tevolution/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://cxsecurity.com/issue/WLB-2016120166'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
