@@ -65,28 +65,47 @@
 # oC-SA-2016-003    CVE-2016-1500   8.2.2/8.1.5/8.0.10/7.0.12
 # oC-SA-2016-004    CVE-2016-1501   8.1.4/8.0.9
 # oC-SA-2016-005    NFU
+# oC-SA-2016-006    TODO            9.0.2/8.2.5 https://github.com/owncloud/gallery/commit/e3021ab6cc4e37eccb27eab6374722632c85eed7 https://github.com/owncloud/gallery/commit/2e8f1f2509d15876ab09396dfe6c463aacdf5c5b
+# oC-SA-2016-007    TODO            9.0.2/8.2.4/8.1.7/8.0.12/7.0.14 https://github.com/owncloud/core/commit/830a080f0e4b67d6265ba09ab578060945f28916 https://github.com/owncloud/core/commit/d3f585c329c0291b208dc54d75b4aecb7118ff8d https://github.com/owncloud/core/commit/80db6c60a3916175feee775970988c8cc8c0f49f https://github.com/owncloud/core/commit/9cdb8817258e62917c78765efc127247eb181b87 https://github.com/owncloud/core/commit/9d5005c795c99ba1ef516035542e15157931292a
+# oC-SA-2016-008    TODO            9.0.2/8.2.4/8.1.7/8.0.12/7.0.14
+# oC-SA-2016-009    TODO            9.0.2 https://github.com/owncloud/core/commit/d436326e19b8df1594f781e74e8c50151f003ea5 https://github.com/owncloud/core/commit/b375086c473f7117d6ee8b61cf0c6e24350b113a
+# oC-SA-2016-010    TODO            9.0.3/8.2.6 https://github.com/owncloud/gallery/commit/e3021ab6cc4e37eccb27eab6374722632c85eed7 https://github.com/owncloud/gallery/commit/2e8f1f2509d15876ab09396dfe6c463aacdf5c5b
+# oC-SA-2016-011    TODO            9.0.4 https://github.com/owncloud/gallery/commit/6933d27afe518967bd1b60e6a7eacd88288929fc
+# oC-SA-2016-012    TODO            9.0.4/8.2.7/8.1.9 https://github.com/owncloud/core/commit/efa35d621dc7ff975468e636a5d1c153511296dc https://github.com/owncloud/core/commit/b7fa2c5dc945b40bc6ed0a9a0e47c282ebf043e1 https://github.com/owncloud/core/commit/044ee072a647636b1a17c89265c7233b35371335
+# oC-SA-2016-013    TODO            9.0.4 https://github.com/owncloud/core/commit/c92c234059f8b1dc7d53122985ec0d398895a2cf
+# oC-SA-2016-014    TODO            9.0.4/8.2.7/8.1.9/8.0.14 https://github.com/owncloud/core/commit/121a3304a0c37ccda0e1b63ddc528cba9121a36e https://github.com/owncloud/core/commit/c0a4b7b3f38ad2eaf506484b3b92ec678cb021c9 https://github.com/owncloud/core/commit/0622e635d97cb17c5e1363e370bb8268cc3d2547 https://github.com/owncloud/core/commit/acbbadb71ceee7f01da347f7dcd519beda78cc47
+# oC-SA-2016-015    TODO            9.0.4/8.2.7/8.1.9/8.0.14 https://github.com/owncloud/core/commit/c93eca49c32428ece03dd67042772d5fa62c8d6e https://github.com/owncloud/core/commit/3b056fa68ce502ceb0db9b446dab3b9e7b10dd13 https://github.com/owncloud/core/commit/23383080731d092e079986464a8c4c9ffcb79f4c https://github.com/owncloud/core/commit/d31720b6f1e8c8dfeb5e8805ab35ad7c8000b2f1
+# oC-SA-2016-016    CVE-2016-7102   NFU
+# oC-SA-2016-017    TODO            9.1.2/9.0.6/8.2.9 https://github.com/owncloud/apps/commit/5d47e7b52646cf79edadd78ce10c754290cbb732 https://github.com/owncloud/apps/commit/16cbccfc946c8711721fa684d78135ca1fb64791 https://github.com/owncloud/apps/commit/a0e07b7ddd5a5fd850a6e07f8457d05b76a300b3 not enabled by default
+ownCloud 9.0:
+  1:
+    location: ['/version.php']
+    secure_version: '9.0.4'
+    regexp: ['\$OC_VersionString.*?(?P<version>9\.0\.[0-9.]+)']
+    cve: 'https://owncloud.org/security/advisory/?id=oC-SA-2016-011 https://owncloud.org/security/advisory/?id=oC-SA-2016-012 https://owncloud.org/security/advisory/?id=oC-SA-2016-013 https://owncloud.org/security/advisory/?id=oC-SA-2016-014 https://owncloud.org/security/advisory/?id=oC-SA-2016-015'
+    fingerprint: detect_general
 ownCloud 8.2:
   1:
     location: ['/version.php']
-    secure_version: '8.2.2'
+    secure_version: '8.2.7'
     regexp: ['\$OC_VersionString.*?(?P<version>8\.2\.[0-9.]+)']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1498 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1499 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1500 https://owncloud.org/security/advisory/?id=oC-SA-2016-001 https://owncloud.org/security/advisory/?id=oC-SA-2016-002 https://owncloud.org/security/advisory/?id=oC-SA-2016-003'
+    cve: 'https://owncloud.org/security/advisory/?id=oC-SA-2016-011 https://owncloud.org/security/advisory/?id=oC-SA-2016-012 https://owncloud.org/security/advisory/?id=oC-SA-2016-013 https://owncloud.org/security/advisory/?id=oC-SA-2016-014 https://owncloud.org/security/advisory/?id=oC-SA-2016-015'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 ownCloud 8.1:
   1:
     location: ['/version.php']
-    secure_version: '8.1.5'
+    secure_version: '8.1.9'
     regexp: ['\$OC_VersionString.*?(?P<version>8\.1\.[0-9.]+)']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1498 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1499 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1500 https://owncloud.org/security/advisory/?id=oC-SA-2016-001 https://owncloud.org/security/advisory/?id=oC-SA-2016-002 https://owncloud.org/security/advisory/?id=oC-SA-2016-003'
+    cve: 'https://owncloud.org/security/advisory/?id=oC-SA-2016-011 https://owncloud.org/security/advisory/?id=oC-SA-2016-012 https://owncloud.org/security/advisory/?id=oC-SA-2016-013 https://owncloud.org/security/advisory/?id=oC-SA-2016-014 https://owncloud.org/security/advisory/?id=oC-SA-2016-015'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 ownCloud 8.0:
   1:
     location: ['/version.php']
-    secure_version: '8.0.10'
+    secure_version: '8.0.14'
     regexp: ['\$OC_VersionString.*?(?P<version>8\.0\.[0-9.]+)']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1498 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1499 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1500 https://owncloud.org/security/advisory/?id=oC-SA-2016-001 https://owncloud.org/security/advisory/?id=oC-SA-2016-002 https://owncloud.org/security/advisory/?id=oC-SA-2016-003'
+    cve: 'https://owncloud.org/security/advisory/?id=oC-SA-2016-011 https://owncloud.org/security/advisory/?id=oC-SA-2016-012 https://owncloud.org/security/advisory/?id=oC-SA-2016-013 https://owncloud.org/security/advisory/?id=oC-SA-2016-014 https://owncloud.org/security/advisory/?id=oC-SA-2016-015'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 ownCloud 7:
