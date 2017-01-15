@@ -77,6 +77,7 @@
 # oC-SA-2016-015    TODO            9.0.4/8.2.7/8.1.9/8.0.14 https://github.com/owncloud/core/commit/c93eca49c32428ece03dd67042772d5fa62c8d6e https://github.com/owncloud/core/commit/3b056fa68ce502ceb0db9b446dab3b9e7b10dd13 https://github.com/owncloud/core/commit/23383080731d092e079986464a8c4c9ffcb79f4c https://github.com/owncloud/core/commit/d31720b6f1e8c8dfeb5e8805ab35ad7c8000b2f1
 # oC-SA-2016-016    CVE-2016-7102   NFU
 # oC-SA-2016-017    TODO            9.1.2/9.0.6/8.2.9 https://github.com/owncloud/apps/commit/5d47e7b52646cf79edadd78ce10c754290cbb732 https://github.com/owncloud/apps/commit/16cbccfc946c8711721fa684d78135ca1fb64791 https://github.com/owncloud/apps/commit/a0e07b7ddd5a5fd850a6e07f8457d05b76a300b3 not enabled by default
+# TODO              TODO            https://github.com/owncloud/core/issues/23595
 ownCloud 9.0:
   1:
     location: ['/version.php']
