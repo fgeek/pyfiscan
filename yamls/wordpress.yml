@@ -163,6 +163,7 @@
 # CVE-2016-5837 4.5.3   https://wordpress.org/news/2016/06/wordpress-4-5-3/
 # CVE-2016-5838 4.5.3   https://wordpress.org/news/2016/06/wordpress-4-5-3/
 # CVE-2016-5839 4.5.3   https://wordpress.org/news/2016/06/wordpress-4-5-3/
+# CVE-2016-10148 4.6    https://core.trac.wordpress.org/ticket/37490 https://core.trac.wordpress.org/changeset/38168
 # CVE-2016-6896 4.6     https://wordpress.org/news/2016/08/pepper/ https://sumofpwn.nl/advisory/2016/path_traversal_vulnerability_in_wordpress_core_ajax_handlers.html
 # CVE-2016-6897 4.6     https://wordpress.org/news/2016/08/pepper/ https://sumofpwn.nl/advisory/2016/path_traversal_vulnerability_in_wordpress_core_ajax_handlers.html
 # CVE-2016-7168 4.6.1   https://wordpress.org/news/2016/09/wordpress-4-6-1-security-and-maintenance-release/
