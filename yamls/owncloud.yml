@@ -74,7 +74,7 @@
 # oC-SA-2016-007    TODO            9.0.2/8.2.4/8.1.7/8.0.12/7.0.14 https://github.com/owncloud/core/commit/830a080f0e4b67d6265ba09ab578060945f28916 https://github.com/owncloud/core/commit/d3f585c329c0291b208dc54d75b4aecb7118ff8d https://github.com/owncloud/core/commit/80db6c60a3916175feee775970988c8cc8c0f49f https://github.com/owncloud/core/commit/9cdb8817258e62917c78765efc127247eb181b87 https://github.com/owncloud/core/commit/9d5005c795c99ba1ef516035542e15157931292a
 # oC-SA-2016-008    TODO            9.0.2/8.2.4/8.1.7/8.0.12/7.0.14
 # oC-SA-2016-009    TODO            9.0.2 https://github.com/owncloud/core/commit/d436326e19b8df1594f781e74e8c50151f003ea5 https://github.com/owncloud/core/commit/b375086c473f7117d6ee8b61cf0c6e24350b113a
-# oC-SA-2016-010    TODO            9.0.3/8.2.6 https://github.com/owncloud/gallery/commit/e3021ab6cc4e37eccb27eab6374722632c85eed7 https://github.com/owncloud/gallery/commit/2e8f1f2509d15876ab09396dfe6c463aacdf5c5b
+# oC-SA-2016-010    CVE-2016-5876   9.0.3/8.2.6 https://github.com/owncloud/gallery/commit/e3021ab6cc4e37eccb27eab6374722632c85eed7 https://github.com/owncloud/gallery/commit/2e8f1f2509d15876ab09396dfe6c463aacdf5c5b
 # oC-SA-2016-011    TODO            9.0.4 https://github.com/owncloud/gallery/commit/6933d27afe518967bd1b60e6a7eacd88288929fc
 # oC-SA-2016-012    TODO            9.0.4/8.2.7/8.1.9 https://github.com/owncloud/core/commit/efa35d621dc7ff975468e636a5d1c153511296dc https://github.com/owncloud/core/commit/b7fa2c5dc945b40bc6ed0a9a0e47c282ebf043e1 https://github.com/owncloud/core/commit/044ee072a647636b1a17c89265c7233b35371335
 # oC-SA-2016-013    TODO            9.0.4 https://github.com/owncloud/core/commit/c92c234059f8b1dc7d53122985ec0d398895a2cf
