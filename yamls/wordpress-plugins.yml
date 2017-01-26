@@ -1013,12 +1013,13 @@ WordPress plugin wp-noexternallinks:
     cve: 'OVE-20160712-0020 https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_wp_no_external_links_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# OVE-20160712-0021 0.85 https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_google_forms_wordpress_plugin.html
 WordPress plugin wpgform:
   1:
     location: ['/wp-content/plugins/wpgform/readme.txt']
-    secure_version: '0.85'
+    secure_version: '0.91'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'OVE-20160712-0021 https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_google_forms_wordpress_plugin.html'
+    cve: 'OVE-20160803-0001 https://sumofpwn.nl/advisory/2016/google_forms_wordpress_plugin_unauthenticated_php_object_injection_vulnerability.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin wp-live-chat-support:
