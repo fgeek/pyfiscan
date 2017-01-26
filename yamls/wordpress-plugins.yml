@@ -1909,3 +1909,11 @@ WordPress plugin iwp-client:
     cve: 'OVE-20160803-0004 https://sumofpwn.nl/advisory/2016/infinitewp_client_wordpress_plugin_unauthenticated_php_object_injection_vulnerability.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin cms-commander-client:
+  1:
+    location: ['/wp-content/plugins/cms-commander-client/readme.txt']
+    secure_version: '2.22'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160803-0003 https://sumofpwn.nl/advisory/2016/cms_commander_client_wordpress_plugin_unauthenticated_php_object_injection_vulnerability.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
