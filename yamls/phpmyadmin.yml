@@ -168,11 +168,18 @@
 # PMASA-2016-69 CVE-2016-9864   4.6.5/4.4.15.9/4.0.10.18
 # PMASA-2016-70 CVE-2016-9865   4.6.5/4.4.15.9/4.0.10.18
 # PMASA-2016-71 CVE-2016-9866   4.6.5/4.4.15.9/4.0.10.18
+# PMASA-2017-1                  4.6.6/4.4.15.10/4.0.10.19
+# PMASA-2017-2                  4.6.6/4.4.15.10/4.0.10.19
+# PMASA-2017-3                  4.6.6/4.4.15.10/4.0.10.19
+# PMASA-2017-4                  4.6.6/4.4.15.10/4.0.10.19
+# PMASA-2017-5                  4.6.6
+# PMASA-2017-6                  4.6.6/4.4.15.10/4.0.10.19
+# PMASA-2017-7                  4.6.6/4.4.15.10/4.0.10.19
 phpMyAdmin:
   1:
     location: ['/libraries/Config.class.php']
-    secure_version: '4.6.5'
+    secure_version: '4.6.6'
     regexp: ['.*?PMA_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://www.phpmyadmin.net/security/PMASA-2016-58/ - https://www.phpmyadmin.net/security/PMASA-2016-71/'
+    cve: 'https://www.phpmyadmin.net/security/PMASA-2017-1/ - https://www.phpmyadmin.net/security/PMASA-2017-7/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
