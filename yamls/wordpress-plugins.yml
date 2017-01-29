@@ -1918,3 +1918,11 @@ WordPress plugin cms-commander-client:
     cve: 'OVE-20160803-0003 https://sumofpwn.nl/advisory/2016/cms_commander_client_wordpress_plugin_unauthenticated_php_object_injection_vulnerability.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin user-access-manager:
+  1:
+    location: ['/wp-content/plugins/user-access-manager/readme.txt']
+    secure_version: '1.2.14'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160712-0025 https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_vulnerability_in_user_access_manager_wordpress_plugin.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
