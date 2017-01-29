@@ -1206,12 +1206,13 @@ WordPress plugin uji-countdown:
     cve: 'OVE-20160724-0029 https://sumofpwn.nl/advisory/2016/cross_site_scripting_in_uji_countdown_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# OVE-20160722-0007 1.06 https://sumofpwn.nl/advisory/2016/cross_site_scripting_in_formbuilder_wordpress_plugin.html
 WordPress plugin formbuilder:
   1:
     location: ['/wp-content/plugins/formbuilder/readme.txt']
-    secure_version: '1.06'
+    secure_version: '1.08'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'OVE-20160722-0007 https://sumofpwn.nl/advisory/2016/cross_site_scripting_in_formbuilder_wordpress_plugin.html'
+    cve: 'OVE-20160724-0005 https://sumofpwn.nl/advisory/2016/cross_site_request_forgery_vulnerability_in_formbuilder_wordpress_plugin_allows_plugin_permissions_modification.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin count-per-day:
