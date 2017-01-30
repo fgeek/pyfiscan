@@ -175,19 +175,21 @@
 # CVE-2017-5491 4.7.1
 # CVE-2017-5492 4.7.1
 # CVE-2017-5493 4.7.1
-# CVE-2017-XXXX 4.7.2   https://wordpress.org/news/2017/01/wordpress-4-7-2-security-release/
+# CVE-2017-5610 4.7.2   https://wordpress.org/news/2017/01/wordpress-4-7-2-security-release/ https://github.com/WordPress/WordPress/commit/21264a31e0849e6ff793a06a17de877dd88ea454
+# CVE-2017-5611 4.7.2   https://wordpress.org/news/2017/01/wordpress-4-7-2-security-release/ https://github.com/WordPress/WordPress/commit/85384297a60900004e27e417eac56d24267054cb
+# CVE-2017-5612 4.7.2   https://wordpress.org/news/2017/01/wordpress-4-7-2-security-release/ https://github.com/WordPress/WordPress/commit/4482f9207027de8f36630737ae085110896ea849
 WordPress:
   1:
     location: ['/wp-includes/version.php', '/wp-includes/vars.php']
     secure_version: '4.7.2'
     regexp: ['\$wp_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://wordpress.org/news/2017/01/wordpress-4-7-2-security-release/'
+    cve: 'https://wordpress.org/news/2017/01/wordpress-4-7-2-security-release/ https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5610 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5611 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5612'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
   2:
     location: ['/b2-include/b2vars.php']
     secure_version: '4.7.2'
     regexp: ['\$b2_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://wordpress.org/news/2017/01/wordpress-4-7-2-security-release/'
+    cve: 'https://wordpress.org/news/2017/01/wordpress-4-7-2-security-release/ https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5610 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5611 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5612'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
