@@ -2,6 +2,7 @@
 # https://github.com/owncloud/core/wiki/Maintenance-and-Release-Schedule
 # Advisory URL: http://owncloud.org/about/security/advisories/oC-SA-XXXX-XXX/
 # NOTE: user enumeration is out-of-scope https://github.com/owncloud/core/issues/23595
+# NFU: CVE-2016-7102 out of scope (desktop)
 # ownCloud ID       CVE             Fixed in        ownCloud security advisory URL
 # N/A               CVE-2012-5336   4.0.8
 # N/A               CVE-2012-5056   4.0.8
