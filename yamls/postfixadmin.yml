@@ -1,0 +1,15 @@
+# URL: http://postfixadmin.sourceforge.net/
+# CVE-2012-0811
+# CVE-2012-0812
+# CVE-2014-2655
+# SA47670
+# CVE-2016-XXXX https://sourceforge.net/p/postfixadmin/bugs/372/ https://sourceforge.net/p/postfixadmin/code/1842 http://seclists.org/bugtraq/2016/May/101 http://seclists.org/fulldisclosure/2016/May/59
+# CVE-2017-5930 3.0.2 https://github.com/postfixadmin/postfixadmin/pull/23
+Postfix Admin:
+  1:
+    location: ['/functions.inc.php']
+    secure_version: '3.0.2'
+    regexp: ['\$version =.*?(?P<version>[0-9.]+)']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5930'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
