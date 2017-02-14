@@ -1934,3 +1934,11 @@ WordPress plugin wp-mail:
     cve: 'https://cjc.im/advisories/0006/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin easy-table:
+  1:
+    location: ['/wp-content/plugins/easy-table/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'http://seclists.org/fulldisclosure/2017/Feb/24'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
