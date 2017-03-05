@@ -2026,3 +2026,11 @@ WordPress plugin Magic-Fields:
     cve: 'OVE-20160724-0019 https://sumofpwn.nl/advisory/2016/cross_site_scripting_in_magic_fields_1_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin google-analytics-dashboard:
+  1:
+    location: ['/wp-content/plugins/google-analytics-dashboard/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160724-0026 https://sumofpwn.nl/advisory/2016/cross_site_scripting_in_google_analytics_dashboard_wordpress_plugin.html' 
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
