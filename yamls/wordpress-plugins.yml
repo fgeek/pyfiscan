@@ -1958,3 +1958,11 @@ WordPress plugin stats-counter:
     cve: 'OVE-20160803-0005 https://sumofpwn.nl/advisory/2016/analytics_stats_counter_statistics_wordpress_plugin_unauthenticated_php_object_injection_vulnerability.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin admin-custom-login:
+  1:
+    location: ['/wp-content/plugins/admin-custom-login/readme.txt']
+    secure_version: 'N/A'  # TODO tested in 2.4.5.2 latest is 2.4.7.1
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160712-0002 https://sumofpwn.nl/advisory/2016/admin_custom_login_wordpress_plugin_affected_by_persistent_cross_site_scripting_via_logo_url_field.html OVE-20160712-0003 https://sumofpwn.nl/advisory/2016/admin_custom_login_wordpress_plugin_custom_login_page_affected_by_persistent_cross_site_scripting.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
