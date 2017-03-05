@@ -2018,3 +2018,11 @@ WordPress plugin slideshow-gallery:
     cve: 'OVE-20160714-0016 https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_tribulant_slideshow_galleries_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin Magic-Fields:
+  1:
+    location: ['/wp-content/plugins/Magic-Fields/readme.txt']
+    secure_version: '1.7.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160724-0019 https://sumofpwn.nl/advisory/2016/cross_site_scripting_in_magic_fields_1_wordpress_plugin.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
