@@ -2090,3 +2090,11 @@ WordPress plugin contact-form-plugin:
     cve: 'OVE-20160712-0042 https://sumofpwn.nl/advisory/2016/stored_cross_site_scripting_vulnerability_in_contact_form_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin rockhoist-badges:
+  1:
+    location: ['/wp-content/plugins/rockhoist-badges/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6102 http://www.vapidlabs.com/advisory.php?v=176'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
