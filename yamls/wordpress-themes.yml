@@ -6,3 +6,11 @@ WordPress theme colorway:
     cve: 'OVE-20160712-0024 https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_colorway_wordpress_theme.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress theme atahualpa:
+  1:
+    location: ['/wp-content/themes/atahualpa/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160724-0003 https://sumofpwn.nl/advisory/2016/cross_site_request_forgery_in_atahualpa_wordpress_theme.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
