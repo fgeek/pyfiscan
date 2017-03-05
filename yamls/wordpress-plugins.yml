@@ -1104,9 +1104,9 @@ WordPress plugin lazy-load:
 WordPress plugin simple-ads-manager:
   1:
     location: ['/wp-content/plugins/simple-ads-manager/readme.txt']
-    secure_version: '2.9.5.118'
+    secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'http://security.szurek.pl/simple-ads-manager-294116-sql-injection.html'
+    cve: 'OVE-20160712-0041 https://sumofpwn.nl/advisory/2016/simple_ads_manager_wordpress_plugin_unauthenticated_php_object_injection_vulnerability.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin wordpress-form-manager:
