@@ -1998,3 +1998,11 @@ WordPress plugin file-manager:
     cve: 'OVE-20160712-0029 https://sumofpwn.nl/advisory/2016/cross_site_request_forgery_in_file_manager_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin global-content-blocks:
+  1:
+    location: ['/wp-content/plugins/global-content-blocks/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160712-0031 https://sumofpwn.nl/advisory/2016/cross_site_request_forgery_in_global_content_blocks_wordpress_plugin.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
