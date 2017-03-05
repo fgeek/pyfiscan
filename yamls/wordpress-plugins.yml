@@ -2066,3 +2066,11 @@ WordPress plugin popup-by-supsystic:
     cve: 'OVE-20160724-0013 https://sumofpwn.nl/advisory/2016/popup_by_supsystic_wordpress_plugin_vulnerable_to_cross_site_request_forgery.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin user-login-log:
+  1:
+    location: ['/wp-content/plugins/user-login-log/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160724-0011 https://sumofpwn.nl/advisory/2016/stored_cross_site_scripting_vulnerability_in_user_login_log_wordpress_plugin.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
