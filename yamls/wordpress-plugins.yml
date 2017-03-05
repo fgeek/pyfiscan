@@ -2050,3 +2050,11 @@ WordPress plugin vaultpress:
     cve: 'OVE-20160728-0002 https://sumofpwn.nl/advisory/2016/vaultpress___remote_code_execution_via_man_in_the_middle_attack.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin adminer:
+  1:
+    location: ['/wp-content/plugins/adminer/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160728-0001 https://sumofpwn.nl/advisory/2016/wordpress_adminer_plugin_allows_public__local__database_login.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
