@@ -2034,3 +2034,11 @@ WordPress plugin google-analytics-dashboard:
     cve: 'OVE-20160724-0026 https://sumofpwn.nl/advisory/2016/cross_site_scripting_in_google_analytics_dashboard_wordpress_plugin.html' 
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin alpine-photo-tile-for-instagram:
+  1:
+    location: ['/wp-content/plugins/alpine-photo-tile-for-instagram/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160725-0010 https://sumofpwn.nl/advisory/2016/cross_site_scripting_in_alpine_phototile_for_instagram_wordpress_plugin.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
