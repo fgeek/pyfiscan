@@ -1942,3 +1942,11 @@ WordPress plugin easy-table:
     cve: 'http://seclists.org/fulldisclosure/2017/Feb/24'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin zen-mobile-app-native:
+  1:
+    location: ['/wp-content/plugins/zen-mobile-app-native/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6104 http://www.vapidlabs.com/advisory.php?v=178'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
