@@ -2045,7 +2045,7 @@ WordPress plugin alpine-photo-tile-for-instagram:
 WordPress plugin vaultpress:
   1:
     location: ['/wp-content/plugins/vaultpress/readme.txt']
-    secure_version: '1.8.6'
+    secure_version: '1.8.6'  # TODO: fix should be verified
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'OVE-20160728-0002 https://sumofpwn.nl/advisory/2016/vaultpress___remote_code_execution_via_man_in_the_middle_attack.html'
     fingerprint: detect_general
@@ -2056,5 +2056,13 @@ WordPress plugin adminer:
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'OVE-20160728-0001 https://sumofpwn.nl/advisory/2016/wordpress_adminer_plugin_allows_public__local__database_login.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin popup-by-supsystic:
+  1:
+    location: ['/wp-content/plugins/popup-by-supsystic/readme.txt']
+    secure_version: 'N/A'  # TODO: tested in 1.7.6 latest is 1.8.8
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160724-0013 https://sumofpwn.nl/advisory/2016/popup_by_supsystic_wordpress_plugin_vulnerable_to_cross_site_request_forgery.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
