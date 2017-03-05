@@ -1990,3 +1990,11 @@ WordPress plugin wp-spamfree:
     cve: 'OVE-20160712-0026 https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_wp_spamfree_anti_spam_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin file-manager:
+  1:
+    location: ['/wp-content/plugins/file-manager/readme.txt']
+    secure_version: 'N/A'  # TODO tested in 3.0.1 latest is 4.1.4
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160712-0029 https://sumofpwn.nl/advisory/2016/cross_site_request_forgery_in_file_manager_wordpress_plugin.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
