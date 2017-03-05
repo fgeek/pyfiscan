@@ -100,12 +100,14 @@ WordPress plugin encrypted-contact-form:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-4010 http://seclists.org/fulldisclosure/2015/May/63'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# CVE-2015-4062 0.9.9
+# CVE-2015-4063 0.9.9
 WordPress plugin newstatpress:
   1:
     location: ['/wp-content/plugins/newstatpress/readme.txt']
-    secure_version: '0.9.9'
+    secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-4062 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-4063'
+    cve: 'OVE-20160712-0030 https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_in_the_wordpress_newstatpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 # CVE-2015-4064 1.8.5
