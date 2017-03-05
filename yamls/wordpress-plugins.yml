@@ -514,12 +514,13 @@ WordPress plugin cool-video-gallery:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7527 http://www.vapidlabs.com/advisory.php?v=158'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# CVE-2015-8351 1.5.4 https://www.htbridge.com/advisory/HTB23275
 WordPress plugin gwolle-gb:
   1:
     location: ['/wp-content/plugins/gwolle-gb/readme.txt']
-    secure_version: '1.5.4'
+    secure_version: '2.1.1'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8351 https://www.htbridge.com/advisory/HTB23275'
+    cve: 'OVE-20160712-0033 https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_gwolle_guestbook_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin role-scoper:
