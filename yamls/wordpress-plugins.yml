@@ -1950,3 +1950,11 @@ WordPress plugin zen-mobile-app-native:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6104 http://www.vapidlabs.com/advisory.php?v=178'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin stats-counter:
+  1:
+    location: ['/wp-content/plugins/stats-counter/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'OVE-20160803-0005 https://sumofpwn.nl/advisory/2016/analytics_stats_counter_statistics_wordpress_plugin_unauthenticated_php_object_injection_vulnerability.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
