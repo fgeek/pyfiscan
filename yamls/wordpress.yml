@@ -179,18 +179,19 @@
 # CVE-2017-5611 4.7.2   https://wordpress.org/news/2017/01/wordpress-4-7-2-security-release/ https://github.com/WordPress/WordPress/commit/85384297a60900004e27e417eac56d24267054cb
 # CVE-2017-5612 4.7.2   https://wordpress.org/news/2017/01/wordpress-4-7-2-security-release/ https://github.com/WordPress/WordPress/commit/4482f9207027de8f36630737ae085110896ea849
 # CVE-2017-1001000 4.7.2    https://wordpress.org/news/2017/01/wordpress-4-7-2-security-release/ http://www.openwall.com/lists/oss-security/2017/02/10/16
+# CVE-2017-XXXX 4.7.3   https://wordpress.org/news/2017/03/wordpress-4-7-3-security-and-maintenance-release/ https://codex.wordpress.org/Version_4.7.3
 WordPress:
   1:
     location: ['/wp-includes/version.php', '/wp-includes/vars.php']
-    secure_version: '4.7.2'
+    secure_version: '4.7.3'
     regexp: ['\$wp_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://wordpress.org/news/2017/01/wordpress-4-7-2-security-release/ https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5610 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5611 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5612 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-1001000'
+    cve: 'https://wordpress.org/news/2017/03/wordpress-4-7-3-security-and-maintenance-release/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
   2:
     location: ['/b2-include/b2vars.php']
-    secure_version: '4.7.2'
+    secure_version: '4.7.3'
     regexp: ['\$b2_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://wordpress.org/news/2017/01/wordpress-4-7-2-security-release/ https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5610 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5611 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5612 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-1001000'
+    cve: 'https://wordpress.org/news/2017/03/wordpress-4-7-3-security-and-maintenance-release/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
