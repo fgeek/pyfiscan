@@ -2106,3 +2106,11 @@ WordPress plugin anyvar:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6103 http://www.vapidlabs.com/advisory.php?v=177'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin dtracker:
+  1:
+    location: ['/wp-content/plugins/dtracker/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-1002004 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-1002005 http://www.vapidlabs.com/advisory.php?v=183'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
