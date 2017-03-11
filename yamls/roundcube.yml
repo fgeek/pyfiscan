@@ -38,11 +38,12 @@
 # CVE-2016-4068 TODO
 # CVE-2016-4552 TODO http://www.openwall.com/lists/oss-security/2016/05/25/8 https://github.com/roundcube/roundcubemail/pull/5241 https://github.com/roundcube/roundcubemail/issues/5240
 # CVE-2016-9920 1.2.3 https://roundcube.net/news/2016/11/28/updates-1.2.3-and-1.1.7-released https://blog.ripstech.com/2016/roundcube-command-execution-via-email/ https://github.com/roundcube/roundcubemail/commit/f84233785ddeed01445fc855f3ae1e8a62f167e1 https://github.com/roundcube/roundcubemail/commit/aa6bf38843f51a0fc7205acc98a7b84f3c4c9c4f
+# CVE-2017-XXXX 1.2.4/1.1.8 https://github.com/roundcube/roundcubemail/wiki/Changelog#release-123 https://github.com/roundcube/roundcubemail/releases/tag/1.1.8
 Roundcube:
   1:
     location: ['/program/include/iniset.php']
-    secure_version: '1.2.3'
+    secure_version: '1.2.4'
     regexp: ['define.*?RCMAIL_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://roundcube.net/news/2016/11/28/updates-1.2.3-and-1.1.7-released https://blog.ripstech.com/2016/roundcube-command-execution-via-email/ https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9920'
+    cve: 'https://github.com/roundcube/roundcubemail/releases/tag/1.1.8'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
