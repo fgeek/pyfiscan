@@ -2127,6 +2127,6 @@ WordPress plugin mail-masta:
     location: ['/wp-content/plugins/mail-masta/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6570 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6571 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6572 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6573 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6574 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6575 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6576 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6577'
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6570 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6571 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6572 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6573 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6574 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6575 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6576 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6577 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6578'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
