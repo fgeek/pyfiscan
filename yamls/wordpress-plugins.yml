@@ -2114,3 +2114,11 @@ WordPress plugin dtracker:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-1002004 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-1002005 http://www.vapidlabs.com/advisory.php?v=183'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wp-markdown-editor:
+  1:
+    location: ['/wp-content/plugins/wp-markdown-editor/readme.txt']
+    secure_version: 'N/A'  # 2.0.3 is affected, which is latest 2017-03-11
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6804'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
