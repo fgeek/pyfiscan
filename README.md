@@ -50,6 +50,7 @@ Detects following software
 * Gallery
 * Gollum
 * HelpDEZk
+* HumHub
 * ImpressCMS
 * ImpressPages
 * Jamroom
