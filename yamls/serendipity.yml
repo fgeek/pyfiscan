@@ -1,6 +1,5 @@
 # URL: http://www.s9y.org/
 # Version: serendipity_config.inc.php:$serendipity['version']         = '1.7';
-# NOTE: security email address working
 #
 # https://bugs.debian.org/611661
 # CVE-2009-4412 1.5
