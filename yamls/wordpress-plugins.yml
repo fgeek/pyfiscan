@@ -2138,7 +2138,7 @@ WordPress plugin membership-simplified-for-oap-members-only:
     cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-1002009 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-1002010 http://www.vapidlabs.com/advisory.php?v=188'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
-WordPress plugin spider-event-calendar:
+WordPress plugin spider-event-calendar:  # CVE requested 2017-04-12 #318821
   1:
     location: ['/wp-content/plugins/spider-event-calendar/readme.txt']
     secure_version: '1.5.52'
