@@ -53,11 +53,13 @@
 # CVE-2017-7222 2.1.1
 # CVE-2017-6797 2.2.1/1.3.7 http://www.mantisbt.org/bugs/view.php?id=22486 https://github.com/mantisbt/mantisbt/commit/a2d90ecabf3bcf3aa22ed9dbbecfd3d37902956f https://github.com/mantisbt/mantisbt/commit/c272c3f65da9677e505ff692b1f1e476b3afa56e
 # CVE-2017-6799 2.2.1/1.3.7 http://www.mantisbt.org/bugs/view.php?id=22497 https://github.com/mantisbt/mantisbt/commit/1677251434b6e8b2be8f1d4376a3e78f7be14d95
+# CVE-2017-7615 2.3.1
+# CVE-2017-7897 2.3.2
 MantisBT:
   1:
     location: ['/core/constant_inc.php']
-    secure_version: '2.2.1'
+    secure_version: '2.3.2'
     regexp: ['define.*?MANTIS_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6797 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6799'
+    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-7897'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
