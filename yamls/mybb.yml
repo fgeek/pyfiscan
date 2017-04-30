@@ -55,11 +55,13 @@
 # CVE-2016-9419 1.8.8
 # CVE-2016-9420 1.8.8
 # CVE-2016-9421 1.8.8
+# CVE-2017-7566
+# CVE-2017-XXXX 1.8.11  https://blog.mybb.com/2017/04/04/mybb-1-8-11-merge-system-1-8-11-release/
 MyBB:
   1:
     location: ['/inc/class_core.php']
-    secure_version: '1.8.8'
+    secure_version: '1.8.11'
     regexp: ['.*?public.*?\$version.*?(?P<version>[0-9.]+)']
-    cve: 'https://blog.mybb.com/2016/10/17/mybb-1-8-8-merge-system-1-8-8-release/ https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9415 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9416 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9417 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9418 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9419 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9420 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9421'
+    cve: 'https://blog.mybb.com/2017/04/04/mybb-1-8-11-merge-system-1-8-11-release/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
