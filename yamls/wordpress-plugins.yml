@@ -2174,3 +2174,11 @@ WordPress plugin easy-wp-smtp:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-7723'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin flickr-picture-backup:
+  1:
+    location: ['/wp-content/plugins/flickr-picture-backup/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'http://www.vapidlabs.com/advisory.php?v=190'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
