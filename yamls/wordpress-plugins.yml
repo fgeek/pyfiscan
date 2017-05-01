@@ -2166,3 +2166,11 @@ WordPress plugin wp-statistics:
     cve: 'https://wp-statistics.com/change-log/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin easy-wp-smtp:
+  1:
+    location: ['/wp-content/plugins/easy-wp-smtp/readme.txt']
+    secure_version: '1.2.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-7723'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
