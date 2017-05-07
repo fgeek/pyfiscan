@@ -1935,7 +1935,7 @@ WordPress plugin wp-mail:
     location: ['/wp-content/plugins/wp-mail/readme.txt']
     secure_version: '1.2'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://cjc.im/advisories/0006/'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-5942 https://cjc.im/advisories/0006/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin easy-table:
