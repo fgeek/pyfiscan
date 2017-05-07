@@ -116,6 +116,10 @@ Detects following end-of-life software:
 * SaurusCMS
 * ownCloud 4
 * ownCloud 5
+* ownCloud 6
+* ownCloud 7
+* ownCloud 8.0
+* ownCloud 8.1
 
 Installation
 ------------
