@@ -83,57 +83,67 @@
 # oC-SA-2016-015    TODO            9.0.4/8.2.7/8.1.9/8.0.14 https://github.com/owncloud/core/commit/c93eca49c32428ece03dd67042772d5fa62c8d6e https://github.com/owncloud/core/commit/3b056fa68ce502ceb0db9b446dab3b9e7b10dd13 https://github.com/owncloud/core/commit/23383080731d092e079986464a8c4c9ffcb79f4c https://github.com/owncloud/core/commit/d31720b6f1e8c8dfeb5e8805ab35ad7c8000b2f1
 # oC-SA-2016-016    CVE-2016-7102   NFU
 # oC-SA-2016-017    TODO            9.1.2/9.0.6/8.2.9 https://github.com/owncloud/apps/commit/5d47e7b52646cf79edadd78ce10c754290cbb732 https://github.com/owncloud/apps/commit/16cbccfc946c8711721fa684d78135ca1fb64791 https://github.com/owncloud/apps/commit/a0e07b7ddd5a5fd850a6e07f8457d05b76a300b3 not enabled by default
+# oC-SA-2017-001    CVE-2017-5865   9.1.3/9.0.7/8.2.9/8.1.11
+# oC-SA-2017-002    CVE-2017-5866   9.1.3/9.0.7/8.2.9/8.1.11
+# oC-SA-2017-003    CVE-2017-5867   9.1.3/9.0.7/8.2.9/8.1.11
+ownCloud 9.1:
+  1:
+    location: ['/version.php']
+    secure_version: '9.1.3'
+    regexp: ['\$OC_VersionString.*?(?P<version>9\.1\.[0-9.]+)']
+    cve: 'https://owncloud.org/security/advisory/?id=oC-SA-2017-001 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5865 https://owncloud.org/security/advisory/?id=oC-SA-2017-002 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5866 https://owncloud.org/security/advisory/?id=oC-SA-2017-003 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5867'
+    fingerprint: detect_general
 ownCloud 9.0:
   1:
     location: ['/version.php']
-    secure_version: '9.0.4'
+    secure_version: '9.0.7'
     regexp: ['\$OC_VersionString.*?(?P<version>9\.0\.[0-9.]+)']
-    cve: 'https://owncloud.org/security/advisory/?id=oC-SA-2016-011 https://owncloud.org/security/advisory/?id=oC-SA-2016-012 https://owncloud.org/security/advisory/?id=oC-SA-2016-013 https://owncloud.org/security/advisory/?id=oC-SA-2016-014 https://owncloud.org/security/advisory/?id=oC-SA-2016-015'
+    cve: 'https://owncloud.org/security/advisory/?id=oC-SA-2017-001 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5865 https://owncloud.org/security/advisory/?id=oC-SA-2017-002 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5866 https://owncloud.org/security/advisory/?id=oC-SA-2017-003 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5867'
     fingerprint: detect_general
 ownCloud 8.2:
   1:
     location: ['/version.php']
-    secure_version: '8.2.7'
+    secure_version: '8.2.9'
     regexp: ['\$OC_VersionString.*?(?P<version>8\.2\.[0-9.]+)']
-    cve: 'https://owncloud.org/security/advisory/?id=oC-SA-2016-011 https://owncloud.org/security/advisory/?id=oC-SA-2016-012 https://owncloud.org/security/advisory/?id=oC-SA-2016-013 https://owncloud.org/security/advisory/?id=oC-SA-2016-014 https://owncloud.org/security/advisory/?id=oC-SA-2016-015'
+    cve: 'https://owncloud.org/security/advisory/?id=oC-SA-2017-001 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5865 https://owncloud.org/security/advisory/?id=oC-SA-2017-002 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5866 https://owncloud.org/security/advisory/?id=oC-SA-2017-003 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5867'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 ownCloud 8.1:
   1:
     location: ['/version.php']
-    secure_version: '8.1.9'
+    secure_version: '8.1.11'
     regexp: ['\$OC_VersionString.*?(?P<version>8\.1\.[0-9.]+)']
-    cve: 'https://owncloud.org/security/advisory/?id=oC-SA-2016-011 https://owncloud.org/security/advisory/?id=oC-SA-2016-012 https://owncloud.org/security/advisory/?id=oC-SA-2016-013 https://owncloud.org/security/advisory/?id=oC-SA-2016-014 https://owncloud.org/security/advisory/?id=oC-SA-2016-015'
+    cve: 'ownCloud 8.1 is end of life.'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 ownCloud 8.0:
   1:
     location: ['/version.php']
-    secure_version: '8.0.14'
+    secure_version: '9.1.3'
     regexp: ['\$OC_VersionString.*?(?P<version>8\.0\.[0-9.]+)']
-    cve: 'https://owncloud.org/security/advisory/?id=oC-SA-2016-011 https://owncloud.org/security/advisory/?id=oC-SA-2016-012 https://owncloud.org/security/advisory/?id=oC-SA-2016-013 https://owncloud.org/security/advisory/?id=oC-SA-2016-014 https://owncloud.org/security/advisory/?id=oC-SA-2016-015'
+    cve: 'ownCloud 8.0 is end of life.'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 ownCloud 7:
   1:
     location: ['/version.php']
-    secure_version: '7.0.12'
+    secure_version: '9.1.3'
     regexp: ['\$OC_VersionString.*?(?P<version>7\.[0-9.]+)']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1498 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1500 https://owncloud.org/security/advisory/?id=oC-SA-2016-001 https://owncloud.org/security/advisory/?id=oC-SA-2016-003'
+    cve: 'ownCloud 7 is end of life.'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 ownCloud 6:
   1:
     location: ['/version.php']
-    secure_version: '6.0.8'
+    secure_version: '9.1.3'
     regexp: ['\$OC_VersionString.*?(?P<version>6\.[0-9.]+)']
-    cve: 'https://owncloud.org/security/advisory/?id=oc-sa-2015-005 https://owncloud.org/security/advisory/?id=oc-sa-2015-007 https://owncloud.org/security/advisory/?id=oc-sa-2015-008'
+    cve: 'ownCloud 6 is end of life.'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 ownCloud 5:
   1:
     location: ['/lib/util.php']
-    secure_version: '5.0.20'
+    secure_version: '9.1.3'
     regexp: ['.*?getVersionString.*?return.*?(?P<version>5\.[0-9.]+)']
     cve: 'ownCloud 5 is end of life.'
     fingerprint: detect_withoutnewlines
@@ -141,7 +151,7 @@ ownCloud 5:
 ownCloud 4:
   1:
     location: ['/lib/util.php']
-    secure_version: '4.5.14'
+    secure_version: '9.1.3'
     regexp: ['.*?getVersionString.*?return.*?(?P<version>4\.[0-9.]+)']
     cve: 'ownCloud 4 is end of life'
     fingerprint: detect_withoutnewlines
