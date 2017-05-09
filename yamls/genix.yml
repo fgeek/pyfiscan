@@ -9,6 +9,8 @@
 # CVE-2017-5520 1.0.0   https://github.com/semplon/GeniXCMS/issues/62
 # CVE-2017-5959 1.0.2   https://github.com/semplon/GeniXCMS/issues/70
 # CVE-2017-6065 TODO    https://github.com/semplon/GeniXCMS/issues/71 latest 1.0.2 is affected
+# CVE-2017-8762 TODO    https://github.com/semplon/GeniXCMS/issues/73 latest 1.0.2 is affected
+# CVE-2017-8780 TODO    https://github.com/semplon/GeniXCMS/issues/74 latest 1.0.2 is affected
 GeniXCMS:
   1:
     location: ['/inc/lib/System.class.php']
