@@ -12,9 +12,12 @@ def get_timestamp():
 
 class IssueReport(object):
     """Handles file operations for CSV result file."""
-    def __init__(self):
+    def __init__(self,csv_filename=None):
         """Opens, chmods and creates CSV file handle."""
-        filename = 'pyfiscan-vulnerabilities-' + time.strftime("%Y-%m-%d") + '.csv'
+        if csv_filename is not None:
+            filename = csv_filename
+        else:
+            filename = 'pyfiscan-vulnerabilities-' + time.strftime("%Y-%m-%d") + '.csv'
         if os.path.islink(filename):
             sys.exit('CSV-file %s is a symlink. Exiting..' % filename)
         self.csvfile = open(filename, "a")
