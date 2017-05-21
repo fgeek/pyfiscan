@@ -2182,3 +2182,11 @@ WordPress plugin flickr-picture-backup:
     cve: 'http://www.vapidlabs.com/advisory.php?v=190'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin adsense-click-fraud-monitoring:
+  1:
+    location: ['/wp-content/plugins/adsense-click-fraud-monitoring/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-3998 http://www.vapid.dhs.org/advisory.php?v=119'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
