@@ -56,6 +56,7 @@
 # CVE-2014-1846 TODO
 # CVE-2014-4734 2.0 beta1, not fixed in 1.x.x
 # CVE-2015-1041 N/A v.1.0.4 affected
+# CVE-2016-10378 TODO http://code610.blogspot.fi/2016/09/sql-injection-in-latest-e107-cms.html https://github.com/e107inc/e107/issues/2665
 e107:
   1:
     location: ['/e107_admin/ver.php']
