@@ -13,6 +13,7 @@
 # CVE-2012-0911 8.4
 # CVE-2016-9889 16.1/15.3/12.10 https://tiki.org/article443-Security-update-Tiki-16-1-Tiki-15-3-and-Tiki-12-10-released
 # CVE-2016-10143 16.2/15.4/12.11 https://tiki.org/article445-Security-updates-Tiki-16-2-15-4-and-Tiki-12-11-released http://seclists.org/bugtraq/2017/Mar/41
+# CVE-2017-9305 TODO https://github.com/tikiorg/tiki/commit/6c016e8f066d2f404b18eaa1af7fa0c7a9651ccd 2017-06-03 fix isn't in any release
 TikiWiki:
   1:
     location: ['/lib/setup/twversion.class.php']
