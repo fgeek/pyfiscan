@@ -3,7 +3,7 @@
 # CVE-2014-5098 Update Jamroom Search module to version 1.2.2 HTB23224
 # CVE-2009-1318 N/A
 # CVE-2010-2463 4.1.9
-# CVE-2012-XXXX 4.2.7 http://st2tea.blogspot.fi/2012/02/jamroom-cross-site-scripting.html http://secunia.com/advisories/48077/
+# CVE-2012-XXXX 4.2.7 http://st2tea.blogspot.com/2012/02/jamroom-cross-site-scripting.html http://secunia.com/advisories/48077/ CVE requested 2017-06-03 #342818
 Jamroom:
   1:
     location: ['/modules/jrCore/include.php']
