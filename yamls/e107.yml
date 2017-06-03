@@ -56,12 +56,12 @@
 # CVE-2014-1846 TODO
 # CVE-2014-4734 2.0 beta1, not fixed in 1.x.x
 # CVE-2015-1041 N/A v.1.0.4 affected
-# CVE-2016-10378 TODO http://code610.blogspot.fi/2016/09/sql-injection-in-latest-e107-cms.html https://github.com/e107inc/e107/issues/2665
+# CVE-2016-10378 2.1.3 http://code610.blogspot.com/2016/09/sql-injection-in-latest-e107-cms.html https://github.com/e107inc/e107/issues/2665 https://github.com/e107inc/e107/commit/c226e9a10bd5c41d8d4bd7e8e5cc6400f3e05144
 e107:
   1:
     location: ['/e107_admin/ver.php']
-    secure_version: '1.0.5'
+    secure_version: '2.1.3'
     regexp: ['.*?e107_version.*?(?P<version>1\.[.0-9]{1,})']
-    cve: 'http://bugs.fi/articles/e107.html'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-10378 http://code610.blogspot.com/2016/09/sql-injection-in-latest-e107-cms.html http://bugs.fi/articles/e107.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
