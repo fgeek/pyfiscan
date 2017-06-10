@@ -2198,3 +2198,11 @@ WordPress plugin gift-certificate-creator:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-1002017 http://www.vapidlabs.com/advisory.php?v=191'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin mdc-youtube-downloader:
+  1:
+    location: ['/wp-content/plugins/mdc-youtube-downloader/readme.txt']
+    secure_version: '2.1.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-5469 http://www.vapid.dhs.org/advisory.php?v=133'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
