@@ -131,7 +131,7 @@ WordPress plugin feedwordpress:
 WordPress plugin zip-attachments:
   1:
     location: ['/wp-content/plugins/zip-attachments/readme.txt']
-    secure_version: '1.1.5'
+    secure_version: '1.5.1'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-4694'
     fingerprint: detect_general
