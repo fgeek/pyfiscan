@@ -2230,3 +2230,11 @@ WordPress plugin surveys:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-1002020 https://nvd.nist.gov/vuln/detail/CVE-2017-1002021 https://nvd.nist.gov/vuln/detail/CVE-2017-1002022 http://www.vapidlabs.com/advisory.php?v=193'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin easy-team-manager:
+  1:
+    location: ['/wp-content/plugins/easy-team-manager/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-1002023 http://www.vapidlabs.com/advisory.php?v=194'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
