@@ -120,6 +120,7 @@ Detects following end-of-life software:
 * ownCloud 7
 * ownCloud 8.0
 * ownCloud 8.1
+* ownCloud 8.2
 
 Installation
 ------------
