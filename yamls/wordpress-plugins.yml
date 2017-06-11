@@ -2214,3 +2214,11 @@ WordPress plugin wp-swimteam:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-5471 http://www.vapid.dhs.org/advisory.php?v=134'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin eventr:
+  1:
+    location: ['/wp-content/plugins/eventr/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-1002018 https://nvd.nist.gov/vuln/detail/CVE-2017-1002019 http://www.vapidlabs.com/advisory.php?v=192'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
