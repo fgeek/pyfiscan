@@ -2222,3 +2222,11 @@ WordPress plugin eventr:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-1002018 https://nvd.nist.gov/vuln/detail/CVE-2017-1002019 http://www.vapidlabs.com/advisory.php?v=192'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin surveys:
+  1:
+    location: ['/wp-content/plugins/surveys/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-1002020 https://nvd.nist.gov/vuln/detail/CVE-2017-1002021 https://nvd.nist.gov/vuln/detail/CVE-2017-1002022 http://www.vapidlabs.com/advisory.php?v=193'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
