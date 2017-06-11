@@ -2206,3 +2206,11 @@ WordPress plugin mdc-youtube-downloader:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-5469 http://www.vapid.dhs.org/advisory.php?v=133'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wp-swimteam:
+  1:
+    location: ['/wp-content/plugins/wp-swimteam/readme.txt']
+    secure_version: '1.45'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-5471 http://www.vapid.dhs.org/advisory.php?v=134'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
