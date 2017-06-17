@@ -24,11 +24,15 @@
 # CVE-2016-10085 2.8.5 http://piwigo.org/forum/viewtopic.php?id=27573
 # CVE-2016-10105 TODO https://github.com/Piwigo/Piwigo/issues/574
 # CVE-2017-5608 2.8.6
+# CVE-2017-9452 TODO https://github.com/Piwigo/Piwigo/issues/667
+# CVE-2017-9463
+# CVE-2017-9464
+# N/A           2.9.1 http://piwigo.org/releases/2.9.1
 Piwigo:
   1:
     location: ['/include/constants.php']
-    secure_version: '2.8.6'
+    secure_version: '2.9.1'
     regexp: ['define.*?PHPWG_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'http://piwigo.org/releases/2.8.6 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5608'
+    cve: 'http://piwigo.org/releases/2.9.1'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
