@@ -17,6 +17,7 @@
 # CVE-2016-1912 3.8.4 https://github.com/Dolibarr/dolibarr/issues/4341
 # CVE-2016-XXXX 4.0.0 https://github.com/Dolibarr/dolibarr/issues/5239
 # CVE-2017-9435 5.0.3 https://github.com/Dolibarr/dolibarr/commit/70636cc59ffa1ffbc0ce3dba315d7d9b837aad04
+# CVE-2017-9840 TODO https://www.wizlynxgroup.com/security-research-advisories/vuln/WLX-2017-009 5.0.3 is the latest version, which is affected
 Dolibarr:
   1:
     location: ['/htdocs/filefunc.inc.php']
