@@ -28,6 +28,11 @@
 # CVE-2017-9463
 # CVE-2017-9464
 # N/A           2.9.1 http://piwigo.org/releases/2.9.1
+# CVE-2017-10678 TODO https://github.com/Piwigo/Piwigo/issues/721 2017-07-01 fix isn't in any release. same applies to other CVEs below
+# CVE-2017-10679 TODO https://github.com/Piwigo/Piwigo/issues/721 https://github.com/Piwigo/Piwigo/issues/723
+# CVE-2017-10680 TODO https://github.com/Piwigo/Piwigo/issues/721
+# CVE-2017-10681 TODO https://github.com/Piwigo/Piwigo/issues/721
+# CVE-2017-10682 TODO https://github.com/Piwigo/Piwigo/issues/724
 Piwigo:
   1:
     location: ['/include/constants.php']
