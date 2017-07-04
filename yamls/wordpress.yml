@@ -1,4 +1,5 @@
 # NOT-FOR-US: CVE-2014-6412 only affects Windows platform
+# NOT-FOR-US: CVE-2017-8295 https://exploitbox.io/vuln/WordPress-Exploit-4-7-Unauth-Password-Reset-0day-CVE-2017-8295.html
 # CVE-2003-1598 "0.72 RC1" SA8954
 # CVE-2003-1599 "0.72 RC1" SA8954 0.70 affected
 # CVE-2004-1559 1.2.1
