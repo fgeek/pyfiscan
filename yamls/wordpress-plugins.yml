@@ -2162,14 +2162,22 @@ WordPress plugin wordpress-firewall-2:
     post_processing: ['php5.fcgi']
 # CVE-2017-2135 12.0.2
 # CVE-2017-2136 12.0.5
+
 # CVE-2017-2147 12.0.5
-# CVE-2017-XXXX 12.0.6  https://wp-statistics.com/change-log/
+# CVE-2017-2136 affected 12.0.4
+# TODO          12.0.2 "Fixed: XSS issue with date range picker, thanks Anon submitter to JPCERT/CC Vulnerability Handling Team." "Fixed: XSS issue with referrers, thanks Gen Sato who submitted to JPCERT/CC Vulnerability Handling Team."
+# TODO          12.0.3 "Fixed: Additional XSS issue with referrers, thanks Gen Sato who submitted to JPCERT/CC Vulnerability Handling Team."
+# TODO          12.0.4 "Fixed: Additional XSS issue with referrers, thanks Gen Sato who submitted to JPCERT/CC Vulnerability Handling Team."
+# TODO          12.0.5 "Fixed: Additional XSS fixes, thanks Gen Sato who submitted to JPCERT/CC Vulnerability Handling Team."
+# TODO          12.0.6 "Fixed: Additional XSS fixes, thanks Plugin Vulnerabilities Team."
+# TODO          12.0.8 https://blog.sucuri.net/2017/06/sql-injection-vulnerability-wp-statistics.html
+# TODO          12.0.9 "Fixed: XSS issue with agent and ip in visitors page, Thanks Ryan Dewhurst from Dewhurst Security Team."
 WordPress plugin wp-statistics:
   1:
     location: ['/wp-content/plugins/wp-statistics/readme.txt']
-    secure_version: '12.0.6'
+    secure_version: '12.0.9'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://wp-statistics.com/change-log/'
+    cve: 'https://wordpress.org/plugins/wp-statistics/#developers'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin easy-wp-smtp:
