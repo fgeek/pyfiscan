@@ -1,5 +1,4 @@
 # NOT-FOR-US: CVE-2014-6412 only affects Windows platform
-# NOT-FOR-US: CVE-2017-8295 https://exploitbox.io/vuln/WordPress-Exploit-4-7-Unauth-Password-Reset-0day-CVE-2017-8295.html
 # CVE-2003-1598 "0.72 RC1" SA8954
 # CVE-2003-1599 "0.72 RC1" SA8954 0.70 affected
 # CVE-2004-1559 1.2.1
@@ -187,19 +186,25 @@
 # CVE-2017-6818 4.7.3   https://github.com/WordPress/WordPress/commit/9092fd01e1f452f37c313d38b18f9fe6907541f9
 # CVE-2017-6819 4.7.3   https://github.com/WordPress/WordPress/commit/263831a72d08556bc2f3a328673d95301a152829
 # OVE-20160717-0004 4.7.5 https://sumofpwn.nl/advisory/2016/cross_site_request_forgery_in_wordpress_connection_information.html
-# TODO          4.7.5   https://wordpress.org/news/2017/05/wordpress-4-7-5/
+# CVE-2017-8295 4.7.5   https://exploitbox.io/vuln/WordPress-Exploit-4-7-Unauth-Password-Reset-0day-CVE-2017-8295.html
+# CVE-2017-9061 4.7.5   https://github.com/WordPress/WordPress/commit/8c7ea71edbbffca5d9766b7bea7c7f3722ffafa6
+# CVE-2017-9062 4.7.5   https://github.com/WordPress/WordPress/commit/3d95e3ae816f4d7c638f40d3e936a4be19724381
+# CVE-2017-9063 4.7.5   https://github.com/WordPress/WordPress/commit/3d10fef22d788f29aed745b0f5ff6f6baea69af3
+# CVE-2017-9064 4.7.5   https://github.com/WordPress/WordPress/commit/38347d7c580be4cdd8476e4bbc653d5c79ed9b67
+# CVE-2017-9065 4.7.5   https://github.com/WordPress/WordPress/commit/e88a48a066ab2200ce3091b131d43e2fab2460a4
+# CVE-2017-9066 4.7.5   https://github.com/WordPress/WordPress/commit/76d77e927bb4d0f87c7262a50e28d84e01fd2b11
 WordPress:
   1:
     location: ['/wp-includes/version.php', '/wp-includes/vars.php']
     secure_version: '4.7.5'
     regexp: ['\$wp_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://wordpress.org/news/2017/05/wordpress-4-7-5/'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-9061 https://nvd.nist.gov/vuln/detail/CVE-2017-9062 https://nvd.nist.gov/vuln/detail/CVE-2017-9063 https://nvd.nist.gov/vuln/detail/CVE-2017-9064 https://nvd.nist.gov/vuln/detail/CVE-2017-9065 https://nvd.nist.gov/vuln/detail/CVE-2017-9066 https://wordpress.org/news/2017/05/wordpress-4-7-5/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
   2:
     location: ['/b2-include/b2vars.php']
     secure_version: '4.7.5'
     regexp: ['\$b2_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://wordpress.org/news/2017/05/wordpress-4-7-5/'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-9061 https://nvd.nist.gov/vuln/detail/CVE-2017-9062 https://nvd.nist.gov/vuln/detail/CVE-2017-9063 https://nvd.nist.gov/vuln/detail/CVE-2017-9064 https://nvd.nist.gov/vuln/detail/CVE-2017-9065 https://nvd.nist.gov/vuln/detail/CVE-2017-9066 https://wordpress.org/news/2017/05/wordpress-4-7-5/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
