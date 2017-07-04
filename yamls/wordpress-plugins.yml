@@ -2162,7 +2162,6 @@ WordPress plugin wordpress-firewall-2:
     post_processing: ['php5.fcgi']
 # CVE-2017-2135 12.0.2
 # CVE-2017-2136 12.0.5
-
 # CVE-2017-2147 12.0.5
 # CVE-2017-2136 affected 12.0.4
 # TODO          12.0.2 "Fixed: XSS issue with date range picker, thanks Anon submitter to JPCERT/CC Vulnerability Handling Team." "Fixed: XSS issue with referrers, thanks Gen Sato who submitted to JPCERT/CC Vulnerability Handling Team."
