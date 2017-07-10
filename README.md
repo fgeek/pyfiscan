@@ -99,6 +99,7 @@ Detects following software
 Detects following end-of-life software:
 ---------------------------------------
 
+* Drupal 6 is end-of-life since [2016-02-24](https://www.drupal.org/drupal-6-eol)
 * Gallery 1
 * Joomla 1.5 is end-of-life since 2012-04-30
 * Joomla 1.6 is end-of-life since [2011-08-19](http://www.joomla.org/announcements/release-news/5380-joomla-170-released.html). 1.6.x should be upgraded to 1.6.6 before moving to 1.7.x
@@ -113,7 +114,6 @@ Detects following end-of-life software:
 * MediaWiki 1.24
 * MediaWiki 1.25
 * MediaWiki 1.26 is end-of-life since [2016-11-20](https://lists.wikimedia.org/pipermail/mediawiki-announce/2016-November/000204.html)
-* SaurusCMS
 * ownCloud 4
 * ownCloud 5
 * ownCloud 6
@@ -121,6 +121,7 @@ Detects following end-of-life software:
 * ownCloud 8.0
 * ownCloud 8.1
 * ownCloud 8.2
+* SaurusCMS
 
 Installation
 ------------

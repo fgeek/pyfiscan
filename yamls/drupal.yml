@@ -66,27 +66,31 @@
 # https://drupal.org/SA-2017-001        CVE-2017-6377   8.2.7
 # https://drupal.org/SA-2017-001        CVE-2017-6379   8.2.7
 # https://drupal.org/SA-2017-001        CVE-2017-6381   8.2.7
+# https://drupal.org/SA-CORE-2017-002   CVE-2017-6919   8.3.1/8.2.8
+# https://drupal.org/SA-CORE-2017-003   CVE-2017-6920   8.3.4/7.56
+# https://drupal.org/SA-CORE-2017-003   CVE-2017-6921   8.3.4/7.56
+# https://drupal.org/SA-CORE-2017-003   CVE-2017-6922   8.3.4/7.56
 Drupal 8:
   1:
     location: ['/core/lib/Drupal.php']
-    secure_version: '8.2.7'
+    secure_version: '8.3.4'
     regexp: ["  const VERSION = '(?P<version>[0-9.]+)"]
-    cve: 'https://drupal.org/SA-2017-001 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6377 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6379 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6381'
+    cve: 'https://drupal.org/SA-CORE-2017-003 https://nvd.nist.gov/vuln/detail/CVE-2017-6920 https://nvd.nist.gov/vuln/detail/CVE-2017-6921 https://nvd.nist.gov/vuln/detail/CVE-2017-6922'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Drupal 7:
   1:
     location: ['/includes/bootstrap.inc']
-    secure_version: '7.52'
+    secure_version: '7.56'
     regexp: ['define.*?VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://drupal.org/SA-CORE-2016-005 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9449 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9450 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9451 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9452'
+    cve: 'https://drupal.org/SA-CORE-2017-003 https://nvd.nist.gov/vuln/detail/CVE-2017-6920 https://nvd.nist.gov/vuln/detail/CVE-2017-6921 https://nvd.nist.gov/vuln/detail/CVE-2017-6922'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Drupal 6:
   1:
     location: ['/CHANGELOG.txt']
-    secure_version: '6.38'
+    secure_version: '8.3.4'
     regexp: ['^Drupal (?P<version>[0-9.]+)']
-    cve: 'https://drupal.org/SA-CORE-2016-001'
+    cve: 'https://www.drupal.org/drupal-6-eol'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
