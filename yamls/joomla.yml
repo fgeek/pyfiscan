@@ -140,12 +140,14 @@
 # CVE-2017-7989 3.7.0   https://developer.joomla.org/security-centre/689-20170407-core-acl-violations
 # CVE-2017-8917 3.7.1   https://developer.joomla.org/security-centre/692-20170501-core-sql-injection.html
 # CVE-2017-9933 3.7.3   https://developer.joomla.org/security-centre/696-20170601-core-information-disclosure.html
+# CVE-2017-9934 3.7.3   https://developer.joomla.org/security-centre/697-20170602-core-xss-vulnerability.html
+# CVE-2017-7985 3.7.3   https://developer.joomla.org/security-centre/698-20170603-core-xss-vulnerability.html
 Joomla 3:
   1:
     location: ['/administrator/manifests/files/joomla.xml']
     secure_version: '3.7.3'
     regexp: ['[\t]<version>(?P<version>3\.[0-9.]{1,})']
-    cve: 'https://developer.joomla.org/security-centre/696-20170601-core-information-disclosure.html https://nvd.nist.gov/vuln/detail/CVE-2017-9933'
+    cve: 'https://developer.joomla.org/security-centre/696-20170601-core-information-disclosure.html https://nvd.nist.gov/vuln/detail/CVE-2017-9933 https://developer.joomla.org/security-centre/697-20170602-core-xss-vulnerability.html https://nvd.nist.gov/vuln/detail/CVE-2017-9934 https://developer.joomla.org/security-centre/698-20170603-core-xss-vulnerability.html https://nvd.nist.gov/vuln/detail/CVE-2017-7985'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Joomla 2.5:
