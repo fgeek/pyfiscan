@@ -90,7 +90,7 @@ Drupal 6:
   1:
     location: ['/CHANGELOG.txt']
     secure_version: '8.3.4'
-    regexp: ['^Drupal (?P<version>[0-9.]+)']
+    regexp: ['^Drupal (?P<version>[0-6]\.[0-9.]+)']
     cve: 'https://www.drupal.org/drupal-6-eol'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
