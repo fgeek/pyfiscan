@@ -2276,3 +2276,11 @@ WordPress plugin event-calendar-wd:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-2224'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wp-copysafe-web:
+  1:
+    location: ['/wp-content/plugins/wp-copysafe-web/readme.txt']
+    secure_version: '2.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-8100'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
