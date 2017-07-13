@@ -99,6 +99,7 @@ Detects following software
 Detects following end-of-life software:
 ---------------------------------------
 
+* Bugzilla 4.2 is end-of-life since [2015-11-30](https://bugzillaupdate.wordpress.com/2015/07/29/bugzilla-4-2-will-be-eol-on-20151130/)
 * Drupal 6 is end-of-life since [2016-02-24](https://www.drupal.org/drupal-6-eol)
 * Gallery 1
 * Joomla 1.5 is end-of-life since 2012-04-30

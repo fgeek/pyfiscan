@@ -1,4 +1,3 @@
-# NOTE 2014-01-31: Bugzilla 4.5.x is an unstable development release
 # CVE-2011-3657
 # CVE-2012-0440
 # CVE-2012-0440
@@ -42,7 +41,7 @@ Bugzilla 5:
     location: ['/docs/en/xml/bugzilla.ent']
     secure_version: '5.0.3'
     regexp: ['<!ENTITY bz-ver.*?(?P<version>5\.[0-9]+)']
-    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2803'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-2803'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Bugzilla 4:
@@ -50,6 +49,6 @@ Bugzilla 4:
     location: ['/docs/en/xml/bugzilla.ent']
     secure_version: '4.4.12'
     regexp: ['<!ENTITY bz-ver.*?(?P<version>4\.[0-9]+)']
-    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2803'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-2803'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
