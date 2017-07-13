@@ -34,11 +34,20 @@
 # TODO          2.1.2   http://www.cmsmadesimple.org/2016/02/Announcing-CMSMS-2-1-2/
 # CVE-2016-2784 2.1.3   http://www.cmsmadesimple.org/2016/04/Announcing-CMSMS-2-1-3-Black-Point
 # TODO          2.1.6   http://www.cmsmadesimple.org/2016/12/Announcing-CMSMS-v2-1-6-Spanish-Wells/
+# CVE-2017-6070 0.8.1.6 Form Builder
+# CVE-2017-6071 0.8.1.6 Form Builder
+# CVE-2017-6072 0.8.1.6 Form Builder
+# CVE-2017-6555 TODO
+# CVE-2017-7257 TODO latest release is vulnerable
+# CVE-2017-7256 TODO latest release is vulnerable
+# CVE-2017-7255 TODO latest release is vulnerable
+# CVE-2017-8912 disputed
+# TODO          2.2.1 http://www.cmsmadesimple.org/2017/06/Announcing-CMSMS-2-2-1-Hearts-Desire/
 CMSMS:
   1:
     location: ['/version.php']
-    secure_version: '2.1.6'
+    secure_version: '2.2.1'
     regexp: ['\$CMS_VERSION.*?(?P<version>[.0-9]{1,})']
-    cve: 'http://www.cmsmadesimple.org/2016/12/Announcing-CMSMS-v2-1-6-Spanish-Wells/'
+    cve: 'http://www.cmsmadesimple.org/2017/06/Announcing-CMSMS-2-2-1-Hearts-Desire/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
