@@ -10,6 +10,6 @@ Postfix Admin:
     location: ['/functions.inc.php']
     secure_version: '3.0.2'
     regexp: ['\$version =.*?(?P<version>[0-9.]+)']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5930'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-5930'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']

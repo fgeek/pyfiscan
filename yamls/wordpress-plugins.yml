@@ -48,7 +48,7 @@ WordPress plugin cart66-lite:
     location: ['/wp-content/plugins/cart66-lite/readme.txt']
     secure_version: '1.5.4'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9442 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9461'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2014-9442 https://nvd.nist.gov/vuln/detail/CVE-2014-9461'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 # http://www.exploit-db.com/exploits/36576/ 2.5.4 CVE request http://www.openwall.com/lists/oss-security/2015/07/16/6
@@ -81,7 +81,7 @@ WordPress plugin community-events:
     location: ['/wp-content/plugins/community-events/readme.txt']
     secure_version: '1.4'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3313'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-3313'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin tune-library:
@@ -89,7 +89,7 @@ WordPress plugin tune-library:
     location: ['/wp-content/plugins/tune-library/readme.txt']
     secure_version: '1.5.5'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3314'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-3314'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin encrypted-contact-form:
@@ -97,7 +97,7 @@ WordPress plugin encrypted-contact-form:
     location: ['/wp-content/plugins/encrypted-contact-form/readme.txt']
     secure_version: '1.1'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-4010 http://seclists.org/fulldisclosure/2015/May/63'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-4010 http://seclists.org/fulldisclosure/2015/May/63'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 # CVE-2015-4062 0.9.9
@@ -125,7 +125,7 @@ WordPress plugin feedwordpress:
     location: ['/wp-content/plugins/feedwordpress/readme.txt']
     secure_version: '2015.0514'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-4018'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-4018'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin zip-attachments:
@@ -133,7 +133,7 @@ WordPress plugin zip-attachments:
     location: ['/wp-content/plugins/zip-attachments/readme.txt']
     secure_version: '1.5.1'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-4694'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-4694'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 # CVE-2014-9735 revslider 3.0.96
@@ -142,7 +142,7 @@ WordPress plugin revslider:
     location: ['/wp-content/plugins/revslider/revslider.php']
     secure_version: '4.1.5'
     regexp: ['\$revSliderVersion.*?(?P<version>[0-9.]+)']
-    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1579 https://wpvulndb.com/vulnerabilities/7540'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-1579 https://wpvulndb.com/vulnerabilities/7540'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin nextend-facebook-connect:
@@ -150,7 +150,7 @@ WordPress plugin nextend-facebook-connect:
     location: ['/wp-content/plugins/nextend-facebook-connect/readme.txt']
     secure_version: '1.5.6'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-4413'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-4413'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin nextend-twitter-connect:
@@ -158,7 +158,7 @@ WordPress plugin nextend-twitter-connect:
     location: ['/wp-content/plugins/nextend-twitter-connect/readme.txt']
     secure_version: '1.5.2'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-4557'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-4557'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin broken-link-checker:
@@ -166,7 +166,7 @@ WordPress plugin broken-link-checker:
     location: ['/wp-content/plugins/broken-link-checker/readme.txt']
     secure_version: '1.10.9'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5057'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-5057'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin paypal-currency-converter-basic-for-woocommerce:
@@ -174,7 +174,7 @@ WordPress plugin paypal-currency-converter-basic-for-woocommerce:
     location: ['/wp-content/plugins/paypal-currency-converter-basic-for-woocommerce/readme.txt']
     secure_version: '1.4'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5065'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-5065'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin easy-social-icons:
@@ -182,7 +182,7 @@ WordPress plugin easy-social-icons:
     location: ['/wp-content/plugins/easy-social-icons/readme.txt']
     secure_version: '1.2.3'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2084'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-2084'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin wp-responsive-preview:
@@ -190,7 +190,7 @@ WordPress plugin wp-responsive-preview:
     location: ['/wp-content/plugins/wp-responsive-preview/readme.txt']
     secure_version: '1.2'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-4594'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2014-4594'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin photo-gallery:
@@ -198,7 +198,7 @@ WordPress plugin photo-gallery:
     location: ['/wp-content/plugins/photo-gallery/readme.txt']
     secure_version: '1.1.31'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-6315'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2014-6315'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 # CVE-2014-8724 0.9.4.1
@@ -223,7 +223,7 @@ WordPress plugin easy2map-photos:
     location: ['/wp-content/plugins/easy2map-photos/readme.txt']
     secure_version: '1.1.0'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=2015-4615 https://web.nvd.nist.gov/view/vuln/detail?vulnId=2015-4617 http://www.vapidlabs.com/advisory.php?v=130'
+    cve: 'https://nvd.nist.gov/vuln/detail/2015-4615 https://nvd.nist.gov/vuln/detail/2015-4617 http://www.vapidlabs.com/advisory.php?v=130'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin ibs-mappro:
@@ -231,7 +231,7 @@ WordPress plugin ibs-mappro:
     location: ['/wp-content/plugins/ibs-mappro/readme.txt']
     secure_version: '1.0'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5472'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-5472'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin wp-ecommerce-shop-styling:
@@ -239,7 +239,7 @@ WordPress plugin wp-ecommerce-shop-styling:
     location: ['/wp-content/plugins/wp-ecommerce-shop-styling/readme.txt']
     secure_version: '2.6'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5468'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-5468'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin buddypress-activity-plus:
@@ -308,7 +308,7 @@ WordPress plugin usc-e-shop:
     location: ['/wp-content/plugins/usc-e-shop/readme.txt']
     secure_version: '1.8.3'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-4826 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-4827'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-4826 https://nvd.nist.gov/vuln/detail/CVE-2016-4827'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin mdc-private-message:
@@ -325,7 +325,7 @@ WordPress plugin google-analyticator:
     location: ['/wp-content/plugins/google-analyticator/readme.txt']
     secure_version: '6.4.9.6'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-6238'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-6238'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin dukapress:
@@ -333,7 +333,7 @@ WordPress plugin dukapress:
     location: ['/wp-content/plugins/dukapress/readme.txt']
     secure_version: '2.5.9.1'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1000011 http://www.vapidlabs.com/advisory.php?v=152 http://www.openwall.com/lists/oss-security/2015/08/22/2'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-1000011 http://www.vapidlabs.com/advisory.php?v=152 http://www.openwall.com/lists/oss-security/2015/08/22/2'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin youtube-embed:
@@ -341,7 +341,7 @@ WordPress plugin youtube-embed:
     location: ['/wp-content/plugins/youtube-embed/readme.txt']
     secure_version: '3.3.3'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-6535'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-6535'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin navis-documentcloud:
@@ -349,7 +349,7 @@ WordPress plugin navis-documentcloud:
     location: ['/wp-content/plugins/navis-documentcloud/readme.txt']
     secure_version: '0.1.1'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2807'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-2807'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin private-only:
@@ -357,7 +357,7 @@ WordPress plugin private-only:
     location: ['/wp-content/plugins/private-only/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5483 https://security.dxw.com/advisories/csrfxss-vulnerability-in-private-only-could-allow-an-attacker-to-do-almost-anything-an-admin-user-can/'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-5483 https://security.dxw.com/advisories/csrfxss-vulnerability-in-private-only-could-allow-an-attacker-to-do-almost-anything-an-admin-user-can/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin watupro:
@@ -382,7 +382,7 @@ WordPress plugin securemoz-security-audit:
     location: ['/wp-content/plugins/securemoz-security-audit/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-6828'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-6828'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin wp-limit-login-attempts:
@@ -390,7 +390,7 @@ WordPress plugin wp-limit-login-attempts:
     location: ['/wp-content/plugins/wp-limit-login-attempts/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-6829'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-6829'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin easy2map:
@@ -398,7 +398,7 @@ WordPress plugin easy2map:
     location: ['/wp-content/plugins/easy2map/readme.txt']
     secure_version: '1.3.0'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7668 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7669'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-7668 https://nvd.nist.gov/vuln/detail/CVE-2015-7669'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin payment-form-for-paypal-pro:
@@ -406,7 +406,7 @@ WordPress plugin payment-form-for-paypal-pro:
     location: ['/wp-content/plugins/payment-form-for-paypal-pro/readme.txt']
     secure_version: '1.0.2'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7666'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-7666'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin resads:
@@ -414,7 +414,7 @@ WordPress plugin resads:
     location: ['/wp-content/plugins/resads/readme.txt']
     secure_version: '1.0.2'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7667'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-7667'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin simple-support-ticket-system:
@@ -422,7 +422,7 @@ WordPress plugin simple-support-ticket-system:
     location: ['/wp-content/plugins/simple-support-ticket-system/readme.txt']
     secure_version: '1.2.1'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7670'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-7670'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin font:
@@ -430,7 +430,7 @@ WordPress plugin font:
     location: ['/wp-content/plugins/font/readme.txt']
     secure_version: '7.5.1'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7683'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-7683'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin pie-register:
@@ -438,7 +438,7 @@ WordPress plugin pie-register:
     location: ['/wp-content/plugins/pie-register/readme.txt']
     secure_version: '2.0.19'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7377 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7682'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-7377 https://nvd.nist.gov/vuln/detail/CVE-2015-7682'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 # 1.5.50 https://www.davidsopas.com/events-made-easy-wordpress-plugin-csrf-persistent-xss/
@@ -473,7 +473,7 @@ WordPress plugin gd-bbpress-attachments:
     location: ['/wp-content/plugins/gd-bbpress-attachments/readme.txt']
     secure_version: '2.3'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5481 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5482'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-5481 https://nvd.nist.gov/vuln/detail/CVE-2015-5482'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin codestyling-localization:
@@ -481,7 +481,7 @@ WordPress plugin codestyling-localization:
     location: ['/wp-content/plugins/codestyling-localization/readme.txt']
     secure_version: 'N/A'  # No fix available 2015-10-29
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-4179'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-4179'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin wppageflip:
@@ -489,7 +489,7 @@ WordPress plugin wppageflip:
     location: ['/wp-content/plugins/wppageflip/readme.txt']
     secure_version: '3.0'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-6652'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2012-6652'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin users-ultra:
@@ -505,7 +505,7 @@ WordPress plugin cm-download-manager:
     location: ['/wp-content/plugins/cm-download-manager/readme.txt']
     secure_version: '2.0.4'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8877 https://github.com/nmap/nmap/pull/38'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2014-8877 https://github.com/nmap/nmap/pull/38'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin cool-video-gallery:
@@ -513,7 +513,7 @@ WordPress plugin cool-video-gallery:
     location: ['/wp-content/plugins/cool-video-gallery/readme.txt']
     secure_version: '2.0'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7527 http://www.vapidlabs.com/advisory.php?v=158'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-7527 http://www.vapidlabs.com/advisory.php?v=158'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 # CVE-2015-8351 1.5.4 https://www.htbridge.com/advisory/HTB23275
@@ -530,7 +530,7 @@ WordPress plugin role-scoper:
     location: ['/wp-content/plugins/role-scoper/readme.txt']
     secure_version: '1.3.67'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8353 https://www.htbridge.com/advisory/HTB23276'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-8353 https://www.htbridge.com/advisory/HTB23276'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin cta:
@@ -538,7 +538,7 @@ WordPress plugin cta:
     location: ['/wp-content/plugins/cta/readme.txt']
     secure_version: '2.5.1'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8350 https://www.htbridge.com/advisory/HTB23274'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-8350 https://www.htbridge.com/advisory/HTB23274'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 # CVE-2015-8354 1.3.29 https://www.htbridge.com/advisory/HTB23277
@@ -580,7 +580,7 @@ WordPress plugin eshop:
     location: ['/wp-content/plugins/eshop/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-0765 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-0769 http://www.openwall.com/lists/oss-security/2016/02/02/3'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-0765 https://nvd.nist.gov/vuln/detail/CVE-2016-0769 http://www.openwall.com/lists/oss-security/2016/02/02/3'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin connections:
@@ -588,7 +588,7 @@ WordPress plugin connections:
     location: ['/wp-content/plugins/connections/readme.txt']
     secure_version: '8.5.9'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-0770 http://www.vapidlabs.com/advisory.php?v=161'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-0770 http://www.vapidlabs.com/advisory.php?v=161'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin user-meta-manager:
@@ -740,7 +740,7 @@ WordPress plugin appointment-booking-calendar:
     location: ['/wp-content/plugins/appointment-booking-calendar/readme.txt']
     secure_version: '1.1.8'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7319 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7320'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-7319 https://nvd.nist.gov/vuln/detail/CVE-2015-7320'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin user-role-editor:
@@ -848,7 +848,7 @@ WordPress plugin wp-favorite-posts:
     location: ['/wp-content/plugins/wp-favorite-posts/readme.txt']
     secure_version: '1.6.6'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1160'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-1160'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin simple-photo-gallery:
@@ -864,7 +864,7 @@ WordPress plugin enhanced-tooltipglossary:
     location: ['/wp-content/plugins/enhanced-tooltipglossary/readme.txt']
     secure_version: '3.3.5'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000132 http://www.vapidlabs.com/wp/wp_advisory.php?v=37 DWF-2016-77246 http://www.openwall.com/lists/oss-security/2016/05/11/12'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-1000132 http://www.vapidlabs.com/wp/wp_advisory.php?v=37 DWF-2016-77246 http://www.openwall.com/lists/oss-security/2016/05/11/12'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin tera-charts:
@@ -872,7 +872,7 @@ WordPress plugin tera-charts:
     location: ['/wp-content/plugins/tera-charts/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000151 http://www.vapidlabs.com/wp/wp_advisory.php?v=455 DWF-2016-77716 http://www.openwall.com/lists/oss-security/2016/05/11/12'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-1000151 http://www.vapidlabs.com/wp/wp_advisory.php?v=455 DWF-2016-77716 http://www.openwall.com/lists/oss-security/2016/05/11/12'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin pondol-carousel:
@@ -880,7 +880,7 @@ WordPress plugin pondol-carousel:
     location: ['/wp-content/plugins/pondol-carousel/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000145 http://www.vapidlabs.com/wp/wp_advisory.php?v=524 DWF-2016-77531 http://www.openwall.com/lists/oss-security/2016/05/11/12'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-1000145 http://www.vapidlabs.com/wp/wp_advisory.php?v=524 DWF-2016-77531 http://www.openwall.com/lists/oss-security/2016/05/11/12'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin jetpack:
@@ -989,7 +989,7 @@ WordPress plugin markdown-on-save-improved:
     location: ['/wp-content/plugins/markdown-on-save-improved/readme.txt']
     secure_version: '2.5.1'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-4812'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-4812'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin simple-membership:
@@ -1057,7 +1057,7 @@ WordPress plugin woocommerce:
     location: ['/wp-content/plugins/woocommerce/readme.txt']
     secure_version: '2.6.9'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-10112'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-10112'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin icegram:
@@ -1312,7 +1312,7 @@ WordPress plugin zotpress:
     location: ['/wp-content/plugins/zotpress/readme.txt']
     secure_version: '6.1.3'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000217'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-1000217'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin xdata-toolkit:
@@ -1346,7 +1346,7 @@ WordPress plugin contus-video-comments:
     location: ['/wp-content/plugins/contus-video-comments/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000112 http://www.vapidlabs.com/advisory.php?v=163'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-1000112 http://www.vapidlabs.com/advisory.php?v=163'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin candidate-application-form:
@@ -1354,7 +1354,7 @@ WordPress plugin candidate-application-form:
     location: ['/wp-content/plugins/candidate-application-form/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1000005 http://www.vapidlabs.com/advisory.php?v=142'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-1000005 http://www.vapidlabs.com/advisory.php?v=142'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 # CVE-2015-1000000 1.100 http://www.vapidlabs.com/advisory.php?v=138
@@ -1364,7 +1364,7 @@ WordPress plugin mailcwp:
     location: ['/wp-content/plugins/mailcwp/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000156 http://www.vapidlabs.com/advisory.php?v=175'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-1000156 http://www.vapidlabs.com/advisory.php?v=175'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin fast-image-adder:
@@ -1372,7 +1372,7 @@ WordPress plugin fast-image-adder:
     location: ['/wp-content/plugins/fast-image-adder/readme.txt']
     secure_version: 'N/A'  # v1.1 is vulnerable
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1000001 http://www.vapidlabs.com/advisory.php?v=139'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-1000001 http://www.vapidlabs.com/advisory.php?v=139'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin filedownload:
@@ -1380,7 +1380,7 @@ WordPress plugin filedownload:
     location: ['/wp-content/plugins/filedownload/readme.txt']
     secure_version: 'N/A'  # v1.4 is vulnerable
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1000002 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1000003 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1000004 http://www.vapidlabs.com/advisory.php?v=140'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-1000002 https://nvd.nist.gov/vuln/detail/CVE-2015-1000003 https://nvd.nist.gov/vuln/detail/CVE-2015-1000004 http://www.vapidlabs.com/advisory.php?v=140'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin recent-backups:
@@ -1388,7 +1388,7 @@ WordPress plugin recent-backups:
     location: ['/wp-content/plugins/recent-backups/readme.txt']
     secure_version: 'N/A'  # v0.7 is vulnerable
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1000006 http://www.vapidlabs.com/advisory.php?v=144'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-1000006 http://www.vapidlabs.com/advisory.php?v=144'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin wptf-image-gallery:
@@ -1396,7 +1396,7 @@ WordPress plugin wptf-image-gallery:
     location: ['/wp-content/plugins/wptf-image-gallery/readme.txt']
     secure_version: 'N/A'  # v1.03 is vulnerable
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1000007 http://www.vapidlabs.com/advisory.php?v=148'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-1000007 http://www.vapidlabs.com/advisory.php?v=148'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin mp3-jplayer:
@@ -1404,7 +1404,7 @@ WordPress plugin mp3-jplayer:
     location: ['/wp-content/plugins/mp3-jplayer/readme.txt']
     secure_version: '2.7.1'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1000008 http://www.vapidlabs.com/advisory.php?v=149'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-1000008 http://www.vapidlabs.com/advisory.php?v=149'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin google-adsense-and-hotel-booking:
@@ -1412,7 +1412,7 @@ WordPress plugin google-adsense-and-hotel-booking:
     location: ['/wp-content/plugins/google-adsense-and-hotel-booking/readme.txt']
     secure_version: 'N/A'  # v1.05 is vulnerable
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1000009 http://www.vapidlabs.com/advisory.php?v=151'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-1000009 http://www.vapidlabs.com/advisory.php?v=151'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin simple-image-manipulator:
@@ -1420,7 +1420,7 @@ WordPress plugin simple-image-manipulator:
     location: ['/wp-content/plugins/simple-image-manipulator/readme.txt']
     secure_version: 'N/A'  # v1.0 is vulnerable
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1000010 http://www.vapidlabs.com/advisory.php?v=147'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-1000010 http://www.vapidlabs.com/advisory.php?v=147'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin mypixs:
@@ -1428,7 +1428,7 @@ WordPress plugin mypixs:
     location: ['/wp-content/plugins/mypixs/readme.txt']
     secure_version: 'N/A'  # v0.3 is vulnerable
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1000012 http://www.vapidlabs.com/advisory.php?v=154'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-1000012 http://www.vapidlabs.com/advisory.php?v=154'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin csv2wpec-coupon:
@@ -1436,7 +1436,7 @@ WordPress plugin csv2wpec-coupon:
     location: ['/wp-content/plugins/csv2wpec-coupon/readme.txt']
     secure_version: 'N/A'  # v1.1 is vulnerable
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1000013 http://www.vapidlabs.com/advisory.php?v=153'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-1000013 http://www.vapidlabs.com/advisory.php?v=153'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin 404-to-301:
@@ -1492,7 +1492,7 @@ WordPress plugin content-slide:
     location: ['/wp-content/plugins/content-slide/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2708 https://security.dxw.com/advisories/csrf-and-stored-xss-in-wordpress-content-slide-allow-an-attacker-to-have-full-admin-privileges/'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2013-2708 https://security.dxw.com/advisories/csrf-and-stored-xss-in-wordpress-content-slide-allow-an-attacker-to-have-full-admin-privileges/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin qtranslate:
@@ -1500,7 +1500,7 @@ WordPress plugin qtranslate:
     location: ['/wp-content/plugins/qtranslate/readme.txt']
     secure_version: 'N/A' # 2.5.39 is the latest and vulnerable release
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5535'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-5535'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin jw-player-plugin-for-wordpress:
@@ -1508,7 +1508,7 @@ WordPress plugin jw-player-plugin-for-wordpress:
     location: ['/wp-content/plugins/jw-player-plugin-for-wordpress/readme.txt']
     secure_version: 'N/A' # 2.1.15 is the latest and vulnerable release
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-3351'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2012-3351'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 # 2016-11-08: maintainer has removed all data from svn repository
@@ -1517,7 +1517,7 @@ WordPress plugin cardoza-ajax-search:
     location: ['/wp-content/plugins/cardoza-ajax-search/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-5853 http://seclists.org/bugtraq/2012/Nov/33'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2012-5853 http://seclists.org/bugtraq/2012/Nov/33'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin answer-my-question:
@@ -1533,7 +1533,7 @@ WordPress plugin bp-code-snippets:
     location: ['/wp-content/plugins/bp-code-snippets/readme.txt']
     secure_version: '2.1'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-1808 http://www.openwall.com/lists/oss-security/2013/03/26/8'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2013-1808 http://www.openwall.com/lists/oss-security/2013/03/26/8'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin cleeng:
@@ -1541,7 +1541,7 @@ WordPress plugin cleeng:
     location: ['/wp-content/plugins/cleeng/readme.txt']
     secure_version: '2.3.3'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-1808 http://www.openwall.com/lists/oss-security/2013/03/26/8'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2013-1808 http://www.openwall.com/lists/oss-security/2013/03/26/8'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin paypal-digital-goods-monetization-powered-by-cleeng:
@@ -1549,7 +1549,7 @@ WordPress plugin paypal-digital-goods-monetization-powered-by-cleeng:
     location: ['/wp-content/plugins/paypal-digital-goods-monetization-powered-by-cleeng/readme.txt']
     secure_version: '2.2.14'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-1808 http://www.openwall.com/lists/oss-security/2013/03/26/8'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2013-1808 http://www.openwall.com/lists/oss-security/2013/03/26/8'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin tiny-url:
@@ -1557,7 +1557,7 @@ WordPress plugin tiny-url:
     location: ['/wp-content/plugins/tiny-url/readme.txt']
     secure_version: '1.3.4'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-1808 http://www.openwall.com/lists/oss-security/2013/03/26/8'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2013-1808 http://www.openwall.com/lists/oss-security/2013/03/26/8'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin wp-clone-by-wp-academy:
@@ -1565,7 +1565,7 @@ WordPress plugin wp-clone-by-wp-academy:
     location: ['/wp-content/plugins/wp-clone-by-wp-academy/readme.txt']
     secure_version: '2.1.2'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-1808 http://www.openwall.com/lists/oss-security/2013/03/26/8'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2013-1808 http://www.openwall.com/lists/oss-security/2013/03/26/8'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin question-and-answer-forum:
@@ -1581,7 +1581,7 @@ WordPress plugin admin-font-editor:
     location: ['/wp-content/plugins/admin-font-editor/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000126 http://www.vapidlabs.com/wp/wp_advisory.php?v=526'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-1000126 http://www.vapidlabs.com/wp/wp_advisory.php?v=526'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin ajax-random-post:
@@ -1589,7 +1589,7 @@ WordPress plugin ajax-random-post:
     location: ['/wp-content/plugins/ajax-random-post/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000127 http://www.vapidlabs.com/wp/wp_advisory.php?v=494'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-1000127 http://www.vapidlabs.com/wp/wp_advisory.php?v=494'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin anti-plagiarism:
@@ -1597,7 +1597,7 @@ WordPress plugin anti-plagiarism:
     location: ['/wp-content/plugins/anti-plagiarism/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000128 http://www.vapidlabs.com/wp/wp_advisory.php?v=161'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-1000128 http://www.vapidlabs.com/wp/wp_advisory.php?v=161'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin defa-online-image-protector:
@@ -1605,7 +1605,7 @@ WordPress plugin defa-online-image-protector:
     location: ['/wp-content/plugins/defa-online-image-protector/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000129 http://www.vapidlabs.com/wp/wp_advisory.php?v=449'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-1000129 http://www.vapidlabs.com/wp/wp_advisory.php?v=449'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin e-search:
@@ -1613,7 +1613,7 @@ WordPress plugin e-search:
     location: ['/wp-content/plugins/e-search/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000130 http://www.vapidlabs.com/wp/wp_advisory.php?v=394 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000131 http://www.vapidlabs.com/wp/wp_advisory.php?v=393'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-1000130 http://www.vapidlabs.com/wp/wp_advisory.php?v=394 https://nvd.nist.gov/vuln/detail/CVE-2016-1000131 http://www.vapidlabs.com/wp/wp_advisory.php?v=393'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin forget-about-shortcode-buttons:
@@ -1621,7 +1621,7 @@ WordPress plugin forget-about-shortcode-buttons:
     location: ['/wp-content/plugins/forget-about-shortcode-buttons/readme.txt']
     secure_version: '1.1.2'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000133 http://www.vapidlabs.com/wp/wp_advisory.php?v=602'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-1000133 http://www.vapidlabs.com/wp/wp_advisory.php?v=602'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin hdw-tube:
@@ -1629,7 +1629,7 @@ WordPress plugin hdw-tube:
     location: ['/wp-content/plugins/hdw-tube/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000134 http://www.vapidlabs.com/wp/wp_advisory.php?v=530 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000135 http://www.vapidlabs.com/wp/wp_advisory.php?v=533'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-1000134 http://www.vapidlabs.com/wp/wp_advisory.php?v=530 https://nvd.nist.gov/vuln/detail/CVE-2016-1000135 http://www.vapidlabs.com/wp/wp_advisory.php?v=533'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin heat-trackr:
@@ -1637,7 +1637,7 @@ WordPress plugin heat-trackr:
     location: ['/wp-content/plugins/heat-trackr/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000136 http://www.vapidlabs.com/wp/wp_advisory.php?v=798'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-1000136 http://www.vapidlabs.com/wp/wp_advisory.php?v=798'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin hero-maps-pro:
@@ -1645,7 +1645,7 @@ WordPress plugin hero-maps-pro:
     location: ['/wp-content/plugins/hero-maps-pro/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000137 http://www.vapidlabs.com/wp/wp_advisory.php?v=658'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-1000137 http://www.vapidlabs.com/wp/wp_advisory.php?v=658'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin indexisto:
@@ -1653,7 +1653,7 @@ WordPress plugin indexisto:
     location: ['/wp-content/plugins/indexisto/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000138 http://www.vapidlabs.com/wp/wp_advisory.php?v=38'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-1000138 http://www.vapidlabs.com/wp/wp_advisory.php?v=38'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin infusionsoft:
@@ -1661,7 +1661,7 @@ WordPress plugin infusionsoft:
     location: ['/wp-content/plugins/infusionsoft/readme.txt']
     secure_version: '1.5.12'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000139 http://www.vapidlabs.com/wp/wp_advisory.php?v=864'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-1000139 http://www.vapidlabs.com/wp/wp_advisory.php?v=864'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin new-year-firework:
@@ -1669,7 +1669,7 @@ WordPress plugin new-year-firework:
     location: ['/wp-content/plugins/new-year-firework/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000140 http://www.vapidlabs.com/wp/wp_advisory.php?v=453'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-1000140 http://www.vapidlabs.com/wp/wp_advisory.php?v=453'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin page-layout-builder:
@@ -1677,7 +1677,7 @@ WordPress plugin page-layout-builder:
     location: ['/wp-content/plugins/page-layout-builder/readme.txt']
     secure_version: '2.0.0'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000141 http://www.vapidlabs.com/wp/wp_advisory.php?v=358'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-1000141 http://www.vapidlabs.com/wp/wp_advisory.php?v=358'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin parsi-font:
@@ -1685,7 +1685,7 @@ WordPress plugin parsi-font:
     location: ['/wp-content/plugins/parsi-font/readme.txt']
     secure_version: '4.3'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000142 http://www.vapidlabs.com/wp/wp_advisory.php?v=435'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-1000142 http://www.vapidlabs.com/wp/wp_advisory.php?v=435'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin photoxhibit:
@@ -1693,7 +1693,7 @@ WordPress plugin photoxhibit:
     location: ['/wp-content/plugins/photoxhibit/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000143 http://www.vapidlabs.com/wp/wp_advisory.php?v=780 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000144 http://www.vapidlabs.com/wp/wp_advisory.php?v=778'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-1000143 http://www.vapidlabs.com/wp/wp_advisory.php?v=780 https://nvd.nist.gov/vuln/detail/CVE-2016-1000144 http://www.vapidlabs.com/wp/wp_advisory.php?v=778'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin pondol-formmail:
@@ -1701,7 +1701,7 @@ WordPress plugin pondol-formmail:
     location: ['/wp-content/plugins/pondol-formmail/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000146 http://www.vapidlabs.com/wp/wp_advisory.php?v=787'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-1000146 http://www.vapidlabs.com/wp/wp_advisory.php?v=787'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin recipes-writer:
@@ -1709,7 +1709,7 @@ WordPress plugin recipes-writer:
     location: ['/wp-content/plugins/recipes-writer/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000147 http://www.vapidlabs.com/wp/wp_advisory.php?v=380'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-1000147 http://www.vapidlabs.com/wp/wp_advisory.php?v=380'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin s3-video:
@@ -1717,7 +1717,7 @@ WordPress plugin s3-video:
     location: ['/wp-content/plugins/s3-video/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000148 http://www.vapidlabs.com/wp/wp_advisory.php?v=240'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-1000148 http://www.vapidlabs.com/wp/wp_advisory.php?v=240'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin simpel-reserveren:
@@ -1725,7 +1725,7 @@ WordPress plugin simpel-reserveren:
     location: ['/wp-content/plugins/simpel-reserveren/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000149 http://www.vapidlabs.com/wp/wp_advisory.php?v=474'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-1000149 http://www.vapidlabs.com/wp/wp_advisory.php?v=474'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin simplified-content:
@@ -1733,7 +1733,7 @@ WordPress plugin simplified-content:
     location: ['/wp-content/plugins/simplified-content/readme.txt']
     secure_version: '1.0.1'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000150 http://www.vapidlabs.com/wp/wp_advisory.php?v=853'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-1000150 http://www.vapidlabs.com/wp/wp_advisory.php?v=853'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin tidio-form:
@@ -1741,7 +1741,7 @@ WordPress plugin tidio-form:
     location: ['/wp-content/plugins/tidio-form/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000152 http://www.vapidlabs.com/wp/wp_advisory.php?v=799'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-1000152 http://www.vapidlabs.com/wp/wp_advisory.php?v=799'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin tidio-gallery:
@@ -1749,7 +1749,7 @@ WordPress plugin tidio-gallery:
     location: ['/wp-content/plugins/tidio-gallery/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000153 http://www.vapidlabs.com/wp/wp_advisory.php?v=427'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-1000153 http://www.vapidlabs.com/wp/wp_advisory.php?v=427'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin whizz:
@@ -1757,7 +1757,7 @@ WordPress plugin whizz:
     location: ['/wp-content/plugins/whizz/readme.txt']
     secure_version: '1.0.8'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000154 http://www.vapidlabs.com/wp/wp_advisory.php?v=112'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-1000154 http://www.vapidlabs.com/wp/wp_advisory.php?v=112'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin wpsolr-search-engine:
@@ -1765,7 +1765,7 @@ WordPress plugin wpsolr-search-engine:
     location: ['/wp-content/plugins/wpsolr-search-engine/readme.txt']
     secure_version: '8.7'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000155 http://www.vapidlabs.com/wp/wp_advisory.php?v=303'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-1000155 http://www.vapidlabs.com/wp/wp_advisory.php?v=303'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin advanced-dewplayer:
@@ -1773,7 +1773,7 @@ WordPress plugin advanced-dewplayer:
     location: ['/wp-content/plugins/advanced-dewplayer/readme.txt']
     secure_version: '1.3'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-7240'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2013-7240'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin wc-shortcodes:
@@ -1893,7 +1893,7 @@ WordPress plugin wysija-newsletters:
     location: ['/wp-content/plugins/wysija-newsletters/readme.txt']
     secure_version: '2.6.8'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-4725'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2014-4725'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin simple-personal-message:
@@ -1957,7 +1957,7 @@ WordPress plugin zen-mobile-app-native:
     location: ['/wp-content/plugins/zen-mobile-app-native/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6104 http://www.vapidlabs.com/advisory.php?v=178'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-6104 http://www.vapidlabs.com/advisory.php?v=178'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin stats-counter:
@@ -2101,7 +2101,7 @@ WordPress plugin rockhoist-badges:
     location: ['/wp-content/plugins/rockhoist-badges/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6102 http://www.vapidlabs.com/advisory.php?v=176'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-6102 http://www.vapidlabs.com/advisory.php?v=176'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin anyvar:
@@ -2109,7 +2109,7 @@ WordPress plugin anyvar:
     location: ['/wp-content/plugins/anyvar/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6103 http://www.vapidlabs.com/advisory.php?v=177'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-6103 http://www.vapidlabs.com/advisory.php?v=177'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin dtracker:
@@ -2117,7 +2117,7 @@ WordPress plugin dtracker:
     location: ['/wp-content/plugins/dtracker/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-1002004 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-1002005 http://www.vapidlabs.com/advisory.php?v=183 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-1002006 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-1002007 http://www.vapidlabs.com/advisory.php?v=186'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-1002004 https://nvd.nist.gov/vuln/detail/CVE-2017-1002005 http://www.vapidlabs.com/advisory.php?v=183 https://nvd.nist.gov/vuln/detail/CVE-2017-1002006 https://nvd.nist.gov/vuln/detail/CVE-2017-1002007 http://www.vapidlabs.com/advisory.php?v=186'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin wp-markdown-editor:
@@ -2125,7 +2125,7 @@ WordPress plugin wp-markdown-editor:
     location: ['/wp-content/plugins/wp-markdown-editor/readme.txt']
     secure_version: 'N/A'  # 2.0.3 is affected, which is latest 2017-03-11
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6804'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-6804'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin mail-masta:
@@ -2133,7 +2133,7 @@ WordPress plugin mail-masta:
     location: ['/wp-content/plugins/mail-masta/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6570 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6571 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6572 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6573 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6574 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6575 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6576 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6577 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6578'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-6570 https://nvd.nist.gov/vuln/detail/CVE-2017-6571 https://nvd.nist.gov/vuln/detail/CVE-2017-6572 https://nvd.nist.gov/vuln/detail/CVE-2017-6573 https://nvd.nist.gov/vuln/detail/CVE-2017-6574 https://nvd.nist.gov/vuln/detail/CVE-2017-6575 https://nvd.nist.gov/vuln/detail/CVE-2017-6576 https://nvd.nist.gov/vuln/detail/CVE-2017-6577 https://nvd.nist.gov/vuln/detail/CVE-2017-6578'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin membership-simplified-for-oap-members-only:
@@ -2141,7 +2141,7 @@ WordPress plugin membership-simplified-for-oap-members-only:
     location: ['/wp-content/plugins/membership-simplified-for-oap-members-only/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-1002009 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-1002010 http://www.vapidlabs.com/advisory.php?v=188'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-1002009 https://nvd.nist.gov/vuln/detail/CVE-2017-1002010 http://www.vapidlabs.com/advisory.php?v=188'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin spider-event-calendar:
@@ -2149,7 +2149,7 @@ WordPress plugin spider-event-calendar:
     location: ['/wp-content/plugins/spider-event-calendar/readme.txt']
     secure_version: '1.5.52'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-7719 http://lists.openwall.net/full-disclosure/2017/04/09/1'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-7719 http://lists.openwall.net/full-disclosure/2017/04/09/1'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin wordpress-firewall-2:

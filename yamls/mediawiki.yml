@@ -113,7 +113,7 @@
 # CVE-2017-0370 1.28.1/1.27.2/1.23.16 https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-April/000207.html
 # CVE-2017-0372 1.28.1/1.27.2/1.23.16 https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-April/000207.html
 # N/A           1.23.17 https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-April/000208.html
-# CVE-2017-XXXX 1.28.2/1.27.3 https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-April/000209.html
+# CVE-2017-0372 1.28.2/1.27.3 https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-April/000209.html
 MediaWiki 1.28:
   1:
     location: ['/includes/DefaultSettings.php']

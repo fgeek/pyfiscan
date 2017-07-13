@@ -91,14 +91,14 @@ ownCloud 9.1:
     location: ['/version.php']
     secure_version: '9.1.3'
     regexp: ['\$OC_VersionString.*?(?P<version>9\.1\.[0-9.]+)']
-    cve: 'https://owncloud.org/security/advisory/?id=oC-SA-2017-001 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5865 https://owncloud.org/security/advisory/?id=oC-SA-2017-002 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5866 https://owncloud.org/security/advisory/?id=oC-SA-2017-003 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5867'
+    cve: 'https://owncloud.org/security/advisory/?id=oC-SA-2017-001 https://nvd.nist.gov/vuln/detail/CVE-2017-5865 https://owncloud.org/security/advisory/?id=oC-SA-2017-002 https://nvd.nist.gov/vuln/detail/CVE-2017-5866 https://owncloud.org/security/advisory/?id=oC-SA-2017-003 https://nvd.nist.gov/vuln/detail/CVE-2017-5867'
     fingerprint: detect_general
 ownCloud 9.0:
   1:
     location: ['/version.php']
     secure_version: '9.0.7'
     regexp: ['\$OC_VersionString.*?(?P<version>9\.0\.[0-9.]+)']
-    cve: 'https://owncloud.org/security/advisory/?id=oC-SA-2017-001 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5865 https://owncloud.org/security/advisory/?id=oC-SA-2017-002 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5866 https://owncloud.org/security/advisory/?id=oC-SA-2017-003 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5867'
+    cve: 'https://owncloud.org/security/advisory/?id=oC-SA-2017-001 https://nvd.nist.gov/vuln/detail/CVE-2017-5865 https://owncloud.org/security/advisory/?id=oC-SA-2017-002 https://nvd.nist.gov/vuln/detail/CVE-2017-5866 https://owncloud.org/security/advisory/?id=oC-SA-2017-003 https://nvd.nist.gov/vuln/detail/CVE-2017-5867'
     fingerprint: detect_general
 ownCloud 8.2:
   1:

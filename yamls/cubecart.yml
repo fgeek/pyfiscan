@@ -15,6 +15,6 @@ CubeCart:
     location: ['/ini.inc.php']
     secure_version: '6.1.5'
     regexp: ['define.*?CC_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-2117 https://forums.cubecart.com/topic/52188-cubecart-615-released/'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-2117 https://forums.cubecart.com/topic/52188-cubecart-615-released/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']

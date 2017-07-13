@@ -25,17 +25,21 @@
 # CVE-2017-5475 TODO https://github.com/s9y/Serendipity/issues/439 http://www.securityfocus.com/bid/95656
 # CVE-2017-5476 TODO https://github.com/s9y/Serendipity/issues/439
 # CVE-2017-5609 TODO https://github.com/s9y/Serendipity/commit/c62d667287f2d76c81e03a740a581eb3c51249b6
+# CVE-2017-8101
+# CVE-2017-8102
 #
 #   2017-02-01:
 #   2.1-rc released https://github.com/s9y/Serendipity/releases/tag/2.1-rc1
 #   2.0.5 is latest in https://docs.s9y.org/
 #   latest commits to fix vulnerabilities are applied to 2.1
 #
+# TODO: http://lists.openwall.net/full-disclosure/2017/04/09/2 https://github.com/s9y/Serendipity/issues/456
+# TODO: http://lists.openwall.net/full-disclosure/2017/04/11/4 https://github.com/s9y/Serendipity/issues/452 asked 2017-04-23 if this received CVE or not
 Serendipity:
   1:
     location: ['/serendipity_config.inc.php']
     secure_version: '2.0.5'
     regexp: ['\$serendipity.*?version.*?(?P<version>[0-9.]+)']
-    cve: 'https://github.com/s9y/Serendipity/releases/tag/2.0.5 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9681 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9752'
+    cve: 'https://github.com/s9y/Serendipity/releases/tag/2.0.5 https://nvd.nist.gov/vuln/detail/CVE-2016-9681 https://nvd.nist.gov/vuln/detail/CVE-2016-9752'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']

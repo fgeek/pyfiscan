@@ -14,7 +14,7 @@ phpBB3 3.1:
     location: ['/includes/constants.php']
     secure_version: '3.1.4'
     regexp: ['.*?PHPBB_VERSION.*?(?P<version>3\.1[0-9.]{1,})']
-    cve: 'https://wiki.phpbb.com/Release_Highlights/3.1.4 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3880'
+    cve: 'https://wiki.phpbb.com/Release_Highlights/3.1.4 https://nvd.nist.gov/vuln/detail/CVE-2015-3880'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 phpBB3 3.0:
@@ -22,6 +22,6 @@ phpBB3 3.0:
     location: ['/includes/constants.php']
     secure_version: '3.0.14'
     regexp: ['.*?PHPBB_VERSION.*?(?P<version>3\.0[0-9.]{1,})']
-    cve: 'https://wiki.phpbb.com/Release_Highlights/3.0.14 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3880'
+    cve: 'https://wiki.phpbb.com/Release_Highlights/3.0.14 https://nvd.nist.gov/vuln/detail/CVE-2015-3880'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']

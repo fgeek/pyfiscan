@@ -9,6 +9,6 @@ Collabtive:
     location: ['/changelog.txt']
     secure_version: '2.0'
     regexp: ['.*?Collabtive (?P<version>[0-9.]+)']
-    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3247'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2014-3247'
     fingerprint: detect_withoutnewlines
     post_processing: ['php5.fcgi']

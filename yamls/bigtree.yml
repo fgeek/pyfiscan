@@ -14,15 +14,32 @@
 # TODO: http://www.openwall.com/lists/oss-security/2016/12/07/2
 # CVE-2016-10223 4.2.15
 # CVE-2017-6914 4.2.17 https://github.com/bigtreecms/BigTree-CMS/issues/275
-# CVE-2017-6915 4.2.17
-# CVE-2017-6916 TODO 4.2.18 is vulnerable (not published)
-# CVE-2017-6917 4.2.17
+# CVE-2017-6915 4.2.17 https://github.com/bigtreecms/BigTree-CMS/issues/275
+# CVE-2017-6916 4.2.17 https://github.com/bigtreecms/BigTree-CMS/issues/275
+# CVE-2017-6917 4.2.17 https://github.com/bigtreecms/BigTree-CMS/issues/275
 # CVE-2017-6918 4.2.17
+# CVE-2017-7881 TODO https://github.com/bigtreecms/BigTree-CMS/commit/7761481ac40d83ac29fef42bc6b3c07c86694b56 fix is not yet in official release
+# CVE-2017-7695
+# CVE-2017-9364 TODO https://github.com/bigtreecms/BigTree-CMS/issues/280 https://github.com/bigtreecms/BigTree-CMS/commit/b72293946951cc650eaf51f5d2f62ceac6335e12
+# CVE-2017-9365 TODO https://github.com/bigtreecms/BigTree-CMS/issues/281 https://github.com/bigtreecms/BigTree-CMS/commit/c17d09b05d9c20c214ee2f4fbb52f7307a7b4b6f
+# CVE-2017-9378 TODO
+# CVE-2017-9379 TODO
+# CVE-2017-9427 TODO
+# CVE-2017-9428 TODO
+# CVE-2017-9441 TODO
+# CVE-2017-9442 TODO
+# CVE-2017-9443 TODO
+# CVE-2017-9444 TODO
+# CVE-2017-9448 TODO
+# CVE-2017-9449 TODO
+# CVE-2017-9546 TODO
+# CVE-2017-9547 TODO
+# CVE-2017-9548 TODO
 BigTree CMS:
   1:
     location: ['/core/version.php']
     secure_version: '4.2.17'
     regexp: ['.*?define.*?BIGTREE_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6914 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6915 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6917 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6918'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-6914 https://nvd.nist.gov/vuln/detail/CVE-2017-6915 https://nvd.nist.gov/vuln/detail/CVE-2017-6917 https://nvd.nist.gov/vuln/detail/CVE-2017-6918'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']

@@ -6,5 +6,5 @@ Foswiki:
     location: ['/lib/Foswiki.pm']
     secure_version: '1.1.8'
     regexp: ['.*?\$RELEASE.*?Foswiki-(?P<version>[0-9.]+)']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-1666 http://foswiki.org/Support/SecurityAlert-CVE-2013-1666'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2013-1666 http://foswiki.org/Support/SecurityAlert-CVE-2013-1666'
     fingerprint: detect_general

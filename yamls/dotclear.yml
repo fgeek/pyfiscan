@@ -14,11 +14,14 @@
 # TODO          2.10    http://seclists.org/fulldisclosure/2016/Aug/120 https://dotclear.org/blog/post/2016/08/13/Dotclear-2.10
 # CVE-2016-7902 2.10.2  http://www.openwall.com/lists/oss-security/2016/10/05/6 https://hg.dotclear.org/dotclear/rev/a9db771a5a70
 # CVE-2016-7903 2.10.2  http://www.openwall.com/lists/oss-security/2016/10/05/5 https://hg.dotclear.org/dotclear/rev/bb06343f4247
+# CVE-2016-9268 TODO    http://dev.dotclear.org/2.0/ticket/2214 http://dev.dotclear.org/2.0/changeset/445e9ff79a1fa81033591761d6a340e219d159b2
+# CVE-2016-9891 TODO
+# CVE-2017-6446 TODO
 Dotclear:
   1:
     location: ['/inc/prepend.php']
     secure_version: '2.10.2'
     regexp: ['define.*?DC_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-7902 http://www.openwall.com/lists/oss-security/2016/10/05/6 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-7903 http://www.openwall.com/lists/oss-security/2016/10/05/5'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-7902 http://www.openwall.com/lists/oss-security/2016/10/05/6 https://nvd.nist.gov/vuln/detail/CVE-2016-7903 http://www.openwall.com/lists/oss-security/2016/10/05/5'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
