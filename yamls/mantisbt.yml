@@ -58,12 +58,15 @@
 # CVE-2017-7309 TODO http://www.openwall.com/lists/oss-security/2017/03/30/4
 # CVE-2017-7615 2.3.1 https://mantisbt.org/bugs/view.php?id=22690
 # CVE-2017-7897 2.3.2
-# CVE-2017-7620 2.4.1/2.3.3
+# CVE-2017-7620 2.4.1/2.3.3 http://hyp3rlinx.altervista.org/advisories/MANTIS-BUG-TRACKER-CSRF-PERMALINK-INJECTION.txt
+# CVE-2017-12419 TODO https://mantisbt.org/bugs/view.php?id=23173
+# CVE-2017-12061 2.6.0/2.5.2/1.3.12
+# CVE-2017-12062 2.6.0/2.5.2/1.3.12
 MantisBT:
   1:
     location: ['/core/constant_inc.php']
-    secure_version: '2.4.1'
+    secure_version: '2.6.0'
     regexp: ['define.*?MANTIS_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-7620'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-12061 https://nvd.nist.gov/vuln/detail/CVE-2017-12062'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
