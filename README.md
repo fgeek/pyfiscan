@@ -86,6 +86,7 @@ Detects following software
 * SaurusCMS
 * Serendipity
 * SMF
+* Spina CMS
 * SPIP
 * SquirrelMail
 * TestLink
