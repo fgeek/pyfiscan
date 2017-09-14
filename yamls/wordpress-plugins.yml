@@ -2284,3 +2284,11 @@ WordPress plugin wp-copysafe-web:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-8100'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin shibboleth:
+  1:
+    location: ['/wp-content/plugins/shibboleth/readme.txt']
+    secure_version: '1.8'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-14313'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
