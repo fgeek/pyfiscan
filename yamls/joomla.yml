@@ -117,6 +117,7 @@
 # CVE-2014-7983 3.2.3               http://developer.joomla.org/security/579-20140302-core-xss-vulnerability.html
 # CVE-2014-7984 3.2.3               http://developer.joomla.org/security/581-20140304-core-unauthorised-logins.html
 # CVE-2015-5397 3.4.2               http://developer.joomla.org/security-centre/618-20150602-core-remote-code-execution.html
+# CVE-2015-5608 3.4.2   https://developer.joomla.org/security-centre/617-20150601-core-open-redirect.html
 # CVE-2015-6939 3.4.4   http://developer.joomla.org/security-centre/626-20150908-core-xss-vulnerability.html
 # CVE-2015-7297 3.4.5   http://developer.joomla.org/security-centre/628-20151001-core-sql-injection.html
 # CVE-2015-7857 3.4.5   http://developer.joomla.org/security-centre/628-20151001-core-sql-injection.html
@@ -144,51 +145,53 @@
 # CVE-2017-7985 3.7.3   https://developer.joomla.org/security-centre/698-20170603-core-xss-vulnerability.html
 # CVE-2017-11364 3.7.4  https://developer.joomla.org/security-centre/700-20170704-core-installer-lack-of-ownership-verification.html
 # CVE-2017-11612 3.7.4  https://developer.joomla.org/security-centre/701-20170605-core-xss-vulnerability.html
+# CVE-2017-14595 3.8.0  https://developer.joomla.org/security-centre/710-20170901-core-information-disclosure
+# CVE-2017-14596 3.8.0  https://developer.joomla.org/security-centre/711-20170902-core-ldap-information-disclosure
 Joomla 3:
   1:
     location: ['/administrator/manifests/files/joomla.xml']
-    secure_version: '3.7.4'
+    secure_version: '3.8.0'
     regexp: ['[\t]<version>(?P<version>3\.[0-9.]{1,})']
-    cve: 'https://developer.joomla.org/security-centre/700-20170704-core-installer-lack-of-ownership-verification.html https://nvd.nist.gov/vuln/detail/CVE-2017-11364 https://developer.joomla.org/security-centre/701-20170605-core-xss-vulnerability.html https://nvd.nist.gov/vuln/detail/CVE-2017-11612'
+    cve: 'https://developer.joomla.org/security-centre/710-20170901-core-information-disclosure https://nvd.nist.gov/vuln/detail/CVE-2017-14595 https://developer.joomla.org/security-centre/711-20170902-core-ldap-information-disclosure https://nvd.nist.gov/vuln/detail/CVE-2017-14596'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Joomla 2.5:
   1:
     location: ['/administrator/manifests/files/joomla.xml']
-    secure_version: '3.7.4'
+    secure_version: '3.8.0'
     regexp: ['[\t]<version>(?P<version>2\.5\.[0-9]{1,})']
-    cve: 'Joomla 2.5 is end of life. Please upgrade to 3.7.4 version.'
+    cve: 'Joomla 2.5 is end of life. Please upgrade to 3.8.0 version.'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Joomla 1.7:
   1:
     location: ['/includes/version.php']
-    secure_version: '3.7.4'
+    secure_version: '3.8.0'
     regexp: ['[\t]+public[\t|\s]\$RELEASE.*?(?P<version>1.7)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.7 is end of life. Please upgrade to 3.7.4 version.'
+    cve: 'Joomla 1.7 is end of life. Please upgrade to 3.8.0 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.6:
   1:
     location: ['/libraries/joomla/version.php']
-    secure_version: '3.7.4'
+    secure_version: '3.8.0'
     regexp: ['.*?RELEASE.*?(?P<version>1.6)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.6 is end of life. Please upgrade to 3.7.4 version.'
+    cve: 'Joomla 1.6 is end of life. Please upgrade to 3.8.0 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.5:
   1:
     location: ['/libraries/joomla/version.php']
-    secure_version: '3.7.4'
+    secure_version: '3.8.0'
     regexp: ['.*?RELEASE.*?(?P<version>1.5)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.5 is end of life. Please upgrade to 3.7.4 version.'
+    cve: 'Joomla 1.5 is end of life. Please upgrade to 3.8.0 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.0:
   1:
     location: ['/includes/version.php']
-    secure_version: '3.7.4'
+    secure_version: '3.8.0'
     regexp: ['[\t]+var.*?RELEASE.*?(?P<version>1.0)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.0 is end of life. Please upgrade to 3.7.4 version.'
+    cve: 'Joomla 1.0 is end of life. Please upgrade to 3.8.0 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
