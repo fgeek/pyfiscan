@@ -28,11 +28,12 @@
 # CVE-2013-4430 1.7.3
 # CVE-2013-4431 1.7.3
 # CVE-2013-4432 1.7.3
+# CVE-2017-9551 17.04.3 https://mahara.org/interaction/forum/topic.php?id=8040
 Mahara:
   1:
     location: ['/htdocs/lib/version.php']
-    secure_version: '1.7.3'
+    secure_version: '17.04.3'
     regexp: ['\$config->release.*?(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2013-4429 https://nvd.nist.gov/vuln/detail/CVE-2013-4430 https://nvd.nist.gov/vuln/detail/CVE-2013-4431 https://nvd.nist.gov/vuln/detail/CVE-2013-4432'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-9551'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
