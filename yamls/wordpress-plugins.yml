@@ -2325,3 +2325,11 @@ WordPress plugin roomcloud:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-3904'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wp-powerplaygallery:
+  1:
+    location: ['/wp-content/plugins/wp-powerplaygallery/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-5599 https://nvd.nist.gov/vuln/detail/CVE-2015-5681 https://nvd.nist.gov/vuln/detail/CVE-2015-5682 http://www.vapid.dhs.org/advisory.php?v=132'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
