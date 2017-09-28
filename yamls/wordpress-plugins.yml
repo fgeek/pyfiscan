@@ -2300,3 +2300,11 @@ WordPress plugin backwpup:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-2551 http://www.vapidlabs.com/advisory.php?v=201'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin content-audit:
+  1:
+    location: ['/wp-content/plugins/content-audit/readme.txt']
+    secure_version: '1.9.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://security.dxw.com/advisories/csrf-xss-content-audit/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
