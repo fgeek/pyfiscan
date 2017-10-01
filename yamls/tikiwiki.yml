@@ -15,11 +15,13 @@
 # CVE-2016-10143 16.2/15.4/12.11 https://tiki.org/article445-Security-updates-Tiki-16-2-15-4-and-Tiki-12-11-released http://seclists.org/bugtraq/2017/Mar/41
 # CVE-2017-9305 TODO https://github.com/tikiorg/tiki/commit/6c016e8f066d2f404b18eaa1af7fa0c7a9651ccd 2017-06-03 fix isn't in any release
 # CVE-2017-9145 TODO 2017-06-28 fix isn't in any release
+# CVE-2017-14924 17.1
+# CVE-2017-14925 17.1
 TikiWiki:
   1:
     location: ['/lib/setup/twversion.class.php']
-    secure_version: '16.2'
+    secure_version: '17.1'
     regexp: ['.*?\$this->version.*?(?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-10143 https://tiki.org/article445-Security-updates-Tiki-16-2-15-4-and-Tiki-12-11-released'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-14924 https://nvd.nist.gov/vuln/detail/CVE-2017-14925 https://tiki.org/article449-Security-and-bug-fix-updates-Tiki-17-1-Tiki-16-3-15-5-and-Tiki-12-12-released'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
