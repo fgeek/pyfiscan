@@ -193,19 +193,28 @@
 # CVE-2017-9064 4.7.5   https://github.com/WordPress/WordPress/commit/38347d7c580be4cdd8476e4bbc653d5c79ed9b67
 # CVE-2017-9065 4.7.5   https://github.com/WordPress/WordPress/commit/e88a48a066ab2200ce3091b131d43e2fab2460a4
 # CVE-2017-9066 4.7.5   https://github.com/WordPress/WordPress/commit/76d77e927bb4d0f87c7262a50e28d84e01fd2b11
-# TODO          4.8.2   https://wordpress.org/news/2017/09/wordpress-4-8-2-security-and-maintenance-release/
+# CVE-2017-14718    4.8.2   https://wordpress.org/news/2017/09/wordpress-4-8-2-security-and-maintenance-release/
+# CVE-2017-14719    4.8.2   https://wordpress.org/news/2017/09/wordpress-4-8-2-security-and-maintenance-release/
+# CVE-2017-14720    4.8.2   https://wordpress.org/news/2017/09/wordpress-4-8-2-security-and-maintenance-release/
+# CVE-2017-14721    4.8.2   https://wordpress.org/news/2017/09/wordpress-4-8-2-security-and-maintenance-release/
+# CVE-2017-14722    4.8.2   https://wordpress.org/news/2017/09/wordpress-4-8-2-security-and-maintenance-release/
+# CVE-2017-14723    4.8.2   https://wordpress.org/news/2017/09/wordpress-4-8-2-security-and-maintenance-release/
+# CVE-2017-14724    4.8.2   https://wordpress.org/news/2017/09/wordpress-4-8-2-security-and-maintenance-release/
+# CVE-2017-14725    4.8.2   https://wordpress.org/news/2017/09/wordpress-4-8-2-security-and-maintenance-release/
+# CVE-2017-14726    4.8.2   https://wordpress.org/news/2017/09/wordpress-4-8-2-security-and-maintenance-release/
+# CVE-2017-14990 TODO   https://core.trac.wordpress.org/ticket/38474
 WordPress:
   1:
     location: ['/wp-includes/version.php', '/wp-includes/vars.php']
     secure_version: '4.8.2'
     regexp: ['\$wp_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://wordpress.org/news/2017/09/wordpress-4-8-2-security-and-maintenance-release/'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-14718 https://nvd.nist.gov/vuln/detail/CVE-2017-14719 https://nvd.nist.gov/vuln/detail/CVE-2017-14720 https://nvd.nist.gov/vuln/detail/CVE-2017-14721 https://nvd.nist.gov/vuln/detail/CVE-2017-14722 https://nvd.nist.gov/vuln/detail/CVE-2017-14723 https://nvd.nist.gov/vuln/detail/CVE-2017-14724 https://nvd.nist.gov/vuln/detail/CVE-2017-14725 https://nvd.nist.gov/vuln/detail/CVE-2017-14726 https://wordpress.org/news/2017/09/wordpress-4-8-2-security-and-maintenance-release/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
   2:
     location: ['/b2-include/b2vars.php']
     secure_version: '4.8.2'
     regexp: ['\$b2_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://wordpress.org/news/2017/09/wordpress-4-8-2-security-and-maintenance-release/'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-14718 https://nvd.nist.gov/vuln/detail/CVE-2017-14719 https://nvd.nist.gov/vuln/detail/CVE-2017-14720 https://nvd.nist.gov/vuln/detail/CVE-2017-14721 https://nvd.nist.gov/vuln/detail/CVE-2017-14722 https://nvd.nist.gov/vuln/detail/CVE-2017-14723 https://nvd.nist.gov/vuln/detail/CVE-2017-14724 https://nvd.nist.gov/vuln/detail/CVE-2017-14725 https://nvd.nist.gov/vuln/detail/CVE-2017-14726 https://wordpress.org/news/2017/09/wordpress-4-8-2-security-and-maintenance-release/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
