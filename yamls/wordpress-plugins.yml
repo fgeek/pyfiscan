@@ -2344,3 +2344,11 @@ WordPress plugin rk-responsive-contact-form:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-1002027 http://www.vapidlabs.com/advisory.php?v=198 http://www.openwall.com/lists/oss-security/2017/08/23/3'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin gallery-bank:
+  1:
+    location: ['/wp-content/plugins/gallery-bank/readme.txt']
+    secure_version: '3.0.70'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2014-8758 https://g0blin.co.uk/cve-2014-8758/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
