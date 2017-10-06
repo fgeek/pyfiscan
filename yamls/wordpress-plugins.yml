@@ -916,6 +916,7 @@ WordPress plugin remote-upload:
     cve: 'http://bini.tech/wordpress-remote-upload-unrestricted-file-upload/ https://plugins.trac.wordpress.org/changeset/1435503/remote-upload'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# CVE-2014-8492 2.0.3 https://g0blin.co.uk/cve-2014-8492/
 # 2.4.1 https://www.wordfence.com/blog/2016/07/vulnerability-profile-builder/
 WordPress plugin profile-builder:
   1:
