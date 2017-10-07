@@ -2360,3 +2360,11 @@ WordPress plugin easy-contact-form-solution:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2014-7240 https://g0blin.co.uk/cve-2014-7240/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wp-easycart:
+  1:
+    location: ['/wp-content/plugins/wp-easycart/readme.txt']
+    secure_version: '3.0.21'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-2673 https://www.rastating.com/wp-easycart-privilege-escalation-information-disclosure/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
