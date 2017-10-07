@@ -18,7 +18,6 @@
 # CVE-2015-2035 2.7.4
 # TODO          2.8.2 http://piwigo.org/releases/2.8.2 http://piwigo.org/forum/viewtopic.php?id=26730
 # TODO          2.8.3 http://piwigo.org/releases/2.8.3
-# CVE-2016-9751 TODO asked status from upstream via email 2016-01-02 (never replied)
 # CVE-2016-10083 2.8.5 http://piwigo.org/forum/viewtopic.php?id=27573
 # CVE-2016-10084 2.8.5 http://piwigo.org/forum/viewtopic.php?id=27573
 # CVE-2016-10085 2.8.5 http://piwigo.org/forum/viewtopic.php?id=27573
@@ -27,6 +26,7 @@
 # CVE-2017-9452 2.9.1 https://github.com/Piwigo/Piwigo/issues/667
 # CVE-2017-9463 2.9.1 https://github.com/Piwigo/Piwigo/issues/705
 # CVE-2017-9464 2.9.1 https://github.com/Piwigo/Piwigo/issues/706
+# CVE-2016-9751 2.9.2 https://github.com/Piwigo/Piwigo/issues/559
 # CVE-2017-10678 2.9.2 https://github.com/Piwigo/Piwigo/issues/721
 # CVE-2017-10679 2.9.2 https://github.com/Piwigo/Piwigo/issues/721 https://github.com/Piwigo/Piwigo/issues/723
 # CVE-2017-10680 2.9.2 https://github.com/Piwigo/Piwigo/issues/721
