@@ -85,6 +85,7 @@ Detects following software
 * Roundcube
 * SaurusCMS
 * Serendipity
+* Shaarli
 * SMF
 * Spina CMS
 * SPIP
