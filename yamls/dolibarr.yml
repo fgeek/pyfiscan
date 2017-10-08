@@ -16,13 +16,22 @@
 # CVE-2015-8685 3.8.3 https://github.com/Dolibarr/dolibarr/issues/4291 https://github.com/GPCsolutions/dolibarr/commit/0d3181324c816bdf664ca5e1548dfe8eb05c54f8
 # CVE-2016-1912 3.8.4 https://github.com/Dolibarr/dolibarr/issues/4341
 # CVE-2016-XXXX 4.0.0 https://github.com/Dolibarr/dolibarr/issues/5239
+# CVE-2017-8879 TODO
+# CVE-2017-7886 4.0.6 https://www.foxmole.com/advisories/foxmole-2017-02-23.txt http://www.openwall.com/lists/oss-security/2017/05/10/6
+# CVE-2017-7887 5.0.3 https://www.foxmole.com/advisories/foxmole-2017-02-23.txt
+# CVE-2017-7888 6.0.0 https://www.foxmole.com/advisories/foxmole-2017-02-23.txt
 # CVE-2017-9435 5.0.3 https://github.com/Dolibarr/dolibarr/commit/70636cc59ffa1ffbc0ce3dba315d7d9b837aad04
 # CVE-2017-9840 TODO https://www.wizlynxgroup.com/security-research-advisories/vuln/WLX-2017-009 5.0.3 is the latest version, which is affected
+# CVE-2017-14238 6.0.1 https://github.com/Dolibarr/dolibarr/commit/d26b2a694de30f95e46ea54ea72cc54f0d38e548
+# CVE-2017-14239 6.0.1 https://github.com/Dolibarr/dolibarr/commit/d26b2a694de30f95e46ea54ea72cc54f0d38e548
+# CVE-2017-14240 6.0.1 https://github.com/Dolibarr/dolibarr/commit/d26b2a694de30f95e46ea54ea72cc54f0d38e548
+# CVE-2017-14241 6.0.1 https://github.com/Dolibarr/dolibarr/commit/d26b2a694de30f95e46ea54ea72cc54f0d38e548
+# CVE-2017-14242 6.0.1 https://github.com/Dolibarr/dolibarr/commit/33e2179b65331d9d9179b59d746817c5be1fecdb
 Dolibarr:
   1:
     location: ['/htdocs/filefunc.inc.php']
-    secure_version: '5.0.3'
+    secure_version: '6.0.1'
     regexp: ['.*?DOL_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-9435'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-14238 https://nvd.nist.gov/vuln/detail/CVE-2017-14239 https://nvd.nist.gov/vuln/detail/CVE-2017-14240 https://nvd.nist.gov/vuln/detail/CVE-2017-14241 https://nvd.nist.gov/vuln/detail/CVE-2017-14242'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
