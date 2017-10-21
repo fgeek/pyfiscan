@@ -193,12 +193,13 @@ WordPress plugin wp-responsive-preview:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2014-4594'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# CVE-2014-6315 1.1.31
 WordPress plugin photo-gallery:
   1:
     location: ['/wp-content/plugins/photo-gallery/readme.txt']
-    secure_version: '1.1.31'
+    secure_version: '1.3.43'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2014-6315'
+    cve: 'https://security.dxw.com/advisories/path-traversal-in-photo-gallery-may-allow-admins-to-read-most-files-on-the-filesystem/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 # CVE-2014-8724 0.9.4.1
