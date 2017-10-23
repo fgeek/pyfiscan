@@ -2370,3 +2370,11 @@ WordPress plugin wp-easycart:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-2673 https://www.rastating.com/wp-easycart-privilege-escalation-information-disclosure/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wordpress-gallery-transformation:
+  1:
+    location: ['/wp-content/plugins/wordpress-gallery-transformation/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-1002028 http://www.vapidlabs.com/advisory.php?v=199'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
