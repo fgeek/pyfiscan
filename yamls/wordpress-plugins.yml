@@ -2378,3 +2378,11 @@ WordPress plugin wordpress-gallery-transformation:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-1002028 http://www.vapidlabs.com/advisory.php?v=199'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin easy-appointments:
+  1:
+    location: ['/wp-content/plugins/easy-appointments/readme.txt']
+    secure_version: '1.12.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-15812'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
