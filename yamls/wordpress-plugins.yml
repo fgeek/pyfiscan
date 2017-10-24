@@ -1017,7 +1017,7 @@ WordPress plugin wp-noexternallinks:
     location: ['/wp-content/plugins/wp-noexternallinks/readme.txt']
     secure_version: '3.5.19'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'http://lists.openwall.net/full-disclosure/2017/06/02/3'  # TODO: CVE requested 2017-10-24
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-15863 http://lists.openwall.net/full-disclosure/2017/06/02/3'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 # OVE-20160712-0021 0.85 https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_google_forms_wordpress_plugin.html
