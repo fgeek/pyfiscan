@@ -2267,12 +2267,13 @@ WordPress plugin accesspress-social-icons:
     cve: 'http://www.defensecode.com/advisories/DC-2017-03-005_WordPress_AccessPress_Social_Icons_Plugin_Advisory.pdf'  # 2017-07-04 asked founder to request CVE
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# N/A no fix http://www.defensecode.com/advisories/DC-2017-01-027_WordPress_Ultimate_Form_Builder_Plugin_Advisory.pdf
 WordPress plugin ultimate-form-builder-lite:
   1:
     location: ['/wp-content/plugins/ultimate-form-builder-lite/readme.txt']
-    secure_version: 'N/A'
+    secure_version: '1.3.7'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'http://www.defensecode.com/advisories/DC-2017-01-027_WordPress_Ultimate_Form_Builder_Plugin_Advisory.pdf'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-15919'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin event-calendar-wd:
