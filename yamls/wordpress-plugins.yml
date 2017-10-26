@@ -375,7 +375,7 @@ WordPress plugin job-manager:
     location: ['/wp-content/plugins/job-manager/readme.txt']
     secure_version: '0.7.25'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://wordpress.org/plugins/job-manager/changelog/'  # No CVE available
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-6668'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin securemoz-security-audit:
