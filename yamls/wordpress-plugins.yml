@@ -2267,7 +2267,7 @@ WordPress plugin accesspress-social-icons:
     cve: 'http://www.defensecode.com/advisories/DC-2017-03-005_WordPress_AccessPress_Social_Icons_Plugin_Advisory.pdf'  # 2017-07-04 asked founder to request CVE
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
-# N/A no fix http://www.defensecode.com/advisories/DC-2017-01-027_WordPress_Ultimate_Form_Builder_Plugin_Advisory.pdf
+# N/A 1.3.4 http://www.defensecode.com/advisories/DC-2017-01-027_WordPress_Ultimate_Form_Builder_Plugin_Advisory.pdf
 WordPress plugin ultimate-form-builder-lite:
   1:
     location: ['/wp-content/plugins/ultimate-form-builder-lite/readme.txt']
