@@ -157,9 +157,9 @@ MediaWiki 1.24:
 MediaWiki 1.23:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.23.17'
+    secure_version: '1.29.1'
     regexp: ['\$wgVersion.*?(?P<version>1\.23\.[0-9.]{1,})']
-    cve: 'https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-April/000208.html'
+    cve: 'MediaWiki 1.23 is end of life.'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.22:

@@ -114,7 +114,7 @@ Detects following end-of-life software:
 * MediaWiki 1.20
 * MediaWiki 1.21 is end-of-life since [2014-06-25](http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-June/000153.html)
 * MediaWiki 1.22
-* MediaWiki 1.23
+* MediaWiki 1.23 is end-of-life since [2017-05-31](https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-May/000210.html)
 * MediaWiki 1.24
 * MediaWiki 1.25
 * MediaWiki 1.26 is end-of-life since [2016-11-20](https://lists.wikimedia.org/pipermail/mediawiki-announce/2016-November/000204.html)
