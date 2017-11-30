@@ -206,18 +206,19 @@
 # CVE-2017-14726 4.8.2 https://wordpress.org/news/2017/09/wordpress-4-8-2-security-and-maintenance-release/
 # CVE-2017-14990 TODO https://core.trac.wordpress.org/ticket/38474
 # CVE-2017-16510 4.8.3 https://github.com/WordPress/WordPress/commit/a2693fd8602e3263b5925b9d799ddd577202167d
+# TODO 4.9.1 https://wordpress.org/news/2017/11/wordpress-4-9-1-security-and-maintenance-release/
 WordPress:
   1:
     location: ['/wp-includes/version.php', '/wp-includes/vars.php']
-    secure_version: '4.8.3'
+    secure_version: '4.9.1'
     regexp: ['\$wp_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-16510 https://wordpress.org/news/2017/10/wordpress-4-8-3-security-release/'
+    cve: 'https://wordpress.org/news/2017/11/wordpress-4-9-1-security-and-maintenance-release/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
   2:
     location: ['/b2-include/b2vars.php']
-    secure_version: '4.8.3'
+    secure_version: '4.9.1'
     regexp: ['\$b2_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-16510 https://wordpress.org/news/2017/10/wordpress-4-8-3-security-release/'
+    cve: 'https://wordpress.org/news/2017/11/wordpress-4-9-1-security-and-maintenance-release/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
