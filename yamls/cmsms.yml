@@ -39,20 +39,19 @@
 # CVE-2017-6071 0.8.1.6 Form Builder
 # CVE-2017-6072 0.8.1.6 Form Builder
 # CVE-2017-6555 TODO
-# CVE-2017-7257 TODO latest release is vulnerable
-# CVE-2017-7256 TODO latest release is vulnerable
-# CVE-2017-7255 TODO latest release is vulnerable
+# CVE-2017-7257 TODO
+# CVE-2017-7256 TODO
+# CVE-2017-7255 TODO
 # CVE-2017-8912 disputed
 # CVE-2017-9668 TODO https://github.com/XiaoZhis/ProjectSend/issues/2
-# TODO          2.2.1 http://www.cmsmadesimple.org/2017/06/Announcing-CMSMS-2-2-1-Hearts-Desire/
 # CVE-2017-11404 TODO
-# CVE-2017-16783 TODO https://www.netsparker.com/web-applications-advisories/ns-17-032-server-side-template-injection-vulnerability-in-cms-made-simple/
-# CVE-2017-16784 TODO https://www.netsparker.com/web-applications-advisories/ns-17-031-reflected-xss-vulnerability-in-cms-made-simple/
+# CVE-2017-16783 2.2.1 http://www.cmsmadesimple.org/2017/06/Announcing-CMSMS-2-2-1-Hearts-Desire/ https://www.netsparker.com/web-applications-advisories/ns-17-032-server-side-template-injection-vulnerability-in-cms-made-simple/
+# CVE-2017-16784 2.2.1 http://www.cmsmadesimple.org/2017/06/Announcing-CMSMS-2-2-1-Hearts-Desire/ https://www.netsparker.com/web-applications-advisories/ns-17-031-reflected-xss-vulnerability-in-cms-made-simple/
 CMSMS:
   1:
     location: ['/version.php']
     secure_version: '2.2.1'
     regexp: ['\$CMS_VERSION.*?(?P<version>[.0-9]{1,})']
-    cve: 'http://www.cmsmadesimple.org/2017/06/Announcing-CMSMS-2-2-1-Hearts-Desire/'
+    cve: 'http://www.cmsmadesimple.org/2017/06/Announcing-CMSMS-2-2-1-Hearts-Desire/ https://nvd.nist.gov/vuln/detail/CVE-2017-16783 https://www.netsparker.com/web-applications-advisories/ns-17-032-server-side-template-injection-vulnerability-in-cms-made-simple/ https://nvd.nist.gov/vuln/detail/CVE-2017-16784 https://www.netsparker.com/web-applications-advisories/ns-17-031-reflected-xss-vulnerability-in-cms-made-simple/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
