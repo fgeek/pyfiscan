@@ -1,5 +1,5 @@
 # NOTE: Security support of 1.2 series dropped September 2016 http://www.cmsmadesimple.org/2015/12/Announcing-CMSMS-2-1-Bahamas/ http://www.cmsmadesimple.org/2016/06/CMSMS-1-x-Nears-End-of-Life/
-# NOT-FOR-US: CVE-2017-11405 there is a file upload forms in the admin panel anyways
+# NOT-FOR-US: CVE-2017-11404, CVE-2017-11405 it's a feature for admins to be able to upload PHP files
 # CVE-2005-2846 0.10.1 http://www.securityfocus.com/bid/14709 SA16654
 # CVE-2005-3083 N/A http://www.securityfocus.com/bid/14937
 # CVE-2006-6844 N/A http://www.securityfocus.com/bid/21756
@@ -44,7 +44,6 @@
 # CVE-2017-7255 TODO
 # CVE-2017-8912 disputed
 # CVE-2017-9668 TODO https://github.com/XiaoZhis/ProjectSend/issues/2
-# CVE-2017-11404 TODO
 # CVE-2017-16783 2.2.1 http://www.cmsmadesimple.org/2017/06/Announcing-CMSMS-2-2-1-Hearts-Desire/ https://www.netsparker.com/web-applications-advisories/ns-17-032-server-side-template-injection-vulnerability-in-cms-made-simple/
 # CVE-2017-16784 2.2.1 http://www.cmsmadesimple.org/2017/06/Announcing-CMSMS-2-2-1-Hearts-Desire/ https://www.netsparker.com/web-applications-advisories/ns-17-031-reflected-xss-vulnerability-in-cms-made-simple/
 CMSMS:
