@@ -206,7 +206,10 @@
 # CVE-2017-14726 4.8.2 https://wordpress.org/news/2017/09/wordpress-4-8-2-security-and-maintenance-release/
 # CVE-2017-14990 TODO https://core.trac.wordpress.org/ticket/38474
 # CVE-2017-16510 4.8.3 https://github.com/WordPress/WordPress/commit/a2693fd8602e3263b5925b9d799ddd577202167d
-# TODO 4.9.1 https://wordpress.org/news/2017/11/wordpress-4-9-1-security-and-maintenance-release/
+# CVE-2017-17091 4.9.1 https://wordpress.org/news/2017/11/wordpress-4-9-1-security-and-maintenance-release/
+# CVE-2017-17092 4.9.1 https://wordpress.org/news/2017/11/wordpress-4-9-1-security-and-maintenance-release/
+# CVE-2017-17093 4.9.1 https://wordpress.org/news/2017/11/wordpress-4-9-1-security-and-maintenance-release/
+# CVE-2017-17094 4.9.1 https://wordpress.org/news/2017/11/wordpress-4-9-1-security-and-maintenance-release/
 WordPress:
   1:
     location: ['/wp-includes/version.php', '/wp-includes/vars.php']
