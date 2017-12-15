@@ -112,6 +112,7 @@ WordPress plugin newstatpress:
     post_processing: ['php5.fcgi']
 # CVE-2015-4064 1.8.5
 # CVE-2015-4065 1.8.5
+# CVE-2015-5227 1.9.2
 WordPress plugin landing-pages:
   1:
     location: ['/wp-content/plugins/landing-pages/readme.txt']
