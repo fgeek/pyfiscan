@@ -2388,3 +2388,11 @@ WordPress plugin easy-appointments:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-15812'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin flash-album-gallery:
+  1:
+    location: ['/wp-content/plugins/flash-album-gallery/readme.txt']
+    secure_version: '4.25'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2014-8491'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
