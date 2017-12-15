@@ -2397,3 +2397,11 @@ WordPress plugin flash-album-gallery:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2014-8491'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin post-highlights:
+  1:
+    location: ['/wp-content/plugins/post-highlights/readme.txt']
+    secure_version: '2.6.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2014-8087'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
