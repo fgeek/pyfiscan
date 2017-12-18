@@ -46,11 +46,13 @@
 # CVE-2017-9668 TODO https://github.com/XiaoZhis/ProjectSend/issues/2
 # CVE-2017-16783 2.2.1 http://www.cmsmadesimple.org/2017/06/Announcing-CMSMS-2-2-1-Hearts-Desire/ https://www.netsparker.com/web-applications-advisories/ns-17-032-server-side-template-injection-vulnerability-in-cms-made-simple/
 # CVE-2017-16784 2.2.1 http://www.cmsmadesimple.org/2017/06/Announcing-CMSMS-2-2-1-Hearts-Desire/ https://www.netsparker.com/web-applications-advisories/ns-17-031-reflected-xss-vulnerability-in-cms-made-simple/
+# CVE-2017-17734 2.2.5 https://www.cmsmadesimple.org/2017/12/Announcing-CMSMS-v2.2.5-Wawa
+# CVE-2017-17735 2.2.5 https://www.cmsmadesimple.org/2017/12/Announcing-CMSMS-v2.2.5-Wawa
 CMSMS:
   1:
     location: ['/version.php']
-    secure_version: '2.2.1'
+    secure_version: '2.2.5'
     regexp: ['\$CMS_VERSION.*?(?P<version>[.0-9]{1,})']
-    cve: 'http://www.cmsmadesimple.org/2017/06/Announcing-CMSMS-2-2-1-Hearts-Desire/ https://nvd.nist.gov/vuln/detail/CVE-2017-16783 https://www.netsparker.com/web-applications-advisories/ns-17-032-server-side-template-injection-vulnerability-in-cms-made-simple/ https://nvd.nist.gov/vuln/detail/CVE-2017-16784 https://www.netsparker.com/web-applications-advisories/ns-17-031-reflected-xss-vulnerability-in-cms-made-simple/'
+    cve: 'https://www.cmsmadesimple.org/2017/12/Announcing-CMSMS-v2.2.5-Wawa https://nvd.nist.gov/vuln/detail/CVE-2017-17734 https://nvd.nist.gov/vuln/detail/CVE-2017-17735'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
