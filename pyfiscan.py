@@ -9,7 +9,7 @@ to keep up with security-updates. Fingerprints are easy to create and modify as
 user can write those in YAML-syntax.
 
 @author Henri Salo <henri@nerv.fi>
-@copyright Copyright (c) 2009-2017 Henri Salo
+@copyright Copyright (c) 2009-2018 Henri Salo
 @license BSD
 """
 
@@ -234,7 +234,7 @@ def check_old_results(csv_file):
     if os.path.islink(csv_file):
         sys.exit('CSV file %s is a symlink. Exiting..' % csv_file)
     reader = csv.reader(open(csv_file, 'rb'), delimiter='|', quotechar='|')
-    # Opens database handle
+
     database = Database('yamls/', includes=None)
     total = 0
     notfixed = 0
