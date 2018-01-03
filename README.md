@@ -26,6 +26,7 @@ Detects following software
 --------------------------
 
 * ATutor
+* b2evolution
 * BigTree CMS
 * Bugzilla
 * Centreon
