@@ -2414,3 +2414,11 @@ WordPress plugin furikake:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-1000434 https://cjc.im/advisories/0008/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin csv-import-export:
+  1:
+    location: ['/wp-content/plugins/csv-import-export/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-17753 http://lists.openwall.net/full-disclosure/2017/12/19/17'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
