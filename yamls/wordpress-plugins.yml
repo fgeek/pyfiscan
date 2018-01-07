@@ -2422,3 +2422,11 @@ WordPress plugin csv-import-export:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-17753 http://lists.openwall.net/full-disclosure/2017/12/19/17'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin custom-map:
+  1:
+    location: ['/wp-content/plugins/custom-map/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-17744 http://lists.openwall.net/full-disclosure/2017/12/19/16'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
