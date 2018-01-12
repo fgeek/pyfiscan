@@ -886,12 +886,13 @@ WordPress plugin pondol-carousel:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-1000145 http://www.vapidlabs.com/wp/wp_advisory.php?v=524 DWF-2016-77531 http://www.openwall.com/lists/oss-security/2016/05/11/12'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# TODO 4.0.3 https://www.wordfence.com/blog/2016/05/jetpack-vulnerability/ https://jetpack.com/2016/05/27/jetpack-4-0-3-critical-security-update/
 WordPress plugin jetpack:
   1:
     location: ['/wp-content/plugins/jetpack/readme.txt']
-    secure_version: '4.0.3'
+    secure_version: '4.0.4'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://www.wordfence.com/blog/2016/05/jetpack-vulnerability/'
+    cve: 'https://jetpack.com/2016/06/20/jetpack-4-0-4-bug-fixes/ https://wpvulndb.com/vulnerabilities/8517'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin wp-mobile-detector:
