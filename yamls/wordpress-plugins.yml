@@ -2450,3 +2450,11 @@ WordPress plugin smooth-slider:
     cve: 'http://lists.openwall.net/full-disclosure/2018/01/11/3 http://www.defensecode.com/advisories/DC-2018-01-004_WordPress_Smooth_Slider_Plugin_Advisory.pdf'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin testimonial-slider:
+  1:
+    location: ['/wp-content/plugins/testimonial-slider/readme.txt']
+    secure_version: '1.2.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'http://lists.openwall.net/full-disclosure/2018/01/11/4 http://www.defensecode.com/advisories/DC-2018-01-005_WordPress_Testimonial_Slider_Plugin_Advisory.pdf'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
