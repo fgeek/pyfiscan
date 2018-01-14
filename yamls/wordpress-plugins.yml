@@ -2432,6 +2432,7 @@ WordPress plugin custom-map:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-17744 http://lists.openwall.net/full-disclosure/2017/12/19/16'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# CVE requested 2018-01-14
 WordPress plugin dbox-slider-lite:
   1:
     location: ['/wp-content/plugins/dbox-slider-lite/readme.txt']
