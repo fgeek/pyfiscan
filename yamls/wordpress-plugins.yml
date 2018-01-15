@@ -1339,14 +1339,15 @@ WordPress plugin wpmarketplace:
     cve: 'http://labs.sucuri.net/?note=2016-10-17 https://www.pluginvulnerabilities.com/2016/10/14/arbitrary-file-upload-vulnerability-in-wp-marketplace/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
-# https://www.pluginvulnerabilities.com/2016/06/27/authenticated-arbitrary-file-upload-vulnerability-in-wordpress-download-manager/ 2.8.98
+# 2.8.98 https://www.pluginvulnerabilities.com/2016/06/27/authenticated-arbitrary-file-upload-vulnerability-in-wordpress-download-manager/
 # OVE-20160722-0005 tested in 2.8.99 latest is 2.9.44 https://sumofpwn.nl/advisory/2016/cross_site_request_forgery_in_wordpress_download_manager_plugin.html
+# 2.9.52 https://security.dxw.com/advisories/xss-download-manager/
 WordPress plugin download-manager:
   1:
     location: ['/wp-content/plugins/download-manager/readme.txt']
-    secure_version: '2.9.52'
+    secure_version: '2.9.61'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://security.dxw.com/advisories/xss-download-manager/'
+    cve: 'http://lists.openwall.net/full-disclosure/2018/01/10/11'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin contus-video-comments:
