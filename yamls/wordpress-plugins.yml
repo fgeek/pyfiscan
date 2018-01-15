@@ -2443,7 +2443,7 @@ WordPress plugin dbox-slider-lite:
 WordPress plugin smooth-slider:
   1:
     location: ['/wp-content/plugins/smooth-slider/readme.txt']
-    secure_version: 'N/A'
+    secure_version: '2.8.7'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-5373 http://lists.openwall.net/full-disclosure/2018/01/11/3 http://www.defensecode.com/advisories/DC-2018-01-004_WordPress_Smooth_Slider_Plugin_Advisory.pdf'
     fingerprint: detect_general
