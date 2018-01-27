@@ -2465,3 +2465,11 @@ WordPress plugin acurax-social-media-widget:
     cve: 'http://lists.openwall.net/full-disclosure/2018/01/10/8'  # TODO: CVE requested 2018-01-27
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wp-splashing-images:
+  1:
+    location: ['/wp-content/plugins/wp-splashing-images/readme.txt']
+    secure_version: '2.1.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-6194 https://nvd.nist.gov/vuln/detail/CVE-2018-6195 http://lists.openwall.net/full-disclosure/2018/01/26/1'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
