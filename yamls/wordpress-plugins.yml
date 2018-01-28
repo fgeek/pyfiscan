@@ -2462,7 +2462,7 @@ WordPress plugin acurax-social-media-widget:
     location: ['/wp-content/plugins/acurax-social-media-widget/readme.txt']
     secure_version: '3.2.6'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'http://lists.openwall.net/full-disclosure/2018/01/10/8'  # TODO: CVE requested 2018-01-27
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-6357 http://lists.openwall.net/full-disclosure/2018/01/10/8'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin wp-splashing-images:
