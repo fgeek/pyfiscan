@@ -3,6 +3,7 @@
 # CVE-2008-2066
 # CVE-2013-XXXX 3.0.1 NS-13-002 https://www.mavitunasecurity.com/xss-and-sql-injection-vulnerabilities-in-minibb/
 # CVE-2013-5020 3.0.1 http://www.minibb.com/forums/news-9/minibb-3.0.1-released-stable-fixed-secured-dedicated-6059.html
+# CVE-2018-6506 N/A 3.2.2 is affected. vendor does not consider this as a real issue https://offensivehacking.wordpress.com/2018/02/07/minibb-forums-v3-2-2-stored-xss/
 MiniBB:
   1:
     location: ['/bb_functions.php']
