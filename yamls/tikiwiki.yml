@@ -17,11 +17,12 @@
 # CVE-2017-9145 TODO 2017-06-28 fix isn't in any release
 # CVE-2017-14924 17.1
 # CVE-2017-14925 17.1
+# CVE-2018-7188 18 http://openwall.com/lists/oss-security/2018/02/16/1 https://sourceforge.net/p/tikiwiki/code/65327
 TikiWiki:
   1:
     location: ['/lib/setup/twversion.class.php']
-    secure_version: '17.1'
+    secure_version: '18'
     regexp: ['.*?\$this->version.*?(?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-14924 https://nvd.nist.gov/vuln/detail/CVE-2017-14925 https://tiki.org/article449-Security-and-bug-fix-updates-Tiki-17-1-Tiki-16-3-15-5-and-Tiki-12-12-released'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-7188'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
