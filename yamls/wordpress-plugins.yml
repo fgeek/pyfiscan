@@ -1341,7 +1341,7 @@ WordPress plugin wpmarketplace:
     post_processing: ['php5.fcgi']
 # 2.8.98 https://www.pluginvulnerabilities.com/2016/06/27/authenticated-arbitrary-file-upload-vulnerability-in-wordpress-download-manager/
 # OVE-20160722-0005 tested in 2.8.99 latest is 2.9.44 https://sumofpwn.nl/advisory/2016/cross_site_request_forgery_in_wordpress_download_manager_plugin.html
-# 2.9.52 https://security.dxw.com/advisories/xss-download-manager/
+# CVE-2017-18032 2.9.52 https://security.dxw.com/advisories/xss-download-manager/
 WordPress plugin download-manager:
   1:
     location: ['/wp-content/plugins/download-manager/readme.txt']
