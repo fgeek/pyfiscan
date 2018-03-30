@@ -2473,3 +2473,11 @@ WordPress plugin wp-splashing-images:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-6194 https://nvd.nist.gov/vuln/detail/CVE-2018-6195 http://lists.openwall.net/full-disclosure/2018/01/26/1'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin site-editor:
+  1:
+    location: ['/wp-content/plugins/site-editor/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-7422 http://lists.openwall.net/full-disclosure/2018/03/19/2'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
