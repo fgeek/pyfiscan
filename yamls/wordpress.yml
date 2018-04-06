@@ -210,19 +210,21 @@
 # CVE-2017-17092 4.9.1 https://wordpress.org/news/2017/11/wordpress-4-9-1-security-and-maintenance-release/
 # CVE-2017-17093 4.9.1 https://wordpress.org/news/2017/11/wordpress-4-9-1-security-and-maintenance-release/
 # CVE-2017-17094 4.9.1 https://wordpress.org/news/2017/11/wordpress-4-9-1-security-and-maintenance-release/
-# CVE-2018-5776 4.9.2 https://wordpress.org/news/2018/01/wordpress-4-9-2-security-and-maintenance-release/ https://wpvulndb.com/vulnerabilities/9006
+# CVE-2018-5776 4.9.2 https://wordpress.org/news/2018/01/wordpress-4-9-2-security-and-maintenance-release/ https://wpvulndb.com/vulnerabilities/9006 https://github.com/WordPress/WordPress/commit/3fe9cb61ee71fcfadb5e002399296fcc1198d850
+# CVE-2018-6389 TODO https://wpvulndb.com/vulnerabilities/9021 https://github.com/quitten/doser.py checked 2018-03-04
+# TODO           4.9.5 https://wordpress.org/news/2018/04/wordpress-4-9-5-security-and-maintenance-release/
 WordPress:
   1:
     location: ['/wp-includes/version.php', '/wp-includes/vars.php']
-    secure_version: '4.9.2'
+    secure_version: '4.9.5'
     regexp: ['\$wp_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-5776 https://wordpress.org/news/2018/01/wordpress-4-9-2-security-and-maintenance-release/ https://wpvulndb.com/vulnerabilities/9006'
+    cve: 'https://wordpress.org/news/2018/04/wordpress-4-9-5-security-and-maintenance-release/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
   2:
     location: ['/b2-include/b2vars.php']
-    secure_version: '4.9.2'
+    secure_version: '4.9.5'
     regexp: ['\$b2_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-5776 https://wordpress.org/news/2018/01/wordpress-4-9-2-security-and-maintenance-release/ https://wpvulndb.com/vulnerabilities/9006'
+    cve: 'https://wordpress.org/news/2018/04/wordpress-4-9-5-security-and-maintenance-release/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
