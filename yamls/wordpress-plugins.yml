@@ -2481,3 +2481,11 @@ WordPress plugin site-editor:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-7422 http://lists.openwall.net/full-disclosure/2018/03/19/2'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin relevanssi:
+  1:
+    location: ['/wp-content/plugins/relevanssi/readme.txt']
+    secure_version: '3.6.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'http://lists.openwall.net/full-disclosure/2018/04/10/1'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
