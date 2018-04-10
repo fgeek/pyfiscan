@@ -2486,6 +2486,6 @@ WordPress plugin relevanssi:
     location: ['/wp-content/plugins/relevanssi/readme.txt']
     secure_version: '3.6.1'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'http://lists.openwall.net/full-disclosure/2018/04/10/1'
+    cve: 'http://lists.openwall.net/full-disclosure/2018/04/10/1 https://advisories.dxw.com/advisories/sqli-relevanssi/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
