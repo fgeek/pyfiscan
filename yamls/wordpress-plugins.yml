@@ -2497,3 +2497,11 @@ WordPress plugin wp-image-zoooom:
     cve: 'http://lists.openwall.net/full-disclosure/2018/04/10/4 https://advisories.dxw.com/advisories/wp-image-zoom-dos/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin rating-widget:
+  1:
+    location: ['/wp-content/plugins/rating-widget/readme.txt']
+    secure_version: '2.9.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'http://lists.openwall.net/full-disclosure/2018/04/10/3 https://advisories.dxw.com/advisories/rating-widget-debug-mode/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
