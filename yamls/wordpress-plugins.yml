@@ -2489,3 +2489,11 @@ WordPress plugin relevanssi:
     cve: 'http://lists.openwall.net/full-disclosure/2018/04/10/1 https://advisories.dxw.com/advisories/sqli-relevanssi/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wp-image-zoooom:
+  1:
+    location: ['/wp-content/plugins/wp-image-zoooom/readme.txt']
+    secure_version: '1.24'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'http://lists.openwall.net/full-disclosure/2018/04/10/4 https://advisories.dxw.com/advisories/wp-image-zoom-dos/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
