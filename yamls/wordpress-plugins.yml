@@ -2523,3 +2523,11 @@ WordPress plugin nmedia-user-file-uploader:
     cve: 'http://openwall.com/lists/oss-security/2015/06/10/2 https://wpvulndb.com/vulnerabilities/8044'  # http://seclists.org/oss-sec/2015/q2/676
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wordpress-flash-uploader:
+  1:
+    location: ['/wp-content/plugins/wordpress-flash-uploader/readme.txt']
+    secure_version: '3.1.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2014-5014'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
