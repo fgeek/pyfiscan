@@ -2531,3 +2531,11 @@ WordPress plugin wordpress-flash-uploader:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2014-5014'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wp-ulike:
+  1:
+    location: ['/wp-content/plugins/wp-ulike/readme.txt']
+    secure_version: '3.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://advisories.dxw.com/advisories/stored-xss-wp-ulike/ http://lists.openwall.net/full-disclosure/2018/05/14/6 https://advisories.dxw.com/advisories/wp-ulike-delete-rows/ http://lists.openwall.net/full-disclosure/2018/05/14/7'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
