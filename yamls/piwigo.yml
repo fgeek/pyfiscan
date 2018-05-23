@@ -1,4 +1,5 @@
 # URL: http://piwigo.org/
+# NFU: CVE-2018-7723 N/A XSS in album name or photo title is not a vulnerability according to Piwigo upstream. CSRF is working related to this CVE.
 # CVE-2012-2208
 # CVE-2012-2209
 # CVE-2012-4525 2.4.4 http://piwigo.org/bugs/view.php?id=0002750 SA50510
@@ -43,6 +44,8 @@
 # CVE-2017-17827 2.9.3 https://github.com/Piwigo/Piwigo/issues/822 https://github.com/Piwigo/Piwigo/commit/c3b4c6f7f0ddeaea492080fb8211d7b4cfedaf6f https://github.com/Piwigo/Piwigo/commit/77f02bfd76ed13dd14044d04cdd8d28213e1848d
 # CVE-2018-5692 TODO asked status from developers https://github.com/Piwigo/Piwigo/issues/847
 # CVE-2018-6883 2.9.3 https://github.com/Piwigo/Piwigo/issues/839 https://github.com/Piwigo/Piwigo/commit/02275fe275a3f97710dab75bf4c3f967f428b22d
+# CVE-2018-7722 TODO not fixed yet
+# CVE-2018-7724 TODO not fixed yet
 Piwigo:
   1:
     location: ['/include/constants.php']
