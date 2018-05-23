@@ -40,7 +40,7 @@
 # CVE-2017-17824 TODO
 # CVE-2017-17825 TODO
 # CVE-2017-17826 TODO
-# CVE-2017-17827 TODO
+# CVE-2017-17827 2.9.3 https://github.com/Piwigo/Piwigo/issues/822 https://github.com/Piwigo/Piwigo/commit/c3b4c6f7f0ddeaea492080fb8211d7b4cfedaf6f https://github.com/Piwigo/Piwigo/commit/77f02bfd76ed13dd14044d04cdd8d28213e1848d
 # CVE-2018-5692 TODO asked status from developers https://github.com/Piwigo/Piwigo/issues/847
 # CVE-2018-6883 2.9.3 https://github.com/Piwigo/Piwigo/issues/839 https://github.com/Piwigo/Piwigo/commit/02275fe275a3f97710dab75bf4c3f967f428b22d
 Piwigo:
@@ -48,6 +48,6 @@ Piwigo:
     location: ['/include/constants.php']
     secure_version: '2.9.3'
     regexp: ['define.*?PHPWG_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-6883 http://piwigo.org/releases/2.9.3'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-6883 https://nvd.nist.gov/vuln/detail/CVE-2017-17827 http://piwigo.org/releases/2.9.3'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
