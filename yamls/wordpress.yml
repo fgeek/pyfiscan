@@ -215,6 +215,7 @@
 # CVE-2018-10100 4.9.5 https://wordpress.org/news/2018/04/wordpress-4-9-5-security-and-maintenance-release/ https://core.trac.wordpress.org/changeset/42892 https://github.com/WordPress/WordPress/commit/14bc2c0a6fde0da04b47130707e01df850eedc7e
 # CVE-2018-10101 4.9.5 https://wordpress.org/news/2018/04/wordpress-4-9-5-security-and-maintenance-release/ https://core.trac.wordpress.org/changeset/42894 https://github.com/WordPress/WordPress/commit/804363859602d4050d9a38a21f5a65d9aec18216
 # CVE-2018-10102 4.9.5 https://wordpress.org/news/2018/04/wordpress-4-9-5-security-and-maintenance-release/ https://core.trac.wordpress.org/changeset/42893 https://github.com/WordPress/WordPress/commit/31a4369366d6b8ce30045d4c838de2412c77850d
+# CVE-2018-12895 TODO https://blog.ripstech.com/2018/wordpress-file-delete-to-code-execution/ needs Author level permissions
 WordPress:
   1:
     location: ['/wp-includes/version.php', '/wp-includes/vars.php']
