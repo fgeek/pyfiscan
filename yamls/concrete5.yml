@@ -4,14 +4,18 @@
 # CVE-2014-5108 5.6.3
 # CVE-2014-XXXX 5.7.3 http://seclists.org/fulldisclosure/2014/Dec/38 http://www.openwall.com/lists/oss-security/2015/01/02/1 https://github.com/concrete5/concrete5-5.7.0/commit/e3d47d2af88ddef36deaf754ef22f1f39b9b623b
 # CVE-2015-2250 5.7.4
-# CVE-2017-6908 TODO
-# CVE-2017-6905 TODO
-# CVE-2017-7725 TODO
+# CVE-2015-4721 https://hackerone.com/reports/59661
+# CVE-2015-4724 https://hackerone.com/reports/59664
+# CVE-2017-6905 5.6.3.5 https://github.com/concrete5/concrete5-legacy/issues/1947
+# CVE-2017-6908 5.6.3.5 https://github.com/concrete5/concrete5-legacy/issues/1948
+# CVE-2017-7725 8.4.0 https://hackerone.com/reports/148300 
+# CVE-2017-18195 8.3.0 https://github.com/r3naissance/NSE/blob/master/http-vuln-cve2017-18195.nse https://www.exploit-db.com/exploits/44194/
+# CVE-2018-13790 8.4.0 https://hackerone.com/reports/243865
 concrete5:
   1:
     location: ['/concrete/config/version.php']
-    secure_version: '5.7.4'
+    secure_version: '8.4.0'
     regexp: ['\$APP_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-2250'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-7725 https://nvd.nist.gov/vuln/detail/CVE-2018-13790 '
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
