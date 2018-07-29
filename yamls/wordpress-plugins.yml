@@ -2547,3 +2547,11 @@ WordPress plugin easy-modal:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-12946 https://nvd.nist.gov/vuln/detail/CVE-2017-12947 http://www.defensecode.com/advisories/DC-2017-01-007_WordPress_Easy_Modal_Plugin_Advisory.pdf'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin snazzy-maps:
+  1:
+    location: ['/wp-content/plugins/snazzy-maps/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'http://seclists.org/bugtraq/2018/Jul/72 http://www.defensecode.com/advisories/DC-2018-05-006_WordPress_Snazzy_Maps_Plugin_Advisory.pdf'  # TODO: CVE missing
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
