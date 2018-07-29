@@ -525,7 +525,7 @@ WordPress plugin gwolle-gb:
     location: ['/wp-content/plugins/gwolle-gb/readme.txt']
     secure_version: '2.5.4'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'http://seclists.org/bugtraq/2018/Jul/74 http://www.defensecode.com/advisories/DC-2018-05-008_WordPress_Gwolle_Guestbook_Plugin_Advisory.pdf'
+    cve: 'http://seclists.org/bugtraq/2018/Jul/74 http://www.defensecode.com/advisories/DC-2018-05-008_WordPress_Gwolle_Guestbook_Plugin_Advisory.pdf'  # TODO: CVE requested 2018-07-29
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin role-scoper:
