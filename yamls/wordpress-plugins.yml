@@ -2555,3 +2555,11 @@ WordPress plugin snazzy-maps:
     cve: 'http://seclists.org/bugtraq/2018/Jul/72 http://www.defensecode.com/advisories/DC-2018-05-006_WordPress_Snazzy_Maps_Plugin_Advisory.pdf'  # TODO: Notified plugins team and requested CVE 2018-07-29
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin strong-testimonials:
+  1:
+    location: ['/wp-content/plugins/strong-testimonials/readme.txt']
+    secure_version: '2.31.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'http://seclists.org/bugtraq/2018/Jul/75 http://www.defensecode.com/advisories/DC-2018-05-007_WordPress_Strong_Testimonials_Plugin_Advisory.pdf'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
