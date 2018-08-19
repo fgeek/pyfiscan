@@ -1,0 +1,14 @@
+Features needed
+===============
+
+- Exception list for directories. In some systems users have created
+  directories, which have thousands of subdirectories. These are made by custom
+  scripts and not open-source software where we are interested to get the
+  version number. Exceptions could be listed as -e "directory/directory2"
+- Checksum feature. This is needed when grepped version number does not tell the
+  real version number e.g. when security patch did not bump the version. Example
+  case: http://www.exponentcms.org/
+- Implement configuration file to include database, logging and CSV file names
+  (idea partly from ryanph)
+- Test cases for YAML structure using real files from major projects like
+  WordPress and Drupal (idea partly from NFM-8)

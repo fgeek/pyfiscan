@@ -4,11 +4,31 @@
 # CVE-2014-8773 2.2.15
 # CVE-2014-8774 2.2.15
 # CVE-2014-8775 2.2.15
+# CVE-2015-6588 N/A https://packetstormsecurity.com/files/134529/MODX-2.3.5-Cross-Site-Scripting.html
+# CVE-2016-10037 2.5.2-pl http://www.securityfocus.com/bid/95127 https://github.com/modxcms/revolution/pull/13177
+# CVE-2016-10038 2.5.2-pl http://www.securityfocus.com/bid/95097 https://github.com/modxcms/revolution/pull/13177
+# CVE-2016-10039 2.5.2-pl http://www.securityfocus.com/bid/95096 https://github.com/modxcms/revolution/pull/13177
+# CVE-2017-7321
+# CVE-2017-7322
+# CVE-2017-7323
+# CVE-2017-7324
+# CVE-2017-8115 2.6.0 https://github.com/modxcms/revolution/issues/13432 https://github.com/modxcms/revolution/pull/13433
+# CVE-2017-9067 2.5.7 https://citadelo.com/en/2017/04/modx-revolution-cms/
+# CVE-2017-9068 2.5.7
+# CVE-2017-9069 2.5.7
+# CVE-2017-9070 2.5.7
+# CVE-2017-9071 2.5.7
+# CVE-2017-11744 2.6.4 https://github.com/modxcms/revolution/issues/13564
+# CVE-2017-1000067 2.5.4
+# CVE-2017-1000223 2.5.7
+# CVE-2018-10382 2.6.4
+# CVE-2018-1000207 2.6.5 https://github.com/modxcms/revolution/pull/13979 https://modx.com/blog/modx-revolution-2.6.5 https://forums.modx.com/thread/104040/revolution-2-6-4-and-prior-two-cricital-vulnerabilities-upgrade-mandatory-patch
+# CVE-2018-1000208 2.6.5 https://github.com/modxcms/revolution/pull/13980 https://modx.com/blog/modx-revolution-2.6.5 https://forums.modx.com/thread/104040/revolution-2-6-4-and-prior-two-cricital-vulnerabilities-upgrade-mandatory-patch
 MODX Revolution:
   1:
     location: ['/core/docs/changelog.txt']
-    secure_version: '2.2.15'
+    secure_version: '2.6.5'
     regexp: ['MODX Revolution.*?(?P<version>[0-9.]+)']
-    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8773 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8774 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8775'
+    cve: 'https://modx.com/blog/modx-revolution-2.6.5 https://forums.modx.com/thread/104040/revolution-2-6-4-and-prior-two-cricital-vulnerabilities-upgrade-mandatory-patch https://nvd.nist.gov/vuln/detail/CVE-2018-1000207 https://nvd.nist.gov/vuln/detail/CVE-2018-1000208'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']

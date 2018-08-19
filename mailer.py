@@ -3,10 +3,14 @@
 
 """
 Mailer utility for pyfiscan tool result CSV-files.
+
+@author Henri 'fgeek' Salo <henri@nerv.fi>
+@copyright Copyright (c) 2009-2018 Henri Salo
+@licence BSD
 """
 
 try:
-    import sys 
+    import sys
     import csv
     import getpass
     import os.path
@@ -60,15 +64,14 @@ def send_email(user, vulnerabilities):
 
 def process_csv(csv_file):
     """Imports data from CSV to sqlite3 database in memory. This will use
-    send_email so that user receives only one email.
-
+    send_email so that user receives only one email. Package
     http://packages.debian.org/libsqlite3-mod-csvtable should be used in the
     future in here.
 
     conn.enable_load_extension(True)
     conn.load_extension(library_location)
     CREATE VIRTUAL TABLE example USING csvtable('vulnerabilities.csv');
-    
+
     """
     conn = sqlite3.connect(':memory:')
     c = conn.cursor()
@@ -80,6 +83,7 @@ def process_csv(csv_file):
         timestamp = line[1]
         appname = line[2]
         version_file = line[3]
+        version_file = version_file.decode('utf8')
         file_version = line[4]
         secure_version = line[5]
         cve = line[6]
@@ -97,7 +101,7 @@ def process_csv(csv_file):
 
 
 if __name__ == "__main__":
-    print('Please note that it is required to add email| to start of each line in CSV.')
+    print 'Please note that it is required to add email| to start of each line in CSV.'
     csv_file = sys.argv[1]
     if os.path.islink(csv_file):
         sys.exit('CSV file %s is a symlink. Exiting..' % csv_file)

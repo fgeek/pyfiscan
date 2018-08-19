@@ -17,6 +17,6 @@ PhpGedView:
     location: ['/includes/session.php']
     secure_version: '4.2.4'
     regexp: ['define.*PGV_VERSION.*(?P<version>[0-9.]+)']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-0405'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2011-0405'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']

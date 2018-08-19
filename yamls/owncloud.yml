@@ -1,6 +1,8 @@
 # http://owncloud.org/about/security/policy/
 # https://github.com/owncloud/core/wiki/Maintenance-and-Release-Schedule
 # Advisory URL: http://owncloud.org/about/security/advisories/oC-SA-XXXX-XXX/
+# NOTE: user enumeration is out-of-scope https://github.com/owncloud/core/issues/23595
+# NFU: CVE-2016-7102 out of scope (desktop)
 # ownCloud ID       CVE             Fixed in        ownCloud security advisory URL
 # N/A               CVE-2012-5336   4.0.8
 # N/A               CVE-2012-5056   4.0.8
@@ -23,15 +25,20 @@
 # oC-SA-2013-024
 # oC-SA-2013-025
 # oC-SA-2013-026
+# oC-SA-2013-027
+# oC-SA-2013-028
+# oC-SA-2013-029                                    http://www.openwall.com/lists/oss-security/2013/08/05/7
+# oC-SA-2013-030                                    http://www.openwall.com/lists/oss-security/2013/08/05/7
 # oC-SA-2014-001    CVE-2014-2047   6.0.2
 # oC-SA-2014-002
 # oC-SA-2014-003    CVE-2014-2049   6.0.2/5.0.15
 # oC-SA-2014-004
 # oC-SA-2014-005    CVE-2014-2051   6.0.2/5.0.15
 # oC-SA-2014-005
-# oC-SA-2014-006    CVE-2014-2052/CVE-2014-2053/CVE-2014-2054/CVE-2014-2055/CVE-2014-2056   6.0.2/5.0.15    http://owncloud.org/about/security/advisories/oC-SA-2014-006/
-# oC-SA-2014-007    CVE-2014-2057   6.0.2    http://owncloud.org/about/security/advisories/oC-SA-2014-007/
+# oC-SA-2014-006    CVE-2014-2052/CVE-2014-2053/CVE-2014-2054/CVE-2014-2055/CVE-2014-2056   6.0.2/5.0.15
+# oC-SA-2014-007    CVE-2014-2057   6.0.2
 # oC-SA-2014-008    CVE-2014-2585   6.0.2
+#                   CVE-2014-1665   6.0.1 http://blog.noobroot.com/2014/02/owncloud-600a-when-xss-vulnerability.html
 # oC-SA-2014-009    CVE-2014-3963   6.0.1
 # oC-SA-2014-010
 # oC-SA-2014-011    CVE-2014-3834   6.0.3
@@ -65,50 +72,90 @@
 # oC-SA-2016-003    CVE-2016-1500   8.2.2/8.1.5/8.0.10/7.0.12
 # oC-SA-2016-004    CVE-2016-1501   8.1.4/8.0.9
 # oC-SA-2016-005    NFU
+# oC-SA-2016-006    TODO            9.0.2/8.2.5 https://github.com/owncloud/gallery/commit/e3021ab6cc4e37eccb27eab6374722632c85eed7 https://github.com/owncloud/gallery/commit/2e8f1f2509d15876ab09396dfe6c463aacdf5c5b
+# oC-SA-2016-007    TODO            9.0.2/8.2.4/8.1.7/8.0.12/7.0.14 https://github.com/owncloud/core/commit/830a080f0e4b67d6265ba09ab578060945f28916 https://github.com/owncloud/core/commit/d3f585c329c0291b208dc54d75b4aecb7118ff8d https://github.com/owncloud/core/commit/80db6c60a3916175feee775970988c8cc8c0f49f https://github.com/owncloud/core/commit/9cdb8817258e62917c78765efc127247eb181b87 https://github.com/owncloud/core/commit/9d5005c795c99ba1ef516035542e15157931292a
+# oC-SA-2016-008    TODO            9.0.2/8.2.4/8.1.7/8.0.12/7.0.14
+# oC-SA-2016-009    TODO            9.0.2 https://github.com/owncloud/core/commit/d436326e19b8df1594f781e74e8c50151f003ea5 https://github.com/owncloud/core/commit/b375086c473f7117d6ee8b61cf0c6e24350b113a
+# oC-SA-2016-010    CVE-2016-5876   9.0.3/8.2.6 https://github.com/owncloud/gallery/commit/e3021ab6cc4e37eccb27eab6374722632c85eed7 https://github.com/owncloud/gallery/commit/2e8f1f2509d15876ab09396dfe6c463aacdf5c5b
+# oC-SA-2016-011    TODO            9.0.4 https://github.com/owncloud/gallery/commit/6933d27afe518967bd1b60e6a7eacd88288929fc
+# oC-SA-2016-012    TODO            9.0.4/8.2.7/8.1.9 https://github.com/owncloud/core/commit/efa35d621dc7ff975468e636a5d1c153511296dc https://github.com/owncloud/core/commit/b7fa2c5dc945b40bc6ed0a9a0e47c282ebf043e1 https://github.com/owncloud/core/commit/044ee072a647636b1a17c89265c7233b35371335
+# oC-SA-2016-013    TODO            9.0.4 https://github.com/owncloud/core/commit/c92c234059f8b1dc7d53122985ec0d398895a2cf
+# oC-SA-2016-014    TODO            9.0.4/8.2.7/8.1.9/8.0.14 https://github.com/owncloud/core/commit/121a3304a0c37ccda0e1b63ddc528cba9121a36e https://github.com/owncloud/core/commit/c0a4b7b3f38ad2eaf506484b3b92ec678cb021c9 https://github.com/owncloud/core/commit/0622e635d97cb17c5e1363e370bb8268cc3d2547 https://github.com/owncloud/core/commit/acbbadb71ceee7f01da347f7dcd519beda78cc47
+# oC-SA-2016-015    TODO            9.0.4/8.2.7/8.1.9/8.0.14 https://github.com/owncloud/core/commit/c93eca49c32428ece03dd67042772d5fa62c8d6e https://github.com/owncloud/core/commit/3b056fa68ce502ceb0db9b446dab3b9e7b10dd13 https://github.com/owncloud/core/commit/23383080731d092e079986464a8c4c9ffcb79f4c https://github.com/owncloud/core/commit/d31720b6f1e8c8dfeb5e8805ab35ad7c8000b2f1
+# oC-SA-2016-016    CVE-2016-7102   NFU
+# oC-SA-2016-017    TODO            9.1.2/9.0.6/8.2.9 https://github.com/owncloud/apps/commit/5d47e7b52646cf79edadd78ce10c754290cbb732 https://github.com/owncloud/apps/commit/16cbccfc946c8711721fa684d78135ca1fb64791 https://github.com/owncloud/apps/commit/a0e07b7ddd5a5fd850a6e07f8457d05b76a300b3 not enabled by default
+# oC-SA-2017-001    CVE-2017-5865   9.1.3/9.0.7/8.2.9/8.1.11
+# oC-SA-2017-002    CVE-2017-5866   9.1.3/9.0.7/8.2.9/8.1.11
+# oC-SA-2017-003    CVE-2017-5867   9.1.3/9.0.7/8.2.9/8.1.11
+# oc-sa-2017-004    CVE-2017-8896   10.0.2/9.1.6/9.0.10/8.2.12
+# oc-sa-2017-005    CVE-2017-9339   10.0.2
+# oc-sa-2017-006    CVE-2017-9340   10.0.2
+# oc-sa-2017-007    CVE-2017-9338   10.0.2/9.1.6/9.0.10/8.2.12
+ownCloud 10.0:
+  1:
+    location: ['/version.php']
+    secure_version: '10.0.2'
+    regexp: ['\$OC_VersionString.*?(?P<version>10\.0\.[0-9.]+)']
+    cve: 'https://owncloud.org/security/advisory/?id=oc-sa-2017-004 https://owncloud.org/security/advisory/?id=oc-sa-2017-005 https://owncloud.org/security/advisory/?id=oc-sa-2017-006 https://owncloud.org/security/advisory/?id=oc-sa-2017-007 https://nvd.nist.gov/vuln/detail/CVE-2017-8896 https://nvd.nist.gov/vuln/detail/CVE-2017-9339 https://nvd.nist.gov/vuln/detail/CVE-2017-9340 https://nvd.nist.gov/vuln/detail/CVE-2017-9338'
+    fingerprint: detect_general
+ownCloud 9.1:
+  1:
+    location: ['/version.php']
+    secure_version: '9.1.6'
+    regexp: ['\$OC_VersionString.*?(?P<version>9\.1\.[0-9.]+)']
+    cve: 'https://owncloud.org/security/advisory/?id=oc-sa-2017-004 https://owncloud.org/security/advisory/?id=oc-sa-2017-007 https://nvd.nist.gov/vuln/detail/CVE-2017-8896 https://nvd.nist.gov/vuln/detail/CVE-2017-9338'
+    fingerprint: detect_general
+ownCloud 9.0:
+  1:
+    location: ['/version.php']
+    secure_version: '9.0.10'
+    regexp: ['\$OC_VersionString.*?(?P<version>9\.0\.[0-9.]+)']
+    cve: 'https://owncloud.org/security/advisory/?id=oc-sa-2017-004 https://owncloud.org/security/advisory/?id=oc-sa-2017-005 https://owncloud.org/security/advisory/?id=oc-sa-2017-006 https://owncloud.org/security/advisory/?id=oc-sa-2017-007 https://nvd.nist.gov/vuln/detail/CVE-2017-8896 https://nvd.nist.gov/vuln/detail/CVE-2017-9339 https://nvd.nist.gov/vuln/detail/CVE-2017-9340 https://nvd.nist.gov/vuln/detail/CVE-2017-9338'
+    fingerprint: detect_general
 ownCloud 8.2:
   1:
     location: ['/version.php']
-    secure_version: '8.2.2'
+    secure_version: '10.0.2'
     regexp: ['\$OC_VersionString.*?(?P<version>8\.2\.[0-9.]+)']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1498 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1499 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1500 https://owncloud.org/security/advisory/?id=oC-SA-2016-001 https://owncloud.org/security/advisory/?id=oC-SA-2016-002 https://owncloud.org/security/advisory/?id=oC-SA-2016-003'
+    cve: 'ownCloud 8.2 is end of life.'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 ownCloud 8.1:
   1:
     location: ['/version.php']
-    secure_version: '8.1.5'
+    secure_version: '10.0.2'
     regexp: ['\$OC_VersionString.*?(?P<version>8\.1\.[0-9.]+)']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1498 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1499 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1500 https://owncloud.org/security/advisory/?id=oC-SA-2016-001 https://owncloud.org/security/advisory/?id=oC-SA-2016-002 https://owncloud.org/security/advisory/?id=oC-SA-2016-003'
+    cve: 'ownCloud 8.1 is end of life.'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 ownCloud 8.0:
   1:
     location: ['/version.php']
-    secure_version: '8.0.10'
+    secure_version: '10.0.2'
     regexp: ['\$OC_VersionString.*?(?P<version>8\.0\.[0-9.]+)']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1498 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1499 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1500 https://owncloud.org/security/advisory/?id=oC-SA-2016-001 https://owncloud.org/security/advisory/?id=oC-SA-2016-002 https://owncloud.org/security/advisory/?id=oC-SA-2016-003'
+    cve: 'ownCloud 8.0 is end of life.'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 ownCloud 7:
   1:
     location: ['/version.php']
-    secure_version: '7.0.12'
+    secure_version: '10.0.2'
     regexp: ['\$OC_VersionString.*?(?P<version>7\.[0-9.]+)']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1498 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1500 https://owncloud.org/security/advisory/?id=oC-SA-2016-001 https://owncloud.org/security/advisory/?id=oC-SA-2016-003'
+    cve: 'ownCloud 7 is end of life.'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 ownCloud 6:
   1:
     location: ['/version.php']
-    secure_version: '6.0.8'
+    secure_version: '10.0.2'
     regexp: ['\$OC_VersionString.*?(?P<version>6\.[0-9.]+)']
-    cve: 'https://owncloud.org/security/advisory/?id=oc-sa-2015-005 https://owncloud.org/security/advisory/?id=oc-sa-2015-007 https://owncloud.org/security/advisory/?id=oc-sa-2015-008'
+    cve: 'ownCloud 6 is end of life.'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 ownCloud 5:
   1:
     location: ['/lib/util.php']
-    secure_version: '5.0.20'
+    secure_version: '10.0.2'
     regexp: ['.*?getVersionString.*?return.*?(?P<version>5\.[0-9.]+)']
     cve: 'ownCloud 5 is end of life.'
     fingerprint: detect_withoutnewlines
@@ -116,7 +163,7 @@ ownCloud 5:
 ownCloud 4:
   1:
     location: ['/lib/util.php']
-    secure_version: '4.5.14'
+    secure_version: '10.0.2'
     regexp: ['.*?getVersionString.*?return.*?(?P<version>4\.[0-9.]+)']
     cve: 'ownCloud 4 is end of life'
     fingerprint: detect_withoutnewlines

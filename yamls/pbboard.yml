@@ -1,12 +1,12 @@
 # CVE-2012-1216
-# CVE-2012-4035 N/A http://osvdb.org/84481
-# CVE-2012-4036 N/A http://osvdb.org/84479
+# CVE-2012-4035
+# CVE-2012-4036
 # CVE-2014-9215 3.0.1 http://www.itas.vn/news/ITAS-Team-discovered-SQL-Injection-in-PBBoard-CMS-68.html
 PBBoard:
   1:
     location: ['/modules/new_topic.module.php']
     secure_version: '3.0.1'
     regexp: ['.*?MySBB_version.*?(?P<version>[0-9.]+)']
-    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9215'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2014-9215'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']

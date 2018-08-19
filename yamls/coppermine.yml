@@ -9,11 +9,12 @@
 # CVE-2015-3921 1.5.36  http://forum.coppermine-gallery.net/index.php/topic,78194.0.html
 # CVE-2015-3922 1.5.36
 # CVE-2015-3923 1.5.36
+# CVE-2016-XXXX 1.5.44  http://forum.coppermine-gallery.net/index.php/topic,78867.0.html https://blog.ripstech.com/2016/coppermine-second-order-command-execution/
 Coppermine:
   1:
     location: ['/sql/basic.sql']
-    secure_version: '1.5.36'
+    secure_version: '1.5.44'
     regexp: ['\#\#  Coppermine version.*?(?P<version>[0-9.]+)']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3921 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3922 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3923'
+    cve: 'http://forum.coppermine-gallery.net/index.php/topic,78867.0.html https://blog.ripstech.com/2016/coppermine-second-order-command-execution/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']

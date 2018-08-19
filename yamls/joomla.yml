@@ -1,4 +1,5 @@
 # URL: http://developer.joomla.org/development-status.html https://docs.joomla.org/Joomla!_CMS_versions https://docs.joomla.org/What_version_of_Joomla!_should_you_use?
+# NFU: CVE-2017-8057
 # CVE-2006-0303 1.0.7   SA18513
 # CVE-2006-1047 1.0.8   SA19105
 # CVE-2006-1048 1.0.8   SA19105
@@ -48,6 +49,8 @@
 # CVE-2010-3712 1.5.21  SA41772 http://developer.joomla.org/security/news/322-20101001-core-xss-vulnerabilities.html
 # CVE-2010-4166 1.5.22  SA42133 http://developer.joomla.org/security/news/323-20101101-core-sqli-info-disclosurevulnerabilities.html
 # CVE-2010-4696 1.6.1   SA42133 http://developer.joomla.org/security/news/328-20110201-core-sql-injection-path-disclosure.html http://yehg.net/lab/pr0js/advisories/joomla/core/[joomla_1.6.0]_sql_injection
+# CVE-2010-4837
+# CVE-2010-4838
 # CVE-2011-0005 1.5.22  
 # CVE-2011-1151 1.6.1   http://developer.joomla.org/security/news/328-20110201-core-sql-injection-path-disclosure.html
 # CVE-2011-2488 1.5.23
@@ -56,6 +59,8 @@
 #               1.7.1   http://developer.joomla.org/security/news/367-20110901-core-xss-vulnerability.html
 # CVE-2011-2889 1.5.23
 # CVE-2011-2890 1.5.23
+# CVE-2011-2891
+# CVE-2011-2892
 # N/A           1.5.24  SA46421 http://developer.joomla.org/security/news/372-20111003-core-information-disclosure
 # CVE-2011-3595 1.7.1   http://developer.joomla.org/security/news/368-20110902-core-xss-vulnerability
 #               1.7.1   http://developer.joomla.org/security/news/369-20110903-core-information-disclosure.html
@@ -76,12 +81,17 @@
 # CVE-2012-1563 2.5.3
 # CVE-2012-1598 1.5.26      http://developer.joomla.org/security/news/396-20120305-core-password-change
 # CVE-2012-1599 1.5.26      http://developer.joomla.org/security/news/397-20120306-core-information-disclosure
+# CVE-2012-1611
+# CVE-2012-1612
 # CVE-2012-2412 2.5.7
 # CVE-2012-2747 2.5.5       http://secunia.com/advisories/49605/
 # CVE-2012-2748 2.5.5       http://secunia.com/advisories/49605/
+# CVE-2012-3828
+# CVE-2012-3829
 # CVE-2012-4531 2.5.7       SA49678 http://developer.joomla.org/security/news/539-20120901-core-xss-vulnerability http://www.joomla.org/announcements/release-news/5463-joomla-2-5-7-released.html
 # CVE-2012-4532 2.5.7       SA49678 http://developer.joomla.org/security/news/540-20120902-core-xss-vulnerability http://www.joomla.org/announcements/release-news/5463-joomla-2-5-7-released.html http://www.darksecurity.de/advisories/2012/SSCHADV2012-014.txt
 # CVE-2012-5455 3.0.1/2.5.10    http://developer.joomla.org/security/81-20130403-core-xss-vulnerability.html
+# CVE-2012-5827
 # CVE-2012-XXXX 3.1.0/2.5.10    http://developer.joomla.org/security/83-20130404-core-xss-vulnerability.html
 # CVE-2013-XXXX N/A http://seclists.org/fulldisclosure/2013/Jun/149
 # CVE-2013-1453
@@ -93,6 +103,7 @@
 # CVE-2013-3059 3.1.0/2.5.10    http://developer.joomla.org/security/80-20130405-core-xss-vulnerability.html
 # CVE-2013-3242 3.1.0/3.0.4/2.5.10  http://developer.joomla.org/security/85-20130406-core-dos-vulnerability.html
 # CVE-2013-3267 3.1.0/2.5.10        http://developer.joomla.org/security/86-20130407-core-xss-vulnerability.html
+# CVE-2013-3719
 # CVE-2013-5576 3.1.5/2.5.14    http://developer.joomla.org/security/563-20130801-core-unauthorised-uploads.html https://github.com/rapid7/metasploit-framework/pull/2219 http://www.cso.com.au/article/523528/joomla_patches_file_manager_vulnerability_responsible_hijacked_websites/
 # CVE-2014-6632 3.3.4               http://developer.joomla.org/security/594-20140902-core-unauthorised-logins.html
 # CVE-2014-7228 3.3.5               http://developer.joomla.org/security/595-20140903-core-remote-file-inclusion.html
@@ -102,6 +113,7 @@
 # CVE-2014-7983 3.2.3               http://developer.joomla.org/security/579-20140302-core-xss-vulnerability.html
 # CVE-2014-7984 3.2.3               http://developer.joomla.org/security/581-20140304-core-unauthorised-logins.html
 # CVE-2015-5397 3.4.2               http://developer.joomla.org/security-centre/618-20150602-core-remote-code-execution.html
+# CVE-2015-5608 3.4.2   https://developer.joomla.org/security-centre/617-20150601-core-open-redirect.html
 # CVE-2015-6939 3.4.4   http://developer.joomla.org/security-centre/626-20150908-core-xss-vulnerability.html
 # CVE-2015-7297 3.4.5   http://developer.joomla.org/security-centre/628-20151001-core-sql-injection.html
 # CVE-2015-7857 3.4.5   http://developer.joomla.org/security-centre/628-20151001-core-sql-injection.html
@@ -110,51 +122,88 @@
 # CVE-2015-7899 3.4.5   http://developer.joomla.org/security-centre/630-20151003-core-acl-violations.html
 # CVE-2015-8562 3.4.6   https://developer.joomla.org/security-centre/630-20151214-core-remote-code-execution-vulnerability.html https://www.joomla.org/announcements/release-news/5641-joomla-3-4-6-released.html https://blog.sucuri.net/2015/12/remote-command-execution-vulnerability-in-joomla.html https://www.viestintavirasto.fi/kyberturvallisuus/haavoittuvuudet/2015/haavoittuvuus-2015-120.html
 # CVE-2015-8769 3.4.7   https://www.joomla.org/announcements/release-news/5643-joomla-3-4-7.html https://developer.joomla.org/security-centre/639-20151206-core-session-hardening.html https://developer.joomla.org/security-centre/640-20151207-core-sql-injection.html
+# CVE-2016-8869 3.6.4   https://www.joomla.org/announcements/release-news/5678-joomla-3-6-4-released.html
+# CVE-2016-9081 3.6.4   https://developer.joomla.org/security-centre/661-20161003-core-account-modifications.html
+# CVE-2016-8870 3.6.4   https://www.joomla.org/announcements/release-news/5678-joomla-3-6-4-released.html
+# CVE-2016-9836 3.6.5   https://developer.joomla.org/security-centre/665-20161202-core-shell-upload.html https://www.joomla.org/announcements/release-news/5693-joomla-3-6-5-released.html
+# CVE-2016-9837 3.6.5   https://www.joomla.org/announcements/release-news/5693-joomla-3-6-5-released.html
+# CVE-2016-9838 3.6.5   https://developer.joomla.org/security-centre/664-20161201-core-elevated-privileges.html
+# CVE-2017-7983 3.7.0   https://developer.joomla.org/security-centre/683-20170401-core-information-disclosure
+# CVE-2017-7984 3.7.0   https://developer.joomla.org/security-centre/684-20170402-core-xss-vulnerability
+# CVE-2017-7985 3.7.0   https://developer.joomla.org/security-centre/685-20170403-core-xss-vulnerability
+# CVE-2017-7986 3.7.0   https://developer.joomla.org/security-centre/686-20170404-core-xss-vulnerability
+# CVE-2017-7987 3.7.0   https://developer.joomla.org/security-centre/687-20170405-core-xss-vulnerability
+# CVE-2017-7988 3.7.0   https://developer.joomla.org/security-centre/688-20170406-core-acl-violations
+# CVE-2017-7989 3.7.0   https://developer.joomla.org/security-centre/689-20170407-core-acl-violations
+# CVE-2017-8917 3.7.1   https://developer.joomla.org/security-centre/692-20170501-core-sql-injection.html
+# CVE-2017-9933 3.7.3   https://developer.joomla.org/security-centre/696-20170601-core-information-disclosure.html
+# CVE-2017-9934 3.7.3   https://developer.joomla.org/security-centre/697-20170602-core-xss-vulnerability.html
+# CVE-2017-7985 3.7.3   https://developer.joomla.org/security-centre/698-20170603-core-xss-vulnerability.html
+# CVE-2017-11364 3.7.4  https://developer.joomla.org/security-centre/700-20170704-core-installer-lack-of-ownership-verification.html
+# CVE-2017-11612 3.7.4  https://developer.joomla.org/security-centre/701-20170605-core-xss-vulnerability.html
+# CVE-2017-14595 3.8.0  https://developer.joomla.org/security-centre/710-20170901-core-information-disclosure
+# CVE-2017-14596 3.8.0  https://developer.joomla.org/security-centre/711-20170902-core-ldap-information-disclosure
+# CVE-2017-16633 3.8.2  https://developer.joomla.org/security-centre/715-20171103-core-information-disclosure.html
+# CVE-2017-16634 3.8.2  https://developer.joomla.org/security-centre/713-20171102-core-2-factor-authentication-bypass
+# CVE-2018-6376 3.8.4   https://developer.joomla.org/security-centre/722-20180104-core-sqli-vulnerability.html
+# CVE-2018-6377 3.8.4   https://developer.joomla.org/security-centre/720-20180102-core-xss-vulnerability.html
+# CVE-2018-6379 3.8.4   https://developer.joomla.org/security-centre/721-20180103-core-xss-vulnerability.html
+# CVE-2018-6380 3.8.4   https://developer.joomla.org/security-centre/718-20180101-core-xss-vulnerability.html
+# CVE-2018-11321 3.8.8  https://developer.joomla.org/security-centre/734-20180506-core-filter-field-in-com-fields-allows-remote-code-execution.html
+# CVE-2018-11322 3.8.8  https://developer.joomla.org/security-centre/730-20180502-core-add-phar-files-to-the-upload-blacklist.html
+# CVE-2018-11323 3.8.8  https://developer.joomla.org/security-centre/729-20180501-core-acl-violation-in-access-levels.html
+# CVE-2018-11324 3.8.8  https://developer.joomla.org/security-centre/735-20180507-core-session-deletion-race-condition.html
+# CVE-2018-11325 3.8.8  https://developer.joomla.org/security-centre/732-20180504-core-installer-leaks-plain-text-password-to-local-user.html
+# CVE-2018-11326 3.8.8  https://developer.joomla.org/security-centre/733-20180505-core-xss-vulnerabilities-additional-hadering.html
+# CVE-2018-11327 3.8.8  https://developer.joomla.org/security-centre/731-20180503-core-information-disclosure-about-unpublished-tags.html
+# CVE-2018-11328 3.8.8  https://developer.joomla.org/security-centre/736-20180508-core-possible-xss-attack-in-the-redirect-method.html
+# CVE-2018-12711 3.8.9  https://developer.joomla.org/security-centre/740-20180602-core-xss-vulnerability-in-language-switcher-module
+# CVE-2018-12712 3.8.9  https://developer.joomla.org/security-centre/741-20180601-core-local-file-inclusion-with-php-5-3
 Joomla 3:
   1:
     location: ['/administrator/manifests/files/joomla.xml']
-    secure_version: '3.4.7'
+    secure_version: '3.8.9'
     regexp: ['[\t]<version>(?P<version>3\.[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8769 https://www.joomla.org/announcements/release-news/5643-joomla-3-4-7.html'
+    cve: 'https://developer.joomla.org/security-centre/740-20180602-core-xss-vulnerability-in-language-switcher-module https://nvd.nist.gov/vuln/detail/CVE-2018-12711 https://developer.joomla.org/security-centre/741-20180601-core-local-file-inclusion-with-php-5-3 https://nvd.nist.gov/vuln/detail/CVE-2018-12712'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Joomla 2.5:
   1:
     location: ['/administrator/manifests/files/joomla.xml']
-    secure_version: '3.4.7'
+    secure_version: '3.8.9'
     regexp: ['[\t]<version>(?P<version>2\.5\.[0-9]{1,})']
-    cve: 'Joomla 2.5 is end of life. Please upgrade to 3.4.7 version.'
+    cve: 'Joomla 2.5 is end of life. Please upgrade to 3.8.9 version.'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Joomla 1.7:
   1:
     location: ['/includes/version.php']
-    secure_version: '3.4.7'
+    secure_version: '3.8.9'
     regexp: ['[\t]+public[\t|\s]\$RELEASE.*?(?P<version>1.7)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.7 is end of life. Please upgrade to 3.4.7 version.'
+    cve: 'Joomla 1.7 is end of life. Please upgrade to 3.8.9 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.6:
   1:
     location: ['/libraries/joomla/version.php']
-    secure_version: '3.4.7'
+    secure_version: '3.8.9'
     regexp: ['.*?RELEASE.*?(?P<version>1.6)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.6 is end of life. Please upgrade to 3.4.7 version.'
+    cve: 'Joomla 1.6 is end of life. Please upgrade to 3.8.9 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.5:
   1:
     location: ['/libraries/joomla/version.php']
-    secure_version: '3.4.7'
+    secure_version: '3.8.9'
     regexp: ['.*?RELEASE.*?(?P<version>1.5)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.5 is end of life. Please upgrade to 3.4.7 version.'
+    cve: 'Joomla 1.5 is end of life. Please upgrade to 3.8.9 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.0:
   1:
     location: ['/includes/version.php']
-    secure_version: '3.4.7'
+    secure_version: '3.8.9'
     regexp: ['[\t]+var.*?RELEASE.*?(?P<version>1.0)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.0 is end of life. Please upgrade to 3.4.7 version.'
+    cve: 'Joomla 1.0 is end of life. Please upgrade to 3.8.9 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']

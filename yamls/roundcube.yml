@@ -1,3 +1,4 @@
+# NFU: CVE-2016-5103 rejected
 # CVE-2005-4368
 # CVE-2007-6321
 # CVE-2008-5619
@@ -34,13 +35,19 @@
 # CVE-2015-8794 1.1.2/1.0.6
 # CVE-2015-8864 1.1.5/1.0.9 https://roundcube.net/news/2016/04/20/updates-1.1.5-and-1.0.9-published https://github.com/roundcube/roundcubemail/issues/4949 https://github.com/roundcube/roundcubemail/commit/40d7342dd9c9bd2a1d613edc848ed95a4d71aa18 https://github.com/roundcube/roundcubemail/commit/7bbefdb63b12e2344cf1cb87aeb6e3933b4063e0
 # CVE-2016-4069 1.1.5/1.0.9 https://roundcube.net/news/2016/04/20/updates-1.1.5-and-1.0.9-published https://github.com/roundcube/roundcubemail/issues/4957 https://github.com/roundcube/roundcubemail/commit/4a408843b0ef816daf70a472a02b78cd6073a4d5 https://github.com/roundcube/roundcubemail/commit/699af1e5206ed9114322adaa3c25c1c969640a53
-# CVE-2016-4068 TODO
-# CVE-2016-5103 TODO http://www.openwall.com/lists/oss-security/2016/05/25/8 https://github.com/roundcube/roundcubemail/pull/5241 https://github.com/roundcube/roundcubemail/issues/5240
+# CVE-2016-4068 1.0.9
+# CVE-2016-4552 1.2.0 http://www.openwall.com/lists/oss-security/2016/05/25/8 https://github.com/roundcube/roundcubemail/pull/5241 https://github.com/roundcube/roundcubemail/issues/5240
+# CVE-2016-9920 1.2.3 https://roundcube.net/news/2016/11/28/updates-1.2.3-and-1.1.7-released https://blog.ripstech.com/2016/roundcube-command-execution-via-email/ https://github.com/roundcube/roundcubemail/commit/f84233785ddeed01445fc855f3ae1e8a62f167e1 https://github.com/roundcube/roundcubemail/commit/aa6bf38843f51a0fc7205acc98a7b84f3c4c9c4f
+# CVE-2017-6820 1.2.4/1.1.8 https://roundcube.net/news/2017/03/10/updates-1.2.4-and-1.1.8-released
+# CVE-2017-8114 1.2.5/1.1.9/1.0.11 https://roundcube.net/news/2017/04/28/security-updates-1.2.5-1.1.9-and-1.0.11
+# CVE-2017-16651 TODO http://lists.roundcube.net/pipermail/announce/2017-November/000155.html https://github.com/roundcube/roundcubemail/issues/6026
+# CVE-2018-9846 1.3.6 https://github.com/roundcube/roundcubemail/issues/6238 https://github.com/roundcube/roundcubemail/commit/e3dd5b66d236867572e68fcb80281e9268a0cfb0
+# CVE-2018-1000071 TODO https://www.legacysecuritygroup.com/cve/references/02122018-roundcube-enigma.txt https://github.com/roundcube/roundcubemail/issues/6173 https://github.com/roundcube/roundcubemail/commit/48417c5fc9f6eb4b90500c09596606d489c700b5
 Roundcube:
   1:
     location: ['/program/include/iniset.php']
-    secure_version: '1.1.5'
+    secure_version: '1.3.6'
     regexp: ['define.*?RCMAIL_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://roundcube.net/news/2016/04/20/updates-1.1.5-and-1.0.9-published https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8864 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-4069'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-9846 https://roundcube.net/news/2018/04/11/security-update-1.3.6'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']

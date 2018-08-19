@@ -7,6 +7,6 @@ FluxBB:
     location: ['/include/common.php']
     secure_version: '1.5.7'
     regexp: ['.*?FORUM_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-10029 http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-10030'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2014-10029 https://nvd.nist.gov/vuln/detail/CVE-2014-10030'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']

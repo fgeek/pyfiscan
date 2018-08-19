@@ -1,4 +1,3 @@
-# NOTES:
 # CVE-2006-XXXX 2.1.2
 # CVE-2008-5296 1.5.10
 # CVE-2012-1113 3.0.3 http://galleryproject.org/gallery_3_0_3_and_gallery_2_3_2
@@ -10,12 +9,13 @@
 # CVE-2013-2138 3.0.8 http://galleryproject.org/gallery_3_0_8
 # CVE-2013-2240 3.0.9 SA53964 http://galleryproject.org/gallery_3_0_9
 # CVE-2013-2241 3.0.9 http://galleryproject.org/gallery_3_0_9
+# TODO http://galleryproject.org/time-to-hibernate
 Gallery 3:
   1:
     location: ['/modules/gallery/helpers/gallery.php']
     secure_version: '3.0.9'
     regexp: ['.*?const.*?VERSION.*?(?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2240 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2241 http://galleryproject.org/gallery_3_0_9'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2013-2240 https://nvd.nist.gov/vuln/detail/CVE-2013-2241 http://galleryproject.org/gallery_3_0_9'
     fingerprint: detect_gallery
     post_processing: ['php5.fcgi']
 Gallery 2:
@@ -23,7 +23,7 @@ Gallery 2:
     location: ['/modules/core/module.inc']
     secure_version: '2.3.2'
     regexp: ['.*?setGalleryVersion.*?(?P<version>[0-9.]{1,})']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-2405'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2012-2405'
     fingerprint: detect_gallery
     post_processing: ['php5.fcgi']
 Gallery 1:

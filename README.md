@@ -26,6 +26,7 @@ Detects following software
 --------------------------
 
 * ATutor
+* b2evolution
 * BigTree CMS
 * Bugzilla
 * Centreon
@@ -50,10 +51,12 @@ Detects following software
 * Gallery
 * Gollum
 * HelpDEZk
+* HumHub
 * ImpressCMS
 * ImpressPages
 * Jamroom
 * Joomla
+* Kanboard
 * KCFinder
 * LiteCart
 * Magnolia
@@ -78,11 +81,14 @@ Detects following software
 * Piwigo
 * Piwik
 * PmWiki
+* Postfix Admin
 * Redaxo
 * Roundcube
 * SaurusCMS
 * Serendipity
+* Shaarli
 * SMF
+* Spina CMS
 * SPIP
 * SquirrelMail
 * TestLink
@@ -97,6 +103,8 @@ Detects following software
 Detects following end-of-life software:
 ---------------------------------------
 
+* Bugzilla 4.2 is end-of-life since [2015-11-30](https://bugzillaupdate.wordpress.com/2015/07/29/bugzilla-4-2-will-be-eol-on-20151130/)
+* Drupal 6 is end-of-life since [2016-02-24](https://www.drupal.org/drupal-6-eol)
 * Gallery 1
 * Joomla 1.5 is end-of-life since 2012-04-30
 * Joomla 1.6 is end-of-life since [2011-08-19](http://www.joomla.org/announcements/release-news/5380-joomla-170-released.html). 1.6.x should be upgraded to 1.6.6 before moving to 1.7.x
@@ -107,13 +115,24 @@ Detects following end-of-life software:
 * MediaWiki 1.20
 * MediaWiki 1.21 is end-of-life since [2014-06-25](http://lists.wikimedia.org/pipermail/mediawiki-announce/2014-June/000153.html)
 * MediaWiki 1.22
-* SaurusCMS
+* MediaWiki 1.23 is end-of-life since [2017-05-31](https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-May/000210.html)
+* MediaWiki 1.24
+* MediaWiki 1.25
+* MediaWiki 1.26 is end-of-life since [2016-11-20](https://lists.wikimedia.org/pipermail/mediawiki-announce/2016-November/000204.html)
+* MediaWiki 1.28 is end-of-life since [2017-11-01](https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-November/000214.html)
 * ownCloud 4
 * ownCloud 5
+* ownCloud 6
+* ownCloud 7
+* ownCloud 8.0
+* ownCloud 8.1
+* ownCloud 8.2
+* SaurusCMS
 
 Installation
 ------------
 
+    apt-get install python python-pip libpython2.7-dev libyaml-dev git libyaml-dev
     git clone https://github.com/fgeek/pyfiscan.git && cd pyfiscan
     pip2 install -r requirements.lst
 

@@ -7,12 +7,14 @@
 # CVE-2015-4671 2.1.0.2 https://github.com/opencart/opencart/commit/303fa88fe664ded4bf8753b997abd916f0a3c03f
 # TODO: http://www.juniper.net/security/auto/vulnerabilities/vuln34724.html "OpenCart 'index.php' Local File Include Vulnerability"
 # TODO: http://seclists.org/fulldisclosure/2015/Nov/21 http://blog.curesec.com/article/blog/OpenCart-2031-CSRF-66.html no cve, "This issue was already discovered in 2013 by Saadat Ullah, but new versions of OpenCart are still vulnerable as no fix has been released."
-# http://seclists.org/bugtraq/2016/Apr/61
+# TODO http://seclists.org/bugtraq/2016/Apr/61
+# TODO http://seclists.org/bugtraq/2016/Aug/102
+# TODO http://seclists.org/bugtraq/2017/Jan/69 2.3.0.2 is affected
 OpenCart:
   1:
     location: ['/admin/index.php']
     secure_version: '2.1.0.2'
     regexp: ["define\\('VERSION',[ \t]'(?P<version>[0-9.]+)"]
-    cve: 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-4671'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-4671'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']

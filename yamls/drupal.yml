@@ -56,28 +56,47 @@
 # https://drupal.org/SA-CORE-2016-002   CVE-2016-6211   8.1.3/7.44
 # https://drupal.org/SA-CORE-2016-002   CVE-2016-6212   8.1.3/7.44
 # https://drupal.org/SA-CORE-2016-003   CVE-2016-5385   8.1.7
-# https://drupal.org/SA-CORE-2016-004                   8.1.10
+# https://drupal.org/SA-CORE-2016-004   CVE-2016-7570   8.1.10
+# https://drupal.org/SA-CORE-2016-004   CVE-2016-7571   8.1.10
+# https://drupal.org/SA-CORE-2016-004   CVE-2016-7572   8.1.10
+# https://drupal.org/SA-CORE-2016-005   CVE-2016-9449   8.2.3/7.52 http://www.openwall.com/lists/oss-security/2016/11/18/8
+# https://drupal.org/SA-CORE-2016-005   CVE-2016-9450   8.2.3/7.52
+# https://drupal.org/SA-CORE-2016-005   CVE-2016-9451   8.2.3/7.52
+# https://drupal.org/SA-CORE-2016-005   CVE-2016-9452   8.2.3/7.52
+# https://drupal.org/SA-2017-001        CVE-2017-6377   8.2.7
+# https://drupal.org/SA-2017-001        CVE-2017-6379   8.2.7
+# https://drupal.org/SA-2017-001        CVE-2017-6381   8.2.7
+# https://drupal.org/SA-CORE-2017-002   CVE-2017-6919   8.3.1/8.2.8
+# https://drupal.org/SA-CORE-2017-003   CVE-2017-6920   8.3.4/7.56
+# https://drupal.org/SA-CORE-2017-003   CVE-2017-6921   8.3.4/7.56
+# https://drupal.org/SA-CORE-2017-003   CVE-2017-6922   8.3.4/7.56
+# https://drupal.org/SA-CORE-2017-004   CVE-2017-6923   8.3.7
+# https://drupal.org/SA-CORE-2017-004   CVE-2017-6924   8.3.7
+# https://drupal.org/SA-CORE-2017-004   CVE-2017-6925   8.3.7
+# https://drupal.org/SA-CORE-2018-001   CVE-2017-6926   8.4.5/7.57
+# https://drupal.org/SA-CORE-2018-001   CVE-2017-6927   8.4.5/7.57
+# https://drupal.org/SA-CORE-2018-001   CVE-2017-6928   8.4.5/7.57
+# https://drupal.org/SA-CORE-2018-001   CVE-2017-6929   8.4.5/7.57
+# https://drupal.org/SA-CORE-2018-001   CVE-2017-6930   8.4.5/7.57
+# https://drupal.org/SA-CORE-2018-001   CVE-2017-6931   8.4.5/7.57
+# https://drupal.org/SA-CORE-2018-001   CVE-2017-6932   8.4.5/7.57
+# https://drupal.org/SA-CORE-2018-002   CVE-2018-7600   8.5.1/7.58
+# https://drupal.org/SA-CORE-2018-003   TODO            8.5.2/8.4.7
+# https://drupal.org/SA-CORE-2018-004   CVE-2018-7602   8.5.3/8.4.8/7.59
+# https://drupal.org/SA-CORE-2018-005   CVE-2018-14773  8.5.6
 Drupal 8:
   1:
     location: ['/core/lib/Drupal.php']
-    secure_version: '8.1.10'
+    secure_version: '8.5.6'
     regexp: ["  const VERSION = '(?P<version>[0-9.]+)"]
-    cve: 'https://drupal.org/SA-CORE-2016-004'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-14773 https://drupal.org/SA-CORE-2018-005'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Drupal 7:
   1:
     location: ['/includes/bootstrap.inc']
-    secure_version: '7.44'
+    secure_version: '7.59'
     regexp: ['define.*?VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://drupal.org/SA-CORE-2016-002 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-6211 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-6212'
-    fingerprint: detect_general
-    post_processing: ['php5.fcgi']
-Drupal 6:
-  1:
-    location: ['/CHANGELOG.txt']
-    secure_version: '6.38'
-    regexp: ['^Drupal (?P<version>[0-9.]+)']
-    cve: 'https://drupal.org/SA-CORE-2016-001'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-7602 https://drupal.org/SA-CORE-2018-004'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']

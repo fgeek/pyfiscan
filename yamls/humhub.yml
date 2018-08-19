@@ -1,0 +1,13 @@
+# https://www.humhub.org/
+# http://seclists.org/fulldisclosure/2014/Dec/31
+# https://www.lsexperts.de/advisories/lse-2015-10-14.txt
+# https://www.curesec.com/blog/article/blog/HumHub-0201--100-beta3-Code-Execution-196.html
+# https://www.curesec.com/blog/article/blog/HumHub-101-XSS-195.html
+HumHub:
+  1:
+    location: ['/protected/humhub/config/common.php']
+    secure_version: '1.1.1'
+    regexp: ['.*?version.*?(?P<version>[0-9.]+)']
+    cve: 'https://www.curesec.com/blog/article/blog/HumHub-101-XSS-195.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']

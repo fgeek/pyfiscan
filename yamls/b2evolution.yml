@@ -1,0 +1,21 @@
+# URL: http://b2evolution.net/
+# CVE-2012-5910 4.1.4
+# CVE-2012-5911 4.1.4
+# CVE-2013-2945
+# CVE-2013-7352
+# CVE-2014-9599 5.2.1 http://sroesemann.blogspot.de/2014/12/sroeadv-2014-09.html
+# http://www.openwall.com/lists/oss-security/2016/08/12/4
+# CVE-2016-9479
+# CVE-2017-5480
+# CVE-2017-5494
+# CVE-2017-5539
+# CVE-2017-5553
+# CVE-2017-1000423 6.9.3/6.8.11 https://github.com/b2evolution/b2evolution/commit/0096a3ebc85f6aadbda2c4427cd092a538b161d2 https://github.com/b2evolution/b2evolution/commit/b899d654d931f3bf3cfbbdd71e0d1a0f3a16d04c
+b2evolution:
+  1:
+    location: ['/readme.html']
+    secure_version: '6.9.3'
+    regexp: ['.*?This is b2evolution CMS version.*?(?P<version>[0-9.]+)']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-1000423'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']

@@ -10,6 +10,6 @@ Centreon:
     location: ['/CHANGELOG']
     secure_version: '2.6.0'
     regexp: ['## Centreon (?P<version>[0-9.]+)']
-    cve: 'https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1560 https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1561'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-1560 https://nvd.nist.gov/vuln/detail/CVE-2015-1561'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']

@@ -42,14 +42,14 @@ class DatabaseHandlers(unittest.TestCase):
 class UnwantedStrings(unittest.TestCase):
     def test_search_unwanted_strings(self):
         """No unwanted strings in files."""
-        for root, dirs, filenames in os.walk('.'):
+        for root, dirs, filenames in os.walk('yamls'):
             for f in filenames:
                     filepath = os.path.join(root, f)
                     if filepath.endswith('.pyc'):
                         continue
                     file = open(filepath, 'r')
                     for line in file:
-                        if re.match('osvdb', line):
+                        if re.search('osvdb', line):
                             self.fail('OSVDB string found from: %s' % filepath)
 
     

@@ -46,7 +46,7 @@ def generate(yamldir, includes):
             data = dict(data.items() + result.items())
             yamlfile.close()
         except AttributeError:  # empty file
-            print('No data found inside: %s' % yamlfile)
+            sys.exit('No data found inside: %s' % yamlfile)
         except yaml.scanner.ScannerError, e:  # syntax error
             sys.exit('Error while loading YAML-file: %s' % e)
     return data

@@ -1,0 +1,9 @@
+# URL: http://www.spinacms.com/ https://github.com/denkGroot/Spina
+# CVE-2015-4619 0.12.0 https://github.com/denkGroot/Spina/commit/bfe44f289e336f80b6593032679300c493735e75
+Spina CMS:
+  1:
+    location: ['/lib/spina/version.rb']
+    secure_version: '0.12.0'
+    regexp: ['  VERSION.*?(?P<version>[0-9.]+)']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-4619'
+    fingerprint: detect_general

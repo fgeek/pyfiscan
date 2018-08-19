@@ -15,11 +15,13 @@
 # CVE-2015-XXXX 1.9.15  http://www.openwall.com/lists/oss-security/2015/11/08/2
 # CVE-2015-XXXX 1.9.15  http://www.openwall.com/lists/oss-security/2015/11/08/3
 # CVE-2015-XXXX 1.9.15  http://mantis.testlink.org/view.php?id=7402 https://www.htbridge.com/advisory/HTB23288
+# CVE-2018-7466 N/A only in installation
+# CVE-2018-7668 1.9.17 http://lists.openwall.net/full-disclosure/2018/02/28/1
 TestLink:
   1:
     location: ['/cfg/const.inc.php']
-    secure_version: '1.9.15'
+    secure_version: '1.9.17'
     regexp: ['define.*?TL_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'http://www.openwall.com/lists/oss-security/2015/11/08/2 http://www.openwall.com/lists/oss-security/2015/11/08/3 https://www.htbridge.com/advisory/HTB23288'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-7668 http://lists.openwall.net/full-disclosure/2018/02/28/1'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
