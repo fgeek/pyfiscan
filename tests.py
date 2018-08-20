@@ -33,10 +33,19 @@ class DatabaseHandlers(unittest.TestCase):
         if len(database.issues) == 0:
             self.assertEqual(1, 0, 'Empty database.')
         self.assertTrue(isinstance(database, Database))
+
+    def test_query_locations_database(self):
+        """Loads fingerprint data from test file and queries locations."""
         database = Database('testfiles/')
         self.assertNotEqual(len(database.issues), 0)
         self.assertTrue(isinstance(database, Database))
         self.assertEqual(len(database.issues), 4)
+        locations = database.locations('First 1.1')
+        self.assertEqual(len(locations), 1)
+        self.assertEqual(locations[0], ['/location/to/data'])
+        location = database.locations('Second 1.2', False)
+        self.assertEqual(len(location), 1)
+        self.assertEqual(location[0], '/location/to/data')
 
 
 class UnwantedStrings(unittest.TestCase):
@@ -65,8 +74,7 @@ class FilePaths(unittest.TestCase):
         """File php5.fcgi is detected correctly."""
         self.assertTrue(postprocess_php5fcgi('testfiles/', ''))
         self.assertFalse(postprocess_php5fcgi('yamls/', ''))
-
-            
+        
 if __name__ == '__main__':
     suite1 = unittest.TestLoader().loadTestsFromTestCase(CompareVersions)
     suite2 = unittest.TestLoader().loadTestsFromTestCase(DatabaseHandlers)

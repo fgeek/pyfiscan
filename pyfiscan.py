@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 """
@@ -19,7 +19,7 @@ try:
     import csv
     import logging
     import os
-    import scandir
+    import stat
     import time
     import traceback
     from docopt import docopt
@@ -33,7 +33,7 @@ try:
         postprocess_php5fcgi
 
     from issuereport import IssueReport, get_timestamp
-except ImportError, error:
+except ImportError as error:
     print('Import error: %s' % error)
     sys.exit(1)
 
@@ -206,7 +206,9 @@ def is_not_secure(secure_version, file_version, appname=None):
             # Example version number: 1.3.2-p7
             secure_version = secure_version.replace('-p', '.')
             file_version = file_version.replace('-p', '.')
-        return map(int, secure_version.split('.')) > map(int, file_version.split('.'))
+        secure = [int(x) for x in secure_version.split('.')]
+        file = [int(x) for x in file_version.split('.')]
+        return secure > file
     except Exception:
         logging.error(traceback.format_exc())
 
@@ -270,16 +272,16 @@ def check_old_results(csv_file):
                     else:
                         print('FIXED: %s (%s)' % (install_dir, appname))
                         fixed += 1
-        except KeyError:
-            print traceback.format_exc()
+        except KeyError as err:
+            print (str(err))
             pass
-        except TypeError:
-            print traceback.format_exc()
+        except TypeError as err:
+            print (str(err))
             pass
     if total == 0:
         sys.exit('No lines in CSV file. Exiting..')
     pers = fixed / total * 100
-    print '{0} of {1} have upgraded, which is {2:.2f}%.'.format(fixed, total, pers)
+    print ('{0} of {1} have upgraded, which is {2:.2f}%.'.format(fixed, total, pers))
     report.close()
 
 
@@ -309,20 +311,20 @@ def Worker(home_location, post_process):
                 break
             item_location, location, appname = item
             logging.info('Processing: %s (%s)', appname, item_location)
-            for issue in database.issues[appname].itervalues():
+            for issue in database.issues[appname].items():
                 logging.debug('Processing item %s with location %s with with appname %s issue %s', \
                               item_location, location, appname, issue)
                 # Loads fingerprint function from YAML file and checks for
                 # version from detected location
-                fn = yaml_fn_dict[issue['fingerprint']]
-                file_version = fn(item_location, issue['regexp'])
+                fn = yaml_fn_dict[issue[1]['fingerprint']]
+                file_version = fn(item_location, issue[1]['regexp'])
                 # Makes sure we don't go forward without version number from the file
                 if file_version:
                     # Tests that version from file is smaller than secure version
                     # with fingerprint function
                     logging.debug('Comparing versions %s:%s for item %s', \
-                                  issue['secure_version'], file_version, item_location)
-                    if is_not_secure(issue['secure_version'], file_version, appname):
+                                  issue[1]['secure_version'], file_version, item_location)
+                    if is_not_secure(issue[1]['secure_version'], file_version, appname):
                         # Executes post processing. Does not do anything in case
                         # post_processing is not defined in yaml fingerprint.
 
@@ -336,7 +338,7 @@ def Worker(home_location, post_process):
 
                         if post_process and not public_html_used:
                             try:
-                                if issue['post_processing'][0] == 'php5.fcgi':
+                                if issue[1]['post_processing'][0] == 'php5.fcgi':
                                     if not postprocess_php5fcgi(home_location, item_location):
                                         break
                             except KeyError:
@@ -346,10 +348,10 @@ def Worker(home_location, post_process):
                         install_dir = item_location[:item_location.find(location)]
                         # Calls result handler (goes to CSV and log)
                         handle_results(report, appname, file_version, install_dir, \
-                                       issue['cve'], issue['secure_version'])
+                                       issue[1]['cve'], issue[1]['secure_version'])
                 else:
                     logging.debug('No version found from item: %s with regexp %s', \
-                                  item_location, issue['regexp'])
+                                  item_location, issue[1]['regexp'])
         except Exception:
             logging.error(traceback.format_exc())
     report.close()
@@ -377,7 +379,7 @@ if __name__ == "__main__":
       -l LEVEL          Specifies logging level: info, debug.
       -a NAME           Scans only specific applications. Delimiter: ,
 
-      If you do not spesify recursive-option predefined directories are scanned, which are:
+      If recursive-option is not specified, following predefined directories are scanned:
         /home/user/sites/vhost/www
         /home/user/sites/vhost/secure-www
         /home/user/public_html
@@ -416,9 +418,9 @@ if __name__ == "__main__":
         sys.exit('Logfile %s is a symlink. Exiting..' % logfile)
     try:
         logging.basicConfig(filename=logfile, level=level, format='%(asctime)s %(levelname)s %(funcName)s:%(lineno)d %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
-        os.chmod(logfile, 0600)
-    except IOError as (errno, strerror):
-        if errno == int('13'):
+        os.chmod(logfile, stat.S_IREAD|stat.S_IWRITE)
+    except IOError as error:
+        if error.errno == int('13'):
             sys.exit('Error while writing to logfile: %s' % strerror)
     try:
         database = Database('yamls/', includes)
@@ -445,7 +447,7 @@ if __name__ == "__main__":
         elif arguments['--file']:
             logging.debug('Scanning using file: %s', arguments['--file'])
             populator = Process(target=p.populate_filelist, args=([arguments['--file']],))
-	else:
+        else:
             logging.debug('Scanning predefined variables: /home')
             populator = Process(target=p.populate_predefined, args=('/home', arguments['--check-modes'],))
         populator.start()

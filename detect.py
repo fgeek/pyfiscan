@@ -10,7 +10,7 @@ def yaml_visible(fn):
     Example: fingerprint: detect_general
     
     """
-    yaml_fn_dict[fn.func_name] = fn
+    yaml_fn_dict[fn.__name__] = fn
     return fn
 
 
@@ -29,7 +29,7 @@ def grep_from_file(version_file, regexp):
             found_match = match.group('version')
             return found_match
         except re.error:
-            logging.error('Not a valid regular expression: %s', regexp)
+            logging.error('Invalid regular expression: %s', regexp)
         except AttributeError:
             pass
 
