@@ -1,7 +1,5 @@
 # pyfiscan ![Build status](https://travis-ci.org/fgeek/pyfiscan.svg?branch=master "Build status")
 
-========
-
 About
 -----
 
@@ -15,7 +13,7 @@ email alerts using templates.
 Requirements
 ------------
 
-* Python 2.7
+* Python 3
 * Python modules PyYAML docopt
 * GNU/Linux web server
 
