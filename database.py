@@ -4,10 +4,9 @@
 
 try:
     import os
-    import scandir
     import sys
     import yaml
-except ImportError, error:
+except ImportError as error:
     print('Import error: %s' % error)
     sys.exit(1)
 
@@ -18,36 +17,39 @@ def gen_yamlfile_locations(yamldir, includes):
         sys.exit('Location for YAML-files can not be a symlink: %s' % yamldir)
     if not os.path.isdir(yamldir):
         sys.exit('Location for YAML-files is not a directory: %s' % yamldir)
-    for filename in scandir.scandir(yamldir):
-        filename = filename.name
+    for entry in os.scandir(yamldir):
+        filename = entry.name
         if filename.startswith('.'):  # skip Vim swap files
             continue
-        if os.path.islink(yamldir + filename):
+        elif filename.endswith('~'): # skip Emacs temp files
             continue
-        if not os.path.isfile(yamldir + filename):
+        elif entry.is_symlink():
             continue
-        if not includes:
+        elif entry.is_dir():
+            continue
+        elif not entry.is_file():
+            continue
+        elif not includes and filename.endswith('.yml'):
             yield open(yamldir + filename, 'r')
-        else:
+        elif includes:
             for item in includes:
                 if filename == item + '.yml':
                     yield open(yamldir + filename, 'r')
-
-
+                
+                
 def generate(yamldir, includes):
     """Generates data dictionary of definitions from YAML files. Only used by
     database class.
     
     """
-    data = {}
+    data = dict()
     for yamlfile in gen_yamlfile_locations(yamldir, includes):
         try:
-            result = yaml.safe_load(yamlfile.read())
-            data = dict(data.items() + result.items())
+            data.update(yaml.safe_load(yamlfile.read()))
             yamlfile.close()
         except AttributeError:  # empty file
             sys.exit('No data found inside: %s' % yamlfile)
-        except yaml.scanner.ScannerError, e:  # syntax error
+        except yaml.scanner.ScannerError as e:  # syntax error
             sys.exit('Error while loading YAML-file: %s' % e)
     return data
 
@@ -60,8 +62,8 @@ class Database:
     def locations(self, application, with_lists=True):
         """Returns list of locations by appname."""
         locations = []
-        for issue in self.issues[application].itervalues():
-            location = issue['location']
+        for issue in self.issues[application].items():
+            location = issue[1]['location']
             if with_lists is True:
                 locations.append(location)
             else:

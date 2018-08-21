@@ -3,7 +3,7 @@ import csv
 import time
 import os
 import sys
-
+import stat
 
 def get_timestamp():
     """Returns string ISO 8601 with hours:minutes:seconds"""
@@ -18,7 +18,7 @@ class IssueReport(object):
         if os.path.islink(filename):
             sys.exit('CSV-file %s is a symlink. Exiting..' % filename)
         self.csvfile = open(filename, "a")
-        os.chmod(filename, 0600)
+        os.chmod(filename, stat.S_IREAD|stat.S_IWRITE)
         self.writer = csv.writer(self.csvfile, delimiter='|', quotechar='|')
 
     def close(self):
