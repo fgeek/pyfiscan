@@ -1,10 +1,9 @@
 language: python
 python:
-  - '2.6'
-  - '2.7'
+  - '3.5'
 install: 'pip install -r requirements.lst'
 before_script: "sudo rm -rf /dev/shm && sudo ln -s /run/shm /dev/shm"
 script: python tests.py
 notifications:
   email:
-     - henri+travis@nerv.fi
+     - henri@nerv.fi
