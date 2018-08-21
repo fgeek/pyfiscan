@@ -101,7 +101,7 @@ def populate_userdir(fargs):
 
         sites_location = userdir + '/sites'
         if validate_directory(sites_location, checkmodes):
-            for site in scandir.scandir(sites_location):
+            for site in os.scandir(sites_location):
                 site = site.name
                 sitedir = sites_location + '/' + site
                 if checkmodes:
@@ -169,7 +169,7 @@ class PopulateScanQueue:
             starttime = time.time()
 
             p = Pool()
-            dirs = (startdir + '/' + d.name for d in scandir.scandir(startdir))
+            dirs = (startdir + '/' + d.name for d in os.scandir(startdir))
             udirs = p.imap_unordered(populate_userdir, \
                                      ((d, checkmodes) for d in dirs), \
                                      chunksize=200)
