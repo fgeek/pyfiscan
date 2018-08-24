@@ -4,6 +4,7 @@ import re
 import unittest
 from pyfiscan import is_not_secure
 from database import Database
+from detect import detect_general
 from file_helpers import postprocess_php5fcgi
 from file_helpers import filepaths_in_dir
 
@@ -67,18 +68,27 @@ class FilePaths(unittest.TestCase):
     def test_filepaths(self):
         """File paths in directory are detected correctly."""
         paths = filepaths_in_dir('testfiles/', False)
-        self.assertEqual(sum(1 for _ in paths), 2)
+        self.assertEqual(sum(1 for _ in paths), 4)
         paths = filepaths_in_dir('testfiles/', True)
-        self.assertEqual(sum(1 for _ in paths), 2)
+        self.assertEqual(sum(1 for _ in paths), 4)
     def test_php5fcgi(self):
         """File php5.fcgi is detected correctly."""
         self.assertTrue(postprocess_php5fcgi('testfiles/', ''))
         self.assertFalse(postprocess_php5fcgi('yamls/', ''))
+
+class FileContents(unittest.TestCase):
+    def test_detect_general_latin1(self):
+        """Detect_general with ISO-8859-1 encoded file."""
+        res = detect_general('testfiles/ISO-8859-1', '<!ENTITY bz-ver.*?(?P<version>5\.[0-9]+)')
+    def test_detect_general_utf8(self):
+        """Detect_general with UTF-8 encoded file."""
+        res = detect_general('testfiles/UTF-8', '<!ENTITY bz-ver.*?(?P<version>5\.[0-9]+)')
         
 if __name__ == '__main__':
     suite1 = unittest.TestLoader().loadTestsFromTestCase(CompareVersions)
     suite2 = unittest.TestLoader().loadTestsFromTestCase(DatabaseHandlers)
     suite3 = unittest.TestLoader().loadTestsFromTestCase(UnwantedStrings)
     suite4 = unittest.TestLoader().loadTestsFromTestCase(FilePaths)
-    alltests = unittest.TestSuite([suite1, suite2, suite3, suite4])
+    suite5 = unittest.TestLoader().loadTestsFromTestCase(FileContents)
+    alltests = unittest.TestSuite([suite1, suite2, suite3, suite4, suite5])
     unittest.TextTestRunner(verbosity=2).run(alltests)
