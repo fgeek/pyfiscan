@@ -14,7 +14,7 @@ Requirements
 ------------
 
 * Python 3
-* Python modules PyYAML docopt
+* Python modules PyYAML docopt chardet
 * GNU/Linux web server
 
 Testing is done mainly with [GNU/Linux Debian](http://www.debian.org/) stable.

@@ -1,6 +1,7 @@
 import os
 import logging
 import re
+import chardet
 
 yaml_fn_dict = {}
 
@@ -20,7 +21,12 @@ def grep_from_file(version_file, regexp):
     
     """
     with open(version_file, 'r') as version_file:
-        source = version_file.readlines()
+        try:
+            source = version_file.readlines()
+        except UnicodeDecodeError:
+            res = chardet.detect(open(version_file.name, 'rb').read())
+            version_file = open(version_file.name, 'r', encoding=res['encoding'])
+            source = version_file.readlines()
     prog = re.compile(regexp)
 
     for line in source:

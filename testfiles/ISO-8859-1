@@ -1,0 +1,498 @@
+CHANGELOG for package taloLogger.
+Author: Olli Lammi <olammi@iki.fi>
+
+
+Thanks for supporting taloLogger development to:
+  Jani L., Anton R., Mika L., Matti W., Vesa V.,
+  Sami P., Juha J., Ismo K., Anton R., Heikki T.,
+  Teemu P., Vesa P., Kalervo H., Otto K., Jarmo N.
+  Harald L., Isto K., Sami P., Seppo K., Mikko K.,
+  Juha J., Lauri H., Vesa P., Mikko K., Björn K.,
+  Antti P., Timo P., Matti L., Tuomo R., Jukka N.,
+  Heikki M., Jari S., Seppo N., Kalle V, Veijo Y-K.
+  Ville N., Risto V., Vesa R., Jari M., Patrick P.,
+  Morten O., Kari L., Lasse Ä., Hannu S., Juha J.,
+  Toni T., Markus F.
+  
+    
+TODO:
+-----
+* Alarm handling (Ouman)
+
+* EH686 timer settings (Ouman)
+
+* Configurable validation for measured data
+
+
+Version 1.7j, 05.03.2017
+------------------------
+* Improved database store module configuration parameter validation when starting
+  modules to help configuration parameter error discovery.
+
+* Added support for storing data into ThingSpeak cloud for analysis and viewing.
+  (https://thingspeak.com/)
+  
+* Added possibility to rename data points for a data store using store filters.
+
+* Added Modbus serial RTU master mode support to Enervent EDA serial module.
+
+* Added ability to act as a counter with Raspberry Pi GPIO module. An GPIO input in
+  counter mode will log number of input state change edges in log interval. Software
+  debouncing is supported.
+
+* NibeBusRS485: Added possibility to query values using new version of NibeGW in UDP mode.
+
+* NibeBusRS485: Fixed a bug introduced in v1.7i preventing utilization of values sent by
+  Nibe pump in the spontaneous data packages. Almost all desired values are queried
+  by one from the pump. After this fix all of the spontaneous values are again utilized.
+
+
+Version 1.7i, 02.01.2017
+------------------------
+* Code reading and some data locking improvements in NibeBusRS485 module to handle possible 
+  unexpected exceptions when synchronized areas are locked and to prevend dead lock after
+  error.
+
+
+Version 1.7h, 31.05.2016
+------------------------
+* NibeBusRS485: Added compressor frequency to the DEFAULT device profile.
+
+* Added support for Husdata H1-interface with serial connection. Works with Husdata
+  interface module supporting multiple heat pumps. See Husdata development documentation
+  for supported pumps and available data IDs:
+
+    http://www.husdata.se/dl.asp?h=22344
+
+
+Version 1.7g, 03.02.2016
+------------------------
+* Added RegoCan device profile for REGO800 (REGO800_IVTX11 tested with 
+  IVT X11 heat pump).
+
+* Added functionality to persist the logger's state to disk while the logger
+  is shut off. Values of the previous measurements may be persisted to disk
+  and loaded when starting. Virtual measures may use the history values 
+  right from the first logging interval. 
+
+
+Version 1.7f, 02.02.2016
+------------------------
+* Added optional support for MySQL Connector/Python library
+  as alternate client library to connect to MySQL Server.
+  (enabled by configuration directive).
+
+* Added initial support for Stiebel Eltron Can module. For experimental purposes. 
+
+* Added support for PostgreSQL database data store.
+
+* Added possibility to define delimiter between values for FILESTORE type stores.
+
+* Added new device profiles to Ekowell Serial data source (controller software 
+  versions 2.80 and 2.81). (new profiles by Esa Huhtikangas and Juha-Matti Nyroos)
+
+* OumanEH800 datasouces: Support for data points not returned by the controller 
+  device with the "measures" query. Should the user know there is a data id available
+  on the Ouman EH800 controller that is not received from the controller in the 
+  measures list. The data id can be used in the MEASURE-directive and the module
+  will try to determine the value type from the value request response.
+
+
+Version 1.7e, 12.03.2015
+------------------------
+* Added EH203GL profile to Ouman Serial module (created and 
+  researched by TTH and J-P Syrjälä).
+  
+* Added counters (hours) to Ouman Serial EH201GT profile.
+
+
+Version 1.7d, 24.02.2015
+------------------------
+* Version v1.7c broke the timestamp handling in MySQL when using 
+  DATETIME-field. Fixed.
+
+
+Version 1.7c, 21.02.2015
+------------------------
+* Changes to Nibe Bus RS485 module frame algorithm to be more 
+  robust to transmission failures.
+  
+* Changed database store modules (MySQL and SQLite3) to be
+  able to use multiple taloLogger instances (local or remote with
+  MySQL) writing to same database table when using non-native
+  database schema.
+
+* Fixed issues with MySQL store module timestamps and Daylight
+  saving time (DST).
+  
+
+Version 1.7b, 16.02.2015
+------------------------
+* Changes to RPi.GPIO modules method of gaining root privileges
+  on Raspberry Pi. (taloLoggerPi v1.1c compatible)
+
+* Shell module fix with rare error conditions.
+
+
+Version 1.7a, 13.02.2015
+------------------------
+* Release version with changes after last release v1.6d.
+
+* Nibe Bus RS485 query support tested and working.
+
+
+Version 1.6j, 10.02.2015
+------------------------
+* Initial Enervent EDA support (serial and ModbusTCP)
+
+* Added experimental support to Nibe Bus RS485 module to
+  query values not included in the preconfigured datapoint list.
+
+
+Version 1.6i, 01.02.2015
+------------------------
+* Added Nibe datapoints reported by "tk-" at Maalämpöfoorumi.
+
+* Changed SHELL-module to accept multiple regular expressions for 
+  script/executable output (list of expressions). This was for 
+  cases where it is easier to write multiple expressions and 
+  where there are multiple values to pick from the output but 
+  order of the values is not constant.
+  
+* Fixed Telldus-core module Lib-functionality been broken when adding
+  Telldus Live functionality.
+
+
+Version 1.6h, 28.01.2015
+------------------------
+* Fixed 1.6g oauth dependency problems (Telldus Live)
+
+* Added Nibe data points. Utilized OpenHab NibeGW data point
+  list by Pauli Anttila. Points used both in NibeBusRS485 and
+  NibeModbus modules.
+
+
+Version 1.6g, 22.01.2015
+------------------------
+* Changed the core logging thread implementation for 
+  storing results.
+
+* Modbus datasource now supports multiple value types and lenghts
+  and uses multi queries when possible instead of querying just one 
+  value at a time. ModbusTCP uses only IP4.
+  
+* Added support for logging Telldus Live sensors (Telldus TellStick Net).
+
+
+Version 1.6f, 16.01.2015
+------------------------
+* Added Nibe Bus RS485 module for serial and UDP traffic.
+  (UDP intended to listen to OpenHab NibeGW packets).
+
+
+Version 1.6e, 15.01.2015
+------------------------
+* Restructured the directory layout
+
+* Changed how module configurations are initiated.
+
+* Added Modbus (RTU, ASCII, TCP) datasource support.
+
+* Added Nibe Modbus test module.
+
+
+Version 1.6d, 28.12.2014
+------------------------
+* Module inits write to log.
+
+* Support for Raspberry Pi GPIO inputs
+
+* Added --nodaemon option to prevent accidental forking configuration 
+  in taloLoggerPi.
+
+
+Version 1.6c, 10.12.2014
+------------------------
+* Released v1.6b development time beta features (see below)
+  as release version v1.6c. 
+
+
+Version 1.6b, Development time beta
+-----------------------------------
+* Fixed data saving issues when timeout or invalid data. Invalid
+  data will not stop logging. Discarded data will be written to 
+  log.
+
+* Changed virtual measure expression handling when expression contains
+  values that are not defined. Now missing values will be replaced with
+  None rather than failing the measurement.
+
+* Added state type value handling to Ouman EH800 module (ON/OFF).
+
+* Works now again in Windows environment.
+
+* Changed shellSource-module to do regexp searching vs. matching.
+  This improves searching in multiline command outputs. Also enabled
+  DOTALL flag (regexp . matches also newlines).
+  
+* Added data points (GT1 and GT3 target/on/off values) to regoSerial 
+  module.
+
+
+Version 1.6a, 12.05.2014
+------------------------
+* Increased ThermIQ module serial timeout value.
+
+* Support for Telldus Tellstick Duo wireless sensor device logging
+  (using telldus-core-library).
+
+
+Version 1.5c, 25.03.2013
+------------------------
+* Small description/key name changes to regoCan-module (REGO1000).
+
+* Updated Ouman Serial module profiles with new keys (eg. valve
+  positions and consumption counters, EH686 and EH201GT profiles).
+
+* Added possibility to overwrite previous log file on each log run.
+  Added example to taloLogger.conf to produce XML style log file 
+  containing only the latest log data.
+  
+* Added init, pre-measure and post-measure commands to OWFS module.
+
+* Removed rounding of float values to 2 decimals from OneWire modules.
+
+* Added support for virtual measure declarations. Virtual measures
+  are calculated after all read measures have been read and before
+  data is stored to the configured datastores. Virtual measures
+  can be declared as Python expressions. Expressions may use 
+  current data and data from the previous log run to calculate 
+  the result.
+
+
+Version 1.5b, 05.02.2013
+------------------------
+* Support for Embedded Datasystems OWSERVER-ENET-2 1-wire interface
+
+* Support for Ouman EH800 device logging through ethernet inteface
+
+* Python version requirement upgraded to 2.6 or newer.
+
+* Corrected bug in datasource thread resulting to unhandled exception 
+  under specific error condition in logging modules. 
+  
+* Enhanced external error condition handling in few modules that could 
+  block the logging when external process or source fails.
+  (OWFS, Digitemp, Shell and RRDTool)
+  
+* Added L2 configuration parameters to Ouman EH202S configuration.
+
+* Digitemp supports multiple values for device (eg. dual counter B value)
+
+* Added workaround for rare OWFS Raspberry Pi OWFS problem:
+  Reading OWFS device file may block indefinitely on some error 
+  conditions on Raspberry Pi. Enabling workaround will cause 
+  taloLogger to use external process to read the OWFS device files
+  and allow taloLogger to automatically kill the reading 
+  process if it does not return result in reasonable time.
+    
+  Workaround: enable USE_EXTERNAL_PROCESS parameter on OWFS module
+  config.    
+
+
+Version 1.5a, 15.01.2013
+------------------------
+* Added support for Rego Can bus model controllers (Rego800 and Rego1000,
+  Found eg. in IVT heat pumps). Connectivity using Can232 or CanUSB interface
+  modules. Tested Rego1000 with IVT EQ8 ground heat pump. Device profiles
+  can be easily added to support other CAN-BUS-based devices.
+
+* Added optional database port configuration directive to MySql data store module.
+
+* Data stores will queue logged data in memory if writing is temporarily not possible 
+  (eg. network problem or database temporarily down). Queued data will be
+  added to data stores when it is again possible.
+
+* When starting the application, failing modules do not prevent logger from starting.
+  Only configuration file problems or missing keys will fail fatally. Failed modules 
+  will attempt to restart when queried.
+  
+* Added taloLogger native database schema version 1. TaloLogger is able to store 
+  data and positions to this database schema without altering tables. TaloLoggerGraph
+  is able to view data from the schema.
+
+
+Version 1.4i, 13.02.2012
+------------------------
+* Redesigned the source interfaces and logic to support
+  multiple data positions with one query and multithreading
+  modules.
+
+
+Version 1.4h, 07.11.2011
+------------------------
+* Use script or executable as data source.
+
+
+Version 1.4g, 01.11.2011
+------------------------
+* Added serial port fault recovery code to nibeSerial module.
+
+
+Version 1.4f, 26.10.2011
+------------------------
+* Enhanced support for multiple datastores with
+  store filtering configuration.
+
+
+Version 1.4e, 21.10.2011
+------------------------
+* Corrected smartWeb error handling.
+
+* Changes to application module structure.
+
+* Altered the Nibe serial protocol implementation logic
+
+* Added ThermIQ serial module to support ThermIQ module for 
+  Thermia and Danfoss pumps (www.thermiq.net)
+
+
+Version 1.4d, 17.08.2011
+------------------------
+* Corrected OWFS "nan" value handling.
+
+
+Version 1.4c, 11.04.2011
+------------------------
+* Added Nibe serial data source module.
+
+* Added SmartWeb support for newer Geopro/Oilon pumps with
+  Siemens controller.  
+
+
+Version 1.4b, 07.04.2011
+------------------------
+* Published Ouman parameter and SMS support.
+
+
+Version 1.4a, 10.02.2011
+------------------------
+* Support for multiple instances of data source and store modules 
+  (for example logging 2 separate Ouman devices in the same configuration)
+
+  
+Version 1.3c, 08.02.2011
+------------------------
+* Added Ekowell serial data source module.
+
+* Improved interrupt signal handling (CTRL-C from keyboard).
+
+
+Version 1.3b, 18.11.2010
+------------------------
+* Released version Rego serial data source module. 
+
+
+Version 1.3a, 16.11.2010
+------------------------
+* Added Rego serial data source module.
+
+
+Version 1.2c, 15.11.2010
+------------------------
+
+* Extended the support for Ouman EH203GT parameters.
+  (not published)
+  
+
+Version 1.2b, 13.09.2010
+------------------------
+
+* Initial support for parameter changes for Ouman EH203GT.
+  (not published)
+  
+
+Version 1.2a, 17.08.2010
+------------------------
+
+* Support for reading and writing parameter data to Ouman 200 series 
+  controller. Only EH202S is supported at the moment.
+  (not published)
+
+Version 1.1d, 31.10.2010
+------------------------
+* Changed example MySQL table creation: time column type changed to 
+  TIMESTAMP. There was problems with the DST changes with DATETIME
+  type.
+
+
+Version 1.1c, 22.10.2010
+------------------------
+* SQLite support
+
+
+Version 1.1b, 04.09.2010
+------------------------
+* Bug fixes to Thermia logging.
+
+
+Version 1.1a, 29.04.2010
+------------------------
+* Added Thermia serial data source module.
+
+
+Version 1.0c, 02.06.2009
+------------------------
+* Added Ouman serial profile for EH202G found in Geopro GS -pumps.
+
+
+Version 1.0b, 06.04.2009
+------------------------
+* First version released to the public.
+
+* Corrected DigiTemp executable output handling.
+
+
+Version 1.0a, 06.04.2009
+------------------------
+* First release candidate version.
+
+* Structural changes.
+
+* Added checks when starting the script for configuration 
+  file parameters.
+  
+* Added support for DigiTemp.
+
+
+Version 0.9d, 26.02.2009
+------------------------
+* Added verbose logging.
+
+* Added daemon mode configuration file directive.
+
+* Added pattern support for file data store.
+
+* Changed oumanSerial module to open serial port
+  only when needed and to aquire a lock file while
+  accessing the port.
+
+
+Version 0.9c, 25.02.2009
+------------------------
+* Changed logging and logging class code
+
+* Changed rrdtool support to be not dependent on external rrdtool-python library.
+
+* Changed module imports not to import external modules required if a module is not 
+  enabled at the configuration. 
+
+
+Version 0.9b, 24.02.2009
+------------------------
+* Added support for rrdtool data store.
+
+
+Version 0.9a, 24.02.2009
+------------------------
+* First beta version for testers
