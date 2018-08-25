@@ -180,11 +180,13 @@
 # PMASA-2018-1 CVE-2018-7260 4.7.8 https://github.com/phpmyadmin/phpmyadmin/commit/d2886a3
 # PMASA-2018-2 CVE-2018-10188 4.8.0.1 https://github.com/phpmyadmin/phpmyadmin/commit/c6dd6b56e236a3aff953cee4135ecaa67130e641
 # PMASA-2018-3 CVE-2018-12581 4.8.2 https://github.com/phpmyadmin/phpmyadmin/commit/6943fff87324bd54c3a37a5160a5fb77498c355e
+# PMASA-2018-4 CVE-2018-12613 4.8.2 https://github.com/phpmyadmin/phpmyadmin/commit/7662d02939fb3cf6f0d9ec32ac664401dcfe7490
+# PMASA-2018-5 CVE-2018-15605 4.8.3 https://github.com/phpmyadmin/phpmyadmin/commit/00d90b3ae415b31338f76263359467a9fbebd0a1
 phpMyAdmin:
   1:
     location: ['/libraries/Config.class.php']
-    secure_version: '4.8.2'
+    secure_version: '4.8.3'
     regexp: ['.*?PMA_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://www.phpmyadmin.net/security/PMASA-2018-3/ https://nvd.nist.gov/vuln/detail/CVE-2018-12581'
+    cve: 'https://www.phpmyadmin.net/security/PMASA-2018-5/ https://nvd.nist.gov/vuln/detail/CVE-2018-15605'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
