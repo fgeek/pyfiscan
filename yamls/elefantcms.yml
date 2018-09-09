@@ -11,9 +11,9 @@
 # CVE-2018-16387 2.0.5 https://github.com/jbroadway/elefant/issues/285 https://github.com/jbroadway/elefant/commit/95e84804135988abe9602f5c3f9842432c095288
 Elefant CMS:
   1:
-    location: ['/version.php']
+    location: ['/conf/version.php']
     secure_version: '2.0.5'
-    regexp: ['.*?ELEFANT_VERSION.*?(?P<version>[0-9.]+)']
+    regexp: ["<\\?php define \\('ELEFANT_VERSION.*?(?P<version>[0-9.]+)"]
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-16387'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
