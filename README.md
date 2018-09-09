@@ -92,6 +92,7 @@ Detects following software
 * TestLink
 * TikiWiki
 * Trac
+* Vanilla Forums
 * WikkaWiki
 * WordPress
 * X-Cart

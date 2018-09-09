@@ -1,0 +1,24 @@
+# CVE-2011-3613
+# CVE-2011-3614
+# CVE-2012-6555
+# CVE-2012-6556
+# CVE-2012-6557
+# CVE-2013-2749 2.0.18.8
+# CVE-2013-3528 2.0.18.8
+# CVE-2015-XXXX 2.1.1 http://vanillaforums.org/discussion/27540/vanilla-2-1-1-important-security-bug-release
+# CVE-2016-10073
+# http://vanillaforums.org/discussion/23339/security-update-vanilla-2-0-18-7 http://mfs-enterprise.com/wordpress/2013/04/05/vanilla-forums-2-0-18-sql-injection-insert-arbitrary-user-dump-usertable/
+# http://www.henryhoggard.co.uk/security/vanilla-forums-2-0-18-8-2-1-xss/
+# http://www.henryhoggard.co.uk/security/vanilla-forums-insecure-permissions-vulnerability/
+# http://www.henryhoggard.co.uk/security/vanilla-forums/
+# http://www.henryhoggard.co.uk/security/vanilla-tagging-stored-xss/
+# CVE-2017-1000432 2.1.5 https://open.vanillaforums.com/discussion/28337/vanilla-2-1-5-released-and-2-0-18-14
+# CVE-2018-16410 2.6.1 https://open.vanillaforums.com/discussion/36559 https://hackerone.com/reports/353784
+Vanilla Forums:
+  1:
+    location: ['/environment.php']
+    secure_version: '2.6.1'
+    regexp: ['.*?APPLICATION_VERSION.*?(?P<version>[0-9.]+)']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-16410 https://open.vanillaforums.com/discussion/36559'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
