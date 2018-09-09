@@ -42,6 +42,7 @@ Detects following software
 * Dotclear
 * Drupal
 * e107
+* Elefant CMS
 * EspoCRM
 * Etherpad
 * FluxBB

@@ -1,0 +1,19 @@
+# URL: http://www.elefantcms.com/ https://github.com/jbroadway/elefant
+# CVE-2012-1295 1.1.5/1.0.2
+# CVE-2012-1296
+# CVE-2012-6521
+# CVE-2012-XXXX 1.1.5/1.0.2 https://www.htbridge.ch/advisory/HTB23076
+# https://www.curesec.com/blog/article/blog/Elefant-CMS-1312-RC-Multiple-Persistent-and-Reflected-XSS-191.html
+# https://www.curesec.com/blog/article/blog/Elefant-CMS-1312-RC-CSRF-189.html
+# https://www.curesec.com/blog/article/blog/Elefant-CMS-1312-RC-Code-Execution-188.html
+# https://www.curesec.com/blog/article/blog/Elefant-CMS-1312-RC-Code-Execution-188.html
+# CVE-2018-15601 2.0.4 https://github.com/jbroadway/elefant/commit/afb3346e50b992bcba143660ca2149e563430e05
+# CVE-2018-16387 2.0.5 https://github.com/jbroadway/elefant/issues/285 https://github.com/jbroadway/elefant/commit/95e84804135988abe9602f5c3f9842432c095288
+Elefant CMS:
+  1:
+    location: ['/version.php']
+    secure_version: '2.0.5'
+    regexp: ['.*?ELEFANT_VERSION.*?(?P<version>[0-9.]+)']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-16387'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
