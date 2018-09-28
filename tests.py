@@ -85,6 +85,10 @@ class FileContents(unittest.TestCase):
         res = detect_general('testfiles/UTF-8', '<!ENTITY bz-ver.*?(?P<version>5\.[0-9]+)')
         
 if __name__ == '__main__':
+
+    if sys.version_info[0] < 3:
+        sys.exit("Must be executed using Python 3")
+
     suite1 = unittest.TestLoader().loadTestsFromTestCase(CompareVersions)
     suite2 = unittest.TestLoader().loadTestsFromTestCase(DatabaseHandlers)
     suite3 = unittest.TestLoader().loadTestsFromTestCase(UnwantedStrings)
