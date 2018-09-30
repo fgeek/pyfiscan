@@ -14,6 +14,7 @@
 # http://www.henryhoggard.co.uk/security/vanilla-tagging-stored-xss/
 # CVE-2017-1000432 2.1.5 https://open.vanillaforums.com/discussion/28337/vanilla-2-1-5-released-and-2-0-18-14
 # CVE-2018-16410 2.6.1 https://open.vanillaforums.com/discussion/36559 https://hackerone.com/reports/353784
+# CVE-2018-17571 TODO https://hackerone.com/reports/361957
 Vanilla Forums:
   1:
     location: ['/environment.php']
