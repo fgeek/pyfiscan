@@ -4,7 +4,7 @@ import re
 import unittest
 from pyfiscan import is_not_secure
 from database import Database
-from detect import detect_general
+from detect import detect_general, detect_withoutnewlines
 from file_helpers import postprocess_php5fcgi
 from file_helpers import filepaths_in_dir
 
@@ -80,9 +80,15 @@ class FileContents(unittest.TestCase):
     def test_detect_general_latin1(self):
         """Detect_general with ISO-8859-1 encoded file."""
         res = detect_general('testfiles/ISO-8859-1', '<!ENTITY bz-ver.*?(?P<version>5\.[0-9]+)')
+    def test_detect_withoutnewlines_latin1(self):
+        """Detect_general with ISO-8859-1 encoded file."""
+        res = detect_withoutnewlines('testfiles/ISO-8859-1', '<!ENTITY bz-ver.*?(?P<version>5\.[0-9]+)')
     def test_detect_general_utf8(self):
         """Detect_general with UTF-8 encoded file."""
         res = detect_general('testfiles/UTF-8', '<!ENTITY bz-ver.*?(?P<version>5\.[0-9]+)')
+    def test_detect_withoutnewlines_utf8(self):
+        """Detect_general with UTF-8 encoded file."""
+        res = detect_withoutnewlines('testfiles/UTF-8', '<!ENTITY bz-ver.*?(?P<version>5\.[0-9]+)')
         
 if __name__ == '__main__':
 
