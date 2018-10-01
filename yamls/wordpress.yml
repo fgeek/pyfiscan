@@ -147,6 +147,11 @@
 # dxw-1970-1086 N/A     https://security.dxw.com/advisories/comment-form-csrf-allows-admin-impersonation-via-comments-in-wordpress-4-2-2/
 # CVE-2015-5714 4.3.1   https://wordpress.org/news/2015/09/wordpress-4-3-1/
 # CVE-2015-5715 4.3.1   https://wordpress.org/news/2015/09/wordpress-4-3-1/
+# CVE-2015-5730 4.2.4
+# CVE-2015-5731 4.2.4
+# CVE-2015-5732 4.2.4
+# CVE-2015-5733 4.2.4
+# CVE-2015-5734 4.2.4
 # CVE-2015-7989 4.3.1   https://wordpress.org/news/2015/09/wordpress-4-3-1/ https://github.com/WordPress/WordPress/commit/f91a5fd10ea7245e5b41e288624819a37adf290a
 # CVE-2016-1564 4.4.1   https://wordpress.org/news/2016/01/wordpress-4-4-1-security-and-maintenance-release/
 # CVE-2016-2221 4.4.2   https://wordpress.org/news/2016/02/wordpress-4-4-2-security-and-maintenance-release/ https://codex.wordpress.org/Version_4.4.2 https://core.trac.wordpress.org/changeset/36444
@@ -216,6 +221,9 @@
 # CVE-2018-10101 4.9.5 https://wordpress.org/news/2018/04/wordpress-4-9-5-security-and-maintenance-release/ https://core.trac.wordpress.org/changeset/42894 https://github.com/WordPress/WordPress/commit/804363859602d4050d9a38a21f5a65d9aec18216
 # CVE-2018-10102 4.9.5 https://wordpress.org/news/2018/04/wordpress-4-9-5-security-and-maintenance-release/ https://core.trac.wordpress.org/changeset/42893 https://github.com/WordPress/WordPress/commit/31a4369366d6b8ce30045d4c838de2412c77850d
 # CVE-2018-12895 4.9.7 https://wordpress.org/news/2018/07/wordpress-4-9-7-security-and-maintenance-release/ https://blog.ripstech.com/2018/wordpress-file-delete-to-code-execution/ needs Author level permissions
+# CVE-2018-14028 TODO https://core.trac.wordpress.org/ticket/44710 https://rastating.github.io/unrestricted-file-upload-via-plugin-uploader-in-wordpress/
+# CVE-2017-1000600 TODO http://www.securityfocus.com/bid/105305 https://www.theregister.co.uk/2018/08/20/php_unserialisation_wordpress_vuln/
+# CVE-2018-1000773 TODO https://0day.city/wordpress-4-9-8-cve-2018-1000773-remote-code-execution.html
 WordPress:
   1:
     location: ['/wp-includes/version.php', '/wp-includes/vars.php']
