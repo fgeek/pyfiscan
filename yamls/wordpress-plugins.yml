@@ -2068,7 +2068,7 @@ WordPress plugin alpine-photo-tile-for-instagram:
 WordPress plugin vaultpress:
   1:
     location: ['/wp-content/plugins/vaultpress/readme.txt']
-    secure_version: '1.8.6'  # TODO: fix should be verified
+    secure_version: '1.8.7'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'OVE-20160728-0002 https://sumofpwn.nl/advisory/2016/vaultpress___remote_code_execution_via_man_in_the_middle_attack.html'
     fingerprint: detect_general
