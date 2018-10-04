@@ -4,7 +4,8 @@ WordPress plugin videowhisper-video-conference-integration:
     location: ['/wp-content/plugins/videowhisper-video-conference-integration/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'http://www.openwall.com/lists/oss-security/2015/04/01/3'
+    # TODO: CVE requested 2018-10-04
+    cve: 'http://www.openwall.com/lists/oss-security/2015/04/01/3 http://www.vapid.dhs.org/advisory.php?v=116'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin videowhisper-video-presentation:
