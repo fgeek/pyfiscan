@@ -1,4 +1,8 @@
 # REJECTED: CVE-2013-1463
+# CVE-2014-1905 4.29.5
+# CVE-2014-1906 4.29.5
+# CVE-2014-1907 4.29.5
+# CVE-2014-1908 4.29.5
 WordPress plugin videowhisper-video-conference-integration:
   1:
     location: ['/wp-content/plugins/videowhisper-video-conference-integration/readme.txt']
