@@ -2589,6 +2589,6 @@ WordPress plugin wp-db-backup:
     location: ['/wp-content/plugins/wp-db-backup/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'http://www.vapidlabs.com/advisory.php?v=81'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2014-10076 http://www.vapidlabs.com/advisory.php?v=81'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
