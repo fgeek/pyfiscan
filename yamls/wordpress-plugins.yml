@@ -12,6 +12,7 @@ WordPress plugin videowhisper-video-presentation:
     location: ['/wp-content/plugins/videowhisper-video-presentation/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    # TODO: CVE requested 2018-10-05
     cve: 'https://www.openwall.com/lists/oss-security/2015/04/01/2'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
