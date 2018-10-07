@@ -2601,3 +2601,11 @@ WordPress plugin localize-my-post:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-16299 https://lists.openwall.net/full-disclosure/2018/09/21/2 https://github.com/julianburr/wp-plugin-localizemypost/issues/1'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wechat-broadcast:
+  1:
+    location: ['/wp-content/plugins/wechat-broadcast/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-16283 https://lists.openwall.net/full-disclosure/2018/09/21/1 https://github.com/springjk/wordpress-wechat-broadcast/issues/14'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
