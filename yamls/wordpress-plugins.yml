@@ -2593,3 +2593,11 @@ WordPress plugin wp-db-backup:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2014-10076 http://www.vapidlabs.com/advisory.php?v=81'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin localize-my-post:
+  1:
+    location: ['/wp-content/plugins/localize-my-post/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-16299 https://lists.openwall.net/full-disclosure/2018/09/21/2 https://github.com/julianburr/wp-plugin-localizemypost/issues/1'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
