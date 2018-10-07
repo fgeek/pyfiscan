@@ -272,12 +272,14 @@ WordPress plugin cp-contact-form-with-paypal:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-9233 https://nvd.nist.gov/vuln/detail/CVE-2015-9234 http://seclists.org/fulldisclosure/2015/Jul/49 https://www.openwall.com/lists/oss-security/2015/07/11/2'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# CVE-2015-1204 3.9.2
 WordPress plugin wp-slimstat:
   1:
     location: ['/wp-content/plugins/wp-slimstat/readme.txt']
     secure_version: '4.1.6.1'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://www.openwall.com/lists/oss-security/2015/07/30/1'  # CVE request https://www.openwall.com/lists/oss-security/2015/07/30/1
+    # TODO: CVE re-requested 2018-10-07 with ID 581340
+    cve: 'https://www.openwall.com/lists/oss-security/2015/07/30/1'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin the-holiday-calendar:
