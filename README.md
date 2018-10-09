@@ -132,9 +132,9 @@ Detects following end-of-life software:
 Installation
 ------------
 
-    apt-get install python python-pip libpython2.7-dev libyaml-dev git libyaml-dev
+    apt-get install python3 python3-pip python3-yaml git
     git clone https://github.com/fgeek/pyfiscan.git && cd pyfiscan
-    pip2 install -r requirements.lst
+    pip3 install -r requirements.lst
 
 or you can use [BlackArch Linux](http://www.blackarch.org/).
 
