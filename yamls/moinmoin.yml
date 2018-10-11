@@ -50,10 +50,11 @@
 # CVE-2016-7146 1.9.9 https://www.curesec.com/blog/article/blog/MoinMoin-198-XSS-175.html
 # CVE-2016-7148 1.9.9 https://www.curesec.com/blog/article/blog/MoinMoin-198-XSS-175.html
 # CVE-2016-9119 1.9.9
+# CVE-2017-5934 1.9.10
 MoinMoin:
   1:
     location: ['/MoinMoin/version.py']
-    secure_version: '1.9.9'
+    secure_version: '1.9.10'
     regexp: ['.*?release.*?(?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-7146 https://nvd.nist.gov/vuln/detail/CVE-2016-7148 https://nvd.nist.gov/vuln/detail/CVE-2016-9119 http://moinmo.in/SecurityFixes'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-5934'
     fingerprint: detect_general
