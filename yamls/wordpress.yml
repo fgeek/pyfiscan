@@ -216,14 +216,14 @@
 # CVE-2017-17093 4.9.1 https://wordpress.org/news/2017/11/wordpress-4-9-1-security-and-maintenance-release/
 # CVE-2017-17094 4.9.1 https://wordpress.org/news/2017/11/wordpress-4-9-1-security-and-maintenance-release/
 # CVE-2018-5776 4.9.2 https://wordpress.org/news/2018/01/wordpress-4-9-2-security-and-maintenance-release/ https://wpvulndb.com/vulnerabilities/9006 https://github.com/WordPress/WordPress/commit/3fe9cb61ee71fcfadb5e002399296fcc1198d850
-# CVE-2018-6389 TODO https://wpvulndb.com/vulnerabilities/9021 https://github.com/quitten/doser.py checked 2018-03-04
+# CVE-2018-6389 N/A https://wpvulndb.com/vulnerabilities/9021 https://github.com/quitten/doser.py https://baraktawily.blogspot.com/2018/02/how-to-dos-29-of-world-wide-websites.html https://github.com/Quitten/WordPress/blob/master/wp-dos-patch.sh
 # CVE-2018-10100 4.9.5 https://wordpress.org/news/2018/04/wordpress-4-9-5-security-and-maintenance-release/ https://core.trac.wordpress.org/changeset/42892 https://github.com/WordPress/WordPress/commit/14bc2c0a6fde0da04b47130707e01df850eedc7e
 # CVE-2018-10101 4.9.5 https://wordpress.org/news/2018/04/wordpress-4-9-5-security-and-maintenance-release/ https://core.trac.wordpress.org/changeset/42894 https://github.com/WordPress/WordPress/commit/804363859602d4050d9a38a21f5a65d9aec18216
 # CVE-2018-10102 4.9.5 https://wordpress.org/news/2018/04/wordpress-4-9-5-security-and-maintenance-release/ https://core.trac.wordpress.org/changeset/42893 https://github.com/WordPress/WordPress/commit/31a4369366d6b8ce30045d4c838de2412c77850d
 # CVE-2018-12895 4.9.7 https://wordpress.org/news/2018/07/wordpress-4-9-7-security-and-maintenance-release/ https://blog.ripstech.com/2018/wordpress-file-delete-to-code-execution/ needs Author level permissions
-# CVE-2018-14028 TODO https://core.trac.wordpress.org/ticket/44710 https://rastating.github.io/unrestricted-file-upload-via-plugin-uploader-in-wordpress/
+# CVE-2018-14028 N/A https://core.trac.wordpress.org/ticket/44710 https://rastating.github.io/unrestricted-file-upload-via-plugin-uploader-in-wordpress/
 # CVE-2017-1000600 TODO http://www.securityfocus.com/bid/105305 https://www.theregister.co.uk/2018/08/20/php_unserialisation_wordpress_vuln/
-# CVE-2018-1000773 TODO https://0day.city/wordpress-4-9-8-cve-2018-1000773-remote-code-execution.html
+# CVE-2018-1000773 TODO https://0day.city/wordpress-4-9-8-cve-2018-1000773-remote-code-execution.html https://www.theregister.co.uk/2018/08/20/php_unserialisation_wordpress_vuln/ https://www.securityfocus.com/bid/105306
 WordPress:
   1:
     location: ['/wp-includes/version.php', '/wp-includes/vars.php']
