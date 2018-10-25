@@ -24,9 +24,10 @@ def grep_from_file(version_file, regexp):
         try:
             source = version_file.readlines()
         except UnicodeDecodeError:
-            res = chardet.detect(open(version_file.name, 'rb').read())
-            version_file = open(version_file.name, 'r', encoding=res['encoding'])
-            source = version_file.readlines()
+            with open(version_file.name, 'rb') as handle:
+                res = chardet.detect(handle.read())
+                source = handle.read().decode(res['encoding'])
+                handle.close()
     prog = re.compile(regexp)
 
     for line in source:
@@ -122,11 +123,17 @@ def detect_gallery(source_file, regexp):
 
 @yaml_visible
 def detect_withoutnewlines(source_file, regexp):
-    """Stripts newlines from source file."""
+    """Strips newlines from source file."""
     if not (os.path.isfile(source_file) and regexp):
         return
     with open(source_file, 'r') as f:
-        source = f.read().replace('\n', '')
+        try:
+            source = f.read().replace('\n', '')
+        except UnicodeDecodeError:
+            with open(f.name, 'rb') as handle:
+                res = chardet.detect(handle.read())
+                source = handle.read().decode(res['encoding']).replace('\n', '')
+                handle.close()
     try:
         return re.compile(regexp[0]).match(source).group('version')
     except re.error:
