@@ -132,7 +132,7 @@ Detects following end-of-life software:
 Installation
 ------------
 
-    apt-get install python3 python3-pip python3-yaml git
+    apt install python3 python3-pip python3-yaml python3-docopt git
     git clone https://github.com/fgeek/pyfiscan.git && cd pyfiscan
     pip3 install -r requirements.lst
 
