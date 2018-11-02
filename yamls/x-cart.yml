@@ -2,6 +2,10 @@
 # CVE-2015-XXXX 5.2.7 http://blog.curesec.com/article/blog/XCart-526-XSS-84.html
 # CVE-2015-XXXX 5.2.7 http://blog.curesec.com/article/blog/XCart-526-Path-Traversal-85.html
 # CVE-2015-XXXX 5.2.7 http://blog.curesec.com/article/blog/XCart-526-Code-Execution-86.html http://blog.curesec.com/article/blog/XCart-526-Code-Execution-Exploit-87.html
+# CVE-2015-0950
+# CVE-2015-0951
+# CVE-2015-1178
+# CVE-2015-5455
 # CVE-2017-15285 5.3.4 https://sxcurity.github.io/PHP%20Code%20Injection%20in%20X-Cart.pdf
 X-Cart:
   1:
