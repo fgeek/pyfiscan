@@ -43,11 +43,13 @@
 # CVE-2017-16651 TODO http://lists.roundcube.net/pipermail/announce/2017-November/000155.html https://github.com/roundcube/roundcubemail/issues/6026
 # CVE-2018-9846 1.3.6 https://github.com/roundcube/roundcubemail/issues/6238 https://github.com/roundcube/roundcubemail/commit/e3dd5b66d236867572e68fcb80281e9268a0cfb0
 # CVE-2018-1000071 TODO https://www.legacysecuritygroup.com/cve/references/02122018-roundcube-enigma.txt https://github.com/roundcube/roundcubemail/issues/6173 https://github.com/roundcube/roundcubemail/commit/48417c5fc9f6eb4b90500c09596606d489c700b5
+# TODO 1.3.7 https://roundcube.net/news/2018/07/27/update-1.3.7-released https://github.com/roundcube/roundcubemail/releases/tag/1.3.7
+# TODO 1.3.8 https://roundcube.net/news/2018/10/26/update-1.3.8-released https://github.com/roundcube/roundcubemail/releases/tag/1.3.8
 Roundcube:
   1:
     location: ['/program/include/iniset.php']
-    secure_version: '1.3.6'
+    secure_version: '1.3.8'
     regexp: ['define.*?RCMAIL_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-9846 https://roundcube.net/news/2018/04/11/security-update-1.3.6'
+    cve: 'https://roundcube.net/news/2018/10/26/update-1.3.8-released'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
