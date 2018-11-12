@@ -5,6 +5,11 @@
 # CVE-2015-XXXX TODO http://seclists.org/fulldisclosure/2015/Nov/63
 # CVE-2015-XXXX TODO http://seclists.org/fulldisclosure/2015/Nov/64
 # CVE-2015-XXXX TODO http://seclists.org/fulldisclosure/2015/Nov/65
+# CVE-2018-11332 TODO fix not available 2018-11-12 https://github.com/ClipperCMS/ClipperCMS/issues/483 https://www.exploit-db.com/exploits/44775/
+# CVE-2018-11571 TODO fix not available 2018-11-12 https://github.com/ClipperCMS/ClipperCMS/issues/486
+# CVE-2018-11572 TODO fix not available 2018-11-12 https://github.com/ClipperCMS/ClipperCMS/issues/485
+# CVE-2018-13106 TODO fix not available 2018-11-12 https://github.com/ClipperCMS/ClipperCMS/issues/489
+# CVE-2018-19135 TODO fix not available 2018-11-12 https://github.com/ClipperCMS/ClipperCMS/issues/494
 ClipperCMS:
   1:
     location: ['/manager/includes/version.inc.php']
