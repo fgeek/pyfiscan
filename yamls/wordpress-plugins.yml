@@ -2196,7 +2196,7 @@ WordPress plugin wp-statistics:
     location: ['/wp-content/plugins/wp-statistics/readme.txt']
     secure_version: '12.0.9'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://wordpress.org/plugins/wp-statistics/#developers'
+    cve: 'https://wordpress.org/plugins/wp-statistics/#developers https://blog.dewhurstsecurity.com/2017/07/03/wp-statistics-authenticated-xss-vulnerability.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin easy-wp-smtp:
@@ -2607,5 +2607,13 @@ WordPress plugin wechat-broadcast:
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-16283 https://lists.openwall.net/full-disclosure/2018/09/21/1 https://github.com/springjk/wordpress-wechat-broadcast/issues/14'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin wp-gdpr-compliance:
+  1:
+    location: ['/wp-content/plugins/wp-gdpr-compliance/readme.txt']
+    secure_version: '1.4.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-19207 https://www.wordfence.com/blog/2018/11/trends-following-vulnerability-in-wp-gdpr-compliance-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
