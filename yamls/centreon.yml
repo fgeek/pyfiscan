@@ -5,11 +5,19 @@
 # CVE-2014-XXXX 2.5.4 http://www.openwall.com/lists/oss-security/2014/11/28/2
 # CVE-2015-1560 2.6.0 https://forge.centreon.com/projects/centreon/repository/revisions/d14f213b9c60de1bad0b464fd6403c828cf12582
 # CVE-2015-1561 2.6.0 https://forge.centreon.com/projects/centreon/repository/revisions/d14f213b9c60de1bad0b464fd6403c828cf12582
+# CVE-2015-7672
+# CVE-2018-11587 2.8.24 https://documentation.centreon.com/docs/centreon/en/latest/release_notes/centreon-2.8/centreon-2.8.24.html https://github.com/centreon/centreon/pull/6263
+# CVE-2018-11588 2.8.24 https://documentation.centreon.com/docs/centreon/en/latest/release_notes/centreon-2.8/centreon-2.8.24.html https://github.com/centreon/centreon/pull/6259 https://github.com/centreon/centreon/pull/6260
+# CVE-2018-11589 2.8.24 https://documentation.centreon.com/docs/centreon/en/latest/release_notes/centreon-2.8/centreon-2.8.24.html https://github.com/centreon/centreon/pull/6250 https://github.com/centreon/centreon/pull/6251 https://github.com/centreon/centreon/pull/6255 https://github.com/centreon/centreon/pull/6256 https://github.com/centreon/centreon/pull/6257
+# Centreon remote server not yet detected
+#   CVE-2018-19271 18.10.0 http://www.rootlabs.com.br/authenticated-sql-injection-in-centreon-3-4-x/ https://github.com/centreon/centreon/pull/6625
+#   CVE-2018-19280 18.10.0 https://github.com/centreon/centreon/pull/6626 https://github.com/centreon/centreon/commit/3d7792981dfaa55aa34d4a1d27896f096a5dcbe2
+#   CVE-2018-19281 18.10.0 https://github.com/centreon/centreon/pull/6627 https://github.com/centreon/centreon/commit/89d5460f6153015cacf48dff01dec793edd07b99
 Centreon:
   1:
     location: ['/CHANGELOG']
-    secure_version: '2.6.0'
+    secure_version: '2.8.24'
     regexp: ['## Centreon (?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-1560 https://nvd.nist.gov/vuln/detail/CVE-2015-1561'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-11587 https://nvd.nist.gov/vuln/detail/CVE-2018-11588 https://nvd.nist.gov/vuln/detail/CVE-2018-11589'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
