@@ -15,11 +15,13 @@
 # CVE-2017-1000432 2.1.5 https://open.vanillaforums.com/discussion/28337/vanilla-2-1-5-released-and-2-0-18-14
 # CVE-2018-16410 2.6.1 https://open.vanillaforums.com/discussion/36559 https://hackerone.com/reports/353784
 # CVE-2018-17571 TODO https://hackerone.com/reports/361957
+# CVE-2018-18903 TODO https://github.com/vanilla/vanilla/releases/tag/Vanilla_2.6.4 https://open.vanillaforums.com/discussion/36771/security-update-vanilla-2-6-4
+# CVE-2018-19499 2.6.2/2.5.5 https://hackerone.com/reports/407552
 Vanilla Forums:
   1:
     location: ['/environment.php']
-    secure_version: '2.6.1'
+    secure_version: '2.6.2'
     regexp: ['.*?APPLICATION_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-16410 https://open.vanillaforums.com/discussion/36559'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-19499'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
