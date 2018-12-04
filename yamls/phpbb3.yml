@@ -1,27 +1,29 @@
 # CVE-2005-2086 2.0.16
-# CVE-2008-1766 3.0.1       SA29801
-# CVE-2008-6506 3.0.4       SA33166
-# CVE-2008-6507 3.0.4       SA33166
+# CVE-2008-1766 3.0.1 SA29801
+# CVE-2008-6506 3.0.4 SA33166
+# CVE-2008-6507 3.0.4 SA33166
 # CVE-2008-7143
-# CVE-2010-1627 3.0.7PL1    SA38837
-# CVE-2010-1630 3.0.5       SA38264
-# CVE-2011-0544 3.0.8       SA42343
-# CVE-2015-1431 3.0.13      https://tracker.phpbb.com/browse/PHPBB3-13531 https://github.com/phpbb/phpbb/pull/3316
-# CVE-2015-1432 3.0.13      https://tracker.phpbb.com/browse/PHPBB3-13526 https://github.com/phpbb/phpbb/pull/3311
-# CVE-2015-3880 3.1.4/3.0.14    https://github.com/phpbb/phpbb/commit/1a3350619f428d9d69d196c52128727e27ef2f04 https://www.phpbb.com/community/viewtopic.php?f=14&t=2313941
+# CVE-2010-1627 3.0.7PL1 SA38837
+# CVE-2010-1630 3.0.5 SA38264
+# CVE-2011-0544 3.0.8 SA42343
+# CVE-2015-1431 3.0.13 https://tracker.phpbb.com/browse/PHPBB3-13531 https://github.com/phpbb/phpbb/pull/3316
+# CVE-2015-1432 3.0.13 https://tracker.phpbb.com/browse/PHPBB3-13526 https://github.com/phpbb/phpbb/pull/3311
+# CVE-2015-3880 3.1.4/3.0.14 https://github.com/phpbb/phpbb/commit/1a3350619f428d9d69d196c52128727e27ef2f04 https://www.phpbb.com/community/viewtopic.php?f=14&t=2313941
+# CVE-2017-1000419 3.2.1 https://www.phpbb.com/community/viewtopic.php?f=14&p=14782136
+# CVE-2018-19274 3.2.4 https://www.phpbb.com/community/viewtopic.php?f=14&t=2492206
 phpBB3 3.1:
   1:
     location: ['/includes/constants.php']
-    secure_version: '3.1.4'
+    secure_version: '3.2.4'
     regexp: ['.*?PHPBB_VERSION.*?(?P<version>3\.1[0-9.]{1,})']
-    cve: 'https://wiki.phpbb.com/Release_Highlights/3.1.4 https://nvd.nist.gov/vuln/detail/CVE-2015-3880'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-19274'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 phpBB3 3.0:
   1:
     location: ['/includes/constants.php']
-    secure_version: '3.0.14'
+    secure_version: '3.2.4'
     regexp: ['.*?PHPBB_VERSION.*?(?P<version>3\.0[0-9.]{1,})']
-    cve: 'https://wiki.phpbb.com/Release_Highlights/3.0.14 https://nvd.nist.gov/vuln/detail/CVE-2015-3880'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-19274'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
