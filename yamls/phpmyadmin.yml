@@ -182,11 +182,14 @@
 # PMASA-2018-3 CVE-2018-12581 4.8.2 https://github.com/phpmyadmin/phpmyadmin/commit/6943fff87324bd54c3a37a5160a5fb77498c355e
 # PMASA-2018-4 CVE-2018-12613 4.8.2 https://github.com/phpmyadmin/phpmyadmin/commit/7662d02939fb3cf6f0d9ec32ac664401dcfe7490
 # PMASA-2018-5 CVE-2018-15605 4.8.3 https://github.com/phpmyadmin/phpmyadmin/commit/00d90b3ae415b31338f76263359467a9fbebd0a1
+# PMASA-2018-6 CVE-2018-19968 4.8.4 https://github.com/phpmyadmin/phpmyadmin/commit/6a1ba61e29002f0305a9322a8af4eaaeb11c0732 https://www.phpmyadmin.net/news/2018/12/11/security-fix-phpmyadmin-484-released/
+# PMASA-2018-7 CVE-2018-19969 4.8.4 https://www.phpmyadmin.net/news/2018/12/11/security-fix-phpmyadmin-484-released/
+# PMASA-2018-8 CVE-2018-19970 4.8.4 https://github.com/phpmyadmin/phpmyadmin/commit/b293ff5f234ef493336ed8638f623a12164d359e https://www.phpmyadmin.net/news/2018/12/11/security-fix-phpmyadmin-484-released/
 phpMyAdmin:
   1:
     location: ['/libraries/Config.class.php']
-    secure_version: '4.8.3'
+    secure_version: '4.8.4'
     regexp: ['.*?PMA_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://www.phpmyadmin.net/security/PMASA-2018-5/ https://nvd.nist.gov/vuln/detail/CVE-2018-15605'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-19968 https://nvd.nist.gov/vuln/detail/CVE-2018-19969 https://nvd.nist.gov/vuln/detail/CVE-2018-19970 https://www.phpmyadmin.net/news/2018/12/11/security-fix-phpmyadmin-484-released/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
