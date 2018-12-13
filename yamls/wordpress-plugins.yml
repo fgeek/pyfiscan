@@ -836,12 +836,13 @@ WordPress plugin ninja-forms:
     cve: 'OVE-20160714-0017 https://sumofpwn.nl/advisory/2016/multiple_cross_site_scripting_vulnerabilities_in_ninja_forms_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# TODO https://www.wordfence.com/blog/2016/05/xss-vulnerability-wordfence-6-1-1-6-1-6-severity-6-1medium/
 WordPress plugin wordfence:
   1:
     location: ['/wp-content/plugins/wordfence/readme.txt']
-    secure_version: '6.1.7'
+    secure_version: '7.1.14'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://www.wordfence.com/blog/2016/05/xss-vulnerability-wordfence-6-1-1-6-1-6-severity-6-1medium/'
+    cve: 'http://www.waraxe.us/advisory-109.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin event-registration:
