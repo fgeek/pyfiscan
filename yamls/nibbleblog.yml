@@ -2,6 +2,7 @@
 # CVE-2014-8996 4.0.2 http://blog.nibbleblog.com/post/nibbleblog-v4.0.2-coffee/ http://seclists.org/fulldisclosure/2014/Nov/38
 # CVE-2015-6966 4.0.5 http://blog.curesec.com/article/blog/NibbleBlog-403-CSRF-46.html
 # CVE-2015-6967 4.0.5 http://blog.curesec.com/article/blog/NibbleBlog-403-Code-Execution-47.html
+# CVE-2018-16604 TODO https://github.com/dignajar/nibbleblog/issues/131 development doesn't seem to be very active
 Nibbleblog:
   1:
     location: ['/admin/boot/rules/98-constants.bit']
