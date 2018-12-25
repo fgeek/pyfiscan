@@ -1,6 +1,5 @@
 # URL: https://www.bigtreecms.org/ https://github.com/bigtreecms/BigTree-CMS/
 # NFU: http://www.openwall.com/lists/oss-security/2016/11/24/5 Form Builder extension
-# NFU: CVE-2018-10183 less.php submodule. no fix 2018-12-25
 # CVE-2013-4879 HTB23165
 # CVE-2013-4880 HTB23165
 # CVE-2013-4881 HTB23165
@@ -39,6 +38,7 @@
 # CVE-2017-11736 4.2.19 https://github.com/bigtreecms/BigTree-CMS/issues/304
 # CVE-2017-16961 4.2.20 https://github.com/bigtreecms/BigTree-CMS/issues/323
 # CVE-2018-6013 4.2.20 https://github.com/bigtreecms/BigTree-CMS/issues/327
+# CVE-2018-10183 4.3 https://github.com/bigtreecms/BigTree-CMS/issues/333
 # CVE-2018-10364 4.2.22 https://github.com/bigtreecms/BigTree-CMS/issues/332
 # CVE-2018-10574 4.2.23 https://github.com/bigtreecms/BigTree-CMS/issues/335
 # CVE-2018-17341 4.3 https://github.com/bigtreecms/BigTree-CMS/issues/345
