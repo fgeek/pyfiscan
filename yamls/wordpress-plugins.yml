@@ -2627,3 +2627,11 @@ WordPress plugin deans-fckeditor-with-pwwangs-code-plugin-for-wordpress:
     cve: 'https://packetstormsecurity.com/files/111319/WordPress-Deans-With-Pwwangs-Code-Shell-Upload.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin google-sitemap-generator:
+  1:
+    location: ['/wp-content/plugins/google-sitemap-generator/readme.txt']
+    secure_version: '4.1.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-16204'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
