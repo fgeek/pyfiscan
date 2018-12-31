@@ -5,7 +5,7 @@
 Mailer utility for pyfiscan tool result CSV-files.
 
 @author Henri 'fgeek' Salo <henri@nerv.fi>
-@copyright Copyright (c) 2009-2018 Henri Salo
+@copyright Copyright (c) 2009-2019 Henri Salo
 @licence BSD
 """
 
