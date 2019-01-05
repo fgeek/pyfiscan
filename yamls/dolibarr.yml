@@ -41,6 +41,15 @@
 # CVE-2018-10094 7.0.2 http://www.openwall.com/lists/oss-security/2018/05/21/1
 # CVE-2018-10095 7.0.2 http://www.openwall.com/lists/oss-security/2018/05/21/3
 # CVE-2018-9019 7.0.2 https://github.com/Dolibarr/dolibarr/commit/83b762b681c6dfdceb809d26ce95f3667b614739
+# CVE-2018-13447 TODO https://github.com/Dolibarr/dolibarr/commit/36402c22eef49d60edd73a2f312f8e28fe0bd1cb
+# CVE-2018-13448 TODO https://github.com/Dolibarr/dolibarr/commit/36402c22eef49d60edd73a2f312f8e28fe0bd1cb
+# CVE-2018-13449 TODO https://github.com/Dolibarr/dolibarr/commit/36402c22eef49d60edd73a2f312f8e28fe0bd1cb
+# CVE-2018-13450 TODO https://github.com/Dolibarr/dolibarr/commit/36402c22eef49d60edd73a2f312f8e28fe0bd1cb
+# CVE-2018-19799 TODO http://packetstormsecurity.com/files/150623/Dolibarr-ERP-CRM-8.0.3-Cross-Site-Scripting.html https://pentest.com.tr/exploits/Dolibarr-ERP-CRM-8-0-3-Cross-Site-Scripting.html https://www.exploit-db.com/exploits/45945/
+# CVE-2018-19992 TODO https://github.com/Dolibarr/dolibarr/commit/0f06e39d23636bd1e4039ac61a743c79725c798b
+# CVE-2018-19993 TODO https://github.com/Dolibarr/dolibarr/commit/fc3fcc5455d9a610b85723e89e8be43a41ad1378
+# CVE-2018-19994 TODO https://github.com/Dolibarr/dolibarr/commit/850b939ffd2c7a4443649331b923d5e0da2d6446
+# CVE-2018-19995 TODO https://github.com/Dolibarr/dolibarr/commit/4b8be6ed64763327018ac1c076f81ddffa87855e https://github.com/Dolibarr/dolibarr/commit/bacd5110fbdc81a35030fdc322775fa15ea85924
 Dolibarr:
   1:
     location: ['/htdocs/filefunc.inc.php']
