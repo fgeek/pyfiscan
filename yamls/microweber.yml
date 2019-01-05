@@ -1,11 +1,13 @@
 # URL: http://microweber.com/
-# CVE-2013-5984 0.830   https://github.com/microweber/microweber/commit/9177d134960c24cb642d5cf3b42a1fba286219cc HTB23175
-# CVE-2014-9464 0.95    https://github.com/microweber/microweber/commit/4ee09f9dda35cd1b15daa351f335c2a4a0538d29
+# CVE-2013-5984 0.830 https://github.com/microweber/microweber/commit/9177d134960c24cb642d5cf3b42a1fba286219cc HTB23175
+# CVE-2014-9464 0.95 https://github.com/microweber/microweber/commit/4ee09f9dda35cd1b15daa351f335c2a4a0538d29
+# CVE-2018-1000826 TODO https://0dd.zone/2018/10/28/microweber-XSS/ https://github.com/microweber/microweber/issues/489 https://github.com/microweber/microweber/commit/5b29bc854bcfbfc5d4df1523ee221c900e7598a9 fix is not yet in release (2019-01-05)
+# CVE-2018-19917 TODO https://www.netsparker.com/web-applications-advisories/ns-18-038-reflected-cross-site-scripting-in-microweber/ https://lists.openwall.net/full-disclosure/2019/01/04/4 contacted vendor to get details if this has been fixed (2019-01-05)
 Microweber:
   1:
     location: ['/src/Microweber/bootstrap.php']
     secure_version: '0.95'
     regexp: ['    define.*?MW_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5984 https://www.htbridge.com/advisory/HTB23175'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2014-9464'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
