@@ -2635,3 +2635,11 @@ WordPress plugin google-sitemap-generator:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-16204'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin social-pug:
+  1:
+    location: ['/wp-content/plugins/social-pug/readme.txt']
+    secure_version: '1.2.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://advisories.dxw.com/advisories/reflected-xss-in-social-pug-easy-social-share-buttons-could-allow-an-attacker-to-do-almost-anything-an-admin-user-can/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
