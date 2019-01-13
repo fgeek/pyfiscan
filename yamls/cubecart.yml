@@ -10,6 +10,7 @@
 # CVE-2017-2090 6.1.4
 # CVE-2017-2098 6.1.4
 # CVE-2017-2117 6.1.5 https://forums.cubecart.com/topic/52188-cubecart-615-released/
+# CVE-2018-20703 TODO no information about fixed in version? https://www.netsparker.com/web-applications-advisories/ns-18-025-reflected-cross-site-scripting-in-cubecart/
 CubeCart:
   1:
     location: ['/ini.inc.php']
