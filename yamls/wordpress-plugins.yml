@@ -2290,12 +2290,13 @@ WordPress plugin ultimate-form-builder-lite:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-15919'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# CVE-2017-2224 1.0.94
 WordPress plugin event-calendar-wd:
   1:
     location: ['/wp-content/plugins/event-calendar-wd/readme.txt']
-    secure_version: '1.0.94'
+    secure_version: '1.1.22'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-2224'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-16164 https://jvn.jp/en/jp/JVN75738023/index.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin wp-copysafe-web:
