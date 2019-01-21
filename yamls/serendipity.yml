@@ -35,6 +35,8 @@
 #
 # TODO: http://lists.openwall.net/full-disclosure/2017/04/09/2 https://github.com/s9y/Serendipity/issues/456
 # TODO: http://lists.openwall.net/full-disclosure/2017/04/11/4 https://github.com/s9y/Serendipity/issues/452 asked 2017-04-23 if this received CVE or not
+# CVE-2017-1000129 2.0.4 https://blog.s9y.org/archives/269-Serendipity-2.0.4-and-2.1-beta2-released.html
+# CVE-2016-10737 TODO https://www.exploit-db.com/exploits/40650 https://board.s9y.org/viewtopic.php?f=3&t=24218
 Serendipity:
   1:
     location: ['/serendipity_config.inc.php']
