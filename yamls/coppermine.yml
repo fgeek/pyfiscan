@@ -2,15 +2,15 @@
 # NOTE: 1.4.x support ended http://forum.coppermine-gallery.net/index.php/topic,66659.0.html
 # NOT-FOR-US: HTB22836 path disclosure
 # NOT-FOR-US: CVE-2015-6528 https://packetstormsecurity.com/files/133059/Coppermine-Photo-Gallery-1.5.36-Cross-Site-Scripting.html only affects instances where installation has not been completed. http://forum.coppermine-gallery.net/index.php/topic,78662.msg381214.html
-# CVE-2010-4815 1.4.26  http://forum.coppermine-gallery.net/index.php/topic,63510.0.html
-# CVE-2011-2476 1.5.12  http://www.openwall.com/lists/oss-security/2011/06/08/2
-# CVE-2012-1613 1.5.20  http://www.waraxe.us/advisory-81.html
+# CVE-2010-4815 1.4.26 http://forum.coppermine-gallery.net/index.php/topic,63510.0.html
+# CVE-2011-2476 1.5.12 http://www.openwall.com/lists/oss-security/2011/06/08/2
+# CVE-2012-1613 1.5.20 http://www.waraxe.us/advisory-81.html
 # CVE-2012-1614 1.5.20
-# CVE-2014-4612 1.5.28  http://forum.coppermine-gallery.net/index.php/topic,77376.0.html http://sourceforge.net/p/coppermine/code/8674/
-# CVE-2015-3921 1.5.36  http://forum.coppermine-gallery.net/index.php/topic,78194.0.html
+# CVE-2014-4612 1.5.28 http://forum.coppermine-gallery.net/index.php/topic,77376.0.html http://sourceforge.net/p/coppermine/code/8674/
+# CVE-2015-3921 1.5.36 http://forum.coppermine-gallery.net/index.php/topic,78194.0.html
 # CVE-2015-3922 1.5.36
-# CVE-2015-3923 1.5.36
-# CVE-2016-TODO 1.5.44  http://forum.coppermine-gallery.net/index.php/topic,78867.0.html https://blog.ripstech.com/2016/coppermine-second-order-command-execution/
+# CVE-2015-3923 1.5.36 http://forum.coppermine-gallery.net/index.php/topic,78194.0.html
+# CVE-2016-TODO 1.5.44 http://forum.coppermine-gallery.net/index.php/topic,78867.0.html https://blog.ripstech.com/2016/coppermine-second-order-command-execution/
 # CVE-2010-TODO 1.4.27 http://forum.coppermine-gallery.net/index.php/topic,65023.0.html
 # CVE-2018-14478 1.5.48 https://www.netsparker.com/web-applications-advisories/ns-18-050-cross-site-scripting-in-coppermine/ http://forum.coppermine-gallery.net/index.php/topic,79577.0.html
 Coppermine:
