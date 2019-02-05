@@ -44,7 +44,8 @@
 # CVE-2011-4173 2.0.1           SA46386
 # N/A           2.0.1/1.1.1     SA46386
 # CVE-2013-0192 1.1.11
-# CVE-2013-4395 2.0.5
+# CVE-2013-4395 2.0.5 https://www.openwall.com/lists/oss-security/2013/09/15/2
+# N/A           2.0.5 http://packetstormsecurity.com/files/121391/public_phpInjection-smf204.txt http://hauntit.blogspot.co.uk/2013/04/en-smf-204-full-disclosure.html
 # CVE-2013-4465 2.0.6 https://github.com/SimpleMachines/SMF2.1/issues/701
 # CVE-2013-7234 2.0.6/1.1.19 http://www.jakoblell.com/blog/2013/12/13/multiple-vulnerabilities-in-smf-forum-software/ http://www.simplemachines.org/community/index.php?topic=512964.0
 # CVE-2013-7235 2.0.6/1.1.19 http://www.jakoblell.com/blog/2013/12/13/multiple-vulnerabilities-in-smf-forum-software/ http://www.simplemachines.org/community/index.php?topic=512964.0
