@@ -2652,3 +2652,11 @@ WordPress plugin mapsvg-lite-interactive-vector-maps:
     cve: 'https://advisories.dxw.com/advisories/csrf-mapsvg-lite/'  # TODO: CVE was requested 2019-01-08 by DXW
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin forminator:
+  1:
+    location: ['/wp-content/plugins/forminator/readme.txt']
+    secure_version: '1.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://security-consulting.icu/blog/2019/02/wordpress-forminator-persistent-xss-blind-sql-injection/'  # TODO: No CVE identifier
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
