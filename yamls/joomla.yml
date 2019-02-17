@@ -171,51 +171,55 @@
 # CVE-2019-6262 3.9.2 https://developer.joomla.org/security-centre/763-20190104-core-stored-xss-issue-in-the-global-configuration-help-url
 # CVE-2019-6263 3.9.2 https://developer.joomla.org/security-centre/762-20190103-core-stored-xss-issue-in-the-global-configuration-textfilter-settings
 # CVE-2019-6264 3.9.2 https://developer.joomla.org/security-centre/760-20190101-core-stored-xss-in-mod-banners
+# CVE-2019-7739 3.9.3 https://developer.joomla.org/security-centre/767-20190203-core-additional-warning-in-the-global-configuration-textfilter-settings.html
+# CVE-2019-7742 3.9.3 https://developer.joomla.org/security-centre/766-20190202-core-browserside-mime-type-sniffing-causes-xss-attack-vectors.html
+# CVE-2019-7743 3.9.3 https://developer.joomla.org/security-centre/770-20190206-core-implement-the-typo3-phar-stream-wrapper.html
+# CVE-2019-7744 3.9.3 https://developer.joomla.org/security-centre/765-20190201-core-lack-of-url-filtering-in-various-core-components.html
 Joomla 3:
   1:
     location: ['/administrator/manifests/files/joomla.xml']
-    secure_version: '3.9.2'
+    secure_version: '3.9.3'
     regexp: ['[\t]<version>(?P<version>3\.[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-6261 https://nvd.nist.gov/vuln/detail/CVE-2019-6262 https://nvd.nist.gov/vuln/detail/CVE-2019-6263 https://nvd.nist.gov/vuln/detail/CVE-2019-6264'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-7739 https://nvd.nist.gov/vuln/detail/CVE-2019-7742 https://nvd.nist.gov/vuln/detail/CVE-2019-7743 https://nvd.nist.gov/vuln/detail/CVE-2019-7744'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Joomla 2.5:
   1:
     location: ['/administrator/manifests/files/joomla.xml']
-    secure_version: '3.9.2'
+    secure_version: '3.9.3'
     regexp: ['[\t]<version>(?P<version>2\.5\.[0-9]{1,})']
-    cve: 'Joomla 2.5 is end of life. Please upgrade to 3.9.2 version.'
+    cve: 'Joomla 2.5 is end of life. Please upgrade to 3.9.3 version.'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Joomla 1.7:
   1:
     location: ['/includes/version.php']
-    secure_version: '3.9.2'
+    secure_version: '3.9.3'
     regexp: ['[\t]+public[\t|\s]\$RELEASE.*?(?P<version>1.7)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.7 is end of life. Please upgrade to 3.9.2 version.'
+    cve: 'Joomla 1.7 is end of life. Please upgrade to 3.9.3 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.6:
   1:
     location: ['/libraries/joomla/version.php']
-    secure_version: '3.9.2'
+    secure_version: '3.9.3'
     regexp: ['.*?RELEASE.*?(?P<version>1.6)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.6 is end of life. Please upgrade to 3.9.2 version.'
+    cve: 'Joomla 1.6 is end of life. Please upgrade to 3.9.3 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.5:
   1:
     location: ['/libraries/joomla/version.php']
-    secure_version: '3.9.2'
+    secure_version: '3.9.3'
     regexp: ['.*?RELEASE.*?(?P<version>1.5)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.5 is end of life. Please upgrade to 3.9.2 version.'
+    cve: 'Joomla 1.5 is end of life. Please upgrade to 3.9.3 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.0:
   1:
     location: ['/includes/version.php']
-    secure_version: '3.9.2'
+    secure_version: '3.9.3'
     regexp: ['[\t]+var.*?RELEASE.*?(?P<version>1.0)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.0 is end of life. Please upgrade to 3.9.2 version.'
+    cve: 'Joomla 1.0 is end of life. Please upgrade to 3.9.3 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
