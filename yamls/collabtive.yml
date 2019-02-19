@@ -4,6 +4,10 @@
 # CVE-2013-6872 1.2 http://secunia.com/advisories/56329/
 # CVE-2014-3246 2.0
 # CVE-2014-3247 2.0
+# https://www.netsparker.com/web-applications-advisories/ns-18-052-reflected-cross-site-scripting-in-collabtive/
+#   - CVE requested 2019-02-19 #643901
+#   - Open Dynamics aren't answering via collabtive@o-dyn.de
+#   - Forum registeration is broken (reCAPTCHA v1 is shutdown)
 Collabtive:
   1:
     location: ['/changelog.txt']
