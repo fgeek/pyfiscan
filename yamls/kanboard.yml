@@ -2,24 +2,24 @@
 # CVE-2014-3920 1.0.6
 # CVE-2017-12850 1.0.46 https://github.com/kanboard/kanboard/commit/88dd6abbf3f519897f2f6280e95c9eec9123a4ae
 # CVE-2017-12851 1.0.46 https://github.com/kanboard/kanboard/commit/b79b18efd7a1a8b591753a4eddd473f88d55b7df
-# CVE-2017-15195 1.0.47 https://kanboard.net/news/version-1.0.47 http://www.openwall.com/lists/oss-security/2017/10/04/9
-# CVE-2017-15196 1.0.47 https://kanboard.net/news/version-1.0.47 http://www.openwall.com/lists/oss-security/2017/10/04/9
-# CVE-2017-15197 1.0.47 https://kanboard.net/news/version-1.0.47 http://www.openwall.com/lists/oss-security/2017/10/04/9
-# CVE-2017-15198 1.0.47 https://kanboard.net/news/version-1.0.47 http://www.openwall.com/lists/oss-security/2017/10/04/9
-# CVE-2017-15199 1.0.47 https://kanboard.net/news/version-1.0.47 http://www.openwall.com/lists/oss-security/2017/10/04/9
-# CVE-2017-15200 1.0.47 https://kanboard.net/news/version-1.0.47
-# CVE-2017-15201 1.0.47 https://kanboard.net/news/version-1.0.47 http://www.openwall.com/lists/oss-security/2017/10/04/9
-# CVE-2017-15202 1.0.47 https://kanboard.net/news/version-1.0.47 http://www.openwall.com/lists/oss-security/2017/10/04/9
-# CVE-2017-15203 1.0.47 https://kanboard.net/news/version-1.0.47 http://www.openwall.com/lists/oss-security/2017/10/04/9
-# CVE-2017-15204 1.0.47 https://kanboard.net/news/version-1.0.47 http://www.openwall.com/lists/oss-security/2017/10/04/9
-# CVE-2017-15205 1.0.47 https://kanboard.net/news/version-1.0.47 http://www.openwall.com/lists/oss-security/2017/10/04/9
-# CVE-2017-15206 1.0.47 https://kanboard.net/news/version-1.0.47 http://www.openwall.com/lists/oss-security/2017/10/04/9
-# CVE-2017-15207 1.0.47 https://kanboard.net/news/version-1.0.47 http://www.openwall.com/lists/oss-security/2017/10/04/9
-# CVE-2017-15208 1.0.47 https://kanboard.net/news/version-1.0.47 http://www.openwall.com/lists/oss-security/2017/10/04/9
-# CVE-2017-15209 1.0.47 https://kanboard.net/news/version-1.0.47 http://www.openwall.com/lists/oss-security/2017/10/04/9
-# CVE-2017-15210 1.0.47 https://kanboard.net/news/version-1.0.47 http://www.openwall.com/lists/oss-security/2017/10/04/9
-# CVE-2017-15211 1.0.47 https://kanboard.net/news/version-1.0.47 http://www.openwall.com/lists/oss-security/2017/10/04/9
-# CVE-2017-15212 1.0.47 https://kanboard.net/news/version-1.0.47 http://www.openwall.com/lists/oss-security/2017/10/04/9
+# CVE-2017-15195 1.0.47 http://www.openwall.com/lists/oss-security/2017/10/04/9
+# CVE-2017-15196 1.0.47 http://www.openwall.com/lists/oss-security/2017/10/04/9
+# CVE-2017-15197 1.0.47 http://www.openwall.com/lists/oss-security/2017/10/04/9
+# CVE-2017-15198 1.0.47 http://www.openwall.com/lists/oss-security/2017/10/04/9
+# CVE-2017-15199 1.0.47 http://www.openwall.com/lists/oss-security/2017/10/04/9
+# CVE-2017-15200 1.0.47
+# CVE-2017-15201 1.0.47 http://www.openwall.com/lists/oss-security/2017/10/04/9
+# CVE-2017-15202 1.0.47 http://www.openwall.com/lists/oss-security/2017/10/04/9
+# CVE-2017-15203 1.0.47 http://www.openwall.com/lists/oss-security/2017/10/04/9
+# CVE-2017-15204 1.0.47 http://www.openwall.com/lists/oss-security/2017/10/04/9
+# CVE-2017-15205 1.0.47 http://www.openwall.com/lists/oss-security/2017/10/04/9
+# CVE-2017-15206 1.0.47 http://www.openwall.com/lists/oss-security/2017/10/04/9
+# CVE-2017-15207 1.0.47 http://www.openwall.com/lists/oss-security/2017/10/04/9
+# CVE-2017-15208 1.0.47 http://www.openwall.com/lists/oss-security/2017/10/04/9
+# CVE-2017-15209 1.0.47 http://www.openwall.com/lists/oss-security/2017/10/04/9
+# CVE-2017-15210 1.0.47 http://www.openwall.com/lists/oss-security/2017/10/04/9
+# CVE-2017-15211 1.0.47 http://www.openwall.com/lists/oss-security/2017/10/04/9
+# CVE-2017-15212 1.0.47 http://www.openwall.com/lists/oss-security/2017/10/04/9
 # CVE-2019-7324 1.2.8 https://github.com/kanboard/kanboard/releases/tag/v1.2.8 https://github.com/kanboard/kanboard/commit/83deec2e3621c40d15a06e2491f27571d32fe10f
 Kanboard:
   1:
