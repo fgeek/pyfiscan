@@ -84,19 +84,21 @@
 # https://drupal.org/SA-CORE-2018-003   TODO            8.5.2/8.4.7
 # https://drupal.org/SA-CORE-2018-004   CVE-2018-7602   8.5.3/8.4.8/7.59
 # https://drupal.org/SA-CORE-2018-005   CVE-2018-14773  8.5.6
+# https://drupal.org/SA-CORE-2019-001   CVE-2019-6338   8.6.6/8.5.9/7.62
+# https://drupal.org/SA-CORE-2019-002   CVE-2019-6339   8.6.6/8.5.9/7.62
 Drupal 8:
   1:
     location: ['/core/lib/Drupal.php']
-    secure_version: '8.5.6'
+    secure_version: '8.6.6'
     regexp: ["  const VERSION = '(?P<version>[0-9.]+)"]
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-14773 https://drupal.org/SA-CORE-2018-005'
+    cve: 'https://drupal.org/SA-CORE-2019-001 https://nvd.nist.gov/vuln/detail/CVE-2019-6338 ttps://drupal.org/SA-CORE-2019-002 https://nvd.nist.gov/vuln/detail/CVE-2019-6339'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Drupal 7:
   1:
     location: ['/includes/bootstrap.inc']
-    secure_version: '7.59'
+    secure_version: '7.62'
     regexp: ['define.*?VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-7602 https://drupal.org/SA-CORE-2018-004'
+    cve: 'https://drupal.org/SA-CORE-2019-001 https://nvd.nist.gov/vuln/detail/CVE-2019-6338 ttps://drupal.org/SA-CORE-2019-002 https://nvd.nist.gov/vuln/detail/CVE-2019-6339'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
