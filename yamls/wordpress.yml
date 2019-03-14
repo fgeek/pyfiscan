@@ -233,19 +233,19 @@
 # CVE-2018-20153 5.0.1 https://wordpress.org/news/2018/12/wordpress-5-0-1-security-release/
 # CVE-2019-8942 5.0.1 https://blog.ripstech.com/2019/wordpress-image-remote-code-execution/
 # CVE-2019-8943 5.0.1 https://blog.ripstech.com/2019/wordpress-image-remote-code-execution/
-# TODO 5.1.1 https://wordpress.org/news/2019/03/wordpress-5-1-1-security-and-maintenance-release/
+# CVE-2019-9787 5.1.1 https://wordpress.org/news/2019/03/wordpress-5-1-1-security-and-maintenance-release/
 WordPress:
   1:
     location: ['/wp-includes/version.php', '/wp-includes/vars.php']
     secure_version: '5.1.1'
     regexp: ['\$wp_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://wordpress.org/news/2019/03/wordpress-5-1-1-security-and-maintenance-release/'
+    cve: 'https://wordpress.org/news/2019/03/wordpress-5-1-1-security-and-maintenance-release/ https://nvd.nist.gov/vuln/detail/CVE-2019-9787'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
   2:
     location: ['/b2-include/b2vars.php']
     secure_version: '5.1.1'
     regexp: ['\$b2_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://wordpress.org/news/2019/03/wordpress-5-1-1-security-and-maintenance-release/'
+    cve: 'https://wordpress.org/news/2019/03/wordpress-5-1-1-security-and-maintenance-release/ https://nvd.nist.gov/vuln/detail/CVE-2019-9787'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
