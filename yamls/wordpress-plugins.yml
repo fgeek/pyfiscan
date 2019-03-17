@@ -2693,3 +2693,11 @@ WordPress plugin gracemedia-media-player:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-9618 https://lists.openwall.net/full-disclosure/2019/03/16/1'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin hrm:
+  1:
+    location: ['/wp-content/plugins/hrm/readme.txt']
+    secure_version: '2.2.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-9573 https://nvd.nist.gov/vuln/detail/CVE-2019-9574 https://www.openwall.com/lists/oss-security/2019/03/17/1'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
