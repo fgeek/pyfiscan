@@ -2685,3 +2685,11 @@ WordPress plugin wp-postratings:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-6726 https://lists.openwall.net/full-disclosure/2019/03/09/2'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin gracemedia-media-player:
+  1:
+    location: ['/wp-content/plugins/gracemedia-media-player/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-9618 https://lists.openwall.net/full-disclosure/2019/03/16/1'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
