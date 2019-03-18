@@ -2717,3 +2717,11 @@ WordPress plugin give:
     cve: 'https://lists.openwall.net/full-disclosure/2019/02/05/9'  # TODO: CVE requested 2019-03-18
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin kingcomposer:
+  1:
+    location: ['/wp-content/plugins/kingcomposer/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://lists.openwall.net/full-disclosure/2019/02/05/11'  # TODO: CVE requested 2019-03-18
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
