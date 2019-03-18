@@ -2751,3 +2751,11 @@ WordPress plugin woocommerce-abandoned-cart:
     cve: 'https://www.wordfence.com/blog/2019/03/xss-flaw-in-abandoned-cart-plugin-leads-to-wordpress-site-takeovers/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin accelerated-mobile-pages:
+  1:
+    location: ['/wp-content/plugins/accelerated-mobile-pages/readme.txt']
+    secure_version: '0.9.97.21'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://www.wordfence.com/blog/2018/11/xss-injection-campaign-exploits-wordpress-amp-plugin/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
