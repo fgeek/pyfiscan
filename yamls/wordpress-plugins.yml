@@ -2701,3 +2701,11 @@ WordPress plugin hrm:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-9573 https://nvd.nist.gov/vuln/detail/CVE-2019-9574 https://www.openwall.com/lists/oss-security/2019/03/17/1'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin font-organizer:
+  1:
+    location: ['/wp-content/plugins/font-organizer/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://lists.openwall.net/full-disclosure/2019/02/05/8'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
