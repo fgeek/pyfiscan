@@ -2709,3 +2709,11 @@ WordPress plugin font-organizer:
     cve: 'https://lists.openwall.net/full-disclosure/2019/02/05/8'  # TODO: CVE requested 2019-03-18 #658612
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin give:
+  1:
+    location: ['/wp-content/plugins/give/readme.txt']
+    secure_version: '2.3.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://lists.openwall.net/full-disclosure/2019/02/05/9'  # TODO: CVE requested 2019-03-18
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
