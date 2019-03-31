@@ -57,14 +57,20 @@
 # CVE-2016-9421 1.8.8
 # CVE-2017-7566
 # CVE-2017-8103 1.8.11
-# CVE-2017-8104 1.8.11  https://blog.mybb.com/2017/04/04/mybb-1-8-11-merge-system-1-8-11-release/
+# CVE-2017-8104 1.8.11 https://blog.mybb.com/2017/04/04/mybb-1-8-11-merge-system-1-8-11-release/
 # CVE-2017-16780 1.8.13 https://blog.mybb.com/2017/11/07/mybb-1-8-13-released-security-maintenance-release/
 # CVE-2017-16781 1.8.13 https://blog.mybb.com/2017/11/07/mybb-1-8-13-released-security-maintenance-release/
+# CVE-2018-6844 N/A https://websecnerd.blogspot.com/2018/02/mybb-forum-1.html https://community.mybb.com/thread-216044.html
+# CVE-2018-7305 N/A https://websecnerd.blogspot.com/2018/02/mybb-forum-1_21.html https://community.mybb.com/thread-216044.html
+# CVE-2018-10678 N/A https://www.securityfocus.com/bid/104187 https://gist.github.com/MayurUdiniya/7aaa50b878d82b6aab6ed0b3e2b080bc
+# CVE-2018-1000503 1.8.15
+# CVE-2018-15596 1.8.18 https://blog.mybb.com/2018/08/22/mybb-1-8-18-released-security-maintenance-release/ https://www.exploit-db.com/exploits/45393
+# CVE-2018-19201 1.8.20 https://blog.mybb.com/2019/02/27/mybb-1-8-20-released-security-maintenance-release/
 MyBB:
   1:
     location: ['/inc/class_core.php']
-    secure_version: '1.8.13'
+    secure_version: '1.8.20'
     regexp: ['.*?public.*?\$version.*?(?P<version>[0-9.]+)']
-    cve: 'https://blog.mybb.com/2017/11/07/mybb-1-8-13-released-security-maintenance-release/ https://nvd.nist.gov/vuln/detail/CVE-2017-16780 https://nvd.nist.gov/vuln/detail/CVE-2017-16781'
+    cve: 'https://blog.mybb.com/2019/02/27/mybb-1-8-20-released-security-maintenance-release/ https://nvd.nist.gov/vuln/detail/CVE-2018-19201'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
