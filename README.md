@@ -23,6 +23,7 @@ Windows is not currently supported.
 Detects following software
 --------------------------
 
+* Abantecart
 * ATutor
 * b2evolution
 * BigTree CMS
