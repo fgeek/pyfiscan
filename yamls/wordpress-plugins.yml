@@ -2767,14 +2767,6 @@ WordPress plugin social-warfare:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-9978 https://www.cybersecurity-help.cz/vdb/SB2019032105 https://blog.sucuri.net/2019/03/zero-day-stored-xss-in-social-warfare.html https://www.wordfence.com/blog/2019/03/unpatched-zero-day-vulnerability-in-social-warfare-plugin-exploited-in-the-wild/ https://www.pluginvulnerabilities.com/2019/03/21/full-disclosure-of-settings-change-persistent-cross-site-scripting-xss-vulnerability-in-social-warfare/ https://threatpost.com/wordpress-plugin-removed-after-zero-day-discovered/143051/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
-WordPress plugin p3:
-  1:
-    location: ['/wp-content/plugins/p3/readme.txt']
-    secure_version: '4.8.0'
-    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://www.wordfence.com/blog/2019/03/peculiar-php-present-in-popular-pipdig-power-pack-plugin/'
-    fingerprint: detect_general
-    post_processing: ['php5.fcgi']
 WordPress plugin wp-photo-album-plus:
   1:
     location: ['/wp-content/plugins/wp-photo-album-plus/readme.txt']
