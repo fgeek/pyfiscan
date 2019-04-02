@@ -2775,3 +2775,11 @@ WordPress plugin p3:
     cve: 'https://www.wordfence.com/blog/2019/03/peculiar-php-present-in-popular-pipdig-power-pack-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wp-photo-album-plus:
+  1:
+    location: ['/wp-content/plugins/wp-photo-album-plus/readme.txt']
+    secure_version: '6.1.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-3647 https://www.htbridge.com/advisory/HTB23257'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
