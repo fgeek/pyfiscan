@@ -1499,12 +1499,13 @@ WordPress plugin calendar:
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 # OVE-20160724-0007 6.3.15 https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_in_wp_google_maps_plugin_via_csrf.html
+# CVE-2019-9912 7.10.43 https://lists.openwall.net/full-disclosure/2019/02/05/13 https://security-consulting.icu/blog/2019/02/wordpress-wpgooglemaps-xss/
 WordPress plugin wp-google-maps:
   1:
     location: ['/wp-content/plugins/wp-google-maps/readme.txt']
-    secure_version: '7.10.43'
+    secure_version: '7.11.18'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-9912 https://lists.openwall.net/full-disclosure/2019/02/05/13 https://security-consulting.icu/blog/2019/02/wordpress-wpgooglemaps-xss/'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-10692'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin content-slide:
