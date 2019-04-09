@@ -42,15 +42,15 @@
 # CVE-2018-10364 4.2.22 https://github.com/bigtreecms/BigTree-CMS/issues/332
 # CVE-2018-10574 4.2.23 https://github.com/bigtreecms/BigTree-CMS/issues/335
 # CVE-2018-17341 4.3 https://github.com/bigtreecms/BigTree-CMS/issues/345
-# CVE-2018-18308 TODO https://github.com/bigtreecms/BigTree-CMS/issues/356 https://github.com/bigtreecms/BigTree-CMS/commit/ffd668a3aa7d2f540dbcdf5751f207302519df72 https://packetstormsecurity.com/files/149788/BigTree-CMS-4.2.23-Cross-Site-Scripting.html https://www.exploit-db.com/exploits/45628
+# CVE-2018-18308 4.3.4 https://github.com/bigtreecms/BigTree-CMS/issues/356 https://github.com/bigtreecms/BigTree-CMS/issues/356 https://github.com/bigtreecms/BigTree-CMS/commit/ffd668a3aa7d2f540dbcdf5751f207302519df72 https://packetstormsecurity.com/files/149788/BigTree-CMS-4.2.23-Cross-Site-Scripting.html https://www.exploit-db.com/exploits/45628
 # CVE-2018-18380 4.2.24 https://github.com/bigtreecms/BigTree-CMS/commit/c69402c4764ed9a76301c57277aefe70141b6418
 # CVE-2018-20405 N/A https://github.com/bigtreecms/BigTree-CMS/issues/354 path disclosure
 # CVE-2018-1000521 4.2.22 https://github.com/bigtreecms/BigTree-CMS/issues/328
 BigTree CMS:
   1:
     location: ['/core/version.php']
-    secure_version: '4.3'
+    secure_version: '4.3.4'
     regexp: ['.*?define.*?BIGTREE_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-17341'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-18308'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
