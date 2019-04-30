@@ -11,19 +11,20 @@
 # CVE-2015-3880 3.1.4/3.0.14 https://github.com/phpbb/phpbb/commit/1a3350619f428d9d69d196c52128727e27ef2f04 https://www.phpbb.com/community/viewtopic.php?f=14&t=2313941
 # CVE-2017-1000419 3.2.1 https://www.phpbb.com/community/viewtopic.php?f=14&p=14782136
 # CVE-2018-19274 3.2.4 https://www.phpbb.com/community/viewtopic.php?f=14&t=2492206 https://github.com/phpbb/phpbb/commit/0dfbb60bc322ccda7a6e670a5f5ec9ab2f536eac
+# CVE-2019-9826 3.2.6 https://www.openwall.com/lists/oss-security/2019/04/29/3
 phpBB3 3.1:
   1:
     location: ['/includes/constants.php']
-    secure_version: '3.2.4'
+    secure_version: '3.2.6'
     regexp: ['.*?PHPBB_VERSION.*?(?P<version>3\.1[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-19274'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-9826'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 phpBB3 3.0:
   1:
     location: ['/includes/constants.php']
-    secure_version: '3.2.4'
+    secure_version: '3.2.6'
     regexp: ['.*?PHPBB_VERSION.*?(?P<version>3\.0[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-19274'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-9826'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
