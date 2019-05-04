@@ -2794,3 +2794,11 @@ WordPress plugin contact-form-maker:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-11591 https://lists.openwall.net/full-disclosure/2019/04/05/12'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin woocommerce-checkout-manager:
+  1:
+    location: ['/wp-content/plugins/woocommerce-checkout-manager/readme.txt']
+    secure_version: '4.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://www.wordfence.com/blog/2019/05/unauthenticated-media-deletion-vulnerability-patched-in-woocommerce-checkout-manager-plugin/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
