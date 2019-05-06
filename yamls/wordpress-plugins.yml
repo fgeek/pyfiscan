@@ -2799,6 +2799,6 @@ WordPress plugin woocommerce-checkout-manager:
     location: ['/wp-content/plugins/woocommerce-checkout-manager/readme.txt']
     secure_version: '4.3'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://www.wordfence.com/blog/2019/05/unauthenticated-media-deletion-vulnerability-patched-in-woocommerce-checkout-manager-plugin/'  # CVE requested 2019-05-04 with ID 683905
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-11807 https://www.wordfence.com/blog/2019/05/unauthenticated-media-deletion-vulnerability-patched-in-woocommerce-checkout-manager-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
