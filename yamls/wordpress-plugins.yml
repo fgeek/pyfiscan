@@ -2206,12 +2206,13 @@ WordPress plugin wp-statistics:
     cve: 'https://wordpress.org/plugins/wp-statistics/#developers https://blog.dewhurstsecurity.com/2017/07/03/wp-statistics-authenticated-xss-vulnerability.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# CVE-2017-7723 1.2.5
 WordPress plugin easy-wp-smtp:
   1:
     location: ['/wp-content/plugins/easy-wp-smtp/readme.txt']
-    secure_version: '1.2.5'
+    secure_version: '1.3.9.1'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-7723'
+    cve: 'https://blog.nintechnet.com/critical-0day-vulnerability-fixed-in-wordpress-easy-wp-smtp-plugin/ https://www.wordfence.com/blog/2019/03/hackers-abusing-recently-patched-vulnerability-in-easy-wp-smtp-plugin/'  # TODO: CVE missing
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin flickr-picture-backup:
