@@ -37,11 +37,12 @@
 # TODO: http://lists.openwall.net/full-disclosure/2017/04/11/4 https://github.com/s9y/Serendipity/issues/452 asked 2017-04-23 if this received CVE or not
 # CVE-2017-1000129 2.0.4 https://blog.s9y.org/archives/269-Serendipity-2.0.4-and-2.1-beta2-released.html
 # CVE-2016-10737 TODO https://www.exploit-db.com/exploits/40650 https://board.s9y.org/viewtopic.php?f=3&t=24218
+# CVE-2019-11870 2.1.5 https://blog.s9y.org/archives/282-Serendipity-2.1.5-released.html https://www.openwall.com/lists/oss-security/2019/05/03/3 https://github.com/s9y/Serendipity/issues/598
 Serendipity:
   1:
     location: ['/serendipity_config.inc.php']
-    secure_version: '2.0.5'
+    secure_version: '2.1.5'
     regexp: ['\$serendipity.*?version.*?(?P<version>[0-9.]+)']
-    cve: 'https://github.com/s9y/Serendipity/releases/tag/2.0.5 https://nvd.nist.gov/vuln/detail/CVE-2016-9681 https://nvd.nist.gov/vuln/detail/CVE-2016-9752'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-11870 https://blog.s9y.org/archives/282-Serendipity-2.1.5-released.html https://www.openwall.com/lists/oss-security/2019/05/03/3 https://github.com/s9y/Serendipity/issues/598'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
