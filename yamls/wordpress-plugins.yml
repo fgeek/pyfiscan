@@ -2579,6 +2579,7 @@ WordPress plugin strong-testimonials:
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 # TODO 1.12.26 http://seclists.org/bugtraq/2018/Jun/20 http://www.defensecode.com/advisories/DC-2018-05-001_WordPress_Form_Maker_Plugin_Advisory.pdf
+# CVE-2019-10866 1.13.4 https://lists.openwall.net/full-disclosure/2019/05/10/2
 WordPress plugin form-maker:
   1:
     location: ['/wp-content/plugins/form-maker/readme.txt']
