@@ -2812,3 +2812,11 @@ WordPress plugin yuzo-related-post:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-11869 https://www.wordfence.com/blog/2019/04/yuzo-related-posts-zero-day-vulnerability-exploited-in-the-wild/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin custom-field-suite:
+  1:
+    location: ['/wp-content/plugins/custom-field-suite/readme.txt']
+    secure_version: '2.5.15'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-11871'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
