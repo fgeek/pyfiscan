@@ -2769,7 +2769,7 @@ WordPress plugin accelerated-mobile-pages:
     location: ['/wp-content/plugins/accelerated-mobile-pages/readme.txt']
     secure_version: '0.9.97.21'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://www.wordfence.com/blog/2018/11/xss-injection-campaign-exploits-wordpress-amp-plugin/'  # TODO: CVE requested 2019-05-12
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-20838 https://www.wordfence.com/blog/2018/11/xss-injection-campaign-exploits-wordpress-amp-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin social-warfare:
