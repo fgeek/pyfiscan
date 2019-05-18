@@ -4,22 +4,26 @@
 # http://seclists.org/bugtraq/2015/Nov/24
 # CVE-2014-9752
 # CVE-2015-1583 http://www.securityfocus.com/archive/1/534778
-# CVE-2015-8471 http://seclists.org/bugtraq/2015/Dec/10 https://bitguard.wordpress.com/2015/12/05/atutor-2-2-sqli-vulnerability/
+# CVE-2015-6521
 # CVE-2015-7711 2.2.1 http://karmainsecurity.com/KIS-2015-07 http://seclists.org/bugtraq/2015/Nov/25 https://github.com/atutor/ATutor/issues/134
 # CVE-2015-7712 2.2.1 http://karmainsecurity.com/KIS-2015-08
-# TODO 2.2.1 http://seclists.org/fulldisclosure/2016/Feb/17
+# CVE-2015-8471 http://seclists.org/bugtraq/2015/Dec/10 https://bitguard.wordpress.com/2015/12/05/atutor-2-2-sqli-vulnerability/
+# N/A 2.2.1 http://seclists.org/fulldisclosure/2016/Feb/17
 # CVE-2016-2539
 # CVE-2016-2555
 # CVE-2016-10400 2.2.2 https://www.htbridge.com/advisory/HTB23297
-# CVE-2017-6483
+# CVE-2017-6483 2.2.2 https://github.com/atutor/ATutor/commit/19b41648d0926ab67a770d8c565b7430a06af599
 # CVE-2017-1000002 2.2.2 http://www.atutor.ca/atutor/mantis/view.php?id=5681
 # CVE-2017-1000003 2.2.2 http://www.atutor.ca/atutor/mantis/view.php?id=5681
 # CVE-2017-1000004 2.2.2 http://www.atutor.ca/atutor/mantis/view.php?id=5681
+# CVE-2017-14981 2.2.4 https://github.com/atutor/ATutor/issues/135 https://github.com/atutor/ATutor/commit/9292360c8b3898d0990983269f110cef21729090
+# CVE-2019-7172 N/A https://github.com/atutor/ATutor/issues/164
+# CVE-2019-12170 affected 2.2.4 needs admin credentials
 ATutor:
   1:
     location: ['/include/lib/constants.inc.php']
-    secure_version: '2.2.2'
+    secure_version: '2.2.4'
     regexp: ['define.*?VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'http://www.atutor.ca/atutor/mantis/changelog_page.php?version_id=55 https://nvd.nist.gov/vuln/detail/CVE-2017-1000002 https://nvd.nist.gov/vuln/detail/CVE-2017-1000003 https://nvd.nist.gov/vuln/detail/CVE-2017-1000004'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-14981'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
