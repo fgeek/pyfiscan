@@ -18,7 +18,8 @@
 # CVE-2017-1000004 2.2.2 http://www.atutor.ca/atutor/mantis/view.php?id=5681
 # CVE-2017-14981 2.2.4 https://github.com/atutor/ATutor/issues/135 https://github.com/atutor/ATutor/commit/9292360c8b3898d0990983269f110cef21729090
 # CVE-2019-7172 N/A https://github.com/atutor/ATutor/issues/164
-# CVE-2019-12170 affected 2.2.4 needs admin credentials
+# CVE-2019-11446 affected 2.2.4 http://pentest.com.tr/exploits/ATutor-2-2-4-file-manager-Remote-Code-Execution-Injection-Metasploit.html https://www.exploit-db.com/exploits/46691/
+# CVE-2019-12170 affected 2.2.4 duplicate of CVE-2019-11446 https://github.com/atutor/ATutor/issues/167
 ATutor:
   1:
     location: ['/include/lib/constants.inc.php']
