@@ -21,6 +21,7 @@
 # CVE-2016-9681 2.0.5   https://github.com/s9y/Serendipity/commit/e2a665e13b7de82a71c9bbb77575d15131b722be https://smarterbitbybit.com/cve-2016-9681-serendipity-cms-xss-vulnerability-in-version-2-0-4/
 # CVE-2016-9752 2.0.5
 # CVE-2016-10082 TODO https://github.com/s9y/Serendipity/issues/433
+# CVE-2016-10752 2.0.4 https://demo.ripstech.com/projects/serendipity_2.0.3 https://blog.ripstech.com/2016/serendipity-from-file-upload-to-code-execution/
 # CVE-2017-5474 TODO https://github.com/s9y/Serendipity/commit/6285933470bab2923e4573b5d54ba9a32629b0cd
 # CVE-2017-5475 TODO https://github.com/s9y/Serendipity/issues/439 http://www.securityfocus.com/bid/95656
 # CVE-2017-5476 TODO https://github.com/s9y/Serendipity/issues/439
