@@ -2822,3 +2822,11 @@ WordPress plugin custom-field-suite:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-11871'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin convertplug:
+  1:
+    location: ['/wp-content/plugins/convertplug/readme.txt']
+    secure_version: '3.4.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://www.wordfence.com/blog/2019/05/critical-vulnerability-patched-in-popular-convert-plus-plugin/'  # TODO: CVE request needed
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
