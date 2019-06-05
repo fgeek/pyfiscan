@@ -187,11 +187,13 @@
 # PMASA-2018-8 CVE-2018-19970 4.8.4 https://github.com/phpmyadmin/phpmyadmin/commit/b293ff5f234ef493336ed8638f623a12164d359e https://www.phpmyadmin.net/news/2018/12/11/security-fix-phpmyadmin-484-released/
 # PMASA-2019-1 CVE-2019-6799 4.8.5
 # PMASA-2019-2 CVE-2019-6798 4.8.5
+# PMASA-2019-3 CVE-2019-11768 4.8.6
+# PMASA-2019-4 CVE-2019-12616 4.9.0
 phpMyAdmin:
   1:
     location: ['/libraries/Config.class.php']
-    secure_version: '4.8.5'
+    secure_version: '4.9.0'
     regexp: ['.*?PMA_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://www.phpmyadmin.net/security/PMASA-2019-1/ https://nvd.nist.gov/vuln/detail/CVE-2019-6799 https://www.phpmyadmin.net/security/PMASA-2019-2/ https://nvd.nist.gov/vuln/detail/CVE-2019-6798'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-12616 https://www.phpmyadmin.net/security/PMASA-2019-4/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
