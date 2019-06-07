@@ -155,9 +155,9 @@ MediaWiki 1.30:
 MediaWiki 1.29:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.29.3'
+    secure_version: '1.31.1'
     regexp: ['\$wgVersion.*?(?P<version>1\.29\.[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-0503 https://nvd.nist.gov/vuln/detail/CVE-2018-0504 https://nvd.nist.gov/vuln/detail/CVE-2018-0505 https://lists.wikimedia.org/pipermail/mediawiki-announce/2018-September/000223.html'
+    cve: 'MediaWiki 1.29 is end of life.'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.28:
