@@ -67,11 +67,13 @@
 # CVE-2018-15596 1.8.18 https://blog.mybb.com/2018/08/22/mybb-1-8-18-released-security-maintenance-release/ https://www.exploit-db.com/exploits/45393
 # CVE-2018-19201 1.8.20 https://blog.mybb.com/2019/02/27/mybb-1-8-20-released-security-maintenance-release/ https://mybb.com/versions/1.8.20/
 # CVE-2018-19202 1.8.20 https://blog.mybb.com/2019/02/27/mybb-1-8-20-released-security-maintenance-release/ https://mybb.com/versions/1.8.20/
+# CVE-2019-3578 1.8.20 https://blog.mybb.com/2019/02/27/mybb-1-8-20-released-security-maintenance-release/
+# CVE-2019-3579 1.8.20 https://blog.mybb.com/2019/02/27/mybb-1-8-20-released-security-maintenance-release/
 MyBB:
   1:
     location: ['/inc/class_core.php']
     secure_version: '1.8.20'
     regexp: ['.*?public.*?\$version.*?(?P<version>[0-9.]+)']
-    cve: 'https://blog.mybb.com/2019/02/27/mybb-1-8-20-released-security-maintenance-release/ https://nvd.nist.gov/vuln/detail/CVE-2018-19201 https://nvd.nist.gov/vuln/detail/CVE-2018-19202'
+    cve: 'https://blog.mybb.com/2019/02/27/mybb-1-8-20-released-security-maintenance-release/ https://nvd.nist.gov/vuln/detail/CVE-2018-19201 https://nvd.nist.gov/vuln/detail/CVE-2018-19202 https://nvd.nist.gov/vuln/detail/CVE-2019-3578 https://nvd.nist.gov/vuln/detail/CVE-2019-3579'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
