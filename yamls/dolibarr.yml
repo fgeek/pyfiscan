@@ -21,8 +21,8 @@
 # CVE-2017-7887 5.0.3 https://www.foxmole.com/advisories/foxmole-2017-02-23.txt
 # CVE-2017-7888 6.0.0 https://www.foxmole.com/advisories/foxmole-2017-02-23.txt
 # CVE-2017-9435 5.0.3 https://github.com/Dolibarr/dolibarr/commit/70636cc59ffa1ffbc0ce3dba315d7d9b837aad04
-# CVE-2017-18259 5.0.4 https://www.wizlynxgroup.com/security-research-advisories/vuln/WLX-2017-008 requested for REJECTION
-# CVE-2017-18260 5.0.4 https://www.wizlynxgroup.com/security-research-advisories/vuln/WLX-2017-010 requested for REJECTION
+# CVE-2017-18259 https://www.wizlynxgroup.com/security-research-advisories/vuln/WLX-2017-008
+# 5.0.4 https://www.wizlynxgroup.com/security-research-advisories/vuln/WLX-2017-010
 # CVE-2017-9838 5.0.4 https://www.wizlynxgroup.com/security-research-advisories/vuln/WLX-2017-008
 # CVE-2017-9839 5.0.4 https://www.wizlynxgroup.com/security-research-advisories/vuln/WLX-2017-010
 # CVE-2017-9840 5.0.4 https://www.wizlynxgroup.com/security-research-advisories/vuln/WLX-2017-009 5.0.3 is the latest version, which is affected
@@ -37,19 +37,22 @@
 # CVE-2017-17900 6.0.5
 # CVE-2017-17971 6.0.5 https://github.com/Dolibarr/dolibarr/issues/8000
 # CVE-2017-1000509 7.0 https://github.com/Dolibarr/dolibarr/issues/7727
+# CVE-2018-9019 7.0.2 https://github.com/Dolibarr/dolibarr/commit/83b762b681c6dfdceb809d26ce95f3667b614739
 # CVE-2018-10092 7.0.2 http://www.openwall.com/lists/oss-security/2018/05/21/2
 # CVE-2018-10094 7.0.2 http://www.openwall.com/lists/oss-security/2018/05/21/1
 # CVE-2018-10095 7.0.2 http://www.openwall.com/lists/oss-security/2018/05/21/3
-# CVE-2018-9019 7.0.2 https://github.com/Dolibarr/dolibarr/commit/83b762b681c6dfdceb809d26ce95f3667b614739
 # CVE-2018-13447 TODO https://github.com/Dolibarr/dolibarr/commit/36402c22eef49d60edd73a2f312f8e28fe0bd1cb
 # CVE-2018-13448 TODO https://github.com/Dolibarr/dolibarr/commit/36402c22eef49d60edd73a2f312f8e28fe0bd1cb
 # CVE-2018-13449 TODO https://github.com/Dolibarr/dolibarr/commit/36402c22eef49d60edd73a2f312f8e28fe0bd1cb
 # CVE-2018-13450 TODO https://github.com/Dolibarr/dolibarr/commit/36402c22eef49d60edd73a2f312f8e28fe0bd1cb
+# CVE-2018-16808 7.0.1 https://github.com/Dolibarr/dolibarr/issues/9449
+# CVE-2018-16809 7.0.1 https://github.com/Dolibarr/dolibarr/issues/9449
 # CVE-2018-19799 TODO http://packetstormsecurity.com/files/150623/Dolibarr-ERP-CRM-8.0.3-Cross-Site-Scripting.html https://pentest.com.tr/exploits/Dolibarr-ERP-CRM-8-0-3-Cross-Site-Scripting.html https://www.exploit-db.com/exploits/45945/
 # CVE-2018-19992 TODO https://github.com/Dolibarr/dolibarr/commit/0f06e39d23636bd1e4039ac61a743c79725c798b
 # CVE-2018-19993 TODO https://github.com/Dolibarr/dolibarr/commit/fc3fcc5455d9a610b85723e89e8be43a41ad1378
 # CVE-2018-19994 TODO https://github.com/Dolibarr/dolibarr/commit/850b939ffd2c7a4443649331b923d5e0da2d6446
 # CVE-2018-19995 TODO https://github.com/Dolibarr/dolibarr/commit/4b8be6ed64763327018ac1c076f81ddffa87855e https://github.com/Dolibarr/dolibarr/commit/bacd5110fbdc81a35030fdc322775fa15ea85924
+# CVE-2018-19998 TODO
 Dolibarr:
   1:
     location: ['/htdocs/filefunc.inc.php']
