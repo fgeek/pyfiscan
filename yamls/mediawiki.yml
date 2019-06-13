@@ -136,11 +136,19 @@
 # CVE-2019-12472 1.32.2/1.31.2/1.30.2/1.27.6 https://lists.wikimedia.org/pipermail/wikitech-l/2019-June/092152.html
 # CVE-2019-12473 1.32.2/1.31.2/1.30.2/1.27.6 https://lists.wikimedia.org/pipermail/wikitech-l/2019-June/092152.html
 # CVE-2019-12474 1.32.2/1.31.2/1.30.2/1.27.6 https://lists.wikimedia.org/pipermail/wikitech-l/2019-June/092152.html
+MediaWiki 1.32.2:
+  1:
+    location: ['/includes/DefaultSettings.php']
+    secure_version: '1.32.2'
+    regexp: ['\$wgVersion.*?(?P<version>1\.32\.[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-11358 https://nvd.nist.gov/vuln/detail/CVE-2019-12465 https://nvd.nist.gov/vuln/detail/CVE-2019-12466 https://nvd.nist.gov/vuln/detail/CVE-2019-12467 https://nvd.nist.gov/vuln/detail/CVE-2019-12468 https://nvd.nist.gov/vuln/detail/CVE-2019-12469 https://nvd.nist.gov/vuln/detail/CVE-2019-12470 https://nvd.nist.gov/vuln/detail/CVE-2019-12471 https://nvd.nist.gov/vuln/detail/CVE-2019-12472 https://nvd.nist.gov/vuln/detail/CVE-2019-12473 https://nvd.nist.gov/vuln/detail/CVE-2019-12474 https://lists.wikimedia.org/pipermail/wikitech-l/2019-June/092152.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
 MediaWiki 1.31:
   1:
     location: ['/includes/DefaultSettings.php']
     secure_version: '1.31.1'
-    regexp: ['\$wgVersion.*?(?P<version>1\.29\.[0-9.]{1,})']
+    regexp: ['\$wgVersion.*?(?P<version>1\.31\.[0-9.]{1,})']
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-11358 https://nvd.nist.gov/vuln/detail/CVE-2019-12465 https://nvd.nist.gov/vuln/detail/CVE-2019-12466 https://nvd.nist.gov/vuln/detail/CVE-2019-12467 https://nvd.nist.gov/vuln/detail/CVE-2019-12468 https://nvd.nist.gov/vuln/detail/CVE-2019-12469 https://nvd.nist.gov/vuln/detail/CVE-2019-12470 https://nvd.nist.gov/vuln/detail/CVE-2019-12471 https://nvd.nist.gov/vuln/detail/CVE-2019-12472 https://nvd.nist.gov/vuln/detail/CVE-2019-12473 https://nvd.nist.gov/vuln/detail/CVE-2019-12474 https://lists.wikimedia.org/pipermail/wikitech-l/2019-June/092152.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
@@ -148,7 +156,7 @@ MediaWiki 1.30:
   1:
     location: ['/includes/DefaultSettings.php']
     secure_version: '1.31.1'
-    regexp: ['\$wgVersion.*?(?P<version>1\.29\.[0-9.]{1,})']
+    regexp: ['\$wgVersion.*?(?P<version>1\.30\.[0-9.]{1,})']
     cve: 'MediaWiki 1.30 is end of life.'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
