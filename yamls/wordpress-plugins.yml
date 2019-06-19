@@ -1247,7 +1247,7 @@ WordPress plugin formbuilder:
 # CVE-2012-0896
 # CVE-2012-3434 3.2
 # CVE-2015-5533 3.4.1
-# N/A 3.2.6 https://lists.openwall.net/full-disclosure/2013/03/05/2  TODO: CVE requested 2019-06-08 with ID 703799
+# CVE-2013-7472 3.2.6 https://lists.openwall.net/full-disclosure/2013/03/05/2
 WordPress plugin count-per-day:
   1:
     location: ['/wp-content/plugins/count-per-day/readme.txt']
