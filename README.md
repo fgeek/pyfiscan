@@ -87,6 +87,7 @@ Detects following software
 * SaurusCMS
 * Serendipity
 * Shaarli
+* Shopware
 * SMF
 * Spina CMS
 * SPIP
