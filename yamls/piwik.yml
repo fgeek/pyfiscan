@@ -1,25 +1,27 @@
-# URL: http://piwik.org/
+# URL: https://matomo.org/ https://en.wikipedia.org/wiki/Matomo_(software) https://github.com/matomo-org/matomo
+# Formerly Piwik
 # CVE-2011-0004
 # CVE-2011-0398
 # CVE-2011-0399
 # CVE-2011-0400
 # CVE-2011-0401
-# CVE-2011-4941         http://piwik.org/blog/2011/06/piwik-1-5-security-advisory/
+# CVE-2011-4941 1.5     https://matomo.org/blog/2011/06/piwik-1-5-security-advisory/ (http://piwik.org/blog/2011/06/piwik-1-5-security-advisory/)
 # CVE-2012-4541
-# CVE-2012-XXXX 1.7     http://piwik.org/blog/2012/02/7775/
-# CVE-2013-0193 1.10    https://piwik.org/changelog/piwik-1-10/
-# CVE-2013-0194 1.10    https://piwik.org/changelog/piwik-1-10/
-# CVE-2013-0195 1.10    https://piwik.org/changelog/piwik-1-10/
-# CVE-2013-1844 1.11    http://piwik.org/blog/2013/03/piwik-1-11/
-# CVE-2013-2633 1.11    http://piwik.org/blog/2013/03/piwik-1-11/
-# CVE-2015-7815 2.15.0  https://piwik.org/changelog/piwik-2-15-0 http://karmainsecurity.com/KIS-2015-09
-# CVE-2015-7816 2.15.0  https://piwik.org/changelog/piwik-2-15-0 http://karmainsecurity.com/KIS-2015-10
-# TODO: pending 2.16.1  https://piwik.org/changelog/piwik-2-16-1/ http://karmainsecurity.com/KIS-2016-13
+# CVE-2012-XXXX 1.7     https://matomo.org/changelog/7775-2/ (http://piwik.org/blog/2012/02/7775/)
+# CVE-2013-0193 1.10    https://matomo.org/changelog/piwik-1-10/ (https://piwik.org/changelog/piwik-1-10/)
+# CVE-2013-0194 1.10    https://matomo.org/changelog/piwik-1-10/ (https://piwik.org/changelog/piwik-1-10/)
+# CVE-2013-0195 1.10    https://matomo.org/changelog/piwik-1-10/ (https://piwik.org/changelog/piwik-1-10/)
+# CVE-2013-1844 1.11    https://matomo.org/changelog/piwik-1-11/ (http://piwik.org/blog/2013/03/piwik-1-11/)
+# CVE-2013-2633 1.11    https://matomo.org/changelog/piwik-1-11/ (http://piwik.org/blog/2013/03/piwik-1-11/)
+# CVE-2015-7815 2.15.0  https://matomo.org/changelog/piwik-2-15-0/ http://karmainsecurity.com/KIS-2015-09
+# CVE-2015-7816 2.15.0  https://matomo.org/changelog/piwik-2-15-0/ http://karmainsecurity.com/KIS-2015-10
+# CVE-2019-12215 https://github.com/matomo-org/matomo/issues/14464 unimportant path disclosure issue
+# TODO: pending 2.16.1  https://matomo.org/changelog/piwik-2-16-1/ http://karmainsecurity.com/KIS-2016-13
 Piwik:
   1:
     location: ['/core/Version.php']
     secure_version: '2.16.1'
     regexp: ["    const VERSION = '(?P<version>[0-9.]+)"]
-    cve: 'https://piwik.org/changelog/piwik-2-16-1/ http://karmainsecurity.com/KIS-2016-13'
+    cve: 'https://matomo.org/changelog/piwik-2-16-1/ http://karmainsecurity.com/KIS-2016-13'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
