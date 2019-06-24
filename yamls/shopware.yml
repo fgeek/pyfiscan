@@ -4,6 +4,6 @@ Shopware:
     location: ['/engine/Shopware/Application.php']
     secure_version: '5.5.8'
     regexp: ['    const VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://www.shopware.com/en/changelog/#5-5-8 https://www.netsparker.com/web-applications-advisories/ns-19-004-cross-site-scripting-in-shopware/'  # TODO: CVE requested #712655 2019-06-23
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-12935 https://www.shopware.com/en/changelog/#5-5-8 https://www.netsparker.com/web-applications-advisories/ns-19-004-cross-site-scripting-in-shopware/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
