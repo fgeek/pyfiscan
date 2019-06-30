@@ -2843,3 +2843,11 @@ WordPress plugin wp-database-backup:
     cve: 'https://www.wordfence.com/blog/2019/05/os-command-injection-vulnerability-patched-in-wp-database-backup-plugin/'  # TODO: CVE request needed
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin slick-popup:
+  1:
+    location: ['/wp-content/plugins/slick-popup/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://www.wordfence.com/blog/2019/05/privilege-escalation-flaw-present-in-slick-popup-plugin/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
