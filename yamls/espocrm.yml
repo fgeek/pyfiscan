@@ -3,11 +3,33 @@
 # CVE-2014-7985 2.6.0 https://www.htbridge.com/advisory/HTB23238
 # CVE-2014-7986 2.6.0 https://www.htbridge.com/advisory/HTB23238
 # CVE-2014-7987 2.6.0 https://www.htbridge.com/advisory/HTB23238
+# CVE-2018-17301 5.4.3 https://github.com/espocrm/espocrm/issues/1038
+# CVE-2018-17302 5.4.3 https://github.com/espocrm/espocrm/issues/1039
+# CVE-2019-13643 5.6.4 https://github.com/espocrm/espocrm/issues/1349
+# CVE-2019-14329 5.6.6 https://github.com/espocrm/espocrm/commit/4ab7d19776011288b875abd3eef1e1f6f75289e2 https://github.com/espocrm/espocrm/compare/5.6.5...5.6.6
+# CVE-2019-14330 5.6.6 https://github.com/espocrm/espocrm/commit/4ab7d19776011288b875abd3eef1e1f6f75289e2 https://github.com/espocrm/espocrm/compare/5.6.5...5.6.6
+# CVE-2019-14331 5.6.6 https://github.com/espocrm/espocrm/commit/4ab7d19776011288b875abd3eef1e1f6f75289e2 https://github.com/espocrm/espocrm/compare/5.6.5...5.6.6
+# CVE-2019-14349 5.6.5 https://github.com/espocrm/espocrm/issues/1358
+# CVE-2019-14350 5.6.5 https://github.com/espocrm/espocrm/issues/1356
+# CVE-2019-14351 5.6.5 https://github.com/espocrm/espocrm/issues/1357
+# CVE-2019-14546 5.6.9 https://github.com/espocrm/espocrm/issues/1369
+# CVE-2019-14547 5.6.9 https://github.com/espocrm/espocrm/issues/1369
+# CVE-2019-14548 5.6.9 https://github.com/espocrm/espocrm/issues/1369 https://gauravnarwani.com/publications/cve-2019-14548/ https://github.com/espocrm/espocrm/commit/ffd3f762ce4a8de3b8962f33513e073c55d943b5
+# CVE-2019-14549 5.6.9 https://github.com/espocrm/espocrm/issues/1369 https://gauravnarwani.com/publications/cve-2019-14549/ https://github.com/espocrm/espocrm/commit/ffd3f762ce4a8de3b8962f33513e073c55d943b5
+# CVE-2019-14550 5.6.9 https://github.com/espocrm/espocrm/issues/1369 https://gauravnarwani.com/publications/cve-2019-14550/ https://github.com/espocrm/espocrm/commit/ffd3f762ce4a8de3b8962f33513e073c55d943b5
 EspoCRM:
   1:
     location: ['/application/Espo/Core/defaults/config.php']
-    secure_version: '2.6.0'
+    secure_version: '5.6.9'
+    regexp: ["    'version.*?(?P<version>[0-9.]+)"]
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-14546 https://nvd.nist.gov/vuln/detail/CVE-2019-14547 https://nvd.nist.gov/vuln/detail/CVE-2019-14548 https://nvd.nist.gov/vuln/detail/CVE-2019-14549 https://nvd.nist.gov/vuln/detail/CVE-2019-14550'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+EspoCRM:
+  1:
+    location: ['/application/Espo/Core/defaults/config.php']
+    secure_version: '5.6.9'
     regexp: ["\t'version.*?(?P<version>[0-9.]+)"]
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2014-7985 https://nvd.nist.gov/vuln/detail/CVE-2014-7986 https://nvd.nist.gov/vuln/detail/CVE-2014-7987 https://www.htbridge.com/advisory/HTB23238'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-14546 https://nvd.nist.gov/vuln/detail/CVE-2019-14547 https://nvd.nist.gov/vuln/detail/CVE-2019-14548 https://nvd.nist.gov/vuln/detail/CVE-2019-14549 https://nvd.nist.gov/vuln/detail/CVE-2019-14550'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
