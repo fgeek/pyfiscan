@@ -1056,7 +1056,7 @@ WordPress plugin wp-live-chat-support:
     location: ['/wp-content/plugins/wp-live-chat-support/readme.txt']
     secure_version: '8.0.27'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://arstechnica.com/information-technology/2019/05/hackers-actively-exploit-wordpress-plugin-flaw-to-send-visitors-to-bad-sites/ https://www.zscaler.com/blogs/research/malicious-javascript-injected-wordpress-sites-using-latest-plugin-vulnerability'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-14950 https://arstechnica.com/information-technology/2019/05/hackers-actively-exploit-wordpress-plugin-flaw-to-send-visitors-to-bad-sites/ https://www.zscaler.com/blogs/research/malicious-javascript-injected-wordpress-sites-using-latest-plugin-vulnerability'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 # OVE-20160721-0003 1.1.48 https://sumofpwn.nl/advisory/2016/cross_site_scripting_in_contact_form_to_email_wordpress_plugin.html
