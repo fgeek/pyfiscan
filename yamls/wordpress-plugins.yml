@@ -2836,6 +2836,7 @@ WordPress plugin convertplug:
     cve: 'https://www.wordfence.com/blog/2019/05/critical-vulnerability-patched-in-popular-convert-plus-plugin/'  # TODO: CVE request needed
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# CVE-2019-14949 5.1.2
 WordPress plugin wp-database-backup:
   1:
     location: ['/wp-content/plugins/wp-database-backup/readme.txt']
