@@ -2864,3 +2864,11 @@ WordPress plugin wp-open-graph:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-5960'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress woocommerce-product-addon:
+  1:
+    location: ['/wp-content/plugins/woocommerce-product-addon/readme.txt']
+    secure_version: '18.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-14948'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
