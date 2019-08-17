@@ -57,12 +57,13 @@ class UnwantedStrings(unittest.TestCase):
                     filepath = os.path.join(root, f)
                     if filepath.endswith('.pyc'):
                         continue
+                    if filepath.endswith('.swp'):
+                        continue
                     file = open(filepath, 'r')
                     for line in file:
                         if re.search('osvdb', line):
                             self.fail('OSVDB string found from: %s' % filepath)
 
-    
 
 class FilePaths(unittest.TestCase):
     def test_filepaths(self):
@@ -89,7 +90,7 @@ class FileContents(unittest.TestCase):
     def test_detect_withoutnewlines_utf8(self):
         """Detect_general with UTF-8 encoded file."""
         res = detect_withoutnewlines('testfiles/UTF-8', '<!ENTITY bz-ver.*?(?P<version>5\.[0-9]+)')
-        
+
 if __name__ == '__main__':
 
     if sys.version_info[0] < 3:
