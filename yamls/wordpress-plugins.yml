@@ -552,6 +552,7 @@ WordPress plugin cta:
     post_processing: ['php5.fcgi']
 # CVE-2015-8354 1.3.29 https://www.htbridge.com/advisory/HTB23277
 # OVE-20160712-0011 1.3.65 https://sumofpwn.nl/advisory/2016/ultimate_member_local_file_inclusion_vulnerability.html
+# CVE-2018-20965 2.0.4
 # CVE-2019-14946 2.0.52 https://wpvulndb.com/vulnerabilities/9449
 # CVE-2019-14947 2.0.52 https://wpvulndb.com/vulnerabilities/9449
 WordPress plugin ultimate-member:
