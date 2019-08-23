@@ -23,11 +23,15 @@
 # CVE-2018-7302 TODO https://websecnerd.blogspot.fi/2018/01/tiki-wiki-cms-groupware-17.html
 # CVE-2018-7303 TODO https://websecnerd.blogspot.fi/2018/01/tiki-wiki-cms-groupware-17.html
 # CVE-2018-7304 TODO https://websecnerd.blogspot.fi/2018/01/tiki-wiki-cms-groupware-17.html
+# CVE-2018-14849 18.2/15.7/12.14 https://sourceforge.net/p/tikiwiki/code/66809
+# CVE-2018-14850 18.2/15.7/12.14 https://sourceforge.net/p/tikiwiki/code/66990
+# CVE-2018-20719 17.2
+# CVE-2019-15314 TODO not reported to upstream?
 TikiWiki:
   1:
     location: ['/lib/setup/twversion.class.php']
-    secure_version: '18.1'
+    secure_version: '18.2'
     regexp: ['.*?\$this->version.*?(?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-7290'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-14849 https://nvd.nist.gov/vuln/detail/CVE-2018-14850'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
