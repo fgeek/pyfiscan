@@ -3,7 +3,6 @@ python:
   - '3.5'
 install: 'pip install -r requirements.lst'
 before_install: "sudo apt-get install -y python3-yaml python3-docopt"
-before_script: "sudo rm -rf /dev/shm && sudo ln -s /run/shm /dev/shm"
 script: python3 tests.py
 notifications:
   email:
