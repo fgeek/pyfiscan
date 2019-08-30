@@ -77,6 +77,7 @@ Detects following software
 * PBBoard
 * phpBB3
 * PhpGedView
+* phpLiteAdmin
 * phpMyAdmin
 * Piwigo
 * Piwik
