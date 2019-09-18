@@ -2881,11 +2881,14 @@ WordPress plugin woocommerce-jetpack:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-20966'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# CVE-2016-10977 4.5.0 https://www.openwall.com/lists/oss-security/2016/05/10/1'
+# CVE-2016-10926 4.5.9
+# CVE-2016-10927 4.5.11
 WordPress plugin nelio-ab-testing:
   1:
     location: ['/wp-content/plugins/nelio-ab-testing/readme.txt']
-    secure_version: '4.5.0'
+    secure_version: '4.6.4'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-10977 https://www.openwall.com/lists/oss-security/2016/05/10/1'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-18547'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
