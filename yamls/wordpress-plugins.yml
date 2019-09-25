@@ -2892,3 +2892,11 @@ WordPress plugin nelio-ab-testing:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-18547'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin rich-reviews:
+  1:
+    location: ['/wp-content/plugins/rich-reviews/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://www.wordfence.com/blog/2019/09/rich-reviews-plugin-vulnerability-exploited-in-the-wild/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
