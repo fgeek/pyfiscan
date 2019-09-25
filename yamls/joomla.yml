@@ -187,51 +187,52 @@
 # CVE-2019-12765 3.9.7 https://developer.joomla.org/security-centre/783-20190601-core-csv-injection-in-com-actionlogs
 # CVE-2019-12766 3.9.7 https://developer.joomla.org/security-centre/784-20190602-core-xss-in-subform-field
 # CVE-2019-15028 3.9.11 https://developer.joomla.org/security-centre/789-20190801-core-hardening-com-contact-contact-form
+# CVE-2019-16725 3.9.12 https://developer.joomla.org/security-centre/791-20190901-core-xss-in-logo-parameter-of-default-templates.html
 Joomla 3:
   1:
     location: ['/administrator/manifests/files/joomla.xml']
-    secure_version: '3.9.11'
+    secure_version: '3.9.12'
     regexp: ['[\t]<version>(?P<version>3\.[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-15028 https://developer.joomla.org/security-centre/789-20190801-core-hardening-com-contact-contact-form'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-16725 https://developer.joomla.org/security-centre/791-20190901-core-xss-in-logo-parameter-of-default-templates.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Joomla 2.5:
   1:
     location: ['/administrator/manifests/files/joomla.xml']
-    secure_version: '3.9.11'
+    secure_version: '3.9.12'
     regexp: ['[\t]<version>(?P<version>2\.5\.[0-9]{1,})']
-    cve: 'Joomla 2.5 is end of life. Please upgrade to 3.9.11 version.'
+    cve: 'Joomla 2.5 is end of life. Please upgrade to 3.9.12 version.'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Joomla 1.7:
   1:
     location: ['/includes/version.php']
-    secure_version: '3.9.11'
+    secure_version: '3.9.12'
     regexp: ['[\t]+public[\t|\s]\$RELEASE.*?(?P<version>1.7)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.7 is end of life. Please upgrade to 3.9.11 version.'
+    cve: 'Joomla 1.7 is end of life. Please upgrade to 3.9.12 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.6:
   1:
     location: ['/libraries/joomla/version.php']
-    secure_version: '3.9.11'
+    secure_version: '3.9.12'
     regexp: ['.*?RELEASE.*?(?P<version>1.6)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.6 is end of life. Please upgrade to 3.9.11 version.'
+    cve: 'Joomla 1.6 is end of life. Please upgrade to 3.9.12 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.5:
   1:
     location: ['/libraries/joomla/version.php']
-    secure_version: '3.9.11'
+    secure_version: '3.9.12'
     regexp: ['.*?RELEASE.*?(?P<version>1.5)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.5 is end of life. Please upgrade to 3.9.11 version.'
+    cve: 'Joomla 1.5 is end of life. Please upgrade to 3.9.12 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.0:
   1:
     location: ['/includes/version.php']
-    secure_version: '3.9.11'
+    secure_version: '3.9.12'
     regexp: ['[\t]+var.*?RELEASE.*?(?P<version>1.0)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.0 is end of life. Please upgrade to 3.9.11 version.'
+    cve: 'Joomla 1.0 is end of life. Please upgrade to 3.9.12 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
