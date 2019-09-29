@@ -136,6 +136,7 @@
 # CVE-2019-12472 1.32.2/1.31.2/1.30.2/1.27.6 https://lists.wikimedia.org/pipermail/wikitech-l/2019-June/092152.html
 # CVE-2019-12473 1.32.2/1.31.2/1.30.2/1.27.6 https://lists.wikimedia.org/pipermail/wikitech-l/2019-June/092152.html
 # CVE-2019-12474 1.32.2/1.31.2/1.30.2/1.27.6 https://lists.wikimedia.org/pipermail/wikitech-l/2019-June/092152.html
+# CVE-2019-16738 TODO https://phabricator.wikimedia.org/T230402
 MediaWiki 1.32.2:
   1:
     location: ['/includes/DefaultSettings.php']
