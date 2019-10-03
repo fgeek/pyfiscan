@@ -48,7 +48,7 @@ def send_email(user, vulnerabilities):
         ctx = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
         ctx.verify_mode = ssl.CERT_REQUIRED
         ctx.check_hostname = True
-        context.load_default_certs()
+        ctx.load_default_certs()
         s = smtplib.SMTP_SSL(host=smtp_server, port=smtp_port, context=ctx)
         username = getpass.getuser()
         password = getpass.getpass()
