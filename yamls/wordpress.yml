@@ -242,18 +242,19 @@
 # CVE-2019-16221 5.2.3
 # CVE-2019-16222 5.2.3 https://core.trac.wordpress.org/changeset/45997 https://github.com/WordPress/WordPress/commit/30ac67579559fe42251b5a9f887211bf61a8ed68
 # CVE-2019-16223 5.2.3
+# TODO 5.2.4 https://wordpress.org/news/2019/10/wordpress-5-2-4-security-release/
 WordPress:
   1:
     location: ['/wp-includes/version.php', '/wp-includes/vars.php']
-    secure_version: '5.2.3'
+    secure_version: '5.2.4'
     regexp: ['\$wp_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://wordpress.org/news/2019/09/wordpress-5-2-3-security-and-maintenance-release/ https://nvd.nist.gov/vuln/detail/CVE-2019-16217 https://nvd.nist.gov/vuln/detail/CVE-2019-16218 https://nvd.nist.gov/vuln/detail/CVE-2019-16219 https://nvd.nist.gov/vuln/detail/CVE-2019-16220 https://nvd.nist.gov/vuln/detail/CVE-2019-16221 https://nvd.nist.gov/vuln/detail/CVE-2019-16222 https://nvd.nist.gov/vuln/detail/CVE-2019-16223 https://www.wordfence.com/blog/2019/09/the-wordpress-5-2-3-security-release-unpacked/'
+    cve: 'https://wordpress.org/news/2019/10/wordpress-5-2-4-security-release/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
   2:
     location: ['/b2-include/b2vars.php']
-    secure_version: '5.2.3'
+    secure_version: '5.2.4'
     regexp: ['\$b2_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://wordpress.org/news/2019/09/wordpress-5-2-3-security-and-maintenance-release/ https://nvd.nist.gov/vuln/detail/CVE-2019-16217 https://nvd.nist.gov/vuln/detail/CVE-2019-16218 https://nvd.nist.gov/vuln/detail/CVE-2019-16219 https://nvd.nist.gov/vuln/detail/CVE-2019-16220 https://nvd.nist.gov/vuln/detail/CVE-2019-16221 https://nvd.nist.gov/vuln/detail/CVE-2019-16222 https://nvd.nist.gov/vuln/detail/CVE-2019-16223 https://www.wordfence.com/blog/2019/09/the-wordpress-5-2-3-security-release-unpacked/'
+    cve: 'https://wordpress.org/news/2019/10/wordpress-5-2-4-security-release/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
