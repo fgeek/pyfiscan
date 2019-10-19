@@ -12,16 +12,16 @@
 # CVE-2012-2641 1.4.3   SA49787
 # CVE-2012-4519 1.4.3.3 SA50799
 # CVE-2012-XXXX 1.4.3.4 http://www.waraxe.us/content-96.html http://openwall.com/lists/oss-security/2013/07/10/19 2015-07-14 sent new email to get CVE assigned
-# CVE-2013-7241 1.4.5.4 http://www.zenphoto.org/news/zenphoto-1.4.5.4
-# CVE-2013-7242 1.4.5.4 http://www.zenphoto.org/news/zenphoto-1.4.5.4
-# CVE-2014-XXXX 1.4.5.9 http://www.zenphoto.org/news/zenphoto-1.4.5.9
-# CVE-2015-2948 1.4.8   http://www.zenphoto.org/news/zenphoto-1.4.8
-# CVE-2015-5591 1.4.9   http://www.zenphoto.org/news/zenphoto-1.4.9
-# CVE-2015-5592 1.4.9   http://www.zenphoto.org/news/zenphoto-1.4.9
-# CVE-2015-5593 1.4.9   http://www.zenphoto.org/news/zenphoto-1.4.9
-# CVE-2015-5594 1.4.9   http://www.zenphoto.org/news/zenphoto-1.4.9
-# CVE-2015-5595 1.4.9   http://www.zenphoto.org/news/zenphoto-1.4.9
-# CVE-2016-XXXX 1.4.12  http://www.zenphoto.org/news/zenphoto-1.4.12 https://blog.curesec.com/article/blog/Zenphoto-1411-RFI-156.html
+# CVE-2013-7241 1.4.5.4 https://www.zenphoto.org/news/zenphoto-1.4.5.4
+# CVE-2013-7242 1.4.5.4 https://www.zenphoto.org/news/zenphoto-1.4.5.4
+# CVE-2014-XXXX 1.4.5.9 https://www.zenphoto.org/news/zenphoto-1.4.5.9
+# CVE-2015-2948 1.4.8   https://www.zenphoto.org/news/zenphoto-1.4.8
+# CVE-2015-5591 1.4.9   https://www.zenphoto.org/news/zenphoto-1.4.9
+# CVE-2015-5592 1.4.9   https://www.zenphoto.org/news/zenphoto-1.4.9
+# CVE-2015-5593 1.4.9   https://www.zenphoto.org/news/zenphoto-1.4.9
+# CVE-2015-5594 1.4.9   https://www.zenphoto.org/news/zenphoto-1.4.9
+# CVE-2015-5595 1.4.9   https://www.zenphoto.org/news/zenphoto-1.4.9
+# CVE-2016-XXXX 1.4.12  https://www.zenphoto.org/news/zenphoto-1.4.12 https://blog.curesec.com/article/blog/Zenphoto-1411-RFI-156.html
 # CVE-2018-20140 1.5.1  https://www.netsparker.com/web-applications-advisories/ns-18-043-cross-site-scripting-in-zenphoto/
 Zenphoto:
   1:
