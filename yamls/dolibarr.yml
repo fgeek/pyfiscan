@@ -53,6 +53,19 @@
 # CVE-2018-19994 TODO https://github.com/Dolibarr/dolibarr/commit/850b939ffd2c7a4443649331b923d5e0da2d6446
 # CVE-2018-19995 TODO https://github.com/Dolibarr/dolibarr/commit/4b8be6ed64763327018ac1c076f81ddffa87855e https://github.com/Dolibarr/dolibarr/commit/bacd5110fbdc81a35030fdc322775fa15ea85924
 # CVE-2018-19998 TODO
+# CVE-2019-1010054 TODO
+# CVE-2019-11199 TODO
+# CVE-2019-11200 TODO
+# CVE-2019-11201 TODO
+# CVE-2019-16197 TODO
+# CVE-2019-16685 TODO
+# CVE-2019-16686 TODO
+# CVE-2019-16687 TODO
+# CVE-2019-16688 TODO
+# CVE-2019-17576 TODO
+# CVE-2019-17577 TODO
+# CVE-2019-17578 TODO https://mycvee.blogspot.com/p/cve-2019-17578.html affects 10.0.2
+# CVE-2019-17223 TODO https://medium.com/@k43p/cve-2019-17223-stored-html-injection-dolibarr-crm-erp-ad1e064d0ca5 affects 10.0.2
 Dolibarr:
   1:
     location: ['/htdocs/filefunc.inc.php']
