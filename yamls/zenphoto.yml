@@ -22,11 +22,12 @@
 # CVE-2015-5594 1.4.9   http://www.zenphoto.org/news/zenphoto-1.4.9
 # CVE-2015-5595 1.4.9   http://www.zenphoto.org/news/zenphoto-1.4.9
 # CVE-2016-XXXX 1.4.12  http://www.zenphoto.org/news/zenphoto-1.4.12 https://blog.curesec.com/article/blog/Zenphoto-1411-RFI-156.html
+# CVE-2018-20140 1.5.1  https://www.netsparker.com/web-applications-advisories/ns-18-043-cross-site-scripting-in-zenphoto/
 Zenphoto:
   1:
     location: ['/zp-core/version.php']
-    secure_version: '1.4.12'
+    secure_version: '1.5.1'
     regexp: ["define.*?ZENPHOTO_VERSION.*?(?P<version>[0-9.]+)"]
-    cve: 'http://www.zenphoto.org/news/zenphoto-1.4.12 https://blog.curesec.com/article/blog/Zenphoto-1411-RFI-156.html'
+    cve: 'https://www.zenphoto.org/news/zenphoto-1.5.1 https://www.netsparker.com/web-applications-advisories/ns-18-043-cross-site-scripting-in-zenphoto/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
