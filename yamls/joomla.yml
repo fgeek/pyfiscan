@@ -186,6 +186,7 @@
 # CVE-2019-12764 3.9.7 https://developer.joomla.org/security-centre/785-20190603-core-acl-hardening-of-com-joomlaupdate
 # CVE-2019-12765 3.9.7 https://developer.joomla.org/security-centre/783-20190601-core-csv-injection-in-com-actionlogs
 # CVE-2019-12766 3.9.7 https://developer.joomla.org/security-centre/784-20190602-core-xss-in-subform-field
+# CVE-2019-14654 3.9.9 https://developer.joomla.org/security-centre/787-20190701-core-filter-attribute-in-subform-fields-allows-remote-code-execution.html
 # CVE-2019-15028 3.9.11 https://developer.joomla.org/security-centre/789-20190801-core-hardening-com-contact-contact-form
 # CVE-2019-16725 3.9.12 https://developer.joomla.org/security-centre/791-20190901-core-xss-in-logo-parameter-of-default-templates.html
 Joomla 3:
