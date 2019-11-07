@@ -17,6 +17,7 @@ try:
     import smtplib
     import sqlite3
     import traceback
+    import ssl
     from email.mime.text import MIMEText
     from jinja2 import Environment, FileSystemLoader
 except ImportError, e:
@@ -44,7 +45,11 @@ def send_email(user, vulnerabilities):
     msg = MIMEText(template.render(vulnerabilities=vulnerabilities), _charset='utf-8')
     try:
         receivers = user.split(',')
-        s = smtplib.SMTP_SSL(smtp_server, smtp_port)  # SMTP_SSL only works with Python 2.7
+        ctx = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
+        ctx.verify_mode = ssl.CERT_REQUIRED
+        ctx.check_hostname = True
+        ctx.load_default_certs()
+        s = smtplib.SMTP_SSL(host=smtp_server, port=smtp_port, context=ctx)
         username = getpass.getuser()
         password = getpass.getpass()
         s.login(username, password)
