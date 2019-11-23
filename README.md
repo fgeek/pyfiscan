@@ -138,16 +138,11 @@ Detects following end-of-life software:
 Installation
 ------------
 
-    apt install python3 python3-pip python3-yaml python3-docopt git
+    sudo apt install python3 python3-pip git virtualenv
     git clone https://github.com/fgeek/pyfiscan.git && cd pyfiscan
+    virtualenv -p python3 venv
+    source ./venv/bin/activate
     pip3 install -r requirements.lst
-    
-Although it's suggested that you use virtualenv to prevent ruining your system-wide packages.
-
-    sudo apt install python3 python3-pip git
-    git clone https://github.com/fgeek/pyfiscan.git && cd pyfiscan
-    sudo -H pip3 install virtualenv && virtualenv venv && source pyfiscan_env/bin/activate
-    pip install -r requirements.lst
 
 or you can use [BlackArch Linux](http://www.blackarch.org/).
 
