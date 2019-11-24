@@ -12,7 +12,6 @@ Mailer utility for pyfiscan tool result CSV-files.
 try:
     import sys
     import csv
-    import getpass
     import os.path
     import smtplib
     import sqlite3
@@ -20,7 +19,7 @@ try:
     import ssl
     from email.mime.text import MIMEText
     from jinja2 import Environment, FileSystemLoader
-except ImportError, e:
+except ImportError as e:
     sys.exit('Import error: %s' % e)
 
 
@@ -50,15 +49,19 @@ def send_email(user, vulnerabilities):
         ctx.check_hostname = True
         ctx.load_default_certs()
         s = smtplib.SMTP_SSL(host=smtp_server, port=smtp_port, context=ctx)
-        username = getpass.getuser()
-        password = getpass.getpass()
+        username = ''
+        password = ''
+        if len(username) == 0:
+            sys.exit('Username can\'t be empty')
+        if len(password) == 0:
+            sys.exit('Password can\'t be empty')
         s.login(username, password)
         s.ehlo_or_helo_if_needed()
         s.set_debuglevel(1)
         msg['Subject'] = 'Tietoturva-aukollinen sovellus löydetty sivuiltasi'
         msg['From'] = from_address
         msg['To'] = ", ".join(receivers)
-        print msg
+        print(msg)
         s.sendmail(from_address, receivers, msg.as_string())
         s.quit()
     except smtplib.SMTPAuthenticationError:
@@ -82,31 +85,34 @@ def process_csv(csv_file):
     c = conn.cursor()
     c.execute('''CREATE TABLE IF NOT EXISTS vulnerabilities (user TEXT, timestamp TEXT, appname TEXT, version_file TEXT, file_version TEXT, secure_version TEXT, cve TEXT)''')
     conn.commit()
-    reader = csv.reader(open(csv_file, 'rb'), delimiter='|', quotechar='|')
-    for line in reader:
-        user = line[0]
-        timestamp = line[1]
-        appname = line[2]
-        version_file = line[3]
-        version_file = version_file.decode('utf8')
-        file_version = line[4]
-        secure_version = line[5]
-        cve = line[6]
-        data = (user, timestamp, appname, version_file, file_version, secure_version, cve)
-        c.execute('INSERT INTO vulnerabilities VALUES (?,?,?,?,?,?,?)', data)
-        conn.commit()
-    c.execute('SELECT DISTINCT user FROM vulnerabilities')  # unique user
-    users = c.fetchall()
-    for user in users:
-        t = (user[0],)
-        vulnerabilities = []
-        for vulnerability in c.execute('SELECT timestamp, appname, version_file, file_version, secure_version, cve FROM vulnerabilities WHERE user=?', t):
-            vulnerabilities.append(vulnerability)
-        send_email(user[0], vulnerabilities)
+    #reader = csv.reader(open(csv_file, 'rb'), delimiter='|', quotechar='|')
+    with open(csv_file, newline='') as csvfile:
+        reader = csv.reader(csvfile, delimiter='|', quotechar='|')
+        for line in reader:
+            print(line)
+            user = line[0]
+            timestamp = line[1]
+            appname = line[2]
+            version_file = line[3]
+            version_file = version_file
+            file_version = line[4]
+            secure_version = line[5]
+            cve = line[6]
+            data = (user, timestamp, appname, version_file, file_version, secure_version, cve)
+            c.execute('INSERT INTO vulnerabilities VALUES (?,?,?,?,?,?,?)', data)
+            conn.commit()
+        c.execute('SELECT DISTINCT user FROM vulnerabilities')  # unique user
+        users = c.fetchall()
+        for user in users:
+            t = (user[0],)
+            vulnerabilities = []
+            for vulnerability in c.execute('SELECT timestamp, appname, version_file, file_version, secure_version, cve FROM vulnerabilities WHERE user=?', t):
+                vulnerabilities.append(vulnerability)
+            send_email(user[0], vulnerabilities)
 
 
 if __name__ == "__main__":
-    print 'Please note that it is required to add email| to start of each line in CSV.'
+    print('Please note that it is required to add email| to start of each line in CSV.')
     csv_file = sys.argv[1]
     if os.path.islink(csv_file):
         sys.exit('CSV file %s is a symlink. Exiting..' % csv_file)
