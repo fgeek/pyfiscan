@@ -2903,3 +2903,11 @@ WordPress plugin rich-reviews:
     cve: 'https://www.wordfence.com/blog/2019/09/rich-reviews-plugin-vulnerability-exploited-in-the-wild/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wp-maintenance:
+  1:
+    location: ['/wp-content/plugins/wp-maintenance/readme.txt']
+    secure_version: '5.0.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://www.wordfence.com/blog/2019/11/high-severity-vulnerability-patched-in-wp-maintenance-plugin/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
