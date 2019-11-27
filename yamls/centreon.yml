@@ -1,5 +1,16 @@
 # URL: http://www.centreon.com/
+# Centreon remote server not yet detected
+#   CVE-2018-19271 18.10.0 http://www.rootlabs.com.br/authenticated-sql-injection-in-centreon-3-4-x/ https://github.com/centreon/centreon/pull/6625
+#   CVE-2018-19280 18.10.0 https://github.com/centreon/centreon/pull/6626 https://github.com/centreon/centreon/commit/3d7792981dfaa55aa34d4a1d27896f096a5dcbe2
+#   CVE-2018-19281 18.10.0 https://github.com/centreon/centreon/pull/6627 https://github.com/centreon/centreon/commit/89d5460f6153015cacf48dff01dec793edd07b99
 # Version: CHANGELOG:## Centreon 2.5.4
+# CVE-2007-6485
+# CVE-2008-1119
+# CVE-2008-1178
+# CVE-2008-1179
+# CVE-2009-4368
+# CVE-2010-1301
+# CVE-2012-5967
 # CVE-2014-3828
 # CVE-2014-3829
 # CVE-2014-XXXX 2.5.4 http://www.openwall.com/lists/oss-security/2014/11/28/2
@@ -9,10 +20,28 @@
 # CVE-2018-11587 2.8.24 https://documentation.centreon.com/docs/centreon/en/latest/release_notes/centreon-2.8/centreon-2.8.24.html https://github.com/centreon/centreon/pull/6263
 # CVE-2018-11588 2.8.24 https://documentation.centreon.com/docs/centreon/en/latest/release_notes/centreon-2.8/centreon-2.8.24.html https://github.com/centreon/centreon/pull/6259 https://github.com/centreon/centreon/pull/6260
 # CVE-2018-11589 2.8.24 https://documentation.centreon.com/docs/centreon/en/latest/release_notes/centreon-2.8/centreon-2.8.24.html https://github.com/centreon/centreon/pull/6250 https://github.com/centreon/centreon/pull/6251 https://github.com/centreon/centreon/pull/6255 https://github.com/centreon/centreon/pull/6256 https://github.com/centreon/centreon/pull/6257
-# Centreon remote server not yet detected
-#   CVE-2018-19271 18.10.0 http://www.rootlabs.com.br/authenticated-sql-injection-in-centreon-3-4-x/ https://github.com/centreon/centreon/pull/6625
-#   CVE-2018-19280 18.10.0 https://github.com/centreon/centreon/pull/6626 https://github.com/centreon/centreon/commit/3d7792981dfaa55aa34d4a1d27896f096a5dcbe2
-#   CVE-2018-19281 18.10.0 https://github.com/centreon/centreon/pull/6627 https://github.com/centreon/centreon/commit/89d5460f6153015cacf48dff01dec793edd07b99
+# CVE-2018-19271
+# CVE-2018-19280
+# CVE-2018-19281
+# CVE-2018-19311 TODO http://www.roothc.com.br/1349-2/
+# CVE-2018-19312 TODO http://www.roothc.com.br/1349-2/
+# CVE-2018-21020 TODO
+# CVE-2018-21021 TODO
+# CVE-2018-21022 TODO
+# CVE-2018-21023 TODO
+# CVE-2018-21024 TODO
+# CVE-2018-21025 TODO
+# CVE-2019-13024 TODO
+# CVE-2019-16194
+# CVE-2019-16195 TODO
+# CVE-2019-16405
+# CVE-2019-16406
+# CVE-2019-17104 TODO
+# CVE-2019-17105 TODO
+# CVE-2019-17106 TODO
+# CVE-2019-17107 TODO
+# CVE-2019-17108 TODO
+# CVE-2019-17501 TODO
 Centreon:
   1:
     location: ['/CHANGELOG']
