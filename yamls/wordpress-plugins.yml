@@ -2908,6 +2908,6 @@ WordPress plugin wp-maintenance:
     location: ['/wp-content/plugins/wp-maintenance/readme.txt']
     secure_version: '5.0.6'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://www.wordfence.com/blog/2019/11/high-severity-vulnerability-patched-in-wp-maintenance-plugin/'
+    cve: 'https://www.wordfence.com/blog/2019/11/high-severity-vulnerability-patched-in-wp-maintenance-plugin/'  # TODO: Asked status of CVE identifier 2019-11-27
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
