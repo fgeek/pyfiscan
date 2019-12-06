@@ -191,6 +191,7 @@
 # PMASA-2019-4 CVE-2019-12616 4.9.0
 # N/A CVE-2019-12922 4.9.1 https://lists.openwall.net/full-disclosure/2019/09/13/1 https://github.com/phpmyadmin/phpmyadmin/commit/427fbed55d3154d96ecfc1c7784d49eaa3c04161
 # PMASA-2019-5 CVE-2019-18622 4.9.2 https://github.com/phpmyadmin/phpmyadmin/commit/ff541af95d7155d8dd326f331b5e248fea8e7111
+# TODO CVE-2019-19617 4.9.2 https://github.com/phpmyadmin/phpmyadmin/commit/1119de642b136d20e810bb20f545069a01dd7cc9 asked status of PMASA advisory 2019-06-06
 phpMyAdmin:
   1:
     location: ['/libraries/Config.class.php']
