@@ -9,7 +9,7 @@ yaml_fn_dict = {}
 def yaml_visible(fn):
     """Decorator, which allows us to point to function names in YAML-files.
     Example: fingerprint: detect_general
-    
+
     """
     yaml_fn_dict[fn.__name__] = fn
     return fn
@@ -18,7 +18,7 @@ def yaml_visible(fn):
 def grep_from_file(version_file, regexp):
     """Grepping file with predefined regexp to find a version. This returns
     m.group from regexp: (?P<version>foo)
-    
+
     """
     with open(version_file, 'r') as version_file:
         try:
@@ -45,7 +45,7 @@ def grep_from_file(version_file, regexp):
 def detect_general(source_file, regexp):
     """Detects from source file if it contains version information. Uses first
     regexp-match.
-    
+
     """
     if not (os.path.isfile(source_file) and regexp):
         return
@@ -102,7 +102,7 @@ def detect_wikkawiki(source_file, regexp):
 def detect_gallery(source_file, regexp):
     """Detects from source file if it contains version information of Gallery.
     Also ignores Git-versions.
-    
+
     """
     if not (os.path.isfile(source_file) and regexp):
         return

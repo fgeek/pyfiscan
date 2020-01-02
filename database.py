@@ -35,12 +35,12 @@ def gen_yamlfile_locations(yamldir, includes):
             for item in includes:
                 if filename == item + '.yml':
                     yield open(yamldir + filename, 'r')
-                
-                
+
+
 def generate(yamldir, includes):
     """Generates data dictionary of definitions from YAML files. Only used by
     database class.
-    
+
     """
     data = dict()
     for yamlfile in gen_yamlfile_locations(yamldir, includes):
