@@ -943,12 +943,13 @@ WordPress plugin remote-upload:
     post_processing: ['php5.fcgi']
 # CVE-2014-8492 2.0.3 https://g0blin.co.uk/cve-2014-8492/
 # 2.4.1 https://www.wordfence.com/blog/2016/07/vulnerability-profile-builder/
+# 2.4.2 OVE-20160712-0014 https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_profile_builder_wordpress_plugin.html
 WordPress plugin profile-builder:
   1:
     location: ['/wp-content/plugins/profile-builder/readme.txt']
-    secure_version: '2.4.2'
+    secure_version: '3.1.1'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'OVE-20160712-0014 https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_profile_builder_wordpress_plugin.html'
+    cve: 'https://www.wordfence.com/blog/2020/02/critical-vulnerability-in-profile-builder-plugin-allowed-site-takeover/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 # 2.3.7 https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_in_all_in_one_seo_pack_wordpress_plugin.html
