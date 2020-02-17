@@ -1956,7 +1956,7 @@ WordPress plugin iwp-client:
     location: ['/wp-content/plugins/iwp-client/readme.txt']
     secure_version: '1.9.4.5'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://www.wordfence.com/blog/2020/01/critical-authentication-bypass-vulnerability-in-infinitewp-client-plugin/ https://threatpost.com/wordpress-bug-leaves-sites-open-to-attack/151911/'  # TODO: No CVE?
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-8772 https://www.wordfence.com/blog/2020/01/critical-authentication-bypass-vulnerability-in-infinitewp-client-plugin/ https://threatpost.com/wordpress-bug-leaves-sites-open-to-attack/151911/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin cms-commander-client:
