@@ -205,6 +205,7 @@ Contributors
 * Joonas Kuorilehto
 * Juhamatti Niemelä
 * Linus Fogelholk
+* motikan2010
 * Olli Pekkola
 * Paul Grant
 * Tuomo Komulainen
