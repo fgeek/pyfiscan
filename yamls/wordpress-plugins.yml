@@ -2921,3 +2921,11 @@ WordPress plugin cookie-law-info:
     cve: 'https://www.wordfence.com/blog/2020/02/improper-access-controls-in-gdpr-cookie-consent-plugin/ https://blog.nintechnet.com/wordpress-gdpr-cookie-consent-plugin-fixed-vulnerability/ https://www.bleepingcomputer.com/news/security/wordpress-cookie-consent-plugin-fixes-critical-flaw-for-700k-users/ https://threatpost.com/critical-wordpress-plugin-bug-afflicts-700k-sites/152871/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wp-central:
+  1:
+    location: ['/wp-content/plugins/wp-central/readme.txt']
+    secure_version: '1.5.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://www.wordfence.com/blog/2020/02/vulnerability-in-wpcentral-plugin-leads-to-privilege-escalation/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
