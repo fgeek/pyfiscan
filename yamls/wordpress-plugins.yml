@@ -2935,6 +2935,6 @@ WordPress plugin themegrill-demo-importer:
     location: ['/wp-content/plugins/themegrill-demo-importer/readme.txt']
     secure_version: '1.6.3'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://www.webarxsecurity.com/critical-issue-in-themegrill-demo-importer/'  # TODO: CVE request needed
+    cve: 'https://www.webarxsecurity.com/critical-issue-in-themegrill-demo-importer/ https://www.openwall.com/lists/oss-security/2020/02/19/1'  # TODO: CVE request needed
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
