@@ -2929,3 +2929,11 @@ WordPress plugin wp-central:
     cve: 'https://www.wordfence.com/blog/2020/02/vulnerability-in-wpcentral-plugin-leads-to-privilege-escalation/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin themegrill-demo-importer:
+  1:
+    location: ['/wp-content/plugins/themegrill-demo-importer/readme.txt']
+    secure_version: '1.6.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://www.webarxsecurity.com/critical-issue-in-themegrill-demo-importer/'  # TODO: CVE request needed
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
