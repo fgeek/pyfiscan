@@ -9,11 +9,13 @@
 # https://www.curesec.com/blog/article/blog/Elefant-CMS-1312-RC-Code-Execution-188.html
 # CVE-2018-15601 2.0.4 https://github.com/jbroadway/elefant/commit/afb3346e50b992bcba143660ca2149e563430e05
 # CVE-2018-16387 2.0.5 https://github.com/jbroadway/elefant/issues/285 https://github.com/jbroadway/elefant/commit/95e84804135988abe9602f5c3f9842432c095288
+# CVE-2018-16974 2.0.7
+# CVE-2018-16975 2.0.7
 Elefant CMS:
   1:
     location: ['/conf/version.php']
-    secure_version: '2.0.5'
+    secure_version: '2.0.7'
     regexp: ["<\\?php define \\('ELEFANT_VERSION.*?(?P<version>[0-9.]+)"]
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-16387'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-16974 https://nvd.nist.gov/vuln/detail/CVE-2018-16975'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
