@@ -20,9 +20,9 @@
 # CVE-2018-11587 2.8.24 https://documentation.centreon.com/docs/centreon/en/latest/release_notes/centreon-2.8/centreon-2.8.24.html https://github.com/centreon/centreon/pull/6263
 # CVE-2018-11588 2.8.24 https://documentation.centreon.com/docs/centreon/en/latest/release_notes/centreon-2.8/centreon-2.8.24.html https://github.com/centreon/centreon/pull/6259 https://github.com/centreon/centreon/pull/6260
 # CVE-2018-11589 2.8.24 https://documentation.centreon.com/docs/centreon/en/latest/release_notes/centreon-2.8/centreon-2.8.24.html https://github.com/centreon/centreon/pull/6250 https://github.com/centreon/centreon/pull/6251 https://github.com/centreon/centreon/pull/6255 https://github.com/centreon/centreon/pull/6256 https://github.com/centreon/centreon/pull/6257
-# CVE-2018-19271
-# CVE-2018-19280
-# CVE-2018-19281
+# CVE-2018-19271 TODO
+# CVE-2018-19280 TODO
+# CVE-2018-19281 TODO
 # CVE-2018-19311 TODO http://www.roothc.com.br/1349-2/
 # CVE-2018-19312 TODO http://www.roothc.com.br/1349-2/
 # CVE-2018-21020 TODO
@@ -32,16 +32,25 @@
 # CVE-2018-21024 TODO
 # CVE-2018-21025 TODO
 # CVE-2019-13024 TODO
-# CVE-2019-16194
+# CVE-2019-15298 TODO
+# CVE-2019-15300 TODO
+# CVE-2019-16194 TODO
 # CVE-2019-16195 TODO
-# CVE-2019-16405
-# CVE-2019-16406
+# CVE-2019-16405 TODO
+# CVE-2019-16406 TODO
 # CVE-2019-17104 TODO
 # CVE-2019-17105 TODO
 # CVE-2019-17106 TODO
 # CVE-2019-17107 TODO
 # CVE-2019-17108 TODO
 # CVE-2019-17501 TODO
+# CVE-2019-17642 TODO
+# CVE-2019-17643 TODO
+# CVE-2019-17644 TODO
+# CVE-2019-17645 TODO
+# CVE-2019-17646 TODO
+# CVE-2019-17647 TODO
+# CVE-2020-9463 TODO
 Centreon:
   1:
     location: ['/CHANGELOG']
