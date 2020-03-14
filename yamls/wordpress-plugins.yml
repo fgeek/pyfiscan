@@ -2938,3 +2938,11 @@ WordPress plugin themegrill-demo-importer:
     cve: 'https://www.webarxsecurity.com/critical-issue-in-themegrill-demo-importer/ https://www.openwall.com/lists/oss-security/2020/02/19/1'  # TODO: CVE request needed
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin popup-builder:
+  1:
+    location: ['/wp-content/plugins/popup-builder/readme.txt']
+    secure_version: '3.64.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-10196 https://www.wordfence.com/blog/2020/03/vulnerabilities-patched-in-popup-builder-plugin-affecting-over-100000-sites/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
