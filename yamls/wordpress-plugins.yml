@@ -2943,7 +2943,7 @@ WordPress plugin popup-builder:
     location: ['/wp-content/plugins/popup-builder/readme.txt']
     secure_version: '3.64.1'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-10195 https://nvd.nist.gov/vuln/detail/CVE-2020-10196 https://www.wordfence.com/blog/2020/03/vulnerabilities-patched-in-popup-builder-plugin-affecting-over-100000-sites/'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-10195 https://nvd.nist.gov/vuln/detail/CVE-2020-10196 https://www.wordfence.com/blog/2020/03/vulnerabilities-patched-in-popup-builder-plugin-affecting-over-100000-sites/ https://threatpost.com/wordpress-plugin-bug-popup-builder/153715/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin users-customers-import-export-for-wp-woocommerce:
