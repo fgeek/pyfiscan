@@ -2954,3 +2954,11 @@ WordPress plugin users-customers-import-export-for-wp-woocommerce:
     cve: 'https://www.wordfence.com/blog/2020/03/vulnerability-patched-in-import-export-wordpress-users/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin custom-registration-form-builder-with-submission-manager:
+  1:
+    location: ['/wp-content/plugins/custom-registration-form-builder-with-submission-manager/readme.txt']
+    secure_version: '4.6.0.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-9456 https://www.wordfence.com/blog/2020/03/multiple-vulnerabilities-patched-in-registrationmagic-plugin/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
