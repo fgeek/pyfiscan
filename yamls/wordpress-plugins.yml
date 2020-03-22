@@ -2964,3 +2964,11 @@ WordPress plugin custom-registration-form-builder-with-submission-manager:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-9454 https://nvd.nist.gov/vuln/detail/CVE-2020-9455 https://nvd.nist.gov/vuln/detail/CVE-2020-9456 https://nvd.nist.gov/vuln/detail/CVE-2020-9457 https://nvd.nist.gov/vuln/detail/CVE-2020-9458 https://www.wordfence.com/blog/2020/03/multiple-vulnerabilities-patched-in-registrationmagic-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin responsive-add-ons:
+  1:
+    location: ['/wp-content/plugins/responsive-add-ons/readme.txt']
+    secure_version: '2.2.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://www.wordfence.com/blog/2020/03/severe-flaws-patched-in-responsive-ready-sites-importer-plugin/'  # TODO: CVE request needed
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
