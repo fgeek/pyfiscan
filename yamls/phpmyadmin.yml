@@ -198,7 +198,7 @@
 # TODO CVE-2019-19617 4.9.2 https://github.com/phpmyadmin/phpmyadmin/commit/1119de642b136d20e810bb20f545069a01dd7cc9 asked status of PMASA advisory 2019-06-06
 # PMASA-2020-1 CVE-2020-5504 5.0.1/4.9.4 https://github.com/phpmyadmin/phpmyadmin/commit/c86acbf3ed49f69cf38b31879886dd5eb86b6983
 # PMASA-2020-2 Pending 5.0.2/4.9.5 https://github.com/phpmyadmin/phpmyadmin/commit/a8acd7a42cf743186528b0453f90aaa32bfefabe
-# PMASA-2020-3 Pending 5.0.2/4.9.5 https://github.com/phpmyadmin/phpmyadmin/commit/2489837213b90664aceebe4c9ac641bf167b8a97 https://github.com/phpmyadmin/phpmyadmin/commit/46a7aa7cd4ff2be0eeb23721fbf71567bebe69a5 https://github.com/phpmyadmin/phpmyadmin/commit/6b9b2601d8af916659cde8aefd3a6eaadd10284a
+# PMASA-2020-3 Pending 5.0.2/4.9.5 https://github.com/phpmyadmin/phpmyadmin/commit/46a7aa7cd4ff2be0eeb23721fbf71567bebe69a5 https://github.com/phpmyadmin/phpmyadmin/commit/6b9b2601d8af916659cde8aefd3a6eaadd10284a
 # PMASA-2020-4 Pending 5.0.2/4.9.5 https://github.com/phpmyadmin/phpmyadmin/commit/89fbcd7c39e6b3979cdb2f64aa4cd5f4db27eaad https://github.com/phpmyadmin/phpmyadmin/commit/3258978c38bee8cb4b99f249dffac9c8aaea2d80
 phpMyAdmin:
   1:
