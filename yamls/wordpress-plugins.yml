@@ -2972,3 +2972,11 @@ WordPress plugin responsive-add-ons:
     cve: 'https://www.wordfence.com/blog/2020/03/severe-flaws-patched-in-responsive-ready-sites-importer-plugin/'  # TODO: CVE request needed
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin seo-by-rank-math:
+  1:
+    location: ['/wp-content/plugins/seo-by-rank-math/readme.txt']
+    secure_version: '1.0.41'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://www.wordfence.com/blog/2020/03/critical-vulnerabilities-affecting-over-200000-sites-patched-in-rank-math-seo-plugin/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
