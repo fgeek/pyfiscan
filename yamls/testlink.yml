@@ -1,27 +1,36 @@
 # URL: http://www.teamst.org/ http://sourceforge.net/projects/testlink/
 # Version: testlink-1.9.7/cfg/const.inc.php:define('TL_VERSION', '1.9.7 (Ghost)');
-# CVE-2007-6006 1.7.1   http://secunia.com/advisories/27600/
+# CVE-2007-6006 1.7.1 http://secunia.com/advisories/27600/
 # CVE-2008-5807 1.8 RC1
 # CVE-2009-4237 1.8.5
 # CVE-2009-4238 1.8.5
 # CVE-2012-0938 1.9.3
 # CVE-2012-0939 1.9.3
-# CVE-2012-2275 1.9.4   https://www.htbridge.com/advisory/HTB23088
-# CVE-2014-5308 1.9.12  http://seclists.org/fulldisclosure/2014/Oct/11
-# CVE-2014-8081 1.9.13  http://mantis.testlink.org/view.php?id=6651
-# CVE-2014-8082 1.9.13  http://mantis.testlink.org/view.php?id=6609
-# CVE-2015-7390 1.9.14  https://packetstormsecurity.com/files/133890/NS-15-015.txt
-# CVE-2015-7391 1.9.14  https://packetstormsecurity.com/files/133891/NS-15-016.txt
-# CVE-2015-XXXX 1.9.15  http://www.openwall.com/lists/oss-security/2015/11/08/2
-# CVE-2015-XXXX 1.9.15  http://www.openwall.com/lists/oss-security/2015/11/08/3
-# CVE-2015-XXXX 1.9.15  http://mantis.testlink.org/view.php?id=7402 https://www.htbridge.com/advisory/HTB23288
+# CVE-2012-2275 1.9.4 https://www.htbridge.com/advisory/HTB23088
+# CVE-2014-5308 1.9.12 http://seclists.org/fulldisclosure/2014/Oct/11
+# CVE-2014-8081 1.9.13 http://mantis.testlink.org/view.php?id=6651
+# CVE-2014-8082 1.9.13 http://mantis.testlink.org/view.php?id=6609
+# CVE-2015-7390 1.9.14 https://packetstormsecurity.com/files/133890/NS-15-015.txt
+# CVE-2015-7391 1.9.14 https://packetstormsecurity.com/files/133891/NS-15-016.txt
+# CVE-2015-XXXX 1.9.15 http://www.openwall.com/lists/oss-security/2015/11/08/2
+# CVE-2015-XXXX 1.9.15 http://www.openwall.com/lists/oss-security/2015/11/08/3
+# CVE-2015-XXXX 1.9.15 http://mantis.testlink.org/view.php?id=7402 https://www.htbridge.com/advisory/HTB23288
 # CVE-2018-7466 N/A only in installation
 # CVE-2018-7668 1.9.17 http://lists.openwall.net/full-disclosure/2018/02/28/1
+# CVE-2019-14471 TODO https://code610.blogspot.com/2019/07/xss-in-testlink-1919.html
+# CVE-2019-19491 TODO https://www.exploit-db.com/exploits/47702
+# TODO http://mantis.testlink.org/view.php?id=8808 no CVE?
+# CVE-2019-20107 1.9.20 http://mantis.testlink.org/view.php?id=8829
+# CVE-2019-20381 1.9.20 http://mantis.testlink.org/view.php?id=8808 https://github.com/TestLinkOpenSourceTRMS/testlink-code/commit/cde692895e425731e6951d265a01ca6425a7c26e
+# CVE-2020-8637 TODO https://ackcent.com/blog/testlink-1.9.20-unrestricted-file-upload-and-sql-injection/ https://github.com/TestLinkOpenSourceTRMS/testlink-code/commit/d99bd8277d384f3417e917ce20bef5d061110343
+# CVE-2020-8638 TODO https://ackcent.com/blog/testlink-1.9.20-unrestricted-file-upload-and-sql-injection/ https://github.com/TestLinkOpenSourceTRMS/testlink-code/commit/58f3cc03d5f81cd5cc2ad8c7ba645cc486cebc05
+# CVE-2020-8639 TODO https://ackcent.com/blog/testlink-1.9.20-unrestricted-file-upload-and-sql-injection/ https://github.com/TestLinkOpenSourceTRMS/testlink-code/commit/57d81ae350d569c5c95087997fe051c49e14516d
+# 2020-02-27: "Vendor indicates that there is not going to be a new release, users should download the branch testlink_1_9_20_fixed"
 TestLink:
   1:
     location: ['/cfg/const.inc.php']
-    secure_version: '1.9.17'
+    secure_version: '1.9.20'
     regexp: ['define.*?TL_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-7668 http://lists.openwall.net/full-disclosure/2018/02/28/1'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-20107 https://nvd.nist.gov/vuln/detail/CVE-2019-20381'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
