@@ -2988,3 +2988,11 @@ WordPress plugin free-sales-funnel-squeeze-pages-landing-page-builder-templates-
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-11508 https://www.wordfence.com/blog/2020/04/critical-vulnerabilities-in-the-wp-lead-plus-x-wordpress-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin media-library-assistant:
+  1:
+    location: ['/wp-content/plugins/media-library-assistant/readme.txt']
+    secure_version: '2.82'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-11731 https://nvd.nist.gov/vuln/detail/CVE-2020-11732'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
