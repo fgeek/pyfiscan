@@ -2996,3 +2996,11 @@ WordPress plugin media-library-assistant:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-11731 https://nvd.nist.gov/vuln/detail/CVE-2020-11732'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin mappress-google-maps-for-wordpress:
+  1:
+    location: ['/wp-content/plugins/mappress-google-maps-for-wordpress/readme.txt']
+    secure_version: '2.53.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-12077 https://www.wordfence.com/blog/2020/04/critical-vulnerabilities-patched-in-mappress-maps-plugin/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
