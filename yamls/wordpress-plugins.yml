@@ -3013,3 +3013,11 @@ WordPress plugin duplicate-wp-page-post:
     cve: 'https://blog.sucuri.net/2020/04/duplicated-vulnerabilities-in-wordpress-plugins.html https://wpvulndb.com/vulnerabilities/10190'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin learnpress:
+  1:
+    location: ['/wp-content/plugins/learnpress/readme.txt']
+    secure_version: '3.2.6.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-11511 https://www.wordfence.com/blog/2020/04/high-severity-vulnerabilities-patched-in-learnpress/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
