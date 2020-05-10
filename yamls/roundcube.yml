@@ -46,11 +46,13 @@
 # CVE-2018-19206 1.3.8 https://roundcube.net/news/2018/10/26/update-1.3.8-released https://github.com/roundcube/roundcubemail/releases/tag/1.3.8
 # CVE-2019-10740 1.3.10 https://roundcube.net/news/2019/08/28/update-1.3.10-released https://github.com/roundcube/roundcubemail/issues/6638
 # CVE-2019-15237 TODO https://github.com/roundcube/roundcubemail/issues/6891 no fix 2019-08-31
+# CVE-2020-12640 1.4.4/1.3.11/1.2.10 https://roundcube.net/news/2020/04/29/security-updates-1.4.4-1.3.11-and-1.2.10 https://github.com/roundcube/roundcubemail/commit/814eadb699e8576ce3a78f21e95bf69a7c7b3794
+# CVE-2020-12641 1.4.4/1.3.11/1.2.10 https://roundcube.net/news/2020/04/29/security-updates-1.4.4-1.3.11-and-1.2.10 https://github.com/roundcube/roundcubemail/commit/fcfb099477f353373c34c8a65c9035b06b364db3
 Roundcube:
   1:
     location: ['/program/include/iniset.php']
-    secure_version: '1.3.10'
+    secure_version: '1.4.4'
     regexp: ['define.*?RCMAIL_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://roundcube.net/news/2019/08/28/update-1.3.10-released https://nvd.nist.gov/vuln/detail/CVE-2019-10740'
+    cve: 'https://roundcube.net/news/2020/04/29/security-updates-1.4.4-1.3.11-and-1.2.10 https://nvd.nist.gov/vuln/detail/CVE-2020-12640 https://nvd.nist.gov/vuln/detail/CVE-2020-12641'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
