@@ -3021,3 +3021,11 @@ WordPress plugin learnpress:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-11511 https://www.wordfence.com/blog/2020/04/high-severity-vulnerabilities-patched-in-learnpress/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin elementor-pro:
+  1:
+    location: ['/wp-content/plugins/elementor-pro/readme.txt']
+    secure_version: '2.9.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://www.wordfence.com/blog/2020/05/combined-attack-on-elementor-pro-and-ultimate-addons-for-elementor-puts-1-million-sites-at-risk/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
