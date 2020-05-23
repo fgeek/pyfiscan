@@ -3042,6 +3042,6 @@ WordPress plugin siteorigin-panels:
     location: ['/wp-content/plugins/siteorigin-panels/readme.txt']
     secure_version: '2.10.16'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://www.bleepingcomputer.com/news/security/wordpress-plugin-bugs-can-let-hackers-take-over-almost-1m-sites/'  # TODO: CVE
+    cve: 'https://www.wordfence.com/blog/2020/05/vulnerabilities-patched-in-page-builder-by-siteorigin-affects-over-1-million-sites/ https://www.bleepingcomputer.com/news/security/wordpress-plugin-bugs-can-let-hackers-take-over-almost-1m-sites/'  # TODO: CVE
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
