@@ -96,7 +96,7 @@
 # https://drupal.org/SA-CORE-2019-008   CVE-2019-6342   8.7.5
 # https://drupal.org/SA-CORE-2020-001   TODO            8.8.4/8.7.12
 # https://drupal.org/sa-core-2020-002   CVE-2020-11022/CVE-2020-11023   8.8.6/8.7.14/7.70
-# https://drupal.org/sa-core-2020-003   TODO            7.70
+# https://drupal.org/sa-core-2020-003   CVE-2020-13662  7.70
 # TODO: https://www.drupal.org/sa-contrib-2020-010
 Drupal 8:
   1:
