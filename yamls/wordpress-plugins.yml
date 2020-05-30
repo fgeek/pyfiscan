@@ -3053,3 +3053,11 @@ WordPress plugin bbpress:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-13693 https://bbpress.org/blog/2020/05/bbpress-2-6-5-is-out/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin pagelayer:
+  1:
+    location: ['/wp-content/plugins/pagelayer/readme.txt']
+    secure_version: '1.1.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://www.wordfence.com/blog/2020/05/high-severity-vulnerabilities-in-pagelayer-plugin-affect-over-200000-wordpress-sites/'  # TODO: CVE
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
