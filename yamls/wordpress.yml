@@ -248,18 +248,19 @@
 # CVE-2019-20041 5.3.1 https://wordpress.org/news/2019/12/wordpress-5-3-1-security-and-maintenance-release/ https://github.com/WordPress/wordpress-develop/commit/b1975463dd995da19bb40d3fa0786498717e3c53
 # CVE-2019-20042 5.3.1 https://wordpress.org/news/2019/12/wordpress-5-3-1-security-and-maintenance-release/ https://github.com/WordPress/wordpress-develop/commit/1f7f3f1f59567e2504f0fbebd51ccf004b3ccb1d https://core.trac.wordpress.org/changeset/46894/trunk
 # CVE-2019-20043 5.3.1 https://wordpress.org/news/2019/12/wordpress-5-3-1-security-and-maintenance-release/ https://github.com/WordPress/wordpress-develop/commit/1d1d5be7aa94608c04516cac4238e8c22b93c1d9 https://core.trac.wordpress.org/changeset/46893/trunk
+# TODO 5.4.2 https://wordpress.org/news/2020/06/wordpress-5-4-2-security-and-maintenance-release/
 WordPress:
   1:
     location: ['/wp-includes/version.php', '/wp-includes/vars.php']
-    secure_version: '5.4.1'
+    secure_version: '5.4.2'
     regexp: ['\$wp_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://wordpress.org/news/2020/04/wordpress-5-4-1/ https://wordpress.org/support/wordpress-version/version-5-4-1/#security-updates https://nvd.nist.gov/vuln/detail/CVE-2020-11025 https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-4mhg-j6fx-5g3c https://nvd.nist.gov/vuln/detail/CVE-2020-11026 https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-3gw2-4656-pfr2 https://nvd.nist.gov/vuln/detail/CVE-2020-11027 https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-ww7v-jg8c-q6jw https://nvd.nist.gov/vuln/detail/CVE-2020-11028 https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-xhx9-759f-6p2w https://nvd.nist.gov/vuln/detail/CVE-2020-11029 https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-568w-8m88-8g2c https://nvd.nist.gov/vuln/detail/CVE-2020-11030 https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-vccm-6gmc-qhjh'
+    cve: 'https://wordpress.org/news/2020/06/wordpress-5-4-2-security-and-maintenance-release/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
   2:
     location: ['/b2-include/b2vars.php']
-    secure_version: '5.4.1'
+    secure_version: '5.4.2'
     regexp: ['\$b2_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://wordpress.org/news/2020/04/wordpress-5-4-1/ https://wordpress.org/support/wordpress-version/version-5-4-1/#security-updates https://nvd.nist.gov/vuln/detail/CVE-2020-11025 https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-4mhg-j6fx-5g3c https://nvd.nist.gov/vuln/detail/CVE-2020-11026 https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-3gw2-4656-pfr2 https://nvd.nist.gov/vuln/detail/CVE-2020-11027 https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-ww7v-jg8c-q6jw https://nvd.nist.gov/vuln/detail/CVE-2020-11028 https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-xhx9-759f-6p2w https://nvd.nist.gov/vuln/detail/CVE-2020-11029 https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-568w-8m88-8g2c https://nvd.nist.gov/vuln/detail/CVE-2020-11030 https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-vccm-6gmc-qhjh'
+    cve: 'https://wordpress.org/news/2020/06/wordpress-5-4-2-security-and-maintenance-release/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
