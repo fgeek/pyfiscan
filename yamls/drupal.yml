@@ -95,11 +95,11 @@
 # https://drupal.org/SA-CORE-2019-007   CVE-2019-11831  8.7.1/8.6.16/7.67
 # https://drupal.org/SA-CORE-2019-008   CVE-2019-6342   8.7.5
 # https://drupal.org/SA-CORE-2020-001   TODO            8.8.4/8.7.12
-# https://drupal.org/sa-core-2020-002   CVE-2020-11022/CVE-2020-11023   8.8.6/8.7.14/7.70
-# https://drupal.org/sa-core-2020-003   CVE-2020-13662  7.70
-# https://drupal.org/sa-core-2020-004   CVE-2020-13663  9.0.1/8.9.1/8.8.8/7.72
-# https://drupal.org/sa-core-2020-005   CVE-2020-13664  9.0.1/8.9.1/8.8.8
-# https://drupal.org/sa-core-2020-006   CVE-2020-13665  9.0.1/8.9.1/8.8.8
+# https://drupal.org/SA-CORE-2020-002   CVE-2020-11022/CVE-2020-11023   8.8.6/8.7.14/7.70
+# https://drupal.org/SA-CORE-2020-003   CVE-2020-13662  7.70
+# https://drupal.org/SA-CORE-2020-004   CVE-2020-13663  9.0.1/8.9.1/8.8.8/7.72
+# https://drupal.org/SA-CORE-2020-005   CVE-2020-13664  9.0.1/8.9.1/8.8.8
+# https://drupal.org/SA-CORE-2020-006   CVE-2020-13665  9.0.1/8.9.1/8.8.8
 Drupal 8:
   1:
     location: ['/core/lib/Drupal.php']
