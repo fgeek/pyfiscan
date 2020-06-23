@@ -141,12 +141,21 @@
 # CVE-2019-19709 TODO https://phabricator.wikimedia.org/T239466 https://gerrit.wikimedia.org/r/q/Ie54f366986056c876eade0fcad6c41f70b8b8de8
 # TODO 1.33.12/1.32.6/1.31.6 https://lists.wikimedia.org/pipermail/mediawiki-announce/2019-December/000243.html
 # TODO 1.34.0/1.33.2/1.32.6/1.30.6 https://lists.wikimedia.org/pipermail/mediawiki-announce/2019-December/000241.html
+# CVE-2020-10960 1.34.1/1.33.3/1.31.7 https://lists.wikimedia.org/pipermail/wikitech-l/2020-March/093243.html
+MediaWiki 1.34:
+  1:
+    location: ['/includes/DefaultSettings.php']
+    secure_version: '1.34.1'
+    regexp: ['\$wgVersion.*?(?P<version>1\.33\.[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-10960 https://lists.wikimedia.org/pipermail/wikitech-l/2020-March/093243.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
 MediaWiki 1.33:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.33.2'
+    secure_version: '1.33.3'
     regexp: ['\$wgVersion.*?(?P<version>1\.33\.[0-9.]{1,})']
-    cve: 'https://lists.wikimedia.org/pipermail/mediawiki-announce/2019-December/000241.html'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-10960 https://lists.wikimedia.org/pipermail/wikitech-l/2020-March/093243.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.32:
@@ -160,9 +169,9 @@ MediaWiki 1.32:
 MediaWiki 1.31:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.31.6'
+    secure_version: '1.31.7'
     regexp: ['\$wgVersion.*?(?P<version>1\.31\.[0-9.]{1,})']
-    cve: 'https://lists.wikimedia.org/pipermail/mediawiki-announce/2019-December/000243.html'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-10960 https://lists.wikimedia.org/pipermail/wikitech-l/2020-March/093243.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.30:
