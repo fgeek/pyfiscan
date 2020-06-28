@@ -140,7 +140,7 @@
 # TODO 1.32.5/1.31.5 https://lists.wikimedia.org/pipermail/mediawiki-announce/2019-October/000238.html Asked MediaWiki (Sam Reed) if they requested CVE for incomplete fix
 # CVE-2019-19709 TODO https://phabricator.wikimedia.org/T239466 https://gerrit.wikimedia.org/r/q/Ie54f366986056c876eade0fcad6c41f70b8b8de8
 # TODO 1.33.12/1.32.6/1.31.6 https://lists.wikimedia.org/pipermail/mediawiki-announce/2019-December/000243.html
-# TODO 1.34.0/1.33.2/1.32.6/1.30.6 https://lists.wikimedia.org/pipermail/mediawiki-announce/2019-December/000241.html
+# TODO 1.34.0/1.33.3/1.32.6/1.30.6 https://lists.wikimedia.org/pipermail/mediawiki-announce/2019-December/000241.html
 # CVE-2020-10960 1.34.1/1.33.3/1.31.7 https://lists.wikimedia.org/pipermail/wikitech-l/2020-March/093243.html
 MediaWiki 1.34:
   1:
@@ -177,7 +177,7 @@ MediaWiki 1.31:
 MediaWiki 1.30:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.33.2'
+    secure_version: '1.34.1'
     regexp: ['\$wgVersion.*?(?P<version>1\.30\.[0-9.]{1,})']
     cve: 'MediaWiki 1.30 is end of life.'
     fingerprint: detect_general
@@ -185,7 +185,7 @@ MediaWiki 1.30:
 MediaWiki 1.29:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.33.2'
+    secure_version: '1.34.1'
     regexp: ['\$wgVersion.*?(?P<version>1\.29\.[0-9.]{1,})']
     cve: 'MediaWiki 1.29 is end of life.'
     fingerprint: detect_general
@@ -193,7 +193,7 @@ MediaWiki 1.29:
 MediaWiki 1.28:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.33.2'
+    secure_version: '1.34.1'
     regexp: ['\$wgVersion.*?(?P<version>1\.28\.[0-9.]{1,})']
     cve: 'MediaWiki 1.28 is end of life.'
     fingerprint: detect_general
@@ -201,7 +201,7 @@ MediaWiki 1.28:
 MediaWiki 1.27:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.33.2'
+    secure_version: '1.34.1'
     regexp: ['\$wgVersion.*?(?P<version>1\.27\.[0-9.]{1,})']
     cve: 'MediaWiki 1.27 is end of life.'
     fingerprint: detect_general
@@ -209,7 +209,7 @@ MediaWiki 1.27:
 MediaWiki 1.26:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.33.2'
+    secure_version: '1.34.1'
     regexp: ['\$wgVersion.*?(?P<version>1\.26\.[0-9.]{1,})']
     cve: 'MediaWiki 1.26 is end of life.'
     fingerprint: detect_general
@@ -217,7 +217,7 @@ MediaWiki 1.26:
 MediaWiki 1.25:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.33.2'
+    secure_version: '1.34.1'
     regexp: ['\$wgVersion.*?(?P<version>1\.25\.[0-9.]{1,})']
     cve: 'MediaWiki 1.25 is end of life.'
     fingerprint: detect_general
@@ -225,7 +225,7 @@ MediaWiki 1.25:
 MediaWiki 1.24:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.33.2'
+    secure_version: '1.34.1'
     regexp: ['\$wgVersion.*?(?P<version>1\.24\.[0-9.]{1,})']
     cve: 'MediaWiki 1.24 is end of life.'
     fingerprint: detect_general
@@ -233,7 +233,7 @@ MediaWiki 1.24:
 MediaWiki 1.23:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.33.2'
+    secure_version: '1.34.1'
     regexp: ['\$wgVersion.*?(?P<version>1\.23\.[0-9.]{1,})']
     cve: 'MediaWiki 1.23 is end of life.'
     fingerprint: detect_general
@@ -241,7 +241,7 @@ MediaWiki 1.23:
 MediaWiki 1.22:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.33.2'
+    secure_version: '1.34.1'
     regexp: ['\$wgVersion.*?(?P<version>1\.22\.[0-9.]{1,})']
     cve: 'MediaWiki 1.22 is end of life.'
     fingerprint: detect_general
@@ -249,7 +249,7 @@ MediaWiki 1.22:
 MediaWiki 1.21:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.33.2'
+    secure_version: '1.34.1'
     regexp: ['\$wgVersion.*?(?P<version>1\.21\.[0-9.]{1,})']
     cve: 'MediaWiki 1.21 is end of life.'
     fingerprint: detect_general
@@ -257,7 +257,7 @@ MediaWiki 1.21:
 MediaWiki 1.20:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.33.2'
+    secure_version: '1.34.1'
     regexp: ['\$wgVersion.*?(?P<version>1\.20\.[0-9.]{1,})']
     cve: 'MediaWiki 1.20 is end of life.'
     fingerprint: detect_general
@@ -265,7 +265,7 @@ MediaWiki 1.20:
 MediaWiki 1.19:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.33.2'
+    secure_version: '1.34.1'
     regexp: ['\$wgVersion.*?(?P<version>1\.19\.[0-9.]{1,})']
     cve: 'MediaWiki 1.19 is end of life.'
     fingerprint: detect_general
@@ -273,7 +273,7 @@ MediaWiki 1.19:
 MediaWiki 1.18:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.33.2'
+    secure_version: '1.34.1'
     regexp: ['\$wgVersion.*?(?P<version>1\.1[0-8]\.[0-9.]{1,})']
     cve: 'MediaWiki 1.18 is end of life.'
     fingerprint: detect_general
