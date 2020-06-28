@@ -100,19 +100,35 @@
 # https://drupal.org/SA-CORE-2020-004   CVE-2020-13663  9.0.1/8.9.1/8.8.8/7.72
 # https://drupal.org/SA-CORE-2020-005   CVE-2020-13664  9.0.1/8.9.1/8.8.8
 # https://drupal.org/SA-CORE-2020-006   CVE-2020-13665  9.0.1/8.9.1/8.8.8
-Drupal 8:
+Drupal 9:
   1:
     location: ['/core/lib/Drupal.php']
-    secure_version: '8.8.6'
-    regexp: ["  const VERSION = '(?P<version>[0-9.]+)"]
+    secure_version: '9.0.1'
+    regexp: ['  const VERSION.*?(?P<version>9\.[0-9.]{1,})']
+    cve: 'https://drupal.org/SA-CORE-2020-004 https://nvd.nist.gov/vuln/detail/CVE-2020-13663 https://drupal.org/SA-CORE-2020-005 https://nvd.nist.gov/vuln/detail/CVE-2020-13664 https://drupal.org/SA-CORE-2020-006 https://nvd.nist.gov/vuln/detail/CVE-2020-13665'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+Drupal 8.9:
+  1:
+    location: ['/core/lib/Drupal.php']
+    secure_version: '8.9.1'
+    regexp: ['  const VERSION.*?(?P<version>8\.9\.[0-9]{1,})']
+    cve: 'https://drupal.org/SA-CORE-2020-004 https://nvd.nist.gov/vuln/detail/CVE-2020-13663 https://drupal.org/SA-CORE-2020-005 https://nvd.nist.gov/vuln/detail/CVE-2020-13664 https://drupal.org/SA-CORE-2020-006 https://nvd.nist.gov/vuln/detail/CVE-2020-13665'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+Drupal 8.8:
+  1:
+    location: ['/core/lib/Drupal.php']
+    secure_version: '8.8.8'
+    regexp: ['  const VERSION.*?(?P<version>8\.[0-8]\.[0-9]{1,})']
     cve: 'https://drupal.org/SA-CORE-2020-004 https://nvd.nist.gov/vuln/detail/CVE-2020-13663 https://drupal.org/SA-CORE-2020-005 https://nvd.nist.gov/vuln/detail/CVE-2020-13664 https://drupal.org/SA-CORE-2020-006 https://nvd.nist.gov/vuln/detail/CVE-2020-13665'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Drupal 7:
   1:
     location: ['/includes/bootstrap.inc']
-    secure_version: '8.8.6'
+    secure_version: '7.72'
     regexp: ['define.*?VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://drupal.org/SA-CORE-2020-004 https://nvd.nist.gov/vuln/detail/CVE-2020-13663 https://drupal.org/SA-CORE-2020-005 https://nvd.nist.gov/vuln/detail/CVE-2020-13664 https://drupal.org/SA-CORE-2020-006 https://nvd.nist.gov/vuln/detail/CVE-2020-13665'
+    cve: 'https://drupal.org/SA-CORE-2020-004 https://nvd.nist.gov/vuln/detail/CVE-2020-13663'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
