@@ -1,20 +1,31 @@
 # URL: http://www.opencart.com/
-# http://forum.opencart.com/viewtopic.php?t=5792
+# NOTE: Offensive behaviour from main developer http://forum.opencart.com/viewtopic.php?t=5792
+# TODO although I don't think this software should ever be used anywhere:
+#   http://www.juniper.net/security/auto/vulnerabilities/vuln34724.html "OpenCart 'index.php' Local File Include Vulnerability"
+#   http://seclists.org/fulldisclosure/2015/Nov/21 http://blog.curesec.com/article/blog/OpenCart-2031-CSRF-66.html no cve, "This issue was already discovered in 2013 by Saadat Ullah, but new versions of OpenCart are still vulnerable as no fix has been released."
+#   http://seclists.org/bugtraq/2016/Apr/61
+#   http://seclists.org/bugtraq/2016/Aug/102
+#   http://seclists.org/bugtraq/2017/Jan/69 2.3.0.2 is affected
+#   CVE-2014-3990
+#   CVE-2018-11231
+#   CVE-2018-11494
+#   CVE-2018-11495
+#   CVE-2018-13067
+#   CVE-2019-15081
+#   CVE-2020-10596
+#   CVE-2020-13980
+#   CVE-2020-15478 Journal theme for OpenCart
 # CVE-2010-1610 1.4.8 http://blog.visionsource.org/2010/01/28/opencart-csrf-vulnerability/
 # CVE-2013-1891 N/A http://www.waraxe.us/advisory-98.html
 # CVE-2012-XXXX N/A http://www.waraxe.us/advisory-84.html
 # CVE-2014-3990 2.0.0.0 http://karmainsecurity.com/KIS-2014-08
 # CVE-2015-4671 2.1.0.2 https://github.com/opencart/opencart/commit/303fa88fe664ded4bf8753b997abd916f0a3c03f
-# TODO: http://www.juniper.net/security/auto/vulnerabilities/vuln34724.html "OpenCart 'index.php' Local File Include Vulnerability"
-# TODO: http://seclists.org/fulldisclosure/2015/Nov/21 http://blog.curesec.com/article/blog/OpenCart-2031-CSRF-66.html no cve, "This issue was already discovered in 2013 by Saadat Ullah, but new versions of OpenCart are still vulnerable as no fix has been released."
-# TODO http://seclists.org/bugtraq/2016/Apr/61
-# TODO http://seclists.org/bugtraq/2016/Aug/102
-# TODO http://seclists.org/bugtraq/2017/Jan/69 2.3.0.2 is affected
+# CVE-2016-10509 2.3.0.0 https://github.com/opencart/opencart/issues/4114 https://github.com/opencart/opencart/commit/b95044da6ac608e7239f7949ff21d3b65be68f82
 OpenCart:
   1:
     location: ['/admin/index.php']
-    secure_version: '2.1.0.2'
+    secure_version: '99.9'
     regexp: ["define\\('VERSION',[ \t]'(?P<version>[0-9.]+)"]
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-4671'
+    cve: "Do not use this software. The developers of OpenCart are very offensive and don't care about security at all. They block security researchers and attack them even outside of e.g. GitHub. This has been continuing for years and they even got offensive when I asked about details of security issuet hat they fixed."
     fingerprint: detect_general
     post_processing: ['php5.fcgi']

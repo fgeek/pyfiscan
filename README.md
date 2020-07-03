@@ -70,7 +70,7 @@ Detects following software
 * MyBB
 * Nibbleblog
 * Open Source Social Network
-* OpenCart
+* OpenCart (recommends not to use this software)
 * osDate
 * ownCloud
 * Oxwall
