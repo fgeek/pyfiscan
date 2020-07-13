@@ -3072,3 +3072,11 @@ WordPress plugin angwp:
     cve: 'https://www.wordfence.com/blog/2020/07/critical-vulnerabilities-patched-in-adning-advertising-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wpdiscuz:
+  1:
+    location: ['/wp-content/plugins/wpdiscuz/readme.txt']
+    secure_version: '5.3.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://wpdiscuz.com/community/news/security-vulnerability-issue-in-5-3-5-please-udate/ https://nvd.nist.gov/vuln/detail/CVE-2020-13640 https://www.openwall.com/lists/oss-security/2020/07/06/1 https://plugins.trac.wordpress.org/log/wpdiscuz/tags/5.3.6?rev=2335769'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
