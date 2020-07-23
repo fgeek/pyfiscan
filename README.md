@@ -92,6 +92,7 @@ Detects following software
 * SMF
 * Spina CMS
 * SPIP
+* SQLiteManager
 * SquirrelMail
 * TestLink
 * TikiWiki

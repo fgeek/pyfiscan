@@ -1,0 +1,16 @@
+# URL: http://www.sqlitemanager.org/ http://sourceforge.net/projects/sqlitemanager/
+# NOTE: This product is discontinued.
+# CVE-2007-1231
+# CVE-2007-1232
+# CVE-2008-0516
+# CVE-2009-4539
+# CVE-2012-5105
+# CVE-2019-9083 TODO https://lists.openwall.net/full-disclosure/2019/02/26/2 created https://sourceforge.net/p/sqlitemanager/bugs/57/ 2020-07-23
+SQLiteManager:
+  1:
+    location: ['/include/defined.inc.php']
+    secure_version: 'N/A'
+    regexp: ['define.*?SQLiteManagerVersion.*?(?P<version>[0-9.]+)']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-9083 https://lists.openwall.net/full-disclosure/2019/02/26/2 https://sourceforge.net/p/sqlitemanager/bugs/57/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
