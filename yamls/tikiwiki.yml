@@ -28,11 +28,13 @@
 # CVE-2018-14850 18.2/15.7/12.14 https://sourceforge.net/p/tikiwiki/code/66990
 # CVE-2018-20719 17.2
 # CVE-2019-15314 TODO not reported to upstream?
+# CVE-2020-8966 21.0 https://www.incibe-cert.es/en/early-warning/security-advisories/cross-site-scripting-xss-flaws-found-tiki-wiki-cms-software
+# CVE-2020-16131 21.1/20.3/18.6/15.9 https://info.tiki.org/article472-New-Security-Releases-Tiki-21-1-LTS-20-3-18-6-and-15-9-LTS-Versions-Just-Released
 TikiWiki:
   1:
     location: ['/lib/setup/twversion.class.php']
-    secure_version: '18.2'
+    secure_version: '21.1'
     regexp: ['.*?\$this->version.*?(?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-14849 https://nvd.nist.gov/vuln/detail/CVE-2018-14850'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-16131 https://info.tiki.org/article472-New-Security-Releases-Tiki-21-1-LTS-20-3-18-6-and-15-9-LTS-Versions-Just-Released'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
