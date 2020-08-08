@@ -46,6 +46,7 @@ Detects following software
 * Elefant CMS
 * EspoCRM
 * Etherpad
+* flatCore CMS
 * FluxBB
 * Foswiki
 * Gallery
