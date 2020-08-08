@@ -7,7 +7,7 @@
 # CVE-2017-1000428
 # CVE-2019-10652
 # CVE-2019-13961
-# TODO 1.5.7 https://lists.openwall.net/full-disclosure/2020/08/07/1 CVE requested 2020-08-08
+# TODO 1.5.7 https://lists.openwall.net/full-disclosure/2020/08/07/1 CVE requested 2020-08-08 #941622
 flatCore CMS:
   1:
     location: ['/acp/versions.php']
