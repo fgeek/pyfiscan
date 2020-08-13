@@ -70,11 +70,14 @@
 # CVE-2018-17782 2.17.2 https://mantisbt.org/bugs/view.php?id=24813 https://mantisbt.org/blog/archives/mantisbt/613
 # CVE-2018-17783 2.17.2 https://mantisbt.org/bugs/view.php?id=24814 https://mantisbt.org/blog/archives/mantisbt/613
 # CVE-2019-15074 2.21.2 https://mantisbt.org/bugs/view.php?id=25995 https://mantisbt.org/blog/archives/mantisbt/641 https://github.com/mantisbt/mantisbt/commit/9cee1971c498bbe0a72bca1c773fae50171d8c27
+# CVE-2019-15715 2.22.1 https://mantisbt.org/bugs/view.php?id=26091
+# CVE-2019-15539 2.21.3 https://mantisbt.org/bugs/view.php?id=26078 https://github.com/mantisbt/mantisbt/commit/bd094dede74ff6e313e286e949e2387233a96eea
+# CVE-2020-16266 2.24.2 https://mantisbt.org/blog/archives/mantisbt/665 https://mantisbt.org/bugs/view.php?id=27056
 MantisBT:
   1:
     location: ['/core/constant_inc.php']
-    secure_version: '2.21.2'
+    secure_version: '2.24.2'
     regexp: ['define.*?MANTIS_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://mantisbt.org/blog/archives/mantisbt/641 https://nvd.nist.gov/vuln/detail/CVE-2019-15074'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-16266 https://mantisbt.org/blog/archives/mantisbt/665 https://mantisbt.org/bugs/view.php?id=27056'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
