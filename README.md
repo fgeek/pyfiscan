@@ -49,6 +49,7 @@ Detects following software
 * flatCore CMS
 * FluxBB
 * Foswiki
+* FUEL CMS
 * Gallery
 * Gollum
 * HelpDEZk
