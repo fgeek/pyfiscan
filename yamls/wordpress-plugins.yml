@@ -1882,8 +1882,8 @@ WordPress plugin multisite-post-duplicator:
     cve: 'https://security.dxw.com/advisories/csrf-vulnerability-in-multisite-post-duplicator-could-allow-an-attacker-to-do-almost-anything-an-admin-user-can-do/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# CVE-2016-11085 4.7.9 https://security.dxw.com/advisories/csrfstored-xss-in-quiz-and-survey-master-formerly-quiz-master-next-allows-unauthenticated-attackers-to-do-almost-anything-an-admin-can/
 # CVE-2019-9575 N/A https://security-consulting.icu/blog/2019/02/wordpress-quiz-and-survey-master-xss/ https://lists.openwall.net/full-disclosure/2019/02/05/5
-# TODO 4.7.9 https://security.dxw.com/advisories/csrfstored-xss-in-quiz-and-survey-master-formerly-quiz-master-next-allows-unauthenticated-attackers-to-do-almost-anything-an-admin-can/ CVE requested 2020-08-16 #944972
 WordPress plugin quiz-master-next:
   1:
     location: ['/wp-content/plugins/quiz-master-next/readme.txt']
