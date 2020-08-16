@@ -1882,12 +1882,14 @@ WordPress plugin multisite-post-duplicator:
     cve: 'https://security.dxw.com/advisories/csrf-vulnerability-in-multisite-post-duplicator-could-allow-an-attacker-to-do-almost-anything-an-admin-user-can-do/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# CVE-2019-9575 N/A https://security-consulting.icu/blog/2019/02/wordpress-quiz-and-survey-master-xss/ https://lists.openwall.net/full-disclosure/2019/02/05/5
+# TODO 4.7.9 https://security.dxw.com/advisories/csrfstored-xss-in-quiz-and-survey-master-formerly-quiz-master-next-allows-unauthenticated-attackers-to-do-almost-anything-an-admin-can/ CVE requested 2020-08-16
 WordPress plugin quiz-master-next:
   1:
     location: ['/wp-content/plugins/quiz-master-next/readme.txt']
-    secure_version: '4.7.9'
+    secure_version: '7.0.1'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://security.dxw.com/advisories/csrfstored-xss-in-quiz-and-survey-master-formerly-quiz-master-next-allows-unauthenticated-attackers-to-do-almost-anything-an-admin-can/'
+    cve: 'https://www.wordfence.com/blog/2020/08/critical-vulnerabilities-patched-in-quiz-and-survey-master-plugin/'  # TODO: CVE. Wordfence page says "Pending", but not sure if that has been requested.
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin mailchimp-for-wp:
@@ -2687,14 +2689,6 @@ WordPress plugin forminator:
     secure_version: '1.6'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://security-consulting.icu/blog/2019/02/wordpress-forminator-persistent-xss-blind-sql-injection/ https://nvd.nist.gov/vuln/detail/CVE-2019-9567 https://nvd.nist.gov/vuln/detail/CVE-2019-9568'
-    fingerprint: detect_general
-    post_processing: ['php5.fcgi']
-WordPress plugin quiz-master-next:
-  1:
-    location: ['/wp-content/plugins/quiz-master-next/readme.txt']
-    secure_version: 'N/A'
-    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-9575 https://security-consulting.icu/blog/2019/02/wordpress-quiz-and-survey-master-xss/ https://lists.openwall.net/full-disclosure/2019/02/05/5'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin blog2social:
