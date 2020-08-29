@@ -66,11 +66,27 @@
 # CVE-2019-17577 TODO
 # CVE-2019-17578 TODO https://mycvee.blogspot.com/p/cve-2019-17578.html affects 10.0.2
 # CVE-2019-17223 TODO https://medium.com/@k43p/cve-2019-17223-stored-html-injection-dolibarr-crm-erp-ad1e064d0ca5 affects 10.0.2
+# CVE-2019-19206 TODO
+# CVE-2019-19212 TODO
+# CVE-2020-7994 TODO
+# CVE-2020-7995 TODO
+# CVE-2020-7996 TODO
+# CVE-2020-9016 TODO
+# CVE-2019-19209 TODO
+# CVE-2019-19210 TODO
+# CVE-2019-19211 TODO
+# CVE-2020-11825 TODO
+# CVE-2020-11823 TODO
+# CVE-2020-12669 TODO
+# CVE-2020-13239 TODO
+# CVE-2020-13240 TODO https://www.dubget.com/stored-xss-via-file-upload.html 11.0.4 is affected
+# CVE-2020-14201 11.0.5 https://www.wizlynxgroup.com/security-research-advisories/vuln/WLX-2020-011
+# CVE-2020-14475 11.0.5 https://github.com/Dolibarr/dolibarr/commit/22ca5e067189bffe8066df26df923a386f044c08
 Dolibarr:
   1:
     location: ['/htdocs/filefunc.inc.php']
-    secure_version: '7.0.2'
+    secure_version: '11.0.5'
     regexp: ['.*?DOL_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-10092 http://www.openwall.com/lists/oss-security/2018/05/21/2 https://nvd.nist.gov/vuln/detail/CVE-2018-10094 http://www.openwall.com/lists/oss-security/2018/05/21/1 https://nvd.nist.gov/vuln/detail/CVE-2018-10095 http://www.openwall.com/lists/oss-security/2018/05/21/3 https://nvd.nist.gov/vuln/detail/CVE-2018-9019'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-14201 https://nvd.nist.gov/vuln/detail/CVE-2020-14475'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
