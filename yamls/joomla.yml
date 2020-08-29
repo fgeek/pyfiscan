@@ -199,9 +199,9 @@
 # CVE-2020-10241 3.9.16 https://developer.joomla.org/security-centre/802-20200301-core-csrf-in-com-templates-image-actions.html https://www.joomla.org/announcements/release-news/5783-joomla-3-9-16.html
 # CVE-2020-10242 3.9.16 https://developer.joomla.org/security-centre/803-20200302-core-xss-in-protostar-and-beez3.html https://www.joomla.org/announcements/release-news/5783-joomla-3-9-16.html
 # CVE-2020-10243 3.9.16 https://developer.joomla.org/security-centre/807-20200306-core-sql-injection-in-featured-articles-menu-parameters.html https://www.joomla.org/announcements/release-news/5783-joomla-3-9-16.html
-# CVE-2020-24597 3.9.21 https://developer.joomla.org/security-centre/827-20200803-core-directory-traversal-in-com-media.html
-# CVE-2020-24598 3.9.21 https://developer.joomla.org/security-centre/825-20200802-core-open-redirect-in-com-content-vote-feature.html
-# CVE-2020-24599 3.9.21 https://developer.joomla.org/security-centre/824-20200801-core-xss-in-mod-latestactions.html
+# CVE-2020-24597 3.9.21 https://developer.joomla.org/security-centre/827-20200803-core-directory-traversal-in-com-media.html https://www.joomla.org/announcements/release-news/5821-joomla-3-9-21.html
+# CVE-2020-24598 3.9.21 https://developer.joomla.org/security-centre/825-20200802-core-open-redirect-in-com-content-vote-feature.html https://www.joomla.org/announcements/release-news/5821-joomla-3-9-21.html
+# CVE-2020-24599 3.9.21 https://developer.joomla.org/security-centre/824-20200801-core-xss-in-mod-latestactions.html https://www.joomla.org/announcements/release-news/5821-joomla-3-9-21.html
 Joomla 3:
   1:
     location: ['/administrator/manifests/files/joomla.xml']
