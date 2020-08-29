@@ -199,51 +199,54 @@
 # CVE-2020-10241 3.9.16 https://developer.joomla.org/security-centre/802-20200301-core-csrf-in-com-templates-image-actions.html https://www.joomla.org/announcements/release-news/5783-joomla-3-9-16.html
 # CVE-2020-10242 3.9.16 https://developer.joomla.org/security-centre/803-20200302-core-xss-in-protostar-and-beez3.html https://www.joomla.org/announcements/release-news/5783-joomla-3-9-16.html
 # CVE-2020-10243 3.9.16 https://developer.joomla.org/security-centre/807-20200306-core-sql-injection-in-featured-articles-menu-parameters.html https://www.joomla.org/announcements/release-news/5783-joomla-3-9-16.html
+# CVE-2020-24597 3.9.21 https://developer.joomla.org/security-centre/827-20200803-core-directory-traversal-in-com-media.html
+# CVE-2020-24598 3.9.21 https://developer.joomla.org/security-centre/825-20200802-core-open-redirect-in-com-content-vote-feature.html
+# CVE-2020-24599 3.9.21 https://developer.joomla.org/security-centre/824-20200801-core-xss-in-mod-latestactions.html
 Joomla 3:
   1:
     location: ['/administrator/manifests/files/joomla.xml']
-    secure_version: '3.9.16'
+    secure_version: '3.9.21'
     regexp: ['[\t]<version>(?P<version>3\.[0-9.]{1,})']
-    cve: 'https://www.joomla.org/announcements/release-news/5783-joomla-3-9-16.html https://nvd.nist.gov/vuln/detail/CVE-2020-10238 https://developer.joomla.org/security-centre/804-20200303-core-incorrect-access-control-in-com-templates.html https://nvd.nist.gov/vuln/detail/CVE-2020-10239 https://developer.joomla.org/security-centre/806-20200305-core-incorrect-access-control-in-com-fields-sql-field.html https://nvd.nist.gov/vuln/detail/CVE-2020-10240 https://developer.joomla.org/security-centre/805-20200304-core-identifier-collisions-in-com-users.html https://nvd.nist.gov/vuln/detail/CVE-2020-10241 https://developer.joomla.org/security-centre/802-20200301-core-csrf-in-com-templates-image-actions.html https://nvd.nist.gov/vuln/detail/CVE-2020-10242 https://developer.joomla.org/security-centre/803-20200302-core-xss-in-protostar-and-beez3.html https://nvd.nist.gov/vuln/detail/CVE-2020-10243 https://developer.joomla.org/security-centre/807-20200306-core-sql-injection-in-featured-articles-menu-parameters.html'
+    cve: 'https://developer.joomla.org/security-centre/827-20200803-core-directory-traversal-in-com-media.html https://nvd.nist.gov/vuln/detail/CVE-2020-24597 https://developer.joomla.org/security-centre/824-20200801-core-xss-in-mod-latestactions.html  https://nvd.nist.gov/vuln/detail/CVE-2020-24599'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Joomla 2.5:
   1:
     location: ['/administrator/manifests/files/joomla.xml']
-    secure_version: '3.9.16'
+    secure_version: '3.9.21'
     regexp: ['[\t]<version>(?P<version>2\.5\.[0-9]{1,})']
-    cve: 'Joomla 2.5 is end of life. Please upgrade to 3.9.16 version.'
+    cve: 'Joomla 2.5 is end of life. Please upgrade to 3.9.21 version.'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Joomla 1.7:
   1:
     location: ['/includes/version.php']
-    secure_version: '3.9.16'
+    secure_version: '3.9.21'
     regexp: ['[\t]+public[\t|\s]\$RELEASE.*?(?P<version>1.7)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.7 is end of life. Please upgrade to 3.9.16 version.'
+    cve: 'Joomla 1.7 is end of life. Please upgrade to 3.9.21 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.6:
   1:
     location: ['/libraries/joomla/version.php']
-    secure_version: '3.9.16'
+    secure_version: '3.9.21'
     regexp: ['.*?RELEASE.*?(?P<version>1.6)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.6 is end of life. Please upgrade to 3.9.16 version.'
+    cve: 'Joomla 1.6 is end of life. Please upgrade to 3.9.21 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.5:
   1:
     location: ['/libraries/joomla/version.php']
-    secure_version: '3.9.16'
+    secure_version: '3.9.21'
     regexp: ['.*?RELEASE.*?(?P<version>1.5)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.5 is end of life. Please upgrade to 3.9.16 version.'
+    cve: 'Joomla 1.5 is end of life. Please upgrade to 3.9.21 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.0:
   1:
     location: ['/includes/version.php']
-    secure_version: '3.9.16'
+    secure_version: '3.9.21'
     regexp: ['[\t]+var.*?RELEASE.*?(?P<version>1.0)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.0 is end of life. Please upgrade to 3.9.16 version.'
+    cve: 'Joomla 1.0 is end of life. Please upgrade to 3.9.21 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
