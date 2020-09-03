@@ -82,12 +82,13 @@
 # CVE-2020-13828 11.0.5 https://www.wizlynxgroup.com/security-research-advisories/vuln/WLX-2020-002
 # CVE-2020-13240 TODO https://www.dubget.com/stored-xss-via-file-upload.html 11.0.4 is affected
 # CVE-2020-14201 11.0.5 https://www.wizlynxgroup.com/security-research-advisories/vuln/WLX-2020-011
+# CVE-2020-14209 11.0.5 https://www.wizlynxgroup.com/security-research-advisories/vuln/WLX-2020-012
 # CVE-2020-14475 11.0.5 https://github.com/Dolibarr/dolibarr/commit/22ca5e067189bffe8066df26df923a386f044c08
 Dolibarr:
   1:
     location: ['/htdocs/filefunc.inc.php']
     secure_version: '11.0.5'
     regexp: ['.*?DOL_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-13828 https://nvd.nist.gov/vuln/detail/CVE-2020-14201 https://nvd.nist.gov/vuln/detail/CVE-2020-14475'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-13828 https://nvd.nist.gov/vuln/detail/CVE-2020-14201 https://nvd.nist.gov/vuln/detail/CVE-2020-14209 https://nvd.nist.gov/vuln/detail/CVE-2020-14475'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
