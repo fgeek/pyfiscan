@@ -129,6 +129,7 @@ def detect_withoutnewlines(source_file, regexp):
     with open(source_file, 'r') as f:
         try:
             source = f.read().replace('\n', '')
+            f.close()
         except UnicodeDecodeError:
             with open(f.name, 'rb') as handle:
                 res = chardet.detect(handle.read())
