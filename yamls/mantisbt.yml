@@ -73,11 +73,14 @@
 # CVE-2019-15715 2.22.1 https://mantisbt.org/bugs/view.php?id=26091
 # CVE-2019-15539 2.21.3 https://mantisbt.org/bugs/view.php?id=26078 https://github.com/mantisbt/mantisbt/commit/bd094dede74ff6e313e286e949e2387233a96eea
 # CVE-2020-16266 2.24.2 https://mantisbt.org/blog/archives/mantisbt/665 https://mantisbt.org/bugs/view.php?id=27056
+# CVE-2020-25288 2.24.3 https://mantisbt.org/bugs/view.php?id=27275 http://github.com/mantisbt/mantisbt/commit/221cf323f16a9738a5b27aaba94758f11281d85c
+# CVE-2020-25781 2.24.3 https://mantisbt.org/bugs/view.php?id=27039 http://github.com/mantisbt/mantisbt/commit/5595c90f11c48164331a20bb9c66098980516e93 http://github.com/mantisbt/mantisbt/commit/9de20c09e5a557e57159a61657ce62f1a4f578fe
+# CVE-2020-25830 2.24.3 https://mantisbt.org/bugs/view.php?id=27304 http://github.com/mantisbt/mantisbt/commit/8c6f4d8859785b67fb80ac65100ac5259ed9237d
 MantisBT:
   1:
     location: ['/core/constant_inc.php']
-    secure_version: '2.24.2'
+    secure_version: '2.24.3'
     regexp: ['define.*?MANTIS_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-16266 https://mantisbt.org/blog/archives/mantisbt/665 https://mantisbt.org/bugs/view.php?id=27056'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-25288 https://nvd.nist.gov/vuln/detail/CVE-2020-25781 https://nvd.nist.gov/vuln/detail/CVE-2020-25830'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
