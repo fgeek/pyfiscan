@@ -45,7 +45,7 @@ def generate(yamldir, includes):
     data = dict()
     for yamlfile in gen_yamlfile_locations(yamldir, includes):
         try:
-            data.update(yaml.safe_load(yamlfile.read())
+            data.update(yaml.safe_load(yamlfile.read()))
         except AttributeError:  # empty file
             sys.exit('No data found inside: %s' % yamlfile)
         except yaml.scanner.ScannerError as e:  # syntax error
