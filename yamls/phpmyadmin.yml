@@ -200,11 +200,13 @@
 # PMASA-2020-2 Pending 5.0.2/4.9.5 https://github.com/phpmyadmin/phpmyadmin/commit/a8acd7a42cf743186528b0453f90aaa32bfefabe
 # PMASA-2020-3 Pending 5.0.2/4.9.5 https://github.com/phpmyadmin/phpmyadmin/commit/46a7aa7cd4ff2be0eeb23721fbf71567bebe69a5 https://github.com/phpmyadmin/phpmyadmin/commit/6b9b2601d8af916659cde8aefd3a6eaadd10284a
 # PMASA-2020-4 Pending 5.0.2/4.9.5 https://github.com/phpmyadmin/phpmyadmin/commit/89fbcd7c39e6b3979cdb2f64aa4cd5f4db27eaad https://github.com/phpmyadmin/phpmyadmin/commit/3258978c38bee8cb4b99f249dffac9c8aaea2d80
+# PMASA-2020-5 CVE-2020-26934 5.0.3/4.9.6 https://www.phpmyadmin.net/security/PMASA-2020-5/ https://github.com/phpmyadmin/phpmyadmin/commit/19df63b0365621427697edc185ff7c9c5707c523
+# PMASA-2020-6 CVE-2020-26935 5.0.3/4.9.6 https://www.phpmyadmin.net/security/PMASA-2020-6/ https://github.com/phpmyadmin/phpmyadmin/commit/d09ab9bc9d634ad08b866d42bb8c4109869d38d2
 phpMyAdmin:
   1:
     location: ['/libraries/Config.class.php']
-    secure_version: '5.0.2'
+    secure_version: '5.0.3'
     regexp: ['.*?PMA_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://www.phpmyadmin.net/security/PMASA-2020-2/ https://www.phpmyadmin.net/security/PMASA-2020-3/ https://www.phpmyadmin.net/security/PMASA-2020-4/'
+    cve: 'https://www.phpmyadmin.net/security/PMASA-2020-5/ https://nvd.nist.gov/vuln/detail/CVE-2020-26934 https://www.phpmyadmin.net/security/PMASA-2020-6/ https://nvd.nist.gov/vuln/detail/CVE-2020-26935'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
