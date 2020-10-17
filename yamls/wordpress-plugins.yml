@@ -3133,3 +3133,11 @@ WordPress plugin js_composer:
     cve: 'https://www.wordfence.com/blog/2020/10/vulnerability-exposes-over-4-million-sites-using-wpbakery/'  # TODO: CVE. Wordfence page says "Pending", but not sure if that has been requested. (2020-10-08)
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin ti-woocommerce-wishlist:
+  1:
+    location: ['/wp-content/plugins/ti-woocommerce-wishlist/readme.txt']
+    secure_version: '1.21.12'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://wpscan.com/vulnerability/10433 https://blog.nintechnet.com/critical-zero-day-vulnerability-fixed-in-wordpress-ti-woocommerce-wishlist-plugin/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
