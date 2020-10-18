@@ -3141,3 +3141,11 @@ WordPress plugin ti-woocommerce-wishlist:
     cve: 'https://wpscan.com/vulnerability/10433 https://blog.nintechnet.com/critical-zero-day-vulnerability-fixed-in-wordpress-ti-woocommerce-wishlist-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin orbisius-child-theme-creator:
+  1:
+    location: ['/wp-content/plugins/orbisius-child-theme-creator/readme.txt']
+    secure_version: '1.5.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://www.wordfence.com/blog/2020/10/high-severity-vulnerability-patched-in-child-theme-creator-by-orbisius/'  # TODO: CVE. Wordfence page says "Pending", but not sure if that has been requested. (2020-10-18)
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
