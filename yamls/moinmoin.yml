@@ -51,10 +51,12 @@
 # CVE-2016-7148 1.9.9 https://www.curesec.com/blog/article/blog/MoinMoin-198-XSS-175.html
 # CVE-2016-9119 1.9.9
 # CVE-2017-5934 1.9.10
+# CVE-2020-15275 1.9.11 https://github.com/moinwiki/moin-1.9/security/advisories/GHSA-4q96-6xhq-ff43
+# CVE-2020-25074 1.9.11 https://github.com/moinwiki/moin-1.9/security/advisories/GHSA-52q8-877j-gghq
 MoinMoin:
   1:
     location: ['/MoinMoin/version.py']
-    secure_version: '1.9.10'
+    secure_version: '1.9.11'
     regexp: ['.*?release.*?(?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-5934'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-15275 https://nvd.nist.gov/vuln/detail/CVE-2020-25074'
     fingerprint: detect_general
