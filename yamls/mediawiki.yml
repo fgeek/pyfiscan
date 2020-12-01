@@ -165,9 +165,9 @@ MediaWiki 1.35:
 MediaWiki 1.34:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.34.3'
+    secure_version: '1.35.0'
     regexp: ['\$wgVersion.*?(?P<version>1\.34\.[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-17367 https://nvd.nist.gov/vuln/detail/CVE-2020-17368 https://nvd.nist.gov/vuln/detail/CVE-2020-25689 https://nvd.nist.gov/vuln/detail/CVE-2020-25812 https://nvd.nist.gov/vuln/detail/CVE-2020-25813 https://nvd.nist.gov/vuln/detail/CVE-2020-25814 https://nvd.nist.gov/vuln/detail/CVE-2020-25815 https://nvd.nist.gov/vuln/detail/CVE-2020-25827 https://nvd.nist.gov/vuln/detail/CVE-2020-25828 https://nvd.nist.gov/vuln/detail/CVE-2020-25869 https://nvd.nist.gov/vuln/detail/CVE-2020-26120 https://nvd.nist.gov/vuln/detail/CVE-2020-26121 https://lists.wikimedia.org/pipermail/mediawiki-announce/2020-September/000260.html'
+    cve: 'MediaWiki 1.34 is end of life. Please see: https://lists.wikimedia.org/pipermail/mediawiki-announce/2020-November/000266.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.33:

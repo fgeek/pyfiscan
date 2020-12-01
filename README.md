@@ -131,6 +131,7 @@ Detects following end-of-life software:
 * MediaWiki 1.30 is end-of-life since [2019-06-06](https://lists.wikimedia.org/pipermail/mediawiki-announce/2019-June/000231.html)
 * MediaWiki 1.32 is end-of-life since [2020-01-23](https://lists.wikimedia.org/pipermail/mediawiki-announce/2020-January/000245.html)
 * MediaWiki 1.33 is end-of-life since [2020-06-24](https://lists.wikimedia.org/pipermail/mediawiki-announce/2020-June/000253.html)
+* MediaWiki 1.34 is end-of-life since [2020-11-30](https://lists.wikimedia.org/pipermail/mediawiki-announce/2020-November/000266.html)
 * ownCloud 4
 * ownCloud 5
 * ownCloud 6
