@@ -3149,3 +3149,11 @@ WordPress plugin orbisius-child-theme-creator:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-28649 https://www.wordfence.com/blog/2020/10/high-severity-vulnerability-patched-in-child-theme-creator-by-orbisius/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin double-opt-in-for-download:
+  1:
+    location: ['/wp-content/plugins/double-opt-in-for-download/readme.txt']
+    secure_version: '2.0.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-7517 http://www.vapidlabs.com/advisory.php?v=157 https://www.openwall.com/lists/oss-security/2015/11/28/3'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
