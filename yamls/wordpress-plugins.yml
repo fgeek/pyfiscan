@@ -2229,12 +2229,13 @@ WordPress plugin wp-statistics:
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 # CVE-2017-7723 1.2.5
+# TODO 1.3.9.1 https://blog.nintechnet.com/critical-0day-vulnerability-fixed-in-wordpress-easy-wp-smtp-plugin/ https://www.wordfence.com/blog/2019/03/hackers-abusing-recently-patched-vulnerability-in-easy-wp-smtp-plugin/
 WordPress plugin easy-wp-smtp:
   1:
     location: ['/wp-content/plugins/easy-wp-smtp/readme.txt']
-    secure_version: '1.3.9.1'
+    secure_version: '1.4.4'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://blog.nintechnet.com/critical-0day-vulnerability-fixed-in-wordpress-easy-wp-smtp-plugin/ https://www.wordfence.com/blog/2019/03/hackers-abusing-recently-patched-vulnerability-in-easy-wp-smtp-plugin/'  # TODO: CVE missing
+    cve: 'https://blog.nintechnet.com/wordpress-easy-wp-smtp-plugin-fixed-zero-day-vulnerability/'  # TODO: CVE requested 2020-12-14
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin flickr-picture-backup:
