@@ -46,6 +46,7 @@
 # CVE-2018-18380 4.2.24 https://github.com/bigtreecms/BigTree-CMS/commit/c69402c4764ed9a76301c57277aefe70141b6418
 # CVE-2018-20405 N/A https://github.com/bigtreecms/BigTree-CMS/issues/354 path disclosure
 # CVE-2018-1000521 4.2.22 https://github.com/bigtreecms/BigTree-CMS/issues/328
+# CVE-2020-995566 TODO https://www.netsparker.com/web-applications-advisories/ns-20-004-cross-site-scripting-in-bigtreecms/ https://github.com/bigtreecms/BigTree-CMS/commit/33d0f2a80df5af9363bcf39a24a341c0d860714c no release yet 2020-12-13
 BigTree CMS:
   1:
     location: ['/core/version.php']
