@@ -3158,3 +3158,11 @@ WordPress plugin double-opt-in-for-download:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-7517 http://www.vapidlabs.com/advisory.php?v=157 https://www.openwall.com/lists/oss-security/2015/11/28/3'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin secure-file-manager:
+  1:
+    location: ['/wp-content/plugins/secure-file-manager/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://blog.nintechnet.com/authenticated-rce-vulnerability-in-wordpress-secure-file-manager-plugin-unpatched/'  # TODO: CVE requested 2020-12-14
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
