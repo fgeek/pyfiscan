@@ -2235,7 +2235,7 @@ WordPress plugin easy-wp-smtp:
     location: ['/wp-content/plugins/easy-wp-smtp/readme.txt']
     secure_version: '1.4.4'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://blog.nintechnet.com/wordpress-easy-wp-smtp-plugin-fixed-zero-day-vulnerability/'  # TODO: CVE requested 2020-12-14
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-35234 https://blog.nintechnet.com/wordpress-easy-wp-smtp-plugin-fixed-zero-day-vulnerability/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin flickr-picture-backup:
@@ -3163,6 +3163,6 @@ WordPress plugin secure-file-manager:
     location: ['/wp-content/plugins/secure-file-manager/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://blog.nintechnet.com/authenticated-rce-vulnerability-in-wordpress-secure-file-manager-plugin-unpatched/'  # TODO: CVE requested 2020-12-14
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-35235 https://blog.nintechnet.com/authenticated-rce-vulnerability-in-wordpress-secure-file-manager-plugin-unpatched/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
