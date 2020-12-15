@@ -3166,3 +3166,19 @@ WordPress plugin secure-file-manager:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-35235 https://blog.nintechnet.com/authenticated-rce-vulnerability-in-wordpress-secure-file-manager-plugin-unpatched/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin boldgrid-backup:
+  1:
+    location: ['/wp-content/plugins/boldgrid-backup/readme.txt']
+    secure_version: '1.14.10'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://wpscan.com/vulnerability/10502 https://wpscan.com/vulnerability/10503'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress loginizer:
+  1:
+    location: ['/wp-content/plugins/loginizer/readme.txt']
+    secure_version: '1.6.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-27615 https://loginizer.com/blog/loginizer-1-6-4-security-fix/ https://wpscan.com/vulnerability/10441'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
