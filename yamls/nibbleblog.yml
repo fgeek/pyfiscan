@@ -3,6 +3,7 @@
 # CVE-2015-6966 4.0.5 http://blog.curesec.com/article/blog/NibbleBlog-403-CSRF-46.html
 # CVE-2015-6967 4.0.5 http://blog.curesec.com/article/blog/NibbleBlog-403-Code-Execution-47.html
 # CVE-2018-16604 TODO https://github.com/dignajar/nibbleblog/issues/131 development doesn't seem to be very active
+# CVE-2019-7719 TODO https://github.com/dignajar/nibbleblog/issues/138
 Nibbleblog:
   1:
     location: ['/admin/boot/rules/98-constants.bit']

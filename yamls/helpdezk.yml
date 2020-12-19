@@ -1,5 +1,9 @@
 # URL: http://helpdezk.org/
 # CVE-2014-8337 N/A https://www.htbridge.com/advisory/HTB23239 Vendor said affected file will be removed in future version.
+# CVE-2017-7447 TODO
+# CVE-2017-7446 TODO
+# CVE-2017-14145 TODO
+# CVE-2017-14146 TODO
 HelpDEZk:
   1:
     location: ['/logs/releases.txt']

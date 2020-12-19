@@ -11,6 +11,7 @@
 # CVE-2016-9152 TODO    https://core.spip.net/projects/spip/repository/revisions/23290
 # CVE-2016-9997 TODO    https://core.spip.net/projects/spip/repository/revisions/23288
 # CVE-2016-9998 TODO    https://core.spip.net/projects/spip/repository/revisions/23288
+# CVE-2017-15736 TODO
 SPIP 3:
   1:
     location: ['/ecrire/inc_version.php']

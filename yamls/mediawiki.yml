@@ -154,6 +154,12 @@
 # CVE-2020-25869 1.35.0/1.34.3/1.31.9 https://lists.wikimedia.org/pipermail/mediawiki-announce/2020-September/000260.html https://lists.wikimedia.org/pipermail/wikitech-l/2020-September/093888.html https://gerrit.wikimedia.org/r/q/Iaa886a1824e5a74f4501ca7e28917c780222aac0 https://gerrit.wikimedia.org/r/q/I2336954c665366a99f9995df9b08071d4de6db79
 # CVE-2020-25827 1.34.3/1.31.9 https://lists.wikimedia.org/pipermail/mediawiki-announce/2020-September/000260.html https://lists.wikimedia.org/pipermail/wikitech-l/2020-September/093888.html
 # CVE-2020-26120 1.35.0/1.34.3/1.31.9 https://lists.wikimedia.org/pipermail/mediawiki-announce/2020-September/000265.html https://gerrit.wikimedia.org/r/q/I42e079bc875d17b336ab015f3678eaedc26e10ea
+# CVE-2020-35474 TODO https://phabricator.wikimedia.org/T268894
+# CVE-2020-35475 TODO https://phabricator.wikimedia.org/T268917
+# CVE-2020-35477 TODO https://phabricator.wikimedia.org/T205908
+# CVE-2020-35478 TODO https://phabricator.wikimedia.org/T268938
+# CVE-2020-35479 TODO https://phabricator.wikimedia.org/T268938
+# CVE-2020-35480 TODO https://phabricator.wikimedia.org/T120883
 MediaWiki 1.35:
   1:
     location: ['/includes/DefaultSettings.php']

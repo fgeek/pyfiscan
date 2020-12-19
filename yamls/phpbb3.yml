@@ -15,6 +15,12 @@
 # CVE-2019-11767 3.2.6 https://www.phpbb.com/community/viewtopic.php?f=14&t=2509941
 # CVE-2019-13376 3.2.8 https://ssd-disclosure.com/archives/4007/ssd-advisory-phpbb-csrf-token-hijacking-leading-to-stored-xss
 # CVE-2019-16993 3.1.7-PL1 https://www.phpbb.com/community/viewtopic.php?t=2352606 https://github.com/phpbb/phpbb/commit/18abef716ecf42a35416444f3f84f5459d573789
+# CVE-2020-5501 TODO
+# CVE-2020-5502 TODO
+# CVE-2019-16107 TODO
+# CVE-2019-16108 TODO
+# CVE-2019-16107 TODO
+# CVE-2020-8226 TODO
 phpBB3 3.1:
   1:
     location: ['/includes/constants.php']

@@ -24,7 +24,12 @@
 # CVE-2018-10382 2.6.4
 # CVE-2018-1000207 2.6.5 https://github.com/modxcms/revolution/pull/13979 https://modx.com/blog/modx-revolution-2.6.5 https://forums.modx.com/thread/104040/revolution-2-6-4-and-prior-two-cricital-vulnerabilities-upgrade-mandatory-patch
 # CVE-2018-1000208 2.6.5 https://github.com/modxcms/revolution/pull/13980 https://modx.com/blog/modx-revolution-2.6.5 https://forums.modx.com/thread/104040/revolution-2-6-4-and-prior-two-cricital-vulnerabilities-upgrade-mandatory-patch
-# CVE-2018-17556 TODO https://github.com/modxcms/revolution/issues/14094
+# CVE-2018-17556 2.7.1 https://github.com/modxcms/revolution/issues/14094
+# CVE-2018-20755 TODO
+# CVE-2018-20756 TODO
+# CVE-2018-20757 TODO
+# CVE-2018-20758 TODO
+# CVE-2019-1010123 TODO
 MODX Revolution:
   1:
     location: ['/core/docs/changelog.txt']

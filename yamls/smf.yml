@@ -59,6 +59,8 @@
 # CVE-2016-5727 TODO    https://github.com/SimpleMachines/SMF2.1/blob/19ee85ff8761b792ea3e9ed630a947f45f93ee68/Sources/LogInOut.php#L125-L129
 # TODO          2.0.12  http://www.simplemachines.org/community/index.php?topic=548871.0 asked status of CVE 2017-01-02
 # CVE-2018-10305 2.0.15 https://www.simplemachines.org/community/index.php?topic=557176.0
+# CVE-2019-12490 TODO
+# CVE-2019-11574 TODO
 SMF 2:
   1:
     location: ['/index.php']

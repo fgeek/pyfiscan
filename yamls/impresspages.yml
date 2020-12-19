@@ -1,6 +1,7 @@
 # URL: http://www.impresspages.org/
 # CVE-2011-4932 1.0.13  NGS00109 Unspecified RCE
-# CVE-2013-XXXX 3.7 http://www.zeroscience.mk/en/vulnerabilities/ZSL-2013-5157.php
+# CVE-2011-4943 TODO
+# CVE-2013-XXXX 3.7 http://www.zeroscience.mk/en/vulnerabilities/ZSL-2013-5157.php TODO: Request CVE
 # CVE-2013-XXXX 3.7 http://www.zeroscience.mk/en/vulnerabilities/ZSL-2013-5158.php
 # CVE-2013-XXXX 3.7 http://www.zeroscience.mk/en/vulnerabilities/ZSL-2013-5159.php
 ImpressPages:

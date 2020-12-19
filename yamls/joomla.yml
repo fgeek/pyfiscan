@@ -202,6 +202,13 @@
 # CVE-2020-24597 3.9.21 https://developer.joomla.org/security-centre/827-20200803-core-directory-traversal-in-com-media.html https://www.joomla.org/announcements/release-news/5821-joomla-3-9-21.html
 # CVE-2020-24598 3.9.21 https://developer.joomla.org/security-centre/825-20200802-core-open-redirect-in-com-content-vote-feature.html https://www.joomla.org/announcements/release-news/5821-joomla-3-9-21.html
 # CVE-2020-24599 3.9.21 https://developer.joomla.org/security-centre/824-20200801-core-xss-in-mod-latestactions.html https://www.joomla.org/announcements/release-news/5821-joomla-3-9-21.html
+# TODO 3.9.23 https://developer.joomla.org/security-centre/828-20201101-core-com-finder-ignores-access-levels-on-autosuggest.html
+# TODO 3.9.23 https://developer.joomla.org/security-centre/829-20201102-core-disclosure-of-secrets-in-global-configuration-page.html
+# TODO 3.9.23 https://developer.joomla.org/security-centre/831-20201104-core-sql-injection-in-com-users-list-view.html
+# TODO 3.9.23 https://developer.joomla.org/security-centre/832-20201105-core-user-enumeration-in-backend-login.html
+# TODO 3.9.23 https://developer.joomla.org/security-centre/833-20201106-core-csrf-in-com-privacy-emailexport-feature.html
+# TODO 3.9.23 https://developer.joomla.org/security-centre/834-20201107-core-write-acl-violation-in-multiple-core-views.html
+# TODO 3.9.23 https://developer.joomla.org/security-centre/832-20201105-core-user-enumeration-in-backend-login.html
 Joomla 3:
   1:
     location: ['/administrator/manifests/files/joomla.xml']

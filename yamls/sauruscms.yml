@@ -3,6 +3,7 @@
 # CVE-2010-4943
 # CVE-2015-0876 4.7 https://github.com/sauruscms/Saurus-CMS-Community-Edition/commit/1bc272874a86eaab99dccd00b29177423fd83877
 # CVE-2015-1562 4.7 https://github.com/sauruscms/Saurus-CMS-Community-Edition/commit/8dec044d0fdabcb9b04e58037623385a97b0d288
+# TODO http://www.waraxe.us/advisory-106.html
 SaurusCMS:
   1:
     location: ['/classes/site.class.php']

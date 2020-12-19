@@ -3,6 +3,11 @@
 # CVE-2006-2844
 # CVE-2006-2845
 # CVE-2012-3869 4.4.1 http://www.redaxo.org/de/download/changelog/redaxo-441/
+# TODO https://blog.ripstech.com/2016/redaxo-remote-code-execution-via-csrf/
+# CVE-2016-10757 TODO
+# CVE-2018-15850 TODO https://github.com/redaxo/redaxo4/issues/420
+# CVE-2018-18198 TODO
+# CVE-2018-18199 TODO
 Redaxo:
   1:
     location: ['/redaxo/src/core/boot.php']

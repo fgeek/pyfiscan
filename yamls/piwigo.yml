@@ -47,6 +47,11 @@
 # CVE-2018-7722 2.9.4 https://github.com/Piwigo/Piwigo/issues/871 https://github.com/Piwigo/Piwigo/commit/0ec289769ee1fc314dbc7d90fdc480389e786942
 # CVE-2018-7723 TODO
 # CVE-2018-7724 2.9.4 https://github.com/Piwigo/Piwigo/issues/872 https://github.com/Piwigo/Piwigo/commit/55a9754b111309d7a85c6dd86efe47954e984072
+# CVE-2019-13363 TODO
+# CVE-2019-13364 TODO
+# CVE-2020-8089 TODO
+# CVE-2020-9467 TODO
+# CVE-2020-9468 TODO
 Piwigo:
   1:
     location: ['/include/constants.php']

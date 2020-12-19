@@ -18,6 +18,8 @@
 # CVE-2013-7288 1.6.12  https://blog.mybb.com/2013/12/16/mybb-1-6-12-released-security-maintenance-release/
 # CVE-2013-7275 1.6.12
 # CVE-2014-1840 1.6.13  https://blog.mybb.com/2014/04/25/mybb-1-6-13-released-security-maintenance-release/
+# CVE-2014-3826 1.8.4   https://blog.mybb.com/2015/02/15/mybb-1-8-4-released-feature-update-security-maintenance-release/ https://adamziaja.com/poc/201312-xss-mybb.html
+# CVE-2014-3827 1.8.4   https://blog.mybb.com/2015/02/15/mybb-1-8-4-released-feature-update-security-maintenance-release/
 # CVE-2014-XXXX 1.6.14  https://blog.mybb.com/2014/06/30/mybb-1-6-14-released-security-maintenance-release/
 # CVE-2014-5248 1.6.15  https://blog.mybb.com/2014/08/04/mybb-1-6-15-released-security-maintenance-release/
 # CVE-2014-9240 1.8.2
@@ -71,6 +73,8 @@
 # CVE-2019-3579 1.8.20 https://blog.mybb.com/2019/02/27/mybb-1-8-20-released-security-maintenance-release/
 # CVE-2019-12830 1.8.21 https://blog.mybb.com/2019/06/10/mybb-1-8-21-released-security-maintenance-release/ https://blog.ripstech.com/2019/mybb-stored-xss-to-rce/
 # CVE-2019-12831 1.8.21 https://blog.mybb.com/2019/06/10/mybb-1-8-21-released-security-maintenance-release/ https://blog.ripstech.com/2019/mybb-stored-xss-to-rce/
+# CVE-2019-20225 TODO
+# CVE-2020-15139 TODO
 MyBB:
   1:
     location: ['/inc/class_core.php']

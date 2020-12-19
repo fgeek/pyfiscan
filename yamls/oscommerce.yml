@@ -1,5 +1,14 @@
-# osCommerce http://www.oscommerce.com/
+# URL: http://www.oscommerce.com/
+# CVE-2012-1792
 # CVE-2014-XXXX 2.3.4   https://www.exploit-db.com/exploits/34582/
+# CVE-2014-10033
+# CVE-2016-XXXX TODO https://www.htbridge.com/advisory/HTB23284
+# CVE-2018-18964 TODO
+# CVE-2018-18965 TODO
+# CVE-2018-18966 TODO
+# CVE-2018-18573 TODO
+# CVE-2018-18572 TODO
+# CVE-2020-29070 TODO
 osCommerce 2.3:
   1:
     location: ['/includes/version.php']

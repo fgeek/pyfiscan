@@ -21,6 +21,7 @@
 # CVE-2014-3990 2.0.0.0 http://karmainsecurity.com/KIS-2014-08
 # CVE-2015-4671 2.1.0.2 https://github.com/opencart/opencart/commit/303fa88fe664ded4bf8753b997abd916f0a3c03f
 # CVE-2016-10509 2.3.0.0 https://github.com/opencart/opencart/issues/4114 https://github.com/opencart/opencart/commit/b95044da6ac608e7239f7949ff21d3b65be68f82
+# CVE-2020-28838 N/A 3.0.3.6 is affected https://www.exploit-db.com/exploits/49228
 OpenCart:
   1:
     location: ['/admin/index.php']

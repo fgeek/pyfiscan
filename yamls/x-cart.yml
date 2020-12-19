@@ -6,7 +6,10 @@
 # CVE-2015-0951
 # CVE-2015-1178
 # CVE-2015-5455
+# TODO 4.7.11 https://www.x-cart.com/blog/x-cart-v4-7-11-and-security-patches.html
 # CVE-2017-15285 5.3.4 https://sxcurity.github.io/PHP%20Code%20Injection%20in%20X-Cart.pdf
+# CVE-2019-7220 TODO https://cxsecurity.com/issue/WLB-2019020192 5.4.0.3 is affected
+# TODO https://www.x-cart.com/blog/x-cart-v4-7-11-and-security-patches.html
 X-Cart:
   1:
     location: ['/Includes/install/install_settings.php']
