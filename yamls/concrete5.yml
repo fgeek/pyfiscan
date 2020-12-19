@@ -12,6 +12,8 @@
 # CVE-2017-18195 8.3.0 https://github.com/r3naissance/NSE/blob/master/http-vuln-cve2017-18195.nse https://www.exploit-db.com/exploits/44194/
 # CVE-2018-13790 8.4.0 https://hackerone.com/reports/243865
 # CVE-2018-19146 8.5.0 https://hackerone.com/reports/437863
+# CVE-2020-11476 TODO
+# CVE-2020-24986 TODO
 concrete5:
   1:
     location: ['/concrete/config/version.php']
