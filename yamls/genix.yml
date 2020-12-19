@@ -8,21 +8,25 @@
 # CVE-2017-5519 1.0.0   https://github.com/semplon/GeniXCMS/issues/67
 # CVE-2017-5520 1.0.0   https://github.com/semplon/GeniXCMS/issues/62
 # CVE-2017-5959 1.0.2   https://github.com/semplon/GeniXCMS/issues/70
-# CVE-2017-6065 TODO    https://github.com/semplon/GeniXCMS/issues/71 latest 1.1.0 is affected
-# CVE-2017-8762 TODO    https://github.com/semplon/GeniXCMS/issues/73 latest 1.1.0 is affected
-# CVE-2017-8827 TODO    https://github.com/semplon/GeniXCMS/issues/75
 # CVE-2017-8780 1.1.0   https://github.com/semplon/GeniXCMS/issues/74
 # CVE-2017-14231 1.1.0  https://github.com/semplon/GeniXCMS/issues/78
+# CVE-2017-6065 1.1.1   https://github.com/semplon/GeniXCMS/issues/71 latest 1.1.0 is affected
+# CVE-2017-8762 1.1.1   https://github.com/semplon/GeniXCMS/issues/73 latest 1.1.0 is affected
+# CVE-2017-8827 1.1.2    https://github.com/semplon/GeniXCMS/issues/75
 # CVE-2017-14761 1.1.4
 # CVE-2017-14762 1.1.4
 # CVE-2017-14763 1.1.4
 # CVE-2017-14764 1.1.4
 # CVE-2017-14765 1.1.4
+# CVE-2017-17431 TODO https://code610.blogspot.com/2017/12/modus-operandi-genixcms-115.html might overlap with CVE-2017-14761 according to NVD
+# CVE-2017-14740 TODO https://github.com/faizzaidi/GeniXCMS-Version-1.1.0-Cross-Site-Scripting-XSS
+# CVE-2018-14476 1.1.6 https://github.com/semplon/GeniXCMS/issues/88 https://github.com/semplon/GeniXCMS/commit/140b6814a066681cbab1bf190e93efbd44fec003
+# CVE-2020-10057 TODO
 GeniXCMS:
   1:
     location: ['/inc/lib/System.class.php']
-    secure_version: '1.1.4'
+    secure_version: '1.1.6'
     regexp: ['    static \$version          = "(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-14761 https://nvd.nist.gov/vuln/detail/CVE-2017-14762 https://nvd.nist.gov/vuln/detail/CVE-2017-14763 https://nvd.nist.gov/vuln/detail/CVE-2017-14764 https://nvd.nist.gov/vuln/detail/CVE-2017-14765'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-14476'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
