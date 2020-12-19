@@ -1,8 +1,8 @@
 # URL: http://www.espocrm.com/ http://sourceforge.net/projects/espocrm/
-# CVE-2014-8330 2.4.0
+# CVE-2014-8330 2.4.0 http://packetstormsecurity.com/files/127827/Espo-CRM-Cross-Site-Scripting.html
 # CVE-2014-7985 2.6.0 https://www.htbridge.com/advisory/HTB23238
 # CVE-2014-7986 2.6.0 https://www.htbridge.com/advisory/HTB23238
-# CVE-2014-7987 2.6.0 https://www.htbridge.com/advisory/HTB23238
+# CVE-2014-7987 2.6.0 https://www.htbridge.com/advisory/HTB23238 http://[host]/install/index.php?installProcess=1&action=errors&desc=%3Cscript%3Ealert%28%27immuniweb%27%29;%3C/script%3E
 # CVE-2018-17301 5.4.3 https://github.com/espocrm/espocrm/issues/1038
 # CVE-2018-17302 5.4.3 https://github.com/espocrm/espocrm/issues/1039
 # CVE-2019-13643 5.6.4 https://github.com/espocrm/espocrm/issues/1349
@@ -17,6 +17,7 @@
 # CVE-2019-14548 5.6.9 https://github.com/espocrm/espocrm/issues/1369 https://gauravnarwani.com/publications/cve-2019-14548/ https://github.com/espocrm/espocrm/commit/ffd3f762ce4a8de3b8962f33513e073c55d943b5
 # CVE-2019-14549 5.6.9 https://github.com/espocrm/espocrm/issues/1369 https://gauravnarwani.com/publications/cve-2019-14549/ https://github.com/espocrm/espocrm/commit/ffd3f762ce4a8de3b8962f33513e073c55d943b5
 # CVE-2019-14550 5.6.9 https://github.com/espocrm/espocrm/issues/1369 https://gauravnarwani.com/publications/cve-2019-14550/ https://github.com/espocrm/espocrm/commit/ffd3f762ce4a8de3b8962f33513e073c55d943b5
+# TODO https://packetstormsecurity.com/files/157380/espocrm585-escalate.txt
 EspoCRM:
   1:
     location: ['/application/Espo/Core/defaults/config.php']

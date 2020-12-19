@@ -2,6 +2,8 @@
 # CVE-2012-1914
 # CVE-2014-2219
 # CVE-2016-XXXX 4.6.3 http://seclists.org/fulldisclosure/2016/Jun/3
+# CVE-2018-19507 TODO
+# CVE-2018-19508 TODO
 CMSimple:
   1:
     location: ['/cms.php']

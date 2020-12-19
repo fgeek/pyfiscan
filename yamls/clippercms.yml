@@ -10,6 +10,7 @@
 # CVE-2018-11572 TODO fix not available 2018-11-12 https://github.com/ClipperCMS/ClipperCMS/issues/485
 # CVE-2018-13106 TODO fix not available 2018-11-12 https://github.com/ClipperCMS/ClipperCMS/issues/489
 # CVE-2018-19135 TODO fix not available 2018-11-12 https://github.com/ClipperCMS/ClipperCMS/issues/494
+# CVE-2018-19424 TODO
 ClipperCMS:
   1:
     location: ['/manager/includes/version.inc.php']

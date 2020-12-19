@@ -17,6 +17,9 @@
 # CVE-2016-9268 TODO    http://dev.dotclear.org/2.0/ticket/2214 http://dev.dotclear.org/2.0/changeset/445e9ff79a1fa81033591761d6a340e219d159b2
 # CVE-2016-9891 TODO
 # CVE-2017-6446 TODO
+# CVE-2018-5689 TODO
+# CVE-2018-5690 TODO
+# CVE-2018-16358 TODO
 Dotclear:
   1:
     location: ['/inc/prepend.php']

@@ -52,12 +52,14 @@
 # CVE-2017-16799 TODO
 # CVE-2017-1000453 TODO
 # CVE-2017-1000454 TODO
+# CVE-2018-5353 TODO
 # CVE-2018-5963 TODO http://seclists.org/fulldisclosure/2018/Jan/80 2.2.5 is affected
 # CVE-2018-5964 TODO http://seclists.org/fulldisclosure/2018/Jan/82 2.2.5 is affected
 # CVE-2018-5965 TODO http://seclists.org/fulldisclosure/2018/Jan/83 2.2.5 is affected
 # CVE-2018-7448 installation
 # CVE-2018-7893 TODO probably not reported to vendor
 # CVE-2018-8058 TODO probably not reported to vendor
+# CVE-2018-9921 TODO
 # CVE-2018-1000092
 # CVE-2018-10029 TODO
 # CVE-2018-10030 TODO
@@ -70,7 +72,6 @@
 # CVE-2018-10084 TODO
 # CVE-2018-10085 TODO
 # CVE-2018-10086 TODO
-# CVE-2018-9921 TODO
 # CVE-2018-10515 TODO
 # CVE-2018-10516 TODO
 # CVE-2018-10517 TODO
@@ -97,6 +98,16 @@
 # CVE-2019-10105 TODO
 # CVE-2019-10106 TODO
 # CVE-2019-10107 TODO
+# CVE-2019-11513 TODO
+# CVE-2019-11226 TODO
+# CVE-2019-17629 TODO
+# CVE-2019-17630 TODO
+# CVE-2020-10681 TODO http://dev.cmsmadesimple.org/bug/view/12274 affected 2.2.13 stored XSS within *.pxd extension files. Closed without a fix
+# CVE-2020-10682 TODO http://dev.cmsmadesimple.org/bug/view/12275 affected 2.2.13 auhenticated RCE with crafted JPG files. reported 2020-03-16
+# CVE-2020-13660 TODO http://dev.cmsmadesimple.org/bug/view/12312 affected 2.2.14 XSS in File Picker
+# CVE-2020-14926 TODO http://dev.cmsmadesimple.org/bug/view/12324 affected 2.2.14 XSS in "Search" via "Module Manager" feature. reported 2020-06-18
+# CVE-2020-17462 TODO https://www.exploit-db.com/exploits/48742 related to issue CVE-2017-16798
+# CVE-2020-24860 TODO http://packetstormsecurity.com/files/159434/CMS-Made-Simple-2.2.14-Cross-Site-Scripting.html https://www.exploit-db.com/exploits/48851
 CMSMS:
   1:
     location: ['/version.php']

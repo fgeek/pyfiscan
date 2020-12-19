@@ -4,6 +4,8 @@
 # CVE-2016-XXXX 1.3.4.1 http://seclists.org/bugtraq/2016/Mar/124
 # CVE-2018-10827 2.1.2 https://github.com/litecart/litecart/issues/119
 # CVE-2018-12256 2.1.3 https://github.com/litecart/litecart/commit/2305368eb70a26cab34c772c9ae88787f4c3e669
+# CVE-2020-9017 TODO
+# CVE-2020-9018 TODO
 LiteCart:
   1:
     location: ['/includes/app_header.inc.php']

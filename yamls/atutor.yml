@@ -3,6 +3,7 @@
 # http://seclists.org/bugtraq/2015/Nov/23
 # http://seclists.org/bugtraq/2015/Nov/24
 # CVE-2014-9752
+# CVE-2014-9753
 # CVE-2015-1583 http://www.securityfocus.com/archive/1/534778
 # CVE-2015-6521
 # CVE-2015-7711 2.2.1 http://karmainsecurity.com/KIS-2015-07 http://seclists.org/bugtraq/2015/Nov/25 https://github.com/atutor/ATutor/issues/134
@@ -19,7 +20,12 @@
 # CVE-2017-14981 2.2.4 https://github.com/atutor/ATutor/issues/135 https://github.com/atutor/ATutor/commit/9292360c8b3898d0990983269f110cef21729090
 # CVE-2019-7172 N/A https://github.com/atutor/ATutor/issues/164
 # CVE-2019-11446 affected 2.2.4 http://pentest.com.tr/exploits/ATutor-2-2-4-file-manager-Remote-Code-Execution-Injection-Metasploit.html https://www.exploit-db.com/exploits/46691/
+# CVE-2019-12169
 # CVE-2019-12170 affected 2.2.4 duplicate of CVE-2019-11446 https://github.com/atutor/ATutor/issues/167
+# CVE-2019-16114
+##
+## TODO: ATutor is no longer maintained
+##
 ATutor:
   1:
     location: ['/include/lib/constants.inc.php']
