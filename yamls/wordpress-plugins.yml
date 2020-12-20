@@ -3182,3 +3182,11 @@ WordPress plugin loginizer:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-27615 https://loginizer.com/blog/loginizer-1-6-4-security-fix/ https://wpscan.com/vulnerability/10441'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin contact-form-7:
+  1:
+    location: ['/wp-content/plugins/contact-form-7/readme.txt']
+    secure_version: '5.3.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-35489 https://contactform7.com/2020/12/17/contact-form-7-532/ https://www.bleepingcomputer.com/news/security/wordpress-plugin-with-5-million-installs-has-a-critical-vulnerability/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
