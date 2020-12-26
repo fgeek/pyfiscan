@@ -84,6 +84,7 @@
 # CVE-2020-14201 11.0.5 https://www.wizlynxgroup.com/security-research-advisories/vuln/WLX-2020-011
 # CVE-2020-14209 11.0.5 https://www.wizlynxgroup.com/security-research-advisories/vuln/WLX-2020-012
 # CVE-2020-14475 11.0.5 https://github.com/Dolibarr/dolibarr/commit/22ca5e067189bffe8066df26df923a386f044c08
+# CVE-2020-35136 TODO
 Dolibarr:
   1:
     location: ['/htdocs/filefunc.inc.php']
