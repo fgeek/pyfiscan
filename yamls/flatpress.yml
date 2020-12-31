@@ -1,10 +1,15 @@
 # URL: http://flatpress.org/home/
 # CVE-2014-100036 1.0.3 https://www.netsparker.com/critical-xss-vulnerabilities-in-flatpress/ https://github.com/evacchi/flatpress/issues/14
+# TODO 1.0.1 https://www.exploit-db.com/exploits/29515 no CVE 2020-12-31
+# TODO 1.1 https://www.exploit-db.com/exploits/39870 no CVE 2020-12-31
+# CVE-2020-35241 TODO https://github.com/hemantsolo/CVE-Reference/blob/main/CVE-2020-35241.md
+#   asked 2020-12-31 if founder of the vulnerability knows if this has been
+#   fixed or reported to vendor
 Flatpress:
   1:
     location: ['/fp-includes/core/core.system.php']
-    secure_version: '1.0.3'
+    secure_version: '1.1'
     regexp: ['.*?SYSTEM_VER.*?(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2014-100036 https://www.netsparker.com/critical-xss-vulnerabilities-in-flatpress/'
+    cve: 'https://www.exploit-db.com/exploits/39870'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
