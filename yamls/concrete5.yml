@@ -12,13 +12,14 @@
 # CVE-2017-18195 8.3.0 https://github.com/r3naissance/NSE/blob/master/http-vuln-cve2017-18195.nse https://www.exploit-db.com/exploits/44194/
 # CVE-2018-13790 8.4.0 https://hackerone.com/reports/243865
 # CVE-2018-19146 8.5.0 https://hackerone.com/reports/437863
-# CVE-2020-11476 TODO
-# CVE-2020-24986 TODO
+# CVE-2020-11476 8.5.3 https://herolab.usd.de/security-advisories/usd-2020-0041/
+# CVE-2020-24986 8.5.3 https://hackerone.com/reports/768322
+# CVE-2021-3111 TODO https://github.com/Quadron-Research-Lab/CVE/blob/main/CVE-2021-3111.pdf affected 8.5.4. No information if this is indeed fixed in 8.5.5
 concrete5:
   1:
     location: ['/concrete/config/version.php']
-    secure_version: '8.5.0'
+    secure_version: '8.5.3'
     regexp: ['\$APP_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-19146 https://hackerone.com/reports/437863'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-11476 https://nvd.nist.gov/vuln/detail/CVE-2020-24986'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
