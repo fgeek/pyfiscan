@@ -33,6 +33,7 @@
 # CVE-2014-1572 4.5.6/4.4.6/4.2.11/4.0.15
 # CVE-2014-1573 4.5.6/4.4.6/4.2.11/4.0.15
 # N/A           4.5.6/4.4.6/4.2.11/4.0.15   https://bugzilla.mozilla.org/show_bug.cgi?id=1054702
+# CVE-2015-4499 5.0.1/4.4.10/4.2.15 https://lists.openwall.net/bugtraq/2015/09/11/1 https://lists.openwall.net/bugtraq/2015/09/11/2
 # CVE-2015-8508 5.0.2/4.4.11/4.2.16 https://bugzilla.mozilla.org/show_bug.cgi?id=1221518 https://www.bugzilla.org/security/4.2.15/
 # CVE-2015-8509 5.0.2/4.4.11/4.2.16 https://bugzilla.mozilla.org/show_bug.cgi?id=1232785 https://www.bugzilla.org/security/4.2.15/
 # CVE-2016-2803 5.0.3/4.4.12 https://bugzilla.mozilla.org/show_bug.cgi?id=1253263 https://www.bugzilla.org/security/4.4.11/
