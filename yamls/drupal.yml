@@ -108,35 +108,36 @@
 # https://drupal.org/SA-CORE-2020-012   CVE-2020-13671  9.0.8/8.9.9/8.8.11/7.74
 # https://drupal.org/SA-CORE-2020-013   CVE-2020-28948  9.0.9/8.9.10/8.8.12/7.75
 # https://drupal.org/SA-CORE-2020-013   CVE-2020-28949  9.0.9/8.9.10/8.8.12/7.75
-Drupal 9:
+# https://drupal.org/SA-CORE-2021-001   CVE-2020-36193  9.1.3/9.0.11/8.9.13/7.78
+Drupal 9.1:
   1:
     location: ['/core/lib/Drupal.php']
-    secure_version: '9.0.9'
-    regexp: ['  const VERSION.*?(?P<version>9\.[0-9.]{1,})']
-    cve: 'https://drupal.org/SA-CORE-2020-013 https://nvd.nist.gov/vuln/detail/CVE-2020-28948 https://nvd.nist.gov/vuln/detail/CVE-2020-28949'
+    secure_version: '9.1.3'
+    regexp: ['  const VERSION.*?(?P<version>9\.1\.[0-9]{1,})']
+    cve: 'https://drupal.org/SA-CORE-2021-001 https://nvd.nist.gov/vuln/detail/CVE-2020-36193'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+Drupal 9.0:
+  1:
+    location: ['/core/lib/Drupal.php']
+    secure_version: '9.0.11'
+    regexp: ['  const VERSION.*?(?P<version>9\.0\.[0-9]{1,})']
+    cve: 'https://drupal.org/SA-CORE-2021-001 https://nvd.nist.gov/vuln/detail/CVE-2020-36193'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Drupal 8.9:
   1:
     location: ['/core/lib/Drupal.php']
-    secure_version: '8.9.10'
-    regexp: ['  const VERSION.*?(?P<version>8\.9\.[0-9]{1,})']
-    cve: 'https://drupal.org/SA-CORE-2020-013 https://nvd.nist.gov/vuln/detail/CVE-2020-28948 https://nvd.nist.gov/vuln/detail/CVE-2020-28949'
-    fingerprint: detect_general
-    post_processing: ['php5.fcgi']
-Drupal 8.8:
-  1:
-    location: ['/core/lib/Drupal.php']
-    secure_version: '8.8.12'
-    regexp: ['  const VERSION.*?(?P<version>8\.[0-8]\.[0-9]{1,})']
-    cve: 'https://drupal.org/SA-CORE-2020-013 https://nvd.nist.gov/vuln/detail/CVE-2020-28948 https://nvd.nist.gov/vuln/detail/CVE-2020-28949'
+    secure_version: '8.9.13'
+    regexp: ['  const VERSION.*?(?P<version>8\.[0-9.]{1,})']
+    cve: 'https://drupal.org/SA-CORE-2021-001 https://nvd.nist.gov/vuln/detail/CVE-2020-36193'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Drupal 7:
   1:
     location: ['/includes/bootstrap.inc']
-    secure_version: '7.75'
+    secure_version: '7.78'
     regexp: ['define.*?VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://drupal.org/SA-CORE-2020-013 https://nvd.nist.gov/vuln/detail/CVE-2020-28948 https://nvd.nist.gov/vuln/detail/CVE-2020-28949'
+    cve: 'https://drupal.org/SA-CORE-2021-001 https://nvd.nist.gov/vuln/detail/CVE-2020-36193'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
