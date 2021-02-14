@@ -3222,3 +3222,11 @@ WordPress plugin nextgen-gallery:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-35942 https://www.bleepingcomputer.com/news/security/critical-vulnerability-fixed-in-wordpress-plugin-with-800k-installs/ https://www.wordfence.com/blog/2021/02/severe-vulnerabilities-patched-in-nextgen-gallery-affect-over-800000-wordpress-sites/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wpdatatables:
+  1:
+    location: ['/wp-content/plugins/wpdatatables/readme.txt']
+    secure_version: '3.4.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-26754 https://n4nj0.github.io/advisories/wordpress-plugin-wpdatatables-i/ https://wpdatatables.com/help/whats-new-changelog/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
