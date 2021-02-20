@@ -3,6 +3,9 @@
 # Advisory URL: http://owncloud.org/about/security/advisories/oC-SA-XXXX-XXX/
 # NOTE: user enumeration is out-of-scope https://github.com/owncloud/core/issues/23595
 # NFU: CVE-2016-7102 out of scope (desktop)
+# NFU: CVE-2020-36248 ownCloud app for Android
+# NFU: CVE-2020-36250 ownCloud Android App version
+# NFU: Addons currently not supported oC-SA-2020-002 CVE-2020-36249 File Firewall
 # ownCloud ID       CVE             Fixed in        ownCloud security advisory URL
 # N/A               CVE-2012-5336   4.0.8
 # N/A               CVE-2012-5056   4.0.8
@@ -33,9 +36,8 @@
 # oC-SA-2014-001    CVE-2014-2047   6.0.2
 # oC-SA-2014-002
 # oC-SA-2014-003    CVE-2014-2049   6.0.2/5.0.15
-# oC-SA-2014-004
+# oC-SA-2014-004    CVE-2014-2050   6.0.2/5.0.15 https://owncloud.org/security/advisories/host-header-poisoning/ (not working) https://exchange.xforce.ibmcloud.com/vulnerabilities/91971 https://www.securityfocus.com/bid/66221
 # oC-SA-2014-005    CVE-2014-2051   6.0.2/5.0.15
-# oC-SA-2014-005
 # oC-SA-2014-006    CVE-2014-2052/CVE-2014-2053/CVE-2014-2054/CVE-2014-2055/CVE-2014-2056   6.0.2/5.0.15
 # oC-SA-2014-007    CVE-2014-2057   6.0.2
 # oC-SA-2014-008    CVE-2014-2585   6.0.2
@@ -92,15 +94,16 @@
 # oc-sa-2017-005    CVE-2017-9339   10.0.2
 # oc-sa-2017-006    CVE-2017-9340   10.0.2
 # oc-sa-2017-007    CVE-2017-9338   10.0.2/9.1.6/9.0.10/8.2.12
-# TODO CVE-2014-2049
-# TODO CVE-2014-2050
-# TODO CVE-2014-2051
+# CVE-2020-28644 10.6 https://owncloud.com/security-advisories/cross-site-request-forgery-in-the-ocs-api/
+# CVE-2020-28645 10.6 https://owncloud.com/security-advisories/missing-user-validation-leading-to-information-disclosure/
+# CVE-2020-36251 10.3.0 https://owncloud.com/security-advisories/deleting-received-group-share-for-whole-group/
+# CVE-2020-36252 10.3.1/10.0.9 https://owncloud.com/security-advisories/access-to-all-file-versions/
 ownCloud 10.0:
   1:
     location: ['/version.php']
-    secure_version: '10.0.2'
+    secure_version: '10.6'
     regexp: ['\$OC_VersionString.*?(?P<version>10\.0\.[0-9.]+)']
-    cve: 'https://owncloud.org/security/advisory/?id=oc-sa-2017-004 https://owncloud.org/security/advisory/?id=oc-sa-2017-005 https://owncloud.org/security/advisory/?id=oc-sa-2017-006 https://owncloud.org/security/advisory/?id=oc-sa-2017-007 https://nvd.nist.gov/vuln/detail/CVE-2017-8896 https://nvd.nist.gov/vuln/detail/CVE-2017-9339 https://nvd.nist.gov/vuln/detail/CVE-2017-9340 https://nvd.nist.gov/vuln/detail/CVE-2017-9338'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-28644 https://nvd.nist.gov/vuln/detail/CVE-2020-28645'
     fingerprint: detect_general
 ownCloud 9.1:
   1:
