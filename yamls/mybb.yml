@@ -1,4 +1,5 @@
 # URL: https://mybb.com/downloads
+# NFU: CVE-2021-3337 Hide-Thread-Content plugin https://github.com/snlbaral/Hide-Thread-Content/issues/1 http://packetstormsecurity.com/files/161185/MyBB-Hide-Thread-Content-1.0-Information-Disclosure.html
 # CVE-2010-4522
 # CVE-2010-4624         https://blog.mybb.com/2010/04/13/mybb-1-4-12-released-security-maintenance-update/
 # CVE-2010-4625         https://blog.mybb.com/2010/04/13/mybb-1-4-12-released-security-maintenance-update/
@@ -73,13 +74,14 @@
 # CVE-2019-3579 1.8.20 https://blog.mybb.com/2019/02/27/mybb-1-8-20-released-security-maintenance-release/
 # CVE-2019-12830 1.8.21 https://blog.mybb.com/2019/06/10/mybb-1-8-21-released-security-maintenance-release/ https://blog.ripstech.com/2019/mybb-stored-xss-to-rce/
 # CVE-2019-12831 1.8.21 https://blog.mybb.com/2019/06/10/mybb-1-8-21-released-security-maintenance-release/ https://blog.ripstech.com/2019/mybb-stored-xss-to-rce/
-# CVE-2019-20225 TODO
-# CVE-2020-15139 TODO
+# CVE-2019-20225 1.8.22 https://blog.mybb.com/2019/12/30/mybb-1-8-22-released-security-maintenance-release/ https://mybb.com/versions/1.8.22/
+# CVE-2020-15139 1.8.24 https://mybb.com/versions/1.8.24/ https://github.com/mybb/mybb/security/advisories/GHSA-37h7-vfv6-f8rj https://github.com/mybb/mybb/commit/37ad29dcd25489a37bdd89ebac761f22492558b0
+# CVE-2021-27279 1.8.25 https://blog.mybb.com/2021/02/22/mybb-1-8-25-released-security-release/ https://mybb.com/versions/1.8.25/ https://github.com/mybb/mybb/security/advisories/GHSA-6483-hcpp-p75w https://github.com/mybb/mybb/commit/cb781b49116bf5c4d8deca3e17498122b701677a
 MyBB:
   1:
     location: ['/inc/class_core.php']
-    secure_version: '1.8.21'
+    secure_version: '1.8.25'
     regexp: ['.*?public.*?\$version.*?(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-12830 https://nvd.nist.gov/vuln/detail/CVE-2019-12831 https://blog.mybb.com/2019/06/10/mybb-1-8-21-released-security-maintenance-release/ https://blog.ripstech.com/2019/mybb-stored-xss-to-rce/'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-27279 https://blog.mybb.com/2021/02/22/mybb-1-8-25-released-security-release/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
