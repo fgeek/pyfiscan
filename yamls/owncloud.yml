@@ -94,10 +94,13 @@
 # oc-sa-2017-005    CVE-2017-9339   10.0.2
 # oc-sa-2017-006    CVE-2017-9340   10.0.2
 # oc-sa-2017-007    CVE-2017-9338   10.0.2/9.1.6/9.0.10/8.2.12
-# CVE-2020-28644 10.6 https://owncloud.com/security-advisories/cross-site-request-forgery-in-the-ocs-api/
-# CVE-2020-28645 10.6 https://owncloud.com/security-advisories/missing-user-validation-leading-to-information-disclosure/
 # CVE-2020-36251 10.3.0 https://owncloud.com/security-advisories/deleting-received-group-share-for-whole-group/
 # CVE-2020-36252 10.3.1/10.0.9 https://owncloud.com/security-advisories/access-to-all-file-versions/
+# CVE-2020-10252 10.3.2 https://owncloud.com/security-advisories/ssrf-in-add-to-your-owncloud-functionality/
+# CVE-2020-10254 10.4 https://owncloud.com/security-advisories/public-link-password-bypass-via-image-previews/
+# CVE-2020-16255 10.5 https://owncloud.com/security-advisories/reflected-xss-in-login-page-forgot-password-functionallity/
+# CVE-2020-28644 10.6 https://owncloud.com/security-advisories/cross-site-request-forgery-in-the-ocs-api/
+# CVE-2020-28645 10.6 https://owncloud.com/security-advisories/missing-user-validation-leading-to-information-disclosure/
 ownCloud 10.0:
   1:
     location: ['/version.php']
