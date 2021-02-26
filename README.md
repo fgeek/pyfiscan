@@ -102,7 +102,6 @@ Detects following software
 * Vanilla Forums
 * WikkaWiki
 * WordPress
-* X-Cart
 * Zenphoto
 * Zikula
 
