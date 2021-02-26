@@ -107,7 +107,7 @@
 # CVE-2012-6633 3.3.3   http://codex.wordpress.org/Version_3.3.3
 # CVE-2012-6634 3.3.3
 # CVE-2012-6635 3.3.3
-# CVE-2012-6707 TODO    https://core.trac.wordpress.org/ticket/21022
+# CVE-2012-6707 N/A     https://core.trac.wordpress.org/ticket/21022
 # CVE-2013-0235 3.5.1   http://wordpress.org/news/2013/01/wordpress-3-5-1/
 # CVE-2013-0236 3.5.1   http://wordpress.org/news/2013/01/wordpress-3-5-1/
 # CVE-2013-0237 3.5.1   http://wordpress.org/news/2013/01/wordpress-3-5-1/
@@ -174,7 +174,7 @@
 # CVE-2016-6897 4.6     https://wordpress.org/news/2016/08/pepper/ https://sumofpwn.nl/advisory/2016/path_traversal_vulnerability_in_wordpress_core_ajax_handlers.html
 # CVE-2016-7168 4.6.1   https://wordpress.org/news/2016/09/wordpress-4-6-1-security-and-maintenance-release/
 # CVE-2016-7169 4.6.1   https://wordpress.org/news/2016/09/wordpress-4-6-1-security-and-maintenance-release/
-# CVE-2016-9263 TODO    https://opnsec.com/2017/10/cve-2016-9263-unpatched-xsf-vulnerability-in-wordpress/
+# CVE-2016-9263 4.9     https://opnsec.com/2017/10/cve-2016-9263-unpatched-xsf-vulnerability-in-wordpress/ according to comments fixed in https://github.com/WordPress/WordPress/commit/7af3b927362c619752eedd3f9cf209cdaefa0eca
 # CVE-2017-5487 4.7.1   https://wordpress.org/news/2017/01/wordpress-4-7-1-security-and-maintenance-release/
 # CVE-2017-5488 4.7.1
 # CVE-2017-5489 4.7.1
@@ -210,7 +210,7 @@
 # CVE-2017-14724 4.8.2 https://wordpress.org/news/2017/09/wordpress-4-8-2-security-and-maintenance-release/
 # CVE-2017-14725 4.8.2 https://wordpress.org/news/2017/09/wordpress-4-8-2-security-and-maintenance-release/
 # CVE-2017-14726 4.8.2 https://wordpress.org/news/2017/09/wordpress-4-8-2-security-and-maintenance-release/
-# CVE-2017-14990 TODO https://core.trac.wordpress.org/ticket/38474
+# CVE-2017-14990 N/A https://core.trac.wordpress.org/ticket/38474 still not fixed after four years even this was supposed to be fixed in 5.1 and 5.4 is out
 # CVE-2017-16510 4.8.3 https://github.com/WordPress/WordPress/commit/a2693fd8602e3263b5925b9d799ddd577202167d
 # CVE-2017-17091 4.9.1 https://wordpress.org/news/2017/11/wordpress-4-9-1-security-and-maintenance-release/
 # CVE-2017-17092 4.9.1 https://wordpress.org/news/2017/11/wordpress-4-9-1-security-and-maintenance-release/
@@ -223,8 +223,8 @@
 # CVE-2018-10102 4.9.5 https://wordpress.org/news/2018/04/wordpress-4-9-5-security-and-maintenance-release/ https://core.trac.wordpress.org/changeset/42893 https://github.com/WordPress/WordPress/commit/31a4369366d6b8ce30045d4c838de2412c77850d
 # CVE-2018-12895 4.9.7 https://wordpress.org/news/2018/07/wordpress-4-9-7-security-and-maintenance-release/ https://blog.ripstech.com/2018/wordpress-file-delete-to-code-execution/ needs Author level permissions
 # CVE-2018-14028 N/A https://core.trac.wordpress.org/ticket/44710 https://rastating.github.io/unrestricted-file-upload-via-plugin-uploader-in-wordpress/
-# CVE-2017-1000600 TODO http://www.securityfocus.com/bid/105305 https://www.theregister.co.uk/2018/08/20/php_unserialisation_wordpress_vuln/ https://twitter.com/_s_n_t/status/1030573635617124353
-# CVE-2018-1000773 TODO https://0day.city/wordpress-4-9-8-cve-2018-1000773-remote-code-execution.html https://www.theregister.co.uk/2018/08/20/php_unserialisation_wordpress_vuln/ https://www.securityfocus.com/bid/105306
+# CVE-2017-1000600 4.9 http://www.securityfocus.com/bid/105305 https://www.theregister.co.uk/2018/08/20/php_unserialisation_wordpress_vuln/ https://twitter.com/_s_n_t/status/1030573635617124353 Wordpress before 4.9 is vulnerable on its own. After 4.9 you need to have vulnerable module installed on the site as well. Due to an incomplete fix in 4.9 there exists CVE-2018-1000773.
+# CVE-2018-1000773 N/A https://0day.city/wordpress-4-9-8-cve-2018-1000773-remote-code-execution.html https://www.theregister.co.uk/2018/08/20/php_unserialisation_wordpress_vuln/ https://www.securityfocus.com/bid/105306
 # CVE-2018-20147 5.0.1 https://wordpress.org/news/2018/12/wordpress-5-0-1-security-release/
 # CVE-2018-20148 5.0.1 https://wordpress.org/news/2018/12/wordpress-5-0-1-security-release/
 # CVE-2018-20149 5.0.1 https://wordpress.org/news/2018/12/wordpress-5-0-1-security-release/
@@ -242,7 +242,13 @@
 # CVE-2019-16221 5.2.3
 # CVE-2019-16222 5.2.3 https://core.trac.wordpress.org/changeset/45997 https://github.com/WordPress/WordPress/commit/30ac67579559fe42251b5a9f887211bf61a8ed68
 # CVE-2019-16223 5.2.3
-# TODO 5.2.4 https://wordpress.org/news/2019/10/wordpress-5-2-4-security-release/
+# CVE-2019-17669 5.2.4 https://wordpress.org/news/2019/10/wordpress-5-2-4-security-release/
+# CVE-2019-17670 5.2.4 https://wordpress.org/news/2019/10/wordpress-5-2-4-security-release/
+# CVE-2019-17671 5.2.4 https://wordpress.org/news/2019/10/wordpress-5-2-4-security-release/
+# CVE-2019-17672 5.2.4 https://wordpress.org/news/2019/10/wordpress-5-2-4-security-release/
+# CVE-2019-17673 5.2.4 https://wordpress.org/news/2019/10/wordpress-5-2-4-security-release/
+# CVE-2019-17674 5.2.4 https://wordpress.org/news/2019/10/wordpress-5-2-4-security-release/
+# CVE-2019-17675 5.2.4 https://wordpress.org/news/2019/10/wordpress-5-2-4-security-release/
 # CVE-2019-16780 5.3.1 https://wordpress.org/news/2019/12/wordpress-5-3-1-security-and-maintenance-release/ https://hackerone.com/reports/738644 https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-x3wp-h3qx-9w94 https://github.com/WordPress/wordpress-develop/commit/505dd6a20b6fc3d06130018c1caeff764248c29e
 # CVE-2019-16781 5.3.1 https://wordpress.org/news/2019/12/wordpress-5-3-1-security-and-maintenance-release/ https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-pg4x-64rh-3c9v
 # CVE-2019-20041 5.3.1 https://wordpress.org/news/2019/12/wordpress-5-3-1-security-and-maintenance-release/ https://github.com/WordPress/wordpress-develop/commit/b1975463dd995da19bb40d3fa0786498717e3c53
