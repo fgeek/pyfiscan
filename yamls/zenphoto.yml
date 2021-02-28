@@ -1,5 +1,6 @@
 # URL: http://www.zenphoto.org/
 # DISPUTED: http://packetstormsecurity.com/files/120422/Zenphoto-1.4.4.1-Blind-SQL-Injection.html
+# NFU: CVE-2020-36079 file upload functionality allowing only admins to upload php shell https://github.com/zenphoto/zenphoto/issues/1292
 # CVE-2009-4562
 # CVE-2009-4563
 # CVE-2009-4564
