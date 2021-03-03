@@ -1,6 +1,5 @@
 # URL: http://www.zenphoto.org/
 # DISPUTED: http://packetstormsecurity.com/files/120422/Zenphoto-1.4.4.1-Blind-SQL-Injection.html
-# NFU: CVE-2020-36079 file upload functionality allowing only admins to upload php shell https://github.com/zenphoto/zenphoto/issues/1292
 # CVE-2009-4562
 # CVE-2009-4563
 # CVE-2009-4564
@@ -26,6 +25,7 @@
 # CVE-2018-20140 1.5.1  https://www.netsparker.com/web-applications-advisories/ns-18-043-cross-site-scripting-in-zenphoto/
 # CVE-2020-5592 1.5.7   https://www.zenphoto.org/news/zenphoto-1.5.7/
 # CVE-2020-5593 1.5.7   https://www.zenphoto.org/news/zenphoto-1.5.7/
+# CVE-2020-36079 1.5.7  https://github.com/zenphoto/zenphoto/issues/1292 https://packetstormsecurity.com/files/161569/Zenphoto-CMS-1.5.7-Shell-Upload.html https://www.zenphoto.org/news/why-not-every-security-issue-is-really-an-issue/ original vulnerability already fixed in 1.5.7 and admin privileges are now needed for file upload. Reporter didn't even contact upstream about this CVE so they made clarification about this case and it is not a security vulnerability
 Zenphoto:
   1:
     location: ['/zp-core/version.php']
