@@ -5,6 +5,7 @@
 # NFU: CVE-2016-7102 out of scope (desktop)
 # NFU: CVE-2020-36248 ownCloud app for Android
 # NFU: CVE-2020-36250 ownCloud Android App version
+# NFU: CVE-2020-28646 https://owncloud.com/security-advisories/cve-2020-28646/ ownCloud Desktop Client
 # NFU: Addons currently not supported oC-SA-2020-002 CVE-2020-36249 File Firewall
 # ownCloud ID       CVE             Fixed in        ownCloud security advisory URL
 # N/A               CVE-2012-5336   4.0.8
