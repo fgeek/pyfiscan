@@ -3140,7 +3140,7 @@ WordPress plugin ti-woocommerce-wishlist:
     location: ['/wp-content/plugins/ti-woocommerce-wishlist/readme.txt']
     secure_version: '1.21.12'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://wpscan.com/vulnerability/10433 https://blog.nintechnet.com/critical-zero-day-vulnerability-fixed-in-wordpress-ti-woocommerce-wishlist-plugin/'
+    cve: 'https://blog.nintechnet.com/critical-zero-day-vulnerability-fixed-in-wordpress-ti-woocommerce-wishlist-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin orbisius-child-theme-creator:
@@ -3172,7 +3172,7 @@ WordPress plugin boldgrid-backup:
     location: ['/wp-content/plugins/boldgrid-backup/readme.txt']
     secure_version: '1.14.10'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://wpscan.com/vulnerability/10502 https://wpscan.com/vulnerability/10503'
+    cve: 'https://www.exploit-db.com/exploits/49252'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin loginizer:
@@ -3180,7 +3180,7 @@ WordPress plugin loginizer:
     location: ['/wp-content/plugins/loginizer/readme.txt']
     secure_version: '1.6.4'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-27615 https://loginizer.com/blog/loginizer-1-6-4-security-fix/ https://wpscan.com/vulnerability/10441'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-27615 https://loginizer.com/blog/loginizer-1-6-4-security-fix/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin contact-form-7:

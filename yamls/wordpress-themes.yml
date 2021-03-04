@@ -43,7 +43,7 @@ WordPress theme shapely:
     location: ['/wp-content/themes/shapely/style.css']
     secure_version: '1.2.9'
     regexp: ['Version:\s*(?P<version>[0-9.]{1,})']
-    cve: 'https://wpscan.com/vulnerabilities/10417 https://blog.nintechnet.com/unauthenticated-function-injection-vulnerability-fixed-in-15-wordpress-themes/'
+    cve: 'https://blog.nintechnet.com/unauthenticated-function-injection-vulnerability-fixed-in-15-wordpress-themes/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress theme newsmag:
@@ -51,7 +51,7 @@ WordPress theme newsmag:
     location: ['/wp-content/themes/newsmag/style.css']
     secure_version: '2.4.2'
     regexp: ['Version:\s*(?P<version>[0-9.]{1,})']
-    cve: 'https://wpscan.com/vulnerabilities/10417 https://blog.nintechnet.com/unauthenticated-function-injection-vulnerability-fixed-in-15-wordpress-themes/'
+    cve: 'https://blog.nintechnet.com/unauthenticated-function-injection-vulnerability-fixed-in-15-wordpress-themes/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress theme activello:
@@ -59,7 +59,7 @@ WordPress theme activello:
     location: ['/wp-content/themes/activello/style.css']
     secure_version: '1.4.2'
     regexp: ['Version:\s*(?P<version>[0-9.]{1,})']
-    cve: 'https://wpscan.com/vulnerabilities/10417 https://blog.nintechnet.com/unauthenticated-function-injection-vulnerability-fixed-in-15-wordpress-themes/'
+    cve: 'https://blog.nintechnet.com/unauthenticated-function-injection-vulnerability-fixed-in-15-wordpress-themes/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress theme illdy:
@@ -67,7 +67,7 @@ WordPress theme illdy:
     location: ['/wp-content/themes/illdy/style.css']
     secure_version: '2.1.7'
     regexp: ['Version:\s*(?P<version>[0-9.]{1,})']
-    cve: 'https://wpscan.com/vulnerabilities/10417 https://blog.nintechnet.com/unauthenticated-function-injection-vulnerability-fixed-in-15-wordpress-themes/'
+    cve: 'https://blog.nintechnet.com/unauthenticated-function-injection-vulnerability-fixed-in-15-wordpress-themes/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress theme allegiant:
@@ -75,7 +75,7 @@ WordPress theme allegiant:
     location: ['/wp-content/themes/allegiant/style.css']
     secure_version: '1.2.6'
     regexp: ['Version:\s*(?P<version>[0-9.]{1,})']
-    cve: 'https://wpscan.com/vulnerabilities/10417 https://blog.nintechnet.com/unauthenticated-function-injection-vulnerability-fixed-in-15-wordpress-themes/'
+    cve: 'https://blog.nintechnet.com/unauthenticated-function-injection-vulnerability-fixed-in-15-wordpress-themes/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress theme newspaper-x:
@@ -83,7 +83,7 @@ WordPress theme newspaper-x:
     location: ['/wp-content/themes/newspaper-x/style.css']
     secure_version: '1.3.2'
     regexp: ['Version:\s*(?P<version>[0-9.]{1,})']
-    cve: 'https://wpscan.com/vulnerabilities/10417 https://blog.nintechnet.com/unauthenticated-function-injection-vulnerability-fixed-in-15-wordpress-themes/'
+    cve: 'https://blog.nintechnet.com/unauthenticated-function-injection-vulnerability-fixed-in-15-wordpress-themes/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress theme pixova-lite:
@@ -91,7 +91,7 @@ WordPress theme pixova-lite:
     location: ['/wp-content/themes/pixova-lite/style.css']
     secure_version: '2.0.7'
     regexp: ['Version:\s*(?P<version>[0-9.]{1,})']
-    cve: 'https://wpscan.com/vulnerabilities/10417 https://blog.nintechnet.com/unauthenticated-function-injection-vulnerability-fixed-in-15-wordpress-themes/'
+    cve: 'https://blog.nintechnet.com/unauthenticated-function-injection-vulnerability-fixed-in-15-wordpress-themes/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress theme brilliance:
@@ -99,7 +99,7 @@ WordPress theme brilliance:
     location: ['/wp-content/themes/brilliance/style.css']
     secure_version: '1.3.0'
     regexp: ['Version:\s*(?P<version>[0-9.]{1,})']
-    cve: 'https://wpscan.com/vulnerabilities/10417 https://blog.nintechnet.com/unauthenticated-function-injection-vulnerability-fixed-in-15-wordpress-themes/'
+    cve: 'https://blog.nintechnet.com/unauthenticated-function-injection-vulnerability-fixed-in-15-wordpress-themes/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress theme medzone-lite:
@@ -107,7 +107,7 @@ WordPress theme medzone-lite:
     location: ['/wp-content/themes/medzone-lite/style.css']
     secure_version: '1.2.6'
     regexp: ['Version:\s*(?P<version>[0-9.]{1,})']
-    cve: 'https://wpscan.com/vulnerabilities/10417 https://blog.nintechnet.com/unauthenticated-function-injection-vulnerability-fixed-in-15-wordpress-themes/'
+    cve: 'https://blog.nintechnet.com/unauthenticated-function-injection-vulnerability-fixed-in-15-wordpress-themes/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress theme regina-lite:
@@ -115,7 +115,7 @@ WordPress theme regina-lite:
     location: ['/wp-content/themes/regina-lite/style.css']
     secure_version: '2.0.6'
     regexp: ['Version:\s*(?P<version>[0-9.]{1,})']
-    cve: 'https://wpscan.com/vulnerabilities/10417 https://blog.nintechnet.com/unauthenticated-function-injection-vulnerability-fixed-in-15-wordpress-themes/'
+    cve: 'https://blog.nintechnet.com/unauthenticated-function-injection-vulnerability-fixed-in-15-wordpress-themes/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress theme transcend:
@@ -123,7 +123,7 @@ WordPress theme transcend:
     location: ['/wp-content/themes/transcend/style.css']
     secure_version: '1.2.0'
     regexp: ['Version:\s*(?P<version>[0-9.]{1,})']
-    cve: 'https://wpscan.com/vulnerabilities/10417 https://blog.nintechnet.com/unauthenticated-function-injection-vulnerability-fixed-in-15-wordpress-themes/'
+    cve: 'https://blog.nintechnet.com/unauthenticated-function-injection-vulnerability-fixed-in-15-wordpress-themes/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress theme affluent:
@@ -131,7 +131,7 @@ WordPress theme affluent:
     location: ['/wp-content/themes/affluent/style.css']
     secure_version: '1.1.2'
     regexp: ['Version:\s*(?P<version>[0-9.]{1,})']
-    cve: 'https://wpscan.com/vulnerabilities/10417 https://blog.nintechnet.com/unauthenticated-function-injection-vulnerability-fixed-in-15-wordpress-themes/'
+    cve: 'https://blog.nintechnet.com/unauthenticated-function-injection-vulnerability-fixed-in-15-wordpress-themes/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress theme bonkers:
@@ -139,7 +139,7 @@ WordPress theme bonkers:
     location: ['/wp-content/themes/bonkers/style.css']
     secure_version: '1.0.6'
     regexp: ['Version:\s*(?P<version>[0-9.]{1,})']
-    cve: 'https://wpscan.com/vulnerabilities/10417 https://blog.nintechnet.com/unauthenticated-function-injection-vulnerability-fixed-in-15-wordpress-themes/'
+    cve: 'https://blog.nintechnet.com/unauthenticated-function-injection-vulnerability-fixed-in-15-wordpress-themes/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress theme antreas:
@@ -147,7 +147,7 @@ WordPress theme antreas:
     location: ['/wp-content/themes/antreas/style.css']
     secure_version: '1.0.7'
     regexp: ['Version:\s*(?P<version>[0-9.]{1,})']
-    cve: 'https://wpscan.com/vulnerabilities/10417 https://blog.nintechnet.com/unauthenticated-function-injection-vulnerability-fixed-in-15-wordpress-themes/'
+    cve: 'https://blog.nintechnet.com/unauthenticated-function-injection-vulnerability-fixed-in-15-wordpress-themes/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress theme naturemag-lite:
@@ -155,6 +155,6 @@ WordPress theme naturemag-lite:
     location: ['/wp-content/themes/naturemag-lite/style.css']
     secure_version: 'N/A'
     regexp: ['Version:\s*(?P<version>[0-9.]{1,})']
-    cve: 'https://wpscan.com/vulnerabilities/10417 https://blog.nintechnet.com/unauthenticated-function-injection-vulnerability-fixed-in-15-wordpress-themes/'
+    cve: 'https://blog.nintechnet.com/unauthenticated-function-injection-vulnerability-fixed-in-15-wordpress-themes/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']

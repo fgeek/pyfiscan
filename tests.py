@@ -63,6 +63,8 @@ class UnwantedStrings(unittest.TestCase):
                     for line in file:
                         if re.search('osvdb', line):
                             self.fail('OSVDB string found from: %s' % filepath)
+                        if re.search('wpscan', line):
+                            self.fail('wpscan string found from: %s' % filepath)
 
 
 class FilePaths(unittest.TestCase):
