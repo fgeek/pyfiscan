@@ -3239,3 +3239,11 @@ WordPress plugin quadmenu:
     cve: 'https://sh3llcon.org/la-debilidad-de-wordpress/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin woocommerce-upload-files:
+  1:
+    location: ['/wp-content/plugins/woocommerce-upload-files/readme.txt']
+    secure_version: '59.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24171 https://www.wordfence.com/blog/2021/03/critical-vulnerability-patched-in-woocommerce-upload-files/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
