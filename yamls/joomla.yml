@@ -202,58 +202,71 @@
 # CVE-2020-24597 3.9.21 https://developer.joomla.org/security-centre/827-20200803-core-directory-traversal-in-com-media.html https://www.joomla.org/announcements/release-news/5821-joomla-3-9-21.html
 # CVE-2020-24598 3.9.21 https://developer.joomla.org/security-centre/825-20200802-core-open-redirect-in-com-content-vote-feature.html https://www.joomla.org/announcements/release-news/5821-joomla-3-9-21.html
 # CVE-2020-24599 3.9.21 https://developer.joomla.org/security-centre/824-20200801-core-xss-in-mod-latestactions.html https://www.joomla.org/announcements/release-news/5821-joomla-3-9-21.html
-# TODO 3.9.23 https://developer.joomla.org/security-centre/828-20201101-core-com-finder-ignores-access-levels-on-autosuggest.html
-# TODO 3.9.23 https://developer.joomla.org/security-centre/829-20201102-core-disclosure-of-secrets-in-global-configuration-page.html
-# TODO 3.9.23 https://developer.joomla.org/security-centre/831-20201104-core-sql-injection-in-com-users-list-view.html
-# TODO 3.9.23 https://developer.joomla.org/security-centre/832-20201105-core-user-enumeration-in-backend-login.html
-# TODO 3.9.23 https://developer.joomla.org/security-centre/833-20201106-core-csrf-in-com-privacy-emailexport-feature.html
-# TODO 3.9.23 https://developer.joomla.org/security-centre/834-20201107-core-write-acl-violation-in-multiple-core-views.html
-# TODO 3.9.23 https://developer.joomla.org/security-centre/832-20201105-core-user-enumeration-in-backend-login.html
+# CVE-2020-35610 3.9.23 https://developer.joomla.org/security-centre/828-20201101-core-com-finder-ignores-access-levels-on-autosuggest.html
+# CVE-2020-35611 3.9.23 https://developer.joomla.org/security-centre/829-20201102-core-disclosure-of-secrets-in-global-configuration-page.html
+# CVE-2020-35612 3.9.23 https://developer.joomla.org/security-centre/830-20201103-core-path-traversal-in-mod-random-image.html
+# CVE-2020-35613 3.9.23 https://developer.joomla.org/security-centre/831-20201104-core-sql-injection-in-com-users-list-view.html
+# CVE-2020-35614 3.9.23 https://developer.joomla.org/security-centre/832-20201105-core-user-enumeration-in-backend-login.html
+# CVE-2020-35615 3.9.23 https://developer.joomla.org/security-centre/833-20201106-core-csrf-in-com-privacy-emailexport-feature.html
+# CVE-2020-35616 3.9.23 https://developer.joomla.org/security-centre/834-20201107-core-write-acl-violation-in-multiple-core-views.html
+# CVE-2021-23123 3.9.24 https://developer.joomla.org/security-centre/836-20210101-core-com-modules-exposes-module-names.html
+# CVE-2021-23124 3.9.24 https://developer.joomla.org/security-centre/837-20210102-core-xss-in-mod-breadcrumbs-aria-label-attribute.html
+# CVE-2021-23125 3.9.24 https://developer.joomla.org/security-centre/838-20210103-core-xss-in-com-tags-image-parameters.html
+# CVE-2021-23126 3.9.25 https://developer.joomla.org/security-centre/841-20210301-core-insecure-randomness-within-2fa-secret-generation.html https://www.joomla.org/announcements/release-news/5834-joomla-3-9-25.html
+# CVE-2021-23127 3.9.25 https://developer.joomla.org/security-centre/841-20210301-core-insecure-randomness-within-2fa-secret-generation.html
+# CVE-2021-23128 3.9.25 https://developer.joomla.org/security-centre/842-20210302-core-potential-insecure-fofencryptrandval.html
+# CVE-2021-23129 3.9.25 https://developer.joomla.org/security-centre/843-20210303-core-xss-within-alert-messages-showed-to-users.html
+# CVE-2021-23130 3.9.25 https://developer.joomla.org/security-centre/844-20210304-core-xss-within-the-feed-parser-library.html
+# CVE-2021-23131 3.9.25 https://developer.joomla.org/security-centre/845-20210305-core-input-validation-within-the-template-manager.html
+# CVE-2021-23132 3.9.25 https://developer.joomla.org/security-centre/846-20210306-core-com-media-allowed-paths-that-are-not-intended-for-image-uploads.html
+# CVE-2021-26027 3.9.25 https://developer.joomla.org/security-centre/847-20210307-core-acl-violation-within-com-content-frontend-editing.html
+# CVE-2021-26028 3.9.25 https://developer.joomla.org/security-centre/848-20210308-core-path-traversal-within-joomla-archive-zip-class.html
+# CVE-2021-26029 3.9.25 https://developer.joomla.org/security-centre/849-20210309-core-inadequate-filtering-of-form-contents-could-allow-to-overwrite-the-author-field.html
 Joomla 3:
   1:
     location: ['/administrator/manifests/files/joomla.xml']
-    secure_version: '3.9.21'
+    secure_version: '3.9.25'
     regexp: ['[\t]<version>(?P<version>3\.[0-9.]{1,})']
-    cve: 'https://developer.joomla.org/security-centre/827-20200803-core-directory-traversal-in-com-media.html https://nvd.nist.gov/vuln/detail/CVE-2020-24597 https://developer.joomla.org/security-centre/824-20200801-core-xss-in-mod-latestactions.html  https://nvd.nist.gov/vuln/detail/CVE-2020-24599'
+    cve: 'https://www.joomla.org/announcements/release-news/5834-joomla-3-9-25.html https://nvd.nist.gov/vuln/detail/CVE-2021-23126 https://nvd.nist.gov/vuln/detail/CVE-2021-23127 https://developer.joomla.org/security-centre/841-20210301-core-insecure-randomness-within-2fa-secret-generation.html https://nvd.nist.gov/vuln/detail/CVE-2021-23128 https://developer.joomla.org/security-centre/842-20210302-core-potential-insecure-fofencryptrandval.html https://nvd.nist.gov/vuln/detail/CVE-2021-23129 https://developer.joomla.org/security-centre/843-20210303-core-xss-within-alert-messages-showed-to-users.html https://nvd.nist.gov/vuln/detail/CVE-2021-23130 https://developer.joomla.org/security-centre/844-20210304-core-xss-within-the-feed-parser-library.html https://nvd.nist.gov/vuln/detail/CVE-2021-23131 https://developer.joomla.org/security-centre/845-20210305-core-input-validation-within-the-template-manager.html https://nvd.nist.gov/vuln/detail/CVE-2021-23132 https://developer.joomla.org/security-centre/846-20210306-core-com-media-allowed-paths-that-are-not-intended-for-image-uploads.html https://nvd.nist.gov/vuln/detail/CVE-2021-26027 https://developer.joomla.org/security-centre/847-20210307-core-acl-violation-within-com-content-frontend-editing.html https://nvd.nist.gov/vuln/detail/CVE-2021-26028 https://developer.joomla.org/security-centre/848-20210308-core-path-traversal-within-joomla-archive-zip-class.html https://nvd.nist.gov/vuln/detail/CVE-2021-26029 https://developer.joomla.org/security-centre/849-20210309-core-inadequate-filtering-of-form-contents-could-allow-to-overwrite-the-author-field.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Joomla 2.5:
   1:
     location: ['/administrator/manifests/files/joomla.xml']
-    secure_version: '3.9.21'
+    secure_version: '3.9.25'
     regexp: ['[\t]<version>(?P<version>2\.5\.[0-9]{1,})']
-    cve: 'Joomla 2.5 is end of life. Please upgrade to 3.9.21 version.'
+    cve: 'Joomla 2.5 is end of life. Please upgrade to 3.9.25 version.'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Joomla 1.7:
   1:
     location: ['/includes/version.php']
-    secure_version: '3.9.21'
+    secure_version: '3.9.25'
     regexp: ['[\t]+public[\t|\s]\$RELEASE.*?(?P<version>1.7)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.7 is end of life. Please upgrade to 3.9.21 version.'
+    cve: 'Joomla 1.7 is end of life. Please upgrade to 3.9.25 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.6:
   1:
     location: ['/libraries/joomla/version.php']
-    secure_version: '3.9.21'
+    secure_version: '3.9.25'
     regexp: ['.*?RELEASE.*?(?P<version>1.6)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.6 is end of life. Please upgrade to 3.9.21 version.'
+    cve: 'Joomla 1.6 is end of life. Please upgrade to 3.9.25 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.5:
   1:
     location: ['/libraries/joomla/version.php']
-    secure_version: '3.9.21'
+    secure_version: '3.9.25'
     regexp: ['.*?RELEASE.*?(?P<version>1.5)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.5 is end of life. Please upgrade to 3.9.21 version.'
+    cve: 'Joomla 1.5 is end of life. Please upgrade to 3.9.25 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.0:
   1:
     location: ['/includes/version.php']
-    secure_version: '3.9.21'
+    secure_version: '3.9.25'
     regexp: ['[\t]+var.*?RELEASE.*?(?P<version>1.0)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.0 is end of life. Please upgrade to 3.9.21 version.'
+    cve: 'Joomla 1.0 is end of life. Please upgrade to 3.9.25 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
