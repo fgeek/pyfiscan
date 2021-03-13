@@ -3247,3 +3247,11 @@ WordPress plugin woocommerce-upload-files:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24171 https://www.wordfence.com/blog/2021/03/critical-vulnerability-patched-in-woocommerce-upload-files/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin food-and-drink-menu:
+  1:
+    location: ['/wp-content/plugins/food-and-drink-menu/readme.txt']
+    secure_version: '2.2.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-29045 https://appcheck-ng.com/cve-2020-29045/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
