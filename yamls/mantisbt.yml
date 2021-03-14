@@ -81,6 +81,7 @@
 # CVE-2020-29603 2.24.4 https://mantisbt.org/bugs/view.php?id=27357 https://mantisbt.org/bugs/view.php?id=27726
 # CVE-2020-29604 2.24.4 https://mantisbt.org/bugs/view.php?id=27728
 # CVE-2020-29605 2.24.4 https://mantisbt.org/bugs/view.php?id=27727
+# CVE-2009-20001 2.24.5 https://mantisbt.org/bugs/view.php?id=11296 https://mantisbt.org/bugs/view.php?id=27976
 # CVE-2020-35571 2.25.0 https://mantisbt.org/bugs/view.php?id=27768
 MantisBT:
   1:
