@@ -3263,3 +3263,11 @@ WordPress plugin theplus_elementor_addon:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24175 https://www.wordfence.com/blog/2021/03/critical-0-day-in-the-plus-addons-for-elementor-allows-site-takeover/ https://threatpost.com/cyberattackers-exploiting-critical-wordpress-plugin-bug/164663/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin sb-elementor-contact-form-db:
+  1:
+    location: ['/wp-content/plugins/sb-elementor-contact-form-db/readme.txt']
+    secure_version: '1.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-3133 https://plugins.trac.wordpress.org/changeset/2454670/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
