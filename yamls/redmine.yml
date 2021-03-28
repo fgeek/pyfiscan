@@ -1,0 +1,41 @@
+# URL: https://www.redmine.org http://www.redmine.org/projects/redmine/wiki/Security_Advisories https://plan.io/redmine-security-scanner/
+# CVE-2008-4481
+# CVE-2009-4078
+# CVE-2009-4079
+# CVE-2009-4412
+# CVE-2008-4459
+# CVE-2011-1723 http://www.redmine.org/news/53
+# CVE-2011-4927
+# CVE-2011-4928
+# CVE-2011-4929
+# CVE-2012-0327
+# CVE-2012-2054
+# CVE-2014-1985
+# CVE-2015-8346
+# CVE-2015-8473
+# CVE-2015-8474 3.1.1/3.0.5/2.6.7 https://www.redmine.org/issues/19577
+# CVE-2015-8477 3.0.0/2.6.2 https://www.redmine.org/issues/19117
+# CVE-2015-8537 3.1.3/3.0.7/2.6.9 http://www.redmine.org/news/103
+# CVE-2017-16804
+# CVE-2017-15568 3.4.3/3.3.5/3.2.8 https://www.redmine.org/issues/27186 https://github.com/redmine/redmine/commit/94f7cfbf990028348b9262578acbc53a94fce448
+# CVE-2017-15569 3.4.3/3.3.5/3.2.8 https://www.redmine.org/issues/27186 https://github.com/redmine/redmine/commit/56c8ee0440d8555aa7822d947ba9091c8a791508
+# CVE-2017-15570 3.4.3/3.3.5/3.2.8 https://www.redmine.org/issues/27186 https://github.com/redmine/redmine/commit/1a0976417975a128b0a932ba1552c37e9414953b
+# CVE-2017-15571 3.4.3/3.3.5/3.2.8 https://www.redmine.org/issues/27186 https://github.com/redmine/redmine/commit/273dd9cb3bcfb1e0a0b90570b3b34eafa07d67aa
+# CVE-2017-15572 3.3.3/3.2.6 https://www.redmine.org/issues/24416
+# CVE-2017-15573 3.3.3/3.2.6 https://www.redmine.org/issues/25503
+# CVE-2017-15574 3.3.3/3.2.6 https://www.redmine.org/issues/24199
+# CVE-2017-15575 3.3.3/3.2.6 https://www.redmine.org/issues/24307
+# CVE-2017-15576 3.3.3/3.2.6 https://www.redmine.org/issues/23803
+# CVE-2017-15577 3.3.3/3.2.6 https://www.redmine.org/issues/23793
+# CVE-2017-18026 3.4.4/3.3.6/3.2.9 https://www.redmine.org/issues/27516 https://github.com/redmine/redmine/commit/ca87bf766cdc70179cb2dce03015d78ec9c13ebd
+# CVE-2019-17427 4.0.4/3.4.11
+# CVE-2019-18890 3.3.10
+# TODO 4.1.2/4.0.8 https://redmine.org/issues/33846 CVE requested 2021-03-28
+Redmine:
+  1:
+    location: ['/doc/CHANGELOG']
+    secure_version: '4.1.2'
+    regexp: ['== [0-9]{4}-[0-9]{2}-[0.9]{2}.*?v(?P<version>[0-9.]+)']
+    cve: 'https://www.redmine.org/projects/redmine/wiki/Security_Advisories https://www.redmine.org/issues/33846'
+    fingerprint: detect_redmine
+    post_processing: ['php5.fcgi']

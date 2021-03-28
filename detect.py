@@ -122,6 +122,20 @@ def detect_gallery(source_file, regexp):
 
 
 @yaml_visible
+def detect_redmine(source_file, regexp):
+    """Detects from source file if it contains version information. Uses first
+    regexp-match.
+
+    """
+    if not (os.path.isfile(source_file) and regexp):
+        return
+    with open(source_file) as redmine_changelog:
+        if not 'Redmine changelog' in redmine_changelog.read():
+            return
+    return grep_from_file(source_file, regexp[0])
+
+
+@yaml_visible
 def detect_withoutnewlines(source_file, regexp):
     """Strips newlines from source file."""
     if not (os.path.isfile(source_file) and regexp):

@@ -86,6 +86,7 @@ Detects following software
 * PmWiki
 * Postfix Admin
 * Redaxo
+* Redmine
 * Roundcube
 * SaurusCMS
 * Serendipity
