@@ -160,18 +160,29 @@
 # CVE-2020-35478 1.35.1/1.31.11 https://phabricator.wikimedia.org/T268938
 # CVE-2020-35479 1.35.1/1.31.11 https://phabricator.wikimedia.org/T268938
 # CVE-2020-35480 1.35.1/1.31.11 https://phabricator.wikimedia.org/T120883
+# CVE-2021-20270 1.35.2/1.31.13 https://lists.wikimedia.org/pipermail/wikitech-l/2021-April/094418.html
+# CVE-2021-27291 1.35.2/1.31.13 https://lists.wikimedia.org/pipermail/wikitech-l/2021-April/094418.html
+# CVE-2021-30152 1.35.2/1.31.13 https://lists.wikimedia.org/pipermail/wikitech-l/2021-April/094418.html
+# CVE-2021-30153 1.35.2/1.31.13 https://lists.wikimedia.org/pipermail/wikitech-l/2021-April/094418.html
+# CVE-2021-30154 1.35.2/1.31.13 https://lists.wikimedia.org/pipermail/wikitech-l/2021-April/094418.html
+# CVE-2021-30155 1.35.2/1.31.13 https://lists.wikimedia.org/pipermail/wikitech-l/2021-April/094418.html
+# CVE-2021-30156 1.35.2/1.31.13 https://phabricator.wikimedia.org/T276306
+# CVE-2021-30157 1.35.2/1.31.13 https://lists.wikimedia.org/pipermail/wikitech-l/2021-April/094418.html
+# CVE-2021-30158 1.35.2/1.31.13 https://gerrit.wikimedia.org/r/c/mediawiki/core/+/670546 https://phabricator.wikimedia.org/T277009
+# CVE-2021-30159 1.35.2/1.31.13 https://lists.wikimedia.org/pipermail/wikitech-l/2021-April/094418.html https://phabricator.wikimedia.org/T272386
+# CVE-2021-30458 1.35.2/1.31.13 https://phabricator.wikimedia.org/T279451
 MediaWiki 1.35:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.35.1'
+    secure_version: '1.35.2'
     regexp: ['\$wgVersion.*?(?P<version>1\.35\.[0-9.]{1,})']
-    cve: 'https://lists.wikimedia.org/pipermail/mediawiki-announce/2020-December/000268.html https://nvd.nist.gov/vuln/detail/CVE-2020-35474 https://nvd.nist.gov/vuln/detail/CVE-2020-35475 https://nvd.nist.gov/vuln/detail/CVE-2020-35477 https://nvd.nist.gov/vuln/detail/CVE-2020-35478 https://nvd.nist.gov/vuln/detail/CVE-2020-35479 https://nvd.nist.gov/vuln/detail/CVE-2020-35480'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-20270 https://nvd.nist.gov/vuln/detail/CVE-2021-27291 https://nvd.nist.gov/vuln/detail/CVE-2021-30152 https://nvd.nist.gov/vuln/detail/CVE-2021-30153 https://nvd.nist.gov/vuln/detail/CVE-2021-30154 https://nvd.nist.gov/vuln/detail/CVE-2021-30155 https://nvd.nist.gov/vuln/detail/CVE-2021-30156 https://nvd.nist.gov/vuln/detail/CVE-2021-30157 https://nvd.nist.gov/vuln/detail/CVE-2021-30158 https://nvd.nist.gov/vuln/detail/CVE-2021-30159 https://nvd.nist.gov/vuln/detail/CVE-2021-30458 https://lists.wikimedia.org/pipermail/wikitech-l/2021-April/094418.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.34:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.35.0'
+    secure_version: '1.35.2'
     regexp: ['\$wgVersion.*?(?P<version>1\.34\.[0-9.]{1,})']
     cve: 'MediaWiki 1.34 is end of life. Please see: https://lists.wikimedia.org/pipermail/mediawiki-announce/2020-November/000266.html'
     fingerprint: detect_general
@@ -179,7 +190,7 @@ MediaWiki 1.34:
 MediaWiki 1.33:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.35.0'
+    secure_version: '1.35.2'
     regexp: ['\$wgVersion.*?(?P<version>1\.33\.[0-9.]{1,})']
     cve: 'MediaWiki 1.33 is end of life. Please see: https://lists.wikimedia.org/pipermail/mediawiki-announce/2020-June/000253.html'
     fingerprint: detect_general
@@ -187,7 +198,7 @@ MediaWiki 1.33:
 MediaWiki 1.32:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.35.0'
+    secure_version: '1.35.2'
     regexp: ['\$wgVersion.*?(?P<version>1\.32\.[0-9.]{1,})']
     cve: 'MediaWiki 1.32 is end of life. Please see: https://lists.wikimedia.org/pipermail/mediawiki-announce/2020-January/000245.html'
     fingerprint: detect_general
@@ -195,15 +206,15 @@ MediaWiki 1.32:
 MediaWiki 1.31:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.31.11'
+    secure_version: '1.31.13'
     regexp: ['\$wgVersion.*?(?P<version>1\.31\.[0-9.]{1,})']
-    cve: 'https://lists.wikimedia.org/pipermail/mediawiki-announce/2020-December/000268.html https://nvd.nist.gov/vuln/detail/CVE-2020-35474 https://nvd.nist.gov/vuln/detail/CVE-2020-35475 https://nvd.nist.gov/vuln/detail/CVE-2020-35477 https://nvd.nist.gov/vuln/detail/CVE-2020-35478 https://nvd.nist.gov/vuln/detail/CVE-2020-35479 https://nvd.nist.gov/vuln/detail/CVE-2020-35480'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-20270 https://nvd.nist.gov/vuln/detail/CVE-2021-27291 https://nvd.nist.gov/vuln/detail/CVE-2021-30152 https://nvd.nist.gov/vuln/detail/CVE-2021-30153 https://nvd.nist.gov/vuln/detail/CVE-2021-30154 https://nvd.nist.gov/vuln/detail/CVE-2021-30155 https://nvd.nist.gov/vuln/detail/CVE-2021-30156 https://nvd.nist.gov/vuln/detail/CVE-2021-30157 https://nvd.nist.gov/vuln/detail/CVE-2021-30158 https://nvd.nist.gov/vuln/detail/CVE-2021-30159 https://nvd.nist.gov/vuln/detail/CVE-2021-30458 https://lists.wikimedia.org/pipermail/wikitech-l/2021-April/094418.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.30:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.35.0'
+    secure_version: '1.35.2'
     regexp: ['\$wgVersion.*?(?P<version>1\.30\.[0-9.]{1,})']
     cve: 'MediaWiki 1.30 is end of life.'
     fingerprint: detect_general
@@ -211,7 +222,7 @@ MediaWiki 1.30:
 MediaWiki 1.29:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.35.0'
+    secure_version: '1.35.2'
     regexp: ['\$wgVersion.*?(?P<version>1\.29\.[0-9.]{1,})']
     cve: 'MediaWiki 1.29 is end of life.'
     fingerprint: detect_general
@@ -219,7 +230,7 @@ MediaWiki 1.29:
 MediaWiki 1.28:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.35.0'
+    secure_version: '1.35.2'
     regexp: ['\$wgVersion.*?(?P<version>1\.28\.[0-9.]{1,})']
     cve: 'MediaWiki 1.28 is end of life.'
     fingerprint: detect_general
@@ -227,7 +238,7 @@ MediaWiki 1.28:
 MediaWiki 1.27:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.35.0'
+    secure_version: '1.35.2'
     regexp: ['\$wgVersion.*?(?P<version>1\.27\.[0-9.]{1,})']
     cve: 'MediaWiki 1.27 is end of life.'
     fingerprint: detect_general
@@ -235,7 +246,7 @@ MediaWiki 1.27:
 MediaWiki 1.26:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.35.0'
+    secure_version: '1.35.2'
     regexp: ['\$wgVersion.*?(?P<version>1\.26\.[0-9.]{1,})']
     cve: 'MediaWiki 1.26 is end of life.'
     fingerprint: detect_general
@@ -243,7 +254,7 @@ MediaWiki 1.26:
 MediaWiki 1.25:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.35.0'
+    secure_version: '1.35.2'
     regexp: ['\$wgVersion.*?(?P<version>1\.25\.[0-9.]{1,})']
     cve: 'MediaWiki 1.25 is end of life.'
     fingerprint: detect_general
@@ -251,7 +262,7 @@ MediaWiki 1.25:
 MediaWiki 1.24:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.35.0'
+    secure_version: '1.35.2'
     regexp: ['\$wgVersion.*?(?P<version>1\.24\.[0-9.]{1,})']
     cve: 'MediaWiki 1.24 is end of life.'
     fingerprint: detect_general
@@ -259,7 +270,7 @@ MediaWiki 1.24:
 MediaWiki 1.23:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.35.0'
+    secure_version: '1.35.2'
     regexp: ['\$wgVersion.*?(?P<version>1\.23\.[0-9.]{1,})']
     cve: 'MediaWiki 1.23 is end of life.'
     fingerprint: detect_general
@@ -267,7 +278,7 @@ MediaWiki 1.23:
 MediaWiki 1.22:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.35.0'
+    secure_version: '1.35.2'
     regexp: ['\$wgVersion.*?(?P<version>1\.22\.[0-9.]{1,})']
     cve: 'MediaWiki 1.22 is end of life.'
     fingerprint: detect_general
@@ -275,7 +286,7 @@ MediaWiki 1.22:
 MediaWiki 1.21:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.35.0'
+    secure_version: '1.35.2'
     regexp: ['\$wgVersion.*?(?P<version>1\.21\.[0-9.]{1,})']
     cve: 'MediaWiki 1.21 is end of life.'
     fingerprint: detect_general
@@ -283,7 +294,7 @@ MediaWiki 1.21:
 MediaWiki 1.20:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.35.0'
+    secure_version: '1.35.2'
     regexp: ['\$wgVersion.*?(?P<version>1\.20\.[0-9.]{1,})']
     cve: 'MediaWiki 1.20 is end of life.'
     fingerprint: detect_general
@@ -291,7 +302,7 @@ MediaWiki 1.20:
 MediaWiki 1.19:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.35.0'
+    secure_version: '1.35.2'
     regexp: ['\$wgVersion.*?(?P<version>1\.19\.[0-9.]{1,})']
     cve: 'MediaWiki 1.19 is end of life.'
     fingerprint: detect_general
@@ -299,7 +310,7 @@ MediaWiki 1.19:
 MediaWiki 1.18:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.35.0'
+    secure_version: '1.35.2'
     regexp: ['\$wgVersion.*?(?P<version>1\.1[0-8]\.[0-9.]{1,})']
     cve: 'MediaWiki 1.18 is end of life.'
     fingerprint: detect_general
