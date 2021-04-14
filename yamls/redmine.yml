@@ -27,9 +27,15 @@
 # CVE-2017-15575 3.3.3/3.2.6 https://www.redmine.org/issues/24307
 # CVE-2017-15576 3.3.3/3.2.6 https://www.redmine.org/issues/23803
 # CVE-2017-15577 3.3.3/3.2.6 https://www.redmine.org/issues/23793
+# CVE-2019-18890 3.3.10
 # CVE-2017-18026 3.4.4/3.3.6/3.2.9 https://www.redmine.org/issues/27516 https://github.com/redmine/redmine/commit/ca87bf766cdc70179cb2dce03015d78ec9c13ebd
 # CVE-2019-17427 4.0.4/3.4.11
-# CVE-2019-18890 3.3.10
+# CVE-2019-25026 4.0.6
+# CVE-2020-36308 4.0.7
+# CVE-2020-36307 4.0.7
+# CVE-2020-36306 4.0.7
+# CVE-2021-30164 4.0.8
+# CVE-2021-30163 4.0.8
 # CVE-2021-29274 4.1.2/4.0.8 https://redmine.org/issues/33846
 Redmine:
   1:
