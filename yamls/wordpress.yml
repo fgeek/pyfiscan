@@ -259,18 +259,21 @@
 # CVE-2020-4048 5.4.2 https://wordpress.org/news/2020/06/wordpress-5-4-2-security-and-maintenance-release/ https://core.trac.wordpress.org/changeset/47949 https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-q6pw-gvf4-5fj5 https://github.com/WordPress/wordpress-develop/commit/6ef777e9a022bee2a80fa671118e7e2657e52693
 # CVE-2020-4049 5.4.2 https://wordpress.org/news/2020/06/wordpress-5-4-2-security-and-maintenance-release/ https://core.trac.wordpress.org/changeset/47950 https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-87h4-phjv-rm6p https://github.com/WordPress/wordpress-develop/commit/404f397b4012fd9d382e55bf7d206c1317f01148
 # CVE-2020-4050 5.4.2 https://wordpress.org/news/2020/06/wordpress-5-4-2-security-and-maintenance-release/ https://core.trac.wordpress.org/changeset/47951 https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-4vpv-fgg2-gcqc https://github.com/WordPress/wordpress-develop/commit/b8dea76b495f0072523106c6ec46b9ea0d2a0920
+# CVE-2020-35539 TODO https://lists.openwall.net/full-disclosure/2021/03/11/2
+# TODO 5.5.2 https://wordpress.org/news/2020/10/wordpress-5-5-2-security-and-maintenance-release/
+# TODO 5.7.1 https://wordpress.org/news/2021/04/wordpress-5-7-1-security-and-maintenance-release/
 WordPress:
   1:
     location: ['/wp-includes/version.php', '/wp-includes/vars.php']
-    secure_version: '5.5.2'
+    secure_version: '5.7.1'
     regexp: ['\$wp_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://wordpress.org/news/2020/10/wordpress-5-5-2-security-and-maintenance-release/'
+    cve: 'https://wordpress.org/news/2021/04/wordpress-5-7-1-security-and-maintenance-release/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
   2:
     location: ['/b2-include/b2vars.php']
-    secure_version: '5.5.2'
+    secure_version: '5.7.1'
     regexp: ['\$b2_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://wordpress.org/news/2020/10/wordpress-5-5-2-security-and-maintenance-release/'
+    cve: 'https://wordpress.org/news/2021/04/wordpress-5-7-1-security-and-maintenance-release/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
