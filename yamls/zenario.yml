@@ -1,0 +1,11 @@
+# URL: https://zenar.io/ https://github.com/TribalSystems/Zenario
+# CVE-2018-5960
+# CVE-2021-26830 8.8.53370 https://github.com/TribalSystems/Zenario/releases/tag/8.8.53370
+Zenario:
+  1:
+    location: ['/package.json']
+    secure_version: '8.8.53370'
+    regexp: ['.*?version.*?(?P<version>[0-9.]+)']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-26830 https://github.com/TribalSystems/Zenario/releases/tag/8.8.53370'
+    fingerprint: detect_zenario
+    post_processing: ['php5.fcgi']

@@ -103,6 +103,7 @@ Detects following software
 * Vanilla Forums
 * WikkaWiki
 * WordPress
+* Zenario
 * Zenphoto
 * Zikula
 
