@@ -3303,3 +3303,11 @@ WordPress plugin wp-pagebuilder:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24207 https://nvd.nist.gov/vuln/detail/CVE-2021-24208 https://www.wordfence.com/blog/2021/04/vulnerabilities-patched-in-wp-page-builder/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wpcf7-redirect:
+  1:
+    location: ['/wp-content/plugins/wpcf7-redirect/readme.txt']
+    secure_version: '2.3.4'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24278 https://nvd.nist.gov/vuln/detail/CVE-2021-24279 https://nvd.nist.gov/vuln/detail/CVE-2021-24280 https://nvd.nist.gov/vuln/detail/CVE-2021-24281 https://nvd.nist.gov/vuln/detail/CVE-2021-24282 https://www.wordfence.com/blog/2021/04/severe-vulnerabilities-patched-in-redirection-for-contact-form-7-plugin/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
