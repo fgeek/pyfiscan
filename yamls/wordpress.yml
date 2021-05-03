@@ -260,7 +260,15 @@
 # CVE-2020-4049 5.4.2 https://wordpress.org/news/2020/06/wordpress-5-4-2-security-and-maintenance-release/ https://core.trac.wordpress.org/changeset/47950 https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-87h4-phjv-rm6p https://github.com/WordPress/wordpress-develop/commit/404f397b4012fd9d382e55bf7d206c1317f01148
 # CVE-2020-4050 5.4.2 https://wordpress.org/news/2020/06/wordpress-5-4-2-security-and-maintenance-release/ https://core.trac.wordpress.org/changeset/47951 https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-4vpv-fgg2-gcqc https://github.com/WordPress/wordpress-develop/commit/b8dea76b495f0072523106c6ec46b9ea0d2a0920
 # CVE-2020-35539 TODO https://lists.openwall.net/full-disclosure/2021/03/11/2
-# TODO 5.5.2 https://wordpress.org/news/2020/10/wordpress-5-5-2-security-and-maintenance-release/
+# CVE-2020-28032 5.5.2 https://wordpress.org/news/2020/10/wordpress-5-5-2-security-and-maintenance-release/
+# CVE-2020-28033 5.5.2 https://wordpress.org/news/2020/10/wordpress-5-5-2-security-and-maintenance-release/
+# CVE-2020-28034 5.5.2 https://wordpress.org/news/2020/10/wordpress-5-5-2-security-and-maintenance-release/
+# CVE-2020-28035 5.5.2 https://wordpress.org/news/2020/10/wordpress-5-5-2-security-and-maintenance-release/
+# CVE-2020-28036 5.5.2 https://wordpress.org/news/2020/10/wordpress-5-5-2-security-and-maintenance-release/
+# CVE-2020-28037 5.5.2 https://wordpress.org/news/2020/10/wordpress-5-5-2-security-and-maintenance-release/
+# CVE-2020-28038 5.5.2 https://wordpress.org/news/2020/10/wordpress-5-5-2-security-and-maintenance-release/
+# CVE-2020-28039 5.5.2 https://wordpress.org/news/2020/10/wordpress-5-5-2-security-and-maintenance-release/
+# CVE-2020-28040 5.5.2 https://wordpress.org/news/2020/10/wordpress-5-5-2-security-and-maintenance-release/
 # CVE-2021-29447 5.7.1 https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-rv47-pc52-qrhh https://wordpress.org/news/2021/04/wordpress-5-7-1-security-and-maintenance-release/
 # CVE-2021-29450 5.7.1 https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-pmmh-2f36-wvhq https://wordpress.org/news/2021/04/wordpress-5-7-1-security-and-maintenance-release/
 WordPress:
