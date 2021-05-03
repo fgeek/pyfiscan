@@ -259,7 +259,8 @@
 # CVE-2020-4048 5.4.2 https://wordpress.org/news/2020/06/wordpress-5-4-2-security-and-maintenance-release/ https://core.trac.wordpress.org/changeset/47949 https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-q6pw-gvf4-5fj5 https://github.com/WordPress/wordpress-develop/commit/6ef777e9a022bee2a80fa671118e7e2657e52693
 # CVE-2020-4049 5.4.2 https://wordpress.org/news/2020/06/wordpress-5-4-2-security-and-maintenance-release/ https://core.trac.wordpress.org/changeset/47950 https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-87h4-phjv-rm6p https://github.com/WordPress/wordpress-develop/commit/404f397b4012fd9d382e55bf7d206c1317f01148
 # CVE-2020-4050 5.4.2 https://wordpress.org/news/2020/06/wordpress-5-4-2-security-and-maintenance-release/ https://core.trac.wordpress.org/changeset/47951 https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-4vpv-fgg2-gcqc https://github.com/WordPress/wordpress-develop/commit/b8dea76b495f0072523106c6ec46b9ea0d2a0920
-# CVE-2020-35539 TODO https://lists.openwall.net/full-disclosure/2021/03/11/2
+# CVE-2020-35539 TODO https://lists.openwall.net/full-disclosure/2021/03/11/2 no info in NVD
+# CVE-2021-29476 5.5.2 https://wordpress.org/news/2020/10/wordpress-5-5-2-security-and-maintenance-release/
 # CVE-2020-28032 5.5.2 https://wordpress.org/news/2020/10/wordpress-5-5-2-security-and-maintenance-release/
 # CVE-2020-28033 5.5.2 https://wordpress.org/news/2020/10/wordpress-5-5-2-security-and-maintenance-release/
 # CVE-2020-28034 5.5.2 https://wordpress.org/news/2020/10/wordpress-5-5-2-security-and-maintenance-release/
