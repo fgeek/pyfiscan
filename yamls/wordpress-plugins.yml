@@ -3329,3 +3329,11 @@ WordPress plugin metronet-profile-picture:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24170 https://www.wordfence.com/blog/2021/03/medium-severity-vulnerability-patched-in-user-profile-picture-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin data-tables-generator-by-supsystic:
+  1:
+    location: ['/wp-content/plugins/data-tables-generator-by-supsystic/readme.txt']
+    secure_version: '1.9.92'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-12075 https://nvd.nist.gov/vuln/detail/CVE-2020-12076 https://www.wordfence.com/blog/2020/03/vulnerabilities-patched-in-the-data-tables-generator-by-supsystic-plugin/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
