@@ -141,7 +141,7 @@
 # CVE-2019-19709 TODO https://phabricator.wikimedia.org/T239466 https://gerrit.wikimedia.org/r/q/Ie54f366986056c876eade0fcad6c41f70b8b8de8
 # TODO 1.33.12/1.32.6/1.31.6 https://lists.wikimedia.org/pipermail/mediawiki-announce/2019-December/000243.html
 # TODO 1.34.0/1.33.3/1.32.6/1.30.6 https://lists.wikimedia.org/pipermail/mediawiki-announce/2019-December/000241.html
-# CVE-2020-10960 1.34.1/1.33.3/1.31.7 https://lists.wikimedia.org/pipermail/wikitech-l/2020-March/093243.html
+# CVE-2020-10960 1.34.1/1.33.3/1.31.7 https://lists.wikimedia.org/pipermail/mediawiki-announce/2020-March/000247.html https://lists.wikimedia.org/pipermail/wikitech-l/2020-March/093243.html
 # CVE-2020-26121 1.35.0/1.34.3/1.31.9 https://gerrit.wikimedia.org/r/q/Ib852a96afc4dca10516d0510e69c10f9892b351b
 # CVE-2020-25689 1.34.3/1.31.9 https://lists.wikimedia.org/pipermail/mediawiki-announce/2020-September/000260.html https://lists.wikimedia.org/pipermail/wikitech-l/2020-September/093888.html https://phabricator.wikimedia.org/T260485
 # CVE-2020-25812 1.34.3/1.31.9 https://lists.wikimedia.org/pipermail/mediawiki-announce/2020-September/000260.html https://lists.wikimedia.org/pipermail/wikitech-l/2020-September/093888.html
