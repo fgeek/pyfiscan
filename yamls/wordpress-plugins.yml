@@ -934,7 +934,7 @@ WordPress plugin ewww-image-optimizer:
     location: ['/wp-content/plugins/ewww-image-optimizer/readme.txt']
     secure_version: '2.8.4'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://www.wordfence.com/blog/2016/06/vulnerability-ewww-image-optimizer/'  # TODO: CVE requested 2021-05-05
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-20010 https://www.wordfence.com/blog/2016/06/vulnerability-ewww-image-optimizer/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin remote-upload:
