@@ -46,6 +46,8 @@
 # CVE-2018-19206 1.3.8 https://roundcube.net/news/2018/10/26/update-1.3.8-released https://github.com/roundcube/roundcubemail/releases/tag/1.3.8
 # CVE-2019-10740 1.3.10 https://roundcube.net/news/2019/08/28/update-1.3.10-released https://github.com/roundcube/roundcubemail/issues/6638
 # CVE-2019-15237 TODO https://github.com/roundcube/roundcubemail/issues/6891 no fix 2019-08-31
+# CVE-2020-12625 1.4.4 https://github.com/roundcube/roundcubemail/commit/87e4cd0cf2c550e77586860b94e5c75d2b7686d0 https://github.com/roundcube/roundcubemail/commit/23c06159ae8c6f500336e3075820e648aa6f40a4 https://github.com/roundcube/roundcubemail/commit/4312dc4efecb9553fcacfab0ab9d9ee6e88477e7
+# CVE-2020-12626 1.4.4 https://github.com/roundcube/roundcubemail/pull/7302 https://github.com/roundcube/roundcubemail/commit/9bbda422ff0b782b81de59c86994f1a5fd93f8e6 https://github.com/roundcube/roundcubemail/commit/1e7bec9cb868fa32b05acf6b0a557a6311350c56 https://github.com/roundcube/roundcubemail/commit/cceeff2472c00acb2c6b96c9df7a289f1db77713
 # CVE-2020-12640 1.4.4/1.3.11/1.2.10 https://roundcube.net/news/2020/04/29/security-updates-1.4.4-1.3.11-and-1.2.10 https://github.com/roundcube/roundcubemail/commit/814eadb699e8576ce3a78f21e95bf69a7c7b3794
 # CVE-2020-12641 1.4.4/1.3.11/1.2.10 https://roundcube.net/news/2020/04/29/security-updates-1.4.4-1.3.11-and-1.2.10 https://github.com/roundcube/roundcubemail/commit/fcfb099477f353373c34c8a65c9035b06b364db3
 # CVE-2020-13964 1.4.5/1.3.12 https://github.com/roundcube/roundcubemail/commit/4beec65d40c5e5b1f2bace935c110baf05e10ae5 https://github.com/roundcube/roundcubemail/commit/37e2bc745723ef6322f0f785aefd0b9313a40f19
