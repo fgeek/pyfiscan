@@ -13,13 +13,15 @@
 # CVE-2018-13790 8.4.0 https://hackerone.com/reports/243865
 # CVE-2018-19146 8.5.0 https://hackerone.com/reports/437863
 # CVE-2020-11476 8.5.3 https://herolab.usd.de/security-advisories/usd-2020-0041/
+# CVE-2020-14961 8.5.3 https://github.com/concrete5/concrete5/releases/tag/8.5.3 https://github.com/concrete5/concrete5/pull/8651
 # CVE-2020-24986 8.5.3 https://hackerone.com/reports/768322
-# CVE-2021-3111 TODO https://github.com/Quadron-Research-Lab/CVE/blob/main/CVE-2021-3111.pdf affected 8.5.4. No information if this is indeed fixed in 8.5.5
+# CVE-2021-3111 8.5.5 https://github.com/Quadron-Research-Lab/CVE/blob/main/CVE-2021-3111.pdf https://documentation.concrete5.org/developers/introduction/version-history/855-release-notes
+# CVE-2021-28145 8.5.5 https://documentation.concrete5.org/developers/introduction/version-history/855-release-notes https://www.concrete5.org/developers/security
 concrete5:
   1:
     location: ['/concrete/config/version.php']
-    secure_version: '8.5.3'
+    secure_version: '8.5.5'
     regexp: ['\$APP_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-11476 https://nvd.nist.gov/vuln/detail/CVE-2020-24986'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-3111 https://nvd.nist.gov/vuln/detail/CVE-2021-28145 https://documentation.concrete5.org/developers/introduction/version-history/855-release-notes'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
