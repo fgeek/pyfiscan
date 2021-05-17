@@ -3337,3 +3337,11 @@ WordPress plugin data-tables-generator-by-supsystic:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-12075 https://nvd.nist.gov/vuln/detail/CVE-2020-12076 https://www.wordfence.com/blog/2020/03/vulnerabilities-patched-in-the-data-tables-generator-by-supsystic-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin accordions:
+  1:
+    location: ['/wp-content/plugins/accordions/readme.txt']
+    secure_version: '2.2.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-13644 https://www.wordfence.com/blog/2020/04/vulnerability-patched-in-accordion-plugin/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
