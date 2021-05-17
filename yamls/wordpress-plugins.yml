@@ -837,7 +837,7 @@ WordPress plugin wordpress-seo:
     post_processing: ['php5.fcgi']
 # 2.9.44 https://www.wordfence.com/blog/2016/05/ninja-forms-shell-upload-vulnerability-high-risk/ 2.9.45 in advisory, but it was error
 # 2.9.52 OVE-20160714-0017 https://sumofpwn.nl/advisory/2016/multiple_cross_site_scripting_vulnerabilities_in_ninja_forms_wordpress_plugin.html
-# CVE-2020-12462 3.4.24.2 https://wpvulndb.com/vulnerabilities/10200
+# CVE-2020-12462 3.4.24.2 https://www.wordfence.com/blog/2020/04/high-severity-vulnerability-patched-in-ninja-forms/ https://wpvulndb.com/vulnerabilities/10200
 WordPress plugin ninja-forms:
   1:
     location: ['/wp-content/plugins/ninja-forms/readme.txt']
