@@ -202,6 +202,8 @@
 # PMASA-2020-4 Pending 5.0.2/4.9.5 https://github.com/phpmyadmin/phpmyadmin/commit/89fbcd7c39e6b3979cdb2f64aa4cd5f4db27eaad https://github.com/phpmyadmin/phpmyadmin/commit/3258978c38bee8cb4b99f249dffac9c8aaea2d80
 # PMASA-2020-5 CVE-2020-26934 5.0.3/4.9.6 https://www.phpmyadmin.net/security/PMASA-2020-5/ https://github.com/phpmyadmin/phpmyadmin/commit/19df63b0365621427697edc185ff7c9c5707c523
 # PMASA-2020-6 CVE-2020-26935 5.0.3/4.9.6 https://www.phpmyadmin.net/security/PMASA-2020-6/ https://github.com/phpmyadmin/phpmyadmin/commit/d09ab9bc9d634ad08b866d42bb8c4109869d38d2
+# CVE-2021-21252 TODO https://github.com/jquery-validation/jquery-validation/security/advisories/GHSA-jxwx-85vp-gvwm
+# CVE-2020-11441 TODO https://github.com/phpmyadmin/phpmyadmin/issues/16056 currently open 2021-05-18
 phpMyAdmin:
   1:
     location: ['/libraries/Config.class.php']
