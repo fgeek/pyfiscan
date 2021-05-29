@@ -3359,6 +3359,6 @@ WordPress plugin simple-301-redirects:
     location: ['/wp-content/plugins/simple-301-redirects/readme.txt']
     secure_version: '2.0.4'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24352 https://nvd.nist.gov/vuln/detail/CVE-2021-24353 https://www.wordfence.com/blog/2021/05/severe-vulnerabilities-patched-in-simple-301-redirects-by-betterlinks-plugin/'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24352 https://nvd.nist.gov/vuln/detail/CVE-2021-24353 https://nvd.nist.gov/vuln/detail/CVE-2021-24354 https://nvd.nist.gov/vuln/detail/CVE-2021-24355 https://nvd.nist.gov/vuln/detail/CVE-2021-24356 https://nvd.nist.gov/vuln/detail/https://www.wordfence.com/blog/2021/05/severe-vulnerabilities-patched-in-simple-301-redirects-by-betterlinks-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
