@@ -272,7 +272,8 @@
 # CVE-2020-28040 5.5.2 https://wordpress.org/news/2020/10/wordpress-5-5-2-security-and-maintenance-release/
 # CVE-2021-29447 5.7.1 https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-rv47-pc52-qrhh https://wordpress.org/news/2021/04/wordpress-5-7-1-security-and-maintenance-release/
 # CVE-2021-29450 5.7.1 https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-pmmh-2f36-wvhq https://wordpress.org/news/2021/04/wordpress-5-7-1-security-and-maintenance-release/
-# TODO 5.7.2 https://wordpress.org/news/2021/05/wordpress-5-7-2-security-release/
+# CVE-2018-19296 5.7.2 https://wordpress.org/news/2021/05/wordpress-5-7-2-security-release/
+# CVE-2020-36326 5.7.2 https://wordpress.org/news/2021/05/wordpress-5-7-2-security-release/
 WordPress:
   1:
     location: ['/wp-includes/version.php', '/wp-includes/vars.php']
