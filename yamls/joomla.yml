@@ -224,10 +224,13 @@
 # CVE-2021-26029 3.9.25 https://developer.joomla.org/security-centre/849-20210309-core-inadequate-filtering-of-form-contents-could-allow-to-overwrite-the-author-field.html
 # CVE-2021-26030 3.9.26 https://www.joomla.org/announcements/release-news/5835-joomla-3-9-26.html https://developer.joomla.org/security-centre/850-20210401-core-escape-xss-in-logo-parameter-error-pages.html
 # CVE-2021-26031 3.9.26 https://www.joomla.org/announcements/release-news/5835-joomla-3-9-26.html https://developer.joomla.org/security-centre/851-20210402-core-inadequate-filters-on-module-layout-settings.html
+# CVE-2021-26032 3.9.27 https://www.joomla.org/announcements/release-news/5836-joomla-3-9-27.html https://developer.joomla.org/security-centre/852-20210501-core-adding-html-to-the-executable-block-list-of-mediahelper-canupload.html
+# CVE-2021-26033 3.9.27 https://www.joomla.org/announcements/release-news/5836-joomla-3-9-27.html https://developer.joomla.org/security-centre/853-20210502-core-csrf-in-ajax-reordering-endpoint.html
+# CVE-2021-26034 3.9.27 https://www.joomla.org/announcements/release-news/5836-joomla-3-9-27.html https://developer.joomla.org/security-centre/854-20210503-core-csrf-in-data-download-endpoints.html
 Joomla 3:
   1:
     location: ['/administrator/manifests/files/joomla.xml']
-    secure_version: '3.9.26'
+    secure_version: '3.9.27'
     regexp: ['[\t]<version>(?P<version>3\.[0-9.]{1,})']
     cve: 'https://www.joomla.org/announcements/release-news/5835-joomla-3-9-26.html https://nvd.nist.gov/vuln/detail/CVE-2021-26030 https://developer.joomla.org/security-centre/850-20210401-core-escape-xss-in-logo-parameter-error-pages.html https://nvd.nist.gov/vuln/detail/CVE-2021-26031 https://developer.joomla.org/security-centre/851-20210402-core-inadequate-filters-on-module-layout-settings.html'
     fingerprint: detect_general
@@ -235,40 +238,40 @@ Joomla 3:
 Joomla 2.5:
   1:
     location: ['/administrator/manifests/files/joomla.xml']
-    secure_version: '3.9.26'
+    secure_version: '3.9.27'
     regexp: ['[\t]<version>(?P<version>2\.5\.[0-9]{1,})']
-    cve: 'Joomla 2.5 is end of life. Please upgrade to 3.9.26 version.'
+    cve: 'Joomla 2.5 is end of life. Please upgrade to 3.9.27 version.'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Joomla 1.7:
   1:
     location: ['/includes/version.php']
-    secure_version: '3.9.26'
+    secure_version: '3.9.27'
     regexp: ['[\t]+public[\t|\s]\$RELEASE.*?(?P<version>1.7)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.7 is end of life. Please upgrade to 3.9.26 version.'
+    cve: 'Joomla 1.7 is end of life. Please upgrade to 3.9.27 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.6:
   1:
     location: ['/libraries/joomla/version.php']
-    secure_version: '3.9.26'
+    secure_version: '3.9.27'
     regexp: ['.*?RELEASE.*?(?P<version>1.6)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.6 is end of life. Please upgrade to 3.9.26 version.'
+    cve: 'Joomla 1.6 is end of life. Please upgrade to 3.9.27 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.5:
   1:
     location: ['/libraries/joomla/version.php']
-    secure_version: '3.9.26'
+    secure_version: '3.9.27'
     regexp: ['.*?RELEASE.*?(?P<version>1.5)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.5 is end of life. Please upgrade to 3.9.26 version.'
+    cve: 'Joomla 1.5 is end of life. Please upgrade to 3.9.27 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.0:
   1:
     location: ['/includes/version.php']
-    secure_version: '3.9.26'
+    secure_version: '3.9.27'
     regexp: ['[\t]+var.*?RELEASE.*?(?P<version>1.0)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.0 is end of life. Please upgrade to 3.9.26 version.'
+    cve: 'Joomla 1.0 is end of life. Please upgrade to 3.9.27 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
