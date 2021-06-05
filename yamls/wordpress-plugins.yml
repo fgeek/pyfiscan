@@ -3363,3 +3363,11 @@ WordPress plugin simple-301-redirects:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24352 https://nvd.nist.gov/vuln/detail/CVE-2021-24353 https://nvd.nist.gov/vuln/detail/CVE-2021-24354 https://nvd.nist.gov/vuln/detail/CVE-2021-24355 https://nvd.nist.gov/vuln/detail/CVE-2021-24356 https://nvd.nist.gov/vuln/detail/https://www.wordfence.com/blog/2021/05/severe-vulnerabilities-patched-in-simple-301-redirects-by-betterlinks-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin fancy-product-designer:
+  1:
+    location: ['/wp-content/plugins/fancy-product-designer/readme.txt']
+    secure_version: '4.6.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24370 https://www.wordfence.com/blog/2021/06/critical-0-day-in-fancy-product-designer-under-active-attack/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
