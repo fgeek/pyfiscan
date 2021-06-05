@@ -843,7 +843,7 @@ WordPress plugin ninja-forms:
     location: ['/wp-content/plugins/ninja-forms/readme.txt']
     secure_version: '3.4.34.1'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://www.wordfence.com/blog/2021/02/one-million-sites-affected-four-severe-vulnerabilities-patched-in-ninja-forms/'  # TODO: Needs CVE. wordfence.com says 'Pending' (2021-02-17)
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24163 https://nvd.nist.gov/vuln/detail/CVE-2021-24164 https://nvd.nist.gov/vuln/detail/CVE-2021-24165 https://nvd.nist.gov/vuln/detail/CVE-2021-24166 https://www.wordfence.com/blog/2021/02/one-million-sites-affected-four-severe-vulnerabilities-patched-in-ninja-forms/ https://threatpost.com/ninja-forms-wordpress-plugin-hacks/164042/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin ninja-forms-uploads:
