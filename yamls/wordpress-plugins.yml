@@ -3379,3 +3379,11 @@ WordPress plugin email-subscribers:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-19980 https://nvd.nist.gov/vuln/detail/CVE-2019-19981 https://nvd.nist.gov/vuln/detail/CVE-2019-19982 https://nvd.nist.gov/vuln/detail/CVE-2019-19984 https://nvd.nist.gov/vuln/detail/CVE-2019-19985 https://www.wordfence.com/blog/2019/11/multiple-vulnerabilities-patched-in-email-subscribers-newsletters-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin web-stat:
+  1:
+    location: ['/wp-content/plugins/web-stat/readme.txt']
+    secure_version: '1.4.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24167'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
