@@ -3062,7 +3062,7 @@ WordPress plugin pagelayer:
     location: ['/wp-content/plugins/pagelayer/readme.txt']
     secure_version: '1.3.5'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://www.wordfence.com/blog/2020/12/reflected-xss-in-pagelayer-plugin-affects-over-200000-wordpress-sites/'  # TODO: CVE. Wordfence page says "Pending", but not sure if that has been requested. (2021-06-06)
+    cve: 'https://www.wordfence.com/blog/2020/12/reflected-xss-in-pagelayer-plugin-affects-over-200000-wordpress-sites/'  # TODO: CVE. Wordfence page says "Pending", but not sure if that has been requested. (2021-06-06). CVE requested 2021-06-07
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 # TODO 1.5.6 Unauthenticated Arbitrary File Upload leading to Remote Code Execution
