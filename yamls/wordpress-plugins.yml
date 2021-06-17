@@ -3388,3 +3388,11 @@ WordPress plugin web-stat:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24167'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin fluentform:
+  1:
+    location: ['/wp-content/plugins/fluentform/readme.txt']
+    secure_version: '3.6.67'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-34620 https://www.wordfence.com/blog/2021/06/cross-site-request-forgery-patched-in-wp-fluent-forms/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
