@@ -83,11 +83,12 @@
 # CVE-2020-29605 2.24.4 https://mantisbt.org/bugs/view.php?id=27727
 # CVE-2009-20001 2.24.5 https://mantisbt.org/bugs/view.php?id=11296 https://mantisbt.org/bugs/view.php?id=27976
 # CVE-2020-35571 2.25.0 https://mantisbt.org/bugs/view.php?id=27768
+# CVE-2021-33557 2.25.2 https://mantisbt.org/blog/archives/mantisbt/699 https://mantisbt.org/bugs/view.php?id=28552
 MantisBT:
   1:
     location: ['/core/constant_inc.php']
-    secure_version: '2.25.0'
+    secure_version: '2.25.2'
     regexp: ['define.*?MANTIS_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-35571 https://mantisbt.org/bugs/view.php?id=27768'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-33557 https://mantisbt.org/blog/archives/mantisbt/699'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
