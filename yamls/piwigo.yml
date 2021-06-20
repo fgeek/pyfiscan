@@ -1,5 +1,6 @@
 # URL: http://piwigo.org/
 # NFU: CVE-2018-7723 N/A XSS in album name or photo title is not a vulnerability according to Piwigo upstream. CSRF is working related to this CVE.
+# NFU: Community plugin 2.9.e-beta CVE-2020-9468 https://github.com/plegall/Piwigo-community/issues/49 https://github.com/plegall/Piwigo-community/commit/453c9d083dd76d6948d95d70d253fe58aa0e0648
 # CVE-2012-2208
 # CVE-2012-2209
 # CVE-2012-4525 2.4.4 http://piwigo.org/bugs/view.php?id=0002750 SA50510
@@ -34,24 +35,25 @@
 # CVE-2017-10681 2.9.2 https://github.com/Piwigo/Piwigo/issues/721
 # CVE-2017-10682 2.9.2 https://github.com/Piwigo/Piwigo/issues/724
 # CVE-2017-16893 TODO https://github.com/Piwigo/Piwigo/issues/804
-# CVE-2017-17775 TODO
-# CVE-2017-17774 TODO
-# CVE-2017-17822 TODO
-# CVE-2017-17823 TODO
-# CVE-2017-17824 TODO
-# CVE-2017-17825 TODO
-# CVE-2017-17826 TODO
+# CVE-2017-17775 2.9.3 https://github.com/Piwigo/Piwigo/issues/822 https://github.com/d4wner/Vulnerabilities-Report/blob/master/piwigo.md "Piwigo 2.9.2 has XSS via the name parameter in an admin.php?page=album-3-properties request."
+# CVE-2017-17774 2.9.3 https://github.com/Piwigo/Piwigo/issues/822 https://github.com/d4wner/Vulnerabilities-Report/blob/master/piwigo.md "admin/configuration.php in Piwigo 2.9.2 has CSRF."
+# CVE-2017-17822 2.9.3 https://github.com/Piwigo/Piwigo/issues/823 https://github.com/Piwigo/Piwigo/commit/33a03e9afb8fb00c9d8f480424d549311fe03d40 https://github.com/Piwigo/Piwigo/commit/1da9d6afc4f6ca045ff5aabc4640b9d9c343a3be
+# CVE-2017-17823 2.9.3 https://github.com/Piwigo/Piwigo/issues/826 https://github.com/Piwigo/Piwigo/commit/9671454e75b4f1cc93563ba5a53668a3735d8e78 https://github.com/Piwigo/Piwigo/commit/91ef7909a5c51203f330cbecf986472900b60983
+# CVE-2017-17824 2.9.3 https://github.com/Piwigo/Piwigo/issues/825 https://github.com/Piwigo/Piwigo/commit/9028c75c1f03c43a0c96fe80e5742f6c040fe905 https://github.com/Piwigo/Piwigo/commit/f7c8e0a947a857ff5d31dafd03842df41959b84c
+# CVE-2017-17825 TODO https://github.com/sahildhar/sahildhar.github.io/blob/master/research/reports/Piwigo_2.9.2/Stored%20XSS%20Vulnerabilities%20in%20Piwigo%202.9.2.md
+# CVE-2017-17826 TODO https://github.com/sahildhar/sahildhar.github.io/blob/master/research/reports/Piwigo_2.9.2/Stored%20XSS%20Vulnerabilities%20in%20Piwigo%202.9.2.md
 # CVE-2017-17827 2.9.3 https://github.com/Piwigo/Piwigo/issues/822 https://github.com/Piwigo/Piwigo/commit/c3b4c6f7f0ddeaea492080fb8211d7b4cfedaf6f https://github.com/Piwigo/Piwigo/commit/77f02bfd76ed13dd14044d04cdd8d28213e1848d
 # CVE-2018-5692 2.9.4 https://github.com/Piwigo/Piwigo/issues/847 https://github.com/Piwigo/Piwigo/commit/18e4b861992e8412fd70a3a7e0b2bf9b676c42ed
 # CVE-2018-6883 2.9.3 https://github.com/Piwigo/Piwigo/issues/839 https://github.com/Piwigo/Piwigo/commit/02275fe275a3f97710dab75bf4c3f967f428b22d
 # CVE-2018-7722 2.9.4 https://github.com/Piwigo/Piwigo/issues/871 https://github.com/Piwigo/Piwigo/commit/0ec289769ee1fc314dbc7d90fdc480389e786942
-# CVE-2018-7723 TODO
+# CVE-2018-7723 N/A Advisory is 404 and no information about fixed versions nor upstream issue numbers etc.
 # CVE-2018-7724 2.9.4 https://github.com/Piwigo/Piwigo/issues/872 https://github.com/Piwigo/Piwigo/commit/55a9754b111309d7a85c6dd86efe47954e984072
-# CVE-2019-13363 TODO
-# CVE-2019-13364 TODO
-# CVE-2020-8089 TODO
-# CVE-2020-9467 TODO
-# CVE-2020-9468 TODO
+# CVE-2019-13363 2.10.0 https://seclists.org/fulldisclosure/2019/Sep/25 https://github.com/Piwigo/Piwigo/issues/1055 https://packetstormsecurity.com/files/154484/Piwigo-2.9.5-Cross-Site-Request-Forgery-Cross-Site-Scripting.html
+# CVE-2019-13364 2.10.0 https://seclists.org/fulldisclosure/2019/Sep/25 https://github.com/Piwigo/Piwigo/issues/1055 https://packetstormsecurity.com/files/154484/Piwigo-2.9.5-Cross-Site-Request-Forgery-Cross-Site-Scripting.html
+# CVE-2020-8089 2.10.2 https://github.com/Piwigo/Piwigo/issues/1150 https://piwigo.org/forum/viewtopic.php?id=30147
+# CVE-2020-9467 11.0.0 https://github.com/Piwigo/Piwigo/issues/1168 https://github.com/Piwigo/Piwigo/commit/1e23ed84d3a80f00b827de8aed546464674bb427 https://packetstormsecurity.com/files/159191/Piwigo-2.10.1-Cross-Site-Scripting.html
+# CVE-2021-27973 11.4.0 https://github.com/Piwigo/Piwigo/issues/1352 https://packetstormsecurity.com/files/162404/Piwigo-11.3.0-SQL-Injection.html
+# CVE-2021-32615 TODO https://github.com/Piwigo/Piwigo/issues/1410 https://github.com/Piwigo/Piwigo/commit/2ce1e5952238eba0fe5c5d6537ebdc76cb970b52 2021-06-20 not yet in any release
 Piwigo:
   1:
     location: ['/include/constants.php']
