@@ -3404,3 +3404,11 @@ WordPress plugin woocommerce-stock-manager:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-34619 https://www.wordfence.com/blog/2021/06/high-severity-vulnerability-patched-in-woocommerce-stock-manager-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin external-media:
+  1:
+    location: ['/wp-content/plugins/external-media/readme.txt']
+    secure_version: '1.0.34'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24311 https://www.wordfence.com/blog/2021/05/critical-vulnerability-patched-in-external-media-plugin/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
