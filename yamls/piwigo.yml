@@ -57,8 +57,8 @@
 Piwigo:
   1:
     location: ['/include/constants.php']
-    secure_version: '2.9.4'
+    secure_version: '11.4.0'
     regexp: ['define.*?PHPWG_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-5692 https://nvd.nist.gov/vuln/detail/CVE-2018-7722 https://nvd.nist.gov/vuln/detail/CVE-2018-7724 http://piwigo.org/forum/viewtopic.php?id=28779 http://piwigo.org/releases/2.9.4'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-27973 https://github.com/Piwigo/Piwigo/issues/1352'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
