@@ -556,12 +556,13 @@ WordPress plugin cta:
 # CVE-2018-20965 2.0.4
 # CVE-2019-14946 2.0.52 https://wpvulndb.com/vulnerabilities/9449
 # CVE-2019-14947 2.0.52 https://wpvulndb.com/vulnerabilities/9449
+# CVE-2019-14945 2.0.54 https://wpvulndb.com/vulnerabilities/9506
 WordPress plugin ultimate-member:
   1:
     location: ['/wp-content/plugins/ultimate-member/readme.txt']
-    secure_version: '2.0.54'
+    secure_version: '2.1.12'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-14945 https://wpvulndb.com/vulnerabilities/9506'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-36155 https://nvd.nist.gov/vuln/detail/CVE-2020-36156 https://nvd.nist.gov/vuln/detail/CVE-2020-36157 https://www.wordfence.com/blog/2020/11/critical-privilege-escalation-vulnerabilities-affect-100k-sites-using-ultimate-member-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin wp-symposium-pro:
