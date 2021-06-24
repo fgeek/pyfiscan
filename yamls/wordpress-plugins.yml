@@ -3426,6 +3426,6 @@ WordPress plugin directories-pro:
     location: ['/wp-content/plugins/directories-pro/readme.txt']
     secure_version: '1.3.46'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-29303 https://nvd.nist.gov/vuln/detail/CVE-2020-29304'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-29303 https://nvd.nist.gov/vuln/detail/CVE-2020-29304 https://lists.openwall.net/full-disclosure/2020/12/11/4 https://lists.openwall.net/full-disclosure/2020/12/11/5'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
