@@ -1130,12 +1130,13 @@ WordPress plugin paid-memberships-pro:
 # CVE-2014-8605
 # CVE-2014-8606
 # CVE-2014-8607
+# TODO 3.1.5 https://www.openwall.com/lists/oss-security/2016/07/27/2
 WordPress plugin xcloner-backup-and-restore:
   1:
     location: ['/wp-content/plugins/xcloner-backup-and-restore/readme.txt']
-    secure_version: '3.1.5'
+    secure_version: '4.2.15'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://www.openwall.com/lists/oss-security/2016/07/27/2'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-35948 https://www.wordfence.com/blog/2020/09/critical-vulnerabilities-patched-in-xcloner-backup-and-restore-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin lazy-load:
