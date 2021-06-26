@@ -3430,3 +3430,13 @@ WordPress plugin directories-pro:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-29303 https://nvd.nist.gov/vuln/detail/CVE-2020-29304 https://lists.openwall.net/full-disclosure/2020/12/11/4 https://lists.openwall.net/full-disclosure/2020/12/11/5'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# arbitrary file upload https://en.0day.today/exploit/20250 https://lists.openwall.net/full-disclosure/2016/06/07/3 https://seclists.org/fulldisclosure/2016/Jun/15
+# XSS https://lists.openwall.net/full-disclosure/2016/06/07/2 https://seclists.org/fulldisclosure/2016/Jun/14 http://www.vulnerability-lab.com/get_content.php?id=1855
+WordPress plugin wp-levoslideshow:
+  1:
+    location: ['/wp-content/plugins/wp-levoslideshow/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://en.0day.today/exploit/20250 https://lists.openwall.net/full-disclosure/2016/06/07/2'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
