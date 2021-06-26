@@ -1135,7 +1135,7 @@ WordPress plugin paid-memberships-pro:
 WordPress plugin xcloner-backup-and-restore:
   1:
     location: ['/wp-content/plugins/xcloner-backup-and-restore/readme.txt']
-    secure_version: '4.2.15'
+    secure_version: '4.2.153'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-35948 https://www.wordfence.com/blog/2020/09/critical-vulnerabilities-patched-in-xcloner-backup-and-restore-plugin/'
     fingerprint: detect_general
