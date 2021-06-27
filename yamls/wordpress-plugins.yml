@@ -3366,12 +3366,14 @@ WordPress plugin simple-301-redirects:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24352 https://nvd.nist.gov/vuln/detail/CVE-2021-24353 https://nvd.nist.gov/vuln/detail/CVE-2021-24354 https://nvd.nist.gov/vuln/detail/CVE-2021-24355 https://nvd.nist.gov/vuln/detail/CVE-2021-24356 https://nvd.nist.gov/vuln/detail/https://www.wordfence.com/blog/2021/05/severe-vulnerabilities-patched-in-simple-301-redirects-by-betterlinks-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# https://lists.openwall.net/full-disclosure/2020/11/17/1 https://seclists.org/fulldisclosure/2020/Nov/29
+# https://lists.openwall.net/full-disclosure/2020/11/17/2 https://seclists.org/fulldisclosure/2020/Nov/30
 WordPress plugin fancy-product-designer:
   1:
     location: ['/wp-content/plugins/fancy-product-designer/readme.txt']
     secure_version: '4.6.9'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24370 https://www.wordfence.com/blog/2021/06/critical-0-day-in-fancy-product-designer-under-active-attack/ https://www.bleepingcomputer.com/news/security/critical-wordpress-plugin-zero-day-under-active-exploitation/'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24370 https://lists.openwall.net/full-disclosure/2020/11/17/2 https://www.wordfence.com/blog/2021/06/critical-0-day-in-fancy-product-designer-under-active-attack/ https://www.bleepingcomputer.com/news/security/critical-wordpress-plugin-zero-day-under-active-exploitation/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin email-subscribers:
