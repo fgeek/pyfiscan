@@ -3458,3 +3458,11 @@ WordPress plugin wp-user-avatar:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-34621 https://nvd.nist.gov/vuln/detail/CVE-2021-34622 https://nvd.nist.gov/vuln/detail/CVE-2021-34623 https://nvd.nist.gov/vuln/detail/CVE-2021-34624 https://www.wordfence.com/blog/2021/06/easily-exploitable-critical-vulnerabilities-patched-in-profilepress-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wp-upload-restriction:
+  1:
+    location: ['/wp-content/plugins/wp-upload-restriction/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-34625 https://www.wordfence.com/vulnerability-advisories/#CVE-2021-34625'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
