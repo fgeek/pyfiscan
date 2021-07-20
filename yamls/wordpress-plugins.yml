@@ -3475,3 +3475,11 @@ WordPress plugin user-export-with-their-meta-data:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24451'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin related-posts-for-wp:
+  1:
+    location: ['/wp-content/plugins/related-posts-for-wp/readme.txt']
+    secure_version: '2.0.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24482 https://m0ze.ru/vulnerability/[2021-04-18]-[WordPress]-[CWE-79]-Related-Posts-for-WordPress-WordPress-Plugin-v2.0.4.txt'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
