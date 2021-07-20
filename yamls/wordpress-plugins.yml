@@ -3467,3 +3467,11 @@ WordPress plugin wp-upload-restriction:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-34625 https://www.wordfence.com/vulnerability-advisories/#CVE-2021-34625 https://nvd.nist.gov/vuln/detail/CVE-2021-34626 https://www.wordfence.com/vulnerability-advisories/#CVE-2021-34626 https://nvd.nist.gov/vuln/detail/CVE-2021-34627 https://www.wordfence.com/vulnerability-advisories/#CVE-2021-34627'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin user-export-with-their-meta-data:
+  1:
+    location: ['/wp-content/plugins/user-export-with-their-meta-data/readme.txt']
+    secure_version: '0.6.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24451'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
