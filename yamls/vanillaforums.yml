@@ -1,3 +1,5 @@
+# CVE-2010-4264
+# CVE-2010-4266
 # CVE-2011-3613
 # CVE-2011-3614
 # CVE-2012-6555
@@ -18,8 +20,8 @@
 # CVE-2018-19499 2.6.2/2.5.5 https://hackerone.com/reports/407552
 # CVE-2018-18903 2.6.4 https://github.com/vanilla/vanilla/releases/tag/Vanilla_2.6.4 https://open.vanillaforums.com/discussion/36771/security-update-vanilla-2-6-4
 # CVE-2019-8279 2.5 https://scriptinjection.blogspot.com/2019/02/vanilla-forums-25-stored-xss-in-any.html
-# CVE-2019-9889 TODO
-# CVE-2020-8825 TODO
+# CVE-2019-9889 2.6.4 https://open.vanillaforums.com/discussion/36771/security-update-vanilla-2-6-4 https://hackerone.com/reports/411140 looks like duplicate of CVE-2018-18903
+# CVE-2020-8825 2.6.4 https://github.com/hacky1997/CVE-2020-8825 http://packetstormsecurity.com/files/156281/Vanilla-Forum-2.6.3-Cross-Site-Scripting.html
 Vanilla Forums:
   1:
     location: ['/environment.php']
