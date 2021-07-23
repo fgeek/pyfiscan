@@ -3488,6 +3488,6 @@ WordPress plugin flexible-checkout-fields:
     location: ['/wp-content/plugins/flexible-checkout-fields/readme.txt']
     secure_version: '2.3.2'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://www.wordfence.com/blog/2020/02/site-takeover-campaign-exploits-multiple-zero-day-vulnerabilities/'
+    cve: 'https://blog.nintechnet.com/zero-day-vulnerability-fixed-in-wordpress-flexible-checkout-fields-for-woocommerce-plugin/ https://www.wordfence.com/blog/2020/02/site-takeover-campaign-exploits-multiple-zero-day-vulnerabilities/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
