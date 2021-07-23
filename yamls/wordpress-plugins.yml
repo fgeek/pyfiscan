@@ -3499,3 +3499,11 @@ WordPress plugin async-javascript:
     cve: 'https://www.wordfence.com/blog/2020/02/site-takeover-campaign-exploits-multiple-zero-day-vulnerabilities/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wd-google-maps:
+  1:
+    location: ['/wp-content/plugins/wd-google-maps/readme.txt']
+    secure_version: '1.0.64'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://www.wordfence.com/blog/2020/02/site-takeover-campaign-exploits-multiple-zero-day-vulnerabilities/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
