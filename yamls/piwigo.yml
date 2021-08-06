@@ -54,6 +54,8 @@
 # CVE-2020-9467 11.0.0 https://github.com/Piwigo/Piwigo/issues/1168 https://github.com/Piwigo/Piwigo/commit/1e23ed84d3a80f00b827de8aed546464674bb427 https://packetstormsecurity.com/files/159191/Piwigo-2.10.1-Cross-Site-Scripting.html
 # CVE-2021-27973 11.4.0 https://github.com/Piwigo/Piwigo/issues/1352 https://packetstormsecurity.com/files/162404/Piwigo-11.3.0-SQL-Injection.html
 # CVE-2021-32615 TODO https://github.com/Piwigo/Piwigo/issues/1410 https://github.com/Piwigo/Piwigo/commit/2ce1e5952238eba0fe5c5d6537ebdc76cb970b52 2021-06-20 not yet in any release
+# CVE-2020-22148 TODO
+# CVE-2020-22150 TODO
 Piwigo:
   1:
     location: ['/include/constants.php']
