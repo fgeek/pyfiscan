@@ -111,12 +111,13 @@
 # https://drupal.org/SA-CORE-2021-001   CVE-2020-36193  9.1.3/9.0.11/8.9.13/7.78
 # https://drupal.org/SA-CORE-2021-002   CVE-2020-13672  9.1.7/9.0.12/8.9.14/7.80
 # https://drupal.org/SA-CORE-2021-003   N/A             9.1.9/9.0.14/8.9.16
+# https://drupal.org/SA-CORE-2021-004   CVE-2021-32610  9.2.2/9.1.11/8.9.17/7.82
 Drupal 9.1:
   1:
     location: ['/core/lib/Drupal.php']
-    secure_version: '9.1.9'
+    secure_version: '9.2.2'
     regexp: ['  const VERSION.*?(?P<version>9\.1\.[0-9]{1,})']
-    cve: 'https://drupal.org/SA-CORE-2021-003'
+    cve: 'https://drupal.org/SA-CORE-2021-004'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Drupal 9.0:
@@ -130,16 +131,16 @@ Drupal 9.0:
 Drupal 8.9:
   1:
     location: ['/core/lib/Drupal.php']
-    secure_version: '8.9.16'
+    secure_version: '8.9.17'
     regexp: ['  const VERSION.*?(?P<version>8\.[0-9.]{1,})']
-    cve: 'https://drupal.org/SA-CORE-2021-003'
+    cve: 'https://drupal.org/SA-CORE-2021-004'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Drupal 7:
   1:
     location: ['/includes/bootstrap.inc']
-    secure_version: '7.80'
+    secure_version: '7.82'
     regexp: ['define.*?VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://drupal.org/SA-CORE-2021-002 https://nvd.nist.gov/vuln/detail/CVE-2020-13672'
+    cve: 'https://drupal.org/SA-CORE-2021-004'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
