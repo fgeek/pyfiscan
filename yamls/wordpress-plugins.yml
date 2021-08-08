@@ -3516,3 +3516,11 @@ WordPress plugin modern-events-calendar-lite:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-9459 https://www.wordfence.com/blog/2020/02/site-takeover-campaign-exploits-multiple-zero-day-vulnerabilities/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin woocommerce-smart-coupons:
+  1:
+    location: ['/wp-content/plugins/woocommerce-smart-coupons/readme.txt']
+    secure_version: '4.6.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://www.wordfence.com/blog/2020/03/coupon-creation-vulnerability-patched-in-woocommerce-smart-coupons/'  # TODO: No CVE?
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
