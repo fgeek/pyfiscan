@@ -3536,3 +3536,11 @@ WordPress plugin admin-columns-pro:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24149 https://www.syss.de/fileadmin/dokumente/Publikationen/Advisories/SYSS-2021-032.txt'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin codepress-admin-columns:
+  1:
+    location: ['/wp-content/plugins/codepress-admin-columns/readme.txt']
+    secure_version: '4.3.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24149 https://www.syss.de/fileadmin/dokumente/Publikationen/Advisories/SYSS-2021-032.txt'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
