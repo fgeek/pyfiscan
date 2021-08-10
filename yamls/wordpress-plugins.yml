@@ -3510,7 +3510,7 @@ WordPress plugin wd-google-maps:
     post_processing: ['php5.fcgi']
 # CVE-2020-9459 5.1.7 https://www.wordfence.com/blog/2020/02/site-takeover-campaign-exploits-multiple-zero-day-vulnerabilities/
 # CVE-2021-24145 5.16.5 Authenticated Arbitrary File Upload leading to RCE
-# CVE-2021-24146 5.16.5 Unauthenticated Events Export
+# CVE-2021-24146 5.16.5 Unauthenticated Events Export https://packetstormsecurity.com/files/163345/WordPress-Modern-Events-Calendar-5.16.2-Information-Disclosure.html https://github.com/Hacker5preme/Exploits/blob/main/Wordpress/CVE-2021-24146/README.md
 # CVE-2021-24147 5.16.5 Authenticated XSS
 WordPress plugin modern-events-calendar-lite:
   1:
