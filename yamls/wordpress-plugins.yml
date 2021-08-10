@@ -3508,12 +3508,16 @@ WordPress plugin wd-google-maps:
     cve: 'https://www.wordfence.com/blog/2020/02/site-takeover-campaign-exploits-multiple-zero-day-vulnerabilities/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# CVE-2020-9459 5.1.7 https://www.wordfence.com/blog/2020/02/site-takeover-campaign-exploits-multiple-zero-day-vulnerabilities/
+# CVE-2021-24145 5.16.5 Authenticated Arbitrary File Upload leading to RCE
+# CVE-2021-24146 5.16.5 Unauthenticated Events Export
+# CVE-2021-24147 5.16.5 Authenticated XSS
 WordPress plugin modern-events-calendar-lite:
   1:
     location: ['/wp-content/plugins/modern-events-calendar-lite/readme.txt']
-    secure_version: '5.1.7'
+    secure_version: '5.16.6'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-9459 https://www.wordfence.com/blog/2020/02/site-takeover-campaign-exploits-multiple-zero-day-vulnerabilities/'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24149'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin woocommerce-smart-coupons:
