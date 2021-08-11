@@ -84,12 +84,13 @@
 # CVE-2020-14201 11.0.5 https://www.wizlynxgroup.com/security-research-advisories/vuln/WLX-2020-011
 # CVE-2020-14209 11.0.5 https://www.wizlynxgroup.com/security-research-advisories/vuln/WLX-2020-012
 # CVE-2020-14475 11.0.5 https://github.com/Dolibarr/dolibarr/commit/22ca5e067189bffe8066df26df923a386f044c08
-# CVE-2020-35136 TODO
+# CVE-2020-35136 12.0.4 https://bilishim.com/2020/12/18/zero-hunting-2.html https://github.com/Dolibarr/dolibarr/commit/4fcd3fe49332baab0e424225ad10b76b47ebcbac
+# CVE-2021-25954 14.0.0 https://github.com/Dolibarr/dolibarr/commit/8cc100012d46282799fb19f735a53b7101569377 14.x is not released yet 2021-08-11 and this vulnerability is not high severity
 Dolibarr:
   1:
     location: ['/htdocs/filefunc.inc.php']
-    secure_version: '11.0.5'
+    secure_version: '12.0.4'
     regexp: ['.*?DOL_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-13828 https://nvd.nist.gov/vuln/detail/CVE-2020-14201 https://nvd.nist.gov/vuln/detail/CVE-2020-14209 https://nvd.nist.gov/vuln/detail/CVE-2020-14475'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-35136'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
