@@ -1130,19 +1130,24 @@ WordPress plugin paid-memberships-pro:
     cve: 'OVE-20160714-0015 https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_paid_memberships_pro_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
-# CVE-2014-2340 3.1.1
-# CVE-2014-8603
-# CVE-2014-8604
-# CVE-2014-8605
-# CVE-2014-8606
-# CVE-2014-8607
-# TODO 3.1.5 https://www.openwall.com/lists/oss-security/2016/07/27/2
+# CVE-2014-2340 3.1.1 https://packetstormsecurity.com/files/125991/ https://www.immuniweb.com/advisory/HTB23206 https://www.immuniweb.com/advisory/HTB23207 https://www.exploit-db.com/exploits/32701
+# CVE-2014-2579 3.1.1 https://packetstormsecurity.com/files/125991/ https://www.immuniweb.com/advisory/HTB23206 https://www.immuniweb.com/advisory/HTB23207 https://www.exploit-db.com/exploits/32701
+# CVE-2014-8603 3.1.2 https://vapid.dhs.org/advisories/wordpress/plugins/Xcloner-v3.1.1/ https://www.exploit-db.com/exploits/35212
+# CVE-2014-8604 3.1.2 https://vapid.dhs.org/advisories/wordpress/plugins/Xcloner-v3.1.1/ https://www.exploit-db.com/exploits/35212
+# CVE-2014-8605 3.1.2 https://vapid.dhs.org/advisories/wordpress/plugins/Xcloner-v3.1.1/ https://www.exploit-db.com/exploits/35212
+# CVE-2014-8606 3.1.2 https://vapid.dhs.org/advisories/wordpress/plugins/Xcloner-v3.1.1/ https://www.exploit-db.com/exploits/35212
+# CVE-2014-8607 3.1.2 https://vapid.dhs.org/advisories/wordpress/plugins/Xcloner-v3.1.1/ https://www.exploit-db.com/exploits/35212
+# CVE-2015-4336 3.1.3 https://packetstormsecurity.com/files/132107/ https://seclists.org/bugtraq/2015/Jun/33
+# CVE-2015-4337 3.1.3 https://packetstormsecurity.com/files/132107/ https://seclists.org/bugtraq/2015/Jun/33
+# CVE-2015-4338 3.1.3 https://packetstormsecurity.com/files/132107/ https://seclists.org/bugtraq/2015/Jun/33
+# 3.1.5 https://www.openwall.com/lists/oss-security/2016/07/27/2 # TODO: No CVE
+# 3.1.5 https://gist.github.com/ldionmarcil/b223bb39694019d6f35a601ed7f841bf https://plugins.trac.wordpress.org/changeset/1565339/xcloner-backup-and-restore TODO: No CVE
 WordPress plugin xcloner-backup-and-restore:
   1:
     location: ['/wp-content/plugins/xcloner-backup-and-restore/readme.txt']
     secure_version: '4.2.153'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-35948 https://www.wordfence.com/blog/2020/09/critical-vulnerabilities-patched-in-xcloner-backup-and-restore-plugin/'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-35948 https://nvd.nist.gov/vuln/detail/CVE-2020-35950 https://www.wordfence.com/blog/2020/09/critical-vulnerabilities-patched-in-xcloner-backup-and-restore-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin lazy-load:
