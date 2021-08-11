@@ -5,7 +5,8 @@
 # CVE-2008-0516
 # CVE-2009-4539
 # CVE-2012-5105
-# CVE-2019-9083 TODO https://lists.openwall.net/full-disclosure/2019/02/26/2 created https://sourceforge.net/p/sqlitemanager/bugs/57/ 2020-07-23
+# N/A https://lists.openwall.net/full-disclosure/2015/11/06/15 http://blog.curesec.com/article/blog/SQLiteManager-124-Multiple-XSS-67.html duplicate of CVE-2007-1231
+# CVE-2019-9083 N/A https://lists.openwall.net/full-disclosure/2019/02/26/2 http://seclists.org/fulldisclosure/2019/Feb/51 created https://sourceforge.net/p/sqlitemanager/bugs/57/ 2020-07-23
 SQLiteManager:
   1:
     location: ['/include/defined.inc.php']
