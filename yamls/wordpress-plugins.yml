@@ -1082,12 +1082,13 @@ WordPress plugin contact-form-to-email:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-9646 https://lists.openwall.net/full-disclosure/2019/02/05/7 https://security-consulting.icu/blog/2019/02/wordpress-contact-form-email-xss-csrf/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# OVE-20160722-0006 2.7.0 https://sumofpwn.nl/advisory/2016/cross_site_scripting_in_code_snippets_wordpress_plugin.html
 WordPress plugin code-snippets:
   1:
     location: ['/wp-content/plugins/code-snippets/readme.txt']
-    secure_version: '2.7.0'
+    secure_version: '2.14.0'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'OVE-20160722-0006 https://sumofpwn.nl/advisory/2016/cross_site_scripting_in_code_snippets_wordpress_plugin.html'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-8417 https://www.wordfence.com/blog/2020/01/high-severity-csrf-to-rce-vulnerability-patched-in-code-snippets-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 # CVE-2015-2069 2.2.11 http://seclists.org/fulldisclosure/2015/Feb/75
