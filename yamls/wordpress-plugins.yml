@@ -3612,6 +3612,14 @@ WordPress plugin wp-championship:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-5308 http://www.vapidlabs.com/advisory.php?v=155'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin securimage-wp-fixed:
+  1:
+    location: ['/wp-content/plugins/securimage-wp-fixed/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-34640 https://www.wordfence.com/vulnerability-advisories/#CVE-2021-34640'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
 WordPress plugin mobile-friendly-app-builder-by-easytouch:
   1:
     location: ['/wp-content/plugins/mobile-friendly-app-builder-by-easytouch/readme.txt']
