@@ -3644,3 +3644,11 @@ WordPress plugin webapp-builder:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-1002002 http://www.vapidlabs.com/advisory.php?v=181 https://www.openwall.com/lists/oss-security/2017/03/06/5'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wp2android-turn-wp-site-into-android-app:
+  1:
+    location: ['/wp-content/plugins/wp2android-turn-wp-site-into-android-app/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-1002003 http://www.vapidlabs.com/advisory.php?v=182 https://www.openwall.com/lists/oss-security/2017/03/06/5'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
