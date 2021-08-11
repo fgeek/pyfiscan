@@ -3628,3 +3628,11 @@ WordPress plugin mobile-friendly-app-builder-by-easytouch:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-1002000 http://www.vapidlabs.com/advisory.php?v=179 https://www.openwall.com/lists/oss-security/2017/03/06/5'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin mobile-app-builder-by-wappress:
+  1:
+    location: ['/wp-content/plugins/mobile-app-builder-by-wappress/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-1002001 http://www.vapidlabs.com/advisory.php?v=180 https://www.openwall.com/lists/oss-security/2017/03/06/5'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
