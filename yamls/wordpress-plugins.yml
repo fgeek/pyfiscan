@@ -3595,3 +3595,12 @@ WordPress plugin image-export:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-5609 https://www.openwall.com/lists/oss-security/2015/07/13/10 http://www.vapid.dhs.org/advisory.php?v=135'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wp-instance-rename:
+  1:
+    location: ['/wp-content/plugins/wp-instance-rename/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    # http://www.securityfocus.com/bid/75394 https://packetstormsecurity.com/files/132460/
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-4703 http://www.vapid.dhs.org/advisory.php?v=127 http://www.openwall.com/lists/oss-security/2015/06/23/5'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
