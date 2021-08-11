@@ -3604,3 +3604,11 @@ WordPress plugin wp-instance-rename:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-4703 http://www.vapid.dhs.org/advisory.php?v=127 http://www.openwall.com/lists/oss-security/2015/06/23/5'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wp-championship:
+  1:
+    location: ['/wp-content/plugins/wp-championship/readme.txt']
+    secure_version: '5.9'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-5308 http://www.vapidlabs.com/advisory.php?v=155'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
