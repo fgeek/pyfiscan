@@ -3689,3 +3689,11 @@ WordPress plugin post-index:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-34637 https://www.wordfence.com/vulnerability-advisories/#CVE-2021-34637'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin tubepress:
+  1:
+    location: ['/wp-content/plugins/tubepress/readme.txt']
+    secure_version: '1.6.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2008-7321'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
