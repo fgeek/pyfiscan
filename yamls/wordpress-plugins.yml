@@ -3681,3 +3681,11 @@ WordPress plugin stock-in:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24520 https://github.com/pang0lin/CVEproject/blob/main/wordpress_Stock-in-and-out_sqli.md'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin post-index:
+  1:
+    location: ['/wp-content/plugins/post-index/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-34637 https://www.wordfence.com/vulnerability-advisories/#CVE-2021-34637'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
