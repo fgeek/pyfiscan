@@ -39,13 +39,13 @@
 # CVE-2016-9920 1.2.3 https://roundcube.net/news/2016/11/28/updates-1.2.3-and-1.1.7-released https://blog.ripstech.com/2016/roundcube-command-execution-via-email/ https://github.com/roundcube/roundcubemail/commit/f84233785ddeed01445fc855f3ae1e8a62f167e1 https://github.com/roundcube/roundcubemail/commit/aa6bf38843f51a0fc7205acc98a7b84f3c4c9c4f
 # CVE-2017-6820 1.2.4/1.1.8 https://roundcube.net/news/2017/03/10/updates-1.2.4-and-1.1.8-released https://www.openwall.com/lists/oss-security/2017/03/12/2
 # CVE-2017-8114 1.2.5/1.1.9/1.0.11 https://roundcube.net/news/2017/04/28/security-updates-1.2.5-1.1.9-and-1.0.11
-# CVE-2017-16651 TODO http://lists.roundcube.net/pipermail/announce/2017-November/000155.html https://github.com/roundcube/roundcubemail/issues/6026
+# CVE-2017-16651 N/A http://lists.roundcube.net/pipermail/announce/2017-November/000155.html https://github.com/roundcube/roundcubemail/issues/6026
 # CVE-2018-9846 1.3.6 https://github.com/roundcube/roundcubemail/issues/6238 https://github.com/roundcube/roundcubemail/commit/e3dd5b66d236867572e68fcb80281e9268a0cfb0
-# CVE-2018-1000071 TODO https://www.legacysecuritygroup.com/cve/references/02122018-roundcube-enigma.txt https://github.com/roundcube/roundcubemail/issues/6173 https://github.com/roundcube/roundcubemail/commit/48417c5fc9f6eb4b90500c09596606d489c700b5
+# CVE-2018-1000071 N/A https://www.legacysecuritygroup.com/cve/references/02122018-roundcube-enigma.txt https://github.com/roundcube/roundcubemail/issues/6173 https://github.com/roundcube/roundcubemail/commit/48417c5fc9f6eb4b90500c09596606d489c700b5
 # CVE-2018-19205 1.3.7 https://roundcube.net/news/2018/07/27/update-1.3.7-released https://github.com/roundcube/roundcubemail/releases/tag/1.3.7
 # CVE-2018-19206 1.3.8 https://roundcube.net/news/2018/10/26/update-1.3.8-released https://github.com/roundcube/roundcubemail/releases/tag/1.3.8
 # CVE-2019-10740 1.3.10 https://roundcube.net/news/2019/08/28/update-1.3.10-released https://github.com/roundcube/roundcubemail/issues/6638
-# CVE-2019-15237 TODO https://github.com/roundcube/roundcubemail/issues/6891 no fix 2019-08-31
+# CVE-2019-15237 TODO https://github.com/roundcube/roundcubemail/issues/6891 not included in any release 2021-08-14
 # CVE-2020-12625 1.4.4 https://github.com/roundcube/roundcubemail/commit/87e4cd0cf2c550e77586860b94e5c75d2b7686d0 https://github.com/roundcube/roundcubemail/commit/23c06159ae8c6f500336e3075820e648aa6f40a4 https://github.com/roundcube/roundcubemail/commit/4312dc4efecb9553fcacfab0ab9d9ee6e88477e7
 # CVE-2020-12626 1.4.4 https://github.com/roundcube/roundcubemail/pull/7302 https://github.com/roundcube/roundcubemail/commit/9bbda422ff0b782b81de59c86994f1a5fd93f8e6 https://github.com/roundcube/roundcubemail/commit/1e7bec9cb868fa32b05acf6b0a557a6311350c56 https://github.com/roundcube/roundcubemail/commit/cceeff2472c00acb2c6b96c9df7a289f1db77713
 # CVE-2020-12640 1.4.4/1.3.11/1.2.10 https://roundcube.net/news/2020/04/29/security-updates-1.4.4-1.3.11-and-1.2.10 https://github.com/roundcube/roundcubemail/commit/814eadb699e8576ce3a78f21e95bf69a7c7b3794
@@ -58,7 +58,7 @@
 # CVE-2020-16145 1.4.8/1.3.15/1.2.12 https://roundcube.net/news/2020/08/10/security-updates-1.4.8-1.3.15-and-1.2.12
 # CVE-2020-35730 1.4.10/1.3.16/1.2.13 https://roundcube.net/news/2020/12/27/security-updates-1.4.10-1.3.16-and-1.2.13
 # CVE-2021-26925 1.4.11 https://roundcube.net/news/2021/02/08/security-update-1.4.11 https://github.com/roundcube/roundcubemail/commit/9dc276d5f26042db02754fa1bac6fbd683c6d596
-# TODO https://github.com/roundcube/roundcubemail/issues/7576 https://github.com/roundcube/roundcubemail/commit/39086d4c87358defdf826df8fc17d4eb3e2306d5
+# TODO https://github.com/roundcube/roundcubemail/issues/7576 https://github.com/roundcube/roundcubemail/commit/39086d4c87358defdf826df8fc17d4eb3e2306d5 not included in any release 2021-08-14
 Roundcube:
   1:
     location: ['/program/include/iniset.php']
