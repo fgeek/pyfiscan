@@ -112,6 +112,7 @@ Detects following end-of-life software:
 
 * Bugzilla 4.2 is end-of-life since [2015-11-30](https://bugzillaupdate.wordpress.com/2015/07/29/bugzilla-4-2-will-be-eol-on-20151130/)
 * Drupal 6 is end-of-life since [2016-02-24](https://www.drupal.org/drupal-6-eol)
+* Drupal 9.0 is end-of-life
 * Gallery 1
 * Joomla 1.5 is end-of-life since 2012-04-30
 * Joomla 1.6 is end-of-life since [2011-08-19](http://www.joomla.org/announcements/release-news/5380-joomla-170-released.html). 1.6.x should be upgraded to 1.6.6 before moving to 1.7.x
@@ -133,6 +134,7 @@ Detects following end-of-life software:
 * MediaWiki 1.32 is end-of-life since [2020-01-23](https://lists.wikimedia.org/pipermail/mediawiki-announce/2020-January/000245.html)
 * MediaWiki 1.33 is end-of-life since [2020-06-24](https://lists.wikimedia.org/pipermail/mediawiki-announce/2020-June/000253.html)
 * MediaWiki 1.34 is end-of-life since [2020-11-30](https://lists.wikimedia.org/pipermail/mediawiki-announce/2020-November/000266.html)
+* SaurusCMS
 * ownCloud 4
 * ownCloud 5
 * ownCloud 6
@@ -140,7 +142,6 @@ Detects following end-of-life software:
 * ownCloud 8.0
 * ownCloud 8.1
 * ownCloud 8.2
-* SaurusCMS
 
 Installation
 ------------
