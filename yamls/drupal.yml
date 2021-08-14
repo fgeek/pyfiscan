@@ -156,3 +156,11 @@ Drupal 7:
     cve: 'https://drupal.org/SA-CORE-2021-004'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+Drupal 6:
+  1:
+    location: ['/CHANGELOG.txt']
+    secure_version: 'N/A'
+    regexp: ['Drupal (?P<version>6\.[0-9.]+)']
+    cve: 'Drupal 6.x is end of life.'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
