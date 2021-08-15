@@ -16,7 +16,7 @@
 # CVE-2015-XXXX 1.9.15 http://www.openwall.com/lists/oss-security/2015/11/08/3
 # CVE-2015-XXXX 1.9.15 http://mantis.testlink.org/view.php?id=7402 https://www.htbridge.com/advisory/HTB23288
 # CVE-2018-7466 N/A only in installation
-# CVE-2018-7668 1.9.17 http://lists.openwall.net/full-disclosure/2018/02/28/1
+# CVE-2018-7668 1.9.17 https://sec-consult.com/vulnerability-lab/advisory/insecure-direct-object-reference-in-testlink-open-source-test-management/ https://lists.openwall.net/full-disclosure/2018/02/28/1 https://github.com/TestLinkOpenSourceTRMS/testlink-code/commit/d5ffdb7634e43ba352e9567333682b6436cfb43d
 # CVE-2019-14471 TODO https://code610.blogspot.com/2019/07/xss-in-testlink-1919.html
 # CVE-2019-19491 TODO https://www.exploit-db.com/exploits/47702
 # TODO http://mantis.testlink.org/view.php?id=8808 no CVE?
