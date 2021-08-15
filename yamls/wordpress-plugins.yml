@@ -3706,11 +3706,12 @@ WordPress plugin poll-maker:
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 # CVE-2017-18536 1.3.8
+# CVE-2017-1000226 1.3.9 https://advisories.dxw.com/advisories/stop-user-enumeration-rest-api/ https://lists.openwall.net/full-disclosure/2017/07/26/8
 WordPress plugin stop-user-enumeration:
   1:
     location: ['/wp-content/plugins/stop-user-enumeration/readme.txt']
-    secure_version: '1.3.9'
+    secure_version: '1.3.20'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-1000226 https://advisories.dxw.com/advisories/stop-user-enumeration-rest-api/ https://lists.openwall.net/full-disclosure/2017/07/26/8'
+    cve: 'https://wptavern.com/freemius-patches-severe-vulnerability-in-library-used-by-popular-wordpress-plugins https://freemius.com/blog/sdk-security-vulnerability/'  # TODO: No CVE 2021-08-15
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
