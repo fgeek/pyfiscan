@@ -2203,7 +2203,8 @@ WordPress plugin membership-simplified-for-oap-members-only:
     location: ['/wp-content/plugins/membership-simplified-for-oap-members-only/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-1002009 https://nvd.nist.gov/vuln/detail/CVE-2017-1002010 http://www.vapidlabs.com/advisory.php?v=188'
+    # https://www.openwall.com/lists/oss-security/2017/03/14/5 https://www.openwall.com/lists/oss-security/2017/03/22/4
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-1002008 http://www.vapidlabs.com/advisory.php?v=187 https://nvd.nist.gov/vuln/detail/CVE-2017-1002009 https://nvd.nist.gov/vuln/detail/CVE-2017-1002010 http://www.vapidlabs.com/advisory.php?v=188'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin spider-event-calendar:
