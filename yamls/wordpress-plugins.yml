@@ -3705,6 +3705,7 @@ WordPress plugin poll-maker:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-34635'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# CVE-2017-18536 1.3.8
 WordPress plugin stop-user-enumeration:
   1:
     location: ['/wp-content/plugins/stop-user-enumeration/readme.txt']
