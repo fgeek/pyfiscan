@@ -3232,6 +3232,7 @@ WordPress plugin responsive-menu:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24160 https://nvd.nist.gov/vuln/detail/CVE-2021-24161 https://nvd.nist.gov/vuln/detail/CVE-2021-24162 https://www.wordfence.com/blog/2021/02/multiple-vulnerabilities-patched-in-responsive-menu-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# CVE-2015-9537 2.1.10 https://github.com/cybersecurityworks/Disclosed/issues/1 affected 2.1.7 https://cybersecurityworks.com/zerodays/cve-2015-9537-nextgen.html https://www.openwall.com/lists/oss-security/2015/10/27/4
 WordPress plugin nextgen-gallery:
   1:
     location: ['/wp-content/plugins/nextgen-gallery/readme.txt']
