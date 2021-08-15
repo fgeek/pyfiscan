@@ -3716,3 +3716,11 @@ WordPress plugin stop-user-enumeration:
     cve: 'https://wptavern.com/freemius-patches-severe-vulnerability-in-library-used-by-popular-wordpress-plugins https://freemius.com/blog/sdk-security-vulnerability/'  # TODO: No CVE 2021-08-15
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wp-concours:
+  1:
+    location: ['/wp-content/plugins/wp-concours/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-17719 https://lists.openwall.net/full-disclosure/2017/12/19/15'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
