@@ -858,13 +858,13 @@ WordPress plugin ninja-forms-uploads:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-10869 https://www.onvio.nl/nieuws/ninjaforms-vulnerability'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
-# TODO https://www.wordfence.com/blog/2016/05/xss-vulnerability-wordfence-6-1-1-6-1-6-severity-6-1medium/
+# N/A 6.1.7 https://www.wordfence.com/blog/2016/05/xss-vulnerability-wordfence-6-1-1-6-1-6-severity-6-1medium/
 WordPress plugin wordfence:
   1:
     location: ['/wp-content/plugins/wordfence/readme.txt']
     secure_version: '7.1.14'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'http://www.waraxe.us/advisory-109.html'
+    cve: 'http://www.waraxe.us/advisory-109.html https://lists.openwall.net/full-disclosure/2018/10/16/6'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin event-registration:
