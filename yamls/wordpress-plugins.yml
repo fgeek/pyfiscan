@@ -57,12 +57,13 @@ WordPress plugin cart66-lite:
     post_processing: ['php5.fcgi']
 # CVE-2014-9178 affected 2.4.1 https://www.exploit-db.com/exploits/35313 https://packetstormsecurity.com/files/129212/WordPress-SP-Client-Document-Manager-2.4.1-SQL-Injection.html
 # http://www.exploit-db.com/exploits/36576/ 2.5.4 CVE request https://www.openwall.com/lists/oss-security/2015/07/16/6
+# N/A 2.6.0.0 http://seclists.org/bugtraq/2016/Mar/39
 WordPress plugin sp-client-document-manager:
   1:
     location: ['/wp-content/plugins/sp-client-document-manager/readme.txt']
-    secure_version: '2.6.0.0'
+    secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'http://seclists.org/bugtraq/2016/Mar/39'  # Out scope for CVE
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-38315'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin floating-social-bar:
