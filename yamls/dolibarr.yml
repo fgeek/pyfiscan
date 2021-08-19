@@ -16,7 +16,8 @@
 # CVE-2015-8685 3.8.3 https://github.com/Dolibarr/dolibarr/issues/4291 https://github.com/GPCsolutions/dolibarr/commit/0d3181324c816bdf664ca5e1548dfe8eb05c54f8
 # CVE-2016-1912 3.8.4 https://github.com/Dolibarr/dolibarr/issues/4341
 # CVE-2016-XXXX 4.0.0 https://github.com/Dolibarr/dolibarr/issues/5239
-# CVE-2017-8879 N/A probably a false positive or a mistake in CVE numbering since the reference url doesn't have any information about this case. Asked about this from MITRE 2018-01-07
+# CVE-2017-8879 N/A https://www.foxmole.com/advisories/foxmole-2017-02-23.txt (dead link) https://www.openwall.com/lists/oss-security/2017/05/17/13 not much information available
+# N/A 6.0.0 https://github.com/Dolibarr/dolibarr/commit/fa290c34fad108ec7c0751c0372ae9c4b4f63b06
 # CVE-2017-7886 4.0.6 https://www.foxmole.com/advisories/foxmole-2017-02-23.txt http://www.openwall.com/lists/oss-security/2017/05/10/6
 # CVE-2017-7887 5.0.3 https://www.foxmole.com/advisories/foxmole-2017-02-23.txt
 # CVE-2017-7888 6.0.0 https://www.foxmole.com/advisories/foxmole-2017-02-23.txt
@@ -85,7 +86,9 @@
 # CVE-2020-14209 11.0.5 https://www.wizlynxgroup.com/security-research-advisories/vuln/WLX-2020-012
 # CVE-2020-14475 11.0.5 https://github.com/Dolibarr/dolibarr/commit/22ca5e067189bffe8066df26df923a386f044c08
 # CVE-2020-35136 12.0.4 https://bilishim.com/2020/12/18/zero-hunting-2.html https://github.com/Dolibarr/dolibarr/commit/4fcd3fe49332baab0e424225ad10b76b47ebcbac
-# CVE-2021-25954 14.0.0 https://github.com/Dolibarr/dolibarr/commit/8cc100012d46282799fb19f735a53b7101569377 14.x is not released yet 2021-08-11 and this vulnerability is not high severity
+# CVE-2021-25954 14.0.0 https://github.com/Dolibarr/dolibarr/commit/8cc100012d46282799fb19f735a53b7101569377 14.x is not released yet 2021-08-19 and this vulnerability is not high severity
+# CVE-2021-25956 14.0.0 https://github.com/Dolibarr/dolibarr/commit/c4cba43bade736ab89e31013a6ccee59a6e077ee
+# CVE-2021-25957 14.0.0 https://github.com/Dolibarr/dolibarr/commit/87f9530272925f0d651f59337a35661faeb6f377
 Dolibarr:
   1:
     location: ['/htdocs/filefunc.inc.php']
