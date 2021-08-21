@@ -3753,3 +3753,11 @@ WordPress plugin wp-seopress:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-34641 https://www.wordfence.com/blog/2021/08/xss-vulnerability-patched-in-seopress-affects-100000-sites/ https://threatpost.com/xss-bug-seopress-wordpress-plugin/168702/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wp-cerber:
+  1:
+    location: ['/wp-content/plugins/wp-cerber/readme.txt']
+    secure_version: '8.9.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-37597 https://github.com/fireeye/Vulnerability-Disclosures/blob/master/FEYE-2021-0023/FEYE-2021-0023.md'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
