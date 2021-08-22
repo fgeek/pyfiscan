@@ -3782,6 +3782,6 @@ WordPress plugin minimal-coming-soon-maintenance-mode:
     location: ['/wp-content/plugins/minimal-coming-soon-maintenance-mode/readme.txt']
     secure_version: '2.17'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-6166 https://nvd.nist.gov/vuln/detail/CVE-2020-6167 https://nvd.nist.gov/vuln/detail/CVE-2020-6168'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-6166 https://nvd.nist.gov/vuln/detail/CVE-2020-6167 https://nvd.nist.gov/vuln/detail/CVE-2020-6168 https://www.wordfence.com/blog/2020/01/multiple-vulnerabilities-patched-in-minimal-coming-soon-maintenance-mode-coming-soon-page-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
