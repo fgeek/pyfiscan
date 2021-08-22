@@ -3777,3 +3777,11 @@ WordPress plugin wpjobboard:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-15375 https://lists.openwall.net/full-disclosure/2017/09/04/1 https://www.vulnerability-lab.com/get_content.php?id=1941'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin minimal-coming-soon-maintenance-mode:
+  1:
+    location: ['/wp-content/plugins/minimal-coming-soon-maintenance-mode/readme.txt']
+    secure_version: '2.17'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-6166 https://nvd.nist.gov/vuln/detail/CVE-2020-6167 https://nvd.nist.gov/vuln/detail/CVE-2020-6168'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
