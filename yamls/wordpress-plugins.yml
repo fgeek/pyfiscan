@@ -3793,3 +3793,11 @@ WordPress plugin minimal-coming-soon-maintenance-mode:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-6166 https://nvd.nist.gov/vuln/detail/CVE-2020-6167 https://nvd.nist.gov/vuln/detail/CVE-2020-6168 https://www.wordfence.com/blog/2020/01/multiple-vulnerabilities-patched-in-minimal-coming-soon-maintenance-mode-coming-soon-page-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wordpress-database-reset:
+  1:
+    location: ['/wp-content/plugins/wordpress-database-reset//readme.txt']
+    secure_version: '3.15'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-7047 https://nvd.nist.gov/vuln/detail/CVE-2020-7048 https://www.wordfence.com/blog/2020/01/easily-exploitable-vulnerabilities-patched-in-wp-database-reset-plugin/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
