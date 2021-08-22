@@ -3761,3 +3761,11 @@ WordPress plugin wp-cerber:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-37597 https://github.com/fireeye/Vulnerability-Disclosures/blob/master/FEYE-2021-0023/FEYE-2021-0023.md'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin google-site-kit:
+  1:
+    location: ['/wp-content/plugins/google-site-kit/readme.txt']
+    secure_version: '1.8.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://www.wordfence.com/blog/2020/05/vulnerability-in-google-wordpress-plugin-grants-attacker-search-console-access/'  # TODO: No CVE 2021-08-22
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
