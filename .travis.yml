@@ -1,9 +1,0 @@
-language: python
-python:
-  - '3.5'
-install: 'pip install -r requirements.lst'
-before_install: "sudo apt-get install -y python3-yaml python3-docopt"
-script: python3 tests.py
-notifications:
-  email:
-     - henri@nerv.fi
