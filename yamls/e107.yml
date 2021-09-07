@@ -69,8 +69,8 @@
 e107:
   1:
     location: ['/e107_admin/ver.php']
-    secure_version: '2.1.9'
+    secure_version: '2.3.0'
     regexp: ['.*?e107_version.*?(?P<version>1\.[.0-9]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-16388 https://nvd.nist.gov/vuln/detail/CVE-2018-16389'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-11734 https://nvd.nist.gov/vuln/detail/CVE-2018-17423'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
