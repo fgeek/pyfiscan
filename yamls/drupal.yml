@@ -115,26 +115,31 @@
 # https://drupal.org/SA-CORE-2021-003   N/A             9.1.9/9.0.14/8.9.16
 # https://drupal.org/SA-CORE-2021-004   CVE-2021-32610  9.2.2/9.1.11/8.9.17/7.82
 # https://drupal.org/SA-CORE-2021-005   N/A             9.2.4/9.1.12/8.9.18
+# https://drupal.org/SA-CORE-2021-006   CVE-2020-13673  9.2.6/9.1.13/8.9.19
+# https://drupal.org/SA-CORE-2021-007   CVE-2020-13674  9.2.6/9.1.13/8.9.19
+# https://drupal.org/SA-CORE-2021-008   CVE-2020-13675  9.2.6/9.1.13/8.9.19
+# https://drupal.org/SA-CORE-2021-009   CVE-2020-13676  9.2.6/9.1.13/8.9.19
+# https://drupal.org/SA-CORE-2021-010   CVE-2020-13677  9.2.6/9.1.13/8.9.19
 Drupal 9.2:
   1:
     location: ['/core/lib/Drupal.php']
-    secure_version: '9.2.4'
+    secure_version: '9.2.6'
     regexp: ['  const VERSION.*?(?P<version>9\.2\.[0-9]{1,})']
-    cve: 'https://drupal.org/SA-CORE-2021-005'
+    cve: 'https://drupal.org/SA-CORE-2021-006 https://drupal.org/SA-CORE-2021-007 https://drupal.org/SA-CORE-2021-008 https://drupal.org/SA-CORE-2021-009 https://drupal.org/SA-CORE-2021-010'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Drupal 9.1:
   1:
     location: ['/core/lib/Drupal.php']
-    secure_version: '9.1.12'
+    secure_version: '9.1.13'
     regexp: ['  const VERSION.*?(?P<version>9\.1\.[0-9]{1,})']
-    cve: 'https://drupal.org/SA-CORE-2021-005'
+    cve: 'https://drupal.org/SA-CORE-2021-006 https://drupal.org/SA-CORE-2021-007 https://drupal.org/SA-CORE-2021-008 https://drupal.org/SA-CORE-2021-009 https://drupal.org/SA-CORE-2021-010'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Drupal 9.0:
   1:
     location: ['/core/lib/Drupal.php']
-    secure_version: '9.2.4'
+    secure_version: '9.2.6'
     regexp: ['  const VERSION.*?(?P<version>9\.0\.[0-9]{1,})']
     cve: 'Drupal 9.0 is end of life.'
     fingerprint: detect_general
@@ -142,9 +147,9 @@ Drupal 9.0:
 Drupal 8.9:
   1:
     location: ['/core/lib/Drupal.php']
-    secure_version: '8.9.18'
+    secure_version: '8.9.19'
     regexp: ['  const VERSION.*?(?P<version>8\.[0-9.]{1,})']
-    cve: 'https://drupal.org/SA-CORE-2021-005'
+    cve: 'https://drupal.org/SA-CORE-2021-006 https://drupal.org/SA-CORE-2021-007 https://drupal.org/SA-CORE-2021-008 https://drupal.org/SA-CORE-2021-009 https://drupal.org/SA-CORE-2021-010'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Drupal 7:
