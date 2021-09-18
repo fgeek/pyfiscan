@@ -3817,3 +3817,11 @@ WordPress plugin wp-nested-pages:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-38342 https://nvd.nist.gov/vuln/detail/CVE-2021-38343 https://www.wordfence.com/blog/2021/08/nested-pages-patches-post-deletion-vulnerability/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin post-grid:
+  1:
+    location: ['/wp-content/plugins/post-grid/readme.txt']
+    secure_version: '2.0.73'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://www.wordfence.com/blog/2020/10/high-severity-vulnerabilities-in-post-grid-and-team-showcase-plugins/ https://nvd.nist.gov/vuln/detail/CVE-2020-35936 https://nvd.nist.gov/vuln/detail/CVE-2020-35937 https://nvd.nist.gov/vuln/detail/CVE-2020-35938 https://nvd.nist.gov/vuln/detail/CVE-2020-35939'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
