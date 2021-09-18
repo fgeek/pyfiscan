@@ -193,6 +193,9 @@
 # CVE-2019-18650 3.9.13 https://developer.joomla.org/security-centre/794-20191001-core-csrf-in-com-template-overrides-view.html
 # CVE-2019-19845 3.9.14 https://developer.joomla.org/security-centre/796-20191201-core-path-disclosure-in-framework-files.html
 # CVE-2019-19846 3.9.14 https://developer.joomla.org/security-centre/797-20191202-core-various-sql-injections-through-configuration-parameters.html
+# CVE-2020-8419 3.9.15 https://developer.joomla.org/security-centre/798-20200101-core-csrf-in-batch-actions
+# CVE-2020-8420 3.9.15 https://developer.joomla.org/security-centre/799-20200102-core-csrf-com-templates-less-compiler
+# CVE-2020-8421 3.9.15 https://developer.joomla.org/security-centre/800-20200103-core-xss-in-com-actionlogs
 # CVE-2020-10238 3.9.16 https://developer.joomla.org/security-centre/804-20200303-core-incorrect-access-control-in-com-templates.html https://www.joomla.org/announcements/release-news/5783-joomla-3-9-16.html
 # CVE-2020-10239 3.9.16 https://developer.joomla.org/security-centre/806-20200305-core-incorrect-access-control-in-com-fields-sql-field.html https://www.joomla.org/announcements/release-news/5783-joomla-3-9-16.html
 # CVE-2020-10240 3.9.16 https://developer.joomla.org/security-centre/805-20200304-core-identifier-collisions-in-com-users.html https://www.joomla.org/announcements/release-news/5783-joomla-3-9-16.html
@@ -227,10 +230,25 @@
 # CVE-2021-26032 3.9.27 https://www.joomla.org/announcements/release-news/5836-joomla-3-9-27.html https://developer.joomla.org/security-centre/852-20210501-core-adding-html-to-the-executable-block-list-of-mediahelper-canupload.html
 # CVE-2021-26033 3.9.27 https://www.joomla.org/announcements/release-news/5836-joomla-3-9-27.html https://developer.joomla.org/security-centre/853-20210502-core-csrf-in-ajax-reordering-endpoint.html
 # CVE-2021-26034 3.9.27 https://www.joomla.org/announcements/release-news/5836-joomla-3-9-27.html https://developer.joomla.org/security-centre/854-20210503-core-csrf-in-data-download-endpoints.html
+# CVE-2021-26035 3.9.28 https://developer.joomla.org/security-centre/856-20210701-core-xss-in-jform-rules-field.html
+# CVE-2021-26036 3.9.28 https://developer.joomla.org/security-centre/857-20210702-core-dos-through-usergroup-table-manipulation.html
+# CVE-2021-26037 3.9.28 https://developer.joomla.org/security-centre/858-20210703-core-lack-of-enforced-session-termination.html
+# CVE-2021-26038 3.9.28 https://developer.joomla.org/security-centre/859-20210704-core-privilege-escalation-through-com-installer.html
+# CVE-2021-26039 3.9.28 https://developer.joomla.org/security-centre/860-20210705-core-xss-in-com-media-imagelist.html
+# CVE-2021-26039 3.9.28 https://developer.joomla.org/security-centre/860-20210705-core-xss-in-com-media-imagelist.html
+# CVE-2021-26040 4.0.1 https://developer.joomla.org/security-centre/861-20210801-core-insufficient-access-control-for-com-media-deletion-endpoint
+Joomla 4:
+  1:
+    location: ['/administrator/manifests/files/joomla.xml']
+    secure_version: '4.0.1'
+    regexp: ['[\t]<version>(?P<version>4\.[0-9.]{1,})']
+    cve: 'https://developer.joomla.org/security-centre/861-20210801-core-insufficient-access-control-for-com-media-deletion-endpoint https://nvd.nist.gov/vuln/detail/CVE-2021-26040'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
 Joomla 3:
   1:
     location: ['/administrator/manifests/files/joomla.xml']
-    secure_version: '3.9.27'
+    secure_version: '3.9.28'
     regexp: ['[\t]<version>(?P<version>3\.[0-9.]{1,})']
     cve: 'https://www.joomla.org/announcements/release-news/5835-joomla-3-9-26.html https://nvd.nist.gov/vuln/detail/CVE-2021-26030 https://developer.joomla.org/security-centre/850-20210401-core-escape-xss-in-logo-parameter-error-pages.html https://nvd.nist.gov/vuln/detail/CVE-2021-26031 https://developer.joomla.org/security-centre/851-20210402-core-inadequate-filters-on-module-layout-settings.html'
     fingerprint: detect_general
@@ -238,40 +256,40 @@ Joomla 3:
 Joomla 2.5:
   1:
     location: ['/administrator/manifests/files/joomla.xml']
-    secure_version: '3.9.27'
+    secure_version: '4.0.1'
     regexp: ['[\t]<version>(?P<version>2\.5\.[0-9]{1,})']
-    cve: 'Joomla 2.5 is end of life. Please upgrade to 3.9.27 version.'
+    cve: 'Joomla 2.5 is end of life. Please upgrade to 4.0.1 version.'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Joomla 1.7:
   1:
     location: ['/includes/version.php']
-    secure_version: '3.9.27'
+    secure_version: '4.0.1'
     regexp: ['[\t]+public[\t|\s]\$RELEASE.*?(?P<version>1.7)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.7 is end of life. Please upgrade to 3.9.27 version.'
+    cve: 'Joomla 1.7 is end of life. Please upgrade to 4.0.1 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.6:
   1:
     location: ['/libraries/joomla/version.php']
-    secure_version: '3.9.27'
+    secure_version: '4.0.1'
     regexp: ['.*?RELEASE.*?(?P<version>1.6)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.6 is end of life. Please upgrade to 3.9.27 version.'
+    cve: 'Joomla 1.6 is end of life. Please upgrade to 4.0.1 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.5:
   1:
     location: ['/libraries/joomla/version.php']
-    secure_version: '3.9.27'
+    secure_version: '4.0.1'
     regexp: ['.*?RELEASE.*?(?P<version>1.5)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.5 is end of life. Please upgrade to 3.9.27 version.'
+    cve: 'Joomla 1.5 is end of life. Please upgrade to 4.0.1 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.0:
   1:
     location: ['/includes/version.php']
-    secure_version: '3.9.27'
+    secure_version: '4.0.1'
     regexp: ['[\t]+var.*?RELEASE.*?(?P<version>1.0)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.0 is end of life. Please upgrade to 3.9.27 version.'
+    cve: 'Joomla 1.0 is end of life. Please upgrade to 4.0.1 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
