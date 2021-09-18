@@ -2,6 +2,7 @@
 # CVE-2011-3621
 # CVE-2014-10030 1.5.7
 # CVE-2014-10029 1.5.7
+# CVE-2020-35240 TODO https://github.com/hemantsolo/CVE-Reference/blob/main/CVE-2020-35240.md https://github.com/hemantsolo/CVE-Reference/issues/1
 FluxBB:
   1:
     location: ['/include/common.php']
