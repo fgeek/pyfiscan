@@ -4,19 +4,20 @@
 # CVE-2013-1465
 # CVE-2013-XXXX KIS-2013-02
 # CVE-2014-2341 5.2.9
-# CVE-2015-XXXX 6.0.8 http://seclists.org/fulldisclosure/2015/Nov/24
-# CVE-2015-XXXX 6.0.8 http://seclists.org/fulldisclosure/2015/Nov/25
-# CVE-2016-XXXX 6.0.11 https://www.htbridge.com/advisory/HTB23298 https://forums.cubecart.com/topic/51079-cubecart-6011-released/
+# CVE-2015-XXXX 6.0.8   http://seclists.org/fulldisclosure/2015/Nov/24
+# CVE-2015-XXXX 6.0.8   http://seclists.org/fulldisclosure/2015/Nov/25
+# CVE-2016-XXXX 6.0.11  https://www.htbridge.com/advisory/HTB23298 https://forums.cubecart.com/topic/51079-cubecart-6011-released/
 # CVE-2017-2090 6.1.4
 # CVE-2017-2098 6.1.4
-# CVE-2017-2117 6.1.5 https://forums.cubecart.com/topic/52188-cubecart-615-released/
-# CVE-2018-20703 TODO no information about fixed in version? https://www.netsparker.com/web-applications-advisories/ns-18-025-reflected-cross-site-scripting-in-cubecart/
-# CVE-2018-20716 TODO
+# CVE-2017-2117 6.1.5   https://forums.cubecart.com/topic/52188-cubecart-615-released/
+# CVE-2018-20703 N/A    https://www.netsparker.com/web-applications-advisories/ns-18-025-reflected-cross-site-scripting-in-cubecart/ no information about fixed in version. also did not find it with quick search https://www.netsparker.com/web-applications-advisories/ns-18-025-reflected-cross-site-scripting-in-cubecart/
+# CVE-2018-20716 6.1.13 https://blog.sonarsource.com/cubecart-admin-authentication-bypass https://blog.ripstech.com/2018/cubecart-admin-authentication-bypass/
+# CVE-2021-33394 6.4.3  https://github.com/cubecart/v6/commit/aac7b3a13a43e302d91f94a120417b2fda737d0f https://github.com/xoffense/POC/blob/main/Session%20Fixation%20in%20Cubecart%206.4.2.md
 CubeCart:
   1:
     location: ['/ini.inc.php']
-    secure_version: '6.1.5'
+    secure_version: '6.4.3'
     regexp: ['define.*?CC_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-2117 https://forums.cubecart.com/topic/52188-cubecart-615-released/'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-33394'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
