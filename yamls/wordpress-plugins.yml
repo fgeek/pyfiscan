@@ -978,7 +978,7 @@ WordPress plugin all-in-one-seo-pack:
     location: ['/wp-content/plugins/all-in-one-seo-pack/readme.txt']
     secure_version: '3.6.2'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://www.wordfence.com/blog/2020/07/2-million-users-affected-by-vulnerability-in-all-in-one-seo-pack/'  # TODO: Needs CVE. wordfence.com says 'Pending'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-35946 https://www.wordfence.com/blog/2020/07/2-million-users-affected-by-vulnerability-in-all-in-one-seo-pack/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin squirrly-seo:
