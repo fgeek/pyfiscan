@@ -173,6 +173,10 @@
 # CVE-2021-30159 1.35.2/1.31.13 https://lists.wikimedia.org/pipermail/wikitech-l/2021-April/094418.html https://phabricator.wikimedia.org/T272386
 # CVE-2021-30458 1.35.2/1.31.13 https://phabricator.wikimedia.org/T279451
 # CVE-2021-35197 1.36.1/1.35.3/1.31.15 https://lists.wikimedia.org/hyperkitty/list/wikitech-l@lists.wikimedia.org/thread/YR3X4L2CPSEJVSY543AWEO65TD6APXHP/ lists.wikimedia.org didn't have this in archive yet 2021-06-26
+# CVE-2021-41798 TODO
+# CVE-2021-41799 TODO
+# CVE-2021-41800 TODO
+# CVE-2021-41801 TODO
 MediaWiki 1.36:
   1:
     location: ['/includes/DefaultSettings.php']
@@ -216,9 +220,9 @@ MediaWiki 1.32:
 MediaWiki 1.31:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.31.13'
+    secure_version: '1.36.1'
     regexp: ['\$wgVersion.*?(?P<version>1\.31\.[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-35197'
+    cve: 'MediaWiki 1.31 is end of life.'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.30:
