@@ -3849,3 +3849,11 @@ WordPress plugin xo-security:
     cve: 'https://wordpress.org/plugins/xo-security/#developers'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin countdown-wpdevart-extended:
+  1:
+    location: ['/wp-content/plugins/countdown-wpdevart-extended/readme.txt']
+    secure_version: '1.5.8'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-34636 https://www.wordfence.com/vulnerability-advisories/#CVE-2021-34636'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
