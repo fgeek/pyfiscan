@@ -3873,3 +3873,11 @@ WordPress plugin woo-stripe-payment:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-39347 https://www.wordfence.com/vulnerability-advisories/#CVE-2021-39347'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin fv-wordpress-flowplayer:
+  1:
+    location: ['/wp-content/plugins/fv-wordpress-flowplayer/readme.txt']
+    secure_version: '7.5.3.727'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-39350 https://www.wordfence.com/vulnerability-advisories/#CVE-2021-39350'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
