@@ -851,12 +851,16 @@ WordPress plugin wordpress-seo:
 # 2.9.44 https://www.wordfence.com/blog/2016/05/ninja-forms-shell-upload-vulnerability-high-risk/ 2.9.45 in advisory, but it was error
 # 2.9.52 OVE-20160714-0017 https://sumofpwn.nl/advisory/2016/multiple_cross_site_scripting_vulnerabilities_in_ninja_forms_wordpress_plugin.html
 # CVE-2020-12462 3.4.24.2 https://www.wordfence.com/blog/2020/04/high-severity-vulnerability-patched-in-ninja-forms/ https://wpvulndb.com/vulnerabilities/10200
+# CVE-2021-24163 3.4.34.1 https://www.wordfence.com/blog/2021/02/one-million-sites-affected-four-severe-vulnerabilities-patched-in-ninja-forms/ https://threatpost.com/ninja-forms-wordpress-plugin-hacks/164042/
+# CVE-2021-24164 3.4.34.1 https://www.wordfence.com/blog/2021/02/one-million-sites-affected-four-severe-vulnerabilities-patched-in-ninja-forms/ https://threatpost.com/ninja-forms-wordpress-plugin-hacks/164042/
+# CVE-2021-24165 3.4.34.1 https://www.wordfence.com/blog/2021/02/one-million-sites-affected-four-severe-vulnerabilities-patched-in-ninja-forms/ https://threatpost.com/ninja-forms-wordpress-plugin-hacks/164042/
+# CVE-2021-24166 3.4.34.1 https://www.wordfence.com/blog/2021/02/one-million-sites-affected-four-severe-vulnerabilities-patched-in-ninja-forms/ https://threatpost.com/ninja-forms-wordpress-plugin-hacks/164042/
 WordPress plugin ninja-forms:
   1:
     location: ['/wp-content/plugins/ninja-forms/readme.txt']
-    secure_version: '3.4.34.1'
+    secure_version: '3.5.8'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24163 https://nvd.nist.gov/vuln/detail/CVE-2021-24164 https://nvd.nist.gov/vuln/detail/CVE-2021-24165 https://nvd.nist.gov/vuln/detail/CVE-2021-24166 https://www.wordfence.com/blog/2021/02/one-million-sites-affected-four-severe-vulnerabilities-patched-in-ninja-forms/ https://threatpost.com/ninja-forms-wordpress-plugin-hacks/164042/'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-34647 https://nvd.nist.gov/vuln/detail/CVE-2021-34648 https://www.wordfence.com/blog/2021/09/recently-patched-vulnerabilities-in-ninja-forms-plugin-affects-over-1-million-site-owners/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin ninja-forms-uploads:
