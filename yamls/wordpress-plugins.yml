@@ -3881,3 +3881,11 @@ WordPress plugin fv-wordpress-flowplayer:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-39350 https://www.wordfence.com/vulnerability-advisories/#CVE-2021-39350'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wp-bannerize:
+  1:
+    location: ['/wp-content/plugins/wp-bannerize/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-39351 https://www.wordfence.com/vulnerability-advisories/#CVE-2021-39351'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
