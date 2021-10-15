@@ -3893,3 +3893,11 @@ WordPress plugin wp-bannerize:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-39351 https://www.wordfence.com/vulnerability-advisories/#CVE-2021-39351'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin embed-articles:
+  1:
+    location: ['/wp-content/plugins/embed-articles/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://lists.openwall.net/bugtraq/2015/05/06/11'  # Same as https://lists.openwall.net/bugtraq/2015/05/07/15
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
