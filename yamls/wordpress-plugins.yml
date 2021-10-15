@@ -3910,3 +3910,11 @@ WordPress plugin clickbank-ads-clickbank-widget:
     cve: 'https://lists.openwall.net/bugtraq/2015/05/06/14'  # https://packetstormsecurity.com/files/131814/ https://www.exploit-db.com/exploits/36959 https://seclists.org/bugtraq/2015/May/45
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin ultimate-profile-builder:
+  1:
+    location: ['/wp-content/plugins/ultimate-profile-builder/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://lists.openwall.net/bugtraq/2015/05/06/15'  # https://packetstormsecurity.com/files/131815/ https://www.exploit-db.com/exploits/36958 https://seclists.org/bugtraq/2015/May/46
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
