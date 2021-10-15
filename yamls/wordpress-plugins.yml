@@ -3926,3 +3926,11 @@ WordPress plugin ad-buttons:
     cve: 'https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-18553 https://lists.openwall.net/bugtraq/2015/05/07/16'  # https://packetstormsecurity.com/files/131823/
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin brizy:
+  1:
+    location: ['/wp-content/plugins/brizy/readme.txt']
+    secure_version: '2.3.12'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-38344 https://nvd.nist.gov/vuln/detail/CVE-2021-38345 https://nvd.nist.gov/vuln/detail/CVE-2021-38346 https://www.wordfence.com/blog/2021/10/multiple-vulnerabilities-in-brizy-page-builder-plugin-allow-site-takeover/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
