@@ -756,7 +756,7 @@ WordPress plugin wp-comment-rating:
     cve: 'http://seclists.org/bugtraq/2016/Jan/175'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
-# 1.5.3 http://seclists.org/bugtraq/2015/May/43
+# N/A 1.5.3 https://lists.openwall.net/bugtraq/2015/05/06/12 http://seclists.org/bugtraq/2015/May/43
 WordPress plugin ad-inserter:
   1:
     location: ['/wp-content/plugins/ad-inserter/readme.txt']
@@ -3916,5 +3916,13 @@ WordPress plugin ultimate-profile-builder:
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://lists.openwall.net/bugtraq/2015/05/06/15'  # https://packetstormsecurity.com/files/131815/ https://www.exploit-db.com/exploits/36958 https://seclists.org/bugtraq/2015/May/46
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin ad-buttons:
+  1:
+    location: ['/wp-content/plugins/ad-buttons/readme.txt']
+    secure_version: '2.3.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-18553 https://lists.openwall.net/bugtraq/2015/05/07/16'  # https://packetstormsecurity.com/files/131823/
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
