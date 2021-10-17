@@ -3934,3 +3934,14 @@ WordPress plugin brizy:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-38344 https://nvd.nist.gov/vuln/detail/CVE-2021-38345 https://nvd.nist.gov/vuln/detail/CVE-2021-38346 https://www.wordfence.com/blog/2021/10/multiple-vulnerabilities-in-brizy-page-builder-plugin-allow-site-takeover/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# N/A https://lists.openwall.net/full-disclosure/2015/06/15/2 https://seclists.org/fulldisclosure/2015/Jun/44 https://packetstormsecurity.com/files/132318/ # TODO: No CVE
+# CVE-2018-15571 https://hackpuntes.com/cve-2018-15571-wordpress-plugin-export-users-to-csv-1-1-1-csv-injection/ https://www.exploit-db.com/exploits/45206
+# CVE-2020-9466 https://www.getastra.com/blog/911/plugin-exploit/csv-injection-in-export-users-to-csv-wordpress-plugin/ https://www.jinsonvarghese.com/csv-injection-in-export-users-to-csv-plugin/
+WordPress plugin users-to-csv:
+  1:
+    location: ['/wp-content/plugins/users-to-csv/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-9466'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
