@@ -3945,3 +3945,11 @@ WordPress plugin users-to-csv:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-9466'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin optinmonster:
+  1:
+    location: ['/wp-content/plugins/optinmonster/readme.txt']
+    secure_version: '2.6.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-39341 https://www.wordfence.com/blog/2021/10/1000000-sites-affected-by-optinmonster-vulnerabilities/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
