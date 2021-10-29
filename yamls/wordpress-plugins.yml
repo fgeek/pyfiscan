@@ -3961,3 +3961,11 @@ WordPress plugin hashthemes-demo-importer:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-39333 https://www.wordfence.com/blog/2021/10/site-deletion-vulnerability-in-hashthemes-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin sassy-social-share:
+  1:
+    location: ['/wp-content/plugins/sassy-social-share/readme.txt']
+    secure_version: '3.3.24'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-39321 https://www.wordfence.com/blog/2021/10/vulnerability-patched-in-sassy-social-share-plugin/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
