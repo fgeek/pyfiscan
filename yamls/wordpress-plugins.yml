@@ -3969,3 +3969,11 @@ WordPress plugin sassy-social-share:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-39321 https://www.wordfence.com/blog/2021/10/vulnerability-patched-in-sassy-social-share-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin underconstruction:
+  1:
+    location: ['/wp-content/plugins/underconstruction/readme.txt']
+    secure_version: '1.19'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-39320 https://www.wordfence.com/blog/2021/09/reflected-xss-in-underconstruction-plugin/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
