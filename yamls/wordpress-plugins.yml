@@ -184,12 +184,13 @@ WordPress plugin paypal-currency-converter-basic-for-woocommerce:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-5065'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# CVE-2015-2084 1.2.3
 WordPress plugin easy-social-icons:
   1:
     location: ['/wp-content/plugins/easy-social-icons/readme.txt']
-    secure_version: '1.2.3'
+    secure_version: '3.1.3'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-2084'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-39322 https://www.wordfence.com/blog/2021/09/php_selfish-part-2-reflected-xss-in-easy-social-icons/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin wp-responsive-preview:
