@@ -3977,3 +3977,11 @@ WordPress plugin underconstruction:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-39320 https://www.wordfence.com/blog/2021/09/reflected-xss-in-underconstruction-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wp-stats:
+  1:
+    location: ['/wp-content/plugins/wp-stats/readme.txt']
+    secure_version: '2.52'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://www.openwall.com/lists/oss-security/2015/06/17/6'  # TODO: CVE ID requested 2021-10-31
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
