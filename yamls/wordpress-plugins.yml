@@ -3983,7 +3983,7 @@ WordPress plugin wp-stats:
     location: ['/wp-content/plugins/wp-stats/readme.txt']
     secure_version: '2.52'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://www.openwall.com/lists/oss-security/2015/06/17/6'  # TODO: CVE ID requested 2021-10-31
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-10001 https://www.openwall.com/lists/oss-security/2015/06/17/6'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin wp-stats-dashboard:
