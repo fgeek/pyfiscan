@@ -2779,12 +2779,13 @@ WordPress plugin kingcomposer:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-15299 https://www.wordfence.com/blog/2020/07/xss-flaw-impacting-100000-sites-patched-in-kingcomposer/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# CVE-2019-9911 4.2.8 https://lists.openwall.net/full-disclosure/2019/02/05/12 https://security-consulting.icu/blog/2019/02/wordpress-social-networks-auto-poster-xss/
 WordPress plugin social-networks-auto-poster-facebook-twitter-g:
   1:
     location: ['/wp-content/plugins/social-networks-auto-poster-facebook-twitter-g/readme.txt']
-    secure_version: '4.2.8'
+    secure_version: '4.3.21'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-9911 https://lists.openwall.net/full-disclosure/2019/02/05/12 https://security-consulting.icu/blog/2019/02/wordpress-social-networks-auto-poster-xss/'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-38356'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin yop-poll:
