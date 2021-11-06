@@ -57,7 +57,9 @@
 # CVE-2014-XXXX 2.0.9   http://www.simplemachines.org/community/index.php?topic=528448.0
 # CVE-2016-5726 TODO    https://github.com/SimpleMachines/SMF2.1/blob/404fd5347951652624dfb72304ee38fcab98378f/Sources/Packages.php#L863-L873
 # CVE-2016-5727 TODO    https://github.com/SimpleMachines/SMF2.1/blob/19ee85ff8761b792ea3e9ed630a947f45f93ee68/Sources/LogInOut.php#L125-L129
+# TODO          2.0.11  https://www.simplemachines.org/community/index.php?topic=539888.0
 # TODO          2.0.12  http://www.simplemachines.org/community/index.php?topic=548871.0 asked status of CVE 2017-01-02
+# TODO          2.0.13  https://www.simplemachines.org/community/index.php?topic=551061.0
 # CVE-2018-10305 2.0.15 https://www.simplemachines.org/community/index.php?topic=557176.0
 # CVE-2019-12490 TODO
 # CVE-2019-11574 TODO
