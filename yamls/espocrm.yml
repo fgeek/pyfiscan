@@ -18,19 +18,20 @@
 # CVE-2019-14549 5.6.9 https://github.com/espocrm/espocrm/issues/1369 https://gauravnarwani.com/publications/cve-2019-14549/ https://github.com/espocrm/espocrm/commit/ffd3f762ce4a8de3b8962f33513e073c55d943b5
 # CVE-2019-14550 5.6.9 https://github.com/espocrm/espocrm/issues/1369 https://gauravnarwani.com/publications/cve-2019-14550/ https://github.com/espocrm/espocrm/commit/ffd3f762ce4a8de3b8962f33513e073c55d943b5
 # TODO https://packetstormsecurity.com/files/157380/espocrm585-escalate.txt
+# CVE-2021-3539 6.1.7
 EspoCRM:
   1:
     location: ['/application/Espo/Core/defaults/config.php']
-    secure_version: '5.6.9'
+    secure_version: '6.1.7'
     regexp: ["    'version.*?(?P<version>[0-9.]+)"]
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-14546 https://nvd.nist.gov/vuln/detail/CVE-2019-14547 https://nvd.nist.gov/vuln/detail/CVE-2019-14548 https://nvd.nist.gov/vuln/detail/CVE-2019-14549 https://nvd.nist.gov/vuln/detail/CVE-2019-14550'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-3539 https://www.rapid7.com/blog/post/2021/07/27/multiple-open-source-web-app-vulnerabilities-fixed/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 EspoCRM:
   1:
     location: ['/application/Espo/Core/defaults/config.php']
-    secure_version: '5.6.9'
+    secure_version: '6.1.7'
     regexp: ["\t'version.*?(?P<version>[0-9.]+)"]
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-14546 https://nvd.nist.gov/vuln/detail/CVE-2019-14547 https://nvd.nist.gov/vuln/detail/CVE-2019-14548 https://nvd.nist.gov/vuln/detail/CVE-2019-14549 https://nvd.nist.gov/vuln/detail/CVE-2019-14550'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-3539 https://www.rapid7.com/blog/post/2021/07/27/multiple-open-source-web-app-vulnerabilities-fixed/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
