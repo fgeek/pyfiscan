@@ -1012,12 +1012,13 @@ WordPress plugin yikes-inc-easy-mailchimp-extender:
     cve: 'https://www.wordfence.com/blog/2016/07/vulnerability-easy-forms-mailchimp/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# OVE-20160712-0022 0.8.6.0 https://sumofpwn.nl/advisory/2016/wp_fastest_cache_member_local_file_inclusion_vulnerability.html
 WordPress plugin wp-fastest-cache:
   1:
     location: ['/wp-content/plugins/wp-fastest-cache/readme.txt']
-    secure_version: '0.8.6.0'
+    secure_version: '0.9.5'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'OVE-20160712-0022 https://sumofpwn.nl/advisory/2016/wp_fastest_cache_member_local_file_inclusion_vulnerability.html'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24869 https://nvd.nist.gov/vuln/detail/CVE-2021-24870 https://jetpack.com/2021/10/14/multiple-vulnerabilities-in-wp-fastest-cache-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin master-slider:
