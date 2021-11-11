@@ -90,6 +90,8 @@
 # CVE-2021-25955 14.0.0 https://github.com/Dolibarr/dolibarr/commit/796b2d201acb9938b903fb2afa297db289ecc93e
 # CVE-2021-25956 14.0.0 https://github.com/Dolibarr/dolibarr/commit/c4cba43bade736ab89e31013a6ccee59a6e077ee
 # CVE-2021-25957 14.0.0 https://github.com/Dolibarr/dolibarr/commit/87f9530272925f0d651f59337a35661faeb6f377
+# CVE-2021-33616 TODO
+# CVE-2021-33618 TODO
 Dolibarr:
   1:
     location: ['/htdocs/filefunc.inc.php']
