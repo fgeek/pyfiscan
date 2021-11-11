@@ -3996,3 +3996,11 @@ WordPress plugin wp-stats-dashboard:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-9399 http://cinu.pl/research/wp-plugins/mail_468b117b2dc86cb3d2ae4b8c81884a99.html http://blog.cinu.pl/2015/11/php-static-code-analysis-vs-top-1000-wordpress-plugins.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin astra-sites:
+  1:
+    location: ['/wp-content/plugins/astra-sites/readme.txt']
+    secure_version: '2.7.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-42360 https://www.wordfence.com/blog/2021/11/over-1-million-sites-impacted-by-vulnerability-in-starter-templates-plugin/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
