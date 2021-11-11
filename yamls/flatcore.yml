@@ -13,6 +13,9 @@
 # CVE-2021-23836 2.0 https://lists.openwall.net/full-disclosure/2021/01/13/12
 # CVE-2021-23837 2.0 https://lists.openwall.net/full-disclosure/2021/01/13/12
 # CVE-2021-23838 2.0 https://lists.openwall.net/full-disclosure/2021/01/13/12
+# CVE-2021-3745 TODO
+# CVE-2021-39608 TODO
+# CVE-2021-39609 TODO
 flatCore CMS:
   1:
     location: ['/acp/versions.php']
