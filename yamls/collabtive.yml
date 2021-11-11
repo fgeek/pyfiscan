@@ -8,6 +8,7 @@
 # CVE-2014-3247 2.0
 # CVE-2015-0258 2.1 https://github.com/philippK-de/Collabtive/commit/9ce6301583669d0a8ecb4d23fb56e34b68511335
 # CVE-2020-13655 TODO https://sisl.lab.uic.edu/projects/chess/cross-site-scripting-in-collabtive/ "We contacted the developers for a disclosure on May 4th 2020, but as of August 24th 2020, we didn’t receive any answer after multiple followups."
+# CVE-2021-3298 TODO
 # https://www.netsparker.com/web-applications-advisories/ns-18-052-reflected-cross-site-scripting-in-collabtive/
 #   - CVE requested 2019-02-19 #643901
 #   - Open Dynamics aren't answering via collabtive@o-dyn.de

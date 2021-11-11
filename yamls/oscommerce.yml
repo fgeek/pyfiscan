@@ -9,6 +9,7 @@
 # CVE-2018-18573 TODO
 # CVE-2018-18572 TODO
 # CVE-2020-29070 TODO
+# CVE-2020-23360 TODO
 osCommerce 2.3:
   1:
     location: ['/includes/version.php']

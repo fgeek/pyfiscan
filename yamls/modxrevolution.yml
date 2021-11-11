@@ -30,6 +30,7 @@
 # CVE-2018-20757 TODO
 # CVE-2018-20758 TODO
 # CVE-2019-1010123 TODO
+# CVE-2020-25911 TODO
 MODX Revolution:
   1:
     location: ['/core/docs/changelog.txt']

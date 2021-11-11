@@ -9,6 +9,8 @@
 # CVE-2018-9326 TODO
 # CVE-2018-9327 TODO
 # CVE-2018-9845 TODO
+# CVE-2021-34816 TODO https://blog.sonarsource.com/etherpad-code-execution-vulnerabilities
+# CVE-2021-34817 TODO https://blog.sonarsource.com/etherpad-code-execution-vulnerabilities
 Etherpad:
   1:
     location: ['/src/package.json']
