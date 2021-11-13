@@ -78,6 +78,8 @@
 # CVE-2019-12831 1.8.21 https://blog.mybb.com/2019/06/10/mybb-1-8-21-released-security-maintenance-release/ https://blog.ripstech.com/2019/mybb-stored-xss-to-rce/
 # CVE-2019-20225 1.8.22 https://blog.mybb.com/2019/12/30/mybb-1-8-22-released-security-maintenance-release/ https://mybb.com/versions/1.8.22/
 # CVE-2020-15139 1.8.24 https://mybb.com/versions/1.8.24/ https://github.com/mybb/mybb/security/advisories/GHSA-37h7-vfv6-f8rj https://github.com/mybb/mybb/commit/37ad29dcd25489a37bdd89ebac761f22492558b0
+# CVE-2020-19048 TODO
+# CVE-2020-19049 TODO
 # CVE-2021-27279 1.8.25 https://blog.mybb.com/2021/02/22/mybb-1-8-25-released-security-release/ https://mybb.com/versions/1.8.25/ https://github.com/mybb/mybb/security/advisories/GHSA-6483-hcpp-p75w https://github.com/mybb/mybb/commit/cb781b49116bf5c4d8deca3e17498122b701677a
 # CVE-2021-27946 TODO
 # CVE-2021-27947 TODO
