@@ -279,15 +279,15 @@
 WordPress:
   1:
     location: ['/wp-includes/version.php', '/wp-includes/vars.php']
-    secure_version: '5.8.1'
+    secure_version: '5.8.2'
     regexp: ['\$wp_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://wordpress.org/news/2021/09/wordpress-5-8-1-security-and-maintenance-release/ https://nvd.nist.gov/vuln/detail/CVE-2021-39200'
+    cve: 'https://wordpress.org/news/2021/11/wordpress-5-8-2-security-and-maintenance-release/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
   2:
     location: ['/b2-include/b2vars.php']
-    secure_version: '5.8.1'
+    secure_version: '5.8.2'
     regexp: ['\$b2_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://wordpress.org/news/2021/09/wordpress-5-8-1-security-and-maintenance-release/ https://nvd.nist.gov/vuln/detail/CVE-2021-39200'
+    cve: 'https://wordpress.org/news/2021/11/wordpress-5-8-2-security-and-maintenance-release/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
