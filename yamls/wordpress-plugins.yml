@@ -2910,12 +2910,13 @@ WordPress plugin woocommerce-product-addon:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-14948'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# CVE-2018-20966 3.8.0
 WordPress plugin woocommerce-jetpack:
   1:
     location: ['/wp-content/plugins/woocommerce-jetpack/readme.txt']
-    secure_version: '3.8.0'
+    secure_version: '5.4.4'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2018-20966'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-34646'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 # CVE-2016-10977 4.5.0 https://www.openwall.com/lists/oss-security/2016/05/10/1'
