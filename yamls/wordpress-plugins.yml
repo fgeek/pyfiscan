@@ -4005,3 +4005,11 @@ WordPress plugin astra-sites:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-42360 https://www.wordfence.com/blog/2021/11/over-1-million-sites-impacted-by-vulnerability-in-starter-templates-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin shapepress-dsgvo:
+  1:
+    location: ['/wp-content/plugins/shapepress-dsgvo/readme.txt']
+    secure_version: '3.1.24'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-42359 https://www.wordfence.com/blog/2021/11/vulnerability-in-wp-dsgvo-tools-gdpr-plugin-allows-unauthenticated-page-deletion/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
