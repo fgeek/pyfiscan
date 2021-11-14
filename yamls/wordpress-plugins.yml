@@ -4021,3 +4021,11 @@ WordPress plugin contact-form-7-datepicker:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-11516 https://www.wordfence.com/blog/2020/04/high-severity-vulnerability-leads-to-closure-of-plugin-with-over-100000-installations/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin image-gallery-with-slideshow:
+  1:
+    location: ['/wp-content/plugins/image-gallery-with-slideshow/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-1002011 https://nvd.nist.gov/vuln/detail/CVE-2017-1002012 https://nvd.nist.gov/vuln/detail/CVE-2017-1002013 https://nvd.nist.gov/vuln/detail/CVE-2017-1002014 https://nvd.nist.gov/vuln/detail/CVE-2017-1002015 http://www.vapidlabs.com/advisory.php?v=189'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
