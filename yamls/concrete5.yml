@@ -19,6 +19,7 @@
 # CVE-2021-28145 8.5.5 https://documentation.concrete5.org/developers/introduction/version-history/855-release-notes https://www.concrete5.org/developers/security
 # CVE-2021-22949 TODO
 # CVE-2021-22950 TODO
+# CVE-2021-22951 TODO
 # CVE-2021-22953 TODO
 # CVE-2021-22958 TODO
 # CVE-2021-36766 TODO http://karmainsecurity.com/KIS-2021-05 https://packetstormsecurity.com/files/163564/Concrete5-8.5.5-Phar-Deserialization.html https://hackerone.com/reports/1063039 asked from concrete5 2021-07-27
@@ -38,6 +39,11 @@
 # CVE-2021-41463 TODO
 # CVE-2021-41464 TODO
 # CVE-2021-41465 TODO
+# CVE-2021-22966 TODO
+# CVE-2021-22967 TODO
+# CVE-2021-22968 TODO
+# CVE-2021-22969 TODO
+# CVE-2021-22970 TODO
 concrete5:
   1:
     location: ['/concrete/config/version.php']
