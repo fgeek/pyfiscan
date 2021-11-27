@@ -4048,3 +4048,16 @@ WordPress plugin gallery-photo-gallery:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24462'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# CVE-2012-6716 5.1.7
+# CVE-2013-7477
+# CVE-2013-7478
+# CVE-2013-7479
+# CVE-2013-7480
+WordPress plugin events-manager:
+  1:
+    location: ['/wp-content/plugins/events-manager/readme.txt']
+    secure_version: '5.9.8'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://plugins.trac.wordpress.org/changeset/2336019/events-manager'  # TODO: CVE needs to be requested
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
