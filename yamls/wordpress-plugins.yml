@@ -4058,6 +4058,6 @@ WordPress plugin events-manager:
     location: ['/wp-content/plugins/events-manager/readme.txt']
     secure_version: '5.9.8'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://plugins.trac.wordpress.org/changeset/2336019/events-manager'  # TODO: CVE needs to be requested
+    cve: 'https://plugins.trac.wordpress.org/changeset/2336019/events-manager'  # TODO: CVE requested 2021-11-27
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
