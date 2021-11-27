@@ -4039,11 +4039,12 @@ WordPress plugin woo-preview-emails:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-42363 https://www.wordfence.com/blog/2021/11/woocommerce-extension-reflected-xss-vulnerability/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# CVE-2016-10921 1.0.1
 WordPress plugin gallery-photo-gallery:
   1:
     location: ['/wp-content/plugins/gallery-photo-gallery/readme.txt']
-    secure_version: '1.0.1'
+    secure_version: '4.4.4'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2016-10921'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24462'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
