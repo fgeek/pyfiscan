@@ -3600,7 +3600,7 @@ WordPress plugin content-text-slider-on-post:
     location: ['/wp-content/plugins/content-text-slider-on-post/readme.txt']
     secure_version: '6.9'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://seclists.org/bugtraq/2015/Dec/124'  # TODO: CVE requested 2021-08-11
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-20019 https://seclists.org/bugtraq/2015/Dec/124'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin slideshow-jquery-image-gallery:
