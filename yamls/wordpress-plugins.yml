@@ -3913,6 +3913,7 @@ WordPress plugin clickbank-ads-clickbank-widget:
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     # TODO: This might be fixed
+    # TODO: CVE requested 2021-11-29
     cve: 'https://lists.openwall.net/bugtraq/2015/05/06/14'  # https://packetstormsecurity.com/files/131814/ https://www.exploit-db.com/exploits/36959 https://seclists.org/bugtraq/2015/May/45
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
