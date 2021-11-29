@@ -4062,3 +4062,11 @@ WordPress plugin events-manager:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-35037 https://nvd.nist.gov/vuln/detail/CVE-2020-35012 https://plugins.trac.wordpress.org/changeset/2336019/events-manager'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin mycred:
+  1:
+    location: ['/wp-content/plugins/mycred/readme.txt']
+    secure_version: '1.7.8'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-20008 https://plugins.trac.wordpress.org/changeset/1639363/mycred'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
