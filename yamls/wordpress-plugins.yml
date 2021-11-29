@@ -298,7 +298,7 @@ WordPress plugin newsletter:
     location: ['/wp-content/plugins/newsletter/plugin.php']
     secure_version: '6.8.2'
     regexp: ['define.*?NEWSLETTER_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://www.wordfence.com/blog/2020/08/newsletter-plugin-vulnerabilities-affect-over-300000-sites/'  # TODO: CVE. Wordfence page says "Pending", but not sure if that has been requested.
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-35932 https://nvd.nist.gov/vuln/detail/CVE-2020-35933 https://www.wordfence.com/blog/2020/08/newsletter-plugin-vulnerabilities-affect-over-300000-sites/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin gravity-forms:
