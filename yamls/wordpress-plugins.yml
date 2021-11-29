@@ -3744,7 +3744,7 @@ WordPress plugin wp-concours:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-17719 https://lists.openwall.net/full-disclosure/2017/12/19/15'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
-# N/A 2.5.4 https://lists.openwall.net/full-disclosure/2018/01/10/17 TODO: CVE requested 2021-08-15
+# CVE-2018-25019 2.5.4 https://lists.openwall.net/full-disclosure/2018/01/10/17
 # CVE-2020-7108 3.1.2 http://packetstormsecurity.com/files/156275/LearnDash-WordPress-LMS-3.1.2-Cross-Site-Scripting.html
 WordPress plugin learndash:
   1:
