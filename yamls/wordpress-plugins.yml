@@ -3912,9 +3912,7 @@ WordPress plugin clickbank-ads-clickbank-widget:
     location: ['/wp-content/plugins/clickbank-ads-clickbank-widget/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    # TODO: This might be fixed
-    # TODO: CVE requested 2021-11-29
-    cve: 'https://lists.openwall.net/bugtraq/2015/05/06/14'  # https://packetstormsecurity.com/files/131814/ https://www.exploit-db.com/exploits/36959 https://seclists.org/bugtraq/2015/May/45
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-20105 https://nvd.nist.gov/vuln/detail/CVE-2015-20106 https://lists.openwall.net/bugtraq/2015/05/06/14'  # https://packetstormsecurity.com/files/131814/ https://www.exploit-db.com/exploits/36959 https://seclists.org/bugtraq/2015/May/45
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin ultimate-profile-builder:
