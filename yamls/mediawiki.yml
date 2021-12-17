@@ -177,6 +177,9 @@
 # CVE-2021-41799 1.36.2/1.35.4/1.31.16 https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/2IFS5CM2YV4VMSODPX3J2LFHKSEWVFV5/
 # CVE-2021-41800 1.36.2/1.35.4/1.31.16 https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/2IFS5CM2YV4VMSODPX3J2LFHKSEWVFV5/
 # CVE-2021-41801 1.36.2/1.35.4/1.31.16 https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/2IFS5CM2YV4VMSODPX3J2LFHKSEWVFV5/
+# CVE-2021-44857 TODO
+# CVE-2021-44858 TODO
+# CVE-2021-45038 TODO
 MediaWiki 1.36:
   1:
     location: ['/includes/DefaultSettings.php']
