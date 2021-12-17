@@ -92,6 +92,7 @@
 # CVE-2021-25957 14.0.0 https://github.com/Dolibarr/dolibarr/commit/87f9530272925f0d651f59337a35661faeb6f377
 # CVE-2021-33616 TODO https://trovent.io/security-advisory-2106-01 https://lists.openwall.net/full-disclosure/2021/11/12/3
 # CVE-2021-33618 TODO https://trovent.io/security-advisory-2105-02 https://lists.openwall.net/full-disclosure/2021/11/12/2
+# CVE-2021-42220 TODO
 Dolibarr:
   1:
     location: ['/htdocs/filefunc.inc.php']
