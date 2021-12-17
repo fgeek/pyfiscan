@@ -177,15 +177,18 @@
 # CVE-2021-41799 1.36.2/1.35.4/1.31.16 https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/2IFS5CM2YV4VMSODPX3J2LFHKSEWVFV5/
 # CVE-2021-41800 1.36.2/1.35.4/1.31.16 https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/2IFS5CM2YV4VMSODPX3J2LFHKSEWVFV5/
 # CVE-2021-41801 1.36.2/1.35.4/1.31.16 https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/2IFS5CM2YV4VMSODPX3J2LFHKSEWVFV5/
-# CVE-2021-44857 1.37.1/1.36.3/1.35.5 https://www.mediawiki.org/wiki/2021-12_security_release/FAQ
+# CVE-2021-44854 1.37.1/1.36.3/1.35.5 https://lists.wikimedia.org/hyperkitty/list/wikitech-l@lists.wikimedia.org/thread/QEN3EK4JXAVJMJ5GF3GYOAKNJPEKFQYA/ https://phabricator.wikimedia.org/T292763
+# CVE-2021-44855 1.37.1/1.36.3/1.35.5 https://lists.wikimedia.org/hyperkitty/list/wikitech-l@lists.wikimedia.org/thread/QEN3EK4JXAVJMJ5GF3GYOAKNJPEKFQYA/ https://phabricator.wikimedia.org/T293589
+# CVE-2021-44856 1.37.1/1.36.3/1.35.5 https://lists.wikimedia.org/hyperkitty/list/wikitech-l@lists.wikimedia.org/thread/QEN3EK4JXAVJMJ5GF3GYOAKNJPEKFQYA/ https://phabricator.wikimedia.org/T271037
+# CVE-2021-44857 1.37.1/1.36.3/1.35.5 https://www.mediawiki.org/wiki/2021-12_security_release/FAQ https://lists.wikimedia.org/hyperkitty/list/wikitech-l@lists.wikimedia.org/thread/QEN3EK4JXAVJMJ5GF3GYOAKNJPEKFQYA/ https://phabricator.wikimedia.org/T297322
 # CVE-2021-44858 1.37.1/1.36.3/1.35.5 https://www.mediawiki.org/wiki/2021-12_security_release/FAQ
-# CVE-2021-45038 1.37.1/1.36.3/1.35.5 https://www.mediawiki.org/wiki/2021-12_security_release/FAQ
+# CVE-2021-45038 1.37.1/1.36.3/1.35.5 https://www.mediawiki.org/wiki/2021-12_security_release/FAQ https://lists.wikimedia.org/hyperkitty/list/wikitech-l@lists.wikimedia.org/thread/QEN3EK4JXAVJMJ5GF3GYOAKNJPEKFQYA/  https://phabricator.wikimedia.org/T297574
 MediaWiki 1.37:
   1:
     location: ['/includes/DefaultSettings.php']
     secure_version: '1.37.1'
     regexp: ['\$wgVersion.*?(?P<version>1\.37\.[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-44857 https://nvd.nist.gov/vuln/detail/CVE-2021-44858 https://nvd.nist.gov/vuln/detail/CVE-2021-45038'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-44854 https://nvd.nist.gov/vuln/detail/CVE-2021-44855 https://nvd.nist.gov/vuln/detail/CVE-2021-44856 https://nvd.nist.gov/vuln/detail/CVE-2021-44857 https://nvd.nist.gov/vuln/detail/CVE-2021-44858 https://nvd.nist.gov/vuln/detail/CVE-2021-45038'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.36:
@@ -193,7 +196,7 @@ MediaWiki 1.36:
     location: ['/includes/DefaultSettings.php']
     secure_version: '1.36.3'
     regexp: ['\$wgVersion.*?(?P<version>1\.36\.[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-44857 https://nvd.nist.gov/vuln/detail/CVE-2021-44858 https://nvd.nist.gov/vuln/detail/CVE-2021-45038'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-44854 https://nvd.nist.gov/vuln/detail/CVE-2021-44855 https://nvd.nist.gov/vuln/detail/CVE-2021-44856 https://nvd.nist.gov/vuln/detail/CVE-2021-44857 https://nvd.nist.gov/vuln/detail/CVE-2021-44858 https://nvd.nist.gov/vuln/detail/CVE-2021-45038'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.35:
@@ -201,7 +204,7 @@ MediaWiki 1.35:
     location: ['/includes/DefaultSettings.php']
     secure_version: '1.35.5'
     regexp: ['\$wgVersion.*?(?P<version>1\.35\.[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-44857 https://nvd.nist.gov/vuln/detail/CVE-2021-44858 https://nvd.nist.gov/vuln/detail/CVE-2021-45038'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-44854 https://nvd.nist.gov/vuln/detail/CVE-2021-44855 https://nvd.nist.gov/vuln/detail/CVE-2021-44856 https://nvd.nist.gov/vuln/detail/CVE-2021-44857 https://nvd.nist.gov/vuln/detail/CVE-2021-44858 https://nvd.nist.gov/vuln/detail/CVE-2021-45038'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.34:
