@@ -3,7 +3,7 @@
 # CVE-2010-4555 1.4.22  http://www.squirrelmail.org/security/issue/2011-07-11
 # CVE-2011-2752 1.4.22  http://www.squirrelmail.org/security/issue/2011-07-11
 # CVE-2011-2753 1.4.22  http://www.squirrelmail.org/security/issue/2011-07-11
-# CVE-2017-7692 TODO    https://legalhackers.com/advisories/SquirrelMail-Exploit-Remote-Code-Exec-CVE-2017-7692-Vuln.html http://seclists.org/fulldisclosure/2017/Apr/89 http://www.openwall.com/lists/oss-security/2017/04/24/6
+# CVE-2017-7692 TODO    https://legalhackers.com/advisories/SquirrelMail-Exploit-Remote-Code-Exec-CVE-2017-7692-Vuln.html http://seclists.org/fulldisclosure/2017/Apr/89 http://www.openwall.com/lists/oss-security/2017/04/24/6 CVE-2017-5181 was duplicate of this
 # TODO http://www.openwall.com/lists/oss-security/2018/03/17/2
 # TODO http://www.openwall.com/lists/oss-security/2018/07/26/2
 SquirrelMail:
