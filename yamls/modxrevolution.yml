@@ -13,15 +13,13 @@
 # CVE-2017-7323
 # CVE-2017-7324
 # CVE-2017-8115 2.6.0 https://github.com/modxcms/revolution/issues/13432 https://github.com/modxcms/revolution/pull/13433
-# CVE-2017-20009 2.5.7 https://lists.openwall.net/bugtraq/2017/05/03/2 https://seclists.org/bugtraq/2017/May/2
-# CVE-2017-20010 2.5.7 https://lists.openwall.net/bugtraq/2017/05/03/2 https://seclists.org/bugtraq/2017/May/2
 # CVE-2017-9067 2.5.7 https://citadelo.com/en/2017/04/modx-revolution-cms/
 # CVE-2017-9068 2.5.7
 # CVE-2017-9069 2.5.7
 # CVE-2017-9070 2.5.7
 # CVE-2017-9071 2.5.7
 # CVE-2017-11744 2.6.4 https://github.com/modxcms/revolution/issues/13564
-# CVE-2017-1000067 2.5.4
+# CVE-2017-1000067 2.5.7 https://lists.openwall.net/bugtraq/2017/05/03/2 https://seclists.org/bugtraq/2017/May/2 https://github.com/modxcms/revolution/blob/9bf1c6cf7bdc12190b404f93ce7798b39c07bc59/core/xpdo/changelog.txt
 # CVE-2017-1000223 2.5.7
 # CVE-2018-10382 2.6.4
 # CVE-2018-1000207 2.6.5 https://github.com/modxcms/revolution/pull/13979 https://modx.com/blog/modx-revolution-2.6.5 https://forums.modx.com/thread/104040/revolution-2-6-4-and-prior-two-cricital-vulnerabilities-upgrade-mandatory-patch
