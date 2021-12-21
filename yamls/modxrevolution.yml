@@ -13,7 +13,8 @@
 # CVE-2017-7323
 # CVE-2017-7324
 # CVE-2017-8115 2.6.0 https://github.com/modxcms/revolution/issues/13432 https://github.com/modxcms/revolution/pull/13433
-# TODO 2.5.7 https://lists.openwall.net/bugtraq/2017/05/03/2 https://seclists.org/bugtraq/2017/May/2 CVE requested 2021-12-20
+# CVE-2017-20009 2.5.7 https://lists.openwall.net/bugtraq/2017/05/03/2 https://seclists.org/bugtraq/2017/May/2
+# CVE-2017-20010 2.5.7 https://lists.openwall.net/bugtraq/2017/05/03/2 https://seclists.org/bugtraq/2017/May/2
 # CVE-2017-9067 2.5.7 https://citadelo.com/en/2017/04/modx-revolution-cms/
 # CVE-2017-9068 2.5.7
 # CVE-2017-9069 2.5.7
