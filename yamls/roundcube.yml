@@ -61,12 +61,12 @@
 # TODO https://github.com/roundcube/roundcubemail/issues/7576 https://github.com/roundcube/roundcubemail/commit/39086d4c87358defdf826df8fc17d4eb3e2306d5 not included in any release 2021-08-14
 # CVE-2021-44025 1.4.12
 # CVE-2021-44026 1.4.12
-# CVE-2021-XXXX TODO https://roundcube.net/news/2021/12/30/update-1.5.2-released https://roundcube.net/news/2021/12/30/security-update-1.4.13-released https://github.com/roundcube/roundcubemail/commit/8894fddd59b770399eed4ef8d4da5773913b5bf0 (1.5.2) https://github.com/roundcube/roundcubemail/commit/b2400a4b592e3094b6c84e6000d512f99ae0eed8 (1.4.13)
+# CVE-2021-46144 1.5.2/1.4.13 https://roundcube.net/news/2021/12/30/update-1.5.2-released https://roundcube.net/news/2021/12/30/security-update-1.4.13-released https://github.com/roundcube/roundcubemail/commit/8894fddd59b770399eed4ef8d4da5773913b5bf0 (1.5.2) https://github.com/roundcube/roundcubemail/commit/b2400a4b592e3094b6c84e6000d512f99ae0eed8 (1.4.13)
 Roundcube:
   1:
     location: ['/program/include/iniset.php']
-    secure_version: '1.4.12'
+    secure_version: '1.5.2'
     regexp: ['define.*?RCMAIL_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://roundcube.net/news/2021/11/12/security-updates-1.4.12-and-1.3.17-released https://nvd.nist.gov/vuln/detail/CVE-2021-44025 https://nvd.nist.gov/vuln/detail/CVE-2021-44026'
+    cve: 'https://roundcube.net/news/2021/12/30/update-1.5.2-released https://nvd.nist.gov/vuln/detail/CVE-2021-46144'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
