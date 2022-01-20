@@ -4089,3 +4089,11 @@ WordPress plugin contact-form-entries:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-25079 https://secsi.io/blog/cve-2021-25079-multiple-reflected-xss-in-contact-form-entries-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin wp-html-mail:
+  1:
+    location: ['/wp-content/plugins/wp-html-mail/readme.txt']
+    secure_version: '3.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://www.wordfence.com/blog/2022/01/unauthenticated-xss-vulnerability-patched-in-html-email-template-designer-plugin/ https://nvd.nist.gov/vuln/detail/CVE-2022-0218'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
