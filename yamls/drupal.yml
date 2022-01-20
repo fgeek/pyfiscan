@@ -120,26 +120,37 @@
 # https://drupal.org/SA-CORE-2021-008   CVE-2020-13675  9.2.6/9.1.13/8.9.19
 # https://drupal.org/SA-CORE-2021-009   CVE-2020-13676  9.2.6/9.1.13/8.9.19
 # https://drupal.org/SA-CORE-2021-010   CVE-2020-13677  9.2.6/9.1.13/8.9.19
+# https://drupal.org/SA-CORE-2021-011   CVE-2021-41164/CVE-2021-4116    9.2.9/9.1.14/8.9.20
+# https://drupal.org/SA-CORE-2022-001   CVE-2021-41183  9.3.3/9.2.11/7.86
+# https://drupal.org/SA-CORE-2022-002   CVE-2010-5312/CVE-2016-7103/CVE-2021-41182/CVE-2021-41183   7.86
+Drupal 9.3:
+  1:
+    location: ['/core/lib/Drupal.php']
+    secure_version: '9.3.3'
+    regexp: ['  const VERSION.*?(?P<version>9\.2\.[0-9]{1,})']
+    cve: 'https://drupal.org/SA-CORE-2022-001'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
 Drupal 9.2:
   1:
     location: ['/core/lib/Drupal.php']
-    secure_version: '9.2.6'
+    secure_version: '9.2.11'
     regexp: ['  const VERSION.*?(?P<version>9\.2\.[0-9]{1,})']
-    cve: 'https://drupal.org/SA-CORE-2021-006 https://drupal.org/SA-CORE-2021-007 https://drupal.org/SA-CORE-2021-008 https://drupal.org/SA-CORE-2021-009 https://drupal.org/SA-CORE-2021-010'
+    cve: 'https://drupal.org/SA-CORE-2022-001'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Drupal 9.1:
   1:
     location: ['/core/lib/Drupal.php']
-    secure_version: '9.1.13'
+    secure_version: '9.1.14'
     regexp: ['  const VERSION.*?(?P<version>9\.1\.[0-9]{1,})']
-    cve: 'https://drupal.org/SA-CORE-2021-006 https://drupal.org/SA-CORE-2021-007 https://drupal.org/SA-CORE-2021-008 https://drupal.org/SA-CORE-2021-009 https://drupal.org/SA-CORE-2021-010'
+    cve: 'https://drupal.org/SA-CORE-2021-011'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Drupal 9.0:
   1:
     location: ['/core/lib/Drupal.php']
-    secure_version: '9.2.6'
+    secure_version: '9.3.3'
     regexp: ['  const VERSION.*?(?P<version>9\.0\.[0-9]{1,})']
     cve: 'Drupal 9.0 is end of life.'
     fingerprint: detect_general
@@ -147,17 +158,17 @@ Drupal 9.0:
 Drupal 8.9:
   1:
     location: ['/core/lib/Drupal.php']
-    secure_version: '8.9.19'
+    secure_version: '8.9.20'
     regexp: ['  const VERSION.*?(?P<version>8\.[0-9.]{1,})']
-    cve: 'https://drupal.org/SA-CORE-2021-006 https://drupal.org/SA-CORE-2021-007 https://drupal.org/SA-CORE-2021-008 https://drupal.org/SA-CORE-2021-009 https://drupal.org/SA-CORE-2021-010'
+    cve: 'https://drupal.org/SA-CORE-2021-011'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Drupal 7:
   1:
     location: ['/includes/bootstrap.inc']
-    secure_version: '7.82'
+    secure_version: '7.86'
     regexp: ['define.*?VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://drupal.org/SA-CORE-2021-004'
+    cve: 'https://drupal.org/SA-CORE-2022-002'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Drupal 6:
