@@ -58,9 +58,12 @@
 # CVE-2016-9419 1.8.8
 # CVE-2016-9420 1.8.8
 # CVE-2016-9421 1.8.8
-# https://seclists.org/bugtraq/2016/Apr/76
-# https://seclists.org/bugtraq/2016/Apr/81
-# CVE-2017-7566
+# https://seclists.org/bugtraq/2016/Apr/76 "Mybb Cms (create forum and edit) Cross-Site Script Vulnerability"
+# https://seclists.org/bugtraq/2016/Apr/81 "Mybb Cms (private.php Page) Denial Of Service Vulnerability"
+# https://lists.openwall.net/full-disclosure/2016/09/15/15 not sure if CVE has been assigned
+# https://lists.openwall.net/full-disclosure/2016/09/15/16 not sure if CVE has been assigned
+# https://lists.openwall.net/full-disclosure/2016/09/15/17 not sure if CVE has been assigned
+# CVE-2017-7566 1.8.11 https://lists.openwall.net/bugtraq/2017/04/07/1 https://lists.openwall.net/full-disclosure/2017/04/07/1 https://blog.mybb.com/2017/04/04/mybb-1-8-11-merge-system-1-8-11-release/
 # CVE-2017-8103 1.8.11
 # CVE-2017-8104 1.8.11 https://blog.mybb.com/2017/04/04/mybb-1-8-11-merge-system-1-8-11-release/
 # CVE-2017-16780 1.8.13 https://blog.mybb.com/2017/11/07/mybb-1-8-13-released-security-maintenance-release/
