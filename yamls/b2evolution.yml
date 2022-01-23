@@ -12,15 +12,17 @@
 # CVE-2017-5553
 # CVE-2016-8901 6.7.7 http://www.openwall.com/lists/oss-security/2016/09/30/3 https://github.com/b2evolution/b2evolution/commit/25c21cf9cc4261324001f9039509710b37ee2c4d https://github.com/b2evolution/b2evolution/commit/999b5ad1d59760d7e450ceb541f55432fc74cd27
 # CVE-2017-1000423 6.9.3/6.8.11 https://github.com/b2evolution/b2evolution/commit/0096a3ebc85f6aadbda2c4427cd092a538b161d2 https://github.com/b2evolution/b2evolution/commit/b899d654d931f3bf3cfbbdd71e0d1a0f3a16d04c
-# CVE-2020-22839 TODO
-# CVE-2020-22840 TODO
-# CVE-2020-22841 TODO
-# CVE-2021-28242 TODO
+# CVE-2020-22839 6.11.7 http://packetstormsecurity.com/files/161363/b2evolution-CMS-6.11.6-Cross-Site-Scripting.html https://sohambakore.medium.com/b2evolution-cms-reflected-xss-in-tab-type-parameter-in-evoadm-php-38886216cdd3 https://www.exploit-db.com/exploits/49555
+# CVE-2020-22840 6.11.7 http://packetstormsecurity.com/files/161362/b2evolution-CMS-6.11.6-Open-Redirection.html https://github.com/b2evolution/b2evolution/issues/102 https://www.exploit-db.com/exploits/49554
+# CVE-2020-22841 6.11.7 http://packetstormsecurity.com/files/161363/b2evolution-CMS-6.11.6-Cross-Site-Scripting.html https://github.com/b2evolution/b2evolution/issues/102 https://www.exploit-db.com/exploits/49551
+# CVE-2021-28242 7.2.3 http://packetstormsecurity.com/files/162489/b2evolution-7-2-2-SQL-Injection.html https://deadsh0t.medium.com/authenticated-boolean-based-blind-error-based-sql-injection-b752225f0644 https://github.com/b2evolution/b2evolution/issues/109
+# CVE-2021-31631 TODO https://gist.github.com/stacksmasher007/76514ab2b782fb4383f1121e6fc19241 7.2.3 affected, CSRF
+# CVE-2021-31632 TODO https://gist.github.com/Stacksmashers101/c6b9ea92f42c23473170bb3acc8fc5fe 7.2.3 affected, SQLi
 b2evolution:
   1:
     location: ['/readme.html']
-    secure_version: '6.9.3'
+    secure_version: '7.2.3'
     regexp: ['.*?This is b2evolution CMS version.*?(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-1000423'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-28242'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
