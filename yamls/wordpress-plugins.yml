@@ -4099,3 +4099,27 @@ WordPress plugin wp-html-mail:
     cve: 'https://www.wordfence.com/blog/2022/01/unauthenticated-xss-vulnerability-patched-in-html-email-template-designer-plugin/ https://nvd.nist.gov/vuln/detail/CVE-2022-0218'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin easy-login-woocommerce:
+  1:
+    location: ['/wp-content/plugins/easy-login-woocommerce/readme.txt']
+    secure_version: '2.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://www.wordfence.com/blog/2022/01/84000-wordpress-sites-affected-by-three-plugins-with-the-same-vulnerability/ https://nvd.nist.gov/vuln/detail/CVE-2022-0215'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin waitlist-woocommerce:
+  1:
+    location: ['/wp-content/plugins/waitlist-woocommerce/readme.txt']
+    secure_version: '2.5.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://www.wordfence.com/blog/2022/01/84000-wordpress-sites-affected-by-three-plugins-with-the-same-vulnerability/ https://nvd.nist.gov/vuln/detail/CVE-2022-0215'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin side-cart-woocommerce:
+  1:
+    location: ['/wp-content/plugins/side-cart-woocommerce/readme.txt']
+    secure_version: '2.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://www.wordfence.com/blog/2022/01/84000-wordpress-sites-affected-by-three-plugins-with-the-same-vulnerability/ https://nvd.nist.gov/vuln/detail/CVE-2022-0215'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
