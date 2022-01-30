@@ -2369,7 +2369,7 @@ WordPress plugin wp-copysafe-web:
     location: ['/wp-content/plugins/wp-copysafe-web/readme.txt']
     secure_version: '2.6'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-8100'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-8100 https://lists.openwall.net/full-disclosure/2017/04/07/13'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin shibboleth:
