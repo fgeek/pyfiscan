@@ -30,7 +30,7 @@
 # CVE-2017-14925 17.1
 # CVE-2017-14925 TODO
 # CVE-2017-9145 TODO 2017-06-28 fix isn't in any release
-# CVE-2017-9305 TODO https://github.com/tikiorg/tiki/commit/6c016e8f066d2f404b18eaa1af7fa0c7a9651ccd 2017-06-03 fix isn't in any release
+# CVE-2017-9305 17.0 https://github.com/tikiorg/tiki/commit/6c016e8f066d2f404b18eaa1af7fa0c7a9651ccd
 # CVE-2018-14849 18.2/15.7/12.14 https://sourceforge.net/p/tikiwiki/code/66809
 # CVE-2018-14850 18.2/15.7/12.14 https://sourceforge.net/p/tikiwiki/code/66990
 # CVE-2018-20719 17.2
