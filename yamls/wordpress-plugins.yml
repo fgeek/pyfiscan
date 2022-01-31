@@ -4124,3 +4124,12 @@ WordPress plugin side-cart-woocommerce:
     cve: 'https://www.wordfence.com/blog/2022/01/84000-wordpress-sites-affected-by-three-plugins-with-the-same-vulnerability/ https://nvd.nist.gov/vuln/detail/CVE-2022-0215'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# CVE-2012-1834 0.8.9
+WordPress plugin cms-tree-page-view:
+  1:
+    location: ['/wp-content/plugins/cms-tree-page-view/readme.txt']
+    secure_version: '1.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://lists.openwall.net/full-disclosure/2018/01/10/9'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
