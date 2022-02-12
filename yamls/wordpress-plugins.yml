@@ -4138,7 +4138,7 @@ WordPress plugin php-everywhere:
   1:
     location: ['/wp-content/plugins/php-everywhere/readme.txt']
     secure_version: '3.0.0'
-    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    regexp: ['= (?P<version>[0-9.]{1,})']
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2022-24663 https://nvd.nist.gov/vuln/detail/CVE-2022-24664 https://nvd.nist.gov/vuln/detail/CVE-2022-24665 https://www.wordfence.com/blog/2022/02/critical-vulnerabilities-in-php-everywhere-allow-remote-code-execution/ https://www.bleepingcomputer.com/news/security/php-everywhere-rce-flaws-threaten-thousands-of-wordpress-sites/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
