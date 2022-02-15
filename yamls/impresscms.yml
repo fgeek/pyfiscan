@@ -4,13 +4,14 @@
 # CVE-2014-1836 1.3.6   https://github.com/pedrib/PoC/blob/master/impresscms-1.3.5.txt
 # CVE-2014-4036 1.3.7
 # CVE-2018-13983 TODO https://www.netsparker.com/web-applications-advisories/ns-18-033-cross-site-scripting-in-impresscms/
-# CVE-2020-17551 TODO
-# CVE-2021-28088 TODO
+# CVE-2020-17551 1.4.1 https://github.com/ImpressCMS/impresscms/issues/659
+# CVE-2021-28088 TODO 1.4.2 is affected, https://anotepad.com/note/read/s3kkk6h7 https://hackerone.com/reports/1119296
+# CVE-2022-24977 1.4.2
 ImpressCMS:
   1:
     location: ['/htdocs/include/version.php']
-    secure_version: '1.3.7'
+    secure_version: '1.4.2'
     regexp: ["define.*?ICMS_VERSION_NAME.*?ImpressCMS.*?(?P<version>[0-9.]+)"]
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2014-4036'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2022-24977'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
