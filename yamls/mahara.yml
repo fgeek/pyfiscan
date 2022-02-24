@@ -77,6 +77,8 @@
 # CVE-2021-43264 TODO
 # CVE-2021-43265 TODO
 # CVE-2021-43266 TODO
+# CVE-2022-24111 TODO
+# CVE-2022-24694 TODO
 Mahara:
   1:
     location: ['/htdocs/lib/version.php']

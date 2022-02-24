@@ -102,7 +102,7 @@
 # CVE-2020-16255 10.5 https://owncloud.com/security-advisories/reflected-xss-in-login-page-forgot-password-functionallity/
 # CVE-2020-28644 10.6 https://owncloud.com/security-advisories/cross-site-request-forgery-in-the-ocs-api/
 # CVE-2020-28645 10.6 https://owncloud.com/security-advisories/missing-user-validation-leading-to-information-disclosure/
-# CVE-2017-0891 TODO
+# CVE-2017-0891 TODO https://lists.openwall.net/full-disclosure/2017/05/16/1
 # CVE-2021-35946 TODO
 # CVE-2021-35947 TODO
 # CVE-2021-35948 TODO
