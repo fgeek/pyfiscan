@@ -94,14 +94,15 @@
 # CVE-2021-33618 TODO https://trovent.io/security-advisory-2105-02 https://lists.openwall.net/full-disclosure/2021/11/12/2
 # CVE-2021-42220 TODO
 # CVE-2022-22293 fix not available, probably not reported to vendor and vendor might not care about admin panel cases https://github.com/mustgundogdu/Research/blob/main/Dolibar_7.0.2-StoredXSS/README.md authenticated in admin panel
-# CVE-2022-0224 TODO
-# CVE-2022-0174 TODO https://github.com/dolibarr/dolibarr/commit/d892160f4f130385a3ce520f66cb8cf2eb8c5c32 https://huntr.dev/bounties/ed3ed4ce-3968-433c-a350-351c8f8b60db/
-# CVE-2022-0731 TODO
+# CVE-2022-0174 15.0.0 https://github.com/dolibarr/dolibarr/commit/d892160f4f130385a3ce520f66cb8cf2eb8c5c32 https://huntr.dev/bounties/ed3ed4ce-3968-433c-a350-351c8f8b60db/
+# CVE-2022-0224 15.0.0 https://github.com/dolibarr/dolibarr/commit/b9b45fb50618aa8053961f50bc8604b188d0ea79 https://huntr.dev/bounties/f1d1ce3e-ca92-4c7b-b1b8-934e28eaa486/
+# CVE-2022-0731 TODO https://github.com/dolibarr/dolibarr/commit/209ab708d4b65fbd88ba4340d60b7822cb72651a https://huntr.dev/bounties/e242ab4e-fc70-4b2c-a42d-5b3ee4895de8 fix not yet in any release 2022-02-25
+# CVE-2022-0746 TODO https://github.com/dolibarr/dolibarr/commit/4973019630d51ad76b7c1a4141ec7a33053a7d21 https://huntr.dev/bounties/b812ea22-0c02-46fe-b89f-04519dfb1ebd fix not yet in any release 2022-02-25
 Dolibarr:
   1:
     location: ['/htdocs/filefunc.inc.php']
-    secure_version: '12.0.4'
+    secure_version: '15.0.0'
     regexp: ['.*?DOL_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-35136'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2022-0174 https://nvd.nist.gov/vuln/detail/CVE-2022-0224'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
