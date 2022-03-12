@@ -281,18 +281,19 @@
 # CVE-2022-21662 5.8.3 https://wordpress.org/news/2022/01/wordpress-5-8-3-security-release/ https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-699q-3hj9-889w https://hackerone.com/reports/425342
 # CVE-2022-21663 5.8.3 https://wordpress.org/news/2022/01/wordpress-5-8-3-security-release/ https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-jmmq-m8p8-332h https://hackerone.com/reports/541469
 # CVE-2022-21664 5.8.3 https://wordpress.org/news/2022/01/wordpress-5-8-3-security-release/ https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-jp3p-gw8h-6x86 https://github.com/WordPress/wordpress-develop/commit/c09ccfbc547d75b392dbccc1ef0b4442ccd3c957
+# CVE-2021-20083 5.9.2 https://www.wordfence.com/blog/2022/03/wordpress-5-9-2-security-update-fixes-xss-and-prototype-pollution-vulnerabilities/
 WordPress:
   1:
     location: ['/wp-includes/version.php', '/wp-includes/vars.php']
-    secure_version: '5.8.3'
+    secure_version: '5.9.2'
     regexp: ['\$wp_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2022-21661 https://nvd.nist.gov/vuln/detail/CVE-2022-21662 https://nvd.nist.gov/vuln/detail/CVE-2022-21663 https://nvd.nist.gov/vuln/detail/CVE-2022-21664 https://wordpress.org/news/2022/01/wordpress-5-8-3-security-release/'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-20083 https://www.wordfence.com/blog/2022/03/wordpress-5-9-2-security-update-fixes-xss-and-prototype-pollution-vulnerabilities/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
   2:
     location: ['/b2-include/b2vars.php']
-    secure_version: '5.8.3'
+    secure_version: '5.9.2'
     regexp: ['\$b2_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2022-21661 https://nvd.nist.gov/vuln/detail/CVE-2022-21662 https://nvd.nist.gov/vuln/detail/CVE-2022-21663 https://nvd.nist.gov/vuln/detail/CVE-2022-21664 https://wordpress.org/news/2022/01/wordpress-5-8-3-security-release/'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-20083 https://www.wordfence.com/blog/2022/03/wordpress-5-9-2-security-update-fixes-xss-and-prototype-pollution-vulnerabilities/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
