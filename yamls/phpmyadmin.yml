@@ -206,11 +206,12 @@
 # CVE-2020-11441 TODO https://github.com/phpmyadmin/phpmyadmin/issues/16056 currently open 2021-05-18
 # PMASA-2022-1 5.1.2/4.9.8 CVE-2022-23807 https://github.com/phpmyadmin/phpmyadmin/commit/ca54f1db050859eb8555875c6aa5d7796fdf4b32
 # PMASA-2022-2 5.1.2 CVE-2022-23808 https://github.com/phpmyadmin/phpmyadmin/commit/5118acce1dfcdb09cbc0f73927bf51c46feeaf38 https://github.com/phpmyadmin/phpmyadmin/commit/44eb12f15a562718bbe54c9a16af91ceea335d59
+# CVE-2022-0813 5.1.3/4.9.10 https://www.phpmyadmin.net/news/2022/2/11/phpmyadmin-4910-and-513-are-released/
 phpMyAdmin:
   1:
     location: ['/libraries/Config.class.php']
-    secure_version: '5.1.2'
+    secure_version: '5.1.3'
     regexp: ['.*?PMA_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://www.phpmyadmin.net/security/PMASA-2022-1/ https://nvd.nist.gov/vuln/detail/CVE-2022-23807 https://www.phpmyadmin.net/security/PMASA-2022-2/ https://nvd.nist.gov/vuln/detail/CVE-2022-23808'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2022-0813 https://www.phpmyadmin.net/news/2022/2/11/phpmyadmin-4910-and-513-are-released/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
