@@ -4,6 +4,7 @@
 # CVE-2015-6517
 # CVE-2015-6518
 # CVE-2018-10362 1.9.8 https://github.com/phpLiteAdmin/pla/issues/11
+# CVE-2022-XXXX TODO https://bitbucket.org/phpliteadmin/public/issues/399/xss-vulnerability https://bitbucket.org/phpliteadmin/public/pull-requests/16/fix-an-xss-vulnerability-with-the-newrows
 phpLiteAdmin:
   1:
     location: ['/phpliteadmin.php']
