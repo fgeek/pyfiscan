@@ -7,6 +7,10 @@
 # CVE-2020-17551 1.4.1 https://github.com/ImpressCMS/impresscms/issues/659
 # CVE-2021-28088 TODO 1.4.2 is affected, https://anotepad.com/note/read/s3kkk6h7 https://hackerone.com/reports/1119296
 # CVE-2022-24977 1.4.2
+# CVE-2021-26598 TODO
+# CVE-2021-26599 TODO
+# CVE-2021-26600 TODO
+# CVE-2021-26601 TODO
 ImpressCMS:
   1:
     location: ['/htdocs/include/version.php']
