@@ -3357,12 +3357,13 @@ WordPress plugin wpcf7-redirect:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24278 https://nvd.nist.gov/vuln/detail/CVE-2021-24279 https://nvd.nist.gov/vuln/detail/CVE-2021-24280 https://nvd.nist.gov/vuln/detail/CVE-2021-24281 https://nvd.nist.gov/vuln/detail/CVE-2021-24282 https://www.wordfence.com/blog/2021/04/severe-vulnerabilities-patched-in-redirection-for-contact-form-7-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# CVE-2021-24295 5.153.4 https://www.wordfence.com/blog/2021/05/sql-injection-vulnerability-patched-in-cleantalk-antispam-plugin/
 WordPress plugin cleantalk-spam-protect:
   1:
     location: ['/wp-content/plugins/cleantalk-spam-protect/readme.txt']
-    secure_version: '5.153.4'
+    secure_version: '5.174.1'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24295 https://www.wordfence.com/blog/2021/05/sql-injection-vulnerability-patched-in-cleantalk-antispam-plugin/'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2022-28221 https://www.wordfence.com/blog/2022/03/reflected-xss-in-spam-protection-antispam-firewall-by-cleantalk/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin metronet-profile-picture:
