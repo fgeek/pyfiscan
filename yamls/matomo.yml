@@ -16,7 +16,7 @@
 # CVE-2015-7815 2.15.0  https://matomo.org/changelog/piwik-2-15-0/ http://karmainsecurity.com/KIS-2015-09
 # CVE-2015-7816 2.15.0  https://matomo.org/changelog/piwik-2-15-0/ http://karmainsecurity.com/KIS-2015-10
 # CVE-2019-12215 https://github.com/matomo-org/matomo/issues/14464 unimportant path disclosure issue
-# TODO: pending 2.16.1  https://matomo.org/changelog/piwik-2-16-1/ http://karmainsecurity.com/KIS-2016-13
+# N/A 2.16.1 https://matomo.org/changelog/piwik-2-16-1/ http://karmainsecurity.com/KIS-2016-13 https://www.openwall.com/lists/oss-security/2016/11/10/6 MITRE never responded for unknown reason
 Piwik:
   1:
     location: ['/core/Version.php']
