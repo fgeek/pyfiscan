@@ -4151,3 +4151,11 @@ WordPress plugin photoswipe-masonry:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2022-0750 https://www.wordfence.com/blog/2022/02/stored-cross-site-scripting-vulnerability-patched-in-a-wordpress-photo-gallery-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin sg-security:
+  1:
+    location: ['/wp-content/plugins/sg-security/readme.txt']
+    secure_version: '1.2.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2022-0992 https://nvd.nist.gov/vuln/detail/CVE-2022-0993 https://www.wordfence.com/blog/2022/04/critical-authentication-bypass-vulnerability-patched-in-siteground-security-plugin/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
