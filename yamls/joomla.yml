@@ -240,56 +240,56 @@
 Joomla 4:
   1:
     location: ['/administrator/manifests/files/joomla.xml']
-    secure_version: '4.0.1'
+    secure_version: '4.1.1'
     regexp: ['[\t]<version>(?P<version>4\.[0-9.]{1,})']
-    cve: 'https://developer.joomla.org/security-centre/861-20210801-core-insufficient-access-control-for-com-media-deletion-endpoint https://nvd.nist.gov/vuln/detail/CVE-2021-26040'
+    cve: 'https://karmainsecurity.com/KIS-2022-05 https://nvd.nist.gov/vuln/detail/CVE-2022-23793'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Joomla 3:
   1:
     location: ['/administrator/manifests/files/joomla.xml']
-    secure_version: '3.9.28'
+    secure_version: '3.10.7'
     regexp: ['[\t]<version>(?P<version>3\.[0-9.]{1,})']
-    cve: 'https://www.joomla.org/announcements/release-news/5835-joomla-3-9-26.html https://nvd.nist.gov/vuln/detail/CVE-2021-26030 https://developer.joomla.org/security-centre/850-20210401-core-escape-xss-in-logo-parameter-error-pages.html https://nvd.nist.gov/vuln/detail/CVE-2021-26031 https://developer.joomla.org/security-centre/851-20210402-core-inadequate-filters-on-module-layout-settings.html'
+    cve: 'https://karmainsecurity.com/KIS-2022-05 https://nvd.nist.gov/vuln/detail/CVE-2022-23793'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Joomla 2.5:
   1:
     location: ['/administrator/manifests/files/joomla.xml']
-    secure_version: '4.0.1'
+    secure_version: '4.1.1'
     regexp: ['[\t]<version>(?P<version>2\.5\.[0-9]{1,})']
-    cve: 'Joomla 2.5 is end of life. Please upgrade to 4.0.1 version.'
+    cve: 'Joomla 2.5 is end of life. Please upgrade to 4.1.1 version.'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Joomla 1.7:
   1:
     location: ['/includes/version.php']
-    secure_version: '4.0.1'
+    secure_version: '4.1.1'
     regexp: ['[\t]+public[\t|\s]\$RELEASE.*?(?P<version>1.7)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.7 is end of life. Please upgrade to 4.0.1 version.'
+    cve: 'Joomla 1.7 is end of life. Please upgrade to 4.1.1 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.6:
   1:
     location: ['/libraries/joomla/version.php']
-    secure_version: '4.0.1'
+    secure_version: '4.1.1'
     regexp: ['.*?RELEASE.*?(?P<version>1.6)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.6 is end of life. Please upgrade to 4.0.1 version.'
+    cve: 'Joomla 1.6 is end of life. Please upgrade to 4.1.1 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.5:
   1:
     location: ['/libraries/joomla/version.php']
-    secure_version: '4.0.1'
+    secure_version: '4.1.1'
     regexp: ['.*?RELEASE.*?(?P<version>1.5)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.5 is end of life. Please upgrade to 4.0.1 version.'
+    cve: 'Joomla 1.5 is end of life. Please upgrade to 4.1.1 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
 Joomla 1.0:
   1:
     location: ['/includes/version.php']
-    secure_version: '4.0.1'
+    secure_version: '4.1.1'
     regexp: ['[\t]+var.*?RELEASE.*?(?P<version>1.0)', '.*?DEV_LEVEL.*?(?P<version>[0-9.]{1,})']
-    cve: 'Joomla 1.0 is end of life. Please upgrade to 4.0.1 version.'
+    cve: 'Joomla 1.0 is end of life. Please upgrade to 4.1.1 version.'
     fingerprint: detect_joomla
     post_processing: ['php5.fcgi']
