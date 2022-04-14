@@ -99,6 +99,9 @@
 # CVE-2022-0731 TODO https://github.com/dolibarr/dolibarr/commit/209ab708d4b65fbd88ba4340d60b7822cb72651a https://huntr.dev/bounties/e242ab4e-fc70-4b2c-a42d-5b3ee4895de8 fix not yet in any release 2022-02-25
 # CVE-2022-0746 TODO https://github.com/dolibarr/dolibarr/commit/4973019630d51ad76b7c1a4141ec7a33053a7d21 https://huntr.dev/bounties/b812ea22-0c02-46fe-b89f-04519dfb1ebd fix not yet in any release 2022-02-25
 # CVE-2022-0819 TODO
+# CVE-2022-0414 TODO
+# CVE-2021-37517 TODO
+# CVE-2021-36625 TODO
 Dolibarr:
   1:
     location: ['/htdocs/filefunc.inc.php']
