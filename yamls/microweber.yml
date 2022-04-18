@@ -45,6 +45,7 @@
 # CVE-2022-0961 TODO
 # CVE-2022-0954 TODO
 # CVE-2022-1036 TODO
+# CVE-2022-0896 TODO
 Microweber:
   1:
     location: ['/src/Microweber/bootstrap.php']

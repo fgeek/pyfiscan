@@ -92,6 +92,7 @@
 # CVE-2021-27890 TODO
 # CVE-2021-41866 TODO
 # CVE-2021-43281 TODO
+# CVE-2022-24734 TODO
 MyBB:
   1:
     location: ['/inc/class_core.php']
