@@ -11,11 +11,17 @@
 # CVE-2021-26599 TODO
 # CVE-2021-26600 TODO
 # CVE-2021-26601 TODO
+# CVE-2022-26986 TODO
+# https://r0.haxors.org/posts?id=8
+# CVE-2021-26600 1.4.3 http://karmainsecurity.com/KIS-2022-01 https://lists.openwall.net/full-disclosure/2022/03/22/1
+# CVE-2021-26601 1.4.3 http://karmainsecurity.com/KIS-2022-02 https://lists.openwall.net/full-disclosure/2022/03/22/2
+# CVE-2021-26598 1.4.3 http://karmainsecurity.com/KIS-2022-03 https://lists.openwall.net/full-disclosure/2022/03/22/3
+# CVE-2021-26599 1.4.4 http://karmainsecurity.com/KIS-2022-04 https://lists.openwall.net/full-disclosure/2022/03/22/4
 ImpressCMS:
   1:
     location: ['/htdocs/include/version.php']
-    secure_version: '1.4.2'
+    secure_version: '1.4.4'
     regexp: ["define.*?ICMS_VERSION_NAME.*?ImpressCMS.*?(?P<version>[0-9.]+)"]
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2022-24977'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-26599 http://karmainsecurity.com/KIS-2022-04'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
