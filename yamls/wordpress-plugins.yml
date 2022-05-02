@@ -1247,12 +1247,14 @@ WordPress plugin alo-easymail:
     cve: 'OVE-20160724-0021 https://sumofpwn.nl/advisory/2016/cross_site_request_forgery_in_alo_easymail_newsletter_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# OVE-20160714-0002 https://sumofpwn.nl/advisory/2016/sql_injection_vulnerability_in_booking_calendar_wordpress_plugin.html
+# OVE-20160714-0003 https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_booking_calendar_wordpress_plugin.html
 WordPress plugin booking:
   1:
     location: ['/wp-content/plugins/booking/readme.txt']
-    secure_version: '6.2.1'
+    secure_version: '9.1.1'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'OVE-20160714-0002 https://sumofpwn.nl/advisory/2016/sql_injection_vulnerability_in_booking_calendar_wordpress_plugin.html OVE-20160714-0003 https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_booking_calendar_wordpress_plugin.html'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2022-1463 https://www.wordfence.com/blog/2022/04/php-object-injection-in-booking-calendar-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 # 2.1.23 OVE-20160724-0023 https://sumofpwn.nl/advisory/2016/cross_site_scripting_in_contact_bank_wordpress_plugin.html
