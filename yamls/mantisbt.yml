@@ -85,6 +85,8 @@
 # CVE-2020-35571 2.25.0 https://mantisbt.org/bugs/view.php?id=27768
 # CVE-2021-33557 2.25.2 https://mantisbt.org/blog/archives/mantisbt/699 https://mantisbt.org/bugs/view.php?id=28552
 # CVE-2022-26144 2.25.3 https://mantisbt.org/bugs/view.php?id=29688
+# CVE-2021-43257 TODO
+# CVE-2022-28508 TODO
 MantisBT:
   1:
     location: ['/core/constant_inc.php']
