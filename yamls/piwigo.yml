@@ -61,6 +61,13 @@
 # CVE-2021-40882 TODO https://github.com/Piwigo/Piwigo/issues/1477 not fixed 2021-12-18, probably duplicate and javascript is allowed in that location
 # CVE-2021-45357 TODO
 # CVE-2022-24620 TODO https://github.com/Piwigo/Piwigo/issues/1605 12.2.0 is affected
+# CVE-2022-26266 TODO https://github.com/JCCD/Vul/blob/main/Piwigo_12.2.0_SQLinject.md 12.2.0 is affected
+# CVE-2022-26267 TODO
+# CVE-2020-19213 TODO
+# CVE-2020-19215 TODO
+# CVE-2020-19216 TODO
+# CVE-2020-19217 TODO
+# CVE-2020-19212 TODO
 Piwigo:
   1:
     location: ['/include/constants.php']
