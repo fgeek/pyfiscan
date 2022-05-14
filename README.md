@@ -32,6 +32,7 @@ Detects following software
 * Claroline
 * ClipperCMS
 * CMSimple
+* CMSimple_XH
 * CMSMS
 * Collabtive
 * Concrete5
