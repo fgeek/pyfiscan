@@ -23,6 +23,7 @@
 # CVE-2020-28838 N/A 3.0.3.6 is affected https://www.exploit-db.com/exploits/49228
 # CVE-2020-29470
 # CVE-2020-29471
+# CVE-2022-24108 plugin
 OpenCart:
   1:
     location: ['/admin/index.php']
