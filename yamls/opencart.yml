@@ -1,6 +1,5 @@
 # URL: http://www.opencart.com/
 # NOTE: Offensive behaviour from main developer http://forum.opencart.com/viewtopic.php?t=5792
-# TODO although I don't think this software should ever be used anywhere:
 #   http://www.juniper.net/security/auto/vulnerabilities/vuln34724.html "OpenCart 'index.php' Local File Include Vulnerability"
 #   http://seclists.org/fulldisclosure/2015/Nov/21 http://blog.curesec.com/article/blog/OpenCart-2031-CSRF-66.html no cve, "This issue was already discovered in 2013 by Saadat Ullah, but new versions of OpenCart are still vulnerable as no fix has been released."
 #   http://seclists.org/bugtraq/2016/Apr/61
