@@ -4163,3 +4163,11 @@ WordPress plugin sg-security:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2022-0992 https://nvd.nist.gov/vuln/detail/CVE-2022-0993 https://www.wordfence.com/blog/2022/04/critical-authentication-bypass-vulnerability-patched-in-siteground-security-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin tatsu:
+  1:
+    location: ['/wp-content/plugins/tatsu/readme.txt']
+    secure_version: '3.3.13'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-25094 https://wordfence.com/blog/2022/05/millions-of-attacks-target-tatsu-builder-plugin/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
