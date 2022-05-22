@@ -4171,3 +4171,11 @@ WordPress plugin tatsu:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-25094 https://wordfence.com/blog/2022/05/millions-of-attacks-target-tatsu-builder-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin opal-hotel-room-booking:
+  1:
+    location: ['/wp-content/plugins/opal-hotel-room-booking/readme.txt']
+    secure_version: 'N/A'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2022-29449 https://patchstack.com/database/vulnerability/opal-hotel-room-booking/wordpress-opal-hotel-room-booking-plugin-1-2-7-stored-cross-site-scripting-xss-vulnerability'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
