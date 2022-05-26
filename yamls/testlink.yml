@@ -26,6 +26,8 @@
 # CVE-2020-8638 TODO https://ackcent.com/blog/testlink-1.9.20-unrestricted-file-upload-and-sql-injection/ https://github.com/TestLinkOpenSourceTRMS/testlink-code/commit/58f3cc03d5f81cd5cc2ad8c7ba645cc486cebc05
 # CVE-2020-8639 TODO https://ackcent.com/blog/testlink-1.9.20-unrestricted-file-upload-and-sql-injection/ https://github.com/TestLinkOpenSourceTRMS/testlink-code/commit/57d81ae350d569c5c95087997fe051c49e14516d
 # 2020-02-27: "Vendor indicates that there is not going to be a new release, users should download the branch testlink_1_9_20_fixed"
+# CVE-2020-12273 TODO
+# CVE-2020-12274 TODO
 TestLink:
   1:
     location: ['/cfg/const.inc.php']
