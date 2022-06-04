@@ -136,6 +136,7 @@ Detects following end-of-life software:
 * MediaWiki 1.32 is end-of-life since [2020-01-23](https://lists.wikimedia.org/pipermail/mediawiki-announce/2020-January/000245.html)
 * MediaWiki 1.33 is end-of-life since [2020-06-24](https://lists.wikimedia.org/pipermail/mediawiki-announce/2020-June/000253.html)
 * MediaWiki 1.34 is end-of-life since [2020-11-30](https://lists.wikimedia.org/pipermail/mediawiki-announce/2020-November/000266.html)
+* MediaWiki 1.36 is end-of-life since [2022-06-03](https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/X3437NFUH47AOPM5YJYL3KR5PIGDITTJ/)
 * SaurusCMS
 * ownCloud 4
 * ownCloud 5
