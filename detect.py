@@ -136,6 +136,16 @@ def detect_redmine(source_file, regexp):
 
 
 @yaml_visible
+def detect_zenario(source_file, regexp):
+    if not (os.path.isfile(source_file) and regexp):
+        return
+    with open(source_file) as zenario:
+        if not 'Zenario' in zenario.read():
+            return
+    return grep_from_file(source_file, regexp[0])
+
+
+@yaml_visible
 def detect_withoutnewlines(source_file, regexp):
     """Strips newlines from source file."""
     if not (os.path.isfile(source_file) and regexp):
