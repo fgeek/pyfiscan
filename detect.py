@@ -20,7 +20,7 @@ def grep_from_file(version_file, regexp):
     m.group from regexp: (?P<version>foo)
 
     """
-    with open(version_file, 'r') as version_file:
+    with open(version_file, 'r', encoding='utf-8') as version_file:
         try:
             source = version_file.readlines()
         except UnicodeDecodeError:
