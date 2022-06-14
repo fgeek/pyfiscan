@@ -4179,3 +4179,11 @@ WordPress plugin opal-hotel-room-booking:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2022-29449 https://patchstack.com/database/vulnerability/opal-hotel-room-booking/wordpress-opal-hotel-room-booking-plugin-1-2-7-stored-cross-site-scripting-xss-vulnerability'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin header-footer-code-manager:
+  1:
+    location: ['/wp-content/plugins/header-footer-code-manager/readme.txt']
+    secure_version: '1.1.17'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2022-0710 https://www.wordfence.com/blog/2022/02/reflected-xss-in-header-footer-code-manager/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
