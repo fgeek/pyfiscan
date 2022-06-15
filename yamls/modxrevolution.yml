@@ -31,6 +31,7 @@
 # CVE-2018-20758 TODO
 # CVE-2019-1010123 TODO
 # CVE-2020-25911 TODO
+# TODO: https://lists.openwall.net/full-disclosure/2015/08/24/1 https://lists.openwall.net/full-disclosure/2015/08/18/6
 MODX Revolution:
   1:
     location: ['/core/docs/changelog.txt']
