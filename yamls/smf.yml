@@ -63,6 +63,7 @@
 # CVE-2018-10305 2.0.15 https://www.simplemachines.org/community/index.php?topic=557176.0
 # CVE-2019-12490 TODO
 # CVE-2019-11574 TODO
+# CVE-2022-26982 TODO https://github.com/sartlabs/0days/blob/main/SimpleMachinesForum/Exploit.txt
 SMF 2:
   1:
     location: ['/index.php']
