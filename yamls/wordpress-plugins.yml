@@ -4188,3 +4188,11 @@ WordPress plugin header-footer-code-manager:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2022-0710 https://www.wordfence.com/blog/2022/02/reflected-xss-in-header-footer-code-manager/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin easy-fancybox:
+  1:
+    location: ['/wp-content/plugins/easy-fancybox/readme.txt']
+    secure_version: '1.8.18'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-16524 https://github.com/sbaresearch/advisories/tree/public/2019/SBA-ADV-20190911-01_Easy_FancyBox_WP_Plugin_Stored_XSS'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
