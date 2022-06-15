@@ -9,6 +9,7 @@
 # CVE-2015-1431 3.0.13 https://tracker.phpbb.com/browse/PHPBB3-13531 https://github.com/phpbb/phpbb/pull/3316
 # CVE-2015-1432 3.0.13 https://tracker.phpbb.com/browse/PHPBB3-13526 https://github.com/phpbb/phpbb/pull/3311
 # CVE-2015-3880 3.1.4/3.0.14 https://github.com/phpbb/phpbb/commit/1a3350619f428d9d69d196c52128727e27ef2f04 https://www.phpbb.com/community/viewtopic.php?f=14&t=2313941
+# https://lists.openwall.net/bugtraq/2017/08/04/2
 # CVE-2017-1000419 3.2.1 https://www.phpbb.com/community/viewtopic.php?f=14&p=14782136
 # CVE-2018-19274 3.2.4 https://www.phpbb.com/community/viewtopic.php?f=14&t=2492206 https://github.com/phpbb/phpbb/commit/0dfbb60bc322ccda7a6e670a5f5ec9ab2f536eac
 # CVE-2019-9826 3.2.6 https://www.openwall.com/lists/oss-security/2019/04/29/3
