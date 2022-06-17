@@ -2163,7 +2163,7 @@ WordPress plugin user-login-log:
     location: ['/wp-content/plugins/user-login-log/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'OVE-20160724-0011 https://sumofpwn.nl/advisory/2016/stored_cross_site_scripting_vulnerability_in_user_login_log_wordpress_plugin.html'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-20056 OVE-20160724-0011 https://sumofpwn.nl/advisory/2016/stored_cross_site_scripting_vulnerability_in_user_login_log_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin contact-form-manager:
@@ -2179,7 +2179,7 @@ WordPress plugin contact-form-plugin:
     location: ['/wp-content/plugins/contact-form-plugin/readme.txt']
     secure_version: '4.0.2'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'OVE-20160712-0042 https://sumofpwn.nl/advisory/2016/stored_cross_site_scripting_vulnerability_in_contact_form_wordpress_plugin.html'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-20055 OVE-20160712-0042 https://sumofpwn.nl/advisory/2016/stored_cross_site_scripting_vulnerability_in_contact_form_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin rockhoist-badges:
