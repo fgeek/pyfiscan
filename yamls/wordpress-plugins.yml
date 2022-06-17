@@ -2171,7 +2171,7 @@ WordPress plugin contact-form-manager:
     location: ['/wp-content/plugins/contact-form-manager/readme.txt']
     secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-20053 OVE-20160718-0003 https://sumofpwn.nl/advisory/2016/cross_site_request_forgery___cross_site_scripting_in_contact_form_manager_wordpress_plugin.html'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-20053 https://nvd.nist.gov/vuln/detail/CVE-2017-20054 OVE-20160718-0003 https://sumofpwn.nl/advisory/2016/cross_site_request_forgery___cross_site_scripting_in_contact_form_manager_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin contact-form-plugin:
