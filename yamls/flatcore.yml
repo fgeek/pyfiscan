@@ -16,6 +16,9 @@
 # CVE-2021-3745 2.1.1 https://github.com/flatcore/flatcore-cms/commit/5cc3937b6bc38293ec921a5cf00018b48b668dc6 https://huntr.dev/bounties/7879ab3d-8018-402a-aa0b-131bdbd1966c
 # CVE-2021-39608 N/A file upload vulnerable after authentication https://github.com/flatCore/flatCore-CMS/issues/52 http://packetstormsecurity.com/files/164047/FlatCore-CMS-2.0.7-Remote-Code-Execution.html
 # CVE-2021-39609 2.0.9 https://github.com/flatCore/flatCore-CMS/issues/53 https://github.com/nu11secur1ty/CVE-mitre/tree/main/CVE-2021-39609 https://www.nu11secur1ty.com/2021/08/cve-2021-39609.html
+# CVE-2021-40902 TODO
+# CVE-2021-41402 TODO
+# CVE-2021-41403 TODO
 # CVE-2021-42245 2.1.0 https://github.com/flatCore/flatCore-CMS/issues/69
 flatCore CMS:
   1:
