@@ -4198,3 +4198,11 @@ WordPress plugin easy-fancybox:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-16524 https://github.com/sbaresearch/advisories/tree/public/2019/SBA-ADV-20190911-01_Easy_FancyBox_WP_Plugin_Stored_XSS'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin nextgen-galery:
+  1:
+    location: ['/wp-content/plugins/nextgen-galery/readme.txt']
+    secure_version: '2.0.77.3'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-1784 https://nvd.nist.gov/vuln/detail/CVE-2015-1785 https://blog.nettitude.com/uk/crsf-and-unsafe-arbitrary-file-upload-in-nextgen-gallery-plugin-for-wordpress'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
