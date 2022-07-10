@@ -4093,6 +4093,7 @@ WordPress plugin variation-swatches-for-woocommerce:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-42367 https://www.wordfence.com/blog/2021/12/xss-vulnerability-patched-in-plugin-designed-to-enhance-woocommerce/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# CVE-2021-25080 1.1.7 https://secsi.io/blog/cve-2021-25080-finding-cross-site-scripting-vulnerabilities-in-headers/
 WordPress plugin contact-form-entries:
   1:
     location: ['/wp-content/plugins/contact-form-entries/readme.txt']
