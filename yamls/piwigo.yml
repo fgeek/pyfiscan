@@ -68,6 +68,9 @@
 # CVE-2020-19216 TODO
 # CVE-2020-19217 TODO
 # CVE-2020-19212 TODO
+# CVE-2021-40317 TODO
+# CVE-2021-40553 TODO
+# CVE-2022-32297 TODO
 Piwigo:
   1:
     location: ['/include/constants.php']
