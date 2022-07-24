@@ -1996,7 +1996,7 @@ WordPress plugin tevolution:
     cve: 'https://cxsecurity.com/issue/WLB-2016120166'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
-# 1.6.3.2 OVE-20160803-0004 https://sumofpwn.nl/advisory/2016/infinitewp_client_wordpress_plugin_unauthenticated_php_object_injection_vulnerability.html
+# CVE-2016-15004 1.6.3.2 OVE-20160803-0004 https://sumofpwn.nl/advisory/2016/infinitewp_client_wordpress_plugin_unauthenticated_php_object_injection_vulnerability.html
 WordPress plugin iwp-client:
   1:
     location: ['/wp-content/plugins/iwp-client/readme.txt']
