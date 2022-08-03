@@ -5,12 +5,14 @@
 # CVE-2013-7352
 # CVE-2014-9599 5.2.1 http://sroesemann.blogspot.de/2014/12/sroeadv-2014-09.html
 # http://www.openwall.com/lists/oss-security/2016/08/12/4
+# CVE-2016-7149 6.7.5 https://www.openwall.com/lists/oss-security/2016/09/12/1 https://github.com/b2evolution/b2evolution/commit/9a4ab85439d1b838ee7b8eeebbf59174bb787811
+# CVE-2016-7150 6.7.5 https://www.openwall.com/lists/oss-security/2016/09/12/1 https://github.com/b2evolution/b2evolution/commit/dd975fff7fce81bf12f9c59edb1a99475747c83c
+# CVE-2016-8901 6.7.7 http://www.openwall.com/lists/oss-security/2016/09/30/3 https://github.com/b2evolution/b2evolution/commit/25c21cf9cc4261324001f9039509710b37ee2c4d https://github.com/b2evolution/b2evolution/commit/999b5ad1d59760d7e450ceb541f55432fc74cd27
 # CVE-2016-9479
 # CVE-2017-5480
 # CVE-2017-5494
 # CVE-2017-5539
 # CVE-2017-5553
-# CVE-2016-8901 6.7.7 http://www.openwall.com/lists/oss-security/2016/09/30/3 https://github.com/b2evolution/b2evolution/commit/25c21cf9cc4261324001f9039509710b37ee2c4d https://github.com/b2evolution/b2evolution/commit/999b5ad1d59760d7e450ceb541f55432fc74cd27
 # CVE-2017-1000423 6.9.3/6.8.11 https://github.com/b2evolution/b2evolution/commit/0096a3ebc85f6aadbda2c4427cd092a538b161d2 https://github.com/b2evolution/b2evolution/commit/b899d654d931f3bf3cfbbdd71e0d1a0f3a16d04c
 # CVE-2020-22839 6.11.7 http://packetstormsecurity.com/files/161363/b2evolution-CMS-6.11.6-Cross-Site-Scripting.html https://sohambakore.medium.com/b2evolution-cms-reflected-xss-in-tab-type-parameter-in-evoadm-php-38886216cdd3 https://www.exploit-db.com/exploits/49555
 # CVE-2020-22840 6.11.7 http://packetstormsecurity.com/files/161362/b2evolution-CMS-6.11.6-Open-Redirection.html https://github.com/b2evolution/b2evolution/issues/102 https://www.exploit-db.com/exploits/49554
