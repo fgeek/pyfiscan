@@ -70,7 +70,8 @@
 # CVE-2020-19212 TODO
 # CVE-2021-40317 TODO
 # CVE-2021-40553 TODO
-# CVE-2022-32297 TODO
+# CVE-2022-32297 TODO 12.2.0 is vulnerable. advisory https://github.com/sth276/research/blob/main/piwigo_vul/Second-Order%20SQL%20Injection%20Vulnerabilities%20in%20Piwigo.md
+# CVE-2022-37183 TODO 12.3.0 is vulnerable. advisory https://github.com/nu11secur1ty/CVE-nu11secur1ty/tree/main/vendors/Piwigo/2022/12.3.0
 Piwigo:
   1:
     location: ['/include/constants.php']
