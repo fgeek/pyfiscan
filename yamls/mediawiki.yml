@@ -190,6 +190,9 @@
 # CVE-2022-28204 1.37.2/1.36.4/1.35.6 https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/thread/YJNXKPV5Z56NSUQ4G3SXPDUIZG5EQ7UR/
 # CVE-2022-34911 TODO
 # CVE-2022-34912 TODO
+# CVE-2022-41765 TODO
+# CVE-2022-41766 TODO
+# CVE-2022-41767 TODO
 MediaWiki 1.37:
   1:
     location: ['/includes/DefaultSettings.php']

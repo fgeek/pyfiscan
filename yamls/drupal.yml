@@ -136,6 +136,7 @@
 # https://drupal.org/SA-CORE-2022-013   CVE-2022-25278  9.4.3/9.3.19
 # https://drupal.org/SA-CORE-2022-014   CVE-2022-25277  9.4.3/9.3.19
 # https://drupal.org/SA-CORE-2022-015   CVE-2022-25276  9.4.3/9.3.19
+# https://drupal.org/SA-CORE-2022-016   TODO
 Drupal 9.4:
   1:
     location: ['/core/lib/Drupal.php']
