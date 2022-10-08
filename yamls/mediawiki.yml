@@ -101,17 +101,17 @@
 # CVE-2015-8628 1.26.1/1.25.4/1.24.5/1.23.12 https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-December/000186.html
 # CVE-2016-XXXX 1.26.3/1.25.6/1.23.14 https://lists.wikimedia.org/pipermail/mediawiki-announce/2016-May/000188.html https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/SSGEZXHNBL6JWUZLADQ5XYPACYB7WQGA/
 # CVE-2016-XXXX 1.27.1/1.26.4/1.23.15 https://lists.wikimedia.org/pipermail/mediawiki-announce/2016-August/000195.html
-# CVE-2017-0361 1.28.1/1.27.2/1.23.16 https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-April/000207.html
-# CVE-2017-0362 1.28.1/1.27.2/1.23.16 https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-April/000207.html
-# CVE-2017-0363 1.28.1/1.27.2/1.23.16 https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-April/000207.html
-# CVE-2017-0364 1.28.1/1.27.2/1.23.16 https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-April/000207.html
-# CVE-2017-0365 1.28.1/1.27.2/1.23.16 https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-April/000207.html
-# CVE-2017-0366 1.28.1/1.27.2/1.23.16 https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-April/000207.html
-# CVE-2017-0367 1.28.1/1.27.2/1.23.16 https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-April/000207.html
-# CVE-2017-0368 1.28.1/1.27.2/1.23.16 https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-April/000207.html
-# CVE-2017-0369 1.28.1/1.27.2/1.23.16 https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-April/000207.html
-# CVE-2017-0370 1.28.1/1.27.2/1.23.16 https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-April/000207.html
-# CVE-2017-0372 1.28.1/1.27.2/1.23.16 https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-April/000207.html
+# CVE-2017-0361 1.28.1/1.27.2/1.23.16 https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-April/000207.html https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/Y4UEZTRQGDZHPBONCTDVL3C7MU7UVENO/
+# CVE-2017-0362 1.28.1/1.27.2/1.23.16 https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-April/000207.html https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/Y4UEZTRQGDZHPBONCTDVL3C7MU7UVENO/
+# CVE-2017-0363 1.28.1/1.27.2/1.23.16 https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-April/000207.html https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/Y4UEZTRQGDZHPBONCTDVL3C7MU7UVENO/
+# CVE-2017-0364 1.28.1/1.27.2/1.23.16 https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-April/000207.html https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/Y4UEZTRQGDZHPBONCTDVL3C7MU7UVENO/
+# CVE-2017-0365 1.28.1/1.27.2/1.23.16 https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-April/000207.html https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/Y4UEZTRQGDZHPBONCTDVL3C7MU7UVENO/
+# CVE-2017-0366 1.28.1/1.27.2/1.23.16 https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-April/000207.html https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/Y4UEZTRQGDZHPBONCTDVL3C7MU7UVENO/
+# CVE-2017-0367 1.28.1/1.27.2/1.23.16 https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-April/000207.html https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/Y4UEZTRQGDZHPBONCTDVL3C7MU7UVENO/
+# CVE-2017-0368 1.28.1/1.27.2/1.23.16 https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-April/000207.html https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/Y4UEZTRQGDZHPBONCTDVL3C7MU7UVENO/
+# CVE-2017-0369 1.28.1/1.27.2/1.23.16 https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-April/000207.html https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/Y4UEZTRQGDZHPBONCTDVL3C7MU7UVENO/
+# CVE-2017-0370 1.28.1/1.27.2/1.23.16 https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-April/000207.html https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/Y4UEZTRQGDZHPBONCTDVL3C7MU7UVENO/
+# CVE-2017-0372 1.28.1/1.27.2/1.23.16 https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-April/000207.html https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/Y4UEZTRQGDZHPBONCTDVL3C7MU7UVENO/
 # N/A           1.23.17 https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-April/000208.html
 # CVE-2017-0372 1.28.2/1.27.3 https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-April/000209.html
 # CVE-2017-8808 1.29.2/1.28.3/1.27.4 https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-November/000216.html
