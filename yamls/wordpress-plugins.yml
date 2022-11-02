@@ -4216,3 +4216,20 @@ WordPress plugin user-meta:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2022-0779 https://lists.openwall.net/full-disclosure/2022/05/28/1'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# CVE-2021-24910 1.0.8
+# CVE-2021-24911 1.0.8.1
+# CVE-2021-24912 No fix planned by vendor
+# CVE-2022-2461 No fix planned by vendor
+# CVE-2022-2462 No fix planned by vendor
+# CVE-2022-2536 No fix planned by vendor
+# CVE-2022-25810 No fix planned by vendor
+# CVE-2022-25811 No fix planned by vendor
+# CVE-2022-25812 No fix planned by vendor
+WordPress plugin transposh-translation-filter-for-wordpress:
+  1:
+    location: ['/wp-content/plugins/transposh-translation-filter-for-wordpress/readme.txt']
+    secure_version: '1.0.8.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24911'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
