@@ -108,6 +108,7 @@ WordPress plugin encrypted-contact-form:
     post_processing: ['php5.fcgi']
 # CVE-2015-4062 0.9.9
 # CVE-2015-4063 0.9.9
+# CVE-2015-9314 1.0.4 https://www.openwall.com/lists/oss-security/2015/07/01/4
 WordPress plugin newstatpress:
   1:
     location: ['/wp-content/plugins/newstatpress/readme.txt']
