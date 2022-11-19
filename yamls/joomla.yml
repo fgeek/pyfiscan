@@ -237,12 +237,24 @@
 # CVE-2021-26039 3.9.28 https://developer.joomla.org/security-centre/860-20210705-core-xss-in-com-media-imagelist.html
 # CVE-2021-26039 3.9.28 https://developer.joomla.org/security-centre/860-20210705-core-xss-in-com-media-imagelist.html
 # CVE-2021-26040 4.0.1 https://developer.joomla.org/security-centre/861-20210801-core-insufficient-access-control-for-com-media-deletion-endpoint
+# CVE-2022-23793 4.1.1/3.10.7 https://karmainsecurity.com/KIS-2022-05
+# CVE-2022-23794 TODO
+# CVE-2022-23795 TODO
+# CVE-2022-23796 TODO
+# CVE-2022-23797 TODO
+# CVE-2022-23798 TODO
+# CVE-2022-23799 TODO
+# CVE-2022-23800 TODO
+# CVE-2022-23801 TODO
+# CVE-2022-27912 TODO
+# CVE-2022-27913 TODO
+# CVE-2022-27914 4.2.5 https://www.joomla.org/announcements/release-news/5873-joomla-4-2-5-security-and-bug-fix-release.html https://developer.joomla.org/security-centre/887-20221101-core-rxss-through-reflection-of-user-input-in-com-media.html
 Joomla 4:
   1:
     location: ['/administrator/manifests/files/joomla.xml']
-    secure_version: '4.1.1'
+    secure_version: '4.2.5'
     regexp: ['[\t]<version>(?P<version>4\.[0-9.]{1,})']
-    cve: 'https://karmainsecurity.com/KIS-2022-05 https://nvd.nist.gov/vuln/detail/CVE-2022-23793'
+    cve: 'https://www.joomla.org/announcements/release-news/5873-joomla-4-2-5-security-and-bug-fix-release.html https://developer.joomla.org/security-centre/887-20221101-core-rxss-through-reflection-of-user-input-in-com-media.html https://nvd.nist.gov/vuln/detail/CVE-2022-27914'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Joomla 3:
