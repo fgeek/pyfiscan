@@ -21,6 +21,7 @@
 # CVE-2021-28242 7.2.3 http://packetstormsecurity.com/files/162489/b2evolution-7-2-2-SQL-Injection.html https://deadsh0t.medium.com/authenticated-boolean-based-blind-error-based-sql-injection-b752225f0644 https://github.com/b2evolution/b2evolution/issues/109
 # CVE-2021-31631 TODO https://gist.github.com/stacksmasher007/76514ab2b782fb4383f1121e6fc19241 7.2.3 affected, CSRF
 # CVE-2021-31632 TODO https://gist.github.com/Stacksmashers101/c6b9ea92f42c23473170bb3acc8fc5fe 7.2.3 affected, SQLi
+# CVE-2022-30935 TODO
 b2evolution:
   1:
     location: ['/readme.html']
