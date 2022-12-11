@@ -45,11 +45,12 @@
 # CVE-2021-22904 4.2.2/4.1.4 https://www.redmine.org/news/132
 # CVE-2021-37156 4.2.2 https://www.redmine.org/news/132
 # CVE-2021-42326 4.2.3/4.1.5 https://www.redmine.org/news/133
+# CVE-2022-44030 5.0.4 https://www.redmine.org/news/139
 Redmine:
   1:
     location: ['/doc/CHANGELOG']
-    secure_version: '4.2.3'
+    secure_version: '5.0.4'
     regexp: ['== [0-9]{4}-[0-9]{2}-[0.9]{2}.*?v(?P<version>[0-9.]+)']
-    cve: 'https://www.redmine.org/news/133 https://nvd.nist.gov/vuln/detail/CVE-2021-42326'
+    cve: 'https://www.redmine.org/news/139 https://nvd.nist.gov/vuln/detail/CVE-2022-44030'
     fingerprint: detect_redmine
     post_processing: ['php5.fcgi']
