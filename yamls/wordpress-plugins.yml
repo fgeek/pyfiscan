@@ -3064,12 +3064,14 @@ WordPress plugin duplicate-wp-page-post:
     cve: 'https://blog.sucuri.net/2020/04/duplicated-vulnerabilities-in-wordpress-plugins.html https://wpvulndb.com/vulnerabilities/10190'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# CVE-2020-11510 3.2.6.9 https://www.wordfence.com/blog/2020/04/high-severity-vulnerabilities-patched-in-learnpress/
+# CVE-2020-11511 3.2.6.9 https://www.wordfence.com/blog/2020/04/high-severity-vulnerabilities-patched-in-learnpress/
 WordPress plugin learnpress:
   1:
     location: ['/wp-content/plugins/learnpress/readme.txt']
-    secure_version: '3.2.6.9'
+    secure_version: '4.2.0'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-11510 https://nvd.nist.gov/vuln/detail/CVE-2020-11511 https://www.wordfence.com/blog/2020/04/high-severity-vulnerabilities-patched-in-learnpress/'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2022-47615 https://nvd.nist.gov/vuln/detail/CVE-2022-45808 https://nvd.nist.gov/vuln/detail/CVE-2022-45820 https://patchstack.com/articles/multiple-critical-vulnerabilities-fixed-in-learnpress-plugin-version/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin elementor-pro:
