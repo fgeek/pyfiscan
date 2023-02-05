@@ -4244,3 +4244,11 @@ WordPress plugin yith-woocommerce-gift-cards-premium:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2022-45359 https://www.wordfence.com/blog/2022/12/psa-yith-woocommerce-gift-cards-premium-plugin-exploited-in-the-wild/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin quick-restaurant-menu:
+  1:
+    location: ['/wp-content/plugins/quick-restaurant-menu/readme.txt']
+    secure_version: '2.1.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-0550 https://nvd.nist.gov/vuln/detail/CVE-2023-0554 https://nvd.nist.gov/vuln/detail/CVE-2023-0555 https://www.wordfence.com/blog/2023/02/multiple-vulnerabilities-patched-in-quick-restaurant-menu-plugin/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
