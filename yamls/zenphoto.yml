@@ -26,11 +26,12 @@
 # CVE-2020-5592 1.5.7   https://www.zenphoto.org/news/zenphoto-1.5.7/
 # CVE-2020-5593 1.5.7   https://www.zenphoto.org/news/zenphoto-1.5.7/
 # CVE-2020-36079 1.5.7  https://github.com/zenphoto/zenphoto/issues/1292 https://packetstormsecurity.com/files/161569/Zenphoto-CMS-1.5.7-Shell-Upload.html https://www.zenphoto.org/news/why-not-every-security-issue-is-really-an-issue/ original vulnerability already fixed in 1.5.7 and admin privileges are now needed for file upload. Reporter didn't even contact upstream about this CVE so they made clarification about this case and it is not a security vulnerability
+# CVE-2022-44449 1.6
 Zenphoto:
   1:
     location: ['/zp-core/version.php']
-    secure_version: '1.5.7'
+    secure_version: '1.6'
     regexp: ["define.*?ZENPHOTO_VERSION.*?(?P<version>[0-9.]+)"]
-    cve: 'https://www.zenphoto.org/news/zenphoto-1.5.7/ https://nvd.nist.gov/vuln/detail/CVE-2020-5592 https://nvd.nist.gov/vuln/detail/CVE-2020-5593'
+    cve: 'https://www.zenphoto.org/news/zenphoto-1.6/ https://nvd.nist.gov/vuln/detail/CVE-2022-44449'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
