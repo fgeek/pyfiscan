@@ -84,14 +84,16 @@
 # CVE-2009-20001 2.24.5 https://mantisbt.org/bugs/view.php?id=11296 https://mantisbt.org/bugs/view.php?id=27976
 # CVE-2020-35571 2.25.0 https://mantisbt.org/bugs/view.php?id=27768
 # CVE-2021-33557 2.25.2 https://mantisbt.org/blog/archives/mantisbt/699 https://mantisbt.org/bugs/view.php?id=28552
+# CVE-2022-28508 2.25.2 https://github.com/YavuzSahbaz/CVE-2022-28508/blob/main/MantisBT%202.25.2%20XSS%20vulnurability
+# CVE-2021-43257 2.25.3 https://github.com/mantisbt/mantisbt/commit/7f4534c723e3162b8784aebda4836324041dbc3e https://www.mantisbt.org/bugs/view.php?id=29130
 # CVE-2022-26144 2.25.3 https://mantisbt.org/bugs/view.php?id=29688
-# CVE-2021-43257 TODO
-# CVE-2022-28508 TODO
+# CVE-2022-33910 2.25.5
+# CVE-2023-22476 2.25.6
 MantisBT:
   1:
     location: ['/core/constant_inc.php']
-    secure_version: '2.25.3'
+    secure_version: '2.25.6'
     regexp: ['define.*?MANTIS_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2022-26144'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-22476'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
