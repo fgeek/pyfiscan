@@ -281,6 +281,7 @@
 # CVE-2022-21663 5.8.3 https://wordpress.org/news/2022/01/wordpress-5-8-3-security-release/ https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-jmmq-m8p8-332h https://hackerone.com/reports/541469
 # CVE-2022-21664 5.8.3 https://wordpress.org/news/2022/01/wordpress-5-8-3-security-release/ https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-jp3p-gw8h-6x86 https://github.com/WordPress/wordpress-develop/commit/c09ccfbc547d75b392dbccc1ef0b4442ccd3c957
 # CVE-2021-20083 5.9.2 https://www.wordfence.com/blog/2022/03/wordpress-5-9-2-security-update-fixes-xss-and-prototype-pollution-vulnerabilities/
+# CVE-2022-3590 TODO https://www.sonarsource.com/blog/wordpress-core-unauthenticated-blind-ssrf/
 WordPress:
   1:
     location: ['/wp-includes/version.php', '/wp-includes/vars.php']
