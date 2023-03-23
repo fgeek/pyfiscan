@@ -4262,7 +4262,7 @@ WordPress plugin quick-restaurant-menu:
     post_processing: ['php5.fcgi']
 WordPress plugin gn-publisher:
   1:
-    location: ['/wp-content/plugins/watu/readme.txt']
+    location: ['/wp-content/plugins/gn-publisher/readme.txt']
     secure_version: '1.5.6'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-1080 https://www.wordfence.com/blog/2023/03/multiple-reflected-cross-site-scripting-vulnerabilities-in-three-wordpress-plugins-patched/'
