@@ -374,6 +374,14 @@ WordPress plugin private-only:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2015-5483 https://security.dxw.com/advisories/csrfxss-vulnerability-in-private-only-could-allow-an-attacker-to-do-almost-anything-an-admin-user-can/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin watu:
+  1:
+    location: ['/wp-content/plugins/watu/readme.txt']
+    secure_version: '3.3.9.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-0968 https://www.wordfence.com/blog/2023/03/multiple-reflected-cross-site-scripting-vulnerabilities-in-three-wordpress-plugins-patched/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
 WordPress plugin watupro:
   1:
     location: ['/wp-content/plugins/watupro/readme.txt']
