@@ -4268,3 +4268,11 @@ WordPress plugin gn-publisher:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-1080 https://www.wordfence.com/blog/2023/03/multiple-reflected-cross-site-scripting-vulnerabilities-in-three-wordpress-plugins-patched/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin woocommerce-for-japan:
+  1:
+    location: ['/wp-content/plugins/woocommerce-for-japan/readme.txt']
+    secure_version: '2.5.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-0942 https://www.wordfence.com/blog/2023/03/multiple-reflected-cross-site-scripting-vulnerabilities-in-three-wordpress-plugins-patched/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
