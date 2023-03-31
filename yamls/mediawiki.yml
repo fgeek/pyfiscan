@@ -200,6 +200,7 @@
 # CVE-2022-31042 TODO https://github.com/guzzle/guzzle/security/advisories/GHSA-f2wf-25xc-69c9 https://github.com/guzzle/guzzle/commit/e3ff079b22820c2029d4c2a87796b6a0b8716ad8 (7.4.4)
 # TODO 1.38.3/1.37.4/1.35.8 https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/SPYFDCGZE7KJNO73ET7QVSUXMHXVRFTE/
 # CVE-2022-47927 1.39.1/1.38.5/1.35.9 https://lists.wikimedia.org/hyperkitty/list/wikitech-l@lists.wikimedia.org/thread/UEMW64LVEH3BEXCJV43CVS6XPYURKWU3/
+# CVE-2020-36649 TODO https://phabricator.wikimedia.org/T326946
 MediaWiki 1.38:
   1:
     location: ['/includes/DefaultSettings.php']
@@ -211,9 +212,9 @@ MediaWiki 1.38:
 MediaWiki 1.37:
   1:
     location: ['/includes/DefaultSettings.php']
-    secure_version: '1.37.4'
+    secure_version: '1.38.5'
     regexp: ['\$wgVersion.*?(?P<version>1\.37\.[0-9.]{1,})']
-    cve: 'https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/SPYFDCGZE7KJNO73ET7QVSUXMHXVRFTE/'
+    cve: 'MediaWiki 1.37 is end of life.'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 MediaWiki 1.36:
