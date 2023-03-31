@@ -4276,3 +4276,11 @@ WordPress plugin woocommerce-for-japan:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-0942 https://www.wordfence.com/blog/2023/03/multiple-reflected-cross-site-scripting-vulnerabilities-in-three-wordpress-plugins-patched/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin kama-clic-counter:
+  1:
+    location: ['/wp-content/plugins/kama-clic-counter/readme.txt']
+    secure_version: '3.5.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-18614 https://nvd.nist.gov/vuln/detail/CVE-2017-18615 https://lists.openwall.net/full-disclosure/2017/02/27/1'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
