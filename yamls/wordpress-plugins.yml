@@ -4284,3 +4284,11 @@ WordPress plugin kama-clic-counter:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2017-18614 https://nvd.nist.gov/vuln/detail/CVE-2017-18615 https://lists.openwall.net/full-disclosure/2017/02/27/1'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin metform:
+  1:
+    location: ['/wp-content/plugins/metform/readme.txt']
+    secure_version: '3.2.0'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-0084 https://www.wordfence.com/blog/2023/02/high-severity-xss-vulnerability-in-metform-elementor-contact-form-builder/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
