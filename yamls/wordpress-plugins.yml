@@ -1315,12 +1315,13 @@ WordPress plugin count-per-day:
     cve: 'OVE-20160724-0024 https://sumofpwn.nl/advisory/2016/cross_site_scripting_in_count_per_day_wordpress_plugin.html OVE-20160717-0001 https://sumofpwn.nl/advisory/2016/stored_cross_site_scripting_vulnerability_in_count_per_day_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# OVE-20160803-0002 4.4.4 https://sumofpwn.nl/advisory/2016/ecwid_ecommerce_shopping_cart_wordpress_plugin_unauthenticated_php_object_injection_vulnerability.html
 WordPress plugin ecwid-shopping-cart:
   1:
     location: ['/wp-content/plugins/ecwid-shopping-cart/readme.txt']
-    secure_version: '4.4.4'
+    secure_version: '6.10.24'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'OVE-20160803-0002 https://sumofpwn.nl/advisory/2016/ecwid_ecommerce_shopping_cart_wordpress_plugin_unauthenticated_php_object_injection_vulnerability.html'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2022-2432 https://www.wordfence.com/blog/2022/08/cross-site-request-forgery-vulnerability-patched-in-ecwid-ecommerce-shopping-cart-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 # CVE-2014-8621 3.12 https://g0blin.co.uk/cve-2014-8621/
