@@ -2746,12 +2746,13 @@ WordPress plugin forminator:
     cve: 'https://security-consulting.icu/blog/2019/02/wordpress-forminator-persistent-xss-blind-sql-injection/ https://nvd.nist.gov/vuln/detail/CVE-2019-9567 https://nvd.nist.gov/vuln/detail/CVE-2019-9568'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# CVE-2019-9576 5.0.3 https://security-consulting.icu/blog/2019/02/wordpress-blog2social-xss/ https://lists.openwall.net/full-disclosure/2019/02/05/6
 WordPress plugin blog2social:
   1:
     location: ['/wp-content/plugins/blog2social/readme.txt']
-    secure_version: '5.0.3'
+    secure_version: '6.9.12'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-9576 https://security-consulting.icu/blog/2019/02/wordpress-blog2social-xss/ https://lists.openwall.net/full-disclosure/2019/02/05/6'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2022-3622 https://www.wordfence.com/blog/2022/11/missing-authorization-vulnerability-in-blog2social-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin wp-postratings:
