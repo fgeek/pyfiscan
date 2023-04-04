@@ -4292,3 +4292,11 @@ WordPress plugin metform:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-0084 https://www.wordfence.com/blog/2023/02/high-severity-xss-vulnerability-in-metform-elementor-contact-form-builder/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin real-time-find-and-replace:
+  1:
+    location: ['/wp-content/plugins/real-time-find-and-replace/readme.txt']
+    secure_version: '4.0.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-13641 https://www.wordfence.com/blog/2020/04/high-severity-vulnerability-patched-in-real-time-find-and-replace-plugin/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
