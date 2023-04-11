@@ -4310,3 +4310,11 @@ WordPress plugin wpgateway:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2022-3180 https://www.wordfence.com/blog/2022/09/psa-zero-day-vulnerability-in-wpgateway-actively-exploited-in-the-wild/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin royal-elementor-addons:
+  1:
+    location: ['/wp-content/plugins/royal-elementor-addons/readme.txt']
+    secure_version: '1.3.60'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2022-4700 https://nvd.nist.gov/vuln/detail/CVE-2022-4701 https://nvd.nist.gov/vuln/detail/CVE-2022-4702 https://nvd.nist.gov/vuln/detail/CVE-2022-4703 https://nvd.nist.gov/vuln/detail/CVE-2022-4704 https://nvd.nist.gov/vuln/detail/CVE-2022-4705 https://nvd.nist.gov/vuln/detail/CVE-2022-4707 https://nvd.nist.gov/vuln/detail/CVE-2022-4708 https://nvd.nist.gov/vuln/detail/CVE-2022-4709 https://nvd.nist.gov/vuln/detail/CVE-2022-4710 https://nvd.nist.gov/vuln/detail/CVE-2022-4711 https://www.wordfence.com/blog/2023/01/eleven-vulnerabilities-patched-in-royal-elementor-addons/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
