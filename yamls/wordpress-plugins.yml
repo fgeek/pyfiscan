@@ -992,12 +992,13 @@ WordPress plugin profile-builder:
 # 2.3.7 https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_in_all_in_one_seo_pack_wordpress_plugin.html
 # 2.3.8 https://www.wordfence.com/blog/2016/07/new-xss-vulnerability-all-in-one-seo-pack/
 # CVE-2019-16520 3.2.7 https://www.openwall.com/lists/oss-security/2019/10/16/5 https://github.com/sbaresearch/advisories/tree/public/2019/SBA-ADV-20190913-04_WordPress_Plugin_All_in_One_SEO_Pack
+# CVE-2020-35946 3.6.2 https://www.wordfence.com/blog/2020/07/2-million-users-affected-by-vulnerability-in-all-in-one-seo-pack/
 WordPress plugin all-in-one-seo-pack:
   1:
     location: ['/wp-content/plugins/all-in-one-seo-pack/readme.txt']
-    secure_version: '3.6.2'
+    secure_version: '4.3.0'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-35946 https://www.wordfence.com/blog/2020/07/2-million-users-affected-by-vulnerability-in-all-in-one-seo-pack/'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-0585 https://nvd.nist.gov/vuln/detail/CVE-2023-0586 https://www.wordfence.com/blog/2023/02/all-in-one-seo-pack-vulnerabilities-impacting-3-million-sites-patched/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin squirrly-seo:
