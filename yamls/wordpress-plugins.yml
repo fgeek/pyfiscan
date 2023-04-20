@@ -475,12 +475,13 @@ WordPress plugin events-made-easy:
     cve: 'OVE-20160729-0001 https://sumofpwn.nl/advisory/2016/cross_site_scripting_vulnerability_in_events_made_easy_wordpress_plugin.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# N/A 6.0.5 https://www.openwall.com/lists/oss-security/2015/10/27/1 no CVE
 WordPress plugin powerpress:
   1:
     location: ['/wp-content/plugins/powerpress/readme.txt']
-    secure_version: '6.0.5'
+    secure_version: '10.0.2'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://www.openwall.com/lists/oss-security/2015/10/27/1'  # CVE request 2015-10-27
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-1917 https://www.wordfence.com/blog/2023/04/blubrry-addresses-authenticated-stored-xss-vulnerability-in-powerpress-wordpress-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin si-contact-form:
