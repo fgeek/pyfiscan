@@ -1937,12 +1937,13 @@ WordPress plugin multisite-post-duplicator:
     post_processing: ['php5.fcgi']
 # CVE-2016-11085 4.7.9 https://security.dxw.com/advisories/csrfstored-xss-in-quiz-and-survey-master-formerly-quiz-master-next-allows-unauthenticated-attackers-to-do-almost-anything-an-admin-can/
 # CVE-2019-9575 N/A https://security-consulting.icu/blog/2019/02/wordpress-quiz-and-survey-master-xss/ https://lists.openwall.net/full-disclosure/2019/02/05/5
+# 7.0.1 https://www.wordfence.com/blog/2020/08/critical-vulnerabilities-patched-in-quiz-and-survey-master-plugin/ No CVE?
 WordPress plugin quiz-master-next:
   1:
     location: ['/wp-content/plugins/quiz-master-next/readme.txt']
-    secure_version: '7.0.1'
+    secure_version: '8.0.9'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://www.wordfence.com/blog/2020/08/critical-vulnerabilities-patched-in-quiz-and-survey-master-plugin/'  # TODO: CVE. Wordfence page says "Pending", but not sure if that has been requested.
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-0291 https://nvd.nist.gov/vuln/detail/CVE-2023-0292 https://lists.openwall.net/full-disclosure/2023/02/14/2 https://lists.openwall.net/full-disclosure/2023/02/14/3'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin mailchimp-for-wp:
