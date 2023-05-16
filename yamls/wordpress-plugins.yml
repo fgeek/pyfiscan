@@ -4345,3 +4345,11 @@ WordPress plugin show-posts:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-1404 https://www.wordfence.com/blog/2023/04/hiding-in-plain-sight-cross-site-scripting-vulnerabilities-patched-in-weaver-products/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin advanced-custom-fields:
+  1:
+    location: ['/wp-content/plugins/advanced-custom-fields/readme.txt']
+    secure_version: '6.1.6'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-30777 https://patchstack.com/articles/reflected-xss-in-advanced-custom-fields-plugins-affecting-2-million-sites'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
