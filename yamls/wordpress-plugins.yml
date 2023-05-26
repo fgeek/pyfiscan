@@ -4353,3 +4353,11 @@ WordPress plugin advanced-custom-fields:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-30777 https://patchstack.com/articles/reflected-xss-in-advanced-custom-fields-plugins-affecting-2-million-sites'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin beautiful-and-responsive-cookie-consent:
+  1:
+    location: ['/wp-content/plugins/beautiful-and-responsive-cookie-consent/readme.txt']
+    secure_version: '2.10.2'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://www.wordfence.com/blog/2023/05/wordfence-firewall-blocks-bizarre-large-scale-xss-campaign/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
