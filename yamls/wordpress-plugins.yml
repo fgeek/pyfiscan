@@ -4359,6 +4359,14 @@ WordPress plugin beautiful-and-responsive-cookie-consent:
     location: ['/wp-content/plugins/beautiful-and-responsive-cookie-consent/readme.txt']
     secure_version: '2.10.2'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://www.wordfence.com/blog/2023/05/wordfence-firewall-blocks-bizarre-large-scale-xss-campaign/'
+    cve: 'https://www.wordfence.com/blog/2023/05/wordfence-firewall-blocks-bizarre-large-scale-xss-campaign/'  # TODO: "CVE ID: Not Assigned" for unknown reason. Wordfence is CNA so they should do it automatically
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
+WordPress plugin bookit:
+  1:
+    location: ['/wp-content/plugins/bookit/readme.txt']
+    secure_version: '2.3.8'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-2834 https://www.wordfence.com/blog/2023/06/stylemixthemes-addresses-authentication-bypass-vulnerability-in-bookit-wordpress-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
