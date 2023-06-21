@@ -4360,7 +4360,7 @@ WordPress plugin beautiful-and-responsive-cookie-consent:
     location: ['/wp-content/plugins/beautiful-and-responsive-cookie-consent/readme.txt']
     secure_version: '2.10.2'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://www.wordfence.com/blog/2023/05/wordfence-firewall-blocks-bizarre-large-scale-xss-campaign/'  # TODO: "CVE ID: Not Assigned" for unknown reason. Wordfence is CNA so they should do it automatically
+    cve: 'https://www.wordfence.com/blog/2023/05/wordfence-firewall-blocks-bizarre-large-scale-xss-campaign/'  # CVE requested 2023-06-21
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin bookit:
