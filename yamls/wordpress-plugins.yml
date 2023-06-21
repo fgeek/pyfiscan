@@ -2825,7 +2825,7 @@ WordPress plugin yop-poll:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2019-9914 https://lists.openwall.net/full-disclosure/2019/02/05/15 https://security-consulting.icu/blog/2019/02/wordpress-yop-poll-xss/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
-# TODO 5.2.0 https://www.wordfence.com/blog/2019/03/xss-flaw-in-abandoned-cart-plugin-leads-to-wordpress-site-takeovers/ CVE Request Submitted 2023-06-21
+# CVE-2019-25152 5.2.0 https://www.wordfence.com/blog/2019/03/xss-flaw-in-abandoned-cart-plugin-leads-to-wordpress-site-takeovers/
 WordPress plugin woocommerce-abandoned-cart:
   1:
     location: ['/wp-content/plugins/woocommerce-abandoned-cart/readme.txt']
