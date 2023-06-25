@@ -4360,7 +4360,7 @@ WordPress plugin beautiful-and-responsive-cookie-consent:
     location: ['/wp-content/plugins/beautiful-and-responsive-cookie-consent/readme.txt']
     secure_version: '2.10.2'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://www.wordfence.com/blog/2023/05/wordfence-firewall-blocks-bizarre-large-scale-xss-campaign/'  # CVE requested 2023-06-21
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-3388 https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/beautiful-and-responsive-cookie-consent/beautiful-cookie-consent-banner-2100-unauthenticated-stored-cross-site-scripting https://www.wordfence.com/blog/2023/05/wordfence-firewall-blocks-bizarre-large-scale-xss-campaign/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin bookit:
