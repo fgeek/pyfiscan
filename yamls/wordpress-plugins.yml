@@ -582,12 +582,15 @@ WordPress plugin cta:
 # CVE-2019-14946 2.0.52 https://wpvulndb.com/vulnerabilities/9449
 # CVE-2019-14947 2.0.52 https://wpvulndb.com/vulnerabilities/9449
 # CVE-2019-14945 2.0.54 https://wpvulndb.com/vulnerabilities/9506
+# CVE-2020-36155 2.1.12 https://www.wordfence.com/blog/2020/11/critical-privilege-escalation-vulnerabilities-affect-100k-sites-using-ultimate-member-plugin/
+# CVE-2020-36156 2.1.12 https://www.wordfence.com/blog/2020/11/critical-privilege-escalation-vulnerabilities-affect-100k-sites-using-ultimate-member-plugin/
+# CVE-2020-36157 2.1.12 https://www.wordfence.com/blog/2020/11/critical-privilege-escalation-vulnerabilities-affect-100k-sites-using-ultimate-member-plugin/
 WordPress plugin ultimate-member:
   1:
     location: ['/wp-content/plugins/ultimate-member/readme.txt']
-    secure_version: '2.1.12'
+    secure_version: 'N/A'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-36155 https://nvd.nist.gov/vuln/detail/CVE-2020-36156 https://nvd.nist.gov/vuln/detail/CVE-2020-36157 https://www.wordfence.com/blog/2020/11/critical-privilege-escalation-vulnerabilities-affect-100k-sites-using-ultimate-member-plugin/'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-3460 https://www.wordfence.com/blog/2023/06/psa-unpatched-critical-privilege-escalation-vulnerability-in-ultimate-member-plugin-being-actively-exploited/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin wp-symposium-pro:
