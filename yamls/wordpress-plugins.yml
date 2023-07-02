@@ -4374,3 +4374,11 @@ WordPress plugin bookit:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-2834 https://www.wordfence.com/blog/2023/06/stylemixthemes-addresses-authentication-bypass-vulnerability-in-bookit-wordpress-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin miniorange-login-openid:
+  1:
+    location: ['/wp-content/plugins/miniorange-login-openid/readme.txt']
+    secure_version: '7.6.5'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-2982 https://www.wordfence.com/blog/2023/06/miniorange-addresses-authentication-bypass-vulnerability-in-wordpress-social-login-and-register-wordpress-plugin/ https://thehackernews.com/2023/06/critical-security-flaw-in-social-login.html'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
