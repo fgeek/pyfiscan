@@ -4382,3 +4382,11 @@ WordPress plugin miniorange-login-openid:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-2982 https://www.wordfence.com/blog/2023/06/miniorange-addresses-authentication-bypass-vulnerability-in-wordpress-social-login-and-register-wordpress-plugin/ https://thehackernews.com/2023/06/critical-security-flaw-in-social-login.html'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin sfwd-lms:
+  1:
+    location: ['/wp-content/plugins/sfwd-lms/readme.txt']
+    secure_version: '4.6.0.1'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-3105 https://www.wordfence.com/blog/2023/06/arbitrary-user-password-change-vulnerability-in-learndash-lms-wordpress-plugin/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
