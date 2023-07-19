@@ -3823,7 +3823,7 @@ WordPress plugin google-site-kit:
     location: ['/wp-content/plugins/google-site-kit/readme.txt']
     secure_version: '1.8.0'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://www.wordfence.com/blog/2020/05/vulnerability-in-google-wordpress-plugin-grants-attacker-search-console-access/'  # TODO: CVE requested 2021-11-29
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-8934 https://www.wordfence.com/blog/2020/05/vulnerability-in-google-wordpress-plugin-grants-attacker-search-console-access/ https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/google-site-kit/site-kit-by-google-171-sensitive-information-disclosure'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin wpjobboard:
