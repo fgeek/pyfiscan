@@ -4390,3 +4390,11 @@ WordPress plugin sfwd-lms:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-3105 https://www.wordfence.com/blog/2023/06/arbitrary-user-password-change-vulnerability-in-learndash-lms-wordpress-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin payment-gateway-stripe-and-woocommerce-integration:
+  1:
+    location: ['/wp-content/plugins/payment-gateway-stripe-and-woocommerce-integration/readme.txt']
+    secure_version: '3.7.8'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-3162 https://www.wordfence.com/blog/2023/08/webtoffee-addresses-authentication-bypass-vulnerability-in-stripe-payment-plugin-for-woocommerce-wordpress-plugin/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
