@@ -1,10 +1,12 @@
 # CVE-2012-6329 1.1.7   http://foswiki.org/Support/SecurityAlert-CVE-2012-1004
 # CVE-2012-6330 1.1.7   http://foswiki.org/Support/SecurityAlert-CVE-2012-1004
 # CVE-2013-1666 1.1.8   http://foswiki.org/Support/SecurityAlert-CVE-2013-1666
+# CVE-2023-24698 2.1.8  https://blog.foswiki.org/Blog/Foswiki218IsReleased
+# CVE-2023-33756 2.1.8  https://blog.foswiki.org/Blog/Foswiki218IsReleased
 Foswiki:
   1:
     location: ['/lib/Foswiki.pm']
-    secure_version: '1.1.8'
+    secure_version: '2.1.8'
     regexp: ['.*?\$RELEASE.*?Foswiki-(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2013-1666 http://foswiki.org/Support/SecurityAlert-CVE-2013-1666'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-24698 https://nvd.nist.gov/vuln/detail/CVE-2023-33756 https://blog.foswiki.org/Blog/Foswiki218IsReleased'
     fingerprint: detect_general
