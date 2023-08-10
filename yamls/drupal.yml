@@ -141,29 +141,29 @@
 # https://drupal.org/SA-CORE-2023-002   TODO            10.0.5/9.5.5/9.4.12
 # https://drupal.org/SA-CORE-2023-003   TODO            10.0.5/9.5.5/9.4.12
 # https://drupal.org/SA-CORE-2023-004   TODO            10.0.5/9.5.5/9.4.12/7.95
-# https://drupal.org/SA-CORE-2023-005   TODO            10.0.8/9.5.8/9.4.14/7.96
+# https://drupal.org/SA-CORE-2023-005   CVE-2023-31250  10.0.8/9.5.8/9.4.14/7.96
 Drupal 10.0:
   1:
     location: ['/core/lib/Drupal.php']
-    secure_version: '10.0.5'
+    secure_version: '10.0.8'
     regexp: ['  const VERSION.*?(?P<version>10\.0\.[0-9]{1,})']
-    cve: 'https://drupal.org/SA-CORE-2023-002 https://drupal.org/SA-CORE-2023-003 https://drupal.org/SA-CORE-2023-004'
+    cve: 'https://drupal.org/SA-CORE-2023-005 https://nvd.nist.gov/vuln/detail/CVE-2023-31250'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Drupal 9.5:
   1:
     location: ['/core/lib/Drupal.php']
-    secure_version: '9.5.5'
+    secure_version: '9.5.8'
     regexp: ['  const VERSION.*?(?P<version>9\.5\.[0-9]{1,})']
-    cve: 'https://drupal.org/SA-CORE-2023-002 https://drupal.org/SA-CORE-2023-003 https://drupal.org/SA-CORE-2023-004'
+    cve: 'https://drupal.org/SA-CORE-2023-005 https://nvd.nist.gov/vuln/detail/CVE-2023-31250'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Drupal 9.4:
   1:
     location: ['/core/lib/Drupal.php']
-    secure_version: '9.4.12'
+    secure_version: '9.4.14'
     regexp: ['  const VERSION.*?(?P<version>9\.4\.[0-9]{1,})']
-    cve: 'https://drupal.org/SA-CORE-2023-002 https://drupal.org/SA-CORE-2023-003 https://drupal.org/SA-CORE-2023-004'
+    cve: 'https://drupal.org/SA-CORE-2023-005 https://nvd.nist.gov/vuln/detail/CVE-2023-31250'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Drupal 9.3:
@@ -209,9 +209,9 @@ Drupal 8.9:
 Drupal 7:
   1:
     location: ['/includes/bootstrap.inc']
-    secure_version: '7.95'
+    secure_version: '7.96'
     regexp: ['define.*?VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://drupal.org/SA-CORE-2023-002 https://drupal.org/SA-CORE-2023-003 https://drupal.org/SA-CORE-2023-004'
+    cve: 'https://drupal.org/SA-CORE-2023-005 https://nvd.nist.gov/vuln/detail/CVE-2023-31250'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 Drupal 6:
