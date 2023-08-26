@@ -4414,3 +4414,11 @@ WordPress plugin limit-login-attempts:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-1912 https://www.wordfence.com/blog/2023/04/update-now-severe-vulnerability-impacting-600000-sites-patched-in-limit-login-attempts/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin charitable:
+  1:
+    location: ['/wp-content/plugins/charitable/readme.txt']
+    secure_version: '1.7.0.13'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-4404 https://www.wordfence.com/blog/2023/08/critical-privilege-escalation-vulnerability-in-charitable-wordpress-plugin-affects-over-10000-sites/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
