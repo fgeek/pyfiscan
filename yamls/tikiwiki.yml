@@ -51,6 +51,10 @@
 # CVE-2020-29254 TODO
 # CVE-2021-36550 TODO
 # CVE-2021-36551 TODO
+# CVE-2023-22850 24.1 http://karmainsecurity.com/KIS-2023-03
+# CVE-2023-22851 24.2 http://karmainsecurity.com/KIS-2023-04
+# CVE-2023-22852 TODO http://karmainsecurity.com/KIS-2023-01
+# CVE-2023-22853 24.1 http://karmainsecurity.com/KIS-2023-02
 TikiWiki:
   1:
     location: ['/lib/setup/twversion.class.php']
