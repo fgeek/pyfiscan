@@ -1036,9 +1036,9 @@ WordPress plugin yikes-inc-easy-mailchimp-extender:
 WordPress plugin wp-fastest-cache:
   1:
     location: ['/wp-content/plugins/wp-fastest-cache/readme.txt']
-    secure_version: '0.9.5'
+    secure_version: '1.2.2'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24869 https://nvd.nist.gov/vuln/detail/CVE-2021-24870 https://jetpack.com/2021/10/14/multiple-vulnerabilities-in-wp-fastest-cache-plugin/'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24869 https://nvd.nist.gov/vuln/detail/CVE-2021-24870 https://jetpack.com/2021/10/14/multiple-vulnerabilities-in-wp-fastest-cache-plugin/ https://www.bleepingcomputer.com/news/security/wp-fastest-cache-plugin-bug-exposes-600k-wordpress-sites-to-attacks/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin master-slider:
