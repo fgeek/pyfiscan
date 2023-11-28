@@ -1033,12 +1033,14 @@ WordPress plugin yikes-inc-easy-mailchimp-extender:
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 # OVE-20160712-0022 0.8.6.0 https://sumofpwn.nl/advisory/2016/wp_fastest_cache_member_local_file_inclusion_vulnerability.html
+# CVE-2021-24869 0.9.5 https://jetpack.com/2021/10/14/multiple-vulnerabilities-in-wp-fastest-cache-plugin/
+# CVE-2021-24870 0.9.5 https://jetpack.com/2021/10/14/multiple-vulnerabilities-in-wp-fastest-cache-plugin/
 WordPress plugin wp-fastest-cache:
   1:
     location: ['/wp-content/plugins/wp-fastest-cache/readme.txt']
     secure_version: '1.2.2'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2021-24869 https://nvd.nist.gov/vuln/detail/CVE-2021-24870 https://jetpack.com/2021/10/14/multiple-vulnerabilities-in-wp-fastest-cache-plugin/ https://www.bleepingcomputer.com/news/security/wp-fastest-cache-plugin-bug-exposes-600k-wordpress-sites-to-attacks/'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-6063 https://www.bleepingcomputer.com/news/security/wp-fastest-cache-plugin-bug-exposes-600k-wordpress-sites-to-attacks/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin master-slider:
