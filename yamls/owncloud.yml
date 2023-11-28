@@ -108,6 +108,7 @@
 # CVE-2021-35948 TODO
 # CVE-2021-35949 TODO
 # CVE-2021-40537 TODO
+# CVE-2023-49103 TODO
 ownCloud 10.0:
   1:
     location: ['/version.php']
