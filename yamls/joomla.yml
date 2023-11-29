@@ -252,6 +252,7 @@
 # CVE-2023-23750 TODO
 # CVE-2023-23751 TODO
 # CVE-2023-23752 4.2.8 https://developer.joomla.org/security-centre/894-20230201-core-improper-access-check-in-webservice-endpoints.html
+# TODO https://developer.joomla.org/security-centre/919-20231101-core-exposure-of-environment-variables.html
 Joomla 4:
   1:
     location: ['/administrator/manifests/files/joomla.xml']
