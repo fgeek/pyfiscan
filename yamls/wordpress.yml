@@ -286,15 +286,15 @@
 WordPress:
   1:
     location: ['/wp-includes/version.php', '/wp-includes/vars.php']
-    secure_version: '6.2.1'
+    secure_version: '6.4.2'
     regexp: ['\$wp_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-2745 https://wordpress.org/news/2023/05/wordpress-6-2-1-maintenance-security-release/'
+    cve: 'https://www.wordfence.com/blog/2023/12/psa-critical-pop-chain-allowing-remote-code-execution-patched-in-wordpress-6-4-2/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
   2:
     location: ['/b2-include/b2vars.php']
-    secure_version: '6.2.1'
+    secure_version: '6.4.2'
     regexp: ['\$b2_version.*?(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-2745 https://wordpress.org/news/2023/05/wordpress-6-2-1-maintenance-security-release/'
+    cve: 'https://www.wordfence.com/blog/2023/12/psa-critical-pop-chain-allowing-remote-code-execution-patched-in-wordpress-6-4-2/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
