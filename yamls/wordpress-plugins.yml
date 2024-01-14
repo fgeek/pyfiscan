@@ -1432,12 +1432,13 @@ WordPress plugin wpmarketplace:
 # 2.9.61 http://lists.openwall.net/full-disclosure/2018/01/10/11
 # CVE-2021-34638/CVE-2021-34639 3.1.25 https://www.wordfence.com/blog/2021/07/wordpress-download-manager-vulnerabilities/
 # CVE-2022-1985 3.2.43 https://www.wordfence.com/blog/2022/06/security-vulnerability-download-manager-plugin/
+# CVE-2022-2431 3.2.51 https://www.wordfence.com/blog/2022/08/high-severity-vulnerability-patched-in-download-manager-plugin/
 WordPress plugin download-manager:
   1:
     location: ['/wp-content/plugins/download-manager/readme.txt']
-    secure_version: '3.2.51'
+    secure_version: '3.2.71'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2022-2431 https://www.wordfence.com/blog/2022/08/high-severity-vulnerability-patched-in-download-manager-plugin/'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-2305 https://www.wordfence.com/blog/2023/05/w3-eden-addresses-authenticated-stored-xss-vulnerability-in-download-manager-wordpress-plugin/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin contus-video-comments:
