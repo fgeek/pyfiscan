@@ -5,6 +5,10 @@
 # CVE-2020-35241 TODO https://github.com/hemantsolo/CVE-Reference/blob/main/CVE-2020-35241.md
 #   asked 2020-12-31 if founder of the vulnerability knows if this has been
 #   fixed or reported to vendor
+# CVE-2022-4820 TODO
+# CVE-2022-4821 TODO
+# CVE-2022-4822 TODO
+# CVE-2022-40048 TODO
 Flatpress:
   1:
     location: ['/fp-includes/core/core.system.php']

@@ -20,6 +20,8 @@
 # CVE-2021-41402 TODO
 # CVE-2021-41403 TODO
 # CVE-2021-42245 2.1.0 https://github.com/flatCore/flatCore-CMS/issues/69
+# CVE-2022-43118 TODO
+# CVE-2021-40555 TODO
 flatCore CMS:
   1:
     location: ['/acp/versions.php']

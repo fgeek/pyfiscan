@@ -52,6 +52,7 @@
 # CVE-2020-26670 TODO
 # CVE-2020-18467 TODO
 # CVE-2022-36197 TODO
+# CVE-2018-25076 TODO
 BigTree CMS:
   1:
     location: ['/core/version.php']

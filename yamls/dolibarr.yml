@@ -106,6 +106,7 @@
 # CVE-2022-2060 TODO
 # CVE-2022-40871 TODO
 # CVE-2022-43138 TODO
+# CVE-2022-4093 TODO
 Dolibarr:
   1:
     location: ['/htdocs/filefunc.inc.php']

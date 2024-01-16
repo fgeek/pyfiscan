@@ -19,6 +19,10 @@
 # CVE-2019-14550 5.6.9 https://github.com/espocrm/espocrm/issues/1369 https://gauravnarwani.com/publications/cve-2019-14550/ https://github.com/espocrm/espocrm/commit/ffd3f762ce4a8de3b8962f33513e073c55d943b5
 # TODO https://packetstormsecurity.com/files/157380/espocrm585-escalate.txt
 # CVE-2021-3539 6.1.7
+# CVE-2022-38843 TODO
+# CVE-2022-38844 TODO
+# CVE-2022-38845 TODO
+# CVE-2022-38846 TODO
 EspoCRM:
   1:
     location: ['/application/Espo/Core/defaults/config.php']
