@@ -4425,3 +4425,11 @@ WordPress plugin charitable:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-4404 https://www.wordfence.com/blog/2023/08/critical-privilege-escalation-vulnerability-in-charitable-wordpress-plugin-affects-over-10000-sites/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin reviewx:
+  1:
+    location: ['/wp-content/plugins/reviewx/readme.txt']
+    secure_version: '1.6.14'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-2833 https://www.wordfence.com/blog/2023/05/wpdeveloper-addresses-privilege-escalation-vulnerability-in-reviewx-wordpress-plugin/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
