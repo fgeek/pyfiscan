@@ -142,6 +142,7 @@
 # https://drupal.org/SA-CORE-2023-003   TODO            10.0.5/9.5.5/9.4.12
 # https://drupal.org/SA-CORE-2023-004   TODO            10.0.5/9.5.5/9.4.12/7.95
 # https://drupal.org/SA-CORE-2023-005   CVE-2023-31250  10.0.8/9.5.8/9.4.14/7.96
+# TODO: CVE-2024-22362 https://jvndb.jvn.jp/en/contents/2024/JVNDB-2024-000004.html
 Drupal 10.0:
   1:
     location: ['/core/lib/Drupal.php']
