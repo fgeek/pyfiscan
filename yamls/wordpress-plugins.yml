@@ -4441,3 +4441,11 @@ WordPress plugin directorist:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-1888 https://nvd.nist.gov/vuln/detail/CVE-2023-1889 https://www.wordfence.com/blog/2023/06/critical-security-update-directorist-wordpress-plugin-patches-two-high-risk-vulnerabilities/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+WordPress plugin post-smtp:
+  1:
+    location: ['/wp-content/plugins/post-smtp/readme.txt']
+    secure_version: '2.8.8'
+    regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-6875 https://nvd.nist.gov/vuln/detail/CVE-2023-7027 https://www.wordfence.com/blog/2024/01/type-juggling-leads-to-two-vulnerabilities-in-post-smtp-mailer-wordpress-plugin/'
+    fingerprint: detect_general
+    post_processing: ['php5.fcgi']
