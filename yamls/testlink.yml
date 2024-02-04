@@ -28,6 +28,10 @@
 # 2020-02-27: "Vendor indicates that there is not going to be a new release, users should download the branch testlink_1_9_20_fixed"
 # CVE-2020-12273 TODO
 # CVE-2020-12274 TODO
+# CVE-2022-35193
+# CVE-2022-35194
+# CVE-2022-35195
+# CVE-2022-35196
 TestLink:
   1:
     location: ['/cfg/const.inc.php']
