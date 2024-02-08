@@ -3188,12 +3188,13 @@ WordPress plugin woocommerce-gateway-nab-dp:
     cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-11497 https://lists.openwall.net/full-disclosure/2020/08/21/1'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
+# CVE-2020-25213 6.9 https://www.wordfence.com/blog/2020/09/700000-wordpress-users-affected-by-zero-day-vulnerability-in-file-manager-plugin/
 WordPress plugin wp-file-manager:
   1:
     location: ['/wp-content/plugins/wp-file-manager/readme.txt']
-    secure_version: '6.9'
+    secure_version: '7.2.2'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2020-25213 https://www.wordfence.com/blog/2020/09/700000-wordpress-users-affected-by-zero-day-vulnerability-in-file-manager-plugin/'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2024-0761 https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/wp-file-manager/file-manager-721-sensitive-information-exposure-via-backup-filenames'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin woo-discount-rules:
