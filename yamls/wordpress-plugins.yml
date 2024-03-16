@@ -586,11 +586,12 @@ WordPress plugin cta:
 # CVE-2020-36156 2.1.12 https://www.wordfence.com/blog/2020/11/critical-privilege-escalation-vulnerabilities-affect-100k-sites-using-ultimate-member-plugin/
 # CVE-2020-36157 2.1.12 https://www.wordfence.com/blog/2020/11/critical-privilege-escalation-vulnerabilities-affect-100k-sites-using-ultimate-member-plugin/
 WordPress plugin ultimate-member:
+# CVE-2023-3460 2.6.7 https://www.wordfence.com/blog/2023/06/psa-unpatched-critical-privilege-escalation-vulnerability-in-ultimate-member-plugin-being-actively-exploited/ https://blog.wpscan.com/hacking-campaign-actively-exploiting-ultimate-member-plugin/ https://thehackernews.com/2023/07/unpatched-wordpress-plugin-flaw-could.html
   1:
     location: ['/wp-content/plugins/ultimate-member/readme.txt']
-    secure_version: '2.6.7'
+    secure_version: '2.8.3'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-3460 https://www.wordfence.com/blog/2023/06/psa-unpatched-critical-privilege-escalation-vulnerability-in-ultimate-member-plugin-being-actively-exploited/ https://blog.wpscan.com/hacking-campaign-actively-exploiting-ultimate-member-plugin/ https://thehackernews.com/2023/07/unpatched-wordpress-plugin-flaw-could.html'
+    cve: 'https://nvd.nist.gov/vuln/CVE-2024-1071 https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/ultimate-member/ultimate-member-user-profile-registration-login-member-directory-content-restriction-membership-plugin-213-282-unauthenticated-sql-injection'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 WordPress plugin wp-symposium-pro:
