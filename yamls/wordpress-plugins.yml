@@ -858,11 +858,12 @@ WordPress plugin persian-woocommerce-sms:
     post_processing: ['php5.fcgi']
 # CVE-2012-6692 2.2 https://yoast.com/wordpress-seo-2-2/ https://seclists.org/fulldisclosure/2015/Jun/40 https://packetstormsecurity.com/files/132294/WordPress-Yoast-2.1.1-Cross-Site-Scripting.html https://wordpress.org/support/topic/security-issue-with-post-title-field-xss-vulnerability/
 WordPress plugin wordpress-seo:
+# 3.2.5 https://www.wordfence.com/blog/2016/05/yoast-seo-vulnerability/
   1:
     location: ['/wp-content/plugins/wordpress-seo/readme.txt']
-    secure_version: '3.2.5'
+    secure_version: '22.6'
     regexp: ['Stable tag: (?P<version>[0-9.]{1,})']
-    cve: 'https://www.wordfence.com/blog/2016/05/yoast-seo-vulnerability/'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2024-4041'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
 # 2.9.44 https://www.wordfence.com/blog/2016/05/ninja-forms-shell-upload-vulnerability-high-risk/ 2.9.45 in advisory, but it was error
