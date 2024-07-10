@@ -253,6 +253,13 @@
 # CVE-2023-23751 TODO
 # CVE-2023-23752 4.2.8 https://developer.joomla.org/security-centre/894-20230201-core-improper-access-check-in-webservice-endpoints.html
 # TODO https://developer.joomla.org/security-centre/919-20231101-core-exposure-of-environment-variables.html
+# TODO https://securityaffairs.com/159487/security/joomla-xss-flaws.html
+#   https://developer.joomla.org/security-centre/925-20240201-core-insufficient-session-expiration-in-mfa-management-views.html
+#   https://developer.joomla.org/security-centre/926-20240202-core-open-redirect-in-installation-application.html
+#   https://developer.joomla.org/security-centre/927-20240203-core-xss-in-media-selection-fields.html
+#   https://developer.joomla.org/security-centre/928-20240204-core-xss-in-mail-address-outputs.html
+#   https://developer.joomla.org/security-centre/929-20240205-core-inadequate-content-filtering-within-the-filter-code.html
+# TODO: URL: https://www.joomla.org/announcements/release-news/5909-joomla-5-1-2-and-joomla-4-4-6-security-and-bug-fix-release.html
 Joomla 4:
   1:
     location: ['/administrator/manifests/files/joomla.xml']
