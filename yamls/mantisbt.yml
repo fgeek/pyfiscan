@@ -91,11 +91,12 @@
 # CVE-2022-26144 2.25.3 https://mantisbt.org/bugs/view.php?id=29688
 # CVE-2022-33910 2.25.5
 # CVE-2023-22476 2.25.6
+# CVE-2025-47776 2.27.2 https://infosec.exchange/@harrysintonen/115474480965441636
 MantisBT:
   1:
     location: ['/core/constant_inc.php']
-    secure_version: '2.25.6'
+    secure_version: '2.27.2'
     regexp: ['define.*?MANTIS_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2023-22476'
+    cve: 'https://nvd.nist.gov/vuln/detail/CVE-2025-47776 https://infosec.exchange/@harrysintonen/115474480965441636'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
