@@ -66,13 +66,13 @@
 # CVE-2024-42008 1.6.8/1.5.8 https://roundcube.net/news/2024/08/04/security-updates-1.6.8-and-1.5.8
 # CVE-2024-42009 1.6.8/1.5.8 https://roundcube.net/news/2024/08/04/security-updates-1.6.8-and-1.5.8
 # CVE-2024-42010 1.6.8/1.5.8 https://roundcube.net/news/2024/08/04/security-updates-1.6.8-and-1.5.8
-# CVE-2025-49113 TODO
-# CVE-2026-XXXXX 1.6.15/1.5.15 https://lists.roundcube.net/hyperkitty/list/announce@lists.roundcube.net/thread/BOXX6TR36GLJI4GCLQ4Q5PJ7YNGJECUD/
+# CVE-2025-49113 1.6.11/1.5.10 https://roundcube.net/news/2025/06/01/security-updates-1.6.11-and-1.5.10
+# CVE-2026-XXXXX 1.6.15/1.5.15 https://roundcube.net/news/2026/03/29/security-updates-1.7-rc6-1.6.15-1.5.15 https://lists.roundcube.net/hyperkitty/list/announce@lists.roundcube.net/thread/BOXX6TR36GLJI4GCLQ4Q5PJ7YNGJECUD/
 Roundcube:
   1:
     location: ['/program/include/iniset.php']
     secure_version: '1.6.15'
     regexp: ['define.*?RCMAIL_VERSION.*?(?P<version>[0-9.]+)']
-    cve: 'https://lists.roundcube.net/hyperkitty/list/announce@lists.roundcube.net/thread/BOXX6TR36GLJI4GCLQ4Q5PJ7YNGJECUD/'
+    cve: 'https://roundcube.net/news/2026/03/29/security-updates-1.7-rc6-1.6.15-1.5.15 https://lists.roundcube.net/hyperkitty/list/announce@lists.roundcube.net/thread/BOXX6TR36GLJI4GCLQ4Q5PJ7YNGJECUD/'
     fingerprint: detect_general
     post_processing: ['php5.fcgi']
